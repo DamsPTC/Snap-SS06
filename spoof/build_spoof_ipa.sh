@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Assemble une copie instrumentée depuis extracted/, sur macOS avec Xcode.
 set -euo pipefail
+trap 'status=$?; echo "Échec du build à la ligne $LINENO : $BASH_COMMAND (code $status)" >&2; exit "$status"' ERR
 
 BUILD_VARIANT="${BUILD_VARIANT:-full}"
 case "$BUILD_VARIANT" in
@@ -184,8 +185,14 @@ else
             echo "Interposition Keychain inattendue dans selfread." >&2; exit 1
         fi
         for function in open fopen read pread mmap; do
-            grep -Eq "[[:space:]]_SS06SelfRead_${function}$" "$WORK/dylib-symbols.txt"
-            grep -Eq "[[:space:]]_${function}$" "$WORK/dylib-imports.txt"
+            if ! grep -Eq "[[:space:]]_SS06SelfRead_${function}$" "$WORK/dylib-symbols.txt"; then
+                echo "Observateur selfread absent : $function" >&2
+                cat "$WORK/dylib-symbols.txt" >&2; exit 1
+            fi
+            if ! grep -Eq "[[:space:]]_${function}$" "$WORK/dylib-imports.txt"; then
+                echo "Import POSIX selfread absent : $function" >&2
+                cat "$WORK/dylib-imports.txt" >&2; exit 1
+            fi
         done
         python3 - "$WORK/dylib-load-commands.txt" <<'PY'
 import pathlib, re, sys
