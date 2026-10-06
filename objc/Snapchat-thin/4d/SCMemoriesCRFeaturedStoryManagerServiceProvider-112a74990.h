@@ -1,0 +1,25 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCMemoriesCRFeaturedStoryManagerServiceProvider
+// Superclass: SCServiceProvider
+// Address: 0x112a74990
+
+@interface SCMemoriesCRFeaturedStoryManagerServiceProvider
+
+
+// -[SCMemoriesCRFeaturedStoryManagerServiceProvider provide]
+// Type encoding: @16@0:8
+// Implementation: 0x100793a48
+
+// -[SCMemoriesCRFeaturedStoryManagerServiceProvider _memoriesCRFeaturedStoryManager]
+// Type encoding: @16@0:8
+// Implementation: 0x105886fcc
+
+// -[SCMemoriesCRFeaturedStoryManagerServiceProvider .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x10588740c
+
+@end

@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCCPUUID
+// Superclass: GPBMessage
+// Address: 0x112bf18e0
+
+@interface SCCPUUID
+
+// Property: highBits; attributes: TQ,D,N
+// Property: lowBits; attributes: TQ,D,N
+
+// +[SCCPUUID descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x1091896a8
+
+@end

@@ -1,0 +1,20 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output vec4 outColor 0
+//sampler sampler casterColorSmpSC 0:8
+//sampler sampler denoiserKernelSmpSC 0:9
+//sampler sampler receiverData0SmpSC 0:13
+//sampler sampler receiverData1SmpSC 0:14
+//texture texture2D casterColor 0:1:0:8
+//texture texture2D denoiserKernel 0:2:0:9
+//texture utexture2D receiverData0 0:6:0:13
+//texture utexture2D receiverData1 0:7:0:14
+//ubo float UserUniforms 0:0:80  {
+//float4 casterColorSize 0
+//float3 originScaleInv 16
+//float3 originOffset 32
+//float2 kernelMask 56
+//float diMaxRayLen 64
+//float diffuseIntensity 68
+//}
+//SG_REFLECTION_END

@@ -1,0 +1,18 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCPushNotificationCofRuleBoolPredicate
+// Superclass: GPBMessage
+// Address: 0xad1138
+
+@interface SCPushNotificationCofRuleBoolPredicate
+
+// Property: ruleName; attributes: T@"NSString",C,D,N
+
+// +[SCPushNotificationCofRuleBoolPredicate descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x416ecc
+
+@end

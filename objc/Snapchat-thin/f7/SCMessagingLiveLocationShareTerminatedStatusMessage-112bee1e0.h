@@ -1,0 +1,20 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCMessagingLiveLocationShareTerminatedStatusMessage
+// Superclass: GPBMessage
+// Address: 0x112bee1e0
+
+@interface SCMessagingLiveLocationShareTerminatedStatusMessage
+
+// Property: initiatingUserId; attributes: T@"SCMessagingUUID",&,D,N
+// Property: hasInitiatingUserId; attributes: TB,D,N
+// Property: terminateReason; attributes: Ti,D,N
+
+// +[SCMessagingLiveLocationShareTerminatedStatusMessage descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10916e778
+
+@end

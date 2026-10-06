@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCLensProcessingURIServiceSnapchatDeeplinkHandlerEntryPoint
+// Superclass: SCEntryPoint
+// Address: 0x112b15070
+
+@interface SCLensProcessingURIServiceSnapchatDeeplinkHandlerEntryPoint
+
+
+// -[SCLensProcessingURIServiceSnapchatDeeplinkHandlerEntryPoint begin]
+// Type encoding: v16@0:8
+// Implementation: 0x106b07c44
+
+// -[SCLensProcessingURIServiceSnapchatDeeplinkHandlerEntryPoint .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x106b07cec
+
+@end

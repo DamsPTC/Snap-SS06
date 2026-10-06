@@ -1,0 +1,54 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output vec4 sc_FragData0 0
+//sampler sampler inputTexture1SmpSC 0:17
+//sampler sampler inputTexture2SmpSC 0:18
+//sampler sampler inputTextureSmpSC 0:19
+//texture texture2D inputTexture 0:0:0:19
+//texture texture2D inputTexture1 0:1:0:17
+//texture texture2D inputTexture2 0:2:0:18
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo float sc_DrawCallUBO 2:3:80  {
+//int sc_ViewMask 64
+//}
+//ubo float UserUniforms 2:0:272  {
+//float3x3 inputTextureTransform 0
+//float4 inputTextureUvMinMax 48
+//float4 inputTextureBorderColor 64
+//float3x3 inputTexture1Transform 80
+//float4 inputTexture1UvMinMax 128
+//float4 inputTexture1BorderColor 144
+//float3x3 inputTexture2Transform 160
+//float4 inputTexture2UvMinMax 208
+//float4 inputTexture2BorderColor 224
+//float4 jfa3d_params_0 240
+//float4 voxelization_params_0 256
+//}
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTexture1 0 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTexture2 1 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTexture 2 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTexture1 3 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTexture2 4 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTexture 5 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTexture1 6 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTexture2 7 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTexture 8 0
+//spec_const bool inputTexture1HasSwappedViews 9 0
+//spec_const bool inputTexture2HasSwappedViews 10 0
+//spec_const bool inputTextureHasSwappedViews 11 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTexture1 12 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTexture2 13 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTexture 14 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTexture1 15 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTexture2 16 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTexture 17 -1
+//spec_const int inputTexture1Layout 18 0
+//spec_const int inputTexture2Layout 19 0
+//spec_const int inputTextureLayout 20 0
+//spec_const int sc_ShaderCacheConstant 21 0
+//spec_const int sc_StereoRenderingMode 22 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 23 0
+//SG_REFLECTION_END

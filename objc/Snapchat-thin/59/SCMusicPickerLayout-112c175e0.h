@@ -1,0 +1,20 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCMusicPickerLayout
+// Superclass: GPBMessage
+// Address: 0x112c175e0
+
+@interface SCMusicPickerLayout
+
+// Property: tabsArray; attributes: T@"NSMutableArray",&,D,N
+// Property: tabsArray_Count; attributes: TQ,R,D,N
+// Property: tabStartIndex; attributes: TI,D,N
+
+// +[SCMusicPickerLayout descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10af2917c
+
+@end

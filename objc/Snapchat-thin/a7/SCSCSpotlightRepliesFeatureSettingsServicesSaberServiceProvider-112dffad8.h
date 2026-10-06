@@ -1,0 +1,55 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider
+// Superclass: SCServiceProvider
+// Address: 0x112dffad8
+
+@interface SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider
+
+// Property: beginIn; attributes: T@"_TtC24SCActiveUserSessionScope24SCActiveUserSessionScope",N,W,VbeginIn
+// Property: activeUserSessionScopeGraphBridgeServices; attributes: T@"_TtC33ActiveUserSessionScopeGraphBridge41ActiveUserSessionScopeGraphBridgeServices",N,W,VactiveUserSessionScopeGraphBridgeServices
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider beginIn]
+// Type encoding: @16@0:8
+// Implementation: 0x101af5e68
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider setBeginIn:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x101af5e74
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider activeUserSessionScopeGraphBridgeServices]
+// Type encoding: @16@0:8
+// Implementation: 0x101af5e80
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider setActiveUserSessionScopeGraphBridgeServices:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x101af5ed0
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider provide]
+// Type encoding: @16@0:8
+// Implementation: 0x101af6144
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider __safeProvide]
+// Type encoding: @16@0:8
+// Implementation: 0x101af6178
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider end]
+// Type encoding: @16@0:8
+// Implementation: 0x101af61ac
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider setValue:forIvarName:]
+// Type encoding: v32@0:8@16@24
+// Implementation: 0x101af6388
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider init]
+// Type encoding: @16@0:8
+// Implementation: 0x101af6434
+
+// -[SCSCSpotlightRepliesFeatureSettingsServicesSaberServiceProvider .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x101af64dc
+
+@end

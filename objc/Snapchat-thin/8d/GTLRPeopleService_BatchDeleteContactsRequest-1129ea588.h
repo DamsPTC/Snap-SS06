@@ -1,0 +1,18 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: GTLRPeopleService_BatchDeleteContactsRequest
+// Superclass: GTLRObject
+// Address: 0x1129ea588
+
+@interface GTLRPeopleService_BatchDeleteContactsRequest
+
+// Property: resourceNames; attributes: T@"NSArray",&,D,N
+
+// +[GTLRPeopleService_BatchDeleteContactsRequest arrayPropertyToClassMap]
+// Type encoding: @16@0:8
+// Implementation: 0x104a1d038
+
+@end

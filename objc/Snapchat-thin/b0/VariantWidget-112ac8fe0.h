@@ -1,0 +1,20 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: VariantWidget
+// Superclass: GPBMessage
+// Address: 0x112ac8fe0
+
+@interface VariantWidget
+
+// Property: itemVariantDimensionsArray; attributes: T@"NSMutableArray",&,D,N
+// Property: itemVariantDimensionsArray_Count; attributes: TQ,R,D,N
+// Property: variantContext; attributes: T@"NSData",C,D,N
+
+// +[VariantWidget descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x1060f9538
+
+@end

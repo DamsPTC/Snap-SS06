@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSSMUpNextLoggingExtension
+// Superclass: GPBMessage
+// Address: 0x112c3c7a0
+
+@interface SCSSMUpNextLoggingExtension
+
+// Property: recommForStoryId; attributes: T@"SCCORECompositeStoryId",&,D,N
+// Property: hasRecommForStoryId; attributes: TB,D,N
+
+// +[SCSSMUpNextLoggingExtension descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10afb8478
+
+@end

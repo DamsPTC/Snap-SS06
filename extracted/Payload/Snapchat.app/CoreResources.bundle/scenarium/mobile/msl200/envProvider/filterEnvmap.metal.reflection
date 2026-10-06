@@ -1,0 +1,28 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//output vec4 sc_FragData0 0
+//sampler sampler baseTexSmpSC 0:15
+//texture texture2D baseTex 0:0:0:15
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//}
+//ubo float UserUniforms 2:0:2672  {
+//float4 baseTexSize 0
+//float3x3 baseTexTransform 16
+//float4 baseTexUvMinMax 64
+//float4 baseTexBorderColor 80
+//float mipLevel 96
+//float4x4 fMipLevelsMat 112:[8]:64
+//float4 lightVec 624:[128]:16
+//}
+//spec_const bool SC_USE_CLAMP_TO_BORDER_baseTex 0 0
+//spec_const bool SC_USE_UV_MIN_MAX_baseTex 1 0
+//spec_const bool SC_USE_UV_TRANSFORM_baseTex 2 0
+//spec_const bool baseTexHasSwappedViews 3 0
+//spec_const int SAMPLE_COUNT 4 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_baseTex 5 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_baseTex 6 -1
+//spec_const int baseTexLayout 7 0
+//spec_const int sc_ShaderCacheConstant 8 0
+//SG_REFLECTION_END

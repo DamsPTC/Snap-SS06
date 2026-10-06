@@ -1,0 +1,58 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute ivec2 uv 5
+//output vec4 sc_FragData0 0
+//sampler sampler texCenterDelta2SmpSC 0:37
+//sampler sampler texCenterDeltaSmpSC 0:38
+//sampler sampler texCenterXYZScaleXSmpSC 0:39
+//sampler sampler texChunkInfoSmpSC 0:40
+//sampler sampler texColorSmpSC 0:41
+//sampler sampler texRotationOverride2SmpSC 0:42
+//sampler sampler texRotationOverrideSmpSC 0:43
+//sampler sampler texRotationSmpSC 0:44
+//sampler sampler texScaleYZSmpSC 0:45
+//texture texture2D texCenterDelta 0:14:0:38
+//texture texture2D texCenterDelta2 0:15:0:37
+//texture texture2D texCenterXYZScaleX 0:16:0:39
+//texture texture2D texChunkInfo 0:17:0:40
+//texture texture2D texColor 0:18:0:41
+//texture texture2D texRotation 0:19:0:44
+//texture texture2D texRotationOverride 0:20:0:43
+//texture texture2D texRotationOverride2 0:21:0:42
+//texture texture2D texScaleYZ 0:22:0:45
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4x4 sc_ViewProjectionMatrixArray 32:[4]:64
+//float4x4 sc_ProjectionMatrixArray 544:[4]:64
+//float4x4 sc_ViewMatrixArray 1056:[4]:64
+//float4x4 sc_PrevFrameViewProjectionMatrixArray 1568:[4]:64
+//float4 sc_CurrentRenderTargetDims 1824
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo float sc_DrawCallUBO 2:3:176  {
+//float4x4 sc_ModelMatrix 0
+//float3 sc_LocalAabbMin 64
+//float3 sc_LocalAabbMax 80
+//float4x4 sc_PrevFrameModelMatrix 96
+//int sc_ViewMask 160
+//}
+//ubo float UserUniforms 2:0:48  {
+//float2 sc_TAAJitterOffset 0
+//float4 dims 16
+//float sc_gs_InterpolationFactor 32
+//float sc_gs_AlphaCutoff 36
+//}
+//spec_const bool sc_ChunkySplats 0 0
+//spec_const bool sc_MotionVectorsPass 1 0
+//spec_const bool sc_TAAEnabled 2 0
+//spec_const bool sc_gs_AlphaCutoffEnabled 3 0
+//spec_const bool sc_gs_ErrorPattern 4 0
+//spec_const bool sc_gs_OrthoProjection 5 0
+//spec_const bool sc_gs_QuatsHalfAngle 6 0
+//spec_const bool sc_gs_QuatsSmallestThree 7 0
+//spec_const bool sc_gs_TwoInterFrames 8 0
+//spec_const bool sc_gs_UseInterFrame 9 0
+//spec_const int sc_BlendMode 10 0
+//spec_const int sc_ShaderCacheConstant 11 0
+//spec_const int sc_StereoRenderingMode 12 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 13 0
+//SG_REFLECTION_END

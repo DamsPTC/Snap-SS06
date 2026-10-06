@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSpectaclesSettingsInstructionView
+// Superclass: UIView
+// Address: 0x112a255e8
+
+@interface SCSpectaclesSettingsInstructionView
+
+
+// -[SCSpectaclesSettingsInstructionView initWithFrame:]
+// Type encoding: @48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+// Implementation: 0x10525596c
+
+// -[SCSpectaclesSettingsInstructionView expectedHeight]
+// Type encoding: d16@0:8
+// Implementation: 0x1052559a0
+
+@end

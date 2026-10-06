@@ -1,0 +1,45 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//output vec4 sc_FragData0 0
+//sampler sampler depthTextureSmpSC 0:16
+//sampler sampler mainTextureSmpSC 0:17
+//texture texture2D depthTexture 0:0:0:16
+//texture texture2D mainTexture 0:1:0:17
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo float sc_DrawCallUBO 2:3:80  {
+//int sc_ViewMask 64
+//}
+//ubo float UserUniforms 2:0:176  {
+//float3x3 mainTextureTransform 0
+//float4 mainTextureUvMinMax 48
+//float4 mainTextureBorderColor 64
+//float3x3 depthTextureTransform 80
+//float4 depthTextureUvMinMax 128
+//float4 depthTextureBorderColor 144
+//float depthToDisparityNumerator 160
+//}
+//spec_const bool BY_Y 0 0
+//spec_const bool CAMEOS_MATTING 1 0
+//spec_const bool RY_GY 2 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_depthTexture 3 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_mainTexture 4 0
+//spec_const bool SC_USE_UV_MIN_MAX_depthTexture 5 0
+//spec_const bool SC_USE_UV_MIN_MAX_mainTexture 6 0
+//spec_const bool SC_USE_UV_TRANSFORM_depthTexture 7 0
+//spec_const bool SC_USE_UV_TRANSFORM_mainTexture 8 0
+//spec_const bool depthTextureHasSwappedViews 9 0
+//spec_const bool mainTextureHasSwappedViews 10 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_depthTexture 11 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_mainTexture 12 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_depthTexture 13 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_mainTexture 14 -1
+//spec_const int depthTextureLayout 15 0
+//spec_const int mainTextureLayout 16 0
+//spec_const int sc_ShaderCacheConstant 17 0
+//spec_const int sc_StereoRenderingMode 18 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 19 0
+//SG_REFLECTION_END

@@ -1,0 +1,351 @@
+{
+  "path": "Payload/Snapchat.app/Watch/SnapchatWatchApp.app/SnapchatWatchApp",
+  "architecture": "0100000c-00000000",
+  "analysis_directory": "analysis/binaries/SnapchatWatchApp-0100000c-00000000",
+  "status": "runtime metadata exported",
+  "class_entries": 9,
+  "classes_exported": 9,
+  "methods_exported": 73,
+  "cpu": "0x100000c",
+  "subtype": "0x0",
+  "bits": 64,
+  "filetype": 2,
+  "base_address": "0x100000000",
+  "encryption": [
+    {
+      "offset": 49152,
+      "size": 114688,
+      "cryptid": 0
+    }
+  ],
+  "linked_libraries": [
+    "/System/Library/Frameworks/Foundation.framework/Foundation",
+    "/System/Library/Frameworks/Security.framework/Security",
+    "/usr/lib/libc++.1.dylib",
+    "/System/Library/Frameworks/UIKit.framework/UIKit",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libSystem.B.dylib",
+    "/System/Library/Frameworks/Combine.framework/Combine",
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+    "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+    "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+    "/System/Library/Frameworks/WatchConnectivity.framework/WatchConnectivity",
+    "/System/Library/Frameworks/WatchKit.framework/WatchKit",
+    "/usr/lib/swift/libswiftCore.dylib",
+    "/usr/lib/swift/libswiftCoreFoundation.dylib",
+    "/usr/lib/swift/libswiftCoreLocation.dylib",
+    "/usr/lib/swift/libswiftDispatch.dylib",
+    "/usr/lib/swift/libswiftMapKit.dylib",
+    "/usr/lib/swift/libswiftOSLog.dylib",
+    "/usr/lib/swift/libswiftObjectiveC.dylib",
+    "/usr/lib/swift/libswiftQuartzCore.dylib",
+    "/usr/lib/swift/libswiftSceneKit.dylib",
+    "/usr/lib/swift/libswiftSpatial.dylib",
+    "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+    "/usr/lib/swift/libswiftWatchKit.dylib",
+    "/usr/lib/swift/libswift_Builtin_float.dylib",
+    "/usr/lib/swift/libswift_Concurrency.dylib",
+    "/usr/lib/swift/libswiftos.dylib",
+    "/usr/lib/swift/libswiftsimd.dylib"
+  ],
+  "segments": [
+    {
+      "name": "__PAGEZERO",
+      "vmaddr": 0,
+      "vmsize": 4294967296,
+      "offset": 0,
+      "size": 0
+    },
+    {
+      "name": "__TEXT",
+      "vmaddr": 4294967296,
+      "vmsize": 163840,
+      "offset": 0,
+      "size": 163840
+    },
+    {
+      "name": "__DATA_CONST",
+      "vmaddr": 4295131136,
+      "vmsize": 16384,
+      "offset": 163840,
+      "size": 16384
+    },
+    {
+      "name": "__DATA",
+      "vmaddr": 4295147520,
+      "vmsize": 32768,
+      "offset": 180224,
+      "size": 16384
+    },
+    {
+      "name": "__LINKEDIT",
+      "vmaddr": 4295180288,
+      "vmsize": 81920,
+      "offset": 196608,
+      "size": 69904
+    }
+  ],
+  "sections": [
+    {
+      "name": "__text",
+      "segment": "__TEXT",
+      "address": 4295016448,
+      "size": 81952,
+      "offset": 49152
+    },
+    {
+      "name": "__stubs",
+      "segment": "__TEXT",
+      "address": 4295098400,
+      "size": 2820,
+      "offset": 131104
+    },
+    {
+      "name": "__objc_stubs",
+      "segment": "__TEXT",
+      "address": 4295101248,
+      "size": 800,
+      "offset": 133952
+    },
+    {
+      "name": "__objc_methlist",
+      "segment": "__TEXT",
+      "address": 4295102048,
+      "size": 1920,
+      "offset": 134752
+    },
+    {
+      "name": "__const",
+      "segment": "__TEXT",
+      "address": 4295103968,
+      "size": 6104,
+      "offset": 136672
+    },
+    {
+      "name": "__constg_swiftt",
+      "segment": "__TEXT",
+      "address": 4295110072,
+      "size": 2128,
+      "offset": 142776
+    },
+    {
+      "name": "__swift5_typeref",
+      "segment": "__TEXT",
+      "address": 4295112200,
+      "size": 3167,
+      "offset": 144904
+    },
+    {
+      "name": "__objc_classname",
+      "segment": "__TEXT",
+      "address": 4295115376,
+      "size": 710,
+      "offset": 148080
+    },
+    {
+      "name": "__objc_methname",
+      "segment": "__TEXT",
+      "address": 4295116096,
+      "size": 3645,
+      "offset": 148800
+    },
+    {
+      "name": "__objc_methtype",
+      "segment": "__TEXT",
+      "address": 4295119744,
+      "size": 1513,
+      "offset": 152448
+    },
+    {
+      "name": "__swift5_reflstr",
+      "segment": "__TEXT",
+      "address": 4295121264,
+      "size": 672,
+      "offset": 153968
+    },
+    {
+      "name": "__swift5_fieldmd",
+      "segment": "__TEXT",
+      "address": 4295121936,
+      "size": 1340,
+      "offset": 154640
+    },
+    {
+      "name": "__swift5_types",
+      "segment": "__TEXT",
+      "address": 4295123276,
+      "size": 160,
+      "offset": 155980
+    },
+    {
+      "name": "__swift5_assocty",
+      "segment": "__TEXT",
+      "address": 4295123436,
+      "size": 288,
+      "offset": 156140
+    },
+    {
+      "name": "__swift5_proto",
+      "segment": "__TEXT",
+      "address": 4295123724,
+      "size": 260,
+      "offset": 156428
+    },
+    {
+      "name": "__swift5_entry",
+      "segment": "__TEXT",
+      "address": 4295123984,
+      "size": 8,
+      "offset": 156688
+    },
+    {
+      "name": "__swift5_capture",
+      "segment": "__TEXT",
+      "address": 4295123992,
+      "size": 296,
+      "offset": 156696
+    },
+    {
+      "name": "__cstring",
+      "segment": "__TEXT",
+      "address": 4295124288,
+      "size": 1302,
+      "offset": 156992
+    },
+    {
+      "name": "__swift_as_entry",
+      "segment": "__TEXT",
+      "address": 4295125592,
+      "size": 16,
+      "offset": 158296
+    },
+    {
+      "name": "__swift_as_ret",
+      "segment": "__TEXT",
+      "address": 4295125608,
+      "size": 4,
+      "offset": 158312
+    },
+    {
+      "name": "__swift5_builtin",
+      "segment": "__TEXT",
+      "address": 4295125612,
+      "size": 40,
+      "offset": 158316
+    },
+    {
+      "name": "__unwind_info",
+      "segment": "__TEXT",
+      "address": 4295125652,
+      "size": 2072,
+      "offset": 158356
+    },
+    {
+      "name": "__eh_frame",
+      "segment": "__TEXT",
+      "address": 4295127728,
+      "size": 1432,
+      "offset": 160432
+    },
+    {
+      "name": "__got",
+      "segment": "__DATA_CONST",
+      "address": 4295131136,
+      "size": 2936,
+      "offset": 163840
+    },
+    {
+      "name": "__const",
+      "segment": "__DATA_CONST",
+      "address": 4295134072,
+      "size": 4504,
+      "offset": 166776
+    },
+    {
+      "name": "__cfstring",
+      "segment": "__DATA_CONST",
+      "address": 4295138576,
+      "size": 32,
+      "offset": 171280
+    },
+    {
+      "name": "__objc_classlist",
+      "segment": "__DATA_CONST",
+      "address": 4295138608,
+      "size": 72,
+      "offset": 171312
+    },
+    {
+      "name": "__objc_protolist",
+      "segment": "__DATA_CONST",
+      "address": 4295138680,
+      "size": 32,
+      "offset": 171384
+    },
+    {
+      "name": "__objc_imageinfo",
+      "segment": "__DATA_CONST",
+      "address": 4295138712,
+      "size": 8,
+      "offset": 171416
+    },
+    {
+      "name": "__objc_protorefs",
+      "segment": "__DATA_CONST",
+      "address": 4295138720,
+      "size": 32,
+      "offset": 171424
+    },
+    {
+      "name": "__objc_const",
+      "segment": "__DATA",
+      "address": 4295147520,
+      "size": 2888,
+      "offset": 180224
+    },
+    {
+      "name": "__objc_selrefs",
+      "segment": "__DATA",
+      "address": 4295150408,
+      "size": 1008,
+      "offset": 183112
+    },
+    {
+      "name": "__objc_data",
+      "segment": "__DATA",
+      "address": 4295151416,
+      "size": 2016,
+      "offset": 184120
+    },
+    {
+      "name": "__data",
+      "segment": "__DATA",
+      "address": 4295153432,
+      "size": 2672,
+      "offset": 186136
+    },
+    {
+      "name": "__objc_stublist",
+      "segment": "__DATA",
+      "address": 4295156104,
+      "size": 8,
+      "offset": 188808
+    },
+    {
+      "name": "__common",
+      "segment": "__DATA",
+      "address": 4295156112,
+      "size": 16,
+      "offset": 0
+    },
+    {
+      "name": "__bss",
+      "segment": "__DATA",
+      "address": 4295156128,
+      "size": 8352,
+      "offset": 0
+    }
+  ],
+  "recovered_classes": 9,
+  "errors": []
+}

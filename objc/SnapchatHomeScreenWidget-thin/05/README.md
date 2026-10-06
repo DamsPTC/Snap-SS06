@@ -1,0 +1,3 @@
+# Classes : 05
+
+- [_TtC23MapFriendLocationWidget63MapFriendLocationWidgetMapFriendLocationWidgetAssetsBundleClass](_TtC23MapFriendLocationWidget63MapFriendLocationWidgetMapFriendLocationWidgetAssetsBundleClass-1000c7508.h) — `0x1000c7508`

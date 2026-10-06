@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCMessagingPollStatusMessage
+// Superclass: GPBMessage
+// Address: 0x112bee820
+
+@interface SCMessagingPollStatusMessage
+
+// Property: initiatingUserId; attributes: T@"SCMessagingUUID",&,D,N
+// Property: hasInitiatingUserId; attributes: TB,D,N
+// Property: pollMessageId; attributes: TQ,D,N
+// Property: statusType; attributes: Ti,D,N
+
+// +[SCMessagingPollStatusMessage descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10916ef98
+
+@end

@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCPCNSettingsPromptHistory
+// Superclass: GPBMessage
+// Address: 0x112abd0f0
+
+@interface SCPCNSettingsPromptHistory
+
+// Property: lastPromptedEpochSec; attributes: Tq,D,N
+// Property: numPrompts; attributes: Tq,D,N
+
+// +[SCPCNSettingsPromptHistory descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10600a290
+
+@end

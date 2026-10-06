@@ -1,0 +1,58 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCUserEducationTrayViewController
+// Superclass: UIViewController
+// Address: 0x112b3e628
+
+@interface SCUserEducationTrayViewController
+
+// Property: delegate; attributes: T@"<SCUserEducationTrayViewControllerDelegate>",W,N,V_delegate
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCUserEducationTrayViewController initWithDataSource:contentDelivery:trayHeightPercentage:]
+// Type encoding: @40@0:8@16@24d32
+// Implementation: 0x106e64d04
+
+// -[SCUserEducationTrayViewController viewDidLoad]
+// Type encoding: v16@0:8
+// Implementation: 0x106e64de0
+
+// -[SCUserEducationTrayViewController _setUpViews]
+// Type encoding: v16@0:8
+// Implementation: 0x106e64e28
+
+// -[SCUserEducationTrayViewController _didTapDoneButton:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x106e65df0
+
+// -[SCUserEducationTrayViewController _didTapCloseButton:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x106e65fbc
+
+// -[SCUserEducationTrayViewController userEducationUIPageViewControllerContainer:didMoveToPageAtIndex:]
+// Type encoding: v32@0:8@16q24
+// Implementation: 0x106e66008
+
+// -[SCUserEducationTrayViewController _iconXSignFillImage]
+// Type encoding: @16@0:8
+// Implementation: 0x106e660c4
+
+// -[SCUserEducationTrayViewController delegate]
+// Type encoding: @16@0:8
+// Implementation: 0x106e66140
+
+// -[SCUserEducationTrayViewController setDelegate:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x106e66160
+
+// -[SCUserEducationTrayViewController .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x106e66174
+
+@end

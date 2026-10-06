@@ -1,0 +1,26 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 1
+//output vec4 FragColor0 0
+//sampler sampler screenTextureSmpSC 0:2
+//texture texture2D screenTexture 0:1:0:2
+//ubo float UserUniforms 0:0:176  {
+//sc_Camera_t sc_Camera 0
+//float3 sc_Camera.position 0
+//float sc_Camera.aspect 16
+//float2 sc_Camera.clipPlanes 24
+//float4 sc_StereoClipPlanes 32:[2]:16
+//float3x3 meshTransform 64
+//float screenTextureLevel 112
+//float3x3 screenTextureTransform 128
+//}
+//spec_const bool GRAYSCALE_AS_ALPHA 0 0
+//spec_const bool ONLY_VERTEX_ATTRIBUTE 1 0
+//spec_const bool SWAP_R_B_CHANNELS 2 0
+//spec_const bool USE_MESH_TRANSFORM 3 0
+//spec_const bool screenTextureHasSwappedViews 4 0
+//spec_const int sc_DepthBufferMode 5 0
+//spec_const int sc_StereoRenderingMode 6 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 7 0
+//spec_const int screenTextureLayout 8 0
+//SG_REFLECTION_END

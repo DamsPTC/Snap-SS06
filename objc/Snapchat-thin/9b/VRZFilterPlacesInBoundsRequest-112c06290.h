@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: VRZFilterPlacesInBoundsRequest
+// Superclass: GPBMessage
+// Address: 0x112c06290
+
+@interface VRZFilterPlacesInBoundsRequest
+
+// Property: bounds; attributes: T@"SPCGRect",&,D,N
+// Property: hasBounds; attributes: TB,D,N
+// Property: placeIdsArray; attributes: T@"NSMutableArray",&,D,N
+// Property: placeIdsArray_Count; attributes: TQ,R,D,N
+
+// +[VRZFilterPlacesInBoundsRequest descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10af05110
+
+@end

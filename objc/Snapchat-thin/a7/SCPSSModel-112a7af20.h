@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCPSSModel
+// Superclass: GPBMessage
+// Address: 0x112a7af20
+
+@interface SCPSSModel
+
+// Property: metadataOneOfCase; attributes: Ti,R,D,N
+// Property: snapcodeDetectionMetadata; attributes: T@"SCPSSSnapcodeDetectionMetadata",&,D,N
+
+// +[SCPSSModel descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x1058ff8e4
+
+@end

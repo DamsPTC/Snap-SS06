@@ -1,0 +1,33 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: MLBWatchdogCrashReport
+// Superclass: GPBMessage
+// Address: 0x112b817c0
+
+@interface MLBWatchdogCrashReport
+
+// Property: pc; attributes: TI,D,N
+// Property: hasPc; attributes: TB,D,N
+// Property: r1; attributes: TI,D,N
+// Property: hasR1; attributes: TB,D,N
+// Property: r2; attributes: TI,D,N
+// Property: hasR2; attributes: TB,D,N
+// Property: r3; attributes: TI,D,N
+// Property: hasR3; attributes: TB,D,N
+// Property: r12; attributes: TI,D,N
+// Property: hasR12; attributes: TB,D,N
+// Property: lr; attributes: TI,D,N
+// Property: hasLr; attributes: TB,D,N
+// Property: r0; attributes: TI,D,N
+// Property: hasR0; attributes: TB,D,N
+// Property: xpsr; attributes: TI,D,N
+// Property: hasXpsr; attributes: TB,D,N
+
+// +[MLBWatchdogCrashReport descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x107db73d0
+
+@end

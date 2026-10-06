@@ -1,0 +1,34 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//output vec4 sc_FragData0 0
+//sampler sampler backTextureSmpSC 0:17
+//sampler sampler inputTextureSmpSC 0:18
+//sampler sampler maskTextureSmpSC 0:19
+//texture texture2D backTexture 0:0:0:17
+//texture texture2D inputTexture 0:1:0:18
+//texture texture2D maskTexture 0:2:0:19
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo int sc_DrawCallUBO 2:3:16  {
+//int sc_ViewMask 0
+//}
+//ubo float UserUniforms 2:0:160  {
+//float3x3 maskTransform 0
+//float3x3 backTransform 48
+//float4 backColorMult 96
+//float3x3 inputTextureTransform 112
+//}
+//spec_const bool backTextureHasSwappedViews 0 0
+//spec_const bool inputTextureHasSwappedViews 1 0
+//spec_const bool maskTextureHasSwappedViews 2 0
+//spec_const int MASK_CHANNEL 3 0
+//spec_const int backTextureLayout 4 0
+//spec_const int inputTextureLayout 5 0
+//spec_const int maskTextureLayout 6 0
+//spec_const int sc_ShaderCacheConstant 7 0
+//spec_const int sc_StereoRenderingMode 8 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 9 0
+//SG_REFLECTION_END

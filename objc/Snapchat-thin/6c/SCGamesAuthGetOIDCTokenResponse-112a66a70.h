@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCGamesAuthGetOIDCTokenResponse
+// Superclass: GPBMessage
+// Address: 0x112a66a70
+
+@interface SCGamesAuthGetOIDCTokenResponse
+
+// Property: token; attributes: T@"NSString",C,D,N
+// Property: expirationTimestampMsecs; attributes: Tq,D,N
+
+// +[SCGamesAuthGetOIDCTokenResponse descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10579a990
+
+@end

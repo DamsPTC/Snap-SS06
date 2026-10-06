@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCAppInsightsReport
+// Superclass: GPBMessage
+// Address: 0x112cddf10
+
+@interface SCAppInsightsReport
+
+// Property: agent; attributes: T@"SCUserAgentAgent",&,D,N
+// Property: hasAgent; attributes: TB,D,N
+// Property: payloadOneOfCase; attributes: Ti,R,D,N
+// Property: crashReport; attributes: T@"NSData",C,D,N
+
+// +[SCAppInsightsReport descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10b7ea378
+
+@end

@@ -1,0 +1,18 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCMusicGetMusicTrackRequest_RequestOption_Availability
+// Superclass: GPBMessage
+// Address: 0x112a76ec0
+
+@interface SCMusicGetMusicTrackRequest_RequestOption_Availability
+
+// Property: logKey; attributes: T@"NSString",C,D,N
+
+// +[SCMusicGetMusicTrackRequest_RequestOption_Availability descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x1058e9650
+
+@end

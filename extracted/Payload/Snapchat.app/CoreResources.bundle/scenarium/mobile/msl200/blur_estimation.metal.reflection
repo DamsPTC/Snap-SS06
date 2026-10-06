@@ -1,0 +1,57 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output vec4 sc_FragData0 0
+//sampler sampler inputTextureSmpSC 0:17
+//sampler sampler maskTextureSmpSC 0:18
+//sampler sampler originalTextureSmpSC 0:19
+//texture texture2D inputTexture 0:0:0:17
+//texture texture2D maskTexture 0:1:0:18
+//texture texture2D originalTexture 0:2:0:19
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo int sc_DrawCallUBO 2:3:16  {
+//int sc_ViewMask 0
+//}
+//ubo float UserUniforms 2:0:304  {
+//float3x3 originalTextureTransform 0
+//float4 originalTextureUvMinMax 48
+//float4 originalTextureBorderColor 64
+//float4 inputTextureSize 80
+//float3x3 inputTextureTransform 96
+//float4 inputTextureUvMinMax 144
+//float4 inputTextureBorderColor 160
+//float3x3 maskTextureTransform 176
+//float4 maskTextureUvMinMax 224
+//float4 maskTextureBorderColor 240
+//float2 blurDir 256
+//float3 offset 272
+//float4 weight 288
+//}
+//spec_const bool BLUR_ESTIMATION_FIRST_PASS 0 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTexture 1 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_maskTexture 2 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_originalTexture 3 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTexture 4 0
+//spec_const bool SC_USE_UV_MIN_MAX_maskTexture 5 0
+//spec_const bool SC_USE_UV_MIN_MAX_originalTexture 6 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTexture 7 0
+//spec_const bool SC_USE_UV_TRANSFORM_maskTexture 8 0
+//spec_const bool SC_USE_UV_TRANSFORM_originalTexture 9 0
+//spec_const bool inputTextureHasSwappedViews 10 0
+//spec_const bool maskTextureHasSwappedViews 11 0
+//spec_const bool originalTextureHasSwappedViews 12 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTexture 13 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_maskTexture 14 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_originalTexture 15 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTexture 16 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_maskTexture 17 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_originalTexture 18 -1
+//spec_const int inputTextureLayout 19 0
+//spec_const int maskTextureLayout 20 0
+//spec_const int originalTextureLayout 21 0
+//spec_const int sc_ShaderCacheConstant 22 0
+//spec_const int sc_StereoRenderingMode 23 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 24 0
+//SG_REFLECTION_END

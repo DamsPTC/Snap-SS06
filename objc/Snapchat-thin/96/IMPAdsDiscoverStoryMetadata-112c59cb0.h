@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: IMPAdsDiscoverStoryMetadata
+// Superclass: GPBMessage
+// Address: 0x112c59cb0
+
+@interface IMPAdsDiscoverStoryMetadata
+
+// Property: businessProfileId; attributes: T@"NSString",C,D,N
+// Property: publisherId; attributes: T@"NSString",C,D,N
+
+// +[IMPAdsDiscoverStoryMetadata descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x10b03e2a4
+
+@end

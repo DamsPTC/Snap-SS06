@@ -1,0 +1,29 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCGamesExplorerCategoriesLoggerEntryPoint
+// Superclass: SCEntryPoint
+// Address: 0x112b144e0
+
+@interface SCGamesExplorerCategoriesLoggerEntryPoint
+
+
+// -[SCGamesExplorerCategoriesLoggerEntryPoint begin]
+// Type encoding: v16@0:8
+// Implementation: 0x106afd208
+
+// -[SCGamesExplorerCategoriesLoggerEntryPoint _createLogger]
+// Type encoding: @16@0:8
+// Implementation: 0x106afd38c
+
+// -[SCGamesExplorerCategoriesLoggerEntryPoint _lensExplorerLoggerWithPerformer:]
+// Type encoding: @24@0:8@16
+// Implementation: 0x106afd61c
+
+// -[SCGamesExplorerCategoriesLoggerEntryPoint .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x106afd6b4
+
+@end

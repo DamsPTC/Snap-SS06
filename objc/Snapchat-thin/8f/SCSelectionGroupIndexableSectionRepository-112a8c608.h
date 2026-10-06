@@ -1,0 +1,30 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSelectionGroupIndexableSectionRepository
+// Superclass: NSObject
+// Address: 0x112a8c608
+
+@interface SCSelectionGroupIndexableSectionRepository
+
+// Property: recipientNumberObservable; attributes: T@"SCObservable",R,N
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCSelectionGroupIndexableSectionRepository initWithSectionIdentifier:sectionDataSource:]
+// Type encoding: @32@0:8@16@24
+// Implementation: 0x105b290f0
+
+// -[SCSelectionGroupIndexableSectionRepository recipientNumberObservable]
+// Type encoding: @16@0:8
+// Implementation: 0x105b29194
+
+// -[SCSelectionGroupIndexableSectionRepository .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x105b29244
+
+@end

@@ -1,0 +1,35 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//output vec4 sc_FragData0 0
+//sampler sampler inputTextureSmpSC 0:15
+//texture texture2D inputTexture 0:0:0:15
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4x4 sc_ProjectionMatrixArray 544:[4]:64
+//sc_Camera_t sc_Camera 1888
+//float3 sc_Camera.position 0
+//float sc_Camera.aspect 16
+//float2 sc_Camera.clipPlanes 24
+//}
+//ubo float sc_DrawCallUBO 2:3:64  {
+//}
+//ubo float UserUniforms 2:0:96  {
+//float3x3 inputTextureTransform 0
+//float4 inputTextureUvMinMax 48
+//float4 inputTextureBorderColor 64
+//float4 baseColor 80
+//}
+//spec_const bool COLOR_SOURCE 0 0
+//spec_const bool RG 1 0
+//spec_const bool R 2 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTexture 3 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTexture 4 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTexture 5 0
+//spec_const bool inputTextureHasSwappedViews 6 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTexture 7 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTexture 8 -1
+//spec_const int inputTextureLayout 9 0
+//spec_const int sc_DepthBufferMode 10 0
+//spec_const int sc_ShaderCacheConstant 11 0
+//SG_REFLECTION_END

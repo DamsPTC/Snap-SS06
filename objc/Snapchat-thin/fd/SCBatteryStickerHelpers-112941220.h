@@ -1,0 +1,29 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCBatteryStickerHelpers
+// Superclass: NSObject
+// Address: 0x112941220
+
+@interface SCBatteryStickerHelpers
+
+
+// -[SCBatteryStickerHelpers init]
+// Type encoding: @16@0:8
+// Implementation: 0x103bcec0c
+
+// +[SCBatteryStickerHelpers batteryStickerViewFromItemInstance:runtime:completion:]
+// Type encoding: v40@0:8@16@24@?32
+// Implementation: 0x103bceb78
+
+// +[SCBatteryStickerHelpers batteryStatus]
+// Type encoding: Q16@0:8
+// Implementation: 0x103bcebf0
+
+// +[SCBatteryStickerHelpers batteryLevelFromBatteryStatus:]
+// Type encoding: i24@0:8Q16
+// Implementation: 0x103bcebf4
+
+@end

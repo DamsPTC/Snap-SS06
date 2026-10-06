@@ -1,0 +1,28 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output vec4 sc_FragData0 0
+//sampler sampler texMainSmpSC 0:29
+//texture texture2D texMain 0:14:0:29
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//}
+//ubo int sc_DrawCallUBO 2:3:16  {
+//int sc_ViewMask 0
+//}
+//ubo float UserUniforms 2:0:64  {
+//float4 texMainSize 0
+//float4 texMainUvMinMax 16
+//float4 texMainBorderColor 32
+//float2 blurVector 48
+//}
+//spec_const bool SC_USE_CLAMP_TO_BORDER_texMain 0 0
+//spec_const bool SC_USE_UV_MIN_MAX_texMain 1 0
+//spec_const bool texMainHasSwappedViews 2 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_texMain 3 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_texMain 4 -1
+//spec_const int sc_ShaderCacheConstant 5 0
+//spec_const int sc_StereoRenderingMode 6 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 7 0
+//spec_const int texMainLayout 8 0
+//SG_REFLECTION_END

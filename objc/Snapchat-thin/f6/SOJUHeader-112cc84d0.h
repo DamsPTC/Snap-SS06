@@ -1,0 +1,31 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SOJUHeader
+// Superclass: SCSojuMessage
+// Address: 0x112cc84d0
+
+@interface SOJUHeader
+
+// Property: from; attributes: T@"NSString",R,D,N
+// Property: to; attributes: T@"NSArray",R,D,N
+// Property: convId; attributes: T@"NSString",R,D,N
+// Property: isv3; attributes: T@"NSNumber",R,D,N
+// Property: auth; attributes: T@"SOJUSignedPayload",R,D,N
+// Property: connSeqNum; attributes: T@"NSNumber",R,D,N
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SOJUHeader initWithFrom:to:convId:isv3:auth:connSeqNum:]
+// Type encoding: @64@0:8@16@24@32@40@48@56
+// Implementation: 0x10b782e6c
+
+// +[SOJUHeader registerMessageFields:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x10b782e94
+
+@end

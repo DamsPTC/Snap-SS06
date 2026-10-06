@@ -1,0 +1,29 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCLeftSwipeTransitionAnimator
+// Superclass: NSObject
+// Address: 0x112c748a8
+
+@interface SCLeftSwipeTransitionAnimator
+
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCLeftSwipeTransitionAnimator initWithStyle:]
+// Type encoding: @24@0:8q16
+// Implementation: 0x10b2baab4
+
+// -[SCLeftSwipeTransitionAnimator animateTransition:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x10b2baafc
+
+// -[SCLeftSwipeTransitionAnimator transitionDuration:]
+// Type encoding: d24@0:8@16
+// Implementation: 0x10b2baf40
+
+@end

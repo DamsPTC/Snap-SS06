@@ -1,0 +1,47 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCNNetworkTypesLatencyEstimation
+// Superclass: NSObject
+// Address: 0xae2410
+
+@interface SCNNetworkTypesLatencyEstimation
+
+// Property: formulaVersion; attributes: Tq,R,N,V_formulaVersion
+// Property: latencyPrediction; attributes: Tq,R,N,V_latencyPrediction
+// Property: rtt; attributes: Tq,R,N,V_rtt
+// Property: throughput; attributes: Tq,R,N,V_throughput
+// Property: throughputConfidenceScore; attributes: Td,R,N,V_throughputConfidenceScore
+// Property: estimatedContentLength; attributes: Tq,R,N,V_estimatedContentLength
+
+// -[SCNNetworkTypesLatencyEstimation initWithFormulaVersion:latencyPrediction:rtt:throughput:throughputConfidenceScore:estimatedContentLength:]
+// Type encoding: @64@0:8q16q24q32q40d48q56
+// Implementation: 0x6366a8
+
+// -[SCNNetworkTypesLatencyEstimation formulaVersion]
+// Type encoding: q16@0:8
+// Implementation: 0x636728
+
+// -[SCNNetworkTypesLatencyEstimation latencyPrediction]
+// Type encoding: q16@0:8
+// Implementation: 0x636730
+
+// -[SCNNetworkTypesLatencyEstimation rtt]
+// Type encoding: q16@0:8
+// Implementation: 0x636738
+
+// -[SCNNetworkTypesLatencyEstimation throughput]
+// Type encoding: q16@0:8
+// Implementation: 0x636740
+
+// -[SCNNetworkTypesLatencyEstimation throughputConfidenceScore]
+// Type encoding: d16@0:8
+// Implementation: 0x636748
+
+// -[SCNNetworkTypesLatencyEstimation estimatedContentLength]
+// Type encoding: q16@0:8
+// Implementation: 0x636750
+
+@end

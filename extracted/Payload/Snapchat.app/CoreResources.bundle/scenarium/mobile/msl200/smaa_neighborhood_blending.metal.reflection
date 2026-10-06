@@ -1,0 +1,37 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output vec4 sc_FragData0 0
+//sampler sampler blendTexSmpSC 0:16
+//sampler sampler inputTexSmpSC 0:17
+//texture texture2D blendTex 0:0:0:16
+//texture texture2D inputTex 0:1:0:17
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//}
+//ubo float sc_DrawCallUBO 2:3:64  {
+//}
+//ubo float UserUniforms 2:0:176  {
+//float3x3 blendTexTransform 0
+//float4 blendTexUvMinMax 48
+//float4 blendTexBorderColor 64
+//float3x3 inputTexTransform 80
+//float4 inputTexUvMinMax 128
+//float4 inputTexBorderColor 144
+//float2 inputRTSize 160
+//}
+//spec_const bool SC_USE_CLAMP_TO_BORDER_blendTex 0 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_inputTex 1 0
+//spec_const bool SC_USE_UV_MIN_MAX_blendTex 2 0
+//spec_const bool SC_USE_UV_MIN_MAX_inputTex 3 0
+//spec_const bool SC_USE_UV_TRANSFORM_blendTex 4 0
+//spec_const bool SC_USE_UV_TRANSFORM_inputTex 5 0
+//spec_const bool blendTexHasSwappedViews 6 0
+//spec_const bool inputTexHasSwappedViews 7 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_blendTex 8 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_inputTex 9 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_blendTex 10 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_inputTex 11 -1
+//spec_const int blendTexLayout 12 0
+//spec_const int inputTexLayout 13 0
+//spec_const int sc_ShaderCacheConstant 14 0
+//SG_REFLECTION_END

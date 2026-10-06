@@ -1,0 +1,41 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSpectaclesCBCentralManagerEventListenerAnnouncer
+// Superclass: SCSpectaclesBaseAnnouncer
+// Address: 0x112b4db50
+
+@interface SCSpectaclesCBCentralManagerEventListenerAnnouncer
+
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManagerDidUpdateState:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x106f9ff6c
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManager:willRestoreState:]
+// Type encoding: v32@0:8@16@24
+// Implementation: 0x106fa00a8
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManager:didDiscoverPeripheral:advertisementData:RSSI:]
+// Type encoding: v48@0:8@16@24@32@40
+// Implementation: 0x106fa01fc
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManager:didConnectPeripheral:]
+// Type encoding: v32@0:8@16@24
+// Implementation: 0x106fa0380
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManager:didFailToConnectPeripheral:error:]
+// Type encoding: v40@0:8@16@24@32
+// Implementation: 0x106fa04d4
+
+// -[SCSpectaclesCBCentralManagerEventListenerAnnouncer centralManager:didDisconnectPeripheral:error:]
+// Type encoding: v40@0:8@16@24@32
+// Implementation: 0x106fa0640
+
+@end

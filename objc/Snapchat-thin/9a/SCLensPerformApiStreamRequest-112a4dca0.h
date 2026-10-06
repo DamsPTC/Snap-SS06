@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCLensPerformApiStreamRequest
+// Superclass: GPBMessage
+// Address: 0x112a4dca0
+
+@interface SCLensPerformApiStreamRequest
+
+// Property: requestOneOfCase; attributes: Ti,R,D,N
+// Property: openConnectionRequest; attributes: T@"SCLensStreamingConnectionRequest",&,D,N
+// Property: payloadRequest; attributes: T@"SCLensStreamingPayloadRequest",&,D,N
+// Property: closeConnectionRequest; attributes: T@"SCLensStreamingCloseConnectionRequest",&,D,N
+
+// +[SCLensPerformApiStreamRequest descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x1055dd004
+
+@end

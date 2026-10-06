@@ -1,0 +1,17 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//output float sc_FragData0 0
+//sampler sampler denoiserKernelSmpSC 0:9
+//sampler sampler rayOriginAndMaskSmpSC 0:12
+//texture texture2D denoiserKernel 0:2:0:9
+//texture utexture2D rayOriginAndMask 0:5:0:12
+//ubo float UserUniforms 0:0:80  {
+//float3 originScale 0
+//float3 originOffset 16
+//float3 cameraPos 32
+//float3 lightPos 48
+//float sinFovHalf 64
+//int camViewportHeight 68
+//int filterMaxRadius 72
+//}
+//SG_REFLECTION_END

@@ -1,0 +1,19 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: IMPInternalGetActiveBusinessStorySnapsResponse
+// Superclass: GPBMessage
+// Address: 0x112bd6f90
+
+@interface IMPInternalGetActiveBusinessStorySnapsResponse
+
+// Property: snapsArray; attributes: T@"NSMutableArray",&,D,N
+// Property: snapsArray_Count; attributes: TQ,R,D,N
+
+// +[IMPInternalGetActiveBusinessStorySnapsResponse descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x108f30630
+
+@end

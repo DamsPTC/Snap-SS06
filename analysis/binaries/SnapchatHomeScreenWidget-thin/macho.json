@@ -1,0 +1,425 @@
+{
+  "path": "Payload/Snapchat.app/PlugIns/SnapchatHomeScreenWidget.appex/SnapchatHomeScreenWidget",
+  "architecture": "thin",
+  "analysis_directory": "analysis/binaries/SnapchatHomeScreenWidget-thin",
+  "status": "runtime metadata exported",
+  "class_entries": 87,
+  "classes_exported": 87,
+  "methods_exported": 174,
+  "cpu": "0x100000c",
+  "subtype": "0x0",
+  "bits": 64,
+  "filetype": 2,
+  "base_address": "0x100000000",
+  "encryption": [
+    {
+      "offset": 65536,
+      "size": 638976,
+      "cryptid": 0
+    }
+  ],
+  "linked_libraries": [
+    "/usr/lib/libc++.1.dylib",
+    "/System/Library/Frameworks/Foundation.framework/Foundation",
+    "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+    "/System/Library/Frameworks/WidgetKit.framework/WidgetKit",
+    "/System/Library/Frameworks/ActivityKit.framework/ActivityKit",
+    "/System/Library/Frameworks/UIKit.framework/UIKit",
+    "/System/Library/Frameworks/ImageIO.framework/ImageIO",
+    "/System/Library/Frameworks/AppIntents.framework/AppIntents",
+    "/System/Library/Frameworks/CoreText.framework/CoreText",
+    "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+    "/System/Library/Frameworks/Intents.framework/Intents",
+    "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+    "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+    "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+    "/System/Library/Frameworks/Security.framework/Security",
+    "/usr/lib/libSystem.B.dylib",
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+    "/System/Library/Frameworks/MapKit.framework/MapKit",
+    "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+    "/usr/lib/libresolv.9.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+    "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+    "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+    "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+    "/System/Library/Frameworks/Metal.framework/Metal",
+    "/usr/lib/libsqlite3.dylib",
+    "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+    "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+    "/System/Library/Frameworks/Combine.framework/Combine",
+    "@rpath/ExtensionsSharedDependencies.framework/ExtensionsSharedDependencies",
+    "/usr/lib/libobjc.A.dylib",
+    "/System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI",
+    "/usr/lib/swift/libswiftCore.dylib",
+    "/usr/lib/swift/libswiftCoreFoundation.dylib",
+    "/usr/lib/swift/libswiftCoreImage.dylib",
+    "/usr/lib/swift/libswiftCoreLocation.dylib",
+    "/usr/lib/swift/libswiftDarwin.dylib",
+    "/usr/lib/swift/libswiftDispatch.dylib",
+    "/usr/lib/swift/libswiftIntents.dylib",
+    "/usr/lib/swift/libswiftMetal.dylib",
+    "/usr/lib/swift/libswiftOSLog.dylib",
+    "/usr/lib/swift/libswiftObjectiveC.dylib",
+    "/usr/lib/swift/libswiftQuartzCore.dylib",
+    "/usr/lib/swift/libswiftSpatial.dylib",
+    "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+    "/usr/lib/swift/libswiftXPC.dylib",
+    "/usr/lib/swift/libswift_Concurrency.dylib",
+    "/usr/lib/swift/libswiftos.dylib",
+    "/usr/lib/swift/libswiftsimd.dylib",
+    "/usr/lib/swift/libswiftFoundation.dylib",
+    "/usr/lib/swift/libswiftUIKit.dylib",
+    "/usr/lib/swift/libswiftCoreGraphics.dylib"
+  ],
+  "segments": [
+    {
+      "name": "__PAGEZERO",
+      "vmaddr": 0,
+      "vmsize": 4294967296,
+      "offset": 0,
+      "size": 0
+    },
+    {
+      "name": "__TEXT",
+      "vmaddr": 4294967296,
+      "vmsize": 720896,
+      "offset": 0,
+      "size": 720896
+    },
+    {
+      "name": "__DATA_CONST",
+      "vmaddr": 4295688192,
+      "vmsize": 49152,
+      "offset": 720896,
+      "size": 49152
+    },
+    {
+      "name": "__DATA",
+      "vmaddr": 4295737344,
+      "vmsize": 98304,
+      "offset": 770048,
+      "size": 65536
+    },
+    {
+      "name": "__LINKEDIT",
+      "vmaddr": 4295835648,
+      "vmsize": 196608,
+      "offset": 835584,
+      "size": 184784
+    }
+  ],
+  "sections": [
+    {
+      "name": "__text",
+      "segment": "__TEXT",
+      "address": 4295032832,
+      "size": 478076,
+      "offset": 65536
+    },
+    {
+      "name": "__stubs",
+      "segment": "__TEXT",
+      "address": 4295510908,
+      "size": 6048,
+      "offset": 543612
+    },
+    {
+      "name": "__objc_stubs",
+      "segment": "__TEXT",
+      "address": 4295516960,
+      "size": 5728,
+      "offset": 549664
+    },
+    {
+      "name": "__objc_methlist",
+      "segment": "__TEXT",
+      "address": 4295522688,
+      "size": 4312,
+      "offset": 555392
+    },
+    {
+      "name": "__const",
+      "segment": "__TEXT",
+      "address": 4295527008,
+      "size": 26616,
+      "offset": 559712
+    },
+    {
+      "name": "__constg_swiftt",
+      "segment": "__TEXT",
+      "address": 4295553624,
+      "size": 9488,
+      "offset": 586328
+    },
+    {
+      "name": "__swift5_typeref",
+      "segment": "__TEXT",
+      "address": 4295563112,
+      "size": 41299,
+      "offset": 595816
+    },
+    {
+      "name": "__swift5_fieldmd",
+      "segment": "__TEXT",
+      "address": 4295604412,
+      "size": 6396,
+      "offset": 637116
+    },
+    {
+      "name": "__cstring",
+      "segment": "__TEXT",
+      "address": 4295610816,
+      "size": 11152,
+      "offset": 643520
+    },
+    {
+      "name": "__swift5_proto",
+      "segment": "__TEXT",
+      "address": 4295621968,
+      "size": 868,
+      "offset": 654672
+    },
+    {
+      "name": "__swift5_types",
+      "segment": "__TEXT",
+      "address": 4295622836,
+      "size": 628,
+      "offset": 655540
+    },
+    {
+      "name": "__swift5_reflstr",
+      "segment": "__TEXT",
+      "address": 4295623472,
+      "size": 4567,
+      "offset": 656176
+    },
+    {
+      "name": "__swift5_protos",
+      "segment": "__TEXT",
+      "address": 4295628040,
+      "size": 48,
+      "offset": 660744
+    },
+    {
+      "name": "__swift5_assocty",
+      "segment": "__TEXT",
+      "address": 4295628088,
+      "size": 2296,
+      "offset": 660792
+    },
+    {
+      "name": "__swift5_capture",
+      "segment": "__TEXT",
+      "address": 4295630384,
+      "size": 2216,
+      "offset": 663088
+    },
+    {
+      "name": "__swift_as_entry",
+      "segment": "__TEXT",
+      "address": 4295632600,
+      "size": 24,
+      "offset": 665304
+    },
+    {
+      "name": "__swift_as_ret",
+      "segment": "__TEXT",
+      "address": 4295632624,
+      "size": 24,
+      "offset": 665328
+    },
+    {
+      "name": "__swift5_entry",
+      "segment": "__TEXT",
+      "address": 4295632648,
+      "size": 8,
+      "offset": 665352
+    },
+    {
+      "name": "__objc_classname",
+      "segment": "__TEXT",
+      "address": 4295632656,
+      "size": 3125,
+      "offset": 665360
+    },
+    {
+      "name": "__swift5_builtin",
+      "segment": "__TEXT",
+      "address": 4295635784,
+      "size": 220,
+      "offset": 668488
+    },
+    {
+      "name": "__swift5_mpenum",
+      "segment": "__TEXT",
+      "address": 4295636004,
+      "size": 40,
+      "offset": 668708
+    },
+    {
+      "name": "__objc_methname",
+      "segment": "__TEXT",
+      "address": 4295636048,
+      "size": 11857,
+      "offset": 668752
+    },
+    {
+      "name": "__objc_methtype",
+      "segment": "__TEXT",
+      "address": 4295647920,
+      "size": 2715,
+      "offset": 680624
+    },
+    {
+      "name": "__unwind_info",
+      "segment": "__TEXT",
+      "address": 4295650636,
+      "size": 7808,
+      "offset": 683340
+    },
+    {
+      "name": "__eh_frame",
+      "segment": "__TEXT",
+      "address": 4295658448,
+      "size": 1780,
+      "offset": 691152
+    },
+    {
+      "name": "__oslogstring",
+      "segment": "__TEXT",
+      "address": 4295671808,
+      "size": 133,
+      "offset": 704512
+    },
+    {
+      "name": "__got",
+      "segment": "__DATA_CONST",
+      "address": 4295688192,
+      "size": 6840,
+      "offset": 720896
+    },
+    {
+      "name": "__const",
+      "segment": "__DATA_CONST",
+      "address": 4295695032,
+      "size": 22920,
+      "offset": 727736
+    },
+    {
+      "name": "__cfstring",
+      "segment": "__DATA_CONST",
+      "address": 4295717952,
+      "size": 2496,
+      "offset": 750656
+    },
+    {
+      "name": "__objc_classlist",
+      "segment": "__DATA_CONST",
+      "address": 4295720448,
+      "size": 696,
+      "offset": 753152
+    },
+    {
+      "name": "__objc_protolist",
+      "segment": "__DATA_CONST",
+      "address": 4295721144,
+      "size": 112,
+      "offset": 753848
+    },
+    {
+      "name": "__objc_imageinfo",
+      "segment": "__DATA_CONST",
+      "address": 4295721256,
+      "size": 8,
+      "offset": 753960
+    },
+    {
+      "name": "__objc_const",
+      "segment": "__DATA",
+      "address": 4295737344,
+      "size": 22648,
+      "offset": 770048
+    },
+    {
+      "name": "__objc_selrefs",
+      "segment": "__DATA",
+      "address": 4295759992,
+      "size": 2048,
+      "offset": 792696
+    },
+    {
+      "name": "__objc_protorefs",
+      "segment": "__DATA",
+      "address": 4295762040,
+      "size": 56,
+      "offset": 794744
+    },
+    {
+      "name": "__objc_classrefs",
+      "segment": "__DATA",
+      "address": 4295762096,
+      "size": 416,
+      "offset": 794800
+    },
+    {
+      "name": "__objc_superrefs",
+      "segment": "__DATA",
+      "address": 4295762512,
+      "size": 64,
+      "offset": 795216
+    },
+    {
+      "name": "__objc_ivar",
+      "segment": "__DATA",
+      "address": 4295762576,
+      "size": 120,
+      "offset": 795280
+    },
+    {
+      "name": "__objc_data",
+      "segment": "__DATA",
+      "address": 4295762696,
+      "size": 7632,
+      "offset": 795400
+    },
+    {
+      "name": "__data",
+      "segment": "__DATA",
+      "address": 4295770328,
+      "size": 25393,
+      "offset": 803032
+    },
+    {
+      "name": "__s_async_hook",
+      "segment": "__DATA",
+      "address": 4295795728,
+      "size": 400,
+      "offset": 828432
+    },
+    {
+      "name": "__swift56_hooks",
+      "segment": "__DATA",
+      "address": 4295796128,
+      "size": 176,
+      "offset": 828832
+    },
+    {
+      "name": "__bss",
+      "segment": "__DATA",
+      "address": 4295796304,
+      "size": 26784,
+      "offset": 0
+    },
+    {
+      "name": "__common",
+      "segment": "__DATA",
+      "address": 4295823088,
+      "size": 224,
+      "offset": 0
+    }
+  ],
+  "recovered_classes": 87,
+  "errors": []
+}

@@ -1,0 +1,25 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCSpectaclesNetworkerImpl
+// Superclass: NSObject
+// Address: 0x112b4d8f8
+
+@interface SCSpectaclesNetworkerImpl
+
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCSpectaclesNetworkerImpl createChannelWithEndpoint:enableBLEImprovements:delegate:]
+// Type encoding: @36@0:8@16B24@28
+// Implementation: 0x106f9d2b8
+
+// +[SCSpectaclesNetworkerImpl sharedNetworker]
+// Type encoding: @16@0:8
+// Implementation: 0x106f9d238
+
+@end

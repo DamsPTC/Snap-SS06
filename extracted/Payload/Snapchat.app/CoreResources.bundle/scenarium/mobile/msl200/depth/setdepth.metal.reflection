@@ -1,0 +1,44 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//sampler sampler depthTextureSmpSC 0:15
+//texture texture2D depthTexture 0:0:0:15
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//float4x4 sc_ViewProjectionMatrixArray 32:[4]:64
+//float4x4 sc_ProjectionMatrixArray 544:[4]:64
+//float4x4 sc_ViewMatrixArray 1056:[4]:64
+//float4 sc_StereoClipPlanes 1856:[2]:16
+//sc_Camera_t sc_Camera 1888
+//float3 sc_Camera.position 0
+//float sc_Camera.aspect 16
+//float2 sc_Camera.clipPlanes 24
+//}
+//ubo float sc_DrawCallUBO 2:3:144  {
+//float4x4 sc_ModelMatrix 0
+//int sc_ViewMask 128
+//}
+//ubo float UserUniforms 2:0:352  {
+//float3x3 depthTextureTransform 0
+//float4 depthTextureUvMinMax 48
+//float4 depthTextureBorderColor 64
+//float depthScale 80
+//float depthToDisparityNumerator 84
+//float defaultDepth 88
+//float4x4 depthProjectionMatrixArray 96:[4]:64
+//}
+//spec_const bool PACKED_DISPARITY 0 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_depthTexture 1 0
+//spec_const bool SC_USE_UV_MIN_MAX_depthTexture 2 0
+//spec_const bool SC_USE_UV_TRANSFORM_depthTexture 3 0
+//spec_const bool USE_CUSTOM_PROJECTION 4 0
+//spec_const bool depthTextureHasSwappedViews 5 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_depthTexture 6 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_depthTexture 7 -1
+//spec_const int depthTextureLayout 8 0
+//spec_const int sc_DepthBufferMode 9 0
+//spec_const int sc_RenderingSpace 10 -1
+//spec_const int sc_ShaderCacheConstant 11 0
+//spec_const int sc_StereoRenderingMode 12 0
+//spec_const int sc_StereoRendering_IsClipDistanceEnabled 13 0
+//SG_REFLECTION_END

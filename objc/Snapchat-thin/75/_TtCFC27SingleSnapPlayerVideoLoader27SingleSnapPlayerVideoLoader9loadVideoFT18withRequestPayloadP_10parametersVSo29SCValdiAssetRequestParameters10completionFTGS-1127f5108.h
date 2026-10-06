@@ -1,0 +1,25 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: _TtCFC27SingleSnapPlayerVideoLoader27SingleSnapPlayerVideoLoader9loadVideoFT18withRequestPayloadP_10parametersVSo29SCValdiAssetRequestParameters10completionFTGSqPSo18SCValdiVideoPlayer__GSqPs5Error___T__PSo17SCValdiCancelable_L_15VideoCancelable
+// Superclass: NSObject
+// Address: 0x1127f5108
+
+@interface _TtCFC27SingleSnapPlayerVideoLoader27SingleSnapPlayerVideoLoader9loadVideoFT18withRequestPayloadP_10parametersVSo29SCValdiAssetRequestParameters10completionFTGSqPSo18SCValdiVideoPlayer__GSqPs5Error___T__PSo17SCValdiCancelable_L_15VideoCancelable
+
+
+// -[_TtCFC27SingleSnapPlayerVideoLoader27SingleSnapPlayerVideoLoader9loadVideoFT18withRequestPayloadP_10parametersVSo29SCValdiAssetRequestParameters10completionFTGSqPSo18SCValdiVideoPlayer__GSqPs5Error___T__PSo17SCValdiCancelable_L_15VideoCancelable cancel]
+// Type encoding: v16@0:8
+// Implementation: 0x101ad6978
+
+// -[_TtCFC27SingleSnapPlayerVideoLoader27SingleSnapPlayerVideoLoader9loadVideoFT18withRequestPayloadP_10parametersVSo29SCValdiAssetRequestParameters10completionFTGSqPSo18SCValdiVideoPlayer__GSqPs5Error___T__PSo17SCValdiCancelable_L_15VideoCancelable init]
+// Type encoding: @16@0:8
+// Implementation: 0x101ad699c
+
+// -[_TtCFC27SingleSnapPlayerVideoLoader27SingleSnapPlayerVideoLoader9loadVideoFT18withRequestPayloadP_10parametersVSo29SCValdiAssetRequestParameters10completionFTGSqPSo18SCValdiVideoPlayer__GSqPs5Error___T__PSo17SCValdiCancelable_L_15VideoCancelable .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x101ad6a30
+
+@end

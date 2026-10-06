@@ -1,0 +1,49 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCAPIAuth
+// Superclass: NSObject
+// Address: 0x112c766a8
+
+@interface SCAPIAuth
+
+
+// +[SCAPIAuth staticFSNAuthToken]
+// Type encoding: @16@0:8
+// Implementation: 0x10028d89c
+
+// +[SCAPIAuth authenticationParametersForEndpoint:authToken:username:userId:parameters:deviceIdManager:]
+// Type encoding: @64@0:8@16@24@32@40@48@56
+// Implementation: 0x10b5e0b00
+
+// +[SCAPIAuth authenticationParametersForUserWithToken:username:userId:withDeviceInfo:deviceIdManager:]
+// Type encoding: @52@0:8@16@24@32B40@44
+// Implementation: 0x10b5e0d34
+
+// +[SCAPIAuth requestTokenForUserToken:timestamp:]
+// Type encoding: @32@0:8@16@24
+// Implementation: 0x10b5e0efc
+
+// +[SCAPIAuth userAgentHeader]
+// Type encoding: @16@0:8
+// Implementation: 0x10029a760
+
+// +[SCAPIAuth versionName]
+// Type encoding: @16@0:8
+// Implementation: 0x10b5e1090
+
+// +[SCAPIAuth appVersion]
+// Type encoding: @16@0:8
+// Implementation: 0x10b5e109c
+
+// +[SCAPIAuth schemeName]
+// Type encoding: @16@0:8
+// Implementation: 0x10b5e10a8
+
+// +[SCAPIAuth appName]
+// Type encoding: @16@0:8
+// Implementation: 0x10b5e10b4
+
+@end

@@ -1,0 +1,18 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCNotificationClearDeviceTokenResponse
+// Superclass: GPBMessage
+// Address: 0xad2a88
+
+@interface SCNotificationClearDeviceTokenResponse
+
+// Property: statusCode; attributes: Ti,D,N
+
+// +[SCNotificationClearDeviceTokenResponse descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x419e3c
+
+@end

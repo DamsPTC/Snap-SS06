@@ -1,0 +1,21 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCS2Friend
+// Superclass: GPBMessage
+// Address: 0x112b46148
+
+@interface SCS2Friend
+
+// Property: user; attributes: T@"SCS2User",&,D,N
+// Property: hasUser; attributes: TB,D,N
+// Property: storySummaryInfo; attributes: T@"SCS2StorySummaryInfo",&,D,N
+// Property: hasStorySummaryInfo; attributes: TB,D,N
+
+// +[SCS2Friend descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x106f1d434
+
+@end

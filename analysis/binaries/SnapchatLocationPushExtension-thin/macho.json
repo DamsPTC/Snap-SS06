@@ -1,0 +1,255 @@
+{
+  "path": "Payload/Snapchat.app/PlugIns/SnapchatLocationPushExtension.appex/SnapchatLocationPushExtension",
+  "architecture": "thin",
+  "analysis_directory": "analysis/binaries/SnapchatLocationPushExtension-thin",
+  "status": "runtime metadata exported",
+  "class_entries": 4,
+  "classes_exported": 4,
+  "methods_exported": 17,
+  "cpu": "0x100000c",
+  "subtype": "0x0",
+  "bits": 64,
+  "filetype": 2,
+  "base_address": "0x100000000",
+  "encryption": [
+    {
+      "offset": 49152,
+      "size": 16384,
+      "cryptid": 0
+    }
+  ],
+  "linked_libraries": [
+    "/System/Library/Frameworks/Foundation.framework/Foundation",
+    "/System/Library/Frameworks/CoreLocation.framework/CoreLocation",
+    "/usr/lib/libc++.1.dylib",
+    "/System/Library/Frameworks/UIKit.framework/UIKit",
+    "/System/Library/Frameworks/UserNotifications.framework/UserNotifications",
+    "/System/Library/Frameworks/ImageIO.framework/ImageIO",
+    "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+    "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+    "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration",
+    "/System/Library/Frameworks/Metal.framework/Metal",
+    "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+    "/usr/lib/libz.1.dylib",
+    "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+    "/System/Library/Frameworks/CoreMedia.framework/CoreMedia",
+    "/System/Library/Frameworks/Security.framework/Security",
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+    "/usr/lib/libresolv.9.dylib",
+    "/usr/lib/libSystem.B.dylib",
+    "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony",
+    "/usr/lib/libsqlite3.dylib",
+    "/System/Library/Frameworks/MessageUI.framework/MessageUI",
+    "/System/Library/Frameworks/AdSupport.framework/AdSupport",
+    "/System/Library/Frameworks/Combine.framework/Combine",
+    "/System/Library/Frameworks/SwiftUI.framework/SwiftUI",
+    "/System/Library/Frameworks/WidgetKit.framework/WidgetKit",
+    "/System/Library/Frameworks/CoreText.framework/CoreText",
+    "/System/Library/Frameworks/AppIntents.framework/AppIntents",
+    "/System/Library/Frameworks/ActivityKit.framework/ActivityKit",
+    "@rpath/ExtensionsSharedDependencies.framework/ExtensionsSharedDependencies",
+    "/usr/lib/libobjc.A.dylib"
+  ],
+  "segments": [
+    {
+      "name": "__PAGEZERO",
+      "vmaddr": 0,
+      "vmsize": 4294967296,
+      "offset": 0,
+      "size": 0
+    },
+    {
+      "name": "__TEXT",
+      "vmaddr": 4294967296,
+      "vmsize": 65536,
+      "offset": 0,
+      "size": 65536
+    },
+    {
+      "name": "__DATA_CONST",
+      "vmaddr": 4295032832,
+      "vmsize": 16384,
+      "offset": 65536,
+      "size": 16384
+    },
+    {
+      "name": "__DATA",
+      "vmaddr": 4295049216,
+      "vmsize": 16384,
+      "offset": 81920,
+      "size": 16384
+    },
+    {
+      "name": "__LINKEDIT",
+      "vmaddr": 4295065600,
+      "vmsize": 81920,
+      "offset": 98304,
+      "size": 67120
+    }
+  ],
+  "sections": [
+    {
+      "name": "__text",
+      "segment": "__TEXT",
+      "address": 4295016448,
+      "size": 6856,
+      "offset": 49152
+    },
+    {
+      "name": "__stubs",
+      "segment": "__TEXT",
+      "address": 4295023304,
+      "size": 288,
+      "offset": 56008
+    },
+    {
+      "name": "__objc_stubs",
+      "segment": "__TEXT",
+      "address": 4295023616,
+      "size": 2176,
+      "offset": 56320
+    },
+    {
+      "name": "__objc_methlist",
+      "segment": "__TEXT",
+      "address": 4295025792,
+      "size": 608,
+      "offset": 58496
+    },
+    {
+      "name": "__const",
+      "segment": "__TEXT",
+      "address": 4295026400,
+      "size": 40,
+      "offset": 59104
+    },
+    {
+      "name": "__cstring",
+      "segment": "__TEXT",
+      "address": 4295026440,
+      "size": 450,
+      "offset": 59144
+    },
+    {
+      "name": "__objc_classname",
+      "segment": "__TEXT",
+      "address": 4295026890,
+      "size": 231,
+      "offset": 59594
+    },
+    {
+      "name": "__objc_methname",
+      "segment": "__TEXT",
+      "address": 4295027121,
+      "size": 2679,
+      "offset": 59825
+    },
+    {
+      "name": "__objc_methtype",
+      "segment": "__TEXT",
+      "address": 4295029800,
+      "size": 744,
+      "offset": 62504
+    },
+    {
+      "name": "__unwind_info",
+      "segment": "__TEXT",
+      "address": 4295030544,
+      "size": 168,
+      "offset": 63248
+    },
+    {
+      "name": "__got",
+      "segment": "__DATA_CONST",
+      "address": 4295032832,
+      "size": 216,
+      "offset": 65536
+    },
+    {
+      "name": "__const",
+      "segment": "__DATA_CONST",
+      "address": 4295033048,
+      "size": 304,
+      "offset": 65752
+    },
+    {
+      "name": "__cfstring",
+      "segment": "__DATA_CONST",
+      "address": 4295033352,
+      "size": 736,
+      "offset": 66056
+    },
+    {
+      "name": "__objc_classlist",
+      "segment": "__DATA_CONST",
+      "address": 4295034088,
+      "size": 32,
+      "offset": 66792
+    },
+    {
+      "name": "__objc_protolist",
+      "segment": "__DATA_CONST",
+      "address": 4295034120,
+      "size": 24,
+      "offset": 66824
+    },
+    {
+      "name": "__objc_imageinfo",
+      "segment": "__DATA_CONST",
+      "address": 4295034144,
+      "size": 8,
+      "offset": 66848
+    },
+    {
+      "name": "__objc_const",
+      "segment": "__DATA",
+      "address": 4295049216,
+      "size": 1792,
+      "offset": 81920
+    },
+    {
+      "name": "__objc_selrefs",
+      "segment": "__DATA",
+      "address": 4295051008,
+      "size": 736,
+      "offset": 83712
+    },
+    {
+      "name": "__objc_classrefs",
+      "segment": "__DATA",
+      "address": 4295051744,
+      "size": 168,
+      "offset": 84448
+    },
+    {
+      "name": "__objc_superrefs",
+      "segment": "__DATA",
+      "address": 4295051912,
+      "size": 24,
+      "offset": 84616
+    },
+    {
+      "name": "__objc_ivar",
+      "segment": "__DATA",
+      "address": 4295051936,
+      "size": 84,
+      "offset": 84640
+    },
+    {
+      "name": "__objc_data",
+      "segment": "__DATA",
+      "address": 4295052024,
+      "size": 320,
+      "offset": 84728
+    },
+    {
+      "name": "__data",
+      "segment": "__DATA",
+      "address": 4295052344,
+      "size": 288,
+      "offset": 85048
+    }
+  ],
+  "recovered_classes": 4,
+  "errors": []
+}

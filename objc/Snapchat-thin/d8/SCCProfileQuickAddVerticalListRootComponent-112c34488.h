@@ -1,0 +1,30 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCCProfileQuickAddVerticalListRootComponent
+// Superclass: SCValdiRootView
+// Address: 0x112c34488
+
+@interface SCCProfileQuickAddVerticalListRootComponent
+
+// Property: viewModel; attributes: T@"SCCProfileQuickAddVerticalListViewModel",&,N
+
+// -[SCCProfileQuickAddVerticalListRootComponent initWithViewModel:componentContext:runtime:]
+// Type encoding: @40@0:8@16@24@32
+// Implementation: 0x10af9e898
+
+// -[SCCProfileQuickAddVerticalListRootComponent setViewModel:]
+// Type encoding: v24@0:8@16
+// Implementation: 0x10af9e8bc
+
+// -[SCCProfileQuickAddVerticalListRootComponent viewModel]
+// Type encoding: @16@0:8
+// Implementation: 0x10af9e8f4
+
+// +[SCCProfileQuickAddVerticalListRootComponent componentPath]
+// Type encoding: @16@0:8
+// Implementation: 0x10af9e88c
+
+@end

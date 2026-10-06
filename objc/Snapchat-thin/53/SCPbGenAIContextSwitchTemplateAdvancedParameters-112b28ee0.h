@@ -1,0 +1,22 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCPbGenAIContextSwitchTemplateAdvancedParameters
+// Superclass: GPBMessage
+// Address: 0x112b28ee0
+
+@interface SCPbGenAIContextSwitchTemplateAdvancedParameters
+
+// Property: denoisingStrength; attributes: Tf,D,N
+// Property: latentBlendingStart; attributes: Tf,D,N
+// Property: latentBlendingEnd; attributes: Tf,D,N
+// Property: faceRetouchingStrength; attributes: Tf,D,N
+// Property: faceEnhancementStrength; attributes: Tf,D,N
+
+// +[SCPbGenAIContextSwitchTemplateAdvancedParameters descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x106c7b914
+
+@end

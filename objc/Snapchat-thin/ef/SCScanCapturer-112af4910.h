@@ -1,0 +1,30 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCScanCapturer
+// Superclass: NSObject
+// Address: 0x112af4910
+
+@interface SCScanCapturer
+
+// Property: capturer; attributes: T@"SCScanCapturer",R,N
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCScanCapturer processImageMetadata:]
+// Type encoding: @24@0:8@?16
+// Implementation: 0x1067424d8
+
+// -[SCScanCapturer capturer]
+// Type encoding: @16@0:8
+// Implementation: 0x1067428d8
+
+// -[SCScanCapturer captureSession]
+// Type encoding: @16@0:8
+// Implementation: 0x1067428dc
+
+@end

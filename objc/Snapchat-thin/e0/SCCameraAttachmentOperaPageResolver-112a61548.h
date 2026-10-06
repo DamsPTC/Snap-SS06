@@ -1,0 +1,29 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCCameraAttachmentOperaPageResolver
+// Superclass: NSObject
+// Address: 0x112a61548
+
+@interface SCCameraAttachmentOperaPageResolver
+
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCCameraAttachmentOperaPageResolver initWithEnablePostingToSpotlight:]
+// Type encoding: @20@0:8B16
+// Implementation: 0x1009704e0
+
+// -[SCCameraAttachmentOperaPageResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]
+// Type encoding: v40@0:8@16@24@32
+// Implementation: 0x1057717b0
+
+// -[SCCameraAttachmentOperaPageResolver pagePropertiesForCameraAttachment:attachmentProperties:]
+// Type encoding: v32@0:8@16@24
+// Implementation: 0x1057718b0
+
+@end

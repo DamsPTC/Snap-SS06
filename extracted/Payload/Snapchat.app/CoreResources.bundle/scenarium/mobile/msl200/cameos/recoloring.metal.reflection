@@ -1,0 +1,45 @@
+//SG_REFLECTION_BEGIN(200)
+//attribute vec4 position 0
+//attribute vec2 texture0 3
+//attribute vec2 texture1 4
+//output vec4 sc_FragData0 0
+//sampler sampler alphaTextureSmpSC 0:16
+//sampler sampler assetTextureSmpSC 0:17
+//texture texture2D alphaTexture 0:0:0:16
+//texture texture2D assetTexture 0:1:0:17
+//ubo float sc_CameraUBO 1:1:1920  {
+//float4 sc_UniformConstants 16
+//}
+//ubo float sc_DrawCallUBO 2:3:80  {
+//int sc_ViewMask 64
+//}
+//ubo float UserUniforms 2:0:288  {
+//float3x3 assetTextureTransform 0
+//float4 assetTextureUvMinMax 48
+//float4 assetTextureBorderColor 64
+//float3x3 alphaTextureTransform 80
+//float4 alphaTextureUvMinMax 128
+//float4 alphaTextureBorderColor 144
+//int alphaChannel 160
+//float3 bodyMedian 176
+//float3 deviationRatio 192
+//float3 faceMedian 208
+//float4x4 modelView 224
+//}
+//spec_const bool SC_USE_CLAMP_TO_BORDER_alphaTexture 0 0
+//spec_const bool SC_USE_CLAMP_TO_BORDER_assetTexture 1 0
+//spec_const bool SC_USE_UV_MIN_MAX_alphaTexture 2 0
+//spec_const bool SC_USE_UV_MIN_MAX_assetTexture 3 0
+//spec_const bool SC_USE_UV_TRANSFORM_alphaTexture 4 0
+//spec_const bool SC_USE_UV_TRANSFORM_assetTexture 5 0
+//spec_const bool alphaTextureHasSwappedViews 6 0
+//spec_const bool assetTextureHasSwappedViews 7 0
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_alphaTexture 8 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_U_assetTexture 9 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_alphaTexture 10 -1
+//spec_const int SC_SOFTWARE_WRAP_MODE_V_assetTexture 11 -1
+//spec_const int alphaTextureLayout 12 0
+//spec_const int assetTextureLayout 13 0
+//spec_const int sc_ShaderCacheConstant 14 0
+//spec_const int sc_StereoRenderingMode 15 0
+//SG_REFLECTION_END

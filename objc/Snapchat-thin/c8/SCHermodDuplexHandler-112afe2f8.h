@@ -1,0 +1,45 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCHermodDuplexHandler
+// Superclass: NSObject
+// Address: 0x112afe2f8
+
+@interface SCHermodDuplexHandler
+
+// Property: hash; attributes: TQ,R
+// Property: superclass; attributes: T#,R
+// Property: description; attributes: T@"NSString",R,C
+// Property: debugDescription; attributes: T@"NSString",?,R,C
+
+// -[SCHermodDuplexHandler initWithHermodDuplexService:deviceCheckManager:attestationProvider:securityDuplexLogger:]
+// Type encoding: @48@0:8@16@24@32@40
+// Implementation: 0x1067d33cc
+
+// -[SCHermodDuplexHandler beginSubscribing]
+// Type encoding: v16@0:8
+// Implementation: 0x1067d34c8
+
+// -[SCHermodDuplexHandler endSubscribing]
+// Type encoding: v16@0:8
+// Implementation: 0x1067d3530
+
+// -[SCHermodDuplexHandler processPayload:payload:taskId:]
+// Type encoding: v36@0:8i16@20@28
+// Implementation: 0x1067d3598
+
+// -[SCHermodDuplexHandler _forceArgosTokenRefresh:taskId:useCase:]
+// Type encoding: v40@0:8@16@24q32
+// Implementation: 0x1067d36d4
+
+// -[SCHermodDuplexHandler _fetchDeviceCheckToken:useCase:]
+// Type encoding: v32@0:8@16q24
+// Implementation: 0x1067d3854
+
+// -[SCHermodDuplexHandler .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x1067d3a00
+
+@end

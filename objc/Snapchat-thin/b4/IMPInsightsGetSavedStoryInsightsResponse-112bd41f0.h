@@ -1,0 +1,20 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: IMPInsightsGetSavedStoryInsightsResponse
+// Superclass: GPBMessage
+// Address: 0x112bd41f0
+
+@interface IMPInsightsGetSavedStoryInsightsResponse
+
+// Property: nextPageId; attributes: T@"NSString",C,D,N
+// Property: savedStoryInsightsArray; attributes: T@"NSMutableArray",&,D,N
+// Property: savedStoryInsightsArray_Count; attributes: TQ,R,D,N
+
+// +[IMPInsightsGetSavedStoryInsightsResponse descriptor]
+// Type encoding: @16@0:8
+// Implementation: 0x108f2c74c
+
+@end

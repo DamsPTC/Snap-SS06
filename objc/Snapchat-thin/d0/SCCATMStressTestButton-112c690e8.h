@@ -1,0 +1,25 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCCATMStressTestButton
+// Superclass: UIButton
+// Address: 0x112c690e8
+
+@interface SCCATMStressTestButton
+
+
+// -[SCCATMStressTestButton init]
+// Type encoding: @16@0:8
+// Implementation: 0x10b08b614
+
+// -[SCCATMStressTestButton _fire]
+// Type encoding: v16@0:8
+// Implementation: 0x10b08b73c
+
+// -[SCCATMStressTestButton .cxx_destruct]
+// Type encoding: v16@0:8
+// Implementation: 0x10b08be1c
+
+@end

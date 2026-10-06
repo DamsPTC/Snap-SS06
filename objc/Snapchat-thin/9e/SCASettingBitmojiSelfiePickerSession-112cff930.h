@@ -1,0 +1,61 @@
+// Objective-C runtime metadata recovered from the supplied IPA.
+// Method bodies and original source files are NOT recovered here.
+// Selectors, type encodings and implementation addresses follow.
+#pragma once
+
+// Runtime class: SCASettingBitmojiSelfiePickerSession
+// Superclass: SCAUserTrackedEvent
+// Address: 0x112cff930
+
+@interface SCASettingBitmojiSelfiePickerSession
+
+
+// -[SCASettingBitmojiSelfiePickerSession getEventName]
+// Type encoding: @16@0:8
+// Implementation: 0x10b9f73d0
+
+// -[SCASettingBitmojiSelfiePickerSession getEventQoS]
+// Type encoding: q16@0:8
+// Implementation: 0x10b9f73dc
+
+// -[SCASettingBitmojiSelfiePickerSession getPerUserSamplingRate]
+// Type encoding: d16@0:8
+// Implementation: 0x10b9f73e4
+
+// -[SCASettingBitmojiSelfiePickerSession getPerUserSamplingRateV2]
+// Type encoding: d16@0:8
+// Implementation: 0x10b9f73f0
+
+// -[SCASettingBitmojiSelfiePickerSession setAvgSelfieLoadTimeSecs:]
+// Type encoding: v24@0:8d16
+// Implementation: 0x10b9f73fc
+
+// -[SCASettingBitmojiSelfiePickerSession setFirstSelfieLoadTimeSecs:]
+// Type encoding: v24@0:8d16
+// Implementation: 0x10b9f7450
+
+// -[SCASettingBitmojiSelfiePickerSession setMaxSelfieLoadTimeSecs:]
+// Type encoding: v24@0:8d16
+// Implementation: 0x10b9f74a4
+
+// -[SCASettingBitmojiSelfiePickerSession setSaved:]
+// Type encoding: v20@0:8B16
+// Implementation: 0x10b9f74f8
+
+// -[SCASettingBitmojiSelfiePickerSession setSelfieImageLoadedSum:]
+// Type encoding: v24@0:8q16
+// Implementation: 0x10b9f754c
+
+// -[SCASettingBitmojiSelfiePickerSession getFieldNumberToFieldDict]
+// Type encoding: @16@0:8
+// Implementation: 0x10b9f75a0
+
+// -[SCASettingBitmojiSelfiePickerSession toProtoWithAllowedFields:]
+// Type encoding: @24@0:8@16
+// Implementation: 0x10b9f75a4
+
+// -[SCASettingBitmojiSelfiePickerSession getPayloadIdentifier]
+// Type encoding: q16@0:8
+// Implementation: 0x10b9f75b0
+
+@end
