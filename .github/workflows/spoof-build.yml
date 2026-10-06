@@ -8,8 +8,15 @@ permissions:
 
 jobs:
   build:
+    name: build (${{ matrix.variant }})
     runs-on: macos-latest
     timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [none, swizzle, full]
+    env:
+      BUILD_VARIANT: ${{ matrix.variant }}
     steps:
       - name: Checkout (avec Git LFS)
         uses: actions/checkout@v4
@@ -28,11 +35,13 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import hashlib, os, pathlib
-          ipa = pathlib.Path('build/Snap-SS06-14.25.0.48-spoofed.ipa')
-          digest = hashlib.file_digest(ipa.open('rb'), 'sha256').hexdigest()
+          import json, os, pathlib
+          variant = os.environ['BUILD_VARIANT']
+          manifest = json.loads(pathlib.Path(f'build/Snap-SS06-14.25.0.48-{variant}.manifest.json').read_text())
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
-              summary.write(f"IPA : `{ipa.name}`\n\nTaille : {ipa.stat().st_size} octets\n\nSHA-256 : `{digest}`\n\n")
+              summary.write(f"Variante : **{variant}**\n\nIPA : `{manifest['ipa']}`\n\n")
+              summary.write(f"Taille : {manifest['ipa_bytes']} octets\n\nSHA-256 : `{manifest['ipa_sha256']}`\n\n")
+              summary.write(f"Dylib : `{manifest['dylib_present']}` ; interposition compilée : `{manifest['keychain_interposition_compiled']}`.\n\n")
               summary.write('Signature ad hoc : une nouvelle signature est nécessaire pour une installation iOS standard.\n')
               summary.write('Contrôles statiques réussis ; fonctionnement sur appareil non testé.\n')
           PY
@@ -40,7 +49,9 @@ jobs:
       - name: Publier l'artefact
         uses: actions/upload-artifact@v4
         with:
-          name: Snap-SS06-spoofed-ipa
-          path: build/Snap-SS06-14.25.0.48-spoofed.ipa
+          name: Snap-SS06-spoofed-ipa-${{ matrix.variant }}
+          path: |
+            build/Snap-SS06-14.25.0.48-${{ matrix.variant }}.ipa
+            build/Snap-SS06-14.25.0.48-${{ matrix.variant }}.manifest.json
           if-no-files-found: error
           compression-level: 0

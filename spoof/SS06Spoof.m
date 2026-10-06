@@ -6,10 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Security/Security.h>
 #import <objc/runtime.h>
 #import <dispatch/dispatch.h>
+
+// 0 : swizzles seuls ; 1 : swizzles et interposition Keychain (défaut).
+#ifndef SS06_ENABLE_KEYCHAIN_INTERPOSE
+#define SS06_ENABLE_KEYCHAIN_INTERPOSE 1
+#endif
+#if SS06_ENABLE_KEYCHAIN_INTERPOSE
+#import <Security/Security.h>
 #import <dlfcn.h>
+#endif
 
 #pragma mark - UUID stables
 
@@ -55,6 +62,7 @@ static void SS06SwizzleInstanceMethod(Class cls, NSString *selector, IMP imp)
 
 #pragma mark - Interposition SecItemCopyMatching
 
+#if SS06_ENABLE_KEYCHAIN_INTERPOSE
 static OSStatus (*SS06_orig_SecItemCopyMatching)(CFDictionaryRef query, CFTypeRef *result);
 
 static OSStatus SS06_SecItemCopyMatching(CFDictionaryRef query, CFTypeRef *result)
@@ -115,6 +123,7 @@ static struct SS06InterposeRecord {
         (const void *)&SS06_SecItemCopyMatching,
         (const void *)&SecItemCopyMatching,
     };
+#endif
 
 #pragma mark - Init
 
@@ -128,6 +137,10 @@ static void SS06Init(void)
         SS06SwizzleInstanceMethod(NSClassFromString(@"ASIdentifierManager"),
                                    @"advertisingIdentifier",
                                    (IMP)SS06_advertisingIdentifier);
-        NSLog(@"[SS06Spoof] initialisé — interposition déclarée, swizzles tentés");
+#if SS06_ENABLE_KEYCHAIN_INTERPOSE
+        NSLog(@"[SS06Spoof] variante full — interposition déclarée, swizzles tentés");
+#else
+        NSLog(@"[SS06Spoof] variante swizzle — swizzles tentés, sans interposition Keychain");
+#endif
     }
 }
