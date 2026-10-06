@@ -51,9 +51,18 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         grep -Fq 'clientAttestationPayload state=empty bytes=0' "$WORK/logonly-test.log"
         grep -Fq 'clientAttestationPayload state=nil bytes=0' "$WORK/logonly-test.log"
         grep -Fq 'iosDeviceCheckToken state=nonempty chars=1 utf8_bytes=2' "$WORK/logonly-test.log"
+        grep -Fq 'bytes=1421 base64=' "$WORK/logonly-test.log"
+        grep -Fq 'source=devicecheck.callback' "$WORK/logonly-test.log"
+        grep -Fq 'source=request.iosDeviceCheckToken' "$WORK/logonly-test.log"
         if grep -Fq 'SS06_PRIVATE_TEST_SENTINEL' "$WORK/logonly-test.log"; then
-            echo "Contenu de test exposé dans les logs logonly." >&2; exit 1
+            echo "Description de requête ou exception exposée dans les logs logonly." >&2; exit 1
         fi
+        # Parseurs protobuf standards, testés uniquement sur des données synthétiques.
+        python3 -m venv "$WORK/analysis-venv"
+        "$WORK/analysis-venv/bin/python" -m pip install --disable-pip-version-check \
+            -r "$ROOT/spoof/requirements-analysis.txt"
+        "$WORK/analysis-venv/bin/python" -m unittest discover \
+            -s "$ROOT/spoof/tests" -p 'test_attestation_analysis.py' -v
     fi
     if [[ "$BUILD_VARIANT" == full ]]; then
         INTERPOSE=1
@@ -226,13 +235,18 @@ manifest = {
     'logonly_timestamped_history_compiled': variant == 'logonly',
     'logonly_automatic_clipboard_compiled': variant == 'logonly',
     'logonly_clipboard_host_tests_passed': variant == 'logonly',
-    'logonly_trace_version': 'transport-v2' if variant == 'logonly' else None,
+    'logonly_trace_version': 'values-v3' if variant == 'logonly' else None,
     'logonly_transport_targets_compiled': 34 if variant == 'logonly' else 0,
     'logonly_transport_host_tests_passed': variant == 'logonly',
+    'logonly_value_dumps_compiled': variant == 'logonly',
+    'logonly_value_dump_host_tests_passed': variant == 'logonly',
+    'logonly_offline_analysis_tests_passed': variant == 'logonly',
     'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
                         'iosDeviceCheckToken.utf8_bytes', 'Janus.login_registration.rpc',
                         'SCNGrpcUnifiedGrpcService.unaryCall', 'SCDeviceCheckFeature.apple_request',
-                        'SCPreLoginAttestationImpl.wrappers', 'SCArgosImpl.generateAttestationPayload'] if variant == 'logonly' else [],
+                        'SCPreLoginAttestationImpl.wrappers', 'SCArgosImpl.generateAttestationPayload',
+                        'SCPreLoginAttestationImpl._getAttestationPayload.base64',
+                        'SCDeviceCheckFeature.callback.token', 'iosDeviceCheckToken.value'] if variant == 'logonly' else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,

@@ -93,10 +93,55 @@ static unsigned long long SS06LogOnlyNextCall(void)
     return atomic_fetch_add_explicit(&SS06LogOnlyCallSequence, 1, memory_order_relaxed) + 1;
 }
 
+static void SS06LogOnlyDumpPayload(id value, id path, int requestType, unsigned long long call)
+{
+    @try {
+        if ([value isKindOfClass:[NSData class]]) {
+            // Aucune taille fixée à 1421 : capture de tous les octets retournés.
+            NSData *data = value;
+            NSString *base64 = [data base64EncodedStringWithOptions:0];
+            SS06LogOnlyRecord(@"dump=attestation_payload call=%llu requestPath=%@ pathSource=argument requestType=%d bytes=%lu base64=%@",
+                              call, SS06LogOnlySafePath(path), requestType, (unsigned long)data.length, base64);
+        } else {
+            SS06LogOnlyRecord(@"dump=attestation_payload call=%llu requestPath=%@ requestType=%d state=%@",
+                              call, SS06LogOnlySafePath(path), requestType, value ? @"unexpected-type" : @"nil");
+        }
+    } @catch (__unused NSException *exception) {
+        SS06LogOnlyRecord(@"dump=attestation_payload call=%llu requestPath=unknown pathSource=unavailable state=capture-failed", call);
+    }
+}
+
+static void SS06LogOnlyDumpToken(id value, NSString *source, id path, unsigned long long call)
+{
+    @try {
+        if (!call) call = SS06LogOnlyNextCall();
+        NSString *requestPath = path ? SS06LogOnlySafePath(path) : @"unknown";
+        if ([value isKindOfClass:[NSString class]]) {
+            // JSON garde l'intégralité de la chaîne tout en échappant les retours
+            // à la ligne. Un dump reste une ligne complète dans l'historique.
+            NSData *encoded = [NSJSONSerialization dataWithJSONObject:@{@"token": value} options:0 error:NULL];
+            NSString *json = [[NSString alloc] initWithData:encoded encoding:NSUTF8StringEncoding];
+            if (!json) {
+                SS06LogOnlyRecord(@"dump=devicecheck_token source=%@ call=%llu requestPath=%@ state=capture-failed", source, call, requestPath);
+                return;
+            }
+            SS06LogOnlyRecord(@"dump=devicecheck_token source=%@ call=%llu requestPath=%@ pathSource=%@ chars=%lu value=%@",
+                              source, call, requestPath, path ? @"argument" : @"unavailable",
+                              (unsigned long)[(NSString *)value length], json);
+        } else {
+            SS06LogOnlyRecord(@"dump=devicecheck_token source=%@ call=%llu requestPath=%@ state=%@",
+                              source, call, requestPath, value ? @"unexpected-type" : @"nil");
+        }
+    } @catch (__unused NSException *exception) {
+        SS06LogOnlyRecord(@"dump=devicecheck_token source=%@ call=%llu requestPath=unknown pathSource=unavailable state=capture-failed", source, call);
+    }
+}
+
 static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
 {
     // Chaque block capture uniquement sa cible statique. Les arguments, options,
-    // handlers et retours originaux sont transmis sans wrapping ni copie.
+    // retours originaux sont transmis intacts. Seul le callback DeviceCheck est
+    // enveloppé afin d'observer sa chaîne asynchrone, puis appelé une fois.
     switch (target->kind) {
         case SS06LogOnlyRPC:
             return imp_implementationWithBlock(^(id receiver, id request, id options, id handler) {
@@ -127,8 +172,17 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
             return imp_implementationWithBlock(^(id receiver, id handler) {
                 unsigned long long call = SS06LogOnlyNextCall();
                 SS06LogOnlyTrace(target, call, "enter", nil, nil, NO, -1);
+                void (^originalCompletion)(id) = handler;
+                id forwarded = handler;
+                if (originalCompletion) {
+                    forwarded = [^(id token) {
+                        SS06LogOnlyDumpToken(token, @"devicecheck.callback", nil, call);
+                        // Même objet, même file, une transmission par invocation.
+                        originalCompletion(token);
+                    } copy];
+                }
                 @try {
-                    ((void (*)(id, SEL, id))target->original)(receiver, target->selector, handler);
+                    ((void (*)(id, SEL, id))target->original)(receiver, target->selector, forwarded);
                 } @catch (NSException *exception) {
                     SS06LogOnlyTrace(target, call, "throw", nil, nil, NO, -1); @throw exception;
                 }
@@ -145,6 +199,8 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, requestType); @throw exception;
                 }
                 SS06LogOnlyTrace(target, call, "return", path, result, YES, requestType);
+                if (strcmp(target->selectorName, "_getAttestationPayload:path:requestType:") == 0)
+                    SS06LogOnlyDumpPayload(result, path, requestType, call);
                 return result;
             });
         case SS06LogOnlyAttestation:

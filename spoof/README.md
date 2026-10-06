@@ -71,17 +71,19 @@ L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
 `SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
 pour la copie dans le presse-papiers.
 
-La version **`trace=transport-v2`** ajoute **34 points d'observation** aux deux
+La version **`trace=values-v3`** conserve **34 points d'observation** et les deux
 points métier ci-dessous. Leur implémentation est dans `SS06LogOnlyTransport.h`,
 avec les cibles vérifiées dans `SS06LogOnlyTargets.inc`.
+Elle ajoute les valeurs complètes aux longueurs : payload en base64 et chaînes
+DeviceCheck, dans le même historique local et dans `NSLog`.
 
 | Point ajouté | Ce qui est journalisé |
 | --- | --- |
 | 15 RPC de `UNISCJanusLoginService`, dont `appLoginWithRequest:callOptionsBuilder:handler:` et `loginWithPasswordWithRequest:callOptionsBuilder:handler:` | Entrée/sortie, classe de la requête et taille protobuf calculée par `serializedSize` |
 | 12 RPC de `UNISCJanusRegistrationService`, dont `registerWithUsernamePasswordWithRequest:callOptionsBuilder:handler:` et `registerWithPhoneEmailWithRequest:callOptionsBuilder:handler:` | Même observation, y compris étapes de vérification et challenge |
 | `SCNGrpcUnifiedGrpcService unaryCall:request:callOptionsBuilder:handler:` | `requestPath`, classe de la requête, taille des octets déjà sérialisés si `NSData` |
-| `SCDeviceCheckFeature _appleDeviceCheckTokenWithCompletionHandler:` | Entrée et retour synchrone ; bloc original transmis intact |
-| Les 4 wrappers de `SCPreLoginAttestationImpl` : login, register, commun et `_getAttestationPayload:path:requestType:` | Entrée, chemin, type interne quand disponible et taille du retour original |
+| `SCDeviceCheckFeature _appleDeviceCheckTokenWithCompletionHandler:` | Entrée/retour synchrone, puis chaîne complète reçue par le callback enveloppé |
+| Les 4 wrappers de `SCPreLoginAttestationImpl` : login, register, commun et `_getAttestationPayload:path:requestType:` | Entrée, chemin, type interne et taille du retour ; dump base64 complet uniquement au retour de `_getAttestationPayload:path:requestType:` |
 | `SCArgosImpl generateAttestationPayload:requestParameters:` | Entrée, chemin et taille du retour original de cet autre wrapper du pont natif |
 
 Les noms, encodages, adresses et extraits pseudo-C sont dans
@@ -91,27 +93,32 @@ Le sélecteur `unaryCall:…` existe aussi dans `SCPlusGrpcService`, avec un ret
 `SCNGrpcUnifiedGrpcService` et vérifie les types/arguments avant l'échange.
 Les 34 méthodes utilisent `method_exchangeImplementations`, avec une
 implémentation typée qui appelle l'original une fois avec les mêmes objets,
-options, blocs et sélecteurs. Les retours et exceptions sont conservés.
+options et sélecteurs. Les retours et exceptions sont conservés. Le callback
+DeviceCheck est enveloppé : son identité change, mais chaque invocation
+transmet le même objet au callback original sur la même file. Les autres
+handlers sont transmis intacts. La capture ajoute un coût d'exécution.
 
 Une ligne `stage=rpc.enter` prouve l'entrée dans le service généré ; une ligne
 `stage=transport.enter` prouve la remise au transport, **pas un envoi réseau
 confirmé**. `stage=attestation.return` avec `bytes>0` établit qu'un wrapper
 a rendu des octets. `stage=devicecheck.enter` établit l'appel de la méthode
-DeviceCheck ciblée, qui peut encore choisir un repli. Le diagnostic ne wrappe
-pas les callbacks et ne confirme donc pas leur succès asynchrone.
+DeviceCheck ciblée, qui peut encore choisir un repli. Une ligne
+`dump=devicecheck_token source=devicecheck.callback` établit la réception de
+la chaîne, qui peut être une sentinelle plutôt qu'un token Apple.
 
 `call=N` rapproche entrée et sortie d'un appel, pas d'une tentative complète.
 Les sorties sont `return` ou `throw` ; les appels imbriqués ont des numéros
 distincts. `requestType=-1` signifie que ce point n'a pas d'argument type.
-Les requêtes sont résumées par classe/taille : **aucun `description`, dump des
-champs ou appel supplémentaire à `data`**. Les chemins RPC sont dépouillés de
-query/fragment et les formats non reconnus sont masqués. Les identifiants,
-mots de passe, headers, paramètres d'attestation et corps ne sont pas copiés.
+Les requêtes de transport sont résumées par classe/taille : **aucun
+`description` ni appel supplémentaire à `data`**. Les chemins RPC sont
+dépouillés de query/fragment et les formats non reconnus sont masqués.
+Les captures de valeurs sont limitées aux trois points explicitement décrits
+ici ; aucun dump complet des requêtes de login ou de leurs headers n'est ajouté.
 
 | Point observé | Mesure | Transmission |
 | --- | --- | --- |
 | `-[SCLoginJanusService _appLoginClientAttestationPayload]` | Taille en octets du `NSData` retourné ; états `nil`, `empty`, `nonempty` | C'est un **getter**, pas un setter. Appel de l'implémentation originale une seule fois, avec le même receveur et le même sélecteur ; renvoie le même objet |
-| `-[SCJanusAppLoginRequest setIosDeviceCheckToken:]` | Longueur UTF-16 (`chars`) et taille UTF-8 (`utf8_bytes`) de la chaîne affectée à la requête AppLogin | Appel du setter original une seule fois avec l'objet inchangé, puis journalisation après son retour réussi |
+| `-[SCJanusAppLoginRequest setIosDeviceCheckToken:]` | Longueur UTF-16 (`chars`), taille UTF-8 (`utf8_bytes`) et valeur complète de la chaîne affectée à AppLogin | Appel du setter original une seule fois avec l'objet inchangé, puis journalisation après son retour réussi |
 
 Le second observateur voit la valeur au point d'affectation, qu'elle provienne
 d'un cache ou d'une génération récente. Il ne vide pas le cache, ne demande
@@ -143,10 +150,10 @@ ou activation.
 La copie **remplace le contenu courant du presse-papiers**, sans le lire.
 L'option `UIPasteboardOptionLocalOnly` est activée et aucune expiration n'est
 ajoutée par la dylib. Aucun bouton, alerte, geste de secousse ni modification
-des vues de l'app n'est ajouté. Seuls les états, longueurs, horodatages,
-événements d'installation, noms de classes/sélecteurs, chemins RPC filtrés
-et types internes sont copiés : ni payload, ni token, ni base64,
-ni empreinte de leur contenu. Les exceptions des méthodes originales se
+des vues de l'app n'est ajouté. L'historique contient désormais les payloads
+d'attestation en base64 et les tokens DeviceCheck complets, en plus des
+métadonnées. Il peut donc contenir des données sensibles : conserver les
+captures localement et ne pas publier l'historique brut. Les exceptions des méthodes originales se
 propagent ; une exception pendant la mesure est traitée séparément.
 Un type inattendu produit `unexpected-type`, sans conversion de son contenu.
 
@@ -165,17 +172,18 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 2. Tenter le login ou l'inscription et attendre l'erreur. Laisser l'app
    active un court instant pour que la file principale traite la copie.
 3. Ouvrir **Notes**, créer une note et **coller** le presse-papiers.
-4. Vérifier la ligne `init` avec `trace=transport-v2`, les lignes d'installation
+4. Vérifier la ligne `init` avec `trace=values-v3`, les lignes d'installation
    et `transport_observers installed=34 expected=34`, puis lire les événements
-   `rpc`, `transport`, `attestation`, `devicecheck` et les longueurs. L'heure et les anciennes lignes permettent
+   `rpc`, `transport`, `attestation`, `devicecheck`, les longueurs et les lignes
+   `dump=attestation_payload` / `dump=devicecheck_token`. L'heure et les anciennes lignes permettent
    de distinguer plusieurs tentatives au sein d'une même session.
 
 Les anciens points métier concernent **AppLogin** ; les nouveaux couvrent
 les services Janus de login **et d'inscription** et le transport unifié.
 Un autre client HTTP ou chemin de cache peut encore éviter ces méthodes.
 Si seules l'init et l'installation apparaissent, cela ne démontre pas une
-payload vide ni un rejet serveur : transmettre l'historique complet pour
-identifier les cibles installées et le dernier point atteint.
+payload vide ni un rejet serveur : examiner les lignes d'installation et
+le dernier point atteint ; masquer les dumps avant de partager un diagnostic général.
 Si rien n'est collé, revenir dans l'app pour permettre une copie en attente,
 puis réessayer Notes ; vérifier également que l'IPA installée est bien cette
 version `logonly`. Un autre contenu copié entre-temps remplace l'historique
@@ -184,10 +192,26 @@ dans le presse-papiers. `NSLog` reste disponible en complément.
 Exemples **illustratifs**, pas des mesures de cet appareil :
 
 ```text
-[SS06LogOnly] 2026-10-06T10:00:00.000Z init logonly active; trace=transport-v2; metadata only; original values preserved; clipboard=automatic
+[SS06LogOnly] 2026-10-06T10:00:00.000Z init logonly active; trace=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic
 [SS06LogOnly] 2026-10-06T10:00:04.120Z clientAttestationPayload state=nonempty bytes=256
 [SS06LogOnly] 2026-10-06T10:00:04.123Z iosDeviceCheckToken state=nonempty chars=172 utf8_bytes=172
 ```
+
+Les dumps utilisent `base64=...` sans coupure pour les octets et
+`value={"token":"..."}` pour les chaînes. Les échappements JSON préservent
+les retours à la ligne sans créer de fausses lignes de log. Le wrapper
+pré-login fournit son vrai `requestPath` ; le callback DeviceCheck et le
+setter n'en reçoivent pas, donc affichent `requestPath=unknown` et
+`pathSource=unavailable`. Aucune attribution à un RPC concurrent n'est inventée.
+`1421` n'est pas une taille imposée : tous les octets du retour sont capturés.
+
+Pour décoder et comparer les captures login/inscription, suivre
+[le rapport et les commandes d'analyse hors ligne](../docs/attestation-capture-analysis.md).
+Le script `analyze_attestation.py` utilise le parseur standard
+`protoc --decode_raw`, inventorie les champs sans schéma et compare chaque octet.
+Les captures réelles n'étant pas fournies, leur structure et leur égalité
+restent **non déterminées**. Aucun résultat synthétique n'est présenté comme
+une observation de l'appareil.
 
 `bytes > 0` établit uniquement que ce getter a retourné un `NSData` non vide
 lors de cet appel. Cela ne prouve ni le format complet, ni la validité de
@@ -203,12 +227,17 @@ et un setter résolu dynamiquement. Il contrôle aussi les horodatages,
 l'historique complet, les ajouts concurrents, la publication sur la file
 principale, la copie différée à l'activation et la reprise après exception
 de copie. Le presse-papiers est simulé : celui du runner n'est pas touché.
-Le contenu de test doit rester absent des logs et de l'historique copié.
+Les descriptions de requêtes et messages d'exception restent absents des logs.
+Les valeurs synthétiques destinées aux nouveaux dumps doivent, elles, être
+retrouvées intégralement dans le presse-papiers simulé.
 **Ces tests ne remplacent pas une exécution du client sur iPhone : la copie
 réelle via UIKit et les mesures de cet appareil restent à vérifier.**
 Le fichier `tests/logonly_transport_fixture.h` ajoute des classes simulées
 pour les 34 cibles et vérifie la transmission, les signatures, les exceptions,
-les tailles, l'absence de dump de requête et les traces copiées.
+les tailles, l'absence de dump de requête et les traces copiées. Il vérifie une
+payload synthétique de 1421 octets, les chaînes DeviceCheck nil/vides/sentinelles,
+le callback différé sur une autre file et ses exceptions. Les tests Python de
+`tests/test_attestation_analysis.py` valident les parseurs et la comparaison.
 
 ## Les trois couches
 
@@ -325,9 +354,13 @@ précisent les remplacements inclus ; `ios_runtime_tested` reste à `false`.
 `logonly_observers_compiled` et `logonly_host_tests_passed` valent `true`
 uniquement pour `logonly` après réussite de ses contrôles. `logonly_observes`
 énumère les mesures de longueur et les familles d'observateurs. `logonly_trace_version`
-vaut `transport-v2` ; `logonly_transport_targets_compiled` vaut 34 et
+vaut `values-v3` ; `logonly_transport_targets_compiled` vaut 34 et
 `logonly_transport_host_tests_passed` confirme les tests hôte des nouveaux points.
 Ces nombres décrivent la compilation, pas le nombre de hooks installés sur l'appareil.
+`logonly_value_dumps_compiled`, `logonly_value_dump_host_tests_passed` et
+`logonly_offline_analysis_tests_passed` décrivent les nouvelles captures et
+leurs tests sur fixtures synthétiques ; ils ne prouvent pas un résultat réel
+de décodage ou une égalité login/inscription.
 `logonly_timestamped_history_compiled`,
 `logonly_automatic_clipboard_compiled` et `logonly_clipboard_host_tests_passed`
 décrivent l'historique, la copie automatique et ses tests avec un presse-papiers

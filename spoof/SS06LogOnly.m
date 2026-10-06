@@ -1,4 +1,4 @@
-// Trace du flux et des longueurs, sans contenu de requête ni remplacement de valeur.
+// Diagnostic local : longueurs et captures explicites d'attestation/DeviceCheck.
 // Compilé séparément de SS06Spoof.m. UIKit sert uniquement au presse-papiers.
 #import <Foundation/Foundation.h>
 #ifndef SS06_LOGONLY_TESTING
@@ -16,8 +16,9 @@
 static IMP SS06LogOnlyOriginalPayload;
 static IMP SS06LogOnlyOriginalTokenSetter;
 static BOOL SS06LogOnlyInstallObservers(void);
+static void SS06LogOnlyDumpToken(id value, NSString *source, id path, unsigned long long call);
 
-// Historique complet du processus, sans persistance sur disque ni contenu secret.
+// Historique complet du processus ; valeurs capturées localement, sans fichier.
 // Le verrou protège aussi le formateur de date et le compteur de révision.
 static NSMutableString *SS06LogOnlyHistory;
 static NSDateFormatter *SS06LogOnlyTimestampFormatter;
@@ -176,6 +177,7 @@ static void SS06LogOnly_setIosDeviceCheckToken(id self, SEL command, id value)
     // Le même objet (y compris nil) lui est transmis, sans décodage ni copie.
     ((void (*)(id, SEL, id))SS06LogOnlyOriginalTokenSetter)(self, command, value);
     SS06LogOnlyMeasureToken(value);
+    SS06LogOnlyDumpToken(value, @"request.iosDeviceCheckToken", nil, 0);
 }
 
 static char SS06LogOnlyTypeCode(const char *encoding)
@@ -256,7 +258,7 @@ static void SS06LogOnlyStart(void)
 {
     @autoreleasepool {
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
-        SS06LogOnlyRecord(@"init logonly active; trace=transport-v2; metadata only; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic");
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation
             // du processus. Une classe toujours absente reste explicitement signalée.

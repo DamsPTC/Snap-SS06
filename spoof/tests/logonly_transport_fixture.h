@@ -7,6 +7,7 @@ static int TestTransportRequestType;
 static NSUInteger TestTransportCalls, TestDescriptionCalls, TestDataCalls, TestSizeCalls;
 static BOOL TestTransportThrows, TestSizeThrows;
 static NSException *TestTransportException;
+static void (^TestDeviceCompletion)(id);
 
 @interface GPBMessage : NSObject
 - (NSUInteger)serializedSize;
@@ -36,7 +37,7 @@ static void TestRPCOriginal(id receiver, SEL selector, id a, id b, id c)
 static id TestUnaryOriginal(id receiver, SEL selector, id a, id b, id c, id d)
 { TestTransportOriginal(receiver, selector, a, b, c, d); return TestTransportResult; }
 static void TestDeviceOriginal(id receiver, SEL selector, id a)
-{ TestTransportOriginal(receiver, selector, a, nil, nil, nil); }
+{ TestTransportOriginal(receiver, selector, a, nil, nil, nil); TestDeviceCompletion = [a copy]; }
 static id TestAttestationOriginal(id receiver, SEL selector, id a, id b)
 { TestTransportOriginal(receiver, selector, a, b, nil, nil); return TestTransportResult; }
 static id TestTypedAttestationOriginal(id receiver, SEL selector, id a, id b, int type)
@@ -89,7 +90,7 @@ static int TestTransportObservers(void)
     NSData *wire = [@"SS06_PRIVATE_TEST_SENTINEL" dataUsingEncoding:NSUTF8StringEncoding];
     id options = [NSMutableDictionary new];
     __block NSUInteger callbacks = 0;
-    id handler = ^{ ++callbacks; };
+    id handler = ^(__unused id value) { ++callbacks; };
     NSString *path = @"/snapchat.janus.api.LoginService/AppLogin?password=SS06_PRIVATE_TEST_SENTINEL#SS06_PRIVATE_TEST_SENTINEL";
     for (NSUInteger index = 0; index < SS06LogOnlyTargetCount; ++index) {
         SS06LogOnlyTarget *target = &SS06LogOnlyTargets[index];
@@ -104,7 +105,9 @@ static int TestTransportObservers(void)
         id result = TestInvokeTransport(target, receiver, a, b, c, d);
         CHECK(TestTransportCalls == before + 1);
         CHECK(TestTransportReceiver == receiver && TestTransportCommand == target->selector);
-        CHECK(TestTransportArgs[0] == a && TestTransportArgs[1] == b);
+        if (target->kind == SS06LogOnlyDeviceCheck) CHECK(TestTransportArgs[0] != a && TestTransportArgs[0] != nil);
+        else CHECK(TestTransportArgs[0] == a);
+        CHECK(TestTransportArgs[1] == b);
         CHECK(TestTransportArgs[2] == c && TestTransportArgs[3] == d);
         CHECK(result == (target->signature[0] == '@' ? wire : nil));
         if (target->kind == SS06LogOnlyAttestationTyped) CHECK(TestTransportRequestType == 107);
@@ -156,6 +159,56 @@ static int TestTransportObservers(void)
     CHECK([SS06LogOnlySafePath(@"https://example.invalid/private") isEqualToString:@"redacted"]);
     CHECK([SS06LogOnlySafePath(@42) isEqualToString:@"unknown-type"]);
     CHECK([SS06LogOnlySafePath(nil) isEqualToString:@"nil"]);
-    puts("PASS: 34 transport targets, original arguments/handlers/returns/exceptions, signature guards, no descriptions/data/content, clipboard trace");
+    puts("PASS: 34 transport targets, original arguments/returns/exceptions, signature guards, no request descriptions/data, clipboard trace");
+
+    SS06LogOnlyTarget *native = NULL, *device = NULL;
+    for (NSUInteger index = 0; index < SS06LogOnlyTargetCount; ++index) {
+        if (strcmp(SS06LogOnlyTargets[index].selectorName, "_getAttestationPayload:path:requestType:") == 0) native = &SS06LogOnlyTargets[index];
+        if (SS06LogOnlyTargets[index].kind == SS06LogOnlyDeviceCheck) device = &SS06LogOnlyTargets[index];
+    }
+    CHECK(native && device);
+    NSMutableData *sample = [NSMutableData dataWithLength:1421];
+    for (NSUInteger i = 0; i < sample.length; ++i) ((uint8_t *)sample.mutableBytes)[i] = (uint8_t)i;
+    TestTransportResult = sample;
+    CHECK(TestInvokeTransport(native, [objc_getClass(native->className) new], nil,
+          @"/snapchat.janus.api.LoginService/AppLogin", nil, nil) == sample);
+    CHECK(TestDrainMainQueue());
+    NSString *base64 = [sample base64EncodedStringWithOptions:0];
+    CHECK([TestClipboardSnapshots.lastObject containsString:[@"bytes=1421 base64=" stringByAppendingString:base64]]);
+    CHECK([TestClipboardSnapshots.lastObject containsString:@"source=request.iosDeviceCheckToken"]);
+    CHECK([TestClipboardSnapshots.lastObject containsString:@"SS06_SYNTHETIC_DEVICE_TOKEN"]);
+
+    // Le callback peut arriver après le retour de la méthode, sur une autre file.
+    __block NSUInteger valueCallbacks = 0;
+    __block id lastValue;
+    __block BOOL callbackOnMain = YES;
+    id valueHandler = ^(id value) { ++valueCallbacks; lastValue = value; callbackOnMain = [NSThread isMainThread]; };
+    TestInvokeTransport(device, [objc_getClass(device->className) new], valueHandler, nil, nil, nil);
+    CHECK(valueCallbacks == 0 && TestDeviceCompletion != nil);
+    NSMutableString *synthetic = [@"SS06_SYNTHETIC_TOKEN\n\"%@" mutableCopy];
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), ^{ TestDeviceCompletion(synthetic); });
+    CHECK(dispatch_group_wait(group, dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC)) == 0);
+    CHECK(valueCallbacks == 1 && lastValue == synthetic && !callbackOnMain);
+    TestDeviceCompletion(nil);
+    CHECK(valueCallbacks == 2 && lastValue == nil);
+    TestDeviceCompletion(@"");
+    CHECK(valueCallbacks == 3 && [lastValue isEqual:@""]);
+    TestDeviceCompletion(@"DEVICE_CHECK_NOT_SUPPORTED_GTE_IOS11");
+    CHECK(valueCallbacks == 4 && [lastValue isEqual:@"DEVICE_CHECK_NOT_SUPPORTED_GTE_IOS11"]);
+    CHECK(TestDrainMainQueue());
+    NSData *json = [NSJSONSerialization dataWithJSONObject:@{@"token": synthetic} options:0 error:NULL];
+    CHECK([TestClipboardSnapshots.lastObject containsString:[[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding]]);
+    CHECK([TestClipboardSnapshots.lastObject containsString:@"source=devicecheck.callback"]);
+    CHECK([TestClipboardSnapshots.lastObject containsString:@"requestPath=unknown pathSource=unavailable"]);
+
+    id throwingHandler = ^(__unused id value) { @throw TestTransportException; };
+    TestInvokeTransport(device, [objc_getClass(device->className) new], throwingHandler, nil, nil, nil);
+    BOOL callbackException = NO;
+    @try { TestDeviceCompletion(synthetic); }
+    @catch (NSException *exception) { callbackException = exception == TestTransportException; }
+    CHECK(callbackException);
+    TestDeviceCompletion = nil;
+    puts("PASS: complete 1421-byte base64 capture, setter value, asynchronous DeviceCheck values, object/queue/callback exceptions preserved");
     return 0;
 }

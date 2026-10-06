@@ -87,17 +87,22 @@ return native_104b30cdc([r data]);
 ```
 
 Le diagnostic note l'entrée et la taille du retour original de ces wrappers.
+Depuis `trace=values-v3`, il capture aussi tous les octets retournés par
+`_getAttestationPayload:path:requestType:` en base64, avec le chemin argument.
 `requestType` dans le log est **l'argument entier du wrapper**, pas forcément
 la valeur protobuf normalisée. `-1` signifie que ce point ne fournit pas cet
 argument. Le pont C/C++ n'est pas interposé ; les wrappers documentés sont
 observés via `method_exchangeImplementations`.
 
 `SCDeviceCheckFeature _appleDeviceCheckTokenWithCompletionHandler:` est observée
-à l'entrée et au retour synchrone. L'entrée prouve l'appel de cette méthode,
-qui peut ensuite choisir sa branche d'indisponibilité. Elle ne prouve pas qu'Apple
-a effectivement été appelé, ni qu'un callback asynchrone a réussi. Le bloc est
-transmis intact et n'est ni exécuté ni remplacé par le diagnostic. Un token servi
-par un autre chemin/cache peut éviter cette méthode.
+à l'entrée et au retour synchrone. Depuis `values-v3`, son callback est enveloppé
+pour capturer la chaîne reçue, puis appeler le callback original avec le même
+objet, sur la même file. L'entrée seule ne prouve ni l'appel à Apple ni une
+réussite asynchrone. Le callback peut transmettre une sentinelle. Un token servi
+par un autre chemin/cache peut éviter cette méthode. Le sélecteur retourne
+`void` ; la chaîne est l'unique argument du callback, pas son retour.
+Les preuves et le protocole d'analyse sont dans
+[attestation-capture-analysis.md](attestation-capture-analysis.md).
 
 ## Cibles exactes des 34 nouveaux observateurs
 
@@ -147,19 +152,21 @@ Chaque appel reçoit un identifiant `call=N` et des événements `enter`, `retur
 ou `throw`. Un identifiant associe l'entrée à la sortie **d'un seul appel** ;
 ce n'est pas un identifiant de tentative de login et les appels imbriqués ont
 leurs propres numéros. Une exception originale est relancée intacte, sans
-journaliser son message. Les handlers, options, requêtes et retours conservent
-leur identité, et l'implémentation originale est appelée exactement une fois.
+journaliser son message. Les options, requêtes et retours conservent leur
+identité, et l'implémentation originale est appelée exactement une fois.
+Seul le handler DeviceCheck est enveloppé dans `values-v3` : il reçoit le même
+objet sur la même file, une fois par invocation, avec les exceptions conservées.
 
 L'absence d'un événement laisse plusieurs possibilités : méthode non empruntée,
 cible absente/incompatible, échec avant ce point ou arrêt du processus avant
-la copie. Vérifier d'abord `trace=transport-v2`, les lignes d'installation et
+la copie. Vérifier d'abord `trace=values-v3`, les lignes d'installation et
 `transport_observers installed=34 expected=34`. Les cibles manquantes sont
 retentées sur la file principale puis à l'activation de l'app.
 
 Les tests hôte emploient des classes simulées pour les 34 signatures. Ils
-vérifient les objets, sélecteurs, blocs et retours inchangés, les exceptions,
+vérifient les objets, sélecteurs et retours inchangés, la transmission du
+callback DeviceCheck enveloppé, les autres blocs inchangés, les exceptions,
 les nil, le rejet de la signature void de l'autre classe, l'absence d'appel à
 `description`/`data` par le diagnostic, la suppression de query/fragment et la
 présence de ces événements dans le presse-papiers simulé. Ils ne valident ni
 le chargement réel sur iOS ni la décision serveur ; `ios_runtime_tested=false`.
-
