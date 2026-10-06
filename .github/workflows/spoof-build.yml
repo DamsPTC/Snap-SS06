@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       BUILD_VARIANT:
-        description: Variante à construire (all = les sept variantes)
+        description: Variante à construire (all = les huit variantes)
         required: true
         default: all
         type: choice
@@ -17,6 +17,7 @@ on:
           - noattest
           - logonly
           - selfread
+          - selfblock
 
 permissions:
   contents: read
@@ -29,7 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly","selfread"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
+        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly","selfread","selfblock"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
     env:
       BUILD_VARIANT: ${{ matrix.variant }}
     steps:
@@ -44,7 +45,7 @@ jobs:
           sparse-checkout-cone-mode: true
 
       - name: Python pour l'analyse locale logonly
-        if: ${{ matrix.variant == 'logonly' || matrix.variant == 'selfread' }}
+        if: ${{ matrix.variant == 'logonly' || matrix.variant == 'selfread' || matrix.variant == 'selfblock' }}
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -69,6 +70,7 @@ jobs:
               summary.write(f"Trace : `{manifest['logonly_trace_version']}` ; cibles transport compilées : `{manifest['logonly_transport_targets_compiled']}` ; tests des observateurs transport : `{manifest['logonly_transport_host_tests_passed']}`.\n\n")
               summary.write(f"Dumps locaux : `{manifest['logonly_value_dumps_compiled']}` ; tests des valeurs : `{manifest['logonly_value_dump_host_tests_passed']}` ; tests protobuf/comparaison : `{manifest['logonly_offline_analysis_tests_passed']}`.\n\n")
               summary.write(f"Interposition POSIX selfread : `{manifest['selfread_posix_interposition_compiled']}` ; fonctions : `{manifest['selfread_interposed_functions']}` ; tests dyld macOS : `{manifest['selfread_dyld_host_tests_passed']}`.\n\n")
+              summary.write(f"Échec mmap selfblock : `{manifest['selfblock_mmap_failure_compiled']}`; tests fenêtre d'attestation :`{manifest['selfblock_attestation_window_host_tests_passed']}`.\n\n")
               summary.write('Repères du principal après re-signature (offsets en décimal) :\n\n```json\n' + json.dumps(manifest['repacked_main_macho_landmarks'], indent=2) + '\n```\n\n')
               summary.write('Signature ad hoc : une nouvelle signature est nécessaire pour une installation iOS standard.\n')
               summary.write('Contrôles statiques réussis ; fonctionnement sur appareil non testé.\n')
