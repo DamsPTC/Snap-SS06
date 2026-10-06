@@ -1,0 +1,126 @@
+name: Décompiler les fonctions en pseudo-C
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/decompile.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: decompile-14.25.0.48
+  cancel-in-progress: false
+
+env:
+  IPA_URL: https://github.com/DamsPTC/sandbox-fictif-snapchat/releases/download/nouvelle-version-14.25.0.48/com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa
+  GHIDRA_URL: https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip
+  GHIDRA_HEADLESS_MAXMEM: 4G
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Installer Ghidra officiel et préparer un petit binaire
+        shell: bash
+        run: |
+          mkdir -p .work
+          curl --fail --location --retry 3 "$GHIDRA_URL" --output .work/ghidra.zip
+          printf '%s\n' 'ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db  .work/ghidra.zip' | sha256sum --check -
+          unzip -q .work/ghidra.zip -d .work/tool
+          curl --fail --location --retry 3 "$IPA_URL" --output .work/original.ipa
+          python3 scripts/prepare_decompilation.py .work/original.ipa .work/inputs --task smoke
+      - name: Valider l’exportateur sur une extension
+        shell: bash
+        run: |
+          python3 scripts/run_decompilation.py smoke .work/tool/ghidra_12.1.4_PUBLIC .work/inputs .work/output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-diagnostics
+          path: .work/output
+          retention-days: 1
+
+  decompile:
+    needs: smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      max-parallel: 17
+      matrix:
+        task: [extensions, main-0, main-1, main-2, main-3, main-4, main-5, main-6, main-7, main-8, main-9, main-10, main-11, main-12, main-13, main-14, main-15]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Installer les outils et préparer le lot
+        shell: bash
+        env:
+          TASK: ${{ matrix.task }}
+        run: |
+          mkdir -p .work
+          curl --fail --location --retry 3 "$GHIDRA_URL" --output .work/ghidra.zip
+          printf '%s\n' 'ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db  .work/ghidra.zip' | sha256sum --check -
+          unzip -q .work/ghidra.zip -d .work/tool
+          curl --fail --location --retry 3 "$IPA_URL" --output .work/original.ipa
+          python3 scripts/prepare_decompilation.py .work/original.ipa .work/inputs --task "$TASK"
+      - name: Décompiler le lot
+        shell: bash
+        env:
+          TASK: ${{ matrix.task }}
+        run: |
+          python3 scripts/run_decompilation.py "$TASK" .work/tool/ghidra_12.1.4_PUBLIC .work/inputs .work/output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pseudocode-${{ matrix.task }}
+          path: .work/output
+          retention-days: 1
+          compression-level: 6
+
+  publish:
+    needs: decompile
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            docs
+            analysis/decompilation
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: pseudocode-*
+          path: .work/results
+          merge-multiple: true
+      - name: Vérifier la couverture et publier le code
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp -a .work/results/decompiled .
+          python3 scripts/finalize_decompilation.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse decompiled analysis/decompilation README.md docs/release-notes.md
+          git commit -m 'Publish Ghidra pseudocode and complete per-function coverage reports'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          gh release edit v14.25.0.48 --notes-file docs/release-notes.md
