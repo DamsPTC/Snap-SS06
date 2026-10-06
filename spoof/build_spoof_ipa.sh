@@ -85,7 +85,7 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
             -DSS06_SELFBLOCK_HOST="$SELFREAD_BLOCK" \
             -framework Foundation "$ROOT/spoof/tests/selfread_host.m" \
-            -L"$WORK" -lSS06SelfRead -Wl,-rpath,"$WORK" -o "$WORK/selfread-host-test"
+            -L"$WORK" -lSS06SelfReadTest -Wl,-rpath,"$WORK" -o "$WORK/selfread-host-test"
         if ! "$WORK/selfread-host-test" 2> "$WORK/selfread-test.log"; then
             cat "$WORK/selfread-test.log" >&2; exit 1
         fi
