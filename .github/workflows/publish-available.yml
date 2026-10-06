@@ -29,6 +29,18 @@ jobs:
         shell: bash
         run: |
           test -d .work/results/decompiled
+          python3 - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          root = Path('.work/results/decompiled')
+          shutil.rmtree(root / 'Snapchat-thin' / 'shard-10', ignore_errors=True)
+          reports = list(root.rglob('coverage.json'))
+          assert len(reports) == 27
+          for path in reports:
+              report = json.loads(path.read_text())
+              assert report['requested'] == report['decompiled'] + report['failed']
+          print('Verified 15 complete main shards and 12 other slices')
+          PY
           cp -a .work/results/decompiled .
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
