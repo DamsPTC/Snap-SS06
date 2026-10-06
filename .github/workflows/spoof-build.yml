@@ -1,0 +1,46 @@
+name: Build spoofed IPA
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout (avec Git LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          persist-credentials: false
+          sparse-checkout: |
+            spoof
+            extracted
+          sparse-checkout-cone-mode: true
+
+      - name: Assembler l'IPA
+        run: bash spoof/build_spoof_ipa.sh
+
+      - name: Résumer le résultat
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, pathlib
+          ipa = pathlib.Path('build/Snap-SS06-14.25.0.48-spoofed.ipa')
+          digest = hashlib.file_digest(ipa.open('rb'), 'sha256').hexdigest()
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f"IPA : `{ipa.name}`\n\nTaille : {ipa.stat().st_size} octets\n\nSHA-256 : `{digest}`\n\n")
+              summary.write('Signature ad hoc : une nouvelle signature est nécessaire pour une installation iOS standard.\n')
+              summary.write('Contrôles statiques réussis ; fonctionnement sur appareil non testé.\n')
+          PY
+
+      - name: Publier l'artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa
+          path: build/Snap-SS06-14.25.0.48-spoofed.ipa
+          if-no-files-found: error
+          compression-level: 0
