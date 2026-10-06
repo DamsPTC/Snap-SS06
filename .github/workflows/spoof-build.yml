@@ -2,6 +2,20 @@ name: Build spoofed IPA
 
 on:
   workflow_dispatch:
+    inputs:
+      BUILD_VARIANT:
+        description: Variante à construire (all = les six variantes)
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - none
+          - swizzle
+          - full
+          - dccheckoff
+          - noattest
+          - logonly
 
 permissions:
   contents: read
@@ -14,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: [none, swizzle, full, dccheckoff, noattest]
+        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
     env:
       BUILD_VARIANT: ${{ matrix.variant }}
     steps:
@@ -43,6 +57,7 @@ jobs:
               summary.write(f"Taille : {manifest['ipa_bytes']} octets\n\nSHA-256 : `{manifest['ipa_sha256']}`\n\n")
               summary.write(f"Dylib : `{manifest['dylib_present']}` ; interposition compilée : `{manifest['keychain_interposition_compiled']}`.\n\n")
               summary.write(f"Swizzles compilés : IDFV/IDFA `{manifest['idfv_idfa_swizzles_compiled']}` ; DeviceCheck NO `{manifest['devicecheck_is_supported_no_compiled']}` ; attestation login nil `{manifest['login_attestation_nil_compiled']}`.\n\n")
+              summary.write(f"Observateurs logonly : `{manifest['logonly_observers_compiled']}` ; tests de transmission sur hôte macOS : `{manifest['logonly_host_tests_passed']}`.\n\n")
               summary.write('Signature ad hoc : une nouvelle signature est nécessaire pour une installation iOS standard.\n')
               summary.write('Contrôles statiques réussis ; fonctionnement sur appareil non testé.\n')
           PY
@@ -56,3 +71,96 @@ jobs:
             build/Snap-SS06-14.25.0.48-${{ matrix.variant }}.manifest.json
           if-no-files-found: error
           compression-level: 0
+
+  publish-logonly:
+    name: Publier l'IPA logonly en release
+    needs: build
+    if: ${{ inputs.BUILD_VARIANT == 'all' || inputs.BUILD_VARIANT == 'logonly' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Télécharger l'artefact logonly de cette exécution
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa-logonly
+          path: release
+
+      - name: Vérifier la provenance et préparer les notes
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib
+          directory = pathlib.Path('release')
+          ipa = directory / 'Snap-SS06-14.25.0.48-logonly.ipa'
+          manifest_path = directory / 'Snap-SS06-14.25.0.48-logonly.manifest.json'
+          manifest = json.loads(manifest_path.read_text())
+          def digest(path):
+              with path.open('rb') as stream:
+                  return hashlib.file_digest(stream, 'sha256').hexdigest()
+          assert manifest['variant'] == 'logonly' and manifest['ipa'] == ipa.name
+          assert manifest['github_sha'] == os.environ['GITHUB_SHA']
+          assert str(manifest['github_run_id']) == os.environ['GITHUB_RUN_ID']
+          assert manifest['ipa_bytes'] == ipa.stat().st_size
+          assert manifest['ipa_sha256'] == digest(ipa)
+          assert manifest['dylib_present'] and manifest['logonly_observers_compiled']
+          assert manifest['logonly_host_tests_passed'] and manifest['static_checks_passed']
+          for key in ('keychain_interposition_compiled', 'idfv_idfa_swizzles_compiled',
+                      'devicecheck_is_supported_no_compiled', 'login_attestation_nil_compiled'):
+              assert manifest[key] is False, key
+          assets = [{'name': p.name, 'size': p.stat().st_size, 'digest': 'sha256:' + digest(p)}
+                    for p in (ipa, manifest_path)]
+          (directory / 'verified-assets.json').write_text(json.dumps(assets))
+          notes = '\n'.join([
+              'Variante de diagnostic **logonly**, sans remplacement des valeurs.',
+              '',
+              'Journalise uniquement les longueurs du retour clientAttestationPayload et de la chaîne iosDeviceCheckToken affectée à AppLogin.',
+              'Les deux observateurs appellent leurs méthodes originales une seule fois et transmettent les mêmes objets.',
+              'Aucun contenu de payload ou de token n’est journalisé.',
+              '',
+              f"Commit : `{manifest['github_sha']}`.",
+              f"Build : https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",
+              f"IPA : {manifest['ipa_bytes']} octets ; SHA-256 `{manifest['ipa_sha256']}`.",
+              '',
+              'Tests hôte macOS et contrôles statiques réussis. Aucun test du client sur iOS : la présence et les longueurs réelles seront visibles uniquement après exécution sur appareil.',
+              'Signature ad hoc : nouvelle signature/provisionnement nécessaires pour une installation iOS standard.',
+              '',
+              f"[Lecture des logs et limites](https://github.com/{os.environ['GITHUB_REPOSITORY']}/blob/{manifest['github_sha']}/spoof/README.md#observer-les-longueurs-avec-logonly)",
+          ])
+          (directory / 'notes.md').write_text(notes + '\n')
+          PY
+
+      - name: Publier les fichiers IPA et manifeste vérifiés
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="v14.25.0.48-logonly-${GITHUB_RUN_ID}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Cette release existe déjà ; aucun fichier ne sera remplacé." >&2
+            exit 1
+          fi
+          gh release create "$tag" \
+            release/Snap-SS06-14.25.0.48-logonly.ipa \
+            release/Snap-SS06-14.25.0.48-logonly.manifest.json \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --draft --prerelease --title "Snap SS06 14.25.0.48 — logonly (${GITHUB_RUN_ID})" \
+            --notes-file release/notes.md
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq ".[] | select(.tag_name == \"$tag\")" > release/published.json
+          python3 - <<'PY'
+          import json, os, pathlib
+          release = json.loads(pathlib.Path('release/published.json').read_text())
+          expected = json.loads(pathlib.Path('release/verified-assets.json').read_text())
+          assert len(release['assets']) == len(expected)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              for item in expected:
+                  asset, = [a for a in release['assets'] if a['name'] == item['name']]
+                  assert asset['size'] == item['size'] and asset['digest'] == item['digest']
+                  assert asset['state'] == 'uploaded'
+                  summary.write(f"[{asset['name']}]({asset['browser_download_url']})\n\n")
+          PY
+          gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false

@@ -4,8 +4,8 @@ set -euo pipefail
 
 BUILD_VARIANT="${BUILD_VARIANT:-full}"
 case "$BUILD_VARIANT" in
-    none|swizzle|full|dccheckoff|noattest) ;;
-    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff ou noattest)." >&2; exit 2 ;;
+    none|swizzle|full|dccheckoff|noattest|logonly) ;;
+    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff, noattest ou logonly)." >&2; exit 2 ;;
 esac
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/build"
@@ -28,13 +28,32 @@ trap 'rm -rf "$WORK"' EXIT
 rm -f "$OUT/$IPA_NAME" "$MANIFEST"
 echo "BUILD_VARIANT=$BUILD_VARIANT"
 
-# 1) dylib ARM64 iPhoneOS. UIKit et AdSupport sont chargés comme dépendances.
+# 1) dylib ARM64 iPhoneOS. logonly est une unité séparée, Foundation uniquement.
 if [[ "$BUILD_VARIANT" != none ]]; then
     SDK="$(xcrun --sdk iphoneos --show-sdk-path)"
     INTERPOSE=0
     DISABLE_DEVICECHECK=0
     DISABLE_LOGIN_ATTESTATION=0
+    DYLIB_SOURCE="$ROOT/spoof/SS06Spoof.m"
     FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit -framework AdSupport)
+    if [[ "$BUILD_VARIANT" == logonly ]]; then
+        DYLIB_SOURCE="$ROOT/spoof/SS06LogOnly.m"
+        FRAMEWORK_FLAGS=(-framework Foundation)
+        # Vérifie sur le runtime macOS les appels originaux, _cmd, objets,
+        # exceptions et la résolution dynamique utilisée par les setters GPB.
+        xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -framework Foundation "$ROOT/spoof/tests/logonly_passthrough.m" \
+            -o "$WORK/logonly-passthrough-test"
+        "$WORK/logonly-passthrough-test" 2> "$WORK/logonly-test.log"
+        cat "$WORK/logonly-test.log"
+        grep -Fq 'clientAttestationPayload state=nonempty bytes=26' "$WORK/logonly-test.log"
+        grep -Fq 'clientAttestationPayload state=empty bytes=0' "$WORK/logonly-test.log"
+        grep -Fq 'clientAttestationPayload state=nil bytes=0' "$WORK/logonly-test.log"
+        grep -Fq 'iosDeviceCheckToken state=nonempty chars=1 utf8_bytes=2' "$WORK/logonly-test.log"
+        if grep -Fq 'SS06_PRIVATE_TEST_SENTINEL' "$WORK/logonly-test.log"; then
+            echo "Contenu de test exposé dans les logs logonly." >&2; exit 1
+        fi
+    fi
     if [[ "$BUILD_VARIANT" == full ]]; then
         INTERPOSE=1
         FRAMEWORK_FLAGS+=(-framework Security)
@@ -53,7 +72,7 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         -DSS06_DISABLE_LOGIN_ATTESTATION="$DISABLE_LOGIN_ATTESTATION" \
         "${FRAMEWORK_FLAGS[@]}" -lobjc \
         -Wl,-install_name,@executable_path/SS06Spoof.dylib \
-        "$ROOT/spoof/SS06Spoof.m" -o "$WORK/SS06Spoof.dylib"
+        "$DYLIB_SOURCE" -o "$WORK/SS06Spoof.dylib"
     codesign --force --sign - --timestamp=none "$WORK/SS06Spoof.dylib"
 
 # 2) insert_dylib, source fixé à une révision connue ; compilation hôte macOS.
@@ -133,13 +152,14 @@ else
         echo "Interposition Keychain inattendue dans $BUILD_VARIANT." >&2; exit 1
     fi
     # Confirme l'inclusion/exclusion des fonctions de remplacement compilées.
-    for hook in SS06_identifierForVendor SS06_advertisingIdentifier; do
-        grep -Eq "[[:space:]]_${hook}$" "$WORK/dylib-symbols.txt"
-    done
-    for hook in SS06_deviceCheckIsSupported SS06_appLoginClientAttestationPayload; do
+    for hook in SS06_identifierForVendor SS06_advertisingIdentifier \
+                SS06_deviceCheckIsSupported SS06_appLoginClientAttestationPayload \
+                SS06LogOnly_appLoginClientAttestationPayload SS06LogOnly_setIosDeviceCheckToken; do
         expected=0
-        if [[ "$hook" == SS06_deviceCheckIsSupported && "$DISABLE_DEVICECHECK" == 1 ]] || \
-           [[ "$hook" == SS06_appLoginClientAttestationPayload && "$DISABLE_LOGIN_ATTESTATION" == 1 ]]; then
+        if [[ "$BUILD_VARIANT" != logonly && ( "$hook" == SS06_identifierForVendor || "$hook" == SS06_advertisingIdentifier ) ]] || \
+           [[ "$hook" == SS06_deviceCheckIsSupported && "$DISABLE_DEVICECHECK" == 1 ]] || \
+           [[ "$hook" == SS06_appLoginClientAttestationPayload && "$DISABLE_LOGIN_ATTESTATION" == 1 ]] || \
+           [[ "$BUILD_VARIANT" == logonly && "$hook" == SS06LogOnly_* ]]; then
             expected=1
         fi
         present=0
@@ -151,6 +171,13 @@ else
             exit 1
         fi
     done
+    if [[ "$BUILD_VARIANT" == logonly ]]; then
+        grep -Fq '_method_exchangeImplementations' "$WORK/dylib-imports.txt"
+        if grep -Eq 'SS06StoredUUID|NSUserDefaults|NSUUID' "$WORK/dylib-symbols.txt" || \
+           grep -Eq '_SecItem|_dlsym' "$WORK/dylib-imports.txt"; then
+            echo "Code de remplacement inattendu dans logonly." >&2; exit 1
+        fi
+    fi
     if [[ "$DISABLE_DEVICECHECK" == 1 ]]; then
         otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
         grep -Fq 'DeviceCheck.framework/DeviceCheck' "$WORK/dylib-dependencies.txt"
@@ -184,9 +211,13 @@ manifest = {
     'ipa_sha256': sha256(ipa), 'source_main_sha256': sha256(source),
     'repacked_main_sha256': sha256(app / 'Snapchat'),
     'dylib_present': dylib.exists(), 'keychain_interposition_compiled': variant == 'full',
-    'idfv_idfa_swizzles_compiled': variant != 'none',
+    'idfv_idfa_swizzles_compiled': variant not in ('none', 'logonly'),
     'devicecheck_is_supported_no_compiled': variant in ('dccheckoff', 'noattest'),
     'login_attestation_nil_compiled': variant == 'noattest',
+    'logonly_observers_compiled': variant == 'logonly',
+    'logonly_host_tests_passed': variant == 'logonly',
+    'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
+                        'iosDeviceCheckToken.utf8_bytes'] if variant == 'logonly' else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,

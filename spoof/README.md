@@ -12,7 +12,7 @@ sa section 4, détaille le chemin DeviceCheck dans le principal et les champs pr
 
 ## Variantes
 
-`BUILD_VARIANT` accepte `none`, `swizzle`, `full`, `dccheckoff` ou `noattest` ; sa valeur par défaut
+`BUILD_VARIANT` accepte `none`, `swizzle`, `full`, `dccheckoff`, `noattest` ou `logonly` ; sa valeur par défaut
 est `full`. Une autre valeur arrête le script avant toute modification.
 
 | Variante | Dylib injectée | IDFV / IDFA | Interposition Keychain | `DCDevice.isSupported` | Getter d'attestation pré-login |
@@ -22,11 +22,13 @@ est `full`. Une autre valeur arrête le script avant toute modification.
 | `full` | Oui | UUID stables dans `NSUserDefaults` | Filtre `SecItemCopyMatching` actuel | D'origine | D'origine |
 | `dccheckoff` | Oui | UUID stables dans `NSUserDefaults` | Code exclu | Retourne `NO` | D'origine |
 | `noattest` | Oui | UUID stables dans `NSUserDefaults` | Code exclu | Retourne `NO` | Retourne `nil` |
+| `logonly` | Oui, source séparée | D'origine | Code exclu | D'origine | Appel original unique, retour intact et longueur journalisée |
 
 La macro `SS06_ENABLE_KEYCHAIN_INTERPOSE=0` exclut toute la couche Keychain
 de `swizzle`, `dccheckoff` et `noattest`, y compris l'enregistrement `__interpose` et la résolution par
 `dlsym`. `full` la compile avec la valeur `1`. `none` ne compile ni la dylib
-ni l'outil d'injection. Les cinq variantes conservent les attributs matériels.
+ni l'outil d'injection. `logonly` compile uniquement `SS06LogOnly.m`, sans
+compiler `SS06Spoof.m`. Les six variantes conservent les attributs matériels.
 
 `SS06_DISABLE_DEVICECHECK=1` compile le remplacement de la méthode d'instance
 `-[DCDevice isSupported]` dans `dccheckoff` et `noattest` ; DeviceCheck est alors
@@ -57,6 +59,69 @@ comme interceptée. Ces indications ne constituent pas un test du résultat serv
 Chaque variante retire les mêmes dossiers `PlugIns/`, `Extensions/`, `Watch/`
 et reçoit la même signature ad hoc du principal. **`none` est donc un témoin
 de repack sans injection, pas une copie identique de l'IPA d'origine.**
+
+## Observer les longueurs avec logonly
+
+`logonly` ne remplace ni IDFV/IDFA, ni la disponibilité de DeviceCheck, ni les
+valeurs d'attestation. Elle ne lit/écrit pas `NSUserDefaults` ou le Keychain,
+et ne contient pas d'interposition C (`__interpose`). Elle utilise deux
+**swizzles d'observation** via `method_exchangeImplementations` : le swizzle
+est le mécanisme qui permet de journaliser, tout en conservant les valeurs.
+La dylib ne dépend que de Foundation et du runtime Objective-C.
+
+| Point observé | Mesure | Transmission |
+| --- | --- | --- |
+| `-[SCLoginJanusService _appLoginClientAttestationPayload]` | Taille en octets du `NSData` retourné ; états `nil`, `empty`, `nonempty` | C'est un **getter**, pas un setter. Appel de l'implémentation originale une seule fois, avec le même receveur et le même sélecteur ; renvoie le même objet |
+| `-[SCJanusAppLoginRequest setIosDeviceCheckToken:]` | Longueur UTF-16 (`chars`) et taille UTF-8 (`utf8_bytes`) de la chaîne affectée à la requête AppLogin | Appel du setter original une seule fois avec l'objet inchangé, puis journalisation après son retour réussi |
+
+Le second observateur voit la valeur au point d'affectation, qu'elle provienne
+d'un cache ou d'une génération récente. Il ne vide pas le cache, ne demande
+pas un nouveau token et ne permet pas de distinguer ces deux provenances.
+Il mesure la **chaîne du champ protobuf**, pas les octets Apple après décodage
+base64. Une sentinelle d'indisponibilité est également une chaîne non vide :
+`nonempty` ne prouve donc pas qu'un token Apple valide est présent.
+
+Seuls les états et longueurs sont journalisés par `NSLog`, avec le préfixe
+`[SS06LogOnly]`. Ni payload, ni token, ni base64, ni empreinte de leur contenu
+ne sont écrits dans les logs. Aucun fichier de diagnostic ni envoi réseau
+supplémentaire n'est créé. Les exceptions des méthodes originales se
+propagent ; une exception pendant la mesure est traitée séparément.
+Un type inattendu produit `unexpected-type`, sans conversion de son contenu.
+
+Les logs d'installation indiquent `installed` ou `unavailable=...` pour
+chaque observateur. Les setters protobuf pouvant être résolus dynamiquement,
+la recherche utilise `class_getInstanceMethod`. Une méthode héritée est
+localisée sur la classe ciblée avant l'échange, sans modifier sa classe de
+base. Une seule nouvelle tentative d'installation est programmée sur la
+file principale si la première échoue.
+
+Pour le test sur appareil :
+
+1. Construire `BUILD_VARIANT=logonly`, resigner puis installer l'IPA.
+2. Collecter les journaux de l'application et filtrer `[SS06LogOnly]`.
+3. Vérifier les deux lignes `observer ... installed`.
+4. Effectuer la tentative de login et relever les états/longueurs.
+
+Exemples **illustratifs**, pas des mesures de cet appareil :
+
+```text
+[SS06LogOnly] clientAttestationPayload state=nonempty bytes=256
+[SS06LogOnly] iosDeviceCheckToken state=nonempty chars=172 utf8_bytes=172
+```
+
+`bytes > 0` établit uniquement que ce getter a retourné un `NSData` non vide
+lors de cet appel. Cela ne prouve ni le format complet, ni la validité de
+l'attestation, ni son acceptation serveur. L'absence de log ne signifie pas
+une payload vide : le hook peut manquer, la méthode ne pas être appelée ou
+le journal ne pas être collecté. L'injection et la re-signature restent des
+modifications du build, et la journalisation ajoute un coût d'exécution.
+
+Le test hôte [`tests/logonly_passthrough.m`](tests/logonly_passthrough.m)
+vérifie sur macOS l'appel unique, l'identité des objets et des sélecteurs,
+les valeurs nil/vides, la propagation des exceptions, une méthode héritée
+et un setter résolu dynamiquement. Il contrôle aussi les messages de taille
+et l'absence du contenu de test dans les logs. **Ce test utilise des classes
+de simulation : il ne remplace pas une exécution du client sur iPhone.**
 
 ## Les trois couches
 
@@ -111,8 +176,11 @@ au résultat d'un contrôle côté serveur.
 Depuis GitHub : **Actions → Build spoofed IPA → Run workflow → main**.
 Le workflow est exclusivement manuel (`workflow_dispatch`) et utilise un
 runner macOS avec Xcode et Git LFS.
-Une matrice lance **les cinq variantes dans la même exécution**, sur des
-jobs isolés. `BUILD_VARIANT` reçoit la valeur de `matrix.variant`.
+Le choix manuel `BUILD_VARIANT=all` lance **les six variantes dans la même
+exécution**, sur des jobs isolés. Il est aussi possible de choisir une seule
+variante, notamment `logonly`. Dans chaque job, la variable d'environnement
+`BUILD_VARIANT` reçoit la valeur de `matrix.variant`. Le choix `all` appartient
+au workflow uniquement ; ce n'est pas une valeur acceptée par le script local.
 
 Depuis un checkout macOS :
 
@@ -123,6 +191,7 @@ BUILD_VARIANT=swizzle bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=full bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=dccheckoff bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=noattest bash spoof/build_spoof_ipa.sh
+BUILD_VARIANT=logonly bash spoof/build_spoof_ipa.sh
 ```
 
 Pour toutes les variantes sauf `none`, le script compile la dylib ARM64 pour iPhoneOS et l'outil
@@ -151,6 +220,12 @@ Résultats :
 | `full` | `Snap-SS06-14.25.0.48-full.ipa` | `Snap-SS06-spoofed-ipa-full` |
 | `dccheckoff` | `Snap-SS06-14.25.0.48-dccheckoff.ipa` | `Snap-SS06-spoofed-ipa-dccheckoff` |
 | `noattest` | `Snap-SS06-14.25.0.48-noattest.ipa` | `Snap-SS06-spoofed-ipa-noattest` |
+| `logonly` | `Snap-SS06-14.25.0.48-logonly.ipa` | `Snap-SS06-spoofed-ipa-logonly` |
+
+Lorsqu'une exécution réussie inclut `logonly`, un job séparé publie également
+son IPA et son manifeste dans une prérelease
+`v14.25.0.48-logonly-<run_id>`, avec un lien direct `.ipa`. Les SHA-256 sont
+vérifiés avant et après l'upload. Les releases existantes ne sont pas remplacées.
 
 Chaque artefact contient l'IPA et son fichier `.manifest.json` : variante,
 commit et run GitHub, SHA-256 du principal source, du principal repacké,
@@ -160,17 +235,23 @@ temporaires et sorties sont distincts par variante.
 Les booléens `idfv_idfa_swizzles_compiled`,
 `devicecheck_is_supported_no_compiled` et `login_attestation_nil_compiled`
 précisent les remplacements inclus ; `ios_runtime_tested` reste à `false`.
+`logonly_observers_compiled` et `logonly_host_tests_passed` valent `true`
+uniquement pour `logonly` après réussite de ses contrôles. `logonly_observes`
+énumère les trois mesures de longueur. Les booléens de remplacement d'identité,
+de DeviceCheck, d'attestation et de Keychain valent tous `false` dans ce mode.
 
 Le build vérifie le format ARM64 non chiffré du principal, les signatures
 des fichiers modifiés, l'absence des trois dossiers retirés et l'intégrité ZIP.
 Pour les variantes injectées, il contrôle aussi la place réservée à la commande
 Mach-O et la dépendance ajoutée. Il exige l'absence de dylib/dépendance dans
 `none`, l'absence de section `__interpose` et d'import `_SecItemCopyMatching`
-dans les dylibs `swizzle`, `dccheckoff` et `noattest`, et leur présence dans `full`.
-Il vérifie les symboles des remplacements IDFV/IDFA dans chaque dylib,
+dans les dylibs `swizzle`, `dccheckoff`, `noattest` et `logonly`, et leur présence dans `full`.
+Il vérifie les symboles des remplacements IDFV/IDFA dans les dylibs autres que `logonly`,
 l'inclusion du remplacement DeviceCheck uniquement dans `dccheckoff`/`noattest`
 et celle du retour `nil` uniquement dans `noattest`. La dépendance DeviceCheck
 est également contrôlée pour les deux nouvelles variantes.
+Dans `logonly`, il exige les deux observateurs et l'absence des fonctions de
+remplacement, de `NSUserDefaults`, de `NSUUID` et des imports Keychain/dlsym.
 Ces contrôles attestent l'assemblage. Le chargement sur
 iOS, la stabilité en session et le résultat du test serveur demandent une
 validation sur appareil ; ils ne sont pas évalués par GitHub Actions.
