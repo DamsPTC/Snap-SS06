@@ -1,0 +1,73 @@
+name: Publish spoofed IPA release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: v14.25.0.48-spoofed
+      SOURCE_SHA: 0c24ce90b4b4db7f9e8841bbd66197017242d128
+      EXPECTED_SHA256: 1f19fdf718ee8810f7ee2d521135c2abb8799ef336f457e019e361d428ff0f25
+      IPA_NAME: Snap-SS06-14.25.0.48-spoofed.ipa
+    steps:
+      - name: Télécharger l'artefact déjà compilé
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa
+          path: release
+          run-id: 37411480241
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Vérifier et publier le fichier IPA
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          IPA="release/$IPA_NAME"
+          printf '%s  %s\n' "$EXPECTED_SHA256" "$IPA" | sha256sum --check --strict
+          test "$(stat --format=%s "$IPA")" = 168499077
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Cette release existe déjà ; aucun fichier existant ne sera remplacé." >&2
+            exit 1
+          fi
+          cat > release-notes.md <<'NOTES'
+          IPA instrumentée 14.25.0.48 issue du workflow **Build spoofed IPA #1**.
+
+          - Commit source : `0c24ce90b4b4db7f9e8841bbd66197017242d128`.
+          - Fichier directement téléchargeable : `Snap-SS06-14.25.0.48-spoofed.ipa`.
+          - Taille : 168 499 077 octets.
+          - SHA-256 : `1f19fdf718ee8810f7ee2d521135c2abb8799ef336f457e019e361d428ff0f25`.
+
+          La dylib de test est incluse ; les dossiers PlugIns, Extensions et Watch sont retirés de cette copie.
+          Signature ad hoc : une nouvelle signature est nécessaire avant installation iOS standard.
+          Assemblage vérifié ; fonctionnement sur appareil et résultat du test serveur non évalués.
+
+          [Documentation du build](https://github.com/DamsPTC/Snap-SS06/blob/0c24ce90b4b4db7f9e8841bbd66197017242d128/spoof/README.md)
+          NOTES
+          gh release create "$RELEASE_TAG" "$IPA" \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_SHA" \
+            --draft --prerelease --title "Snap SS06 14.25.0.48 — IPA instrumentée" \
+            --notes-file release-notes.md
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq ".[] | select(.tag_name == \"$RELEASE_TAG\")" > release-metadata.json
+          python3 - <<'PY'
+          import json, os
+          release = json.load(open('release-metadata.json'))
+          asset, = [a for a in release['assets'] if a['name'] == os.environ['IPA_NAME']]
+          assert asset['size'] == 168499077, asset['size']
+          assert asset['state'] == 'uploaded', asset['state']
+          assert asset['digest'] == 'sha256:' + os.environ['EXPECTED_SHA256'], asset['digest']
+          print(asset['browser_download_url'])
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f"[Télécharger l'IPA]({asset['browser_download_url']})\n\n")
+              summary.write(f"SHA-256 vérifié : `{os.environ['EXPECTED_SHA256']}`\n")
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --draft=false
