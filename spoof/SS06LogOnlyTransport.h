@@ -1,5 +1,18 @@
-// Inclus seulement par SS06LogOnly.m : observations sans remplacement de valeur.
+// Inclus seulement par SS06LogOnly.m : observations sans remplacement de valeur,
+// sauf fenêtre d'attestation selfblock qui fait échouer le self-mmap.
 #include <stdatomic.h>
+
+#ifndef SS06_SELFREAD_BLOCK
+#define SS06_SELFREAD_BLOCK 0
+#endif
+#if SS06_SELFREAD_BLOCK
+// Définies dans SS06SelfRead.h ; lien externe pour le test hôte macOS.
+static void SS06LogOnlyWindowOpen(void) { SS06SelfReadAttestationWindowOpen(); }
+static void SS06LogOnlyWindowClose(void) { SS06SelfReadAttestationWindowClose(); }
+#else
+static void SS06LogOnlyWindowOpen(void) {}
+static void SS06LogOnlyWindowClose(void) {}
+#endif
 
 typedef NS_ENUM(unsigned int, SS06LogOnlyKind) {
     SS06LogOnlyRPC, SS06LogOnlyTransport, SS06LogOnlyDeviceCheck,
@@ -142,6 +155,8 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
     // Chaque block capture uniquement sa cible statique. Les arguments, options,
     // retours originaux sont transmis intacts. Seul le callback DeviceCheck est
     // enveloppé afin d'observer sa chaîne asynchrone, puis appelé une fois.
+    // Les cibles d'attestation ouvrent la fenêtre selfblock pendant l'appel
+    // original : le self-mmap du principal échoue alors volontairement.
     switch (target->kind) {
         case SS06LogOnlyRPC:
             return imp_implementationWithBlock(^(id receiver, id request, id options, id handler) {
@@ -192,12 +207,15 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
             return imp_implementationWithBlock(^id(id receiver, id token, id path, int requestType) {
                 unsigned long long call = SS06LogOnlyNextCall();
                 SS06LogOnlyTrace(target, call, "enter", path, nil, NO, requestType);
+                SS06LogOnlyWindowOpen();
                 id result;
                 @try {
                     result = ((id (*)(id, SEL, id, id, int))target->original)(receiver, target->selector, token, path, requestType);
                 } @catch (NSException *exception) {
+                    SS06LogOnlyWindowClose();
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, requestType); @throw exception;
                 }
+                SS06LogOnlyWindowClose();
                 SS06LogOnlyTrace(target, call, "return", path, result, YES, requestType);
                 if (strcmp(target->selectorName, "_getAttestationPayload:path:requestType:") == 0)
                     SS06LogOnlyDumpPayload(result, path, requestType, call);
@@ -209,12 +227,15 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
                 unsigned long long call = SS06LogOnlyNextCall();
                 id path = target->kind == SS06LogOnlyArgos ? first : second;
                 SS06LogOnlyTrace(target, call, "enter", path, nil, NO, -1);
+                SS06LogOnlyWindowOpen();
                 id result;
                 @try {
                     result = ((id (*)(id, SEL, id, id))target->original)(receiver, target->selector, first, second);
                 } @catch (NSException *exception) {
+                    SS06LogOnlyWindowClose();
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, -1); @throw exception;
                 }
+                SS06LogOnlyWindowClose();
                 SS06LogOnlyTrace(target, call, "return", path, result, YES, -1);
                 return result;
             });

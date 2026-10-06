@@ -12,6 +12,12 @@
 #ifndef SS06_SELFREAD
 #define SS06_SELFREAD 0
 #endif
+#ifndef SS06_SELFREAD_BLOCK
+#define SS06_SELFREAD_BLOCK 0
+#endif
+#ifndef SS06_SELFBLOCK
+#define SS06_SELFBLOCK 0
+#endif
 static void SS06LogOnlyRecord(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 #if SS06_SELFREAD
 #import "SS06SelfRead.h"
@@ -281,7 +287,7 @@ static BOOL SS06LogOnlyInstallObservers(void)
     BOOL token = SS06LogOnlyInstallTypedObserver(
         NSClassFromString(@"SCJanusAppLoginRequest"),
         NSSelectorFromString(@"setIosDeviceCheckToken:"),
-        NSSelectorFromString(@"ss06_logonly_setIosDeviceCheckToken:"),
+        NSSelectorFromString(@"ss06_logonly_setIosDeviceCheckToken"),
         (IMP)SS06LogOnly_setIosDeviceCheckToken, &SS06LogOnlyOriginalTokenSetter, "v@");
     BOOL transport = SS06LogOnlyInstallTransportObservers();
     return payload && token && transport;
@@ -292,7 +298,11 @@ static void SS06LogOnlyStart(void)
     @autoreleasepool {
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
 #if SS06_SELFREAD
+    #if SS06_SELFBLOCK
+        SS06LogOnlyRecord(@"init logonly active; trace=selfblock-v1; base=selfread-v1; local attestation/token dumps; attestation-window mmap failure; clipboard=automatic");
+    #else
         SS06LogOnlyRecord(@"init logonly active; trace=selfread-v1; base=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic");
+    #endif
         SS06SelfReadStart();
 #else
         SS06LogOnlyRecord(@"init logonly active; trace=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic");
