@@ -1,0 +1,39 @@
+name: Compléter les preuves de l’inventaire appareil
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/device-inventory.yml, scripts/device_inventory_supplement.py, analysis/device-inventory/supplement-ranges.json]
+permissions:
+  contents: read
+jobs:
+  supplement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GHIDRA_HEADLESS_MAXMEM: 4G
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            analysis/device-inventory
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Préparer les entrées vérifiées et décompiler les fonctions complémentaires
+        shell: bash
+        run: |
+          mkdir -p .work
+          curl --fail --location --retry 3 https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip --output .work/ghidra.zip
+          printf '%s\n' 'ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db  .work/ghidra.zip' | sha256sum --check -
+          unzip -q .work/ghidra.zip -d .work/tool
+          curl --fail --location --retry 3 https://github.com/DamsPTC/sandbox-fictif-snapchat/releases/download/nouvelle-version-14.25.0.48/com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa --output .work/original.ipa
+          python3 scripts/device_inventory_supplement.py .work/original.ipa .work/tool/ghidra_12.1.4_PUBLIC .work/output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: device-inventory-supplement
+          path: .work/output
+          retention-days: 2
