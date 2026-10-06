@@ -174,6 +174,8 @@ else
     done
     if [[ "$BUILD_VARIANT" == logonly ]]; then
         grep -Fq '_method_exchangeImplementations' "$WORK/dylib-imports.txt"
+        grep -Fq '_imp_implementationWithBlock' "$WORK/dylib-imports.txt"
+        grep -Eq '[[:space:]]_SS06LogOnlyInstallTransportObservers$' "$WORK/dylib-symbols.txt"
         grep -Fq '_OBJC_CLASS_$_UIPasteboard' "$WORK/dylib-imports.txt"
         grep -Fq '_UIPasteboardOptionLocalOnly' "$WORK/dylib-imports.txt"
         otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
@@ -224,8 +226,13 @@ manifest = {
     'logonly_timestamped_history_compiled': variant == 'logonly',
     'logonly_automatic_clipboard_compiled': variant == 'logonly',
     'logonly_clipboard_host_tests_passed': variant == 'logonly',
+    'logonly_trace_version': 'transport-v2' if variant == 'logonly' else None,
+    'logonly_transport_targets_compiled': 34 if variant == 'logonly' else 0,
+    'logonly_transport_host_tests_passed': variant == 'logonly',
     'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
-                        'iosDeviceCheckToken.utf8_bytes'] if variant == 'logonly' else [],
+                        'iosDeviceCheckToken.utf8_bytes', 'Janus.login_registration.rpc',
+                        'SCNGrpcUnifiedGrpcService.unaryCall', 'SCDeviceCheckFeature.apple_request',
+                        'SCPreLoginAttestationImpl.wrappers', 'SCArgosImpl.generateAttestationPayload'] if variant == 'logonly' else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,

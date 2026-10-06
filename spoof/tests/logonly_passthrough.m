@@ -86,12 +86,15 @@ static void TestOriginalTokenSetter(id self, SEL command, id value)
 }
 @end
 
+#import "logonly_transport_fixture.h"
+
 int main(void)
 {
     @autoreleasepool {
         SEL payloadSelector = @selector(_appLoginClientAttestationPayload);
         IMP baseBefore = method_getImplementation(class_getInstanceMethod([SS06TestServiceBase class], payloadSelector));
         TestClipboardSnapshots = [NSMutableArray new];
+        CHECK(TestSetupTransportClasses());
         SS06LogOnlyStart(); // Même init que la dylib ; app initialement inactive.
         CHECK(SS06LogOnlyInstallObservers());
         CHECK(SS06LogOnlyInstallObservers()); // Installation idempotente.
@@ -151,7 +154,7 @@ int main(void)
         CHECK([firstHistory containsString:@"iosDeviceCheckToken state=nonempty chars=1 utf8_bytes=2"]);
         CHECK(![firstHistory containsString:@"SS06_PRIVATE_TEST_SENTINEL"]);
         NSArray<NSString *> *lines = [firstHistory componentsSeparatedByString:@"\n"];
-        CHECK(lines.count == 12); // Init, 2 installations, 4 payloads, 4 tokens, fin de ligne.
+        CHECK(lines.count == 12 + SS06LogOnlyTargetCount + 1); // Ajout des installations transport et de leur bilan.
         NSRegularExpression *prefix = [NSRegularExpression
             regularExpressionWithPattern:@"^\\[SS06LogOnly\\] [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z .+$"
             options:0 error:NULL];
@@ -214,6 +217,7 @@ int main(void)
         CHECK(!TestClipboardOffMain);
         CHECK(![TestClipboardSnapshots.lastObject containsString:@"SS06_PRIVATE_TEST_SENTINEL"]);
         puts("PASS: timestamped full history, automatic main-queue clipboard, concurrency, deferred activation, retry, no secret content");
+        CHECK(TestTransportObservers() == 0);
     }
     return 0;
 }

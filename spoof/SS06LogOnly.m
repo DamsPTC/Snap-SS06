@@ -1,4 +1,4 @@
-// Observation des longueurs uniquement. Aucun remplacement d'identité/token.
+// Trace du flux et des longueurs, sans contenu de requête ni remplacement de valeur.
 // Compilé séparément de SS06Spoof.m. UIKit sert uniquement au presse-papiers.
 #import <Foundation/Foundation.h>
 #ifndef SS06_LOGONLY_TESTING
@@ -15,6 +15,7 @@
 
 static IMP SS06LogOnlyOriginalPayload;
 static IMP SS06LogOnlyOriginalTokenSetter;
+static BOOL SS06LogOnlyInstallObservers(void);
 
 // Historique complet du processus, sans persistance sur disque ni contenu secret.
 // Le verrou protège aussi le formateur de date et le compteur de révision.
@@ -115,7 +116,10 @@ static void SS06LogOnlyObserveActivation(void)
             addObserverForName:UIApplicationDidBecomeActiveNotification
 #endif
             object:nil queue:[NSOperationQueue mainQueue]
-            usingBlock:^(__unused NSNotification *notification) { SS06LogOnlyPublishClipboard(); }];
+            usingBlock:^(__unused NSNotification *notification) {
+                SS06LogOnlyInstallObservers(); // Reprise des seules cibles encore absentes.
+                SS06LogOnlyPublishClipboard();
+            }];
     });
     (void)activationObserver; // Conservé pendant toute la vie du processus.
     SS06LogOnlyPublishClipboard();
@@ -180,8 +184,8 @@ static char SS06LogOnlyTypeCode(const char *encoding)
     return *encoding;
 }
 
-static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
-                                     IMP observer, IMP *originalSlot, BOOL setter)
+static BOOL SS06LogOnlyInstallTypedObserver(Class cls, SEL selector, SEL alias,
+                                          IMP observer, IMP *originalSlot, const char *signature)
 {
     if (*originalSlot) return YES; // Une seconde tentative ne ré-échange pas.
     if (!cls) {
@@ -194,14 +198,18 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
         // les setters GPBMessage peuvent être générés à la première recherche.
         Method original = class_getInstanceMethod(cls, selector);
         char returnType[32] = {0}, argumentType[32] = {0};
-        if (!original || method_getNumberOfArguments(original) != (setter ? 3u : 2u)) {
+        size_t signatureLength = strlen(signature); // Retour, puis arguments explicites.
+        if (!original || method_getNumberOfArguments(original) != signatureLength + 1) {
             SS06LogOnlyRecord(@"observer %@ unavailable=method", NSStringFromSelector(selector));
             return NO;
         }
         method_getReturnType(original, returnType, sizeof(returnType));
-        if (setter) method_getArgumentType(original, 2, argumentType, sizeof(argumentType));
-        if (SS06LogOnlyTypeCode(returnType) != (setter ? 'v' : '@') ||
-            (setter && SS06LogOnlyTypeCode(argumentType) != '@')) {
+        BOOL valid = SS06LogOnlyTypeCode(returnType) == signature[0];
+        for (size_t index = 1; index < signatureLength; ++index) {
+            method_getArgumentType(original, (unsigned int)index + 1, argumentType, sizeof(argumentType));
+            valid = valid && SS06LogOnlyTypeCode(argumentType) == signature[index];
+        }
+        if (!valid) {
             SS06LogOnlyRecord(@"observer %@ unavailable=signature", NSStringFromSelector(selector));
             return NO;
         }
@@ -218,7 +226,7 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
         original = class_getInstanceMethod(cls, selector);
         *originalSlot = implementation;
         method_exchangeImplementations(original, class_getInstanceMethod(cls, alias));
-        SS06LogOnlyRecord(@"observer %@ installed", NSStringFromSelector(selector));
+        SS06LogOnlyRecord(@"observer %@ installed class=%@", NSStringFromSelector(selector), NSStringFromClass(cls));
         return YES;
     } @catch (__unused NSException *exception) {
         SS06LogOnlyRecord(@"observer %@ unavailable=initialization", NSStringFromSelector(selector));
@@ -226,26 +234,29 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
     }
 }
 
+#import "SS06LogOnlyTransport.h"
+
 static BOOL SS06LogOnlyInstallObservers(void)
 {
-    BOOL payload = SS06LogOnlyInstallObserver(
+    BOOL payload = SS06LogOnlyInstallTypedObserver(
         NSClassFromString(@"SCLoginJanusService"),
         NSSelectorFromString(@"_appLoginClientAttestationPayload"),
         NSSelectorFromString(@"ss06_logonly_appLoginClientAttestationPayload"),
-        (IMP)SS06LogOnly_appLoginClientAttestationPayload, &SS06LogOnlyOriginalPayload, NO);
-    BOOL token = SS06LogOnlyInstallObserver(
+        (IMP)SS06LogOnly_appLoginClientAttestationPayload, &SS06LogOnlyOriginalPayload, "@");
+    BOOL token = SS06LogOnlyInstallTypedObserver(
         NSClassFromString(@"SCJanusAppLoginRequest"),
         NSSelectorFromString(@"setIosDeviceCheckToken:"),
         NSSelectorFromString(@"ss06_logonly_setIosDeviceCheckToken:"),
-        (IMP)SS06LogOnly_setIosDeviceCheckToken, &SS06LogOnlyOriginalTokenSetter, YES);
-    return payload && token;
+        (IMP)SS06LogOnly_setIosDeviceCheckToken, &SS06LogOnlyOriginalTokenSetter, "v@");
+    BOOL transport = SS06LogOnlyInstallTransportObservers();
+    return payload && token && transport;
 }
 
 static void SS06LogOnlyStart(void)
 {
     @autoreleasepool {
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
-        SS06LogOnlyRecord(@"init logonly active; lengths only; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=transport-v2; metadata only; original values preserved; clipboard=automatic");
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation
             // du processus. Une classe toujours absente reste explicitement signalée.

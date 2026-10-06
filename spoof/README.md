@@ -64,12 +64,49 @@ de repack sans injection, pas une copie identique de l'IPA d'origine.**
 
 `logonly` ne remplace ni IDFV/IDFA, ni la disponibilité de DeviceCheck, ni les
 valeurs d'attestation. Elle ne lit/écrit pas `NSUserDefaults` ou le Keychain,
-et ne contient pas d'interposition C (`__interpose`). Elle utilise deux
+et ne contient pas d'interposition C (`__interpose`). Elle utilise des
 **swizzles d'observation** via `method_exchangeImplementations` : le swizzle
 est le mécanisme qui permet de journaliser, tout en conservant les valeurs.
 L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
 `SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
 pour la copie dans le presse-papiers.
+
+La version **`trace=transport-v2`** ajoute **34 points d'observation** aux deux
+points métier ci-dessous. Leur implémentation est dans `SS06LogOnlyTransport.h`,
+avec les cibles vérifiées dans `SS06LogOnlyTargets.inc`.
+
+| Point ajouté | Ce qui est journalisé |
+| --- | --- |
+| 15 RPC de `UNISCJanusLoginService`, dont `appLoginWithRequest:callOptionsBuilder:handler:` et `loginWithPasswordWithRequest:callOptionsBuilder:handler:` | Entrée/sortie, classe de la requête et taille protobuf calculée par `serializedSize` |
+| 12 RPC de `UNISCJanusRegistrationService`, dont `registerWithUsernamePasswordWithRequest:callOptionsBuilder:handler:` et `registerWithPhoneEmailWithRequest:callOptionsBuilder:handler:` | Même observation, y compris étapes de vérification et challenge |
+| `SCNGrpcUnifiedGrpcService unaryCall:request:callOptionsBuilder:handler:` | `requestPath`, classe de la requête, taille des octets déjà sérialisés si `NSData` |
+| `SCDeviceCheckFeature _appleDeviceCheckTokenWithCompletionHandler:` | Entrée et retour synchrone ; bloc original transmis intact |
+| Les 4 wrappers de `SCPreLoginAttestationImpl` : login, register, commun et `_getAttestationPayload:path:requestType:` | Entrée, chemin, type interne quand disponible et taille du retour original |
+| `SCArgosImpl generateAttestationPayload:requestParameters:` | Entrée, chemin et taille du retour original de cet autre wrapper du pont natif |
+
+Les noms, encodages, adresses et extraits pseudo-C sont dans
+[l'analyse des points d'observation](../docs/logonly-transport-observers.md).
+Le sélecteur `unaryCall:…` existe aussi dans `SCPlusGrpcService`, avec un retour
+**void** au lieu d'un objet. Le hook cible explicitement le transport
+`SCNGrpcUnifiedGrpcService` et vérifie les types/arguments avant l'échange.
+Les 34 méthodes utilisent `method_exchangeImplementations`, avec une
+implémentation typée qui appelle l'original une fois avec les mêmes objets,
+options, blocs et sélecteurs. Les retours et exceptions sont conservés.
+
+Une ligne `stage=rpc.enter` prouve l'entrée dans le service généré ; une ligne
+`stage=transport.enter` prouve la remise au transport, **pas un envoi réseau
+confirmé**. `stage=attestation.return` avec `bytes>0` établit qu'un wrapper
+a rendu des octets. `stage=devicecheck.enter` établit l'appel de la méthode
+DeviceCheck ciblée, qui peut encore choisir un repli. Le diagnostic ne wrappe
+pas les callbacks et ne confirme donc pas leur succès asynchrone.
+
+`call=N` rapproche entrée et sortie d'un appel, pas d'une tentative complète.
+Les sorties sont `return` ou `throw` ; les appels imbriqués ont des numéros
+distincts. `requestType=-1` signifie que ce point n'a pas d'argument type.
+Les requêtes sont résumées par classe/taille : **aucun `description`, dump des
+champs ou appel supplémentaire à `data`**. Les chemins RPC sont dépouillés de
+query/fragment et les formats non reconnus sont masqués. Les identifiants,
+mots de passe, headers, paramètres d'attestation et corps ne sont pas copiés.
 
 | Point observé | Mesure | Transmission |
 | --- | --- | --- |
@@ -106,8 +143,9 @@ ou activation.
 La copie **remplace le contenu courant du presse-papiers**, sans le lire.
 L'option `UIPasteboardOptionLocalOnly` est activée et aucune expiration n'est
 ajoutée par la dylib. Aucun bouton, alerte, geste de secousse ni modification
-des vues de l'app n'est ajouté. Seuls les états, longueurs, horodatages et
-événements d'installation sont copiés : ni payload, ni token, ni base64,
+des vues de l'app n'est ajouté. Seuls les états, longueurs, horodatages,
+événements d'installation, noms de classes/sélecteurs, chemins RPC filtrés
+et types internes sont copiés : ni payload, ni token, ni base64,
 ni empreinte de leur contenu. Les exceptions des méthodes originales se
 propagent ; une exception pendant la mesure est traitée séparément.
 Un type inattendu produit `unexpected-type`, sans conversion de son contenu.
@@ -117,7 +155,9 @@ chaque observateur. Les setters protobuf pouvant être résolus dynamiquement,
 la recherche utilise `class_getInstanceMethod`. Une méthode héritée est
 localisée sur la classe ciblée avant l'échange, sans modifier sa classe de
 base. Une seule nouvelle tentative d'installation est programmée sur la
-file principale si la première échoue.
+file principale si la première échoue ; les cibles encore absentes sont
+également retentées à l'activation de l'app. Une cible déjà installée n'est
+pas échangée une seconde fois.
 
 Pour lire les mesures **sans outil externe** sur l'appareil :
 
@@ -125,13 +165,17 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 2. Tenter le login ou l'inscription et attendre l'erreur. Laisser l'app
    active un court instant pour que la file principale traite la copie.
 3. Ouvrir **Notes**, créer une note et **coller** le presse-papiers.
-4. Vérifier la ligne `init`, les deux lignes `observer ... installed`, puis
-   lire les états et longueurs. L'heure et les anciennes lignes permettent
+4. Vérifier la ligne `init` avec `trace=transport-v2`, les lignes d'installation
+   et `transport_observers installed=34 expected=34`, puis lire les événements
+   `rpc`, `transport`, `attestation`, `devicecheck` et les longueurs. L'heure et les anciennes lignes permettent
    de distinguer plusieurs tentatives au sein d'une même session.
 
-Les points observés appartiennent à la construction de la requête **AppLogin**.
-Un parcours d'inscription peut ne pas les appeler. Si seules l'init et
-l'installation apparaissent, cela ne démontre pas une payload vide.
+Les anciens points métier concernent **AppLogin** ; les nouveaux couvrent
+les services Janus de login **et d'inscription** et le transport unifié.
+Un autre client HTTP ou chemin de cache peut encore éviter ces méthodes.
+Si seules l'init et l'installation apparaissent, cela ne démontre pas une
+payload vide ni un rejet serveur : transmettre l'historique complet pour
+identifier les cibles installées et le dernier point atteint.
 Si rien n'est collé, revenir dans l'app pour permettre une copie en attente,
 puis réessayer Notes ; vérifier également que l'IPA installée est bien cette
 version `logonly`. Un autre contenu copié entre-temps remplace l'historique
@@ -140,7 +184,7 @@ dans le presse-papiers. `NSLog` reste disponible en complément.
 Exemples **illustratifs**, pas des mesures de cet appareil :
 
 ```text
-[SS06LogOnly] 2026-10-06T10:00:00.000Z init logonly active; lengths only; original values preserved; clipboard=automatic
+[SS06LogOnly] 2026-10-06T10:00:00.000Z init logonly active; trace=transport-v2; metadata only; original values preserved; clipboard=automatic
 [SS06LogOnly] 2026-10-06T10:00:04.120Z clientAttestationPayload state=nonempty bytes=256
 [SS06LogOnly] 2026-10-06T10:00:04.123Z iosDeviceCheckToken state=nonempty chars=172 utf8_bytes=172
 ```
@@ -162,6 +206,9 @@ de copie. Le presse-papiers est simulé : celui du runner n'est pas touché.
 Le contenu de test doit rester absent des logs et de l'historique copié.
 **Ces tests ne remplacent pas une exécution du client sur iPhone : la copie
 réelle via UIKit et les mesures de cet appareil restent à vérifier.**
+Le fichier `tests/logonly_transport_fixture.h` ajoute des classes simulées
+pour les 34 cibles et vérifie la transmission, les signatures, les exceptions,
+les tailles, l'absence de dump de requête et les traces copiées.
 
 ## Les trois couches
 
@@ -277,7 +324,11 @@ Les booléens `idfv_idfa_swizzles_compiled`,
 précisent les remplacements inclus ; `ios_runtime_tested` reste à `false`.
 `logonly_observers_compiled` et `logonly_host_tests_passed` valent `true`
 uniquement pour `logonly` après réussite de ses contrôles. `logonly_observes`
-énumère les trois mesures de longueur. `logonly_timestamped_history_compiled`,
+énumère les mesures de longueur et les familles d'observateurs. `logonly_trace_version`
+vaut `transport-v2` ; `logonly_transport_targets_compiled` vaut 34 et
+`logonly_transport_host_tests_passed` confirme les tests hôte des nouveaux points.
+Ces nombres décrivent la compilation, pas le nombre de hooks installés sur l'appareil.
+`logonly_timestamped_history_compiled`,
 `logonly_automatic_clipboard_compiled` et `logonly_clipboard_host_tests_passed`
 décrivent l'historique, la copie automatique et ses tests avec un presse-papiers
 simulé ; ils ne signifient pas que la copie UIKit a été exécutée sur appareil.
@@ -294,7 +345,8 @@ Il vérifie les symboles des remplacements IDFV/IDFA dans les dylibs autres que 
 l'inclusion du remplacement DeviceCheck uniquement dans `dccheckoff`/`noattest`
 et celle du retour `nil` uniquement dans `noattest`. La dépendance DeviceCheck
 est également contrôlée pour les deux nouvelles variantes.
-Dans `logonly`, il exige les deux observateurs et l'absence des fonctions de
+Dans `logonly`, il exige les deux observateurs métier, l'installateur des
+observateurs de transport et l'absence des fonctions de
 remplacement, de `NSUserDefaults`, de `NSUUID` et des imports Keychain/dlsym.
 Il exige aussi l'import `UIPasteboard`, l'option de copie locale et la
 dépendance UIKit de la dylib `logonly`.
