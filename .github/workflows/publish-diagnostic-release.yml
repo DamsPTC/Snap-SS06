@@ -1,0 +1,138 @@
+name: Publish diagnostic IPA release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: v14.25.0.48-diagnostics-e13400e
+      SOURCE_SHA: e13400e14c3fe7d3955d525b7bf45b476479fa8d
+      SOURCE_RUN_ID: '37430076522'
+    steps:
+      - name: Télécharger dccheckoff déjà compilée
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa-dccheckoff
+          path: release/dccheckoff
+          run-id: ${{ env.SOURCE_RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Télécharger noattest déjà compilée
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa-noattest
+          path: release/noattest
+          run-id: ${{ env.SOURCE_RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Vérifier la provenance et les fichiers
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run view "$SOURCE_RUN_ID" --repo "$GITHUB_REPOSITORY" \
+            --json headSha,conclusion > source-run.json
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, zipfile
+          source_run = json.loads(pathlib.Path('source-run.json').read_text())
+          assert source_run['headSha'] == os.environ['SOURCE_SHA'], source_run
+          assert source_run['conclusion'] == 'success', source_run
+          expected = {
+              'dccheckoff': (168497647, '37db5e737cfed99c81762d28499c88c0231d6f8fcae967b6c04176f15a229aa3'),
+              'noattest': (168497810, '95e9fb66ef69c2c604dce0b8c987a7b324266f878526407ba803898c4a0ebf24'),
+          }
+          verified = []
+          for variant, (size, digest) in expected.items():
+              directory = pathlib.Path('release') / variant
+              stem = f'Snap-SS06-14.25.0.48-{variant}'
+              ipa = directory / (stem + '.ipa')
+              manifest = json.loads((directory / (stem + '.manifest.json')).read_text())
+              with ipa.open('rb') as stream:
+                  actual = hashlib.file_digest(stream, 'sha256').hexdigest()
+              assert ipa.stat().st_size == size, variant
+              assert actual == digest, variant
+              assert manifest['variant'] == variant and manifest['ipa'] == ipa.name, variant
+              assert manifest['ipa_sha256'] == digest and manifest['ipa_bytes'] == size, variant
+              assert manifest['github_sha'] == os.environ['SOURCE_SHA'], variant
+              assert str(manifest['github_run_id']) == os.environ['SOURCE_RUN_ID'], variant
+              assert manifest['source_main_sha256'] == 'a1f0ad6907587bee27f9700d05106da5beec4650acb0493e2409ff99cbfbf390', variant
+              assert manifest['dylib_present'] is True, variant
+              assert manifest['keychain_interposition_compiled'] is False, variant
+              assert manifest['idfv_idfa_swizzles_compiled'] is True, variant
+              assert manifest['devicecheck_is_supported_no_compiled'] is True, variant
+              assert manifest['login_attestation_nil_compiled'] == (variant == 'noattest'), variant
+              assert manifest['static_checks_passed'] is True, variant
+              assert manifest['signature'] == 'ad-hoc', variant
+              with zipfile.ZipFile(ipa) as archive:
+                  assert archive.testzip() is None, variant
+                  assert 'Payload/Snapchat.app/SS06Spoof.dylib' in archive.namelist(), variant
+              verified.append({'variant': variant, 'name': ipa.name, 'size': size, 'sha256': digest})
+          pathlib.Path('verified-assets.json').write_text(json.dumps(verified, indent=2) + '\n')
+          notes = [
+              '# IPA de diagnostic 14.25.0.48',
+              '',
+              'Deux fichiers IPA directement téléchargeables, hors ZIP d’artefact Actions.',
+              '',
+              '- dccheckoff : IDFV/IDFA stables ; DCDevice.isSupported retourne NO ; currentDevice inchangée ; sans interposition Keychain.',
+              '- noattest : mêmes réglages, plus retour nil du getter de payload d’attestation pré-login.',
+              '',
+              'Fichiers issus sans recompilation du [build #3](https://github.com/DamsPTC/Snap-SS06/actions/runs/37430076522).',
+              'Commit source : `' + os.environ['SOURCE_SHA'] + '`.',
+              '',
+              '| Fichier | Octets | SHA-256 |',
+              '| --- | --- | --- |',
+          ]
+          for asset in verified:
+              notes.append(f"| `{asset['name']}` | {asset['size']} | `{asset['sha256']}` |")
+          notes += [
+              '',
+              'Signature ad hoc : nouvelle signature et provisionnement nécessaires avant installation iOS standard.',
+              'Contrôles statiques et empreintes vérifiés. Fonctionnement sur appareil et résultat serveur non évalués.',
+              '',
+              '[Documentation des variantes](https://github.com/DamsPTC/Snap-SS06/blob/e13400e14c3fe7d3955d525b7bf45b476479fa8d/spoof/README.md)',
+          ]
+          pathlib.Path('release-notes.md').write_text('\n'.join(notes) + '\n')
+          PY
+
+      - name: Publier et vérifier les deux assets IPA
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "La release existe déjà ; aucun asset ne sera remplacé." >&2
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            release/dccheckoff/Snap-SS06-14.25.0.48-dccheckoff.ipa \
+            release/noattest/Snap-SS06-14.25.0.48-noattest.ipa \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_SHA" \
+            --draft --prerelease --title "Snap SS06 14.25.0.48 — dccheckoff et noattest" \
+            --notes-file release-notes.md
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq ".[] | select(.tag_name == \"$RELEASE_TAG\")" > release-metadata.json
+          python3 - <<'PY'
+          import json, os, pathlib
+          release = json.loads(pathlib.Path('release-metadata.json').read_text())
+          expected = json.loads(pathlib.Path('verified-assets.json').read_text())
+          assert len(release['assets']) == len(expected), release['assets']
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              for item in expected:
+                  asset, = [a for a in release['assets'] if a['name'] == item['name']]
+                  assert asset['size'] == item['size'], asset
+                  assert asset['state'] == 'uploaded', asset
+                  assert asset['digest'] == 'sha256:' + item['sha256'], asset
+                  summary.write(f"[{item['variant']} — télécharger l’IPA]({asset['browser_download_url']})\n\n")
+                  summary.write(f"SHA-256 vérifié : `{item['sha256']}`\n\n")
+                  print(asset['browser_download_url'])
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --draft=false
