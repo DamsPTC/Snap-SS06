@@ -1,0 +1,111 @@
+name: Publish selfread IPA release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: v14.25.0.48-selfread-37474823372
+      SOURCE_SHA: 91ce4ea041ec2b4aacc1bd7d27f8e781e82b8baf
+      SOURCE_RUN_ID: '37474823372'
+    steps:
+      - name: Télécharger selfread déjà compilée
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa-selfread
+          path: release
+          run-id: ${{ env.SOURCE_RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Vérifier les fichiers et préparer les notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run view "$SOURCE_RUN_ID" --repo "$GITHUB_REPOSITORY" \
+            --json headSha,conclusion > source-run.json
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib
+          source = json.loads(pathlib.Path('source-run.json').read_text())
+          assert source['headSha'] == os.environ['SOURCE_SHA']
+          assert source['conclusion'] == 'success'
+          directory = pathlib.Path('release')
+          ipa = directory / 'Snap-SS06-14.25.0.48-selfread.ipa'
+          manifest_path = directory / 'Snap-SS06-14.25.0.48-selfread.manifest.json'
+          manifest = json.loads(manifest_path.read_text())
+          def digest(path):
+              with path.open('rb') as stream:
+                  return hashlib.file_digest(stream, 'sha256').hexdigest()
+          expected = 'b42ad276c1a3edcdca26702fc2db9e3a3f7d09d67ccee77cd7a80372cc638fe6'
+          assert ipa.stat().st_size == manifest['ipa_bytes'] == 168513184
+          assert digest(ipa) == manifest['ipa_sha256'] == expected
+          assert manifest['variant'] == 'selfread' and manifest['ipa'] == ipa.name
+          assert manifest['github_sha'] == os.environ['SOURCE_SHA']
+          assert str(manifest['github_run_id']) == os.environ['SOURCE_RUN_ID']
+          assert manifest['logonly_trace_version'] == 'selfread-v1'
+          assert manifest['selfread_interposed_functions'] == ['open', 'fopen', 'read', 'pread', 'mmap']
+          for key in ('selfread_posix_interposition_compiled', 'selfread_dyld_host_tests_passed',
+                      'logonly_host_tests_passed', 'static_checks_passed'):
+              assert manifest[key] is True, key
+          for key in ('keychain_interposition_compiled', 'idfv_idfa_swizzles_compiled',
+                      'devicecheck_is_supported_no_compiled', 'login_attestation_nil_compiled'):
+              assert manifest[key] is False, key
+          assets = [{'name': p.name, 'size': p.stat().st_size, 'digest': 'sha256:' + digest(p)}
+                    for p in (ipa, manifest_path)]
+          (directory / 'verified-assets.json').write_text(json.dumps(assets))
+          notes = [
+              'IPA **selfread**, trace `selfread-v1`, directement téléchargeable pour signature.',
+              '',
+              'Fichier identique à celui du build #10, publié sans recompilation.',
+              'Base logonly avec observation de open/fopen/read/pread/mmap, filtrée sur Snapchat.app/Snapchat. Chemin, offset, tailles et horodatage sont cumulés dans le presse-papiers.',
+              'Utilisation : lancer l’app, tenter login/inscription, attendre l’erreur, puis ouvrir Notes et coller.',
+              '',
+              f"Build source : https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['SOURCE_RUN_ID']}",
+              f"Commit source : `{os.environ['SOURCE_SHA']}`.",
+              f"Taille : {ipa.stat().st_size} octets ; SHA-256 : `{expected}`.",
+              '',
+              'Tests macOS et contrôles statiques réussis. Fonctionnement sur iPhone à vérifier.',
+              'Signature ad hoc : signer et provisionner l’IPA avant installation iOS standard.',
+          ]
+          (directory / 'notes.md').write_text('\n'.join(notes) + '\n')
+          PY
+
+      - name: Publier l'IPA et son manifeste vérifiés
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Cette release existe déjà ; aucun fichier ne sera remplacé." >&2
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            release/Snap-SS06-14.25.0.48-selfread.ipa \
+            release/Snap-SS06-14.25.0.48-selfread.manifest.json \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_SHA" \
+            --draft --prerelease --title "Snap SS06 14.25.0.48 — selfread" \
+            --notes-file release/notes.md
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq ".[] | select(.tag_name == \"$RELEASE_TAG\")" > release/published.json
+          python3 - <<'PY'
+          import json, os, pathlib
+          release = json.loads(pathlib.Path('release/published.json').read_text())
+          expected = json.loads(pathlib.Path('release/verified-assets.json').read_text())
+          assert len(release['assets']) == len(expected)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              for item in expected:
+                  asset, = [a for a in release['assets'] if a['name'] == item['name']]
+                  assert asset['size'] == item['size'] and asset['digest'] == item['digest']
+                  assert asset['state'] == 'uploaded'
+                  summary.write(f"[{asset['name']}]({asset['browser_download_url']})\n\n")
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --draft=false
