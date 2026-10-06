@@ -209,9 +209,11 @@ Pour décoder et comparer les captures login/inscription, suivre
 [le rapport et les commandes d'analyse hors ligne](../docs/attestation-capture-analysis.md).
 Le script `analyze_attestation.py` utilise le parseur standard
 `protoc --decode_raw`, inventorie les champs sans schéma et compare chaque octet.
-Les captures réelles n'étant pas fournies, leur structure et leur égalité
-restent **non déterminées**. Aucun résultat synthétique n'est présenté comme
-une observation de l'appareil.
+Deux captures réelles ont été analysées avec l'analyseur inchangé de `bab3d63` :
+1421 octets chacune, champs 1/2/6 de 9/204/1200 octets, et **1400 positions
+différentes**. Le [rapport des captures réelles](../docs/attestation-real-captures-2026-10-06.md)
+distingue les valeurs décodées du contenu opaque, dont le chiffrement n'est
+pas établi. Les tests synthétiques restent distingués de ces observations.
 
 `bytes > 0` établit uniquement que ce getter a retourné un `NSData` non vide
 lors de cet appel. Cela ne prouve ni le format complet, ni la validité de

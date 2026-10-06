@@ -2,26 +2,28 @@
 
 État au 6 octobre 2026, trace `values-v3`, Snapchat 14.25.0.48.
 
-## Résultat disponible et données manquantes
+## Résultat sur les captures reçues
 
-Les captures complètes et l'analyseur sont implémentés. **Aucune des deux
-payloads réelles en base64 n'a été fournie pour cette analyse.** La taille de
-**1421 octets** est annoncée dans la demande ; elle n'est pas une mesure
-effectuée ici et n'est pas imposée par le code.
+Deux captures réelles ont ensuite été fournies le 6 octobre 2026 et analysées
+avec l'analyseur **inchangé** de `bab3d63`. Leur taille de **1421 octets** est
+maintenant vérifiée pour chacune. Le [rapport des résultats réels](attestation-real-captures-2026-10-06.md)
+donne les offsets, valeurs décodées, recherches de chaînes et limites ; le
+[JSON de l'analyseur](attestation-real-captures-2026-10-06.json) conserve la
+structure et la comparaison sans les dumps bruts.
 
 | Question sur les captures réelles | Conclusion actuelle |
 | --- | --- |
-| Taille login / inscription | Non vérifiée séparément |
-| Payload acceptée par `protoc --decode_raw` | Non déterminé, octets manquants |
-| Numéros et tailles des champs réels | Non déterminés |
-| Sous-champs texte, binaires ou messages | Non déterminés |
-| Login et inscription identiques octet par octet | **Non déterminé** |
+| Taille login / inscription | **1421 / 1421 octets** |
+| Payload acceptée par `protoc --decode_raw` | **Oui**, pour les deux captures entières |
+| Numéros et tailles des champs réels | **1 : 9 ; 2 : 204 ; 6 : 1200 octets** |
+| Sous-champs texte, binaires ou messages | Champ 1 décodable en sous-message ; champs 2 et 6 opaques |
+| Login et inscription identiques octet par octet | **Non : 1400 positions différentes**, 21 identiques |
 
 Les descripteurs de `GetAttestationPayloadRequest`/`Response` et d'AppLogin
 restent documentés dans [l'analyse statique](attestation-payload-analysis.md).
 Ils ne suffisent pas à attribuer un schéma au retour opaque capturé. Une
-longueur commune ne prouve pas une égalité de contenu. Aucun champ réel n'est
-inventé à partir de la seule taille 1421.
+longueur commune ne prouve pas une égalité de contenu. Le sens des champs
+opaques et leur éventuel chiffrement restent non établis.
 
 ## Points de capture et preuves
 

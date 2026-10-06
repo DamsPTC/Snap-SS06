@@ -1,0 +1,188 @@
+{
+  "login": {
+    "bytes": 1421,
+    "sha256": "91394c7c9f7a3514d825d4d4de0f15901dd166a70540b6975ef6380ee5e0a1e2",
+    "standard_parser": "protoc --decode_raw",
+    "protoc_version": "libprotoc 35.1",
+    "protoc_accepted": true,
+    "unknown_field_set_accepted": true,
+    "fields": [
+      {
+        "number": 1,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 9,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": true,
+        "candidate_fields": [
+          {
+            "number": 2,
+            "wire_type": 5,
+            "wire_name": "fixed32",
+            "value_bytes": 4
+          },
+          {
+            "number": 1,
+            "wire_type": 0,
+            "wire_name": "varint",
+            "value_bit_length": 4,
+            "minimum_varint_bytes": 1
+          },
+          {
+            "number": 8,
+            "wire_type": 0,
+            "wire_name": "varint",
+            "value_bit_length": 2,
+            "minimum_varint_bytes": 1
+          }
+        ],
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      },
+      {
+        "number": 2,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 204,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": false,
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      },
+      {
+        "number": 6,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 1200,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": false,
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      }
+    ],
+    "field_occurrences": 3,
+    "parser_agreement": true,
+    "format_confirmed": false,
+    "capture": {
+      "source": "base64 file"
+    }
+  },
+  "registration": {
+    "bytes": 1421,
+    "sha256": "2f1ca1b33adcf6b458571ae278222fa3425512f7c80891b8bbb17ee0e91e559a",
+    "standard_parser": "protoc --decode_raw",
+    "protoc_version": "libprotoc 35.1",
+    "protoc_accepted": true,
+    "unknown_field_set_accepted": true,
+    "fields": [
+      {
+        "number": 1,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 9,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": true,
+        "candidate_fields": [
+          {
+            "number": 2,
+            "wire_type": 5,
+            "wire_name": "fixed32",
+            "value_bytes": 4
+          },
+          {
+            "number": 1,
+            "wire_type": 0,
+            "wire_name": "varint",
+            "value_bit_length": 4,
+            "minimum_varint_bytes": 1
+          },
+          {
+            "number": 8,
+            "wire_type": 0,
+            "wire_name": "varint",
+            "value_bit_length": 2,
+            "minimum_varint_bytes": 1
+          }
+        ],
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      },
+      {
+        "number": 2,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 204,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": false,
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      },
+      {
+        "number": 6,
+        "wire_type": 2,
+        "wire_name": "length-delimited",
+        "payload_bytes": 1200,
+        "valid_utf8": false,
+        "printable_text_candidate": false,
+        "embedded_message_candidate": false,
+        "appearance": "binary_or_packed",
+        "interpretation_established": false
+      }
+    ],
+    "field_occurrences": 3,
+    "parser_agreement": true,
+    "format_confirmed": false,
+    "capture": {
+      "source": "base64 file"
+    }
+  },
+  "comparison": {
+    "identical": false,
+    "login_bytes": 1421,
+    "registration_bytes": 1421,
+    "different_positions_including_extra_bytes": 1400,
+    "first_difference_offset": 10,
+    "difference_ranges_start_inclusive_end_exclusive": [
+      [
+        10,
+        11
+      ],
+      [
+        14,
+        88
+      ],
+      [
+        89,
+        136
+      ],
+      [
+        137,
+        218
+      ],
+      [
+        221,
+        348
+      ],
+      [
+        349,
+        485
+      ],
+      [
+        486,
+        630
+      ],
+      [
+        631,
+        1421
+      ]
+    ],
+    "ranges_may_be_truncated": false,
+    "scope": "these two selected captures only; no semantic equivalence claim"
+  },
+  "contains_raw_values": false
+}
