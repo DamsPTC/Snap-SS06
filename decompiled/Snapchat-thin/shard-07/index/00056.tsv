@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105a65ec8	105a65edb	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAContentDeliveryDownloader _generateExpirationDate]	
+105a65edc	105a65ee7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAContentDeliveryDownloader .cxx_destruct]	
+105a65ee8	105a66057	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAGrpcClient initWithPerformer:unifiedGRPCClientFactory:]	
+105a66058	105a660d7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAGrpcClient getVersionSetWithRequest:completion:]	
+105a660d8	105a66107	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAGrpcClient .cxx_destruct]	
+105a66108	105a661ab	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher initWithHttpMetadataService:httpRequestModifier:]	
+105a661ac	105a662fb	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher fetchMetadataWithUrl:completion:]	
+105a662fc	105a663a3	decompiled	chunks/008/functions-000560.c		
+105a663a4	105a6644f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher _fetchSucceededWithResponse:completion:]	
+105a66450	105a6646f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher _fetchFailedWithError:completion:]	
+105a66470	105a66657	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher _fetchWithURL:successBlock:failureBlock:]	
+105a66658	105a6665b	decompiled	chunks/008/functions-000560.c		
+105a6665c	105a6677f	decompiled	chunks/008/functions-000560.c		
+105a66780	105a667af	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAMetadataFetcher .cxx_destruct]	
+105a667b0	105a66823	decompiled	chunks/008/functions-000560.c	-[UNISpectaclesOtaService initWithUnifiedGrpcService:]	
+105a66824	105a66907	decompiled	chunks/008/functions-000560.c	-[UNISpectaclesOtaService getVersionSetWithRequest:callOptionsBuilder:handler:]	
+105a66908	105a66913	decompiled	chunks/008/functions-000560.c	-[UNISpectaclesOtaService .cxx_destruct]	
+105a66914	105a66b63	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint begin]	
+105a66b64	105a66c23	decompiled	chunks/008/functions-000560.c		
+105a66c24	105a66cef	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createLegacyOtaManager]	
+105a66cf0	105a670f7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createCheeriosOtaManager]	
+105a670f8	105a6717f	decompiled	chunks/008/functions-000560.c		
+105a67180	105a67283	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createOTALogger]	
+105a67284	105a67387	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createHermosaOtaManager]	
+105a67388	105a67577	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createOtaFetcherWithPerformer:]	
+105a67578	105a675f3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint _createFirmwareUpdateClient]	
+105a675f4	105a67687	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAUpdateServicesEntryPoint .cxx_destruct]	
+105a67688	105a676ab	decompiled	chunks/008/functions-000560.c		
+105a676ac	105a677d7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo initWithReleaseSpecificTag:otaNewVersion:otaNewVersionChecksum:isDeltaUpdate:isRequiredUpdate:binaryUrl:binarySizeBytes:]	
+105a677d8	105a677fb	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo copyWithZone:]	
+105a677fc	105a67897	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo hash]	
+105a67898	105a6799f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo isEqual:]	
+105a679a0	105a679a7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo releaseSpecificTag]	
+105a679a8	105a679af	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo otaNewVersion]	
+105a679b0	105a679b7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo otaNewVersionChecksum]	
+105a679b8	105a679bf	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo isDeltaUpdate]	
+105a679c0	105a679c7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo isRequiredUpdate]	
+105a679c8	105a679cf	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo binaryUrl]	
+105a679d0	105a679d7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo binarySizeBytes]	
+105a679d8	105a67a9b	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesOTAPackageServerInfo .cxx_destruct]	
+105a67a9c	105a67aa7	decompiled	chunks/008/functions-000560.c		
+105a67aa8	105a67b23	decompiled	chunks/008/functions-000560.c		
+105a67b24	105a67b2f	decompiled	chunks/008/functions-000560.c		
+105a67b30	105a67bab	decompiled	chunks/008/functions-000560.c		
+105a67bac	105a67bb7	decompiled	chunks/008/functions-000560.c		
+105a67bb8	105a67c33	decompiled	chunks/008/functions-000560.c		
+105a67c34	105a67c3f	decompiled	chunks/008/functions-000560.c		
+105a67c40	105a67ca7	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbEmpty descriptor]	
+105a67ca8	105a67d23	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbOsVersion descriptor]	
+105a67d24	105a67d9f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbAppVersion descriptor]	
+105a67da0	105a67e1b	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbVersionSet descriptor]	
+105a67e1c	105a67e97	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbReleaseNotes descriptor]	
+105a67e98	105a67f13	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbDifferentialMapEntry descriptor]	
+105a67f14	105a67f8f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbCreateVersionSetRequest descriptor]	
+105a67f90	105a6800b	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbGetVersionSetRequest descriptor]	
+105a6800c	105a68087	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListVersionSetRequest descriptor]	
+105a68088	105a68103	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListOsVersionRequest descriptor]	
+105a68104	105a6817f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbUpdateVersionSetRequest descriptor]	
+105a68180	105a681fb	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbGetVersionSetResponse descriptor]	
+105a681fc	105a68277	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListVersionSetResponse descriptor]	
+105a68278	105a682f3	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListOsVersionResponse descriptor]	
+105a682f4	105a6836f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbPublishVersionSetRequest descriptor]	
+105a68370	105a683eb	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbPromoteOsVersionRequest descriptor]	
+105a683ec	105a68467	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbDeleteOsVersionRequest descriptor]	
+105a68468	105a684e3	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbSetLatestOsVersionRequest descriptor]	
+105a684e4	105a6855f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbSetInstalledVersionUpdateRequirementRequest descriptor]	
+105a68560	105a685db	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbGetOsTargetFilesPackagesRequest descriptor]	
+105a685dc	105a68657	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbGetOsTargetFilesPackagesResponse descriptor]	
+105a68658	105a686d3	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbPublishDifferentialBuildRequest descriptor]	
+105a686d4	105a6874f	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListDifferentialBuildRequest descriptor]	
+105a68750	105a687cb	decompiled	chunks/008/functions-000560.c	+[SCSpectaclesOtaPbListDifferentialBuildResponse descriptor]	
+105a687cc	105a688a3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl initWithSpectaclesDevice:]	
+105a688a4	105a688ab	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl deviceId]	
+105a688ac	105a688b3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl setDeviceId:]	
+105a688b4	105a688bb	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl firmwareVersion]	
+105a688bc	105a688eb	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl setFirmwareVersion:]	
+105a688ec	105a688f3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl hardwareVersion]	
+105a688f4	105a68923	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl setHardwareVersion:]	
+105a68924	105a6895f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosDeviceInfoImpl .cxx_destruct]	
+105a68960	105a68a1f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl initWithSessionId:targetFirmware:updateDuration:isManualUpdate:]	
+105a68a20	105a68a27	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl isManualUpdate]	
+105a68a28	105a68a2f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl setIsManualUpdate:]	
+105a68a30	105a68a37	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl sessionId]	
+105a68a38	105a68a3f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl setSessionId:]	
+105a68a40	105a68a47	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl updateDurationInSec]	
+105a68a48	105a68a4f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl setUpdateDurationInSec:]	
+105a68a50	105a68a57	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl targetFirmwareVersion]	
+105a68a58	105a68a87	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl setTargetFirmwareVersion:]	
+105a68a88	105a68ab7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosFirmwareUpdateSessionInfoImpl .cxx_destruct]	
+105a68ab8	105a68b2b	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger initWithBlizzardLogger:]	
+105a68b2c	105a68c2f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger _logCheeriosUpdateSessionEvent:deviceInfo:sessionInfo:]	
+105a68c30	105a68d43	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger _logSpectaclesTrackedEvent:deviceInfo:]	
+105a68d44	105a68da3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateCheckWithDeviceInfo:]	
+105a68da4	105a68e03	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateTapWithDeviceInfo:]	
+105a68e04	105a68e63	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateEnterWithDeviceInfo:]	
+105a68e64	105a68ec3	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateShowWithDeviceInfo:]	
+105a68ec4	105a68f5f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateFailure:deviceInfo:sessionInfo:]	
+105a68f60	105a68fd7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateStartWithDeviceInfo:sessionInfo:]	
+105a68fd8	105a6904f	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateSuccessWithDeviceInfo:sessionInfo:]	
+105a69050	105a690c7	decompiled	chunks/008/functions-000560.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateDownloadStartWithDeviceInfo:sessionInfo:]	
+105a690c8	105a6913f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateDownloadedWithDeviceInfo:sessionInfo:]	
+105a69140	105a691b7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateTransferStartWithDeviceInfo:sessionInfo:]	
+105a691b8	105a6922f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesCheeriosOTALogger firmwareUpdateTransferredWithDeviceInfo:sessionInfo:]	
+105a69230	105a6923b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesCheeriosOTALogger .cxx_destruct]	
+105a6923c	105a692f3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager initWithConnectionHub:]	
+105a692f4	105a69337	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager requestSettingsWithForceBoot:]	
+105a69338	105a6937b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager updateSettings:]	
+105a6937c	105a693fb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager _errorFromResponse:]	
+105a693fc	105a695b7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager handleResponse:]	
+105a695b8	105a695bf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager responseMonitorState]	
+105a695c0	105a695c7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager settingsResult]	
+105a695c8	105a695cf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager updateSettingsResult]	
+105a695d0	105a6960b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesLowPowerModeManager .cxx_destruct]	
+105a6960c	105a6982b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateEntryPoint begin]	
+105a6982c	105a698ab	decompiled	chunks/008/functions-000561.c		
+105a698ac	105a6995f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateEntryPoint _createPowerStateManager]	
+105a69960	105a699db	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateEntryPoint _createLowPowerModeManager]	
+105a699dc	105a69af3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateEntryPoint _isPowerStateSupported:]	
+105a69af4	105a69b2f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateEntryPoint .cxx_destruct]	
+105a69b30	105a69d93	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager initWithCurrentDevice:connectionHub:]	
+105a69d94	105a69ddb	decompiled	chunks/008/functions-000561.c		
+105a69ddc	105a69e3f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager _handleConnectionState:]	
+105a69e40	105a69ec3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager _handleNewQCOMState:]	
+105a69ec4	105a69f13	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager _handleBootCompleteEvent:]	
+105a69f14	105a6a04b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager handleResponse:]	
+105a6a04c	105a6a07b	decompiled	chunks/008/functions-000561.c		
+105a6a07c	105a6a143	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager _handlePushMessage:]	
+105a6a144	105a6a193	decompiled	chunks/008/functions-000561.c		
+105a6a194	105a6a19b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager responseMonitorState]	
+105a6a19c	105a6a1f3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager requestCurrentPowerState]	
+105a6a1f4	105a6a257	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager turnOnDevice]	
+105a6a258	105a6a2bb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager turnOffDevice]	
+105a6a2bc	105a6a2c3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager currentPowerState]	
+105a6a2c4	105a6a2cb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager currentPowerStateObservable]	
+105a6a2cc	105a6a2d3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager bootCompleteObservable]	
+105a6a2d4	105a6a32f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesPowerStateManager .cxx_destruct]	
+105a6a330	105a6a3d7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager initWithConnectionHub:]	
+105a6a3d8	105a6a41b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager sendShakeToReportData:description:]	
+105a6a41c	105a6a47f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager handleResponse:]	
+105a6a480	105a6a487	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager responseMonitorState]	
+105a6a488	105a6a48f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager shakeToReportEvent]	
+105a6a490	105a6a4bf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManager .cxx_destruct]	
+105a6a4c0	105a6a62f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManagerEntryPoint begin]	
+105a6a630	105a6a66f	decompiled	chunks/008/functions-000561.c		
+105a6a670	105a6a6eb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManagerEntryPoint _createDeviceReportIssueManager]	
+105a6a6ec	105a6a727	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesDeviceReportIssueManagerEntryPoint .cxx_destruct]	
+105a6a728	105a6a7cb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaRPCManager initWithMessageSender:]	
+105a6a7cc	105a6a9f3	decompiled	chunks/008/functions-000561.c		
+105a6a9f4	105a6aaa3	decompiled	chunks/008/functions-000561.c		
+105a6aaa4	105a6ab03	decompiled	chunks/008/functions-000561.c	+[SCSpectaclesTomaRPCManager _HRMPBActionPointerWithId:x:y:]	
+105a6ab04	105a6ab13	decompiled	chunks/008/functions-000561.c	+[SCSpectaclesTomaRPCManager _HRMPBTouchEventRequestTouchActionFromAction:]	
+105a6ab14	105a6abaf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaRPCManager sendTouchEventWithPointers:action:]	
+105a6abb0	105a6ac2f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaRPCManager toggleDisplay]	
+105a6ac30	105a6ac5f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaRPCManager .cxx_destruct]	
+105a6ac60	105a6adc7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaServicesEntryPoint begin]	
+105a6adc8	105a6ae07	decompiled	chunks/008/functions-000561.c		
+105a6ae08	105a6ae83	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaServicesEntryPoint _tomaRPCManager]	
+105a6ae84	105a6aebf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesTomaServicesEntryPoint .cxx_destruct]	
+105a6aec0	105a6b017	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsEntryPoint begin]	
+105a6b018	105a6b057	decompiled	chunks/008/functions-000561.c		
+105a6b058	105a6b183	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsEntryPoint _createWiFiSettingsManager]	
+105a6b184	105a6b20b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsEntryPoint _isWifiSupported:]	
+105a6b20c	105a6b253	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsEntryPoint .cxx_destruct]	
+105a6b254	105a6b693	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager initWithCurrentDevice:connectionHub:ssidScanner:onDemandResourceFetching:]	
+105a6b694	105a6b723	decompiled	chunks/008/functions-000561.c		
+105a6b724	105a6b77f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _handleSsidChange:]	
+105a6b780	105a6b7b7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _shouldForceBoot]	
+105a6b7b8	105a6b877	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager isWiFiSettingsAccessible]	
+105a6b878	105a6b89f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager currentPhoneWiFiSSID]	
+105a6b8a0	105a6b8fb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager connectedDeviceWiFiSSID]	
+105a6b8fc	105a6b9cb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _requestDevicePowerStateIfNeeded]	
+105a6b9cc	105a6ba77	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager requestAvailableWiFiNetworksAsync]	
+105a6ba78	105a6bb0f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager requestWiFiNetworkStatusAsync]	
+105a6bb10	105a6bb73	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager enableSpectaclesWiFiSettings:]	
+105a6bb74	105a6bc6f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager connectWiFiWithSSID:password:]	
+105a6bc70	105a6bc77	decompiled	chunks/008/functions-000561.c		
+105a6bc78	105a6bcbb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager forgetWiFiWithSSID:]	
+105a6bcbc	105a6bcf3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager canForgetWiFi]	
+105a6bcf4	105a6bdf7	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager wifiNetworkForSSID:]	
+105a6bdf8	105a6be3f	decompiled	chunks/008/functions-000561.c		
+105a6be40	105a6be77	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager supportProxyNetwork]	
+105a6be78	105a6bea3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _resetConnectWiFiRequestTimer]	
+105a6bea4	105a6befb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _startConnectWiFiRequestTimer]	
+105a6befc	105a6bf93	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _connectWiFiRequestTimeout:]	
+105a6bf94	105a6c073	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _resetCurrentlyConnectingSSIDIfNeeded]	
+105a6c074	105a6c0fb	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _setCurrentlyConnectingSSID:]	
+105a6c0fc	105a6c3f3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _didUpdateWiFiNetworkStatus:error:]	
+105a6c3f4	105a6c4f3	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _didUpdateAvailableWiFiNetworks:error:]	
+105a6c4f4	105a6c53b	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _didFailToConnectToWiFi:]	
+105a6c53c	105a6c543	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _didFailToForgetWiFi:]	
+105a6c544	105a6c62f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _handlePowerState:]	
+105a6c630	105a6c9cf	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager handleResponse:]	
+105a6c9d0	105a6cab3	decompiled	chunks/008/functions-000561.c		
+105a6cab4	105a6cb1f	decompiled	chunks/008/functions-000561.c		
+105a6cb20	105a6cc07	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager _handlePushMessage:]	
+105a6cc08	105a6cc5f	decompiled	chunks/008/functions-000561.c		
+105a6cc60	105a6cc67	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager responseMonitorState]	
+105a6cc68	105a6cc6f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager wifiStatus]	
+105a6cc70	105a6cc77	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager wifiNetworkList]	
+105a6cc78	105a6cc7f	decompiled	chunks/008/functions-000561.c	-[SCSpectaclesWiFiSettingsManager connectingWiFiSSID]	
+105a6cc80	105a6cc87	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesWiFiSettingsManager connectWiFiError]	
+105a6cc88	105a6cc8f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesWiFiSettingsManager forgetWiFiError]	
+105a6cc90	105a6cd57	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesWiFiSettingsManager .cxx_destruct]	
+105a6cd58	105a6d007	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initCheeriosRemainFlightInfoNotificationWithDeviceName:batteryLevel:flightMode:remainFlightTime:icon:]	
+105a6d008	105a6d0ef	decompiled	chunks/008/functions-000562.c		
+105a6d0f0	105a6d177	decompiled	chunks/008/functions-000562.c		
+105a6d178	105a6d423	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initCheeriosStandbyModeNotificationWithDeviceName:batteryLevel:unimportedSnapCount:icon:]	
+105a6d424	105a6d7d3	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initCheeriosTakeoffFailedNotificationWithDeviceName:batteryLevel:errorInfo:pushType:icon:]	
+105a6d7d4	105a6d7fb	decompiled	chunks/008/functions-000562.c		
+105a6d7fc	105a6d8f3	decompiled	chunks/008/functions-000562.c		
+105a6d8f4	105a6d9d7	decompiled	chunks/008/functions-000562.c		
+105a6d9d8	105a6dae3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter initWithNotificationManager:contentStatusServices:device:iconProvider:]	
+105a6dae4	105a6daeb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter responseMonitorState]	
+105a6daec	105a6db37	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter handleResponse:]	
+105a6db38	105a6dc6b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _handleFlightInfoResponse:]	
+105a6dc6c	105a6dd13	decompiled	chunks/008/functions-000562.c		
+105a6dd14	105a6dd57	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _pushFlightRemainInfo:]	
+105a6dd58	105a6deff	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _pushStandbyModeNotificationIfNeeded:]	
+105a6df00	105a6e097	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _pushFlightModeNofiticationIfNeeded:]	
+105a6e098	105a6e25b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _pushFlightStateErrors:]	
+105a6e25c	105a6e333	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _fetchDeviceIcon]	
+105a6e334	105a6e39b	decompiled	chunks/008/functions-000562.c		
+105a6e39c	105a6e3c3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter flightErrorDescription]	
+105a6e3c4	105a6e4af	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter _reportLastFlightErrorObservable:]	
+105a6e4b0	105a6e4eb	decompiled	chunks/008/functions-000562.c		
+105a6e4ec	105a6e54f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEmitter .cxx_destruct]	
+105a6e550	105a6ea7b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEntryPoint begin]	
+105a6ea7c	105a6eabb	decompiled	chunks/008/functions-000562.c		
+105a6eabc	105a6eaeb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEntryPoint _getFlightErrorReporter]	
+105a6eaec	105a6eb83	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightActivityNotificationEntryPoint .cxx_destruct]	
+105a6eb84	105a6ec4f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger initWithGrapheneRegistry:hardwareVersion:firmwareVersion:]	
+105a6ec50	105a6edb3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger logFlightError:forFlightMode:]	
+105a6edb4	105a6ef17	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger logFlightSessionWithErrorFlag:forFlightMode:]	
+105a6ef18	105a6efb3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger _mergeDialPositionToMetric:flightMode:]	
+105a6efb4	105a6f02b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger _mergeHardwareVersionToMetric:]	
+105a6f02c	105a6f183	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger _mergeFirmwareVersionToMetric:]	
+105a6f184	105a6f1cb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorLogger .cxx_destruct]	
+105a6f1cc	105a6f2bf	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter initWithFlightManager:logger:performer:]	
+105a6f2c0	105a6f2c7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter responseMonitorState]	
+105a6f2c8	105a6f313	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter handleResponse:]	
+105a6f314	105a6f3eb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _handleFlightInfoResponse:]	
+105a6f3ec	105a6f493	decompiled	chunks/008/functions-000562.c		
+105a6f494	105a6f4d7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _pushFlightRemainInfo:]	
+105a6f4d8	105a6f51f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _pushFlightStateErrors:]	
+105a6f520	105a6f68b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _setupFlightStatusObservable]	
+105a6f68c	105a6f6eb	decompiled	chunks/008/functions-000562.c		
+105a6f6ec	105a6f76b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _logFlightSessionCountWithFlightStatus:]	
+105a6f76c	105a6f7db	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _logFlightSessionError]	
+105a6f7dc	105a6fa53	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter _logFlightErrorMetrics:]	
+105a6fa54	105a6faa7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlightErrorMetricsEmitter .cxx_destruct]	
+105a6faa8	105a6fad3	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesPairingMetric spectaclesPairingStart]	
+105a6fad4	105a6faff	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesPairingMetric spectaclesPairingSuccess]	
+105a6fb00	105a6fb2b	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesPairingMetric spectaclesPairingFailure]	
+105a6fb2c	105a6fb57	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesPairingMetric spectaclesPairingCancel]	
+105a6fb58	105a6fbf7	decompiled	chunks/008/functions-000562.c	-[SCGrapheneSpectaclesPairingMetric description]	
+105a6fbf8	105a6fd57	decompiled	chunks/008/functions-000562.c	-[SCGrapheneRegistry spectaclesPairingGraphene]	
+105a6fd58	105a6fd83	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesFileTransferMetric spectaclesTransferFileSuccess]	
+105a6fd84	105a6fe23	decompiled	chunks/008/functions-000562.c	-[SCGrapheneSpectaclesFileTransferMetric description]	
+105a6fe24	105a6ff67	decompiled	chunks/008/functions-000562.c	-[SCGrapheneRegistry spectaclesFileTransferGraphene]	
+105a6ff68	105a6ff93	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesFlightErrorMetric flightError]	
+105a6ff94	105a6ffbf	decompiled	chunks/008/functions-000562.c	+[SCGrapheneSpectaclesFlightErrorMetric flightSession]	
+105a6ffc0	105a7005f	decompiled	chunks/008/functions-000562.c	-[SCGrapheneSpectaclesFlightErrorMetric description]	
+105a70060	105a701ab	decompiled	chunks/008/functions-000562.c	-[SCGrapheneRegistry spectaclesFlightErrorGraphene]	
+105a701ac	105a703cb	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initCheeriosUnimportedSnapsNotificationWithSnapsCount:icon:]	
+105a703cc	105a70453	decompiled	chunks/008/functions-000562.c		
+105a70454	105a7068f	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initCheeriosCaptureCompletedNotificationWithDeviceName:unseenSnapsCount:icon:]	
+105a70690	105a708a3	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initSpectaclesPairingCompletePushWithUnimportedSnapsCount:icon:]	
+105a708a4	105a70d7f	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initNewContentAvailableNotificationWithSession:numberOfUntransferredContent:tmpFileWriter:icon:]	
+105a70d80	105a70e2b	decompiled	chunks/008/functions-000562.c		
+105a70e2c	105a711ef	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initTransferredCompleteNotificationWithSession:seenSpecsTab:tmpFileWriter:icon:]	
+105a711f0	105a713cf	decompiled	chunks/008/functions-000562.c	-[SCAppNotification initTransferInterruptedNotificationWithSession:icon:]	
+105a713d0	105a715fb	decompiled	chunks/008/functions-000562.c		
+105a715fc	105a716bf	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource initWithNotificationManager:tmpFileWriter:contentStatusServices:]	
+105a716c0	105a716c7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource needDeviceIcon]	
+105a716c8	105a716cb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource pushCaptureCompleteNotification]	
+105a716cc	105a716cf	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource pushPostPairingNewSnapNotification]	
+105a716d0	105a717eb	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource pushContentAvailableNotificationForSession:]	
+105a717ec	105a718b7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource pushImportCompleteNotificationForSession:currentlyOnMemoriesSnapsTab:]	
+105a718b8	105a7194b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource pushTransferInterruptedNotificationForSession:]	
+105a7194c	105a71a3b	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource _pushUnimportedSnapsNotification]	
+105a71a3c	105a71a43	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource deviceIcon]	
+105a71a44	105a71a73	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource setDeviceIcon:]	
+105a71a74	105a71ab7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesEyewearNewSnapNotificationSource .cxx_destruct]	
+105a71ab8	105a71ba3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource initWithNotificationManager:contentStatusServices:tmpFileWriter:device:]	
+105a71ba4	105a71bab	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource needDeviceIcon]	
+105a71bac	105a71baf	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource pushCaptureCompleteNotification]	
+105a71bb0	105a71bb3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource pushPostPairingNewSnapNotification]	
+105a71bb4	105a71bb7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource pushContentAvailableNotificationForSession:]	
+105a71bb8	105a71c83	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource pushImportCompleteNotificationForSession:currentlyOnMemoriesSnapsTab:]	
+105a71c84	105a71d17	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource pushTransferInterruptedNotificationForSession:]	
+105a71d18	105a71e07	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource _pushUnimportedSnapsNotification]	
+105a71e08	105a71f43	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource _pushCaptureCompleteNotification]	
+105a71f44	105a7215f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource _getUnseenSnapsCount:]	
+105a72160	105a72167	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource deviceIcon]	
+105a72168	105a72197	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource setDeviceIcon:]	
+105a72198	105a721e3	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesFlyCameraNewSnapNotificationSource .cxx_destruct]	
+105a721e4	105a7232f	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesNewSnapNotificationEmitter initWithNotificationSource:onboardingMonitor:onMemoriesMonitor:devicePreferences:device:iconProvider:]	
+105a72330	105a724d7	decompiled	chunks/008/functions-000562.c	-[SCSpectaclesNewSnapNotificationEmitter spectaclesDeviceDidUpdateContentList:]	
+105a724d8	105a7257b	decompiled	chunks/008/functions-000562.c		
+105a7257c	105a725ff	decompiled	chunks/008/functions-000562.c		
+105a72600	105a726ff	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter spectaclesTransferSession:onTransferUpdate:]	
+105a72700	105a727bf	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _delayPushNotification:]	
+105a727c0	105a727cb	decompiled	chunks/008/functions-000563.c		
+105a727cc	105a7280b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _pushPostPairingNewSnapNotification]	
+105a7280c	105a72813	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _pushCaptureCompleteNotification]	
+105a72814	105a7281b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _pushContentAvailableNotificationForSession:]	
+105a7281c	105a72823	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _pushTransferInterruptedNotificationForSession:]	
+105a72824	105a72873	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _pushImportCompleteNotificationForSession:]	
+105a72874	105a728c3	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _setHasEmitPostPairingNotification:]	
+105a728c4	105a7290b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _hasEmitPostPairingNotification]	
+105a7290c	105a72a03	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter _fetchDeviceIconIfNeed]	
+105a72a04	105a72a63	decompiled	chunks/008/functions-000563.c		
+105a72a64	105a72acb	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEmitter .cxx_destruct]	
+105a72acc	105a72d9f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEntryPoint begin]	
+105a72da0	105a72f9b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEntryPoint _createNewSnapNotificationSource]	
+105a72f9c	105a7301f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesNewSnapNotificationEntryPoint .cxx_destruct]	
+105a73020	105a730ef	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnMemoriesMonitor initWithApplicationLifecycleEvents:currentPageTracker:]	
+105a730f0	105a73163	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnMemoriesMonitor currentlyOnMemoriesSnapsTab]	
+105a73164	105a7316b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnMemoriesMonitor _setIsAppActive:]	
+105a7316c	105a732eb	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnMemoriesMonitor _observeApplicationLifecycleEvents]	
+105a732ec	105a7334b	decompiled	chunks/008/functions-000563.c		
+105a7334c	105a73387	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnMemoriesMonitor .cxx_destruct]	
+105a73388	105a73423	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnboardingMonitor initWithFeatureSettings:device:]	
+105a73424	105a7361f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnboardingMonitor _seenOnboardingKeyPath]	
+105a73620	105a7383f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnboardingMonitor seenOnboardingVideo]	
+105a73840	105a739a7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnboardingMonitor setupPushNotificationAfterOnboarding:]	
+105a739a8	105a73a0f	decompiled	chunks/008/functions-000563.c		
+105a73a10	105a73a47	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOnboardingMonitor .cxx_destruct]	
+105a73a48	105a73b37	decompiled	chunks/008/functions-000563.c		
+105a73b38	105a73e07	decompiled	chunks/008/functions-000563.c	-[SCAppNotification initOTAUpdateAvailableNotificationWithDeviceName:batteryLevel:icon:]	
+105a73e08	105a73e8f	decompiled	chunks/008/functions-000563.c		
+105a73e90	105a740cf	decompiled	chunks/008/functions-000563.c	-[SCAppNotification initOTAUpdateSuccessfulNotificationWithVersion:icon:]	
+105a740d0	105a74297	decompiled	chunks/008/functions-000563.c	-[SCAppNotification initOTAUpdateFailedNotificationWithIcon:]	
+105a74298	105a74a77	decompiled	chunks/008/functions-000563.c	-[SCAppNotification initWithSpectaclesPushType:]	
+105a74a78	105a74b4b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFirmwareNotificationEmitter initWithNotificationManager:device:]	
+105a74b4c	105a74c6b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFirmwareNotificationEmitter spectaclesOnFirmwareUpdateForDevice:failedFromState:]	
+105a74c6c	105a74e17	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFirmwareNotificationEmitter spectaclesOnFirmwareUpdateEvent:device:]	
+105a74e18	105a74ef3	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFirmwareNotificationEmitter spectaclesDevice:onAlertNotification:]	
+105a74ef4	105a74f1b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFirmwareNotificationEmitter .cxx_destruct]	
+105a74f1c	105a75083	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter initWithNotificationManager:otaManager:device:iconProvider:userPreferences:userSessionScope:]	
+105a75084	105a7516f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _setupOTAStateObservableIfNeeded]	
+105a75170	105a751b7	decompiled	chunks/008/functions-000563.c		
+105a751b8	105a75227	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _handleOTAUpdateAppState:]	
+105a75228	105a7527f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushOTANotificationIfNeeded]	
+105a75280	105a7537b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushOTANotificationAfterStartedUpdateIfNeededAfterDelay:]	
+105a7537c	105a753d3	decompiled	chunks/008/functions-000563.c		
+105a753d4	105a75583	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushOTANotificationUpdateAvailableIfNeededAfterDelay:]	
+105a75584	105a755b7	decompiled	chunks/008/functions-000563.c		
+105a755b8	105a75653	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushUpdateSuccessfulNotification]	
+105a75654	105a756c7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushUpdateFailedNotification]	
+105a756c8	105a7582f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _pushUpdateAvailableNotification:]	
+105a75830	105a75907	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _fetchDeviceIcon]	
+105a75908	105a7596f	decompiled	chunks/008/functions-000563.c		
+105a75970	105a75a63	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter _availableVersion]	
+105a75a64	105a75a7b	decompiled	chunks/008/functions-000563.c		
+105a75a7c	105a75ab3	decompiled	chunks/008/functions-000563.c		
+105a75ab4	105a75b47	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEmitter .cxx_destruct]	
+105a75b48	105a75e53	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEntryPoint begin]	
+105a75e54	105a75edb	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesOTANotificationEntryPoint .cxx_destruct]	
+105a75edc	105a7624f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationEntryPoint begin]	
+105a76250	105a762db	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationEntryPoint end]	
+105a762dc	105a76327	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationEntryPoint calibrationControllerDidExit:]	
+105a76328	105a76343	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationEntryPoint calibrationController:didPresentAlertDialog:]	
+105a76344	105a763bf	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationEntryPoint .cxx_destruct]	
+105a763c0	105a7659f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController initWithFlightImuCalibrationRPCManager:device:deviceConnectionStateReporter:onDemandResourceFetcher:analyticsLogger:]	
+105a765a0	105a766eb	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _setupCalibrationStatusObservable]	
+105a766ec	105a76733	decompiled	chunks/008/functions-000563.c		
+105a76734	105a7683f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _setupDeviceConnectionStateReporter]	
+105a76840	105a768a3	decompiled	chunks/008/functions-000563.c		
+105a768a4	105a769c7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController configureWithActionObservable:]	
+105a769c8	105a76a0f	decompiled	chunks/008/functions-000563.c		
+105a76a10	105a76a17	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController viewModelPublisher]	
+105a76a18	105a76ac7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _startFlightImuCalibration]	
+105a76ac8	105a76acf	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _stopFlightImuCalibration]	
+105a76ad0	105a76b53	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _restartCheeriosIfNecessary]	
+105a76b54	105a76be7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _handleCalibrationStatusEvent:]	
+105a76be8	105a76c2b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _updateViewModelForCalibrationCompleteState]	
+105a76c2c	105a76c47	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _updateViewModelForCalibrationErrorState]	
+105a76c48	105a76c93	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _updateViewModelForCalibrationDoingState:]	
+105a76c94	105a76d5f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _isCurrentCalibrationPhaseFinishedWithResults:]	
+105a76d60	105a76f7f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _presentCancelCalibrationAlertDialog]	
+105a76f80	105a76fdf	decompiled	chunks/008/functions-000563.c		
+105a76fe0	105a76fef	decompiled	chunks/008/functions-000563.c		
+105a76ff0	105a771c7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _presentCalibrationErrorAlertDialog]	
+105a771c8	105a7720f	decompiled	chunks/008/functions-000563.c		
+105a77210	105a773e7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _presentDownloadAssetsErrorAlertDialog]	
+105a773e8	105a77413	decompiled	chunks/008/functions-000563.c		
+105a77414	105a774e3	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _presentAlertDialog:]	
+105a774e4	105a7753b	decompiled	chunks/008/functions-000563.c		
+105a7753c	105a7756f	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _dismissCalibrationPage]	
+105a77570	105a77607	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _loadingPageViewModel]	
+105a77608	105a77737	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _emitCalibrationInProgressPageViewModelWithPhase:phaseState:currentPhaseSucceeded:currentPhaseFailed:]	
+105a77738	105a7784b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _emitCalibrationCompletePageViewModel]	
+105a7784c	105a778f3	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _trayTitleForPhase:]	
+105a778f4	105a7791b	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _phaseStateStringForPhaseState:]	
+105a7791c	105a779b7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _videoViewModelIdFromPhase:phaseState:]	
+105a779b8	105a779d3	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController flightImuCalibrationRPCManagerDidReceiveStartCalibrationResponse:error:]	
+105a779d4	105a779d7	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController flightImuCalibrationRPCManagerDidReceiveStopCalibrationResponse:error:]	
+105a779d8	105a779db	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController flightImuCalibrationRPCManagerDidReceiveRestartDeviceResponse:error:]	
+105a779dc	105a77a97	decompiled	chunks/008/functions-000563.c	-[SCSpectaclesFlightImuCalibrationController _handleAction:]	
+105a77a98	105a77abf	decompiled	chunks/008/functions-000564.c		
+105a77ac0	105a77b4f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _tapDoneButton]	
+105a77b50	105a77b53	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _tapCancelButton]	
+105a77b54	105a77beb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _videoPlayToEnd]	
+105a77bec	105a77c9f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _trayIconFinishedAnimating]	
+105a77ca0	105a77d4b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _prefetchCalibrationVideos]	
+105a77d4c	105a77d93	decompiled	chunks/008/functions-000564.c		
+105a77d94	105a77edf	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _fetchVideoViewModelsForUrl:completion:]	
+105a77ee0	105a77f4b	decompiled	chunks/008/functions-000564.c		
+105a77f4c	105a781f7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _handleVideoViewModelsDict:error:completion:]	
+105a781f8	105a7820b	decompiled	chunks/008/functions-000564.c		
+105a7820c	105a782eb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _startWatchdogTimer]	
+105a782ec	105a78327	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _cancelWatchdogTimer]	
+105a78328	105a783e7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _logCancelCalibrationEvent]	
+105a783e8	105a784a7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController _logErrorCalibrationEvent]	
+105a784a8	105a784bf	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController delegate]	
+105a784c0	105a784cb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController setDelegate:]	
+105a784cc	105a7856b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationController .cxx_destruct]	
+105a7856c	105a785eb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController initWithDelegate:]	
+105a785ec	105a78aff	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController viewDidLoad]	
+105a78b00	105a78b4f	decompiled	chunks/008/functions-000564.c		
+105a78b50	105a78bff	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController setViewModel:]	
+105a78c00	105a78c13	decompiled	chunks/008/functions-000564.c		
+105a78c14	105a78cbb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController _animateDoneTrayWithTitle:doneButtonHidden:]	
+105a78cbc	105a78d07	decompiled	chunks/008/functions-000564.c		
+105a78d08	105a78d17	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController viewModel]	
+105a78d18	105a78d73	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationDoneTrayViewController .cxx_destruct]	
+105a78d74	105a78df3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController initWithDelegate:]	
+105a78df4	105a79463	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController viewDidLoad]	
+105a79464	105a79a23	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController _setupBubblesWithCount:]	
+105a79a24	105a79eeb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController _fillBubblesWithCurrentPhase:currentPhaseSucceeded:currentPhaseFailed:]	
+105a79eec	105a7a00b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController _animateTrayCurrentPhase:succeeded:failed:]	
+105a7a00c	105a7a28b	decompiled	chunks/008/functions-000564.c		
+105a7a28c	105a7a2db	decompiled	chunks/008/functions-000564.c		
+105a7a2dc	105a7a38b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController setViewModel:]	
+105a7a38c	105a7a41b	decompiled	chunks/008/functions-000564.c		
+105a7a41c	105a7a41f	decompiled	chunks/008/functions-000564.c		
+105a7a420	105a7a42f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController viewModel]	
+105a7a430	105a7a49b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationInstructionsTrayViewController .cxx_destruct]	
+105a7a49c	105a7a5ff	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController initWithPlayerProvider:onDemandResourceFetcher:applicationLifecycleEvents:]	
+105a7a600	105a7a67f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController dealloc]	
+105a7a680	105a7a6a3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController viewDidLoad]	
+105a7a6a4	105a7ad6b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setupLoadingView]	
+105a7ad6c	105a7b097	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setupVideoView]	
+105a7b098	105a7b133	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setupInstructionsTray]	
+105a7b134	105a7b1cf	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setupDoneTray]	
+105a7b1d0	105a7b21b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _configureTray:]	
+105a7b21c	105a7b24b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController actionPublisher]	
+105a7b24c	105a7b3a3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController configureWithViewModelBehavior:]	
+105a7b3a4	105a7b3eb	decompiled	chunks/008/functions-000564.c		
+105a7b3ec	105a7b487	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _updateWithViewModel:]	
+105a7b488	105a7b6df	decompiled	chunks/008/functions-000564.c		
+105a7b6e0	105a7b6f7	decompiled	chunks/008/functions-000564.c		
+105a7b6f8	105a7b7f3	decompiled	chunks/008/functions-000564.c		
+105a7b7f4	105a7b90f	decompiled	chunks/008/functions-000564.c		
+105a7b910	105a7bac3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setVideoViewIsHidden:completion:]	
+105a7bac4	105a7baeb	decompiled	chunks/008/functions-000564.c		
+105a7baec	105a7bb6b	decompiled	chunks/008/functions-000564.c		
+105a7bb6c	105a7bbf3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController _setActiveTray:]	
+105a7bbf4	105a7bc7f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController tray:positionDidChange:]	
+105a7bc80	105a7bccb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController didSelectDismissalActionWithHeaderItem:]	
+105a7bccc	105a7bd17	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController doneTrayViewControllerDidTapButton:]	
+105a7bd18	105a7bd63	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController instructionsTrayViewControllerDidShowCurrentPhaseResult:]	
+105a7bd64	105a7bdaf	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController videoViewDidPlayToEnd]	
+105a7bdb0	105a7bdbf	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController videoView]	
+105a7bdc0	105a7bdff	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController setVideoView:]	
+105a7be00	105a7bf2f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationViewController .cxx_destruct]	
+105a7bf30	105a7c28f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController initWithDelegate:videoObjectBehavior:playerProvider:onDemandResourceFetcher:applicationLifecycleEvents:]	
+105a7c290	105a7c337	decompiled	chunks/008/functions-000564.c		
+105a7c338	105a7c9fb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController viewDidLoad]	
+105a7c9fc	105a7ca4b	decompiled	chunks/008/functions-000564.c		
+105a7ca4c	105a7caa3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController viewWillAppear:]	
+105a7caa4	105a7caf7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController viewWillDisappear:]	
+105a7caf8	105a7cb07	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _setAppIsBackgrounded:]	
+105a7cb08	105a7cd13	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _playerDidPlayToTime:]	
+105a7cd14	105a7d05b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _updateWithVideoObject:]	
+105a7d05c	105a7d133	decompiled	chunks/008/functions-000564.c		
+105a7d134	105a7d327	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _didFetchAsset:fromVideoObject:]	
+105a7d328	105a7d457	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _didFetchFallbackImage:fromUrl:]	
+105a7d458	105a7d64f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _checkIfCanPlay]	
+105a7d650	105a7d7c7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController _updateVideoRange]	
+105a7d7c8	105a7d8b3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesOnDemandVideoViewController .cxx_destruct]	
+105a7d8b4	105a7d8ff	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationAction didDealloc]	
+105a7d900	105a7d94b	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationAction tapCancelButton]	
+105a7d94c	105a7d993	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationAction tapDoneButton]	
+105a7d994	105a7d9df	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationAction trayIconFinishedAnimating]	
+105a7d9e0	105a7da2b	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationAction videoPlayToEnd]	
+105a7da2c	105a7da4f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationAction copyWithZone:]	
+105a7da50	105a7da57	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationAction hash]	
+105a7da58	105a7da9b	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationAction internalInit]	
+105a7da9c	105a7db23	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationAction isEqual:]	
+105a7db24	105a7dc1f	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationAction matchTapDoneButton:tapCancelButton:didDealloc:videoPlayToEnd:trayIconFinishedAnimating:]	
+105a7dc20	105a7dce3	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationPageViewModel calibratingPageWithTitle:trayViewModel:videoViewModel:]	
+105a7dce4	105a7ddb7	decompiled	chunks/008/functions-000564.c	+[SCSpectaclesFlightImuCalibrationPageViewModel loadingPageWithTitle:loadingTitle:loadingSubtitle:showSpinner:]	
+105a7ddb8	105a7dddb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel copyWithZone:]	
+105a7dddc	105a7de87	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel hash]	
+105a7de88	105a7decb	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel internalInit]	
+105a7decc	105a7dff3	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel isEqual:]	
+105a7dff4	105a7e087	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel matchCalibratingPage:loadingPage:]	
+105a7e088	105a7e0e7	decompiled	chunks/008/functions-000564.c	-[SCSpectaclesFlightImuCalibrationPageViewModel .cxx_destruct]	
+105a7e0e8	105a7e15b	decompiled	chunks/008/functions-000565.c	+[SCSpectaclesFlightImuCalibrationTrayViewModel completeTrayWithTitle:displayDoneButton:]	
+105a7e15c	105a7e1eb	decompiled	chunks/008/functions-000565.c	+[SCSpectaclesFlightImuCalibrationTrayViewModel inProgressTrayWithTitle:currentPhase:numPhases:currentPhaseResultSuccess:currentPhaseResultFail:]	
+105a7e1ec	105a7e20f	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel copyWithZone:]	
+105a7e210	105a7e2a3	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel hash]	
+105a7e2a4	105a7e2e7	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel internalInit]	
+105a7e2e8	105a7e3ef	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel isEqual:]	
+105a7e3f0	105a7e487	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel matchInProgressTray:completeTray:]	
+105a7e488	105a7e4b7	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesFlightImuCalibrationTrayViewModel .cxx_destruct]	
+105a7e4b8	105a7e713	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesHomeWifiEntryPoint begin]	
+105a7e714	105a7e79f	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesHomeWifiEntryPoint end]	
+105a7e7a0	105a7e7fb	decompiled	chunks/008/functions-000565.c	-[SCSpectaclesHomeWifiEntryPoint .cxx_destruct]	
+105a7e7fc	105a7e9af	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController initWithDevice:statusCoordinator:homeWifiService:analyticsService:onDemandResourceFetcher:legacySpectaclesTooltipsService:scopeDelegate:]	
+105a7e9b0	105a7ea0f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController dealloc]	
+105a7ea10	105a7f047	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController loadView]	
+105a7f048	105a7f27b	decompiled	chunks/008/functions-000565.c		
+105a7f27c	105a7f2d3	decompiled	chunks/008/functions-000565.c		
+105a7f2d4	105a7f61b	decompiled	chunks/008/functions-000565.c		
+105a7f61c	105a7f7a7	decompiled	chunks/008/functions-000565.c		
+105a7f7a8	105a7f863	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController viewDidLoad]	
+105a7f864	105a7f8bf	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController viewWillDisappear:]	
+105a7f8c0	105a7f8c7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController numberOfSectionsInTableView:]	
+105a7f8c8	105a7f937	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:numberOfRowsInSection:]	
+105a7f938	105a7fa43	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:cellForRowAtIndexPath:]	
+105a7fa44	105a7fa53	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:heightForFooterInSection:]	
+105a7fa54	105a7fb5f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:viewForFooterInSection:]	
+105a7fb60	105a7fe2b	decompiled	chunks/008/functions-000565.c		
+105a7fe2c	105a7fe3b	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:heightForHeaderInSection:]	
+105a7fe3c	105a7fe9f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:viewForHeaderInSection:]	
+105a7fea0	105a7feab	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:heightForRowAtIndexPath:]	
+105a7feac	105a80127	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView:didSelectRowAtIndexPath:]	
+105a80128	105a8018f	decompiled	chunks/008/functions-000565.c		
+105a80190	105a8026b	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController lagunaOnShareWifiCredentialsUpdate:device:wifiSsid:]	
+105a8026c	105a80343	decompiled	chunks/008/functions-000565.c		
+105a80344	105a803e7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController lagunaOnWifiAPListUpdate:]	
+105a803e8	105a8041b	decompiled	chunks/008/functions-000565.c		
+105a8041c	105a804a3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController didPressRemoveButton:]	
+105a804a4	105a80527	decompiled	chunks/008/functions-000565.c		
+105a80528	105a805a7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController attributedLabel:didSelectLinkWithURL:]	
+105a805a8	105a805ab	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController getTitle]	
+105a805ac	105a807d7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _addWifiNetwork]	
+105a807d8	105a8085b	decompiled	chunks/008/functions-000565.c		
+105a8085c	105a80943	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _addCell]	
+105a80944	105a80a63	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _networkCell:]	
+105a80a64	105a80b43	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _setStateForCell:wifiSsid:idleState:]	
+105a80b44	105a80bb7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _logShareFlowFailure:]	
+105a80bb8	105a80cd3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForNotConnected]	
+105a80cd4	105a80def	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForDisconnection]	
+105a80df0	105a80f77	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForCannotConnectNetwork:]	
+105a80f78	105a81093	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForCannotConnectInternet]	
+105a81094	105a8125b	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForLowBattery]	
+105a8125c	105a81377	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForTransferInProgress]	
+105a81378	105a8142b	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForSuccess:]	
+105a8142c	105a81547	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForSuccessNoPending]	
+105a81548	105a8174b	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForSuccessWithPending:untransferredSnapsCount:]	
+105a8174c	105a818d7	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForRemoveConfirm:]	
+105a818d8	105a81a3f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForRemoveNotConnected:]	
+105a81a40	105a81bdf	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForMaxNetworks]	
+105a81be0	105a81d47	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _showAlertForConnectNewPassword:]	
+105a81d48	105a81daf	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _getOkNoOpAction]	
+105a81db0	105a81dbf	decompiled	chunks/008/functions-000565.c		
+105a81dc0	105a81edb	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _getRemoveButton:]	
+105a81edc	105a81f7f	decompiled	chunks/008/functions-000565.c		
+105a81f80	105a8206f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _getRetryButton]	
+105a82070	105a820cb	decompiled	chunks/008/functions-000565.c		
+105a820cc	105a82133	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController _getCancelButton]	
+105a82134	105a82143	decompiled	chunks/008/functions-000565.c		
+105a82144	105a82153	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController device]	
+105a82154	105a82193	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController setDevice:]	
+105a82194	105a821a3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController instructionsImageView]	
+105a821a4	105a821e3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController setInstructionsImageView:]	
+105a821e4	105a821f3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController explanationLabel]	
+105a821f4	105a82233	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController setExplanationLabel:]	
+105a82234	105a82243	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController footerLabel]	
+105a82244	105a82283	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController setFooterLabel:]	
+105a82284	105a82293	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController tableView]	
+105a82294	105a822d3	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController setTableView:]	
+105a822d4	105a8239f	decompiled	chunks/008/functions-000565.c	-[SCLagunaHomeWifiImportViewController .cxx_destruct]	
+105a823a0	105a828f3	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell initWithStyle:reuseIdentifier:]	
+105a828f4	105a82b77	decompiled	chunks/008/functions-000565.c		
+105a82b78	105a82eff	decompiled	chunks/008/functions-000565.c		
+105a82f00	105a830d3	decompiled	chunks/008/functions-000565.c		
+105a830d4	105a8311f	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell prepareForReuse]	
+105a83120	105a8320f	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell loadingIndicator]	
+105a83210	105a83357	decompiled	chunks/008/functions-000565.c		
+105a83358	105a8377b	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell setState:networkName:]	
+105a8377c	105a837b3	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _removeButtonPressed]	
+105a837b4	105a8391b	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _showConnectionStateInCell:textColor:]	
+105a8391c	105a839fb	decompiled	chunks/008/functions-000565.c		
+105a839fc	105a83d37	decompiled	chunks/008/functions-000565.c		
+105a83d38	105a83dd7	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _hideConnectionStateInCell]	
+105a83dd8	105a83e5f	decompiled	chunks/008/functions-000565.c		
+105a83e60	105a83eff	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _showWifiIcon]	
+105a83f00	105a8406f	decompiled	chunks/008/functions-000565.c		
+105a84070	105a840d7	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _hideWifiIcon]	
+105a840d8	105a84177	decompiled	chunks/008/functions-000565.c		
+105a84178	105a841cf	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _showLoadingIndicator]	
+105a841d0	105a84267	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _hideLoadingIndicator]	
+105a84268	105a842e3	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell _iconXSignFillImage]	
+105a842e4	105a84303	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell delegate]	
+105a84304	105a84317	decompiled	chunks/008/functions-000565.c	-[SCLagunaSettingsHomeWifiNetworkCell setDelegate:]	
+105a84318	105a84327	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell networkName]	
+105a84328	105a84333	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setNetworkName:]	
+105a84334	105a84343	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell wifiIconView]	
+105a84344	105a84383	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setWifiIconView:]	
+105a84384	105a84393	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell networkNameLabel]	
+105a84394	105a843d3	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setNetworkNameLabel:]	
+105a843d4	105a843e3	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell connectionStateLabel]	
+105a843e4	105a84423	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setConnectionStateLabel:]	
+105a84424	105a84463	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setLoadingIndicator:]	
+105a84464	105a84473	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell clearButton]	
+105a84474	105a844b3	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell setClearButton:]	
+105a844b4	105a8453f	decompiled	chunks/008/functions-000566.c	-[SCLagunaSettingsHomeWifiNetworkCell .cxx_destruct]	
+105a84540	105a8486f	decompiled	chunks/008/functions-000566.c		
+105a84870	105a84ab3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider initWithKioskModeManager:]	
+105a84ab4	105a84bbf	decompiled	chunks/008/functions-000566.c		
+105a84bc0	105a84bcb	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider pushToValdiMarshaller:]	
+105a84bcc	105a84bd3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider isOn]	
+105a84bd4	105a84c03	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider setIsOn:]	
+105a84c04	105a84c0b	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider activeLens]	
+105a84c0c	105a84c3b	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider setActiveLens:]	
+105a84c3c	105a84c43	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider updateEnabledResult]	
+105a84c44	105a84c73	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider setUpdateEnabledResult:]	
+105a84c74	105a84c7b	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider updateActiveLensResult]	
+105a84c7c	105a84cab	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider setUpdateActiveLensResult:]	
+105a84cac	105a84d17	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingProvider .cxx_destruct]	
+105a84d18	105a84ec3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionLensProvider initWithKioskModeManager:]	
+105a84ec4	105a84f3f	decompiled	chunks/008/functions-000566.c		
+105a84f40	105a85027	decompiled	chunks/008/functions-000566.c		
+105a85028	105a85033	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionLensProvider pushToValdiMarshaller:]	
+105a85034	105a8503b	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionLensProvider availableLenses]	
+105a8503c	105a8506b	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionLensProvider setAvailableLenses:]	
+105a8506c	105a850b3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionLensProvider .cxx_destruct]	
+105a850b4	105a85197	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController initWithContentView:]	
+105a85198	105a8519b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController preferredStatusBarStyle]	
+105a8519c	105a8524b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController loadView]	
+105a8524c	105a852bb	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController viewDidLoad]	
+105a852bc	105a8532f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController viewWillAppear:]	
+105a85330	105a85393	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController dealloc]	
+105a85394	105a853f7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController viewDidDisappear:]	
+105a853f8	105a8547f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController cardTransitionShouldBeginWithView:touchLocation:]	
+105a85480	105a85483	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController cardToExpandTransition]	
+105a85484	105a854d7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController cardTransitionWillBeginWithView:]	
+105a854d8	105a8558b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController cardTransitionEndedWithView:transitionType:]	
+105a8558c	105a85593	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController shouldDismissViewControllerWhenEnterBackground]	
+105a85594	105a8559b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController viewControllerPrefersSelfDismiss]	
+105a8559c	105a855bb	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController delegate]	
+105a855bc	105a855cf	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController setDelegate:]	
+105a855d0	105a855df	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController dismissCompletion]	
+105a855e0	105a855eb	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController setDismissCompletion:]	
+105a855ec	105a855fb	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController disableCardTransition]	
+105a855fc	105a8560b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController setDisableCardTransition:]	
+105a8560c	105a85667	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesGuidedModeSettingViewController .cxx_destruct]	
+105a85668	105a858fb	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint begin]	
+105a858fc	105a85ce3	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _createGuidedModeContext]	
+105a85ce4	105a85e17	decompiled	chunks/008/functions-000566.c		
+105a85e18	105a85eb7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint end]	
+105a85eb8	105a8607f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _presentLensSelectionViewControllerAndForceSelectLens:]	
+105a86080	105a860d7	decompiled	chunks/008/functions-000566.c		
+105a860d8	105a8617b	decompiled	chunks/008/functions-000566.c		
+105a8617c	105a86337	decompiled	chunks/008/functions-000566.c		
+105a86338	105a863ab	decompiled	chunks/008/functions-000566.c		
+105a863ac	105a86453	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _lackOfActiveLens]	
+105a86454	105a8652b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _dismissLensSelectionVC]	
+105a8652c	105a8655f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _refreshKioskModeStatus]	
+105a86560	105a8659b	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _onTapRestartDevice:]	
+105a8659c	105a86603	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _onTaggleEnableSwitch:]	
+105a86604	105a86687	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _onTapBackButton]	
+105a86688	105a866df	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _onSelectLens:]	
+105a866e0	105a867a7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint spectaclesGuidedModeSettingViewControllerWantsToDetachUIWithViewController:]	
+105a867a8	105a86827	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint spectaclesGuidedModeSettingViewControllerDidDeallocWithViewController:]	
+105a86828	105a8695f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint _pushNoActiveLensErrorNotification]	
+105a86960	105a869e7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesKioskModePageEntryPoint .cxx_destruct]	
+105a869e8	105a869fb	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesGuidedModeSettingProviding valdiMarshallableObjectDescriptor]	
+105a869fc	105a86a3f	decompiled	chunks/008/functions-000566.c		
+105a86a40	105a86a53	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesLensSelectionLensProviding valdiMarshallableObjectDescriptor]	
+105a86a54	105a86a97	decompiled	chunks/008/functions-000566.c		
+105a86a98	105a86aa3	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesGuidedModeSettingView componentPath]	
+105a86aa4	105a86ac7	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingView initWithViewModel:componentContext:runtime:]	
+105a86ac8	105a86b03	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingView setViewModel:]	
+105a86b04	105a86b3f	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeSettingView viewModel]	
+105a86b40	105a86b4b	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesLensSelectionView componentPath]	
+105a86b4c	105a86b6f	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionView initWithViewModel:componentContext:runtime:]	
+105a86b70	105a86bab	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionView setViewModel:]	
+105a86bac	105a86be7	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionView viewModel]	
+105a86be8	105a86c53	decompiled	chunks/008/functions-000566.c		
+105a86c54	105a86ca3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesGuidedModeContext initWithSettingProvider:disableAllSettings:disableGuidedModeSetting:disableActiveLensSetting:disableLensSelectionPage:readyToRestartDevice:]	
+105a86ca4	105a86ccb	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesGuidedModeContext valdiMarshallableObjectDescriptor]	
+105a86ccc	105a86cf3	decompiled	chunks/008/functions-000566.c		
+105a86cf4	105a86d73	decompiled	chunks/008/functions-000566.c		
+105a86d74	105a86db3	decompiled	chunks/008/functions-000566.c	-[SCComposerSpectaclesLensSelectionContext initWithLensProvider:]	
+105a86db4	105a86dd3	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesLensSelectionContext valdiMarshallableObjectDescriptor]	
+105a86dd4	105a86e03	decompiled	chunks/008/functions-000566.c		
+105a86e04	105a86edf	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope initWithUiContainer:delegate:type:deviceToReport:deviceProductType:]	
+105a86ee0	105a86ee7	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope uiContainer]	
+105a86ee8	105a86eff	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope delegate]	
+105a86f00	105a86f07	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope type]	
+105a86f08	105a86f0f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope deviceToReport]	
+105a86f10	105a86f17	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope deviceProductType]	
+105a86f18	105a86f4f	decompiled	chunks/008/functions-000566.c	-[SCSpectaclesReportIssueScope .cxx_destruct]	
+105a86f50	105a86f63	decompiled	chunks/008/functions-000566.c	+[SCComposerSpectaclesDeveloperModeManaging valdiMarshallableObjectDescriptor]	
+105a86f64	105a86f9b	decompiled	chunks/008/functions-000567.c		
+105a86f9c	105a86faf	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceNameManaging valdiMarshallableObjectDescriptor]	
+105a86fb0	105a86fe7	decompiled	chunks/008/functions-000567.c		
+105a86fe8	105a8700b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSecurityManaging valdiMarshallableObjectDescriptor]	
+105a8700c	105a8702f	decompiled	chunks/008/functions-000567.c		
+105a87030	105a8707f	decompiled	chunks/008/functions-000567.c		
+105a87080	105a870a7	decompiled	chunks/008/functions-000567.c		
+105a870a8	105a870f7	decompiled	chunks/008/functions-000567.c		
+105a870f8	105a87123	decompiled	chunks/008/functions-000567.c		
+105a87124	105a87173	decompiled	chunks/008/functions-000567.c		
+105a87174	105a871ab	decompiled	chunks/008/functions-000567.c		
+105a871ac	105a871cf	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsManaging valdiMarshallableObjectDescriptor]	
+105a871d0	105a871f3	decompiled	chunks/008/functions-000567.c		
+105a871f4	105a87243	decompiled	chunks/008/functions-000567.c		
+105a87244	105a87267	decompiled	chunks/008/functions-000567.c		
+105a87268	105a872b7	decompiled	chunks/008/functions-000567.c		
+105a872b8	105a872e3	decompiled	chunks/008/functions-000567.c		
+105a872e4	105a87333	decompiled	chunks/008/functions-000567.c		
+105a87334	105a8736b	decompiled	chunks/008/functions-000567.c		
+105a8736c	105a87377	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsView componentPath]	
+105a87378	105a873ab	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsView initWithViewModel:componentContext:runtime:]	
+105a873ac	105a873f7	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsView setViewModel:]	
+105a873f8	105a87433	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsView viewModel]	
+105a87434	105a8751b	decompiled	chunks/008/functions-000567.c		
+105a8751c	105a875e7	decompiled	chunks/008/functions-000567.c		
+105a875e8	105a8760b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceControlManaging valdiMarshallableObjectDescriptor]	
+105a8760c	105a8763b	decompiled	chunks/008/functions-000567.c		
+105a8763c	105a8768b	decompiled	chunks/008/functions-000567.c		
+105a8768c	105a876b7	decompiled	chunks/008/functions-000567.c		
+105a876b8	105a87707	decompiled	chunks/008/functions-000567.c		
+105a87708	105a8773f	decompiled	chunks/008/functions-000567.c		
+105a87740	105a8774b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceHardwareVersion valdiMarshallableObjectDescriptor]	
+105a8774c	105a87783	decompiled	chunks/008/functions-000567.c		
+105a87784	105a87797	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceInfoProviding valdiMarshallableObjectDescriptor]	
+105a87798	105a877cf	decompiled	chunks/008/functions-000567.c		
+105a877d0	105a877db	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceSetupActionHandling valdiMarshallableObjectDescriptor]	
+105a877dc	105a87813	decompiled	chunks/008/functions-000567.c		
+105a87814	105a8782f	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceStatusActionHandling valdiMarshallableObjectDescriptor]	
+105a87830	105a87857	decompiled	chunks/008/functions-000567.c		
+105a87858	105a878a7	decompiled	chunks/008/functions-000567.c		
+105a878a8	105a878df	decompiled	chunks/008/functions-000567.c		
+105a878e0	105a878f3	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeDeviceStatusProviding valdiMarshallableObjectDescriptor]	
+105a878f4	105a8792b	decompiled	chunks/008/functions-000567.c		
+105a8792c	105a87937	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeImportStatusActionHandling valdiMarshallableObjectDescriptor]	
+105a87938	105a8796f	decompiled	chunks/008/functions-000567.c		
+105a87970	105a87983	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeImportStatusProviding valdiMarshallableObjectDescriptor]	
+105a87984	105a879bb	decompiled	chunks/008/functions-000567.c		
+105a879bc	105a879c7	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeLensActionHandling valdiMarshallableObjectDescriptor]	
+105a879c8	105a879ff	decompiled	chunks/008/functions-000567.c		
+105a87a00	105a87a13	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeLensProviding valdiMarshallableObjectDescriptor]	
+105a87a14	105a87a4b	decompiled	chunks/008/functions-000567.c		
+105a87a4c	105a87a5f	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomePhoneMirroringManaging valdiMarshallableObjectDescriptor]	
+105a87a60	105a87a97	decompiled	chunks/008/functions-000567.c		
+105a87a98	105a87aa3	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomePowerStateActionHandling valdiMarshallableObjectDescriptor]	
+105a87aa4	105a87adb	decompiled	chunks/008/functions-000567.c		
+105a87adc	105a87aef	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomePowerStateProviding valdiMarshallableObjectDescriptor]	
+105a87af0	105a87b27	decompiled	chunks/008/functions-000567.c		
+105a87b28	105a87b33	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomePrimaryActionActionHandling valdiMarshallableObjectDescriptor]	
+105a87b34	105a87b6b	decompiled	chunks/008/functions-000567.c		
+105a87b6c	105a87b8f	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeTouchpadActionHandling valdiMarshallableObjectDescriptor]	
+105a87b90	105a87bbb	decompiled	chunks/008/functions-000567.c		
+105a87bbc	105a87c0b	decompiled	chunks/008/functions-000567.c		
+105a87c0c	105a87c43	decompiled	chunks/008/functions-000567.c		
+105a87c44	105a87c57	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesOTAStateManaging valdiMarshallableObjectDescriptor]	
+105a87c58	105a87c8f	decompiled	chunks/008/functions-000567.c		
+105a87c90	105a87c9b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesHomeView componentPath]	
+105a87c9c	105a87ccf	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesHomeView initWithViewModel:componentContext:runtime:]	
+105a87cd0	105a87d1b	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesHomeView setViewModel:]	
+105a87d1c	105a87d57	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesHomeView viewModel]	
+105a87d58	105a87e13	decompiled	chunks/008/functions-000567.c		
+105a87e14	105a87ee3	decompiled	chunks/008/functions-000567.c		
+105a87ee4	105a87f0f	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesTomaManaging valdiMarshallableObjectDescriptor]	
+105a87f10	105a87f3b	decompiled	chunks/008/functions-000567.c		
+105a87f3c	105a87fbb	decompiled	chunks/008/functions-000567.c		
+105a87fbc	105a87fef	decompiled	chunks/008/functions-000567.c		
+105a87ff0	105a87ff7	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSecurityAlert__Enum init]	
+105a87ff8	105a87fff	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsAction__Enum init]	
+105a88000	105a88007	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsAlertEvent__Enum init]	
+105a88008	105a8800f	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsPageState__Enum init]	
+105a88010	105a88017	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsRow__Enum init]	
+105a88018	105a8801f	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsToggleSetting__Enum init]	
+105a88020	105a88057	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSecuritySettings initWithIsPasscodeRequired:isProximityUnlockEnabled:lockoutSettingSeconds:]	
+105a88058	105a8806b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSecuritySettings valdiMarshallableObjectDescriptor]	
+105a8806c	105a88157	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsContext initWithAsyncAlertPresenter:asyncActionSheetPresenter:navigator:settingsManager:deviceHardwareVersion:]	
+105a88158	105a8817b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsContext valdiMarshallableObjectDescriptor]	
+105a8817c	105a881a3	decompiled	chunks/008/functions-000567.c		
+105a881a4	105a88223	decompiled	chunks/008/functions-000567.c		
+105a88224	105a88277	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsData initWithIsLocationEnabled:isLowerPowerModeOn:isQuickSaveEnabled:isDeveloperModeEnabled:isOEMUnlockingEnabled:isBatteryPreservationModeOn:isAutoBrightnessOn:isMuteUISoundsOn:isKioskModeOn:isUsbImportEnabled:isSaveDestinationMemoriesAndCameraRoll:]	
+105a88278	105a8828b	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsData valdiMarshallableObjectDescriptor]	
+105a8828c	105a882b3	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsFlightModeData initWithHover:reveal:follow:orbit:favorite:]	
+105a882b4	105a882c7	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsFlightModeData valdiMarshallableObjectDescriptor]	
+105a882c8	105a882ff	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceSettingsFlightModeRowData initWithTitle:subtitle:]	
+105a88300	105a88313	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceSettingsFlightModeRowData valdiMarshallableObjectDescriptor]	
+105a88314	105a88363	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesDeviceState initWithIsConnectedBLE:isConnectedWiFi:isTransferring:isUpdating:isUnpaired:isSetupComplete:isFlightStatusBusy:isConnectedUsb:]	
+105a88364	105a88377	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesDeviceState valdiMarshallableObjectDescriptor]	
+105a88378	105a883a3	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesSettingsDevice initWithState:settingsData:displayName:otaUpdateStatus:serialNumber:firmwareVersion:]	
+105a883a4	105a883b7	decompiled	chunks/008/functions-000567.c	+[SCComposerSpectaclesSettingsDevice valdiMarshallableObjectDescriptor]	
+105a883b8	105a883e7	decompiled	chunks/008/functions-000567.c		
+105a883e8	105a8842f	decompiled	chunks/008/functions-000567.c		
+105a88430	105a88433	decompiled	chunks/008/functions-000567.c	-[SCComposerSpectaclesHomeBluetoothConnectionState__Enum init]	
+105a88434	105a8843b	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeImportState__Enum init]	
+105a8843c	105a8843f	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomePowerState__Enum init]	
+105a88440	105a88447	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeWiFiSignalLevel__Enum init]	
+105a88448	105a8844f	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesOTAErrorType__Enum init]	
+105a88450	105a88457	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesOTAStatus__Enum init]	
+105a88458	105a8845b	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesTouchActionType__Enum init]	
+105a8845c	105a8848b	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeBatteryStatus initWithBatteryLevel:isCharging:isLowBattery:]	
+105a8848c	105a8849f	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeBatteryStatus valdiMarshallableObjectDescriptor]	
+105a884a0	105a884cf	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeBluetoothConnectionStatus initWithConnectedOverBluetooth:]	
+105a884d0	105a884e3	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeBluetoothConnectionStatus valdiMarshallableObjectDescriptor]	
+105a884e4	105a88503	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeContext init]	
+105a88504	105a88527	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeContext valdiMarshallableObjectDescriptor]	
+105a88528	105a8854f	decompiled	chunks/008/functions-000568.c		
+105a88550	105a885cf	decompiled	chunks/008/functions-000568.c		
+105a885d0	105a885ef	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeDeviceContext init]	
+105a885f0	105a88603	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeDeviceContext valdiMarshallableObjectDescriptor]	
+105a88604	105a8863f	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeImportStatus initWithCurrentState:totalTransferCount:untransferredCount:transferringCount:transferProgress:]	
+105a88640	105a88653	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeImportStatus valdiMarshallableObjectDescriptor]	
+105a88654	105a88673	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeTweaks init]	
+105a88674	105a88687	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeTweaks valdiMarshallableObjectDescriptor]	
+105a88688	105a886bf	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesHomeWiFiConnectionStatus initWithSignalLevel:]	
+105a886c0	105a886d3	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesHomeWiFiConnectionStatus valdiMarshallableObjectDescriptor]	
+105a886d4	105a886f3	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesOTAInfo init]	
+105a886f4	105a88707	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesOTAInfo valdiMarshallableObjectDescriptor]	
+105a88708	105a8873f	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesOTAState initWithStatus:info:]	
+105a88740	105a88753	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesOTAState valdiMarshallableObjectDescriptor]	
+105a88754	105a88783	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesTouchpadPointer initWithPointerId:x:y:]	
+105a88784	105a88797	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesTouchpadPointer valdiMarshallableObjectDescriptor]	
+105a88798	105a887c7	decompiled	chunks/008/functions-000568.c		
+105a887c8	105a88823	decompiled	chunks/008/functions-000568.c		
+105a88824	105a8882b	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesTouchEventAction__Enum init]	
+105a8882c	105a8886b	decompiled	chunks/008/functions-000568.c	-[SCComposerSpectaclesTomaTouch initWithX:y:]	
+105a8886c	105a88883	decompiled	chunks/008/functions-000568.c	+[SCComposerSpectaclesTomaTouch valdiMarshallableObjectDescriptor]	
+105a88884	105a889bf	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint begin]	
+105a889c0	105a88aeb	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint end]	
+105a88aec	105a88af3	decompiled	chunks/008/functions-000568.c		
+105a88af4	105a88c37	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint deviceStatusBarViewControllerDidTap:]	
+105a88c38	105a88caf	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint spectaclesHomeScopeWantsToDismiss:]	
+105a88cb0	105a88d27	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint spectaclesHomeScopeDidDismiss:]	
+105a88d28	105a88da3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarEntryPoint .cxx_destruct]	
+105a88da4	105a88ef3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController initWithAppStatusProvider:spectaclesManager:onDemandResourceFetching:delegate:]	
+105a88ef4	105a8934b	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController viewDidLoad]	
+105a8934c	105a8940b	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController _updateView]	
+105a8940c	105a894bf	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController _newViewModel]	
+105a894c0	105a89513	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController _connectedDevice]	
+105a89514	105a897b7	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController _updateflightManager]	
+105a897b8	105a898af	decompiled	chunks/008/functions-000568.c		
+105a898b0	105a898bf	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController deviceInfoViewDidClickAbortFlightButton:]	
+105a898c0	105a898fb	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController deviceInfoViewDidTapBackground:]	
+105a898fc	105a8991f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController statusCoordinator:needsToUpdateStateForDevice:]	
+105a89920	105a8999f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController spectaclesDevice:didUpdateInfo:]	
+105a899a0	105a899a3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController spectaclesDeviceDidUpdateDeviceName:]	
+105a899a4	105a89a2f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesDeviceStatusBarViewController .cxx_destruct]	
+105a89a30	105a89a3b	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerImageLoadRequest cancel]	
+105a89a3c	105a89a43	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerImageLoadRequest isCancelled]	
+105a89a44	105a89b27	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader initWithSpectaclesManager:asyncQueueProvider:]	
+105a89b28	105a89b93	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader supportedURLSchemes]	
+105a89b94	105a89b9b	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader requestPayloadWithURL:error:]	
+105a89b9c	105a89e2f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader loadImageWithRequestPayload:parameters:completion:]	
+105a89e30	105a89e83	decompiled	chunks/008/functions-000568.c		
+105a89e84	105a8a087	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader _performLoadingImageWithContentId:deviceSerialNumber:parameters:completion:]	
+105a8a088	105a8a0c3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesComposerThumbnailLoader .cxx_destruct]	
+105a8a0c4	105a8a277	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesHomeComposerImageLoaderEntryPoint begin]	
+105a8a278	105a8a35b	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesHomeComposerImageLoaderEntryPoint end]	
+105a8a35c	105a8a3bb	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesHomeComposerImageLoaderEntryPoint .cxx_destruct]	
+105a8a3bc	105a8a4c7	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController initWithKnobsRPCManager:locationManager:blizzardLogger:]	
+105a8a4c8	105a8a517	decompiled	chunks/008/functions-000568.c	+[SCSpectaclesKnobsController _restartRequiredKnobsFromKnobs:]	
+105a8a518	105a8a60f	decompiled	chunks/008/functions-000568.c		
+105a8a610	105a8a633	decompiled	chunks/008/functions-000568.c		
+105a8a634	105a8a7bf	decompiled	chunks/008/functions-000568.c	+[SCSpectaclesKnobsController _knobArray:isEqualTo:]	
+105a8a7c0	105a8a98f	decompiled	chunks/008/functions-000568.c	+[SCSpectaclesKnobsController _changedKnobsBetweenOldKnobs:currentKnobs:]	
+105a8a990	105a8aaaf	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController knobIdFromHash:]	
+105a8aab0	105a8aaff	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController knobFromHash:]	
+105a8ab00	105a8ad5f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController fetchAllKnobs]	
+105a8ad60	105a8aef3	decompiled	chunks/008/functions-000568.c		
+105a8aef4	105a8b087	decompiled	chunks/008/functions-000568.c		
+105a8b088	105a8b19b	decompiled	chunks/008/functions-000568.c		
+105a8b19c	105a8b24f	decompiled	chunks/008/functions-000568.c		
+105a8b250	105a8b307	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController didToggleKnob:enabled:]	
+105a8b308	105a8b317	decompiled	chunks/008/functions-000568.c		
+105a8b318	105a8b373	decompiled	chunks/008/functions-000568.c		
+105a8b374	105a8b377	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController didSelectOption:fromOptions:forKnob:]	
+105a8b378	105a8b5a3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController submitChanges]	
+105a8b5a4	105a8b5bb	decompiled	chunks/008/functions-000568.c		
+105a8b5bc	105a8b6e7	decompiled	chunks/008/functions-000568.c		
+105a8b6e8	105a8b6eb	decompiled	chunks/008/functions-000568.c		
+105a8b6ec	105a8b6f3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController restartSpectacles]	
+105a8b6f4	105a8b6fb	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _knobForKnobId:]	
+105a8b6fc	105a8b703	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _setKnob:forKnobId:]	
+105a8b704	105a8b7f7	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _updateKnobWithKnobId:toNewInput:]	
+105a8b7f8	105a8b8c7	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _fetchKnobsFromHermosaWithCompletion:]	
+105a8b8c8	105a8b8d3	decompiled	chunks/008/functions-000568.c		
+105a8b8d4	105a8ba3f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _fetchLocalKnobsWithCompletion:]	
+105a8ba40	105a8bac3	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _needsSave]	
+105a8bac4	105a8bc6f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _didToggleLocationSharingTo:]	
+105a8bc70	105a8bd43	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _didToggleHermosaKnobWithKnobId:toEnabled:]	
+105a8bd44	105a8be1f	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController _didSelectOption:fromOptions:forKnob:]	
+105a8be20	105a8c087	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController spectaclesKnobsRPCManager:didReceiveSettingsInKnobsCategoryResponse:]	
+105a8c088	105a8c253	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController spectaclesKnobsRPCManager:didReceiveSetBatchSettingsResponseWithSuccess:]	
+105a8c254	105a8c287	decompiled	chunks/008/functions-000568.c	-[SCSpectaclesKnobsController spectaclesKnobsRPCManagerDidReceiveDeviceRestartResponse:]	
+105a8c288	105a8c367	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsController spectaclesKnobsLocationManager:didSetBackgroundUpdatesEnabled:]	
+105a8c368	105a8c37f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsController delegate]	
+105a8c380	105a8c38b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsController setDelegate:]	
+105a8c38c	105a8c3f3	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsController .cxx_destruct]	
+105a8c3f4	105a8c5e3	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsEntryPoint begin]	
+105a8c5e4	105a8c683	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsEntryPoint end]	
+105a8c684	105a8c707	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsEntryPoint spectaclesKnobsViewControllerWantsToDetachUIWithViewController:]	
+105a8c708	105a8c787	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsEntryPoint spectaclesKnobsViewControllerDidDeallocWithViewController:]	
+105a8c788	105a8c7bf	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsEntryPoint .cxx_destruct]	
+105a8c7c0	105a8c8bb	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnob selectedOption]	
+105a8c8bc	105a8c8e3	decompiled	chunks/008/functions-000569.c		
+105a8c8e4	105a8c91b	decompiled	chunks/008/functions-000569.c		
+105a8c91c	105a8ca1f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnob options]	
+105a8ca20	105a8ca2f	decompiled	chunks/008/functions-000569.c		
+105a8ca30	105a8ca67	decompiled	chunks/008/functions-000569.c		
+105a8ca68	105a8ccdb	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnob selectedOptionWithInjectedLabel]	
+105a8ccdc	105a8cdbb	decompiled	chunks/008/functions-000569.c		
+105a8cdbc	105a8cf0f	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesKnobOption knobOptionForSettingValue:]	
+105a8cf10	105a8cf13	decompiled	chunks/008/functions-000569.c		
+105a8cf14	105a8cff3	decompiled	chunks/008/functions-000569.c		
+105a8cff4	105a8cff7	decompiled	chunks/008/functions-000569.c		
+105a8cff8	105a8d19b	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesKnobOption knobOptionForSettingOption:]	
+105a8d19c	105a8d19f	decompiled	chunks/008/functions-000569.c		
+105a8d1a0	105a8d2a3	decompiled	chunks/008/functions-000569.c		
+105a8d2a4	105a8d323	decompiled	chunks/008/functions-000569.c		
+105a8d324	105a8d327	decompiled	chunks/008/functions-000569.c		
+105a8d328	105a8d42b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobOption value]	
+105a8d42c	105a8d4eb	decompiled	chunks/008/functions-000569.c		
+105a8d4ec	105a8d5ef	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobOption label]	
+105a8d5f0	105a8d697	decompiled	chunks/008/functions-000569.c		
+105a8d698	105a8d80f	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesSettingServiceSettingOption settingOptionForKnobOption:]	
+105a8d810	105a8d92f	decompiled	chunks/008/functions-000569.c		
+105a8d930	105a8d9bf	decompiled	chunks/008/functions-000569.c		
+105a8d9c0	105a8dadf	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesSettingServiceSettingOption settingOptionsForKnob:]	
+105a8dae0	105a8daef	decompiled	chunks/008/functions-000569.c		
+105a8daf0	105a8db73	decompiled	chunks/008/functions-000569.c		
+105a8db74	105a8db7f	decompiled	chunks/008/functions-000569.c		
+105a8db80	105a8dce7	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesSettingServiceValue settingValueForKnobInput:]	
+105a8dce8	105a8de03	decompiled	chunks/008/functions-000569.c		
+105a8de04	105a8de9f	decompiled	chunks/008/functions-000569.c		
+105a8dea0	105a8df6b	decompiled	chunks/008/functions-000569.c		
+105a8df6c	105a8e243	decompiled	chunks/008/functions-000569.c	+[SCSpectaclesKnobInput knobInputForSettingValue:options:]	
+105a8e244	105a8e35f	decompiled	chunks/008/functions-000569.c		
+105a8e360	105a8e363	decompiled	chunks/008/functions-000569.c		
+105a8e364	105a8e423	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController initWithKnobsController:delegate:]	
+105a8e424	105a8e487	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController dealloc]	
+105a8e488	105a8ea8b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController viewDidLoad]	
+105a8ea8c	105a8eaef	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController viewDidDisappear:]	
+105a8eaf0	105a8eafb	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController titleString]	
+105a8eafc	105a8eb5b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _setIsLoading:]	
+105a8eb5c	105a8ec3f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _termsOfServiceForKnobId:]	
+105a8ec40	105a8ec57	decompiled	chunks/008/functions-000569.c		
+105a8ec58	105a8ecab	decompiled	chunks/008/functions-000569.c		
+105a8ecac	105a8ecaf	decompiled	chunks/008/functions-000569.c		
+105a8ecb0	105a8ef0f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _showAlertForError:]	
+105a8ef10	105a8ef23	decompiled	chunks/008/functions-000569.c		
+105a8ef24	105a8ef97	decompiled	chunks/008/functions-000569.c		
+105a8ef98	105a8efb7	decompiled	chunks/008/functions-000569.c		
+105a8efb8	105a8f1db	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _showAlertForRestartSpecs]	
+105a8f1dc	105a8f283	decompiled	chunks/008/functions-000569.c		
+105a8f284	105a8f2b7	decompiled	chunks/008/functions-000569.c		
+105a8f2b8	105a8f2c7	decompiled	chunks/008/functions-000569.c		
+105a8f2c8	105a8f62f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _showAlertForMultiOptionSelectWithOptions:selectedOptionLabel:knobId:]	
+105a8f630	105a8f677	decompiled	chunks/008/functions-000569.c		
+105a8f678	105a8f687	decompiled	chunks/008/functions-000569.c		
+105a8f688	105a8f7b3	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _showAlertForTermsOfServiceWithString:]	
+105a8f7b4	105a8f7c3	decompiled	chunks/008/functions-000569.c		
+105a8f7c4	105a8f8b7	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController knobsController:didUpdateKnobs:needsSave:]	
+105a8f8b8	105a8f96f	decompiled	chunks/008/functions-000569.c		
+105a8f970	105a8fa77	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController knobsController:didSetBatchUpdateKnobs:success:]	
+105a8fa78	105a8fb0f	decompiled	chunks/008/functions-000569.c		
+105a8fb10	105a8fb77	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController knobsController:didFailWithError:currentKnobs:needsSave:]	
+105a8fb78	105a8fc33	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController knobsControllerDidReceiveDeviceRestartResponse:]	
+105a8fc34	105a8fc6f	decompiled	chunks/008/functions-000569.c		
+105a8fc70	105a8fc9f	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _fetchCurrentKnobStateAndUpdateUI]	
+105a8fca0	105a8fd97	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _sectionNumberForKnob:]	
+105a8fd98	105a8fdbb	decompiled	chunks/008/functions-000569.c		
+105a8fdbc	105a8ff37	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _cellViewModelFromKnob:isEnabled:]	
+105a8ff38	105a9000b	decompiled	chunks/008/functions-000569.c		
+105a9000c	105a90017	decompiled	chunks/008/functions-000569.c		
+105a90018	105a9014b	decompiled	chunks/008/functions-000569.c		
+105a9014c	105a90153	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _sectionViewModelsFromKnobs:]	
+105a90154	105a90403	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _sectionViewModelsFromKnobs:isEnabled:]	
+105a90404	105a90497	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController didToggleSwitch:enabled:]	
+105a90498	105a90567	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController didSelectSettings:]	
+105a90568	105a90577	decompiled	chunks/008/functions-000569.c		
+105a90578	105a9061b	decompiled	chunks/008/functions-000569.c		
+105a9061c	105a9062b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _didSelectMultiOption:fromOptions:forKnobId:]	
+105a9062c	105a9065b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _didTapDoneButton]	
+105a9065c	105a9066b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController _didTapRestartSpecs]	
+105a9066c	105a906d7	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesKnobsViewController .cxx_destruct]	
+105a906d8	105a907f7	decompiled	chunks/008/functions-000569.c		
+105a907f8	105a90a0b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint begin]	
+105a90a0c	105a90b4b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint end]	
+105a90b4c	105a90b53	decompiled	chunks/008/functions-000569.c		
+105a90b54	105a90bc7	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint spectaclesLensManagementViewControllerDidDealloc]	
+105a90bc8	105a90c3b	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint spectaclesLensManagementViewControllerWantsToDetachUI:]	
+105a90c3c	105a90caf	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint spectaclesLensManagementViewControllerDidUpdateLensData:]	
+105a90cb0	105a90d27	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementEntryPoint .cxx_destruct]	
+105a90d28	105a90e13	decompiled	chunks/008/functions-000569.c	-[SCSpectaclesLensManagementCell initWithFrame:]	

@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1055fe4c8	1055fe4cb	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _onApplicationWillEnterForeground]	
+1055fe4cc	1055fe4cf	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _onApplicationDidEnterBackground]	
+1055fe4d0	1055fe4d3	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _onApplicationWillResignActive]	
+1055fe4d4	1055fe4eb	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _setAppBackgrounded]	
+1055fe4ec	1055fe617	decompiled	chunks/005/functions-000330.c	-[SCLocationManager tweakDidChange:]	
+1055fe618	1055fe657	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _appStateDescription]	
+1055fe658	1055fe6d7	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _logStartUpdatingLocationFromSource:observerIdentifier:]	
+1055fe6d8	1055fe757	decompiled	chunks/005/functions-000330.c	-[SCLocationManager _logStopUpdatingLocationFromSource:observerIdentifier:]	
+1055fe758	1055fe75f	decompiled	chunks/005/functions-000330.c	-[SCLocationManager setLocation:]	
+1055fe760	1055fe76b	decompiled	chunks/005/functions-000330.c	-[SCLocationManager heading]	
+1055fe76c	1055fe773	decompiled	chunks/005/functions-000330.c	-[SCLocationManager setHeading:]	
+1055fe774	1055fe77b	decompiled	chunks/005/functions-000330.c	-[SCLocationManager currentAuthorizationStatus]	
+1055fe77c	1055fe783	decompiled	chunks/005/functions-000330.c	-[SCLocationManager setState:]	
+1055fe784	1055fe8ef	decompiled	chunks/005/functions-000330.c	-[SCLocationManager .cxx_destruct]	
+1055fe8f0	1055fea1b	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver initWithLocationManager:desiredAccuracy:callbackQueue:callback:observerAttributedFeature:]	
+1055fea1c	1055fea77	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver startWithTimeout:]	
+1055fea78	1055febc7	decompiled	chunks/005/functions-000330.c		
+1055febc8	1055febcf	decompiled	chunks/005/functions-000330.c		
+1055febd0	1055feca3	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver _deliverFinalCallbackAndStopObserving]	
+1055feca4	1055fecab	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver locationObserverWantsActiveLocationMonitoring]	
+1055fecac	1055fed6f	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver onLocationUpdate:]	
+1055fed70	1055feda3	decompiled	chunks/005/functions-000330.c		
+1055feda4	1055fedcb	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver locationObserverAttributedFeature]	
+1055fedcc	1055fee23	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver _locationListenerHelperWithLocation:]	
+1055fee24	1055feedb	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver _dispatchStopObserving]	
+1055feedc	1055fef33	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver _stopObserving]	
+1055fef34	1055fef3b	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver locationObserverDispatchQueue]	
+1055fef3c	1055fef43	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver locationObserverDesiredAccuracy]	
+1055fef44	1055fef4b	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver callbackBlock]	
+1055fef4c	1055fef53	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver attributedFeature]	
+1055fef54	1055fefaf	decompiled	chunks/005/functions-000330.c	-[SCLocationManagerRequestWithTimeoutObserver .cxx_destruct]	
+1055fefb0	1055fefc7	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest initWithAttributedFeature:wantsActiveLocationMonitoring:desiredLocationAccuracy:]	
+1055fefc8	1055ff077	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest initWithAttributedFeature:wantsActiveLocationMonitoring:desiredLocationAccuracy:desiredDistanceFilter:wantsActiveHeadingMonitoring:wantsBackgroundLocationMonitoring:]	
+1055ff078	1055ff09b	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest copyWithZone:]	
+1055ff09c	1055ff0c3	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest attributedFeature]	
+1055ff0c4	1055ff0cb	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest wantsActiveLocationMonitoring]	
+1055ff0cc	1055ff0d3	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest desiredLocationAccuracy]	
+1055ff0d4	1055ff0db	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest desiredDistanceFilter]	
+1055ff0dc	1055ff0e3	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest wantsActiveHeadingMonitoring]	
+1055ff0e4	1055ff0eb	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest wantsBackgroundLocationMonitoring]	
+1055ff0ec	1055ff0fb	decompiled	chunks/005/functions-000330.c	-[SCLocationRequest .cxx_destruct]	
+1055ff0fc	1055ff103	decompiled	chunks/005/functions-000330.c	-[SCDeviceLocationPermissionsManager hasAuthorizationStatus]	
+1055ff104	1055ff10b	decompiled	chunks/005/functions-000330.c	-[SCDeviceLocationPermissionsManager locationAccuracy]	
+1055ff10c	1055ff113	decompiled	chunks/005/functions-000330.c	-[SCDeviceLocationPermissionsManager requestLocationAuthorizationWithHandler:]	
+1055ff114	1055ff18b	decompiled	chunks/005/functions-000330.c	-[SCDeviceLocationPermissionsManager .cxx_destruct]	
+1055ff18c	1055ff203	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager isUnderAgeLocationConsentEnabled]	
+1055ff204	1055ff21b	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager showMHMDSpecificCopy]	
+1055ff21c	1055ff2cb	decompiled	chunks/005/functions-000330.c		
+1055ff2cc	1055ff2df	decompiled	chunks/005/functions-000330.c		
+1055ff2e0	1055ff2ef	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager requestLocationPermissionWithRequestType:presentationDelegate:handler:]	
+1055ff2f0	1055ff40b	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager requestLocationPermissionWithRequestType:promptType:presentationDelegate:handler:]	
+1055ff40c	1055ff46b	decompiled	chunks/005/functions-000330.c		
+1055ff46c	1055ff59f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager requestBackgroundLocationPermissionWithFriendName:presentationDelegate:handler:]	
+1055ff5a0	1055ff5ff	decompiled	chunks/005/functions-000330.c		
+1055ff600	1055ff8f7	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _requestLocationPermissionForSystemStatus:presentationDelegate:requestType:promptType:friendName:feature:handler:]	
+1055ff8f8	1055ff963	decompiled	chunks/005/functions-000330.c		
+1055ff964	1055ff977	decompiled	chunks/005/functions-000330.c		
+1055ff978	1055ff9c3	decompiled	chunks/005/functions-000330.c		
+1055ff9c4	1055ffa57	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _dismissDialog:presentationDelegate:completion:]	
+1055ffa58	1055fffe3	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _promptForLocationPermissionsWithPermissionStatus:systemStatus:presentationDelegate:requestType:promptType:friendName:feature:completionHandler:]	
+1055fffe4	10560000b	decompiled	chunks/005/functions-000330.c		
+10560000c	1056000d3	decompiled	chunks/005/functions-000330.c		
+1056000d4	1056000e3	decompiled	chunks/005/functions-000330.c		
+1056000e4	1056001d7	decompiled	chunks/005/functions-000330.c		
+1056001d8	1056003ef	decompiled	chunks/005/functions-000330.c		
+1056003f0	10560040f	decompiled	chunks/005/functions-000330.c		
+105600410	105600443	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _shouldShowAlwaysLocationPermissionsPromptV2WithRequestType:permissionStatus:presentationDelegate:]	
+105600444	105600747	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _presentAlwaysLocationPermissionsPromptWithPresentationDelegate:permissionStatus:promptType:friendName:feature:completionHandler:]	
+105600748	1056007cb	decompiled	chunks/005/functions-000330.c		
+1056007cc	10560081f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _alwaysLocationPromptCallbackWithAuthorized:]	
+105600820	105600987	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _systemPermissionsAcceptCallbackWithCompletionHandler:]	
+105600988	105600a7f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _userPermissionsAcceptCallbackWithCompletionHandler:presentationDelegate:]	
+105600a80	105600b93	decompiled	chunks/005/functions-000330.c		
+105600b94	105600ba3	decompiled	chunks/005/functions-000330.c		
+105600ba4	105600d33	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _showStandardPermissionsPromptWithPresentationDelegate:feature:acceptCallback:cancelCallback:completionHandler:]	
+105600d34	105600d93	decompiled	chunks/005/functions-000330.c		
+105600d94	105600f5f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _showComposerUnderAgePermissionsPromptWithFeature:presentationDelegate:acceptCallback:completionHandler:]	
+105600f60	105601193	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _showAlertDialogStandardPermissionsPromptWithPresentationDelegate:acceptCallback:cancelCallback:]	
+105601194	105601317	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _goToSettingsAcceptCallbackWithRequestType:presentationDelegate:completionHandler:]	
+105601318	1056013b3	decompiled	chunks/005/functions-000330.c		
+1056013b4	1056013c7	decompiled	chunks/005/functions-000330.c		
+1056013c8	105601497	decompiled	chunks/005/functions-000330.c		
+105601498	1056014cf	decompiled	chunks/005/functions-000330.c		
+1056014d0	105601587	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _showGoToSettingsPromptWithPresentationDelegate:requestType:feature:acceptCallback:cancelCallback:completionHandler:]	
+105601588	1056015bb	decompiled	chunks/005/functions-000330.c		
+1056015bc	105601677	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager hasFeatureRequestedLocationPermission:]	
+105601678	10560175b	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager setFeatureHasRequestedLocationPermission:value:]	
+10560175c	10560180f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager isAuthorizedForFeature:]	
+105601810	105601867	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager isLocationAuthorizedForCurrentUserAndFeature:]	
+105601868	105601877	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager requestAuthorizationForFeature:requestType:presentationDelegate:completion:]	
+105601878	105601a9b	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager requestAuthorizationForFeature:requestType:promptType:presentationDelegate:completion:]	
+105601a9c	105601b67	decompiled	chunks/005/functions-000330.c		
+105601b68	105601b87	decompiled	chunks/005/functions-000330.c		
+105601b88	105601b8f	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager locationAccuracy]	
+105601b90	105601bd3	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager onLocationError:]	
+105601bd4	105601c17	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager onLocationPermissionStatusChange:]	
+105601c18	105601d0b	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _authorizationStatusWithSystemStatus:requestType:]	
+105601d0c	105601d93	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _isFirstTimeAskingGlobally]	
+105601d94	105601e23	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _setIsNotFirstTimeAskingGloballyIfNecessary]	
+105601e24	105601eb3	decompiled	chunks/005/functions-000330.c	-[SCUserLocationPermissionsManager _isLocationPermissionEnabledForCurrentUser]	
+105601eb4	105601f77	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _setLocationPermissionEnabledForCurrentUser]	
+105601f78	105601fbf	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _canAskForAlwaysPermissions]	
+105601fc0	1056020af	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _subscribeToLifecycleEvents]	
+1056020b0	1056020db	decompiled	chunks/005/functions-000331.c		
+1056020dc	105602123	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _appWillForeground]	
+105602124	105602163	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _logPermissionPromptResponse:]	
+105602164	1056021bf	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _needsJITConsentForFeature:]	
+1056021c0	10560226f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _persistFeatureAuthorization:]	
+105602270	1056022ef	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager authorizationStatus]	
+1056022f0	10560234f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager coreLocationAuthorizationStatus]	
+105602350	10560236b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager isLocationAuthorizedForCurrentUser]	
+10560236c	1056023db	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager tryToAddUserLocationPermissionStatusToEvent:]	
+1056023dc	10560251b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager promptViewControllerDidRequestSettingsLaunch:shouldOpenSettings:]	
+10560251c	10560254f	decompiled	chunks/005/functions-000331.c		
+105602550	10560259f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager promptViewControllerWantsToDismiss:]	
+1056025a0	1056025ff	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager underAgePermissionViewControllerDidAccept]	
+105602600	10560266b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager underAgePermissionViewControllerDidDeny]	
+10560266c	1056026d7	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _underAgePermissionTrayDismissed]	
+1056026d8	10560272b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager _cleanupUnderAgePermissionTray]	
+10560272c	1056027a7	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager tray:positionDidChange:]	
+1056027a8	105602807	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager tray:heightForPosition:]	
+105602808	1056029af	decompiled	chunks/005/functions-000331.c	-[SCUserLocationPermissionsManager .cxx_destruct]	
+1056029b0	1056029b7	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider heading]	
+1056029b8	105602aab	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider requestActiveLocationUpdatesWithRequest:]	
+105602aac	105602c7f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider requestLocationWithTimeout:desiredAccuracy:observerAttributedFeature:callbackQueue:callback:]	
+105602c80	105602c8f	decompiled	chunks/005/functions-000331.c		
+105602c90	105602d4b	decompiled	chunks/005/functions-000331.c		
+105602d4c	105602d5b	decompiled	chunks/005/functions-000331.c		
+105602d5c	105602d63	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider locationObserverDispatchQueue]	
+105602d64	105602e3b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider onLocationUpdate:]	
+105602e3c	105602e6f	decompiled	chunks/005/functions-000331.c		
+105602e70	105602f83	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider onLocationVisit:significantChangeMonitoringAvailable:]	
+105602f84	105602fc7	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _announceLocationUpdate]	
+105602fc8	10560309f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider onLocationHeadingChange:]	
+1056030a0	1056030d3	decompiled	chunks/005/functions-000331.c		
+1056030d4	105603117	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _announceHeadingUpdate]	
+105603118	10560316b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider onLocationError:]	
+10560316c	1056031fb	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _onAuthorizationChangedWithStatus:]	
+1056031fc	10560320b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _updateHasLocationAuthorization:]	
+10560320c	10560325f	decompiled	chunks/005/functions-000331.c		
+105603260	1056033af	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _performLocationRequestWithTimeout:desiredAccuracy:observerAttributedFeature:callbackQueue:callback:]	
+1056033b0	1056033bf	decompiled	chunks/005/functions-000331.c		
+1056033c0	10560346b	decompiled	chunks/005/functions-000331.c		
+10560346c	10560348b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider _hasLocationAuthorization]	
+10560348c	1056035df	decompiled	chunks/005/functions-000331.c	-[SCUserLocationProvider .cxx_destruct]	
+1056035e0	105603867	decompiled	chunks/005/functions-000331.c	-[SCUserLocationServicesEntryPoint _nextGenPermissionsManager]	
+105603868	10560392b	decompiled	chunks/005/functions-000331.c	-[SCUserLocationServicesEntryPoint _nextGenLocationProviderWithPermissionsManager:]	
+10560392c	1056039eb	decompiled	chunks/005/functions-000331.c	-[SCUserLocationServicesEntryPoint .cxx_destruct]	
+1056039ec	105603a5f	decompiled	chunks/005/functions-000331.c	-[SCUserLocationUtilities initWithLocationProvider:]	
+105603a60	105603b97	decompiled	chunks/005/functions-000331.c	-[SCUserLocationUtilities getFormattedDistanceFromUserToLocationLat:lng:]	
+105603b98	105603bf3	decompiled	chunks/005/functions-000331.c	-[SCUserLocationUtilities distanceFormatter]	
+105603bf4	105603c23	decompiled	chunks/005/functions-000331.c	-[SCUserLocationUtilities .cxx_destruct]	
+105603c24	105603c9b	decompiled	chunks/005/functions-000331.c		
+105603c9c	105603cbf	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState copyWithZone:]	
+105603cc0	105603d67	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState hash]	
+105603d68	105603d6f	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState locationAccuracy]	
+105603d70	105603d77	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState distanceFilter]	
+105603d78	105603d7f	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState allowsBackground]	
+105603d80	105603d87	decompiled	chunks/005/functions-000331.c	-[SCLocationManagerState updatingHeading]	
+105603d88	105603e9f	decompiled	chunks/005/functions-000331.c		
+105603ea0	105604013	decompiled	chunks/005/functions-000331.c		
+105604014	105604187	decompiled	chunks/005/functions-000331.c		
+105604188	10560429f	decompiled	chunks/005/functions-000331.c		
+1056042a0	105604413	decompiled	chunks/005/functions-000331.c		
+105604414	10560448b	decompiled	chunks/005/functions-000331.c		
+10560448c	10560474b	decompiled	chunks/005/functions-000331.c		
+10560474c	105604a0b	decompiled	chunks/005/functions-000331.c		
+105604a0c	105604b7f	decompiled	chunks/005/functions-000331.c		
+105604b80	105604daf	decompiled	chunks/005/functions-000331.c		
+105604db0	105604f23	decompiled	chunks/005/functions-000331.c		
+105604f24	105604f9b	decompiled	chunks/005/functions-000331.c		
+105604f9c	10560500f	decompiled	chunks/005/functions-000331.c	-[SCGrapheneRequestWithTimeoutMetric2 init]	
+105605010	105605087	decompiled	chunks/005/functions-000331.c		
+105605088	1056051fb	decompiled	chunks/005/functions-000331.c		
+1056051fc	10560542b	decompiled	chunks/005/functions-000331.c		
+10560542c	105605447	decompiled	chunks/005/functions-000331.c	+[SCCMapUnderAgeLocationPermissionTrayActionHandler valdiMarshallableObjectDescriptor]	
+105605448	105605453	decompiled	chunks/005/functions-000331.c	+[SCCMapUnderAgeLocationPermissionTrayComponent componentPath]	
+105605454	105605487	decompiled	chunks/005/functions-000331.c	-[SCCMapUnderAgeLocationPermissionTrayComponent initWithViewModel:componentContext:runtime:]	
+105605488	1056054d7	decompiled	chunks/005/functions-000331.c	-[SCCMapUnderAgeLocationPermissionTrayComponent setViewModel:]	
+1056054d8	10560551b	decompiled	chunks/005/functions-000331.c	-[SCCMapUnderAgeLocationPermissionTrayComponent viewModel]	
+10560551c	105605523	decompiled	chunks/005/functions-000331.c	-[SCCMapUnderAgeLocationPermissionTrayFeature__Enum init]	
+105605524	10560555f	decompiled	chunks/005/functions-000331.c	-[SCCMapUnderAgeLocationPermissionTrayContext initWithActionHandler:feature:]	
+105605560	10560557f	decompiled	chunks/005/functions-000331.c	+[SCCMapUnderAgeLocationPermissionTrayContext valdiMarshallableObjectDescriptor]	
+105605580	10560567f	decompiled	chunks/005/functions-000331.c		
+105605680	1056056fb	decompiled	chunks/005/functions-000331.c		
+1056056fc	105605777	decompiled	chunks/005/functions-000331.c	-[SCMTConfigurationProviderServicesEntryPoint begin]	
+105605778	105605793	decompiled	chunks/005/functions-000331.c		
+105605794	1056057cf	decompiled	chunks/005/functions-000331.c	-[SCMTConfigurationProviderServicesEntryPoint .cxx_destruct]	
+1056057d0	1056057eb	decompiled	chunks/005/functions-000331.c		
+1056057ec	1056057fb	decompiled	chunks/005/functions-000331.c	-[SCMTParameterServiceProvider .cxx_destruct]	
+1056057fc	10560588b	decompiled	chunks/005/functions-000331.c		
+10560588c	105605963	decompiled	chunks/005/functions-000331.c	-[SCMediaImportServiceProvider _createMediaVideoImportProcessorWithPerformer:]	
+105605964	105605a77	decompiled	chunks/005/functions-000331.c	-[SCMediaImportServiceProvider _createMediaImageImportProcessorWithPerformer:]	
+105605a78	105605b17	decompiled	chunks/005/functions-000331.c	-[SCMediaImportServiceProvider .cxx_destruct]	
+105605b18	105605d2b	decompiled	chunks/005/functions-000331.c	-[SCMediaTranscodingLoggingServiceProvider _createMediaTranscodingLogger]	
+105605d2c	105605d4b	decompiled	chunks/005/functions-000331.c	-[SCMediaTranscodingLoggingServiceProvider notificationServices]	
+105605d4c	105605d5f	decompiled	chunks/005/functions-000331.c	-[SCMediaTranscodingLoggingServiceProvider setNotificationServices:]	
+105605d60	105605dbb	decompiled	chunks/005/functions-000331.c	-[SCMediaTranscodingLoggingServiceProvider .cxx_destruct]	
+105605dbc	105605f27	decompiled	chunks/005/functions-000331.c		
+105605f28	105606257	decompiled	chunks/005/functions-000331.c	-[SCMediaTranscodingServiceProvider _createTranscodingRequestSchedulerWithMediaTranscodingLogger:parameterProvider:inProgressTracker:]	
+105606258	105606337	decompiled	chunks/005/functions-000332.c	-[SCMediaTranscodingServiceProvider .cxx_destruct]	
+105606338	1056063c7	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl initWithNativeModelService:]	
+1056063c8	1056065eb	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl applyTemplate:withSnapDoc:error:]	
+1056065ec	1056067ab	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl removeTemplateWithSnapDoc:error:]	
+1056067ac	1056068a3	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl containsBeatSyncTemplate:]	
+1056068a4	105606b77	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl listTemplates:error:]	
+105606b78	105606bd3	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl _reportGrapheneMetricsWithApi:success:startTime:]	
+105606bd4	105606c43	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceImpl .cxx_destruct]	
+105606c44	105606c97	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceProvider _smartTemplateServiceInstance]	
+105606c98	105606ca7	decompiled	chunks/005/functions-000332.c	-[SCSmartTemplateServiceProvider .cxx_destruct]	
+105606ca8	105606d1b	decompiled	chunks/005/functions-000332.c	-[SCGrapheneSmartTemplateServiceMetric2 init]	
+105606d1c	105606f03	decompiled	chunks/005/functions-000332.c		
+105606f04	105606f7f	decompiled	chunks/005/functions-000332.c		
+105606f80	1056070f3	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager initWithCircumstanceEngine:cameraConfiguration:previewABProvider:]	
+1056070f4	105607133	decompiled	chunks/005/functions-000332.c		
+105607134	10560713b	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager isCompatibleWithSnapDoc:]	
+10560713c	10560727f	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager isCompatibleWithSnapDoc:responseError:]	
+105607280	105607383	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager calculateMediaEffectCapabilitiesForSnapDoc:]	
+105607384	10560753f	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager _createCapabilitiesManager]	
+105607540	105607587	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesManager .cxx_destruct]	
+105607588	1056076f7	decompiled	chunks/005/functions-000332.c		
+1056076f8	1056077c7	decompiled	chunks/005/functions-000332.c	-[SCSnapDocPlaybackCapabilitiesServiceProvider .cxx_destruct]	
+1056077c8	105607843	decompiled	chunks/005/functions-000332.c	-[SCMediaComponentsCoordinatorEntryPoint _encryptionCoordinator]	
+105607844	1056078bf	decompiled	chunks/005/functions-000332.c	-[SCMediaComponentsCoordinatorEntryPoint _overlayCoordinator]	
+1056078c0	105607913	decompiled	chunks/005/functions-000332.c	-[SCMediaComponentsCoordinatorEntryPoint .cxx_destruct]	
+105607914	105607987	decompiled	chunks/005/functions-000332.c	-[SCMediaEncryptionCoordinatorImpl initWithPreferences:]	
+105607988	105607a37	decompiled	chunks/005/functions-000332.c	-[SCMediaEncryptionCoordinatorImpl setEncInfo:forMediaId:]	
+105607a38	105607ae3	decompiled	chunks/005/functions-000332.c	-[SCMediaEncryptionCoordinatorImpl encInfoForMediaId:]	
+105607ae4	105607b7f	decompiled	chunks/005/functions-000332.c	-[SCMediaEncryptionCoordinatorImpl removeEncInfoForMediaId:]	
+105607b80	105607b8b	decompiled	chunks/005/functions-000332.c	-[SCMediaEncryptionCoordinatorImpl .cxx_destruct]	
+105607b8c	105607bff	decompiled	chunks/005/functions-000332.c	-[SCMediaOverlayCoordinatorImpl initWithContentDelivery:]	
+105607c00	105607cf3	decompiled	chunks/005/functions-000332.c	-[SCMediaOverlayCoordinatorImpl setOverlayData:forMediaId:]	
+105607cf4	105607d63	decompiled	chunks/005/functions-000332.c		
+105607d64	105607d67	decompiled	chunks/005/functions-000332.c		
+105607d68	105607e77	decompiled	chunks/005/functions-000332.c	-[SCMediaOverlayCoordinatorImpl retrieveOverlayDataForMediaId:completion:]	
+105607e78	105607e83	decompiled	chunks/005/functions-000332.c		
+105607e84	105607f67	decompiled	chunks/005/functions-000332.c	-[SCMediaOverlayCoordinatorImpl removeOverlayDataForMediaId:]	
+105607f68	105607f6b	decompiled	chunks/005/functions-000332.c		
+105607f6c	105607f77	decompiled	chunks/005/functions-000332.c	-[SCMediaOverlayCoordinatorImpl .cxx_destruct]	
+105607f78	105608037	decompiled	chunks/005/functions-000332.c		
+105608038	1056080b3	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider end]	
+1056080b4	105608437	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _boltDataUploader]	
+105608438	10560854f	decompiled	chunks/005/functions-000332.c		
+105608550	1056085e3	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _uploadProgressMonitor]	
+1056085e4	10560885f	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _createBoltDataUploaderImplWithUploadProgressMonitor:configProviderLazy:]	
+105608860	105608a37	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _resumableUploadConfigProvider]	
+105608a38	105608c57	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _createResumableUploaderImplWithUploadProgressMonitor:resumableValidator:safetyMarginInSeconds:configProviderLazy:]	
+105608c58	105608d63	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _createSCNCupsUploadLocationProvider]	
+105608d64	105608d87	decompiled	chunks/005/functions-000332.c		
+105608d88	105608f27	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider _createUploadLocationManager]	
+105608f28	105608fd7	decompiled	chunks/005/functions-000332.c	-[SCBoltDataUploaderServiceProvider .cxx_destruct]	
+105608fd8	105609673	decompiled	chunks/005/functions-000332.c		
+105609674	10560967b	decompiled	chunks/005/functions-000332.c		
+10560967c	105609727	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _statePersister]	
+105609728	105609803	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _SCMediaDataPackageManagerV2]	
+105609804	105609873	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _useMediaPackageManagerV2CofReading]	
+105609874	1056098e3	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _writeToMediaPackageManagerV2OutsideCofReading]	
+1056098e4	105609953	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _writeToMediaPackageManagerV2InsideCofReading]	
+105609954	1056099c3	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint _writeToMediaPackageManagerV1DisabledCofReading]	
+1056099c4	105609a87	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrationServicesEntryPoint .cxx_destruct]	
+105609a88	105609f5b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator initWithPerformer:statePersister:mediaDataPackageManaging:mediaDataPackageManagingV2:readFromMediaPackageManagerV2Enabled:writeToMediaPackageManagerV2InsideEnabled:writeToMediaPackageManagerV2OutsideEnabled:writeToMediaPackageManagerV1Disabled:uploadMediaDataManaging:boltDataUploaderLazy:videoFilterCoordinator:encryptionCoordinator:overlayCoordinator:grapheneRegistryLazy:snapUploaderCoordinator:circumstanceEngine:]	
+105609f5c	10560a01b	decompiled	chunks/005/functions-000332.c		
+10560a01c	10560a073	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _registerTranscodeStatusReporterIfEnabled]	
+10560a074	10560a1a7	decompiled	chunks/005/functions-000332.c		
+10560a1a8	10560a23f	decompiled	chunks/005/functions-000332.c		
+10560a240	10560a307	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator transcodeStatusDidUpdateForMediaId:update:]	
+10560a308	10560a357	decompiled	chunks/005/functions-000332.c		
+10560a358	10560a3af	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _registerAsUploadStatusDelegateIfEnabled]	
+10560a3b0	10560a41b	decompiled	chunks/005/functions-000332.c		
+10560a41c	10560a45b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _uploadProgressReportingEnabled]	
+10560a45c	10560a5db	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator uploadStatusDidUpdateForMediaId:update:]	
+10560a5dc	10560a61b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _crossPostStoryPreserveEnabled]	
+10560a61c	10560a65b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _overwriteAppSourceOnlyWhenUnsetEnabled]	
+10560a65c	10560a6b3	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _initialLoadSessionInfoStore]	
+10560a6b4	10560aa63	decompiled	chunks/005/functions-000332.c		
+10560aa64	10560afcb	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _loadSessionInfos]	
+10560afcc	10560b1a7	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator resumeWithId:appSource:callbackPerformer:completion:]	
+10560b1a8	10560b223	decompiled	chunks/005/functions-000332.c		
+10560b224	10560b237	decompiled	chunks/005/functions-000332.c		
+10560b238	10560b31b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator queryUploadStatusWithId:callbackPerformer:completion:]	
+10560b31c	10560ba6b	decompiled	chunks/005/functions-000332.c		
+10560ba6c	10560ba7b	decompiled	chunks/005/functions-000332.c		
+10560ba7c	10560bbb3	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator resetUploadWithId:callbackPerformer:completion:]	
+10560bbb4	10560bbd3	decompiled	chunks/005/functions-000332.c		
+10560bbd4	10560bdf3	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _resetUploadWithId:callbackPerformer:completion:]	
+10560bdf4	10560be6f	decompiled	chunks/005/functions-000332.c		
+10560be70	10560be7f	decompiled	chunks/005/functions-000332.c		
+10560be80	10560bee7	decompiled	chunks/005/functions-000332.c		
+10560bee8	10560c013	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _resetInFlightUploadWithId:answer:]	
+10560c014	10560c113	decompiled	chunks/005/functions-000332.c		
+10560c114	10560c173	decompiled	chunks/005/functions-000332.c		
+10560c174	10560c35f	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _resetTranscodeForMediaId:answer:]	
+10560c360	10560c45f	decompiled	chunks/005/functions-000332.c		
+10560c460	10560c4b3	decompiled	chunks/005/functions-000332.c		
+10560c4b4	10560c4c3	decompiled	chunks/005/functions-000332.c		
+10560c4c4	10560c66b	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _finishResetWithId:outcome:answer:]	
+10560c66c	10560cc4f	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _resumeWithId:appSource:callbackPerformer:completion:]	
+10560cc50	10560ce2f	decompiled	chunks/005/functions-000332.c		
+10560ce30	10560d243	decompiled	chunks/005/functions-000332.c	-[SCMediaOrchestrator _startFromTranscodingRetryWithMediaId:isMediaZipped:]	
+10560d244	10560d797	decompiled	chunks/005/functions-000332.c		
+10560d798	10560d7d3	decompiled	chunks/005/functions-000333.c		
+10560d7d4	10560d943	decompiled	chunks/005/functions-000333.c		
+10560d944	10560da57	decompiled	chunks/005/functions-000333.c		
+10560da58	10560dccb	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _startUploadWithPackageHandle:encryptionKey:encryptionIv:mediaType:stepMetrics:]	
+10560dccc	10560df23	decompiled	chunks/005/functions-000333.c		
+10560df24	10560df2f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator didFailPrepareMediaWithId:retriable:debugInfo:]	
+10560df30	10560e007	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator didFailPrepareMediaWithId:retriable:error:debugInfo:]	
+10560e008	10560e0a7	decompiled	chunks/005/functions-000333.c		
+10560e0a8	10560e2ef	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator setUploadableMediaWithId:mediaData:overlayData:encryptionKey:encryptionIv:mediaDuration:mediaType:captureSessionId:completion:]	
+10560e2f0	10560e32b	decompiled	chunks/005/functions-000333.c		
+10560e32c	10560e32f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator setUploadableMediaWithId:mediaFileUrl:overlayData:encryptionKey:encryptionIv:completion:]	
+10560e330	10560e4df	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator startChunkedTranscodeAndUploadMediaWithId:videoFilter:overlayData:encryptionKey:encryptionIv:captureSessionId:transcodeCompletion:uploadCompletion:]	
+10560e4e0	10560e517	decompiled	chunks/005/functions-000333.c		
+10560e518	10560e72f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _setUploadableMediaWithId:mediaData:overlayData:encryptionKey:encryptionIv:mediaDuration:mediaType:captureSessionId:completion:]	
+10560e730	10560e7e7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator persistSnapVideoFilter:forMediaId:]	
+10560e7e8	10560e917	decompiled	chunks/005/functions-000333.c		
+10560e918	10560e9cf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator registerSnapDocPersistedForMediaId:captureSessionId:]	
+10560e9d0	10560eb1f	decompiled	chunks/005/functions-000333.c		
+10560eb20	10560ec03	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator registerDependentMediaStubForMediaId:encryptionKey:encryptionIv:]	
+10560ec04	10560ed67	decompiled	chunks/005/functions-000333.c		
+10560ed68	10560edff	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _handleEmptyMediaWithId:isMediaZipped:]	
+10560ee00	10560efab	decompiled	chunks/005/functions-000333.c		
+10560efac	10560f0eb	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _didCompleteTranscodingRetryWithMediaId:outputData:key:iv:retriable:error:]	
+10560f0ec	10560f283	decompiled	chunks/005/functions-000333.c		
+10560f284	10560f397	decompiled	chunks/005/functions-000333.c		
+10560f398	10560f43f	decompiled	chunks/005/functions-000333.c		
+10560f440	10560f8e3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _uploadAndUpdateStatusAndPersistDataWithId:mediaData:overlayData:encryptionKey:encryptionIv:mediaDuration:mediaType:captureSessionId:completion:]	
+10560f8e4	10560f8e7	decompiled	chunks/005/functions-000333.c		
+10560f8e8	10560f983	decompiled	chunks/005/functions-000333.c		
+10560f984	10560f987	decompiled	chunks/005/functions-000333.c		
+10560f988	10560fb13	decompiled	chunks/005/functions-000333.c		
+10560fb14	10560fb17	decompiled	chunks/005/functions-000333.c		
+10560fb18	10560fbaf	decompiled	chunks/005/functions-000333.c		
+10560fbb0	10560fbb7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator startMonitoringUploadProgressWithMediaId:progressHandler:]	
+10560fbb8	10560fe73	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _upload:mediaData:overlayData:encryptionKey:encryptionIv:mediaDuration:mediaType:captureSessionId:stepMetrics:]	
+10560fe74	10561009f	decompiled	chunks/005/functions-000333.c		
+1056100a0	1056103e3	decompiled	chunks/005/functions-000333.c		
+1056103e4	10561049f	decompiled	chunks/005/functions-000333.c		
+1056104a0	10561084b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _didFailWithId:failureStep:failedStepStatus:failureReason:isMediaZipped:failureEnum:]	
+10561084c	1056109a3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _executeCallbacksWithId:orchestrationResult:]	
+1056109a4	105610a4b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator setVideoCodecHint:forMediaId:]	
+105610a4c	105610a5b	decompiled	chunks/005/functions-000333.c		
+105610a5c	105610b3b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _recordVideoCodecHint:forMediaId:]	
+105610b3c	105610beb	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator videoCodecForMediaId:]	
+105610bec	105610ddf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _cleanUpDataForMediaId:]	
+105610de0	105610e97	decompiled	chunks/005/functions-000333.c		
+105610e98	105610f73	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _enqueueCallbackWithId:callbackPerformer:completion:]	
+105610f74	105610fdf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _updateMediaId:sessionInfo:]	
+105610fe0	105611097	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _flushDeferredDidFailRetriableForMediaId:]	
+105611098	105611113	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _stepMetricsWithMediaId:]	
+105611114	1056116e3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _startChunkedTranscodeAndUploadMediaWithId:videoFilter:overlayData:encryptionKey:encryptionIv:captureSessionId:transcodeCompletion:uploadCompletion:]	
+1056116e4	105611ac3	decompiled	chunks/005/functions-000333.c		
+105611ac4	105611b3b	decompiled	chunks/005/functions-000333.c		
+105611b3c	105611caf	decompiled	chunks/005/functions-000333.c		
+105611cb0	105611daf	decompiled	chunks/005/functions-000333.c		
+105611db0	105611ec7	decompiled	chunks/005/functions-000333.c		
+105611ec8	105611f9b	decompiled	chunks/005/functions-000333.c		
+105611f9c	105611fb3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _fragmentedTranscodeRespectsRetriable]	
+105611fb4	10561207b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _logPreuploadUpdateGrapheneFatalBreakdown:inRetry:]	
+10561207c	10561221f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator _logNoEncInfoDiagnosticsWithSessionInfo:storeEncryptionInfo:]	
+105612220	10561222b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator videoCodecByMediaId]	
+10561222c	105612233	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator setVideoCodecByMediaId:]	
+105612234	10561235f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrator .cxx_destruct]	
+105612360	105612407	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationCallback initWithPerformer:completion:]	
+105612408	1056124cf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationCallback invokeCallbackWithResult:]	
+1056124d0	1056124df	decompiled	chunks/005/functions-000333.c		
+1056124e0	10561250f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationCallback .cxx_destruct]	
+105612510	1056125b3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl initWithSCPreferences:diskWritePerformer:]	
+1056125b4	10561262b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl persistSessionInfos:]	
+10561262c	1056126e7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl persistSessionInfosAsync:completion:]	
+1056126e8	10561274b	decompiled	chunks/005/functions-000333.c		
+10561274c	1056127b3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl retrieveInfoSessions]	
+1056127b4	10561281f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl persistInitIndex:]	
+105612820	105612887	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl retrieveInitIndex]	
+105612888	1056128b7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationStatePersisterImpl .cxx_destruct]	
+1056128b8	105612af7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo initWithCoder:]	
+105612af8	105612d3b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo initWithSessionStatus:encryptionKey:encryptionIv:contentURL:serializedContentObject:lastUpdateInitIndex:lastUpdateTimestamp:stepMetrics:appSource:isMediaZipped:latestUpdateOnSession:mediaType:mediaOrchestrationAttemptId:captureSessionId:appSourceIsAuthoritative:]	
+105612d3c	105612d5f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo copyWithZone:]	
+105612d60	105612ec3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo encodeWithCoder:]	
+105612ec4	105612fbf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo hash]	
+105612fc0	10561316f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo isEqual:]	
+105613170	105613177	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo sessionStatus]	
+105613178	10561317f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo encryptionKey]	
+105613180	105613187	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo encryptionIv]	
+105613188	10561318f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo contentURL]	
+105613190	105613197	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo serializedContentObject]	
+105613198	10561319f	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo lastUpdateInitIndex]	
+1056131a0	1056131a7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo lastUpdateTimestamp]	
+1056131a8	1056131af	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo stepMetrics]	
+1056131b0	1056131b7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo appSource]	
+1056131b8	1056131bf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo isMediaZipped]	
+1056131c0	1056131c7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo latestUpdateOnSession]	
+1056131c8	1056131cf	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo mediaType]	
+1056131d0	1056131d7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo mediaOrchestrationAttemptId]	
+1056131d8	1056131df	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo captureSessionId]	
+1056131e0	1056131e7	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo appSourceIsAuthoritative]	
+1056131e8	10561326b	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfo .cxx_destruct]	
+10561326c	105613287	decompiled	chunks/005/functions-000333.c	+[SCMediaOrchestrationSessionInfoBuilder mediaOrchestrationSessionInfo]	
+105613288	105613633	decompiled	chunks/005/functions-000333.c	+[SCMediaOrchestrationSessionInfoBuilder mediaOrchestrationSessionInfoFromExistingMediaOrchestrationSessionInfo:]	
+105613634	1056136a3	decompiled	chunks/005/functions-000333.c	-[SCMediaOrchestrationSessionInfoBuilder build]	
+1056136a4	1056136ab	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withSessionStatus:]	
+1056136ac	1056136e3	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withEncryptionKey:]	
+1056136e4	10561371b	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withEncryptionIv:]	
+10561371c	105613753	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withContentURL:]	
+105613754	10561378b	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withSerializedContentObject:]	
+10561378c	105613793	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withLastUpdateInitIndex:]	
+105613794	1056137cb	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withLastUpdateTimestamp:]	
+1056137cc	105613803	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withStepMetrics:]	
+105613804	10561380b	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withAppSource:]	
+10561380c	105613813	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withIsMediaZipped:]	
+105613814	10561384b	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withLatestUpdateOnSession:]	
+10561384c	105613853	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withMediaType:]	
+105613854	10561388b	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withMediaOrchestrationAttemptId:]	
+10561388c	1056138c3	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withCaptureSessionId:]	
+1056138c4	1056138cb	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder withAppSourceIsAuthoritative:]	
+1056138cc	10561394f	decompiled	chunks/005/functions-000334.c	-[SCMediaOrchestrationSessionInfoBuilder .cxx_destruct]	
+105613950	1056139c3	decompiled	chunks/005/functions-000334.c	-[SCGrapheneMediaOrchestratorChunkedMetric2 init]	
+1056139c4	105613bf3	decompiled	chunks/005/functions-000334.c		
+105613bf4	105613e23	decompiled	chunks/005/functions-000334.c		
+105613e24	105613f53	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister initWithKeyValueStore:grapheneRegistryLazy:]	
+105613f54	105614103	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister allPackageIdsWithCallbackQueue:completion:]	
+105614104	105614153	decompiled	chunks/005/functions-000334.c		
+105614154	105614163	decompiled	chunks/005/functions-000334.c		
+105614164	1056142a3	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister addPackageWithPackageId:mediaData:overlayData:isLocked:callbackQueue:completion:]	
+1056142a4	1056144ab	decompiled	chunks/005/functions-000334.c		
+1056144ac	1056144bf	decompiled	chunks/005/functions-000334.c		
+1056144c0	1056145a3	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister mediaDataForPackageId:callbackQueue:completion:]	
+1056145a4	10561469b	decompiled	chunks/005/functions-000334.c		
+10561469c	1056146ab	decompiled	chunks/005/functions-000334.c		
+1056146ac	10561478f	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister overlayDataForPackageId:callbackQueue:completion:]	
+105614790	105614887	decompiled	chunks/005/functions-000334.c		
+105614888	105614897	decompiled	chunks/005/functions-000334.c		
+105614898	10561497b	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister isPackageLocked:callbackQueue:completion:]	
+10561497c	105614a7f	decompiled	chunks/005/functions-000334.c		
+105614a80	105614a93	decompiled	chunks/005/functions-000334.c		
+105614a94	105614b77	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister unlockPackage:callbackQueue:completion:]	
+105614b78	105614c47	decompiled	chunks/005/functions-000334.c		
+105614c48	105614e67	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister removePackageForId:callbackQueue:completion:]	
+105614e68	105614f03	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister _logForMediaDataPackageSaveFailure:]	
+105614f04	105614f3f	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackagePersister .cxx_destruct]	
+105614f40	105614fdf	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageHandle initWithPackageId:dataPackageManager:]	
+105614fe0	105615057	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageHandle initWithPackageId:]	
+105615058	1056150b3	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageHandle dealloc]	
+1056150b4	1056150bb	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageHandle packageId]	
+1056150bc	1056150e7	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageHandle .cxx_destruct]	
+1056150e8	1056151a7	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager initWithPersister:performer:]	
+1056151a8	105615383	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager createPackageWithId:mediaData:overlayData:key:iv:isLocked:callbackQueue:encryptionCompletion:completion:]	
+105615384	1056154cb	decompiled	chunks/005/functions-000334.c		
+1056154cc	1056155e3	decompiled	chunks/005/functions-000334.c		
+1056155e4	105615603	decompiled	chunks/005/functions-000334.c		
+105615604	105615733	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager packageHandleWithId:callbackQueue:completion:]	
+105615734	10561586b	decompiled	chunks/005/functions-000334.c		
+10561586c	1056159a3	decompiled	chunks/005/functions-000334.c		
+1056159a4	1056159c3	decompiled	chunks/005/functions-000334.c		
+1056159c4	105615b17	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager mediaDatasWithHandle:callbackQueue:handler:]	
+105615b18	105615c43	decompiled	chunks/005/functions-000334.c		
+105615c44	105615d4f	decompiled	chunks/005/functions-000334.c		
+105615d50	105615e0b	decompiled	chunks/005/functions-000334.c		
+105615e0c	105615e1f	decompiled	chunks/005/functions-000334.c		
+105615e20	105615f4f	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager unlockPackage:callbackQueue:completion:]	
+105615f50	105615fb7	decompiled	chunks/005/functions-000334.c		
+105615fb8	105615fbb	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager createPackageWithId:mediaFileUrl:overlayData:key:iv:callbackQueue:encryptionCompletion:completion:]	
+105615fbc	105615fbf	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager retrievePackageWithId:callbackQueue:completion:]	
+105615fc0	105616097	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager didReleasePackage:]	
+105616098	1056160df	decompiled	chunks/005/functions-000334.c		
+1056160e0	105616147	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager _createHandleForPackageId:]	
+105616148	105616257	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager _deleteDataIfPossible:]	
+105616258	1056162ab	decompiled	chunks/005/functions-000334.c		
+1056162ac	1056162e7	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManager .cxx_destruct]	
+1056162e8	10561638b	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 initWithContentDelivery:performer:]	
+10561638c	10561658f	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 createPackageWithId:mediaFileUrl:overlayData:key:iv:callbackQueue:encryptionCompletion:completion:]	
+105616590	1056165db	decompiled	chunks/005/functions-000334.c		
+1056165dc	10561670b	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 retrievePackageWithId:callbackQueue:completion:]	
+10561670c	105616833	decompiled	chunks/005/functions-000334.c		
+105616834	1056168d3	decompiled	chunks/005/functions-000334.c		
+1056168d4	1056168e3	decompiled	chunks/005/functions-000334.c		
+1056168e4	105616abb	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 createPackageWithId:mediaData:overlayData:key:iv:isLocked:callbackQueue:encryptionCompletion:completion:]	
+105616abc	105616afb	decompiled	chunks/005/functions-000334.c		
+105616afc	105616c47	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 mediaDatasWithHandle:callbackQueue:handler:]	
+105616c48	105616d23	decompiled	chunks/005/functions-000334.c		
+105616d24	105617017	decompiled	chunks/005/functions-000334.c		
+105617018	10561703f	decompiled	chunks/005/functions-000334.c		
+105617040	105617173	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 packageHandleWithId:callbackQueue:completion:]	
+105617174	105617267	decompiled	chunks/005/functions-000334.c		
+105617268	105617327	decompiled	chunks/005/functions-000334.c		
+105617328	105617337	decompiled	chunks/005/functions-000334.c		
+105617338	105617467	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 unlockPackage:callbackQueue:completion:]	
+105617468	105617523	decompiled	chunks/005/functions-000334.c		
+105617524	105617883	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 _packMediaWithMediaFile:overlayData:zipFilePath:]	
+105617884	105617897	decompiled	chunks/005/functions-000334.c		
+105617898	1056178bf	decompiled	chunks/005/functions-000334.c		
+1056178c0	105617bd7	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 _packMediaWithMediaData:overlayData:]	
+105617bd8	105617c27	decompiled	chunks/005/functions-000334.c		
+105617c28	105617d93	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 _copyMediaData:toOutputStream:withError:]	
+105617d94	105618257	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 _createPackageWithId:mediaFileUrl:overlayData:key:iv:callbackQueue:encryptionCompletion:completion:]	
+105618258	10561828f	decompiled	chunks/005/functions-000334.c		
+105618290	1056183ef	decompiled	chunks/005/functions-000334.c		
+1056183f0	105618427	decompiled	chunks/005/functions-000334.c		
+105618428	1056185f7	decompiled	chunks/005/functions-000334.c	-[SCMediaDataPackageManagerV2 _createPackageWithId:mediaData:overlayData:isLocked:callbackQueue:completion:]	
+1056185f8	1056186ff	decompiled	chunks/005/functions-000334.c		
+105618700	10561871f	decompiled	chunks/005/functions-000335.c		
+105618720	10561874f	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageManagerV2 .cxx_destruct]	
+105618750	105618827	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage initWithCoder:]	
+105618828	1056188ff	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage initWithPackageId:mediaData:overlayData:]	
+105618900	105618923	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage copyWithZone:]	
+105618924	105618997	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage encodeWithCoder:]	
+105618998	105618a17	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage hash]	
+105618a18	105618ad7	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage isEqual:]	
+105618ad8	105618adf	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage packageId]	
+105618ae0	105618ae7	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage mediaData]	
+105618ae8	105618aef	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage overlayData]	
+105618af0	105618b2b	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackage .cxx_destruct]	
+105618b2c	105618b47	decompiled	chunks/005/functions-000335.c	+[SCMediaDataPackageBuilder mediaDataPackage]	
+105618b48	105618c5f	decompiled	chunks/005/functions-000335.c	+[SCMediaDataPackageBuilder mediaDataPackageFromExistingMediaDataPackage:]	
+105618c60	105618c93	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageBuilder build]	
+105618c94	105618ccb	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageBuilder withPackageId:]	
+105618ccc	105618d03	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageBuilder withMediaData:]	
+105618d04	105618d3b	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageBuilder withOverlayData:]	
+105618d3c	105618d77	decompiled	chunks/005/functions-000335.c	-[SCMediaDataPackageBuilder .cxx_destruct]	
+105618d78	105618df7	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore initWithDirectoryURL:]	
+105618df8	105618e83	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore allKeys]	
+105618e84	105618e8b	decompiled	chunks/005/functions-000335.c		
+105618e8c	105618ff3	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore setObject:forKey:]	
+105618ff4	1056190df	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore objectForKey:deserializeToClass:]	
+1056190e0	105619167	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore removeObjectForKey:]	
+105619168	10561916f	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore _fileURLWithKey:]	
+105619170	10561917b	decompiled	chunks/005/functions-000335.c	-[SCFileBasedKeyValueStore .cxx_destruct]	
+10561917c	1056191bb	decompiled	chunks/005/functions-000335.c		
+1056191bc	10561931b	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManagerServiceProvider _boltUploader]	
+10561931c	10561936b	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManagerServiceProvider .cxx_destruct]	
+10561936c	10561937b	decompiled	chunks/005/functions-000335.c	-[SCMediaPackageDataEncryptor encryptData:key:iv:]	
+10561937c	10561967f	decompiled	chunks/005/functions-000335.c	-[SCMediaPackageZipPacker packWithMediaData:overlayData:]	
+105619680	1056196cf	decompiled	chunks/005/functions-000335.c		
+1056196d0	1056198bf	decompiled	chunks/005/functions-000335.c	-[SCMediaPackageZipPacker unpackData:mediaDataPtr:overlayDataPtr:]	
+1056198c0	10561998b	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager initWithEncryptor:uploader:performer:]	
+10561998c	105619b97	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager initiateSegmentUploadWithTaskId:segmentData:overlayData:key:iv:stepMetrics:callbackPerformer:successHandler:failureHandler:]	
+105619b98	105619cb7	decompiled	chunks/005/functions-000335.c		
+105619cb8	105619ddb	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager continueSegmentUploadWithTaskId:segmentData:segmentIndex:overlayData:]	
+105619ddc	105619e3f	decompiled	chunks/005/functions-000335.c		
+105619e40	105619f17	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager completeSegmentUploadWithTaskId:]	
+105619f18	105619ff7	decompiled	chunks/005/functions-000335.c		
+105619ff8	10561a037	decompiled	chunks/005/functions-000335.c		
+10561a038	10561a0fb	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager cancelSegmentUploadWithTaskId:]	
+10561a0fc	10561a11f	decompiled	chunks/005/functions-000335.c		
+10561a120	10561a123	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager uploadWithUploadTaskId:mediaData:overlayData:key:iv:mediaDuration:mediaType:captureSessionId:stepMetrics:callbackPerformer:successHandler:failureHandler:]	
+10561a124	10561a127	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager startMonitoringUploadProgressWithUploadTaskId:progressHandler:]	
+10561a128	10561a2e3	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager _uploadWithUploadRequest:uploadTaskId:stepMetrics:callbackPerformer:successHandler:failureHandler:]	
+10561a2e4	10561a4df	decompiled	chunks/005/functions-000335.c		
+10561a4e0	10561a907	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager _triggerUploadWithUploadTaskId:stepMetrics:]	
+10561a908	10561aa83	decompiled	chunks/005/functions-000335.c		
+10561aa84	10561aacb	decompiled	chunks/005/functions-000335.c		
+10561aacc	10561ab5b	decompiled	chunks/005/functions-000335.c		
+10561ab5c	10561ac03	decompiled	chunks/005/functions-000335.c	-[SCUploadChunkDataManager .cxx_destruct]	
+10561ac04	10561ad57	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager initWithEncryptor:packer:uploader:uploadFromFile:grapheneRegistryLazy:]	
+10561ad58	10561b487	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager uploadWithUploadTaskId:mediaData:overlayData:key:iv:mediaDuration:mediaType:captureSessionId:stepMetrics:callbackPerformer:successHandler:failureHandler:]	
+10561b488	10561b6a3	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager initiateSegmentUploadWithTaskId:segmentData:overlayData:key:iv:stepMetrics:callbackPerformer:successHandler:failureHandler:]	
+10561b6a4	10561b77b	decompiled	chunks/005/functions-000335.c		
+10561b77c	10561b817	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager continueSegmentUploadWithTaskId:segmentData:segmentIndex:overlayData:]	
+10561b818	10561b86b	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager completeSegmentUploadWithTaskId:]	
+10561b86c	10561b8f3	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager cancelSegmentUploadWithTaskId:]	
+10561b8f4	10561b983	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager cancelUploadWithUploadTaskId:completion:]	
+10561b984	10561b98b	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager startMonitoringUploadProgressWithUploadTaskId:progressHandler:]	
+10561b98c	10561bc8f	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager _uploadWithUploadRequest:uploadTaskId:stepMetrics:callbackPerformer:tempFileURL:dataSource:fileFallback:successHandler:failureHandler:]	
+10561bc90	10561bcdf	decompiled	chunks/005/functions-000335.c		
+10561bce0	10561bdff	decompiled	chunks/005/functions-000335.c		
+10561be00	10561beff	decompiled	chunks/005/functions-000335.c		
+10561bf00	10561bf5b	decompiled	chunks/005/functions-000335.c		
+10561bf5c	10561c09b	decompiled	chunks/005/functions-000335.c		
+10561c09c	10561c0fb	decompiled	chunks/005/functions-000335.c	-[SCUploadMediaDataManager .cxx_destruct]	
+10561c0fc	10561c323	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader initWithNativeNetworkManager:uploadProgressMonitorLazy:userBlizzardLoggerLazy:backgroundUploadDbPath:applicationLifecycleEvents:]	
+10561c324	10561c377	decompiled	chunks/005/functions-000335.c		
+10561c378	10561c467	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader _subscribeToBackgroundTaskResults]	
+10561c468	10561c59b	decompiled	chunks/005/functions-000335.c		
+10561c59c	10561c60b	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader startMonitoringUploadProgressWithUniqueMediaId:progressHandler:]	
+10561c60c	10561c60f	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader uploadData:uniqueMediaId:callbackPerformer:successBlock:failureBlock:]	
+10561c610	10561c613	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+10561c614	10561c6d3	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader isBackgroundUploadComplete:]	
+10561c6d4	10561cb9b	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader uploadWithRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+10561cb9c	10561cdc7	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader didUpdateTaskResultForRequestKey:withTaskResult:]	
+10561cdc8	10561ce1b	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploader .cxx_destruct]	
+10561ce1c	10561ce33	decompiled	chunks/005/functions-000335.c		
+10561ce34	10561d257	decompiled	chunks/005/functions-000335.c		
+10561d258	10561d43b	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploaderCallback initWithUploadSuccessBlock:failureBlock:callbackPerformer:cupsMetricsLogger:uploadLocationCallbackMetrics:locationAttribution:mediaDuration:captureSessionId:mediaOrchestrationId:]	
+10561d43c	10561d677	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploaderCallback onSuccess:serializedContentObject:contentUploadCallbackMetrics:]	
+10561d678	10561d8d3	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploaderCallback onFailure:contentUploadCallbackMetrics:]	
+10561d8d4	10561d957	decompiled	chunks/005/functions-000335.c	-[SCNativeDirectDataUploaderCallback .cxx_destruct]	
+10561d958	10561d9cb	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider initWithContentDeliveryLazy:]	
+10561d9cc	10561db53	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider saveUploadData:forMediaId:completion:callbackPerformer:]	
+10561db54	10561dbc3	decompiled	chunks/005/functions-000335.c		
+10561dbc4	10561dc43	decompiled	chunks/005/functions-000335.c		
+10561dc44	10561dc57	decompiled	chunks/005/functions-000335.c		
+10561dc58	10561dda3	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider retrieveUploadDataForMediaId:completion:callbackPerformer:]	
+10561dda4	10561de43	decompiled	chunks/005/functions-000335.c		
+10561de44	10561de53	decompiled	chunks/005/functions-000335.c		
+10561de54	10561df6f	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider removeUploadDataForMediaId:]	
+10561df70	10561dfab	decompiled	chunks/005/functions-000335.c		
+10561dfac	10561e08f	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider _removeContentForMediaId:]	
+10561e090	10561e09b	decompiled	chunks/005/functions-000335.c	-[SCResumableUploadDataProvider .cxx_destruct]	
+10561e09c	10561e1ab	decompiled	chunks/005/functions-000335.c	-[SCBoltDataUploadProgressMonitor initWithRequestManager:]	
+10561e1ac	10561e2f3	decompiled	chunks/005/functions-000335.c	-[SCBoltDataUploadProgressMonitor cancelUploadForUniqueMediaId:completion:]	
+10561e2f4	10561e3ab	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProgressMonitor addRequestKey:forUniqueMediaId:]	
+10561e3ac	10561e4ef	decompiled	chunks/005/functions-000336.c		
+10561e4f0	10561e5a7	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProgressMonitor startMonitoringUploadProgressWithUniqueMediaId:progressHandler:]	
+10561e5a8	10561e6ef	decompiled	chunks/005/functions-000336.c		
+10561e6f0	10561e823	decompiled	chunks/005/functions-000336.c		
+10561e824	10561e86b	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProgressMonitor .cxx_destruct]	
+10561e86c	10561ea73	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy initWithConfigProviderLazy:directUploaderLazy:resumableUploaderLazy:uploadProgressMonitorLazy:urlExpirationSafetyMargin:dynamicUploadLocationProviderLazy:uploadLocationManagerLazy:circumstanceEngine:]	
+10561ea74	10561ea8b	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _shouldRetryMemories]	
+10561ea8c	10561ea93	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _shouldFailFirstUpload]	
+10561ea94	10561eaab	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _enableExponentialBackoff]	
+10561eaac	10561eac3	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _enableRetries]	
+10561eac4	10561eaef	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _immediateRetryCount]	
+10561eaf0	10561eb07	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _sendEstimatedTimeToUpload]	
+10561eb08	10561eb93	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _useUploadLocationRevampForMediaSource:]	
+10561eb94	10561ec4b	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+10561ec4c	10561ec6f	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _shouldRetryMediaSource:]	
+10561ec70	10561f24b	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _uploadWithRequest:callbackPerformer:successBlock:failureBlock:allowRetries:retryCount:shouldFailFirstUpload:]	
+10561f24c	10561f4b3	decompiled	chunks/005/functions-000336.c		
+10561f4b4	10561f4ef	decompiled	chunks/005/functions-000336.c		
+10561f4f0	10561f52f	decompiled	chunks/005/functions-000336.c		
+10561f530	10561f5e7	decompiled	chunks/005/functions-000336.c		
+10561f5e8	10561f627	decompiled	chunks/005/functions-000336.c		
+10561f628	10561f6e3	decompiled	chunks/005/functions-000336.c		
+10561f6e4	10561f753	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy startMonitoringUploadProgressWithUniqueMediaId:progressHandler:]	
+10561f754	10561f7b7	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy isBackgroundUploadComplete:]	
+10561f7b8	10561f847	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy cancelUploadWithUniqueMediaId:completion:]	
+10561f848	10561f88b	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy setUploadStatusDelegate:]	
+10561f88c	10561f9cb	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy _reportUploadMode:forRequest:]	
+10561f9cc	10561fc73	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy uploadLocationFetchResultWithUploadLocation:error:metrics:uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+10561fc74	10561febb	decompiled	chunks/005/functions-000336.c		
+10561febc	1056202d7	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy clientUploadLocationFetchResultWithUploadLocation:error:locationAttribution:uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+1056202d8	10562035f	decompiled	chunks/005/functions-000336.c		
+105620360	105620477	decompiled	chunks/005/functions-000336.c		
+105620478	1056205db	decompiled	chunks/005/functions-000336.c		
+1056205dc	10562079b	decompiled	chunks/005/functions-000336.c		
+10562079c	105620827	decompiled	chunks/005/functions-000336.c	-[SCBoltDataUploadProxy .cxx_destruct]	
+105620828	10562096f	decompiled	chunks/005/functions-000336.c		
+105620970	105620c77	decompiled	chunks/005/functions-000336.c		
+105620c78	105620d4f	decompiled	chunks/005/functions-000336.c		
+105620d50	105620e8f	decompiled	chunks/005/functions-000336.c		
+105620e90	105620f2f	decompiled	chunks/005/functions-000336.c		
+105620f30	105620f7b	decompiled	chunks/005/functions-000336.c		
+105620f7c	10562107b	decompiled	chunks/005/functions-000336.c		
+10562107c	105621093	decompiled	chunks/005/functions-000336.c		
+105621094	1056210cb	decompiled	chunks/005/functions-000336.c		
+1056210cc	1056210cf	decompiled	chunks/005/functions-000336.c		
+1056210d0	1056211c3	decompiled	chunks/005/functions-000336.c		
+1056211c4	1056211f3	decompiled	chunks/005/functions-000336.c		
+1056211f4	1056212cb	decompiled	chunks/005/functions-000336.c		
+1056212cc	105621527	decompiled	chunks/005/functions-000336.c		
+105621528	1056218a7	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader initWithPreferences:itemValidationChecker:urlExpirationSafetyMargin:requestManager:contentDeliveryLazy:configProviderLazy:grapheneRegistryLazy:userBlizzardLoggerLazy:uploadProgressMonitorLazy:circumstanceEngine:]	
+1056218a8	105621913	decompiled	chunks/005/functions-000336.c		
+105621914	105621a0b	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader uploadStateForUniqueMediaId:uploadStepMetricsTracker:]	
+105621a0c	105621a0f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader cleanUp]	
+105621a10	105621a9f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader cancelUploadWithUniqueMediaId:completion:]	
+105621aa0	105621aa3	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader uploadData:uniqueMediaId:callbackPerformer:successBlock:failureBlock:]	
+105621aa4	105621bf3	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+105621bf4	105621c7b	decompiled	chunks/005/functions-000336.c		
+105621c7c	105621c83	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader isBackgroundUploadComplete:]	
+105621c84	105622127	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader uploadWithRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+105622128	1056221e7	decompiled	chunks/005/functions-000336.c		
+1056221e8	1056221ff	decompiled	chunks/005/functions-000336.c		
+105622200	105622297	decompiled	chunks/005/functions-000336.c		
+105622298	10562272b	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _uploadWithRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+10562272c	105622797	decompiled	chunks/005/functions-000336.c		
+105622798	10562286b	decompiled	chunks/005/functions-000336.c		
+10562286c	105622b8f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _startStateMachineWithDataToUpload:cachedDataToUpload:uploadState:dulpUploadLocation:uniqueMediaId:requestKeySuffix:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105622b90	105622def	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _startStateMachineWithChunkDataToUpload:chunkMetadata:uploadState:dulpUploadLocation:uniqueMediaId:requestKeySuffix:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105622df0	105623137	decompiled	chunks/005/functions-000336.c		
+105623138	1056231f3	decompiled	chunks/005/functions-000336.c		
+1056231f4	1056232c3	decompiled	chunks/005/functions-000336.c		
+1056232c4	10562337f	decompiled	chunks/005/functions-000336.c		
+105623380	105623583	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _persistAndStartUploadWithUploadData:dulpUploadLocation:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105623584	1056237ff	decompiled	chunks/005/functions-000336.c		
+105623800	10562386f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader startMonitoringUploadProgressWithUniqueMediaId:progressHandler:]	
+105623870	10562388f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _startNewUploadSessionWithUploadData:dulpUploadLocation:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105623890	105623a93	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _fetchNewSessionUriAndUploadWithUploadLocation:dataToUpload:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105623a94	105623b57	decompiled	chunks/005/functions-000336.c		
+105623b58	105623f03	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _uploadToNewSessionUriFromBeginning:uploadLocation:response:error:uploadData:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105623f04	105623fbf	decompiled	chunks/005/functions-000336.c		
+105623fc0	10562408f	decompiled	chunks/005/functions-000336.c		
+105624090	10562414b	decompiled	chunks/005/functions-000336.c		
+10562414c	10562439f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _resumeUploadSessionWithUploadState:uploadData:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+1056243a0	10562448b	decompiled	chunks/005/functions-000336.c		
+10562448c	10562491b	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _handleRequestStartByteFetch:response:error:resumableURI:uploadLocation:uploadData:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+10562491c	1056249d7	decompiled	chunks/005/functions-000336.c		
+1056249d8	105624b9b	decompiled	chunks/005/functions-000336.c		
+105624b9c	105624c0b	decompiled	chunks/005/functions-000336.c		
+105624c0c	105624fe3	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _fetchSessionUriWithUploadLocation:uniqueMediaId:uploadSize:uploadStepMetricsTracker:priority:callbackPerformer:failureBlock:uriBlock:]	
+105624fe4	10562503f	decompiled	chunks/005/functions-000336.c		
+105625040	1056250f7	decompiled	chunks/005/functions-000336.c		
+1056250f8	105625113	decompiled	chunks/005/functions-000336.c		
+105625114	10562548b	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _getUploadStartByteWithDataLength:uniqueMediaId:uploadStepMetricsTracker:uploadState:priority:callbackPerformer:uploadStartByteBlock:]	
+10562548c	1056254a3	decompiled	chunks/005/functions-000336.c		
+1056254a4	1056255cf	decompiled	chunks/005/functions-000336.c		
+1056255d0	105625e6f	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _uploadFromByteWithSessionURI:uniqueMediaId:uploadStepMetricsTracker:uploadStartByte:uploadData:uploadLocation:priority:callbackPerformer:successBlock:failureBlock:]	
+105625e70	105625fbf	decompiled	chunks/005/functions-000336.c		
+105625fc0	1056266ff	decompiled	chunks/005/functions-000336.c		
+105626700	105626c97	decompiled	chunks/005/functions-000336.c	-[SCBoltResumableDataUploader _uploadChunkDataWithSessionURI:chunkData:chunkMetadata:uniqueMediaId:uploadStepMetricsTracker:uploadLocation:priority:callbackPerformer:successBlock:failureBlock:]	
+105626c98	105626def	decompiled	chunks/005/functions-000336.c		
+105626df0	105626ebf	decompiled	chunks/005/functions-000337.c		
+105626ec0	1056273df	decompiled	chunks/005/functions-000337.c		
+1056273e0	105627527	decompiled	chunks/005/functions-000337.c		
+105627528	10562761f	decompiled	chunks/005/functions-000337.c		
+105627620	10562790b	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _clearExpiredUploadStates]	
+10562790c	105627adf	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _upsertUploadStateWithBlock:forMediaId:clearUploadState:uploadStepMetricsTracker:]	
+105627ae0	105627c07	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _removeUploadStateForMediaId:uploadStepMetricsTracker:]	
+105627c08	105627da7	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _uploadRequestDidProgress:uniqueMediaId:uploadStartByte:croppedDataLength:reportStartByte:totalBytes:chunked:uploadStepMetricsTracker:]	
+105627da8	105627e17	decompiled	chunks/005/functions-000337.c		
+105627e18	105627e6b	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _clearAllUploadStates]	
+105627e6c	105627e77	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader setUploadStatusDelegate:]	
+105627e78	105627f5b	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _clearUploadStatusTrackingForMediaId:]	
+105627f5c	105627fa3	decompiled	chunks/005/functions-000337.c		
+105627fa4	10562825b	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _reportUploadSentBytes:requestSentBytes:totalBytes:chunked:uploadStepMetricsTracker:mediaId:]	
+10562825c	1056283eb	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _recordServerConfirmedOffset:totalBytes:mediaId:]	
+1056283ec	105628af7	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _uploadLocalFileWithRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+105628af8	105628b13	decompiled	chunks/005/functions-000337.c		
+105628b14	105628b4b	decompiled	chunks/005/functions-000337.c		
+105628b4c	105628c6b	decompiled	chunks/005/functions-000337.c		
+105628c6c	105628e67	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _fetchNewSessionUriAndUploadLocalFile:fileSize:dulpUploadLocation:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105628e68	10562916b	decompiled	chunks/005/functions-000337.c		
+10562916c	105629227	decompiled	chunks/005/functions-000337.c		
+105629228	1056292f7	decompiled	chunks/005/functions-000337.c		
+1056292f8	1056293b3	decompiled	chunks/005/functions-000337.c		
+1056293b4	1056295fb	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _resumeLocalFileUploadWithUploadState:localFileUrl:fileSize:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+1056295fc	1056296e7	decompiled	chunks/005/functions-000337.c		
+1056296e8	105629b07	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _handleLocalFileStartByteFetch:response:error:resumableURI:uploadLocation:localFileUrl:fileSize:uniqueMediaId:uploadStepMetricsTracker:priority:callbackPerformer:successBlock:failureBlock:]	
+105629b08	105629bc3	decompiled	chunks/005/functions-000337.c		
+105629bc4	105629d87	decompiled	chunks/005/functions-000337.c		
+105629d88	105629df7	decompiled	chunks/005/functions-000337.c		
+105629df8	10562ab37	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader _uploadLocalFileFromByteWithSessionURI:localFileUrl:fileSize:uniqueMediaId:uploadStepMetricsTracker:uploadStartByte:uploadLocation:priority:callbackPerformer:successBlock:failureBlock:]	
+10562ab38	10562aee3	decompiled	chunks/005/functions-000337.c		
+10562aee4	10562b01b	decompiled	chunks/005/functions-000337.c		
+10562b01c	10562b753	decompiled	chunks/005/functions-000337.c		
+10562b754	10562b80f	decompiled	chunks/005/functions-000337.c	-[SCBoltResumableDataUploader .cxx_destruct]	
+10562b810	10562b893	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader initWithUploader:retryCount:]	
+10562b894	10562b903	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader startMonitoringUploadProgressWithUniqueMediaId:progressHandler:]	
+10562b904	10562ba57	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader uploadWithRequest:callbackPerformer:successBlock:failureBlock:]	
+10562ba58	10562badf	decompiled	chunks/005/functions-000337.c		
+10562bae0	10562bb23	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader uploadWithRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+10562bb24	10562bb87	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader isBackgroundUploadComplete:]	
+10562bb88	10562bbbb	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader cleanUp]	
+10562bbbc	10562bc77	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader cancelUploadWithUniqueMediaId:completion:]	
+10562bc78	10562bcc7	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader setUploadStatusDelegate:]	
+10562bcc8	10562bee7	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader _uploadWithRemainingAttemptCount:uploadRequest:uploadLocation:uploadLocationCallbackMetrics:locationAttribution:callbackPerformer:successBlock:failureBlock:]	
+10562bee8	10562bf77	decompiled	chunks/005/functions-000337.c		
+10562bf78	10562bf83	decompiled	chunks/005/functions-000337.c	-[SCBoltRetryingResumableUploader .cxx_destruct]	
+10562bf84	10562bfcb	decompiled	chunks/005/functions-000337.c	-[SCBoltV2ResumableUploadLocationValidator initWithExpirationMargin:]	
+10562bfcc	10562c09b	decompiled	chunks/005/functions-000337.c	-[SCBoltV2ResumableUploadLocationValidator isValid:]	
+10562c09c	10562c0e3	decompiled	chunks/005/functions-000337.c	-[SCBoltV2UploadLocationValidator initWithExpirationMargin:]	
+10562c0e4	10562c1a3	decompiled	chunks/005/functions-000337.c	-[SCBoltV2UploadLocationValidator isValid:]	
+10562c1a4	10562c1af	decompiled	chunks/005/functions-000337.c	-[SCExponentialBackoffController init]	
+10562c1b0	10562c1fb	decompiled	chunks/005/functions-000337.c	-[SCExponentialBackoffController initWithBaseBackoffMs:maxBackoffMs:]	
+10562c1fc	10562c27b	decompiled	chunks/005/functions-000337.c	-[SCExponentialBackoffController getBackoffAmountMs:]	
+10562c27c	10562c39f	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl initWithUploadWithRequest:callbackPerformer:successBlock:failureBlock:delegate:]	
+10562c3a0	10562c42b	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl onFailure:metrics:]	
+10562c42c	10562c507	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl onSuccess:metrics:]	
+10562c508	10562c51f	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl delegate]	
+10562c520	10562c52b	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl setDelegate:]	
+10562c52c	10562c57b	decompiled	chunks/005/functions-000337.c	-[SCNDynamicUploadLocationCallbackImpl .cxx_destruct]	
+10562c57c	10562c69f	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter initWithUploadWithRequest:callbackPerformer:successBlock:failureBlock:delegate:]	
+10562c6a0	10562c713	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter onError:]	
+10562c714	10562c9fb	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter onSuccess:]	
+10562c9fc	10562ca13	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter delegate]	
+10562ca14	10562ca1f	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter setDelegate:]	
+10562ca20	10562ca6f	decompiled	chunks/005/functions-000337.c	-[SCNUploadLocationCallbackAdapter .cxx_destruct]	
+10562ca70	10562cb27	decompiled	chunks/005/functions-000337.c		
+10562cb28	10562cb9b	decompiled	chunks/005/functions-000337.c	-[SCCUPSMetricsLogger initWithBlizzardLoggerLazy:]	
+10562cb9c	10562d29f	decompiled	chunks/005/functions-000337.c	-[SCCUPSMetricsLogger logMetricsWithContentUploadCallbackMetrics:dulpUploadLocationCallbackMetrics:contentUrl:mediaDuration:captureSessionId:mediaOrchestrationId:locationAttribution:]	
+10562d2a0	10562d3cb	decompiled	chunks/005/functions-000337.c		
+10562d3cc	10562d3d7	decompiled	chunks/005/functions-000337.c	-[SCCUPSMetricsLogger .cxx_destruct]	
+10562d3d8	10562d4d7	decompiled	chunks/005/functions-000337.c		
+10562d4d8	10562d6c7	decompiled	chunks/005/functions-000337.c		
+10562d6c8	10562d73f	decompiled	chunks/005/functions-000337.c		
+10562d740	10562d763	decompiled	chunks/005/functions-000337.c		
+10562d764	10562da7b	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker initWithGrapheneRegistryLazy:blizzardLogger:uniqueMediaId:boltUploadRequest:uploadLocationCallbackMetrics:]	
+10562da7c	10562daab	decompiled	chunks/005/functions-000337.c		
+10562daac	10562dad3	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker mediaOrchestrationAttemptId]	
+10562dad4	10562dafb	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logStartUploadStep:]	
+10562dafc	10562dcd3	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logEndCurrentUploadStep]	
+10562dcd4	10562dd8b	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logUploadCompletionWithSuccess:uploadSize:contentReference:errorResponse:error:]	
+10562dd8c	10562dfc3	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logUploadBandwidthEstimate:timeToUploadWithDataSize:]	
+10562dfc4	10562e1c7	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logUploadBytesAlreadyUploaded:bytesRemaining:]	
+10562e1c8	10562e2b3	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logResumeState:]	
+10562e2b4	10562e42b	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logDequeUrlStepDidSucceed:]	
+10562e42c	10562e5a3	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logPersistMediaStepDidSucceed:]	
+10562e5a4	10562e71b	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logReadMediaStepDidSucceed:]	
+10562e71c	10562e7df	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logResumableUploaderStartStep:]	
+10562e7e0	10562e863	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logResumeStartByteFromGcs:]	
+10562e864	10562eba7	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker _logUploadResultWithSuccess:contentReference:errorResponse:error:]	
+10562eba8	10562ed3f	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker _logUploadLatencyWithSuccess:]	
+10562ed40	10562ef27	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker _logUploadSize:withSuccess:]	
+10562ef28	10562f49b	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker _logCUPSBlizzardMetricsWithSuccess:contentReference:errorResponse:error:]	
+10562f49c	10562f63b	decompiled	chunks/005/functions-000337.c	+[SCUploadStepMetricsTracker logGCSRUStateMetricsWithValidStateCount:expiredStateCount:grapheneRegistryLazy:]	
+10562f63c	10562f72f	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker logGCSRUOperationLatency:type:]	
+10562f730	10562f737	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker didResume]	
+10562f738	10562f73f	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker setDidResume:]	
+10562f740	10562f747	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker uploadUrlType]	
+10562f748	10562f74f	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker setUploadUrlType:]	
+10562f750	10562f757	decompiled	chunks/005/functions-000337.c	-[SCUploadStepMetricsTracker locationAttribution]	
+10562f758	10562f75f	decompiled	chunks/005/functions-000338.c	-[SCUploadStepMetricsTracker setLocationAttribution:]	
+10562f760	10562f853	decompiled	chunks/005/functions-000338.c	-[SCUploadStepMetricsTracker .cxx_destruct]	
+10562f854	10562f9cf	decompiled	chunks/005/functions-000338.c		
+10562f9d0	10562fabf	decompiled	chunks/005/functions-000338.c		
+10562fac0	10562fb2b	decompiled	chunks/005/functions-000338.c		
+10562fb2c	10562fbd7	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult initWithPublicResult:statusCode:]	
+10562fbd8	10562fbfb	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult copyWithZone:]	
+10562fbfc	10562fc6f	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult hash]	
+10562fc70	10562fd17	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult isEqual:]	
+10562fd18	10562fd1f	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult publicResult]	
+10562fd20	10562fd27	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult statusCode]	
+10562fd28	10562fd57	decompiled	chunks/005/functions-000338.c	-[SCUploadClientFailureResult .cxx_destruct]	
+10562fd58	10562fe0b	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult initWithPublicResult:statusCode:responseHeaders:]	
+10562fe0c	10562fe2f	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult copyWithZone:]	
+10562fe30	10562feaf	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult hash]	
+10562feb0	10562ff67	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult isEqual:]	
+10562ff68	10562ff6f	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult publicResult]	
+10562ff70	10562ff77	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult statusCode]	
+10562ff78	10562ff7f	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult responseHeaders]	
+10562ff80	10562ffaf	decompiled	chunks/005/functions-000338.c	-[SCUploadClientResult .cxx_destruct]	
+10562ffb0	10563009f	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState initWithBoltUploadLocation:bytesUploaded:isBytesUploadedFromGcs:resumableURI:resumableURIExpiry:]	
+1056300a0	10563019f	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState initWithCoder:]	
+1056301a0	1056301c3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState copyWithZone:]	
+1056301c4	10563025f	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState encodeWithCoder:]	
+105630260	1056302f3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState hash]	
+1056302f4	1056303d3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState isEqual:]	
+1056303d4	1056303db	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState boltUploadLocation]	
+1056303dc	1056303e3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState bytesUploaded]	
+1056303e4	1056303eb	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState isBytesUploadedFromGcs]	
+1056303ec	1056303f3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState resumableURI]	
+1056303f4	1056303fb	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState resumableURIExpiry]	
+1056303fc	105630437	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadState .cxx_destruct]	
+105630438	105630453	decompiled	chunks/005/functions-000338.c	+[SCBoltResumableUploadStateBuilder boltResumableUploadState]	
+105630454	1056305c3	decompiled	chunks/005/functions-000338.c	+[SCBoltResumableUploadStateBuilder boltResumableUploadStateFromExistingBoltResumableUploadState:]	
+1056305c4	1056305fb	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder build]	
+1056305fc	105630633	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder withBoltUploadLocation:]	
+105630634	10563063b	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder withBytesUploaded:]	
+10563063c	105630643	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder withIsBytesUploadedFromGcs:]	
+105630644	10563067b	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder withResumableURI:]	
+10563067c	1056306b3	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder withResumableURIExpiry:]	
+1056306b4	1056306ef	decompiled	chunks/005/functions-000338.c	-[SCBoltResumableUploadStateBuilder .cxx_destruct]	
+1056306f0	10563077b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig initWithEnableResumableUpload:minimumUploadTimeInSecondsForResumable:minimumUploadSizeInKilobytesForResumable:fetchUploadStateRetryLimit:createSessionRetryLimit:uploadLevelRetryLimit:uploadDataRetryLimit:resumeSessionBytesThreshold:]	
+10563077c	10563079f	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig copyWithZone:]	
+1056307a0	10563083f	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig hash]	
+105630840	10563095b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig isEqual:]	
+10563095c	105630963	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig enableResumableUpload]	
+105630964	10563096b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig minimumUploadTimeInSecondsForResumable]	
+10563096c	105630973	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig minimumUploadSizeInKilobytesForResumable]	
+105630974	10563097b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig fetchUploadStateRetryLimit]	
+10563097c	105630983	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig createSessionRetryLimit]	
+105630984	10563098b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig uploadLevelRetryLimit]	
+10563098c	105630993	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig uploadDataRetryLimit]	
+105630994	10563099b	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfig resumeSessionBytesThreshold]	
+10563099c	1056309b7	decompiled	chunks/005/functions-000338.c	+[SCResumableUploadConfigBuilder resumableUploadConfig]	
+1056309b8	105630b63	decompiled	chunks/005/functions-000338.c	+[SCResumableUploadConfigBuilder resumableUploadConfigFromExistingResumableUploadConfig:]	
+105630b64	105630baf	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder build]	
+105630bb0	105630bb7	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withEnableResumableUpload:]	
+105630bb8	105630bbf	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withMinimumUploadTimeInSecondsForResumable:]	
+105630bc0	105630bc7	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withMinimumUploadSizeInKilobytesForResumable:]	
+105630bc8	105630bcf	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withFetchUploadStateRetryLimit:]	
+105630bd0	105630bd7	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withCreateSessionRetryLimit:]	
+105630bd8	105630bdf	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withUploadLevelRetryLimit:]	
+105630be0	105630be7	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withUploadDataRetryLimit:]	
+105630be8	105630bef	decompiled	chunks/005/functions-000338.c	-[SCResumableUploadConfigBuilder withResumeSessionBytesThreshold:]	
+105630bf0	105630c63	decompiled	chunks/005/functions-000338.c	-[SCGrapheneMediaorchestrationMetric2 init]	
+105630c64	105630d7b	decompiled	chunks/005/functions-000338.c		
+105630d7c	105630e93	decompiled	chunks/005/functions-000338.c		
+105630e94	105630f3b	decompiled	chunks/005/functions-000338.c	-[SCNCupsUploadLocationCallbackImpl initWithCallbackPerformer:handler:]	
+105630f3c	105631073	decompiled	chunks/005/functions-000338.c	-[SCNCupsUploadLocationCallbackImpl onFailure:metrics:]	
+105631074	105631087	decompiled	chunks/005/functions-000338.c		
+105631088	1056311a3	decompiled	chunks/005/functions-000338.c	-[SCNCupsUploadLocationCallbackImpl onSuccess:metrics:]	
+1056311a4	1056311b7	decompiled	chunks/005/functions-000338.c		
+1056311b8	1056311e7	decompiled	chunks/005/functions-000338.c	-[SCNCupsUploadLocationCallbackImpl .cxx_destruct]	
+1056311e8	105631213	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric uploadLocation]	
+105631214	10563123f	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric rabCacheResult]	
+105631240	10563126b	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric ulExpired]	
+10563126c	105631297	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric ulRestored]	
+105631298	1056312c3	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric ulDiskWResult]	
+1056312c4	1056312ef	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric ulDiskRResult]	
+1056312f0	10563131b	decompiled	chunks/005/functions-000338.c	+[SCGrapheneUploadUrlCacheMetric ulDiskEResult]	
+10563131c	1056313bb	decompiled	chunks/005/functions-000338.c	-[SCGrapheneUploadUrlCacheMetric description]	
+1056313bc	10563153b	decompiled	chunks/005/functions-000338.c	-[SCGrapheneRegistry uploadUrlCacheGraphene]	
+10563153c	1056315a3	decompiled	chunks/005/functions-000338.c	+[SCCNativeDULPABConfig descriptor]	
+1056315a4	10563161b	decompiled	chunks/005/functions-000338.c	-[SCNCupsBackgroundUploadStatusUpdater initWithCpp:]	
+10563161c	10563171b	decompiled	chunks/005/functions-000338.c	+[SCNCupsBackgroundUploadStatusUpdater create:]	
+10563171c	10563182b	decompiled	chunks/005/functions-000338.c	-[SCNCupsBackgroundUploadStatusUpdater setUploadContentStatus:contentUploadStatus:]	
+10563182c	10563188b	decompiled	chunks/005/functions-000338.c	-[SCNCupsBackgroundUploadStatusUpdater appDidEnterBackground]	
+10563188c	1056318df	decompiled	chunks/005/functions-000338.c	-[SCNCupsBackgroundUploadStatusUpdater .cxx_destruct]	
+1056318e0	10563191f	decompiled	chunks/005/functions-000338.c	-[SCNCupsBackgroundUploadStatusUpdater .cxx_construct]	
+105631920	10563193f	decompiled	chunks/005/functions-000338.c		
+105631940	1056319a3	decompiled	chunks/005/functions-000338.c		
+1056319a4	1056319c3	decompiled	chunks/005/functions-000338.c		
+1056319c4	1056319fb	decompiled	chunks/005/functions-000338.c		
+1056319fc	105631a6f	decompiled	chunks/005/functions-000338.c		
+105631a70	105631abf	decompiled	chunks/005/functions-000338.c		
+105631ac0	105631af7	decompiled	chunks/005/functions-000338.c		
+105631af8	105631b6f	decompiled	chunks/005/functions-000338.c	-[SCNCupsContentUploadCallbackCppProxy initWithCpp:]	
+105631b70	105631ca3	decompiled	chunks/005/functions-000338.c	-[SCNCupsContentUploadCallbackCppProxy onSuccess:serializedContentObject:contentUploadCallbackMetrics:]	
+105631ca4	105631da7	decompiled	chunks/005/functions-000338.c	-[SCNCupsContentUploadCallbackCppProxy onFailure:contentUploadCallbackMetrics:]	
+105631da8	105631e8f	decompiled	chunks/005/functions-000338.c		
+105631e90	105631eeb	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploadCallbackCppProxy .cxx_destruct]	
+105631eec	105631f2b	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploadCallbackCppProxy .cxx_construct]	
+105631f2c	105632023	decompiled	chunks/005/functions-000339.c		
+105632024	105632027	decompiled	chunks/005/functions-000339.c		
+105632028	10563203b	decompiled	chunks/005/functions-000339.c		
+10563203c	105632047	decompiled	chunks/005/functions-000339.c		
+105632048	105632083	decompiled	chunks/005/functions-000339.c		
+105632084	105632147	decompiled	chunks/005/functions-000339.c		
+105632148	1056321cf	decompiled	chunks/005/functions-000339.c		
+1056321d0	10563225f	decompiled	chunks/005/functions-000339.c		
+105632260	10563226f	decompiled	chunks/005/functions-000339.c		
+105632270	1056322bf	decompiled	chunks/005/functions-000339.c		
+1056322c0	10563231f	decompiled	chunks/005/functions-000339.c		
+105632320	105632693	decompiled	chunks/005/functions-000339.c		
+105632694	1056326f7	decompiled	chunks/005/functions-000339.c		
+1056326f8	10563275b	decompiled	chunks/005/functions-000339.c		
+10563275c	10563299b	decompiled	chunks/005/functions-000339.c		
+10563299c	1056329cb	decompiled	chunks/005/functions-000339.c		
+1056329cc	105632aa3	decompiled	chunks/005/functions-000339.c		
+105632aa4	105632c47	decompiled	chunks/005/functions-000339.c		
+105632c48	105632c77	decompiled	chunks/005/functions-000339.c		
+105632c78	105632c8b	decompiled	chunks/005/functions-000339.c		
+105632c8c	105632ca7	decompiled	chunks/005/functions-000339.c		
+105632ca8	105632d1f	decompiled	chunks/005/functions-000339.c		
+105632d20	105632d33	decompiled	chunks/005/functions-000339.c		
+105632d34	105632d4f	decompiled	chunks/005/functions-000339.c		
+105632d50	105632da3	decompiled	chunks/005/functions-000339.c		
+105632da4	105632ee3	decompiled	chunks/005/functions-000339.c		
+105632ee4	105632f2b	decompiled	chunks/005/functions-000339.c		
+105632f2c	105632fab	decompiled	chunks/005/functions-000339.c		
+105632fac	105632fb3	decompiled	chunks/005/functions-000339.c		
+105632fb4	1056331ef	decompiled	chunks/005/functions-000339.c		
+1056331f0	105633313	decompiled	chunks/005/functions-000339.c		
+105633314	1056333bf	decompiled	chunks/005/functions-000339.c		
+1056333c0	10563348b	decompiled	chunks/005/functions-000339.c		
+10563348c	105633503	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploader initWithCpp:]	
+105633504	1056336a3	decompiled	chunks/005/functions-000339.c	+[SCNCupsContentUploader create:tweaks:dbPath:]	
+1056336a4	105633707	decompiled	chunks/005/functions-000339.c		
+105633708	10563395f	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploader uploadContentWithUploadLocation:uploadHeaders:contentURL:contentObject:uploadUrlExpiryTimeMs:contentUploadRequest:uploadLocationCallbackMetrics:callback:]	
+105633960	105633a17	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploader getUploadContentStatus:]	
+105633a18	105633a5f	decompiled	chunks/005/functions-000339.c		
+105633a60	105633ab3	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploader .cxx_destruct]	
+105633ab4	105633af3	decompiled	chunks/005/functions-000339.c	-[SCNCupsContentUploader .cxx_construct]	
+105633af4	105633b13	decompiled	chunks/005/functions-000339.c		
+105633b14	105633b97	decompiled	chunks/005/functions-000339.c		
+105633b98	105633baf	decompiled	chunks/005/functions-000339.c		
+105633bb0	105633bf3	decompiled	chunks/005/functions-000339.c		
+105633bf4	105633c63	decompiled	chunks/005/functions-000339.c		
+105633c64	105633d63	decompiled	chunks/005/functions-000339.c		
+105633d64	105633d77	decompiled	chunks/005/functions-000339.c		
+105633d78	105633dfb	decompiled	chunks/005/functions-000339.c		
+105633dfc	105633e13	decompiled	chunks/005/functions-000339.c		
+105633e14	105633e97	decompiled	chunks/005/functions-000339.c		
+105633e98	105633f5f	decompiled	chunks/005/functions-000339.c		
+105633f60	10563405b	decompiled	chunks/005/functions-000339.c		
+10563405c	105634073	decompiled	chunks/005/functions-000339.c		
+105634074	1056340af	decompiled	chunks/005/functions-000339.c		
+1056340b0	105634227	decompiled	chunks/005/functions-000339.c		
+105634228	10563429b	decompiled	chunks/005/functions-000339.c		
+10563429c	1056342bf	decompiled	chunks/005/functions-000339.c		
+1056342c0	1056342d7	decompiled	chunks/005/functions-000339.c		
+1056342d8	10563431b	decompiled	chunks/005/functions-000339.c		
+10563431c	105634353	decompiled	chunks/005/functions-000339.c		
+105634354	1056343ab	decompiled	chunks/005/functions-000339.c		
+1056343ac	1056343eb	decompiled	chunks/005/functions-000339.c		
+1056343ec	10563441f	decompiled	chunks/005/functions-000339.c		
+105634420	105634597	decompiled	chunks/005/functions-000339.c		
+105634598	1056345f3	decompiled	chunks/005/functions-000339.c		
+1056345f4	10563461b	decompiled	chunks/005/functions-000339.c		
+10563461c	105634637	decompiled	chunks/005/functions-000339.c		
+105634638	10563479f	decompiled	chunks/005/functions-000339.c		
+1056347a0	105634817	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationCallbackCppProxy initWithCpp:]	
+105634818	1056348f7	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationCallbackCppProxy onSuccess:metrics:]	
+1056348f8	1056349df	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationCallbackCppProxy onFailure:metrics:]	
+1056349e0	105634acf	decompiled	chunks/005/functions-000339.c		
+105634ad0	105634b2b	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationCallbackCppProxy .cxx_destruct]	
+105634b2c	105634b6b	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationCallbackCppProxy .cxx_construct]	
+105634b6c	105634c63	decompiled	chunks/005/functions-000339.c		
+105634c64	105634c67	decompiled	chunks/005/functions-000339.c		
+105634c68	105634c7b	decompiled	chunks/005/functions-000339.c		
+105634c7c	105634c87	decompiled	chunks/005/functions-000339.c		
+105634c88	105634cc3	decompiled	chunks/005/functions-000339.c		
+105634cc4	105634d37	decompiled	chunks/005/functions-000339.c		
+105634d38	105634dab	decompiled	chunks/005/functions-000339.c		
+105634dac	105634e3b	decompiled	chunks/005/functions-000339.c		
+105634e3c	105634e4b	decompiled	chunks/005/functions-000339.c		
+105634e4c	105634e9b	decompiled	chunks/005/functions-000339.c		
+105634e9c	105634f2f	decompiled	chunks/005/functions-000339.c		
+105634f30	1056350cf	decompiled	chunks/005/functions-000339.c		
+1056350d0	1056351cf	decompiled	chunks/005/functions-000339.c		
+1056351d0	10563525f	decompiled	chunks/005/functions-000339.c		
+105635260	105635283	decompiled	chunks/005/functions-000339.c		
+105635284	1056352fb	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationProvider initWithCpp:]	
+1056352fc	1056354a3	decompiled	chunks/005/functions-000339.c	+[SCNCupsUploadLocationProvider create:cronetPointer:tweaks:]	
+1056354a4	105635597	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationProvider getUploadLocation:assetTypeInt:uploadSizeInBytes:estimatedTimeToUploadMs:chunkUploadSupportRequired:callback:]	
+105635598	1056355f7	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationProvider warmup]	
+1056355f8	10563564b	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationProvider .cxx_destruct]	
+10563564c	10563568f	decompiled	chunks/005/functions-000339.c	-[SCNCupsUploadLocationProvider .cxx_construct]	
+105635690	105635703	decompiled	chunks/005/functions-000339.c		
+105635704	10563572f	decompiled	chunks/005/functions-000339.c		

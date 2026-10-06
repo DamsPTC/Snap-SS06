@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+10599e2a8	10599e32f	decompiled	chunks/008/functions-000520.c		
+10599e330	10599e397	decompiled	chunks/008/functions-000520.c		
+10599e398	10599e3c7	decompiled	chunks/008/functions-000520.c		
+10599e3c8	10599e3cb	decompiled	chunks/008/functions-000520.c		
+10599e3cc	10599e3df	decompiled	chunks/008/functions-000520.c		
+10599e3e0	10599e3eb	decompiled	chunks/008/functions-000520.c		
+10599e3ec	10599e50b	decompiled	chunks/008/functions-000520.c		
+10599e50c	10599e50f	decompiled	chunks/008/functions-000520.c		
+10599e510	10599e5b7	decompiled	chunks/008/functions-000520.c		
+10599e5b8	10599e5c7	decompiled	chunks/008/functions-000520.c		
+10599e5c8	10599e6b3	decompiled	chunks/008/functions-000520.c		
+10599e6b4	10599e70f	decompiled	chunks/008/functions-000520.c		
+10599e710	10599e7c7	decompiled	chunks/008/functions-000520.c		
+10599e7c8	10599ea53	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _processNotificationPostNativeProcessing:]	
+10599ea54	10599eb07	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _handleNativeNotification:displayTypeFromNative:nativeSuppressionReason:completion:]	
+10599eb08	10599ec0b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _discardNativeNotification:completion:]	
+10599ec0c	10599ed4f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _checkIfUserIdMatches:]	
+10599ed50	10599ef2f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _startNotificationProcessing:source:clientReceiveTimestampMs:systemCompletionHandler:]	
+10599ef30	10599f0df	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _processNotificationWithPluginForNotification:source:displayTypeFromNative:nativeSuppressionReason:completion:]	
+10599f0e0	10599f13b	decompiled	chunks/008/functions-000520.c		
+10599f13c	10599f223	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _instrumentWrappedSystemCompletionHandler:notificationType:notificationId:completion:]	
+10599f224	10599f23b	decompiled	chunks/008/functions-000520.c		
+10599f23c	10599f69f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _handleNotificationWithPlugin:userInfo:source:displayTypeFromNative:nativeSuppressionReason:completion:]	
+10599f6a0	10599f6cf	decompiled	chunks/008/functions-000520.c		
+10599f6d0	10599f77f	decompiled	chunks/008/functions-000520.c		
+10599f780	10599f8ab	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _displayNotificationMaybe:notificationId:userInfo:source:displayTypeFromNative:nativeSuppressionReason:]	
+10599f8ac	10599f937	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _suppressNotification:source:platformSuppressingReason:]	
+10599f938	10599f9ef	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _isNotificationAlreadyProcessed:forUserId:pushSource:]	
+10599f9f0	10599fa0f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _isNativeHandlerInitialized]	
+10599fa10	10599faa3	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _emitNotificationIsSuppressedEvent:suppressionReason:]	
+10599faa4	10599fbab	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _startBackgroundTaskForNotificationProcessing:]	
+10599fbac	10599fbb7	decompiled	chunks/008/functions-000520.c		
+10599fbb8	10599fc7b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _reportMissingPluginWithNotificationType:]	
+10599fc7c	10599fd3f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _reportWrongUser:]	
+10599fd40	10599fe4f	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow _reportProcessingPathGraphene:]	
+10599fe50	10599ff5b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflow .cxx_destruct]	
+10599ff5c	1059a005b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflowEntryPoint end]	
+1059a005c	1059a013b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflowEntryPoint _pluginManager]	
+1059a013c	1059a0187	decompiled	chunks/008/functions-000520.c		
+1059a0188	1059a0193	decompiled	chunks/008/functions-000520.c		
+1059a0194	1059a025b	decompiled	chunks/008/functions-000520.c	-[SCNotificationPluginWorkflowEntryPoint .cxx_destruct]	
+1059a025c	1059a0383	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginManager initWithPlugins:]	
+1059a0384	1059a03cb	decompiled	chunks/008/functions-000520.c		
+1059a03cc	1059a04fb	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginManager pluginForNotificationType:isSDN:completion:]	
+1059a04fc	1059a0533	decompiled	chunks/008/functions-000520.c		
+1059a0534	1059a058b	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginManager _processPlugins:]	
+1059a058c	1059a0593	decompiled	chunks/008/functions-000520.c		
+1059a0594	1059a05bb	decompiled	chunks/008/functions-000520.c		
+1059a05bc	1059a0773	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginManager _pluginForNotificationType:isSDN:completion:]	
+1059a0774	1059a07a3	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginManager .cxx_destruct]	
+1059a07a4	1059a0817	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginScope initWithPlugInRegistry:]	
+1059a0818	1059a081f	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginScope plugInRegistry]	
+1059a0820	1059a082b	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingPluginScope .cxx_destruct]	
+1059a082c	1059a08d7	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingCallback initWithDisplayCallback:suppressCallback:]	
+1059a08d8	1059a08e7	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingCallback onDisplay:]	
+1059a08e8	1059a08f7	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingCallback onSuppressNotification:]	
+1059a08f8	1059a0927	decompiled	chunks/008/functions-000520.c	-[SCNotificationTypeProcessingCallback .cxx_destruct]	
+1059a0928	1059a0a6f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification initWithIdentifier:type:title:subTitle:notificationSource:userInfo:]	
+1059a0a70	1059a0a93	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification copyWithZone:]	
+1059a0a94	1059a0b2f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification hash]	
+1059a0b30	1059a0c2f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification isEqual:]	
+1059a0c30	1059a0c37	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification identifier]	
+1059a0c38	1059a0c3f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification type]	
+1059a0c40	1059a0c47	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification title]	
+1059a0c48	1059a0c4f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification subTitle]	
+1059a0c50	1059a0c57	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification notificationSource]	
+1059a0c58	1059a0c5f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification userInfo]	
+1059a0c60	1059a0cb3	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotification .cxx_destruct]	
+1059a0cb4	1059a0d27	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushReceived:]	
+1059a0d28	1059a0d93	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushReceived:source:]	
+1059a0d94	1059a0dfb	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportQueuedToDisplay:]	
+1059a0dfc	1059a0e67	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportQueuedToDisplay:source:]	
+1059a0e68	1059a0ecf	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushDisplayed:]	
+1059a0ed0	1059a102b	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter detectAndReportWatchStatusAsync:]	
+1059a102c	1059a10a7	decompiled	chunks/008/functions-000520.c		
+1059a10a8	1059a110f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushDisplayDropped:]	
+1059a1110	1059a117b	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushDisplayDropped:source:]	
+1059a117c	1059a1273	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportPushNotificationDisplayedWithoutNseExecution:]	
+1059a1274	1059a12db	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportMainAppDecryptionNotAttemptedForNotification:]	
+1059a12dc	1059a138f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportMainAppDecryptionSuccessWithLatencyInMs:forNotification:]	
+1059a1390	1059a1483	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportMainAppDecryptionFailureWithErrorMessage:latencyInMs:forNotification:]	
+1059a1484	1059a1547	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportNotifClearedOnAppOpen:]	
+1059a1548	1059a1637	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportCounter:withMetricId:]	
+1059a1638	1059a170b	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _reportTimer:durationInMs:withMetric:]	
+1059a170c	1059a1773	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _reportWatchStatus:watchStatus:]	
+1059a1774	1059a188b	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportWatchPairStatus:watchStatus:]	
+1059a188c	1059a19a3	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter reportWatchAppInstallStatus:watchStatus:]	
+1059a19a4	1059a19a7	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _logReporterEvent:withMetricId:]	
+1059a19a8	1059a19ab	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _logReporterEvent:withMetricId:withWatchStatus:]	
+1059a19ac	1059a1a37	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _addNotificationTypeDimension:forNotification:]	
+1059a1a38	1059a1af3	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _addApplicationStateDimension:]	
+1059a1af4	1059a1b73	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _addWatchPairStatusDimension:withWatchStatus:]	
+1059a1b74	1059a1bf3	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _addWatchAppStatusDimension:withWatchStatus:]	
+1059a1bf4	1059a1bff	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _isForeground:]	
+1059a1c00	1059a1c57	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _repostedNotification:]	
+1059a1c58	1059a1cbf	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _alreadyProcessedByChat:]	
+1059a1cc0	1059a1d13	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _getWatchPairStatusStr:]	
+1059a1d14	1059a1d67	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter _getWatchAppStatusStr:]	
+1059a1d68	1059a1d9f	decompiled	chunks/008/functions-000520.c	-[SCIncomingNotificationReporter .cxx_destruct]	
+1059a1da0	1059a1fab	decompiled	chunks/008/functions-000520.c	-[SCProcessedNotificationPersister initWithUserId:]	
+1059a1fac	1059a20ff	decompiled	chunks/008/functions-000521.c	-[SCProcessedNotificationPersister initWithUserId:sharedExtensionFolder:todayFileName:yesterdayFileName:notifProcessedTodayFile:notifProcessedYesterdayFile:]	
+1059a2100	1059a2183	decompiled	chunks/008/functions-000521.c	-[SCProcessedNotificationPersister notificationProcessed:]	
+1059a2184	1059a219b	decompiled	chunks/008/functions-000521.c	-[SCProcessedNotificationPersister saveProcessedNotificationId:]	
+1059a219c	1059a2333	decompiled	chunks/008/functions-000521.c	-[SCProcessedNotificationPersister cleanUpProcessedNotificationsFiles]	
+1059a2334	1059a2393	decompiled	chunks/008/functions-000521.c	-[SCProcessedNotificationPersister .cxx_destruct]	
+1059a2394	1059a239f	decompiled	chunks/008/functions-000521.c	-[SCNotificationCategoryPluginScope .cxx_destruct]	
+1059a23a0	1059a23c3	decompiled	chunks/008/functions-000521.c	-[SCNotificationCategoryAction copyWithZone:]	
+1059a23c4	1059a249b	decompiled	chunks/008/functions-000521.c	-[SCNotificationCategoryAction hash]	
+1059a249c	1059a2603	decompiled	chunks/008/functions-000521.c	-[SCNotificationCategoryAction isEqual:]	
+1059a2604	1059a267b	decompiled	chunks/008/functions-000521.c	-[SCNotificationCategoryAction .cxx_destruct]	
+1059a267c	1059a2abb	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint begin]	
+1059a2abc	1059a2b27	decompiled	chunks/008/functions-000521.c		
+1059a2b28	1059a2b63	decompiled	chunks/008/functions-000521.c		
+1059a2b64	1059a34af	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint _initializeObjectsAndData:]	
+1059a34b0	1059a34f7	decompiled	chunks/008/functions-000521.c		
+1059a34f8	1059a369b	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint end]	
+1059a369c	1059a36d3	decompiled	chunks/008/functions-000521.c		
+1059a36d4	1059a3797	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint _enableNotificationCustomSound]	
+1059a3798	1059a37f7	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint _performPersistSettingsForExtensions]	
+1059a37f8	1059a37ff	decompiled	chunks/008/functions-000521.c		
+1059a3800	1059a3a0f	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint _persistSettingsForExtensions]	
+1059a3a10	1059a3c13	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint _createNotificationFeatureScreenAccessTracker]	
+1059a3c14	1059a3c33	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint sigNotificationServices]	
+1059a3c34	1059a3c47	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint setSigNotificationServices:]	
+1059a3c48	1059a3e1f	decompiled	chunks/008/functions-000521.c	-[SCUserNotificationsEntryPoint .cxx_destruct]	
+1059a3e20	1059a409f	decompiled	chunks/008/functions-000521.c	-[SCNotificationExtensionExecutionMainAppLogger initWithUserId:blizzardLogger:grapheneRegistry:circumstanceEngine:appLifeCycleManager:applicationLifecycleEvents:notificationPool:]	
+1059a40a0	1059a40d3	decompiled	chunks/008/functions-000521.c		
+1059a40d4	1059a417b	decompiled	chunks/008/functions-000521.c	-[SCNotificationExtensionExecutionMainAppLogger _processFile]	
+1059a417c	1059a4397	decompiled	chunks/008/functions-000521.c		
+1059a4398	1059a43bf	decompiled	chunks/008/functions-000521.c		
+1059a43c0	1059a45cb	decompiled	chunks/008/functions-000521.c		
+1059a45cc	1059a46f3	decompiled	chunks/008/functions-000521.c	-[SCNotificationExtensionExecutionMainAppLogger _reportNotificationServiceExtensionExecutionDidNotFinished:]	
+1059a46f4	1059a46f7	decompiled	chunks/008/functions-000521.c	-[SCNotificationExtensionExecutionMainAppLogger _showDebugAlert:]	
+1059a46f8	1059a4763	decompiled	chunks/008/functions-000521.c	-[SCNotificationExtensionExecutionMainAppLogger .cxx_destruct]	
+1059a4764	1059a4867	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider initWithApplicationLifecycleEvents:notificationScreenAccessorObservable:circumstanceEngine:]	
+1059a4868	1059a4acf	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider initWithApplicationLifecycleEvents:notificationScreenAccessorObservable:badgeCountPublisher:performer:circumstanceEngine:notificationCenter:]	
+1059a4ad0	1059a4b2f	decompiled	chunks/008/functions-000521.c		
+1059a4b30	1059a4b57	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider badgeCountObservable]	
+1059a4b58	1059a4d17	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _observeApplicationLifecycleEvent]	
+1059a4d18	1059a4d6f	decompiled	chunks/008/functions-000521.c		
+1059a4d70	1059a4e5b	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _observeScreenAccessEvent]	
+1059a4e5c	1059a4f03	decompiled	chunks/008/functions-000521.c		
+1059a4f04	1059a4f37	decompiled	chunks/008/functions-000521.c		
+1059a4f38	1059a4f47	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _applicationDidBecomeActive]	
+1059a4f48	1059a4fb7	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _didEnterTargetScreen:]	
+1059a4fb8	1059a5033	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _updateBadgeCount]	
+1059a5034	1059a503f	decompiled	chunks/008/functions-000521.c		
+1059a5040	1059a5117	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _handleDeliveredNotifications:]	
+1059a5118	1059a514b	decompiled	chunks/008/functions-000521.c		
+1059a514c	1059a554b	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _publishBadgeCountWithDeliveredNotifications:]	
+1059a554c	1059a573f	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _shouldBadgeForNotificationType:notification:]	
+1059a5740	1059a589f	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _shouldBypassFeatureAccessedVerificationForNotificationType:notification:]	
+1059a58a0	1059a58cf	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider _setFeatureScreenAccessedSet:]	
+1059a58d0	1059a595f	decompiled	chunks/008/functions-000521.c	-[SCNonMessagingNotificationsBadgeCountProvider .cxx_destruct]	
+1059a5960	1059a5f53	decompiled	chunks/008/functions-000521.c		
+1059a5f54	1059a61cf	decompiled	chunks/008/functions-000521.c		
+1059a61d0	1059a621b	decompiled	chunks/008/functions-000521.c		
+1059a621c	1059a6393	decompiled	chunks/008/functions-000521.c	-[SCNotificationAppOpenLogger initWithAppOpenBadgeCountObservable:blizzardLogger:notificationOSSettingsRetriever:]	
+1059a6394	1059a63db	decompiled	chunks/008/functions-000521.c		
+1059a63dc	1059a64cf	decompiled	chunks/008/functions-000521.c	-[SCNotificationAppOpenLogger _handleAppOpenBadgeCount:]	
+1059a64d0	1059a6523	decompiled	chunks/008/functions-000521.c		
+1059a6524	1059a65ef	decompiled	chunks/008/functions-000521.c	-[SCNotificationAppOpenLogger _logEventWithBadgeCount:authorizationStatus:]	
+1059a65f0	1059a662b	decompiled	chunks/008/functions-000521.c	-[SCNotificationAppOpenLogger .cxx_destruct]	
+1059a662c	1059a68fb	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeCountObservableRepository initWithFriendsFeedObservable:incomingFriends:snapchattersDataFetcher:applicationLifecycleEvents:notificationScreenAccessor:circumstanceEngine:]	
+1059a68fc	1059a69bb	decompiled	chunks/008/functions-000521.c		
+1059a69bc	1059a6b37	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeCountObservableRepository _createBadgeableFriendRequestsObservable:snapchattersDataFetcher:performerQueue:observableLifecycle:]	
+1059a6b38	1059a6c33	decompiled	chunks/008/functions-000521.c		
+1059a6c34	1059a6ce7	decompiled	chunks/008/functions-000521.c		
+1059a6ce8	1059a6cef	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeCountObservableRepository badgeCountObservable]	
+1059a6cf0	1059a6d4f	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeCountObservableRepository .cxx_destruct]	
+1059a6d50	1059a709b	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater initWithApplication:userSessionContext:asyncQueueProvider:applicationLifecycleEvents:messagingExperimentService:appOpenBadgeCountBehaviorSubject:]	
+1059a709c	1059a7157	decompiled	chunks/008/functions-000521.c		
+1059a7158	1059a72eb	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater startMonitoringItemsUpdates:]	
+1059a72ec	1059a7333	decompiled	chunks/008/functions-000521.c		
+1059a7334	1059a7407	decompiled	chunks/008/functions-000521.c		
+1059a7408	1059a7413	decompiled	chunks/008/functions-000521.c		
+1059a7414	1059a743f	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater stopMonitoringItemUpdates]	
+1059a7440	1059a74d7	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater _updateBadgeNumberNoXPC:]	
+1059a74d8	1059a74db	decompiled	chunks/008/functions-000521.c		
+1059a74dc	1059a7597	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater _updateBadgeNumber:]	
+1059a7598	1059a75a7	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater _onBackground]	
+1059a75a8	1059a766b	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater _onForeground]	
+1059a766c	1059a76cf	decompiled	chunks/008/functions-000521.c		
+1059a76d0	1059a77b3	decompiled	chunks/008/functions-000521.c	-[SCNotificationBadgeUpdater .cxx_destruct]	
+1059a77b4	1059a797f	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository initWithUserId:featureSettingsService:snapchattersDataFetcher:snapchattersDataTracker:userScopedAppGroupUserDefaults:]	
+1059a7980	1059a79db	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository didEndSnapchattersUpdateDataRequest:withSuccess:error:]	
+1059a79dc	1059a7a87	decompiled	chunks/008/functions-000521.c		
+1059a7a88	1059a7ab3	decompiled	chunks/008/functions-000521.c		
+1059a7ab4	1059a7ab7	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository didStartSnapchattersUpdateDataRequest:]	
+1059a7ab8	1059a7bb3	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository didEndSnapchattersFetchDataRequest:withSuccess:error:]	
+1059a7bb4	1059a7bdf	decompiled	chunks/008/functions-000521.c		
+1059a7be0	1059a7c87	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _fetchAndPersistDataWithPerformer]	
+1059a7c88	1059a7cb3	decompiled	chunks/008/functions-000521.c		
+1059a7cb4	1059a7cd7	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _fetchAndPersistData]	
+1059a7cd8	1059a7dc7	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _fetchRankedBestFriendSnapchatters]	
+1059a7dc8	1059a7e17	decompiled	chunks/008/functions-000521.c		
+1059a7e18	1059a8007	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _handleSnapchatterFetchCompletionWithSnapchatters:]	
+1059a8008	1059a80bb	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _fetchAndObserveSettingsIfNecessary]	
+1059a80bc	1059a80fb	decompiled	chunks/008/functions-000521.c		
+1059a80fc	1059a82c3	decompiled	chunks/008/functions-000521.c	-[SCNotificationBestFriendsSoundRepository _observeSettingsChanges]	
+1059a82c4	1059a835b	decompiled	chunks/008/functions-000522.c		
+1059a835c	1059a8363	decompiled	chunks/008/functions-000522.c	-[SCNotificationBestFriendsSoundRepository _updateSettingsWithSettings:]	
+1059a8364	1059a83db	decompiled	chunks/008/functions-000522.c	-[SCNotificationBestFriendsSoundRepository .cxx_destruct]	
+1059a83dc	1059a8677	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository initWithFriendsFeedDataCoordinator:userId:]	
+1059a8678	1059a8803	decompiled	chunks/008/functions-000522.c		
+1059a8804	1059a884b	decompiled	chunks/008/functions-000522.c		
+1059a884c	1059a8873	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository friendsFeedConsumableItemsObservable]	
+1059a8874	1059a89bb	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository _processFriendsFeedConsumableConversationIds:]	
+1059a89bc	1059a8ae3	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository _subscribeToFeedSyncObservable]	
+1059a8ae4	1059a8b43	decompiled	chunks/008/functions-000522.c		
+1059a8b44	1059a8b57	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository _handleFeedDidSync:]	
+1059a8b58	1059a8bdb	decompiled	chunks/008/functions-000522.c	-[SCNotificationConsumableConversationIdsRepository .cxx_destruct]	
+1059a8bdc	1059a8f03	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker initWithNotificationRemover:applicationLifecycleEvents:notificationScreenAccessEventObservable:circumstanceEngine:deckTransitionEvents:currentPageObservable:]	
+1059a8f04	1059a8fc3	decompiled	chunks/008/functions-000522.c		
+1059a8fc4	1059a90d3	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _observeApplicationLifecycleEvent]	
+1059a90d4	1059a90ff	decompiled	chunks/008/functions-000522.c		
+1059a9100	1059a91ef	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _observeNotificationsExperienceLifecycle]	
+1059a91f0	1059a92db	decompiled	chunks/008/functions-000522.c		
+1059a92dc	1059a930f	decompiled	chunks/008/functions-000522.c		
+1059a9310	1059a9353	decompiled	chunks/008/functions-000522.c		
+1059a9354	1059a946b	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _observeDeckTransitionEvent]	
+1059a946c	1059a952b	decompiled	chunks/008/functions-000522.c		
+1059a952c	1059a9543	decompiled	chunks/008/functions-000522.c		
+1059a9544	1059a958b	decompiled	chunks/008/functions-000522.c		
+1059a958c	1059a967b	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _observeCurrentPageEvent]	
+1059a967c	1059a96c3	decompiled	chunks/008/functions-000522.c		
+1059a96c4	1059a9707	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _applicationDidEnterBackground]	
+1059a9708	1059a97f3	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _didLeaveTargetScreen:fromStoryCarousel:]	
+1059a97f4	1059a98e3	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _didEnterTargetScreen:]	
+1059a98e4	1059a9a63	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _featureScreenToTypeMappings:]	
+1059a9a64	1059a9a8b	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _shouldRevokeNotificationsForScreen:]	
+1059a9a8c	1059a9cbf	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _handleDeckTransitionEvent:]	
+1059a9cc0	1059a9cc3	decompiled	chunks/008/functions-000522.c		
+1059a9cc4	1059a9cf3	decompiled	chunks/008/functions-000522.c		
+1059a9cf4	1059aa0ab	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker _handleCurrentPageEvent:]	
+1059aa0ac	1059aa0c3	decompiled	chunks/008/functions-000522.c		
+1059aa0c4	1059aa13f	decompiled	chunks/008/functions-000522.c		
+1059aa140	1059aa14b	decompiled	chunks/008/functions-000522.c		
+1059aa14c	1059aa2eb	decompiled	chunks/008/functions-000522.c	-[SCNotificationFeatureScreenAccessTracker .cxx_destruct]	
+1059aa2ec	1059aa52f	decompiled	chunks/008/functions-000522.c		
+1059aa530	1059aa57f	decompiled	chunks/008/functions-000522.c		
+1059aa580	1059aa8f7	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository initWithUserId:incomingFriends:snapchattersDataFetcher:userScopedAppGroupUserDefaults:circumstanceEngine:appStartExperimentReader:]	
+1059aa8f8	1059aa96f	decompiled	chunks/008/functions-000522.c		
+1059aa970	1059aa9bb	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _createExtensionShareFile]	
+1059aa9bc	1059aaa03	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _persistFriendingCOFs]	
+1059aaa04	1059aaa2f	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _syncGRPCConfigurationsForIncomingFriendRequestNotification]	
+1059aaa30	1059aab73	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _disableFriendRequestAppBadgeIfNeeded]	
+1059aab74	1059aac13	decompiled	chunks/008/functions-000522.c		
+1059aac14	1059aad1f	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _observeAndPersistFriendRequestsIfNeeded]	
+1059aad20	1059aad67	decompiled	chunks/008/functions-000522.c		
+1059aad68	1059aaedb	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _persistFriendRequests:]	
+1059aaedc	1059aafa3	decompiled	chunks/008/functions-000522.c		
+1059aafa4	1059aafab	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _setUnviewedIncomingFriendsAppBadgeEnabled:]	
+1059aafac	1059ab033	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _deleteExtensionFile:]	
+1059ab034	1059ab0e7	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository _persistUnviewedIncomingFriendRequests:]	
+1059ab0e8	1059ab0ef	decompiled	chunks/008/functions-000522.c		
+1059ab0f0	1059ab173	decompiled	chunks/008/functions-000522.c	-[SCNotificationUnviewedIncomingFriendsRepository .cxx_destruct]	
+1059ab174	1059ab277	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister initWithCircumstanceEngine:bitmojiSettingProvider:userScopedAppGroupUserDefaults:enableCustomNotificationSound:watchDetector:]	
+1059ab278	1059ab497	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister initWithCircumstanceEngine:bitmojiSettingProvider:notifExtUserDefaults:enableCustomNotificationSound:performer:watchDetector:]	
+1059ab498	1059ab4c3	decompiled	chunks/008/functions-000522.c		
+1059ab4c4	1059ab57f	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister _persist]	
+1059ab580	1059ab5ab	decompiled	chunks/008/functions-000522.c		
+1059ab5ac	1059ab94b	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister _storeNotificationExtensionConfigs]	
+1059ab94c	1059aba37	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister _shouldShowBitmoji]	
+1059aba38	1059aba5f	decompiled	chunks/008/functions-000522.c		
+1059aba60	1059abb43	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister _storeGrapheneConfigs]	
+1059abb44	1059abbeb	decompiled	chunks/008/functions-000522.c		
+1059abbec	1059abc1f	decompiled	chunks/008/functions-000522.c		
+1059abc20	1059abc93	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister _storeGrapheneConfigsWithEtag:]	
+1059abc94	1059abcf3	decompiled	chunks/008/functions-000522.c	-[SCNotificationsConfigPersister .cxx_destruct]	
+1059abcf4	1059abe4b	decompiled	chunks/008/functions-000522.c		
+1059abe4c	1059ac013	decompiled	chunks/008/functions-000522.c		
+1059ac014	1059ac05b	decompiled	chunks/008/functions-000522.c		
+1059ac05c	1059ac22f	decompiled	chunks/008/functions-000522.c		
+1059ac230	1059ac247	decompiled	chunks/008/functions-000522.c		
+1059ac248	1059acbab	decompiled	chunks/008/functions-000522.c		
+1059acbac	1059ad237	decompiled	chunks/008/functions-000522.c	+[SCFriendingNotificationSnapchatterHelper SCExtractNotificationSnapchattersFromNotificationPayload:error:]	
+1059ad238	1059ad49f	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter initWithCoder:]	
+1059ad4a0	1059ad74b	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter initWithUserId:mutableName:displayName:notificationType:bitmojiAvatarId:bitmojiSelfieId:bitmojiSceneId:bitmojiBackgroundId:isFromMyContact:suggestReason:abbreviatedSuggestReason:suggestedToken:isViewed:processingTimestamp:]	
+1059ad74c	1059ad76f	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter copyWithZone:]	
+1059ad770	1059ad8bf	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter encodeWithCoder:]	
+1059ad8c0	1059ad9db	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter hash]	
+1059ad9dc	1059adbb7	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter isEqual:]	
+1059adbb8	1059adbbf	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter userId]	
+1059adbc0	1059adbc7	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter mutableName]	
+1059adbc8	1059adbcf	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter displayName]	
+1059adbd0	1059adbd7	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter notificationType]	
+1059adbd8	1059adbdf	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter bitmojiAvatarId]	
+1059adbe0	1059adbe7	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter bitmojiSelfieId]	
+1059adbe8	1059adbef	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter bitmojiSceneId]	
+1059adbf0	1059adbf7	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter bitmojiBackgroundId]	
+1059adbf8	1059adbff	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter isFromMyContact]	
+1059adc00	1059adc07	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter suggestReason]	
+1059adc08	1059adc0f	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter abbreviatedSuggestReason]	
+1059adc10	1059adc17	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter suggestedToken]	
+1059adc18	1059adc1f	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter isViewed]	
+1059adc20	1059adc27	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter processingTimestamp]	
+1059adc28	1059adccf	decompiled	chunks/008/functions-000522.c	-[SCFriendingNotificationSnapchatter .cxx_destruct]	
+1059adcd0	1059add37	decompiled	chunks/008/functions-000522.c	+[SCFriendRequestBadgeConfig descriptor]	
+1059add38	1059addbb	decompiled	chunks/008/functions-000522.c	+[SCProcessedNotificationDb schema]	
+1059addbc	1059adde3	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotificationDb getConn]	
+1059adde4	1059ade6b	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotificationDb initWithSqliteConnection:]	
+1059ade6c	1059aded7	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotificationDb .cxx_destruct]	
+1059aded8	1059adee3	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotificationDb .cxx_construct]	
+1059adee4	1059ae01f	decompiled	chunks/008/functions-000523.c		
+1059ae020	1059ae093	decompiled	chunks/008/functions-000523.c		
+1059ae094	1059ae22b	decompiled	chunks/008/functions-000523.c		
+1059ae22c	1059ae333	decompiled	chunks/008/functions-000523.c		
+1059ae334	1059ae357	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotifications copyWithZone:]	
+1059ae358	1059ae3e3	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotifications hash]	
+1059ae3e4	1059ae4bb	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotifications isEqual:]	
+1059ae4bc	1059ae567	decompiled	chunks/008/functions-000523.c	-[SCProcessedNotifications .cxx_destruct]	
+1059ae568	1059ae58b	decompiled	chunks/008/functions-000523.c	-[SCGetNotificationIdsByCategory copyWithZone:]	
+1059ae58c	1059ae593	decompiled	chunks/008/functions-000523.c	-[SCGetNotificationIdsByCategory hash]	
+1059ae594	1059ae623	decompiled	chunks/008/functions-000523.c	-[SCGetNotificationIdsByCategory isEqual:]	
+1059ae624	1059ae62f	decompiled	chunks/008/functions-000523.c		
+1059ae630	1059ae63b	decompiled	chunks/008/functions-000523.c	-[SCGetNotificationIdsByCategory .cxx_destruct]	
+1059ae63c	1059ae757	decompiled	chunks/008/functions-000523.c		
+1059ae758	1059ae807	decompiled	chunks/008/functions-000523.c		
+1059ae808	1059ae863	decompiled	chunks/008/functions-000523.c		
+1059ae864	1059ae957	decompiled	chunks/008/functions-000523.c		
+1059ae958	1059aea0f	decompiled	chunks/008/functions-000523.c		
+1059aea10	1059aeb07	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _subscribeToCurrentPageEvents:]	
+1059aeb08	1059aec03	decompiled	chunks/008/functions-000523.c		
+1059aec04	1059aecbb	decompiled	chunks/008/functions-000523.c		
+1059aecbc	1059aecc3	decompiled	chunks/008/functions-000523.c		
+1059aecc4	1059aed7f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger startNotificationToMessageReadyLoggingFlow:]	
+1059aed80	1059aed8f	decompiled	chunks/008/functions-000523.c		
+1059aed90	1059aee2f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger recordNotificationToMessageReadyStep:source:]	
+1059aee30	1059aee43	decompiled	chunks/008/functions-000523.c		
+1059aee44	1059aeed3	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger recordNotificationToMessageReadySyncSubstepStepMetadata:]	
+1059aeed4	1059aeedf	decompiled	chunks/008/functions-000523.c		
+1059aeee0	1059aef07	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger notificationToMessageReadyLifecycleEvents]	
+1059aef08	1059af18b	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _startNotificationToMessageReadyLoggingFlow:startTime:]	
+1059af18c	1059af1df	decompiled	chunks/008/functions-000523.c		
+1059af1e0	1059af263	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _timeoutNotificationToMessageReadyFlow:]	
+1059af264	1059af36f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _recordNotificationToMessageReadyStep:stepTime:source:]	
+1059af370	1059af3cb	decompiled	chunks/008/functions-000523.c		
+1059af3cc	1059af46f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _recordNotificationToMessageReadySyncSubstepStepMetadata:]	
+1059af470	1059af483	decompiled	chunks/008/functions-000523.c		
+1059af484	1059af4cf	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _recordCurrentLandedPage:]	
+1059af4d0	1059af5c7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processEnterTargetScreenStepAtTime:conversationId:]	
+1059af5c8	1059af6cb	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processSyncStepAtTime:conversationId:messageId:]	
+1059af6cc	1059af773	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processPrefetchStepAtTime:conversationId:messageId:]	
+1059af774	1059af947	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _fetchMessageForSyncCompletionWithStepTime:conversationId:messageId:]	
+1059af948	1059af9a3	decompiled	chunks/008/functions-000523.c		
+1059af9a4	1059afb2b	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _handleSyncFetchedMessage:notificationId:stepTime:conversationId:messageId:]	
+1059afb2c	1059afbfb	decompiled	chunks/008/functions-000523.c		
+1059afbfc	1059afcbb	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processMessageReadyStepAtTime:conversationId:messageId:]	
+1059afcbc	1059afcc7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processRenderedViewModels]	
+1059afcc8	1059afcf7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _processCellAppeared:]	
+1059afcf8	1059afddb	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _shouldProcessStepLatencyForConversationId:messageId:]	
+1059afddc	1059afdff	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _isFlowInProgress]	
+1059afe00	1059afe43	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _isFlowForSnap]	
+1059afe44	1059afe87	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _hasEnteredTargetScreen]	
+1059afe88	1059afea3	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _dataSaverMode]	
+1059afea4	1059aff33	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _entireFlowStartTime]	
+1059aff34	1059affd7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _completionTimeWithDataSaverMode:]	
+1059affd8	1059b0197	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _completeFlowWithTimedOut:dataSaverMode:]	
+1059b0198	1059b0283	decompiled	chunks/008/functions-000523.c		
+1059b0284	1059b0297	decompiled	chunks/008/functions-000523.c		
+1059b0298	1059b04e3	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _completeFlowWithTimedOut:dataSaverMode:messageType:]	
+1059b04e4	1059b05a7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _computeResultForFlowWithTimedOut:]	
+1059b05a8	1059b07b7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _initializeBlizzardMetricWithResult:appStartupType:notifType:messageType:dataSaverMode:]	
+1059b07b8	1059b08b3	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _logNotificationCompleteWithResult:appStartupType:notifType:messageType:dataSaverMode:]	
+1059b08b4	1059b09e3	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _logNotificationTapToCompleteWithResult:appStartupType:notifType:messageType:dataSaverMode:]	
+1059b09e4	1059b0bef	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _logStartupLatenciesWithResult:appStartupType:notifType:messageType:dataSaverMode:]	
+1059b0bf0	1059b1297	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _logStepLatenciesWithResult:appStartupType:notifType:messageType:blizzardMetric:]	
+1059b1298	1059b1363	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger _logSyncFeedFailureIfNecessary:appStartupType:notifType:messageType:]	
+1059b1364	1059b1387	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger launchTimeInSecs]	
+1059b1388	1059b13ab	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger appStartupTimeInSecs]	
+1059b13ac	1059b142f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger earliestStartupTimeInSecs]	
+1059b1430	1059b153f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger logMessageInitializedWithConversationId:analyticsMessageId:timestamp:]	
+1059b1540	1059b1597	decompiled	chunks/008/functions-000523.c		
+1059b1598	1059b16a7	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger logMessageLoadStartedWithConversationId:analyticsMessageId:timestamp:]	
+1059b16a8	1059b16ff	decompiled	chunks/008/functions-000523.c		
+1059b1700	1059b180f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger logMessageLoadEndedWithConversationId:analyticsMessageId:timestamp:]	
+1059b1810	1059b1867	decompiled	chunks/008/functions-000523.c		
+1059b1868	1059b186b	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger logMessageLoadFailedWithConversationId:analyticsMessageId:timestamp:]	
+1059b186c	1059b186f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger logMessageMediaDisplayedWithConversationId:analyticsMessageId:mediaIds:]	
+1059b1870	1059b1b1f	decompiled	chunks/008/functions-000523.c	-[SCNotificationToMessageReadyLogger .cxx_destruct]	
+1059b1b20	1059b1b23	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onUserLoggedIn]	
+1059b1b24	1059b1b27	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onUserRegistered]	
+1059b1b28	1059b1b97	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onAppWillEnterForeground]	
+1059b1b98	1059b1b9b	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onAppDidEnterBackground]	
+1059b1b9c	1059b1b9f	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onAppWillResignActive]	
+1059b1ba0	1059b1ba3	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver onAppWillTerminate]	
+1059b1ba4	1059b1ccb	decompiled	chunks/008/functions-000523.c	-[SCNotificationAppUserLifecycleObserver .cxx_destruct]	
+1059b1ccc	1059b1cd7	decompiled	chunks/008/functions-000523.c		
+1059b1cd8	1059b1de7	decompiled	chunks/008/functions-000523.c		
+1059b1de8	1059b1ebb	decompiled	chunks/008/functions-000523.c	-[SCNotificationStartupLoggingServicesEntryPoint .cxx_destruct]	
+1059b1ebc	1059b202f	decompiled	chunks/008/functions-000523.c		
+1059b2030	1059b2363	decompiled	chunks/008/functions-000523.c		
+1059b2364	1059b2697	decompiled	chunks/008/functions-000523.c		
+1059b2698	1059b270f	decompiled	chunks/008/functions-000523.c		
+1059b2710	1059b29cf	decompiled	chunks/008/functions-000523.c		
+1059b29d0	1059b2bff	decompiled	chunks/008/functions-000523.c		
+1059b2c00	1059b2f33	decompiled	chunks/008/functions-000523.c		
+1059b2f34	1059b2fab	decompiled	chunks/008/functions-000523.c		
+1059b2fac	1059b32df	decompiled	chunks/008/functions-000523.c		
+1059b32e0	1059b3613	decompiled	chunks/008/functions-000524.c		
+1059b3614	1059b3947	decompiled	chunks/008/functions-000524.c		
+1059b3948	1059b3c7b	decompiled	chunks/008/functions-000524.c		
+1059b3c7c	1059b3faf	decompiled	chunks/008/functions-000524.c		
+1059b3fb0	1059b42e3	decompiled	chunks/008/functions-000524.c		
+1059b42e4	1059b4513	decompiled	chunks/008/functions-000524.c		
+1059b4514	1059b4847	decompiled	chunks/008/functions-000524.c		
+1059b4848	1059b4b7b	decompiled	chunks/008/functions-000524.c		
+1059b4b7c	1059b4e3b	decompiled	chunks/008/functions-000524.c		
+1059b4e3c	1059b516f	decompiled	chunks/008/functions-000524.c		
+1059b5170	1059b54a3	decompiled	chunks/008/functions-000524.c		
+1059b54a4	1059b57d7	decompiled	chunks/008/functions-000524.c		
+1059b57d8	1059b5b0b	decompiled	chunks/008/functions-000524.c		
+1059b5b0c	1059b5e3f	decompiled	chunks/008/functions-000524.c		
+1059b5e40	1059b6173	decompiled	chunks/008/functions-000524.c		
+1059b6174	1059b64a7	decompiled	chunks/008/functions-000524.c		
+1059b64a8	1059b66d7	decompiled	chunks/008/functions-000524.c		
+1059b66d8	1059b66df	decompiled	chunks/008/functions-000524.c	-[SCBadgeNotificationProcessor shouldFilterNotification:]	
+1059b66e0	1059b67e3	decompiled	chunks/008/functions-000524.c	-[SCBadgeNotificationProcessor processNotification:]	
+1059b67e4	1059b6887	decompiled	chunks/008/functions-000524.c	-[SCLoginValidationNotificationProcessor initWithUserSession:usernameProvider:]	
+1059b6888	1059b69c3	decompiled	chunks/008/functions-000524.c	-[SCLoginValidationNotificationProcessor shouldFilterNotification:]	
+1059b69c4	1059b69c7	decompiled	chunks/008/functions-000524.c	-[SCLoginValidationNotificationProcessor processNotification:]	
+1059b69c8	1059b69f7	decompiled	chunks/008/functions-000524.c	-[SCLoginValidationNotificationProcessor .cxx_destruct]	
+1059b69f8	1059b6c1b	decompiled	chunks/008/functions-000524.c	-[SCNotificationLegacyCoreProcessorsEntryPoint begin]	
+1059b6c1c	1059b6c3f	decompiled	chunks/008/functions-000524.c		
+1059b6c40	1059b6d93	decompiled	chunks/008/functions-000524.c	-[SCNotificationLegacyCoreProcessorsEntryPoint end]	
+1059b6d94	1059b6e07	decompiled	chunks/008/functions-000524.c	-[SCNotificationLegacyCoreProcessorsEntryPoint .cxx_destruct]	
+1059b6e08	1059b6e73	decompiled	chunks/008/functions-000524.c	-[SCUserStateNotificationProcessor initWithUserSession:]	
+1059b6e74	1059b6ea3	decompiled	chunks/008/functions-000524.c	-[SCUserStateNotificationProcessor shouldFilterNotification:]	
+1059b6ea4	1059b6ea7	decompiled	chunks/008/functions-000524.c	-[SCUserStateNotificationProcessor processNotification:]	
+1059b6ea8	1059b6eaf	decompiled	chunks/008/functions-000524.c	-[SCUserStateNotificationProcessor .cxx_destruct]	
+1059b6eb0	1059b6f93	decompiled	chunks/008/functions-000524.c	-[SCSpamServiceProvider provide]	
+1059b6f94	1059b6fd3	decompiled	chunks/008/functions-000524.c		
+1059b6fd4	1059b7107	decompiled	chunks/008/functions-000524.c	-[SCSpamServiceProvider _urlSpamProvider]	
+1059b7108	1059b7163	decompiled	chunks/008/functions-000524.c	-[SCSpamServiceProvider .cxx_destruct]	
+1059b7164	1059b738f	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl initWithCircumstanceEngine:lazyBlizzardUserLogger:lazyGrapheneRegistry:unifiedGRPCClientFactory:]	
+1059b7390	1059b74f3	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl isURLSpamRisk:senderId:current:recipient:analyticsId:]	
+1059b74f4	1059b75df	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl reportSender:]	
+1059b75e0	1059b7647	decompiled	chunks/008/functions-000524.c		
+1059b7648	1059b76ff	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _handleReportResponse:error:]	
+1059b7700	1059b791b	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl isURLInSpamList:]	
+1059b791c	1059b7afb	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _getSpamDomains]	
+1059b7afc	1059b7b53	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _getFriendshipAgeThreshold]	
+1059b7b54	1059b7ba3	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _isExperimentEnabled]	
+1059b7ba4	1059b7c9b	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _cofConfigModelWithLogExposure:]	
+1059b7c9c	1059b7e6b	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _logBlockURLEvent:]	
+1059b7e6c	1059b7fab	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl _generateSalt]	
+1059b7fac	1059b800b	decompiled	chunks/008/functions-000524.c	-[SCURLSpamServicesProviderImpl .cxx_destruct]	
+1059b800c	1059b8037	decompiled	chunks/008/functions-000524.c	+[SCGrapheneSpamUrlBlockingMetric urlBlocked]	
+1059b8038	1059b8063	decompiled	chunks/008/functions-000524.c	+[SCGrapheneSpamUrlBlockingMetric urlSenderReported]	
+1059b8064	1059b8103	decompiled	chunks/008/functions-000524.c	-[SCGrapheneSpamUrlBlockingMetric description]	
+1059b8104	1059b824f	decompiled	chunks/008/functions-000524.c	-[SCGrapheneRegistry spamUrlBlockingGraphene]	
+1059b8250	1059b82df	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewGetPreviewRequest descriptor]	
+1059b82e0	1059b836f	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewOriginError descriptor]	
+1059b8370	1059b83f3	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewGetPreviewResponse descriptor]	
+1059b83f4	1059b8477	decompiled	chunks/008/functions-000524.c	+[SCURLReputationReportSenderRequest descriptor]	
+1059b8478	1059b84fb	decompiled	chunks/008/functions-000524.c	+[SCURLReputationReportSenderResponse descriptor]	
+1059b84fc	1059b858b	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewUrlPreview descriptor]	
+1059b858c	1059b861b	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewInAppDeepLink descriptor]	
+1059b861c	1059b869f	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewStickerShareMetadata descriptor]	
+1059b86a0	1059b8723	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewPDFPreviewMetadata descriptor]	
+1059b8724	1059b8797	decompiled	chunks/008/functions-000524.c	-[UNISCURLReputationUrlReputationService initWithUnifiedGrpcService:]	
+1059b8798	1059b887b	decompiled	chunks/008/functions-000524.c	-[UNISCURLReputationUrlReputationService getReputationWithRequest:callOptionsBuilder:handler:]	
+1059b887c	1059b895f	decompiled	chunks/008/functions-000524.c	-[UNISCURLReputationUrlReputationService reportSenderWithRequest:callOptionsBuilder:handler:]	
+1059b8960	1059b896b	decompiled	chunks/008/functions-000524.c	-[UNISCURLReputationUrlReputationService .cxx_destruct]	
+1059b896c	1059b89df	decompiled	chunks/008/functions-000524.c	-[UNISCURLPreviewUrlPreviewService initWithUnifiedGrpcService:]	
+1059b89e0	1059b8ac3	decompiled	chunks/008/functions-000524.c	-[UNISCURLPreviewUrlPreviewService getPreviewWithRequest:callOptionsBuilder:handler:]	
+1059b8ac4	1059b8acf	decompiled	chunks/008/functions-000524.c	-[UNISCURLPreviewUrlPreviewService .cxx_destruct]	
+1059b8ad0	1059b8bcf	decompiled	chunks/008/functions-000524.c		
+1059b8bd0	1059b8bdb	decompiled	chunks/008/functions-000524.c		
+1059b8bdc	1059b8c57	decompiled	chunks/008/functions-000524.c	+[SCURLReputationGetReputationRequest descriptor]	
+1059b8c58	1059b8d3b	decompiled	chunks/008/functions-000524.c	+[SCURLReputationGetReputationResponse descriptor]	
+1059b8d3c	1059b8d47	decompiled	chunks/008/functions-000524.c		
+1059b8d48	1059b8dc3	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewGeneratePreviewRequest descriptor]	
+1059b8dc4	1059b8ea7	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewGeneratePreviewResponse descriptor]	
+1059b8ea8	1059b8eb3	decompiled	chunks/008/functions-000524.c		
+1059b8eb4	1059b8f4f	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewMedia descriptor]	
+1059b8f50	1059b8fb7	decompiled	chunks/008/functions-000524.c	+[SCURLPreviewEmbeddedMedia descriptor]	
+1059b8fb8	1059b901f	decompiled	chunks/008/functions-000524.c	+[SCSAACPbSpamURLBlockingCofConfig descriptor]	
+1059b9020	1059b9027	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl initWithPasswordHashRepository:userId:graphene:]	
+1059b9028	1059b9233	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl initWithPasswordHashRepository:userId:graphene:overrideIsEnabled:]	
+1059b9234	1059b9297	decompiled	chunks/008/functions-000524.c		
+1059b9298	1059b92df	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl dealloc]	
+1059b92e0	1059b957b	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl detectPassword:]	
+1059b957c	1059b95ff	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl _skipDetection:hash:]	
+1059b9600	1059b9607	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl _isEnabled]	
+1059b9608	1059b965b	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl _logDetectLatency:messageLength:]	
+1059b965c	1059b96bb	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImpl .cxx_destruct]	
+1059b96bc	1059b979f	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImplServiceProvider provide]	
+1059b97a0	1059b990b	decompiled	chunks/008/functions-000524.c		
+1059b990c	1059b994f	decompiled	chunks/008/functions-000524.c	-[SCChatThreatsScannerImplServiceProvider .cxx_destruct]	
+1059b9950	1059b997b	decompiled	chunks/008/functions-000524.c	+[SCGrapheneChatThreatsScannerMetric passwordDetectLatency]	
+1059b997c	1059b9a1b	decompiled	chunks/008/functions-000524.c	-[SCGrapheneChatThreatsScannerMetric description]	
+1059b9a1c	1059b9b5f	decompiled	chunks/008/functions-000524.c	-[SCGrapheneRegistry chatThreatsScannerGraphene]	
+1059b9b60	1059b9bdf	decompiled	chunks/008/functions-000524.c	-[SCNChatThreatsScannerPasswordHashHelper initWithCpp:]	
+1059b9be0	1059b9c9b	decompiled	chunks/008/functions-000524.c	+[SCNChatThreatsScannerPasswordHashHelper hashPassword:salt:]	
+1059b9c9c	1059b9d7f	decompiled	chunks/008/functions-000524.c	+[SCNChatThreatsScannerPasswordHashHelper hashAndCompare:passwordHash:passwordLength:salt:]	
+1059b9d80	1059b9ddb	decompiled	chunks/008/functions-000524.c	-[SCNChatThreatsScannerPasswordHashHelper .cxx_destruct]	
+1059b9ddc	1059b9e53	decompiled	chunks/008/functions-000524.c	-[SCNChatThreatsScannerPasswordHashHelper .cxx_construct]	
+1059b9e54	1059b9e6b	decompiled	chunks/008/functions-000524.c		
+1059b9e6c	1059b9f3b	decompiled	chunks/008/functions-000525.c		
+1059b9f3c	1059b9fa7	decompiled	chunks/008/functions-000525.c		
+1059b9fa8	1059ba0ab	decompiled	chunks/008/functions-000525.c		
+1059ba0ac	1059ba3af	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider provide]	
+1059ba3b0	1059ba4b7	decompiled	chunks/008/functions-000525.c		
+1059ba4b8	1059ba62f	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider end]	
+1059ba630	1059ba637	decompiled	chunks/008/functions-000525.c		
+1059ba638	1059ba63b	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider didStartSnapchattersUpdateDataRequest:]	
+1059ba63c	1059ba77b	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider didEndSnapchattersUpdateDataRequest:withSuccess:error:]	
+1059ba77c	1059ba77f	decompiled	chunks/008/functions-000525.c		
+1059ba780	1059ba85f	decompiled	chunks/008/functions-000525.c		
+1059ba860	1059ba86f	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider didUpdateGroupsDataRequest:groupId:]	
+1059ba870	1059ba8c7	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider _removeRecipientFromAllListsWithRecipientIdToRemove:]	
+1059ba8c8	1059ba95f	decompiled	chunks/008/functions-000525.c	-[SCRecipientListServiceProvider .cxx_destruct]	
+1059ba960	1059ba96b	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService hasSeenMyStoryFriendsLastTimePostedTimestamp]	
+1059ba96c	1059ba977	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService myStoryFriendsLastTimePostedTimestampServerParam]	
+1059ba978	1059ba987	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService setMyStoryFriendsLastTimePostedTimestamp:]	
+1059ba988	1059ba98f	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MY_STORY_FRIENDS_LAST_TIME_POSTED_TIMESTAMP_MS_client_value:]	
+1059ba990	1059ba997	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MY_STORY_FRIENDS_LAST_TIME_POSTED_TIMESTAMP_MS_server_value:]	
+1059ba998	1059ba9a7	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService myStoryFriendsLastTimePostedTimestamp]	
+1059ba9a8	1059ba9b3	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService hasSeenMyStoryPublicLastTimePostedTimestamp]	
+1059ba9b4	1059ba9bf	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService myStoryPublicLastTimePostedTimestampServerParam]	
+1059ba9c0	1059ba9cf	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService setMyStoryPublicLastTimePostedTimestamp:]	
+1059ba9d0	1059ba9d7	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MY_STORY_PUBLIC_LAST_TIME_POSTED_TIMESTAMP_MS_client_value:]	
+1059ba9d8	1059ba9df	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MY_STORY_PUBLIC_LAST_TIME_POSTED_TIMESTAMP_MS_server_value:]	
+1059ba9e0	1059ba9ef	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService myStoryPublicLastTimePostedTimestamp]	
+1059ba9f0	1059ba9fb	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService hasSeenMapsStoryLastTimePostedTimestamp]	
+1059ba9fc	1059baa07	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService mapsStoryLastTimePostedTimestampServerParam]	
+1059baa08	1059baa17	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService setMapsStoryLastTimePostedTimestamp:]	
+1059baa18	1059baa1f	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MAPS_STORY_LAST_TIME_POSTED_TIMESTAMP_MS_client_value:]	
+1059baa20	1059baa27	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService SEND_TO_MAPS_STORY_LAST_TIME_POSTED_TIMESTAMP_MS_server_value:]	
+1059baa28	1059baa37	decompiled	chunks/008/functions-000525.c	-[SCFeatureSettingsService mapsStoryLastTimePostedTimestamp]	
+1059baa38	1059baaab	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl initWithFeatureSettingsService:]	
+1059baaac	1059bab13	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl updateMapsStoryWithLastTimePostedDate:]	
+1059bab14	1059bab7b	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl updateMyStoryFriendsWithLastTimePostedDate:]	
+1059bab7c	1059babe3	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl updateMyStoryPublicWithLastTimePostedDate:]	
+1059babe4	1059bac2b	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl getMyStoryFriendsLastPostedDate]	
+1059bac2c	1059bac73	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl getMyStoryPublicLastPostedDate]	
+1059bac74	1059bacbb	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl getMapsStoryLastPostedDate]	
+1059bacbc	1059bacc7	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsImpl .cxx_destruct]	
+1059bacc8	1059badab	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServiceProvider provide]	
+1059badac	1059badeb	decompiled	chunks/008/functions-000525.c		
+1059badec	1059bae6f	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServiceProvider _storiesLastTimePostedFeatureSettingsService]	
+1059bae70	1059baea7	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServiceProvider .cxx_destruct]	
+1059baea8	1059baf1b	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServices initWithStoriesLastTimePostedFeatureSettingsService:]	
+1059baf1c	1059baf23	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServices storiesLastTimePostedFeatureSettingsService]	
+1059baf24	1059baf2f	decompiled	chunks/008/functions-000525.c	-[SCStoriesLastTimePostedFeatureSettingsServices .cxx_destruct]	
+1059baf30	1059bb017	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupServiceProvider provide]	
+1059bb018	1059bb057	decompiled	chunks/008/functions-000525.c		
+1059bb058	1059bb307	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupServiceProvider _selectionGroupObservableRepository]	
+1059bb308	1059bb357	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupServiceProvider .cxx_destruct]	
+1059bb358	1059bb563	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository initWithGroupsDataFetcher:groupsDataTracker:topGroupsDataFetcher:selectionGroupConvertor:currentDateProvider:circumstanceEngine:]	
+1059bb564	1059bb61f	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _recentSelectionGroupObservable]	
+1059bb620	1059bb7bf	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _initialFetchAndEmit]	
+1059bb7c0	1059bb7fb	decompiled	chunks/008/functions-000525.c		
+1059bb7fc	1059bb813	decompiled	chunks/008/functions-000525.c		
+1059bb814	1059bb877	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _fetchAndEmitAllSelectionGroups]	
+1059bb878	1059bb97f	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _fetchAndEmitSelectionGroupForGroupId:]	
+1059bb980	1059bba3f	decompiled	chunks/008/functions-000525.c		
+1059bba40	1059bbd53	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _nextChatGroups:overwrite:]	
+1059bbd54	1059bbd57	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository recentSelectionGroupObservable]	
+1059bbd58	1059bbe27	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository selectionGroupObservableForGroupIds:]	
+1059bbe28	1059bbec7	decompiled	chunks/008/functions-000525.c		
+1059bbec8	1059bbecf	decompiled	chunks/008/functions-000525.c		
+1059bbed0	1059bbef7	decompiled	chunks/008/functions-000525.c		
+1059bbef8	1059bbf03	decompiled	chunks/008/functions-000525.c		
+1059bbf04	1059bbff7	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository newSelectionGroupObservable]	
+1059bbff8	1059bc137	decompiled	chunks/008/functions-000525.c		
+1059bc138	1059bc1f7	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository topGroupsObservable]	
+1059bc1f8	1059bc283	decompiled	chunks/008/functions-000525.c		
+1059bc284	1059bc2d7	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository reset]	
+1059bc2d8	1059bc45b	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository selectionGroupWithGroupId:completionQueue:completionHandler:]	
+1059bc45c	1059bc46f	decompiled	chunks/008/functions-000525.c		
+1059bc470	1059bc533	decompiled	chunks/008/functions-000525.c		
+1059bc534	1059bc547	decompiled	chunks/008/functions-000525.c		
+1059bc548	1059bc6f3	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository didUpdateGroupsDataRequest:groupId:]	
+1059bc6f4	1059bc72b	decompiled	chunks/008/functions-000525.c		
+1059bc72c	1059bc78f	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository _didUpdateGroupsDataRequest:groupId:]	
+1059bc790	1059bc81f	decompiled	chunks/008/functions-000525.c	-[SCLegacySelectionGroupObservableRepository .cxx_destruct]	
+1059bc820	1059bc833	decompiled	chunks/008/functions-000525.c		
+1059bc834	1059bc9c3	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl initWithGroupsDataTracker:topGroupsDataFetcher:selectionGroupConvertor:currentDateProvider:circumstanceEngine:]	
+1059bc9c4	1059bcabb	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl recentSelectionGroupObservable]	
+1059bcabc	1059bce57	decompiled	chunks/008/functions-000525.c		
+1059bce58	1059bcf27	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl selectionGroupObservableForGroupIds:]	
+1059bcf28	1059bcfc7	decompiled	chunks/008/functions-000525.c		
+1059bcfc8	1059bcfcf	decompiled	chunks/008/functions-000525.c		
+1059bcfd0	1059bcff7	decompiled	chunks/008/functions-000525.c		
+1059bcff8	1059bd003	decompiled	chunks/008/functions-000525.c		
+1059bd004	1059bd0f7	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl newSelectionGroupObservable]	
+1059bd0f8	1059bd237	decompiled	chunks/008/functions-000525.c		
+1059bd238	1059bd313	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl topGroupsObservable]	
+1059bd314	1059bd39f	decompiled	chunks/008/functions-000525.c		
+1059bd3a0	1059bd3a3	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl reset]	
+1059bd3a4	1059bd42f	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl selectionGroupWithGroupId:completionQueue:completionHandler:]	
+1059bd430	1059bd443	decompiled	chunks/008/functions-000525.c		
+1059bd444	1059bd4a3	decompiled	chunks/008/functions-000525.c	-[SCSelectionGroupObservableRepositoryImpl .cxx_destruct]	
+1059bd4a4	1059bd4b7	decompiled	chunks/008/functions-000525.c		
+1059bd4b8	1059bd633	decompiled	chunks/008/functions-000525.c	-[SCSelectionRecipientServiceProvider provide]	
+1059bd634	1059bd673	decompiled	chunks/008/functions-000525.c		
+1059bd674	1059bdeab	decompiled	chunks/008/functions-000525.c	-[SCSelectionRecipientServiceProvider _selectionRecipientObservableRepository]	
+1059bdeac	1059bdf5b	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientServiceProvider .cxx_destruct]	
+1059bdf5c	1059be5e7	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl initWithSnapchatterObservableRepository:selectionGroupObservableRepository:contactNonSnapchattersObservableRepository:lastInteractionDataService:currentUserId:storiesDataCoordinator:mapPersonLocationsProvider:circumstanceEngine:customStoriesDataFetcher:recentsRankingServiceFactory:recentsConfiguration:performer:suppressInactiveViewerRecentSorter:recentPredicate:recentPredicateIncludingSelfAndTeamSnapchat:recentSorter:recentCutter:recipientMerger:recipientStoriesAppender:recipientLocationAppender:recipientFilter:searchSorter:suppressFollowingAccountsPredicate:contactRecipientAppender:sendToExperimentConfiguration:boostExpiringStreaksSorter:rankByLastSnapSendTimestampEnabled:applyRankingBySendToSurfaceEnabled:rankByLastContentShareTimestampEnabled:]	
+1059be5e8	1059be627	decompiled	chunks/008/functions-000526.c		
+1059be628	1059be8fb	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl recentSelectionRecipientsObservableWithQueue:selectionRecipientSource:includeContactNonSnapchatters:includeSelectableContacts:includeSelfAndTeamSnapchat:includeStoriesWithSnapchatter:includeLocationWithSnapchatter:includeNonBidirectionalFriends:sendToLogger:contextualSignals:]	
+1059be8fc	1059be99b	decompiled	chunks/008/functions-000526.c		
+1059be99c	1059be9ff	decompiled	chunks/008/functions-000526.c		
+1059bea00	1059beacb	decompiled	chunks/008/functions-000526.c		
+1059beacc	1059bed8b	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _selectionRecipientsRankingWithObservable:recentsRankingService:selectionRecipientSource:contextualSignals:sendToLogger:]	
+1059bed8c	1059bee8b	decompiled	chunks/008/functions-000526.c		
+1059bee8c	1059befe7	decompiled	chunks/008/functions-000526.c		
+1059befe8	1059bf0f3	decompiled	chunks/008/functions-000526.c		
+1059bf0f4	1059bf123	decompiled	chunks/008/functions-000526.c		
+1059bf124	1059bf367	decompiled	chunks/008/functions-000526.c		
+1059bf368	1059bf37f	decompiled	chunks/008/functions-000526.c		
+1059bf380	1059bf3b7	decompiled	chunks/008/functions-000526.c		
+1059bf3b8	1059bf3bb	decompiled	chunks/008/functions-000526.c		
+1059bf3bc	1059bf3cb	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _rankingResultObservableFromRecipientsObservable:]	
+1059bf3cc	1059bf41b	decompiled	chunks/008/functions-000526.c		
+1059bf41c	1059bf60b	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl legacyRecentSelectionRecipientsRankingWithObservable:selectionRecipientSource:]	
+1059bf60c	1059bf63f	decompiled	chunks/008/functions-000526.c		
+1059bf640	1059bf803	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl suggestedRecipientsObservableWithQueue:selectedRecipientIds:]	
+1059bf804	1059bf93f	decompiled	chunks/008/functions-000526.c		
+1059bf940	1059bfa73	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl selectionRecipientObservableForRecipientIds:queue:includeContactNonSnapchatters:includeSelectableContacts:maintainOrder:]	
+1059bfa74	1059bfb47	decompiled	chunks/008/functions-000526.c		
+1059bfb48	1059bfc43	decompiled	chunks/008/functions-000526.c		
+1059bfc44	1059bfd77	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl searchSelectionRecipientsObservableForQuery:queue:includeContactNonSnapchatters:includeSelectableContacts:includeSelfAndTeamSnapchat:includeNonBidirectionalFriends:]	
+1059bfd78	1059bfd87	decompiled	chunks/008/functions-000526.c		
+1059bfd88	1059bfecb	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl allRankingSubjectsObservableWithQueue:additionalFeatureKeys:includeContactNonSnapchatters:includeSelectableContacts:contextualSignals:]	
+1059bfecc	1059c0043	decompiled	chunks/008/functions-000526.c		
+1059c0044	1059c004f	decompiled	chunks/008/functions-000526.c		
+1059c0050	1059c049b	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl allSelectionRecipientsObservableWithQueue:includeContactNonSnapchatters:includeSelectableContacts:includeSelfAndTeamSnapchat:includeStoriesWithSnapchatter:includeLocationWithSnapchatter:includeNonBidirectionalFriends:countObservableEmissions:]	
+1059c049c	1059c089b	decompiled	chunks/008/functions-000526.c		
+1059c089c	1059c08db	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl rankedRecipientsObservableForContextualSignals:]	
+1059c08dc	1059c0923	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _lastTurnInteractionStateObservable]	
+1059c0924	1059c09cb	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _userIdToStoriesSummaryInfoObservableWithQueue:]	
+1059c09cc	1059c0a1b	decompiled	chunks/008/functions-000526.c		
+1059c0a1c	1059c0a23	decompiled	chunks/008/functions-000526.c		
+1059c0a24	1059c0a4b	decompiled	chunks/008/functions-000526.c		
+1059c0a4c	1059c0aff	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _locationIsAvailableObservableStartingWithDummyValue]	
+1059c0b00	1059c0b0b	decompiled	chunks/008/functions-000526.c		
+1059c0b0c	1059c0c23	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _fetchUserIdsInTheirPrivateStoryContextWithQueue:]	
+1059c0c24	1059c0d47	decompiled	chunks/008/functions-000526.c		
+1059c0d48	1059c0e6b	decompiled	chunks/008/functions-000526.c		
+1059c0e6c	1059c11f7	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _mergeSortWithRecentlyAddedRecipients:inTheirPrivateRecipients:]	
+1059c11f8	1059c12e3	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _selectionRecipientUserId:]	
+1059c12e4	1059c1323	decompiled	chunks/008/functions-000526.c		
+1059c1324	1059c132b	decompiled	chunks/008/functions-000526.c		
+1059c132c	1059c13cb	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _getCachedRankingForContextualSignals:]	
+1059c13cc	1059c1567	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl _setCachedRanking:forContextualSignals:]	
+1059c1568	1059c16db	decompiled	chunks/008/functions-000526.c	-[SCSelectionRecipientObservableRepositoryImpl .cxx_destruct]	
+1059c16dc	1059c174f	decompiled	chunks/008/functions-000526.c	-[SCGrapheneSelectionRecipientMetric2 init]	
+1059c1750	1059c18c3	decompiled	chunks/008/functions-000526.c		
+1059c18c4	1059c1a37	decompiled	chunks/008/functions-000526.c		
+1059c1a38	1059c1bab	decompiled	chunks/008/functions-000526.c		
+1059c1bac	1059c1d1f	decompiled	chunks/008/functions-000526.c		
+1059c1d20	1059c1e33	decompiled	chunks/008/functions-000526.c		
+1059c1e34	1059c20fb	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator initWithDocObjectConext:snapchatterObservableRepository:linguisticType:bilingualThreshold:]	
+1059c20fc	1059c2103	decompiled	chunks/008/functions-000526.c		
+1059c2104	1059c2327	decompiled	chunks/008/functions-000526.c		
+1059c2328	1059c232f	decompiled	chunks/008/functions-000526.c		
+1059c2330	1059c2357	decompiled	chunks/008/functions-000526.c		
+1059c2358	1059c2417	decompiled	chunks/008/functions-000526.c		
+1059c2418	1059c245f	decompiled	chunks/008/functions-000526.c		
+1059c2460	1059c2467	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator warmUp]	
+1059c2468	1059c2687	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator displayMetadataMapForSnapchatters:]	
+1059c2688	1059c268f	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator displayMetadataMapObservable]	
+1059c2690	1059c27c7	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator alphabeticalIndexes]	
+1059c27c8	1059c2e2f	decompiled	chunks/008/functions-000526.c		
+1059c2e30	1059c303f	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator _onNextSnapchatters:]	
+1059c3040	1059c304f	decompiled	chunks/008/functions-000526.c		
+1059c3050	1059c319b	decompiled	chunks/008/functions-000526.c		
+1059c319c	1059c330f	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator _indexScriptWithSnapchatters:displayMetadatasToUpsert:overwrite:]	
+1059c3310	1059c356b	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator _displayMetadatasToUpsertForSnapchatters:existingDisplayMetadatas:]	
+1059c356c	1059c3627	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator _upsertWithDisplayMetadatas:indexScript:]	
+1059c3628	1059c374b	decompiled	chunks/008/functions-000526.c		
+1059c374c	1059c37b7	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataCoordinator .cxx_destruct]	
+1059c37b8	1059c37bf	decompiled	chunks/008/functions-000526.c		
+1059c37c0	1059c37e7	decompiled	chunks/008/functions-000526.c		
+1059c37e8	1059c3907	decompiled	chunks/008/functions-000526.c		
+1059c3908	1059c394f	decompiled	chunks/008/functions-000526.c		
+1059c3950	1059c3967	decompiled	chunks/008/functions-000526.c		
+1059c3968	1059c3ca3	decompiled	chunks/008/functions-000526.c		
+1059c3ca4	1059c3d7b	decompiled	chunks/008/functions-000526.c		
+1059c3d7c	1059c3f47	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver initWithDocObjectContext:fetchBlock:]	
+1059c3f48	1059c3f57	decompiled	chunks/008/functions-000526.c		
+1059c3f58	1059c3fc3	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver displayMetadataFetchedResult]	
+1059c3fc4	1059c4043	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver displayMetadataWithUserId:]	
+1059c4044	1059c404b	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver beginObservation]	
+1059c404c	1059c40bf	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver userIdToDisplayMetadataMap]	
+1059c40c0	1059c40cb	decompiled	chunks/008/functions-000526.c	-[SCSnapchattersDisplayMetadataFetchedResultObserver .cxx_destruct]	
+1059c40cc	1059c40f3	decompiled	chunks/008/functions-000526.c		
+1059c40f4	1059c40fb	decompiled	chunks/008/functions-000526.c		
+1059c40fc	1059c4123	decompiled	chunks/008/functions-000526.c		
+1059c4124	1059c4293	decompiled	chunks/008/functions-000526.c	-[SCSortableSnapchatterServiceProvider provide]	
+1059c4294	1059c4383	decompiled	chunks/008/functions-000526.c		
+1059c4384	1059c441f	decompiled	chunks/008/functions-000526.c		
+1059c4420	1059c4473	decompiled	chunks/008/functions-000526.c	-[SCSortableSnapchatterServiceProvider .cxx_destruct]	
+1059c4474	1059c4517	decompiled	chunks/008/functions-000526.c	-[SCSortableSnapchatterObservableRepositoryImpl initWithSnapchattersDisplayMetadataCoordinator:snapchatterObservableRepository:]	
+1059c4518	1059c45eb	decompiled	chunks/008/functions-000526.c	-[SCSortableSnapchatterObservableRepositoryImpl outgoingSnapchatterObservableWithQueue:]	
+1059c45ec	1059c47bf	decompiled	chunks/008/functions-000526.c		
+1059c47c0	1059c489b	decompiled	chunks/008/functions-000527.c	-[SCSortableSnapchatterObservableRepositoryImpl allFriendsObservableWithQueue:]	
+1059c489c	1059c48e7	decompiled	chunks/008/functions-000527.c	-[SCSortableSnapchatterObservableRepositoryImpl aToZMapObservableWithQueue:]	
+1059c48e8	1059c48ef	decompiled	chunks/008/functions-000527.c		
+1059c48f0	1059c49c7	decompiled	chunks/008/functions-000527.c	-[SCSortableSnapchatterObservableRepositoryImpl friendsObservableForLetterKey:queue:]	
+1059c49c8	1059c4a1b	decompiled	chunks/008/functions-000527.c		
+1059c4a1c	1059c4af3	decompiled	chunks/008/functions-000527.c	-[SCSortableSnapchatterObservableRepositoryImpl mutualFriendsObservableForLetterKey:queue:]	
+1059c4af4	1059c4b63	decompiled	chunks/008/functions-000527.c		
+1059c4b64	1059c4bef	decompiled	chunks/008/functions-000527.c		
+1059c4bf0	1059c4c1f	decompiled	chunks/008/functions-000527.c	-[SCSortableSnapchatterObservableRepositoryImpl .cxx_destruct]	
+1059c4c20	1059c4cf7	decompiled	chunks/008/functions-000527.c		
+1059c4cf8	1059c4f2f	decompiled	chunks/008/functions-000527.c		
+1059c4f30	1059c500b	decompiled	chunks/008/functions-000527.c		
+1059c500c	1059c5093	decompiled	chunks/008/functions-000527.c		
+1059c5094	1059c511b	decompiled	chunks/008/functions-000527.c		
+1059c511c	1059c518b	decompiled	chunks/008/functions-000527.c		
+1059c518c	1059c5847	decompiled	chunks/008/functions-000527.c		
+1059c5848	1059c58cf	decompiled	chunks/008/functions-000527.c		
+1059c58d0	1059c5a03	decompiled	chunks/008/functions-000527.c		
+1059c5a04	1059c5ab3	decompiled	chunks/008/functions-000527.c		
+1059c5ab4	1059c5aef	decompiled	chunks/008/functions-000527.c		
+1059c5af0	1059c5c9b	decompiled	chunks/008/functions-000527.c		
+1059c5c9c	1059c5e2f	decompiled	chunks/008/functions-000527.c		
+1059c5e30	1059c5ec7	decompiled	chunks/008/functions-000527.c		
+1059c5ec8	1059c5f3f	decompiled	chunks/008/functions-000527.c		
+1059c5f40	1059c5f7b	decompiled	chunks/008/functions-000527.c		
+1059c5f7c	1059c5f8f	decompiled	chunks/008/functions-000527.c		
+1059c5f90	1059c602f	decompiled	chunks/008/functions-000527.c		
+1059c6030	1059c66eb	decompiled	chunks/008/functions-000527.c		
+1059c66ec	1059c6773	decompiled	chunks/008/functions-000527.c		
+1059c6774	1059c68a7	decompiled	chunks/008/functions-000527.c		
+1059c68a8	1059c6ab3	decompiled	chunks/008/functions-000527.c		
+1059c6ab4	1059c6d2f	decompiled	chunks/008/functions-000527.c		
+1059c6d30	1059c6e33	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptObserver initWithDocObjectContext:observationQueue:]	
+1059c6e34	1059c6e53	decompiled	chunks/008/functions-000527.c		
+1059c6e54	1059c6ec7	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptObserver indexScript]	
+1059c6ec8	1059c6f6b	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptObserver indexScriptObservable]	
+1059c6f6c	1059c700f	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptObserver displayMetadatasObservable]	
+1059c7010	1059c704b	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptObserver .cxx_destruct]	
+1059c704c	1059c7057	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersDisplayMetadata table]	
+1059c7058	1059c72ab	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersDisplayMetadata immutableObjectParse:bufferSize:]	
+1059c72ac	1059c72cf	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersDisplayMetadata objectClassFunctionPointer]	
+1059c72d0	1059c7413	decompiled	chunks/008/functions-000527.c		
+1059c7414	1059c7823	decompiled	chunks/008/functions-000527.c		
+1059c7824	1059c7b17	decompiled	chunks/008/functions-000527.c		
+1059c7b18	1059c7b7f	decompiled	chunks/008/functions-000527.c		
+1059c7b80	1059c7bc7	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersDisplayMetadataChangeRequest .cxx_destruct]	
+1059c7bc8	1059c7bd3	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersDisplayMetadataChangeRequest table]	
+1059c7bd4	1059c7c1b	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersDisplayMetadataChangeRequest createTableWithSQLite:]	
+1059c7c1c	1059c7fa3	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersDisplayMetadataChangeRequest transactWithSQLite:flatbuffers:]	
+1059c7fa4	1059c8197	decompiled	chunks/008/functions-000527.c		
+1059c8198	1059c82c7	decompiled	chunks/008/functions-000527.c		
+1059c82c8	1059c837f	decompiled	chunks/008/functions-000527.c		
+1059c8380	1059c83b7	decompiled	chunks/008/functions-000527.c		
+1059c83b8	1059c840b	decompiled	chunks/008/functions-000527.c		
+1059c840c	1059c8417	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersIndexScript table]	
+1059c8418	1059c85d3	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersIndexScript immutableObjectParse:bufferSize:]	
+1059c85d4	1059c85f7	decompiled	chunks/008/functions-000527.c	+[SCSnapchattersIndexScript objectClassFunctionPointer]	
+1059c85f8	1059c86ab	decompiled	chunks/008/functions-000527.c		
+1059c86ac	1059c8b3f	decompiled	chunks/008/functions-000527.c		
+1059c8b40	1059c8ba3	decompiled	chunks/008/functions-000527.c		
+1059c8ba4	1059c8baf	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptChangeRequest .cxx_destruct]	
+1059c8bb0	1059c8bbb	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptChangeRequest table]	
+1059c8bbc	1059c8c03	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptChangeRequest createTableWithSQLite:]	
+1059c8c04	1059c8f9b	decompiled	chunks/008/functions-000527.c	-[SCSnapchattersIndexScriptChangeRequest transactWithSQLite:flatbuffers:]	
+1059c8f9c	1059c930b	decompiled	chunks/008/functions-000527.c		
+1059c930c	1059ca1b3	decompiled	chunks/008/functions-000527.c		
+1059ca1b4	1059ca227	decompiled	chunks/008/functions-000527.c		
+1059ca228	1059ca58f	decompiled	chunks/008/functions-000527.c		
+1059ca590	1059ca8cf	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl initWithPreferences:performerProvider:circumstanceEngine:]	
+1059ca8d0	1059caa1f	decompiled	chunks/008/functions-000527.c		
+1059caa20	1059caad3	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _lastTurnInteractionStatesSubject]	
+1059caad4	1059cab33	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _conversationLastInteractionStatesObservableWithConversationType:]	
+1059cab34	1059cabab	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl saveWithLastInteractionState:conversationType:]	
+1059cabac	1059cac17	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl fetchLastInteractionStateWithRecipientId:conversationType:]	
+1059cac18	1059cac57	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl lastInteractionStatesObservableWithConversationType:]	
+1059cac58	1059cad03	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl fetchLastInteractionStatesWithConversationType:]	
+1059cad04	1059cae03	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl updateLastTurnInteractionStateWithUpdatedMessages:userUUID:targetId:conversationType:]	
+1059cae04	1059cae4b	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl lastTurnInteractionStatesObservable]	
+1059cae4c	1059caedb	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl fetchLastTurnInteractionStates]	
+1059caedc	1059cafeb	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _conversationLastInteractionStatesSubjectWithConversationType:]	
+1059cafec	1059cb36f	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _saveWithLastInteractionState:conversationType:]	
+1059cb370	1059cb467	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _fetchLastInteractionStateWithRecipientId:conversationType:]	
+1059cb468	1059cb59f	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _fetchLastTurnInteractionStateWithRecipientId:]	
+1059cb5a0	1059cb653	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _saveLastTurnInteractionStateWithTargetId:oldState:newState:]	
+1059cb654	1059cba17	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl _saveAndEmitLastTurnInteractionStateWithTargetId:oldState:newState:]	
+1059cba18	1059cba83	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceImpl .cxx_destruct]	
+1059cba84	1059cbb67	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceProvider provide]	
+1059cbb68	1059cbba7	decompiled	chunks/008/functions-000527.c		
+1059cbba8	1059cbc9f	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceProvider _lastInteractionDataService]	
+1059cbca0	1059cbcef	decompiled	chunks/008/functions-000527.c	-[SCLastInteractionDataServiceProvider .cxx_destruct]	
+1059cbcf0	1059cbf1f	decompiled	chunks/008/functions-000527.c	-[SCSendToListsDataServiceProvider provide]	
+1059cbf20	1059cbfa7	decompiled	chunks/008/functions-000527.c		
+1059cbfa8	1059cc07f	decompiled	chunks/008/functions-000527.c	-[SCSendToListsDataServiceProvider _createListsLogger]	
+1059cc080	1059cc3bf	decompiled	chunks/008/functions-000527.c	-[SCSendToListsDataServiceProvider _createListsDataCoordinator:recipientListsDataCoordinator:]	
+1059cc3c0	1059cc44b	decompiled	chunks/008/functions-000527.c	-[SCSendToListsDataServiceProvider .cxx_destruct]	
+1059cc44c	1059cc4ab	decompiled	chunks/008/functions-000527.c	-[SCRecipientListsDataCoordinator hasSyncedWithServer]	
+1059cc4ac	1059cc4b3	decompiled	chunks/008/functions-000527.c	-[SCRecipientListsDataCoordinator hasSyncedWithServerObservable]	
+1059cc4b4	1059cc52f	decompiled	chunks/008/functions-000527.c	-[SCRecipientListsDataCoordinator _updateLastServerSyncTimestamp]	
+1059cc530	1059cc57f	decompiled	chunks/008/functions-000527.c	-[SCRecipientListsDataCoordinator lastServerSyncTimestamp]	
+1059cc580	1059cc58b	decompiled	chunks/008/functions-000527.c	+[SCRecipientListsDataCoordinator dataCoordinatorIdentifier]	
+1059cc58c	1059cc593	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator addDataUpdateListener:]	
+1059cc594	1059cc59b	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator removeDataUpdateListener:]	
+1059cc59c	1059cc7a3	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator initWithDocObjectContext:networkService:preferences:]	
+1059cc7a4	1059cc95b	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator listsWithCompletionQueue:completion:]	
+1059cc95c	1059cc96f	decompiled	chunks/008/functions-000528.c		
+1059cc970	1059cca77	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator listWithListId:completionQueue:completion:]	
+1059cca78	1059ccb3f	decompiled	chunks/008/functions-000528.c		
+1059ccb40	1059ccb53	decompiled	chunks/008/functions-000528.c		
+1059ccb54	1059ccd4b	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator syncFromServerWithCompletionQueue:successBlock:failureBlock:]	
+1059ccd4c	1059cce03	decompiled	chunks/008/functions-000528.c		
+1059cce04	1059ccfb7	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator createLists:completionQueue:successBlock:failureBlock:]	
+1059ccfb8	1059cd00f	decompiled	chunks/008/functions-000528.c		
+1059cd010	1059cd1c3	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator updateLists:completionQueue:successBlock:failureBlock:]	
+1059cd1c4	1059cd21b	decompiled	chunks/008/functions-000528.c		
+1059cd21c	1059cd3e3	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator deleteListsWithListIds:completionQueue:successBlock:failureBlock:]	
+1059cd3e4	1059cd41b	decompiled	chunks/008/functions-000528.c		
+1059cd41c	1059cd51b	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator removeRecipientFromAllListsWithRecipientIdToRemove:]	
+1059cd51c	1059cd85f	decompiled	chunks/008/functions-000528.c		
+1059cd860	1059cd863	decompiled	chunks/008/functions-000528.c		
+1059cd864	1059cd867	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator handleDataRequest:]	
+1059cd868	1059cd9bf	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator _flushAndUpsertClientLocalLists:completionQueue:successBlock:failureBlock:]	
+1059cd9c0	1059cd9f7	decompiled	chunks/008/functions-000528.c		
+1059cd9f8	1059cdb4f	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator _upsertClientLocalLists:completionQueue:successBlock:failureBlock:]	
+1059cdb50	1059cdb5f	decompiled	chunks/008/functions-000528.c		
+1059cdb60	1059cdc7f	decompiled	chunks/008/functions-000528.c		
+1059cdc80	1059cddd7	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator _deleteClientListsWithIds:completionQueue:successBlock:failureBlock:]	
+1059cddd8	1059cdde7	decompiled	chunks/008/functions-000528.c		
+1059cdde8	1059cdf07	decompiled	chunks/008/functions-000528.c		
+1059cdf08	1059cdf7f	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator _cleanAllDataWithCompletionQueue:completionHandler:]	
+1059cdf80	1059cdf87	decompiled	chunks/008/functions-000528.c		
+1059cdf88	1059ce087	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator cleanAllDataWithCompletionQueue:completionHandler:]	
+1059ce088	1059ce0bb	decompiled	chunks/008/functions-000528.c		
+1059ce0bc	1059ce127	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataCoordinator .cxx_destruct]	
+1059ce128	1059ce1cb	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataInitializer initWithRecipientListsDataMutator:userSessionContext:]	
+1059ce1cc	1059ce20f	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataInitializer updateUponLoginOrRegistration]	
+1059ce210	1059ce27b	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataInitializer _syncListsWithServer]	
+1059ce27c	1059ce283	decompiled	chunks/008/functions-000528.c		
+1059ce284	1059ce2b3	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsDataInitializer .cxx_destruct]	
+1059ce2b4	1059ce7bb	decompiled	chunks/008/functions-000528.c		
+1059ce7bc	1059ce85b	decompiled	chunks/008/functions-000528.c		
+1059ce85c	1059ce96b	decompiled	chunks/008/functions-000528.c		
+1059ce96c	1059cf8af	decompiled	chunks/008/functions-000528.c		
+1059cf8b0	1059cf9cf	decompiled	chunks/008/functions-000528.c		
+1059cf9d0	1059cfa6b	decompiled	chunks/008/functions-000528.c		
+1059cfa6c	1059cfc17	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService initWithGRPCClientFactory:performerProvider:]	
+1059cfc18	1059cfc2f	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService processFetchAllListsDataRequest:callbackQueue:successBlock:failureBlock:]	
+1059cfc30	1059cfc47	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService processCreateListsDataRequest:callbackQueue:successBlock:failureBlock:]	
+1059cfc48	1059cfc5f	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService processUpdateListsDataRequest:callbackQueue:successBlock:failureBlock:]	
+1059cfc60	1059cfc77	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService processDeleteListsDataRequest:callbackQueue:successBlock:failureBlock:]	
+1059cfc78	1059cfc87	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService createStoryForList:completionBlock:]	
+1059cfc88	1059cfc93	decompiled	chunks/008/functions-000528.c	-[SCRecipientListsNetworkService .cxx_destruct]	
+1059cfc94	1059cfd07	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists initWithUnifiedGrpcService:]	
+1059cfd08	1059cfdeb	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists createListsWithRequest:callOptionsBuilder:handler:]	
+1059cfdec	1059cfecf	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists fetchListsWithRequest:callOptionsBuilder:handler:]	
+1059cfed0	1059cffb3	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists updateListsWithRequest:callOptionsBuilder:handler:]	
+1059cffb4	1059d0097	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists deleteListsWithRequest:callOptionsBuilder:handler:]	
+1059d0098	1059d017b	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists createListStoryWithRequest:callOptionsBuilder:handler:]	
+1059d017c	1059d025f	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists createListsIngressGatewayWithRequest:callOptionsBuilder:handler:]	
+1059d0260	1059d0343	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists fetchListsIngressGatewayWithRequest:callOptionsBuilder:handler:]	
+1059d0344	1059d0427	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists deleteListsIngressGatewayWithRequest:callOptionsBuilder:handler:]	
+1059d0428	1059d050b	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists createListStoryIngressGatewayWithRequest:callOptionsBuilder:handler:]	
+1059d050c	1059d05ef	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists updateListsIngressGatewayWithRequest:callOptionsBuilder:handler:]	
+1059d05f0	1059d05fb	decompiled	chunks/008/functions-000528.c	-[UNISCListsLists .cxx_destruct]	
+1059d05fc	1059d0663	decompiled	chunks/008/functions-000528.c	+[SCListsListsCreateRequest descriptor]	
+1059d0664	1059d06cb	decompiled	chunks/008/functions-000528.c	+[SCListsListsCreateIngressGatewayRequest descriptor]	
+1059d06cc	1059d0733	decompiled	chunks/008/functions-000528.c	+[SCListsListsCreateResponse descriptor]	
+1059d0734	1059d079b	decompiled	chunks/008/functions-000528.c	+[SCListsListsCreateIngressGatewayResponse descriptor]	
+1059d079c	1059d0803	decompiled	chunks/008/functions-000528.c	+[SCListsListsDeleteRequest descriptor]	
+1059d0804	1059d086b	decompiled	chunks/008/functions-000528.c	+[SCListsListsDeleteIngressGatewayRequest descriptor]	
+1059d086c	1059d08d3	decompiled	chunks/008/functions-000528.c	+[SCListsListsDeleteResponse descriptor]	
+1059d08d4	1059d093b	decompiled	chunks/008/functions-000528.c	+[SCListsListsDeleteIngressGatewayResponse descriptor]	
+1059d093c	1059d09a3	decompiled	chunks/008/functions-000528.c	+[SCListsListsFetchRequest descriptor]	
+1059d09a4	1059d0a0b	decompiled	chunks/008/functions-000528.c	+[SCListsListsFetchIngressGatewayRequest descriptor]	
+1059d0a0c	1059d0a73	decompiled	chunks/008/functions-000528.c	+[SCListsListsFetchResponse descriptor]	
+1059d0a74	1059d0adb	decompiled	chunks/008/functions-000528.c	+[SCListsListsFetchIngressGatewayResponse descriptor]	
+1059d0adc	1059d0b43	decompiled	chunks/008/functions-000528.c	+[SCListsListsUpdateRequest descriptor]	
+1059d0b44	1059d0bab	decompiled	chunks/008/functions-000528.c	+[SCListsListsUpdateResponse descriptor]	
+1059d0bac	1059d0c13	decompiled	chunks/008/functions-000528.c	+[SCListsListsUpdateIngressGatewayRequest descriptor]	
+1059d0c14	1059d0c7b	decompiled	chunks/008/functions-000528.c	+[SCListsListsUpdateIngressGatewayResponse descriptor]	
+1059d0c7c	1059d0ce3	decompiled	chunks/008/functions-000528.c	+[SCListsListCreateStoryRequest descriptor]	
+1059d0ce4	1059d0d4b	decompiled	chunks/008/functions-000528.c	+[SCListsListCreateStoryResponse descriptor]	
+1059d0d4c	1059d0db3	decompiled	chunks/008/functions-000528.c	+[SCListsListCreateStoryIngressGatewayRequest descriptor]	
+1059d0db4	1059d0e1b	decompiled	chunks/008/functions-000528.c	+[SCListsListCreateStoryIngressGatewayResponse descriptor]	
+1059d0e1c	1059d0ffb	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter initWithLauncher:recipientPickerScopeServices:uiContainer:delegate:listsDataManager:snapchattersDataFetcher:groupsDataFetcher:myUserId:myDisplayName:]	
+1059d0ffc	1059d10f7	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter presentEditListWithListId:]	
+1059d10f8	1059d11bb	decompiled	chunks/008/functions-000528.c		
+1059d11bc	1059d11bf	decompiled	chunks/008/functions-000528.c		
+1059d11c0	1059d1213	decompiled	chunks/008/functions-000528.c		
+1059d1214	1059d137f	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter _presentEditListWithListId:listDataModel:]	
+1059d1380	1059d13d3	decompiled	chunks/008/functions-000528.c		
+1059d13d4	1059d18c3	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter _presentEditListWithListId:listDataModel:snapchatters:]	
+1059d18c4	1059d18eb	decompiled	chunks/008/functions-000528.c		
+1059d18ec	1059d199b	decompiled	chunks/008/functions-000528.c		
+1059d199c	1059d1b5b	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter presentCreateList]	
+1059d1b5c	1059d1b83	decompiled	chunks/008/functions-000528.c		
+1059d1b84	1059d1c27	decompiled	chunks/008/functions-000528.c		
+1059d1c28	1059d1d0f	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter didConfirmWithSelectedItems:title:uiContainer:]	
+1059d1d10	1059d1d47	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter didDismissWithSelectedItems:title:]	
+1059d1d48	1059d205b	decompiled	chunks/008/functions-000528.c	-[SCSendToListsRecipientPickerPresenter didViolateWithSelectedItems:titleTextField:confirmationModel:uiConainer:]	
+1059d205c	1059d20f7	decompiled	chunks/008/functions-000528.c		
+1059d20f8	1059d235b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter didPressTopRightButtonWithUiContainer:]	
+1059d235c	1059d23eb	decompiled	chunks/008/functions-000529.c		
+1059d23ec	1059d26ab	decompiled	chunks/008/functions-000529.c		
+1059d26ac	1059d26f3	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter didTapTitleTextField]	
+1059d26f4	1059d273b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter didUserInputTitle:]	
+1059d273c	1059d27a3	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter didReceiveSelectionItemUpdates:]	
+1059d27a4	1059d293f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _confirmationModelWithButtonTitle:selectedItems:listName:]	
+1059d2940	1059d2ba7	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _listNameIsInUse:]	
+1059d2ba8	1059d2bbf	decompiled	chunks/008/functions-000529.c		
+1059d2bc0	1059d2c1b	decompiled	chunks/008/functions-000529.c		
+1059d2c1c	1059d2ddf	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _performCreateOperationWithListId:listName:selectedItems:]	
+1059d2de0	1059d2e77	decompiled	chunks/008/functions-000529.c		
+1059d2e78	1059d3083	decompiled	chunks/008/functions-000529.c		
+1059d3084	1059d326f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _performUpdateOperationWithListId:listName:selectedItems:]	
+1059d3270	1059d333f	decompiled	chunks/008/functions-000529.c		
+1059d3340	1059d340f	decompiled	chunks/008/functions-000529.c		
+1059d3410	1059d356f	decompiled	chunks/008/functions-000529.c		
+1059d3570	1059d363f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentMaxCharacterLengthReachedWithCompletion:]	
+1059d3640	1059d370f	decompiled	chunks/008/functions-000529.c		
+1059d3710	1059d37d7	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentEmptyTitleWithCompletion:]	
+1059d37d8	1059d386f	decompiled	chunks/008/functions-000529.c		
+1059d3870	1059d3963	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentRemoveListAlertWithCompletion:]	
+1059d3964	1059d399f	decompiled	chunks/008/functions-000529.c		
+1059d39a0	1059d3aff	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentAlreadyUsedListNameAlertWithListName:completion:]	
+1059d3b00	1059d3bb3	decompiled	chunks/008/functions-000529.c		
+1059d3bb4	1059d3c83	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentMaxRecipientsReachedAlert]	
+1059d3c84	1059d3d2f	decompiled	chunks/008/functions-000529.c		
+1059d3d30	1059d3dff	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _presentMaxSavedListCountAlert]	
+1059d3e00	1059d3eab	decompiled	chunks/008/functions-000529.c		
+1059d3eac	1059d3edb	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _shouldCheckForAlreadyUsedListNameWithNewListName:]	
+1059d3edc	1059d3f87	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _selectTextFieldWithTextField:]	
+1059d3f88	1059d41eb	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _listFromListId:listName:selectedItems:]	
+1059d41ec	1059d429b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _updateListWithListId:listName:selectedItems:successBlock:failureBlock:]	
+1059d429c	1059d434b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _createListWithListId:listName:selectedItems:successBlock:failureBlock:]	
+1059d434c	1059d43db	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _listNameFromHeader:]	
+1059d43dc	1059d4453	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _setEditingStateWithListName:listId:editingInProgress:]	
+1059d4454	1059d4487	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _dismissAndResetEditingState]	
+1059d4488	1059d452f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _showProgressStatusOverlay:withMessage:]	
+1059d4530	1059d45c3	decompiled	chunks/008/functions-000529.c		
+1059d45c4	1059d462b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _showProgressStatusOverlay:]	
+1059d462c	1059d46e3	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter _getSectionIdentifiers]	
+1059d46e4	1059d4787	decompiled	chunks/008/functions-000529.c	-[SCSendToListsRecipientPickerPresenter .cxx_destruct]	
+1059d4788	1059d481b	decompiled	chunks/008/functions-000529.c		
+1059d481c	1059d4d73	decompiled	chunks/008/functions-000529.c		
+1059d4d74	1059d4f13	decompiled	chunks/008/functions-000529.c		
+1059d4f14	1059d565f	decompiled	chunks/008/functions-000529.c		
+1059d5660	1059d5bd3	decompiled	chunks/008/functions-000529.c		
+1059d5bd4	1059d5beb	decompiled	chunks/008/functions-000529.c		
+1059d5bec	1059d5d87	decompiled	chunks/008/functions-000529.c		
+1059d5d88	1059d5dcf	decompiled	chunks/008/functions-000529.c		
+1059d5dd0	1059d5f33	decompiled	chunks/008/functions-000529.c		
+1059d5f34	1059d5fb7	decompiled	chunks/008/functions-000529.c		
+1059d5fb8	1059d6113	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger initWithSessionId:userTrackedLogger:performerProvider:]	
+1059d6114	1059d61eb	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger logListCreateWithListDataModels:]	
+1059d61ec	1059d621f	decompiled	chunks/008/functions-000529.c		
+1059d6220	1059d62f7	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger logListDeleteWithListDataModels:]	
+1059d62f8	1059d632b	decompiled	chunks/008/functions-000529.c		
+1059d632c	1059d6403	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger logListEditWithListDataModels:]	
+1059d6404	1059d6437	decompiled	chunks/008/functions-000529.c		
+1059d6438	1059d6537	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger logListAction:listId:]	
+1059d6538	1059d656b	decompiled	chunks/008/functions-000529.c		
+1059d656c	1059d666b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger logRecipientActions:listId:]	
+1059d666c	1059d669f	decompiled	chunks/008/functions-000529.c		
+1059d66a0	1059d66fb	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _createPerformerWithPerformerProvider:]	
+1059d66fc	1059d677b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _logListCreateWithListDataModels:]	
+1059d677c	1059d6c1b	decompiled	chunks/008/functions-000529.c		
+1059d6c1c	1059d6c9b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _logListDeleteWithListDataModels:]	
+1059d6c9c	1059d6d1b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _logListEditWithListDataModels:]	
+1059d6d1c	1059d6ddf	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _logListAction:listId:]	
+1059d6de0	1059d7053	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _logRecipientActions:listId:]	
+1059d7054	1059d70af	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger _reset]	
+1059d70b0	1059d7193	decompiled	chunks/008/functions-000529.c	-[SCSendToListsLogger .cxx_destruct]	
+1059d7194	1059d7577	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator initWithUserSession:recipientListsDataCoordinator:snapchattersDataFetcher:groupsDataFetcher:listsLogger:myDisplayName:sendToSuggestionsDataService:circumstanceEngine:]	
+1059d7578	1059d75b7	decompiled	chunks/008/functions-000529.c		
+1059d75b8	1059d7667	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _initData]	
+1059d7668	1059d7793	decompiled	chunks/008/functions-000529.c		
+1059d7794	1059d783b	decompiled	chunks/008/functions-000529.c		
+1059d783c	1059d7843	decompiled	chunks/008/functions-000529.c		
+1059d7844	1059d7847	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator hasSyncedListDataFromServer]	
+1059d7848	1059d7887	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _hasSyncedWithServer]	
+1059d7888	1059d78cf	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _lastServerSyncTimestamp]	
+1059d78d0	1059d793f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator logListAction:listId:]	
+1059d7940	1059d79af	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator logRecipientActions:listId:]	
+1059d79b0	1059d7a87	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator sortedListsWithCompletion:]	
+1059d7a88	1059d7b1f	decompiled	chunks/008/functions-000529.c		
+1059d7b20	1059d7b47	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator lazySortedListsObservable]	
+1059d7b48	1059d7c3f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _sortedListsObservable]	
+1059d7c40	1059d7c73	decompiled	chunks/008/functions-000529.c		
+1059d7c74	1059d7d37	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _publishSortedListsObservableWithSubject:]	
+1059d7d38	1059d7d43	decompiled	chunks/008/functions-000529.c		
+1059d7d44	1059d7e2f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator listObservableForListId:]	
+1059d7e30	1059d7e77	decompiled	chunks/008/functions-000529.c		
+1059d7e78	1059d7f8b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _listObservableForListId:]	
+1059d7f8c	1059d7fbf	decompiled	chunks/008/functions-000529.c		
+1059d7fc0	1059d812f	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator _publishListObservableForListId:listForListIdBehaviorSubject:]	
+1059d8130	1059d82af	decompiled	chunks/008/functions-000529.c		
+1059d82b0	1059d82bb	decompiled	chunks/008/functions-000529.c		
+1059d82bc	1059d8393	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator listsMapWithCompletion:]	
+1059d8394	1059d842b	decompiled	chunks/008/functions-000529.c		
+1059d842c	1059d852b	decompiled	chunks/008/functions-000529.c	-[SCSendToListsDataCoordinator listWithListId:completion:]	

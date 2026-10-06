@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1063efd6c	1063efe2f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource insertAdAfterCurrentItem:]	
+1063efe30	1063eff47	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource createAdOpportunity:isInsertionRuleReady:]	
+1063eff48	1063effeb	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource pendingAdInsertionRuleReadyToEvaluate]	
+1063effec	1063f08a7	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource pendingAdIsBrandSafe]	
+1063f08a8	1063f0e6b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _safeThreadedInsertAdAfterCurrentItem:]	
+1063f0e6c	1063f0ed3	decompiled	chunks/006/functions-000430.c		
+1063f0ed4	1063f0edb	decompiled	chunks/006/functions-000430.c		
+1063f0edc	1063f120b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _makeDynamicAdRequestIfNecessary:]	
+1063f120c	1063f1373	decompiled	chunks/006/functions-000430.c		
+1063f1374	1063f13ab	decompiled	chunks/006/functions-000430.c		
+1063f13ac	1063f1467	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _safeThreadedHandleAdRequestResponse:metadataToMediaTransitionCookie:]	
+1063f1468	1063f16b7	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _fetchMediaForPendingAdWithMetadataToMediaTransitionCookie:]	
+1063f16b8	1063f1797	decompiled	chunks/006/functions-000430.c		
+1063f1798	1063f182f	decompiled	chunks/006/functions-000430.c		
+1063f1830	1063f18b3	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _handleFetchMediaForPendingInsertAdCompletion]	
+1063f18b4	1063f1b33	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _applyServerAdInsertionConfig:]	
+1063f1b34	1063f1cf3	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _expandStoryAd:completion:]	
+1063f1cf4	1063f1e1f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _registerAdSnaps:adResponse:]	
+1063f1e20	1063f20bb	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource _insertAdSnapsAfterCurrentItem:forAdResponse:completion:]	
+1063f20bc	1063f222b	decompiled	chunks/006/functions-000430.c		
+1063f222c	1063f222f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource operaPlaylistItemController]	
+1063f2230	1063f231b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource progressiveMediaDownloaderConfig]	
+1063f231c	1063f235f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource lastInteractionStateProvider]	
+1063f2360	1063f23bf	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource progressiveMediaDownloader:adSnapFor:]	
+1063f23c0	1063f24b3	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource progressiveMediaDownloader:adSnapAfter:]	
+1063f24b4	1063f24bb	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource progressiveMediaDownloader:adResponseFor:]	
+1063f24bc	1063f256b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherDynamicAdDataSource .cxx_destruct]	
+1063f256c	1063f2613	decompiled	chunks/006/functions-000430.c		
+1063f2614	1063f267b	decompiled	chunks/006/functions-000430.c	+[SCAdPublisherRequestManager requestManagerWithPublisherDataSource:config:]	
+1063f267c	1063f2733	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager initWithPublisherDataSource:config:]	
+1063f2734	1063f28a7	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager queueAdRequests:]	
+1063f28a8	1063f28d3	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager registerAdRequestResponse:]	
+1063f28d4	1063f28ff	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager registerViewedAd:]	
+1063f2900	1063f292b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager registerRemovedAd:]	
+1063f292c	1063f2a0b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _updateAdSlotRequestStatus:adRequestClientId:]	
+1063f2a0c	1063f2aeb	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _updateAdSlotViewStatus:adRequestClientId:]	
+1063f2aec	1063f2bcf	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _sortedAdSlots]	
+1063f2bd0	1063f2c6b	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _balanceBuffers]	
+1063f2c6c	1063f2d17	decompiled	chunks/006/functions-000430.c		
+1063f2d18	1063f2d77	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _lastUserViewedAdSlotIdx]	
+1063f2d78	1063f2e0b	decompiled	chunks/006/functions-000430.c		
+1063f2e0c	1063f302f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _dispatchMediaRequests:]	
+1063f3030	1063f305f	decompiled	chunks/006/functions-000430.c		
+1063f3060	1063f3283	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager _dispatchAdRequests:]	
+1063f3284	1063f32b3	decompiled	chunks/006/functions-000430.c		
+1063f32b4	1063f32bb	decompiled	chunks/006/functions-000430.c		
+1063f32bc	1063f32d3	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager dataSourceTarget]	
+1063f32d4	1063f32db	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager config]	
+1063f32dc	1063f32e7	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager adRequestClientIdToAdSlot]	
+1063f32e8	1063f331f	decompiled	chunks/006/functions-000430.c	-[SCAdPublisherRequestManager .cxx_destruct]	
+1063f3320	1063f332b	decompiled	chunks/006/functions-000430.c	+[SCPublisherAdDataSource announcerIdentifier]	
+1063f332c	1063f333b	decompiled	chunks/006/functions-000430.c	-[SCPublisherAdDataSource addListener:]	
+1063f333c	1063f334b	decompiled	chunks/006/functions-000430.c	-[SCPublisherAdDataSource removeListener:]	
+1063f334c	1063f335b	decompiled	chunks/006/functions-000430.c	-[SCPublisherAdDataSource didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+1063f335c	1063f34bb	decompiled	chunks/006/functions-000430.c	-[SCPublisherAdDataSource initWithDependencies:pendingDisplayAdData:adMediaManager:adPreparationManager:]	
+1063f34bc	1063f3637	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource startViewingPlaylistItemGroup:previousItemGroup:currentItem:]	
+1063f3638	1063f3ae3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource startViewingPlaylistItem:page:]	
+1063f3ae4	1063f3b2f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _removeAdItem:]	
+1063f3b30	1063f3bd3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource stopViewingPlaylistItemId:isViewingLongform:]	
+1063f3bd4	1063f3c2b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource stopViewingPlaylistItemGroupId:]	
+1063f3c2c	1063f3c2f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource stopViewingOptOutInterstitialForPlaylistItemGroup:]	
+1063f3c30	1063f3c33	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource startViewingPlaylistChapterId:currentItem:]	
+1063f3c34	1063f3c3b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource needToPrepareMediaBeforeDisplay]	
+1063f3c3c	1063f3daf	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource dataModelFor:]	
+1063f3db0	1063f41e7	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource extraPagePropertiesForDataModel:]	
+1063f41e8	1063f49b3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource pageDataForDataModel:completion:]	
+1063f49b4	1063f4b77	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource isInsertedAdItemId:]	
+1063f4b78	1063f4c27	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource isNofillUnskippableAdItemId:]	
+1063f4c28	1063f4cc7	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adProductTypeForItem:]	
+1063f4cc8	1063f4d73	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adSnapViewLogParametersForSkippedAdItemId:aroundItem:pageLeft:]	
+1063f4d74	1063f4ea3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adViewContextForGroupId:]	
+1063f4ea4	1063f4ff3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adViewContextForItem:]	
+1063f4ff4	1063f507f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource editionEntrySnapIndexForItem:]	
+1063f5080	1063f5153	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource isAdContentLoopingForDataModel:]	
+1063f5154	1063f520f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource mediaLoadContexts]	
+1063f5210	1063f523b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adProductType]	
+1063f523c	1063f53af	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource adOrganicSignals]	
+1063f53b0	1063f545b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource upcomingStoriesContext]	
+1063f545c	1063f5523	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource resetInsertionData]	
+1063f5524	1063f552b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource shouldInsertPlaylistItem]	
+1063f552c	1063f5533	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource shouldInsertPlaylistItemGroup]	
+1063f5534	1063f56af	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource unviewedAds]	
+1063f56b0	1063f5797	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource makeBatchAdRequests:]	
+1063f5798	1063f57af	decompiled	chunks/006/functions-000431.c		
+1063f57b0	1063f594b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource makeMediaRequest:]	
+1063f594c	1063f598f	decompiled	chunks/006/functions-000431.c		
+1063f5990	1063f5b3f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _adItemForItemId:group:]	
+1063f5b40	1063f5bcf	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _previousItemInGroupForItem:group:]	
+1063f5bd0	1063f5e17	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _prepareAdForPublisher:group:entryItem:]	
+1063f5e18	1063f6057	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _processGroupAfterDeltaFetch:publisherDataModel:]	
+1063f6058	1063f656f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _progressGroup:publisherDataModel:newAdRequestClientIds:newAdRequestClientIdToPlacementMap:]	
+1063f6570	1063f66a3	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _queueAdRequests:adRequestClientIdToTargetingMap:publisherDataModel:]	
+1063f66a4	1063f6727	decompiled	chunks/006/functions-000431.c		
+1063f6728	1063f6eeb	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _makeAdRequests:adRequestClientIdToTargetingMap:publisherDataModel:]	
+1063f6eec	1063f6fa7	decompiled	chunks/006/functions-000431.c		
+1063f6fa8	1063f6fdb	decompiled	chunks/006/functions-000431.c		
+1063f6fdc	1063f7097	decompiled	chunks/006/functions-000431.c		
+1063f7098	1063f70cb	decompiled	chunks/006/functions-000431.c		
+1063f70cc	1063f7243	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _handleSuccessAdResponseList:]	
+1063f7244	1063f78fb	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _handleSuccessAdResponse:playlistItemId:]	
+1063f78fc	1063f79ff	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _registerAdResponse:playlistItemId:]	
+1063f7a00	1063f7b23	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _handleErrorAdResponseList:]	
+1063f7b24	1063f7b2b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _handleErrorAdResponse:playlistItemId:]	
+1063f7b2c	1063f7b9b	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _handleMediaFetchResult:playlistItemId:]	
+1063f7b9c	1063f7ceb	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _removeAdPlaylistItem:]	
+1063f7cec	1063f7d93	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _requestManagerForAdRequestClientId:]	
+1063f7d94	1063f7e9f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource _createRequestManagerForPlaylistGroupIdIfNeeded:]	
+1063f7ea0	1063f7f9f	decompiled	chunks/006/functions-000431.c	-[SCPublisherAdDataSource .cxx_destruct]	
+1063f7fa0	1063f8047	decompiled	chunks/006/functions-000431.c		
+1063f8048	1063f80e3	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot initWithRequest:requestStatus:viewStatus:adSlotIdx:]	
+1063f80e4	1063f8107	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot copyWithZone:]	
+1063f8108	1063f8183	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot hash]	
+1063f8184	1063f8243	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot isEqual:]	
+1063f8244	1063f824b	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot request]	
+1063f824c	1063f8253	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot requestStatus]	
+1063f8254	1063f825b	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot viewStatus]	
+1063f825c	1063f8263	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot adSlotIdx]	
+1063f8264	1063f826f	decompiled	chunks/006/functions-000431.c	-[PublisherAdSlot .cxx_destruct]	
+1063f8270	1063f8def	decompiled	chunks/006/functions-000431.c		
+1063f8df0	1063f8f53	decompiled	chunks/006/functions-000431.c		
+1063f8f54	1063f9be3	decompiled	chunks/006/functions-000431.c		
+1063f9be4	1063f9ea7	decompiled	chunks/006/functions-000431.c		
+1063f9ea8	1063f9f47	decompiled	chunks/006/functions-000431.c		
+1063f9f48	1063fa06b	decompiled	chunks/006/functions-000431.c		
+1063fa06c	1063fa1ab	decompiled	chunks/006/functions-000431.c		
+1063fa1ac	1063fa36f	decompiled	chunks/006/functions-000431.c		
+1063fa370	1063fa50b	decompiled	chunks/006/functions-000431.c		
+1063fa50c	1063fa807	decompiled	chunks/006/functions-000431.c		
+1063fa808	1063fa913	decompiled	chunks/006/functions-000431.c		
+1063fa914	1063faab3	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource initWithDependencies:pendingDisplayAdData:clearConversationActionHandler:messagingExperimentService:friendsFeedLifecyleListener:applicationLifecycleEvents:userId:]	
+1063faab4	1063fabd7	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource setPlaylistItemController:]	
+1063fabd8	1063fac6f	decompiled	chunks/006/functions-000431.c		
+1063fac70	1063fac77	decompiled	chunks/006/functions-000431.c		
+1063fac78	1063fad33	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource mediaLoadContexts]	
+1063fad34	1063faddf	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _fetchMedia:]	
+1063fade0	1063fb077	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _fetchMedia:index:videoFetchCompletionBlock:]	
+1063fb078	1063fb0ef	decompiled	chunks/006/functions-000431.c		
+1063fb0f0	1063fb10b	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _shouldForceFullDownload]	
+1063fb10c	1063fb387	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource pageDataForDataModel:completion:]	
+1063fb388	1063fb3f7	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource adProductType]	
+1063fb3f8	1063fb4af	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource hideAdWithItem:]	
+1063fb4b0	1063fb787	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _handleMediaFetchResult:adSnap:profileInfo:videoFetchCompletionBlock:]	
+1063fb788	1063fb7db	decompiled	chunks/006/functions-000431.c		
+1063fb7dc	1063fb853	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _didFinishPreparingAdMediaWithDataModel:videoFetchCompletionBlock:]	
+1063fb854	1063fb94f	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _setUpApplicationLifecycleEventHandling]	
+1063fb950	1063fb97b	decompiled	chunks/006/functions-000431.c		
+1063fb97c	1063fba4b	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _appDidEnterBackground]	
+1063fba4c	1063fbb93	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _listenToFeedLifecycleUpdates]	
+1063fbb94	1063fbc43	decompiled	chunks/006/functions-000431.c		
+1063fbc44	1063fbc6f	decompiled	chunks/006/functions-000431.c		
+1063fbc70	1063fbcff	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource _onFeedDidFullyDisappear]	
+1063fbd00	1063fbd6f	decompiled	chunks/006/functions-000431.c	-[SCAdChatFeedDataSource .cxx_destruct]	
+1063fbd70	1063fbe1b	decompiled	chunks/006/functions-000431.c	-[SCAdCrossInventoryRuleTracker init]	
+1063fbe1c	1063fbf6f	decompiled	chunks/006/functions-000431.c	-[SCAdCrossInventoryRuleTracker registeredEventsForOperaSession]	
+1063fbf70	1063fc587	decompiled	chunks/006/functions-000431.c	-[SCAdCrossInventoryRuleTracker operaViewDidSendEvent:page:params:]	
+1063fc588	1063fc5db	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker shouldEvaluate:]	
+1063fc5dc	1063fc5e3	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker storiesViewed]	
+1063fc5e4	1063fc5eb	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker snapsViewed]	
+1063fc5ec	1063fc617	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker timeViewedSeconds]	
+1063fc618	1063fc7f3	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _startViewingItemFromEvent:page:]	
+1063fc7f4	1063fc803	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _incrementStoriesViewed]	
+1063fc804	1063fc813	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _incrementSnapsViewed]	
+1063fc814	1063fc81b	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _startSessionAdTimer]	
+1063fc81c	1063fc823	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _stopSessionAdTimer]	
+1063fc824	1063fc82f	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker _reset]	
+1063fc830	1063fc847	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker playlistItemController]	
+1063fc848	1063fc853	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker setPlaylistItemController:]	
+1063fc854	1063fc86b	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker operaControlling]	
+1063fc86c	1063fc877	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker setOperaControlling:]	
+1063fc878	1063fc8cf	decompiled	chunks/006/functions-000432.c	-[SCAdCrossInventoryRuleTracker .cxx_destruct]	
+1063fc8d0	1063fc8db	decompiled	chunks/006/functions-000432.c		
+1063fc8dc	1063fcaa3	decompiled	chunks/006/functions-000432.c		
+1063fcaa4	1063fcb03	decompiled	chunks/006/functions-000432.c		
+1063fcb04	1063fcbcf	decompiled	chunks/006/functions-000432.c		
+1063fcbd0	1063fd367	decompiled	chunks/006/functions-000432.c		
+1063fd368	1063fd407	decompiled	chunks/006/functions-000432.c		
+1063fd408	1063fd90b	decompiled	chunks/006/functions-000432.c		
+1063fd90c	1063fdab3	decompiled	chunks/006/functions-000432.c		
+1063fdab4	1063fdb37	decompiled	chunks/006/functions-000432.c		
+1063fdb38	1063fdc0f	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint initWithTriggeringRadius:identifier:index:isDynamicInsertionTriggerPoint:adConfigProvider:]	
+1063fdc10	1063fdef3	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint shouldTriggerForPlaybackInfo:]	
+1063fdef4	1063fdef7	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint willTriggerForPlaybackInfo:]	
+1063fdef8	1063fdefb	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint didTriggerForPlaybackInfo:]	
+1063fdefc	1063fdf23	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint triggerPointID]	
+1063fdf24	1063fe06b	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint updateTriggerPointList:]	
+1063fe06c	1063fe073	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint updateIsNoFill:]	
+1063fe074	1063fe153	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint _closestTriggerPointPriorToTimestamp:]	
+1063fe154	1063fe2af	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint _closestTriggerPointNextToTimestamp:]	
+1063fe2b0	1063fe2b7	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint identifier]	
+1063fe2b8	1063fe2bf	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint triggeringRadius]	
+1063fe2c0	1063fe2c7	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint index]	
+1063fe2c8	1063fe2df	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint delegate]	
+1063fe2e0	1063fe2eb	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint setDelegate:]	
+1063fe2ec	1063fe32f	decompiled	chunks/006/functions-000432.c	-[SCAdMidrollTriggerPoint .cxx_destruct]	
+1063fe330	1063fe3eb	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker initWithAdConfigProvider:adInsertionMetricsManaging:crossInventoryInsertionRuleTracker:]	
+1063fe3ec	1063fe533	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker initWithAdConfigProvider:adInsertionMetricsManaging:crossInventoryInsertionRuleTracker:timeSinceLastAdInCurrentLongform:timeSinceCurrentLongformStart:]	
+1063fe534	1063fe563	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker updateInsertionRuleConfiguration:]	
+1063fe564	1063fe5a3	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker reset]	
+1063fe5a4	1063fe5ab	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker didHitNoFillAd]	
+1063fe5ac	1063fe687	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker didEndViewingAdWithSnapIndex:]	
+1063fe688	1063fe6ff	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker didStartViewingLongformWithLongformId:duration:snapsCount:firstSnapIndex:]	
+1063fe700	1063fe993	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker triggerPointMeetInsertionRule:triggerPointSnapIndex:isOptionalAdSlot:timestamp:adResponse:adIndexPos:]	
+1063fe994	1063fe9f3	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker timeGapFromNextAdInSec]	
+1063fe9f4	1063fea5f	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker snapsViewedSinceLastAdForTriggerPointSnapIndex:]	
+1063fea60	1063fea97	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker timeViewedSecondsSinceLastAd]	
+1063fea98	1063feb0f	decompiled	chunks/006/functions-000432.c	-[SCLongformAdInsertionRuleTracker .cxx_destruct]	
+1063feb10	1063feb17	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource initWithDependencies:]	
+1063feb18	1063fee83	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource initWithDependencies:pendingDisplayAdData:]	
+1063fee84	1063ff0eb	decompiled	chunks/006/functions-000432.c		
+1063ff0ec	1063ff5e7	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource initWithDependencies:pendingDisplayAdData:adMediaManager:adPreparationManager:]	
+1063ff5e8	1063ff5eb	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource updateCachedInsertionConfigIfNeeded]	
+1063ff5ec	1063ff9ab	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource teardown]	
+1063ff9ac	1063ff9b3	decompiled	chunks/006/functions-000432.c		
+1063ff9b4	1063ffa3f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource dataModelFor:]	
+1063ffa40	1063ffb27	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource insertEndCardForPrimaryGroupId:]	
+1063ffb28	1063ffe33	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _insertEndCardForPrimaryGroupId:adData:]	
+1063ffe34	1063ffebf	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource dataModelForGroup:]	
+1063ffec0	1063fff87	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource canResolvePlaylistItemGroupDataModel:]	
+1063fff88	106400063	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource playlistItemGroupModelForDataModel:]	
+106400064	10640006b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource needToPrepareMediaBeforeDisplay]	
+10640006c	10640044f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource resolvePlaylistItemGroupWithMutator:]	
+106400450	106400453	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource postResolvePlaylistItemGroupWithResolver:]	
+106400454	106400457	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource loadMediaForPlaylistItemGroup:]	
+106400458	10640089f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource pageDataForDataModel:completion:]	
+1064008a0	106400a2b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _pageDataPreservingSingleSnapPlayerIfNeeded:forItemId:]	
+106400a2c	106400aff	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _isSingleSnapPlayerPreservationEnabled]	
+106400b00	106401063	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _operaPageDataForAdSnap:adResponse:adPod:dataModel:webViewAdPrefetchHints:contextSessionId:indexCookieName:]	
+106401064	1064011a7	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource profileInfoForItem:]	
+1064011a8	106401423	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource prepareProfileIconForItem:completion:]	
+106401424	10640142f	decompiled	chunks/006/functions-000432.c		
+106401430	10640161b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource removeProfileIconForItem:]	
+10640161c	1064018df	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource prepareMediaForItem:startWaitingForDownloadCallback:completion:]	
+1064018e0	106401953	decompiled	chunks/006/functions-000432.c		
+106401954	106401b77	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource removeMediaForItem:]	
+106401b78	106401bd3	decompiled	chunks/006/functions-000432.c		
+106401bd4	106401d2b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource preparedMediaForAdSnap:]	
+106401d2c	106401d37	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource extraPagePropertiesForDataModel:]	
+106401d38	106401e7f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource extraTopPageBasePropertiesForDataModel:]	
+106401e80	106401f87	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource isAdContentLoopingForDataModel:]	
+106401f88	106401ff7	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource didCompleteFetchingAdResponse:]	
+106401ff8	1064020ef	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _prefetchOrganicEngagementForAdResponse:]	
+1064020f0	106402153	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource didCompleteFetchingAdPod:adResponse:]	
+106402154	10640215b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource adOrganicSignals]	
+10640215c	106402163	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource brandSafetyInventoryType]	
+106402164	10640216b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource upcomingStoriesContext]	
+10640216c	10640216f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource adRequestId]	
+106402170	106402177	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource targetingParameters]	
+106402178	10640217f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource adProductType]	
+106402180	106402187	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource isLongformShowAd]	
+106402188	10640218f	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource shouldCachePendingAdAfterTearDown]	
+106402190	10640220b	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource adsPreferences]	
+10640220c	1064022d7	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource adServeLoggingContext]	
+1064022d8	1064022e3	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource mediaLoadContexts]	
+1064022e4	1064022eb	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource storyAdMediaLoadStatusSnapCount]	
+1064022ec	1064022ef	decompiled	chunks/006/functions-000432.c	-[SCAdDataSource _requiredSnapCountForAdResponse:]	
+1064022f0	10640245f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource userDidTapLoadingErrorCta:]	
+106402460	1064024db	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isInsertedAdItemId:]	
+1064024dc	106402557	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isInsertedAdGroup:]	
+106402558	10640263b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isSkippedAdItemId:]	
+10640263c	106402753	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource resetInsertionData]	
+106402754	106402757	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource resetInsertionState]	
+106402758	106402787	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource resetPendingAd]	
+106402788	10640278f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource unviewedAds]	
+106402790	106402797	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isRetryInsertionEnabled]	
+106402798	106402847	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource hasEndCardForAdIdentifier:]	
+106402848	10640295f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource insertPendingAdAfterItem:insertSource:]	
+106402960	1064029db	decompiled	chunks/006/functions-000433.c		
+1064029dc	106402c7b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource insertAdPod:adPlacement:afterItem:insertSource:]	
+106402c7c	106402c8b	decompiled	chunks/006/functions-000433.c		
+106402c8c	106402f43	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _insertPlaylistItems:adPlacement:afterItem:insertSource:]	
+106402f44	106402fc3	decompiled	chunks/006/functions-000433.c		
+106402fc4	106402fd7	decompiled	chunks/006/functions-000433.c		
+106402fd8	106403027	decompiled	chunks/006/functions-000433.c		
+106403028	106403567	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _insertPlaylistItemGroupV2:adPlacement:afterGroup:insertSource:indexOfAdResponse:]	
+106403568	106403793	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _insertPlaylistItemGroups:adPlacement:afterGroup:insertSource:]	
+106403794	1064037ab	decompiled	chunks/006/functions-000433.c		
+1064037ac	10640393b	decompiled	chunks/006/functions-000433.c		
+10640393c	106403c2f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _logAdMediaLoadStatus:adPlacement:]	
+106403c30	106403e5f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _logAdGroupInserted:success:playlistGroup:insertSource:error:]	
+106403e60	1064041e3	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdInserted:insertSource:]	
+1064041e4	1064042db	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdInsertionFailure:playlistError:isMediaReady:]	
+1064042dc	1064042e3	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource shouldInsertPlaylistItem]	
+1064042e4	106404357	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource playlistItemsInsertCount:]	
+106404358	10640435f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource shouldInsertPlaylistItemGroup]	
+106404360	1064044a7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource didFinishViewingAdItemId:isViewingLongform:]	
+1064044a8	1064045af	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isDismissingSessionWithItemId:isViewingLongform:]	
+1064045b0	1064045b7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource initialAdSnapToDisplayForAdDataModel:]	
+1064045b8	10640465b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adSnapIndexForItem:]	
+10640465c	1064047b3	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adPositionForItem:]	
+1064047b4	10640487f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adInsertPositionForItem:]	
+106404880	1064048df	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource snapIndexPosForItem:]	
+1064048e0	1064049ff	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adRequestClientIdForItem:]	
+106404a00	106404a8b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adResponseForItemId:]	
+106404a8c	106404b0b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adResponseForAdRequestClientId:]	
+106404b0c	106404bdb	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adResponseForDataModel:]	
+106404bdc	106404c67	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adPodForAdResponse:]	
+106404c68	106404c6f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isDynamicInsertionEligibleForItem:]	
+106404c70	106405563	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adViewContextForItem:]	
+106405564	106405737	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource skippedAdItemIdsAroundItem:pageLeft:]	
+106405738	106405a3f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adViewContextForSkippedItemId:aroundItem:pageLeft:]	
+106405a40	106405f9f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adViewContextForGroupId:]	
+106405fa0	10640602f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isNofillAdItemId:]	
+106406030	106406037	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isNofillUnskippableAdItemId:]	
+106406038	1064062df	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource _commonAdSnapViewLogParameters:]	
+1064062e0	10640666b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adSnapViewLogParametersForSkippedAdItemId:aroundItem:pageLeft:]	
+10640666c	106406963	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdSkipWithAdItemId:aroundItem:pageLeft:]	
+106406964	106406aab	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource skippedAdGroupIdsAroundGroup:pagedLeft:]	
+106406aac	106406b3b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adRequestClientIdForGroupId:]	
+106406b3c	106406bbb	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adResponseForGroupId:]	
+106406bbc	106406bbf	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adViewContextForSkippedGroupId:]	
+106406bc0	106406c6b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adSnapViewLogParametersForSkippedAdGroupId:aroundGroup:pageLeft:]	
+106406c6c	106406f9f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdSkipWithAdGroupId:aroundGroup:pagedLeft:]	
+106406fa0	10640702f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isNofillAdGroupId:]	
+106407030	1064070f7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource totalTopSnapsMediaDurationInSecForAdGroup:]	
+1064070f8	1064070ff	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adSessionId]	
+106407100	10640722f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource totalAdCountForItem:]	
+106407230	10640729b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adProductTypeForItem:]	
+10640729c	1064072a7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setOperaControlling:]	
+1064072a8	1064072b3	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setPlaylistItemController:]	
+1064072b4	10640732f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource operaConfiguration]	
+106407330	106407473	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource hideAdWithItem:]	
+106407474	1064074e3	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource peekPendingInsertAds]	
+1064074e4	106407717	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource peekPendingInsertAdsForAdPod:]	
+106407718	10640778f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource insertPendingAds]	
+106407790	106407937	decompiled	chunks/006/functions-000433.c		
+106407938	106407987	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource broadcastPlaylistItemView:]	
+106407988	1064079d7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource broadcastPlaylistGroupChange:]	
+1064079d8	106407a27	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource broadcastPendingAdSlotChange:]	
+106407a28	106407b4b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource pendingAdReadyToInsert]	
+106407b4c	106407bf3	decompiled	chunks/006/functions-000433.c		
+106407bf4	106407bfb	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource shouldDelayFiringAdOpportunity]	
+106407bfc	106407e2f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdOpportunityIfNecessary:]	
+106407e30	10640875b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource logAdOpportunity:]	
+10640875c	1064088df	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adPodSessionIdentifier]	
+1064088e0	10640896b	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource updateViewLocation:]	
+10640896c	1064089ab	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource hasInsertedAdsAfterGroups]	
+1064089ac	106408a23	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource insertedAdGroupIdsAfterGroupId:]	
+106408a24	106408b13	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource addInsertedAdGroupId:afterGroupId:]	
+106408b14	106408b6f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource removeInsertedAdGroupIdsAfterGroupId:]	
+106408b70	106408b9f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource removeAllInsertedAdGroupIds]	
+106408ba0	106408c47	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource isSkippedAdGroupId:afterGroupId:]	
+106408c48	106408cbf	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource skippedAdGroupIdsAfterGroupId:]	
+106408cc0	106408daf	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource addSkippedAdGroupId:afterGroupId:]	
+106408db0	106408ddf	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource removeAllSkippedAdGroupIds]	
+106408de0	106408de7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adMediaManager]	
+106408de8	106408e17	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setAdMediaManager:]	
+106408e18	106408e1f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource adOpportunity]	
+106408e20	106408e4f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setAdOpportunity:]	
+106408e50	106408e57	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource playlistItemViewObservable]	
+106408e58	106408e87	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setPlaylistItemViewObservable:]	
+106408e88	106408e8f	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource playlistGroupChangeObservable]	
+106408e90	106408ebf	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setPlaylistGroupChangeObservable:]	
+106408ec0	106408ec7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource pendingAdSlotObservable]	
+106408ec8	106408ef7	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource setPendingAdSlotObservable:]	
+106408ef8	106408eff	decompiled	chunks/006/functions-000433.c	-[SCAdDataSource dependencies]	
+106408f00	106408f17	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource operaControlling]	
+106408f18	106408f2f	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource playlistItemController]	
+106408f30	106408f3b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setOperaConfiguration:]	
+106408f3c	106408f43	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource adPreparationManager]	
+106408f44	106408f4b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource pendingInsertAdPod]	
+106408f4c	106408f7b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setPendingInsertAdPod:]	
+106408f7c	106408f83	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource itemIdsPresentedWithSSP]	
+106408f84	106408f8b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource cachedInsertionConfig]	
+106408f8c	106408fbb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setCachedInsertionConfig:]	
+106408fbc	106408fc3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource adRequestClientIdToAdResponseMap]	
+106408fc4	106408ff3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setAdRequestClientIdToAdResponseMap:]	
+106408ff4	106408ffb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource adResponseIdToAdPod]	
+106408ffc	10640902b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setAdResponseIdToAdPod:]	
+10640902c	106409033	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource groupIdToInsertedAdItemIdsByOrder]	
+106409034	106409063	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setGroupIdToInsertedAdItemIdsByOrder:]	
+106409064	10640906b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource insertedAdGroupIdsByOrder]	
+10640906c	10640909b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setInsertedAdGroupIdsByOrder:]	
+10640909c	1064090a3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource skippedAdAfterGroupIdToAdGroupIdsMap]	
+1064090a4	1064090ab	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource trackedAdRequestClientIds]	
+1064090ac	1064090b3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource insertedAdGroupIdToDataModelMap]	
+1064090b4	1064090e3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setInsertedAdGroupIdToDataModelMap:]	
+1064090e4	1064090eb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource insertedAfterGroupIdToAdGroupIdsMap]	
+1064090ec	1064090f3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource insertedAditemIdToDataModelMap]	
+1064090f4	106409123	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setInsertedAditemIdToDataModelMap:]	
+106409124	10640912b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource skippedAdAfterItemIdToAdItemIdsMap]	
+10640912c	10640915b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setSkippedAdAfterItemIdToAdItemIdsMap:]	
+10640915c	106409163	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource currentAdPlacement]	
+106409164	106409193	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setCurrentAdPlacement:]	
+106409194	10640919b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource pixelServeItemSyncManager]	
+10640919c	1064091a3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource delayedAdOpportunities]	
+1064091a4	1064091d3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setDelayedAdOpportunities:]	
+1064091d4	1064091db	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource adRequestClientIdToInsertPositionMap]	
+1064091dc	10640920b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setAdRequestClientIdToInsertPositionMap:]	
+10640920c	106409213	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource adRequestClientIdToDecidingAdjacentOrganicGarmSafety]	
+106409214	106409243	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource setAdRequestClientIdToDecidingAdjacentOrganicGarmSafety:]	
+106409244	10640939f	decompiled	chunks/006/functions-000434.c	-[SCAdDataSource .cxx_destruct]	
+1064093a0	106409f63	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies initWithOperaSessionId:adBlizzardLogger:initialAd:adTrackerHelper:viewLocation:grapheneRegistry:applicationPreferences:userPreferences:adConfigProvider:adConfigProviderV2:adContentDelivery:adInsertionMetricsManager:mediaFetcher:mediaMetricsManager:adOpportunityLogger:adOpportunityLoggerV2:adPodManager:promotedStoryStateProvider:adProvider:trackMetricsManager:adWebViewPrefetchHintsManager:discoverFeedDataFetcher:onDemandResourceDownloader:p2pDataSource:contentInterstitialRuleTracker:publicStoriesInsertionRuleTracker:crossInventoryInsertionRuleTracker:adPreferencesProvider:publicStoryContentViewHistoryCoordinator:adTracker:notificationPool:operaNavigationStyle:midRollInsertionManager:unskippableAdManager:expandStateManager:networkServices:userSession:mediaCoordinator:playbackAssetRepository:skStoreProductPrefetcher:scAdWebViewPreloadManager:adWebViewAssetPrefetcher:lifecycleWatermarkMetricsManager:audioSession:contextExperimentService:crashLogger:adBrowserLifecycleService:impalaLegacyServices:adsOperaParser:skOverlayPreloader:internalErrorMetricsManager:dpaConfigProvider:promotedStoryLogger:]	
+106409f64	106409fe3	decompiled	chunks/006/functions-000434.c		
+106409fe4	106409feb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies operaSessionId]	
+106409fec	106409ff3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adBlizzardLogger]	
+106409ff4	106409ffb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies initialAd]	
+106409ffc	10640a003	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adTrackerHelper]	
+10640a004	10640a00b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies viewLocation]	
+10640a00c	10640a013	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies setViewLocation:]	
+10640a014	10640a01b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies sspEnabled]	
+10640a01c	10640a023	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies grapheneRegistry]	
+10640a024	10640a02b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies applicationPreferences]	
+10640a02c	10640a033	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies userPreferences]	
+10640a034	10640a03b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adConfigProvider]	
+10640a03c	10640a043	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adConfigProviderV2]	
+10640a044	10640a04b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adContentDelivery]	
+10640a04c	10640a053	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adInsertionMetricsManager]	
+10640a054	10640a05b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies mediaCoordinator]	
+10640a05c	10640a063	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies mediaFetcher]	
+10640a064	10640a06b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies mediaMetricsManager]	
+10640a06c	10640a073	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adOpportunityLogger]	
+10640a074	10640a07b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adOpportunityLoggerV2]	
+10640a07c	10640a083	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adPodManager]	
+10640a084	10640a08b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies promotedStoryStateProvider]	
+10640a08c	10640a093	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adProvider]	
+10640a094	10640a09b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies trackMetricsManager]	
+10640a09c	10640a0a3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adWebViewPrefetchHintsManager]	
+10640a0a4	10640a0ab	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adWebViewPreloadManager]	
+10640a0ac	10640a0b3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adWebViewAssetPrefetcher]	
+10640a0b4	10640a0bb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies discoverFeedDataFetcher]	
+10640a0bc	10640a0c3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies onDemandResourceDownloader]	
+10640a0c4	10640a0cb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies imageDownloader]	
+10640a0cc	10640a0d3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies p2pDataSource]	
+10640a0d4	10640a0db	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies playbackAssetRepository]	
+10640a0dc	10640a0e3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies contentInterstitialRuleTracker]	
+10640a0e4	10640a0eb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies publicStoriesInsertionRuleTracker]	
+10640a0ec	10640a0f3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies crossInventoryInsertionRuleTracker]	
+10640a0f4	10640a0fb	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adPreferencesProvider]	
+10640a0fc	10640a103	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies publicStoryContentViewHistoryCoordinator]	
+10640a104	10640a10b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adTracker]	
+10640a10c	10640a113	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies notificationPool]	
+10640a114	10640a11b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies operaNavigationStyle]	
+10640a11c	10640a123	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies midRollInsertionManager]	
+10640a124	10640a12b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies unskippableAdManager]	
+10640a12c	10640a133	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies expandStateManager]	
+10640a134	10640a13b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies networkServices]	
+10640a13c	10640a143	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies userSession]	
+10640a144	10640a14b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies skStoreProductPrefetcher]	
+10640a14c	10640a153	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies lifecycleWatermarkMetricsManager]	
+10640a154	10640a15b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies audioSession]	
+10640a15c	10640a163	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies contextExperimentService]	
+10640a164	10640a16b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies crashLogger]	
+10640a16c	10640a173	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adBrowserLifecycleService]	
+10640a174	10640a17b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies impalaLegacyServices]	
+10640a17c	10640a183	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies sharedOperaMediaManager]	
+10640a184	10640a18b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adsOperaParser]	
+10640a18c	10640a193	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies skOverlayPreloader]	
+10640a194	10640a19b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies internalErrorMetricsManager]	
+10640a19c	10640a1a3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies adPlaybackConfig]	
+10640a1a4	10640a1d3	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies setAdPlaybackConfig:]	
+10640a1d4	10640a1db	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies friendStoriesDataCoordinator]	
+10640a1dc	10640a20b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies setFriendStoriesDataCoordinator:]	
+10640a20c	10640a213	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies organicEngagementFetcher]	
+10640a214	10640a243	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies setOrganicEngagementFetcher:]	
+10640a244	10640a24b	decompiled	chunks/006/functions-000434.c	-[SCAdDataSourceDependencies dpaConfigProvider]	
+10640a24c	10640a253	decompiled	chunks/006/functions-000435.c	-[SCAdDataSourceDependencies promotedStoryLogger]	
+10640a254	10640a50b	decompiled	chunks/006/functions-000435.c	-[SCAdDataSourceDependencies .cxx_destruct]	
+10640a50c	10640a52b	decompiled	chunks/006/functions-000435.c		
+10640a52c	10640a69f	decompiled	chunks/006/functions-000435.c		
+10640a6a0	10640a74b	decompiled	chunks/006/functions-000435.c		
+10640a74c	10640a91b	decompiled	chunks/006/functions-000435.c		
+10640a91c	10640a933	decompiled	chunks/006/functions-000435.c		
+10640a934	10640a9ab	decompiled	chunks/006/functions-000435.c		
+10640a9ac	10640a9eb	decompiled	chunks/006/functions-000435.c		
+10640a9ec	10640aa6f	decompiled	chunks/006/functions-000435.c		
+10640aa70	10640b153	decompiled	chunks/006/functions-000435.c		
+10640b154	10640b273	decompiled	chunks/006/functions-000435.c		
+10640b274	10640b337	decompiled	chunks/006/functions-000435.c		
+10640b338	10640b4eb	decompiled	chunks/006/functions-000435.c		
+10640b4ec	10640b54b	decompiled	chunks/006/functions-000435.c		
+10640b54c	10640b55b	decompiled	chunks/006/functions-000435.c		
+10640b55c	10640b58b	decompiled	chunks/006/functions-000435.c		
+10640b58c	10640b58f	decompiled	chunks/006/functions-000435.c		
+10640b590	10640b5b7	decompiled	chunks/006/functions-000435.c		
+10640b5b8	10640b8b7	decompiled	chunks/006/functions-000435.c		
+10640b8b8	10640ba1b	decompiled	chunks/006/functions-000435.c		
+10640ba1c	10640bb7b	decompiled	chunks/006/functions-000435.c		
+10640bb7c	10640bc93	decompiled	chunks/006/functions-000435.c		
+10640bc94	10640bd67	decompiled	chunks/006/functions-000435.c		
+10640bd68	10640c3db	decompiled	chunks/006/functions-000435.c		
+10640c3dc	10640c62b	decompiled	chunks/006/functions-000435.c		
+10640c62c	10640c69f	decompiled	chunks/006/functions-000435.c		
+10640c6a0	10640c96f	decompiled	chunks/006/functions-000435.c		
+10640c970	10640c97f	decompiled	chunks/006/functions-000435.c		
+10640c980	10640ca4b	decompiled	chunks/006/functions-000435.c		
+10640ca4c	10640cbf3	decompiled	chunks/006/functions-000435.c		
+10640cbf4	10640d3e3	decompiled	chunks/006/functions-000435.c		
+10640d3e4	10640d4eb	decompiled	chunks/006/functions-000435.c		
+10640d4ec	10640d53b	decompiled	chunks/006/functions-000435.c		
+10640d53c	10640d5cf	decompiled	chunks/006/functions-000435.c		
+10640d5d0	10640d6b7	decompiled	chunks/006/functions-000435.c		
+10640d6b8	10640d7e3	decompiled	chunks/006/functions-000435.c		
+10640d7e4	10640d8e7	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager initWithRuleTrackerFactory:adConfigProvider:crossInventoryInsertionRuleTracker:]	
+10640d8e8	10640da5b	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager subscribeToDatasource:]	
+10640da5c	10640db0f	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager updateCurrentInsertionRuleConfiguration:isFirstSessionAd:adProductType:]	
+10640db10	10640dbdf	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager subscribeToPlaylistGroupChange:]	
+10640dbe0	10640dc27	decompiled	chunks/006/functions-000435.c		
+10640dc28	10640de43	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager playlistGroupOnNext:]	
+10640de44	10640df13	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager subscribeToPendingAdSlotObservable:]	
+10640df14	10640df3f	decompiled	chunks/006/functions-000435.c		
+10640df40	10640df47	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager pendingAdSlotOnNext]	
+10640df48	10640e15b	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager subscribeToPlaylistItemView:]	
+10640e15c	10640e277	decompiled	chunks/006/functions-000435.c		
+10640e278	10640e2bf	decompiled	chunks/006/functions-000435.c		
+10640e2c0	10640e3c7	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager playlistItemViewUniqueFilter:]	
+10640e3c8	10640e447	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager playlistItemViewNonAdFilter:]	
+10640e448	10640e51f	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager playlistItemViewToInsertionOpportunitySwitchMap:]	
+10640e520	10640e587	decompiled	chunks/006/functions-000435.c		
+10640e588	10640e64f	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager _setUpInsertionRetryTimerIfNeededWithObserver:]	
+10640e650	10640e67b	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager insertionOpportunityOnNext:]	
+10640e67c	10640e8cb	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager _attemptInsert:]	
+10640e8cc	10640e997	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager _logInsertionRuleStatusWithAdReady:]	
+10640e998	10640e9a3	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager _currentInsertionRuleTracker]	
+10640e9a4	10640ea23	decompiled	chunks/006/functions-000435.c	-[SCAdMidrollDynamicInsertionManager .cxx_destruct]	
+10640ea24	10640edb3	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager initWithAdPodManager:adProvider:adConfigProvider:adConfigProviderV2:dpaConfigProvider:viewLocation:operaNavigationStyle:mediaFetcher:adMediaManager:adWebViewPrefetchHintsManager:adWebViewAssetPrefetcher:mediaMetricsManager:mediaCoordinator:p2pDataSource:skOverlayPreloader:skOverlayParamsBuilder:watermarkEventsTracker:]	
+10640edb4	10640eed7	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager requestAdWithTargetingParameters:adsPreferences:adProductType:loggingContext:engagement:adOrganicSignals:upcomingStoriesContext:requestTriggerType:brandSafetyInventoryType:willMakeRequest:completionBlock:]	
+10640eed8	10640f163	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager requestAdWithTargetingParameters:adsPreferences:adProductType:loggingContext:engagement:adOrganicSignals:upcomingStoriesContext:unviewedEligibleStoryCount:requestTriggerType:brandSafetyInventoryType:willMakeRequest:completionBlock:]	
+10640f164	10640f6cb	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _fetchAdsWithTargetingParameters:adsPreferences:adProductType:loggingContext:engagement:adOrganicSignals:upcomingStoriesContext:unviewedEligibleStoryCount:requestTriggerType:brandSafetyInventoryType:willMakeRequest:completionBlock:]	
+10640f6cc	10640f7a7	decompiled	chunks/006/functions-000435.c		
+10640f7a8	10640f80f	decompiled	chunks/006/functions-000435.c		
+10640f810	10640f8e3	decompiled	chunks/006/functions-000435.c		
+10640f8e4	10640f93b	decompiled	chunks/006/functions-000435.c		
+10640f93c	10640fa0f	decompiled	chunks/006/functions-000435.c		
+10640fa10	10640fa6f	decompiled	chunks/006/functions-000435.c		
+10640fa70	10640fb43	decompiled	chunks/006/functions-000435.c		
+10640fb44	10640fb9b	decompiled	chunks/006/functions-000435.c		
+10640fb9c	10640fd3f	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _onAdTransformComplete:]	
+10640fd40	10640fddf	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _onAdPodTransformComplete:error:]	
+10640fde0	10640ffd7	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _createPendingAdPodWithAdResponses:identifier:error:cacheUnusedAds:]	
+10640ffd8	10641007b	decompiled	chunks/006/functions-000435.c		
+10641007c	1064100cf	decompiled	chunks/006/functions-000435.c		
+1064100d0	106410243	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _validAdResponsesFromAdResponses:unviewedAdResponses:]	
+106410244	1064102bf	decompiled	chunks/006/functions-000435.c		
+1064102c0	1064102ff	decompiled	chunks/006/functions-000435.c		
+106410300	1064104fb	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _onAdPodsTransformComplete:needRefresh:error:]	
+1064104fc	106410747	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _createValidAdPodsWith:error:cacheUnusedAds:]	
+106410748	1064107cb	decompiled	chunks/006/functions-000435.c		
+1064107cc	10641081f	decompiled	chunks/006/functions-000435.c		
+106410820	1064108f7	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _getSmartAdPodForOrganicGarmBrandSafety:]	
+1064108f8	1064109af	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager replacePendingInsertAdPodForOrganicGarmBrandSafety:adInsertionMetricsManager:adProductType:]	
+1064109b0	106410b4b	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager reusePendingAdPod:]	
+106410b4c	10641109f	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager fetchMediaForPendingInsertAdWithSnapCount:mediaLoadContexts:playbackConfig:didDispatchAllFetches:completion:]	
+1064110a0	1064110b7	decompiled	chunks/006/functions-000435.c		
+1064110b8	106411197	decompiled	chunks/006/functions-000435.c		
+106411198	1064111f7	decompiled	chunks/006/functions-000435.c		
+1064111f8	10641124b	decompiled	chunks/006/functions-000435.c		
+10641124c	10641131f	decompiled	chunks/006/functions-000435.c		
+106411320	106411367	decompiled	chunks/006/functions-000435.c		
+106411368	10641141b	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager fetchMediaForAdDataModel:mediaLoadContexts:playbackConfig:completion:]	
+10641141c	106411983	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _fetchMediaForAdDataModel:mediaLoadContexts:playbackConfig:snapCount:completion:]	
+106411984	1064119c7	decompiled	chunks/006/functions-000435.c		
+1064119c8	106411b9f	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager _preloadSKOverlayForAd:adSnap:playbackConfig:mediaFetchGroup:]	
+106411ba0	106411ba7	decompiled	chunks/006/functions-000435.c		
+106411ba8	106411c27	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager currentPendingPodFirstAdLoadStatusWithSnapCount:]	
+106411c28	106411d5f	decompiled	chunks/006/functions-000435.c	-[SCAdPreparationManager dataModelLoadStatus:adData:snapCount:]	
+106411d60	106411f1b	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager loadStatusForDataModel:snapCount:]	
+106411f1c	106412207	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager _loadStatusForDataModel:snapCount:]	
+106412208	10641232b	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager setPendingInsertAdPod:]	
+10641232c	106412343	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager delegate]	
+106412344	10641234f	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager setDelegate:]	
+106412350	106412357	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager currentAdPlacement]	
+106412358	106412387	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager setCurrentAdPlacement:]	
+106412388	10641238f	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager pendingInsertAdPod]	
+106412390	106412397	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager brandSafetyInsertAdPods]	
+106412398	1064123c7	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager setBrandSafetyInsertAdPods:]	
+1064123c8	1064123cf	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager viewLocation]	
+1064123d0	1064123d7	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager setViewLocation:]	
+1064123d8	1064124db	decompiled	chunks/006/functions-000436.c	-[SCAdPreparationManager .cxx_destruct]	
+1064124dc	106412503	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral pendingPageId]	
+106412504	10641259f	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral beginForPage:adIdentifier:]	
+1064125a0	1064125ef	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral appendAction:]	
+1064125f0	1064126b3	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral resolveForOpenedPage:adIdentifier:]	
+1064126b4	1064127c3	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral commit]	
+1064127c4	1064127ff	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral _discardPendingExit]	
+106412800	10641283b	decompiled	chunks/006/functions-000436.c	-[SCAdVerticalEndCardExitDeferral .cxx_destruct]	
+10641283c	10641284b	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper endCardIdForPrimaryId:]	
+10641284c	1064128d3	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper endCardIsInjectedInController:primaryId:]	
+1064128d4	106412943	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper pageIsVerticalEndCardPrimary:]	
+106412944	1064129b3	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper pageIsVerticalEndCard:]	
+1064129b4	106412a0f	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper pageIsVerticalEndCardAd:]	
+106412a10	106412a17	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper shouldUseVerticalEndCardForPrimarySnap:]	
+106412a18	106412a97	decompiled	chunks/006/functions-000436.c	+[SCAdVerticalEndCardHelper _pagePropertyBool:key:]	
+106412a98	106412b33	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView initWithIsAd:playlistItemId:playlistItemsRemaining:playlistIdx:]	
+106412b34	106412b57	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView copyWithZone:]	
+106412b58	106412bd3	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView hash]	
+106412bd4	106412c93	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView isEqual:]	
+106412c94	106412c9b	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView isAd]	
+106412c9c	106412ca3	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView playlistItemId]	
+106412ca4	106412cab	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView playlistItemsRemaining]	
+106412cac	106412cb3	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView playlistIdx]	
+106412cb4	106412cbf	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistItemView .cxx_destruct]	
+106412cc0	106412d97	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange initWithPlaylistGroupId:optionalAdSlotIndexes:priorityAdSlotIndexes:]	
+106412d98	106412dbb	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange copyWithZone:]	
+106412dbc	106412dc3	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange playlistGroupId]	
+106412dc4	106412dcb	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange optionalAdSlotIndexes]	
+106412dcc	106412dd3	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange priorityAdSlotIndexes]	
+106412dd4	106412e0f	decompiled	chunks/006/functions-000436.c	-[SCAdPlaylistGroupChange .cxx_destruct]	
+106412e10	106412e57	decompiled	chunks/006/functions-000436.c	-[SCAdSlot initWithLoadStatus:]	
+106412e58	106412e7b	decompiled	chunks/006/functions-000436.c	-[SCAdSlot copyWithZone:]	
+106412e7c	106412e8b	decompiled	chunks/006/functions-000436.c	-[SCAdSlot hash]	
+106412e8c	106412f13	decompiled	chunks/006/functions-000436.c	-[SCAdSlot isEqual:]	
+106412f14	106412f1b	decompiled	chunks/006/functions-000436.c	-[SCAdSlot loadStatus]	
+106412f1c	106412fc7	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest initWithAdRequestClientId:targetingMap:]	
+106412fc8	106412feb	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest copyWithZone:]	
+106412fec	10641305f	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest hash]	
+106413060	106413107	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest isEqual:]	
+106413108	10641310f	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest adRequestClientId]	
+106413110	106413117	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest targetingMap]	
+106413118	106413147	decompiled	chunks/006/functions-000436.c	-[SCAdPublisherRequest .cxx_destruct]	
+106413148	106413467	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager initWithPlaybackAssetRepository:adContentDelivery:promotedStoryStateProvider:adConfigProvider:adConfigProviderV2:adCrashLogger:]	
+106413468	10641368b	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager prepareProfileIcon:mediaId:contexts:completion:]	
+10641368c	10641372f	decompiled	chunks/006/functions-000436.c		
+106413730	106413743	decompiled	chunks/006/functions-000436.c		
+106413744	106413747	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager removeProfileIconForMediaId:]	
+106413748	10641393b	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager prepareToViewAdMedia:profileInfo:mediaId:contexts:forceFullDownload:completion:]	
+10641393c	1064139c7	decompiled	chunks/006/functions-000436.c		
+1064139c8	1064139db	decompiled	chunks/006/functions-000436.c		
+1064139dc	1064139e3	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager preparedAdMediaForMediaId:]	
+1064139e4	106413b63	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _addCacheItems:]	
+106413b64	106413c37	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _removeCacheItemForMediaId:]	
+106413c38	10641407f	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager removePreparedAdMediaForMediaId:]	
+106414080	106414103	decompiled	chunks/006/functions-000436.c		
+106414104	106414173	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager imageForKey:completion:]	
+106414174	106414223	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager imageForKeySync:]	
+106414224	106414273	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager videoAssetFutureForKey:]	
+106414274	1064143f3	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager videoAssetForKey:]	
+1064143f4	106414477	decompiled	chunks/006/functions-000436.c		
+106414478	10641450b	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager resetVideoAssetForKey:]	
+10641450c	10641458f	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager mediaExistInMap:mediaId:]	
+106414590	1064145c3	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager tearDown]	
+1064145c4	10641477f	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _prepareOperaMediaForAdMedia:profileInfo:mediaId:forceFullDownload:contexts:]	
+106414780	10641488f	decompiled	chunks/006/functions-000436.c		
+106414890	106414a1f	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _prepareProfileIconForProfileInfo:mediaId:contexts:]	
+106414a20	106414b2b	decompiled	chunks/006/functions-000436.c		
+106414b2c	106414c7b	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _profileIconDataForProfileInfo:contexts:]	
+106414c7c	106414d3f	decompiled	chunks/006/functions-000436.c		
+106414d40	106414d4b	decompiled	chunks/006/functions-000436.c		
+106414d4c	106414edb	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _mediaContentForAdMedia:profileInfo:mediaId:contexts:]	
+106414edc	106414f97	decompiled	chunks/006/functions-000436.c		
+106414f98	106414fa3	decompiled	chunks/006/functions-000436.c		
+106414fa4	106415153	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _retrieveContentForAdMedia:prefetchDurationMs:profileInfo:mediaId:contexts:]	
+106415154	106415213	decompiled	chunks/006/functions-000436.c		
+106415214	10641521f	decompiled	chunks/006/functions-000436.c		
+106415220	1064152ef	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _prefetchAdMedia:prefetchDurationMs:profileInfo:mediaId:contexts:completion:]	
+1064152f0	106415507	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _updateCacheWithProfileIcon:profileInfo:mediaId:]	
+106415508	1064155b3	decompiled	chunks/006/functions-000436.c		
+1064155b4	106415b03	decompiled	chunks/006/functions-000436.c	-[SCAdOperaMediaManager _updateCacheWithMediaContent:mediaId:forceFullDownload:profileInfo:]	
+106415b04	1064160eb	decompiled	chunks/006/functions-000436.c		
+1064160ec	106416193	decompiled	chunks/006/functions-000436.c		
+106416194	10641626b	decompiled	chunks/006/functions-000436.c		
+10641626c	10641628f	decompiled	chunks/006/functions-000436.c		
+106416290	106416293	decompiled	chunks/006/functions-000436.c		
+106416294	1064164a3	decompiled	chunks/006/functions-000436.c		
+1064164a4	1064166e3	decompiled	chunks/006/functions-000436.c		
+1064166e4	10641679b	decompiled	chunks/006/functions-000436.c		
+10641679c	1064167a7	decompiled	chunks/006/functions-000437.c	-[SCAdOperaMediaManager didReceiveMediaServicesWereLostNotification]	
+1064167a8	1064167fb	decompiled	chunks/006/functions-000437.c	-[SCAdOperaMediaManager didReceiveMediaServicesWereResetNotification]	
+1064167fc	1064168bb	decompiled	chunks/006/functions-000437.c	-[SCAdOperaMediaManager .cxx_destruct]	
+1064168bc	106416923	decompiled	chunks/006/functions-000437.c	+[SCAdsAdRequestNotFullyViewedStoriesContextConfig descriptor]	
+106416924	10641699f	decompiled	chunks/006/functions-000437.c	+[SCAdsAdRequestNotFullyViewedStoriesContextConfig_PostRoll descriptor]	
+1064169a0	106416b57	decompiled	chunks/006/functions-000437.c		
+106416b58	106416b7f	decompiled	chunks/006/functions-000437.c		
+106416b80	106416d27	decompiled	chunks/006/functions-000437.c		
+106416d28	106416d67	decompiled	chunks/006/functions-000437.c		
+106416d68	106416e17	decompiled	chunks/006/functions-000437.c		
+106416e18	106416eb3	decompiled	chunks/006/functions-000437.c		
+106416eb4	106416fbb	decompiled	chunks/006/functions-000437.c		
+106416fbc	10641701b	decompiled	chunks/006/functions-000437.c		
+10641701c	106417123	decompiled	chunks/006/functions-000437.c		
+106417124	10641719f	decompiled	chunks/006/functions-000437.c		
+1064171a0	106417383	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingImpl initWithGrapheneRegistry:adViewingHistory:blizzardLogger:adConfigProvider:flipper:]	
+106417384	10641745b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingImpl logAdOpportunity:]	
+10641745c	10641748f	decompiled	chunks/006/functions-000437.c		
+106417490	1064185a7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingImpl _logAdOpportunity:]	
+1064185a8	1064185eb	decompiled	chunks/006/functions-000437.c		
+1064185ec	10641870b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingImpl _logEventWithAdViewedCount:blizzardEvent:grapheneMetrics:]	
+10641870c	106418783	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingImpl .cxx_destruct]	
+106418784	106418a6b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl initWithBlizzardLogger:timeProvider:adConfigProviderV2:applicationLifecycleEvents:grapheneRegistry:opportunityNonFatalReporter:]	
+106418a6c	106418a97	decompiled	chunks/006/functions-000437.c		
+106418a98	106418b6f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onSessionStart:]	
+106418b70	106418ba3	decompiled	chunks/006/functions-000437.c		
+106418ba4	106418c93	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onAdRequestStart:storySessionId:viewLocation:]	
+106418c94	106418ccb	decompiled	chunks/006/functions-000437.c		
+106418ccc	106418dbb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onAdRequestFinish:adResponse:viewLocation:]	
+106418dbc	106418df3	decompiled	chunks/006/functions-000437.c		
+106418df4	106418eab	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onAdMediaDownloadStart:]	
+106418eac	106418edf	decompiled	chunks/006/functions-000437.c		
+106418ee0	106418f97	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onAdMediaDownloadFinish:]	
+106418f98	106418fcb	decompiled	chunks/006/functions-000437.c		
+106418fcc	1064190c3	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onPagedToNextUnviewedStory:adOpportunityMissType:isFromAd:isToAd:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+1064190c4	106419107	decompiled	chunks/006/functions-000437.c		
+106419108	1064191eb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onMidRollSlotEnter:adOpportunityMissType:isToAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+1064191ec	10641922b	decompiled	chunks/006/functions-000437.c		
+10641922c	1064192e3	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onMidRollGroupBoundary:]	
+1064192e4	106419317	decompiled	chunks/006/functions-000437.c		
+106419318	1064193d7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onIsBrandSafeSlot:adProductType:]	
+1064193d8	10641940f	decompiled	chunks/006/functions-000437.c		
+106419410	1064194c7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onInsertionRulesSatisfied:]	
+1064194c8	1064194fb	decompiled	chunks/006/functions-000437.c		
+1064194fc	1064195fb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onInsertionRuleEvaluation:isSatisfied:storyThreshold:snapThreshold:timeThresholdMillis:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+1064195fc	106419643	decompiled	chunks/006/functions-000437.c		
+106419644	1064196ff	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onTryInsertionStarted:adOpportunityMissType:]	
+106419700	106419733	decompiled	chunks/006/functions-000437.c		
+106419734	1064197eb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onInsertionInProgress:]	
+1064197ec	10641981f	decompiled	chunks/006/functions-000437.c		
+106419820	1064198df	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onInsertionFinished:isSuccessful:]	
+1064198e0	106419917	decompiled	chunks/006/functions-000437.c		
+106419918	1064199bf	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl onViewingSessionClosed]	
+1064199c0	1064199eb	decompiled	chunks/006/functions-000437.c		
+1064199ec	106419a2b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onSessionStart:]	
+106419a2c	106419dbf	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onAdRequestStart:storySessionId:viewLocation:]	
+106419dc0	10641a087	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onAdRequestFinish:adResponse:viewLocation:]	
+10641a088	10641a1c7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onAdMediaDownloadStart:]	
+10641a1c8	10641a307	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onAdMediaDownloadFinish:]	
+10641a308	10641a477	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onPagedToNextUnviewedStory:adOpportunityMissType:isFromAd:isToAd:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641a478	10641aa4b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _enterSlotForProductType:adOpportunityMissType:isToAd:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641aa4c	10641aba7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onMidRollSlotEnter:adOpportunityMissType:isToAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641aba8	10641ac43	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onMidRollGroupBoundary:]	
+10641ac44	10641ad57	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onIsBrandSafeSlot:adProductType:]	
+10641ad58	10641ad63	decompiled	chunks/006/functions-000437.c		
+10641ad64	10641ae37	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onInsertionRulesSatisfied:]	
+10641ae38	10641ae43	decompiled	chunks/006/functions-000437.c		
+10641ae44	10641b00f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onInsertionRuleEvaluation:isSatisfied:storyThreshold:snapThreshold:timeThresholdMillis:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641b010	10641b077	decompiled	chunks/006/functions-000437.c		
+10641b078	10641b1df	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onTryInsertionStarted:adOpportunityMissType:]	
+10641b1e0	10641b27f	decompiled	chunks/006/functions-000437.c		
+10641b280	10641b3eb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onInsertionInProgress:]	
+10641b3ec	10641b45b	decompiled	chunks/006/functions-000437.c		
+10641b45c	10641b5e7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onInsertionFinished:isSuccessful:]	
+10641b5e8	10641b657	decompiled	chunks/006/functions-000437.c		
+10641b658	10641b663	decompiled	chunks/006/functions-000437.c		
+10641b664	10641b77f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _onViewingSessionClosed]	
+10641b780	10641c1b7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _sendAdOpportunityEventIfNeeded:]	
+10641c1b8	10641c1d7	decompiled	chunks/006/functions-000437.c		
+10641c1d8	10641c35f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _initState:]	
+10641c360	10641c3b7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _appDidEnterBackground]	
+10641c3b8	10641c3bf	decompiled	chunks/006/functions-000437.c		
+10641c3c0	10641c417	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _getCurrentTimeMillis]	
+10641c418	10641c4f7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _updateAdOpportunityEventHistory:type:]	
+10641c4f8	10641c6f3	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _updateAdSlotEventHistory:type:updateBlock:]	
+10641c6f4	10641c767	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _mergeAdSlotEventHistory:slotEventHistoryList:]	
+10641c768	10641c7fb	decompiled	chunks/006/functions-000437.c		
+10641c7fc	10641c92f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _getAdSlotEventHistoryString:]	
+10641c930	10641c9b3	decompiled	chunks/006/functions-000437.c		
+10641c9b4	10641c9db	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _getAdSlotEventTypeShortName:]	
+10641c9dc	10641ca47	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _logAdOpportunityFunnelEvent:viewLocation:stage:adResponse:]	
+10641ca48	10641cb2f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _logInsertionRuleEvaluationFunnelEvent:viewLocation:adResponse:isSatisfied:storyThreshold:snapThreshold:timeThresholdMillis:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641cb30	10641cbdb	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _logAdOpportunityErrorFunnelEvent:viewLocation:stage:adResponse:error:]	
+10641cbdc	10641cc9f	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _logSlotEnterFunnelEvent:viewLocation:adResponse:isBrandSafe:isAd:storyViewCountSinceLastAd:snapViewCountSinceLastAd:timeViewedMillisSinceLastAd:]	
+10641cca0	10641cff7	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _createAdOpportunityFunnelEvent:viewLocation:adResponse:]	
+10641cff8	10641d393	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl _logAdOpportunityOperationalMetric:adSlotInfo:adResponse:]	
+10641d394	10641d43b	decompiled	chunks/006/functions-000437.c	-[SCAdOpportunityLoggingV2Impl .cxx_destruct]	
+10641d43c	10641d527	decompiled	chunks/006/functions-000437.c		
+10641d528	10641d95b	decompiled	chunks/006/functions-000437.c		
+10641d95c	10641daeb	decompiled	chunks/006/functions-000437.c		
+10641daec	10641dbab	decompiled	chunks/006/functions-000438.c		
+10641dbac	10641dbeb	decompiled	chunks/006/functions-000438.c		
+10641dbec	10641e373	decompiled	chunks/006/functions-000438.c		
+10641e374	10641f06f	decompiled	chunks/006/functions-000438.c		
+10641f070	10641f447	decompiled	chunks/006/functions-000438.c		
+10641f448	10641f513	decompiled	chunks/006/functions-000438.c		
+10641f514	10641f70f	decompiled	chunks/006/functions-000438.c		
+10641f710	10641f9f7	decompiled	chunks/006/functions-000438.c		
+10641f9f8	106421617	decompiled	chunks/006/functions-000438.c		
+106421618	106421647	decompiled	chunks/006/functions-000438.c		
+106421648	10642164b	decompiled	chunks/006/functions-000438.c		
+10642164c	10642167b	decompiled	chunks/006/functions-000438.c		
+10642167c	106421f3f	decompiled	chunks/006/functions-000438.c		
+106421f40	106421f87	decompiled	chunks/006/functions-000438.c		
+106421f88	106422a87	decompiled	chunks/006/functions-000438.c		
+106422a88	106422c0b	decompiled	chunks/006/functions-000438.c		
+106422c0c	106423227	decompiled	chunks/006/functions-000438.c		
+106423228	10642331f	decompiled	chunks/006/functions-000438.c		
+106423320	1064242ff	decompiled	chunks/006/functions-000438.c		
+106424300	10642438b	decompiled	chunks/006/functions-000438.c		
+10642438c	106425103	decompiled	chunks/006/functions-000438.c		
+106425104	10642519b	decompiled	chunks/006/functions-000438.c		
+10642519c	106425beb	decompiled	chunks/006/functions-000438.c		
+106425bec	106425dbf	decompiled	chunks/006/functions-000438.c		
+106425dc0	106425e43	decompiled	chunks/006/functions-000438.c		
+106425e44	106425f3b	decompiled	chunks/006/functions-000438.c		
+106425f3c	10642852b	decompiled	chunks/006/functions-000438.c		
+10642852c	106428843	decompiled	chunks/006/functions-000438.c		
+106428844	106428873	decompiled	chunks/006/functions-000438.c		
+106428874	106428877	decompiled	chunks/006/functions-000438.c		
+106428878	1064288a7	decompiled	chunks/006/functions-000438.c		
+1064288a8	106429037	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult commonPagePropertiesWithCtaType:]	
+106429038	10642a267	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult contextMenuParams:adId:topSnapPageProperties:viewLocation:adConfigProvider:mediaIsReady:contentDeliveryMedia:operaNavigationStyle:ctaType:cardType:isAdPreview:contextSessionId:subscribeStatusHandler:hostAccountUserId:adConfigProviderV2:]	
+10642a268	10642a36f	decompiled	chunks/006/functions-000438.c		
+10642a370	10642a3f7	decompiled	chunks/006/functions-000438.c		
+10642a3f8	10642a49b	decompiled	chunks/006/functions-000438.c		
+10642a49c	10642a5a7	decompiled	chunks/006/functions-000438.c		
+10642a5a8	10642a5bf	decompiled	chunks/006/functions-000438.c		
+10642a5c0	10642a6db	decompiled	chunks/006/functions-000438.c		
+10642a6dc	10642aa5f	decompiled	chunks/006/functions-000438.c		
+10642aa60	10642aaff	decompiled	chunks/006/functions-000438.c		
+10642ab00	10642acab	decompiled	chunks/006/functions-000438.c		
+10642acac	10642accb	decompiled	chunks/006/functions-000438.c		
+10642accc	10642af47	decompiled	chunks/006/functions-000438.c	-[SCAdOperaParserLayersSort sortedLayers]	
+10642af48	10642afeb	decompiled	chunks/006/functions-000438.c	-[SCAdOperaParserLayersSort initWithUnsortedLayers:layersOrder:]	
+10642afec	10642b01b	decompiled	chunks/006/functions-000438.c	-[SCAdOperaParserLayersSort .cxx_destruct]	
+10642b01c	10642b203	decompiled	chunks/006/functions-000438.c		
+10642b204	10642b2df	decompiled	chunks/006/functions-000438.c		
+10642b2e0	10642b4f3	decompiled	chunks/006/functions-000438.c		
+10642b4f4	10642b677	decompiled	chunks/006/functions-000438.c		
+10642b678	10642b8bf	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _attachmentCommonPageProperties:rotationEnabledProperty:]	
+10642b8c0	10642bb6b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _attachmentCollectionPageProperties:]	
+10642bb6c	10642c497	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _attachmentPageProperties:commonPageProperties:]	
+10642c498	10642c7ab	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult attachmentPageProperties:rotationEnabledProperty:ctaType:]	
+10642c7ac	10642c933	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _updateTopSnapPagePropertiesWithFirstFrame:contentDeliveryMedia:topSnap:]	
+10642c934	10642d75b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _updateTopSnapMediaPropertiesForMediaType:affordanceText:ctaType:]	
+10642d75c	10642d823	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _mediaDurationInSeconds]	
+10642d824	10642da93	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _isLooping]	
+10642da94	10642dadb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _playbackOptions]	
+10642dadc	10642de1f	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _singlePlaybackOptions]	
+10642de20	10642e19f	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _loopingPlaybackOptions]	
+10642e1a0	10642e40f	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _topSnapMediaLoadingStatus]	
+10642e410	10642e64b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _updateTopSnapMediaLoadingStatus:]	
+10642e64c	10642f417	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _topSnapPagePropertiesWithPageProperties:ctaType:affordanceText:]	
+10642f418	10642f5c7	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult _contextSubscribeStatusHandlerWithCtaType:]	
+10642f5c8	1064305cf	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult topSnapPagePropertiesWithCommonProperties:ctaType:]	
+1064305d0	106430643	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult initWithMetadata:]	
+106430644	10643079f	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult operaPageData]	
+1064307a0	1064307a7	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult metadata]	
+1064307a8	1064307b3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParseResult .cxx_destruct]	
+1064307b4	106430deb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata initWithAdSnap:adResponse:adPod:mediaManager:commonBasePageProperties:contentDeliveryMedia:isAdContentLooping:topSnapPageBaseProperties:webViewAdPrefetchHints:operaNavigationStyle:viewLocation:configProvider:adConfigProviderV2:onDemandResourceDownloader:preferences:userPreferences:userInfoServices:pixelServeItemSyncManager:adPodManager:contextExperimentService:adBrowserLifecycleService:impalaLegacyServices:contextSessionId:indexCookieName:expandStatus:trackMetricsManager:verticalNavigationSwipeLeftToAttachment:creatorSettingsFetcher:creatorSettingsTracker:adPlaybackConfig:dpaConfigProvider:operaConfigProvider:webBrowsingConfigProvider:playbackSessionId:storiesConfigProvider:]	
+106430dec	106430e5b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata isSpotlightFeed]	
+106430e5c	106430e6b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata isAdPreview]	
+106430e6c	106430e73	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adSnap]	
+106430e74	106430e7b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adResponse]	
+106430e7c	106430e83	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adPod]	
+106430e84	106430e8b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata mediaManager]	
+106430e8c	106430e93	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata commonBasePageProperties]	
+106430e94	106430e9b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata contentDeliveryMedia]	
+106430e9c	106430ea3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata isAdContentLooping]	
+106430ea4	106430eab	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata topSnapPageBaseProperties]	
+106430eac	106430eb3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata webViewAdPrefetchHints]	
+106430eb4	106430ebb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata operaNavigationStyle]	
+106430ebc	106430ec3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata viewLocation]	
+106430ec4	106430ecb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata configProvider]	
+106430ecc	106430ed3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adConfigProviderV2]	
+106430ed4	106430edb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata onDemandResourceDownloader]	
+106430edc	106430ee3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata preferences]	
+106430ee4	106430eeb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata userPreferences]	
+106430eec	106430ef3	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata userInfoServices]	
+106430ef4	106430efb	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata pixelServeItemSyncManager]	
+106430efc	106430f03	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adPodManager]	
+106430f04	106430f0b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata contextExperimentService]	
+106430f0c	106430f13	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata adBrowserLifecycleService]	
+106430f14	106430f1b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata impalaLegacyServices]	
+106430f1c	106430f23	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata contextSessionId]	
+106430f24	106430f2b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata indexCookieName]	
+106430f2c	106430f33	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata trackMetricsManager]	
+106430f34	106430f3b	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata expandStatus]	
+106430f3c	106430f43	decompiled	chunks/006/functions-000438.c	-[SCAdResponseOperaParserMetadata verticalNavigationSwipeLeftToAttachment]	
+106430f44	106430f4b	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata creatorSettingsFetcher]	
+106430f4c	106430f53	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata creatorSettingsTracker]	
+106430f54	106430f5b	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata adPlaybackConfig]	
+106430f5c	106430f63	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata dpaConfigProvider]	
+106430f64	106430f6b	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata operaConfigProvider]	
+106430f6c	106430f73	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata webBrowsingConfigProvider]	
+106430f74	106430f7b	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata storiesConfigProvider]	
+106430f7c	106430f83	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata playbackSessionId]	
+106430f84	106430f8b	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata organicEngagementFetcher]	
+106430f8c	106430fbb	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata setOrganicEngagementFetcher:]	
+106430fbc	106431147	decompiled	chunks/006/functions-000439.c	-[SCAdResponseOperaParserMetadata .cxx_destruct]	
+106431148	10643123f	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler initWithHostAccountUserId:creatorSettingsFetcher:creatorSettingsTracker:]	
+106431240	10643129f	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+1064312a0	1064312a7	decompiled	chunks/006/functions-000439.c		
+1064312a8	1064312ff	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler fetchIsSubscribed]	
+106431300	10643134f	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler _nextIsSubscribed]	
+106431350	1064313b7	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler isSubscribedUser]	
+1064313b8	1064313ff	decompiled	chunks/006/functions-000439.c	-[SCAdContextSubscribeStatusHandler .cxx_destruct]	
+106431400	106432d83	decompiled	chunks/006/functions-000439.c		
+106432d84	106432f8f	decompiled	chunks/006/functions-000439.c		
+106432f90	1064336d3	decompiled	chunks/006/functions-000439.c		
+1064336d4	1064337fb	decompiled	chunks/006/functions-000439.c		
+1064337fc	106433a77	decompiled	chunks/006/functions-000439.c		
+106433a78	106433c1f	decompiled	chunks/006/functions-000439.c		
+106433c20	106433cbb	decompiled	chunks/006/functions-000439.c		
+106433cbc	106433d0f	decompiled	chunks/006/functions-000439.c		
+106433d10	106433d73	decompiled	chunks/006/functions-000439.c		
+106433d74	106433ea7	decompiled	chunks/006/functions-000439.c		
+106433ea8	106434117	decompiled	chunks/006/functions-000439.c		
+106434118	10643414b	decompiled	chunks/006/functions-000439.c		
+10643414c	1064344cb	decompiled	chunks/006/functions-000439.c		
+1064344cc	10643478f	decompiled	chunks/006/functions-000439.c		
+106434790	106434b47	decompiled	chunks/006/functions-000439.c		
+106434b48	106434c93	decompiled	chunks/006/functions-000439.c		
+106434c94	106434e4f	decompiled	chunks/006/functions-000439.c		
+106434e50	106434f9b	decompiled	chunks/006/functions-000439.c		
+106434f9c	10643503f	decompiled	chunks/006/functions-000439.c		
+106435040	106435267	decompiled	chunks/006/functions-000439.c		
+106435268	10643532b	decompiled	chunks/006/functions-000439.c		
+10643532c	1064353df	decompiled	chunks/006/functions-000439.c		
+1064353e0	10643551b	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager initWithAdConfigProvider:insertionRuleTracker:multiAdPodMetricsManager:]	
+10643551c	10643580b	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager registerAdPod:sessionId:]	
+10643580c	106435887	decompiled	chunks/006/functions-000439.c		
+106435888	106435927	decompiled	chunks/006/functions-000439.c		
+106435928	10643592f	decompiled	chunks/006/functions-000439.c		
+106435930	1064359cf	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager didStartPlayingAd:]	
+1064359d0	106435b0b	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager adPositionForAdResponse:adPod:]	
+106435b0c	106435b47	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager adPodInsertedAdCount:]	
+106435b48	106435d3f	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager adPodTrackInfoForAdResponse:]	
+106435d40	106435d87	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager _filledAdsForAdPod:]	
+106435d88	106435da7	decompiled	chunks/006/functions-000439.c		
+106435da8	106435e73	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager _insertedAdsForAdPod:]	
+106435e74	106435edf	decompiled	chunks/006/functions-000439.c	-[SCAdPodManager .cxx_destruct]	
+106435ee0	1064360db	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager initWithNavigationStyle:adConfigProvider:adConfigProviderV2:circumstanceEngine:adGraphene:adTrackHelper:]	
+1064360dc	1064361b7	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager registerAdPod:insertMechanism:midRollStoryExpansionBlock:identifierForAdSnapBlock:]	
+1064361b8	1064361cb	decompiled	chunks/006/functions-000439.c		
+1064361cc	10643640b	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _registerStoryAdResponse:insertMechanism:midRollStoryExpansionBlock:identifierForAdSnapBlock:]	
+10643640c	106436477	decompiled	chunks/006/functions-000439.c		
+106436478	1064364fb	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager expandStatusForAdSnap:adResponse:]	
+1064364fc	106436653	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager extraPagePropertiesForAdSnap:adResponse:viewLocation:]	
+106436654	1064366eb	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager initialVisibleSnapsCount:]	
+1064366ec	10643677f	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager registeredEventsForOperaSession]	
+106436780	106436a9f	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager operaViewDidSendEvent:page:params:]	
+106436aa0	106436c5f	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _expandMidRollStoryAd:adSnapV2:targetAdSnap:page:]	
+106436c60	106436cc7	decompiled	chunks/006/functions-000439.c		
+106436cc8	106436cd7	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _expandPostRollStoryAd:adSnapV2:targetAdSnap:page:]	
+106436cd8	10643702f	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _navigateToTargetAdSnap:fromAdSnapV2:adDataModel:page:]	
+106437030	106437037	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _trackExpandAdEventForAdClientId:atIndex:]	
+106437038	10643731f	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager _trackExpandMetricWithDataModel:status:errorReason:]	
+106437320	106437337	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager playlistItemController]	
+106437338	106437343	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager setPlaylistItemController:]	
+106437344	10643734b	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager eventAnnouncer]	
+10643734c	10643737b	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager setEventAnnouncer:]	
+10643737c	10643742b	decompiled	chunks/006/functions-000439.c	-[SCStoryAdExpandStateManager .cxx_destruct]	
+10643742c	10643752f	decompiled	chunks/006/functions-000439.c		
+106437530	106437b0f	decompiled	chunks/006/functions-000439.c		
+106437b10	106437e1b	decompiled	chunks/006/functions-000439.c		
+106437e1c	1064382e7	decompiled	chunks/006/functions-000439.c		
+1064382e8	10643860b	decompiled	chunks/006/functions-000439.c	-[PayToPromoteOperaScopedServicesCreator initWithNetworkRequester:circumstanceEngine:bitmojiFriendAvatarProvider:bitmojiAvatarProvider:adConfigProvider:collectionPrefetcher:playableViewModelGenerator:grapheneRegistry:discoverFeedDataMutator:snapchattersDataFetcher:networkConnectivityMonitor:locationProvider:blizzardLogger:adRenderDataParser:]	
+10643860c	1064386f3	decompiled	chunks/006/functions-000439.c	-[PayToPromoteOperaScopedServicesCreator createPayToPromoteOperaScopedServices]	
+1064386f4	106438733	decompiled	chunks/006/functions-000439.c		
+106438734	106438793	decompiled	chunks/006/functions-000439.c	-[PayToPromoteOperaScopedServicesCreator _buildP2pPlugin]	
+106438794	106438853	decompiled	chunks/006/functions-000439.c	-[PayToPromoteOperaScopedServicesCreator .cxx_destruct]	
+106438854	1064389db	decompiled	chunks/006/functions-000439.c		
+1064389dc	106438b23	decompiled	chunks/006/functions-000439.c		
+106438b24	106438d0b	decompiled	chunks/006/functions-000439.c		
+106438d0c	1064390c7	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin initWithNetworkRequester:circumstanceEngine:bitmojiFriendAvatarProvider:bitmojiAvatarProvider:adConfigProvider:collectionPrefetcher:playableViewModelGenerator:grapheneRegistry:discoverFeedDataMutator:snapchattersDataFetcher:networkConnectivityMonitor:locationProvider:blizzardLogger:adRenderDataParser:]	
+1064390c8	1064390d3	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin setPlaylistItemController:]	
+1064390d4	10643918f	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin registeredEventsForOperaSession]	
+106439190	10643930b	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin operaViewDidSendEvent:page:params:]	
+10643930c	10643930f	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin extraPropertiesProvider]	
+106439310	10643957b	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+10643957c	106439953	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin fetchDiscoverStoryWithAdResponse:completion:]	
+106439954	10643997f	decompiled	chunks/006/functions-000439.c		
+106439980	106439a2f	decompiled	chunks/006/functions-000439.c		
+106439a30	106439ddf	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin _didFetchDiscoverStoryMetadataWithStory:error:compositeStoryId:publisherId:startFetchingTimeInSeconds:adResponse:completion:]	
+106439de0	106439e97	decompiled	chunks/006/functions-000439.c		
+106439e98	106439f9b	decompiled	chunks/006/functions-000439.c		
+106439f9c	106439fdb	decompiled	chunks/006/functions-000439.c		
+106439fdc	10643a107	decompiled	chunks/006/functions-000439.c	-[SCPayToPromoteOperaPlugin _didFetchDiscoverStoryMetadataAndMediaWithCompositeStoryId:publisherId:success:adResponse:startFetchingTimeInSeconds:completion:]	
+10643a108	10643a17b	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin dataStatusForPublisherId:editionId:corpus:]	
+10643a17c	10643a26b	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin isDupDiscoverStoryForPublisherId:editionId:corpus:]	
+10643a26c	10643a567	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin insertPromotedPublisherStoryWithPublisherId:editionId:corpus:afterGroup:]	
+10643a568	10643a73b	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin _cleanUpAfterExitingOperaSession]	
+10643a73c	10643a84f	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin _updateLoggingInfoForStory:isPayToPromoteStory:]	
+10643a850	10643a8a3	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin insertedAdResponseForGroupId:]	
+10643a8a4	10643a8db	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin isInsertedGroupWithGroupId:]	
+10643a8dc	10643aa4f	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin _updateFeedTypeForPlayableDataModel:feedType:]	
+10643aa50	10643ab8b	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin _fetchFeedTypeForPlayableDataModel:]	
+10643ab8c	10643ab9f	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin _payToPromoteStoryDiscoverFeedDataStoreFeedType]	
+10643aba0	10643ad23	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin logPayToPromoteRequestError:errorReason:adResponse:storyId:publisherId:startFetchingTimeInSeconds:endFetchingTimeInSeconds:]	
+10643ad24	10643ad2b	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin currentPayToPromoteStoryIsPlaying]	
+10643ad2c	10643ad33	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin setCurrentPayToPromoteStoryIsPlaying:]	
+10643ad34	10643ae43	decompiled	chunks/006/functions-000440.c	-[SCPayToPromoteOperaPlugin .cxx_destruct]	
+10643ae44	10643aefb	decompiled	chunks/006/functions-000440.c	+[SCAdInsertionUtils insertionFailureReasonFromPlaybackError:]	
+10643aefc	10643af03	decompiled	chunks/006/functions-000440.c	-[SCAdPlacement error]	
+10643af04	10643af33	decompiled	chunks/006/functions-000440.c	-[SCAdPlacement setError:]	
+10643af34	10643af3f	decompiled	chunks/006/functions-000440.c	-[SCAdPlacement .cxx_destruct]	
+10643af40	10643b06f	decompiled	chunks/006/functions-000440.c		
+10643b070	10643b12f	decompiled	chunks/006/functions-000440.c		
+10643b130	10643b2ab	decompiled	chunks/006/functions-000440.c		
+10643b2ac	10643b3cf	decompiled	chunks/006/functions-000440.c		
+10643b3d0	10643b3d7	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapAdMediaInfo mediaStartTime]	
+10643b3d8	10643b3df	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapAdMediaInfo setMediaStartTime:]	
+10643b3e0	10643b44b	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager init]	
+10643b44c	10643b453	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager clear]	
+10643b454	10643b5d3	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager didCloseViewForAdRequestClientId:itemId:params:playlistItemController:]	
+10643b5d4	10643b5e3	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager markFullViewForAd:]	
+10643b5e4	10643b62b	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager mediaStartTimeForAd:]	
+10643b62c	10643b737	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager extraPagePropertiesForAdRequestClientId:]	
+10643b738	10643b743	decompiled	chunks/006/functions-000440.c	-[SCAdLongformVideoTopSnapManager .cxx_destruct]	
+10643b744	10643b74b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo isStreamingMedia]	
+10643b74c	10643b753	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo setIsStreamingMedia:]	
+10643b754	10643b75b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo imageKey]	
+10643b75c	10643b763	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo setImageKey:]	
+10643b764	10643b76b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo videoUrl]	
+10643b76c	10643b79b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo setVideoUrl:]	
+10643b79c	10643b7a3	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo mediaStartTime]	
+10643b7a4	10643b7ab	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo setMediaStartTime:]	
+10643b7ac	10643b7b3	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo accumulatedLongformTimeViewedInSec]	
+10643b7b4	10643b7bb	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo setAccumulatedLongformTimeViewedInSec:]	
+10643b7bc	10643b7eb	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdMediaInfo .cxx_destruct]	
+10643b7ec	10643b943	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdManager initWithGrapheneRegistry:timerFactoryBlock:]	
+10643b944	10643b98b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdManager clear]	
+10643b98c	10643ba0b	decompiled	chunks/006/functions-000440.c	-[SCAdUnskippableAdManager trackUnSkippableAdIfNecessary:]	

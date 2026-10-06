@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1051ae82c	1051ae957	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController _refreshDataWithError:connections:]	
+1051ae958	1051ae9a7	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController _showLoadingState:]	
+1051ae9a8	1051aeaef	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController _showErrorState]	
+1051aeaf0	1051aec6b	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController _showEmptyState]	
+1051aec6c	1051aecf3	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController _didPressPrivacyPolicyButton]	
+1051aecf4	1051aede3	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsViewController .cxx_destruct]	
+1051aede4	1051aef7f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController initWithAppConnection:imageDownloader:connectionManager:preferences:userTrackedLogger:webBrowsingScopeExposer:]	
+1051aef80	1051af137	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController viewDidLoad]	
+1051af138	1051af2bb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController viewWillDisappear:]	
+1051af2bc	1051af2bf	decompiled	chunks/001/functions-000090.c		
+1051af2c0	1051af3f7	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _logRevokeAlertDismissedDidConfirm:]	
+1051af3f8	1051af593	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _presentWebViewWithURL:]	
+1051af594	1051af5ab	decompiled	chunks/001/functions-000090.c		
+1051af5ac	1051af5af	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _didPressRevokePermissionsButton]	
+1051af5b0	1051af5bf	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _hasPrivateStorageData]	
+1051af5c0	1051af5cf	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _isAppConnected]	
+1051af5d0	1051af613	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _isMiniOrGame]	
+1051af614	1051af9b7	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _showRevokePermissionsConfirmationAlert]	
+1051af9b8	1051afa2f	decompiled	chunks/001/functions-000090.c		
+1051afa30	1051afa7b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _handleRevokeActionDidConfirm:]	
+1051afa7c	1051afbfb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _revokePermissions]	
+1051afbfc	1051afc43	decompiled	chunks/001/functions-000090.c		
+1051afc44	1051afcff	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _handleDidDeleteConnectionWithError:]	
+1051afd00	1051afdff	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _logRemovedConnection]	
+1051afe00	1051aff5f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController _updateUserPreferencesForGamesAndMinis]	
+1051aff60	1051affb7	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController appPermissionsView:didOpenURL:]	
+1051affb8	1051b0107	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController didTapUserDataDeletionInfoButton]	
+1051b0108	1051b0117	decompiled	chunks/001/functions-000090.c		
+1051b0118	1051b016f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController webBrowserDidDismiss:]	
+1051b0170	1051b0203	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsViewController .cxx_destruct]	
+1051b0204	1051b0217	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsEmptyView init]	
+1051b0218	1051b0267	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsEmptyView initWithFrame:]	
+1051b0268	1051b0887	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsEmptyView _setupViews]	
+1051b0888	1051b0897	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsEmptyView privacyPolicyButton]	
+1051b0898	1051b08e7	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsEmptyView .cxx_destruct]	
+1051b08e8	1051b08fb	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsErrorView init]	
+1051b08fc	1051b094b	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsErrorView initWithFrame:]	
+1051b094c	1051b0eaf	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsErrorView _setupViews]	
+1051b0eb0	1051b0ebf	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsErrorView tryAgainButton]	
+1051b0ec0	1051b0f0f	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsErrorView .cxx_destruct]	
+1051b0f10	1051b11d7	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView initWithAppConnection:imageDownloader:]	
+1051b11d8	1051b121b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _isMiniOrGame]	
+1051b121c	1051b124b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView selectedScopeNamesArray]	
+1051b124c	1051b127b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView snapKitFeatures]	
+1051b127c	1051b1283	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView numberOfSectionsInTableView:]	
+1051b1284	1051b131f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView tableView:numberOfRowsInSection:]	
+1051b1320	1051b18ff	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView tableView:cellForRowAtIndexPath:]	
+1051b1900	1051b190b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView tableView:heightForRowAtIndexPath:]	
+1051b190c	1051b196f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView textView:shouldInteractWithURL:inRange:interaction:]	
+1051b1970	1051b197f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _hasPrivateStorageData]	
+1051b1980	1051b198f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _isAppConnected]	
+1051b1990	1051b19c3	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _descriptionTextForAppConnection]	
+1051b19c4	1051b2b73	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _setupViews]	
+1051b2b74	1051b2bf7	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _reInstallTableViewConstraints:]	
+1051b2bf8	1051b2cc3	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _toggleValueChanged:]	
+1051b2cc4	1051b2d87	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView _descriptionForFeature:]	
+1051b2d88	1051b2d97	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView didToggleUserDataDeletionCheckbox:]	
+1051b2d98	1051b2dcb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView didTapInfoButton]	
+1051b2dcc	1051b2ddb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView isUserDataDeletionSelected]	
+1051b2ddc	1051b2deb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView revokePermissionsButton]	
+1051b2dec	1051b2dfb	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView privacyPolicyButton]	
+1051b2dfc	1051b2e1b	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView delegate]	
+1051b2e1c	1051b2e2f	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView setDelegate:]	
+1051b2e30	1051b2f07	decompiled	chunks/001/functions-000090.c	-[SCCanvasDetailedAppPermissionsView .cxx_destruct]	
+1051b2f08	1051b327f	decompiled	chunks/001/functions-000090.c		
+1051b3280	1051b3347	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel initWithSingleTapActionModel:connection:groupingStyle:externalEdges:isIconCircle:]	
+1051b3348	1051b336b	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel copyWithZone:]	
+1051b336c	1051b33ef	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel hash]	
+1051b33f0	1051b34c7	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel isEqual:]	
+1051b34c8	1051b34cf	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel singleTapActionModel]	
+1051b34d0	1051b34d7	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel connection]	
+1051b34d8	1051b34df	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel groupingStyle]	
+1051b34e0	1051b34e7	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel externalEdges]	
+1051b34e8	1051b34ef	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel isIconCircle]	
+1051b34f0	1051b351f	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsCollectionViewCellViewModel .cxx_destruct]	
+1051b3520	1051b35bb	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsScope initWithUIContainer:delegate:]	
+1051b35bc	1051b35c3	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsScope uiContainer]	
+1051b35c4	1051b35db	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsScope delegate]	
+1051b35dc	1051b3607	decompiled	chunks/001/functions-000090.c	-[SCCanvasConnectedAppsScope .cxx_destruct]	
+1051b3608	1051b3703	decompiled	chunks/001/functions-000090.c	-[SCContextAISongUpsellActionPerformer initWithPlusFeatureGating:featureLogging:plusSubscribeScopeExposer:plusSubscribeScopeServices:]	
+1051b3704	1051b39ef	decompiled	chunks/001/functions-000090.c	-[SCContextAISongUpsellActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b39f0	1051b3a1b	decompiled	chunks/001/functions-000090.c		
+1051b3a1c	1051b3a8b	decompiled	chunks/001/functions-000090.c	-[SCContextAISongUpsellActionPerformer _tearDown]	
+1051b3a8c	1051b3afb	decompiled	chunks/001/functions-000090.c	-[SCContextAISongUpsellActionPerformer plusSubscribeDidDismiss]	
+1051b3afc	1051b3b4f	decompiled	chunks/001/functions-000090.c	-[SCContextAISongUpsellActionPerformer .cxx_destruct]	
+1051b3b50	1051b3c4b	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer initWithPlusFeatureGating:plusSubscribeScopeExposer:plusSubscribeScopeServices:chatActionPerformer:]	
+1051b3c4c	1051b3efb	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b3efc	1051b3f27	decompiled	chunks/001/functions-000090.c		
+1051b3f28	1051b40a7	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer _presentKeyboardWithViewController:uiContainer:params:source:completion:]	
+1051b40a8	1051b411b	decompiled	chunks/001/functions-000090.c		
+1051b411c	1051b418b	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer _tearDown]	
+1051b418c	1051b41fb	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer plusSubscribeDidDismiss]	
+1051b41fc	1051b424f	decompiled	chunks/001/functions-000090.c	-[SCContextAIStoryReplyActionPerformer .cxx_destruct]	
+1051b4250	1051b4333	decompiled	chunks/001/functions-000090.c	-[SCContextAddLensActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b4334	1051b4337	decompiled	chunks/001/functions-000090.c		
+1051b4338	1051b4597	decompiled	chunks/001/functions-000090.c	-[SCContextCollectionItemActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b4598	1051b460b	decompiled	chunks/001/functions-000090.c	-[SCContextSponsoredCtaActionPerformer initWithContextCardCtaProvider:]	
+1051b460c	1051b47ab	decompiled	chunks/001/functions-000090.c	-[SCContextSponsoredCtaActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b47ac	1051b47b7	decompiled	chunks/001/functions-000090.c	-[SCContextSponsoredCtaActionPerformer .cxx_destruct]	
+1051b47b8	1051b4817	decompiled	chunks/001/functions-000090.c	-[SCContextAuraActionViewController init]	
+1051b4818	1051b481f	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionViewController pageViewName]	
+1051b4820	1051b4893	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionPerformer initWithAuraMyProfileScopeExposer:]	
+1051b4894	1051b4b77	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b4b78	1051b4b83	decompiled	chunks/001/functions-000091.c		
+1051b4b84	1051b4baf	decompiled	chunks/001/functions-000091.c		
+1051b4bb0	1051b4c83	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionPerformer _tearDown]	
+1051b4c84	1051b4cdf	decompiled	chunks/001/functions-000091.c		
+1051b4ce0	1051b4d27	decompiled	chunks/001/functions-000091.c		
+1051b4d28	1051b4ddb	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionPerformer auraMyProfileWorkflowDidFinish]	
+1051b4ddc	1051b4e17	decompiled	chunks/001/functions-000091.c	-[SCContextAuraActionPerformer .cxx_destruct]	
+1051b4e18	1051b4e8b	decompiled	chunks/001/functions-000091.c	-[SCContextBitmojiAvatarActionPerformer initWithBitmojiAvatarBuilderScopeExposer:]	
+1051b4e8c	1051b509b	decompiled	chunks/001/functions-000091.c	-[SCContextBitmojiAvatarActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b509c	1051b50c7	decompiled	chunks/001/functions-000091.c		
+1051b50c8	1051b516f	decompiled	chunks/001/functions-000091.c	-[SCContextBitmojiAvatarActionPerformer tearDown]	
+1051b5170	1051b51ab	decompiled	chunks/001/functions-000091.c		
+1051b51ac	1051b51f3	decompiled	chunks/001/functions-000091.c	-[SCContextBitmojiAvatarActionPerformer bitmojiCreateFlowDidCompleteWithAvatarId:]	
+1051b51f4	1051b5223	decompiled	chunks/001/functions-000091.c	-[SCContextBitmojiAvatarActionPerformer .cxx_destruct]	
+1051b5224	1051b5297	decompiled	chunks/001/functions-000091.c	-[SCContextBloopsActionPerformer initWithBloopsOnboardingControllerFactory:]	
+1051b5298	1051b54fb	decompiled	chunks/001/functions-000091.c	-[SCContextBloopsActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b54fc	1051b5543	decompiled	chunks/001/functions-000091.c		
+1051b5544	1051b5553	decompiled	chunks/001/functions-000091.c		
+1051b5554	1051b559b	decompiled	chunks/001/functions-000091.c		
+1051b559c	1051b55cb	decompiled	chunks/001/functions-000091.c	-[SCContextBloopsActionPerformer .cxx_destruct]	
+1051b55cc	1051b56d7	decompiled	chunks/001/functions-000091.c	-[SCContextBoostActionPerformer initWithLazyBoostCoordinator:circumstanceEngine:]	
+1051b56d8	1051b5ab3	decompiled	chunks/001/functions-000091.c	-[SCContextBoostActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b5ab4	1051b5ceb	decompiled	chunks/001/functions-000091.c		
+1051b5cec	1051b60ff	decompiled	chunks/001/functions-000091.c	-[SCContextBoostActionPerformer _didTapBoostButtonWithIsBoosted:storyId:itemId:isAd:savesToDeviceOnly:isUserGeneratedContent:launchSource:actionType:eventAnnouncer:page:completion:]	
+1051b6100	1051b61a7	decompiled	chunks/001/functions-000091.c		
+1051b61a8	1051b61d7	decompiled	chunks/001/functions-000091.c		
+1051b61d8	1051b6213	decompiled	chunks/001/functions-000091.c	-[SCContextBoostActionPerformer .cxx_destruct]	
+1051b6214	1051b62df	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer initWithChatCameraScopeExposer:chatCameraScopeServices:stickerInjector:]	
+1051b62e0	1051b64bb	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b64bc	1051b67a7	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer _handleEntityActionOpenCameraForCTItemInstance:onViewController:params:completion:]	
+1051b67a8	1051b68fb	decompiled	chunks/001/functions-000091.c		
+1051b68fc	1051b69c7	decompiled	chunks/001/functions-000091.c		
+1051b69c8	1051b6af3	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer _contextActionTypeForCTItemInstance:]	
+1051b6af4	1051b6c9b	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer _replyConfigurationForParams:]	
+1051b6c9c	1051b6cc7	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer _navigationTypeFromPageSource:]	
+1051b6cc8	1051b6d37	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer dismissCameraScope:]	
+1051b6d38	1051b6d8b	decompiled	chunks/001/functions-000091.c	-[SCContextCTItemActionPerformer .cxx_destruct]	
+1051b6d8c	1051b6f07	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer initWithUserSession:snapchattersDataFetcher:groupsDataFetcher:userInfoServices:contextExperimentService:chatCameraScopeExposer:chatCameraScopeServices:]	
+1051b6f08	1051b70ab	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b70ac	1051b736f	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer performOnViewController:params:replyConfiguration:completion:]	
+1051b7370	1051b743b	decompiled	chunks/001/functions-000091.c		
+1051b743c	1051b74c3	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer captureWorkflowDidDismissWithDidSendSnap:]	
+1051b74c4	1051b750b	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer dismissCameraScope:]	
+1051b750c	1051b7583	decompiled	chunks/001/functions-000091.c	-[SCContextCameraActionPerformer .cxx_destruct]	
+1051b7584	1051b7677	decompiled	chunks/001/functions-000091.c	-[SCContextCameraShortcutActionPerformer initWithCameraConfigurationServices:directorModeLaunchServices:directorModeScopeServices:circumstanceEngine:]	
+1051b7678	1051b7d2b	decompiled	chunks/001/functions-000091.c	-[SCContextCameraShortcutActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b7d2c	1051b7dc3	decompiled	chunks/001/functions-000091.c	-[SCContextCameraShortcutActionPerformer directorModeScopeDidComplete]	
+1051b7dc4	1051b7e07	decompiled	chunks/001/functions-000091.c	-[SCContextCameraShortcutActionPerformer dismissCameraScope:]	
+1051b7e08	1051b7e57	decompiled	chunks/001/functions-000091.c	-[SCContextCameraShortcutActionPerformer .cxx_destruct]	
+1051b7e58	1051b80d7	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer initWithUserSession:cameraConfigurationServices:directorModeLaunchServices:directorModeScopeServices:chatCameraScopeExposer:chatCameraScopeServices:musicCameraScopeExposer:musicCameraScopeBuilderServices:snapchattersDataFetcher:groupsDataFetcher:userInfoServices:]	
+1051b80d8	1051b893b	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b893c	1051b89eb	decompiled	chunks/001/functions-000091.c		
+1051b89ec	1051b8a83	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer directorModeScopeDidComplete]	
+1051b8a84	1051b8b1f	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer dismissCameraScope:]	
+1051b8b20	1051b8c8b	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer _isDirectorModeAvailableForDualCamContextUnlockWithCameraAction:sourcePageType:]	
+1051b8c8c	1051b8dc3	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer _directReplyConfigurationWithContextActionParams:cameraModeParameters:]	
+1051b8dc4	1051b8e6b	decompiled	chunks/001/functions-000091.c	-[SCContextCameraV2ActionPerformer .cxx_destruct]	
+1051b8e6c	1051b9003	decompiled	chunks/001/functions-000091.c	-[SCContextCardsActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b9004	1051b9017	decompiled	chunks/001/functions-000091.c		
+1051b9018	1051b905f	decompiled	chunks/001/functions-000091.c	-[SCContextChatActionPerformer initWithChatDrawerType:]	
+1051b9060	1051b923f	decompiled	chunks/001/functions-000091.c	-[SCContextChatActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b9240	1051b9253	decompiled	chunks/001/functions-000091.c		
+1051b9254	1051b92ab	decompiled	chunks/001/functions-000091.c	-[SCContextChatActionPerformer _itemDeeplinkFrom]	
+1051b92ac	1051b92b3	decompiled	chunks/001/functions-000091.c	-[SCContextChatActionPerformer drawerType]	
+1051b92b4	1051b9357	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer initWithDwebExplainerTrayScopeExposer:dwebExplainerTrayScopeServices:]	
+1051b9358	1051b952b	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b952c	1051b9557	decompiled	chunks/001/functions-000091.c		
+1051b9558	1051b959f	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer _tearDown]	
+1051b95a0	1051b9647	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer dWebExplainerTrayDidDismiss]	
+1051b9648	1051b9673	decompiled	chunks/001/functions-000091.c		
+1051b9674	1051b967b	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer numberOfUsersPresentOnWeb]	
+1051b967c	1051b9683	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer numberOfUsersPresent]	
+1051b9684	1051b96b3	decompiled	chunks/001/functions-000091.c	-[SCContextDwebUpsellActionPerformer .cxx_destruct]	
+1051b96b4	1051b9727	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer initWithCommerceProductCatalogScopeExposer:]	
+1051b9728	1051b9bbf	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b9bc0	1051b9beb	decompiled	chunks/001/functions-000091.c		
+1051b9bec	1051b9bef	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer commerceBrowserWillPresent]	
+1051b9bf0	1051b9bf3	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer commerceBrowserWillDismiss]	
+1051b9bf4	1051b9c3b	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer _tearDown]	
+1051b9c3c	1051b9c47	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceActionPerformer .cxx_destruct]	
+1051b9c48	1051b9cbb	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceMultiMerchantActionPerformer initWithTopicPageScopeExposer:]	
+1051b9cbc	1051b9fab	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceMultiMerchantActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051b9fac	1051b9fd7	decompiled	chunks/001/functions-000091.c		
+1051b9fd8	1051b9fdb	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceMultiMerchantActionPerformer topicPageShouldDismiss]	
+1051b9fdc	1051ba04b	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceMultiMerchantActionPerformer _tearDown]	
+1051ba04c	1051ba07b	decompiled	chunks/001/functions-000091.c	-[SCContextCommerceMultiMerchantActionPerformer .cxx_destruct]	
+1051ba07c	1051ba0ef	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer initWithComposerScreenshopScopeExposer:]	
+1051ba0f0	1051ba3ab	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051ba3ac	1051ba3d7	decompiled	chunks/001/functions-000091.c		
+1051ba3d8	1051ba3db	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer screenshopPageShouldDismiss]	
+1051ba3dc	1051ba41b	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer _tearDown]	
+1051ba41c	1051ba463	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer _removeScope]	
+1051ba464	1051ba493	decompiled	chunks/001/functions-000091.c	-[SCContextScreenshopActionPerformer .cxx_destruct]	
+1051ba494	1051ba5e7	decompiled	chunks/001/functions-000091.c	-[SCContextContentLabelActionPerformer initWithRecommendTrayScopeServices:snapchattersDataFetcher:spotlightLogger:boostCoordinator:storiesConfigProvider:contextExperimentService:]	
+1051ba5e8	1051baa83	decompiled	chunks/001/functions-000091.c	-[SCContextContentLabelActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051baa84	1051bab3f	decompiled	chunks/001/functions-000091.c		
+1051bab40	1051bab9f	decompiled	chunks/001/functions-000091.c	-[SCContextContentLabelActionPerformer _shouldBypassRecommendTrayForSource:]	
+1051baba0	1051bacaf	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _presentReplyOrTrayWithIsRecommended:calloutLabelData:viewController:params:source:]	
+1051bacb0	1051baef7	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _presentChatReplyWithUserId:params:source:]	
+1051baef8	1051baf83	decompiled	chunks/001/functions-000092.c		
+1051baf84	1051bb44b	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _presentChatReplyWithSnapchatter:params:source:presenter:]	
+1051bb44c	1051bb477	decompiled	chunks/001/functions-000092.c		
+1051bb478	1051bb69b	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _presentRecommendTrayWithUserIds:params:viewController:source:]	
+1051bb69c	1051bb6c7	decompiled	chunks/001/functions-000092.c		
+1051bb6c8	1051bb70b	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _didCompletePresentChatReply]	
+1051bb70c	1051bb75f	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer _didDismissTrayContainer]	
+1051bb760	1051bb7d7	decompiled	chunks/001/functions-000092.c	-[SCContextContentLabelActionPerformer .cxx_destruct]	
+1051bb7d8	1051bb8d3	decompiled	chunks/001/functions-000092.c	-[SCContextDeeplinkStickerActionPerformer initWithChatCameraScopeExposer:chatCameraScopeServices:discoverFeedActionHandler:circumstanceEngine:]	
+1051bb8d4	1051bbd93	decompiled	chunks/001/functions-000092.c	-[SCContextDeeplinkStickerActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bbd94	1051bbe1b	decompiled	chunks/001/functions-000092.c	-[SCContextDeeplinkStickerActionPerformer captureWorkflowDidDismissWithDidSendSnap:]	
+1051bbe1c	1051bbe7b	decompiled	chunks/001/functions-000092.c	-[SCContextDeeplinkStickerActionPerformer dismissCameraScope:]	
+1051bbe7c	1051bbecf	decompiled	chunks/001/functions-000092.c	-[SCContextDeeplinkStickerActionPerformer .cxx_destruct]	
+1051bbed0	1051bbff3	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer initWithSpotlightShareSender:platformAnalyticsCreator:premiumStoryShareSender:snapProMessageSender:notificationPool:]	
+1051bbff4	1051bc2a7	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bc2a8	1051bc41b	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer _sendLongformShowWithPlatformAnalytics:conversationId:compositeStoryId:viewLocation:]	
+1051bc41c	1051bc42b	decompiled	chunks/001/functions-000092.c		
+1051bc42c	1051bc5bf	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer _sendSpotlightWithPlatformAnalytics:conversationId:compositeStoryId:viewLocation:]	
+1051bc5c0	1051bc5cf	decompiled	chunks/001/functions-000092.c		
+1051bc5d0	1051bc8bb	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer _sendStoryWithPlatformAnalytics:conversationId:story:compositeStoryId:viewLocation:]	
+1051bc8bc	1051bc8db	decompiled	chunks/001/functions-000092.c		
+1051bc8dc	1051bcc47	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer _platformAnalyticsWithParams:]	
+1051bcc48	1051bcdc7	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer presentToastWithChatSendResult:viewLocation:]	
+1051bcdc8	1051bcdd3	decompiled	chunks/001/functions-000092.c		
+1051bcdd4	1051bce27	decompiled	chunks/001/functions-000092.c	-[SCContextDirectShareActionPerformer .cxx_destruct]	
+1051bce28	1051bcef3	decompiled	chunks/001/functions-000092.c	-[SCContextDiscoverActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bcef4	1051bd1cb	decompiled	chunks/001/functions-000092.c	-[SCContextDiscoverSubscriptionActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bd1cc	1051bd297	decompiled	chunks/001/functions-000092.c	-[SCContextDreamsActionPerformer initWithNavigationServices:memoriesNavigationServices:genAIDreamsService:]	
+1051bd298	1051bd3c3	decompiled	chunks/001/functions-000092.c	-[SCContextDreamsActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bd3c4	1051bd48f	decompiled	chunks/001/functions-000092.c		
+1051bd490	1051bd4cb	decompiled	chunks/001/functions-000092.c	-[SCContextDreamsActionPerformer .cxx_destruct]	
+1051bd4cc	1051bd6cf	decompiled	chunks/001/functions-000092.c	-[SCContextEditActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bd6d0	1051bd773	decompiled	chunks/001/functions-000092.c	-[SCContextFriendAddActionPerformer initWithSnapchattersDataMutator:snapchattersDataFetcher:]	
+1051bd774	1051bd8b3	decompiled	chunks/001/functions-000092.c	-[SCContextFriendAddActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bd8b4	1051bda4b	decompiled	chunks/001/functions-000092.c		
+1051bda4c	1051bdb17	decompiled	chunks/001/functions-000092.c	-[SCContextFriendAddActionPerformer _isCommunityStoryWithParams:]	
+1051bdb18	1051bdb47	decompiled	chunks/001/functions-000092.c	-[SCContextFriendAddActionPerformer .cxx_destruct]	
+1051bdb48	1051bdc6b	decompiled	chunks/001/functions-000092.c	-[SCContextGenAiStoryActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bdc6c	1051bdc6f	decompiled	chunks/001/functions-000092.c		
+1051bdc70	1051bdd3b	decompiled	chunks/001/functions-000092.c	-[SCContextHeroContextMenuActionPerformer initWithHeroContextMenuScopeExposer:heroContextMenuScopeServices:circumstanceEngine:]	
+1051bdd3c	1051bde27	decompiled	chunks/001/functions-000092.c	-[SCContextHeroContextMenuActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bde28	1051bde2b	decompiled	chunks/001/functions-000092.c		
+1051bde2c	1051bdfc3	decompiled	chunks/001/functions-000092.c	-[SCContextHeroContextMenuActionPerformer _presentHeroContextMenuWithViewController:params:]	
+1051bdfc4	1051bdfef	decompiled	chunks/001/functions-000092.c		
+1051bdff0	1051be18b	decompiled	chunks/001/functions-000092.c	-[SCContextHeroContextMenuActionPerformer _didDismissTrayContainer]	
+1051be18c	1051be1df	decompiled	chunks/001/functions-000092.c	-[SCContextHeroContextMenuActionPerformer .cxx_destruct]	
+1051be1e0	1051be253	decompiled	chunks/001/functions-000092.c	-[SCContextIdentityWebViewActionPerformer initWithSnapKitIdentityWebViewScopeExposer:]	
+1051be254	1051be4c7	decompiled	chunks/001/functions-000092.c	-[SCContextIdentityWebViewActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051be4c8	1051be50f	decompiled	chunks/001/functions-000092.c	-[SCContextIdentityWebViewActionPerformer identityWebViewDidTearDown]	
+1051be510	1051be51b	decompiled	chunks/001/functions-000092.c	-[SCContextIdentityWebViewActionPerformer .cxx_destruct]	
+1051be51c	1051be58f	decompiled	chunks/001/functions-000092.c	-[SCContextJoinTheChatActionPerformer initWithPublicGroupChatScopeLauncher:]	
+1051be590	1051be6f7	decompiled	chunks/001/functions-000092.c	-[SCContextJoinTheChatActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051be6f8	1051be6fb	decompiled	chunks/001/functions-000092.c		
+1051be6fc	1051be73b	decompiled	chunks/001/functions-000092.c	-[SCContextJoinTheChatActionPerformer didDismissChatWithScope:]	
+1051be73c	1051be777	decompiled	chunks/001/functions-000092.c	-[SCContextJoinTheChatActionPerformer .cxx_destruct]	
+1051be778	1051be8cb	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer initWithLinkActionPerformer:promptLensActionPerformer:shoppingLensProductPreselector:lensPromptDataProvider:currentUserId:nglStudySettings:]	
+1051be8cc	1051bed83	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051bed84	1051bf2cb	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer _handleTurnByTurnPromptLensAction:onViewController:uiContainer:params:source:completion:]	
+1051bf2cc	1051bf2e3	decompiled	chunks/001/functions-000092.c		
+1051bf2e4	1051bf31b	decompiled	chunks/001/functions-000092.c		
+1051bf31c	1051bf4b7	decompiled	chunks/001/functions-000092.c		
+1051bf4b8	1051bf4ef	decompiled	chunks/001/functions-000092.c		
+1051bf4f0	1051bf55b	decompiled	chunks/001/functions-000092.c		
+1051bf55c	1051bf55f	decompiled	chunks/001/functions-000092.c		
+1051bf560	1051bf6bf	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer _handlePromptDataProviderResponse:error:lensAction:onViewController:uiContainer:params:source:completion:]	
+1051bf6c0	1051bf8cf	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer _displayLensNotPublishedDialog:completion:]	
+1051bf8d0	1051bf8f7	decompiled	chunks/001/functions-000092.c		
+1051bf8f8	1051bf8ff	decompiled	chunks/001/functions-000092.c		
+1051bf900	1051bf95b	decompiled	chunks/001/functions-000092.c		
+1051bf95c	1051bf9af	decompiled	chunks/001/functions-000092.c		
+1051bf9b0	1051bf9b3	decompiled	chunks/001/functions-000092.c		
+1051bf9b4	1051bfac7	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer _redirectedPromptAction:uiContainer:params:source:completion:]	
+1051bfac8	1051c017f	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer _redirectedURLAction:onViewController:uiContainer:params:source:completion:]	
+1051c0180	1051c01df	decompiled	chunks/001/functions-000092.c	-[SCContextLensActionPerformer .cxx_destruct]	
+1051c01e0	1051c0253	decompiled	chunks/001/functions-000092.c	-[SCContextLensCollectionActionPerformer initWithLinkActionPerformer:]	
+1051c0254	1051c05bb	decompiled	chunks/001/functions-000092.c	-[SCContextLensCollectionActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c05bc	1051c05c7	decompiled	chunks/001/functions-000092.c	-[SCContextLensCollectionActionPerformer .cxx_destruct]	
+1051c05c8	1051c08af	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer initWithModularCameraPresenter:collectionModularCameraPresenter:lensUnlocker:cameraBIPAConfiguration:cameraBIPAScopeExposer:cameraBIPAScopeServices:lensReplyCameraPresenter:inLensCreationDataProvider:centralizedLensMetadataStoreProvider:deepLinkHandlerCreator:musicContextExtractor:playGamesPresenter:playGamesStudySettings:]	
+1051c08b0	1051c1003	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c1004	1051c102b	decompiled	chunks/001/functions-000092.c		
+1051c102c	1051c103f	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer deepLinkHandler:wantsToDismissContextCardsWithCompletion:]	
+1051c1040	1051c1043	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer deepLinkHandlerWillPresentModalContent:]	
+1051c1044	1051c10a3	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer deepLinkHandlerDidDismissModalContent:error:]	
+1051c10a4	1051c10a7	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer deepLinkHandlerWillTryToLeaveApp:]	
+1051c10a8	1051c10f7	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer deepLinkHandlerDidLeaveApp:successfully:]	
+1051c10f8	1051c1197	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer _modalPresentationDidEnd]	
+1051c1198	1051c1237	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer _modalDismissalDidEnd]	
+1051c1238	1051c130f	decompiled	chunks/001/functions-000092.c	-[SCContextLinkActionPerformer .cxx_destruct]	
+1051c1310	1051c16f7	decompiled	chunks/001/functions-000092.c	-[SCContextV2DeepLinkHandlerCreator initWithNavigationServices:featureSettingsService:deepLinkHandling:businessProfileScopeExposer:commerceShoppingScopeExposer:topicViewerScopeExposer:topicViewerScopeServices:mainCameraDeepLinkScopeExposer:groupsDataFetcher:safeBrowsingAPI:circumstanceEngine:urlInterceptorProvider:webBrowsingScopeExposer:webBrowserScopeExposer:webBrowserScopeServices:contextExperimentService:fanPassSubscriptionScopeFactoryServices:snapchatterServices:]	
+1051c16f8	1051c17c7	decompiled	chunks/001/functions-000092.c	-[SCContextV2DeepLinkHandlerCreator createDeepLinkHandlerWithLensUnlockFlow:]	
+1051c17c8	1051c18b7	decompiled	chunks/001/functions-000092.c	-[SCContextV2DeepLinkHandlerCreator .cxx_destruct]	
+1051c18b8	1051c19b3	decompiled	chunks/001/functions-000092.c	-[SCContextMagicCaptionActionPerformer initWithSubscriptionInfoProvider:resourceDownloader:plusSubscribeScopeExposer:plusSubscribeScopeServices:]	
+1051c19b4	1051c1ce3	decompiled	chunks/001/functions-000092.c	-[SCContextMagicCaptionActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c1ce4	1051c1d37	decompiled	chunks/001/functions-000092.c		
+1051c1d38	1051c1d63	decompiled	chunks/001/functions-000092.c		
+1051c1d64	1051c2023	decompiled	chunks/001/functions-000092.c	-[SCContextMagicCaptionActionPerformer _presentMagicCaptionDialogWithImage:onViewController:completion:]	
+1051c2024	1051c206b	decompiled	chunks/001/functions-000092.c		
+1051c206c	1051c21c7	decompiled	chunks/001/functions-000092.c	-[SCContextMagicCaptionActionPerformer _imageFutureWithImageURL:]	
+1051c21c8	1051c21d3	decompiled	chunks/001/functions-000093.c		
+1051c21d4	1051c2233	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer _handleOkDialogAction:]	
+1051c2234	1051c2537	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer _createCustomAccessoryViewWithImage:]	
+1051c2538	1051c260b	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer _tearDown]	
+1051c260c	1051c2667	decompiled	chunks/001/functions-000093.c		
+1051c2668	1051c26af	decompiled	chunks/001/functions-000093.c		
+1051c26b0	1051c271f	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer plusSubscribeDidDismiss]	
+1051c2720	1051c276f	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer dialogDidDismiss:]	
+1051c2770	1051c27cf	decompiled	chunks/001/functions-000093.c	-[SCContextMagicCaptionActionPerformer .cxx_destruct]	
+1051c27d0	1051c288f	decompiled	chunks/001/functions-000093.c	-[SCContextManualFriendSelectionActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c2890	1051c2903	decompiled	chunks/001/functions-000093.c	-[SCContextSoundSyncActionPerformer initWithMusicSyncScopeExposer:]	
+1051c2904	1051c2a2b	decompiled	chunks/001/functions-000093.c	-[SCContextSoundSyncActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c2a2c	1051c2a73	decompiled	chunks/001/functions-000093.c	-[SCContextSoundSyncActionPerformer musicSyncActionHandlerDidFinishWithCancelled:]	
+1051c2a74	1051c2a7f	decompiled	chunks/001/functions-000093.c	-[SCContextSoundSyncActionPerformer .cxx_destruct]	
+1051c2a80	1051c2b97	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer initWithFullMapScopeExposer:fullMapScopeServices:circumstanceEngine:standalonePlaceProfileFactoryServices:]	
+1051c2b98	1051c2d73	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c2d74	1051c2f67	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer _presentStandalonePlaceProfileForPlaceId:contextSessionId:openSource:placesSourceType:uiContainer:]	
+1051c2f68	1051c2f9b	decompiled	chunks/001/functions-000093.c		
+1051c2f9c	1051c305f	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer _constructStandalonePlaceProfilePresenterWithUIContainer:]	
+1051c3060	1051c3067	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer _tearDownStandalonePlaceProfilePresenter:]	
+1051c3068	1051c32cb	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer _presentMapPlaceProfileForPlaceId:contextSessionId:openSource:placesSourceType:uiContainer:]	
+1051c32cc	1051c32ff	decompiled	chunks/001/functions-000093.c		
+1051c3300	1051c338f	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer _tearDownFullMapScope:uiContainer:]	
+1051c3390	1051c339b	decompiled	chunks/001/functions-000093.c		
+1051c339c	1051c343f	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer mapScopeDidEnd:]	
+1051c3440	1051c3447	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer onPlaceProfileHidden]	
+1051c3448	1051c34af	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer onPlaceProfileRemoved]	
+1051c34b0	1051c351b	decompiled	chunks/001/functions-000093.c	-[SCContextPlaceProfileActionPerformer .cxx_destruct]	
+1051c351c	1051c35bf	decompiled	chunks/001/functions-000093.c	-[SCContextPlayGameLensActionPerformer initWithLinkActionPerformer:nglStudySettings:]	
+1051c35c0	1051c3c17	decompiled	chunks/001/functions-000093.c	-[SCContextPlayGameLensActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c3c18	1051c3c4b	decompiled	chunks/001/functions-000093.c		
+1051c3c4c	1051c3c4f	decompiled	chunks/001/functions-000093.c		
+1051c3c50	1051c3d3b	decompiled	chunks/001/functions-000093.c	-[SCContextPlayGameLensActionPerformer .cxx_destruct]	
+1051c3d3c	1051c3e0f	decompiled	chunks/001/functions-000093.c		
+1051c3e10	1051c3f03	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer initWithPollViewScopeExposer:userSession:chatCameraScopeExposer:chatCameraScopeServices:]	
+1051c3f04	1051c4247	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c4248	1051c42a3	decompiled	chunks/001/functions-000093.c		
+1051c42a4	1051c4377	decompiled	chunks/001/functions-000093.c		
+1051c4378	1051c437b	decompiled	chunks/001/functions-000093.c		
+1051c437c	1051c43cf	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer pollViewScopeDidComplete:]	
+1051c43d0	1051c46d3	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer _pollViewScopeWantsToShareResult:result:presentingViewController:]	
+1051c46d4	1051c4777	decompiled	chunks/001/functions-000093.c		
+1051c4778	1051c47f7	decompiled	chunks/001/functions-000093.c		
+1051c47f8	1051c49ff	decompiled	chunks/001/functions-000093.c		
+1051c4a00	1051c4a03	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer captureWorkflowDidDismissWithDidSendSnap:]	
+1051c4a04	1051c4a4b	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer dismissCameraScope:]	
+1051c4a4c	1051c4a9b	decompiled	chunks/001/functions-000093.c	-[SCContextPollViewActionPerformer .cxx_destruct]	
+1051c4a9c	1051c4b0f	decompiled	chunks/001/functions-000093.c	-[SCContextTextModeActionPerformer initWithSnapTextEditorScopeExposer:]	
+1051c4b10	1051c4bff	decompiled	chunks/001/functions-000093.c	-[SCContextTextModeActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c4c00	1051c4c6f	decompiled	chunks/001/functions-000093.c	-[SCContextTextModeActionPerformer snapEditorDidDismiss]	
+1051c4c70	1051c4cef	decompiled	chunks/001/functions-000093.c	-[SCContextTextModeActionPerformer _entryPointTypeFromParams:]	
+1051c4cf0	1051c4d1f	decompiled	chunks/001/functions-000093.c	-[SCContextTextModeActionPerformer .cxx_destruct]	
+1051c4d20	1051c4e1b	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer initWithLinkActionPerformer:contentDelivery:currentUserId:nglStudySettings:]	
+1051c4e1c	1051c5817	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c5818	1051c58a3	decompiled	chunks/001/functions-000093.c		
+1051c58a4	1051c5973	decompiled	chunks/001/functions-000093.c		
+1051c5974	1051c5a93	decompiled	chunks/001/functions-000093.c		
+1051c5a94	1051c5a97	decompiled	chunks/001/functions-000093.c		
+1051c5a98	1051c6197	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer _performLinkActionWithLensId:promptId:encryptionKey:promptCreatorId:promptReceiverUserId:overWrittenReplyUserId:promptCreatorName:flowType:tappableKey:filepath:overlayCacheKey:isVideo:onViewController:uiContainer:params:source:completion:]	
+1051c6198	1051c61cb	decompiled	chunks/001/functions-000093.c		
+1051c61cc	1051c6507	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer _fetchFilepathWithFlowType:params:completion:]	
+1051c6508	1051c669b	decompiled	chunks/001/functions-000093.c		
+1051c669c	1051c66ef	decompiled	chunks/001/functions-000093.c		
+1051c66f0	1051c67df	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer _snapSenderUserIdFromContextActionParams:]	
+1051c67e0	1051c6877	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer _otherUserIdFromContextActionParams:]	
+1051c6878	1051c695b	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer _otherUserNameFromContextActionParams:]	
+1051c695c	1051c69a3	decompiled	chunks/001/functions-000093.c	-[SCContextPromptLensActionPerformer .cxx_destruct]	
+1051c69a4	1051c6ac7	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer initWithSnapchattersDataFetcher:friendProfileScopeExposer:businessProfileScopeExposer:circumstanceEngine:contextExperimentService:]	
+1051c6ac8	1051c6c2b	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c6c2c	1051c6e57	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer _launchPublicProfileFor:hostAccountUserId:onViewController:uiContainer:params:completion:]	
+1051c6e58	1051c6f3f	decompiled	chunks/001/functions-000093.c		
+1051c6f40	1051c70ab	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer _launchPublicProfileFor:userId:uiContainer:onViewController:params:completion:]	
+1051c70ac	1051c71af	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer _launchProfileForUserId:uiContainer:params:]	
+1051c71b0	1051c71f3	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer showProfilePresenterDidFinishPresenting:profileViewController:]	
+1051c71f4	1051c7213	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer businessProfilesPresenterScopeWillDismiss:]	
+1051c7214	1051c7233	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer friendProfileDidDismiss:]	
+1051c7234	1051c7293	decompiled	chunks/001/functions-000093.c	-[SCContextPublicProfileActionPerformer .cxx_destruct]	
+1051c7294	1051c735f	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer initWithBusinessProfileScopeExposer:circumstanceEngine:contextExperimentService:]	
+1051c7360	1051c7623	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c7624	1051c785b	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer _launchPublicProfileFor:uiContainer:onViewController:params:isPublisherRoute:showId:completion:]	
+1051c785c	1051c789f	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer showProfilePresenterDidFinishPresenting:profileViewController:]	
+1051c78a0	1051c78bf	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer businessProfilesPresenterScopeWillDismiss:]	
+1051c78c0	1051c7907	decompiled	chunks/001/functions-000093.c	-[SCContextUnifiedPublicProfileActionPerformer .cxx_destruct]	
+1051c7908	1051c79d3	decompiled	chunks/001/functions-000093.c	-[SCContextQuestionStickerActionPerformer initWithSnapchatterDataFetcher:snapchatterDataMutator:chatActionPerformer:]	
+1051c79d4	1051c7d87	decompiled	chunks/001/functions-000093.c	-[SCContextQuestionStickerActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c7d88	1051c7d9f	decompiled	chunks/001/functions-000093.c		
+1051c7da0	1051c7dd7	decompiled	chunks/001/functions-000093.c		
+1051c7dd8	1051c7f23	decompiled	chunks/001/functions-000093.c		
+1051c7f24	1051c7f93	decompiled	chunks/001/functions-000093.c		
+1051c7f94	1051c82ff	decompiled	chunks/001/functions-000093.c	-[SCContextQuestionStickerActionPerformer _presentAddModalWithViewController:uiContainer:params:source:snapchatter:completion:]	
+1051c8300	1051c8343	decompiled	chunks/001/functions-000093.c		
+1051c8344	1051c83a7	decompiled	chunks/001/functions-000093.c		
+1051c83a8	1051c83bb	decompiled	chunks/001/functions-000093.c		
+1051c83bc	1051c853b	decompiled	chunks/001/functions-000093.c	-[SCContextQuestionStickerActionPerformer _presentKeyboardWithViewController:uiContainer:params:source:completion:]	
+1051c853c	1051c85af	decompiled	chunks/001/functions-000093.c		
+1051c85b0	1051c85eb	decompiled	chunks/001/functions-000093.c	-[SCContextQuestionStickerActionPerformer .cxx_destruct]	
+1051c85ec	1051c8767	decompiled	chunks/001/functions-000093.c	-[SCContextQuickCommentActionPerformer initWithQuickCommentScopeServices:currentUserId:displayNameProvider:avatarProvider:selfieProvider:circumstanceEngine:spotlightLogger:]	
+1051c8768	1051c8e87	decompiled	chunks/001/functions-000093.c	-[SCContextQuickCommentActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c8e88	1051c8ecb	decompiled	chunks/001/functions-000093.c	-[SCContextQuickCommentActionPerformer _didComplete]	
+1051c8ecc	1051c8f07	decompiled	chunks/001/functions-000093.c	-[SCContextQuickCommentActionPerformer didCompleteSpotlightQuickCommentScope]	
+1051c8f08	1051c8f8b	decompiled	chunks/001/functions-000094.c	-[SCContextQuickCommentActionPerformer .cxx_destruct]	
+1051c8f8c	1051c9057	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer initWithSnapchattersDataFetcher:quickShareScopeServices:platformAnalyticsCreator:]	
+1051c9058	1051c93eb	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051c93ec	1051c98bf	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer _exposeQuickShareScopeOnViewController:params:isUpsold:]	
+1051c98c0	1051c9903	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer _didComplete]	
+1051c9904	1051c9943	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer didCompleteSpotlightQuickShareScope]	
+1051c9944	1051c9997	decompiled	chunks/001/functions-000094.c	-[SCContextQuickShareActionPerformer .cxx_destruct]	
+1051c9998	1051c9b53	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer initWithNotificationPool:lazyBoostCoordinator:featureSettingsService:storiesConfigProvider:spotlightToStoriesPoster:snapProUserProfileIdProvider:]	
+1051c9b54	1051ca2bb	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051ca2bc	1051ca3af	decompiled	chunks/001/functions-000094.c		
+1051ca3b0	1051ca503	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _deleteRepostedSpotlightWithParams:]	
+1051ca504	1051ca7bb	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _repostToMyStoryWithParams:showUndoToast:]	
+1051ca7bc	1051ca80b	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _isRepostableSnap:]	
+1051ca80c	1051caa1f	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _showRecommendNotification]	
+1051caa20	1051cabeb	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _showRecommendToStoryNotification]	
+1051cabec	1051cae13	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer _didTapRecommendWithIsRecommended:storyId:itemId:completion:]	
+1051cae14	1051cae2b	decompiled	chunks/001/functions-000094.c		
+1051cae2c	1051cae97	decompiled	chunks/001/functions-000094.c	-[SCContextRecommendActionPerformer .cxx_destruct]	
+1051cae98	1051cb10f	decompiled	chunks/001/functions-000094.c	-[SCContextRemixActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051cb110	1051cb113	decompiled	chunks/001/functions-000094.c		
+1051cb114	1051cb297	decompiled	chunks/001/functions-000094.c	-[SCContextRepostActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051cb298	1051cb29b	decompiled	chunks/001/functions-000094.c		
+1051cb29c	1051cb403	decompiled	chunks/001/functions-000094.c		
+1051cb404	1051cb48b	decompiled	chunks/001/functions-000094.c	-[SCContextActionProvider initWithType:provider:]	
+1051cb48c	1051cb49b	decompiled	chunks/001/functions-000094.c	-[SCContextActionProvider matchesActionType:]	
+1051cb49c	1051cb4c3	decompiled	chunks/001/functions-000094.c	-[SCContextActionProvider createActionPerformer]	
+1051cb4c4	1051cb4cf	decompiled	chunks/001/functions-000094.c	-[SCContextActionProvider .cxx_destruct]	
+1051cb4d0	1051cce4f	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint begin]	
+1051cce50	1051ccf0f	decompiled	chunks/001/functions-000094.c		
+1051ccf10	1051cd0c3	decompiled	chunks/001/functions-000094.c		
+1051cd0c4	1051cd10b	decompiled	chunks/001/functions-000094.c		
+1051cd10c	1051cd21b	decompiled	chunks/001/functions-000094.c		
+1051cd21c	1051cd2f7	decompiled	chunks/001/functions-000094.c		
+1051cd2f8	1051cd72f	decompiled	chunks/001/functions-000094.c		
+1051cd730	1051cd78b	decompiled	chunks/001/functions-000094.c		
+1051cd78c	1051cd863	decompiled	chunks/001/functions-000094.c		
+1051cd864	1051cd95f	decompiled	chunks/001/functions-000094.c		
+1051cd960	1051cdb3b	decompiled	chunks/001/functions-000094.c		
+1051cdb3c	1051cdbd3	decompiled	chunks/001/functions-000094.c		
+1051cdbd4	1051cddeb	decompiled	chunks/001/functions-000094.c		
+1051cddec	1051cde5b	decompiled	chunks/001/functions-000094.c		
+1051cde5c	1051cdefb	decompiled	chunks/001/functions-000094.c		
+1051cdefc	1051cdf57	decompiled	chunks/001/functions-000094.c		
+1051cdf58	1051ce09b	decompiled	chunks/001/functions-000094.c		
+1051ce09c	1051ce0f7	decompiled	chunks/001/functions-000094.c		
+1051ce0f8	1051ce197	decompiled	chunks/001/functions-000094.c		
+1051ce198	1051ce1cf	decompiled	chunks/001/functions-000094.c		
+1051ce1d0	1051ce37f	decompiled	chunks/001/functions-000094.c		
+1051ce380	1051ce3c7	decompiled	chunks/001/functions-000094.c		
+1051ce3c8	1051ce407	decompiled	chunks/001/functions-000094.c		
+1051ce408	1051ce507	decompiled	chunks/001/functions-000094.c		
+1051ce508	1051ce52b	decompiled	chunks/001/functions-000094.c		
+1051ce52c	1051ce5c7	decompiled	chunks/001/functions-000094.c		
+1051ce5c8	1051ce677	decompiled	chunks/001/functions-000094.c		
+1051ce678	1051ce827	decompiled	chunks/001/functions-000094.c		
+1051ce828	1051ce8df	decompiled	chunks/001/functions-000094.c		
+1051ce8e0	1051cea2f	decompiled	chunks/001/functions-000094.c		
+1051cea30	1051ceb2b	decompiled	chunks/001/functions-000094.c		
+1051ceb2c	1051cec7f	decompiled	chunks/001/functions-000094.c		
+1051cec80	1051ced7f	decompiled	chunks/001/functions-000094.c		
+1051ced80	1051cee57	decompiled	chunks/001/functions-000094.c		
+1051cee58	1051cf0cb	decompiled	chunks/001/functions-000094.c		
+1051cf0cc	1051cf0e7	decompiled	chunks/001/functions-000094.c		
+1051cf0e8	1051cf143	decompiled	chunks/001/functions-000094.c		
+1051cf144	1051cf19f	decompiled	chunks/001/functions-000094.c		
+1051cf1a0	1051cf2eb	decompiled	chunks/001/functions-000094.c		
+1051cf2ec	1051cf36f	decompiled	chunks/001/functions-000094.c		
+1051cf370	1051cf447	decompiled	chunks/001/functions-000094.c		
+1051cf448	1051cf55b	decompiled	chunks/001/functions-000094.c		
+1051cf55c	1051cf6eb	decompiled	chunks/001/functions-000094.c		
+1051cf6ec	1051cf737	decompiled	chunks/001/functions-000094.c		
+1051cf738	1051cf76f	decompiled	chunks/001/functions-000094.c		
+1051cf770	1051cf867	decompiled	chunks/001/functions-000094.c		
+1051cf868	1051cf97b	decompiled	chunks/001/functions-000094.c		
+1051cf97c	1051cf9d7	decompiled	chunks/001/functions-000094.c		
+1051cf9d8	1051cfb9b	decompiled	chunks/001/functions-000094.c		
+1051cfb9c	1051cfeaf	decompiled	chunks/001/functions-000094.c		
+1051cfeb0	1051cff0b	decompiled	chunks/001/functions-000094.c		
+1051cff0c	1051d0003	decompiled	chunks/001/functions-000094.c		
+1051d0004	1051d01c3	decompiled	chunks/001/functions-000094.c		
+1051d01c4	1051d027b	decompiled	chunks/001/functions-000094.c		
+1051d027c	1051d0427	decompiled	chunks/001/functions-000094.c		
+1051d0428	1051d04bf	decompiled	chunks/001/functions-000094.c		
+1051d04c0	1051d055f	decompiled	chunks/001/functions-000094.c		
+1051d0560	1051d06ff	decompiled	chunks/001/functions-000094.c		
+1051d0700	1051d08eb	decompiled	chunks/001/functions-000094.c		
+1051d08ec	1051d0c77	decompiled	chunks/001/functions-000094.c		
+1051d0c78	1051d0daf	decompiled	chunks/001/functions-000094.c		
+1051d0db0	1051d0fd3	decompiled	chunks/001/functions-000094.c		
+1051d0fd4	1051d110b	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint end]	
+1051d110c	1051d133b	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createCameraV2ActionPerformer]	
+1051d133c	1051d1743	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createLinkActionPerformer]	
+1051d1744	1051d187b	decompiled	chunks/001/functions-000094.c		
+1051d187c	1051d189f	decompiled	chunks/001/functions-000094.c		
+1051d18a0	1051d1c5f	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createDeepLinkHandlerCreator]	
+1051d1c60	1051d1da7	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createPromptLensActionPerformer]	
+1051d1da8	1051d1e3f	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createPlayGameLensActionPerformer]	
+1051d1e40	1051d1e8b	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createLensTapppableLinkActionPerformer]	
+1051d1e8c	1051d20af	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createTopLevelReactionActionPerformer]	
+1051d20b0	1051d2147	decompiled	chunks/001/functions-000094.c	-[SCContextActionsEntryPoint _createMusicUserDataWrapper]	
+1051d2148	1051d2223	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint registerActionPerformerWithActionCase:provider:]	
+1051d2224	1051d2243	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint discoverFeedDataServices]	
+1051d2244	1051d2257	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint setDiscoverFeedDataServices:]	
+1051d2258	1051d2267	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint contentProductPlaybackExposer]	
+1051d2268	1051d22a7	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint setContentProductPlaybackExposer:]	
+1051d22a8	1051d22c7	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint sponsoredLensContextCardServices]	
+1051d22c8	1051d22db	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint setSponsoredLensContextCardServices:]	
+1051d22dc	1051d2a7b	decompiled	chunks/001/functions-000095.c	-[SCContextActionsEntryPoint .cxx_destruct]	
+1051d2a7c	1051d2b47	decompiled	chunks/001/functions-000095.c	-[SCContextSaveActionPerformer initWithActionHandler:userId:notificationPool:]	
+1051d2b48	1051d2d4b	decompiled	chunks/001/functions-000095.c	-[SCContextSaveActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d2d4c	1051d2dc3	decompiled	chunks/001/functions-000095.c		
+1051d2dc4	1051d305f	decompiled	chunks/001/functions-000095.c	-[SCContextSaveActionPerformer _performSaveOrUnsaveAction:params:]	
+1051d3060	1051d30b3	decompiled	chunks/001/functions-000095.c		
+1051d30b4	1051d30ef	decompiled	chunks/001/functions-000095.c	-[SCContextSaveActionPerformer .cxx_destruct]	
+1051d30f0	1051d3193	decompiled	chunks/001/functions-000095.c	-[SCContextSaveClientGeneratedSnapActionPerformer initWithSaveManager:notificationPool:]	
+1051d3194	1051d33cb	decompiled	chunks/001/functions-000095.c	-[SCContextSaveClientGeneratedSnapActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d33cc	1051d3573	decompiled	chunks/001/functions-000095.c		
+1051d3574	1051d3623	decompiled	chunks/001/functions-000095.c		
+1051d3624	1051d36bf	decompiled	chunks/001/functions-000095.c		
+1051d36c0	1051d3757	decompiled	chunks/001/functions-000095.c		
+1051d3758	1051d37e7	decompiled	chunks/001/functions-000095.c		
+1051d37e8	1051d3867	decompiled	chunks/001/functions-000095.c		
+1051d3868	1051d386b	decompiled	chunks/001/functions-000095.c		
+1051d386c	1051d389b	decompiled	chunks/001/functions-000095.c	-[SCContextSaveClientGeneratedSnapActionPerformer .cxx_destruct]	
+1051d389c	1051d3973	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer initWithScanScopeLauncher:scanScopeServices:]	
+1051d3974	1051d3bdb	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d3bdc	1051d3c3f	decompiled	chunks/001/functions-000095.c		
+1051d3c40	1051d3cd3	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _selectImageFromOperaViewController:]	
+1051d3cd4	1051d3e2b	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _createAndLaunchScanScopeWithImage:uiContainer:captureOrientationMetadata:completion:]	
+1051d3e2c	1051d4183	decompiled	chunks/001/functions-000095.c		
+1051d4184	1051d41f7	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _findOperaViewControllerInHierarchy]	
+1051d41f8	1051d43c7	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _recursiveFindOperaViewControllerInViewController:]	
+1051d43c8	1051d43e3	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _sourceCategoryForSpecificStoriesSource:]	
+1051d43e4	1051d4453	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _sourceCategoryForViewLocation:specificSource:]	
+1051d4454	1051d4483	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _scanSourceForViewLocation:specificSource:]	
+1051d4484	1051d44b3	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _querySourceForViewLocation:specificSource:]	
+1051d44b4	1051d44f7	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _runActionPerformerCompletion]	
+1051d44f8	1051d4663	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer scanWantsDismiss:]	
+1051d4664	1051d46bb	decompiled	chunks/001/functions-000095.c		
+1051d46bc	1051d46bf	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer scanWantsQueryWithSource:requestedAnalyzerServiceIds:]	
+1051d46c0	1051d4747	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _pausePlayback]	
+1051d4748	1051d47cf	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer _resumePlayback]	
+1051d47d0	1051d4823	decompiled	chunks/001/functions-000095.c	-[SCContextScanActionPerformer .cxx_destruct]	
+1051d4824	1051d48c7	decompiled	chunks/001/functions-000095.c	-[SCContextLaunchSearchActionPerformer initWithSearchScopeExposer:searchScopeServices:]	
+1051d48c8	1051d4b2f	decompiled	chunks/001/functions-000095.c	-[SCContextLaunchSearchActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d4b30	1051d4b5b	decompiled	chunks/001/functions-000095.c		
+1051d4b5c	1051d4bcb	decompiled	chunks/001/functions-000095.c	-[SCContextLaunchSearchActionPerformer _tearDown]	
+1051d4bcc	1051d4c3b	decompiled	chunks/001/functions-000095.c	-[SCContextLaunchSearchActionPerformer searchWorkflowDidEnd]	
+1051d4c3c	1051d4c77	decompiled	chunks/001/functions-000095.c	-[SCContextLaunchSearchActionPerformer .cxx_destruct]	
+1051d4c78	1051d4ddf	decompiled	chunks/001/functions-000095.c	-[SCContextShareActionPerformer initWithSendToMentionsConfiguration:conversationDataFetcher:textSender:notificationManager:circumstanceEngine:userId:]	
+1051d4de0	1051d572f	decompiled	chunks/001/functions-000095.c	-[SCContextShareActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d5730	1051d57af	decompiled	chunks/001/functions-000095.c		
+1051d57b0	1051d57c7	decompiled	chunks/001/functions-000095.c		
+1051d57c8	1051d57ff	decompiled	chunks/001/functions-000095.c		
+1051d5800	1051d5873	decompiled	chunks/001/functions-000095.c		
+1051d5874	1051d5a67	decompiled	chunks/001/functions-000095.c	-[SCContextShareActionPerformer _sendFriendshipFlashbackWithConversationId:messageId:analyticsMessageId:recipientId:isGroupReply:contextSessionId:completion:]	
+1051d5a68	1051d5cbb	decompiled	chunks/001/functions-000095.c		
+1051d5cbc	1051d5ffb	decompiled	chunks/001/functions-000095.c	-[SCContextShareActionPerformer _sendFriendshipFlashbackWithMessage:messageId:conversationId:recipientId:isGroupReply:analytics:completion:]	
+1051d5ffc	1051d605b	decompiled	chunks/001/functions-000095.c	-[SCContextShareActionPerformer .cxx_destruct]	
+1051d605c	1051d62db	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer initWithMemoriesPickerV2ScopeExposer:memoriesPickerV2ScopeServices:snapDocEditorServices:previewScopeExposer:previewScopeBuilderServices:circumstanceEngine:shareYoursClient:chatCameraScopeExposer:chatCameraScopeServices:memoriesMergedDataSource:creativeToolsABProvider:]	
+1051d62dc	1051d6633	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d6634	1051d6663	decompiled	chunks/001/functions-000095.c		
+1051d6664	1051d682f	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _presentMemoriesPicker]	
+1051d6830	1051d6917	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer memoriesPickerV2DidSelectItemsWithMediaSegments:]	
+1051d6918	1051d69ab	decompiled	chunks/001/functions-000095.c		
+1051d69ac	1051d69b3	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer memoriesPickerV2DidDismiss]	
+1051d69b4	1051d69bf	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer setPickerViewController:]	
+1051d69c0	1051d6a8b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer onCameraIconClicked]	
+1051d6a8c	1051d6af7	decompiled	chunks/001/functions-000095.c		
+1051d6af8	1051d6d1b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _presentCameraWithPromptText:]	
+1051d6d1c	1051d6d83	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer dismissCameraScope:]	
+1051d6d84	1051d6def	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer captureWorkflowDidDismissWithDidSendSnap:]	
+1051d6df0	1051d6df3	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer didCancelFromPreview:]	
+1051d6df4	1051d6dfb	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer didSendSnapsAndPostToStory:storyTypes:]	
+1051d6dfc	1051d6e03	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer didSendChatMessage]	
+1051d6e04	1051d6e0b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer didPostStoryWithStoryTypes:]	
+1051d6e0c	1051d6f9b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _listStoriesWithShareYoursId:completion:]	
+1051d6f9c	1051d7053	decompiled	chunks/001/functions-000095.c		
+1051d7054	1051d7063	decompiled	chunks/001/functions-000095.c		
+1051d7064	1051d711f	decompiled	chunks/001/functions-000095.c		
+1051d7120	1051d71a3	decompiled	chunks/001/functions-000095.c		
+1051d71a4	1051d71b3	decompiled	chunks/001/functions-000095.c		
+1051d71b4	1051d72c3	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _buildAndPresentResponseSnapWithMediaSegmentFuture:promptText:]	
+1051d72c4	1051d757f	decompiled	chunks/001/functions-000095.c		
+1051d7580	1051d7597	decompiled	chunks/001/functions-000095.c		
+1051d7598	1051d767f	decompiled	chunks/001/functions-000095.c		
+1051d7680	1051d7793	decompiled	chunks/001/functions-000095.c		
+1051d7794	1051d77cb	decompiled	chunks/001/functions-000095.c		
+1051d77cc	1051d7a1b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _resolveGalleryConfigurationForMediaSegment:]	
+1051d7a1c	1051d7a53	decompiled	chunks/001/functions-000095.c		
+1051d7a54	1051d7c93	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _buildEditorWithBaseMediaInput:isImage:aspectRatio:promptText:]	
+1051d7c94	1051d7d1f	decompiled	chunks/001/functions-000095.c		
+1051d7d20	1051d7ea7	decompiled	chunks/001/functions-000095.c		
+1051d7ea8	1051d7f0f	decompiled	chunks/001/functions-000095.c		
+1051d7f10	1051d7fef	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _insertStickerAndPresentWithEditor:promptText:]	
+1051d7ff0	1051d856b	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _presentPreviewWithEditor:]	
+1051d856c	1051d85af	decompiled	chunks/001/functions-000095.c		
+1051d85b0	1051d85bf	decompiled	chunks/001/functions-000095.c		
+1051d85c0	1051d866b	decompiled	chunks/001/functions-000095.c		
+1051d866c	1051d8733	decompiled	chunks/001/functions-000095.c	-[SCContextShareYoursActionPerformer _finishWithCancelled:]	
+1051d8734	1051d877b	decompiled	chunks/001/functions-000096.c	-[SCContextShareYoursActionPerformer _removePreviewScopeIfExposed]	
+1051d877c	1051d887b	decompiled	chunks/001/functions-000096.c	-[SCContextShareYoursActionPerformer .cxx_destruct]	
+1051d887c	1051d88ef	decompiled	chunks/001/functions-000096.c	-[SCContextShowSnapActionPerformer initWithSpotlightOperaPresenter:]	
+1051d88f0	1051d8aa7	decompiled	chunks/001/functions-000096.c	-[SCContextShowSnapActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d8aa8	1051d8abf	decompiled	chunks/001/functions-000096.c		
+1051d8ac0	1051d8acb	decompiled	chunks/001/functions-000096.c	-[SCContextShowSnapActionPerformer .cxx_destruct]	
+1051d8acc	1051d8ceb	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer initWithUserSession:snapchattersDataFetcher:groupsDataFetcher:userInfoServices:chatContentDelivery:bitmojiSelfieServices:snapProServices:imageFetchingServices:myStoriesServices:storiesServices:chatCameraScopeExposer:chatCameraScopeServices:]	
+1051d8cec	1051d91ef	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051d91f0	1051d9223	decompiled	chunks/001/functions-000096.c		
+1051d9224	1051d92cf	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer dismissCameraScope:]	
+1051d92d0	1051d933b	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _exposeAddToStoryCameraWithReplyConfiguration:presentingViewController:quickStickerImage:]	
+1051d933c	1051d95db	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _performSnapMeReplyAddToStoryActionIfNeededWithViewController:params:]	
+1051d95dc	1051d95f3	decompiled	chunks/001/functions-000096.c		
+1051d95f4	1051d976b	decompiled	chunks/001/functions-000096.c		
+1051d976c	1051d977f	decompiled	chunks/001/functions-000096.c		
+1051d9780	1051d9807	decompiled	chunks/001/functions-000096.c		
+1051d9808	1051d98b3	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _snapMeReplyAddToStoryQuickStickerImageWithImage:avatarImage:params:]	
+1051d98b4	1051d994f	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _snapMeReplyPromptQuickStickerImageForParams:]	
+1051d9950	1051d9bc3	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _resolveAddToStoryReplyConfigurationWithParams:completion:]	
+1051d9bc4	1051d9c2b	decompiled	chunks/001/functions-000096.c		
+1051d9c2c	1051d9d47	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _fetchAddToStoryQuickStickerImageWithParams:mediaContent:completion:]	
+1051d9d48	1051d9dbb	decompiled	chunks/001/functions-000096.c		
+1051d9dbc	1051d9eeb	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _buildAddToStoryQuickStickerImageWithParams:image:completion:]	
+1051d9eec	1051d9f6f	decompiled	chunks/001/functions-000096.c		
+1051d9f70	1051d9f7b	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _fetchSnapMeReplyTileImageWithMediaContent:completion:]	
+1051d9f7c	1051da173	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _retrieveSnapMeReplyTileImageWithMediaContent:allowPostProcess:completion:]	
+1051da174	1051da2b3	decompiled	chunks/001/functions-000096.c		
+1051da2b4	1051da437	decompiled	chunks/001/functions-000096.c		
+1051da438	1051da447	decompiled	chunks/001/functions-000096.c		
+1051da448	1051da50b	decompiled	chunks/001/functions-000096.c		
+1051da50c	1051da553	decompiled	chunks/001/functions-000096.c		
+1051da554	1051da65f	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _retrieveTileImageForCacheKey:mediaContent:completion:]	
+1051da660	1051da77b	decompiled	chunks/001/functions-000096.c		
+1051da77c	1051da86b	decompiled	chunks/001/functions-000096.c		
+1051da86c	1051da8b3	decompiled	chunks/001/functions-000096.c		
+1051da8b4	1051daadb	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer _fetchSnapMeReplyAvatarImageWithParams:completion:]	
+1051daadc	1051dab43	decompiled	chunks/001/functions-000096.c		
+1051dab44	1051dac0b	decompiled	chunks/001/functions-000096.c	-[SCContextSnapMeStickerActionPerformer .cxx_destruct]	
+1051dac0c	1051dad47	decompiled	chunks/001/functions-000096.c		
+1051dad48	1051dadeb	decompiled	chunks/001/functions-000096.c		
+1051dadec	1051db633	decompiled	chunks/001/functions-000096.c		
+1051db634	1051db813	decompiled	chunks/001/functions-000096.c		
+1051db814	1051db8af	decompiled	chunks/001/functions-000096.c		
+1051db8b0	1051db9f3	decompiled	chunks/001/functions-000096.c		
+1051db9f4	1051dbc13	decompiled	chunks/001/functions-000096.c		
+1051dbc14	1051dc0b3	decompiled	chunks/001/functions-000096.c		
+1051dc0b4	1051dc137	decompiled	chunks/001/functions-000096.c		
+1051dc138	1051dc13f	decompiled	chunks/001/functions-000096.c	-[ModalViewController pageViewName]	
+1051dc140	1051dc20b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer initWithContentPlaybackScopeExposer:discoverFeedDataFetcher:contentProductPlaybackScopeServices:]	
+1051dc20c	1051dc43f	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051dc440	1051dc4a3	decompiled	chunks/001/functions-000096.c		
+1051dc4a4	1051dc6ef	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer _exposeContentPlaybackScopeWithStoryId:viewController:viewLocation:]	
+1051dc6f0	1051dc723	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer _dismissModalViewControllerOnContextSpotlightViewController]	
+1051dc724	1051dc7bf	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer playbackPresenterDidTearDown:playbackScope:]	
+1051dc7c0	1051dc837	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer removeContentForCreatorId:playlistItemController:]	
+1051dc838	1051dc887	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayPublicStoryActionPerformer .cxx_destruct]	
+1051dc888	1051dc88f	decompiled	chunks/001/functions-000096.c	-[SCContextPlayStoryOperaModalViewController pageViewName]	
+1051dc890	1051dc95b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer initWithContentPlaybackScopeExposer:remoteStoriesDataProvider:contentProductPlaybackScopeServices:]	
+1051dc95c	1051dcc63	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051dcc64	1051dccff	decompiled	chunks/001/functions-000096.c		
+1051dcd00	1051dcd2b	decompiled	chunks/001/functions-000096.c		
+1051dcd2c	1051dcd2f	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer playbackPresenterDidTearDown:playbackScope:]	
+1051dcd30	1051dcdc7	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _removePlaybackScopeIfNecessary]	
+1051dcdc8	1051dcdcb	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _tearDown]	
+1051dcdcc	1051dcebb	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _playStoryWithCompositeStoryId:]	
+1051dcebc	1051dcecb	decompiled	chunks/001/functions-000096.c		
+1051dcecc	1051dd1ff	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _playStoryWithCompositeStoryId:presentingViewController:]	
+1051dd200	1051dd273	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _modalPresentationDidEnd]	
+1051dd274	1051dd2e7	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer _modalDismissalDidEnd]	
+1051dd2e8	1051dd343	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPlayStoryActionPerformer .cxx_destruct]	
+1051dd344	1051dd4bf	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer initWithSpotlightRepliesScopeExposer:circumstanceEngine:userProfilesProvider:snapProUserProfileIdProvider:currentUserId:repliesViewCountManager:storiesConfigProvider:]	
+1051dd4c0	1051ddcbf	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051ddcc0	1051ddd33	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer didCompleteSpotlightRepliesScope]	
+1051ddd34	1051ddd6b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer modalPresentationOnCommentsTrayDidEnd]	
+1051ddd6c	1051ddda3	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer modalDismissalOnCommentsTrayDidEnd]	
+1051ddda4	1051de16b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer trayUIContainer:heightDidChange:]	
+1051de16c	1051de17f	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _getContentViewSourceWithViewLocation:isCommunityStory:]	
+1051de180	1051de187	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _pageTypeForContentViewSource:]	
+1051de188	1051de23b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _creatorProfileIdFromParams:]	
+1051de23c	1051de243	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _isCommunityStoryWithParams:]	
+1051de244	1051de42f	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _getCommunityMetadataWithParams:]	
+1051de430	1051de44b	decompiled	chunks/001/functions-000096.c		
+1051de44c	1051de48b	decompiled	chunks/001/functions-000096.c		
+1051de48c	1051de493	decompiled	chunks/001/functions-000096.c		
+1051de494	1051de4a7	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _isCreatorModeWithCreatorId:isCommunityStory:]	
+1051de4a8	1051de517	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _isSpotlightForSnapPlaybackMetadata:viewLocation:]	
+1051de518	1051de63f	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _trayUIContainerWithViewController:isCreatorMode:]	
+1051de640	1051de66b	decompiled	chunks/001/functions-000096.c		
+1051de66c	1051de93b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _repliesActionsConfigWithContextActionParams:isCommunityStory:shouldPopUpKeyboard:prependedCommentIds:initialReplyAttachment:]	
+1051de93c	1051deb4b	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _isCreatorModeWithParams:isCommunityStory:]	
+1051deb4c	1051dece7	decompiled	chunks/001/functions-000096.c		
+1051dece8	1051dedb7	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer _storyTypeWithParams:]	
+1051dedb8	1051dee57	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightRepliesActionPerformer .cxx_destruct]	
+1051dee58	1051deefb	decompiled	chunks/001/functions-000096.c	-[SCContextWatchSpotlightActionPerformer initWithSpotlightOperaPresenter:blizzardLogger:]	
+1051deefc	1051df2cf	decompiled	chunks/001/functions-000096.c	-[SCContextWatchSpotlightActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051df2d0	1051df2e7	decompiled	chunks/001/functions-000096.c		
+1051df2e8	1051df317	decompiled	chunks/001/functions-000096.c	-[SCContextWatchSpotlightActionPerformer .cxx_destruct]	
+1051df318	1051df3e7	decompiled	chunks/001/functions-000096.c	-[SCContextSpotlightPostActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051df3e8	1051df48b	decompiled	chunks/001/functions-000096.c	-[SCContextStoragePlanUpsellActionPerformer initWithPlusSubscribeScopeExposer:plusSubscribeScopeServices:]	
+1051df48c	1051df6d7	decompiled	chunks/001/functions-000096.c	-[SCContextStoragePlanUpsellActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051df6d8	1051df703	decompiled	chunks/001/functions-000097.c		
+1051df704	1051df773	decompiled	chunks/001/functions-000097.c	-[SCContextStoragePlanUpsellActionPerformer _tearDown]	
+1051df774	1051df7e3	decompiled	chunks/001/functions-000097.c	-[SCContextStoragePlanUpsellActionPerformer plusSubscribeDidDismiss]	
+1051df7e4	1051df81f	decompiled	chunks/001/functions-000097.c	-[SCContextStoragePlanUpsellActionPerformer .cxx_destruct]	
+1051df820	1051df827	decompiled	chunks/001/functions-000097.c	-[SCContextStoriesSmartReplyActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051df828	1051dfb53	decompiled	chunks/001/functions-000097.c		
+1051dfb54	1051dff7b	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer initWithUserSession:snapchattersDataFetcher:customStoriesDataFetcher:customStoriesDataSyncer:storiesDataCoordinator:scopedStoriesFetcherAccessor:bitmojiAvatarProvider:bitmojiSelfieProvider:bitmojiImageFetcher:imageDownloader:contextStoryPlaybackScopeExposer:composerRuntimeProviding:inviteService:addToStoryCameraScopeExposer:addToStoryCameraScopeBuilder:userLogger:storyInviteRecipientsBuilder:killSwitchProvider:storiesConfigProvider:]	
+1051dff7c	1051e021b	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e021c	1051e0627	decompiled	chunks/001/functions-000097.c		
+1051e0628	1051e063f	decompiled	chunks/001/functions-000097.c		
+1051e0640	1051e071f	decompiled	chunks/001/functions-000097.c		
+1051e0720	1051e0767	decompiled	chunks/001/functions-000097.c		
+1051e0768	1051e07c3	decompiled	chunks/001/functions-000097.c		
+1051e07c4	1051e09db	decompiled	chunks/001/functions-000097.c		
+1051e09dc	1051e0aaf	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer _getStoryParticipantsForParams:completion:]	
+1051e0ab0	1051e0c2b	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer storyInviteReceiverSwipeUpViewControllerJoinButtonTapped:storyType:publicationId:]	
+1051e0c2c	1051e0eb7	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer storyInviteReceiverSwipeUpViewControllerAddToStoryButtonTapped:publicationId:storyName:launchSource:]	
+1051e0eb8	1051e0f4f	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer storyInviteReceiverSwipeUpViewControllerStoryThumbnailTapped:storySummaryInfo:]	
+1051e0f50	1051e0f93	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer storyInviteReceiverSwipeUpViewControllerDidDismiss:]	
+1051e0f94	1051e0f97	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer contextStoryPlaybackScopeDidStart:]	
+1051e0f98	1051e0fb7	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer contextStoryPlaybackScopeDidComplete:]	
+1051e0fb8	1051e0fff	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer dismissCameraScope:]	
+1051e1000	1051e1157	decompiled	chunks/001/functions-000097.c	-[SCContextStoryInviteActionPerformer .cxx_destruct]	
+1051e1158	1051e115b	decompiled	chunks/001/functions-000097.c		
+1051e115c	1051e1297	decompiled	chunks/001/functions-000097.c	-[SCContextStoryPostActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e1298	1051e135f	decompiled	chunks/001/functions-000097.c	-[SCContextStoryReplyActionPerformer initWithUserSession:snapchattersDataFetcher:groupsDataFetcher:userInfoServices:contextExperimentService:chatCameraScopeExposer:chatCameraScopeServices:]	
+1051e1360	1051e177f	decompiled	chunks/001/functions-000097.c	-[SCContextStoryReplyActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e1780	1051e17a3	decompiled	chunks/001/functions-000097.c		
+1051e17a4	1051e197b	decompiled	chunks/001/functions-000097.c		
+1051e197c	1051e198f	decompiled	chunks/001/functions-000097.c	-[SCContextStoryReplyActionPerformer .cxx_destruct]	
+1051e1990	1051e1a03	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer initWithDeepLinkHandlerCreator:]	
+1051e1a04	1051e1ea7	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e1ea8	1051e1ec7	decompiled	chunks/001/functions-000097.c		
+1051e1ec8	1051e1edb	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer deepLinkHandler:wantsToDismissContextCardsWithCompletion:]	
+1051e1edc	1051e1edf	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer deepLinkHandlerWillPresentModalContent:]	
+1051e1ee0	1051e1f37	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer deepLinkHandlerDidDismissModalContent:error:]	
+1051e1f38	1051e1f3b	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer deepLinkHandlerWillTryToLeaveApp:]	
+1051e1f3c	1051e1f8b	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer deepLinkHandlerDidLeaveApp:successfully:]	
+1051e1f8c	1051e1fc7	decompiled	chunks/001/functions-000097.c	-[SCContextTappableLinkActionPerformer .cxx_destruct]	
+1051e1fc8	1051e206b	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer initWithUseTemplateFlowScopeExposer:quickCutScopeExposer:]	
+1051e206c	1051e2347	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e2348	1051e234b	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer useTemplateFlowDidComplete:]	
+1051e234c	1051e234f	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer useTemplateFlowDidDismiss:]	
+1051e2350	1051e23c7	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer removeQuickCutScopeWithScope:]	
+1051e23c8	1051e241f	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer _dismissUseTemplateFlowScope:]	
+1051e2420	1051e2463	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer _executeCompletionIfNecessary]	
+1051e2464	1051e249f	decompiled	chunks/001/functions-000097.c	-[SCContextTemplateActionPerformer .cxx_destruct]	
+1051e24a0	1051e25f3	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer initWithStoryReplySender:conversationDestinationParser:notificationManager:reactionImageRenderer:currentUserBitmojiAvatarId:reactionHandler:]	
+1051e25f4	1051e274b	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e274c	1051e2947	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer sendStoryReactionWithAction:onViewController:params:completion:]	
+1051e2948	1051e296b	decompiled	chunks/001/functions-000097.c		
+1051e296c	1051e2bb3	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer sendSpotlightReactionWithAction:onViewController:params:completion:]	
+1051e2bb4	1051e2bc7	decompiled	chunks/001/functions-000097.c		
+1051e2bc8	1051e2f0b	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer sendChatReactionWithAction:params:completion:]	
+1051e2f0c	1051e2f23	decompiled	chunks/001/functions-000097.c		
+1051e2f24	1051e2fc3	decompiled	chunks/001/functions-000097.c		
+1051e2fc4	1051e2fd7	decompiled	chunks/001/functions-000097.c		
+1051e2fd8	1051e3127	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _reactionContentForAction:]	
+1051e3128	1051e3167	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _reactionSendSourceForAction:]	
+1051e3168	1051e34f3	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _createNotificationWithAction:params:image:]	
+1051e34f4	1051e350b	decompiled	chunks/001/functions-000097.c		
+1051e350c	1051e37ab	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _sendStoryReplyWithStoryReply:story:userId:groupConversationID:params:platformAnalytics:]	
+1051e37ac	1051e37bb	decompiled	chunks/001/functions-000097.c		
+1051e37bc	1051e3893	decompiled	chunks/001/functions-000097.c		
+1051e3894	1051e38a3	decompiled	chunks/001/functions-000097.c		
+1051e38a4	1051e3d1b	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _createPlatformAnalyticsDataModelWithStory:params:action:groupConversationId:recipientUserId:]	
+1051e3d1c	1051e3e4f	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _storyTypeSpecificFromStory:]	
+1051e3e50	1051e3e93	decompiled	chunks/001/functions-000097.c		
+1051e3e94	1051e3f5f	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer _reactionAsString:]	
+1051e3f60	1051e3fcb	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionActionPerformer .cxx_destruct]	
+1051e3fcc	1051e4097	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer initWithReactionActionPerformer:reactionTrayScopeExposer:reactionTrayScopeServices:]	
+1051e4098	1051e42c7	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e42c8	1051e42f3	decompiled	chunks/001/functions-000097.c		
+1051e42f4	1051e435f	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer _didCompleteReactionTrayScope]	
+1051e4360	1051e4423	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer didSelectReaction:]	
+1051e4424	1051e446b	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer _tearDown]	
+1051e446c	1051e44e3	decompiled	chunks/001/functions-000097.c	-[SCContextTopLevelReactionTrayActionPerformer .cxx_destruct]	
+1051e44e4	1051e4587	decompiled	chunks/001/functions-000097.c	-[SCContextLensTopicsActionPerformer initWithTopicViewerScopeExposer:topicViewerLensScopeServices:]	
+1051e4588	1051e4877	decompiled	chunks/001/functions-000097.c	-[SCContextLensTopicsActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e4878	1051e48cb	decompiled	chunks/001/functions-000097.c	-[SCContextLensTopicsActionPerformer didCompleteTopicViewerLensScope:]	
+1051e48cc	1051e4907	decompiled	chunks/001/functions-000097.c	-[SCContextLensTopicsActionPerformer .cxx_destruct]	
+1051e4908	1051e497b	decompiled	chunks/001/functions-000097.c	-[SCContextRemixesTopicActionPerformer initWithTopicViewerScopeExposer:]	
+1051e497c	1051e4c7b	decompiled	chunks/001/functions-000097.c	-[SCContextRemixesTopicActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e4c7c	1051e4d9b	decompiled	chunks/001/functions-000097.c		
+1051e4d9c	1051e4def	decompiled	chunks/001/functions-000097.c	-[SCContextRemixesTopicActionPerformer didCompleteTopicViewerRemixesScope:]	
+1051e4df0	1051e4e1f	decompiled	chunks/001/functions-000097.c	-[SCContextRemixesTopicActionPerformer .cxx_destruct]	
+1051e4e20	1051e4e93	decompiled	chunks/001/functions-000097.c	-[SCContextThirdPartyTopicsActionPerformer initWithTopicViewerScopeExposer:]	
+1051e4e94	1051e50bb	decompiled	chunks/001/functions-000097.c	-[SCContextThirdPartyTopicsActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e50bc	1051e510f	decompiled	chunks/001/functions-000097.c	-[SCContextThirdPartyTopicsActionPerformer didCompleteTopicViewerThirdPartyAppScope:]	
+1051e5110	1051e513f	decompiled	chunks/001/functions-000097.c	-[SCContextThirdPartyTopicsActionPerformer .cxx_destruct]	
+1051e5140	1051e51e3	decompiled	chunks/001/functions-000097.c	-[SCContextTopicActionPerformer initWithTopicViewerScopeExposer:topicViewerScopeServices:]	
+1051e51e4	1051e533f	decompiled	chunks/001/functions-000097.c	-[SCContextTopicActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e5340	1051e5393	decompiled	chunks/001/functions-000097.c	-[SCContextTopicActionPerformer didCompleteTopicViewerScope:]	
+1051e5394	1051e53cf	decompiled	chunks/001/functions-000097.c	-[SCContextTopicActionPerformer .cxx_destruct]	
+1051e53d0	1051e5443	decompiled	chunks/001/functions-000097.c	-[SCContextUserProfileActionPerformer initWithFriendProfileScopeExposer:]	
+1051e5444	1051e56b7	decompiled	chunks/001/functions-000097.c	-[SCContextUserProfileActionPerformer performAction:onViewController:uiContainer:params:source:completion:]	
+1051e56b8	1051e56bb	decompiled	chunks/001/functions-000097.c		
+1051e56bc	1051e570f	decompiled	chunks/001/functions-000097.c	-[SCContextUserProfileActionPerformer friendProfileDidDismiss:]	
+1051e5710	1051e573f	decompiled	chunks/001/functions-000097.c	-[SCContextUserProfileActionPerformer .cxx_destruct]	
+1051e5740	1051e5757	decompiled	chunks/001/functions-000097.c		
+1051e5758	1051e58eb	decompiled	chunks/001/functions-000098.c		
+1051e58ec	1051e598f	decompiled	chunks/001/functions-000098.c	-[SCSnapTextEditorScope initWithUIContainer:entryPointType:delegate:]	
+1051e5990	1051e5997	decompiled	chunks/001/functions-000098.c	-[SCSnapTextEditorScope uiContainer]	
+1051e5998	1051e599f	decompiled	chunks/001/functions-000098.c	-[SCSnapTextEditorScope entryPointType]	
+1051e59a0	1051e59b7	decompiled	chunks/001/functions-000098.c	-[SCSnapTextEditorScope delegate]	
+1051e59b8	1051e59e3	decompiled	chunks/001/functions-000098.c	-[SCSnapTextEditorScope .cxx_destruct]	
+1051e59e4	1051e5aa7	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewScope initWithUIContainer:snapKitIdentityWebViewConfig:delegate:]	
+1051e5aa8	1051e5aaf	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewScope uiContainer]	
+1051e5ab0	1051e5ab7	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewScope snapKitIdentityWebViewConfig]	
+1051e5ab8	1051e5acf	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewScope delegate]	
+1051e5ad0	1051e5b07	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewScope .cxx_destruct]	
+1051e5b08	1051e5c9f	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig initWithClientId:attachmentURL:snapKitAppId:snapKitAppName:appIconURL:contextSessionId:privacyPolicyURL:]	
+1051e5ca0	1051e5cc3	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig copyWithZone:]	
+1051e5cc4	1051e5d73	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig hash]	
+1051e5d74	1051e5e93	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig isEqual:]	
+1051e5e94	1051e5e9b	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig clientId]	
+1051e5e9c	1051e5ea3	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig attachmentURL]	
+1051e5ea4	1051e5eab	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig snapKitAppId]	
+1051e5eac	1051e5eb3	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig snapKitAppName]	
+1051e5eb4	1051e5ebb	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig appIconURL]	
+1051e5ebc	1051e5ec3	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig contextSessionId]	
+1051e5ec4	1051e5ecb	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig privacyPolicyURL]	
+1051e5ecc	1051e5f37	decompiled	chunks/001/functions-000098.c	-[SCSnapKitIdentityWebViewConfig .cxx_destruct]	
+1051e5f38	1051e602b	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope initWithUIContainer:presentingViewController:delegate:templateReference:viewSourceType:]	
+1051e602c	1051e6033	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope uiContainer]	
+1051e6034	1051e604b	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope presentingViewController]	
+1051e604c	1051e6063	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope delegate]	
+1051e6064	1051e606b	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope templateReference]	
+1051e606c	1051e6073	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope viewSourceType]	
+1051e6074	1051e60b3	decompiled	chunks/001/functions-000098.c	-[SCUseTemplateFlowScope .cxx_destruct]	
+1051e60b4	1051e611f	decompiled	chunks/001/functions-000098.c	+[SCTemplateReference templateIdWithTemplateId:]	
+1051e6120	1051e6183	decompiled	chunks/001/functions-000098.c	+[SCTemplateReference templateWithTemplate:]	
+1051e6184	1051e61a7	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference copyWithZone:]	
+1051e61a8	1051e621f	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference hash]	
+1051e6220	1051e6263	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference internalInit]	
+1051e6264	1051e631b	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference isEqual:]	
+1051e631c	1051e639f	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference matchTemplate:templateId:]	
+1051e63a0	1051e63cf	decompiled	chunks/001/functions-000098.c	-[SCTemplateReference .cxx_destruct]	
+1051e63d0	1051e664b	decompiled	chunks/001/functions-000098.c	-[SCContextMentionPreviewPluginEntryPoint begin]	
+1051e664c	1051e6693	decompiled	chunks/001/functions-000098.c		
+1051e6694	1051e6713	decompiled	chunks/001/functions-000098.c	-[SCContextMentionPreviewPluginEntryPoint .cxx_destruct]	
+1051e6714	1051e687f	decompiled	chunks/001/functions-000098.c	-[SCContextMentionUserTaggingSnapEditorListener initWithCaption:stickerContainer:snapchattersDataFetcher:snapEditor:legacySnapEditor:featureSettingsService:onDemandResourceDownloader:contextExperimentService:]	
+1051e6880	1051e6967	decompiled	chunks/001/functions-000098.c	-[SCContextMentionUserTaggingSnapEditorListener sendActionGuard]	
+1051e6968	1051e6a83	decompiled	chunks/001/functions-000098.c		
+1051e6a84	1051e6a87	decompiled	chunks/001/functions-000098.c		
+1051e6a88	1051e6ab7	decompiled	chunks/001/functions-000098.c		
+1051e6ab8	1051e6b1f	decompiled	chunks/001/functions-000098.c		
+1051e6b20	1051e6b33	decompiled	chunks/001/functions-000098.c		
+1051e6b34	1051e6bc3	decompiled	chunks/001/functions-000098.c	-[SCContextMentionUserTaggingSnapEditorListener _isStorySend]	
+1051e6bc4	1051e6bff	decompiled	chunks/001/functions-000098.c	-[SCContextMentionUserTaggingSnapEditorListener .cxx_destruct]	
+1051e6c00	1051e7abf	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController initWithDelegate:sessionParams:userSession:circumstanceEngine:parentViewController:snapchatterServices:logger:animator:conversationIdResolver:notificationManager:storiesSnapReadReceiptCoordinator:groupsDataCreator:groupsDataFetcher:storyShareSender:inputPlugins:userInfoServices:snapProPreferencesManager:blizzardLogger:storiesGrapheneMetricsEmitter:friendmojiFilteredContainer:recipientUserId:plusFeatureGating:plusUpsellManaging:plusUpsellNotificationScopeServices:contextActionParams:contextExperimentService:messagingExperimentService:featureSettingsService:conversationDataFetcher:swipeDirection:replyOptions:nglStudySettingServices:creatorSubscriptionsInfoProvider:preferences:backgroundPerformer:messageActionHandler:]	
+1051e7ac0	1051e7c67	decompiled	chunks/001/functions-000098.c		
+1051e7c68	1051e7e9f	decompiled	chunks/001/functions-000098.c		
+1051e7ea0	1051e7ebb	decompiled	chunks/001/functions-000098.c		
+1051e7ebc	1051e8063	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _sourceInformation]	
+1051e8064	1051e82eb	decompiled	chunks/001/functions-000098.c		
+1051e82ec	1051e84bf	decompiled	chunks/001/functions-000098.c		
+1051e84c0	1051e85a7	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _recipientSnapchattersForSourceAndStoryMetadata:]	
+1051e85a8	1051e8713	decompiled	chunks/001/functions-000098.c		
+1051e8714	1051e872b	decompiled	chunks/001/functions-000098.c		
+1051e872c	1051e8763	decompiled	chunks/001/functions-000098.c		
+1051e8764	1051e8767	decompiled	chunks/001/functions-000098.c		
+1051e8768	1051e88c3	decompiled	chunks/001/functions-000098.c		
+1051e88c4	1051e8bf3	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _activeConversationInformation]	
+1051e8bf4	1051e8c1b	decompiled	chunks/001/functions-000098.c		
+1051e8c1c	1051e8f97	decompiled	chunks/001/functions-000098.c		
+1051e8f98	1051e904b	decompiled	chunks/001/functions-000098.c		
+1051e904c	1051e904f	decompiled	chunks/001/functions-000098.c		
+1051e9050	1051e910b	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _conversationIdObservable]	
+1051e910c	1051e920f	decompiled	chunks/001/functions-000098.c		
+1051e9210	1051e9233	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _updateActiveConversationInformation]	
+1051e9234	1051e9303	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _updateSourceInformation]	
+1051e9304	1051e938b	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _updateStoryMetadata]	
+1051e938c	1051e93b3	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController fullscreenViewController]	
+1051e93b4	1051e93bb	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController setActionMenuViewController:]	
+1051e93bc	1051e93c3	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController actionMenuViewController]	
+1051e93c4	1051e9413	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController isFullscreen]	
+1051e9414	1051e944b	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController isFullscreenOrWillBecomeFullscreen]	
+1051e944c	1051e94af	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController isCurrentlyVisibleInsideInputBarContainer]	
+1051e94b0	1051e952f	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController inputBarView]	
+1051e9530	1051e953b	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController inputBarViewHeight]	
+1051e953c	1051e96c7	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController presentInFullscreenAnimated:inputItemDeeplink:withKeyboardFocused:completion:]	
+1051e96c8	1051e972b	decompiled	chunks/001/functions-000098.c		
+1051e972c	1051e97b7	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _endFullscreenModeWithCompletion:]	
+1051e97b8	1051e99ab	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _presentUpsell]	
+1051e99ac	1051e99e3	decompiled	chunks/001/functions-000098.c		
+1051e99e4	1051e99e7	decompiled	chunks/001/functions-000098.c		
+1051e99e8	1051e9a7f	decompiled	chunks/001/functions-000098.c		
+1051e9a80	1051e9adb	decompiled	chunks/001/functions-000098.c		
+1051e9adc	1051e9b9f	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _presentPlusNotification]	
+1051e9ba0	1051e9d17	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _presentCreatorSubscriptionNotification:]	
+1051e9d18	1051e9eb7	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _exposePlusUpsellNotification:]	
+1051e9eb8	1051e9f67	decompiled	chunks/001/functions-000098.c		
+1051e9f68	1051e9fa7	decompiled	chunks/001/functions-000098.c		
+1051e9fa8	1051ea03b	decompiled	chunks/001/functions-000098.c		
+1051ea03c	1051ea0bb	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController messagingViewControllerWillPresentFullscreen:]	
+1051ea0bc	1051ea2f7	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController messagingViewControllerWasDismissedFromFullscreen:animated:]	
+1051ea2f8	1051ea34f	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController swapReplyRecipient]	
+1051ea350	1051ea37f	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _updateChatPlaceholderTextForRecipientType:animated:]	
+1051ea380	1051ea40b	decompiled	chunks/001/functions-000098.c	-[SCContextMessagingController _chatIdentifier]	
+1051ea40c	1051ea517	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _chatRecipientUserId]	
+1051ea518	1051ea56b	decompiled	chunks/001/functions-000099.c		
+1051ea56c	1051ea833	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _presentChatInChatInputContainerView:viewController:]	
+1051ea834	1051ea843	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _replied:]	
+1051ea844	1051ea847	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _messageSendEpilogue:]	
+1051ea848	1051ea96f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _flushStorySnapReadReceiptIfNecessary]	
+1051ea970	1051eaa67	decompiled	chunks/001/functions-000099.c		
+1051eaa68	1051eab57	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _oneOnOneConversationIdFromSessionParams]	
+1051eab58	1051eab8f	decompiled	chunks/001/functions-000099.c		
+1051eab90	1051eab97	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController setChatViewControllerShouldShowBackdrop:]	
+1051eab98	1051eab9f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController chatViewControllerShouldShowBackdrop]	
+1051eaba0	1051eaba7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController setChatInputControllerShouldIgnoreSafeAreaBottomInsets:]	
+1051eaba8	1051eabaf	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController chatInputControllerShouldIgnoreSafeAreaBottomInsets]	
+1051eabb0	1051eac57	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController shouldPresentPublicStoryReplyModal]	
+1051eac58	1051ead9f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _showChatSendTextConfirmationDialogIfNeeded:]	
+1051eada0	1051eae37	decompiled	chunks/001/functions-000099.c		
+1051eae38	1051eb08f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _showConfirmationDialogWithTitle:description:confirmButtonText:completion:]	
+1051eb090	1051eb0d7	decompiled	chunks/001/functions-000099.c		
+1051eb0d8	1051eb0db	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController updateUserContext]	
+1051eb0dc	1051eb127	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController didPresentInputBarView]	
+1051eb128	1051eb15f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController didEndPresentingInputBarView]	
+1051eb160	1051eb28f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController interceptMessageSendAttemptForPlugin:]	
+1051eb290	1051eb2d7	decompiled	chunks/001/functions-000099.c		
+1051eb2d8	1051eb427	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _handleInteractiveDrawerEvent:]	
+1051eb428	1051eb46b	decompiled	chunks/001/functions-000099.c		
+1051eb46c	1051eb4af	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController inputContext:textViewShouldBeginEditing:]	
+1051eb4b0	1051eb4f3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController inputContext:willActivateItem:]	
+1051eb4f4	1051eb69f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidAttemptToSendMessage:]	
+1051eb6a0	1051eb6a3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidAttemptToEditMessage:]	
+1051eb6a4	1051eb723	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginWillPresentFullscreen:]	
+1051eb724	1051eb79b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidDismissFullscreen:]	
+1051eb79c	1051eb79f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController plugin:didEditMessage:]	
+1051eb7a0	1051eb947	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController plugin:didSendMessage:]	
+1051eb948	1051ebb6b	decompiled	chunks/001/functions-000099.c		
+1051ebb6c	1051ebb6f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidDetachFromAccessoryContainer]	
+1051ebb70	1051ebb73	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidAttachToAccessoryContainer]	
+1051ebb74	1051ebb77	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController pluginDidSelectInputItem:]	
+1051ebb78	1051ebc53	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _subscribeToInputStateEvents:]	
+1051ebc54	1051ebd3f	decompiled	chunks/001/functions-000099.c		
+1051ebd40	1051ebdc7	decompiled	chunks/001/functions-000099.c		
+1051ebdc8	1051ebea3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _subscribeToInputSizeEvents:]	
+1051ebea4	1051ebf0b	decompiled	chunks/001/functions-000099.c		
+1051ebf0c	1051ebfe7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _subscribeToStickerTappedEvents:]	
+1051ebfe8	1051ec01f	decompiled	chunks/001/functions-000099.c		
+1051ec020	1051ec0b7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _inputSizeDidChange:]	
+1051ec0b8	1051ec213	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _isInputDrawerBeingDragged]	
+1051ec214	1051ec2e7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _operaResizeHeightFromCurrentLayout]	
+1051ec2e8	1051ec47f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _announceOperaResizeWithHeight:duration:]	
+1051ec480	1051ec4b3	decompiled	chunks/001/functions-000099.c		
+1051ec4b4	1051ec64b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _flushPendingOperaResizeAnnounce]	
+1051ec64c	1051ec687	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _didTransitionFromState:toState:]	
+1051ec688	1051ec68b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _willTransitionFromState:toState:]	
+1051ec68c	1051ec7b7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController replyParameters]	
+1051ec7b8	1051ec80f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController replyParametersWithCompletion:]	
+1051ec810	1051ec81f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController isGroupConversation]	
+1051ec820	1051ec893	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController recipient]	
+1051ec894	1051ec917	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController recipientUserId]	
+1051ec918	1051ec9d7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController isPartiallyVisible]	
+1051ec9d8	1051ecb07	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController updateChatStickerFriendmojiInfo]	
+1051ecb08	1051ecc67	decompiled	chunks/001/functions-000099.c		
+1051ecc68	1051ecc7f	decompiled	chunks/001/functions-000099.c		
+1051ecc80	1051ecd6f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _replyCompletionHandlerWithNotificationType:]	
+1051ecd70	1051ecdff	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController _notifyOperaReplyWasSent]	
+1051ece00	1051ece17	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController plusUpsellNotificationPresentationCompleted]	
+1051ece18	1051ece1f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController groupConversationId]	
+1051ece20	1051ece27	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController singleRecipientDisplayName]	
+1051ece28	1051ece2f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController singleRecipientUsername]	
+1051ece30	1051ece47	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController delegate]	
+1051ece48	1051ece53	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController setDelegate:]	
+1051ece54	1051ece5b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController contextActionSource]	
+1051ece5c	1051ece8b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController setContextActionSource:]	
+1051ece8c	1051ed0b7	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingController .cxx_destruct]	
+1051ed0b8	1051ed1e7	decompiled	chunks/001/functions-000099.c		
+1051ed1e8	1051edef3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint begin]	
+1051edef4	1051edf17	decompiled	chunks/001/functions-000099.c		
+1051edf18	1051edf87	decompiled	chunks/001/functions-000099.c		
+1051edf88	1051edfc3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint end]	
+1051edfc4	1051ee057	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint messagingController:didChangeFullscreenViewController:]	
+1051ee058	1051ee0cf	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint messagingControllerDidLeaveFullScreen:]	
+1051ee0d0	1051ee147	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint messagingControllerWillTransitionToFullScreen:]	
+1051ee148	1051ee1d3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint topMostPresentedViewControllerForMessagingController:]	
+1051ee1d4	1051ee24b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint messagingControllerDidFinishPresentingSnapAccessoryView:]	
+1051ee24c	1051ee2c3	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint messagingControllerDidWillBeginPresentingSnapAccessoryView:]	
+1051ee2c4	1051ee457	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingEntryPoint .cxx_destruct]	
+1051ee458	1051ee55b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader initWithDisplayName:showSwapIcon:swipeDirection:showReplyTo:]	
+1051ee55c	1051ee74f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupGradientView]	
+1051ee750	1051eeb4f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupCloseButton:]	
+1051eeb50	1051eee93	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupReplyToLabel]	
+1051eee94	1051eefaf	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupWithDisplayName:showSwapIcon:]	
+1051eefb0	1051ef21b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _formatDisplayNameLabelForName:showSwapIcon:]	
+1051ef21c	1051ef5fb	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _layoutLabelShowsSwapIcon:]	
+1051ef5fc	1051ef60b	decompiled	chunks/001/functions-000099.c	+[SCContextMessagingHeader headerFont]	
+1051ef60c	1051ef76b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _attributedTextForDisplayName:]	
+1051ef76c	1051ef77b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setAttributedLabelText:]	
+1051ef77c	1051efa0b	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupSwapIcon]	
+1051efa0c	1051efb0f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _setupGestures]	
+1051efb10	1051efb47	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _swapNameIconTouchUpInside:]	
+1051efb48	1051efb4f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _swapNameIconTouchDown:]	
+1051efb50	1051efb57	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _swapNameIconTouchUpOutside:]	
+1051efb58	1051efb8f	decompiled	chunks/001/functions-000099.c	-[SCContextMessagingHeader _exitButtonPressed:]	

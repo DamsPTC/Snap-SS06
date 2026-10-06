@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105748bc0	105748c47	decompiled	chunks/006/functions-000400.c		
+105748c48	105748e57	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _emitInFlightFieldDiffMetricForKind:field:creatorKind:inventoryType:]	
+105748e58	1057492eb	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _recordInFlightJoinWithCreatorMetadata:joinerMetadata:joinerIsPrefetch:joinerIsEarlyFetch:inventoryType:]	
+1057492ec	1057493af	decompiled	chunks/006/functions-000400.c		
+1057493b0	105749513	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _emitInFlightCreatorOutcomeForKey:inventoryType:]	
+105749514	10574982b	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _handleAdFetchSuccessWithResponses:fetchRequest:targetingParameters:adsPreferences:adProductType:loggingContext:adRequestClientIds:engagement:adOrganicSignals:upcomingStoriesContext:adViewLocation:viewingSessionRecords:operaType:brandSafetyInventoryType:purgedAdResponses:startTimestampInMillis:skipCaching:treatAsConsumer:]	
+10574982c	105749997	decompiled	chunks/006/functions-000400.c		
+105749998	105749ee3	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _onPerformerHandleAdFetchSuccessWithResponses:fetchRequest:targetingParameters:adsPreferences:adProductType:loggingContext:adRequestClientIds:engagement:adOrganicSignals:upcomingStoriesContext:adViewLocation:viewingSessionRecords:operaType:brandSafetyInventoryType:purgedAdResponses:startTimestampInMillis:skipCaching:treatAsConsumer:]	
+105749ee4	10574a08b	decompiled	chunks/006/functions-000400.c		
+10574a08c	10574a20f	decompiled	chunks/006/functions-000400.c		
+10574a210	10574a273	decompiled	chunks/006/functions-000400.c		
+10574a274	10574a72b	decompiled	chunks/006/functions-000400.c		
+10574a72c	10574a857	decompiled	chunks/006/functions-000400.c		
+10574a858	10574a923	decompiled	chunks/006/functions-000400.c		
+10574a924	10574a987	decompiled	chunks/006/functions-000400.c		
+10574a988	10574ab57	decompiled	chunks/006/functions-000400.c		
+10574ab58	10574aca7	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _handleErrorResponse:fetchRequest:adRequestClientIds:]	
+10574aca8	10574ae0f	decompiled	chunks/006/functions-000400.c		
+10574ae10	10574afcb	decompiled	chunks/006/functions-000400.c		
+10574afcc	10574b12f	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _adViewingSessionRecords:]	
+10574b130	10574b4db	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _adRequestClientIdsWithAdProductType:isPrefetchRequest:predefinedAdRequestClientId:unviewedEligibleStoryCount:]	
+10574b4dc	10574b5b7	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _fusMultiAuctionRequestSizeWithUnviewedEligibleStoryCount:]	
+10574b5b8	10574b75f	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _logFusMultiAuctionStoryClampWithAdProductType:loggingContext:unviewedEligibleStoryCount:requestSize:isDedupeJoiner:]	
+10574b760	10574ba0f	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _logMultiAuctionAdResponseMetrics:adRequestClientIds:adProductType:]	
+10574ba10	10574ba2f	decompiled	chunks/006/functions-000400.c		
+10574ba30	10574be9f	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _logMultiAuctionAdResponseAdTypeSplitMetrics:adProductType:]	
+10574bea0	10574c103	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _logCacheHit:adProductType:isBackupCache:isMultiAdPod:]	
+10574c104	10574c23b	decompiled	chunks/006/functions-000400.c	-[SCAdProvider _logRequestTriggerType:adProductType:]	
+10574c23c	10574c30b	decompiled	chunks/006/functions-000400.c	-[SCAdProvider cacheUnviewedAdResponse:]	
+10574c30c	10574c313	decompiled	chunks/006/functions-000400.c	-[SCAdProvider tearDown]	
+10574c314	10574c363	decompiled	chunks/006/functions-000400.c	-[SCAdProvider cleanupAd:]	
+10574c364	10574c46b	decompiled	chunks/006/functions-000400.c	-[SCAdProvider .cxx_destruct]	
+10574c46c	10574c533	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey initWithAdProductType:inventoryType:inventoryId:adPosition:inventorySubtype:]	
+10574c534	10574c61b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey isEqual:]	
+10574c61c	10574c69b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey hash]	
+10574c69c	10574c6bf	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey copyWithZone:]	
+10574c6c0	10574c703	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey description]	
+10574c704	10574c70b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey adProductType]	
+10574c70c	10574c713	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey inventoryType]	
+10574c714	10574c71b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey inventoryId]	
+10574c71c	10574c723	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey adPosition]	
+10574c724	10574c72b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey inventorySubtype]	
+10574c72c	10574c75b	decompiled	chunks/006/functions-000400.c	-[SCAdProviderDeDupeKey .cxx_destruct]	
+10574c75c	10574c7b7	decompiled	chunks/006/functions-000400.c		
+10574c7b8	10574c887	decompiled	chunks/006/functions-000400.c		
+10574c888	10574c8df	decompiled	chunks/006/functions-000400.c		
+10574c8e0	10574c93f	decompiled	chunks/006/functions-000400.c		
+10574c940	10574c9e7	decompiled	chunks/006/functions-000400.c		
+10574c9e8	10574cb4f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache initWithGraphene:adConfigProvider:lifecycleTracker:]	
+10574cb50	10574cdab	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache cacheAdResponses:cacheURL:]	
+10574cdac	10574ce13	decompiled	chunks/006/functions-000400.c		
+10574ce14	10574ce43	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache getAdResponse:brandSafetyType:]	
+10574ce44	10574ce6f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache getAdResponse:]	
+10574ce70	10574ce9f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache peekAdResponse:brandSafetyType:]	
+10574cea0	10574cecb	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache peekAdResponse:]	
+10574cecc	10574cfbf	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache clearExpiredCache:]	
+10574cfc0	10574d0b3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache clearCache:]	
+10574d0b4	10574d0bb	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache clearAllCache]	
+10574d0bc	10574d20b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _firstAdResponseWithBrandSafetyType:fromCachedAdResponse:]	
+10574d20c	10574d4df	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _getAdResponse:removeAdResponseOnHit:brandSafetyType:]	
+10574d4e0	10574d78b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _getAdResponse:removeAdResponseOnHit:]	
+10574d78c	10574dc57	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _cacheAdResponses:cacheURL:adResponseType:]	
+10574dc58	10574e1b3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _clearExpiredCache:adResponseType:]	
+10574e1b4	10574e1bb	decompiled	chunks/006/functions-000400.c		
+10574e1bc	10574e423	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _clearCache:adResponseType:]	
+10574e424	10574e51f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _removeCachedObjectOnHit:adResponseType:brandSafetyType:]	
+10574e520	10574e5d3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache _removeCachedObjectOnHit:adResponseType:]	
+10574e5d4	10574e5db	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache cache]	
+10574e5dc	10574e60b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache setCache:]	
+10574e60c	10574e653	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCache .cxx_destruct]	
+10574e654	10574e7c3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator initWithPrimaryCache:secondaryCache:expirationTimeProvider:graphene:lifecycleTracker:adConfigProvider:]	
+10574e7c4	10574e91f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator initInHybridMode:persistentCache:graphene:lifecycleTracker:adConfigProvider:performer:]	
+10574e920	10574e9ab	decompiled	chunks/006/functions-000400.c		
+10574e9ac	10574ec1b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator cacheAdResponses:targetingParameters:cacheReason:]	
+10574ec1c	10574ec53	decompiled	chunks/006/functions-000400.c		
+10574ec54	10574ec57	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator getAdResponse:brandSafetyType:]	
+10574ec58	10574ec5b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator peekAdResponse:brandSafetyType:]	
+10574ec5c	10574edff	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator getAdResponse:adProductType:]	
+10574ee00	10574ee37	decompiled	chunks/006/functions-000400.c		
+10574ee38	10574ee8b	decompiled	chunks/006/functions-000400.c		
+10574ee8c	10574efe3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator peekAdResponse:]	
+10574efe4	10574f02f	decompiled	chunks/006/functions-000400.c		
+10574f030	10574f12f	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _handleCacheHit:adResponse:]	
+10574f130	10574f313	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator clearExpiredCache:]	
+10574f314	10574f3d3	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator clearCache:reason:]	
+10574f3d4	10574f403	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator clearAllCache]	
+10574f404	10574f617	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _getAdResponse:brandSafetyType:]	
+10574f618	10574f6b7	decompiled	chunks/006/functions-000400.c		
+10574f6b8	10574f817	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _peekAdResponse:brandSafetyType:]	
+10574f818	10574f863	decompiled	chunks/006/functions-000400.c		
+10574f864	10574fbcb	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _syncHybridCache]	
+10574fbcc	10574fdb7	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _logCacheMiss:adProductType:]	
+10574fdb8	10574fe0b	decompiled	chunks/006/functions-000400.c		
+10574fe0c	10574fe63	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator _handleExpiryPeriodOptional:adProductType:]	
+10574fe64	10574ff53	decompiled	chunks/006/functions-000400.c		
+10574ff54	10574ff5b	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator lastEvictionReason]	
+10574ff5c	10574ffc7	decompiled	chunks/006/functions-000400.c	-[SCAdResponseCacheMediator .cxx_destruct]	
+10574ffc8	10575015b	decompiled	chunks/006/functions-000400.c	-[SCAdResponsePersistentCache initWithDocObjectContext:graphene:performer:adConfigProvider:]	
+10575015c	1057502b3	decompiled	chunks/006/functions-000400.c	-[SCAdResponsePersistentCache cacheAdResponses:cacheURL:]	
+1057502b4	1057504af	decompiled	chunks/006/functions-000400.c		
+1057504b0	10575064f	decompiled	chunks/006/functions-000401.c		
+105750650	1057507cf	decompiled	chunks/006/functions-000401.c		
+1057507d0	10575097b	decompiled	chunks/006/functions-000401.c		
+10575097c	10575099f	decompiled	chunks/006/functions-000401.c		
+1057509a0	1057509bf	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache getAdResponse:]	
+1057509c0	1057509e3	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache getAdResponse:brandSafetyType:]	
+1057509e4	105750a07	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache peekAdResponse:brandSafetyType:]	
+105750a08	105750a77	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache peekAdResponse:]	
+105750a78	10575123b	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearExpiredCache:]	
+10575123c	10575125b	decompiled	chunks/006/functions-000401.c		
+10575125c	105751bcb	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearExpiredCacheForAllURLs]	
+105751bcc	105751c27	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearExpiredCacheForAllURLsAsync]	
+105751c28	105751c2f	decompiled	chunks/006/functions-000401.c		
+105751c30	105751ce3	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearExpiredCacheAsync:]	
+105751ce4	105751d07	decompiled	chunks/006/functions-000401.c		
+105751d08	105751df7	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache timeSinceLastExpirationInMSAsync:completion:]	
+105751df8	105751e53	decompiled	chunks/006/functions-000401.c		
+105751e54	10575232f	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache allUnexpiredAdResponsesByCacheURL]	
+105752330	1057524df	decompiled	chunks/006/functions-000401.c		
+1057524e0	1057527df	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearCache:]	
+1057527e0	1057527ff	decompiled	chunks/006/functions-000401.c		
+105752800	10575296b	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache clearAllCache]	
+10575296c	105752f3b	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache timeSinceLastExpirationInMS:]	
+105752f3c	10575306f	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache deleteAdResponse:]	
+105753070	105753843	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _getAdResponse:removeAdResponseOnHit:]	
+105753844	1057538b7	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeQueryCacheItems:]	
+1057538b8	1057538cb	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeQueryCacheItems:orderBy:limit:]	
+1057538cc	105753cf7	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeQueryCacheItems:excludingIds:orderBy:limit:]	
+105753cf8	105753d4b	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeDeleteCacheItems:]	
+105753d4c	105753d6b	decompiled	chunks/006/functions-000401.c		
+105753d6c	105753fab	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeDeleteCacheItemsSync:]	
+105753fac	105753fcb	decompiled	chunks/006/functions-000401.c		
+105753fcc	10575419f	decompiled	chunks/006/functions-000401.c		
+1057541a0	105754237	decompiled	chunks/006/functions-000401.c		
+105754238	1057543ef	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _safeDeleteAdRequestClientIds:]	
+1057543f0	1057545c3	decompiled	chunks/006/functions-000401.c		
+1057545c4	105754777	decompiled	chunks/006/functions-000401.c		
+105754778	10575477f	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _docObjectContext]	
+105754780	1057548ff	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _logCacheItemMemory:]	
+105754900	105754a97	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache _logCacheLatency:success:accessType:]	
+105754a98	105754af7	decompiled	chunks/006/functions-000401.c	-[SCAdResponsePersistentCache .cxx_destruct]	
+105754af8	105754ba7	decompiled	chunks/006/functions-000401.c		
+105754ba8	105754ce7	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem initWithAdRequestClientId:cacheURL:expirationTimestamp:resolvedTimestamp:encodedAdResponse:version:isPrefetchEnabled:prefetchRequest:]	
+105754ce8	105754d0b	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem copyWithZone:]	
+105754d0c	105754dc7	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem hash]	
+105754dc8	105754f17	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem isEqual:]	
+105754f18	105754f27	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem adRequestClientId]	
+105754f28	105754f37	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem cacheURL]	
+105754f38	105754f47	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem expirationTimestamp]	
+105754f48	105754f57	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem resolvedTimestamp]	
+105754f58	105754f67	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem encodedAdResponse]	
+105754f68	105754f77	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem version]	
+105754f78	105754f87	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem isPrefetchEnabled]	
+105754f88	105754f97	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem prefetchRequest]	
+105754f98	105754fe7	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItem .cxx_destruct]	
+105754fe8	10575504b	decompiled	chunks/006/functions-000401.c		
+10575504c	1057550d3	decompiled	chunks/006/functions-000401.c		
+1057550d4	10575515f	decompiled	chunks/006/functions-000401.c		
+105755160	1057551c3	decompiled	chunks/006/functions-000401.c		
+1057551c4	10575524b	decompiled	chunks/006/functions-000401.c		
+10575524c	1057552d7	decompiled	chunks/006/functions-000401.c		
+1057552d8	10575538f	decompiled	chunks/006/functions-000401.c		
+105755390	1057553c7	decompiled	chunks/006/functions-000401.c		
+1057553c8	10575541b	decompiled	chunks/006/functions-000401.c		
+10575541c	1057554d7	decompiled	chunks/006/functions-000401.c		
+1057554d8	10575550f	decompiled	chunks/006/functions-000401.c		
+105755510	105755563	decompiled	chunks/006/functions-000401.c		
+105755564	10575561f	decompiled	chunks/006/functions-000401.c		
+105755620	105755657	decompiled	chunks/006/functions-000401.c		
+105755658	1057556ab	decompiled	chunks/006/functions-000401.c		
+1057556ac	1057556b7	decompiled	chunks/006/functions-000401.c	+[SCAdResponseCacheItem table]	
+1057556b8	10575594b	decompiled	chunks/006/functions-000401.c	+[SCAdResponseCacheItem immutableObjectParse:bufferSize:]	
+10575594c	10575595f	decompiled	chunks/006/functions-000401.c	+[SCAdResponseCacheItem objectClassFunctionPointer]	
+105755960	1057559ab	decompiled	chunks/006/functions-000401.c		
+1057559ac	105755ac7	decompiled	chunks/006/functions-000401.c		
+105755ac8	105755c5f	decompiled	chunks/006/functions-000401.c		
+105755c60	105755d97	decompiled	chunks/006/functions-000401.c		
+105755d98	1057561eb	decompiled	chunks/006/functions-000401.c		
+1057561ec	10575625f	decompiled	chunks/006/functions-000401.c		
+105756260	1057562db	decompiled	chunks/006/functions-000401.c		
+1057562dc	105756317	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItemChangeRequest .cxx_destruct]	
+105756318	105756323	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItemChangeRequest table]	
+105756324	105756437	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItemChangeRequest createTableWithSQLite:]	
+105756438	105756be3	decompiled	chunks/006/functions-000401.c	-[SCAdResponseCacheItemChangeRequest transactWithSQLite:flatbuffers:]	
+105756be4	105756e5b	decompiled	chunks/006/functions-000401.c		
+105756e5c	105756f8b	decompiled	chunks/006/functions-000401.c		
+105756f8c	1057570af	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl initWithContentDelivery:simpleContentFetcher:adConfigProviderV2:valdiRuntimeProvider:queuePerformer:]	
+1057570b0	105757183	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl initWithContentDelivery:simpleContentFetcher:adConfigProviderV2:valdiRuntimeProvider:]	
+105757184	1057573ff	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl downloadContentForAdMedia:profileInfo:mediaId:userInitiated:contexts:expirationDate:preferredVideoDeliveryMethod:forceFullDownload:successBlock:failureBlock:]	
+105757400	1057574af	decompiled	chunks/006/functions-000401.c		
+1057574b0	1057576db	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl queryContentStatusForAdMedia:mediaId:]	
+1057576dc	1057577d7	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl retrieveProfileIconForProfileInfo:contexts:completion:]	
+1057577d8	1057577e3	decompiled	chunks/006/functions-000401.c		
+1057577e4	105757b4f	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl retrieveContentForAdMedia:profileInfo:mediaId:contexts:completionHandler:]	
+105757b50	105757b67	decompiled	chunks/006/functions-000401.c		
+105757b68	105757c7b	decompiled	chunks/006/functions-000401.c		
+105757c7c	105757d63	decompiled	chunks/006/functions-000401.c		
+105757d64	105757d9f	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl removeAllAdMedia]	
+105757da0	105758113	decompiled	chunks/006/functions-000401.c	-[SCAdContentDeliveryApiImpl prefetchAdMedia:prefetchDurationMs:profileInfo:mediaId:contexts:completion:]	
+105758114	105758227	decompiled	chunks/006/functions-000401.c		
+105758228	1057582a3	decompiled	chunks/006/functions-000402.c		
+1057582a4	105758487	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _retrieveProfileIcon:pageInfo:completion:]	
+105758488	105758547	decompiled	chunks/006/functions-000402.c		
+105758548	1057585b3	decompiled	chunks/006/functions-000402.c		
+1057585b4	105758ae7	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _retrieveBottomContentForMedia:mediaId:pageInfo:completion:]	
+105758ae8	105758b9f	decompiled	chunks/006/functions-000402.c		
+105758ba0	105758c2b	decompiled	chunks/006/functions-000402.c		
+105758c2c	105758f7b	decompiled	chunks/006/functions-000402.c		
+105758f7c	10575909f	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _retrieveAppInstallContentForMedia:pageInfo:completion:]	
+1057590a0	10575914f	decompiled	chunks/006/functions-000402.c		
+105759150	10575984b	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _retrieveTopContentForMedia:mediaId:pageInfo:prefetchDurationMs:completion:]	
+10575984c	105759a17	decompiled	chunks/006/functions-000402.c		
+105759a18	105759ea3	decompiled	chunks/006/functions-000402.c		
+105759ea4	10575a0bb	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _fetchCompleteContentIfNecessary:metrics:cacheKey:isVideo:preferredVideoDeliveryMethod:pageInfo:forceFullDownload:completion:]	
+10575a0bc	10575a117	decompiled	chunks/006/functions-000402.c		
+10575a118	10575a183	decompiled	chunks/006/functions-000402.c		
+10575a184	10575a35b	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _fetchCompleteStreamingContentIfNecessaryForContentResult:preferredVideoDeliveryMethod:contentKey:forceFullDownload:completion:]	
+10575a35c	10575a3b7	decompiled	chunks/006/functions-000402.c		
+10575a3b8	10575a46f	decompiled	chunks/006/functions-000402.c		
+10575a470	10575a5c3	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _callMediaDownloadCompletionWithFullPrefetchResult:success:contentResult:completion:]	
+10575a5c4	10575a60f	decompiled	chunks/006/functions-000402.c		
+10575a610	10575a673	decompiled	chunks/006/functions-000402.c		
+10575a674	10575ae03	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl _downloadContentForAdMedia:cacheKeyToUrls:optionalDownloadableCacheKey:videoCacheKey:mediaId:contexts:expirationDate:preferredVideoDeliveryMethod:forceFullDownload:successBlock:failureBlock:]	
+10575ae04	10575af7f	decompiled	chunks/006/functions-000402.c		
+10575af80	10575af83	decompiled	chunks/006/functions-000402.c		
+10575af84	10575b0cb	decompiled	chunks/006/functions-000402.c		
+10575b0cc	10575b1db	decompiled	chunks/006/functions-000402.c		
+10575b1dc	10575b497	decompiled	chunks/006/functions-000402.c		
+10575b498	10575b513	decompiled	chunks/006/functions-000402.c		
+10575b514	10575b5f7	decompiled	chunks/006/functions-000402.c		
+10575b5f8	10575b65f	decompiled	chunks/006/functions-000402.c		
+10575b660	10575b703	decompiled	chunks/006/functions-000402.c		
+10575b704	10575b7c3	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl monitorDownloadProgressWithMediaItemId:]	
+10575b7c4	10575b8cb	decompiled	chunks/006/functions-000402.c		
+10575b8cc	10575b937	decompiled	chunks/006/functions-000402.c		
+10575b938	10575b93f	decompiled	chunks/006/functions-000402.c		
+10575b940	10575b993	decompiled	chunks/006/functions-000402.c	-[SCAdContentDeliveryApiImpl .cxx_destruct]	
+10575b994	10575ba03	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator initWithAdConfigProvider:]	
+10575ba04	10575bad3	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator mediaLoadStatusForMediaId:]	
+10575bad4	10575bb43	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator willStartFetchingForMediaId:]	
+10575bb44	10575bbcf	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator didFailFetchingMediaWithId:error:]	
+10575bbd0	10575bc6f	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator didFinishMatchingMediaToAdResponse:success:error:]	
+10575bc70	10575bc7b	decompiled	chunks/006/functions-000402.c	-[SCAdMediaCoordinator .cxx_destruct]	
+10575bc7c	10575bd07	decompiled	chunks/006/functions-000402.c		
+10575bd08	10575bf4f	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher initWithAdContentDelivery:snapAdsMediaCoordinator:promotedStoryStateProvider:adLifecycleWatermarkEventsTracker:grapheneRegistry:adConfigProvider:adConfigProviderV2:mediaMetricsManager:webViewHtmlPrefetcher:]	
+10575bf50	10575bf97	decompiled	chunks/006/functions-000402.c		
+10575bf98	10575c2cb	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher fetchMediaV2:adSnapIndex:contexts:isPromotedStory:forceFullDownload:adProductType:completion:]	
+10575c2cc	10575c817	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher prefetchPromotedStoryMedia:numberOfSnapsToFetch:completion:]	
+10575c818	10575c837	decompiled	chunks/006/functions-000402.c		
+10575c838	10575c8f7	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher prefetchScriptWithAdResponse:]	
+10575c8f8	10575c9b7	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _prefetchAssetForPromotedStoryIfNeeded:]	
+10575c9b8	10575cdd3	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _fetchMediaV2IfNeeded:profileInfo:endpoint:mediaId:isTopSnapStreamingVideo:adClientRequestId:contexts:index:forceFullDownload:preferredDownloadMethod:adProductType:adId:adServeItemId:adType:completion:]	
+10575cdd4	10575ce4b	decompiled	chunks/006/functions-000402.c		
+10575ce4c	10575cee7	decompiled	chunks/006/functions-000402.c		
+10575cee8	10575d0b3	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _didDownloadAdMediaOnContentDeliveryWithMediaId:adMedia:isFromCache:payloadSize:downloadStartTimestamp:adRequestClientId:adServeItemId:preferredDownloadMethod:usedVideoDeliveryMethod:completion:]	
+10575d0b4	10575d11b	decompiled	chunks/006/functions-000402.c		
+10575d11c	10575d2d7	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _didFailToDownloadAdMediaOnContentDeliveryWithMediaId:adMedia:errorCode:downloadStartTimestamp:adRequestClientId:adServeItemId:preferredDownloadMethod:usedVideoDeliveryMethod:completion:]	
+10575d2d8	10575d36b	decompiled	chunks/006/functions-000402.c		
+10575d36c	10575d9e7	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _updateMetricsForMediaDownloadingCompletionWithSuccess:errorCode:downloadMethod:preferredDownloadMethod:isPromotedStories:isCached:payloadSize:adMediaType:adMediaLocationType:isStreaming:adRequestClientId:adServeItemId:mediaURL:downloadStartTimestamp:]	
+10575d9e8	10575db17	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher _getAdMediaLocationTypeForAdMediaType:]	
+10575db18	10575dcdb	decompiled	chunks/006/functions-000402.c	-[SCAdMediaFetcher .cxx_destruct]	
+10575dcdc	10575dd17	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider end]	
+10575dd18	10575dd93	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider _discoverTileTapContextBuilder]	
+10575dd94	10575e13b	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider _fusAdPrefetcher]	
+10575e13c	10575e347	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider _contentDeepLinkPrefetcher]	
+10575e348	10575e553	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider _adPrefetcher]	
+10575e554	10575e813	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider _spotlightPrefetcher]	
+10575e814	10575e853	decompiled	chunks/006/functions-000402.c		
+10575e854	10575e927	decompiled	chunks/006/functions-000402.c	-[SCAdPrefetchServiceProvider .cxx_destruct]	
+10575e928	10575e977	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher initWithAdMediaFetcher:adConfigProvider:adConfigProviderV2:adWebViewPrefetchHintsManager:adWebViewAssetPrefetcher:adsPreferencesProvider:grapheneRegistry:friendStoriesDataCoordinator:discoverFeedDataFetcher:adViewingHistory:userTrackedLogger:storiesMetadataCoordinator:lifecycleTracker:adProvider:circumstanceEngine:bandwidthEstimator:]	
+10575e978	10575edd3	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher initWithAdMediaFetcher:adConfigProvider:adConfigProviderV2:adWebViewPrefetchHintsManager:adWebViewAssetPrefetcher:adsPreferencesProvider:grapheneRegistry:friendStoriesDataCoordinator:discoverFeedDataFetcher:adPrefetchHelper:adPrefetchRuleTracker:adViewingHistory:userTrackedLogger:storiesMetadataCoordinator:lifecycleTracker:adProvider:circumstanceEngine:bandwidthEstimator:]	
+10575edd4	10575eeab	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher startPrefetchAdsIfNeededFromSource:]	
+10575eeac	10575eed7	decompiled	chunks/006/functions-000402.c		
+10575eed8	10575ef0b	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher recordTileTap]	
+10575ef0c	10575ef97	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher prefetchUserStoriesOnNavBarTapFromSource:]	
+10575ef98	10575efab	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher prefetchAdOnTileTapFromSource:]	
+10575efac	10575f1e7	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher prefetchAdOnTileTapFromSource:precomputedFriendStoryIds:tappedFriendStoryId:interstitialInsertIndex:upcomingNonFriendStoryCount:]	
+10575f1e8	10575f287	decompiled	chunks/006/functions-000402.c		
+10575f288	10575f61f	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _performTileTapPrefetchFromSource:precomputedFriendStoryIds:tappedFriendStoryId:interstitialInsertIndex:upcomingNonFriendStoryCount:]	
+10575f620	10575f71f	decompiled	chunks/006/functions-000402.c		
+10575f720	10575f7ab	decompiled	chunks/006/functions-000402.c		
+10575f7ac	10575f7b3	decompiled	chunks/006/functions-000402.c		
+10575f7b4	10575fa47	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _continueTileTapPrefetchWithFriendStoryIds:coordinator:adViewLocation:source:tappedFriendStoryId:interstitialInsertIndex:upcomingNonFriendStoryCount:cookie:]	
+10575fa48	10575fae7	decompiled	chunks/006/functions-000402.c		
+10575fae8	10575fca7	decompiled	chunks/006/functions-000402.c		
+10575fca8	10575fd9b	decompiled	chunks/006/functions-000402.c		
+10575fd9c	10575fde3	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _prepTrimEnabled]	
+10575fde4	105760247	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _prepTrimmedSnapsInfoFetchStoryIdsWithRankedStoryIds:source:tappedFriendStoryId:interstitialInsertIndex:upcomingNonFriendStoryCount:]	
+105760248	105760843	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _fireTileTapEarlyFetchOnPerformerWithRankedStoryIds:snapPlaybackInfoMap:adViewLocation:source:tappedFriendStoryId:interstitialInsertIndex:upcomingNonFriendStoryCount:cookie:]	
+105760844	105760a7b	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _fireTileTapEarlyFetchWithAdOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:cookie:]	
+105760a7c	105760b53	decompiled	chunks/006/functions-000402.c		
+105760b54	105760c3b	decompiled	chunks/006/functions-000402.c		
+105760c3c	105760c73	decompiled	chunks/006/functions-000402.c		
+105760c74	105760cbb	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _allowConcurrentTileTapPrefetchEnabled]	
+105760cbc	105760e27	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _performPageOpenPrefetch]	
+105760e28	105760e63	decompiled	chunks/006/functions-000402.c		
+105760e64	1057612e3	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _firePageOpenPrefetchRequestsWithFUS:discover:spotlight:]	
+1057612e4	1057613e3	decompiled	chunks/006/functions-000402.c		
+1057613e4	10576147b	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+10576147c	105761543	decompiled	chunks/006/functions-000402.c	-[SCAdUserStoriesAdPrefetcher _checkAdPrefetchPrerequisite]	
+105761544	10576158b	decompiled	chunks/006/functions-000403.c		
+10576158c	105761663	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _handleAvailableFriendStories:]	
+105761664	105761697	decompiled	chunks/006/functions-000403.c		
+105761698	10576179b	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _checkAvailableFriendStories:]	
+10576179c	1057617a3	decompiled	chunks/006/functions-000403.c		
+1057617a4	1057618c3	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _checkAdPrefetchConditions]	
+1057618c4	1057618cb	decompiled	chunks/006/functions-000403.c		
+1057618cc	1057619f3	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _checkAdPrefetchConditionsAfterDelay]	
+1057619f4	105761a27	decompiled	chunks/006/functions-000403.c		
+105761a28	105761b4f	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _checkAdPrefetchConditionsWithCurrentViewLocation:]	
+105761b50	105761b9f	decompiled	chunks/006/functions-000403.c		
+105761ba0	105761caf	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _triggerAdPrefetchWithShouldPrefetch:]	
+105761cb0	105761d2b	decompiled	chunks/006/functions-000403.c		
+105761d2c	105761e5b	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _prefetchAdWithRankedStoryIds:]	
+105761e5c	105761edb	decompiled	chunks/006/functions-000403.c		
+105761edc	105761fdb	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _handleStoriesSnapPlaybackInfoFetchResultWithRankedStoryIds:snapPlaybackInfoMap:]	
+105761fdc	10576200f	decompiled	chunks/006/functions-000403.c		
+105762010	1057624d3	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _prefetchAdWithRankedStoryIds:snapPlaybackInfoMap:]	
+1057624d4	10576252b	decompiled	chunks/006/functions-000403.c		
+10576252c	10576265b	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _prefetchAdMediaWithAdResponse:success:]	
+10576265c	1057626a3	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _navBadgeOperaContextMatchEnabled]	
+1057626a4	1057626fb	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _targetingParameters]	
+1057626fc	1057627b7	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher _mediaLoadContexts]	
+1057627b8	105762883	decompiled	chunks/006/functions-000403.c	-[SCAdUserStoriesAdPrefetcher .cxx_destruct]	
+105762884	1057628a7	decompiled	chunks/006/functions-000403.c		
+1057628a8	105762a4f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper initWithAdProvider:adMediaFetcher:adConfigProvider:adConfigProviderV2:adWebViewPrefetchHintsManager:adsPreferencesProvider:grapheneRegistry:lifecycleTracker:]	
+105762a50	105762a5f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper prefetchAdsWithTargetingParams:adOrganicSignals:completionQueue:completionBlock:]	
+105762a60	105762a97	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper prefetchAdsWithTargetingParams:adOrganicSignals:adViewLocation:completionQueue:completionBlock:]	
+105762a98	105762ac3	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper prefetchAdsWithTargetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:completionQueue:completionBlock:]	
+105762ac4	105762afb	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper earlyFetchAdsWithTargetingParams:adOrganicSignals:adViewLocation:completionQueue:completionBlock:]	
+105762afc	105762b27	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper earlyFetchAdsWithTargetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:completionQueue:completionBlock:]	
+105762b28	105762b5b	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper prefetchAdsWithTargetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:requestOrigin:completionQueue:completionBlock:onServeDecision:]	
+105762b5c	105762b8f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper earlyFetchAdsWithTargetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:requestOrigin:completionQueue:completionBlock:onServeDecision:]	
+105762b90	105762e6f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper _fetchAdsWithTargetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:isEarlyFetch:requestOrigin:completionQueue:completionBlock:onServeDecision:]	
+105762e70	105762e83	decompiled	chunks/006/functions-000403.c		
+105762e84	105762f03	decompiled	chunks/006/functions-000403.c		
+105762f04	10576331b	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper prefetchAdMediaWithAdResponse:mediaLoadContexts:completionQueue:completionBlock:]	
+10576331c	105763437	decompiled	chunks/006/functions-000403.c		
+105763438	10576344f	decompiled	chunks/006/functions-000403.c		
+105763450	105763e7b	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper _handlePrefetchAdCacheResponse:targetingParams:adOrganicSignals:upcomingStoriesContext:engagement:adViewLocation:isEarlyFetch:requestOrigin:prefetchStartTime:completionQueue:completionBlock:onServeDecision:]	
+105763e7c	105763e8f	decompiled	chunks/006/functions-000403.c		
+105763e90	1057640af	decompiled	chunks/006/functions-000403.c		
+1057640b0	1057640c3	decompiled	chunks/006/functions-000403.c		
+1057640c4	10576418b	decompiled	chunks/006/functions-000403.c		
+10576418c	105764407	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper _handlePrefetchSuccessWithAdResponse:targetingParams:prefetchStartTime:completionQueue:completionBlock:]	
+105764408	10576442f	decompiled	chunks/006/functions-000403.c		
+105764430	10576443f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper _operaTypeForAdProductType:]	
+105764440	1057644b7	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchHelper .cxx_destruct]	
+1057644b8	105764613	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker initWithAdProductType:adConfigProvider:grapheneRegistry:performer:adViewingHistory:userTrackedLogger:bandwidthEstimator:]	
+105764614	10576461f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker checkPrefetchConditionsFromPrefetchConfigs:adPrefetchSource:unviewedFriendStoriesCount:completionBlock:]	
+105764620	10576475f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker checkPrefetchConditionsFromPrefetchConfigs:adPrefetchSource:completionBlock:]	
+105764760	105764803	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _checkUserEngagementScoreWithCompletionBlock:]	
+105764804	1057649b3	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _checkMaxAdIndexWithCompletionBlock:]	
+1057649b4	1057649fb	decompiled	chunks/006/functions-000403.c		
+1057649fc	105764a1f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _handleAdViewCount:maxAdIndex:completionBlock:]	
+105764a20	105764a9b	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _allowPrefetchWithCompletionBlock:]	
+105764a9c	105764b17	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _disallowPrefetchWithPrefetchThrottleType:skipReason:completionBlock:]	
+105764b18	105764c7b	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker logPrefetchThrottle:]	
+105764c7c	105764d0f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _logPrefetchRequestInfo]	
+105764d10	105764e4f	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker _logPrefetchSkipInfo:]	
+105764e50	105764ebb	decompiled	chunks/006/functions-000403.c	-[SCAdPrefetchRuleTracker .cxx_destruct]	
+105764ebc	105765063	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader initWithConfigProvider:attachmentPreloader:grapheneRegistry:notificationPool:mainQueuePerformer:performer:]	
+105765064	105765087	decompiled	chunks/006/functions-000403.c		
+105765088	1057650cf	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _isPlayableAttachmentPreloadingEnabled]	
+1057650d0	1057652df	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader preloadPromotedTileCtaAttachment:tileVisibility:tilePosition:]	
+1057652e0	105765393	decompiled	chunks/006/functions-000403.c		
+105765394	1057657f7	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _buildAttachmentDataModel:cacheKey:]	
+1057657f8	1057658f7	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _onPreloadAttachment:cacheKey:]	
+1057658f8	1057659f3	decompiled	chunks/006/functions-000403.c		
+1057659f4	105765a47	decompiled	chunks/006/functions-000403.c		
+105765a48	105765a8f	decompiled	chunks/006/functions-000403.c		
+105765a90	105765b6b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _doOnPreloadSuccess:cacheKey:]	
+105765b6c	105765bf3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _logPreloadError:]	
+105765bf4	105765c53	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader _showNotificationWithTitle:]	
+105765c54	105765ccb	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryAttachmentPreloader .cxx_destruct]	
+105765ccc	105765d03	decompiled	chunks/006/functions-000403.c		
+105765d04	105765d8b	decompiled	chunks/006/functions-000403.c		
+105765d8c	105765f3b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryDataServicesEntryPoint _promotedStoryRequestProvider]	
+105765f3c	105765f5f	decompiled	chunks/006/functions-000403.c		
+105765f60	10576633b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryDataServicesEntryPoint _promotedStoryLogger:]	
+10576633c	10576635b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryDataServicesEntryPoint appImpressionServices]	
+10576635c	10576636f	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryDataServicesEntryPoint setAppImpressionServices:]	
+105766370	105766477	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryDataServicesEntryPoint .cxx_destruct]	
+105766478	1057664ff	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryStateProvider init]	
+105766500	105766553	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryStateProvider markAdSnapViewedForSnapId:]	
+105766554	1057665b3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryStateProvider isAdSnapViewedForSnapId:]	
+1057665b4	1057665e3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedStoryStateProvider .cxx_destruct]	
+1057665e4	105766697	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap initWithSize:]	
+105766698	10576682b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap setValue:forKey:]	
+10576682c	105766897	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap valueForKey:]	
+105766898	105766913	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap containsKey:]	
+105766914	10576696b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap isFull]	
+10576696c	1057669ab	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap isEmpty]	
+1057669ac	1057669b3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap maxSize]	
+1057669b4	1057669bb	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap setMaxSize:]	
+1057669bc	1057669c3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap keyOrder]	
+1057669c4	1057669f3	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap setKeyOrder:]	
+1057669f4	1057669fb	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap map]	
+1057669fc	105766a2b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap setMap:]	
+105766a2c	105766a5b	decompiled	chunks/006/functions-000403.c	-[SCAdPromotedTileAppStorePrefetcherCacheMap .cxx_destruct]	
+105766a5c	105766ed7	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger initWithAdConfigProvider:configProviderV2:promotedStoryMetricsManager:promotedStoryS2RInfoProvider:tileAttachmentTrackBuilder:adTracker:trackSeqNumProvider:appImpressionTracker:userTrackedLogger:performerProvider:mainQueuePerformer:timeProvider:attachmentPreloader:grapheneRegistry:notificationPool:canOpenUrlProvider:]	
+105766ed8	105767033	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryOpened:pageSessionId:tileIndexPos:]	
+105767034	1057672ef	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryTileImpression:data:pageSessionId:minimumVisibleFraction:promotedStoryTileSize:tileIndexPos:]	
+1057672f0	10576734f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _shouldFireImpressionTrack:minimumVisibleFraction:sessionIdChanged:]	
+105767350	105767763	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _firePromotedTileImpressionTrack:impressionData:tileSize:]	
+105767764	1057677cb	decompiled	chunks/006/functions-000404.c		
+1057677cc	105767843	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logTrackFiredLifecycleEvent:trackType:data:]	
+105767844	10576795b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _onStoryImpressionBelowMinimumVisibleFraction:promotedStory:data:]	
+10576795c	10576798f	decompiled	chunks/006/functions-000404.c		
+105767990	105767a47	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _resetViewTimeStopwatch:]	
+105767a48	105767b8f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger startPromotedStoryViewThroughImpression:data:]	
+105767b90	105767bc3	decompiled	chunks/006/functions-000404.c		
+105767bc4	105767c8b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _startPromotedStoryViewThroughImpression:data:]	
+105767c8c	105767c8f	decompiled	chunks/006/functions-000404.c		
+105767c90	105767d6b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logSwipeInLifecyleEvent:data:]	
+105767d6c	1057680cf	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _tileLifecyleEvent:promotedStory:data:]	
+1057680d0	1057681bf	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _startViewTimeStopwatch:]	
+1057681c0	105768287	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _pausePromotedStoryViewThroughImpression:]	
+105768288	10576828b	decompiled	chunks/006/functions-000404.c		
+10576828c	1057683bf	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger endPromotedStoryViewThroughImpression:data:]	
+1057683c0	1057683f3	decompiled	chunks/006/functions-000404.c		
+1057683f4	105768523	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryOnScreen:data:]	
+105768524	105768557	decompiled	chunks/006/functions-000404.c		
+105768558	1057686b7	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryOnScreen:data:]	
+1057686b8	1057687d3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryOffScreen:data:]	
+1057687d4	105768807	decompiled	chunks/006/functions-000404.c		
+105768808	105768907	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger registerNoFillPromotedStory:forStoryId:]	
+105768908	10576893b	decompiled	chunks/006/functions-000404.c		
+10576893c	1057689e3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger clearNoFillPromotedStoryInfo]	
+1057689e4	105768a0f	decompiled	chunks/006/functions-000404.c		
+105768a10	105768b73	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger getNoFillInfoForStoryId:]	
+105768b74	105768b8b	decompiled	chunks/006/functions-000404.c		
+105768b8c	105768bdf	decompiled	chunks/006/functions-000404.c		
+105768be0	105768be7	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _registerNoFillPromotedStory:forStoryId:]	
+105768be8	105768bef	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _clearNoFillPromotedStoryInfo]	
+105768bf0	105768bf7	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _getNoFillInfoForStoryId:]	
+105768bf8	105768cab	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _sessionIdFromPageSessionId:cheetahStory:]	
+105768cac	105768e5f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logAdTileViewTileImpression:data:minimumVisibleFraction:]	
+105768e60	105768ee3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logTileViewedLifecycleEvent:minimumVisibleFraction:data:]	
+105768ee4	10576922f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logAdTileViewWithPromotedStory:didEngage:viewedTime:minimumVisibleFraction:ctaTapped:tileSize:tileTapCoordinates:tileIndexPos:tileAutoPlayEligible:tileAutoPlayed:tileAutoPlayTimeMs:]	
+105769230	105769393	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedTileTappedWithStory:tilePosition:tileSize:tileTapCoordinates:didTapCta:]	
+105769394	10576949b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _getSequenceIdForServeItemId:]	
+10576949c	1057694c3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _resetDiscoverSessionData]	
+1057694c4	10576956b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger firePromotedStoryInteractionTrack:adTrackInfo:sessionId:]	
+10576956c	10576995b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _firePromotedStoryTrack:sessionId:adResponse:]	
+10576995c	105769b7b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryReported:reason:flagNote:tileSize:]	
+105769b7c	105769b7f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryTileAttachmentWillPresent:]	
+105769b80	105769d2f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryTileAttachmentPresented:loggingMetadata:adLifecycleTimestamps:tileCtaOverrides:attachmentType:swipeCount:]	
+105769d30	105769d67	decompiled	chunks/006/functions-000404.c		
+105769d68	105769ebf	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryTileTappedForAdResponse:loggingMetadata:tileCtaOverrides:]	
+105769ec0	105769fbf	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _resolveAppInstallStatusForAdResponse:completion:]	
+105769fc0	10576a127	decompiled	chunks/006/functions-000404.c		
+10576a128	10576a143	decompiled	chunks/006/functions-000404.c		
+10576a144	10576a157	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryFollowupAttachmentPresented:loggingMetadata:adLifecycleTimestamps:attachmentType:swipeCount:]	
+10576a158	10576a28f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _fireIntermediateTrackForAdResponse:loggingMetadata:adLifecycleTimestamps:swipeCount:]	
+10576a290	10576a557	decompiled	chunks/006/functions-000404.c		
+10576a558	10576a6a3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryCtaAttachmentBackgrounded:adLifecycleTimestamps:attachmentTrackInfo:tileSize:swipeCount:]	
+10576a6a4	10576a6eb	decompiled	chunks/006/functions-000404.c		
+10576a6ec	10576a847	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryCtaAttachmentDidDismiss:adLifecycleTimestamps:attachmentTrackInfo:tileSize:fireTrack:swipeCount:]	
+10576a848	10576a88f	decompiled	chunks/006/functions-000404.c		
+10576a890	10576aa33	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryCtaAttachmentDidDismiss:adLifecycleTimestamps:attachmentTrackInfo:restartViewTimeStopwatch:fireTrack:tileSize:swipeCount:]	
+10576aa34	10576ac0b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryCtaAttachmentTrack:adLifecycleTimestamps:attachmentTrackInfo:tileTimeViewedInMillis:tileSize:swipeCount:]	
+10576ac0c	10576ac1b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryReportCancelled:tileSize:]	
+10576ac1c	10576ae1b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryHidden:reason:tileSize:]	
+10576ae1c	10576afcb	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryReportActionWithPromotedStory:adFlaggedReason:adHiddenReason:exitType:]	
+10576afcc	10576b0ef	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger isPromotedTileCtaEnabledWithAdResponse:]	
+10576b0f0	10576b1c3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryAnimationStarted:]	
+10576b1c4	10576b2a7	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryAnimationCompleted:result:]	
+10576b2a8	10576b4eb	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryFetched:]	
+10576b4ec	10576b5db	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryInserted:tilePosition:]	
+10576b5dc	10576b613	decompiled	chunks/006/functions-000404.c		
+10576b614	10576b783	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger _logPromotedStoryInserted:tilePosition:]	
+10576b784	10576b927	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger logPromotedStoryInsertionViolation:organicGarmSafety:]	
+10576b928	10576b92f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger currentDiscoverSessionId]	
+10576b930	10576ba5b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesLogger .cxx_destruct]	
+10576ba5c	10576ba97	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesS2RInfoProvider init]	
+10576ba98	10576bb0b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesS2RInfoProvider setLastViewedPromotedStory:data:]	
+10576bb0c	10576bb57	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesS2RInfoProvider lastViewedPromotedStory:]	
+10576bb58	10576bb5f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesS2RInfoProvider getMetaInfoByProject:subProject:description:]	
+10576bb60	10576bb8f	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesS2RInfoProvider .cxx_destruct]	
+10576bb90	10576bd97	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoriesTileAttachmentTrackBuilder buildTileAttachmentTrack:adLifecycleTimestamps:swipeCount:]	
+10576bd98	10576bdaf	decompiled	chunks/006/functions-000404.c		
+10576bdb0	10576c04f	decompiled	chunks/006/functions-000404.c		
+10576c050	10576c09b	decompiled	chunks/006/functions-000404.c		
+10576c09c	10576c0a3	decompiled	chunks/006/functions-000404.c		
+10576c0a4	10576c1e3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoryRequestProviderImpl initWithFeatureSettingsService:adConfigProvider:userAdIdProvider:applicationPreferences:browserPrivacyConsentInfoManager:]	
+10576c1e4	10576c1f3	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoryRequestProviderImpl initWithFeatureSettingsService:adConfigProvider:]	
+10576c1f4	10576c5ef	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoryRequestProviderImpl promotedStoryAdsClientInfo]	
+10576c5f0	10576c65b	decompiled	chunks/006/functions-000404.c	-[SCPromotedStoryRequestProviderImpl .cxx_destruct]	
+10576c65c	10576c6f7	decompiled	chunks/006/functions-000404.c		
+10576c6f8	10576ccaf	decompiled	chunks/006/functions-000404.c		
+10576ccb0	10576f4eb	decompiled	chunks/006/functions-000404.c		
+10576f4ec	10576f503	decompiled	chunks/006/functions-000404.c		
+10576f504	10576f55b	decompiled	chunks/006/functions-000404.c		
+10576f55c	10576f697	decompiled	chunks/006/functions-000404.c		
+10576f698	10576f6b3	decompiled	chunks/006/functions-000404.c	-[SCAdEOVTimerEnvironment makeStopwatch]	
+10576f6b4	10576f6c7	decompiled	chunks/006/functions-000404.c	-[SCAdEOVTimerEnvironment isDiscoverFeedPageOpenEvent:]	
+10576f6c8	10576f6db	decompiled	chunks/006/functions-000404.c	-[SCAdEOVTimerEnvironment isDiscoverFeedSwipeOutEvent:]	
+10576f6dc	10576f6e3	decompiled	chunks/006/functions-000404.c	-[SCAdEOVTimerEnvironment isFriendStoryFromGroupDataModel:]	
+10576f6e4	10576f6eb	decompiled	chunks/006/functions-000404.c	-[SCAdEOVTimerEnvironment isNonFriendStoryFromGroupDataModel:]	
+10576f6ec	10576f763	decompiled	chunks/006/functions-000405.c		
+10576f764	10576f83f	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider init]	
+10576f840	10576f8d7	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+10576f8d8	10576f993	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider registeredEventsForOperaSession]	
+10576f994	10576fb23	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider operaViewDidSendEvent:page:params:]	
+10576fb24	10576fb4f	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabTotalTimeSpentMillis]	
+10576fb50	10576fb7b	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabSessionTimeSpentMillis]	
+10576fb7c	10576fba7	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabFriendStoriesTotalTimeSpentMillis]	
+10576fba8	10576fbd3	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabFriendStoriesSessionTimeSpentMillis]	
+10576fbd4	10576fbff	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabNonFriendStoriesTotalTimeSpentMillis]	
+10576fc00	10576fc2b	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider fourthTabNonFriendStoriesSessionTimeSpentMillis]	
+10576fc2c	10576fc43	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider playlistItemController]	
+10576fc44	10576fc4f	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider setPlaylistItemController:]	
+10576fc50	10576fd2b	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerProvider .cxx_destruct]	
+10576fd2c	10576fda3	decompiled	chunks/006/functions-000405.c	-[SCAdEOVTimerServiceProvider .cxx_destruct]	
+10576fda4	10576fefb	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchServiceProvider _createPrefetcher]	
+10576fefc	10576ff3f	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchServiceProvider .cxx_destruct]	
+10576ff40	10576ffff	decompiled	chunks/006/functions-000405.c	+[SCSKStoreProductPrefetchJob prefetchJobWithItemIdentifier:prefetchedAppIds:queuePerformer:prefetchQueuePerformer:jobCompletion:]	
+105770000	10577001b	decompiled	chunks/006/functions-000405.c		
+10577001c	105770197	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob initWithItemIdentifier:prefetchedAppIds:queuePerformer:prefetchQueuePerformer:jobCompletion:storeViewControllerFactory:]	
+105770198	105770273	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob start:]	
+105770274	1057702b7	decompiled	chunks/006/functions-000405.c		
+1057702b8	1057703c7	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob _checkIfPrefetched:completion:]	
+1057703c8	1057703f7	decompiled	chunks/006/functions-000405.c		
+1057703f8	1057705bf	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob _onPrefetchCheckCompleted:completion:]	
+1057705c0	10577061b	decompiled	chunks/006/functions-000405.c		
+10577061c	10577069b	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob _onProductFetched:error:completion:]	
+10577069c	1057706a3	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob itemIdentifier]	
+1057706a4	1057706ab	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob jobCompletion]	
+1057706ac	105770723	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJob .cxx_destruct]	
+105770724	10577072f	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetchJobFactory createPrefetchJobWithItemIdentifier:prefetchedAppIds:queuePerformer:prefetchQueuePerformer:jobCompletion:]	
+105770730	1057707eb	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher initWithJobScheduler:adConfigProviderV2:mainQueuePerformer:queuePerformer:]	
+1057707ec	1057709c7	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher initWithJobScheduler:adConfigProviderV2:mainQueuePerformer:queuePerformer:jobFactory:]	
+1057709c8	105770c27	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher prefetchStoreProductWithItemIdentifier:]	
+105770c28	105770e13	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher cancelPrefetchForStoreProductsWithItemIdentifiers:]	
+105770e14	105770eb3	decompiled	chunks/006/functions-000405.c		
+105770eb4	105770eff	decompiled	chunks/006/functions-000405.c		
+105770f00	105771033	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher processJobWithJobConfig:input:context:onComplete:]	
+105771034	10577109b	decompiled	chunks/006/functions-000405.c		
+10577109c	1057711b3	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher _addPrefetchJobForItemWithIdentifier:onComplete:]	
+1057711b4	1057712f7	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher _startNextJob]	
+1057712f8	105771367	decompiled	chunks/006/functions-000405.c		
+105771368	1057714db	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher _onJobCompleted:result:error:]	
+1057714dc	105771533	decompiled	chunks/006/functions-000405.c		
+105771534	105771623	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher _onJobCompleted:prefetchedAppIds:result:error:]	
+105771624	10577171b	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher config]	
+10577171c	105771723	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher prefetchedAppIds]	
+105771724	1057717af	decompiled	chunks/006/functions-000405.c	-[SCSKStoreProductPrefetcher .cxx_destruct]	
+1057717b0	1057718af	decompiled	chunks/006/functions-000405.c	-[SCCameraAttachmentOperaPageResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1057718b0	105771d47	decompiled	chunks/006/functions-000405.c	-[SCCameraAttachmentOperaPageResolver pagePropertiesForCameraAttachment:attachmentProperties:]	
+105771d48	105771d8f	decompiled	chunks/006/functions-000405.c	-[SCCameraAttachmentOperaPageResolverEntryPoint .cxx_destruct]	
+105771d90	105771dc7	decompiled	chunks/006/functions-000405.c	-[SCCameraAttachmentOperaPageResolverPlugInEntryPoint .cxx_destruct]	
+105771dc8	105771e9b	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient initWithGRPCClientFactory:userId:]	
+105771e9c	105772067	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient createLoginDataForLoginSource:withAuthCode:authCodeVerifier:]	
+105772068	1057721d7	decompiled	chunks/006/functions-000405.c		
+1057721d8	1057722c3	decompiled	chunks/006/functions-000405.c		
+1057722c4	10577259b	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient getLoginDataForLoginSource:]	
+10577259c	105772727	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient deleteLoginDataForLoginSource:]	
+105772728	105772793	decompiled	chunks/006/functions-000405.c		
+105772794	1057728b3	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient _makeThirdPartyAccessServiceWithGRPCClientFactory:]	
+1057728b4	1057728f7	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient _makeGRPCCallOptionsBuilder]	
+1057728f8	105772a47	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient _parseError:]	
+105772a48	105772a77	decompiled	chunks/006/functions-000405.c	-[SCThirdPartyAccessServiceClient .cxx_destruct]	
+105772a78	105772aeb	decompiled	chunks/006/functions-000405.c	-[UNISCThirdPartyAccessPbThirdPartyAccessService initWithUnifiedGrpcService:]	
+105772aec	105772bcf	decompiled	chunks/006/functions-000405.c	-[UNISCThirdPartyAccessPbThirdPartyAccessService createThirdPartyAccessDataWithRequest:callOptionsBuilder:handler:]	
+105772bd0	105772cb3	decompiled	chunks/006/functions-000405.c	-[UNISCThirdPartyAccessPbThirdPartyAccessService getThirdPartyAccessDataWithRequest:callOptionsBuilder:handler:]	
+105772cb4	105772d97	decompiled	chunks/006/functions-000405.c	-[UNISCThirdPartyAccessPbThirdPartyAccessService deleteThirdPartyAccessDataWithRequest:callOptionsBuilder:handler:]	
+105772d98	105772da3	decompiled	chunks/006/functions-000405.c	-[UNISCThirdPartyAccessPbThirdPartyAccessService .cxx_destruct]	
+105772da4	105772e1f	decompiled	chunks/006/functions-000405.c		
+105772e20	105772e2b	decompiled	chunks/006/functions-000405.c		
+105772e2c	105772ea7	decompiled	chunks/006/functions-000405.c		
+105772ea8	105772eb3	decompiled	chunks/006/functions-000405.c		
+105772eb4	105772f1b	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbAction descriptor]	
+105772f1c	105772f83	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbPartner descriptor]	
+105772f84	105772feb	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbAccessTokenData descriptor]	
+105772fec	105773053	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbCreateThirdPartyAccessDataRequest descriptor]	
+105773054	1057730bb	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbCreateThirdPartyAccessDataResponse descriptor]	
+1057730bc	105773123	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbGetThirdPartyAccessDataRequest descriptor]	
+105773124	10577318b	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbGetThirdPartyAccessDataResponse descriptor]	
+10577318c	1057731f3	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbDeleteThirdPartyAccessDataRequest descriptor]	
+1057731f4	10577325b	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbDeleteThirdPartyAccessDataResponse descriptor]	
+10577325c	1057732c3	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbRecordThirdPartyAccessActionRequest descriptor]	
+1057732c4	10577332b	decompiled	chunks/006/functions-000405.c	+[SCThirdPartyAccessPbRecordThirdPartyAccessActionResponse descriptor]	
+10577332c	1057735bf	decompiled	chunks/006/functions-000405.c	-[SCAuthenticatedWebBrowsingEntryPoint begin]	
+1057735c0	105773647	decompiled	chunks/006/functions-000405.c	-[SCAuthenticatedWebBrowsingEntryPoint end]	
+105773648	1057736fb	decompiled	chunks/006/functions-000405.c	-[SCAuthenticatedWebBrowsingEntryPoint .cxx_destruct]	
+1057736fc	10577387b	decompiled	chunks/006/functions-000405.c	-[SCUnauthenticatedWebBrowsingEntryPoint begin]	
+10577387c	105773903	decompiled	chunks/006/functions-000405.c	-[SCUnauthenticatedWebBrowsingEntryPoint end]	
+105773904	10577396f	decompiled	chunks/006/functions-000405.c	-[SCUnauthenticatedWebBrowsingEntryPoint .cxx_destruct]	
+105773970	105773997	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler initWithWebBrowsingScope:runtime:grapheneRegistry:circumstanceEngine:safeBrowsingServices:]	
+105773998	105773bd7	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler initWithWebBrowsingScope:runtime:grapheneRegistry:circumstanceEngine:safeBrowsingServices:adBrowserLifecycleService:adConfigProvider:webBrowsingConfigProvider:adWebviewConfigRepository:adTrackSeqNumProvider:]	
+105773bd8	10577448b	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler handleBegin]	
+10577448c	105774603	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler handleEnd]	
+105774604	10577462f	decompiled	chunks/006/functions-000405.c		
+105774630	105774667	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler dismiss]	
+105774668	1057746a3	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler didDismiss]	
+1057746a4	1057746bb	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler _syncCleanup]	
+1057746bc	1057746df	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler _uiContainerDidFinishCleanup]	
+1057746e0	105774757	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler _cleanup]	
+105774758	10577477f	decompiled	chunks/006/functions-000405.c	-[SCWebBrowsingEntryPointHandler _circumstanceEngine]	
+105774780	105774827	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingEntryPointHandler .cxx_destruct]	
+105774828	105774833	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingUserScopedCache clearBrowserCachesAndCookies]	
+105774834	10577483f	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingUserScopedCache clearBrowserCachesAndCookiesWithCompletionBlock:]	
+105774840	10577484b	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingUserScopedCache markClearDiskCacheOnNextColdStartupIfExceeds:]	
+10577484c	105774857	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingUserScopedCache browserCachesAndCookiesSize]	
+105774858	10577490f	decompiled	chunks/006/functions-000406.c		
+105774910	1057749e7	decompiled	chunks/006/functions-000406.c		
+1057749e8	105774a03	decompiled	chunks/006/functions-000406.c		
+105774a04	105774a53	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingUserScopedServiceProvider .cxx_destruct]	
+105774a54	105774acf	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingViewProvider webViewWithFrame:scalesPageToFit:]	
+105774ad0	105774aeb	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingViewProvider webViewWithFrame:configuration:]	
+105774aec	105774bd3	decompiled	chunks/006/functions-000406.c	-[SCWebBrowsingViewProvider providePrefetchHintsLoadWkWebviewWithSharedCookie:]	
+105774bd4	105774ddf	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository initWithAdTrackPerformer:adConfigProvider:webBrowsingConfigProvider:webBrowsingUrlParameterModificationLogger:]	
+105774de0	105774e07	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adLifecycleEventObservableV2]	
+105774e08	105774e0f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adLifecycleEventObservable]	
+105774e10	105774e17	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adInteractionEventObservable]	
+105774e18	105774e1f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository streamsType]	
+105774e20	105774e47	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewEventObservable]	
+105774e48	105774e6f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewUserEventObservableV2]	
+105774e70	105774e97	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewConfigEventObservable]	
+105774e98	105774ebf	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewAsmEventObservable]	
+105774ec0	105774ee7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewLoadingEventObservable]	
+105774ee8	105774f0f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewNavigationEventObservable]	
+105774f10	105774f37	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewGaEventObservable]	
+105774f38	105774f5f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewOperationEventObservable]	
+105774f60	105775043	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowserInterimJavaScriptMetricsUpdate:eventType:performanceMetrics:common:]	
+105775044	1057751db	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowserDidFinalizeJavaScriptMetrics:eventType:common:]	
+1057751dc	1057753d7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowser:didNavigate:common:exitMethod:]	
+1057753d8	10577555b	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowserDidReceiveGAHit:isPageView:isLandingPage:didFullyAppearTimestampMs:common:]	
+10577555c	10577562b	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowser:onWebviewUserEvent:]	
+10577562c	1057756fb	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowser:onWebvewConfigEvent:]	
+1057756fc	1057757cb	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository onWebviewAsmEvent:]	
+1057757cc	10577582f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowser:onWebviewOperationEvent:]	
+105775830	10577587f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository webBrowser:onWebviewUrlParameterModificationEvent:]	
+105775880	105775ea3	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _onWebBrowser:performanceMetrics:eventType:common:]	
+105775ea4	105775edb	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _webViewLatencyValue:startTimestamp:]	
+105775edc	105776083	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _adTrackCommon:]	
+105776084	10577613f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _webBrowserViewDidAppear:]	
+105776140	105776207	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _webBrowserDidDismiss:exitMethod:common:]	
+105776208	1057762cf	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository _webBrowserWillResignActive:exitMethod:common:]	
+1057762d0	1057762d7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adLifecycleEventSubjectV2]	
+1057762d8	105776307	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository setAdLifecycleEventSubjectV2:]	
+105776308	10577630f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewConfigEventSubject]	
+105776310	10577633f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository setAdWebviewConfigEventSubject:]	
+105776340	105776347	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewUserEventSubjectV2]	
+105776348	105776377	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository setAdWebviewUserEventSubjectV2:]	
+105776378	10577637f	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewAsmEventSubject]	
+105776380	1057763af	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository setAdWebviewAsmEventSubject:]	
+1057763b0	1057763b7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewLoadingEventSubject]	
+1057763b8	1057763bf	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewNavigationEventSubject]	
+1057763c0	1057763c7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewGaEventSubject]	
+1057763c8	1057763cf	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewOperationEventSubject]	
+1057763d0	1057763d7	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository adWebviewEventSubject]	
+1057763d8	105776407	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository setAdWebviewEventSubject:]	
+105776408	1057764df	decompiled	chunks/006/functions-000406.c	-[SCAdWebviewEventStreamsRepository .cxx_destruct]	
+1057764e0	105776687	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl initWithWebBrowsingScriptCache:contentDelivery:adConfigProvider:webBrowsingConfigProvider:queuePerformer:prefetchHintsManager:httpMetadataService:httpRequestModifier:]	
+105776688	10577670b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl prefetchScriptFileForAdPod:]	
+10577670c	10577680b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl prefetchScriptFileForAdResponses:]	
+10577680c	105776847	decompiled	chunks/006/functions-000406.c		
+105776848	1057768df	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetchDynamicScriptFile]	
+1057768e0	105776a83	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetchLocalTestScriptFile:]	
+105776a84	105776a87	decompiled	chunks/006/functions-000406.c		
+105776a88	105776b3b	decompiled	chunks/006/functions-000406.c		
+105776b3c	105776ee3	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetchScriptFileForAdResponses:]	
+105776ee4	105777007	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetchAsmScriptWithAdSnap:]	
+105777008	10577700b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetchAsmScriptForUrl:]	
+10577700c	1057770e3	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetcScriptViaContentManagerWithDownloadUrl:]	
+1057770e4	10577715f	decompiled	chunks/006/functions-000406.c		
+105777160	10577737f	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _prefetcAssetsViaContentManagerWithDownloadUrl:completion:]	
+105777380	1057773eb	decompiled	chunks/006/functions-000406.c		
+1057773ec	10577748b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl _handleScriptPrefetchContentDownloadUrl:data:success:latency:isFromCache:]	
+10577748c	105777503	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewAssetPrefetcherImpl .cxx_destruct]	
+105777504	10577769b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource initWithContentDelivery:adConfigProvider:adConfigProviderV2:webBrowsingConfigProvider:grapheneRegistry:queuePerformer:]	
+10577769c	105777927	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource preparePrefetchHints:adSwipeUpLikely:isPrefetchOptIn:adType:metadata:completion:]	
+105777928	105777963	decompiled	chunks/006/functions-000406.c		
+105777964	105777a9f	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource retrievePrefetchHints:]	
+105777aa0	105777ab7	decompiled	chunks/006/functions-000406.c		
+105777ab8	105777b13	decompiled	chunks/006/functions-000406.c		
+105777b14	105777c27	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _downloadPrefetchHints:prefetchMode:adType:completion:]	
+105777c28	105777c67	decompiled	chunks/006/functions-000406.c		
+105777c68	10577803f	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource performDownloadPrefetchHints:prefetchMode:adType:completion:]	
+105778040	10577808b	decompiled	chunks/006/functions-000406.c		
+10577808c	10577812f	decompiled	chunks/006/functions-000406.c		
+105778130	1057782d3	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _loadPrefetchHintsHtmlIntoMemoryCache:cacheKey:prefetchMode:adType:completion:]	
+1057782d4	105778407	decompiled	chunks/006/functions-000406.c		
+105778408	10577844b	decompiled	chunks/006/functions-000406.c		
+10577844c	1057785e7	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource handleContentResult:prefetchHintsId:cacheKey:prefetchMode:adType:completion:]	
+1057785e8	105778713	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _loadCachedPrefetchHintsHtml:]	
+105778714	1057789c7	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _buildPrefetchHTML:prefetchHintsId:prefetchMode:prefetchResourceURLs:topConnectedOriginURLs:usesWebviewMetadata:]	
+1057789c8	105778bf7	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _logCachedPrefetchHintsGrapheneMetric:preconnectUrls:dnsPrefetchUrls:prefetchMode:usesWebviewMetadata:]	
+105778bf8	105778c27	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _getPreconnectUrls:startIndex:preconnectCount:enablePreconnectForPrefetchOptIn:isPrefetchOptIn:]	
+105778c28	105778cb7	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _getTopOriginUrlsSubarray:startIndex:urlCount:]	
+105778cb8	10577914b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _preparePrefetchHints:prefetchHintsProto:prefetchMode:adType:completion:]	
+10577914c	10577915b	decompiled	chunks/006/functions-000406.c		
+10577915c	1057791ef	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _isGTMPrefetchEnabled:]	
+1057791f0	1057792d3	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _incrementMetric:prefetchMode:]	
+1057792d4	10577938f	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource _incrementMetric:prefetchMode:usesWebviewMetadata:]	
+105779390	105779407	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsDataSource .cxx_destruct]	
+105779408	10577957b	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsLoadWorker initWithPrefetchHintsId:prefetchHints:delegate:browserViewProvider:webBrowsingConfigProvider:queuePerformer:grapheneRegistry:]	
+10577957c	10577962f	decompiled	chunks/006/functions-000406.c	-[SCAdWebViewPrefetchHintsLoadWorker startLoadPrefetchHints]	
+105779630	10577965b	decompiled	chunks/006/functions-000407.c		
+10577965c	10577970b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorker _startLoadPrefetchHints]	
+10577970c	105779807	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorker webView:didFinishNavigation:]	
+105779808	105779833	decompiled	chunks/006/functions-000407.c		
+105779834	10577991f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorker _reportPrefetchHintsLoadComplete]	
+105779920	1057799c7	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorker webView]	
+1057799c8	105779a3b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorker .cxx_destruct]	
+105779a3c	105779b37	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorkerProvider initWithBrowserViewProvider:webBrowsingConfigProvider:queuePerformer:grapheneRegistry:]	
+105779b38	105779bdb	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorkerProvider createPrefetchHintsLoadWorker:prefetchHintsId:delegate:]	
+105779bdc	105779c23	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsLoadWorkerProvider .cxx_destruct]	
+105779c24	105779e0f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl initWithPrefetchHintsDataSource:adConfigProvider:adConfigProviderV2:webBrowsingConfigProvider:grapheneRegistry:webViewPool:prefetchHintsLoadWorkerProvider:queuePerformer:]	
+105779e10	105779f6f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl preparePrefetchHints:adSwipeUpLikely:isPrefetchOptIn:adType:metadata:completion:]	
+105779f70	105779f7b	decompiled	chunks/006/functions-000407.c		
+105779f7c	10577a467	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl prepareAndLoadPrefetchHintsFor:]	
+10577a468	10577a47f	decompiled	chunks/006/functions-000407.c		
+10577a480	10577a4e3	decompiled	chunks/006/functions-000407.c		
+10577a4e4	10577a567	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl retrievePrefetchHintsWithPrefetchHintsId:]	
+10577a568	10577a613	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl prefetchHintsLoadComplete:webview:]	
+10577a614	10577a713	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl _loadPrefetchHints:prefetchHintsId:]	
+10577a714	10577a747	decompiled	chunks/006/functions-000407.c		
+10577a748	10577a7eb	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl _startLoadPrefetchHints:prefetchHintsId:]	
+10577a7ec	10577a893	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl _spawnWorkerForPrefetchHints:prefetchHintsId:]	
+10577a894	10577a89b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl _releaseWorker:]	
+10577a89c	10577a92b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPrefetchHintsManagerImpl .cxx_destruct]	
+10577a92c	10577aa4f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl initWithPreloadWorkerProvider:adConfigProvider:grapheneRegistry:webViewPool:]	
+10577aa50	10577aa53	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl preloadWebUrlFor:]	
+10577aa54	10577ab7b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl preloadComplete:]	
+10577ab7c	10577abd7	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl preloadFail:]	
+10577abd8	10577ac5b	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl preloadWebUrl:]	
+10577ac5c	10577acab	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl activePreloadWorkerSize]	
+10577acac	10577ad3f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl spawnWorker]	
+10577ad40	10577ad7f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl releaseWorker:]	
+10577ad80	10577add3	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadManagerImpl .cxx_destruct]	
+10577add4	10577af07	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker initWithWorkerId:preloadWorkerDelegate:browserViewProvider:webViewPool:grapheneRegistry:]	
+10577af08	10577afef	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker preloadWebsite:]	
+10577aff0	10577b023	decompiled	chunks/006/functions-000407.c		
+10577b024	10577b0bb	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker _preloadUrl:]	
+10577b0bc	10577b2c3	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker webView]	
+10577b2c4	10577b41f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker webView:didFinishNavigation:]	
+10577b420	10577b4ef	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker webView:didFailNavigation:withError:]	
+10577b4f0	10577b4f7	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker workerId]	
+10577b4f8	10577b4ff	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker preloadedUrl]	
+10577b500	10577b507	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker setPreloadedUrl:]	
+10577b508	10577b50f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker wkWebView]	
+10577b510	10577b53f	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker setWkWebView:]	
+10577b540	10577b5a7	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorker .cxx_destruct]	
+10577b5a8	10577b673	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorkerProvider initWithBrowserViewProvider:webViewPool:grapheneRegistry:]	
+10577b674	10577b6eb	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorkerProvider createWebViewPreloadWorkerWithDelegate:]	
+10577b6ec	10577b727	decompiled	chunks/006/functions-000407.c	-[SCAdWebViewPreloadWorkerProvider .cxx_destruct]	
+10577b728	10577b7db	decompiled	chunks/006/functions-000407.c		
+10577b7dc	10577bc5b	decompiled	chunks/006/functions-000407.c		
+10577bc5c	10577bccb	decompiled	chunks/006/functions-000407.c	-[SCWebBrowsingScriptCacheImpl init]	
+10577bccc	10577bd5f	decompiled	chunks/006/functions-000407.c	-[SCWebBrowsingScriptCacheImpl cacheScriptString:forUrl:]	
+10577bd60	10577bddb	decompiled	chunks/006/functions-000407.c	-[SCWebBrowsingScriptCacheImpl getScriptStringForUrl:]	
+10577bddc	10577bde7	decompiled	chunks/006/functions-000407.c	-[SCWebBrowsingScriptCacheImpl .cxx_destruct]	
+10577bde8	10577be13	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric download]	
+10577be14	10577be3f	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric downloadSuccess]	
+10577be40	10577be6b	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric downloadFail]	
+10577be6c	10577be97	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric downloadCacheHit]	
+10577be98	10577bec3	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric loadSuccess]	
+10577bec4	10577beef	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric loadFail]	
+10577bef0	10577bf1b	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric loadParseError]	
+10577bf1c	10577bf47	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric workerLoad]	
+10577bf48	10577bf73	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric workerLoadFinish]	
+10577bf74	10577bf9f	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric workerLoadFail]	
+10577bfa0	10577bfcb	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric noDownload]	
+10577bfcc	10577bff7	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric emptyResources]	
+10577bff8	10577c023	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric resourcesCount]	
+10577c024	10577c04f	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric prepareHints]	
+10577c050	10577c07b	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric cacheHints]	
+10577c07c	10577c0a7	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric loadFromCache]	
+10577c0a8	10577c0d3	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric noMetadata]	
+10577c0d4	10577c0ff	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPrefetchMetric prefetchHintsLoadLatency]	
+10577c100	10577c19f	decompiled	chunks/006/functions-000407.c	-[SCGrapheneWebViewPrefetchMetric description]	
+10577c1a0	10577c397	decompiled	chunks/006/functions-000407.c	-[SCGrapheneRegistry webViewPrefetchGraphene]	
+10577c398	10577c3c3	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPreloadMetric preloadSuccess]	
+10577c3c4	10577c3ef	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPreloadMetric preloadError]	
+10577c3f0	10577c41b	decompiled	chunks/006/functions-000407.c	+[SCGrapheneWebViewPreloadMetric preloadLatency]	
+10577c41c	10577c4bb	decompiled	chunks/006/functions-000407.c	-[SCGrapheneWebViewPreloadMetric description]	
+10577c4bc	10577c613	decompiled	chunks/006/functions-000407.c	-[SCGrapheneRegistry webViewPreloadGraphene]	
+10577c614	10577c68f	decompiled	chunks/006/functions-000407.c	+[SCWebViewWebViewPrefetchHints descriptor]	
+10577c690	10577c71b	decompiled	chunks/006/functions-000407.c	+[SCWebViewWebViewPrefetchHints_ResourceLinkInfo descriptor]	
+10577c71c	10577ca2f	decompiled	chunks/006/functions-000407.c		
+10577ca30	10577ca5b	decompiled	chunks/006/functions-000407.c		
+10577ca5c	10577cab7	decompiled	chunks/006/functions-000407.c	-[SCSoundServiceProvider .cxx_destruct]	
+10577cab8	10577cb5b	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery initWithContentDelivery:graphene:]	
+10577cb5c	10577cccf	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery createPlayerForSound:completion:]	
+10577ccd0	10577cdf3	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery createPlayerFromData:]	
+10577cdf4	10577cf33	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery prefetchNotificationSounds]	
+10577cf34	10577d123	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery _dataForSound:completion:]	
+10577d124	10577d137	decompiled	chunks/006/functions-000407.c		
+10577d138	10577d27f	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery _saveDataForSound:toFile:]	
+10577d280	10577d2af	decompiled	chunks/006/functions-000407.c	-[SCSoundContentDelivery .cxx_destruct]	
+10577d2b0	10577d4c7	decompiled	chunks/006/functions-000407.c	-[SCSoundEffects initWithSoundContentDelivery:graphene:circumstanceEngine:]	
+10577d4c8	10577d507	decompiled	chunks/006/functions-000407.c		
+10577d508	10577d5a3	decompiled	chunks/006/functions-000407.c	-[SCSoundEffects dealloc]	
+10577d5a4	10577d5b7	decompiled	chunks/006/functions-000407.c	-[SCSoundEffects playSound:]	
+10577d5b8	10577d5bb	decompiled	chunks/006/functions-000407.c	-[SCSoundEffects vibrateOnce]	
+10577d5bc	10577d6af	decompiled	chunks/006/functions-000407.c	-[SCSoundEffects _startVibration]	
+10577d6b0	10577d717	decompiled	chunks/006/functions-000407.c		
+10577d718	10577d74b	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _stopVibration]	
+10577d74c	10577d833	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _vibrateOnce]	
+10577d834	10577d8e7	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects lockRingingWithLabel:]	
+10577d8e8	10577d957	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects unlockRingingWithToken:]	
+10577d958	10577d97b	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects ringForBestFriend:incoming:customRingtoneId:]	
+10577d97c	10577da23	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects stopRinging]	
+10577da24	10577da73	decompiled	chunks/006/functions-000408.c		
+10577da74	10577db03	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects isRingingForBestFriend:isIncoming:isVibrating:shouldRingOnResume:customRingtoneId:]	
+10577db04	10577dcb3	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _ringWithSound:incoming:customRingtoneId:]	
+10577dcb4	10577ddb7	decompiled	chunks/006/functions-000408.c		
+10577ddb8	10577ddbf	decompiled	chunks/006/functions-000408.c		
+10577ddc0	10577ddcf	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects isHandlingVolumeButtonEvents]	
+10577ddd0	10577df07	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects startHandlingVolumeButtonEvents]	
+10577df08	10577e017	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects stopHandlingVolumeButtonEvents]	
+10577e018	10577e01b	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _handleButtonDown:]	
+10577e01c	10577e063	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _audioSessionWillDeactivate]	
+10577e064	10577e097	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects _audioSessionActivated]	
+10577e098	10577e0f7	decompiled	chunks/006/functions-000408.c	-[SCSoundEffects .cxx_destruct]	
+10577e0f8	10577e28b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer initWithSoundContentDelivery:graphene:respectMuteSwitchForSounds:cachePlayingState:]	
+10577e28c	10577e2e3	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer dealloc]	
+10577e2e4	10577e2ff	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer playing]	
+10577e300	10577e393	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer soundPlaying]	
+10577e394	10577e44b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer playOnce:]	
+10577e44c	10577e487	decompiled	chunks/006/functions-000408.c		
+10577e488	10577e567	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer playContinuously:customRingtoneId:]	
+10577e568	10577e5d3	decompiled	chunks/006/functions-000408.c		
+10577e5d4	10577e67b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer stop]	
+10577e67c	10577e713	decompiled	chunks/006/functions-000408.c		
+10577e714	10577e757	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _appWillEnterForeground]	
+10577e758	10577e817	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _isUsingBuiltInSpeaker]	
+10577e818	10577e9ff	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _preparePlayerAndPlaySound:continuously:customRingtoneId:]	
+10577ea00	10577eaf3	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _createPlayerForSound:continuously:preparationStartTime:]	
+10577eaf4	10577ebcf	decompiled	chunks/006/functions-000408.c		
+10577ebd0	10577ebff	decompiled	chunks/006/functions-000408.c		
+10577ec00	10577ed43	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _createPlayerWithCustomRingtoneForSound:customRingtoneId:preparationStartTime:]	
+10577ed44	10577ef9b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer _playSound:preparationStartTime:continuously:]	
+10577ef9c	10577f067	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer secretFeatureChecker:didCheckSecretFeatureMode:]	
+10577f068	10577f0ff	decompiled	chunks/006/functions-000408.c		
+10577f100	10577f1ff	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer audioPlayerDidFinishPlaying:successfully:]	
+10577f200	10577f27f	decompiled	chunks/006/functions-000408.c		
+10577f280	10577f28b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer player]	
+10577f28c	10577f293	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer setPlayer:]	
+10577f294	10577f29b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer cachedSoundPlaying]	
+10577f29c	10577f2a3	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer setCachedSoundPlaying:]	
+10577f2a4	10577f31b	decompiled	chunks/006/functions-000408.c	-[SCSoundPlayer .cxx_destruct]	
+10577f31c	10577f3a3	decompiled	chunks/006/functions-000408.c		
+10577f3a4	10577f3c7	decompiled	chunks/006/functions-000408.c		
+10577f3c8	10577f427	decompiled	chunks/006/functions-000408.c		
+10577f428	10577f4a3	decompiled	chunks/006/functions-000408.c		
+10577f4a4	10577f4cf	decompiled	chunks/006/functions-000408.c	+[SCGrapheneSoundMetric soundPlay]	
+10577f4d0	10577f4fb	decompiled	chunks/006/functions-000408.c	+[SCGrapheneSoundMetric ringtonePlay]	
+10577f4fc	10577f527	decompiled	chunks/006/functions-000408.c	+[SCGrapheneSoundMetric playerInitSuccess]	
+10577f528	10577f553	decompiled	chunks/006/functions-000408.c	+[SCGrapheneSoundMetric playerInitFailure]	
+10577f554	10577f5f3	decompiled	chunks/006/functions-000408.c	-[SCGrapheneSoundMetric description]	
+10577f5f4	10577f813	decompiled	chunks/006/functions-000408.c	-[SCGrapheneRegistry soundGraphene]	
+10577f814	10577f897	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerServicesEntryPoint _searchDatabase]	
+10577f898	10577f8b3	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerServicesEntryPoint _refresher]	
+10577f8b4	10577fa43	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerServicesEntryPoint _search]	
+10577fa44	10577faff	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerServicesEntryPoint _iconProvider]	
+10577fb00	10577fb8f	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerServicesEntryPoint .cxx_destruct]	
+10577fb90	10577fc33	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerCategoryIconProvider initWithAvatarProvider:selfieFetcher:]	
+10577fc34	10577fdb3	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerCategoryIconProvider stickerCategoryIcon]	
+10577fdb4	10577fe1f	decompiled	chunks/006/functions-000408.c		
+10577fe20	10577fe4f	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerCategoryIconProvider .cxx_destruct]	
+10577fe50	10577ffa7	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerRefresher refreshEncodedBitmojiId:avatarId:friendAvatarId:]	
+10577ffa8	10578017f	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerRefresher refreshBitmojiSticker:avatarId:friendAvatarId:]	
+105780180	105780333	decompiled	chunks/006/functions-000408.c	-[SCBitmojiStickerRefresher refreshBitmojiStickers:avatarId:friendAvatarId:]	
+105780334	1057803d3	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager initWithNetworkServices:]	
+1057803d4	10578052f	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager verifyAuthRequestForURL:userId:completion:]	
+105780530	10578063b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager sendApprovalRequestWithToken:completion:]	
+10578063c	105780747	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager sendDenialRequestWithApprovalToken:completion:]	
+105780748	10578095b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _verifyAuthRequestWithKey:params:completion:]	
+10578095c	10578099f	decompiled	chunks/006/functions-000408.c		
+1057809a0	1057809bb	decompiled	chunks/006/functions-000408.c		
+1057809bc	105780b6b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _handleVerificationWithParams:data:response:completion:]	
+105780b6c	105780d6b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _sendApprovalWithKey:params:completion:]	
+105780d6c	105780e1f	decompiled	chunks/006/functions-000408.c		
+105780e20	105780f67	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _handleApprovalWithResponseJSON:error:completion:]	
+105780f68	105781167	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _sendDenialWithKey:params:completion:]	
+105781168	1057811ab	decompiled	chunks/006/functions-000408.c		
+1057811ac	1057811c3	decompiled	chunks/006/functions-000408.c		
+1057811c4	105781297	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _handleDenialWithData:response:error:completion:]	
+105781298	105781337	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager _oAuthURLWithEndpoint:]	
+105781338	105781367	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthRequestManager .cxx_destruct]	
+105781368	105781567	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController initWithAuthDeepLink:requestManager:eventLogger:userLinkingServices:avatarBuilderScopeExposer:userId:username:bitmojiAccountLinked:authFlowCompletion:]	
+105781568	1057817c3	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController loadView]	
+1057817c4	10578180b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController viewDidLoad]	
+10578180c	105781813	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController preferredStatusBarStyle]	
+105781814	10578185f	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController bitmojiCreateFlowDidCompleteWithAvatarId:]	
+105781860	105781be7	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _showConfirmAuthorizationAlert]	
+105781be8	105781c1b	decompiled	chunks/006/functions-000408.c		
+105781c1c	105781c33	decompiled	chunks/006/functions-000408.c		
+105781c34	105781ccb	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _didPressContinueWithIsForCreate:]	
+105781ccc	105781d13	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _didDenyAuthorization]	
+105781d14	105781d5b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _didConfirmAuthorization]	
+105781d5c	105781e5b	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _verifyAuthRequest]	
+105781e5c	105781edb	decompiled	chunks/006/functions-000408.c		
+105781edc	105781f87	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _authRequestCompletedWithSuccess:approvalToken:isOriginAppSnapchat:errorMessage:]	
+105781f88	105782087	decompiled	chunks/006/functions-000408.c	-[SCBitmojiAuthViewController _sendApprovalRequest]	
+105782088	10578212f	decompiled	chunks/006/functions-000408.c		
+105782130	1057821df	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _approvalRequestSentWithSuccess:serverRedirectUri:authCode:serverState:errorMessage:]	
+1057821e0	105782327	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _sendDenialRequest]	
+105782328	10578237b	decompiled	chunks/006/functions-000409.c		
+10578237c	105782387	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _denialRequestSentWithClientRedirectUri:serverState:]	
+105782388	10578256f	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _showErrorMessage:]	
+105782570	105782587	decompiled	chunks/006/functions-000409.c		
+105782588	105782757	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _openBitmojiRedirectUri:authCode:state:]	
+105782758	1057827cf	decompiled	chunks/006/functions-000409.c		
+1057827d0	10578289b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController _goToBitmojiApp]	
+10578289c	1057828b3	decompiled	chunks/006/functions-000409.c		
+1057828b4	1057829b3	decompiled	chunks/006/functions-000409.c	-[SCBitmojiAuthViewController .cxx_destruct]	
+1057829b4	105782ca3	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkEntryPoint _bitmojiDeepLinkFactory]	
+105782ca4	105782d93	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkEntryPoint .cxx_destruct]	
+105782d94	1057830e7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkFactoryImpl initWithBitmojiAvatarProvider:bitmojiLogger:bitmojiSettingsScopeExposer:bitmojiSettingsScopeServices:bitmojiAvatarBuilderScopeExposer:bitmojiEditAvatarBuilderScopeExposer:bitmojiEditAvatarBuilderScopeServices:networkServices:bitmojiAppEventsEmitter:userLinkingServices:username:userId:circumstanceEngine:bitmoji3DStickerFetcher:fashionTrayPresentingServices:]	
+1057830e8	10578316b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkFactoryImpl bitmojiDeepLinkControllerWithUIContainer:]	
+10578316c	10578320b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkFactoryImpl bitmojiDeepLinkProcessorHandlerWithDelegate:uiContainer:]	
+10578320c	1057832d7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkFactoryImpl .cxx_destruct]	
+1057832d8	105783417	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessingPluginEntryPoint begin]	
+105783418	105783467	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessingPluginEntryPoint .cxx_destruct]	
+105783468	10578372f	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler initWithDelegate:uiContainer:bitmojiAppEventsEmitter:networkServices:avatarBuilderScopeExposer:bitmojiLogger:avatarProvider:bitmojiDeepLinkFactory:circumstanceEngine:userLinkingServices:userId:username:bitmoji3DStickerFetcher:]	
+105783730	105783813	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler processDeepLinkURL:additionalInfo:delegate:]	
+105783814	1057838bf	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler handleOpenURL:sourceApplication:additionalInfo:]	
+1057838c0	105783c37	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler handleOpenDeepLinkURL:sourceApplication:additionalInfo:]	
+105783c38	105783c43	decompiled	chunks/006/functions-000409.c		
+105783c44	105783c4b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler shouldForceNavigation]	
+105783c4c	105783c4f	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler processDeepLinkResolutionResult:additionalInfo:delegate:]	
+105783c50	105783d83	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler _presentDeeplinkURL:]	
+105783d84	105783d9b	decompiled	chunks/006/functions-000409.c		
+105783d9c	105783dd7	decompiled	chunks/006/functions-000409.c		
+105783dd8	105783f03	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler _presentAuthViewControllerWithDeepLinkURL:]	
+105783f04	105783f13	decompiled	chunks/006/functions-000409.c		
+105783f14	105783fc3	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorHandler .cxx_destruct]	
+105783fc4	105784067	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin initWithBitmojiDeepLinkFactory:legacyNavigationServices:]	
+105784068	10578407b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin identifier]	
+10578407c	105784083	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin priority]	
+105784084	105784097	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin canProvideProcessorForFeature:]	
+105784098	1057840e3	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin isValidDeepLink:]	
+1057840e4	10578419b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin makeDeepLinkProcessor]	
+10578419c	10578425f	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin bitmojiDeepLinkProcessorHandler:presentMiddleVCAnimated:deepLinkURL:sourceApplication:]	
+105784260	1057842bf	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin bitmojiDeepLinkProcessorHandlerCanPerformNavigation:]	
+1057842c0	1057842c7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin bitmojiDeepLinkProcessorHandlerIsAtFarLeft:]	
+1057842c8	1057842f7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiDeepLinkProcessorPlugin .cxx_destruct]	
+1057842f8	1057845cb	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController initWithAvatarProvider:bitmojiLogger:bitmojiSettingsScopeExposer:bitmojiSettingsScopeServices:avatarBuilderScopeExposer:editAvatarBuilderScopeExposer:editAvatarBuilderScopeServices:username:uiContainer:bitmoji3DStickerFetcher:circumstanceEngine:fashionTrayPresentingServices:]	
+1057845cc	105784da7	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController presentDeepLinkURL:sourceApplication:flowCompletion:]	
+105784da8	105784dc7	decompiled	chunks/006/functions-000409.c		
+105784dc8	105784e2b	decompiled	chunks/006/functions-000409.c		
+105784e2c	105784f17	decompiled	chunks/006/functions-000409.c		
+105784f18	105784f8f	decompiled	chunks/006/functions-000409.c		
+105784f90	1057854c3	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _handleTryOnDeepLinkURL:]	
+1057854c4	1057854c7	decompiled	chunks/006/functions-000409.c		
+1057854c8	10578559f	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _base64URLDecode:]	
+1057855a0	105785687	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _launchAvatarBuilderWithFlowMode:oAuthClientId:source:fashionDropId:category:sectionId:bitmojiAvatarBuilderReferrer:]	
+105785688	10578570b	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _launchCreateAvatarBuilderWithSource:]	
+10578570c	105785893	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _launchEditAvatarBuilderWithFlowMode:oAuthClientId:source:fashionDropId:category:sectionId:bitmojiAvatarBuilderReferrer:]	
+105785894	1057859e7	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _launchAvatarBuilderTryOnWithEncodedOutfit:trackingId:]	
+1057859e8	1057859ff	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _flowModeFromAvatarBuilderFlowMode:]	
+105785a00	105785a8b	decompiled	chunks/006/functions-000409.c	+[SCDeepLinkBitmojiController _getAvatarBuilderFlowMode:]	
+105785a8c	105785b13	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _launchSettingsWithStatus:]	
+105785b14	105785b33	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController bitmojiSettingsScopeDidFinish:]	
+105785b34	105785b7b	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController bitmojiCreateFlowDidCompleteWithAvatarId:]	
+105785b7c	105785b7f	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController bitmojiAvatarBuilderCancelled]	
+105785b80	105785b83	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController bitmojiAvatarBuilderCompleted]	
+105785b84	105785bd3	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController bitmojiAvatarBuilderFailedWithError:]	
+105785bd4	105785c37	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _closeEditAvatarBuilder]	
+105785c38	105785ccb	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _fetchImageForAvatarId:]	
+105785ccc	105785f0b	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _presentAlertDialogWithImage:]	
+105785f0c	105785f37	decompiled	chunks/006/functions-000409.c		
+105785f38	105785f43	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _dismissAlertDialog]	
+105785f44	10578600b	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController _resizeImage:]	
+10578600c	105786023	decompiled	chunks/006/functions-000409.c		
+105786024	1057860ef	decompiled	chunks/006/functions-000409.c	-[SCDeepLinkBitmojiController .cxx_destruct]	
+1057860f0	105786137	decompiled	chunks/006/functions-000409.c		
+105786138	1057866b7	decompiled	chunks/006/functions-000409.c		
+1057866b8	105786843	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher initWithUnifiedGRPCClientFactory:performer:opsMetricsLogger:]	
+105786844	105786947	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher getFashionDropForId:withCompletion:]	
+105786948	105786a03	decompiled	chunks/006/functions-000409.c		
+105786a04	105786e6b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher _handleGetDropResponse:withCompletion:]	
+105786e6c	105786efb	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher _handleFailedGetDropForId:error:completion:]	
+105786efc	105786ff7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher _isDropAvailable:]	
+105786ff8	105787093	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher _isDropBannerAvailable:]	
+105787094	1057870cf	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropFetcher .cxx_destruct]	
+1057870d0	10578728b	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper optionIdsFromFashionGarmentProto:]	
+10578728c	1057875d3	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromTopGarment:]	
+1057875d4	10578791b	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromBottomGarment:]	
+10578791c	105787c63	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromOuterwearGarment:]	
+105787c64	10578823b	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromOnePieceGarment:]	
+10578823c	105788583	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromFootwearGarment:]	
+105788584	105788757	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper _optionIdsFromSockGarment:]	
+105788758	10578878b	decompiled	chunks/006/functions-000409.c	+[SCBitmojiFashionDropGarmentHelper garmentTypeFromFashionGarmentProto:]	
+10578878c	1057888ab	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropServiceProvider _fashionDropFetcher]	
+1057888ac	10578898f	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropServiceProvider _logger]	
+105788990	1057889cf	decompiled	chunks/006/functions-000409.c		
+1057889d0	105788a53	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropServiceProvider _graphene]	
+105788a54	105788b37	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropServiceProvider provide]	
+105788b38	105788b77	decompiled	chunks/006/functions-000409.c		
+105788b78	105788bc7	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropServiceProvider .cxx_destruct]	
+105788bc8	105788c3b	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropsOpsMetricsLogger initWithGraphene:]	
+105788c3c	105788d63	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropsOpsMetricsLogger logGetDropSuccessForId:didMakeRequest:]	
+105788d64	105788eaf	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropsOpsMetricsLogger logGetDropFailureForId:error:]	
+105788eb0	105788ebb	decompiled	chunks/006/functions-000409.c	-[SCBitmojiFashionDropsOpsMetricsLogger .cxx_destruct]	

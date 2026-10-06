@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1058d630c	1058d63b7	decompiled	chunks/007/functions-000470.c		
+1058d63b8	1058d659f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor _tryCloudSyncAndRepost:]	
+1058d65a0	1058d660f	decompiled	chunks/007/functions-000470.c		
+1058d6610	1058d67cf	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor _onGenerationIdReady:snapId:]	
+1058d67d0	1058d6847	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor _getNotificationByGenerationId:]	
+1058d6848	1058d68c3	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor _setNotification:forGenerationId:]	
+1058d68c4	1058d69c3	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor _prefetchCollectionsAndRepostNotification:]	
+1058d69c4	1058d6a73	decompiled	chunks/007/functions-000470.c		
+1058d6a74	1058d6ae7	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationProcessor .cxx_destruct]	
+1058d6ae8	1058d6b9b	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationsProcessorEntryPoint end]	
+1058d6b9c	1058d6c2b	decompiled	chunks/007/functions-000470.c	-[SCMemoriesNotificationsProcessorEntryPoint .cxx_destruct]	
+1058d6c2c	1058d6cb7	decompiled	chunks/007/functions-000470.c		
+1058d6cb8	1058d6d07	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvidingServiceProvider .cxx_destruct]	
+1058d6d08	1058d70b7	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider initWithCachingMediaManager:filePathManager:mergedDataSource:thumbnailSizes:cornerRadii:]	
+1058d70b8	1058d7147	decompiled	chunks/007/functions-000470.c		
+1058d7148	1058d7267	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider dealloc]	
+1058d7268	1058d72ff	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider addObserver:]	
+1058d7300	1058d7307	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider removeObserver:]	
+1058d7308	1058d7407	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider notifyObservers]	
+1058d7408	1058d7523	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider dataSource:didChangeEntries:failedEntries:fetchEntryError:]	
+1058d7524	1058d7697	decompiled	chunks/007/functions-000470.c		
+1058d7698	1058d7833	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _recentThumbnailPathAtIndex:]	
+1058d7834	1058d7d13	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _generateGalleryThumbnailsWithLatestEntries:]	
+1058d7d14	1058d7e1f	decompiled	chunks/007/functions-000470.c		
+1058d7e20	1058d8057	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _generateGalleryThumbnailsWithLatestEntry:]	
+1058d8058	1058d8143	decompiled	chunks/007/functions-000470.c		
+1058d8144	1058d83cf	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _generateGalleryThumbnailsWithLatestSnaps:]	
+1058d83d0	1058d8433	decompiled	chunks/007/functions-000470.c		
+1058d8434	1058d8783	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _generateGalleryThumbnailsWithLatestSnap:]	
+1058d8784	1058d87f3	decompiled	chunks/007/functions-000470.c		
+1058d87f4	1058d8af3	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _updateRecentThumbnailImage:snap:index:]	
+1058d8af4	1058d8ba3	decompiled	chunks/007/functions-000470.c		
+1058d8ba4	1058d8c93	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _cleanupAndReloadRecentThumbnail]	
+1058d8c94	1058d8f43	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider _loadRecentThumbnail]	
+1058d8f44	1058d8f7f	decompiled	chunks/007/functions-000470.c		
+1058d8f80	1058d8f87	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider recentThumbnails]	
+1058d8f88	1058d8f8f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider thumbnailSizes]	
+1058d8f90	1058d8f97	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider cornerRadii]	
+1058d8f98	1058d904b	decompiled	chunks/007/functions-000470.c	-[SCMemoriesRecentThumbnailProvider .cxx_destruct]	
+1058d904c	1058d91bf	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl initWithBlizzardLogger:samplingProvider:crashLogger:]	
+1058d91c0	1058d922b	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl thumbnailGenerationId:]	
+1058d922c	1058d93df	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl thumbnailGenerationStart:trigger:]	
+1058d93e0	1058d950f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl updateThumbnailGeneration:key:value:]	
+1058d9510	1058d967b	decompiled	chunks/007/functions-000470.c		
+1058d967c	1058d97b3	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl logThumbnailLoadingFinishedStartingAt:endingAt:generationId:snapMediaType:snapMediaFormat:spectaclesContentId:trigger:result:]	
+1058d97b4	1058d97d3	decompiled	chunks/007/functions-000470.c		
+1058d97d4	1058d9913	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl logMemoriesCellView:entryExternalId:entryType:memSessionId:galleryCollectionCategory:itemPosition:itemCount:userInitiated:]	
+1058d9914	1058d9ba3	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl _logThumbnailLoadingFinishedForGenerationId:latencyInSeconds:snapMediaType:snapMediaFormat:spectaclesContentId:trigger:result:durationInSec:]	
+1058d9ba4	1058d9ccb	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl _logBlizzardThumbnailDisplayLatency:includeDownload:snapMediaType:snapMediaFormat:spectaclesContentId:]	
+1058d9ccc	1058d9cff	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl _processedTrigger:]	
+1058d9d00	1058d9e8f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl _addTimerForCachingMediaManagerStepLatencyWithDetailsDict:]	
+1058d9e90	1058d9f23	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerImpl .cxx_destruct]	
+1058d9f24	1058d9f73	decompiled	chunks/007/functions-000470.c	-[SCMemoriesThumbnailLoggerServiceProvider .cxx_destruct]	
+1058d9f74	1058d9fe7	decompiled	chunks/007/functions-000470.c	-[SCGrapheneMemoriesThumbnailMetric2 init]	
+1058d9fe8	1058da15b	decompiled	chunks/007/functions-000470.c		
+1058da15c	1058da41b	decompiled	chunks/007/functions-000470.c		
+1058da41c	1058da64b	decompiled	chunks/007/functions-000470.c		
+1058da64c	1058da7bf	decompiled	chunks/007/functions-000470.c		
+1058da7c0	1058da833	decompiled	chunks/007/functions-000470.c	-[SCGrapheneMemoriesSnapDocSaveMetric2 init]	
+1058da834	1058da9a7	decompiled	chunks/007/functions-000470.c		
+1058da9a8	1058dab1b	decompiled	chunks/007/functions-000470.c		
+1058dab1c	1058dad4b	decompiled	chunks/007/functions-000470.c		
+1058dad4c	1058dafbb	decompiled	chunks/007/functions-000470.c		
+1058dafbc	1058db02f	decompiled	chunks/007/functions-000470.c	-[SCGrapheneMemoriesSnapDocEncryptionMetric2 init]	
+1058db030	1058db0a7	decompiled	chunks/007/functions-000470.c		
+1058db0a8	1058db11f	decompiled	chunks/007/functions-000470.c		
+1058db120	1058db293	decompiled	chunks/007/functions-000470.c		
+1058db294	1058db30b	decompiled	chunks/007/functions-000470.c		
+1058db30c	1058db383	decompiled	chunks/007/functions-000470.c		
+1058db384	1058db4f7	decompiled	chunks/007/functions-000470.c		
+1058db4f8	1058db56b	decompiled	chunks/007/functions-000470.c	-[SCGrapheneMemoriesSnapDocTranscodingMetric2 init]	
+1058db56c	1058db6df	decompiled	chunks/007/functions-000470.c		
+1058db6e0	1058db853	decompiled	chunks/007/functions-000470.c		
+1058db854	1058dba83	decompiled	chunks/007/functions-000470.c		
+1058dba84	1058dbbd7	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager launchSnapFeedIfNecessary:]	
+1058dbbd8	1058dbbff	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager observeSnapFeedEligibility]	
+1058dbc00	1058dbc0f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager setSnapFeedHintVisibility:shouldPreventLaunch:]	
+1058dbc10	1058dc183	decompiled	chunks/007/functions-000470.c		
+1058dc184	1058dc23f	decompiled	chunks/007/functions-000470.c		
+1058dc240	1058dc39b	decompiled	chunks/007/functions-000470.c		
+1058dc39c	1058dc43f	decompiled	chunks/007/functions-000470.c		
+1058dc440	1058dc8bf	decompiled	chunks/007/functions-000470.c		
+1058dc8c0	1058dc9ff	decompiled	chunks/007/functions-000470.c		
+1058dca00	1058dcabb	decompiled	chunks/007/functions-000470.c		
+1058dcabc	1058dcbb3	decompiled	chunks/007/functions-000470.c		
+1058dcbb4	1058dcc7f	decompiled	chunks/007/functions-000470.c		
+1058dcc80	1058dccff	decompiled	chunks/007/functions-000470.c		
+1058dcd00	1058dcd8b	decompiled	chunks/007/functions-000470.c		
+1058dcd8c	1058dcf87	decompiled	chunks/007/functions-000470.c		
+1058dcf88	1058dd0cf	decompiled	chunks/007/functions-000470.c		
+1058dd0d0	1058dd11f	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager _totalSnapFeedSnapCount:]	
+1058dd120	1058dd17f	decompiled	chunks/007/functions-000470.c		
+1058dd180	1058dd187	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager _setNextSnapFeedItem:]	
+1058dd188	1058dd29b	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedManager .cxx_destruct]	
+1058dd29c	1058dd357	decompiled	chunks/007/functions-000470.c		
+1058dd358	1058dd3d7	decompiled	chunks/007/functions-000470.c	-[SCMemoriesSnapFeedServiceProvider .cxx_destruct]	
+1058dd3d8	1058dd463	decompiled	chunks/007/functions-000470.c	+[SCMemCommonMediaTypeSpecificMetadata descriptor]	
+1058dd464	1058dd4e7	decompiled	chunks/007/functions-000470.c	+[SCMemCommonMediaTypeSpecificMetadata_Spectacles descriptor]	
+1058dd4e8	1058dd56b	decompiled	chunks/007/functions-000470.c	+[SCMemCommonMediaTypeSpecificMetadata_Dream descriptor]	
+1058dd56c	1058dd5f7	decompiled	chunks/007/functions-000470.c	+[SCMemCommonThumbnailDoc descriptor]	
+1058dd5f8	1058dd673	decompiled	chunks/007/functions-000471.c	+[SCMemCommonThumbnailDoc_EncryptedEncryptionInfo descriptor]	
+1058dd674	1058dd7bf	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl initSnapDocManager:boltDataUploader:circumstanceEngine:]	
+1058dd7c0	1058dd7c7	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl uploadForKey:snapDoc:config:encryptionInfo:]	
+1058dd7c8	1058dda43	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl uploadForKey:snapDoc:config:encryptionInfo:mediaValidator:]	
+1058dda44	1058ddaab	decompiled	chunks/007/functions-000471.c		
+1058ddaac	1058de72f	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl _uploadMediaResult:snapDoc:snapDocKey:config:encryptionInfo:mediaValidator:promise:]	
+1058de730	1058de747	decompiled	chunks/007/functions-000471.c		
+1058de748	1058de8e7	decompiled	chunks/007/functions-000471.c		
+1058de8e8	1058dea4f	decompiled	chunks/007/functions-000471.c		
+1058dea50	1058deb6b	decompiled	chunks/007/functions-000471.c		
+1058deb6c	1058def47	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl _onUploadCompletionWithError:snapDoc:encryptionInfo:snapDocKey:updatedContentRefs:uploadedByteCount:baseMediaByteCount:overlayByteCount:promise:contentResultsToCleanup:]	
+1058def48	1058df087	decompiled	chunks/007/functions-000471.c	+[SCSnapUploadWorkflowImpl _findMediaReferenceForMediaId:snapDoc:]	
+1058df088	1058df247	decompiled	chunks/007/functions-000471.c	+[SCSnapUploadWorkflowImpl _videoDurationMsForMediaId:snapDoc:]	
+1058df248	1058df447	decompiled	chunks/007/functions-000471.c	+[SCSnapUploadWorkflowImpl _snapDocHasUnresolvedLocalMediaReferences:mediaIds:]	
+1058df448	1058df4cf	decompiled	chunks/007/functions-000471.c	+[SCSnapUploadWorkflowImpl _errorWithCode:description:]	
+1058df4d0	1058df50b	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowImpl .cxx_destruct]	
+1058df50c	1058df577	decompiled	chunks/007/functions-000471.c		
+1058df578	1058df66f	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowServiceProvider _snapUploadWorkflow]	
+1058df670	1058df6bf	decompiled	chunks/007/functions-000471.c	-[SCSnapUploadWorkflowServiceProvider .cxx_destruct]	
+1058df6c0	1058df73b	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject initWithItem:]	
+1058df73c	1058df777	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject updateExpiration]	
+1058df778	1058df7bb	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject isExpired]	
+1058df7bc	1058df7c3	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject cacheItem]	
+1058df7c4	1058df7f3	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject setCacheItem:]	
+1058df7f4	1058df7ff	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheObject .cxx_destruct]	
+1058df800	1058df893	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl initWithGrapheneServices:]	
+1058df894	1058df897	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl objectForKeyedSubscript:]	
+1058df898	1058df89b	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl setObject:forKeyedSubscript:]	
+1058df89c	1058df943	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl objectForKey:]	
+1058df944	1058df9e3	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl setObject:forKey:]	
+1058df9e4	1058dff2b	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl collectAndFireGrapheneMetric]	
+1058dff2c	1058e012b	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl _cleanupExpiredItems]	
+1058e012c	1058e015b	decompiled	chunks/007/functions-000471.c	-[SCMetadataCacheServiceImpl .cxx_destruct]	
+1058e015c	1058e01c7	decompiled	chunks/007/functions-000471.c	-[SCUserMetadataCacheServiceProvider init]	
+1058e01c8	1058e0363	decompiled	chunks/007/functions-000471.c	-[SCUserMetadataCacheServiceProvider provide]	
+1058e0364	1058e039f	decompiled	chunks/007/functions-000471.c		
+1058e03a0	1058e0403	decompiled	chunks/007/functions-000471.c	-[SCUserMetadataCacheServiceProvider .cxx_destruct]	
+1058e0404	1058e042f	decompiled	chunks/007/functions-000471.c	+[SCGrapheneMetadataCacheMetric memoryUsage]	
+1058e0430	1058e04cf	decompiled	chunks/007/functions-000471.c	-[SCGrapheneMetadataCacheMetric description]	
+1058e04d0	1058e0613	decompiled	chunks/007/functions-000471.c	-[SCGrapheneRegistry metadataCacheGraphene]	
+1058e0614	1058e073f	decompiled	chunks/007/functions-000471.c		
+1058e0740	1058e085f	decompiled	chunks/007/functions-000471.c		
+1058e0860	1058e0883	decompiled	chunks/007/functions-000471.c		
+1058e0884	1058e0933	decompiled	chunks/007/functions-000471.c		
+1058e0934	1058e098f	decompiled	chunks/007/functions-000471.c	-[SCMusicFavoritesComposerImplementationServiceProvider .cxx_destruct]	
+1058e0990	1058e0c2f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService _parseTracksFromItemsGroups:]	
+1058e0c30	1058e0d2b	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService initWithCtpUserDataFeedService:creativeToolsABProvider:userDataWrapper:]	
+1058e0d2c	1058e0ee7	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService getFavoritesWithOnComplete:]	
+1058e0ee8	1058e0fa7	decompiled	chunks/007/functions-000471.c		
+1058e0fa8	1058e10a3	decompiled	chunks/007/functions-000471.c		
+1058e10a4	1058e1283	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService getPagedFavoritesWithOnComplete:pageToken:]	
+1058e1284	1058e13ab	decompiled	chunks/007/functions-000471.c		
+1058e13ac	1058e1503	decompiled	chunks/007/functions-000471.c		
+1058e1504	1058e170b	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService setFavoritedWithTrackId:favorited:onComplete:]	
+1058e170c	1058e1853	decompiled	chunks/007/functions-000471.c		
+1058e1854	1058e1a2f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService isFavoritedWithTrackId:completion:]	
+1058e1a30	1058e1ae7	decompiled	chunks/007/functions-000471.c		
+1058e1ae8	1058e1bc3	decompiled	chunks/007/functions-000471.c		
+1058e1bc4	1058e1cf7	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService observable]	
+1058e1cf8	1058e1dd3	decompiled	chunks/007/functions-000471.c		
+1058e1dd4	1058e1df3	decompiled	chunks/007/functions-000471.c		
+1058e1df4	1058e1ecf	decompiled	chunks/007/functions-000471.c		
+1058e1ed0	1058e1edb	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService pushToValdiMarshaller:]	
+1058e1edc	1058e1f0b	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService setObservable:]	
+1058e1f0c	1058e1f5f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFavoritesService .cxx_destruct]	
+1058e1f60	1058e1fd3	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings initWithMusicFeatureSettings:]	
+1058e1fd4	1058e202f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings seenMusicPickerFavoritesTooltip]	
+1058e2030	1058e2067	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings setHasSeenMusicPickerFavoritesTooltip]	
+1058e2068	1058e20c3	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings seenMusicContextCardFavoritesTooltip]	
+1058e20c4	1058e20fb	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings setHasSeenContextCardFavoritesTooltip]	
+1058e20fc	1058e2107	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings pushToValdiMarshaller:]	
+1058e2108	1058e2113	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerFeatureSettings .cxx_destruct]	
+1058e2114	1058e21b7	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter initWithNotificationPresenter:experiments:]	
+1058e21b8	1058e2403	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter submitFavoritesNotificationWithIsFavorited:albumArtMedia:]	
+1058e2404	1058e241b	decompiled	chunks/007/functions-000471.c		
+1058e241c	1058e248f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter cancelPendingNotifications]	
+1058e2490	1058e249b	decompiled	chunks/007/functions-000471.c		
+1058e249c	1058e249f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter showLoadTrackErrorNotification]	
+1058e24a0	1058e24ab	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter pushToValdiMarshaller:]	
+1058e24ac	1058e2527	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter _iconHeartFillImage]	
+1058e2528	1058e25a3	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter _iconHeartOutlineImage]	
+1058e25a4	1058e261f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter _iconBookmarkFillImage]	
+1058e2620	1058e269b	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter _iconBookmarkOutlineImage]	
+1058e269c	1058e26cb	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerNotificationPresenter .cxx_destruct]	
+1058e26cc	1058e27b3	decompiled	chunks/007/functions-000471.c		
+1058e27b4	1058e2803	decompiled	chunks/007/functions-000471.c	-[SCMusicRecentsComposerServicesServiceProvider .cxx_destruct]	
+1058e2804	1058e28ff	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService initWithCtpUserDataFeedService:creativeToolsABProvider:userDataWrapper:]	
+1058e2900	1058e2b9f	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService _parseTracksFromItemsGroups:]	
+1058e2ba0	1058e2d5b	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService getRecentsWithOnComplete:]	
+1058e2d5c	1058e2e6f	decompiled	chunks/007/functions-000471.c		
+1058e2e70	1058e2fb7	decompiled	chunks/007/functions-000471.c		
+1058e2fb8	1058e30c7	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService setRecentlyUsedWithTrackId:]	
+1058e30c8	1058e30cf	decompiled	chunks/007/functions-000471.c		
+1058e30d0	1058e3203	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService updateObservable]	
+1058e3204	1058e320f	decompiled	chunks/007/functions-000471.c		
+1058e3210	1058e322f	decompiled	chunks/007/functions-000471.c		
+1058e3230	1058e323b	decompiled	chunks/007/functions-000471.c		
+1058e323c	1058e3247	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService pushToValdiMarshaller:]	
+1058e3248	1058e3277	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService setUpdateObservable:]	
+1058e3278	1058e32cb	decompiled	chunks/007/functions-000471.c	-[SCMusicComposerRecentsService .cxx_destruct]	
+1058e32cc	1058e32d7	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService hasSeenMusicPickerFavoritesTooltip]	
+1058e32d8	1058e32e3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenMusicPickerFavoritesTooltipServerParam]	
+1058e32e4	1058e32f3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setSeenMusicPickerFavoritesTooltip:]	
+1058e32f4	1058e32fb	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_picker_favorites_tooltip_client_value:]	
+1058e32fc	1058e3303	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_picker_favorites_tooltip_server_value:]	
+1058e3304	1058e3313	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenMusicPickerFavoritesTooltip]	
+1058e3314	1058e331f	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService hasSeenMusicContextCardFavoritesTooltip]	
+1058e3320	1058e332b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenMusicContextCardFavoritesTooltipServerParam]	
+1058e332c	1058e333b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setSeenMusicContextCardFavoritesTooltip:]	
+1058e333c	1058e3343	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_context_card_favorites_tooltip_client_value:]	
+1058e3344	1058e334b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_context_card_favorites_tooltip_server_value:]	
+1058e334c	1058e335b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenMusicContextCardFavoritesTooltip]	
+1058e335c	1058e3367	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService hasSeenSoundTopicsFavoritesTooltip]	
+1058e3368	1058e3373	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenSoundTopicsFavoritesTooltipServerParam]	
+1058e3374	1058e3383	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setSeenSoundTopicsFavoritesTooltip:]	
+1058e3384	1058e338b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService sound_topics_favorites_tooltip_client_value:]	
+1058e338c	1058e3393	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService sound_topics_favorites_tooltip_server_value:]	
+1058e3394	1058e33a3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenSoundTopicsFavoritesTooltip]	
+1058e33a4	1058e33af	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService hasSeenCreateSoundOnFeaturedPage]	
+1058e33b0	1058e33bb	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenCreateSoundOnFeaturedPageServerParam]	
+1058e33bc	1058e33cb	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setSeenCreateSoundOnFeaturedPage:]	
+1058e33cc	1058e33d3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_create_sound_featured_page_client_value:]	
+1058e33d4	1058e33db	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_create_sound_featured_page_server_value:]	
+1058e33dc	1058e33eb	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService seenCreateSoundOnFeaturedPage]	
+1058e33ec	1058e33f7	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService getMusicSyncMemoriesPreviewSoundTooltipTimesSeen]	
+1058e33f8	1058e3403	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesPreviewSoundTooltipTimesSeenServerParam]	
+1058e3404	1058e3413	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setMusicSyncMemoriesPreviewSoundTooltipTimesSeen:]	
+1058e3414	1058e341b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_preview_sound_tooltip_times_seen_client_value:]	
+1058e341c	1058e3423	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_preview_sound_tooltip_times_seen_server_value:]	
+1058e3424	1058e3433	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesPreviewSoundTooltipTimesSeen]	
+1058e3434	1058e343f	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService getMusicSyncMemoriesOnboardingBannerTimesSeen]	
+1058e3440	1058e344b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesOnboardingBannerTimesSeenServerParam]	
+1058e344c	1058e345b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setMusicSyncMemoriesOnboardingBannerTimesSeen:]	
+1058e345c	1058e3463	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_onboarding_banner_times_seen_client_value:]	
+1058e3464	1058e346b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_onboarding_banner_times_seen_server_value:]	
+1058e346c	1058e347b	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesOnboardingBannerTimesSeen]	
+1058e347c	1058e3487	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService getMusicSyncMemoriesFabTooltipTimesSeen]	
+1058e3488	1058e3493	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesFabTooltipTimesSeenServerParam]	
+1058e3494	1058e34a3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService setMusicSyncMemoriesFabTooltipTimesSeen:]	
+1058e34a4	1058e34ab	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_fab_tooltip_times_seen_client_value:]	
+1058e34ac	1058e34b3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService music_sync_memories_fab_tooltip_times_seen_server_value:]	
+1058e34b4	1058e34c3	decompiled	chunks/007/functions-000472.c	-[SCFeatureSettingsService musicSyncMemoriesFabTooltipTimesSeen]	
+1058e34c4	1058e355b	decompiled	chunks/007/functions-000472.c		
+1058e355c	1058e373f	decompiled	chunks/007/functions-000472.c		
+1058e3740	1058e378b	decompiled	chunks/007/functions-000472.c		
+1058e378c	1058e382f	decompiled	chunks/007/functions-000472.c		
+1058e3830	1058e38c7	decompiled	chunks/007/functions-000472.c	-[SCMusicServiceProvider .cxx_destruct]	
+1058e38c8	1058e393b	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments initWithCircumstanceEngineServices:]	
+1058e393c	1058e398f	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments showLyricsDuringScrubbing]	
+1058e3990	1058e39e3	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments showLyricsDuringCapturing]	
+1058e39e4	1058e3a33	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments useTrackAssetLoader]	
+1058e3a34	1058e3a87	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments stopCameraWhenPresentingPicker]	
+1058e3a88	1058e3adb	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments usePickerV2ForCameraPicker]	
+1058e3adc	1058e3b37	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments mainCameraCTRecommendationCacheTTL]	
+1058e3b38	1058e3b93	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments previewCTRecommendationCacheTTL]	
+1058e3b94	1058e3be7	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments useFullScreenPresentationStyleForCameraPicker]	
+1058e3be8	1058e3c7b	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments useSoundSpotlightPicker]	
+1058e3c7c	1058e3ccb	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments favoriteToSaveEnabled]	
+1058e3ccc	1058e3cd7	decompiled	chunks/007/functions-000472.c	-[SCMusicExperiments .cxx_destruct]	
+1058e3cd8	1058e3dfb	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader initWithContentDelivery:memoriesMediaRetriever:retryHelper:trackLoadLogger:musicSelectionResolver:]	
+1058e3dfc	1058e3e37	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader loadAudioDataForAudioDataURL:encryptionKey:encryptionIv:completionQueue:completion:source:]	
+1058e3e38	1058e3f0f	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader loadAlbumArtImageForImageURL:encryptionKey:encryptionIv:completionQueue:completion:]	
+1058e3f10	1058e3fb3	decompiled	chunks/007/functions-000472.c		
+1058e3fb4	1058e4187	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader requestDecryptedSelectionForSnapID:synchronous:queue:completion:source:]	
+1058e4188	1058e4283	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader requestMusicSelectionWithDecryptedData:completionQueue:completionHandler:source:]	
+1058e4284	1058e42d3	decompiled	chunks/007/functions-000472.c		
+1058e42d4	1058e444f	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader requestMusicSelectionWithMusicTrack:completionQueue:completionHandler:]	
+1058e4450	1058e449b	decompiled	chunks/007/functions-000472.c		
+1058e449c	1058e4587	decompiled	chunks/007/functions-000472.c		
+1058e4588	1058e460b	decompiled	chunks/007/functions-000472.c		
+1058e460c	1058e47df	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader claimCachedAudioForAudioDataURL:claimId:]	
+1058e47e0	1058e482f	decompiled	chunks/007/functions-000472.c		
+1058e4830	1058e4847	decompiled	chunks/007/functions-000472.c		
+1058e4848	1058e48c3	decompiled	chunks/007/functions-000472.c		
+1058e48c4	1058e4c1f	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _loadDataForURL:mediaType:encryptionKey:encryptionIv:completionQueue:completion:source:]	
+1058e4c20	1058e4ecf	decompiled	chunks/007/functions-000472.c		
+1058e4ed0	1058e4f6f	decompiled	chunks/007/functions-000472.c		
+1058e4f70	1058e4f83	decompiled	chunks/007/functions-000472.c		
+1058e4f84	1058e5393	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _fetchSelectionForAsset:completionQueue:completionHandler:source:]	
+1058e5394	1058e53a7	decompiled	chunks/007/functions-000472.c		
+1058e53a8	1058e5757	decompiled	chunks/007/functions-000472.c		
+1058e5758	1058e582b	decompiled	chunks/007/functions-000472.c		
+1058e582c	1058e584f	decompiled	chunks/007/functions-000472.c		
+1058e5850	1058e589f	decompiled	chunks/007/functions-000472.c		
+1058e58a0	1058e597b	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _asynchronousEncryptedContentDataResultHandlerOnQueue:completion:source:]	
+1058e597c	1058e5a9f	decompiled	chunks/007/functions-000472.c		
+1058e5aa0	1058e5b8f	decompiled	chunks/007/functions-000472.c		
+1058e5b90	1058e5bdf	decompiled	chunks/007/functions-000472.c		
+1058e5be0	1058e5c7f	decompiled	chunks/007/functions-000472.c		
+1058e5c80	1058e5ceb	decompiled	chunks/007/functions-000472.c		
+1058e5cec	1058e5e33	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _fetchSelectionWithMusicData:completionQueue:completionHandler:source:]	
+1058e5e34	1058e5e9f	decompiled	chunks/007/functions-000472.c		
+1058e5ea0	1058e5fc3	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _encryptedContentDataResultHandlerWithCompletion:dispatchGroup:source:]	
+1058e5fc4	1058e60d7	decompiled	chunks/007/functions-000472.c		
+1058e60d8	1058e62f3	decompiled	chunks/007/functions-000472.c		
+1058e62f4	1058e6327	decompiled	chunks/007/functions-000472.c		
+1058e6328	1058e63ab	decompiled	chunks/007/functions-000472.c		
+1058e63ac	1058e6457	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader _AESGCMDecryptData:encryptionKey:encryptionIv:]	
+1058e6458	1058e64ab	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicMediaLoader .cxx_destruct]	
+1058e64ac	1058e6577	decompiled	chunks/007/functions-000472.c	-[SCObjcMusicNotificationPresenter initWithNotificationServices:mediaLoader:experiments:]	
+1058e6578	1058e6803	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter submitFavoritesNotification:isFavorited:actionHandler:]	
+1058e6804	1058e699f	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter _futureForResizedImageMedia:placeholderImage:]	
+1058e69a0	1058e6a2b	decompiled	chunks/007/functions-000473.c		
+1058e6a2c	1058e6a63	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter cancelNotifications]	
+1058e6a64	1058e6aaf	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter _addNotificationToQueueAndPresentIfNeeded:]	
+1058e6ab0	1058e6c33	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter _queueNextNotification]	
+1058e6c34	1058e6c83	decompiled	chunks/007/functions-000473.c		
+1058e6c84	1058e6ce3	decompiled	chunks/007/functions-000473.c		
+1058e6ce4	1058e6d8b	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicNotificationPresenter .cxx_destruct]	
+1058e6d8c	1058e6e57	decompiled	chunks/007/functions-000473.c	-[SCMusicNotificationPresenterFactory initWithNotificationServices:mediaLoader:experiments:]	
+1058e6e58	1058e6e87	decompiled	chunks/007/functions-000473.c	-[SCMusicNotificationPresenterFactory newMusicNotificationPresenter]	
+1058e6e88	1058e6ec3	decompiled	chunks/007/functions-000473.c	-[SCMusicNotificationPresenterFactory .cxx_destruct]	
+1058e6ec4	1058e6f67	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader initWithMediaLoader:musicGrpcService:]	
+1058e6f68	1058e70db	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader loadSelectionForTrackId:includeMusicStats:includeArtistLink:completionQueue:completion:]	
+1058e70dc	1058e71e3	decompiled	chunks/007/functions-000473.c		
+1058e71e4	1058e71f7	decompiled	chunks/007/functions-000473.c		
+1058e71f8	1058e7dc3	decompiled	chunks/007/functions-000473.c		
+1058e7dc4	1058e7eff	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader fetchAvailabilityForTrackId:completionQueue:completion:]	
+1058e7f00	1058e80e3	decompiled	chunks/007/functions-000473.c		
+1058e80e4	1058e8147	decompiled	chunks/007/functions-000473.c		
+1058e8148	1058e818b	decompiled	chunks/007/functions-000473.c		
+1058e818c	1058e824f	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader fetchContentRestrictionsForTrackId:completionQueue:completion:]	
+1058e8250	1058e835b	decompiled	chunks/007/functions-000473.c		
+1058e835c	1058e83ff	decompiled	chunks/007/functions-000473.c		
+1058e8400	1058e854b	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader fetchTrackWithIsrc:completionQueue:completion:]	
+1058e854c	1058e8733	decompiled	chunks/007/functions-000473.c		
+1058e8734	1058e8823	decompiled	chunks/007/functions-000473.c		
+1058e8824	1058e8a8f	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader _getMusicTrackWithId:includeMusicStats:includeArtistLink:completion:]	
+1058e8a90	1058e8bb3	decompiled	chunks/007/functions-000473.c		
+1058e8bb4	1058e8be3	decompiled	chunks/007/functions-000473.c	-[SCObjcMusicSelectionLoader .cxx_destruct]	
+1058e8be4	1058e8d07	decompiled	chunks/007/functions-000473.c	-[SCMusicSelectionRetryHelper retryWithTrackId:startOffsetSeconds:sourcePageType:completion:]	
+1058e8d08	1058e907f	decompiled	chunks/007/functions-000473.c		
+1058e9080	1058e90b7	decompiled	chunks/007/functions-000473.c	-[SCMusicSelectionRetryHelper .cxx_destruct]	
+1058e90b8	1058e916b	decompiled	chunks/007/functions-000473.c		
+1058e916c	1058e917f	decompiled	chunks/007/functions-000473.c		
+1058e9180	1058e91fb	decompiled	chunks/007/functions-000473.c		
+1058e91fc	1058e9207	decompiled	chunks/007/functions-000473.c		
+1058e9208	1058e9283	decompiled	chunks/007/functions-000473.c		
+1058e9284	1058e928f	decompiled	chunks/007/functions-000473.c		
+1058e9290	1058e930b	decompiled	chunks/007/functions-000473.c		
+1058e930c	1058e9317	decompiled	chunks/007/functions-000473.c		
+1058e9318	1058e937f	decompiled	chunks/007/functions-000473.c	+[SCMusicMusicTrackAvailability descriptor]	
+1058e9380	1058e93e7	decompiled	chunks/007/functions-000473.c	+[SCMusicSpotlightSoundDetails descriptor]	
+1058e93e8	1058e944f	decompiled	chunks/007/functions-000473.c	+[SCMusicCustomSoundDetails descriptor]	
+1058e9450	1058e94b7	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest descriptor]	
+1058e94b8	1058e9557	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption descriptor]	
+1058e9558	1058e95d3	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_MusicTrack descriptor]	
+1058e95d4	1058e964f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_MusicArtist descriptor]	
+1058e9650	1058e96cb	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_Availability descriptor]	
+1058e96cc	1058e9747	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_MusicBeatSync descriptor]	
+1058e9748	1058e97c3	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_SnapViewingContext descriptor]	
+1058e97c4	1058e983f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_SpotlightDetails descriptor]	
+1058e9840	1058e98bb	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_ModerationInfo descriptor]	
+1058e98bc	1058e9937	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_CustomSoundDetails descriptor]	
+1058e9938	1058e99b3	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_ReturnPrivateSounds descriptor]	
+1058e99b4	1058e9a2f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_ExcludeSubtextInfo descriptor]	
+1058e9a30	1058e9aab	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_TrendingChartEntry descriptor]	
+1058e9aac	1058e9b27	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_SubtextInfo descriptor]	
+1058e9b28	1058e9ba3	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackRequest_RequestOption_IncludeBlockedTrackMedia descriptor]	
+1058e9ba4	1058e9c0f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackResponse descriptor]	
+1058e9c10	1058e9c7b	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTracksRequest descriptor]	
+1058e9c7c	1058e9ce3	decompiled	chunks/007/functions-000473.c	+[SCMusicFindMusicTrackRequest descriptor]	
+1058e9ce4	1058e9d4b	decompiled	chunks/007/functions-000473.c	+[SCMusicFindMusicTrackResponse descriptor]	
+1058e9d4c	1058e9db3	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTracksResponse descriptor]	
+1058e9db4	1058e9e1b	decompiled	chunks/007/functions-000473.c	+[SCMusicPlaylist descriptor]	
+1058e9e1c	1058e9e83	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistsRequest descriptor]	
+1058e9e84	1058e9eeb	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistsResponse descriptor]	
+1058e9eec	1058e9f53	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistRequest descriptor]	
+1058e9f54	1058e9fbb	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistResponse descriptor]	
+1058e9fbc	1058ea023	decompiled	chunks/007/functions-000473.c	+[SCMusicGetFeaturedPlaylistRequest descriptor]	
+1058ea024	1058ea08b	decompiled	chunks/007/functions-000473.c	+[SCMusicGetFeaturedPlaylistResponse descriptor]	
+1058ea08c	1058ea0f7	decompiled	chunks/007/functions-000473.c	+[SCMusicGetTrendingPlaylistRequest descriptor]	
+1058ea0f8	1058ea15f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetTrendingPlaylistResponse descriptor]	
+1058ea160	1058ea1c7	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistAndPageRequest descriptor]	
+1058ea1c8	1058ea22f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPlaylistAndPageResponse descriptor]	
+1058ea230	1058ea297	decompiled	chunks/007/functions-000473.c	+[SCMusicMusicPickerLayoutRequestContext descriptor]	
+1058ea298	1058ea2ff	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPickerLayoutRequest descriptor]	
+1058ea300	1058ea367	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPickerLayoutResponse descriptor]	
+1058ea368	1058ea3cf	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPickerLayoutPageRequest descriptor]	
+1058ea3d0	1058ea437	decompiled	chunks/007/functions-000473.c	+[SCMusicGetPickerLayoutPageResponse descriptor]	
+1058ea438	1058ea49f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMyCustomSoundsPlaylistRequest descriptor]	
+1058ea4a0	1058ea507	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMyCustomSoundsPlaylistResponse descriptor]	
+1058ea508	1058ea56f	decompiled	chunks/007/functions-000473.c	+[SCMusicCheckIsAvailableRequest descriptor]	
+1058ea570	1058ea5d7	decompiled	chunks/007/functions-000473.c	+[SCMusicCheckIsAvailableResponse descriptor]	
+1058ea5d8	1058ea63f	decompiled	chunks/007/functions-000473.c	+[SCMusicCreateCustomSoundRequest descriptor]	
+1058ea640	1058ea6a7	decompiled	chunks/007/functions-000473.c	+[SCMusicCreateCustomSoundResponse descriptor]	
+1058ea6a8	1058ea713	decompiled	chunks/007/functions-000473.c	+[SCMusicUpdateCustomSoundRequest descriptor]	
+1058ea714	1058ea77b	decompiled	chunks/007/functions-000473.c	+[SCMusicUpdateCustomSoundResponse descriptor]	
+1058ea77c	1058ea7e3	decompiled	chunks/007/functions-000473.c	+[SCMusicDeleteCustomSoundRequest descriptor]	
+1058ea7e4	1058ea84b	decompiled	chunks/007/functions-000473.c	+[SCMusicDeleteCustomSoundResponse descriptor]	
+1058ea84c	1058ea8b3	decompiled	chunks/007/functions-000473.c	+[SCMusicUpdateOriginalSoundRequest descriptor]	
+1058ea8b4	1058ea91b	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistPageRequest descriptor]	
+1058ea91c	1058ea983	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistPageResponse descriptor]	
+1058ea984	1058ea9ef	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistsWithAvailabilityRequest descriptor]	
+1058ea9f0	1058eaa57	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistsWithAvailabilityResponse descriptor]	
+1058eaa58	1058eaabf	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistAndPageRequest descriptor]	
+1058eaac0	1058eab27	decompiled	chunks/007/functions-000473.c	+[SCMusicGetArtistAndPageResponse descriptor]	
+1058eab28	1058eab8f	decompiled	chunks/007/functions-000473.c	+[SCMusicUpdateOriginalSoundResponse descriptor]	
+1058eab90	1058eabf7	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackLyricsRequest descriptor]	
+1058eabf8	1058eac5f	decompiled	chunks/007/functions-000473.c	+[SCMusicGetMusicTrackLyricsResponse descriptor]	
+1058eac60	1058eacc7	decompiled	chunks/007/functions-000474.c	+[SCMusicGetLyricsStickersRequest descriptor]	
+1058eacc8	1058ead2f	decompiled	chunks/007/functions-000474.c	+[SCMusicGetLyricsStickersResponse descriptor]	
+1058ead30	1058ead9b	decompiled	chunks/007/functions-000474.c	+[SCMusicGetPickerLayoutPageSectionRequest descriptor]	
+1058ead9c	1058eae03	decompiled	chunks/007/functions-000474.c	+[SCMusicGetPickerLayoutPageSectionResponse descriptor]	
+1058eae04	1058eae6f	decompiled	chunks/007/functions-000474.c	+[SCMusicGetRankedTracksForCohortRequest descriptor]	
+1058eae70	1058eaefb	decompiled	chunks/007/functions-000474.c	+[SCMusicRankedTrackInfo descriptor]	
+1058eaefc	1058eaf63	decompiled	chunks/007/functions-000474.c	+[SCMusicGetRankedTracksForCohortResponse descriptor]	
+1058eaf64	1058eafcb	decompiled	chunks/007/functions-000474.c	+[SCMusicUpdateSoundModerationRequest descriptor]	
+1058eafcc	1058eb033	decompiled	chunks/007/functions-000474.c	+[SCMusicUpdateSoundModerationResponse descriptor]	
+1058eb034	1058eb09f	decompiled	chunks/007/functions-000474.c	+[SCMusicSearchRequest descriptor]	
+1058eb0a0	1058eb107	decompiled	chunks/007/functions-000474.c	+[SCMusicSearchResponse descriptor]	
+1058eb108	1058eb16f	decompiled	chunks/007/functions-000474.c	+[SCMusicGetSimilarStoriesBySoundRequest descriptor]	
+1058eb170	1058eb1d7	decompiled	chunks/007/functions-000474.c	+[SCMusicGetSimilarStoriesBySoundResponse descriptor]	
+1058eb1d8	1058eb243	decompiled	chunks/007/functions-000474.c	+[SCMusicGetSimilarTracksByTextRequest descriptor]	
+1058eb244	1058eb2ab	decompiled	chunks/007/functions-000474.c	+[SCMusicGetSimilarTracksByTextResponse descriptor]	
+1058eb2ac	1058eb313	decompiled	chunks/007/functions-000474.c	+[SCMusicLlmModerateSoundRequest descriptor]	
+1058eb314	1058eb37b	decompiled	chunks/007/functions-000474.c	+[SCMusicLlmModerateSoundResponse descriptor]	
+1058eb37c	1058eb3e3	decompiled	chunks/007/functions-000474.c	+[SCMusicGetTrendingChartRequest descriptor]	
+1058eb3e4	1058eb44b	decompiled	chunks/007/functions-000474.c	+[SCMusicGetTrendingChartResponse descriptor]	
+1058eb44c	1058eb4b3	decompiled	chunks/007/functions-000474.c	+[SCMusicPreloadContextualMusicRecommendationsRequest descriptor]	
+1058eb4b4	1058eb51b	decompiled	chunks/007/functions-000474.c	+[SCMusicPreloadContextualMusicRecommendationsResponse descriptor]	
+1058eb51c	1058eb583	decompiled	chunks/007/functions-000474.c	+[SCMusicMusicTrackList descriptor]	
+1058eb584	1058eb5eb	decompiled	chunks/007/functions-000474.c	+[SCMusicGenerateTrackArtRequest descriptor]	
+1058eb5ec	1058eb653	decompiled	chunks/007/functions-000474.c	+[SCMusicGenerateTrackArtResponse descriptor]	
+1058eb654	1058eb6bb	decompiled	chunks/007/functions-000474.c	+[SCMusicBlockTrackRequest descriptor]	
+1058eb6bc	1058eb723	decompiled	chunks/007/functions-000474.c	+[SCMusicBlockTrackResponse descriptor]	
+1058eb724	1058eb78b	decompiled	chunks/007/functions-000474.c	+[SCMusicUnblockTrackRequest descriptor]	
+1058eb78c	1058eb7f3	decompiled	chunks/007/functions-000474.c	+[SCMusicUnblockTrackResponse descriptor]	
+1058eb7f4	1058eb873	decompiled	chunks/007/functions-000474.c	+[SCMusicStoryThumbnail descriptor]	
+1058eb874	1058eb8f3	decompiled	chunks/007/functions-000474.c	+[SCMusicSnapMediaInfo descriptor]	
+1058eb8f4	1058eb95f	decompiled	chunks/007/functions-000474.c	+[SCMusicEngagementStats descriptor]	
+1058eb960	1058eb9c7	decompiled	chunks/007/functions-000474.c	+[SCMusicTopicPageStories descriptor]	
+1058eb9c8	1058eba2f	decompiled	chunks/007/functions-000474.c	+[SCMusicTopicPageStory descriptor]	
+1058eba30	1058ebaaf	decompiled	chunks/007/functions-000474.c	+[SCMusicTopicPageSnap descriptor]	
+1058ebab0	1058ebb17	decompiled	chunks/007/functions-000474.c	+[SCMusicSnapCaptureInfo descriptor]	
+1058ebb18	1058ebb7f	decompiled	chunks/007/functions-000474.c	+[SCMusicFavoriteMetadata descriptor]	
+1058ebb80	1058ebbe7	decompiled	chunks/007/functions-000474.c	+[SCMusicRecommendMetadata descriptor]	
+1058ebbe8	1058ebc53	decompiled	chunks/007/functions-000474.c	+[SCMusicSnapCreatorInfo descriptor]	
+1058ebc54	1058ebcbb	decompiled	chunks/007/functions-000474.c	+[SCMusicMediaInfo descriptor]	
+1058ebcbc	1058ebd23	decompiled	chunks/007/functions-000474.c	+[SCMusicSnapBoltInfo descriptor]	
+1058ebd24	1058ebd8b	decompiled	chunks/007/functions-000474.c	+[SCMusicMediaContentObject descriptor]	
+1058ebd8c	1058ebdf3	decompiled	chunks/007/functions-000474.c	+[SCMusicEngagementMetadata descriptor]	
+1058ebdf4	1058ebe5b	decompiled	chunks/007/functions-000474.c	+[SCMusicMultiSnapExtension descriptor]	
+1058ebe5c	1058ebec3	decompiled	chunks/007/functions-000474.c	+[SCMusicApplySoundModerationDecisionRequest descriptor]	
+1058ebec4	1058ebfa7	decompiled	chunks/007/functions-000474.c	+[SCMusicApplySoundModerationDecisionResponse descriptor]	
+1058ebfa8	1058ebfb3	decompiled	chunks/007/functions-000474.c		
+1058ebfb4	1058ec02f	decompiled	chunks/007/functions-000474.c		
+1058ec030	1058ec03b	decompiled	chunks/007/functions-000474.c		
+1058ec03c	1058ec0b7	decompiled	chunks/007/functions-000474.c		
+1058ec0b8	1058ec0c3	decompiled	chunks/007/functions-000474.c		
+1058ec0c4	1058ec13f	decompiled	chunks/007/functions-000474.c		
+1058ec140	1058ec14b	decompiled	chunks/007/functions-000474.c		
+1058ec14c	1058ec1c7	decompiled	chunks/007/functions-000474.c		
+1058ec1c8	1058ec1d3	decompiled	chunks/007/functions-000474.c		
+1058ec1d4	1058ec24f	decompiled	chunks/007/functions-000474.c		
+1058ec250	1058ec25b	decompiled	chunks/007/functions-000474.c		
+1058ec25c	1058ec2d7	decompiled	chunks/007/functions-000474.c		
+1058ec2d8	1058ec2e3	decompiled	chunks/007/functions-000474.c		
+1058ec2e4	1058ec35f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsUnencryptedMedia descriptor]	
+1058ec360	1058ec3c7	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsUnencryptedRawMedia descriptor]	
+1058ec3c8	1058ec42f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsOriginalSound descriptor]	
+1058ec430	1058ec4bb	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsCreateSoundRequest descriptor]	
+1058ec4bc	1058ec523	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsCreateSoundResponse descriptor]	
+1058ec524	1058ec5af	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsValidateSoundRequest descriptor]	
+1058ec5b0	1058ec617	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsValidateSoundResponse descriptor]	
+1058ec618	1058ec67f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsUpdateSoundRequest descriptor]	
+1058ec680	1058ec6e7	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsUpdateSoundResponse descriptor]	
+1058ec6e8	1058ec74f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsDeleteSoundRequest descriptor]	
+1058ec750	1058ec7b7	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsDeleteSoundResponse descriptor]	
+1058ec7b8	1058ec81f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsGetSoundsRequest descriptor]	
+1058ec820	1058ec887	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsGetSoundsResponse descriptor]	
+1058ec888	1058ec8ef	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsNotifySnapDeletedRequest descriptor]	
+1058ec8f0	1058ec957	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsNotifySnapDeletedResponse descriptor]	
+1058ec958	1058ec9bf	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsNotifyUserDeletedRequest descriptor]	
+1058ec9c0	1058eca27	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsNotifyUserDeletedResponse descriptor]	
+1058eca28	1058eca8f	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsTriggerAsyncProcessRequest descriptor]	
+1058eca90	1058ecb73	decompiled	chunks/007/functions-000474.c	+[SCMusicOriginalSoundsTriggerAsyncProcessResponse descriptor]	
+1058ecb74	1058ecb7f	decompiled	chunks/007/functions-000474.c		
+1058ecb80	1058ecbe7	decompiled	chunks/007/functions-000474.c	+[SCMusicTrackLyrics descriptor]	
+1058ecbe8	1058ecc4f	decompiled	chunks/007/functions-000474.c	+[SCMusicTrackLyricsLine descriptor]	
+1058ecc50	1058eccb7	decompiled	chunks/007/functions-000474.c	+[SCMusicTrackLyricsSync descriptor]	
+1058eccb8	1058ecd9b	decompiled	chunks/007/functions-000474.c	+[SCMusicLyricsSticker descriptor]	
+1058ecd9c	1058ecda7	decompiled	chunks/007/functions-000474.c		
+1058ecda8	1058ece23	decompiled	chunks/007/functions-000474.c		
+1058ece24	1058ece2f	decompiled	chunks/007/functions-000474.c		
+1058ece30	1058eceab	decompiled	chunks/007/functions-000474.c		
+1058eceac	1058eceb7	decompiled	chunks/007/functions-000474.c		
+1058eceb8	1058ecf1f	decompiled	chunks/007/functions-000474.c	+[SCS2MusicSearchRequest descriptor]	
+1058ecf20	1058ecf87	decompiled	chunks/007/functions-000474.c	+[SCS2MusicSearchResponse descriptor]	
+1058ecf88	1058ecfef	decompiled	chunks/007/functions-000474.c	+[SCS2MusicSection descriptor]	
+1058ecff0	1058ed0e7	decompiled	chunks/007/functions-000474.c	+[SCS2MusicResult descriptor]	
+1058ed0e8	1058ed103	decompiled	chunks/007/functions-000474.c		
+1058ed104	1058ed17f	decompiled	chunks/007/functions-000474.c		
+1058ed180	1058ed18b	decompiled	chunks/007/functions-000474.c		
+1058ed18c	1058ed207	decompiled	chunks/007/functions-000474.c		
+1058ed208	1058ed213	decompiled	chunks/007/functions-000474.c		
+1058ed214	1058ed2a3	decompiled	chunks/007/functions-000474.c		
+1058ed2a4	1058ed2af	decompiled	chunks/007/functions-000474.c		
+1058ed2b0	1058ed32b	decompiled	chunks/007/functions-000474.c		
+1058ed32c	1058ed337	decompiled	chunks/007/functions-000474.c		
+1058ed338	1058ed3b3	decompiled	chunks/007/functions-000475.c		
+1058ed3b4	1058ed3bf	decompiled	chunks/007/functions-000475.c		
+1058ed3c0	1058ed43b	decompiled	chunks/007/functions-000475.c		
+1058ed43c	1058ed447	decompiled	chunks/007/functions-000475.c		
+1058ed448	1058ed4d7	decompiled	chunks/007/functions-000475.c		
+1058ed4d8	1058ed4fb	decompiled	chunks/007/functions-000475.c		
+1058ed4fc	1058ed577	decompiled	chunks/007/functions-000475.c		
+1058ed578	1058ed583	decompiled	chunks/007/functions-000475.c		
+1058ed584	1058ed5ff	decompiled	chunks/007/functions-000475.c		
+1058ed600	1058ed60b	decompiled	chunks/007/functions-000475.c		
+1058ed60c	1058ed687	decompiled	chunks/007/functions-000475.c		
+1058ed688	1058ed693	decompiled	chunks/007/functions-000475.c		
+1058ed694	1058ed70f	decompiled	chunks/007/functions-000475.c		
+1058ed710	1058ed71b	decompiled	chunks/007/functions-000475.c		
+1058ed71c	1058ed797	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures descriptor]	
+1058ed798	1058ed813	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures_EscalationType descriptor]	
+1058ed814	1058ed88f	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures_StitchType descriptor]	
+1058ed890	1058ed90b	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures_ModerationSource descriptor]	
+1058ed90c	1058ed987	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures_GarmBrandSafety descriptor]	
+1058ed988	1058eda03	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModFeatures_NotificationCaptionAbusiveness descriptor]	
+1058eda04	1058eda6b	decompiled	chunks/007/functions-000475.c	+[SCSIDXRejectionReason descriptor]	
+1058eda6c	1058edad3	decompiled	chunks/007/functions-000475.c	+[SCSIDXRejectionReasonV2 descriptor]	
+1058edad4	1058edb3b	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationQueueInfo descriptor]	
+1058edb3c	1058edba3	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationScope descriptor]	
+1058edba4	1058edc0b	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationRating descriptor]	
+1058edc0c	1058edc73	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationPolicyViolationType descriptor]	
+1058edc74	1058edcdb	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationCategory descriptor]	
+1058edcdc	1058edd43	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationAudience descriptor]	
+1058edd44	1058eddab	decompiled	chunks/007/functions-000475.c	+[SCSIDXModerationMode descriptor]	
+1058eddac	1058ede13	decompiled	chunks/007/functions-000475.c	+[SCSIDXAccountCategory descriptor]	
+1058ede14	1058ede7b	decompiled	chunks/007/functions-000475.c	+[SCSIDXSnapModHistory descriptor]	
+1058ede7c	1058ee1bb	decompiled	chunks/007/functions-000475.c		
+1058ee1bc	1058ee467	decompiled	chunks/007/functions-000475.c		
+1058ee468	1058ee7a7	decompiled	chunks/007/functions-000475.c		
+1058ee7a8	1058eeb0b	decompiled	chunks/007/functions-000475.c		
+1058eeb0c	1058eef2f	decompiled	chunks/007/functions-000475.c		
+1058eef30	1058eeff7	decompiled	chunks/007/functions-000475.c	-[SCAppDeepLinkAttachmentPagePropertiesProvider pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058eeff8	1058ef4f7	decompiled	chunks/007/functions-000475.c	-[SCAppDeepLinkAttachmentPagePropertiesProvider _fillAppDeepLink:pageProperties:]	
+1058ef4f8	1058ef713	decompiled	chunks/007/functions-000475.c	-[SCAppInstallAttachmentPagePropertiesResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058ef714	1058efc5b	decompiled	chunks/007/functions-000475.c	-[SCArrowLayerPagePropertiesResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058efc5c	1058efd73	decompiled	chunks/007/functions-000475.c	-[SCDefaultAttachmentPagePropertiesResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058efd74	1058efe77	decompiled	chunks/007/functions-000475.c	-[SCLongformVideoPagePropertiesProvider pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058efe78	1058eff27	decompiled	chunks/007/functions-000475.c	-[SCLongformVideoPagePropertiesProvider _findMediaReferences:ids:]	
+1058eff28	1058eff87	decompiled	chunks/007/functions-000475.c		
+1058eff88	1058f023b	decompiled	chunks/007/functions-000475.c	-[SCLongformVideoPagePropertiesProvider _fillLongformVideo:pageProperties:snapDoc:]	
+1058f023c	1058f0497	decompiled	chunks/007/functions-000475.c	-[SCPlaybackCharacteristicsPagePropertiersResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058f0498	1058f04fb	decompiled	chunks/007/functions-000475.c		
+1058f04fc	1058f0553	decompiled	chunks/007/functions-000475.c	-[SCSnapDocOperaPageResolverEntryPoint .cxx_destruct]	
+1058f0554	1058f0697	decompiled	chunks/007/functions-000475.c	-[SCSnapDocOperaPageResolverImpl pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058f0698	1058f06a3	decompiled	chunks/007/functions-000475.c	-[SCSnapDocOperaPageResolverImpl .cxx_destruct]	
+1058f06a4	1058f085f	decompiled	chunks/007/functions-000475.c	-[SCSnapDocOperaWebPagePageResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058f0860	1058f08c3	decompiled	chunks/007/functions-000475.c		
+1058f08c4	1058f1207	decompiled	chunks/007/functions-000475.c	-[SCSnapDocOperaWebPagePageResolver _fillWebPage:pagePropertiesBuilder:topSnap:]	
+1058f1208	1058f1307	decompiled	chunks/007/functions-000475.c	-[SCSubscriptionAttachmentPagePropertiesResolver pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058f1308	1058f16bb	decompiled	chunks/007/functions-000475.c	-[SCSubscriptionAttachmentPagePropertiesResolver _fillSubscription:pageProperties:]	
+1058f16bc	1058f1923	decompiled	chunks/007/functions-000475.c	-[SCUserPermittedActionsPagePropertiesProvider pagePropertiesForSnapDoc:pageProperties:attachmentProperties:]	
+1058f1924	1058f1a23	decompiled	chunks/007/functions-000475.c		
+1058f1a24	1058f1a2b	decompiled	chunks/007/functions-000475.c		
+1058f1a2c	1058f1ab3	decompiled	chunks/007/functions-000475.c		
+1058f1ab4	1058f1aef	decompiled	chunks/007/functions-000475.c	-[SCPlaybackLegacyHLSServiceEntryPoint end]	
+1058f1af0	1058f1cef	decompiled	chunks/007/functions-000475.c	-[SCPlaybackLegacyHLSServiceEntryPoint _createStreamingMediaManager]	
+1058f1cf0	1058f1d73	decompiled	chunks/007/functions-000475.c	-[SCPlaybackLegacyHLSServiceEntryPoint .cxx_destruct]	
+1058f1d74	1058f1e57	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest downloadUrl]	
+1058f1e58	1058f1e6f	decompiled	chunks/007/functions-000475.c		
+1058f1e70	1058f1ea7	decompiled	chunks/007/functions-000475.c		
+1058f1ea8	1058f1eab	decompiled	chunks/007/functions-000475.c		
+1058f1eac	1058f1f43	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest expirationDate]	
+1058f1f44	1058f22d7	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest debugInfo]	
+1058f22d8	1058f238f	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest debugIdentifier]	
+1058f2390	1058f241f	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest abrDebugIdentifier]	
+1058f2420	1058f2533	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest _debugMediaId:]	
+1058f2534	1058f258b	decompiled	chunks/007/functions-000475.c		
+1058f258c	1058f2713	decompiled	chunks/007/functions-000475.c		
+1058f2714	1058f285f	decompiled	chunks/007/functions-000475.c	-[SCPlaybackSingleMediaResolutionRequest switchBoardKey]	
+1058f2860	1058f28df	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard initWithDispatchGroup:]	
+1058f28e0	1058f2923	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard leave]	
+1058f2924	1058f2973	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard cancel]	
+1058f2974	1058f29a7	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard isCancelled]	
+1058f29a8	1058f29db	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard _leaveIfNeeded]	
+1058f29dc	1058f29e7	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupGuard .cxx_destruct]	
+1058f29e8	1058f2a63	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupHolder init]	
+1058f2a64	1058f2acb	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupHolder enter]	
+1058f2acc	1058f2c03	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupHolder isCancelled]	
+1058f2c04	1058f2c9b	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupHolder notify:block:]	
+1058f2c9c	1058f2cd7	decompiled	chunks/007/functions-000475.c		
+1058f2cd8	1058f2d07	decompiled	chunks/007/functions-000475.c	-[SCDispatchGroupHolder .cxx_destruct]	
+1058f2d08	1058f2f03	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver initWithBoltContentResolver:contentDelivery:configProvider:abrMediaServices:webProxyServices:legacyMediaResolver:performer:]	
+1058f2f04	1058f30db	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver shouldResolveWithRequest:]	
+1058f30dc	1058f3213	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver resolveRequest:completion:]	
+1058f3214	1058f3217	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver downloadSingleMedia:range:loggedUseCase:completion:]	
+1058f3218	1058f321b	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver prefetchStreamingContentFrom:completion:]	
+1058f321c	1058f3323	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver _failureResultForRequest:errorCode:]	
+1058f3324	1058f36a3	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver _processRequest:contentBundle:completion:]	
+1058f36a4	1058f3817	decompiled	chunks/007/functions-000475.c		
+1058f3818	1058f39df	decompiled	chunks/007/functions-000475.c		
+1058f39e0	1058f3b3b	decompiled	chunks/007/functions-000475.c		
+1058f3b3c	1058f3cc3	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver _resolvedUrlFromABRResult:error:]	
+1058f3cc4	1058f3d3b	decompiled	chunks/007/functions-000475.c	-[SCPlaybackABRMediaResolver .cxx_destruct]	
+1058f3d3c	1058f3e0b	decompiled	chunks/007/functions-000475.c	-[SCPlaybackBoltMediaResolver initWithBoltContentResolver:performer:]	
+1058f3e0c	1058f3ef3	decompiled	chunks/007/functions-000475.c	-[SCPlaybackBoltMediaResolver shouldResolveWithRequest:]	
+1058f3ef4	1058f4087	decompiled	chunks/007/functions-000476.c	-[SCPlaybackBoltMediaResolver resolveRequest:completion:]	
+1058f4088	1058f4217	decompiled	chunks/007/functions-000476.c	-[SCPlaybackBoltMediaResolver _transformResolvedUrl:withRequest:]	
+1058f4218	1058f4253	decompiled	chunks/007/functions-000476.c	-[SCPlaybackBoltMediaResolver .cxx_destruct]	
+1058f4254	1058f45c3	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver initWithContentDeliveryServices:contentManagerServices:contentManagerPlaybackServices:contentObjectResolver:performer:circumstanceEngine:abrMediaServices:webProxyServices:]	
+1058f45c4	1058f45cb	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver registerCustomMediaResolver:]	
+1058f45cc	1058f46e7	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver shouldResolveWithRequest:]	
+1058f46e8	1058f483b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver resolveRequest:completion:]	
+1058f483c	1058f4a1b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver resolveZipMediaRequest:completion:]	
+1058f4a1c	1058f4bdb	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver retrieveCacheStatusForRequest:completion:]	
+1058f4bdc	1058f4be3	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver enableNewContentManagerForStories]	
+1058f4be4	1058f4c13	decompiled	chunks/007/functions-000476.c	-[SCPlaybackCompositeMediaResolver .cxx_destruct]	
+1058f4c14	1058f4dab	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver initWithBoltContentResolver:contentFetcher:bufferedContentFetcher:cachePolicyManager:circumstanceEngine:]	
+1058f4dac	1058f4e23	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver shouldResolveWithRequest:]	
+1058f4e24	1058f5487	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver resolveRequest:completion:]	
+1058f5488	1058f549f	decompiled	chunks/007/functions-000476.c		
+1058f54a0	1058f555b	decompiled	chunks/007/functions-000476.c		
+1058f555c	1058f565b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver retrieveCacheStatusForRequest:completion:]	
+1058f565c	1058f568f	decompiled	chunks/007/functions-000476.c		
+1058f5690	1058f5957	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver _doMaybeFulldownload:contentBundle:requestContext:completion:]	
+1058f5958	1058f5b9b	decompiled	chunks/007/functions-000476.c		
+1058f5b9c	1058f5bff	decompiled	chunks/007/functions-000476.c		
+1058f5c00	1058f5d67	decompiled	chunks/007/functions-000476.c		
+1058f5d68	1058f5eb7	decompiled	chunks/007/functions-000476.c		
+1058f5eb8	1058f60d7	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver _doFullDownload:contentBundle:requestContext:completion:]	
+1058f60d8	1058f61f7	decompiled	chunks/007/functions-000476.c		
+1058f61f8	1058f641f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver _retrieveCacheStatusForRequest:completion:]	
+1058f6420	1058f649f	decompiled	chunks/007/functions-000476.c		
+1058f64a0	1058f672b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver _loadRequestDidCompleteWithResolvedContentBundle:contentBundleMetadata:request:data:fetchRatio:error:completion:]	
+1058f672c	1058f6843	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver _setCachePolicyForRequest:contentBundle:]	
+1058f6844	1058f684b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver enableNewContentManagerForStories]	
+1058f684c	1058f68ab	decompiled	chunks/007/functions-000476.c	-[SCPlaybackContentLocationResolver .cxx_destruct]	
+1058f68ac	1058f697b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager initWithLegacyMediaResourceLoader:abrMediaResolver:]	
+1058f697c	1058f69db	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager shouldResolveWithRequest:]	
+1058f69dc	1058f6c97	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager resolveRequest:completion:]	
+1058f6c98	1058f6d3f	decompiled	chunks/007/functions-000476.c		
+1058f6d40	1058f6d47	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager retrieveCacheStatusForRequest:completion:]	
+1058f6d48	1058f6f27	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _processResult:request:fetchStatus:completion:]	
+1058f6f28	1058f6f3f	decompiled	chunks/007/functions-000476.c		
+1058f6f40	1058f716b	decompiled	chunks/007/functions-000476.c		
+1058f716c	1058f726b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _transformRequest:withResolvedResult:]	
+1058f726c	1058f734b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _createZipErrorResultFromError:forRequest:]	
+1058f734c	1058f73cb	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _createZipErrorResultWithType:message:forRequest:]	
+1058f73cc	1058f7463	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _mapZipEntryName:toMediaType:layerType:]	
+1058f7464	1058f774b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _extractPlaybackEntriesFromZip:request:error:]	
+1058f774c	1058f7973	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager _processZipContentResult:request:fetchStatus:completion:]	
+1058f7974	1058f7ad3	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager resolveZipMediaRequest:completion:]	
+1058f7ad4	1058f7c3f	decompiled	chunks/007/functions-000476.c		
+1058f7c40	1058f7c53	decompiled	chunks/007/functions-000476.c		
+1058f7c54	1058f7d17	decompiled	chunks/007/functions-000476.c		
+1058f7d18	1058f7d53	decompiled	chunks/007/functions-000476.c	-[SCPlaybackLegacyMediaResolverUsingContentManager .cxx_destruct]	
+1058f7d54	1058f7dc7	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl initWithMediaReslutionResultsDict:]	
+1058f7dc8	1058f7e1b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl resolvedAllMedia]	
+1058f7e1c	1058f7f77	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl resolvedMediaWithContainerLayerType:]	
+1058f7f78	1058f803b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl resolvedMediaObservable]	
+1058f803c	1058f8047	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl _mapperToSuccessfullyResolvedResults]	
+1058f8048	1058f8193	decompiled	chunks/007/functions-000476.c		
+1058f8194	1058f81ab	decompiled	chunks/007/functions-000476.c		
+1058f81ac	1058f820b	decompiled	chunks/007/functions-000476.c		
+1058f820c	1058f82a3	decompiled	chunks/007/functions-000476.c		
+1058f82a4	1058f82a7	decompiled	chunks/007/functions-000476.c		
+1058f82a8	1058f82df	decompiled	chunks/007/functions-000476.c		
+1058f82e0	1058f8403	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl _transformToFutureFromObservable:]	
+1058f8404	1058f8583	decompiled	chunks/007/functions-000476.c		
+1058f8584	1058f85bb	decompiled	chunks/007/functions-000476.c		
+1058f85bc	1058f85c7	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultAccessorImpl .cxx_destruct]	
+1058f85c8	1058f863b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultImpl initWithResolvedMediaResultsArray:]	
+1058f863c	1058f8697	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultImpl resultsForContainerLayerType:]	
+1058f8698	1058f86c7	decompiled	chunks/007/functions-000476.c		
+1058f86c8	1058f86ef	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultImpl allResults]	
+1058f86f0	1058f86fb	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionResultImpl .cxx_destruct]	
+1058f86fc	1058f873b	decompiled	chunks/007/functions-000476.c		
+1058f873c	1058f8917	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionServiceEntryPoint _initializeMediaResolver]	
+1058f8918	1058f89d3	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolutionServiceEntryPoint .cxx_destruct]	
+1058f89d4	1058f8c67	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver initWithContentDeliveryServices:contentManagerServices:contentManagerPlaybackServices:contentObjectResolver:circumstanceEngine:abrMediaServices:grapheneRegistry:webProxyServices:]	
+1058f8c68	1058f8cbf	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver registerCustomSingleMediaResolvers:]	
+1058f8cc0	1058f8ccf	decompiled	chunks/007/functions-000476.c		
+1058f8cd0	1058f91ef	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver resolveRequest:completion:]	
+1058f91f0	1058f928b	decompiled	chunks/007/functions-000476.c		
+1058f928c	1058f9293	decompiled	chunks/007/functions-000476.c		
+1058f9294	1058f9557	decompiled	chunks/007/functions-000476.c		
+1058f9558	1058f972f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver resolveSingleMediaRequest:completion:]	
+1058f9730	1058f995b	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver resolveZipMediaRequest:completion:]	
+1058f995c	1058f9a9f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver hasMediaBundleResolved:]	
+1058f9aa0	1058f9bcf	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver retrieveCacheStatusForRequest:completion:completionQueue:]	
+1058f9bd0	1058f9c07	decompiled	chunks/007/functions-000476.c		
+1058f9c08	1058f9c17	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver mediaResolutionRequestFetchStatusObservable]	
+1058f9c18	1058f9d23	decompiled	chunks/007/functions-000476.c		
+1058f9d24	1058f9d87	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver hasDownloadStarted:]	
+1058f9d88	1058f9deb	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver isDownloadComplete:]	
+1058f9dec	1058f9f1f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver downloadContentBundle:mediaContextType:completion:]	
+1058f9f20	1058f9ff3	decompiled	chunks/007/functions-000476.c		
+1058f9ff4	1058fa0db	decompiled	chunks/007/functions-000476.c		
+1058fa0dc	1058fa0ff	decompiled	chunks/007/functions-000476.c		
+1058fa100	1058fa14f	decompiled	chunks/007/functions-000476.c		
+1058fa150	1058fa24f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver retrieveStreamingVariantCacheStatusForContentBundle:completion:]	
+1058fa250	1058fa283	decompiled	chunks/007/functions-000476.c		
+1058fa284	1058fa52f	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver _retrieveCacheStatusForRequest:completion:completionQueue:]	
+1058fa530	1058fa5a7	decompiled	chunks/007/functions-000476.c		
+1058fa5a8	1058fa647	decompiled	chunks/007/functions-000476.c		
+1058fa648	1058fa6f3	decompiled	chunks/007/functions-000476.c	-[SCPlaybackMediaResolver _retrieveCacheStatusForContentBundle:completion:]	
+1058fa6f4	1058fab7f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResolver downloadSingleMedia:range:loggedUseCase:completion:]	
+1058fab80	1058fac5f	decompiled	chunks/007/functions-000477.c		
+1058fac60	1058fadaf	decompiled	chunks/007/functions-000477.c		
+1058fadb0	1058faf7f	decompiled	chunks/007/functions-000477.c		
+1058faf80	1058fafd3	decompiled	chunks/007/functions-000477.c		
+1058fafd4	1058fb47f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResolver prefetchStreamingContentFrom:completion:]	
+1058fb480	1058fb5c7	decompiled	chunks/007/functions-000477.c		
+1058fb5c8	1058fb81f	decompiled	chunks/007/functions-000477.c		
+1058fb820	1058fb827	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResolver enableNewContentManagerForStories]	
+1058fb828	1058fb89f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResolver .cxx_destruct]	
+1058fb8a0	1058fb913	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher initWithContentDelivery:]	
+1058fb914	1058fbcc7	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher fetchMediaResourceForRequest:completion:]	
+1058fbcc8	1058fbf57	decompiled	chunks/007/functions-000477.c		
+1058fbf58	1058fc0e7	decompiled	chunks/007/functions-000477.c		
+1058fc0e8	1058fc27f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher retrieveCacheStatusForRequest:completion:]	
+1058fc280	1058fc31f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _fetchRatioFromContentResult:request:]	
+1058fc320	1058fc45f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _registerContentWithRequest:completion:]	
+1058fc460	1058fc793	decompiled	chunks/007/functions-000477.c		
+1058fc794	1058fcbbf	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _fetchContentWithRequest:requestKey:switchBoardKey:completion:]	
+1058fcbc0	1058fce27	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _prefetchMediaResourceForRequest:requestKey:completion:]	
+1058fce28	1058fce73	decompiled	chunks/007/functions-000477.c		
+1058fce74	1058fcf9f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _retrieveCachedContentWithRequest:completion:]	
+1058fcfa0	1058fd16f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher _nativeCMRequestFromResolutionRequest:downloadUrl:]	
+1058fd170	1058fd193	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceFetcher .cxx_destruct]	
+1058fd194	1058fd20f	decompiled	chunks/007/functions-000477.c		
+1058fd210	1058fd283	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceLoader initWithMediaResourceFetcher:]	
+1058fd284	1058fd28b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceLoader loadResourceForMediaRequest:completion:]	
+1058fd28c	1058fd293	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceLoader retrieveCacheStatusForRequest:completion:]	
+1058fd294	1058fd29f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackMediaResourceLoader .cxx_destruct]	
+1058fd2a0	1058fd37b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl initWithMediaContextType:contentBundle:contentBundleMetadata:data:]	
+1058fd37c	1058fd383	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl mediaContextType]	
+1058fd384	1058fd38b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl contentBundle]	
+1058fd38c	1058fd393	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl contentBundleMetadata]	
+1058fd394	1058fd39b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl data]	
+1058fd39c	1058fd3d7	decompiled	chunks/007/functions-000477.c	-[SCPlaybackContentLocationResultImpl .cxx_destruct]	
+1058fd3d8	1058fd3ff	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl initWithMediaType:mediaContextType:containerLayerType:contentResult:]	
+1058fd400	1058fd42b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl initWithMediaType:mediaContextType:containerLayerType:url:]	
+1058fd42c	1058fd4f3	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl initWithMediaType:mediaContextType:containerLayerType:contentResult:zipEntryName:]	
+1058fd4f4	1058fd51f	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl initWithMediaType:mediaContextType:containerLayerType:contentLocationResult:]	
+1058fd520	1058fd54b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl initWithMediaType:mediaContextType:containerLayerType:error:]	
+1058fd54c	1058fd69b	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl _initWithMediaType:mediaContextType:containerLayerType:contentResult:url:contentLocationResult:error:]	
+1058fd69c	1058fd6a3	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl mediaType]	
+1058fd6a4	1058fd6ab	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl mediaContextType]	
+1058fd6ac	1058fd6b3	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl containerLayerType]	
+1058fd6b4	1058fd6db	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl contentResult]	
+1058fd6dc	1058fd8ab	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl matchUrl:contentResult:contentLocation:error:]	
+1058fd8ac	1058fd8ff	decompiled	chunks/007/functions-000477.c	-[SCPlaybackSingleMediaResolutionResultImpl .cxx_destruct]	
+1058fd900	1058fd973	decompiled	chunks/007/functions-000477.c	-[SCGrapheneVideoSuperResolutionMetric2 init]	
+1058fd974	1058fdba3	decompiled	chunks/007/functions-000477.c		
+1058fdba4	1058fddd3	decompiled	chunks/007/functions-000477.c		
+1058fddd4	1058fdf47	decompiled	chunks/007/functions-000477.c		
+1058fdf48	1058fe207	decompiled	chunks/007/functions-000477.c		
+1058fe208	1058fe4c7	decompiled	chunks/007/functions-000477.c		
+1058fe4c8	1058fe6f7	decompiled	chunks/007/functions-000477.c		
+1058fe6f8	1058fe76b	decompiled	chunks/007/functions-000477.c	-[SCPercMLCoreMLModelImplementation initWithCoreMLModel:]	
+1058fe76c	1058fe7df	decompiled	chunks/007/functions-000477.c	-[SCPercMLCoreMLModelImplementation predictionFromFeatures:error:]	
+1058fe7e0	1058fe86b	decompiled	chunks/007/functions-000477.c	-[SCPercMLCoreMLModelImplementation predictionFromFeatures:options:error:]	
+1058fe86c	1058fe873	decompiled	chunks/007/functions-000477.c	-[SCPercMLCoreMLModelImplementation coreMLModel]	
+1058fe874	1058fe87f	decompiled	chunks/007/functions-000477.c	-[SCPercMLCoreMLModelImplementation .cxx_destruct]	
+1058fe880	1058fe8f3	decompiled	chunks/007/functions-000477.c	-[SCPercMLSnapMLModelImplementation initWithSnapMLModel:]	
+1058fe8f4	1058fe967	decompiled	chunks/007/functions-000477.c	-[SCPercMLSnapMLModelImplementation predictionFromFeatures:error:]	
+1058fe968	1058fe9f3	decompiled	chunks/007/functions-000477.c	-[SCPercMLSnapMLModelImplementation predictionFromFeatures:options:error:]	
+1058fe9f4	1058fe9fb	decompiled	chunks/007/functions-000477.c	-[SCPercMLSnapMLModelImplementation snapMLModel]	
+1058fe9fc	1058fea07	decompiled	chunks/007/functions-000477.c	-[SCPercMLSnapMLModelImplementation .cxx_destruct]	
+1058fea08	1058feacf	decompiled	chunks/007/functions-000477.c	+[SCPercMLSnapMLModelPreloader loadModel:cacheDirectory:inferenceMode:error:]	
+1058fead0	1058feb1b	decompiled	chunks/007/functions-000477.c	+[SCPercMLSnapMLModelPreloader wrapModel:]	
+1058feb1c	1058feba7	decompiled	chunks/007/functions-000477.c	+[SCPMDRDeliverableModelHandle descriptor]	
+1058feba8	1058fec8b	decompiled	chunks/007/functions-000477.c	+[SCPMDRModelDeliveryConfig descriptor]	
+1058fec8c	1058fec97	decompiled	chunks/007/functions-000477.c		
+1058fec98	1058fecff	decompiled	chunks/007/functions-000477.c	+[SCPMDRFastDNNDeliverableModel descriptor]	
+1058fed00	1058fed83	decompiled	chunks/007/functions-000477.c	+[SCPMDRFastDNNDeliverableModel_Identifier descriptor]	
+1058fed84	1058fedeb	decompiled	chunks/007/functions-000477.c	+[SCPMDRSnapScanDeliverableModel descriptor]	
+1058fedec	1058fee6f	decompiled	chunks/007/functions-000477.c	+[SCPMDRSnapScanDeliverableModel_Identifier descriptor]	
+1058fee70	1058feed7	decompiled	chunks/007/functions-000477.c	+[SCPMDRVisionDeliverableModel descriptor]	
+1058feed8	1058fef5b	decompiled	chunks/007/functions-000477.c	+[SCPMDRVisionDeliverableModel_Identifier descriptor]	
+1058fef5c	1058fefc3	decompiled	chunks/007/functions-000477.c	+[SCPMDRPercGraphDeliverableModel descriptor]	
+1058fefc4	1058ff047	decompiled	chunks/007/functions-000477.c	+[SCPMDRPercGraphDeliverableModel_Identifier descriptor]	
+1058ff048	1058ff0af	decompiled	chunks/007/functions-000477.c	+[SCPMDRImageClassificationMetadata descriptor]	
+1058ff0b0	1058ff133	decompiled	chunks/007/functions-000477.c	+[SCPMDRImageClassificationMetadata_ScorePropagation descriptor]	
+1058ff134	1058ff1bf	decompiled	chunks/007/functions-000477.c	+[SCPMDRDeliverableModel descriptor]	
+1058ff1c0	1058ff23b	decompiled	chunks/007/functions-000477.c	+[SCPMDRBoltRegisteredModelReference descriptor]	
+1058ff23c	1058ff2c7	decompiled	chunks/007/functions-000477.c	+[SCPMDRRegisteredModelReference descriptor]	
+1058ff2c8	1058ff343	decompiled	chunks/007/functions-000477.c		
+1058ff344	1058ff363	decompiled	chunks/007/functions-000477.c		
+1058ff364	1058ff3df	decompiled	chunks/007/functions-000477.c		
+1058ff3e0	1058ff3eb	decompiled	chunks/007/functions-000477.c		
+1058ff3ec	1058ff453	decompiled	chunks/007/functions-000477.c	+[SCPFDModel descriptor]	
+1058ff454	1058ff4cf	decompiled	chunks/007/functions-000477.c	+[SCPFDModel_TensorShape descriptor]	
+1058ff4d0	1058ff54b	decompiled	chunks/007/functions-000477.c	+[SCPFDModel_TensorDefinition descriptor]	
+1058ff54c	1058ff643	decompiled	chunks/007/functions-000477.c	+[SCPFDModel_Options descriptor]	
+1058ff644	1058ff64f	decompiled	chunks/007/functions-000477.c		
+1058ff650	1058ff6df	decompiled	chunks/007/functions-000477.c		
+1058ff6e0	1058ff6eb	decompiled	chunks/007/functions-000477.c		
+1058ff6ec	1058ff753	decompiled	chunks/007/functions-000477.c	+[SCPVNDetectBarcodesRequestMetadata descriptor]	
+1058ff754	1058ff7df	decompiled	chunks/007/functions-000477.c	+[SCPVNModel descriptor]	
+1058ff7e0	1058ff86f	decompiled	chunks/007/functions-000477.c		
+1058ff870	1058ff87b	decompiled	chunks/007/functions-000477.c		
+1058ff87c	1058ff8e3	decompiled	chunks/007/functions-000477.c	+[SCPSSSnapcodeDetectionMetadata descriptor]	
+1058ff8e4	1058ff96f	decompiled	chunks/007/functions-000477.c	+[SCPSSModel descriptor]	
+1058ff970	1058ff9c3	decompiled	chunks/007/functions-000477.c	+[SCNeoPlayerLogCollector shared]	
+1058ff9c4	1058ff9ef	decompiled	chunks/007/functions-000478.c		
+1058ff9f0	1058ffa53	decompiled	chunks/007/functions-000478.c	-[SCNeoPlayerLogCollector init]	
+1058ffa54	1058ffb23	decompiled	chunks/007/functions-000478.c	-[SCNeoPlayerLogCollector logChunkLoaded:latency:playerType:viewSource:]	
+1058ffb24	1058ffb63	decompiled	chunks/007/functions-000478.c	-[SCNeoPlayerLogCollector _bufferGridAlignedChunkSizeKiB:]	
+1058ffb64	1058ffb6f	decompiled	chunks/007/functions-000478.c	-[SCNeoPlayerLogCollector .cxx_destruct]	
+1058ffb70	1058ffbaf	decompiled	chunks/007/functions-000478.c		
+1058ffbb0	1058ffbeb	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetchServiceEntryPoint end]	
+1058ffbec	1058ffd57	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetchServiceEntryPoint _initializePrefetcher]	
+1058ffd58	1058ffdc3	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetchServiceEntryPoint .cxx_destruct]	
+1058ffdc4	1058ffecf	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetcher initWithStreamingMediaFetcher:circumstanceEngine:playbackResolver:manifestRewriter:]	
+1058ffed0	1059000df	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetcher submitRequest:completion:]	
+1059000e0	1059000e3	decompiled	chunks/007/functions-000478.c		
+1059000e4	10590014b	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetcher cancelRequest:completion:]	
+10590014c	105900163	decompiled	chunks/007/functions-000478.c		
+105900164	10590031b	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetcher getPrefetchStateForMediaKey:completion:]	
+10590031c	105900327	decompiled	chunks/007/functions-000478.c	-[SCPlaybackMediaPrefetcher .cxx_destruct]	
+105900328	1059003db	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher initWithRequestHandler:extraInfoProvider:streamingDelegate:]	
+1059003dc	1059005eb	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher fetchMediaDataForRequestInfo:byteRangeValue:completionQueue:completion:]	
+1059005ec	105900743	decompiled	chunks/007/functions-000478.c		
+105900744	10590075b	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher requestHandler]	
+10590075c	105900773	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher extraInfoProvider]	
+105900774	10590078b	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher streamingDelegate]	
+10590078c	1059007bb	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaFetcher .cxx_destruct]	
+1059007bc	1059008c7	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler initWithPlaybackResolver:circumstanceEngine:manifestRewriter:performerProvider:]	
+1059008c8	105900b5b	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler handleProxyRequest:urlProvider:completion:]	
+105900b5c	105900cd3	decompiled	chunks/007/functions-000478.c		
+105900cd4	105900d63	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler handleStreamingProxyRequest:urlProvider:updateBlock:]	
+105900d64	105900d6b	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler useSimplifiedProxyURLs]	
+105900d6c	105901237	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler _handleUrl:range:requestContext:extraInfo:urlProvider:completion:]	
+105901238	10590150b	decompiled	chunks/007/functions-000478.c		
+10590150c	1059016d3	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler _transformM3U8:originalURLBase:requestContext:extraInfo:urlProvider:]	
+1059016d4	10590175b	decompiled	chunks/007/functions-000478.c		
+10590175c	105901797	decompiled	chunks/007/functions-000478.c	-[SCStreamingContentManagerHandler .cxx_destruct]	
+105901798	105901bc3	decompiled	chunks/007/functions-000478.c		
+105901bc4	105901bdb	decompiled	chunks/007/functions-000478.c		
+105901bdc	105901c7b	decompiled	chunks/007/functions-000478.c		
+105901c7c	105901ca7	decompiled	chunks/007/functions-000478.c		
+105901ca8	105901f4f	decompiled	chunks/007/functions-000478.c		
+105901f50	10590203f	decompiled	chunks/007/functions-000478.c		
+105902040	105902053	decompiled	chunks/007/functions-000478.c		
+105902054	10590272b	decompiled	chunks/007/functions-000478.c		
+10590272c	1059028b7	decompiled	chunks/007/functions-000478.c		
+1059028b8	105902e27	decompiled	chunks/007/functions-000478.c		
+105902e28	105902e4b	decompiled	chunks/007/functions-000478.c		
+105902e4c	105902ecf	decompiled	chunks/007/functions-000478.c	-[SCStreamingLongformStreamingDelegate shouldUseStreamingRequestManagerAPIForRequestInfo:request:]	
+105902ed0	105902fb7	decompiled	chunks/007/functions-000478.c	-[SCStreamingLongformStreamingDelegate cacheKeyForRequestInfo:request:]	
+105902fb8	105903133	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher initWithMediaFetcher:playbackResolver:manifestRewriter:]	
+105903134	105903227	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher prefetchForRequest:completion:]	
+105903228	105903327	decompiled	chunks/007/functions-000478.c		
+105903328	1059033b7	decompiled	chunks/007/functions-000478.c		
+1059033b8	105903447	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher cancelPrefetchForMediaKey:]	
+105903448	10590348f	decompiled	chunks/007/functions-000478.c		
+105903490	1059036c7	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher _handleManifestRequestWithCM:startTime:duration:completion:]	
+1059036c8	10590396f	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher _handleManifestRequest:completion:]	
+105903970	105903a4f	decompiled	chunks/007/functions-000478.c		
+105903a50	105903adf	decompiled	chunks/007/functions-000478.c		
+105903ae0	105903aeb	decompiled	chunks/007/functions-000478.c		
+105903aec	105903da7	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher _handleMediaRequest:startTime:duration:completion:]	
+105903da8	105903e87	decompiled	chunks/007/functions-000478.c		
+105903e88	105903f17	decompiled	chunks/007/functions-000478.c		
+105903f18	10590403f	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher prefetchedMediaStateForMediaKey:completion:]	
+105904040	105904117	decompiled	chunks/007/functions-000478.c		
+105904118	105904127	decompiled	chunks/007/functions-000478.c		
+105904128	10590412f	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher mediaFetcher]	
+105904130	10590418f	decompiled	chunks/007/functions-000478.c	-[SCStreamingMediaPrefetcher .cxx_destruct]	
+105904190	1059042c7	decompiled	chunks/007/functions-000478.c	-[SCStreamingRequestExtraInfoProvider extraInfoForStreamingRequestInfo:streamingDelegate:]	
+1059042c8	10590432f	decompiled	chunks/007/functions-000478.c	-[SCStreamingRequestExtraInfoProvider streamingRequestInfoFromExtraInfo:]	
+105904330	1059043db	decompiled	chunks/007/functions-000478.c	-[SCStreamingRequestExtraInfoProvider streamingDelegateFromExtraInfo:]	
+1059043dc	105904457	decompiled	chunks/007/functions-000478.c	-[SCStreamingRequestExtraInfoProvider streamingPlaybackTypeFromExtraInfo:]	
+105904458	105904543	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider initWithURLProvider:proxyController:extraInfoProvider:streamingDelegate:]	
+105904544	10590469f	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider streamingURLForRequestInfo:]	
+1059046a0	1059046a7	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider urlProvider]	
+1059046a8	1059046bf	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider extraInfoProvider]	
+1059046c0	1059046c7	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider proxyController]	
+1059046c8	1059046df	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider streamingDelegate]	
+1059046e0	10590471f	decompiled	chunks/007/functions-000478.c	-[SCStreamingURLProvider .cxx_destruct]	
+105904720	105904727	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate initWithRequestHandler:extraInfoProvider:streamingDelegate:]	
+105904728	1059048eb	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate initWithRequestHandler:extraInfoProvider:streamingDelegate:webProxyUrlProvider:]	
+1059048ec	10590499f	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate proxiedURLForRequestInfo:]	
+1059049a0	105904b97	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate streamingURLForRequestInfo:]	
+105904b98	105904b9b	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate urlProvider]	
+105904b9c	105904fdf	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate resourceLoader:shouldWaitForLoadingOfRequestedResource:]	
+105904fe0	10590503b	decompiled	chunks/007/functions-000478.c		
+10590503c	1059050cb	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate resourceLoader:didCancelLoadingRequest:]	
+1059050cc	10590521b	decompiled	chunks/007/functions-000478.c		
+10590521c	105905313	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate _didStartHandlingRequest:]	
+105905314	105905403	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate _didFinishHandlingRequest:withError:]	
+105905404	105905417	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate proxyURLProvider:baseURLForRequestInfo:]	
+105905418	10590542f	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate extraInfoProvider]	
+105905430	105905447	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate requestHandler]	
+105905448	10590545f	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate streamingDelegate]	
+105905460	1059054bf	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegate .cxx_destruct]	
+1059054c0	10590569b	decompiled	chunks/007/functions-000478.c		
+10590569c	10590576b	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest initWithLoadingRequest:proxyRequest:contentDeliveryRequestHandle:]	
+10590576c	10590578f	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest copyWithZone:]	
+105905790	1059057e3	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest hash]	
+1059057e4	10590588b	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest isEqual:]	
+10590588c	105905893	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest loadingRequest]	
+105905894	10590589b	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest proxyRequest]	
+10590589c	1059058a3	decompiled	chunks/007/functions-000478.c	-[SCStreamingResourceLoaderDelegateRequest contentDeliveryRequestHandle]	
+1059058a4	1059058df	decompiled	chunks/007/functions-000479.c	-[SCStreamingResourceLoaderDelegateRequest .cxx_destruct]	
+1059058e0	105905a67	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager initWithPlaybackResolver:grapheneRegistry:circumstanceEngine:applicationLifecycleEvents:manifestRewriter:performerProvider:]	
+105905a68	105905a6f	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager newURLProvider]	
+105905a70	105905a77	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager newURLProviderForLongformMedia]	
+105905a78	105905a7f	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager newMediaFetcher]	
+105905a80	105905a87	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager newMediaFetcherForLongformMedia]	
+105905a88	105905a8b	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager clearCache]	
+105905a8c	105905b17	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager _newURLProviderWithStreamingDelegate:]	
+105905b18	105905b77	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager _newMediaFetcherWithStreamingDelegate:]	
+105905b78	105905b7f	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager requestHandler]	
+105905b80	105905bd3	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaManager .cxx_destruct]	
+105905bd4	105905cdf	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult initWithMainManifestData:videoMediaManifestData:audioMediaManifestData:iframeMediaManifestData:]	
+105905ce0	105905d03	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult copyWithZone:]	
+105905d04	105905d8f	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult hash]	
+105905d90	105905e67	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult isEqual:]	
+105905e68	105905e6f	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult mainManifestData]	
+105905e70	105905e77	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult videoMediaManifestData]	
+105905e78	105905e7f	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult audioMediaManifestData]	
+105905e80	105905e87	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult iframeMediaManifestData]	
+105905e88	105905ecf	decompiled	chunks/007/functions-000479.c	-[SCStreamingManifestFetchResult .cxx_destruct]	
+105905ed0	105905fa7	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData initWithPreviewImage:overlayImage:videoAsset:]	
+105905fa8	105905fcb	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData copyWithZone:]	
+105905fcc	10590604b	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData hash]	
+10590604c	10590610b	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData isEqual:]	
+10590610c	105906113	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData previewImage]	
+105906114	10590611b	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData overlayImage]	
+10590611c	105906123	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData videoAsset]	
+105906124	10590615f	decompiled	chunks/007/functions-000479.c	-[SCStreamingMediaData .cxx_destruct]	
+105906160	105906273	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo initWithRequestContexts:priority:connectivity:requestType:trackingInfo:postParameters:authenticated:useStreamingAPI:]	
+105906274	105906297	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo copyWithZone:]	
+105906298	10590633b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo hash]	
+10590633c	10590644b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo isEqual:]	
+10590644c	105906453	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo requestContexts]	
+105906454	10590645b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo priority]	
+10590645c	105906463	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo connectivity]	
+105906464	10590646b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo requestType]	
+10590646c	105906473	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo trackingInfo]	
+105906474	10590647b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo postParameters]	
+10590647c	105906483	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo authenticated]	
+105906484	10590648b	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo useStreamingAPI]	
+10590648c	1059064c7	decompiled	chunks/007/functions-000479.c	-[SCStreamingRequestManagerInfo .cxx_destruct]	
+1059064c8	10590668f	decompiled	chunks/007/functions-000479.c		
+105906690	1059066d7	decompiled	chunks/007/functions-000479.c		
+1059066d8	10590674f	decompiled	chunks/007/functions-000479.c		
+105906750	105906753	decompiled	chunks/007/functions-000479.c		
+105906754	1059068a7	decompiled	chunks/007/functions-000479.c		
+1059068a8	1059069df	decompiled	chunks/007/functions-000479.c		
+1059069e0	105906b2b	decompiled	chunks/007/functions-000479.c		
+105906b2c	105906c4b	decompiled	chunks/007/functions-000479.c		
+105906c4c	105906d03	decompiled	chunks/007/functions-000479.c		
+105906d04	105906da3	decompiled	chunks/007/functions-000479.c	-[SCWebProxyRequestTracker init]	
+105906da4	105906e83	decompiled	chunks/007/functions-000479.c	-[SCWebProxyRequestTracker totalInFlightRequestsWithKey:]	
+105906e84	105906ecb	decompiled	chunks/007/functions-000479.c		
+105906ecc	105906fd7	decompiled	chunks/007/functions-000479.c	-[SCWebProxyRequestTracker didStartHandlingRequestWithKey:]	
+105906fd8	1059070ff	decompiled	chunks/007/functions-000479.c	-[SCWebProxyRequestTracker didFinishHandlingRequestWithKey:]	
+105907100	10590712f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyRequestTracker .cxx_destruct]	
+105907130	1059071eb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider initWithDelegate:useSimplifiedProxyURLs:]	
+1059071ec	105907507	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider requestInfoForProxiedURL:]	
+105907508	1059078e3	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider proxiedURLForRequestInfo:]	
+1059078e4	1059078eb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider proxiedURLForURL:]	
+1059078ec	1059078f3	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider originalUrlForProxied:]	
+1059078f4	10590790b	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider delegate]	
+10590790c	105907943	decompiled	chunks/007/functions-000479.c	-[SCWebProxyURLProvider .cxx_destruct]	
+105907944	10590797f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState init]	
+105907980	10590798f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState canStartServer]	
+105907990	1059079ab	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState isServerRunningInForeground]	
+1059079ac	1059079b7	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState appDidEnterBackground]	
+1059079b8	1059079bf	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState appWillEnterForeground]	
+1059079c0	1059079c7	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState serverDidStop]	
+1059079c8	1059079d3	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServerState serverDidStart]	
+1059079d4	105907d7f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer initWithRequestHandler:applicationLifecycleEvents:useLastWebServerPortOnAppBackground:]	
+105907d80	105907de7	decompiled	chunks/007/functions-000479.c		
+105907de8	105907f37	decompiled	chunks/007/functions-000479.c		
+105907f38	105907f6b	decompiled	chunks/007/functions-000479.c		
+105907f6c	105907fb7	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer dealloc]	
+105907fb8	1059081ef	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer start]	
+1059081f0	10590826f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer stop]	
+105908270	1059082db	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer forceRestart]	
+1059082dc	105908337	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer isRunning]	
+105908338	10590840b	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer isProxiedURL:]	
+10590840c	1059084af	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer proxiedURLForRequestInfo:]	
+1059084b0	10590863f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _initWebServerObservers]	
+105908640	1059086df	decompiled	chunks/007/functions-000479.c		
+1059086e0	1059087bb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _initWebServerIfNeeded]	
+1059087bc	105908877	decompiled	chunks/007/functions-000479.c		
+105908878	1059088e7	decompiled	chunks/007/functions-000479.c		
+1059088e8	105908ecb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _handleWebServerRequest:completion:]	
+105908ecc	105908ed3	decompiled	chunks/007/functions-000479.c		
+105908ed4	105908f57	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _didEnterBackground]	
+105908f58	105908fa7	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _willEnterForeground]	
+105908fa8	10590905f	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _startupComplete]	
+105909060	1059091bb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer proxyURLProvider:baseURLForRequestInfo:]	
+1059091bc	1059091ff	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _debugIdentifier]	
+105909200	1059092bb	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer _serverState]	
+1059092bc	1059092d3	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer requestHandler]	
+1059092d4	10590936b	decompiled	chunks/007/functions-000479.c	-[SCWebProxyServer .cxx_destruct]	
+10590936c	105909383	decompiled	chunks/007/functions-000479.c		
+105909384	1059093ab	decompiled	chunks/007/functions-000479.c		
+1059093ac	1059093b3	decompiled	chunks/007/functions-000479.c		
+1059093b4	1059095ef	decompiled	chunks/007/functions-000479.c		

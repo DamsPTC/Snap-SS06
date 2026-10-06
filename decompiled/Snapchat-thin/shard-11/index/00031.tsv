@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1085ef930	1085ef963	decompiled	chunks/004/functions-000310.c		
+1085ef964	1085ef9cf	decompiled	chunks/004/functions-000310.c	-[SCTalkCoreProvider .cxx_destruct]	
+1085ef9d0	1085efacf	decompiled	chunks/004/functions-000310.c	-[SCTalkFuture initWithFuture:]	
+1085efad0	1085efb13	decompiled	chunks/004/functions-000310.c		
+1085efb14	1085efb5b	decompiled	chunks/004/functions-000310.c	+[SCTalkFuture fromSCFuture:]	
+1085efb5c	1085efb83	decompiled	chunks/004/functions-000310.c	-[SCTalkFuture value]	
+1085efb84	1085efbab	decompiled	chunks/004/functions-000310.c	-[SCTalkFuture future]	
+1085efbac	1085efbdb	decompiled	chunks/004/functions-000310.c	-[SCTalkFuture .cxx_destruct]	
+1085efbdc	1085efcc7	decompiled	chunks/004/functions-000310.c	-[SCTalkIntentDonator initWithStartCallIntentDonator:identityServices:]	
+1085efcc8	1085efcfb	decompiled	chunks/004/functions-000310.c		
+1085efcfc	1085efd7b	decompiled	chunks/004/functions-000310.c	-[SCTalkIntentDonator sessionWrapper:updatedState:]	
+1085efd7c	1085efed7	decompiled	chunks/004/functions-000310.c	-[SCTalkIntentDonator _handleStateUpdateForTalkContext:sessionState:]	
+1085efed8	1085f0093	decompiled	chunks/004/functions-000310.c	-[SCTalkIntentDonator _donateStartCallIntentForTalkContext:isVideoCall:]	
+1085f0094	1085f033b	decompiled	chunks/004/functions-000310.c		
+1085f033c	1085f0353	decompiled	chunks/004/functions-000310.c		
+1085f0354	1085f03a3	decompiled	chunks/004/functions-000310.c		
+1085f03a4	1085f03db	decompiled	chunks/004/functions-000310.c		
+1085f03dc	1085f03df	decompiled	chunks/004/functions-000310.c		
+1085f03e0	1085f0427	decompiled	chunks/004/functions-000310.c	-[SCTalkIntentDonator .cxx_destruct]	
+1085f0428	1085f088b	decompiled	chunks/004/functions-000310.c	-[SCTalkManager initWithUserId:cameraServices:chatTransportServices:identityServices:circumstanceEngine:performer:localFrameProvider:incomingCallRequestObservable:callKitServices:audioManager:callOpsDataProvider:talkCoreProvider:talkSessionProvider:notificationPayloadDecryptor:rendererManagerBridge:audioSession:errorReporter:]	
+1085f088c	1085f0923	decompiled	chunks/004/functions-000310.c		
+1085f0924	1085f0957	decompiled	chunks/004/functions-000310.c	-[SCTalkManager dealloc]	
+1085f0958	1085f095f	decompiled	chunks/004/functions-000310.c	-[SCTalkManager identityServices]	
+1085f0960	1085f0967	decompiled	chunks/004/functions-000310.c	-[SCTalkManager chatTransportServices]	
+1085f0968	1085f09d3	decompiled	chunks/004/functions-000310.c	-[SCTalkManager invalidate]	
+1085f09d4	1085f09db	decompiled	chunks/004/functions-000310.c	-[SCTalkManager audioManager]	
+1085f09dc	1085f0aa3	decompiled	chunks/004/functions-000310.c	-[SCTalkManager createSessionForConvoId:convoMetadata:dependencies:delegate:completion:]	
+1085f0aa4	1085f0bb7	decompiled	chunks/004/functions-000310.c	-[SCTalkManager createModularCallSessionForTalkContext:callIntent:selectedLensInfoObservable:appliedLensObservable:sharedLensController:delegate:sourceType:completion:]	
+1085f0bb8	1085f0c2f	decompiled	chunks/004/functions-000310.c	-[SCTalkManager createPipCallSessionForTalkContext:completion:]	
+1085f0c30	1085f0d17	decompiled	chunks/004/functions-000310.c	-[SCTalkManager createHeadlessSessionForTalkContext:callIntent:remoteUserIds:delegate:sourceType:withCallKit:completion:]	
+1085f0d18	1085f0d1f	decompiled	chunks/004/functions-000310.c	-[SCTalkManager isSessionActiveForTalkContext:]	
+1085f0d20	1085f0ec7	decompiled	chunks/004/functions-000310.c	-[SCTalkManager acquirePermissionToStartCall:forTalkContext:sourceType:alertDialogUiContainer:completionBlock:]	
+1085f0ec8	1085f0fab	decompiled	chunks/004/functions-000310.c		
+1085f0fac	1085f104f	decompiled	chunks/004/functions-000310.c		
+1085f1050	1085f1063	decompiled	chunks/004/functions-000310.c		
+1085f1064	1085f119b	decompiled	chunks/004/functions-000310.c	-[SCTalkManager acquirePermissionToPublishMedia:forTalkContext:alertDialogUiContainer:completionBlock:]	
+1085f119c	1085f11ab	decompiled	chunks/004/functions-000310.c		
+1085f11ac	1085f159b	decompiled	chunks/004/functions-000310.c	-[SCTalkManager _acquirePermissionToPublishMedia:forTalkContext:alertDialogUiContainer:loggedCompletionBlock:]	
+1085f159c	1085f16ab	decompiled	chunks/004/functions-000310.c		
+1085f16ac	1085f171b	decompiled	chunks/004/functions-000310.c		
+1085f171c	1085f1887	decompiled	chunks/004/functions-000310.c		
+1085f1888	1085f1967	decompiled	chunks/004/functions-000310.c		
+1085f1968	1085f1a23	decompiled	chunks/004/functions-000310.c		
+1085f1a24	1085f1a3b	decompiled	chunks/004/functions-000310.c		
+1085f1a3c	1085f1a97	decompiled	chunks/004/functions-000310.c	-[SCTalkManager createVideoFrameProvider]	
+1085f1a98	1085f1bab	decompiled	chunks/004/functions-000310.c	-[SCTalkManager processIncomingCallRequestAsNotification:completion:]	
+1085f1bac	1085f1d77	decompiled	chunks/004/functions-000310.c		
+1085f1d78	1085f1e67	decompiled	chunks/004/functions-000310.c		
+1085f1e68	1085f1f1b	decompiled	chunks/004/functions-000310.c	-[SCTalkManager processRingingTimeout:completion:]	
+1085f1f1c	1085f1feb	decompiled	chunks/004/functions-000310.c		
+1085f1fec	1085f2073	decompiled	chunks/004/functions-000310.c	-[SCTalkManager onIncomingCallRequestFailedToPresent:]	
+1085f2074	1085f2143	decompiled	chunks/004/functions-000310.c		
+1085f2144	1085f220b	decompiled	chunks/004/functions-000310.c	-[SCTalkManager incomingCallRequestObservable]	
+1085f220c	1085f229f	decompiled	chunks/004/functions-000310.c		
+1085f22a0	1085f22c7	decompiled	chunks/004/functions-000310.c	-[SCTalkManager cameraServices]	
+1085f22c8	1085f22cf	decompiled	chunks/004/functions-000310.c	-[SCTalkManager localFrameProvider]	
+1085f22d0	1085f240b	decompiled	chunks/004/functions-000311.c	-[SCTalkManager setCallingToPauseIfNeeded:]	
+1085f240c	1085f245f	decompiled	chunks/004/functions-000311.c	-[SCTalkManager powerStateDidChange:]	
+1085f2460	1085f246b	decompiled	chunks/004/functions-000311.c		
+1085f246c	1085f265f	decompiled	chunks/004/functions-000311.c	-[SCTalkManager dismissCallsOtherThanTalkContext:]	
+1085f2660	1085f26b7	decompiled	chunks/004/functions-000311.c	-[SCTalkManager endCallForTalkContext:]	
+1085f26b8	1085f26f3	decompiled	chunks/004/functions-000311.c	-[SCTalkManager injectFrame:]	
+1085f26f4	1085f2703	decompiled	chunks/004/functions-000311.c	-[SCTalkManager _isInvalidated]	
+1085f2704	1085f27df	decompiled	chunks/004/functions-000311.c	-[SCTalkManager _decryptSealedEnvelope:]	
+1085f27e0	1085f28b3	decompiled	chunks/004/functions-000311.c	-[SCTalkManager .cxx_destruct]	
+1085f28b4	1085f2957	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl initWithHeadlessSessionController:currentPageTracker:]	
+1085f2958	1085f295f	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl notificationProcessor]	
+1085f2960	1085f29c7	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl handlePushKitIncomingCallNotification:withCompletionHandler:]	
+1085f29c8	1085f29cf	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl invalidate]	
+1085f29d0	1085f2a37	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl setModularCallLauncher:]	
+1085f2a38	1085f2a67	decompiled	chunks/004/functions-000311.c	-[SCTalkNotificationsControllerImpl .cxx_destruct]	
+1085f2a68	1085f2b63	decompiled	chunks/004/functions-000311.c	-[SCTalkPresenceServiceDelegateImpl initWithPresenceStateProvider:callStateProvider:platformActiveConversationsInfoObservableProvider:performer:]	
+1085f2b64	1085f2cbf	decompiled	chunks/004/functions-000311.c	-[SCTalkPresenceServiceDelegateImpl initializeActiveConversationsObservableForTSMode]	
+1085f2cc0	1085f2d53	decompiled	chunks/004/functions-000311.c		
+1085f2d54	1085f2d9b	decompiled	chunks/004/functions-000311.c	-[SCTalkPresenceServiceDelegateImpl dealloc]	
+1085f2d9c	1085f2dfb	decompiled	chunks/004/functions-000311.c	-[SCTalkPresenceServiceDelegateImpl .cxx_destruct]	
+1085f2dfc	1085f2e6f	decompiled	chunks/004/functions-000311.c	-[SCTalkRTCAudioSessionDelegateImpl_v141 initWithCrashLogger:]	
+1085f2e70	1085f2f23	decompiled	chunks/004/functions-000311.c	-[SCTalkRTCAudioSessionDelegateImpl_v141 audioSession:audioUnitStartFailedWithError:]	
+1085f2f24	1085f2f2f	decompiled	chunks/004/functions-000311.c	-[SCTalkRTCAudioSessionDelegateImpl_v141 .cxx_destruct]	
+1085f2f30	1085f36e7	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider initWithTalkCoreProvider:bitmojiFlatlandInfoProvider:screenCaptureServices:chatTransportServices:identityServices:talkContextMutableFactory:cameraServices:networkServices:callKitCallManager:notificationPool:callStateProvider:valdiRuntimeProvider:networkConnectivityMonitorServices:applicationLifecycleEvents:friendsFeedGraphene:presenceRenderGrapheneLogger:talkCoreDispatcher:rendererManagerBridge:errorReporter:localFrameProvider:networkInfo:callOpsDataProvider:audioManager:grapheneLogger:circumstanceEngine:plusFeatureGating:plusFeatureLogging:callSuperResolutionServices:callPageConfig:platformPresenceServiceProvider:talkIntentDonator:currentPageTracker:crashLogger:]	
+1085f36e8	1085f371f	decompiled	chunks/004/functions-000311.c		
+1085f3720	1085f3767	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider dealloc]	
+1085f3768	1085f3a43	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider disposeWithReason:]	
+1085f3a44	1085f3a93	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider sessionWrappers]	
+1085f3a94	1085f3b2b	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider sessionWrapperForTalkContext:]	
+1085f3b2c	1085f3d3f	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider createTalkChatSessionForConvoId:convoMetadata:dependencies:delegate:completion:]	
+1085f3d40	1085f3e6f	decompiled	chunks/004/functions-000311.c		
+1085f3e70	1085f4153	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider createModularCallSessionForTalkContext:callIntent:selectedLensInfoObservable:appliedLensObservable:sharedLensController:delegate:sourceType:talkManager:completion:]	
+1085f4154	1085f42a7	decompiled	chunks/004/functions-000311.c		
+1085f42a8	1085f4483	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider createPipCallSessionForTalkContext:completion:]	
+1085f4484	1085f454b	decompiled	chunks/004/functions-000311.c		
+1085f454c	1085f4717	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider createHeadlessSessionForTalkContext:callIntent:remoteUserIds:delegate:sourceType:withCallKit:completion:]	
+1085f4718	1085f479b	decompiled	chunks/004/functions-000311.c		
+1085f479c	1085f4ba3	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider createCallingSessionWrapper:remoteUserIds:callIntent:sourceType:withCallKit:completion:]	
+1085f4ba4	1085f4c53	decompiled	chunks/004/functions-000311.c		
+1085f4c54	1085f4d57	decompiled	chunks/004/functions-000311.c		
+1085f4d58	1085f4e2b	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider isSessionActiveForTalkContext:]	
+1085f4e2c	1085f50a3	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider sessionWrapperDestroyed:]	
+1085f50a4	1085f5117	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _reachabilityChanged:]	
+1085f5118	1085f5123	decompiled	chunks/004/functions-000311.c		
+1085f5124	1085f5213	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _thermalStateChanged]	
+1085f5214	1085f52af	decompiled	chunks/004/functions-000311.c		
+1085f52b0	1085f531b	decompiled	chunks/004/functions-000311.c		
+1085f531c	1085f566f	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _createTalkChatSessionForConvoId:dependencies:remoteParticipants:delegate:completion:]	
+1085f5670	1085f58af	decompiled	chunks/004/functions-000311.c		
+1085f58b0	1085f59f7	decompiled	chunks/004/functions-000311.c		
+1085f59f8	1085f5cd7	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _createCallingSessionWrapper:callIntent:sessionBridge:platformEventSubject:]	
+1085f5cd8	1085f610f	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _createCallingSessionParametersWithConversationId:isGroup:callIntent:remoteUserIds:sourceType:withCallKit:]	
+1085f6110	1085f6253	decompiled	chunks/004/functions-000311.c		
+1085f6254	1085f6343	decompiled	chunks/004/functions-000311.c		
+1085f6344	1085f6357	decompiled	chunks/004/functions-000311.c		
+1085f6358	1085f6667	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _createCallingSessionWrapperPromise:callIntent:remoteUserIds:sourceType:withCallKit:]	
+1085f6668	1085f69c3	decompiled	chunks/004/functions-000311.c		
+1085f69c4	1085f6ad3	decompiled	chunks/004/functions-000311.c		
+1085f6ad4	1085f6b33	decompiled	chunks/004/functions-000311.c		
+1085f6b34	1085f6be3	decompiled	chunks/004/functions-000311.c		
+1085f6be4	1085f6bf3	decompiled	chunks/004/functions-000311.c		
+1085f6bf4	1085f6d77	decompiled	chunks/004/functions-000311.c		
+1085f6d78	1085f6ebb	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _getRemoteParticipantUserIds:]	
+1085f6ebc	1085f6f27	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _getConversationMetadataForConvoId:]	
+1085f6f28	1085f6fcb	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _networkStatusLoggerForTalkContextId:]	
+1085f6fcc	1085f70f3	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _subscribeToReachabilityIfNeeded]	
+1085f70f4	1085f7153	decompiled	chunks/004/functions-000311.c		
+1085f7154	1085f71ef	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _subscribeToThermalStateIfNeeded]	
+1085f71f0	1085f71ff	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _isInvalidated]	
+1085f7200	1085f7377	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider _createTalkChatSessionWithPresenceTSForConvoId:dependencies:delegate:presenceSession:completion:]	
+1085f7378	1085f7487	decompiled	chunks/004/functions-000311.c		
+1085f7488	1085f7693	decompiled	chunks/004/functions-000311.c		
+1085f7694	1085f76db	decompiled	chunks/004/functions-000311.c		
+1085f76dc	1085f78bf	decompiled	chunks/004/functions-000311.c	-[SCTalkSessionProvider .cxx_destruct]	
+1085f78c0	1085f7983	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper initWithDirectRendererCallback:callSuperResolutionSession:]	
+1085f7984	1085f798b	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper onFrame:]	
+1085f798c	1085f7c57	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper onNativeFrame:]	
+1085f7c58	1085f7d47	decompiled	chunks/004/functions-000311.c		
+1085f7d48	1085f7ddb	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper _isUnsupportedFrameSize:]	
+1085f7ddc	1085f7e5b	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper _addUnsupportedFrameSize:]	
+1085f7e5c	1085f7e67	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper paused]	
+1085f7e68	1085f7e6f	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper setPaused:]	
+1085f7e70	1085f7e7b	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper callSuperResolutionProcessor]	
+1085f7e7c	1085f7e83	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper setCallSuperResolutionProcessor:]	
+1085f7e84	1085f7e8f	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper isWaitingForProcessor]	
+1085f7e90	1085f7e97	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper setIsWaitingForProcessor:]	
+1085f7e98	1085f7edf	decompiled	chunks/004/functions-000311.c	-[SCSuperResolutionRendererWrapper .cxx_destruct]	
+1085f7ee0	1085f7f6f	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame initWithImageBuffer:timestampUs:]	
+1085f7f70	1085f7f77	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame android]	
+1085f7f78	1085f7f93	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame height]	
+1085f7f94	1085f7fbb	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame ios]	
+1085f7fbc	1085f7fbf	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame releaseFrame]	
+1085f7fc0	1085f7fc3	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame retainFrame]	
+1085f7fc4	1085f7fcb	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame timestampUs]	
+1085f7fcc	1085f7fe7	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame width]	
+1085f7fe8	1085f8033	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame dealloc]	
+1085f8034	1085f803f	decompiled	chunks/004/functions-000311.c	-[SCTalkNativeVideoFrame .cxx_destruct]	
+1085f8040	1085f8043	decompiled	chunks/004/functions-000311.c	-[ADLLoggerImpl log:tag:message:]	
+1085f8044	1085f818b	decompiled	chunks/004/functions-000311.c		
+1085f818c	1085f82df	decompiled	chunks/004/functions-000311.c		
+1085f82e0	1085f83fb	decompiled	chunks/004/functions-000312.c		
+1085f83fc	1085f8447	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction chatVisibleAction]	
+1085f8448	1085f8493	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction chatHiddenAction]	
+1085f8494	1085f84df	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction startPeekingAction]	
+1085f84e0	1085f852b	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction typingAction:]	
+1085f852c	1085f8577	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction usingReplyCameraAction]	
+1085f8578	1085f85c3	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction viewingChatMediaAction]	
+1085f85c4	1085f872b	decompiled	chunks/004/functions-000312.c	+[SCCPresencePlatformUserAction extendChatMediaVisibleAction]	
+1085f872c	1085f87fb	decompiled	chunks/004/functions-000312.c		
+1085f87fc	1085f8853	decompiled	chunks/004/functions-000312.c		
+1085f8854	1085f8bb3	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl initWithAudioServices:mutableAudioSession:grapheneLogger:delegate:applicationLifecycleEvents:]	
+1085f8bb4	1085f8c4f	decompiled	chunks/004/functions-000312.c		
+1085f8c50	1085f8c77	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl audioState]	
+1085f8c78	1085f8ce7	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl selectAudioDevice:]	
+1085f8ce8	1085f8cf3	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl setDelegate:]	
+1085f8cf4	1085f8df3	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl sessionWrapper:updatedState:]	
+1085f8df4	1085f8e27	decompiled	chunks/004/functions-000312.c		
+1085f8e28	1085f9197	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _sessionWrapper:updatedState:]	
+1085f9198	1085f921f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _turnOnSpeakerBecauseOfChangingToVideoCall]	
+1085f9220	1085f926f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl callKitIncomingCallStarted:]	
+1085f9270	1085f939f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl requestCallKitAudioSessionWithCompletion:]	
+1085f93a0	1085f93d3	decompiled	chunks/004/functions-000312.c		
+1085f93d4	1085f9413	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl releaseCallKitAudioSession]	
+1085f9414	1085f9567	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl callKitDidActivateAudioSession:]	
+1085f9568	1085f95cf	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl callKitWillDeactivateAudioSession:]	
+1085f95d0	1085f9633	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl recordOutgoingCallStartMedia:forTalkContextId:]	
+1085f9634	1085f966f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl withdrawOutgoingCallStartMediaWithToken:]	
+1085f9670	1085f973b	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _clearSpeakerOverrideMarkerForFailedApplyWithGeneration:]	
+1085f973c	1085f9793	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl audioSessionDidBeginCallInterruption:]	
+1085f9794	1085f97c7	decompiled	chunks/004/functions-000312.c		
+1085f97c8	1085f981f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl audioSessionDidEndCallInterruption:]	
+1085f9820	1085f9853	decompiled	chunks/004/functions-000312.c		
+1085f9854	1085f9a27	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl audioSessionRouteDidChange:notification:]	
+1085f9a28	1085f9a63	decompiled	chunks/004/functions-000312.c		
+1085f9a64	1085f9b0f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _onAppWillEnterForegroundChangeRouteIfNeeded]	
+1085f9b10	1085f9bcf	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _onAppWillEnterForeground:]	
+1085f9bd0	1085f9e5b	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _onAVAudioSessionRouteChangedWithReason:previousRoute:currentRoute:availableRoutes:]	
+1085f9e5c	1085f9ea7	decompiled	chunks/004/functions-000312.c		
+1085f9ea8	1085f9ee3	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _hasEventJustHappenedForTimestamp:threshold:]	
+1085f9ee4	1085f9eef	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _hasCallKitIncomingCallJustStarted]	
+1085f9ef0	1085fa01b	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _isInCallOrCallingAccordingToTalkSession]	
+1085fa01c	1085fa183	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _isMediaHavingVideo]	
+1085fa184	1085fa2d3	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _isRerouteRequiredNativeSelector:routeChangeReason:previousRoute:]	
+1085fa2d4	1085fa54f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _performUpdateWithCompletion:]	
+1085fa550	1085fa567	decompiled	chunks/004/functions-000312.c		
+1085fa568	1085fa72b	decompiled	chunks/004/functions-000312.c		
+1085fa72c	1085fa73f	decompiled	chunks/004/functions-000312.c		
+1085fa740	1085fa79b	decompiled	chunks/004/functions-000312.c		
+1085fa79c	1085fa843	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _updateAudioSessionConfigForNonCallKit:]	
+1085fa844	1085fa8c3	decompiled	chunks/004/functions-000312.c		
+1085fa8c4	1085fa8cf	decompiled	chunks/004/functions-000312.c		
+1085fa8d0	1085fa8eb	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _updateAudioSessionConfigForCallKitWithCompletion:]	
+1085fa8ec	1085fa94f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _updateAudioSessionConfig:isForCallKit:completion:]	
+1085fa950	1085faa03	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _updateProximityIfNeeded:]	
+1085faa04	1085faab7	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _updateRoutesAndChangeRouteIfNeeded:]	
+1085faab8	1085fac67	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _changeRouteIfNeeded:]	
+1085fac68	1085facff	decompiled	chunks/004/functions-000312.c		
+1085fad00	1085fad43	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _shouldLockRinging:]	
+1085fad44	1085fae2f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _requestRingingLock:]	
+1085fae30	1085faf03	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _requestRingingUnlock:]	
+1085faf04	1085fb17f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _processPlaybackOfRingingSound:]	
+1085fb180	1085fb19b	decompiled	chunks/004/functions-000312.c		
+1085fb19c	1085fb24b	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _processPlaybackOfRingingSoundAfterEnablingAudioIfNeeded]	
+1085fb24c	1085fb30f	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl _shouldPlayHangupSoundForReason:]	
+1085fb310	1085fb333	decompiled	chunks/004/functions-000312.c		
+1085fb334	1085fb3ef	decompiled	chunks/004/functions-000312.c	-[SCTAudioManagerImpl .cxx_destruct]	
+1085fb3f0	1085fb48f	decompiled	chunks/004/functions-000312.c	+[SCTAudioRerouteDecider rerouteReasonWithApplicationState:routeChangeReason:currentRouteType:expectedRouteType:availableRouteCount:previousRouteIsBluetoothOutput:bluetoothRouteAvailable:appInitiatedSpeakerOverrideInFlight:]	
+1085fb490	1085fb567	decompiled	chunks/004/functions-000312.c		
+1085fb568	1085fb5bf	decompiled	chunks/004/functions-000312.c	+[SCTAudioRouteRequest requestWithPriority:route:]	
+1085fb5c0	1085fb643	decompiled	chunks/004/functions-000312.c	-[SCTAudioRouteRequest initWithPriority:route:]	
+1085fb644	1085fb64b	decompiled	chunks/004/functions-000312.c	-[SCTAudioRouteRequest priority]	
+1085fb64c	1085fb653	decompiled	chunks/004/functions-000312.c	-[SCTAudioRouteRequest route]	
+1085fb654	1085fb65f	decompiled	chunks/004/functions-000312.c	-[SCTAudioRouteRequest .cxx_destruct]	
+1085fb660	1085fb6cb	decompiled	chunks/004/functions-000312.c	-[SCTAudioState init]	
+1085fb6cc	1085fb81b	decompiled	chunks/004/functions-000312.c	-[SCTAudioState evaluateExpectedRouteWithNativeAudioSelector:]	
+1085fb81c	1085fba07	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _routeRequestsWithNativeAudioSelector:]	
+1085fba08	1085fbb3f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _highestPriorityRouteRequest:]	
+1085fbb40	1085fbbfb	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _userSelectedRouteIfChosenWithNativeAudioSelector:]	
+1085fbbfc	1085fbc4f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _publishedMediaRouteRequest]	
+1085fbc50	1085fbc87	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _callStartMediaRouteRequest]	
+1085fbc88	1085fbcff	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _earpieceOrSpeakerRequestWithPriority:useEarpiece:]	
+1085fbd00	1085fbd5f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState resetState]	
+1085fbd60	1085fbda7	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateActualRouteToAppliedRoute:]	
+1085fbda8	1085fbdf7	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateAvailableRoutes:actualRoute:]	
+1085fbdf8	1085fbdff	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateDidAnswerFromUnlockedScreen:]	
+1085fbe00	1085fbe07	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateDidForegroundInCall:]	
+1085fbe08	1085fbe0f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateDidReceiveFromCallKit:]	
+1085fbe10	1085fbe7b	decompiled	chunks/004/functions-000312.c	-[SCTAudioState isCurrentRouteEarpiece]	
+1085fbe7c	1085fbe83	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateDidForegroundWithVideo:]	
+1085fbe84	1085fbedb	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateUserSelectedRouteToSpeaker]	
+1085fbedc	1085fbf1b	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateUserSelectedAudioDevice:]	
+1085fbf1c	1085fbf8b	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _updateUserSelectedRoute:]	
+1085fbf8c	1085fbfbb	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateLocalUserMedia:]	
+1085fbfbc	1085fbfbf	decompiled	chunks/004/functions-000312.c	-[SCTAudioState updateCallStartMedia:]	
+1085fbfc0	1085fbfc7	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _earpieceRoute]	
+1085fbfc8	1085fc15f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _mostRecentBluetoothOrOthersRoute]	
+1085fc160	1085fc167	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _speakerRoute]	
+1085fc168	1085fc16f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _wiredHeadsetRoute]	
+1085fc170	1085fc35f	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _audioRouteFromAudioDevice:]	
+1085fc360	1085fc47b	decompiled	chunks/004/functions-000312.c	-[SCTAudioState _availableRouteWithType:]	
+1085fc47c	1085fc607	decompiled	chunks/004/functions-000313.c	-[SCTAudioState _mostRecentlyAvailableRoute]	
+1085fc608	1085fc97f	decompiled	chunks/004/functions-000313.c	-[SCTAudioState _scAudioRouteForSystemRoute:]	
+1085fc980	1085fcb87	decompiled	chunks/004/functions-000313.c	-[SCTAudioState _updateAvailableRoutes:]	
+1085fcb88	1085fcb93	decompiled	chunks/004/functions-000313.c		
+1085fcb94	1085fcc03	decompiled	chunks/004/functions-000313.c	-[SCTAudioState _updateActualRouteAccordingToSystemRoute:]	
+1085fcc04	1085fcc0f	decompiled	chunks/004/functions-000313.c	-[SCTAudioState actualRoute]	
+1085fcc10	1085fcc17	decompiled	chunks/004/functions-000313.c	-[SCTAudioState setActualRoute:]	
+1085fcc18	1085fcc23	decompiled	chunks/004/functions-000313.c	-[SCTAudioState availableRoutes]	
+1085fcc24	1085fcc2f	decompiled	chunks/004/functions-000313.c	-[SCTAudioState expectedRoute]	
+1085fcc30	1085fcc37	decompiled	chunks/004/functions-000313.c	-[SCTAudioState setExpectedRoute:]	
+1085fcc38	1085fcc43	decompiled	chunks/004/functions-000313.c	-[SCTAudioState didAnswerFromUnlockedScreen]	
+1085fcc44	1085fcc4f	decompiled	chunks/004/functions-000313.c	-[SCTAudioState didForegroundInCall]	
+1085fcc50	1085fcc5b	decompiled	chunks/004/functions-000313.c	-[SCTAudioState didForegroundWithVideo]	
+1085fcc5c	1085fcc67	decompiled	chunks/004/functions-000313.c	-[SCTAudioState didReceiveFromCallKit]	
+1085fcc68	1085fcc73	decompiled	chunks/004/functions-000313.c	-[SCTAudioState localUserMedia]	
+1085fcc74	1085fcc7b	decompiled	chunks/004/functions-000313.c	-[SCTAudioState callStartMedia]	
+1085fcc7c	1085fcc83	decompiled	chunks/004/functions-000313.c	-[SCTAudioState setCallStartMedia:]	
+1085fcc84	1085fcc8f	decompiled	chunks/004/functions-000313.c	-[SCTAudioState userSelectedRoute]	
+1085fcc90	1085fcc9b	decompiled	chunks/004/functions-000313.c	-[SCTAudioState userSelectionTimestamp]	
+1085fcc9c	1085fccfb	decompiled	chunks/004/functions-000313.c	-[SCTAudioState .cxx_destruct]	
+1085fccfc	1085fcd47	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent uiStateChangeEvent:]	
+1085fcd48	1085fcdb3	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent updateMediaEvent:]	
+1085fcdb4	1085fce23	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent dismissCallEvent]	
+1085fce24	1085fce6f	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent audioSuppressionEvent:]	
+1085fce70	1085fcebb	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent localVideoSuppressionEvent:]	
+1085fcebc	1085fcf07	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent updateParticipantsEvent:]	
+1085fcf08	1085fcf53	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent participantsAddedEvent:]	
+1085fcf54	1085fcf9f	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent lensSelectionEvent:]	
+1085fcfa0	1085fcfeb	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent notificationDisplayEvent:]	
+1085fcfec	1085fd037	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent notificationDisplayFailedEvent:]	
+1085fd038	1085fd083	decompiled	chunks/004/functions-000313.c	+[SCTCPlatformEvent userVideoStreamVisibilityEvent:]	
+1085fd084	1085fd0ef	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger recordCallStartMedia:forContextId:]	
+1085fd0f0	1085fd147	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger withdrawWithToken:]	
+1085fd148	1085fd18f	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger completeHandoverForContextId:]	
+1085fd190	1085fd1ab	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger mediaToPreserveAcrossReset]	
+1085fd1ac	1085fd1e3	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger noteReset]	
+1085fd1e4	1085fd1eb	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger recordedMedia]	
+1085fd1ec	1085fd1f3	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger awaitingSessionWrapper]	
+1085fd1f4	1085fd1ff	decompiled	chunks/004/functions-000313.c	-[SCTCallStartMediaLedger .cxx_destruct]	
+1085fd200	1085fd5e3	decompiled	chunks/004/functions-000313.c		
+1085fd5e4	1085fd6a3	decompiled	chunks/004/functions-000313.c		
+1085fd6a4	1085fd6bb	decompiled	chunks/004/functions-000313.c		
+1085fd6bc	1085fd7a7	decompiled	chunks/004/functions-000313.c		
+1085fd7a8	1085fd817	decompiled	chunks/004/functions-000313.c		
+1085fd818	1085fd90b	decompiled	chunks/004/functions-000313.c		
+1085fd90c	1085fdaa3	decompiled	chunks/004/functions-000313.c		
+1085fdaa4	1085fdaaf	decompiled	chunks/004/functions-000313.c		
+1085fdab0	1085fdbdf	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject initWithUserId:convoId:metadata:identityServices:snapchattersDataTracker:groupsDataFetcher:groupsDataTracker:]	
+1085fdbe0	1085fde07	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject initWithUserId:convoId:metadata:identityServices:snapchattersDataTracker:groupsDataFetcher:groupsDataTracker:performer:]	
+1085fde08	1085fde9b	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject dealloc]	
+1085fde9c	1085fdf77	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject observableWithInjectBots:]	
+1085fdf78	1085fdff3	decompiled	chunks/004/functions-000313.c		
+1085fdff4	1085fe1bb	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _combineParticipants:withInjectedBot:]	
+1085fe1bc	1085fe22b	decompiled	chunks/004/functions-000313.c		
+1085fe22c	1085fe243	decompiled	chunks/004/functions-000313.c		
+1085fe244	1085fe2ef	decompiled	chunks/004/functions-000313.c		
+1085fe2f0	1085fe2f3	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject didStartSnapchattersUpdateDataRequest:]	
+1085fe2f4	1085fe437	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject didEndSnapchattersUpdateDataRequest:withSuccess:error:]	
+1085fe438	1085fe4ff	decompiled	chunks/004/functions-000313.c		
+1085fe500	1085fe533	decompiled	chunks/004/functions-000313.c		
+1085fe534	1085fe903	decompiled	chunks/004/functions-000313.c		
+1085fe904	1085fe937	decompiled	chunks/004/functions-000313.c		
+1085fe938	1085fed4f	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _startObserving]	
+1085fed50	1085fed97	decompiled	chunks/004/functions-000313.c		
+1085fed98	1085fee4f	decompiled	chunks/004/functions-000313.c		
+1085fee50	1085fee9f	decompiled	chunks/004/functions-000313.c		
+1085feea0	1085fef1f	decompiled	chunks/004/functions-000313.c		
+1085fef20	1085fef87	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _updateTrackedSnapchatter:]	
+1085fef88	1085ff0cb	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _notifyAboutUpdatedSnapchatterIfNecessary:]	
+1085ff0cc	1085ff20b	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _notifyAboutUpdatedGroupIfNecessary:]	
+1085ff20c	1085ff3b7	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject _notify]	
+1085ff3b8	1085ff487	decompiled	chunks/004/functions-000313.c	-[SCTConversationParticipantsSubject .cxx_destruct]	
+1085ff488	1085ff543	decompiled	chunks/004/functions-000313.c	+[SCTOptionalEnum SCTCCallEndReasonFromNSNumber:nilValue:someValue:]	
+1085ff544	1085ff5a3	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkInfo initWitNetworkConnectivityMonitorServices:]	
+1085ff5a4	1085ff623	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkInfo carrierName]	
+1085ff624	1085ff727	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkInfo talkCoreConnectivityType:]	
+1085ff728	1085ff733	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkInfo .cxx_destruct]	
+1085ff734	1085ff7a7	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkStatusLogger initWithNetworkServices:]	
+1085ff7a8	1085ff897	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkStatusLogger sessionWrapper:updatedState:]	
+1085ff898	1085ff8c7	decompiled	chunks/004/functions-000313.c	-[SCTV3NetworkStatusLogger .cxx_destruct]	
+1085ff8c8	1085ff937	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter initWithNotificationPool:]	
+1085ff938	1085ff99b	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter enqueueNotification]	
+1085ff99c	1085ff9a7	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter dispose]	
+1085ff9a8	1085ffdc7	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter containerView]	
+1085ffdc8	108600243	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter presentNotificationOverView:completion:]	
+108600244	10860024f	decompiled	chunks/004/functions-000313.c		
+108600250	1086002cf	decompiled	chunks/004/functions-000313.c		
+1086002d0	1086002db	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter debugInfo]	
+1086002dc	108600307	decompiled	chunks/004/functions-000313.c	-[SCTVideoPrivacyNotificationPresenter .cxx_destruct]	
+108600308	1086003d3	decompiled	chunks/004/functions-000313.c	-[SCTalkNotificationProcessingReporter initWithNotificationProcessingStepEventEmitter:applicationStateProvider:callKitProcessingStepEventsEnabled:]	
+1086003d4	10860046f	decompiled	chunks/004/functions-000313.c	-[SCTalkNotificationProcessingReporter emitWillDisplayEvent:]	
+108600470	10860051b	decompiled	chunks/004/functions-000313.c	-[SCTalkNotificationProcessingReporter emitSuppressedEvent:suppressionReason:]	
+10860051c	10860053b	decompiled	chunks/004/functions-000313.c	-[SCTalkNotificationProcessingReporter _isAppForegrounded]	
+10860053c	108600577	decompiled	chunks/004/functions-000313.c	-[SCTalkNotificationProcessingReporter .cxx_destruct]	
+108600578	1086008df	decompiled	chunks/004/functions-000313.c		
+1086008e0	1086009af	decompiled	chunks/004/functions-000313.c		
+1086009b0	108600b57	decompiled	chunks/004/functions-000313.c		
+108600b58	108600c17	decompiled	chunks/004/functions-000313.c		
+108600c18	108600c9f	decompiled	chunks/004/functions-000313.c	-[SCMissedCallsCache initWithDocObjectContext:]	
+108600ca0	108600f6b	decompiled	chunks/004/functions-000313.c	-[SCMissedCallsCache getReasonForCallUuid:]	
+108600f6c	1086010af	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache setReason:forCallUuid:]	
+1086010b0	1086011b7	decompiled	chunks/004/functions-000314.c		
+1086011b8	1086011cf	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache _reasonFromSCMissedCallReason:]	
+1086011d0	1086011e7	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache _reasonFromSCTalkMissedCallReason:]	
+1086011e8	1086012c7	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache _getExpirationDate]	
+1086012c8	10860165f	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache _deleteExpiredMissedCallsWithTransactionContext:]	
+108601660	1086016b3	decompiled	chunks/004/functions-000314.c	-[SCMissedCallsCache .cxx_destruct]	
+1086016b4	10860182f	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer description]	
+108601830	10860188f	decompiled	chunks/004/functions-000314.c		
+108601890	108601b3b	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer addListener:]	
+108601b3c	108601c7b	decompiled	chunks/004/functions-000314.c		
+108601c7c	108601cc3	decompiled	chunks/004/functions-000314.c		
+108601cc4	108601ef3	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer removeListener:]	
+108601ef4	10860201b	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer sessionWrapper:updatedUsersTalking:]	
+10860201c	108602127	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer sessionWrapper:updatedState:]	
+108602128	10860214f	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer .cxx_destruct]	
+108602150	10860216f	decompiled	chunks/004/functions-000314.c	-[SCTV3SessionWrapperListenerAnnouncer .cxx_construct]	
+108602170	108602183	decompiled	chunks/004/functions-000314.c		
+108602184	1086021db	decompiled	chunks/004/functions-000314.c		
+1086021dc	1086021eb	decompiled	chunks/004/functions-000314.c		
+1086021ec	10860220b	decompiled	chunks/004/functions-000314.c		
+10860220c	108602273	decompiled	chunks/004/functions-000314.c		
+108602274	108602277	decompiled	chunks/004/functions-000314.c		
+108602278	108602323	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall initWithCallUuid:reason:creationTimestamp:]	
+108602324	108602347	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall copyWithZone:]	
+108602348	1086023eb	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall hash]	
+1086023ec	1086024d7	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall isEqual:]	
+1086024d8	1086024e7	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall callUuid]	
+1086024e8	1086024f7	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall reason]	
+1086024f8	108602507	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall creationTimestamp]	
+108602508	10860251b	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCall .cxx_destruct]	
+10860251c	10860257f	decompiled	chunks/004/functions-000314.c		
+108602580	108602607	decompiled	chunks/004/functions-000314.c		
+108602608	108602693	decompiled	chunks/004/functions-000314.c		
+108602694	10860274b	decompiled	chunks/004/functions-000314.c		
+10860274c	10860277f	decompiled	chunks/004/functions-000314.c		
+108602780	1086027db	decompiled	chunks/004/functions-000314.c		
+1086027dc	1086027e7	decompiled	chunks/004/functions-000314.c	+[SCTalkMissedCall table]	
+1086027e8	1086028fb	decompiled	chunks/004/functions-000314.c	+[SCTalkMissedCall immutableObjectParse:bufferSize:]	
+1086028fc	10860290f	decompiled	chunks/004/functions-000314.c	+[SCTalkMissedCall objectClassFunctionPointer]	
+108602910	108602937	decompiled	chunks/004/functions-000314.c		
+108602938	1086029d3	decompiled	chunks/004/functions-000314.c		
+1086029d4	108602ab7	decompiled	chunks/004/functions-000314.c		
+108602ab8	108602b6b	decompiled	chunks/004/functions-000314.c		
+108602b6c	108602ea7	decompiled	chunks/004/functions-000314.c		
+108602ea8	108602f1b	decompiled	chunks/004/functions-000314.c		
+108602f1c	108602f83	decompiled	chunks/004/functions-000314.c		
+108602f84	108602f8f	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCallChangeRequest .cxx_destruct]	
+108602f90	108602f9b	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCallChangeRequest table]	
+108602f9c	10860304f	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCallChangeRequest createTableWithSQLite:]	
+108603050	1086035e7	decompiled	chunks/004/functions-000314.c	-[SCTalkMissedCallChangeRequest transactWithSQLite:flatbuffers:]	
+1086035e8	1086037df	decompiled	chunks/004/functions-000314.c		
+1086037e0	10860380b	decompiled	chunks/004/functions-000314.c	+[SCGraphenePresenceRenderMetric bitmojiFetchFailed]	
+10860380c	1086038ab	decompiled	chunks/004/functions-000314.c	-[SCGraphenePresenceRenderMetric description]	
+1086038ac	1086039ef	decompiled	chunks/004/functions-000314.c	-[SCGrapheneRegistry presenceRenderGraphene]	
+1086039f0	108603a1b	decompiled	chunks/004/functions-000314.c	+[SCTNotificationPresenter valdiMarshallableObjectDescriptor]	
+108603a1c	108603a47	decompiled	chunks/004/functions-000314.c		
+108603a48	108603ac3	decompiled	chunks/004/functions-000314.c		
+108603ac4	108603b1b	decompiled	chunks/004/functions-000314.c		
+108603b1c	108603b27	decompiled	chunks/004/functions-000314.c	+[SCSnapDialerView componentPath]	
+108603b28	108603b47	decompiled	chunks/004/functions-000314.c	-[SCSnapDialerView initWithViewModel:componentContext:runtime:]	
+108603b48	108603b7b	decompiled	chunks/004/functions-000314.c	-[SCSnapDialerView setViewModel:]	
+108603b7c	108603bb3	decompiled	chunks/004/functions-000314.c	-[SCSnapDialerView viewModel]	
+108603bb4	108603bbf	decompiled	chunks/004/functions-000314.c	+[SCTCallButtonsView componentPath]	
+108603bc0	108603bdf	decompiled	chunks/004/functions-000314.c	-[SCTCallButtonsView initWithViewModel:componentContext:runtime:]	
+108603be0	108603c13	decompiled	chunks/004/functions-000314.c	-[SCTCallButtonsView setViewModel:]	
+108603c14	108603c4b	decompiled	chunks/004/functions-000314.c	-[SCTCallButtonsView viewModel]	
+108603c4c	108603c57	decompiled	chunks/004/functions-000314.c	+[SCTCallViewWrapper componentPath]	
+108603c58	108603c77	decompiled	chunks/004/functions-000314.c	-[SCTCallViewWrapper initWithViewModel:componentContext:runtime:]	
+108603c78	108603cab	decompiled	chunks/004/functions-000314.c	-[SCTCallViewWrapper setViewModel:]	
+108603cac	108603ce3	decompiled	chunks/004/functions-000314.c	-[SCTCallViewWrapper viewModel]	
+108603ce4	108603cef	decompiled	chunks/004/functions-000314.c	+[SCTPipView componentPath]	
+108603cf0	108603d0f	decompiled	chunks/004/functions-000314.c	-[SCTPipView initWithViewModel:componentContext:runtime:]	
+108603d10	108603d43	decompiled	chunks/004/functions-000314.c	-[SCTPipView setViewModel:]	
+108603d44	108603d7b	decompiled	chunks/004/functions-000314.c	-[SCTPipView viewModel]	
+108603d7c	108603daf	decompiled	chunks/004/functions-000314.c		
+108603db0	108603e0b	decompiled	chunks/004/functions-000314.c		
+108603e0c	108603e17	decompiled	chunks/004/functions-000314.c	+[SCTCallFeedbackTray componentPath]	
+108603e18	108603e4b	decompiled	chunks/004/functions-000314.c	-[SCTCallFeedbackTray initWithViewModel:componentContext:runtime:]	
+108603e4c	108603e9b	decompiled	chunks/004/functions-000314.c	-[SCTCallFeedbackTray setViewModel:]	
+108603e9c	108603edf	decompiled	chunks/004/functions-000314.c	-[SCTCallFeedbackTray viewModel]	
+108603ee0	108603f0b	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric firstRenderLatency]	
+108603f0c	108603f37	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffVcInitLatency]	
+108603f38	108603f63	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffVcInitToEnterLatency]	
+108603f64	108603f8f	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffVcInitToRenderLatency]	
+108603f90	108603fbb	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffInitialRenderVmGen]	
+108603fbc	108603fe7	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffInitialWarmupCount]	
+108603fe8	108604013	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric nativeInitialFetchFeedTime]	
+108604014	10860403f	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReady]	
+108604040	10860406b	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadySyncTime]	
+10860406c	108604097	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyNegativeRender]	
+108604098	1086040c3	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyBailed]	
+1086040c4	1086040ef	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadySyncCount]	
+1086040f0	10860411b	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyFeedEntryCount]	
+10860411c	108604147	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyUnviewedSnapCount]	
+108604148	108604173	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyUnviewedChatCount]	
+108604174	10860419f	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyStoryCount]	
+1086041a0	1086041cb	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffReadyRender]	
+1086041cc	1086041f7	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric ffUnreadItemImpression]	
+1086041f8	108604223	decompiled	chunks/004/functions-000314.c	+[SCGrapheneFriendsFeedMetric snapPushContent]	
+108604224	10860424f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric snapPushLoad]	
+108604250	10860427b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffDcRetainCount]	
+10860427c	1086042a7	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffPullToRefresh]	
+1086042a8	1086042d3	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffFetchSnapchatters]	
+1086042d4	1086042ff	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffPlaybackMismatch]	
+108604300	10860432b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffDuplicateMissingCell]	
+10860432c	108604357	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric cellTap]	
+108604358	108604383	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffViewModelGeneration]	
+108604384	1086043af	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric replyButtonRender]	
+1086043b0	1086043db	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric doubleTapToReply]	
+1086043dc	108604407	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric prefetchSnapCount]	
+108604408	108604433	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric prefetchChatMediaCount]	
+108604434	10860445f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric prefetchConversationCount]	
+108604460	10860448b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric legacyFeedIdDeletion]	
+10860448c	1086044b7	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric friendLinkFilter]	
+1086044b8	1086044e3	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffSnapTapAttempt]	
+1086044e4	10860450f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffSnapTapFailure]	
+108604510	10860453b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffSnapPresentAttempt]	
+10860453c	108604567	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffSnapPresentReady]	
+108604568	108604593	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric batchSyncConversationIds]	
+108604594	1086045bf	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric shortcutUpdate]	
+1086045c0	1086045eb	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric shortcutSelect]	
+1086045ec	108604617	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric shortcutCellsRendered]	
+108604618	108604643	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric batchCameraReplyTap]	
+108604644	10860466f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric didPullDownBeforeSync]	
+108604670	10860469b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric streakRestoreButtonRender]	
+10860469c	1086046c7	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric frozenStreakRender]	
+1086046c8	1086046f3	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric scrollToTopButtonImpression]	
+1086046f4	10860471f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric scrollToTopButtonTap]	
+108604720	10860474b	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric moreUnreadButtonImpression]	
+10860474c	108604777	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric moreUnreadButtonTap]	
+108604778	1086047a3	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric peekAPeekProduced]	
+1086047a4	1086047cf	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric peekAPeekConsumed]	
+1086047d0	1086047fb	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric friendAvatarSeen]	
+1086047fc	108604827	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric outOfOrderFeedUpdate]	
+108604828	108604853	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric duplicateFeedUpdate]	
+108604854	10860487f	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric fetchContextPurge]	
+108604880	1086048ab	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffActiveComputation]	
+1086048ac	1086048d7	decompiled	chunks/004/functions-000315.c	+[SCGrapheneFriendsFeedMetric ffActiveHeuristicAccuracy]	
+1086048d8	108604977	decompiled	chunks/004/functions-000315.c	-[SCGrapheneFriendsFeedMetric description]	
+108604978	1086049c3	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder initWithMessageType:mediaType:]	
+1086049c4	108604ab3	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withAnalyticsDataModel:]	
+108604ab4	108604bb7	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withSnapSendInfo:]	
+108604bb8	108604bef	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withContent:]	
+108604bf0	108604c27	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withReactionSource:]	
+108604c28	108604c5f	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withReactionSendSource:]	
+108604c60	108604c97	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder withSendMessageAnalytics:]	
+108604c98	108604cdf	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder build]	
+108604ce0	108604db3	decompiled	chunks/004/functions-000315.c	-[SCNMessagingPlatformAnalyticsBuilder .cxx_destruct]	
+108604db4	108604f33	decompiled	chunks/004/functions-000315.c		
+108604f34	108605097	decompiled	chunks/004/functions-000315.c		
+108605098	108605187	decompiled	chunks/004/functions-000315.c		
+108605188	1086052ff	decompiled	chunks/004/functions-000315.c		
+108605300	10860539f	decompiled	chunks/004/functions-000315.c		
+1086053a0	1086054d7	decompiled	chunks/004/functions-000315.c		
+1086054d8	10860552b	decompiled	chunks/004/functions-000315.c		
+10860552c	108605533	decompiled	chunks/004/functions-000315.c		
+108605534	10860557f	decompiled	chunks/004/functions-000315.c		
+108605580	10860560b	decompiled	chunks/004/functions-000315.c		
+10860560c	108605667	decompiled	chunks/004/functions-000315.c		
+108605668	10860566f	decompiled	chunks/004/functions-000315.c		
+108605670	108605dfb	decompiled	chunks/004/functions-000315.c		
+108605dfc	108605f1f	decompiled	chunks/004/functions-000315.c		
+108605f20	1086061ff	decompiled	chunks/004/functions-000315.c		
+108606200	10860629b	decompiled	chunks/004/functions-000315.c		
+10860629c	1086063d7	decompiled	chunks/004/functions-000315.c		
+1086063d8	1086063f3	decompiled	chunks/004/functions-000315.c		
+1086063f4	108606653	decompiled	chunks/004/functions-000315.c		
+108606654	10860665f	decompiled	chunks/004/functions-000315.c		
+108606660	1086066b3	decompiled	chunks/004/functions-000315.c		
+1086066b4	1086066c3	decompiled	chunks/004/functions-000315.c		
+1086066c4	10860685f	decompiled	chunks/004/functions-000315.c		
+108606860	108606873	decompiled	chunks/004/functions-000315.c		
+108606874	10860690f	decompiled	chunks/004/functions-000315.c		
+108606910	108606bc3	decompiled	chunks/004/functions-000315.c		
+108606bc4	108606bdb	decompiled	chunks/004/functions-000315.c		
+108606bdc	108606d63	decompiled	chunks/004/functions-000315.c		
+108606d64	108606e17	decompiled	chunks/004/functions-000315.c		
+108606e18	108606f6b	decompiled	chunks/004/functions-000315.c		
+108606f6c	10860707b	decompiled	chunks/004/functions-000315.c		
+10860707c	108607093	decompiled	chunks/004/functions-000315.c		
+108607094	1086072bf	decompiled	chunks/004/functions-000315.c		
+1086072c0	1086073ab	decompiled	chunks/004/functions-000315.c		
+1086073ac	10860745f	decompiled	chunks/004/functions-000315.c		
+108607460	108607697	decompiled	chunks/004/functions-000315.c		
+108607698	1086076bf	decompiled	chunks/004/functions-000315.c	-[SCContinueUserActivityHandlerPluginRegistryConfiguration prioritySortedPlugins:]	
+1086076c0	1086078a7	decompiled	chunks/004/functions-000315.c	-[SCContinueUserActivityHandlerPluginRegistryConfiguration pluginTypeForEvent:]	
+1086078a8	1086078af	decompiled	chunks/004/functions-000315.c	-[SCContinueUserActivityHandlerUnknownPlugin uniquePluginType]	
+1086078b0	1086078b7	decompiled	chunks/004/functions-000315.c	-[SCContinueUserActivityHandlerUnknownPlugin processEvent:]	
+1086078b8	1086078bf	decompiled	chunks/004/functions-000315.c	-[SCConversationServices communityGroupChatActionHandler]	
+1086078c0	1086078c7	decompiled	chunks/004/functions-000315.c	-[SCConversationServices clearConversationActionHandler]	
+1086078c8	1086078cf	decompiled	chunks/004/functions-000315.c	-[SCConversationServices snapViewEventObservable]	
+1086078d0	1086078d7	decompiled	chunks/004/functions-000315.c	-[SCConversationServices sendAttemptEventObservable]	
+1086078d8	1086078df	decompiled	chunks/004/functions-000315.c	-[SCConversationServices userClearConversationEventObservable]	
+1086078e0	1086078e7	decompiled	chunks/004/functions-000315.c	-[SCConversationServices conversationInteractionEventObservable]	
+1086078e8	1086078ef	decompiled	chunks/004/functions-000315.c	-[SCConversationServices mediaPrefetcher]	
+1086078f0	1086078f7	decompiled	chunks/004/functions-000315.c	-[SCConversationServices messageLoaderFactory]	
+1086078f8	1086078ff	decompiled	chunks/004/functions-000315.c	-[SCConversationServices conversationUpdatesPublisher]	
+108607900	108607907	decompiled	chunks/004/functions-000315.c	-[SCConversationServices messageSaveActionEventObservable]	
+108607908	1086079af	decompiled	chunks/004/functions-000315.c	-[SCConversationServices .cxx_destruct]	
+1086079b0	108607aa7	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown initWithSnapId:conversationId:duration:deadline:paused:]	
+108607aa8	108607acb	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown copyWithZone:]	
+108607acc	108607b73	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown hash]	
+108607b74	108607c77	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown isEqual:]	
+108607c78	108607c7f	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown snapId]	
+108607c80	108607c87	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown conversationId]	
+108607c88	108607c8f	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown duration]	
+108607c90	108607c97	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown deadline]	
+108607c98	108607c9f	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown paused]	
+108607ca0	108607cdb	decompiled	chunks/004/functions-000316.c	-[SCActiveSnapCountdown .cxx_destruct]	
+108607cdc	108607d6b	decompiled	chunks/004/functions-000316.c	+[SCSnapStateLifecycleEvent snapViewedWithConversationId:snapId:]	
+108607d6c	108607d8f	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent copyWithZone:]	
+108607d90	108607e07	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent hash]	
+108607e08	108607e4b	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent internalInit]	
+108607e4c	108607f03	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent isEqual:]	
+108607f04	108607f27	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent matchSnapViewed:]	
+108607f28	108607f57	decompiled	chunks/004/functions-000316.c	-[SCSnapStateLifecycleEvent .cxx_destruct]	
+108607f58	108607fbb	decompiled	chunks/004/functions-000316.c	+[SCConversationLifecycleEvent conversationEnteredWithConversationId:]	
+108607fbc	108608027	decompiled	chunks/004/functions-000316.c	+[SCConversationLifecycleEvent conversationExitedWithConversationId:]	
+108608028	108608093	decompiled	chunks/004/functions-000316.c	+[SCConversationLifecycleEvent conversationViewDidBecomeActiveWithConversationId:]	
+108608094	108608107	decompiled	chunks/004/functions-000316.c	+[SCConversationLifecycleEvent conversationViewVisibilityChangedWithVisible:conversationId:]	
+108608108	10860812b	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent copyWithZone:]	
+10860812c	1086081bf	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent hash]	
+1086081c0	108608203	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent internalInit]	
+108608204	1086082fb	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent isEqual:]	
+1086082fc	1086083f3	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent matchConversationEntered:conversationExited:conversationViewDidBecomeActive:conversationViewVisibilityChanged:]	
+1086083f4	10860843b	decompiled	chunks/004/functions-000316.c	-[SCConversationLifecycleEvent .cxx_destruct]	
+10860843c	1086084a7	decompiled	chunks/004/functions-000316.c	+[SCChatMessageSendAttemptEvent friendUserIdWithUserId:isSnap:]	
+1086084a8	10860851b	decompiled	chunks/004/functions-000316.c	+[SCChatMessageSendAttemptEvent groupWithGroupId:isSnap:]	
+10860851c	10860853f	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent copyWithZone:]	
+108608540	1086085bf	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent hash]	
+1086085c0	108608603	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent internalInit]	
+108608604	1086086db	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent isEqual:]	
+1086086dc	10860876b	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent matchFriendUserId:group:]	
+10860876c	10860879b	decompiled	chunks/004/functions-000316.c	-[SCChatMessageSendAttemptEvent .cxx_destruct]	
+10860879c	108608807	decompiled	chunks/004/functions-000316.c	+[SCClearConversationEvent groupConversationWithGroupId:]	
+108608808	10860886b	decompiled	chunks/004/functions-000316.c	+[SCClearConversationEvent oneOnOneConversationWithUserId:]	
+10860886c	10860888f	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent copyWithZone:]	
+108608890	108608907	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent hash]	
+108608908	10860894b	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent internalInit]	
+10860894c	108608a03	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent isEqual:]	
+108608a04	108608a87	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent matchOneOnOneConversation:groupConversation:]	
+108608a88	108608ab7	decompiled	chunks/004/functions-000316.c	-[SCClearConversationEvent .cxx_destruct]	
+108608ab8	108608b23	decompiled	chunks/004/functions-000316.c	+[SCConversationUserInteractionEvent launchProfileWithConversationId:]	
+108608b24	108608b87	decompiled	chunks/004/functions-000316.c	+[SCConversationUserInteractionEvent tapStoryThumbnailWithConversationId:]	
+108608b88	108608bab	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent copyWithZone:]	
+108608bac	108608c23	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent hash]	
+108608c24	108608c67	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent internalInit]	
+108608c68	108608d1f	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent isEqual:]	
+108608d20	108608da3	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent matchTapStoryThumbnail:launchProfile:]	
+108608da4	108608dd3	decompiled	chunks/004/functions-000316.c	-[SCConversationUserInteractionEvent .cxx_destruct]	
+108608dd4	108608e1f	decompiled	chunks/004/functions-000316.c	+[SCMessageUpdateEvent removed]	
+108608e20	108608e83	decompiled	chunks/004/functions-000316.c	+[SCMessageUpdateEvent updatedWithMessage:]	
+108608e84	108608ea7	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent copyWithZone:]	
+108608ea8	108608f07	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent hash]	
+108608f08	108608f4b	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent internalInit]	
+108608f4c	108608feb	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent isEqual:]	
+108608fec	10860906f	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent matchUpdated:removed:]	
+108609070	10860907b	decompiled	chunks/004/functions-000316.c	-[SCMessageUpdateEvent .cxx_destruct]	
+10860907c	108609147	decompiled	chunks/004/functions-000316.c	+[SCMessageSaveActionEvent savedWithConversationId:messageId:message:source:]	
+108609148	10860921b	decompiled	chunks/004/functions-000316.c	+[SCMessageSaveActionEvent unsavedWithConversationId:messageId:message:source:]	
+10860921c	10860923f	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent copyWithZone:]	
+108609240	1086092ff	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent hash]	
+108609300	108609343	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent internalInit]	
+108609344	10860947b	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent isEqual:]	
+10860947c	108609523	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent matchSaved:unsaved:]	
+108609524	108609583	decompiled	chunks/004/functions-000316.c	-[SCMessageSaveActionEvent .cxx_destruct]	
+108609584	1086096ff	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer description]	
+108609700	10860975f	decompiled	chunks/004/functions-000316.c		
+108609760	108609a0b	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer addListener:]	
+108609a0c	108609b4b	decompiled	chunks/004/functions-000316.c		
+108609b4c	108609b93	decompiled	chunks/004/functions-000316.c		
+108609b94	108609dc3	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer removeListener:]	
+108609dc4	108609eaf	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidFullyDisappear]	
+108609eb0	108609f9b	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidFullyAppear]	
+108609f9c	10860a087	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidSwipeOut]	
+10860a088	10860a173	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidSwipeIn]	
+10860a174	10860a273	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidAppearAtPercentage:]	
+10860a274	10860a35f	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewWillEnterBackground]	
+10860a360	10860a44b	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewWillResignActive]	
+10860a44c	10860a537	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer viewDidBecomeActive]	
+10860a538	10860a623	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer profileOverlayDidDisappear]	
+10860a624	10860a70f	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer appearanceDidChange]	
+10860a710	10860a737	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer .cxx_destruct]	
+10860a738	10860a757	decompiled	chunks/004/functions-000316.c	-[SCChatViewLifeCycleListenerAnnouncer .cxx_construct]	
+10860a758	10860a76b	decompiled	chunks/004/functions-000316.c		
+10860a76c	10860a7c3	decompiled	chunks/004/functions-000316.c		
+10860a7c4	10860a7d3	decompiled	chunks/004/functions-000316.c		
+10860a7d4	10860a7f3	decompiled	chunks/004/functions-000316.c		
+10860a7f4	10860a85b	decompiled	chunks/004/functions-000316.c		
+10860a85c	10860a85f	decompiled	chunks/004/functions-000316.c		
+10860a860	10860a86b	decompiled	chunks/004/functions-000316.c	-[SCChatStatusSendingServices .cxx_destruct]	
+10860a86c	10860a873	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionServices notificationPayloadDecryptor]	
+10860a874	10860a87f	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionServices .cxx_destruct]	
+10860a880	10860a967	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult initWithDecryptedData:decryptingSucceeded:errorMessage:timeUsedToDecryptInMs:]	
+10860a968	10860a98b	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult copyWithZone:]	
+10860a98c	10860aa0f	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult hash]	
+10860aa10	10860aadf	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult isEqual:]	
+10860aae0	10860aae7	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult decryptedData]	
+10860aae8	10860aaef	decompiled	chunks/004/functions-000316.c	-[SCNotificationPayloadDecryptionResult decryptingSucceeded]	
+10860aaf0	10860aaf7	decompiled	chunks/004/functions-000317.c	-[SCNotificationPayloadDecryptionResult errorMessage]	
+10860aaf8	10860aaff	decompiled	chunks/004/functions-000317.c	-[SCNotificationPayloadDecryptionResult timeUsedToDecryptInMs]	
+10860ab00	10860ab3b	decompiled	chunks/004/functions-000317.c	-[SCNotificationPayloadDecryptionResult .cxx_destruct]	
+10860ab3c	10860ac13	decompiled	chunks/004/functions-000317.c		
+10860ac14	10860acf7	decompiled	chunks/004/functions-000317.c		
+10860acf8	10860ad33	decompiled	chunks/004/functions-000317.c	-[SCGrpcAuthContextDelegate .cxx_destruct]	
+10860ad34	10860addb	decompiled	chunks/004/functions-000317.c		
+10860addc	10860ae63	decompiled	chunks/004/functions-000317.c	+[RTCAudioSession_v141 sharedInstance]	
+10860ae64	10860ae8b	decompiled	chunks/004/functions-000317.c		
+10860ae8c	10860af67	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 init]	
+10860af68	10860b04b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 dealloc]	
+10860b04c	10860b0cf	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setAudioSession:]	
+10860b0d0	10860b10b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSession]	
+10860b10c	10860b113	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 session]	
+10860b114	10860b117	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setIsActive:]	
+10860b118	10860b11b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 isActive]	
+10860b11c	10860b123	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 isLocked]	
+10860b124	10860b127	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setUseManualAudio:]	
+10860b128	10860b12f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 useManualAudio]	
+10860b130	10860b227	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setIsAudioEnabled:]	
+10860b228	10860b25b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 isAudioEnabled]	
+10860b25c	10860b3bb	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 addDelegate:]	
+10860b3bc	10860b4e7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 removeDelegate:]	
+10860b4e8	10860b54f	decompiled	chunks/004/functions-000317.c		
+10860b550	10860b57b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 lockForConfiguration]	
+10860b57c	10860b5a7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 unlockForConfiguration]	
+10860b5a8	10860b5ff	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 category]	
+10860b600	10860b64f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 categoryOptions]	
+10860b650	10860b6a7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 mode]	
+10860b6a8	10860b6f7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 secondaryAudioShouldBeSilencedHint]	
+10860b6f8	10860b74f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 currentRoute]	
+10860b750	10860b79f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 maximumInputNumberOfChannels]	
+10860b7a0	10860b7ef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 maximumOutputNumberOfChannels]	
+10860b7f0	10860b847	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputGain]	
+10860b848	10860b897	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputGainSettable]	
+10860b898	10860b8e7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputAvailable]	
+10860b8e8	10860b93f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputDataSources]	
+10860b940	10860b997	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputDataSource]	
+10860b998	10860b9ef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 outputDataSources]	
+10860b9f0	10860ba47	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 outputDataSource]	
+10860ba48	10860ba9f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 sampleRate]	
+10860baa0	10860baf7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 preferredSampleRate]	
+10860baf8	10860bb47	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputNumberOfChannels]	
+10860bb48	10860bb97	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 outputNumberOfChannels]	
+10860bb98	10860bbef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 outputVolume]	
+10860bbf0	10860bc47	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 inputLatency]	
+10860bc48	10860bc9f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 outputLatency]	
+10860bca0	10860bcf7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 IOBufferDuration]	
+10860bcf8	10860bd4f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 preferredIOBufferDuration]	
+10860bd50	10860bd57	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setActive:error:]	
+10860bd58	10860bd5f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setCategory:mode:options:error:]	
+10860bd60	10860bd67	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setCategory:withOptions:error:]	
+10860bd68	10860bd6f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setMode:error:]	
+10860bd70	10860bdef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setInputGain:error:]	
+10860bdf0	10860be6f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setPreferredSampleRate:error:]	
+10860be70	10860beef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setPreferredIOBufferDuration:error:]	
+10860bef0	10860bf73	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setPreferredInputNumberOfChannels:error:]	
+10860bf74	10860bff7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setPreferredOutputNumberOfChannels:error:]	
+10860bff8	10860c07b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 overrideOutputAudioPort:error:]	
+10860c07c	10860c123	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setPreferredInput:error:]	
+10860c124	10860c1cb	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setInputDataSource:error:]	
+10860c1cc	10860c273	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setOutputDataSource:error:]	
+10860c274	10860c27b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSession:didChangeVolume:]	
+10860c27c	10860c2a3	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSessionDidBeginInterruption:]	
+10860c2a4	10860c2d3	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSession:didEndInterruption:]	
+10860c2d4	10860c2d7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSessionMediaServicesWereLost:]	
+10860c2d8	10860c2db	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSessionMediaServicesWereReset:]	
+10860c2dc	10860c403	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 handleRouteChangeNotification:]	
+10860c404	10860c433	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 handleCallKitActivate:]	
+10860c434	10860c45f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 handleCallKitDeactivate:]	
+10860c460	10860c53b	decompiled	chunks/004/functions-000317.c	+[RTCAudioSession_v141 lockError]	
+10860c53c	10860c5ef	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 delegates]	
+10860c5f0	10860c8df	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 pushDelegate:]	
+10860c8e0	10860c9a3	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 removeZeroedDelegates]	
+10860c9a4	10860c9b7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 activationCount]	
+10860c9b8	10860c9bf	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 webRTCSessionCount]	
+10860c9c0	10860c9c3	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 canPlayOrRecord]	
+10860c9c4	10860ca07	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 isInterrupted]	
+10860ca08	10860ca37	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setIsInterrupted:]	
+10860ca38	10860ca83	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 checkLock:]	
+10860ca84	10860cacf	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 beginWebRTCSession:]	
+10860cad0	10860cb1b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 endWebRTCSession:]	
+10860cb1c	10860cc6f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 configureWebRTCSession:]	
+10860cc70	10860cc77	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 unconfigureWebRTCSession:]	
+10860cc78	10860cd77	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 configurationErrorWithDescription:]	
+10860cd78	10860cd7b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSessionDidActivate:]	
+10860cd7c	10860cd7f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 audioSessionDidDeactivate:]	
+10860cd80	10860ce2b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidBeginInterruption]	
+10860ce2c	10860cedf	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidEndInterruptionWithShouldResumeSession:]	
+10860cee0	10860cfc7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidChangeRouteWithReason:previousRoute:]	
+10860cfc8	10860d073	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyMediaServicesWereLost]	
+10860d074	10860d11f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyMediaServicesWereReset]	
+10860d120	10860d1d3	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidChangeCanPlayOrRecord:]	
+10860d1d4	10860d27f	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidStartPlayOrRecord]	
+10860d280	10860d32b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidStopPlayOrRecord]	
+10860d32c	10860d3e7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidChangeOutputVolume:]	
+10860d3e8	10860d49b	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyDidDetectPlayoutGlitch:]	
+10860d49c	10860d5a7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 notifyAudioUnitStartFailedWithError:]	
+10860d5a8	10860d5af	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 ignoresPreferredAttributeConfigurationErrors]	
+10860d5b0	10860d5b7	decompiled	chunks/004/functions-000317.c	-[RTCAudioSession_v141 setIgnoresPreferredAttributeConfigurationErrors:]	
+10860d5b8	10860d5e3	decompiled	chunks/004/functions-000318.c	-[RTCAudioSession_v141 .cxx_destruct]	
+10860d5e4	10860d5ef	decompiled	chunks/004/functions-000318.c	-[RTCAudioSession_v141 .cxx_construct]	
+10860d5f0	10860d603	decompiled	chunks/004/functions-000318.c		
+10860d604	10860d637	decompiled	chunks/004/functions-000318.c		
+10860d638	10860d69f	decompiled	chunks/004/functions-000318.c		
+10860d6a0	10860d6eb	decompiled	chunks/004/functions-000318.c		
+10860d6ec	10860d7bb	decompiled	chunks/004/functions-000318.c		
+10860d7bc	10860db37	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl initWithCameraHardwareServicesAPI:captureDeviceManager:grapheneLogger:cameraHardwareResource:renderTarget:cameraRequestManager:]	
+10860db38	10860dc27	decompiled	chunks/004/functions-000318.c		
+10860dc28	10860dc87	decompiled	chunks/004/functions-000318.c		
+10860dc88	10860dcf7	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl dealloc]	
+10860dcf8	10860dd33	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl isMultitaskingCameraAccessEnabled]	
+10860dd34	10860ddfb	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setDevicePositionAsynchronouslyToFront:completion:]	
+10860ddfc	10860dfd7	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl startRunningAsynchronouslyWithMultitaskingCamera:cameraDeviceSettingsResolver:isDevicePositionFront:setVideoOrientation:completionHandler:]	
+10860dfd8	10860e0a7	decompiled	chunks/004/functions-000318.c		
+10860e0a8	10860e18f	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl reportFirstFrameMetrics]	
+10860e190	10860e28b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl stopRunningAsynchronously:after:setVideoOrientation:withCompletionHandler:]	
+10860e28c	10860e337	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl activateLensesWithUseVideoCallSource:completion:]	
+10860e338	10860e3e3	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl deactivateLensesWithUseVideoCallSource:completion:]	
+10860e3e4	10860e42b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl getCameraPreview]	
+10860e42c	10860e553	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setAutofocusAndExposurePointOfInterest:viewSize:]	
+10860e554	10860e61f	decompiled	chunks/004/functions-000318.c		
+10860e620	10860e823	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl startObservingCapturerStateUpdate:state:managedCapturerStateCoordinator:]	
+10860e824	10860e8c7	decompiled	chunks/004/functions-000318.c		
+10860e8c8	10860e943	decompiled	chunks/004/functions-000318.c		
+10860e944	10860e96f	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl stopObservingCapturerStateUpdate]	
+10860e970	10860ea9b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl _didChangeState:]	
+10860ea9c	10860eb7b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl startObservingManagedVideoDataSourceOutputEvent:]	
+10860eb7c	10860ec27	decompiled	chunks/004/functions-000318.c		
+10860ec28	10860ec87	decompiled	chunks/004/functions-000318.c		
+10860ec88	10860ecf3	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl _didReceiveManagedVideoDataSourceEvent:]	
+10860ecf4	10860ed1f	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl stopObservingManagedVideoDataSourceOutputEvent]	
+10860ed20	10860ed37	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl delegate]	
+10860ed38	10860ed43	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setDelegate:]	
+10860ed44	10860ed4b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl captureState]	
+10860ed4c	10860ed53	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setCaptureState:]	
+10860ed54	10860ed5b	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl cameraStartTime]	
+10860ed5c	10860ed63	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setCameraStartTime:]	
+10860ed64	10860ed6f	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl isCameraActive]	
+10860ed70	10860ed77	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setIsCameraActive:]	
+10860ed78	10860ed7f	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl cameraFirstFrameTime]	
+10860ed80	10860ed87	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl setCameraFirstFrameTime:]	
+10860ed88	10860ee13	decompiled	chunks/004/functions-000318.c	-[SCTCameraProviderImpl .cxx_destruct]	
+10860ee14	10860f117	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices initWithCameraHardwareServicesAPI:captureDeviceManager:grapheneLogger:cameraHardwareResource:renderTarget:cameraRequestManager:]	
+10860f118	10860f143	decompiled	chunks/004/functions-000318.c		
+10860f144	10860f1a3	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices aspectRatio]	
+10860f1a4	10860f22b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices _appStartComplete]	
+10860f22c	10860f28b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices activateLensesWithUseVideoCallSource:completion:]	
+10860f28c	10860f2eb	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices deactivateLensesWithUseVideoCallSource:completion:]	
+10860f2ec	10860f4df	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices startCameraForConsumer:cameraDeviceSettingsResolver:withMultitaskingCamera:setVideoOrientation:completion:]	
+10860f4e0	10860f55f	decompiled	chunks/004/functions-000318.c		
+10860f560	10860f70b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices stopCameraForConsumer:setVideoOrientation:completion:]	
+10860f70c	10860f78b	decompiled	chunks/004/functions-000318.c		
+10860f78c	10860f7eb	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices setAutofocusAndExposurePointOfInterest:viewSize:]	
+10860f7ec	10860f857	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices getCameraProvider]	
+10860f858	10860f8ff	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices acquirePreviewWithCompletion:]	
+10860f900	10860f90b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices setVideoFrameReceiver:]	
+10860f90c	10860f963	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices setCameraType:]	
+10860f964	10860f96b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices getCameraType]	
+10860f96c	10860f99f	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices cameraProvider:didOutputSampleBuffer:]	
+10860f9a0	10860f9af	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices cameraProviderDidBeginInterruption:]	
+10860f9b0	10860f9bf	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices cameraProviderDidEndInterruption:]	
+10860f9c0	10860f9fb	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices isMultitaskingCameraAccessEnabled]	
+10860f9fc	10860fa03	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices isCameraInterruptedObservable]	
+10860fa04	10860fa2b	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices cameraLifecycleObservable]	
+10860fa2c	10860fadb	decompiled	chunks/004/functions-000318.c	-[SCTCameraServices .cxx_destruct]	
+10860fadc	10860fbb3	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices initWithCircumstanceEngine:]	
+10860fbb4	10860fcbf	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices setDelegate:]	
+10860fcc0	10860fd5f	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices removeDelegate:]	
+10860fd60	10860fd67	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices stopScreenCapture]	
+10860fd68	10860fdb7	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenSharingState]	
+10860fdb8	10860fe2f	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices notifyIntentToPublishFromDelegate:]	
+10860fe30	108610027	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices _onSystemRecordingChanged:]	
+108610028	10861006b	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiver:onFrame:]	
+10861006c	1086100ef	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverStarted:]	
+1086100f0	108610173	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverStopped:]	
+108610174	108610177	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverPaused:]	
+108610178	10861017b	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverResumed:]	
+10861017c	1086101d7	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverExtensionLaunchDetected:]	
+1086101d8	108610233	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenCaptureReceiverExtensionExitDetected:]	
+108610234	108610277	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices screenSharingStateManager:stateChanged:]	
+108610278	1086102af	decompiled	chunks/004/functions-000318.c	-[SCTScreenCaptureServices .cxx_destruct]	
+1086102b0	108610323	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices initWithBatteryLogger:]	
+108610324	10861035b	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices pauseDownloads]	
+10861035c	108610393	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices resumeDownloads]	
+108610394	108610477	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices logNetworkActivityStartedAt:]	
+108610478	108610523	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices logNetworkActivityEndedAt:startToken:]	
+108610524	10861052f	decompiled	chunks/004/functions-000318.c	-[SCTV3NetServices .cxx_destruct]	
+108610530	1086105af	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager initWithDelegate:timeout:]	
+1086105b0	1086105ff	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager screenSharingState]	
+108610600	108610717	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager setExtensionStarted:]	
+108610718	108610777	decompiled	chunks/004/functions-000318.c		
+108610778	10861089b	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager setReceiverCapturing:]	
+10861089c	108610953	decompiled	chunks/004/functions-000318.c		
+108610954	1086109a7	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager _clearLastCapturingStopping]	
+1086109a8	1086109fb	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager _clearLastExtensionStopping]	
+1086109fc	108610a4f	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager _clearExtensionRunning]	
+108610a50	108610b53	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager setSystemRecording:]	
+108610b54	108610bb3	decompiled	chunks/004/functions-000318.c		
+108610bb4	108610c37	decompiled	chunks/004/functions-000318.c	-[SCTalkScreenSharingStateManager _emitIfChanged:]	
+108610c38	108610c93	decompiled	chunks/004/functions-000319.c	-[SCTalkScreenSharingStateManager _getState]	
+108610c94	108610c9b	decompiled	chunks/004/functions-000319.c	-[SCTalkScreenSharingStateManager isCapturing]	
+108610c9c	108610ca3	decompiled	chunks/004/functions-000319.c	-[SCTalkScreenSharingStateManager isExtensionRunning]	
+108610ca4	108610cab	decompiled	chunks/004/functions-000319.c	-[SCTalkScreenSharingStateManager isSystemRecording]	
+108610cac	108610cb3	decompiled	chunks/004/functions-000319.c	-[SCTalkScreenSharingStateManager .cxx_destruct]	
+108610cb4	108610d8f	decompiled	chunks/004/functions-000319.c		
+108610d90	108610e1f	decompiled	chunks/004/functions-000319.c		
+108610e20	108610e93	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler initWithDelegate:]	
+108610e94	108610ed7	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler dealloc]	
+108610ed8	108610f33	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler deliverNotification:fromAudioSender:]	
+108610f34	10861108f	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler registerListener:]	
+108611090	10861109b	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler clearListeners]	
+10861109c	1086110b3	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler postNotification:]	
+1086110b4	1086110bb	decompiled	chunks/004/functions-000319.c	-[SCCFNotificationHandler .cxx_destruct]	
+1086110bc	108611217	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver initWithDelegate:]	
+108611218	10861127b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver dealloc]	
+10861127c	1086112ab	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver enable]	
+1086112ac	108611303	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver disable]	
+108611304	108611357	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver stopAsync]	
+108611358	108611407	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver notifyIntentToStart]	
+108611408	10861142b	decompiled	chunks/004/functions-000319.c		
+10861142c	108611487	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _stopImpl:]	
+108611488	108611527	decompiled	chunks/004/functions-000319.c		
+108611528	10861158f	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _reportFinishErrors]	
+108611590	108611697	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _setupListeners]	
+108611698	1086116bb	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _updateLastFrame]	
+1086116bc	108611713	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _checkFrameTimeout]	
+108611714	108611867	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onServerStarted]	
+108611868	108611893	decompiled	chunks/004/functions-000319.c		
+108611894	1086118fb	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _stopWithMessage:]	
+1086118fc	10861195b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onPause]	
+10861195c	1086119bf	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onResume]	
+1086119c0	1086119c7	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _reportReceiverEvent:type:]	
+1086119c8	108611a7b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _reportReceiverEvent:type:fromAudioSender:]	
+108611a7c	108611b2f	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _reportExtensionEvent:type:fromAudioSender:]	
+108611b30	108611bcb	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onReceiverError:]	
+108611bcc	108611c7b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onStop:]	
+108611c7c	108611d8f	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onStart]	
+108611d90	108611da3	decompiled	chunks/004/functions-000319.c		
+108611da4	108611eff	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _onNotification:enabled:fromAudioSender:]	
+108611f00	10861231f	decompiled	chunks/004/functions-000319.c		
+108612320	108612423	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _applyAction:]	
+108612424	1086124c3	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver _reportRunState:]	
+1086124c4	108612603	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver videoSocketReceiver:onFrame:]	
+108612604	108612607	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver videoSocketReceiverStreamStarted:]	
+108612608	10861260b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver videoSocketReceiverStreamStopped:]	
+10861260c	108612657	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver videoSocketReceiverStreamDataError:]	
+108612658	10861273b	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver notificationHandler:onNotification:fromAudioSender:]	
+10861273c	108612777	decompiled	chunks/004/functions-000319.c		
+108612778	1086127eb	decompiled	chunks/004/functions-000319.c	-[SCScreenCaptureReceiver .cxx_destruct]	
+1086127ec	10861285f	decompiled	chunks/004/functions-000319.c	-[SCGrapheneAddliveScreenCaptureEventsMetric2 init]	
+108612860	108612a8f	decompiled	chunks/004/functions-000319.c		
+108612a90	108612cbf	decompiled	chunks/004/functions-000319.c		
+108612cc0	108612da3	decompiled	chunks/004/functions-000319.c	-[SCDataLifetimeExtender initWithData:dispatch:onRelease:]	
+108612da4	108612dfb	decompiled	chunks/004/functions-000319.c	-[SCDataLifetimeExtender releaseData]	
+108612dfc	108612e03	decompiled	chunks/004/functions-000319.c		
+108612e04	108612e2b	decompiled	chunks/004/functions-000319.c	-[SCDataLifetimeExtender getData]	
+108612e2c	108612e7b	decompiled	chunks/004/functions-000319.c	-[SCDataLifetimeExtender _clear]	
+108612e7c	108612e7f	decompiled	chunks/004/functions-000319.c		
+108612e80	108612ec7	decompiled	chunks/004/functions-000319.c	-[SCDataLifetimeExtender .cxx_destruct]	
+108612ec8	108612f07	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler init]	
+108612f08	108612f4f	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler clearIncoming]	
+108612f50	108612fe3	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler appendIncomingBytes:onError:]	
+108612fe4	1086131d3	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler _appendIncomingBytes:length:onError:]	
+1086131d4	108613207	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler isIncomingReady]	
+108613208	10861328b	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler getIncomingFrameNumber]	
+10861328c	1086132cb	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler isAudioFrame]	
+1086132cc	108613b03	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler makeIncomingSampleBuffer:onRelease:onError:]	
+108613b04	108613c13	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler makeFrameAckMessage:releaseQueue:]	
+108613c14	108613c1b	decompiled	chunks/004/functions-000319.c		
+108613c1c	108613c57	decompiled	chunks/004/functions-000319.c	-[SCHTTPVideoMessageHandler .cxx_destruct]	
+108613c58	108613c5b	decompiled	chunks/004/functions-000319.c		
+108613c5c	108613d73	decompiled	chunks/004/functions-000319.c		
+108613d74	108613d7b	decompiled	chunks/004/functions-000319.c		
+108613d7c	108613f43	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver initWithSocketFilename:dispatch:delegate:]	
+108613f44	108613f4b	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver start:]	
+108613f4c	108613f53	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver stop]	
+108613f54	1086140c3	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver _processIncomingMessage]	
+1086140c4	108614123	decompiled	chunks/004/functions-000319.c		
+108614124	10861415f	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver _onDataError]	
+108614160	1086141cb	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver _sendAck:]	
+1086141cc	1086142cb	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver videoSocketServer:onData:]	
+1086142cc	1086142f7	decompiled	chunks/004/functions-000319.c		
+1086142f8	108614333	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver videoSocketServerConnected:]	
+108614334	10861436f	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver videoSocketServerDisconnected:]	
+108614370	1086143af	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketReceiver .cxx_destruct]	
+1086143b0	10861448b	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer initWithSocketFilePath:dispatch:delegate:]	
+10861448c	1086144cf	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer dealloc]	
+1086144d0	108614527	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer start:]	
+108614528	108614577	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer stop]	
+108614578	108614627	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer writeData:]	
+108614628	10861462b	decompiled	chunks/004/functions-000319.c		
+10861462c	108614877	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer _startImpl]	
+108614878	10861499f	decompiled	chunks/004/functions-000319.c		
+1086149a0	1086149a7	decompiled	chunks/004/functions-000319.c		
+1086149a8	108614b67	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer _acceptConnection]	
+108614b68	108614b6b	decompiled	chunks/004/functions-000319.c		
+108614b6c	108614bd7	decompiled	chunks/004/functions-000319.c		
+108614bd8	108614c3b	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer closeConnection]	
+108614c3c	108614c87	decompiled	chunks/004/functions-000319.c	-[SCVideoSocketServer .cxx_destruct]	
+108614c88	108614d3f	decompiled	chunks/005/functions-000320.c	-[SCTCKLocationServices isUserInValidLocation]	
+108614d40	108614d47	decompiled	chunks/005/functions-000320.c	-[SCTCKLocationServices .cxx_destruct]	
+108614d48	108614d9b	decompiled	chunks/005/functions-000320.c		
+108614d9c	1086150d3	decompiled	chunks/005/functions-000320.c	-[SCTCallEndDialog initWithIsGroupConversation:displayName:dismissHandler:]	
+1086150d4	1086150f3	decompiled	chunks/005/functions-000320.c		
+1086150f4	10861519b	decompiled	chunks/005/functions-000320.c	-[SCTalkUIConversationMetadata isGroupConversation]	
+10861519c	1086151b3	decompiled	chunks/005/functions-000320.c		
+1086151b4	10861527f	decompiled	chunks/005/functions-000320.c	-[SCTalkUIConversationMetadata remoteUserId]	
+108615280	10861529b	decompiled	chunks/005/functions-000320.c		
+10861529c	1086152d3	decompiled	chunks/005/functions-000320.c		
+1086152d4	1086153d3	decompiled	chunks/005/functions-000320.c		
+1086153d4	1086154a7	decompiled	chunks/005/functions-000320.c	-[SCTDimensions initWithType:dimensions:]	
+1086154a8	1086154ef	decompiled	chunks/005/functions-000320.c	-[SCTDimensions dealloc]	
+1086154f0	10861553f	decompiled	chunks/005/functions-000320.c	-[SCTDimensions of]	
+108615540	1086155bb	decompiled	chunks/005/functions-000320.c		
+1086155bc	1086155d3	decompiled	chunks/005/functions-000320.c		
+1086155d4	10861562b	decompiled	chunks/005/functions-000320.c	-[SCTDimensions ofScreenWidth]	
+10861562c	108615687	decompiled	chunks/005/functions-000320.c	-[SCTDimensions ofScreenHeight]	
+108615688	1086156d7	decompiled	chunks/005/functions-000320.c	-[SCTDimensions percentOf]	
+1086156d8	10861574f	decompiled	chunks/005/functions-000320.c		
+108615750	108615767	decompiled	chunks/005/functions-000320.c		
+108615768	1086157bf	decompiled	chunks/005/functions-000320.c	-[SCTDimensions percentOfIPhone7Width]	
+1086157c0	10861581b	decompiled	chunks/005/functions-000320.c	-[SCTDimensions percentOfIPhone7Height]	
+10861581c	10861586b	decompiled	chunks/005/functions-000320.c	-[SCTDimensions updateFirst]	
+10861586c	10861589f	decompiled	chunks/005/functions-000320.c		
+1086158a0	1086158ab	decompiled	chunks/005/functions-000320.c	-[SCTDimensions first]	
+1086158ac	1086158af	decompiled	chunks/005/functions-000320.c	-[SCTDimensions f]	
+1086158b0	1086158bf	decompiled	chunks/005/functions-000320.c	-[SCTDimensions last]	
+1086158c0	1086158c3	decompiled	chunks/005/functions-000320.c	-[SCTDimensions l]	
+1086158c4	1086158e3	decompiled	chunks/005/functions-000320.c	-[SCTDimensions min]	
+1086158e4	108615903	decompiled	chunks/005/functions-000320.c	-[SCTDimensions max]	
+108615904	108615953	decompiled	chunks/005/functions-000320.c	-[SCTDimensions progress]	
+108615954	1086159ab	decompiled	chunks/005/functions-000320.c		
+1086159ac	1086159ff	decompiled	chunks/005/functions-000320.c	-[SCTDimensions _screenSize]	
+108615a00	108615a13	decompiled	chunks/005/functions-000320.c	-[SCTDimensions _iPhone7ScreenSize]	
+108615a14	108615a6b	decompiled	chunks/005/functions-000320.c	-[SCTDimensions _reduce:func:]	
+108615a6c	108615b37	decompiled	chunks/005/functions-000320.c	-[SCTDimensions _mutateAll:]	
+108615b38	108615df7	decompiled	chunks/005/functions-000320.c	+[SCTExceptionCatcher runCatchingExceptionClasses:block:error:]	
+108615df8	108615ebf	decompiled	chunks/005/functions-000320.c	+[SCTExceptionCatcher runBlock:error:]	
+108615ec0	108615f87	decompiled	chunks/005/functions-000320.c	+[SCTExceptionCatcher runValdiBlock:error:]	
+108615f88	108615fd3	decompiled	chunks/005/functions-000320.c	-[SCTGrapheneLogger initWithGrapheneRegistry:]	
+108615fd4	108616043	decompiled	chunks/005/functions-000320.c	-[SCTGrapheneLogger logWithMetric:]	
+108616044	108616277	decompiled	chunks/005/functions-000320.c	-[SCTGrapheneLogger logAudioSessionUpdateError:]	
+108616278	108616327	decompiled	chunks/005/functions-000320.c	-[SCTGrapheneLogger logCXRequestTransactionError:]	

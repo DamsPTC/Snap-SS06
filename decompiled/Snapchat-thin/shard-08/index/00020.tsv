@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105f7c4fc	105f7c513	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusPlugin uiContainer]	
+105f7c514	105f7c51f	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusPlugin setUiContainer:]	
+105f7c520	105f7c5cf	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusPlugin .cxx_destruct]	
+105f7c5d0	105f7c6f3	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders initWithCountdownServiceFactory:friendStore:cofStore:userInfoProvider:blizzardLogger:]	
+105f7c6f4	105f7c6fb	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders countdownServiceFactory]	
+105f7c6fc	105f7c72b	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders setCountdownServiceFactory:]	
+105f7c72c	105f7c733	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders friendStore]	
+105f7c734	105f7c763	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders setFriendStore:]	
+105f7c764	105f7c76b	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders cofStore]	
+105f7c76c	105f7c79b	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders setCofStore:]	
+105f7c79c	105f7c7a3	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders userInfoProvider]	
+105f7c7a4	105f7c7d3	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders setUserInfoProvider:]	
+105f7c7d4	105f7c7db	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders blizzardLogger]	
+105f7c7dc	105f7c80b	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders setBlizzardLogger:]	
+105f7c80c	105f7c85f	decompiled	chunks/003/functions-000200.c	-[SCChatCountdownStatusViewProviders .cxx_destruct]	
+105f7c860	105f7c883	decompiled	chunks/003/functions-000200.c	+[SCCCountdownInChatCountdownStatusViewProviders valdiMarshallableObjectDescriptor]	
+105f7c884	105f7c88f	decompiled	chunks/003/functions-000200.c	+[SCCCountdownMessageView componentPath]	
+105f7c890	105f7c8b3	decompiled	chunks/003/functions-000200.c	-[SCCCountdownMessageView initWithViewModel:componentContext:runtime:]	
+105f7c8b4	105f7c8eb	decompiled	chunks/003/functions-000200.c	-[SCCCountdownMessageView setViewModel:]	
+105f7c8ec	105f7c92b	decompiled	chunks/003/functions-000200.c	-[SCCCountdownMessageView viewModel]	
+105f7c92c	105f7c937	decompiled	chunks/003/functions-000200.c	+[SCCCountdownStatusView componentPath]	
+105f7c938	105f7c95b	decompiled	chunks/003/functions-000200.c	-[SCCCountdownStatusView initWithViewModel:componentContext:runtime:]	
+105f7c95c	105f7c993	decompiled	chunks/003/functions-000200.c	-[SCCCountdownStatusView setViewModel:]	
+105f7c994	105f7c9d3	decompiled	chunks/003/functions-000200.c	-[SCCCountdownStatusView viewModel]	
+105f7c9d4	105f7ca0b	decompiled	chunks/003/functions-000200.c		
+105f7ca0c	105f7ca13	decompiled	chunks/003/functions-000200.c	-[SCCountdownStatusType__Enum init]	
+105f7ca14	105f7ca47	decompiled	chunks/003/functions-000200.c	-[SCCCountdownMessageViewContext init]	
+105f7ca48	105f7ca5b	decompiled	chunks/003/functions-000200.c	+[SCCCountdownMessageViewContext valdiMarshallableObjectDescriptor]	
+105f7ca5c	105f7ca8f	decompiled	chunks/003/functions-000200.c	-[SCCCountdownMessageViewModel initWithCountdownId:]	
+105f7ca90	105f7caa7	decompiled	chunks/003/functions-000200.c	+[SCCCountdownMessageViewModel valdiMarshallableObjectDescriptor]	
+105f7caa8	105f7cb23	decompiled	chunks/003/functions-000200.c	-[SCCCountdownStatusViewContext initWithOnOpenCountdownEvent:providers:]	
+105f7cb24	105f7cb37	decompiled	chunks/003/functions-000200.c	+[SCCCountdownStatusViewContext valdiMarshallableObjectDescriptor]	
+105f7cb38	105f7cb6b	decompiled	chunks/003/functions-000200.c	-[SCCCountdownStatusViewModel initWithCountdownId:countdownType:]	
+105f7cb6c	105f7cbcb	decompiled	chunks/003/functions-000200.c	+[SCCCountdownStatusViewModel valdiMarshallableObjectDescriptor]	
+105f7cbcc	105f7cd3b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider initWithCompositeStoryId:senderUserId:shouldUseSmallThumbnail:layoutDirection:spotlightDataFetcher:publicProfileManager:thumbnailCoordinator:mediaCoordinator:]	
+105f7cd3c	105f7cecb	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider fetchDataWithUIUpdateBlock:videoContextUpdateBlock:storyThumbnailUrlUpdateBlock:]	
+105f7cecc	105f7cf3b	decompiled	chunks/003/functions-000200.c		
+105f7cf3c	105f7d023	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _initiateDataFetch]	
+105f7d024	105f7d073	decompiled	chunks/003/functions-000200.c		
+105f7d074	105f7d153	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _prefetchMediaWithSpotlightStory:]	
+105f7d154	105f7d157	decompiled	chunks/003/functions-000200.c		
+105f7d158	105f7d5bb	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _handleDataWithUIUpdateBlock:storyThumbnailUrlUpdateBlock:videoContextUpdateBlock:spotlightStory:]	
+105f7d5bc	105f7d60f	decompiled	chunks/003/functions-000200.c		
+105f7d610	105f7d6bb	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _handleErrorStateWithUIUpdateBlock:]	
+105f7d6bc	105f7d91b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _getPublicProfileManagerWithManager:uiUpdateBlock:uiConfigBuilder:]	
+105f7d91c	105f7da1f	decompiled	chunks/003/functions-000200.c		
+105f7da20	105f7daf3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider _fetchThumbnailDataForSpotlightStory:]	
+105f7daf4	105f7db07	decompiled	chunks/003/functions-000200.c		
+105f7db08	105f7db13	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider storyViewAccessibilityId]	
+105f7db14	105f7db1b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider shouldOverrideMediaSize]	
+105f7db1c	105f7db2f	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider overrideMediaSize]	
+105f7db30	105f7db47	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider storySharePlaybackPresenterDelegate]	
+105f7db48	105f7db53	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider setStorySharePlaybackPresenterDelegate:]	
+105f7db54	105f7db5b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider spotlightStory]	
+105f7db5c	105f7db8b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider setSpotlightStory:]	
+105f7db8c	105f7db93	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider thumbnailData]	
+105f7db94	105f7dbc3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider setThumbnailData:]	
+105f7dbc4	105f7dc43	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareDataProvider .cxx_destruct]	
+105f7dc44	105f7e027	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin initWithStorySharingComposerContextProvider:currentUserId:nglStudySettingsProvider:spotlightDataFetcher:publicProfileManager:spotlightShareSender:pageLauncher:thumbnailCoordinator:mediaCoordinator:discoverFeedDataMutator:snapchattersSynchronousDataFetcher:spotlightPlatformAnalyticsCreator:messagingMessageProvider:]	
+105f7e028	105f7e06b	decompiled	chunks/003/functions-000200.c		
+105f7e06c	105f7e117	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f7e118	105f7e52b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _valdiContextParamsForMessage:conversationParticipants:renderType:]	
+105f7e52c	105f7e673	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _dataProviderWithMessage:compositeStoryId:senderUserId:renderType:]	
+105f7e674	105f7e713	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _insertDataProviderIntoConversationMap:forMessage:]	
+105f7e714	105f7e773	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _insertMessage:forCompositeStoryId:]	
+105f7e774	105f7e7df	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _handleConversationChange]	
+105f7e7e0	105f7e91b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _lensIdFromMessage:]	
+105f7e91c	105f7e94b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin identifier]	
+105f7e94c	105f7e953	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin pluginType]	
+105f7e954	105f7ea6f	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin setActiveConversationIdObservable:]	
+105f7ea70	105f7ea9b	decompiled	chunks/003/functions-000200.c		
+105f7ea9c	105f7eadb	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105f7eadc	105f7eb1b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin canForwardMessageFromCTA:]	
+105f7eb1c	105f7ebaf	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin isSharingRestrictedForMessage:]	
+105f7ebb0	105f7ee4f	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105f7ee50	105f7f1b3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105f7f1b4	105f7f1c7	decompiled	chunks/003/functions-000200.c		
+105f7f1c8	105f7f207	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin actionHandlerDidHandleHeaderTap:]	
+105f7f208	105f7f247	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin actionHandler:didHandleStoryTap:]	
+105f7f248	105f7f343	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _launchSpotlightFeedForMessage:]	
+105f7f344	105f7f3f3	decompiled	chunks/003/functions-000200.c		
+105f7f3f4	105f7f94f	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _multipleShareConfigurationForMessage:]	
+105f7f950	105f7f95b	decompiled	chunks/003/functions-000200.c		
+105f7f95c	105f7f9b3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin _discoverFeedStoryFromDataProvider:]	
+105f7f9b4	105f7f9b7	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin dismissPresentedView]	
+105f7f9b8	105f7f9bf	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105f7f9c0	105f7f9c7	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105f7f9c8	105f7f9cf	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin quotedRenderingStyleForMessage:]	
+105f7f9d0	105f7f9d7	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin shouldDisplayContextualHeaderForMessage:]	
+105f7f9d8	105f7fb0b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin contextualHeaderForMessage:conversationParticipants:]	
+105f7fb0c	105f7fb13	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin quotedSupportEnabled]	
+105f7fb14	105f7fc5b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin spotlightShareStoryFor:]	
+105f7fc5c	105f7fc63	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin activeConversationIdObservable]	
+105f7fc64	105f7fc6b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin activeConversationInformationObservable]	
+105f7fc6c	105f7fc9b	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin setActiveConversationInformationObservable:]	
+105f7fc9c	105f7fcb3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin uiContainer]	
+105f7fcb4	105f7fcbf	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin setUiContainer:]	
+105f7fcc0	105f7fcd7	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin multiDirectionUIContainer]	
+105f7fcd8	105f7fce3	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin setMultiDirectionUIContainer:]	
+105f7fce4	105f7fe1f	decompiled	chunks/003/functions-000200.c	-[SCLensSpotlightShareMessageRenderingPlugin .cxx_destruct]	
+105f7fe20	105f7ff13	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload initWithUiContainer:configuration:sourcePage:sourcePageSessionId:viewLocation:feedPageEntryType:]	
+105f7ff14	105f7ff1b	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload uiContainer]	
+105f7ff1c	105f7ff23	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload configuration]	
+105f7ff24	105f7ff2b	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload sourcePage]	
+105f7ff2c	105f7ff33	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload sourcePageSessionId]	
+105f7ff34	105f7ff3b	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload viewLocation]	
+105f7ff3c	105f7ff43	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload feedPageEntryType]	
+105f7ff44	105f7ff7f	decompiled	chunks/003/functions-000201.c	-[SCLensSpotlightSharePageLauncherPayload .cxx_destruct]	
+105f7ff80	105f7ffc7	decompiled	chunks/003/functions-000201.c		
+105f7ffc8	105f80217	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin initWithSpotlightRepliesRequestSender:spotlightFetcher:pageLauncher:spotlightShareSender:circumstanceEngine:discoverFeedDataMutator:snapchattersSynchronousDataFetcher:storiesConfigProvider:currentUserId:messagingMessageProvider:]	
+105f80218	105f8032f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f80330	105f8059f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _contextForMessage:commentDisplayInfoSubject:spotlightStoryDisplayInfoSubject:enableOnTap:conversationParticipants:]	
+105f805a0	105f806ff	decompiled	chunks/003/functions-000201.c		
+105f80700	105f80ab7	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _fetchRequirementsWithMessage:commentDisplayInfoSubject:spotlightStoryDisplayInfoSubject:conversationParticipants:]	
+105f80ab8	105f80c1f	decompiled	chunks/003/functions-000201.c		
+105f80c20	105f80f43	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _launchSpotlightWithInitialCompositeStoryId:parentCommentId:commentId:senderId:groupId:shareId:]	
+105f80f44	105f81013	decompiled	chunks/003/functions-000201.c		
+105f81014	105f81167	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _spotlightConfigurationForSharedStory:prependedCommentIds:storyLoggingFieldsOverrideDict:]	
+105f81168	105f812d7	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _fetchThumbnailUrlWithCompositeStoryId:spotlightStoryDisplayInfoSubject:senderUserId:completion:]	
+105f812d8	105f812f7	decompiled	chunks/003/functions-000201.c		
+105f812f8	105f81573	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _fetchSpotlightCommentWithCommentId:snapId:commentDisplayInfoSubject:completion:]	
+105f81574	105f815eb	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _saveSpotlightStoryToCacheIfNecessaryWithSpotlightStory:compositeStoryId:]	
+105f815ec	105f81663	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _saveSpotlightReplyToCacheIfNecessaryWithSpotlightReply:commentId:]	
+105f81664	105f81997	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _emitSpotlightStoryDisplayWithSpotlightStoryDisplayInfoSubject:spotlightStory:]	
+105f81998	105f81f1f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _emitCommentDisplayInfoWithCommentDisplayInfoSubject:spotlightReply:]	
+105f81f20	105f81fd3	decompiled	chunks/003/functions-000201.c		
+105f81fd4	105f82003	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin identifier]	
+105f82004	105f8200b	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin pluginType]	
+105f8200c	105f8204b	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105f8204c	105f8208b	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin canForwardMessageFromCTA:]	
+105f8208c	105f82193	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin isSharingRestrictedForMessage:]	
+105f82194	105f82297	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105f82298	105f8235f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin _forwardingContextForMessage:conversationParticipants:]	
+105f82360	105f8272b	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105f8272c	105f8273f	decompiled	chunks/003/functions-000201.c		
+105f82740	105f8277f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin shouldDisplayContextualHeaderForMessage:]	
+105f82780	105f8281b	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin contextualHeaderForMessage:conversationParticipants:]	
+105f8281c	105f82833	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin presentingViewController]	
+105f82834	105f8283f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin setPresentingViewController:]	
+105f82840	105f82847	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin activeConversationIdObservable]	
+105f82848	105f82877	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin setActiveConversationIdObservable:]	
+105f82878	105f8287f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin activeConversationInformationObservable]	
+105f82880	105f828af	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin setActiveConversationInformationObservable:]	
+105f828b0	105f82977	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentShareMessagePlugin .cxx_destruct]	
+105f82978	105f82a37	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload initWithUiContainer:configuration:sourcePage:viewLocation:feedPageEntryType:]	
+105f82a38	105f82a3f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload uiContainer]	
+105f82a40	105f82a47	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload configuration]	
+105f82a48	105f82a4f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload sourcePage]	
+105f82a50	105f82a57	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload viewLocation]	
+105f82a58	105f82a5f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload feedPageEntryType]	
+105f82a60	105f82a8f	decompiled	chunks/003/functions-000201.c	-[SCSpotlightCommentSharePageLauncherPayload .cxx_destruct]	
+105f82a90	105f82aa7	decompiled	chunks/003/functions-000201.c		
+105f82aa8	105f82ab3	decompiled	chunks/003/functions-000201.c	+[SCCSpotlightCommentShareView componentPath]	
+105f82ab4	105f82ae7	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentShareView initWithViewModel:componentContext:runtime:]	
+105f82ae8	105f82b37	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentShareView setViewModel:]	
+105f82b38	105f82b7b	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentShareView viewModel]	
+105f82b7c	105f82bbb	decompiled	chunks/003/functions-000201.c	-[SCCCommentMentionAttribute initWithStart:length:displayName:]	
+105f82bbc	105f82bcb	decompiled	chunks/003/functions-000201.c	+[SCCCommentMentionAttribute valdiMarshallableObjectDescriptor]	
+105f82bcc	105f82c17	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentDisplayInfo initWithCommentPosterDisplayName:commentContentText:]	
+105f82c18	105f82c2b	decompiled	chunks/003/functions-000201.c	+[SCCSpotlightCommentDisplayInfo valdiMarshallableObjectDescriptor]	
+105f82c2c	105f82c4b	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentShareContext init]	
+105f82c4c	105f82c5f	decompiled	chunks/003/functions-000201.c	+[SCCSpotlightCommentShareContext valdiMarshallableObjectDescriptor]	
+105f82c60	105f82c7f	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightCommentsAttachment init]	
+105f82c80	105f82c93	decompiled	chunks/003/functions-000201.c	+[SCCSpotlightCommentsAttachment valdiMarshallableObjectDescriptor]	
+105f82c94	105f82cb3	decompiled	chunks/003/functions-000201.c	-[SCCSpotlightStoryDisplayInfo init]	
+105f82cb4	105f82cfb	decompiled	chunks/003/functions-000201.c	+[SCCSpotlightStoryDisplayInfo valdiMarshallableObjectDescriptor]	
+105f82cfc	105f82d03	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916AutoPlaySession mediaStarted]	
+105f82d04	105f82d0b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916AutoPlaySession setMediaStarted:]	
+105f82d0c	105f82d13	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916AutoPlaySession isPlaying]	
+105f82d14	105f82d1b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916AutoPlaySession setIsPlaying:]	
+105f82d1c	105f83277	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin initWithStorySharingServices:currentUserId:spotlightDataFetcher:publicProfileManager:spotlightShareSender:spotlightScopeExposer:spotlightScopeServices:thumbnailCoordinator:mediaCoordinator:autoPlayEventsLogger:discoverFeedDataMutator:snapchattersSynchronousDataFetcher:spotlightPlatformAnalyticsCreator:groupFetcher:storiesConfigProvider:messagingMessageProvider:currentPageTracker:circumstanceEngine:]	
+105f83278	105f832bb	decompiled	chunks/003/functions-000201.c		
+105f832bc	105f8335f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f83360	105f8338f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin setVisibleMessageIds:]	
+105f83390	105f8348f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _messageVisibilityObservableForMessage:]	
+105f83490	105f834c3	decompiled	chunks/003/functions-000201.c		
+105f834c4	105f83643	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _isLastMessageObservableForMessage:]	
+105f83644	105f836bf	decompiled	chunks/003/functions-000201.c		
+105f836c0	105f8381b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _isLatestSpotlightShareObservableForMessage:]	
+105f8381c	105f8386b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _lastMessageIdObservableFromActiveConversationInformationObservable:]	
+105f8386c	105f8395b	decompiled	chunks/003/functions-000201.c		
+105f8395c	105f83973	decompiled	chunks/003/functions-000201.c		
+105f83974	105f839b3	decompiled	chunks/003/functions-000201.c		
+105f839b4	105f83ba7	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayPreviewEligibilityObservableForMessage:conversationParticipants:]	
+105f83ba8	105f83c7b	decompiled	chunks/003/functions-000201.c		
+105f83c7c	105f84263	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _valdiContextParamsForMessage:conversationParticipants:renderType:autoPlayPreviewEnabled:]	
+105f84264	105f84553	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _contextParamsWithProvider:pluginMessage:message:autoPlayPreviewEligibilityObservable:]	
+105f84554	105f84643	decompiled	chunks/003/functions-000201.c		
+105f84644	105f8475b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayPreviewSessionDidOpenForMessage:]	
+105f8475c	105f8486f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayPreviewSessionDidCloseForMessage:]	
+105f84870	105f849e3	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayMediaPlaybackDidStartForMessage:]	
+105f849e4	105f84aeb	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayMediaPlaybackDidPauseForMessage:]	
+105f84aec	105f84b9f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _collectionViewAutoPlayItemIdForMessage:]	
+105f84ba0	105f84c2b	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _collectionViewAutoPlayLoggingInfoForMessage:]	
+105f84c2c	105f84cc7	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _autoPlayPreviewEnabledForMessage:conversationParticipants:isLatestSpotlightShare:isVisible:]	
+105f84cc8	105f84d0f	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _spotlightChatPreviewAutoPlayTreatment]	
+105f84d10	105f84e57	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _dataProviderWithMessage:compositeStoryId:senderUserId:renderType:]	
+105f84e58	105f84ef7	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _insertDataProviderIntoConversationMap:forMessage:]	
+105f84ef8	105f84f97	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _insertMessage:forCompositeStoryId:]	
+105f84f98	105f851ab	decompiled	chunks/003/functions-000201.c	-[SCSpotlight916ShareMessagePlugin _insertInChatContextParamsForMessage:conversationParticipants:]	
+105f851ac	105f85487	decompiled	chunks/003/functions-000202.c		
+105f85488	105f85517	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _recordRegularSpotlightShareMessage:timestamp:]	
+105f85518	105f856f7	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _recomputeLatestSpotlightShareMessageId]	
+105f856f8	105f85797	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _emitLatestSpotlightShareMessageId:]	
+105f85798	105f858cf	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _handleConversationChange]	
+105f858d0	105f85923	decompiled	chunks/003/functions-000202.c		
+105f85924	105f85953	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin identifier]	
+105f85954	105f8595b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin pluginType]	
+105f8595c	105f85a77	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setActiveConversationIdObservable:]	
+105f85a78	105f85aa3	decompiled	chunks/003/functions-000202.c		
+105f85aa4	105f85bcb	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setActiveConversationInformationObservable:]	
+105f85bcc	105f85c5f	decompiled	chunks/003/functions-000202.c		
+105f85c60	105f85d9b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _lensIdFromMessage:]	
+105f85d9c	105f85def	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _isSpotlightShareMessage:]	
+105f85df0	105f85df3	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105f85df4	105f85df7	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin canForwardMessageFromCTA:]	
+105f85df8	105f85e73	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin isSharingRestrictedForMessage:]	
+105f85e74	105f86113	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105f86114	105f86477	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105f86478	105f8648b	decompiled	chunks/003/functions-000202.c		
+105f8648c	105f864cb	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin actionHandlerDidHandleHeaderTap:]	
+105f864cc	105f8650b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin actionHandler:didHandleStoryTap:]	
+105f8650c	105f8666f	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _launchSpotlightFeedForMessage:]	
+105f86670	105f8671f	decompiled	chunks/003/functions-000202.c		
+105f86720	105f86c93	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _multipleShareConfigurationForMessage:]	
+105f86c94	105f86c9f	decompiled	chunks/003/functions-000202.c		
+105f86ca0	105f8715b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _singleShareConfigurationForMessage:]	
+105f8715c	105f871b3	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin _discoverFeedStoryFromDataProvider:]	
+105f871b4	105f871fb	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin dismissPresentedView]	
+105f871fc	105f87207	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105f87208	105f87213	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105f87214	105f8721b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin quotedRenderingStyleForMessage:]	
+105f8721c	105f872d3	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin removeSpotlightScope:]	
+105f872d4	105f872db	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin shouldDisplayContextualHeaderForMessage:]	
+105f872dc	105f8740f	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin contextualHeaderForMessage:conversationParticipants:]	
+105f87410	105f87417	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin quotedSupportEnabled]	
+105f87418	105f8755f	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin spotlightShareStoryFor:]	
+105f87560	105f87567	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin activeConversationIdObservable]	
+105f87568	105f8756f	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin activeConversationInformationObservable]	
+105f87570	105f87587	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin uiContainer]	
+105f87588	105f87593	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setUiContainer:]	
+105f87594	105f875ab	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin multiDirectionUIContainer]	
+105f875ac	105f875b7	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setMultiDirectionUIContainer:]	
+105f875b8	105f875cf	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin presentingViewController]	
+105f875d0	105f875db	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setPresentingViewController:]	
+105f875dc	105f875e3	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin messageViewEvents]	
+105f875e4	105f87613	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin setMessageViewEvents:]	
+105f87614	105f8761b	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin visibleMessageIds]	
+105f8761c	105f87807	decompiled	chunks/003/functions-000202.c	-[SCSpotlight916ShareMessagePlugin .cxx_destruct]	
+105f87808	105f87837	decompiled	chunks/003/functions-000202.c		
+105f87838	105f87a07	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler initWithUiContainer:message:friendStoryShareDataProvider:friendProfileScopeExposer:snapchattersSynchronousDataFetcher:communitiesOnboardingScopeExposer:repostMentionScopeExposer:repostMentionScopeServices:messagingMessageProvider:]	
+105f87a08	105f87af3	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler handleHeaderTap]	
+105f87af4	105f87b0f	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler handleActionButtonTapFor:]	
+105f87b10	105f87e73	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler _startRepostMentionFlow]	
+105f87e74	105f87f4b	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler _startJoinCommunityFlow]	
+105f87f4c	105f8800f	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler _storyPosterSnapchatter]	
+105f88010	105f88057	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler friendProfileDidDismiss:]	
+105f88058	105f8809f	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler verifiedCommunitiesOnboardingDidFinishWithComplete:]	
+105f880a0	105f880e7	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler didDismissRepostMention]	
+105f880e8	105f8816b	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareActionHandler .cxx_destruct]	
+105f8816c	105f883db	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider initWithMessage:storyId:renderForQuotedMessage:sharedStorySnapManager:storyShareDataListener:storyShareVisibilityListener:snapchattersSynchronousDataFetcher:userSessionScope:storiesMediaCoordinator:contentDelivery:storiesConfigProvider:messagingMessageProvider:]	
+105f883dc	105f888b7	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider fetchDataWithUIUpdateBlock:videoContextUpdateBlock:storyThumbnailUrlUpdateBlock:]	
+105f888b8	105f8955b	decompiled	chunks/003/functions-000202.c		
+105f8955c	105f895c3	decompiled	chunks/003/functions-000202.c		
+105f895c4	105f8983b	decompiled	chunks/003/functions-000202.c		
+105f8983c	105f898f3	decompiled	chunks/003/functions-000202.c		
+105f898f4	105f898f7	decompiled	chunks/003/functions-000202.c		
+105f898f8	105f899e3	decompiled	chunks/003/functions-000202.c		
+105f899e4	105f89aa7	decompiled	chunks/003/functions-000202.c		
+105f89aa8	105f8a75b	decompiled	chunks/003/functions-000202.c		
+105f8a75c	105f8a9bb	decompiled	chunks/003/functions-000202.c		
+105f8a9bc	105f8aa3b	decompiled	chunks/003/functions-000202.c		
+105f8aa3c	105f8aa3f	decompiled	chunks/003/functions-000202.c		
+105f8aa40	105f8aaf3	decompiled	chunks/003/functions-000202.c		
+105f8aaf4	105f8abb7	decompiled	chunks/003/functions-000202.c		
+105f8abb8	105f8ad33	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider _emitSnapUnavailableWithUIUpdateBlock:storyId:]	
+105f8ad34	105f8ad67	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider fetchData]	
+105f8ad68	105f8ad8f	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider userId]	
+105f8ad90	105f8ad97	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider userIdFuture]	
+105f8ad98	105f8adbf	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider mediaId]	
+105f8adc0	105f8ade7	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider lensId]	
+105f8ade8	105f8adef	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider isPublicStorySnap]	
+105f8adf0	105f8ae4b	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider isMentionRepost]	
+105f8ae4c	105f8ae73	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider storyId]	
+105f8ae74	105f8ae9b	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider contextHint]	
+105f8ae9c	105f8aec3	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider posterUsername]	
+105f8aec4	105f8aeeb	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider thumbnailDownloadInfo]	
+105f8aeec	105f8b0fb	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider updateUIWithActionButton:]	
+105f8b0fc	105f8b1b3	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider constructThumbnailDownloadInfoWithUrl:encryptionKey:encryptionIV:]	
+105f8b1b4	105f8b1bb	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider shouldOverrideMediaSize]	
+105f8b1bc	105f8b1cf	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider overrideMediaSize]	
+105f8b1d0	105f8b27b	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider _requestContextsWithConversationId:]	
+105f8b27c	105f8b2af	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider _composerBitmojiSelfieUrlStringWithAvatarId:selfieId:userId:]	
+105f8b2b0	105f8b2c7	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider storySharePlaybackPresenterDelegate]	
+105f8b2c8	105f8b2d3	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider setStorySharePlaybackPresenterDelegate:]	
+105f8b2d4	105f8b3eb	decompiled	chunks/003/functions-000202.c	-[SCFriendStoryShareDataProvider .cxx_destruct]	
+105f8b3ec	105f8bd63	decompiled	chunks/003/functions-000202.c	-[SCFriendStorySharePlaybackDataProvider initWithDiscoverPluginCreator:uiContainer:discoverFeedFriendStoriesDataCoordinator:playbackDataProvider:myStoriesPlaybackDataProvider:autoAdvancePlaybackDataProvider:composerRenderedPlugin:operaPresenterDelegate:optInDataProvider:userSessionScope:myStoriesDataCoordinator:contextOperaPluginProvider:storiesMediaCoordinator:snapchattersSynchronousDataFetcher:externalLinkSendingService:saveFriendStoryOperaPluginProvider:playableViewModelGenerator:discoverDataFetcher:circumstanceEngine:storiesConfigProvider:spotlightShareSender:spotlightPlatformAnalyticsCreator:storiesReadReceiptCoordinator:notificationOSSettingsRetriever:offPlatformShareServices:storiesNetworkRequester:networkConnectivityMonitor:locationProvider:discoverFeedDataMutator:isGroup:message:adRenderDataParser:musicContentRestrictionServices:shareNotificationService:userBlizzardLogger:storiesUsageLogger:blizzardLogger:imageDownloader:discoverFeedEventsController:discoverFeedInteractionHistoryManager:remixOperaPluginProvider:unlockableViewTracker:snapchatterUserInfoProvider:playbackMediaResolver:playbackAssetRepositoryFactory:offPlatformLinkGenerationService:snapchatterObservableRepository:storiesGrapheneMetricsEmitter:grapheneRegistry:legacyStoriesTooltipsService:]	
+105f8bd64	105f8bdab	decompiled	chunks/003/functions-000202.c	-[SCFriendStorySharePlaybackDataProvider operaLaunchingCandidates]	
+105f8bdac	105f8c32b	decompiled	chunks/003/functions-000202.c	-[SCFriendStorySharePlaybackDataProvider playlistPlugins]	
+105f8c32c	105f8c39b	decompiled	chunks/003/functions-000202.c	-[SCFriendStorySharePlaybackDataProvider operaSessionContextWithIntentDate:]	
+105f8c39c	105f8c3b3	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider operaPresenterDelegate]	
+105f8c3b4	105f8c3f3	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider parentViewController]	
+105f8c3f4	105f8c4c3	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider upNextConfig]	
+105f8c4c4	105f8c6eb	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider contentProductPlaybackConfig]	
+105f8c6ec	105f8c963	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _fetchClientIdIfNeeded:]	
+105f8c964	105f8cdd7	decompiled	chunks/003/functions-000203.c		
+105f8cdd8	105f8ceb3	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _fetchFriendStoryData:]	
+105f8ceb4	105f8d097	decompiled	chunks/003/functions-000203.c		
+105f8d098	105f8d13f	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _mainThreadConstructOperaLaunchCandidates]	
+105f8d140	105f8d18b	decompiled	chunks/003/functions-000203.c		
+105f8d18c	105f8d52b	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _constructOperaLaunchCandidates]	
+105f8d52c	105f8d547	decompiled	chunks/003/functions-000203.c		
+105f8d548	105f8d54f	decompiled	chunks/003/functions-000203.c		
+105f8d550	105f8d597	decompiled	chunks/003/functions-000203.c		
+105f8d598	105f8d75b	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _fetchStoryFromMixer]	
+105f8d75c	105f8d777	decompiled	chunks/003/functions-000203.c		
+105f8d778	105f8d833	decompiled	chunks/003/functions-000203.c		
+105f8d834	105f8d98b	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _storyFromStoryLookupResponse:responseTimestamp:]	
+105f8d98c	105f8dadf	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider _setStory:]	
+105f8dae0	105f8dc3b	decompiled	chunks/003/functions-000203.c		
+105f8dc3c	105f8dc63	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider uiContainer]	
+105f8dc64	105f8de13	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider constructOperaPlaybackDataForStoryResponse:isPublicStoryPostedByNonFriend:isMyStory:]	
+105f8de14	105f8e013	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider constructOperaPlaybackDataForStory:isPublicStoryPostedByNonFriend:isMyStory:]	
+105f8e014	105f8e02b	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider markStoryPlayable:]	
+105f8e02c	105f8e11f	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider defaultFallbackStories]	
+105f8e120	105f8e3ff	decompiled	chunks/003/functions-000203.c	-[SCFriendStorySharePlaybackDataProvider .cxx_destruct]	
+105f8e400	105f8eff3	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin initWithStorySharingServices:sharedStorySnapManager:storyShareSender:friendProfileScopeExposer:operaPluginCreator:discoverFeedFriendStoriesDataCoordinator:playbackDataProvider:myStoriesPlaybackDataProvider:autoAdvancePlaybackDataProvider:optInDataProvider:userSessionScope:myStoriesDataCoordinator:contextOperaPluginProvider:storiesMediaCoordinator:snapchattersSynchronousDataFetcher:externalLinkSendingService:saveFriendStoryOperaPluginProvider:playableViewModelGenerator:discoverDataFetcher:circumstanceEngine:communitiesOnboardingScopeExposer:simpleContentFetcher:storiesConfigProvider:spotlightShareSender:spotlightPlatformAnalyticsCreator:storiesReadReceiptCoordinator:notificationOSSettingsRetriever:offPlatformShareServices:storiesNetworkRequester:networkConnectivityMonitor:locationProvider:discoverFeedDataMutator:snapVideoFilterFactory:previewURLVideoProvider:chatMediaFetcher:chatContentDelivery:adRenderDataParser:musicContentRestrictionServices:shareNotificationService:userBlizzardLogger:storiesUsageLogger:blizzardLogger:imageDownloader:discoverFeedEventsController:discoverFeedInteractionHistoryManager:remixOperaPluginProvider:unlockableViewTracker:snapchatterUserInfoProvider:playbackMediaResolver:playbackAssetRepositoryFactory:offPlatformLinkGenerationService:snapchatterObservableRepository:storiesGrapheneMetricsEmitter:grapheneRegistry:legacyStoriesTooltipsService:repostMentionScopeExposer:repostMentionScopeServices:messagingMessageProvider:]	
+105f8eff4	105f8f107	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f8f108	105f8f487	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _valdiContextParamsForMessage:storyId:conversationParticipants:renderForQuotedMessage:renderForQuotedMessagePreview:]	
+105f8f488	105f8f60b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _dataProviderForStoryId:message:isGroup:renderForQuotedMessage:]	
+105f8f60c	105f8f6c7	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _actionHandlerWithMessage:dataProvider:]	
+105f8f6c8	105f8f8df	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _playbackDataProviderForStoryId:message:isGroup:]	
+105f8f8e0	105f8f90f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin identifier]	
+105f8f910	105f8f917	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin pluginType]	
+105f8f918	105f8fa33	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setActiveConversationIdObservable:]	
+105f8fa34	105f8fa5f	decompiled	chunks/003/functions-000203.c		
+105f8fa60	105f8fae3	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _handleConversationChange]	
+105f8fae4	105f8fc0f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105f8fc10	105f8fd27	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin canForwardMessageFromCTA:]	
+105f8fd28	105f8ff73	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105f8ff74	105f9021f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105f90220	105f90233	decompiled	chunks/003/functions-000203.c		
+105f90234	105f9063f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin remixConfigurationForMessage:conversationParticipants:]	
+105f90640	105f9073f	decompiled	chunks/003/functions-000203.c		
+105f90740	105f90857	decompiled	chunks/003/functions-000203.c		
+105f90858	105f90a3b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _isMediaAvailableForRemix:]	
+105f90a3c	105f90c1b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _remixConfigurationForStoryId:posterUserId:mediaId:mediaType:contextHint:]	
+105f90c1c	105f90d77	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin userIdForAddFriendCta:]	
+105f90d78	105f90d87	decompiled	chunks/003/functions-000203.c		
+105f90d88	105f90eaf	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105f90eb0	105f90fd7	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105f90fd8	105f90fdf	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin quotedRenderingStyleForMessage:]	
+105f90fe0	105f9112b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin shouldDisplayContextualHeaderForMessage:]	
+105f9112c	105f9135b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin contextualHeaderForMessage:conversationParticipants:]	
+105f9135c	105f9148f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _shouldDisplayStoryMentionHeaderForMessage:shareContent:]	
+105f91490	105f91533	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _shouldDisplayGroupStoryHeaderForShareContent:]	
+105f91534	105f915fb	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _isMentionRepostForMessage:]	
+105f915fc	105f91787	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _isMentionRepostForStoryId:]	
+105f91788	105f91897	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _friendStorySharePlatformAnalyticsForDestinationInfo:]	
+105f91898	105f9193b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _thumbnailObservableWithThumbnailDownloadInfo:]	
+105f9193c	105f91b0f	decompiled	chunks/003/functions-000203.c		
+105f91b10	105f91b83	decompiled	chunks/003/functions-000203.c		
+105f91b84	105f91cbb	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin didUpdateStoryVisibilityForStoryId:isForwardable:]	
+105f91cbc	105f91d2b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin _isStoryViewable:]	
+105f91d2c	105f91d73	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin freezeForwardButtonUpdatesForStoryId:]	
+105f91d74	105f91f1b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin dismissPresentedView]	
+105f91f1c	105f91f23	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin activeConversationIdObservable]	
+105f91f24	105f91f2b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin activeConversationInformationObservable]	
+105f91f2c	105f91f5b	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setActiveConversationInformationObservable:]	
+105f91f5c	105f91f73	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin uiContainer]	
+105f91f74	105f91f7f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setUiContainer:]	
+105f91f80	105f91f97	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin presentingViewController]	
+105f91f98	105f91fa3	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setPresentingViewController:]	
+105f91fa4	105f91fbb	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin operaPresenterDelegate]	
+105f91fbc	105f91fc7	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setOperaPresenterDelegate:]	
+105f91fc8	105f91fdf	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin forwardingDelegate]	
+105f91fe0	105f91feb	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin setForwardingDelegate:]	
+105f91fec	105f9235f	decompiled	chunks/003/functions-000203.c	-[SCFriendStoryShareMessagePlugin .cxx_destruct]	
+105f92360	105f92adf	decompiled	chunks/003/functions-000203.c		
+105f92ae0	105f92c9f	decompiled	chunks/003/functions-000203.c	+[SCRemixChatMediaUtilities repostImageFromRepostMentionMetadata:contentDelivery:chatMediaFetcher:sharedStorySnapManager:repostedSnapUsername:]	
+105f92ca0	105f92def	decompiled	chunks/003/functions-000203.c	+[SCRemixChatMediaUtilities repostVideoURLFromRepostMentionMetadata:snapVideoFilterFactory:previewURLVideoProvider:contentDelivery:chatMediaFetcher:sharedStorySnapManager:repostedSnapUsername:]	
+105f92df0	105f9301f	decompiled	chunks/003/functions-000203.c		
+105f93020	105f93367	decompiled	chunks/003/functions-000203.c		
+105f93368	105f9343b	decompiled	chunks/003/functions-000203.c		
+105f9343c	105f9344f	decompiled	chunks/003/functions-000203.c		
+105f93450	105f934a3	decompiled	chunks/003/functions-000203.c		
+105f934a4	105f93647	decompiled	chunks/003/functions-000203.c		
+105f93648	105f9395f	decompiled	chunks/003/functions-000203.c		
+105f93960	105f93b47	decompiled	chunks/003/functions-000203.c		
+105f93b48	105f93b67	decompiled	chunks/003/functions-000203.c		
+105f93b68	105f93cd7	decompiled	chunks/003/functions-000203.c		
+105f93cd8	105f93ceb	decompiled	chunks/003/functions-000203.c		
+105f93cec	105f93e3f	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler initWithPremiumStoryShareDataProviding:uiContainer:unifiedPublicProfilesPresenterScopeExposer:spotlightScopeExposer:spotlightScopeServices:multiDirectionUIContainer:]	
+105f93e40	105f93f7f	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler handleHeaderTap]	
+105f93f80	105f93f93	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler handleActionButtonTapFor:]	
+105f93f94	105f9412f	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler handleStoryTap:]	
+105f94130	105f941b7	decompiled	chunks/003/functions-000203.c		
+105f941b8	105f941ff	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler unifiedPublicProfilesPresenterScopeDidComplete]	
+105f94200	105f94247	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler removeSpotlightScope:]	
+105f94248	105f9424f	decompiled	chunks/003/functions-000203.c	-[SCPremiumStoryShareActionHandler ignoreCallingHandleStoryTap]	
+105f94250	105f9427f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareActionHandler setIgnoreCallingHandleStoryTap:]	
+105f94280	105f942eb	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareActionHandler .cxx_destruct]	
+105f942ec	105f94537	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider initWithMessage:renderForQuotedMessage:renderForQuotedMessagePreview:storyFetcher:creatorSettingsMutator:creatorSettingsFetcher:creatorSettingsTracker:lazyDiscoverFeedEventsLogger:chatContentDelivery:forwardabilityListener:messagingMessageProvider:]	
+105f94538	105f949bf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider fetchDataWithUIUpdateBlock:videoContextUpdateBlock:storyThumbnailUrlUpdateBlock:]	
+105f949c0	105f94a77	decompiled	chunks/003/functions-000204.c		
+105f94a78	105f94bcf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _fetchStoryForShareModel:storyThumbnailUrlUpdateBlock:videoContextUpdateBlock:]	
+105f94bd0	105f94c2f	decompiled	chunks/003/functions-000204.c		
+105f94c30	105f957b7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _renderTileWithDiscoverFeedStory:shareModel:thumbnailUrlUpdateBlock:videoContextUpdateBlock:]	
+105f957b8	105f957d7	decompiled	chunks/003/functions-000204.c		
+105f957d8	105f9581b	decompiled	chunks/003/functions-000204.c		
+105f9581c	105f95857	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider discoverFeedStory]	
+105f95858	105f95893	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider storyShareModel]	
+105f95894	105f958cf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider publisher]	
+105f958d0	105f9590b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider storyThumbnailUrl]	
+105f9590c	105f95947	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider bitmojiAvatarIds]	
+105f95948	105f95b2b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider subscribe]	
+105f95b2c	105f95b77	decompiled	chunks/003/functions-000204.c		
+105f95b78	105f95b7b	decompiled	chunks/003/functions-000204.c		
+105f95b7c	105f95b97	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider shouldOverrideMediaSize]	
+105f95b98	105f95bab	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider overrideMediaSize]	
+105f95bac	105f95d73	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _updateUiBlockWithSubscribed:]	
+105f95d74	105f95e6f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _logSubscriptionEvent]	
+105f95e70	105f96053	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _constructPremiumStoryShareModelFromLegacyMessage:completion:]	
+105f96054	105f96087	decompiled	chunks/003/functions-000204.c		
+105f96088	105f961db	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _postProcessChatMediaForMessage:completion:]	
+105f961dc	105f963e3	decompiled	chunks/003/functions-000204.c		
+105f963e4	105f96413	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _handleBitmojiStoryWithIds:]	
+105f96414	105f96693	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _fetchChatMediaForBitmojiStory:compositeStoryId:snapId:overrideTimestamp:completion:]	
+105f96694	105f966cb	decompiled	chunks/003/functions-000204.c		
+105f966cc	105f9684f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider _postProcessChatMediaForBitmojiStoriesMessage:shareModel:completion:]	
+105f96850	105f968df	decompiled	chunks/003/functions-000204.c		
+105f968e0	105f96b2b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+105f96b2c	105f96b67	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider removeCreatorSettingsListener]	
+105f96b68	105f96b7f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider storySharePlaybackPresenterDelegate]	
+105f96b80	105f96b8b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider setStorySharePlaybackPresenterDelegate:]	
+105f96b8c	105f96ba3	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider storyShareDataListener]	
+105f96ba4	105f96baf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider setStoryShareDataListener:]	
+105f96bb0	105f96c97	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareDataProvider .cxx_destruct]	
+105f96c98	105f96e87	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessageStoryFetcher initWithNetworkRequester:bitmojiFriendAvatarProvider:bitmojiAvatarProvider:snapchattersDataFetcher:networkConnectivityMonitor:locationProvider:adConfigProvider:circumstanceEngine:adRenderDataParser:]	
+105f96e88	105f9705f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessageStoryFetcher discoverFeedStoryForCompositeStoryId:completion:]	
+105f97060	105f970cf	decompiled	chunks/003/functions-000204.c		
+105f970d0	105f9714b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessageStoryFetcher _cacheStoryForStoryId:story:]	
+105f9714c	105f971db	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessageStoryFetcher .cxx_destruct]	
+105f971dc	105f974f7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider initWithPremiumStoryShareDataProviding:composerRenderedPlugin:operaPresenterDelegate:cachedReadReceiptViewStateProvider:readReceiptCoordinator:grapheneRegistry:circumstanceEngine:discoverOperaPluginCreator:discoverDataFetcher:storiesConfigProvider:viewModelGenerator:composerStoryAutoAdvanceHandlerFactory:discoverFeedDataMutator:isGroup:message:]	
+105f974f8	105f97547	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider operaLaunchingCandidates]	
+105f97548	105f978df	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider playlistPlugins]	
+105f978e0	105f9794f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider operaSessionContextWithIntentDate:]	
+105f97950	105f97967	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider operaPresenterDelegate]	
+105f97968	105f979a7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider parentViewController]	
+105f979a8	105f97baf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider upNextConfig]	
+105f97bb0	105f97bf7	decompiled	chunks/003/functions-000204.c		
+105f97bf8	105f97e2b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider contentProductPlaybackConfig]	
+105f97e2c	105f97f37	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider _getPlaybackDataProvider]	
+105f97f38	105f980cb	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider _playableDataModel]	
+105f980cc	105f981d3	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider defaultFallbackStories]	
+105f981d4	105f98213	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider constructOperaLaunchingCandidates]	
+105f98214	105f9837f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider _constructOperaLaunchingCandidates]	
+105f98380	105f98467	decompiled	chunks/003/functions-000204.c	-[SCPremiumStorySharePlaybackDataProvider .cxx_destruct]	
+105f98468	105f98aef	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin initWithStorySharingServices:networkRequester:bitmojiFriendAvatarProvider:bitmojiAvatarProvider:snapchattersDataFetcher:networkConnectivityMonitor:locationProvider:adConfigProvider:unifiedPublicProfilesPresenterScopeExposer:creatorSettingsMutator:creatorSettingsFetcher:creatorSettingsTracker:cachedReadReceiptViewStateProvider:readReceiptCoordinator:grapheneRegistry:circumstanceEngine:discoverOperaPluginCreator:storiesConfigProvider:discoverFeedDataFetcher:viewModelGenerator:premiumStoryShareSender:lazyDiscoverFeedEventsController:chatContentDelivery:composerStoryAutoAdvanceHandlerFactory:discoverFeedDataMutator:adRenderDataParser:spotlightScopeExposer:spotlightScopeServices:messagingMessageProvider:]	
+105f98af0	105f98afb	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f98afc	105f98fdf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin _valdiContextParamsForMessage:conversationParticipants:renderForQuotedMessage:renderForQuotedMessagePreview:]	
+105f98fe0	105f9900f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin identifier]	
+105f99010	105f99017	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin pluginType]	
+105f99018	105f99133	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setActiveConversationIdObservable:]	
+105f99134	105f9915f	decompiled	chunks/003/functions-000204.c		
+105f99160	105f991e3	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin _handleConversationChange]	
+105f991e4	105f991eb	decompiled	chunks/003/functions-000204.c		
+105f991ec	105f993eb	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin dismissPresentedView]	
+105f993ec	105f994af	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105f994b0	105f99557	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin canForwardMessageFromCTA:]	
+105f99558	105f996ab	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105f996ac	105f9998b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105f9998c	105f9999f	decompiled	chunks/003/functions-000204.c		
+105f999a0	105f99a3b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin hideForwardButtonForCacheId:]	
+105f99a3c	105f99b2f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105f99b30	105f99c23	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105f99c24	105f99c2b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin quotedRenderingStyleForMessage:]	
+105f99c2c	105f99cc7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin shouldDisplayContextualHeaderForMessage:]	
+105f99cc8	105f99dbf	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin contextualHeaderForMessage:conversationParticipants:]	
+105f99dc0	105f99e87	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin _storyShareModelForMessage:]	
+105f99e88	105f99f4f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin _storyForMessage:]	
+105f99f50	105f9a017	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin _storyThumbnailUrlForMessage:]	
+105f9a018	105f9a01f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin activeConversationIdObservable]	
+105f9a020	105f9a027	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin activeConversationInformationObservable]	
+105f9a028	105f9a057	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setActiveConversationInformationObservable:]	
+105f9a058	105f9a06f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin operaPresenterDelegate]	
+105f9a070	105f9a07b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setOperaPresenterDelegate:]	
+105f9a07c	105f9a093	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin presentingViewController]	
+105f9a094	105f9a09f	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setPresentingViewController:]	
+105f9a0a0	105f9a0b7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin uiContainer]	
+105f9a0b8	105f9a0c3	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setUiContainer:]	
+105f9a0c4	105f9a0db	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin forwardingDelegate]	
+105f9a0dc	105f9a0e7	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setForwardingDelegate:]	
+105f9a0e8	105f9a0ff	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin multiDirectionUIContainer]	
+105f9a100	105f9a10b	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin setMultiDirectionUIContainer:]	
+105f9a10c	105f9a2fb	decompiled	chunks/003/functions-000204.c	-[SCPremiumStoryShareMessagePlugin .cxx_destruct]	
+105f9a2fc	105f9a5a7	decompiled	chunks/003/functions-000204.c	-[SCFriendingComposerMentionedFriendStore initWithSnapchatters:snapchattersDataMutator:snapchattersDataTracker:performerProvider:grapheneRegistry:]	
+105f9a5a8	105f9a5af	decompiled	chunks/003/functions-000204.c		
+105f9a5b0	105f9a5db	decompiled	chunks/003/functions-000204.c		
+105f9a5dc	105f9a6f3	decompiled	chunks/003/functions-000204.c	-[SCFriendingComposerMentionedFriendStore addMentionedFriendWithMentionedFriend:]	
+105f9a6f4	105f9a6f7	decompiled	chunks/003/functions-000205.c		
+105f9a6f8	105f9a75f	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore _publishInitData]	
+105f9a760	105f9a767	decompiled	chunks/003/functions-000205.c		
+105f9a768	105f9a78f	decompiled	chunks/003/functions-000205.c		
+105f9a790	105f9a79b	decompiled	chunks/003/functions-000205.c		
+105f9a79c	105f9a907	decompiled	chunks/003/functions-000205.c		
+105f9a908	105f9aa9f	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore _didAddSnapchatter:success:error:]	
+105f9aaa0	105f9ac17	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore _didRemoveSnapchatter:success:error:]	
+105f9ac18	105f9ac1b	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore didStartSnapchattersUpdateDataRequest:]	
+105f9ac1c	105f9ada7	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore didEndSnapchattersUpdateDataRequest:withSuccess:error:]	
+105f9ada8	105f9af0f	decompiled	chunks/003/functions-000205.c		
+105f9af10	105f9af47	decompiled	chunks/003/functions-000205.c		
+105f9af48	105f9b083	decompiled	chunks/003/functions-000205.c		
+105f9b084	105f9b0bb	decompiled	chunks/003/functions-000205.c		
+105f9b0bc	105f9b0c3	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore mentionedFriendsObservable]	
+105f9b0c4	105f9b0f3	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore setMentionedFriendsObservable:]	
+105f9b0f4	105f9b183	decompiled	chunks/003/functions-000205.c	-[SCFriendingComposerMentionedFriendStore .cxx_destruct]	
+105f9b184	105f9b1f7	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardLogger initWithGrapheneRegistry:]	
+105f9b1f8	105f9b2a3	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardLogger logMentionedNumber:]	
+105f9b2a4	105f9b317	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardLogger logClickAdd]	
+105f9b318	105f9b38b	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardLogger logClickAccept]	
+105f9b38c	105f9b397	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardLogger .cxx_destruct]	
+105f9b398	105f9b5f3	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin initWithCurrentUserId:snapchattersObservableRepository:snapchattersDataMutator:snapchattersDataTracker:navigationController:friendProfileScopeExposer:performerProvider:grapheneRegistry:deepLinkHandler:]	
+105f9b5f4	105f9b887	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin accessoryParamsForMessage:conversationInformation:]	
+105f9b888	105f9ba27	decompiled	chunks/003/functions-000205.c		
+105f9ba28	105f9ba4f	decompiled	chunks/003/functions-000205.c		
+105f9ba50	105f9ba7b	decompiled	chunks/003/functions-000205.c		
+105f9ba7c	105f9bbdb	decompiled	chunks/003/functions-000205.c		
+105f9bbdc	105f9bc87	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin isApplicableToMessage:]	
+105f9bc88	105f9bcb7	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin identifier]	
+105f9bcb8	105f9bcbf	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin pluginType]	
+105f9bcc0	105f9bd77	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin _eligibleSnapchattersToBeRenderedWithEligibleUserIds:]	
+105f9bd78	105f9bd97	decompiled	chunks/003/functions-000205.c		
+105f9bd98	105f9be23	decompiled	chunks/003/functions-000205.c		
+105f9be24	105f9c03b	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin _contextParamsForSnapchatters:]	
+105f9c03c	105f9c0e3	decompiled	chunks/003/functions-000205.c		
+105f9c0e4	105f9c137	decompiled	chunks/003/functions-000205.c		
+105f9c138	105f9c13b	decompiled	chunks/003/functions-000205.c		
+105f9c13c	105f9c223	decompiled	chunks/003/functions-000205.c		
+105f9c224	105f9c25b	decompiled	chunks/003/functions-000205.c		
+105f9c25c	105f9c43f	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin _presentUserProfileWithUser:source:snapchatters:]	
+105f9c440	105f9c4af	decompiled	chunks/003/functions-000205.c		
+105f9c4b0	105f9c503	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin friendProfileDidDismiss:]	
+105f9c504	105f9c5a7	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin _navigateToChatWithUserId:]	
+105f9c5a8	105f9c5ab	decompiled	chunks/003/functions-000205.c		
+105f9c5ac	105f9c637	decompiled	chunks/003/functions-000205.c	-[SCFriendingMentionNameCardMessageAccessoryPlugin .cxx_destruct]	
+105f9c638	105f9c663	decompiled	chunks/003/functions-000205.c	+[SCGrapheneMentionsNameCardMetric presented]	
+105f9c664	105f9c68f	decompiled	chunks/003/functions-000205.c	+[SCGrapheneMentionsNameCardMetric showCount]	
+105f9c690	105f9c6bb	decompiled	chunks/003/functions-000205.c	+[SCGrapheneMentionsNameCardMetric added]	
+105f9c6bc	105f9c6e7	decompiled	chunks/003/functions-000205.c	+[SCGrapheneMentionsNameCardMetric accepted]	
+105f9c6e8	105f9c787	decompiled	chunks/003/functions-000205.c	-[SCGrapheneMentionsNameCardMetric description]	
+105f9c788	105f9c8e7	decompiled	chunks/003/functions-000205.c	-[SCGrapheneRegistry mentionsNameCardGraphene]	
+105f9c8e8	105f9c8f3	decompiled	chunks/003/functions-000205.c	+[SCCChatMentionUpsellView componentPath]	
+105f9c8f4	105f9c927	decompiled	chunks/003/functions-000205.c	-[SCCChatMentionUpsellView initWithViewModel:componentContext:runtime:]	
+105f9c928	105f9c977	decompiled	chunks/003/functions-000205.c	-[SCCChatMentionUpsellView setViewModel:]	
+105f9c978	105f9c9bb	decompiled	chunks/003/functions-000205.c	-[SCCChatMentionUpsellView viewModel]	
+105f9c9bc	105f9ca9b	decompiled	chunks/003/functions-000205.c	-[SCCChatMentionUpsellContext initWithMentionedFriendStore:onPresentUserProfile:onPresentUserChat:onPresentUserSnap:]	
+105f9ca9c	105f9cabb	decompiled	chunks/003/functions-000205.c	+[SCCChatMentionUpsellContext valdiMarshallableObjectDescriptor]	
+105f9cabc	105f9caef	decompiled	chunks/003/functions-000205.c	-[SCCChatMentionUpsellViewModel init]	
+105f9caf0	105f9cb07	decompiled	chunks/003/functions-000205.c	+[SCCChatMentionUpsellViewModel valdiMarshallableObjectDescriptor]	
+105f9cb08	105f9cb13	decompiled	chunks/003/functions-000205.c	+[SCCSnapProProfileShareView componentPath]	
+105f9cb14	105f9cb47	decompiled	chunks/003/functions-000205.c	-[SCCSnapProProfileShareView initWithViewModel:componentContext:runtime:]	
+105f9cb48	105f9cb97	decompiled	chunks/003/functions-000205.c	-[SCCSnapProProfileShareView setViewModel:]	
+105f9cb98	105f9cbdb	decompiled	chunks/003/functions-000205.c	-[SCCSnapProProfileShareView viewModel]	
+105f9cbdc	105f9cc1b	decompiled	chunks/003/functions-000205.c	-[SCCSnapProProfileShareContext initWithSubscriptionManager:]	
+105f9cc1c	105f9cc3b	decompiled	chunks/003/functions-000205.c	+[SCCSnapProProfileShareContext valdiMarshallableObjectDescriptor]	
+105f9cc3c	105f9cc77	decompiled	chunks/003/functions-000205.c	-[SCCSnapProProfileShareViewModel initWithProfileId:isSentByUser:]	
+105f9cc78	105f9cc8f	decompiled	chunks/003/functions-000205.c	+[SCCSnapProProfileShareViewModel valdiMarshallableObjectDescriptor]	
+105f9cc90	105f9cc9b	decompiled	chunks/003/functions-000205.c	+[SCCLensSpotlightShareBelowMessageActionComponent componentPath]	
+105f9cc9c	105f9cccf	decompiled	chunks/003/functions-000205.c	-[SCCLensSpotlightShareBelowMessageActionComponent initWithViewModel:componentContext:runtime:]	
+105f9ccd0	105f9cd1f	decompiled	chunks/003/functions-000205.c	-[SCCLensSpotlightShareBelowMessageActionComponent setViewModel:]	
+105f9cd20	105f9cd63	decompiled	chunks/003/functions-000205.c	-[SCCLensSpotlightShareBelowMessageActionComponent viewModel]	
+105f9cd64	105f9cdfb	decompiled	chunks/003/functions-000205.c	-[SCCLensSpotlightShareBelowMessageActionContext initWithPrimaryCtaHandler:secondaryCtaHandler:]	
+105f9cdfc	105f9ce0b	decompiled	chunks/003/functions-000205.c	+[SCCLensSpotlightShareBelowMessageActionContext valdiMarshallableObjectDescriptor]	
+105f9ce0c	105f9ce3f	decompiled	chunks/003/functions-000205.c	-[SCCLensSpotlightShareBelowMessageActionViewModel init]	
+105f9ce40	105f9ce5b	decompiled	chunks/003/functions-000205.c	+[SCCLensSpotlightShareBelowMessageActionViewModel valdiMarshallableObjectDescriptor]	
+105f9ce5c	105f9ce67	decompiled	chunks/003/functions-000205.c	+[SCCLensPromptMessageView componentPath]	
+105f9ce68	105f9ce9b	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageView initWithViewModel:componentContext:runtime:]	
+105f9ce9c	105f9ceeb	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageView setViewModel:]	
+105f9ceec	105f9cf2f	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageView viewModel]	
+105f9cf30	105f9cf6b	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptBoltMessageInfo initWithLensId:url:key:]	
+105f9cf6c	105f9cf7b	decompiled	chunks/003/functions-000205.c	+[SCCLensPromptBoltMessageInfo valdiMarshallableObjectDescriptor]	
+105f9cf7c	105f9cffb	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageContext initWithOnCtaTap:messageInfoObservable:]	
+105f9cffc	105f9d00f	decompiled	chunks/003/functions-000205.c	+[SCCLensPromptMessageContext valdiMarshallableObjectDescriptor]	
+105f9d010	105f9d047	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageInfo initWithEncryptedPromptInfo:encryptedResponseInfo:]	
+105f9d048	105f9d05b	decompiled	chunks/003/functions-000205.c	+[SCCLensPromptMessageInfo valdiMarshallableObjectDescriptor]	
+105f9d05c	105f9d08f	decompiled	chunks/003/functions-000205.c	-[SCCLensPromptMessageViewModel init]	
+105f9d090	105f9d0c3	decompiled	chunks/003/functions-000205.c	+[SCCLensPromptMessageViewModel valdiMarshallableObjectDescriptor]	
+105f9d0c4	105f9d0cf	decompiled	chunks/003/functions-000205.c	+[SCCArrivalNotificationStatusMessage componentPath]	
+105f9d0d0	105f9d103	decompiled	chunks/003/functions-000205.c	-[SCCArrivalNotificationStatusMessage initWithViewModel:componentContext:runtime:]	
+105f9d104	105f9d153	decompiled	chunks/003/functions-000205.c	-[SCCArrivalNotificationStatusMessage setViewModel:]	
+105f9d154	105f9d197	decompiled	chunks/003/functions-000205.c	-[SCCArrivalNotificationStatusMessage viewModel]	
+105f9d198	105f9d1af	decompiled	chunks/003/functions-000205.c	+[SCCArrivalNotificationPreviewActionHandler valdiMarshallableObjectDescriptor]	
+105f9d1b0	105f9d1d7	decompiled	chunks/003/functions-000205.c		
+105f9d1d8	105f9d237	decompiled	chunks/003/functions-000205.c		
+105f9d238	105f9d257	decompiled	chunks/003/functions-000205.c	+[SCCArrivalNotificationsActionHandler valdiMarshallableObjectDescriptor]	
+105f9d258	105f9d287	decompiled	chunks/003/functions-000205.c		
+105f9d288	105f9d2e7	decompiled	chunks/003/functions-000205.c		
+105f9d2e8	105f9d2f3	decompiled	chunks/003/functions-000205.c	+[SCCArrivalNotificationUpsellTray componentPath]	
+105f9d2f4	105f9d327	decompiled	chunks/003/functions-000205.c	-[SCCArrivalNotificationUpsellTray initWithViewModel:componentContext:runtime:]	
+105f9d328	105f9d373	decompiled	chunks/003/functions-000206.c	-[SCCArrivalNotificationUpsellTray setViewModel:]	
+105f9d374	105f9d3b3	decompiled	chunks/003/functions-000206.c	-[SCCArrivalNotificationUpsellTray viewModel]	
+105f9d3b4	105f9d417	decompiled	chunks/003/functions-000206.c		
+105f9d418	105f9d457	decompiled	chunks/003/functions-000206.c		
+105f9d458	105f9d557	decompiled	chunks/003/functions-000206.c	-[SCCArrivalNotificationStatusMessageContext initWithCreateEmbeddedMapViewFactory:presentDirectionsMenu:startShareLocationFlow:requestAlwaysLocationPermissions:]	
+105f9d558	105f9d58f	decompiled	chunks/003/functions-000206.c	+[SCCArrivalNotificationStatusMessageContext valdiMarshallableObjectDescriptor]	
+105f9d590	105f9d5df	decompiled	chunks/003/functions-000206.c		
+105f9d5e0	105f9d603	decompiled	chunks/003/functions-000206.c		
+105f9d604	105f9d653	decompiled	chunks/003/functions-000206.c		
+105f9d654	105f9d677	decompiled	chunks/003/functions-000206.c		
+105f9d678	105f9d6c7	decompiled	chunks/003/functions-000206.c		
+105f9d6c8	105f9d6f3	decompiled	chunks/003/functions-000206.c		
+105f9d6f4	105f9d743	decompiled	chunks/003/functions-000206.c		
+105f9d744	105f9d793	decompiled	chunks/003/functions-000206.c	-[SCCArrivalNotificationStatusMessageViewModel initWithSenderId:receiverId:isSender:displayNameOrUsername:alertType:alertStatus:]	
+105f9d794	105f9d7b3	decompiled	chunks/003/functions-000206.c	+[SCCArrivalNotificationStatusMessageViewModel valdiMarshallableObjectDescriptor]	
+105f9d7b4	105f9d83f	decompiled	chunks/003/functions-000206.c		
+105f9d840	105f9d8ab	decompiled	chunks/003/functions-000206.c		
+105f9d8ac	105f9d94b	decompiled	chunks/003/functions-000206.c	-[SCCArrivalNotificationUpsellViewModel initWithUserId:displayName:onTap:]	
+105f9d94c	105f9d963	decompiled	chunks/003/functions-000206.c	+[SCCArrivalNotificationUpsellViewModel valdiMarshallableObjectDescriptor]	
+105f9d964	105f9d96f	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationGroupShareView componentPath]	
+105f9d970	105f9d98f	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationGroupShareView initWithViewModel:componentContext:runtime:]	
+105f9d990	105f9d9c3	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationGroupShareView setViewModel:]	
+105f9d9c4	105f9d9fb	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationGroupShareView viewModel]	
+105f9d9fc	105f9da07	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareView componentPath]	
+105f9da08	105f9da27	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareView initWithViewModel:componentContext:runtime:]	
+105f9da28	105f9da5b	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareView setViewModel:]	
+105f9da5c	105f9da93	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareView viewModel]	
+105f9da94	105f9da9f	decompiled	chunks/003/functions-000206.c	+[SCCLocationCardView componentPath]	
+105f9daa0	105f9dabf	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardView initWithViewModel:componentContext:runtime:]	
+105f9dac0	105f9daf3	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardView setViewModel:]	
+105f9daf4	105f9db2b	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardView viewModel]	
+105f9db2c	105f9db37	decompiled	chunks/003/functions-000206.c	+[SCCLocationShareView componentPath]	
+105f9db38	105f9db57	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareView initWithViewModel:componentContext:runtime:]	
+105f9db58	105f9db8b	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareView setViewModel:]	
+105f9db8c	105f9dbc3	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareView viewModel]	
+105f9dbc4	105f9dc1f	decompiled	chunks/003/functions-000206.c		
+105f9dc20	105f9dc27	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardButtonType__Enum init]	
+105f9dc28	105f9dc2f	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardType__Enum init]	
+105f9dc30	105f9dc37	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareButtonType__Enum init]	
+105f9dc38	105f9dca7	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareContext initWithShowShareButtonObservable:onTap:]	
+105f9dca8	105f9dcbb	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareContext valdiMarshallableObjectDescriptor]	
+105f9dcbc	105f9dd67	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareLiveLocationShareDisplayInfo initWithButtonText:onButtonTap:onMapTap:]	
+105f9dd68	105f9dd77	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareLiveLocationShareDisplayInfo valdiMarshallableObjectDescriptor]	
+105f9dd78	105f9ddaf	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareLocationShareDisplayInfo initWithIsSelf:displayName:]	
+105f9ddb0	105f9ddc3	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareLocationShareDisplayInfo valdiMarshallableObjectDescriptor]	
+105f9ddc4	105f9ddef	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareMessageContext initWithMapView:displayInfoObservable:]	
+105f9ddf0	105f9de03	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareMessageContext valdiMarshallableObjectDescriptor]	
+105f9de04	105f9de27	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareMessageModel init]	
+105f9de28	105f9de37	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareMessageModel valdiMarshallableObjectDescriptor]	
+105f9de38	105f9de63	decompiled	chunks/003/functions-000206.c	-[SCCLiveLocationShareViewModel initWithSharingUserDisplayName:fromSelf:]	
+105f9de64	105f9de73	decompiled	chunks/003/functions-000206.c	+[SCCLiveLocationShareViewModel valdiMarshallableObjectDescriptor]	
+105f9de74	105f9de93	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardContext initWithMapView:]	
+105f9de94	105f9deb3	decompiled	chunks/003/functions-000206.c	+[SCCLocationCardContext valdiMarshallableObjectDescriptor]	
+105f9deb4	105f9ded7	decompiled	chunks/003/functions-000206.c		
+105f9ded8	105f9df53	decompiled	chunks/003/functions-000206.c		
+105f9df54	105f9df93	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardDisplayInfo initWithIsSelf:friendDisplayName:showPlaceholder:buttonType:userId:]	
+105f9df94	105f9dfa7	decompiled	chunks/003/functions-000206.c	+[SCCLocationCardDisplayInfo valdiMarshallableObjectDescriptor]	
+105f9dfa8	105f9dfd3	decompiled	chunks/003/functions-000206.c	-[SCCLocationCardViewModel initWithType:]	
+105f9dfd4	105f9dfe7	decompiled	chunks/003/functions-000206.c	+[SCCLocationCardViewModel valdiMarshallableObjectDescriptor]	
+105f9dfe8	105f9e007	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareContext initWithMapView:]	
+105f9e008	105f9e027	decompiled	chunks/003/functions-000206.c	+[SCCLocationShareContext valdiMarshallableObjectDescriptor]	
+105f9e028	105f9e04b	decompiled	chunks/003/functions-000206.c	-[SCCLocationShareViewModel init]	
+105f9e04c	105f9e05b	decompiled	chunks/003/functions-000206.c	+[SCCLocationShareViewModel valdiMarshallableObjectDescriptor]	
+105f9e05c	105f9e08b	decompiled	chunks/003/functions-000206.c		
+105f9e08c	105f9e127	decompiled	chunks/003/functions-000206.c		
+105f9e128	105f9e37f	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin initWithGRPCServiceFactory:performerProvider:pageLauncher:persistenceProvider:userInfoServices:circumstanceEngine:composerStaticMapURLGenerator:chatLogger:notificationPool:messagingMessageProvider:]	
+105f9e380	105f9e5a3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f9e5a4	105f9e5d3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin identifier]	
+105f9e5d4	105f9e5db	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin pluginType]	
+105f9e5dc	105f9e6d3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _viewModelForDropContent:]	
+105f9e6d4	105f9e8db	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _contextForDrop:]	
+105f9e8dc	105f9e943	decompiled	chunks/003/functions-000206.c		
+105f9e944	105f9eaf7	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _launchMapScopeWithDrop:]	
+105f9eaf8	105f9ec07	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _saveDropToMap:]	
+105f9ec08	105f9ec43	decompiled	chunks/003/functions-000206.c		
+105f9ec44	105f9edf3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _presentNotificationWithResultType:]	
+105f9edf4	105f9eeab	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _currentOrInitialDrop:]	
+105f9eeac	105f9eee3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _maybePersistDrop:metaData:]	
+105f9eee4	105f9efeb	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _registerForDeletedDropUpdates]	
+105f9efec	105f9f033	decompiled	chunks/003/functions-000206.c		
+105f9f034	105f9f147	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _updateDisplayInfoForDeletedDrop:]	
+105f9f148	105f9f273	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _registerForPersistedDropsUpdates]	
+105f9f274	105f9f2bb	decompiled	chunks/003/functions-000206.c		
+105f9f2bc	105f9f4b7	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _updateDisplayInfoForPersistedDrops:]	
+105f9f4b8	105f9f4c3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _dropWithUpdatedDrop:isSaved:]	
+105f9f4c4	105f9fa8b	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _dropFromMessage:conversationParticipants:]	
+105f9fa8c	105f9faa3	decompiled	chunks/003/functions-000206.c		
+105f9faa4	105f9fd4b	decompiled	chunks/003/functions-000206.c		
+105f9fd4c	105f9fed3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _displayInfoFromDrop:]	
+105f9fed4	105fa0033	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _pinDisplayInfoObservableForDrop:]	
+105fa0034	105fa013f	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin _peliasGrpcService]	
+105fa0140	105fa0147	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin activeConversationIdObservable]	
+105fa0148	105fa0177	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin setActiveConversationIdObservable:]	
+105fa0178	105fa017f	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin activeConversationInformationObservable]	
+105fa0180	105fa01af	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin setActiveConversationInformationObservable:]	
+105fa01b0	105fa01c7	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin presentingViewController]	
+105fa01c8	105fa01d3	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin setPresentingViewController:]	
+105fa01d4	105fa02bf	decompiled	chunks/003/functions-000206.c	-[SCMapDropsMessagePlugin .cxx_destruct]	
+105fa02c0	105fa0307	decompiled	chunks/003/functions-000206.c		
+105fa0308	105fa0313	decompiled	chunks/003/functions-000206.c	+[SCCMapDropShareView componentPath]	
+105fa0314	105fa0347	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareView initWithViewModel:componentContext:runtime:]	
+105fa0348	105fa0397	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareView setViewModel:]	
+105fa0398	105fa03db	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareView viewModel]	
+105fa03dc	105fa0417	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareDropDisplayInfo initWithName:bitmojiAvatarId:]	
+105fa0418	105fa042b	decompiled	chunks/003/functions-000207.c	+[SCCMapDropShareDropDisplayInfo valdiMarshallableObjectDescriptor]	
+105fa042c	105fa0463	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareMapDropShareContext initWithPinDisplayInfoObservable:grpcServiceObservable:]	
+105fa0464	105fa047f	decompiled	chunks/003/functions-000207.c	+[SCCMapDropShareMapDropShareContext valdiMarshallableObjectDescriptor]	
+105fa0480	105fa04b3	decompiled	chunks/003/functions-000207.c	-[SCCMapDropShareMapDropShareViewModel initWithLatitude:longitude:]	
+105fa04b4	105fa04e7	decompiled	chunks/003/functions-000207.c	+[SCCMapDropShareMapDropShareViewModel valdiMarshallableObjectDescriptor]	
+105fa04e8	105fa04f3	decompiled	chunks/003/functions-000207.c	+[SCCMapReactionChatCardView componentPath]	
+105fa04f4	105fa0513	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionChatCardView initWithViewModel:componentContext:runtime:]	
+105fa0514	105fa0547	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionChatCardView setViewModel:]	
+105fa0548	105fa057f	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionChatCardView viewModel]	
+105fa0580	105fa058b	decompiled	chunks/003/functions-000207.c	+[SCCMapReactionEmojiPickerView componentPath]	
+105fa058c	105fa05ab	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionEmojiPickerView initWithViewModel:componentContext:runtime:]	
+105fa05ac	105fa05df	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionEmojiPickerView setViewModel:]	
+105fa05e0	105fa0617	decompiled	chunks/003/functions-000207.c	-[SCCMapReactionEmojiPickerView viewModel]	
+105fa0618	105fa0623	decompiled	chunks/003/functions-000207.c	+[SCCNearMeReactionChatCardView componentPath]	
+105fa0624	105fa0643	decompiled	chunks/003/functions-000207.c	-[SCCNearMeReactionChatCardView initWithViewModel:componentContext:runtime:]	
+105fa0644	105fa0677	decompiled	chunks/003/functions-000207.c	-[SCCNearMeReactionChatCardView setViewModel:]	
+105fa0678	105fa06af	decompiled	chunks/003/functions-000207.c	-[SCCNearMeReactionChatCardView viewModel]	
+105fa06b0	105fa070b	decompiled	chunks/003/functions-000207.c		
+105fa070c	105fa0717	decompiled	chunks/003/functions-000207.c	+[SCCMapMapShareChatCardView componentPath]	
+105fa0718	105fa074b	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardView initWithViewModel:componentContext:runtime:]	
+105fa074c	105fa079b	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardView setViewModel:]	
+105fa079c	105fa07df	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardView viewModel]	
+105fa07e0	105fa087f	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardContext initWithOnThumbnailTap:onLocationTextTap:]	
+105fa0880	105fa089f	decompiled	chunks/003/functions-000207.c	+[SCCMapMapShareChatCardContext valdiMarshallableObjectDescriptor]	
+105fa08a0	105fa08df	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardPromiseData initWithThumbnailUrl:location:sentDuration:isVideo:]	
+105fa08e0	105fa08ef	decompiled	chunks/003/functions-000207.c	+[SCCMapMapShareChatCardPromiseData valdiMarshallableObjectDescriptor]	
+105fa08f0	105fa0923	decompiled	chunks/003/functions-000207.c	-[SCCMapMapShareChatCardViewModel init]	
+105fa0924	105fa093f	decompiled	chunks/003/functions-000207.c	+[SCCMapMapShareChatCardViewModel valdiMarshallableObjectDescriptor]	
+105fa0940	105fa0b9b	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin initWithPlaceProfileDataFetcher:userLocationHelpers:placeFavoritesManager:placeDiscoveryDataFetcher:mapStoryPreviewFetcher:placeStoryPlayerVendor:pageLauncher:blizzardLogger:circumstanceEngine:messagingMessageProvider:]	
+105fa0b9c	105fa0cdb	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105fa0cdc	105fa0d0b	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin identifier]	
+105fa0d0c	105fa0d13	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin pluginType]	
+105fa0d14	105fa0d57	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin dismissPresentedView]	
+105fa0d58	105fa0d73	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin fullMapPageLaunchDidEnd:]	
+105fa0d74	105fa11c7	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _contextForMessage:wrappedMessage:]	
+105fa11c8	105fa11ff	decompiled	chunks/003/functions-000207.c		
+105fa1200	105fa14f7	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _registerMessageVisibilityObservableForMessage:isSenderMyAI:placeCardDataSubject:placeAnnotationDataSubject:]	
+105fa14f8	105fa155f	decompiled	chunks/003/functions-000207.c		
+105fa1560	105fa1663	decompiled	chunks/003/functions-000207.c		
+105fa1664	105fa1673	decompiled	chunks/003/functions-000207.c		
+105fa1674	105fa16ab	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _createPlaceCardTweaks]	
+105fa16ac	105fa16e3	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _viewModelForMessage:]	
+105fa16e4	105fa1933	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _launchMapScopeForPlaceID:chatId:isSenderMyAI:]	
+105fa1934	105fa1993	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _getFormattedDistanceToLocationWithLat:lng:]	
+105fa1994	105fa1a23	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _getNativeVenueStoryPlayer]	
+105fa1a24	105fa1aa7	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _handlePlaceShareMessageDataFetchForPlaceID:sourceSpecific:placeCardDataSubject:placeAnnotationDataSubject:completion:]	
+105fa1aa8	105fa1c27	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _fetchPlaceProfileDataForPlaceID:sourceSpecific:placeCardDataSubject:completion:]	
+105fa1c28	105fa1d4f	decompiled	chunks/003/functions-000207.c		
+105fa1d50	105fa1e87	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _fetchPlaceAnnotationsDataForPlaceID:placeAnnotationDataSubject:]	
+105fa1e88	105fa1ed3	decompiled	chunks/003/functions-000207.c		
+105fa1ed4	105fa2077	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin _fetchPlaceStoryPreviewForPlaceID:placeCardData:placeCardDataSubject:]	
+105fa2078	105fa207f	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin activeConversationIdObservable]	
+105fa2080	105fa20af	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin setActiveConversationIdObservable:]	
+105fa20b0	105fa20b7	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin activeConversationInformationObservable]	
+105fa20b8	105fa20e7	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin setActiveConversationInformationObservable:]	
+105fa20e8	105fa20ff	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin uiContainer]	
+105fa2100	105fa210b	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin setUiContainer:]	
+105fa210c	105fa2113	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin messageViewEvents]	
+105fa2114	105fa2143	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin setMessageViewEvents:]	
+105fa2144	105fa2223	decompiled	chunks/003/functions-000207.c	-[SCPlaceShareMessagePlugin .cxx_destruct]	
+105fa2224	105fa222f	decompiled	chunks/003/functions-000207.c	+[SCCChatMemoriesStoryView componentPath]	
+105fa2230	105fa2263	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStoryView initWithViewModel:componentContext:runtime:]	
+105fa2264	105fa22b3	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStoryView setViewModel:]	
+105fa22b4	105fa22f7	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStoryView viewModel]	
+105fa22f8	105fa22ff	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStorySource__Enum init]	
+105fa2300	105fa2323	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStoryContext init]	
+105fa2324	105fa2337	decompiled	chunks/003/functions-000207.c	+[SCCChatMemoriesStoryContext valdiMarshallableObjectDescriptor]	
+105fa2338	105fa235b	decompiled	chunks/003/functions-000207.c	-[SCCChatMemoriesStoryViewModel init]	
+105fa235c	105fa2393	decompiled	chunks/003/functions-000207.c	+[SCCChatMemoriesStoryViewModel valdiMarshallableObjectDescriptor]	
+105fa2394	105fa24a7	decompiled	chunks/003/functions-000207.c		
+105fa24a8	105fa25bf	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginEntryPoint begin]	
+105fa25c0	105fa25ff	decompiled	chunks/003/functions-000207.c		
+105fa2600	105fa284b	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginEntryPoint _messageAccessoryPluginManager]	
+105fa284c	105fa28b7	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginEntryPoint .cxx_destruct]	
+105fa28b8	105fa2ad3	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager initWithPlugins:prioritizedCtaPluginIdentifiers:orderedBelowMessagePluginIdentifiers:conversationParticipantProvider:conversationUpdatesPublisher:queue:]	
+105fa2ad4	105fa2b43	decompiled	chunks/003/functions-000207.c		
+105fa2b44	105fa2b7b	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager setMessageRenderingPluginManager:]	
+105fa2b7c	105fa2c0f	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager setChatScrollHandler:uiContainer:presentingViewController:]	
+105fa2c10	105fa2d73	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager ctaAccessoryForMessage:]	
+105fa2d74	105fa2def	decompiled	chunks/003/functions-000207.c		
+105fa2df0	105fa2f7b	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager belowMessageAccessoriesForMessage:]	
+105fa2f7c	105fa2ff7	decompiled	chunks/003/functions-000207.c		
+105fa2ff8	105fa30f3	decompiled	chunks/003/functions-000207.c		
+105fa30f4	105fa31bf	decompiled	chunks/003/functions-000207.c		
+105fa31c0	105fa31e7	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager updatesObservable]	
+105fa31e8	105fa3217	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager setConversationDisplayInformation:]	
+105fa3218	105fa331b	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager setActionMenuPresenter:]	
+105fa331c	105fa33f3	decompiled	chunks/003/functions-000207.c		
+105fa33f4	105fa348f	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager dismissPresentedViews]	
+105fa3490	105fa3587	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager _messageObservableForMessage:]	
+105fa3588	105fa3667	decompiled	chunks/003/functions-000207.c		
+105fa3668	105fa367f	decompiled	chunks/003/functions-000207.c		
+105fa3680	105fa36b7	decompiled	chunks/003/functions-000207.c		
+105fa36b8	105fa3877	decompiled	chunks/003/functions-000207.c	-[SCMessageAccessoryPluginManager _conversationInformationObservableForConversationId:]	
+105fa3878	105fa38c3	decompiled	chunks/003/functions-000207.c		
+105fa38c4	105fa399f	decompiled	chunks/003/functions-000207.c		
+105fa39a0	105fa3c37	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager _ctaAccessoryForMessage:messageObservable:conversationInformationObservable:prioritizedPluginIdentifiers:currentPriorityIndex:]	
+105fa3c38	105fa3d67	decompiled	chunks/003/functions-000208.c		
+105fa3d68	105fa3f37	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager _registerPlugins:]	
+105fa3f38	105fa405b	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager _setDependenciesForPlugins]	
+105fa405c	105fa4263	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager _setDependenciesForPlugins:]	
+105fa4264	105fa439f	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager _dismissPresentedViewsForPlugins:]	
+105fa43a0	105fa43ab	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager ctaPlugins]	
+105fa43ac	105fa43b3	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager setCtaPlugins:]	
+105fa43b4	105fa43bf	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager belowMessagePlugins]	
+105fa43c0	105fa43c7	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager setBelowMessagePlugins:]	
+105fa43c8	105fa449b	decompiled	chunks/003/functions-000208.c	-[SCMessageAccessoryPluginManager .cxx_destruct]	
+105fa449c	105fa44a7	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponsePreviewView componentPath]	
+105fa44a8	105fa44c7	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponsePreviewView initWithViewModel:componentContext:runtime:]	
+105fa44c8	105fa44fb	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponsePreviewView setViewModel:]	
+105fa44fc	105fa4533	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponsePreviewView viewModel]	
+105fa4534	105fa453f	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseShareView componentPath]	
+105fa4540	105fa455f	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseShareView initWithViewModel:componentContext:runtime:]	
+105fa4560	105fa4593	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseShareView setViewModel:]	
+105fa4594	105fa45cb	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseShareView viewModel]	
+105fa45cc	105fa45d7	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseView componentPath]	
+105fa45d8	105fa45f7	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseView initWithViewModel:componentContext:runtime:]	
+105fa45f8	105fa462b	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseView setViewModel:]	
+105fa462c	105fa4663	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseView viewModel]	
+105fa4664	105fa466f	decompiled	chunks/003/functions-000208.c	+[SCCChatCancelledBotResponseView componentPath]	
+105fa4670	105fa468f	decompiled	chunks/003/functions-000208.c	-[SCCChatCancelledBotResponseView initWithViewModel:componentContext:runtime:]	
+105fa4690	105fa46c3	decompiled	chunks/003/functions-000208.c	-[SCCChatCancelledBotResponseView setViewModel:]	
+105fa46c4	105fa46fb	decompiled	chunks/003/functions-000208.c	-[SCCChatCancelledBotResponseView viewModel]	
+105fa46fc	105fa4757	decompiled	chunks/003/functions-000208.c		
+105fa4758	105fa4763	decompiled	chunks/003/functions-000208.c	+[SCCChatProxyImageView componentPath]	
+105fa4764	105fa4797	decompiled	chunks/003/functions-000208.c	-[SCCChatProxyImageView initWithViewModel:componentContext:runtime:]	
+105fa4798	105fa47e7	decompiled	chunks/003/functions-000208.c	-[SCCChatProxyImageView setViewModel:]	
+105fa47e8	105fa482b	decompiled	chunks/003/functions-000208.c	-[SCCChatProxyImageView viewModel]	
+105fa482c	105fa486b	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseContext initWithContent:]	
+105fa486c	105fa487f	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseContext valdiMarshallableObjectDescriptor]	
+105fa4880	105fa48a7	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponsePreviewViewModel initWithContentBytes:messageSenderUserId:]	
+105fa48a8	105fa48b7	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponsePreviewViewModel valdiMarshallableObjectDescriptor]	
+105fa48b8	105fa48df	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseShareContext initWithBotResponseContext:]	
+105fa48e0	105fa48f3	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseShareContext valdiMarshallableObjectDescriptor]	
+105fa48f4	105fa491b	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseShareViewModel initWithOriginalSenderUserId:]	
+105fa491c	105fa492b	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseShareViewModel valdiMarshallableObjectDescriptor]	
+105fa492c	105fa4953	decompiled	chunks/003/functions-000208.c	-[SCCChatBotResponseViewModel initWithMessageSenderUserId:]	
+105fa4954	105fa4963	decompiled	chunks/003/functions-000208.c	+[SCCChatBotResponseViewModel valdiMarshallableObjectDescriptor]	
+105fa4964	105fa4997	decompiled	chunks/003/functions-000208.c	-[SCCChatCancelledBotResponseViewModel init]	
+105fa4998	105fa49e7	decompiled	chunks/003/functions-000208.c	+[SCCChatCancelledBotResponseViewModel valdiMarshallableObjectDescriptor]	
+105fa49e8	105fa4a93	decompiled	chunks/003/functions-000208.c	-[SCCImageFormat__Enum init]	
+105fa4a94	105fa4acf	decompiled	chunks/003/functions-000208.c	-[SCCApsPadDimensions initWithWidth:height:]	
+105fa4ad0	105fa4adf	decompiled	chunks/003/functions-000208.c	+[SCCApsPadDimensions valdiMarshallableObjectDescriptor]	
+105fa4ae0	105fa4b03	decompiled	chunks/003/functions-000208.c	-[SCCApsParams init]	
+105fa4b04	105fa4b17	decompiled	chunks/003/functions-000208.c	+[SCCApsParams valdiMarshallableObjectDescriptor]	
+105fa4b18	105fa4b3b	decompiled	chunks/003/functions-000208.c	-[SCCChatProxyImageContext init]	
+105fa4b3c	105fa4b4b	decompiled	chunks/003/functions-000208.c	+[SCCChatProxyImageContext valdiMarshallableObjectDescriptor]	
+105fa4b4c	105fa4b97	decompiled	chunks/003/functions-000208.c	-[SCCChatProxyImageViewModel initWithThumbnailUrl:imageViewMaxWidth:imageViewMaxHeight:placeholderWidth:placeholderHeight:apsParams:]	
+105fa4b98	105fa4bdb	decompiled	chunks/003/functions-000208.c	+[SCCChatProxyImageViewModel valdiMarshallableObjectDescriptor]	
+105fa4bdc	105fa4de3	decompiled	chunks/003/functions-000208.c		
+105fa4de4	105fa4def	decompiled	chunks/003/functions-000208.c	+[SCCChatAdShareView componentPath]	
+105fa4df0	105fa4e23	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareView initWithViewModel:componentContext:runtime:]	
+105fa4e24	105fa4e73	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareView setViewModel:]	
+105fa4e74	105fa4eb7	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareView viewModel]	
+105fa4eb8	105fa4ebf	decompiled	chunks/003/functions-000208.c	-[SCCChatAdMediaType__Enum init]	
+105fa4ec0	105fa4eff	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareMediaData initWithThumbnailMediaType:]	
+105fa4f00	105fa4f13	decompiled	chunks/003/functions-000208.c	+[SCCChatAdShareMediaData valdiMarshallableObjectDescriptor]	
+105fa4f14	105fa4f37	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareViewContext init]	
+105fa4f38	105fa4f4b	decompiled	chunks/003/functions-000208.c	+[SCCChatAdShareViewContext valdiMarshallableObjectDescriptor]	
+105fa4f4c	105fa4f6f	decompiled	chunks/003/functions-000208.c	-[SCCChatAdShareViewModel init]	
+105fa4f70	105fa4fab	decompiled	chunks/003/functions-000208.c	+[SCCChatAdShareViewModel valdiMarshallableObjectDescriptor]	
+105fa4fac	105fa4fb7	decompiled	chunks/003/functions-000208.c	+[SCCChatFriendingCard componentPath]	
+105fa4fb8	105fa4feb	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCard initWithViewModel:componentContext:runtime:]	
+105fa4fec	105fa503b	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCard setViewModel:]	
+105fa503c	105fa507f	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCard viewModel]	
+105fa5080	105fa5087	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCardSource__Enum init]	
+105fa5088	105fa511f	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCardContext initWithUserProvider:openGroupProfile:]	
+105fa5120	105fa5133	decompiled	chunks/003/functions-000208.c	+[SCCChatFriendingCardContext valdiMarshallableObjectDescriptor]	
+105fa5134	105fa516f	decompiled	chunks/003/functions-000208.c	-[SCCChatFriendingCardViewModel initWithUserIds:source:]	
+105fa5170	105fa5193	decompiled	chunks/003/functions-000208.c	+[SCCChatFriendingCardViewModel valdiMarshallableObjectDescriptor]	
+105fa5194	105fa54b3	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin initWithCurrentUserId:conversationActionHandler:chatContentDelivery:chatMediaFetcher:valdiRuntimeProvider:playerProvider:drawerMediaSender:composerChatMediaVideoProvider:chatMessageDisplayStateLogger:messagingExperimentService:messagingMessageProvider:configProvider:scwStateManager:]	
+105fa54b4	105fa5c5f	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105fa5c60	105fa5dab	decompiled	chunks/003/functions-000208.c		
+105fa5dac	105fa5e8f	decompiled	chunks/003/functions-000208.c		
+105fa5e90	105fa5eef	decompiled	chunks/003/functions-000208.c		
+105fa5ef0	105fa5f57	decompiled	chunks/003/functions-000208.c		
+105fa5f58	105fa6057	decompiled	chunks/003/functions-000208.c		
+105fa6058	105fa6097	decompiled	chunks/003/functions-000208.c		
+105fa6098	105fa61b3	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin setActiveConversationIdObservable:]	
+105fa61b4	105fa62a3	decompiled	chunks/003/functions-000208.c		
+105fa62a4	105fa62bb	decompiled	chunks/003/functions-000208.c		
+105fa62bc	105fa62f3	decompiled	chunks/003/functions-000208.c		
+105fa62f4	105fa6323	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin identifier]	
+105fa6324	105fa632b	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin pluginType]	
+105fa632c	105fa6333	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105fa6334	105fa633b	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105fa633c	105fa6353	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin quotedRenderingStyleForMessage:]	
+105fa6354	105fa6447	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin shouldDisplayContextualHeaderForMessage:]	
+105fa6448	105fa6713	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin contextualHeaderForMessage:conversationParticipants:]	
+105fa6714	105fa671b	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin dismissPresentedView]	
+105fa671c	105fa67d3	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin savableDataModelsForMessage:]	
+105fa67d4	105fa68b7	decompiled	chunks/003/functions-000208.c		
+105fa68b8	105fa6a3f	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105fa6a40	105fa6af7	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin canForwardMessageFromCTA:]	
+105fa6af8	105fa6ca7	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105fa6ca8	105fa6e77	decompiled	chunks/003/functions-000208.c	-[SCChatMediaMessagePlugin _thumbnailObservableForMessage:]	
+105fa6e78	105fa6eab	decompiled	chunks/003/functions-000209.c		
+105fa6eac	105fa718f	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105fa7190	105fa71a3	decompiled	chunks/003/functions-000209.c		
+105fa71a4	105fa75bb	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _valdiContextParamsForQuotedMessage:conversationParticipants:isPreview:]	
+105fa75bc	105fa77a7	decompiled	chunks/003/functions-000209.c		
+105fa77a8	105fa785f	decompiled	chunks/003/functions-000209.c		
+105fa7860	105fa78c7	decompiled	chunks/003/functions-000209.c		
+105fa78c8	105fa7b63	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _startPlaybackForMessage:conversationParticipants:view:index:isQuoted:]	
+105fa7b64	105fa7ba7	decompiled	chunks/003/functions-000209.c		
+105fa7ba8	105fa7c1f	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _fetchContentAvailability:completion:]	
+105fa7c20	105fa7c87	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _handlePlayChatMediaFromView:configuration:messageId:index:senderUserId:recipientUserId:]	
+105fa7c88	105fa7d1b	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _handleCompleteDisplayForMessage:conversationId:isGroup:]	
+105fa7d1c	105fa7daf	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _handlePendingDisplayForMessage:conversationId:isGroup:]	
+105fa7db0	105fa7e4b	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _getOrCreateMessageSubjectForMessageId:]	
+105fa7e4c	105fa7f2f	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _getOrCreateViewModelForMessage:]	
+105fa7f30	105fa7f93	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _handleConversationChange:]	
+105fa7f94	105fa8063	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin _visibilityObservableForMessage:]	
+105fa8064	105fa8097	decompiled	chunks/003/functions-000209.c		
+105fa8098	105fa809f	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin activeConversationIdObservable]	
+105fa80a0	105fa80a7	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin activeConversationInformationObservable]	
+105fa80a8	105fa80d7	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin setActiveConversationInformationObservable:]	
+105fa80d8	105fa80ef	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin playbackPresenter]	
+105fa80f0	105fa80fb	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin setPlaybackPresenter:]	
+105fa80fc	105fa8103	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin messageViewEvents]	
+105fa8104	105fa8133	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin setMessageViewEvents:]	
+105fa8134	105fa813b	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin visibleMessageIds]	
+105fa813c	105fa816b	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin setVisibleMessageIds:]	
+105fa816c	105fa8183	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin uiContainer]	
+105fa8184	105fa818f	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin setUiContainer:]	
+105fa8190	105fa82b3	decompiled	chunks/003/functions-000209.c	-[SCChatMediaMessagePlugin .cxx_destruct]	
+105fa82b4	105fa8343	decompiled	chunks/003/functions-000209.c		
+105fa8344	105fa8547	decompiled	chunks/003/functions-000209.c		
+105fa8548	105fa866f	decompiled	chunks/003/functions-000209.c		
+105fa8670	105fa88ab	decompiled	chunks/003/functions-000209.c		
+105fa88ac	105fa89a7	decompiled	chunks/003/functions-000209.c		
+105fa89a8	105fa89b7	decompiled	chunks/003/functions-000209.c		
+105fa89b8	105fa8b9b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin initWithCurrentUserId:urlPreviewProvider:chatAttachmentHandlerScopeExposer:storyReplyQuoteActionHandler:textSender:valdiRuntimeProvider:messagingExperimentService:messagingMessageProvider:]	
+105fa8b9c	105fa9287	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105fa9288	105fa9353	decompiled	chunks/003/functions-000209.c		
+105fa9354	105fa943f	decompiled	chunks/003/functions-000209.c		
+105fa9440	105fa9477	decompiled	chunks/003/functions-000209.c		
+105fa9478	105fa9563	decompiled	chunks/003/functions-000209.c		
+105fa9564	105fa959b	decompiled	chunks/003/functions-000209.c		
+105fa959c	105fa9687	decompiled	chunks/003/functions-000209.c		
+105fa9688	105fa96bf	decompiled	chunks/003/functions-000209.c		
+105fa96c0	105fa9783	decompiled	chunks/003/functions-000209.c		
+105fa9784	105fa97b7	decompiled	chunks/003/functions-000209.c		
+105fa97b8	105fa9833	decompiled	chunks/003/functions-000209.c		
+105fa9834	105fa99db	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin valdiContextParamsForQuotedMessage:conversationParticipants:]	
+105fa99dc	105fa9b83	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin valdiContextParamsForQuotedMessagePreview:conversationParticipants:]	
+105fa9b84	105fa9b8b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin quotedRenderingStyleForMessage:]	
+105fa9b8c	105fa9bbb	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin identifier]	
+105fa9bbc	105fa9bc3	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin pluginType]	
+105fa9bc4	105fa9cdf	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin setActiveConversationIdObservable:]	
+105fa9ce0	105fa9d0b	decompiled	chunks/003/functions-000209.c		
+105fa9d0c	105fa9e27	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin setActiveConversationInformationObservable:]	
+105fa9e28	105fa9f13	decompiled	chunks/003/functions-000209.c		
+105fa9f14	105fa9f8b	decompiled	chunks/003/functions-000209.c		
+105fa9f8c	105fa9f8f	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin dismissPresentedView]	
+105fa9f90	105faa063	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin canForwardMessageFromActionMenu:focusedMessageContent:]	
+105faa064	105faa0a7	decompiled	chunks/003/functions-000209.c		
+105faa0a8	105faa167	decompiled	chunks/003/functions-000209.c		
+105faa168	105faa16f	decompiled	chunks/003/functions-000209.c		
+105faa170	105faa263	decompiled	chunks/003/functions-000209.c		
+105faa264	105faa3ab	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin canForwardMessageFromCTA:]	
+105faa3ac	105faa3b3	decompiled	chunks/003/functions-000209.c		
+105faa3b4	105faa6e3	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin forwardMessage:focusedMessageContent:conversations:recipientCount:completion:]	
+105faa6e4	105faa84f	decompiled	chunks/003/functions-000209.c		
+105faa850	105faacd3	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin forwardParamsForMessage:focusedMessageContent:conversationParticipants:]	
+105faacd4	105faaf2b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin actionMenuButtonTextForMessage:focusedMessageContent:]	
+105faaf2c	105faaf43	decompiled	chunks/003/functions-000209.c		
+105faaf44	105faafc3	decompiled	chunks/003/functions-000209.c		
+105faafc4	105fab00b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin didDismissChatAttachment]	
+105fab00c	105fab12f	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _sendTextMessageWithText:conversations:platformAnalytics:completion:]	
+105fab130	105fab14b	decompiled	chunks/003/functions-000209.c		
+105fab14c	105fab24b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _sendURLTextMessageWithForwardedContent:conversations:platformAnalytics:completion:]	
+105fab24c	105fab267	decompiled	chunks/003/functions-000209.c		
+105fab268	105fab46f	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _sendToMediaTypeForMessage:focusedMessageContent:]	
+105fab470	105fab4ab	decompiled	chunks/003/functions-000209.c		
+105fab4ac	105fab5b3	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _openAttachment:senderUserId:otherParticipantId:]	
+105fab5b4	105fab667	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _openUrl:senderUserId:otherParticipantId:]	
+105fab668	105fab6f7	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _openAddress:senderUserId:otherParticipantId:]	
+105fab6f8	105fab787	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _openPhoneNumber:senderUserId:otherParticipantId:]	
+105fab788	105fab877	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _handleQuoteTap:conversationParticipants:]	
+105fab878	105fab8db	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _shouldRenderWithBubble:]	
+105fab8dc	105fab977	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _getOrCreateMessageSubjectForMessageId:]	
+105fab978	105fab9bb	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _handleConversationChange]	
+105fab9bc	105fab9fb	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _handleConversationInformationUpdate:]	
+105fab9fc	105faba7b	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _otherParticipantIdForConversationParticipants:]	
+105faba7c	105fac303	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _buildViewModelForTextContent:conversationParticipants:isContextualReplyFormat:]	
+105fac304	105fac783	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin _buildContextForTextContent:messageSender:otherParticipantId:enableInteraction:message:]	
+105fac784	105fac86f	decompiled	chunks/003/functions-000209.c		
+105fac870	105fac8a7	decompiled	chunks/003/functions-000209.c		
+105fac8a8	105fac993	decompiled	chunks/003/functions-000209.c		
+105fac994	105fac9cb	decompiled	chunks/003/functions-000209.c		
+105fac9cc	105facab7	decompiled	chunks/003/functions-000209.c		
+105facab8	105facb4f	decompiled	chunks/003/functions-000209.c		
+105facb50	105facb5f	decompiled	chunks/003/functions-000209.c		
+105facb60	105facbbb	decompiled	chunks/003/functions-000209.c		
+105facbbc	105facbc3	decompiled	chunks/003/functions-000209.c	-[SCChatTextMessagePlugin activeConversationIdObservable]	

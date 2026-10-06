@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1085631b4	1085631e3	decompiled	chunks/004/functions-000280.c	-[SnapVideoFilter setBackgroundCommand:]	
+1085631e4	1085635f3	decompiled	chunks/004/functions-000280.c	-[SnapVideoFilter .cxx_destruct]	
+1085635f4	1085636b3	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl initWithContentDelivery:circumstanceEngine:]	
+1085636b4	10856387b	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl persistState:forMediaId:completion:]	
+10856387c	1085638eb	decompiled	chunks/004/functions-000280.c		
+1085638ec	1085638ff	decompiled	chunks/004/functions-000280.c		
+108563900	108563aaf	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl retrieveState:completion:]	
+108563ab0	108563b2f	decompiled	chunks/004/functions-000280.c		
+108563b30	108563b47	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl _shouldOnlyReleaseAuthoritativeClaim]	
+108563b48	108563c9f	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl removeStateForMediaId:completion:]	
+108563ca0	108563cb7	decompiled	chunks/004/functions-000280.c		
+108563cb8	108563d3b	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl _dataFromModel:]	
+108563d3c	108563e93	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl _modelFromData:]	
+108563e94	108563ecf	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterCacheImpl .cxx_destruct]	
+108563ed0	108563f5f	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterMultiSnapOverlayStateHandlerImpl multiSnapOverlayStatesFromVideoFilter:]	
+108563f60	108563fff	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterMultiSnapOverlayStateHandlerImpl setMultiSnapOverlayStates:forVideoFilter:]	
+108564000	1085640cb	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterPersistenceConverterImpl initWithVideoFilterFactory:multiSnapOverlayHandler:validator:]	
+1085640cc	1085641fb	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterPersistenceConverterImpl persistModelFromVideoFilter:retryCount:crossPostToStoryInfoData:]	
+1085641fc	108564323	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterPersistenceConverterImpl videoFilterFromPersistModel:]	
+108564324	10856435f	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterPersistenceConverterImpl .cxx_destruct]	
+108564360	1085643b7	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterStateValidatorImpl initWithContentDelivery:]	
+1085643b8	108564573	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterStateValidatorImpl isEligibleForPersistence:]	
+108564574	108564787	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterStateValidatorImpl inputVideoExistsOnRetrieval:]	
+108564788	108564887	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterStateValidatorImpl _urlForContentKeyId:]	
+108564888	108564893	decompiled	chunks/004/functions-000280.c	-[SCSnapVideoFilterStateValidatorImpl .cxx_destruct]	
+108564894	10856498f	decompiled	chunks/004/functions-000280.c	-[SCUploadMediaQualityControllerImpl enableReUploadWithDestination:preUploadVideoTargetSize:featureProvidedSignals:]	
+108564990	1085649a3	decompiled	chunks/004/functions-000280.c	-[SCUploadMediaQualityControllerImpl enableSkipTranscodeWithDestination:mediaSource:isMultiSnap:]	
+1085649a4	1085649af	decompiled	chunks/004/functions-000280.c	-[SCUploadMediaQualityControllerImpl .cxx_destruct]	
+1085649b0	1085649cb	decompiled	chunks/004/functions-000280.c	-[SCUploadMediaQualitySelectorImpl qualityLevelForDestination:featureSignals:callbackPerformer:completion:]	
+1085649cc	1085649d7	decompiled	chunks/004/functions-000280.c	-[SCUploadMediaQualitySelectorImpl .cxx_destruct]	
+1085649d8	108564a03	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterMetric videoThumbnailGeneration]	
+108564a04	108564a2f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterMetric retainInputFileError]	
+108564a30	108564acf	decompiled	chunks/004/functions-000280.c	-[SCGrapheneSnapvideofilterMetric description]	
+108564ad0	108564c1b	decompiled	chunks/004/functions-000280.c	-[SCGrapheneRegistry snapvideofilterGraphene]	
+108564c1c	108564c47	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric transcodingStart]	
+108564c48	108564c73	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric transcodingEnd]	
+108564c74	108564c9f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric serialize]	
+108564ca0	108564ccb	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric persist]	
+108564ccc	108564cf7	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric persistInAdvance]	
+108564cf8	108564d23	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric retrieve]	
+108564d24	108564d4f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric delete]	
+108564d50	108564d7b	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric retryDataSource]	
+108564d7c	108564da7	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric diskRetrieveErrorReason]	
+108564da8	108564dd3	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric chainedFireBlockMissing]	
+108564dd4	108564dff	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSnapvideofilterCoordinatorMetric chainedFireInvoked]	
+108564e00	108564e9f	decompiled	chunks/004/functions-000280.c	-[SCGrapheneSnapvideofilterCoordinatorMetric description]	
+108564ea0	108565047	decompiled	chunks/004/functions-000280.c	-[SCGrapheneRegistry snapvideofilterCoordinatorGraphene]	
+108565048	108565073	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric snapState]	
+108565074	10856509f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric snapDelegates]	
+1085650a0	1085650cb	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric replyMedia]	
+1085650cc	1085650f7	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric ephemeralState]	
+1085650f8	108565123	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric videoFilterResult]	
+108565124	10856514f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneLegacySnapMetric videoFilterFailure]	
+108565150	1085651ef	decompiled	chunks/004/functions-000280.c	-[SCGrapheneLegacySnapMetric description]	
+1085651f0	108565363	decompiled	chunks/004/functions-000280.c	-[SCGrapheneRegistry legacySnapGraphene]	
+108565364	10856538f	decompiled	chunks/004/functions-000280.c	+[SCGrapheneSkipTranscodeMetric skipRate]	
+108565390	1085653bb	decompiled	chunks/004/functions-000281.c	+[SCGrapheneSkipTranscodeMetric transcodeReason]	
+1085653bc	10856545b	decompiled	chunks/004/functions-000281.c	-[SCGrapheneSkipTranscodeMetric description]	
+10856545c	1085655a7	decompiled	chunks/004/functions-000281.c	-[SCGrapheneRegistry skipTranscodeGraphene]	
+1085655a8	108565633	decompiled	chunks/004/functions-000281.c		
+108565634	108565657	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterInputParameters copyWithZone:]	
+108565658	1085656cb	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterInputParameters hash]	
+1085656cc	10856576b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterInputParameters isEqual:]	
+10856576c	108565777	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterInputParameters .cxx_destruct]	
+108565778	108565863	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel initWithCoder:]	
+108565864	10856594b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel initWithFilterState:transcodeFailureCount:multiSnapOverlayStates:crossPostToStoryInfoData:]	
+10856594c	10856596f	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel copyWithZone:]	
+108565970	1085659f7	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel encodeWithCoder:]	
+1085659f8	108565a7b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel hash]	
+108565a7c	108565b4b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel isEqual:]	
+108565b4c	108565b53	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel filterState]	
+108565b54	108565b5b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel transcodeFailureCount]	
+108565b5c	108565b63	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel multiSnapOverlayStates]	
+108565b64	108565b6b	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel crossPostToStoryInfoData]	
+108565b6c	108565ba7	decompiled	chunks/004/functions-000281.c	-[SCSnapVideoFilterPersistModel .cxx_destruct]	
+108565ba8	108565e0f	decompiled	chunks/004/functions-000281.c	-[SCTranscodingProcessorFactoryImpl initWithLogger:parameterProvider:targetTrajectoryFactory:backgroundTaskWrapper:audioProcessingSessionFactory:circumstanceEngine:spectaclesImageProcessCommandFactory:cameraConfiguration:previewAssetVideoProviderFactory:ippCommandProvider:]	
+108565e10	108565ea7	decompiled	chunks/004/functions-000281.c	-[SCTranscodingProcessorFactoryImpl createProcessorWithRequestInput:output:]	
+108565ea8	108565f37	decompiled	chunks/004/functions-000281.c	-[SCTranscodingProcessorFactoryImpl .cxx_destruct]	
+108565f38	108566013	decompiled	chunks/004/functions-000281.c	-[SCVideoCompositionBuilder initWithVideoAssetMutator:mutatorOutput:runIPPThroughCustomCompositor:circumstanceEngine:]	
+108566014	10856604f	decompiled	chunks/004/functions-000281.c	-[SCVideoCompositionBuilder buildCompositionOutput]	
+108566050	10856608b	decompiled	chunks/004/functions-000281.c	-[SCVideoCompositionBuilder .cxx_destruct]	
+10856608c	108566157	decompiled	chunks/004/functions-000281.c	+[SCVideoReversePassthroughProcessor performer]	
+108566158	108566253	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor initWithSegment:outputURL:transcodingConfiguration:transcodingLogger:]	
+108566254	10856665b	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor processWithCompletionHandler:]	
+10856665c	108566673	decompiled	chunks/004/functions-000281.c		
+108566674	1085666f3	decompiled	chunks/004/functions-000281.c		
+1085666f4	1085666f7	decompiled	chunks/004/functions-000281.c		
+1085666f8	108566777	decompiled	chunks/004/functions-000281.c		
+108566778	108566a3f	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _createTranscodingSessionForReversePreprocessWithSegment:inputAsset:videoSourceSize:videoTargetSize:videoSourceBitrate:targetBitrate:outputUrl:taskId:]	
+108566a40	108566b13	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _handleTranscodingSuccessForIntermediateAssetUrl:videoTargetSize:videoTargetBitrate:completionHandler:]	
+108566b14	108566b43	decompiled	chunks/004/functions-000281.c		
+108566b44	108566c53	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _handleReverseSuccessForIntermediateAssetUrl:reversedSegment:videoTargetSize:videoTargetBitrate:completionHandler:]	
+108566c54	108566d0f	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _handleTranscodingCancelledForIntermediateAssetUrl:completionHandler:]	
+108566d10	108566dcb	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _handleTranscodingFailureForIntermediateAssetUrl:completionHandler:]	
+108566dcc	108566e67	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _handleReverseFailureForIntermediateAssetUrl:error:completionHandler:]	
+108566e68	108567103	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _reversedCompressedFrameBuffersWithIntermediateAssetURL:CompletionHandler:]	
+108567104	108567257	decompiled	chunks/004/functions-000281.c		
+108567258	108567263	decompiled	chunks/004/functions-000281.c		
+108567264	108567347	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _accessNextCompressedSampleBuffer]	
+108567348	1085673d7	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _finishWritingWithCompletionHandler:]	
+1085673d8	108567473	decompiled	chunks/004/functions-000281.c		
+108567474	1085675af	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _setupAssetReaderAndWriterWithAssetURL:error:]	
+1085675b0	108567693	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _setupReaderVideoOutput:inputAsset:error:]	
+108567694	1085677d7	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _setupReaderAudioOutput:inputAsset:error:]	
+1085677d8	1085678fb	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _setupWriterVideoInputWithIntermediateAsset:error:]	
+1085678fc	1085679eb	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _setupWriterAudioInputWithIntermediateAsset:]	
+1085679ec	108567b27	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _readVideoSampleBuffers:]	
+108567b28	108567d27	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor _wrapOutputAndReturnInCompletionHandler:]	
+108567d28	108567dc3	decompiled	chunks/004/functions-000281.c	-[SCVideoReversePassthroughProcessor .cxx_destruct]	
+108567dc4	108567e8f	decompiled	chunks/004/functions-000281.c	+[SCVideoReverseProcessor performer]	
+108567e90	108567f7b	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor initWithVideoAsset:outputURL:targetBitrate:targetSize:targetTransform:shouldInvolveAudioTrack:]	
+108567f7c	108568437	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor processWithCompletionHandler:]	
+108568438	10856854b	decompiled	chunks/004/functions-000281.c		
+10856854c	108568677	decompiled	chunks/004/functions-000281.c		
+108568678	108568707	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor _finishWritingWithCompletionHandler:]	
+108568708	1085687bb	decompiled	chunks/004/functions-000281.c		
+1085687bc	108568a1f	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor _setupWriterVideoInput]	
+108568a20	108568b83	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor _setupWriterAudioInput]	
+108568b84	108568bfb	decompiled	chunks/004/functions-000281.c	-[SCVideoReverseProcessor .cxx_destruct]	
+108568bfc	108568d5b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator initWithMediaSource:mediaDestination:sourceSize:targetSize:overlayImage:videoTrackedImages:imageProcessData:targetTrajectoryFactory:spectaclesImageProcessCommandFactory:]	
+108568d5c	108568f73	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator overlayImage]	
+108568f74	108569a2f	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator generateGPUCommands]	
+108569a30	108569a43	decompiled	chunks/004/functions-000281.c		
+108569a44	108569a9b	decompiled	chunks/004/functions-000281.c		
+108569a9c	108569b53	decompiled	chunks/004/functions-000281.c		
+108569b54	108569c1b	decompiled	chunks/004/functions-000281.c		
+108569c1c	10856a50b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator generateCPUCommands]	
+10856a50c	10856a5c3	decompiled	chunks/004/functions-000281.c		
+10856a5c4	10856a68b	decompiled	chunks/004/functions-000281.c		
+10856a68c	10856a6cb	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _isSpectaclesMedia]	
+10856a6cc	10856a733	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _isCircular]	
+10856a734	10856a82b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _cropOverlayIfNeeded]	
+10856a82c	10856a94b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _overlayImageRectForTargetVideoSize]	
+10856a94c	10856ad27	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _hasEdits]	
+10856ad28	10856ae27	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _createdShiftedImageProcessProviderWithDisparityXOffset:forVideoTrackedImage:staticTransform:]	
+10856ae28	10856ae8b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _croppingStateForVideoTrackedImages]	
+10856ae8c	10856aeef	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _needsVideoCircleRendererOrCropping]	
+10856aef0	10856aff3	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator _needsVideoCircleRenderer]	
+10856aff4	10856affb	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator mediaSource]	
+10856affc	10856b003	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setMediaSource:]	
+10856b004	10856b00b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator mediaDestination]	
+10856b00c	10856b013	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setMediaDestination:]	
+10856b014	10856b01b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator videoSourceSize]	
+10856b01c	10856b023	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setVideoSourceSize:]	
+10856b024	10856b02b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator videoTargetSize]	
+10856b02c	10856b033	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setVideoTargetSize:]	
+10856b034	10856b03b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator imageProcessData]	
+10856b03c	10856b06b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setImageProcessData:]	
+10856b06c	10856b073	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator targetTrajectoryFactory]	
+10856b074	10856b0a3	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setTargetTrajectoryFactory:]	
+10856b0a4	10856b0d3	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setOverlayImage:]	
+10856b0d4	10856b0db	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator videoTrackedImages]	
+10856b0dc	10856b10b	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator setVideoTrackedImages:]	
+10856b10c	10856b15f	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingCommandsGenerator .cxx_destruct]	
+10856b160	10856b283	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingImageProcessorProvider initWithRequestInput:requestOutput:targetTrajectoryFactory:spectaclesImageProcessCommandFactory:circumstanceEngine:]	
+10856b284	10856b3b3	decompiled	chunks/004/functions-000281.c	-[SCVideoTranscodingImageProcessorProvider generateImageProcessorWithSourceSize:targetSize:orientation:useUpgradedIpp:overlayImageDataHandler:]	
+10856b3b4	10856b573	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider _createUpgradedIppTimedProcessorWithSourceSize:targetSize:]	
+10856b574	10856bbd3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider _createTimedImageProcessorWithVideoSourceSize:targetSize:orientation:overlayImageDataHandler:]	
+10856bbd4	10856bc87	decompiled	chunks/004/functions-000282.c		
+10856bc88	10856be0f	decompiled	chunks/004/functions-000282.c		
+10856be10	10856cdc7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider _generateRenderEffectDAGWithTimeRange:videoSourceSize:targetSize:orientation:configuration:overlayImageDataHandler:]	
+10856cdc8	10856cddf	decompiled	chunks/004/functions-000282.c		
+10856cde0	10856cf87	decompiled	chunks/004/functions-000282.c		
+10856cf88	10856d033	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider _isSpectaclesMediaWithConfiguration:]	
+10856d034	10856d0a7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider _isCircularSpectaclesMediaWithConfiguration:]	
+10856d0a8	10856d0fb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingImageProcessorProvider .cxx_destruct]	
+10856d0fc	10856d3bf	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor initWithRequestInput:requestOutput:logger:parameterProvider:targetTrajectoryFactory:backgroundTaskWrapper:audioProcessingSessionFactory:spectaclesImageProcessCommandFactory:circumstanceEngine:previewAssetVideoProviderFactory:ippCommandProvider:]	
+10856d3c0	10856d3c7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor processWithOutputHandler:progressHandler:]	
+10856d3c8	10856e5ab	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor processWithOutputHandler:progressHandler:statusHandler:]	
+10856e5ac	10856e5c3	decompiled	chunks/004/functions-000282.c		
+10856e5c4	10856e977	decompiled	chunks/004/functions-000282.c		
+10856e978	10856ea3f	decompiled	chunks/004/functions-000282.c		
+10856ea40	10856eaaf	decompiled	chunks/004/functions-000282.c		
+10856eab0	10856ecb3	decompiled	chunks/004/functions-000282.c		
+10856ecb4	10856ed33	decompiled	chunks/004/functions-000282.c		
+10856ed34	10856edb7	decompiled	chunks/004/functions-000282.c		
+10856edb8	10856edbf	decompiled	chunks/004/functions-000282.c		
+10856edc0	10856ee03	decompiled	chunks/004/functions-000282.c		
+10856ee04	10856ee2b	decompiled	chunks/004/functions-000282.c		
+10856ee2c	10856eebf	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor cancel]	
+10856eec0	10856f253	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _runWithTaskId:trackSegments:processedReason:]	
+10856f254	10856fae7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _runWithVideoAssetMutatorForTaskId:composition:processedNGSMESnap:trackSegments:videoRenderSize:runIPPThroughCustomCompositor:processedReason:]	
+10856fae8	10857020b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _useDirectAssetPathForComposition:videoRenderSize:]	
+10857020c	1085706b3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _useStaticImageProviderForProcessedNGSMESnap:videoRenderSize:runIPPThroughCustomCompositor:]	
+1085706b4	10857087f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _imageSnapFrameRateOverrideForSnap:]	
+108570880	10857097f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _buildDirectAssetMutatorOutputForComposition:]	
+108570980	108570d8b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _runWithStaticImageProviderForTaskId:processedNGSMESnap:processedReason:]	
+108570d8c	108570eb7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _extractImageFromSegment:]	
+108570eb8	108570f47	decompiled	chunks/004/functions-000282.c		
+108570f48	108570f4b	decompiled	chunks/004/functions-000282.c		
+108570f4c	108570f83	decompiled	chunks/004/functions-000282.c		
+108570f84	108571163	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _ensureAudioProcessingWrapperForConfiguration:]	
+108571164	1085713b7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _ensureImageProcessorForTaskId:processedNGSMESnap:sourceSize:runIPPThroughCustomCompositor:]	
+1085713b8	1085713d7	decompiled	chunks/004/functions-000282.c		
+1085713d8	1085714cb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _beginBackgroundTaskAndStartTranscodingTaskItem:]	
+1085714cc	108571527	decompiled	chunks/004/functions-000282.c		
+108571528	108571623	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _buildMutatorOutputForProcessedNGSMESnap:videoRenderSize:runIPPThroughCustomCompositor:errorType:outVideoAssetMutator:]	
+108571624	10857184f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _createTranscodingConfigurationWithVideoSourceSize:sourceBitrate:sourceDuration:sourceVideoCodec:]	
+108571850	108571deb	decompiled	chunks/004/functions-000282.c		
+108571dec	1085722ff	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _createTranscodingConfigurationForClipsEditing:]	
+108572300	10857232b	decompiled	chunks/004/functions-000282.c		
+10857232c	10857248b	decompiled	chunks/004/functions-000282.c		
+10857248c	1085725c7	decompiled	chunks/004/functions-000282.c		
+1085725c8	10857274b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _shouldBlendOverlay]	
+10857274c	1085728cb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _shouldEnableContentAdaptiveVideoExportWithVideoAsset:rawDataURL:]	
+1085728cc	108572997	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _generateTranscodingTaskItemsWithTaskId:videoAsset:videoCompositionOutputBuilder:assetAudioMix:outputURL:processedReason:]	
+108572998	10857329b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _startTranscodingTask:completion:]	
+10857329c	1085734fb	decompiled	chunks/004/functions-000282.c		
+1085734fc	10857354b	decompiled	chunks/004/functions-000282.c		
+10857354c	108573627	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _sessionStatusBlock]	
+108573628	10857363b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _completeTranscodingTaskWithCompletion:]	
+10857363c	108573fe7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _handleVideoProcessingDidSuccessIntermediateUrl:completion:]	
+108573fe8	10857450f	decompiled	chunks/004/functions-000282.c		
+108574510	108574677	decompiled	chunks/004/functions-000282.c		
+108574678	108574903	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _imageProcessCommandInfo]	
+108574904	10857491b	decompiled	chunks/004/functions-000282.c		
+10857491c	108574a2f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _markFrameStatisticsForTaskId:]	
+108574a30	108574b9b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _handleVideoProcessingDidFailWithTaskId:error:]	
+108574b9c	10857533f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _handleVideoProcessingDidSkipTranscoding:videoBitrate:audioBitrate:sourceVideoCodec:]	
+108575340	1085755e7	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _logCameraVideoTranscodingMultipleOutputSuccessWithTaskId:clientMessageId:reasons:imageProcessCommandsInfo:outputVideoDurationMS:outputVideoTrackDurationMS:outputAudioTrackDurationMS:outputMediaFormat:outputResolution:outputFileSize:outputVideoBitrate:outputHasAudio:outputOverlayFileSize:outputVideoFilesNumber:outputVideoFileIndex:outputFrameRate:keyframeInterval:captureSessionId:]	
+1085755e8	10857592f	decompiled	chunks/004/functions-000282.c		
+108575930	108575a9f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _handleVideoProcessingDidCancelWithTaskId:]	
+108575aa0	108575c2f	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _computeVideoSourceSizeWithVideoTrack:]	
+108575c30	108575d43	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _videoTranscodingSessionWithInputMediaProvider:outputVideoURL:videoTranscodingConfiguration:imageProcessor:audioProcessingWrapper:audioProcessingSessionFactory:transcodingTaskId:]	
+108575d44	108575e13	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _shouldTriggerIPPCommandThroughCustomCompositor:]	
+108575e14	108575eeb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _shouldUseUpgradedIpp:]	
+108575eec	10857627b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _renderEffectsFrom:videoRenderSize:useOverlayImageAsMask:]	
+10857627c	10857640f	decompiled	chunks/004/functions-000282.c		
+108576410	108576417	decompiled	chunks/004/functions-000282.c		
+108576418	10857644f	decompiled	chunks/004/functions-000282.c		
+108576450	10857694b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _generateNewDagWithNGSMESnap:overlayImage:videoRenderSize:useOverlayImageAsMask:]	
+10857694c	108576d93	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor _videoTranscodingReasons:sourceSize:sourceBitrate:sourceDuration:sourceVideoCodec:sourceAudioCodec:NGSMESnap:]	
+108576d94	108576d9b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor videoTranscodingConfiguration]	
+108576d9c	108576da3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor processorId]	
+108576da4	108576dd3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setProcessorId:]	
+108576dd4	108576ddb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor requestInput]	
+108576ddc	108576e0b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setRequestInput:]	
+108576e0c	108576e13	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor requestOutput]	
+108576e14	108576e43	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setRequestOutput:]	
+108576e44	108576e4b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor cancelable]	
+108576e4c	108576e7b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setCancelable:]	
+108576e7c	108576e83	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor videoTranscodingSession]	
+108576e84	108576eb3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setVideoTranscodingSession:]	
+108576eb4	108576ebb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor imageProcessor]	
+108576ebc	108576eeb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setImageProcessor:]	
+108576eec	108576ef3	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor overlayImageData]	
+108576ef4	108576f23	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setOverlayImageData:]	
+108576f24	108576f2b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor audioProcessingWrapper]	
+108576f2c	108576f5b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setAudioProcessingWrapper:]	
+108576f5c	108576f63	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor taskItem]	
+108576f64	108576f93	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setTaskItem:]	
+108576f94	108576f9b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor logger]	
+108576f9c	108576fcb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor setLogger:]	
+108576fcc	1085770eb	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingProcessor .cxx_destruct]	
+1085770ec	108577223	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingRequestScheduler initWithPerformer:lensProcessingTranscodingProvider:transcodingProcessorFactory:inProgressTracker:]	
+108577224	10857722b	decompiled	chunks/004/functions-000282.c	-[SCVideoTranscodingRequestScheduler submitVideoTranscodingRequestWithInput:output:outputHandler:progressHandler:]	
+10857722c	1085775b7	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler submitVideoTranscodingRequestWithInput:output:outputHandler:progressHandler:statusHandler:]	
+1085775b8	108577857	decompiled	chunks/004/functions-000283.c		
+108577858	10857789f	decompiled	chunks/004/functions-000283.c		
+1085778a0	10857796f	decompiled	chunks/004/functions-000283.c		
+108577970	108577a23	decompiled	chunks/004/functions-000283.c		
+108577a24	108577aa7	decompiled	chunks/004/functions-000283.c		
+108577aa8	108577ba3	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler cancelRequestWithInput:]	
+108577ba4	108577c8b	decompiled	chunks/004/functions-000283.c		
+108577c8c	108577f23	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler _executeWithInput:processor:outputHandler:progressHandler:statusHandler:]	
+108577f24	108578077	decompiled	chunks/004/functions-000283.c		
+108578078	1085781a7	decompiled	chunks/004/functions-000283.c		
+1085781a8	108578273	decompiled	chunks/004/functions-000283.c		
+108578274	10857835f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler _lensIdsFromInput:]	
+108578360	1085783b7	decompiled	chunks/004/functions-000283.c		
+1085783b8	1085784d7	decompiled	chunks/004/functions-000283.c		
+1085784d8	1085784df	decompiled	chunks/004/functions-000283.c		
+1085784e0	1085784e7	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler performer]	
+1085784e8	108578517	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler setPerformer:]	
+108578518	10857851f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler videoTranscodingProcessors]	
+108578520	10857854f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler setVideoTranscodingProcessors:]	
+108578550	108578557	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler pendingTranscodingRequests]	
+108578558	108578587	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler setPendingTranscodingRequests:]	
+108578588	1085785e3	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingRequestScheduler .cxx_destruct]	
+1085785e4	108578727	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem initWithTaskId:videoAsset:assetAudioMix:outputURL:assetReaderCompositionOutputBuilder:processedReason:]	
+108578728	108578827	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem initStaticImageTaskWithTaskId:inputImage:inputImageFrameRate:inputImageDuration:outputURL:processedReason:]	
+108578828	10857882f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem taskId]	
+108578830	108578837	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem videoAsset]	
+108578838	10857883f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem assetAudioMix]	
+108578840	108578847	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem outputURL]	
+108578848	10857884f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem assetReaderCompositionOutputBuilder]	
+108578850	108578857	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem processedReason]	
+108578858	10857885f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem inputImage]	
+108578860	108578867	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem inputImageFrameRate]	
+108578868	10857886f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem inputImageDuration]	
+108578870	1085788cf	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingTaskItem .cxx_destruct]	
+1085788d0	108578977	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingSegmentPreprocessSegmentReverse initWithTranscodingConfiguration:transcodingLogger:]	
+108578978	108578bbf	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingSegmentPreprocessSegmentReverse processSegments:onCompletion:]	
+108578bc0	108578bd7	decompiled	chunks/004/functions-000283.c		
+108578bd8	108578c7f	decompiled	chunks/004/functions-000283.c		
+108578c80	108578cab	decompiled	chunks/004/functions-000283.c		
+108578cac	108578e4f	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingSegmentPreprocessSegmentReverse _reverseSegmentMedia:completionHandler:]	
+108578e50	108578f23	decompiled	chunks/004/functions-000283.c		
+108578f24	108578f53	decompiled	chunks/004/functions-000283.c	-[SCVideoTranscodingSegmentPreprocessSegmentReverse .cxx_destruct]	
+108578f54	108578ff7	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper initWithRequest:mapper:]	
+108578ff8	10857900f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper commandForFilterName:filterConfig:fallbackImageProcessCommand:]	
+108579010	10857901f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper commandForLensId:]	
+108579020	10857902f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper commandForImageProcessCommand:]	
+108579030	108579037	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper request]	
+108579038	108579067	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper setRequest:]	
+108579068	10857906f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper mapper]	
+108579070	10857909f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper setMapper:]	
+1085790a0	1085790cf	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestInnerMapper .cxx_destruct]	
+1085790d0	10857927b	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequest mappedCommandsWithMapper:]	
+10857927c	108579307	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequest videoRequestWithEntries:isSpectacles:isSnapEditor:lensCommandMetadata:isExportMode:]	
+108579308	10857936f	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequest videoThumbnailRequestWithEntries:isSpectacles:]	
+108579370	1085793cb	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequest imageRequestWithEntries:]	
+1085793cc	108579427	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequest imageExportRequestWithEntries:]	
+108579428	1085794a3	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequest imageRequestWithEntries:isSpectacles:lensCommandMetadata:]	
+1085794a4	108579593	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand initWithFilterName:filterConfig:fallbackImageProcessCommand:]	
+108579594	1085795bb	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand getImageProcessCommandUsingMapper:]	
+1085795bc	1085795cb	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand filterName]	
+1085795cc	1085795d7	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand setFilterName:]	
+1085795d8	1085795e7	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand filterConfig]	
+1085795e8	1085795f3	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand setFilterConfig:]	
+1085795f4	108579603	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand fallbackImageProcessCommand]	
+108579604	108579643	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand setFallbackImageProcessCommand:]	
+108579644	108579693	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestDictionaryCommand .cxx_destruct]	
+108579694	10857972b	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand initWithLensId:needWarmUp:]	
+10857972c	108579743	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand getImageProcessCommandUsingMapper:]	
+108579744	108579753	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand lensId]	
+108579754	10857975f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand setLensId:]	
+108579760	10857976f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand needWarmUp]	
+108579770	10857977f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand setNeedWarmUp:]	
+108579780	108579793	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestLensCommand .cxx_destruct]	
+108579794	108579817	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestStaticCommand initWithImageProcessCommand:]	
+108579818	10857982f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestStaticCommand getImageProcessCommandUsingMapper:]	
+108579830	10857983f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestStaticCommand imageProcessCommand]	
+108579840	10857987f	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestStaticCommand setImageProcessCommand:]	
+108579880	108579893	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestStaticCommand .cxx_destruct]	
+108579894	10857989b	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithFilterName:]	
+10857989c	10857990b	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithFilterName:filterConfig:]	
+10857990c	10857995b	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithLensId:]	
+10857995c	1085799b7	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithLensId:needWarmUp:]	
+1085799b8	108579a03	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithImageProcessCommand:]	
+108579a04	108579a73	decompiled	chunks/004/functions-000283.c	+[SCImageProcessCommandProviderRequestEntry entryWithFilterName:fallbackImageProcessCommand:]	
+108579a74	108579a7b	decompiled	chunks/004/functions-000283.c	-[SCImageProcessCommandProviderRequestEntry getImageProcessCommandUsingMapper:]	
+108579a7c	108579d67	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer initWithPlayerModel:playerProvider:audioSession:circumstanceEngine:firstFrameImage:playbackLogger:preparePerformer:]	
+108579d68	108579ddb	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer dealloc]	
+108579ddc	108579e3b	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _currentStatus]	
+108579e3c	108579f33	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _generateAndPublishCurrentStateWithTimestamp:]	
+108579f34	10857a053	decompiled	chunks/004/functions-000283.c		
+10857a054	10857a09b	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _generateAndPublishCurrentState]	
+10857a09c	10857a0ef	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _calculatePublishTime]	
+10857a0f0	10857a14b	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _publishState:]	
+10857a14c	10857a267	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _errorDomainPrefix]	
+10857a268	10857a377	decompiled	chunks/004/functions-000283.c		
+10857a378	10857a463	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _errorForRawError:]	
+10857a464	10857a853	decompiled	chunks/004/functions-000283.c	-[SCNGSMEBasePlayer _observePlayerAndItem]	
+10857a854	10857a887	decompiled	chunks/004/functions-000283.c		
+10857a888	10857adf3	decompiled	chunks/004/functions-000283.c		
+10857adf4	10857af43	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _registerForNotifications]	
+10857af44	10857afe3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _playerItemDidPlayToEndTime:]	
+10857afe4	10857b157	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _playerFailedToPlayToEnd:]	
+10857b158	10857b15f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _onReceiveStopNotification:]	
+10857b160	10857b173	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _applicationDidBecomeActive:]	
+10857b174	10857b32f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _prepareVideoPlayback]	
+10857b330	10857b39f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _disableClosedCaptions]	
+10857b3a0	10857b3a3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _errorIfNoPlayerItem]	
+10857b3a4	10857b3a7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _createPixelBufferPoolIfNeededWithSize:]	
+10857b3a8	10857b3ab	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _setPlayedToEnd]	
+10857b3ac	10857b3f3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _publishPhaseEvent:]	
+10857b3f4	10857b5db	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _presentationFrameNumberForTimestamp:]	
+10857b5dc	10857b5e3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _fpsForStatus]	
+10857b5e4	10857b5eb	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer canChangeModelWithoutRestart:]	
+10857b5ec	10857b613	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playerModelObservable]	
+10857b614	10857b63b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playerStatusObservable]	
+10857b63c	10857b663	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playerPhaseObservable]	
+10857b664	10857b68b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer videoFrameObservable]	
+10857b68c	10857b727	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _setUpDisplayLink]	
+10857b728	10857b763	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _tearDownDisplayLink]	
+10857b764	10857b793	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPlayerView:]	
+10857b794	10857b797	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _recordPlaybackLoggerCall:]	
+10857b798	10857b79b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _setPlayerViewDispatchBlock:]	
+10857b79c	10857b7c3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setShouldLoop:]	
+10857b7c4	10857b7db	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setStartTimestamp:]	
+10857b7dc	10857b993	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setEndTimestamp:]	
+10857b994	10857b9d3	decompiled	chunks/004/functions-000284.c		
+10857b9d4	10857b9db	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPreciseSeeking:]	
+10857b9dc	10857b9ef	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setVolume:]	
+10857b9f0	10857b9f7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer volume]	
+10857b9f8	10857bb0b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer videoOutput]	
+10857bb0c	10857bb1f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setRenderSize:]	
+10857bb20	10857bb27	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer renderSize]	
+10857bb28	10857bba7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer prepareToPlay]	
+10857bba8	10857bbaf	decompiled	chunks/004/functions-000284.c		
+10857bbb0	10857bd4f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _beginPreparingToPlay]	
+10857bd50	10857be97	decompiled	chunks/004/functions-000284.c		
+10857be98	10857bfd3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _finishPreparingToPlay]	
+10857bfd4	10857bfd7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _prepareToPlayOperation]	
+10857bfd8	10857bfdf	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _usePreparePerformer]	
+10857bfe0	10857bff7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _restartAfterAudioSessionDeactivationOrCategoryChange]	
+10857bff8	10857c007	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playerPrepared]	
+10857c008	10857c01b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPlayerPrepared:]	
+10857c01c	10857c117	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _perform:]	
+10857c118	10857c11b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _displayLinkCallback:]	
+10857c11c	10857c2db	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer getSampleBufferAtTime:]	
+10857c2dc	10857c453	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer getRenderedImage]	
+10857c454	10857c54f	decompiled	chunks/004/functions-000284.c		
+10857c550	10857c563	decompiled	chunks/004/functions-000284.c		
+10857c564	10857c5d3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _captureRenderedImage]	
+10857c5d4	10857c683	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _createSampleBufferFromPixelBuffer:presentationTimeStamp:]	
+10857c684	10857c733	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer startRunning]	
+10857c734	10857c783	decompiled	chunks/004/functions-000284.c		
+10857c784	10857c82b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer pauseRunning]	
+10857c82c	10857c85f	decompiled	chunks/004/functions-000284.c		
+10857c860	10857c90f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer resumeRunning]	
+10857c910	10857c943	decompiled	chunks/004/functions-000284.c		
+10857c944	10857ca9b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer stopRunning]	
+10857ca9c	10857cadf	decompiled	chunks/004/functions-000284.c		
+10857cae0	10857cba3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPlaybackRate:]	
+10857cba4	10857cbdf	decompiled	chunks/004/functions-000284.c		
+10857cbe0	10857cc83	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer seekVideoAndAudioToBeginning]	
+10857cc84	10857cd07	decompiled	chunks/004/functions-000284.c		
+10857cd08	10857cd3f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer seekToTime:]	
+10857cd40	10857cd43	decompiled	chunks/004/functions-000284.c		
+10857cd44	10857ce2b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer seekToTime:completionHandler:]	
+10857ce2c	10857cefb	decompiled	chunks/004/functions-000284.c		
+10857cefc	10857cff3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer stopPlayingAndSeekSmoothlyToTime:]	
+10857cff4	10857d02b	decompiled	chunks/004/functions-000284.c		
+10857d02c	10857d0ef	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _smoothSeekToTime]	
+10857d0f0	10857d177	decompiled	chunks/004/functions-000284.c		
+10857d178	10857d197	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer isPlaying]	
+10857d198	10857d19f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer shouldBeRunning]	
+10857d1a0	10857d1b7	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer currentTime]	
+10857d1b8	10857d1bb	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer clearLastFrameImage]	
+10857d1bc	10857d1bf	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _setPlaceholderImageOnPlayerView]	
+10857d1c0	10857d233	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _onReceiveAudioSessionDidActivate:]	
+10857d234	10857d24b	decompiled	chunks/004/functions-000284.c		
+10857d24c	10857d31b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _onReceiveAudioSessionWillDeactivate:]	
+10857d31c	10857d35b	decompiled	chunks/004/functions-000284.c		
+10857d35c	10857d35f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionDidBeginInterruption:]	
+10857d360	10857d41b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSession:didEndInterruption:]	
+10857d41c	10857d45b	decompiled	chunks/004/functions-000284.c		
+10857d45c	10857d543	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionRouteDidChangeReasonCategoryChange:]	
+10857d544	10857d583	decompiled	chunks/004/functions-000284.c		
+10857d584	10857d63f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionRouteDidChangeReasonNewDeviceAvailable:]	
+10857d640	10857d67f	decompiled	chunks/004/functions-000284.c		
+10857d680	10857d767	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionRouteDidChangeReasonOldDeviceUnavailable:]	
+10857d768	10857d823	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionSilenceSecondaryAudioHintTypeDidChangeToEnd:]	
+10857d824	10857d863	decompiled	chunks/004/functions-000284.c		
+10857d864	10857d91f	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer audioSessionMediaServicesWereReset:]	
+10857d920	10857d967	decompiled	chunks/004/functions-000284.c		
+10857d968	10857daeb	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _resetPlayerAfterMediaServicesLoss]	
+10857daec	10857dcf3	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _isCompositionSupported:]	
+10857dcf4	10857dcfb	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer _supportedVideoTrackCount:andImageOverlayCount:]	
+10857dcfc	10857dd03	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playerModel]	
+10857dd04	10857dd33	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPlayerModel:]	
+10857dd34	10857dd3b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer playbackLogger]	
+10857dd3c	10857dd6b	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer setPlaybackLogger:]	
+10857dd6c	10857dd73	decompiled	chunks/004/functions-000284.c	-[SCNGSMEBasePlayer shouldLoop]	
+10857dd74	10857dd8b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer startTimestamp]	
+10857dd8c	10857dd9f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer endTimestamp]	
+10857dda0	10857dda7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer preciseSeeking]	
+10857dda8	10857ddaf	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer playerView]	
+10857ddb0	10857ddb7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer legacyPreviewPlayer]	
+10857ddb8	10857dde7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer setLegacyPreviewPlayer:]	
+10857dde8	10857ddef	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer publishVideoFramesEnabled]	
+10857ddf0	10857ddf7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer setPublishVideoFramesEnabled:]	
+10857ddf8	10857df3b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEBasePlayer .cxx_destruct]	
+10857df3c	10857e413	decompiled	chunks/004/functions-000285.c	+[SCNGSMEImmutableImagePlayer playerModelIsValid:]	
+10857e414	10857e523	decompiled	chunks/004/functions-000285.c	+[SCNGSMEImmutableImagePlayer durationForPlayerModel:]	
+10857e524	10857e6b3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer initWithPlayerModel:playerProvider:audioSession:playbackLogger:circumstanceEngine:firstFrameImage:preparePerformer:]	
+10857e6b4	10857e6bb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer canChangeModelWithoutRestart:]	
+10857e6bc	10857e6bf	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer setPlayerModel:]	
+10857e6c0	10857e6f7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer setPlayerView:]	
+10857e6f8	10857e717	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer isPlaying]	
+10857e718	10857e737	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer currentTime]	
+10857e738	10857e75f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _currentStatus]	
+10857e760	10857e7a7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer startRunning]	
+10857e7a8	10857e7c7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer resumeRunning]	
+10857e7c8	10857e7ff	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer pauseRunning]	
+10857e800	10857e84f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer stopPlayingAndSeekSmoothlyToTime:]	
+10857e850	10857e853	decompiled	chunks/004/functions-000285.c		
+10857e854	10857e957	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer seekToTime:completionHandler:]	
+10857e958	10857e997	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer seekVideoAndAudioToBeginning]	
+10857e998	10857eb6f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _prepareToPlayOperation]	
+10857eb70	10857ec03	decompiled	chunks/004/functions-000285.c		
+10857ec04	10857ecab	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _simulateAVPlayerReadied]	
+10857ecac	10857ed8f	decompiled	chunks/004/functions-000285.c		
+10857ed90	10857ede3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer getRenderedImage]	
+10857ede4	10857f09f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer itemTimeForHostTime:]	
+10857f0a0	10857f0af	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _presentationFrameNumberForTimestamp:]	
+10857f0b0	10857f0c7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _fpsForStatus]	
+10857f0c8	10857f107	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer _displayLinkCallback:]	
+10857f108	10857f227	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer image]	
+10857f228	10857f253	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableImagePlayer .cxx_destruct]	
+10857f254	10857f363	decompiled	chunks/004/functions-000285.c		
+10857f364	10857f36b	decompiled	chunks/004/functions-000285.c		
+10857f36c	10857f3a3	decompiled	chunks/004/functions-000285.c		
+10857f3a4	10857f41f	decompiled	chunks/004/functions-000285.c		
+10857f420	10857f427	decompiled	chunks/004/functions-000285.c		
+10857f428	10857f97b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer initWithPlayerModel:playerProvider:audioSession:playbackLogger:circumstanceEngine:firstFrameImage:keepLastFrameWhenStop:preparePerformer:]	
+10857f97c	10857f9af	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _calculatePublishTime]	
+10857f9b0	10857f9c3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _setPlayedToEnd]	
+10857f9c4	10857fa63	decompiled	chunks/004/functions-000285.c		
+10857fa64	10857fb53	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _errorIfNoPlayerItem]	
+10857fb54	1085804f3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _prepareVideoPlayback]	
+1085804f4	1085806d7	decompiled	chunks/004/functions-000285.c		
+1085806d8	10858082b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _captureRenderedImage]	
+10858082c	1085808d7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _renderedImageFromCurrentFrame]	
+1085808d8	1085809fb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer canChangeModelWithoutRestart:]	
+1085809fc	108580a6f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setPlayerModel:]	
+108580a70	108580ad7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setPublishVideoFramesEnabled:]	
+108580ad8	108580ba7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setPlayerView:]	
+108580ba8	108580be3	decompiled	chunks/004/functions-000285.c		
+108580be4	108580d97	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _setPlayerViewDispatchBlock:]	
+108580d98	108580e07	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setShouldLoop:]	
+108580e08	108580e57	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setRenderSize:]	
+108580e58	108580efb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _displayLinkCallback:]	
+108580efc	108580fb7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _setPlaceholderImageOnPlayerView]	
+108580fb8	108580feb	decompiled	chunks/004/functions-000285.c		
+108580fec	108581053	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _setPlaceholderImageOnPlayerViewDispatchBlock]	
+108581054	10858110f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer clearLastFrameImage]	
+108581110	108581143	decompiled	chunks/004/functions-000285.c		
+108581144	1085811bb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _clearPlaceholderImageOnPlayerViewDispatchBlock]	
+1085811bc	1085811ef	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer setPlaybackRate:]	
+1085811f0	108581313	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer seekVideoAndAudioToBeginning]	
+108581314	10858135b	decompiled	chunks/004/functions-000285.c		
+10858135c	108581367	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _supportedVideoTrackCount:andImageOverlayCount:]	
+108581368	1085815fb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer _avPlayerItemFromNGSMESnap:renderSize:singleVideoTrackTransformInOut:circumstanceEngine:]	
+1085815fc	10858160f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEImmutableModelPlayer .cxx_destruct]	
+108581610	108581873	decompiled	chunks/004/functions-000285.c	+[SCNGSMEInteractiveImagePlayer playerModelIsValid:]	
+108581874	1085818bf	decompiled	chunks/004/functions-000285.c	+[SCNGSMEInteractiveImagePlayer playerModelRequiresAudioPlayer:]	
+1085818c0	10858190b	decompiled	chunks/004/functions-000285.c	+[SCNGSMEInteractiveImagePlayer playerModelRequiresRendering:]	
+10858190c	108581a1b	decompiled	chunks/004/functions-000285.c	+[SCNGSMEInteractiveImagePlayer durationForPlayerModel:]	
+108581a1c	108581c1f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer initWithPlayerModel:playerProvider:audioSession:playbackLogger:circumstanceEngine:firstFrameImage:preparePerformer:]	
+108581c20	108581dbb	decompiled	chunks/004/functions-000285.c		
+108581dbc	108581e2b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer dealloc]	
+108581e2c	108581e87	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer setCommandProvider:]	
+108581e88	108581faf	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer canChangeModelWithoutRestart:]	
+108581fb0	10858239b	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer setPlayerModel:]	
+10858239c	1085823a7	decompiled	chunks/004/functions-000285.c		
+1085823a8	1085824f3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer _castToGPURenderView:]	
+1085824f4	1085825c3	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer _maskRenderViewUntilFirstRenderedFrame:]	
+1085825c4	1085825cf	decompiled	chunks/004/functions-000285.c		
+1085825d0	1085826af	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer _clearRenderViewMaskAfterFirstRenderedFrame]	
+1085826b0	1085826b7	decompiled	chunks/004/functions-000285.c		
+1085826b8	10858275f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer setPlayerView:]	
+108582760	1085827d7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer isPlaying]	
+1085827d8	10858284f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer currentTime]	
+108582850	1085828cf	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer _currentStatus]	
+1085828d0	108582937	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer startRunning]	
+108582938	1085829af	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer resumeRunning]	
+1085829b0	108582a3f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer pauseRunning]	
+108582a40	108582aeb	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer stopPlayingAndSeekSmoothlyToTime:]	
+108582aec	108582aef	decompiled	chunks/004/functions-000285.c		
+108582af0	108582c4f	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer seekToTime:completionHandler:]	
+108582c50	108582ce7	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer seekVideoAndAudioToBeginning]	
+108582ce8	108582ebf	decompiled	chunks/004/functions-000285.c	-[SCNGSMEInteractiveImagePlayer _prepareImageViewer]	
+108582ec0	108582f0f	decompiled	chunks/004/functions-000285.c		
+108582f10	10858301f	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _simulateAVPlayerReadied]	
+108583020	108583103	decompiled	chunks/004/functions-000286.c		
+108583104	1085831ef	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _prepareToPlayOperation]	
+1085831f0	10858324b	decompiled	chunks/004/functions-000286.c		
+10858324c	108583323	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _prepareVideoPlayback]	
+108583324	10858337f	decompiled	chunks/004/functions-000286.c		
+108583380	108583673	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _prepareImagePlayer]	
+108583674	1085838c3	decompiled	chunks/004/functions-000286.c		
+1085838c4	10858390f	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _updateVideoProcessorWithRenderEffects:]	
+108583910	108583abf	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _updateSegmentTransform]	
+108583ac0	108583de7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer getRenderedImage]	
+108583de8	108583eb7	decompiled	chunks/004/functions-000286.c		
+108583eb8	108583f2b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer getSampleBufferAtTime:]	
+108583f2c	1085840b7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer getPixelBufferAtTime:]	
+1085840b8	1085843b7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer itemTimeForHostTime:]	
+1085843b8	108584433	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _presentationFrameNumberForTimestamp:]	
+108584434	1085844a3	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _fpsForStatus]	
+1085844a4	1085844e3	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _imageViewerDisplayLinkCallback:]	
+1085844e4	108584837	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _renderingDisplayLinkCallback:]	
+108584838	1085848bf	decompiled	chunks/004/functions-000286.c		
+1085848c0	10858492b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _displayLinkCallback:]	
+10858492c	108584a4b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer image]	
+108584a4c	108584a63	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _createPixelBufferPoolIfNeededWithSize:]	
+108584a64	108584c9b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer _createPixelBufferPoolWithSize:]	
+108584c9c	108584caf	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer markCurrentFrameAsDirty]	
+108584cb0	108584cbf	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer setShouldRenderContinuously:isExportMode:]	
+108584cc0	108584cdf	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer commandProvider]	
+108584ce0	108584d3b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractiveImagePlayer .cxx_destruct]	
+108584d3c	108584e17	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer initWithPlayerModel:playerProvider:audioSession:circumstanceEngine:firstFrameImage:playbackLogger:preparePerformer:]	
+108584e18	10858504b	decompiled	chunks/004/functions-000286.c		
+10858504c	10858509f	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer dealloc]	
+1085850a0	1085850fb	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _publishState:]	
+1085850fc	108585183	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _errorIfNoPlayerItem]	
+108585184	1085853a7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _prepareVideoPlayback]	
+1085853a8	1085854ef	decompiled	chunks/004/functions-000286.c		
+1085854f0	10858551f	decompiled	chunks/004/functions-000286.c		
+108585520	1085855c7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer canChangeModelWithoutRestart:]	
+1085855c8	1085857e3	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer setPlayerModel:]	
+1085857e4	1085859b3	decompiled	chunks/004/functions-000286.c		
+1085859b4	108585a5b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer setPlayerView:]	
+108585a5c	108585a67	decompiled	chunks/004/functions-000286.c		
+108585a68	108585b5b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _setPlayerViewDispatchBlock:]	
+108585b5c	108585bdb	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _displayLinkCallback:]	
+108585bdc	108585eaf	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer renderSampleBuffer:]	
+108585eb0	108585eb3	decompiled	chunks/004/functions-000286.c		
+108585eb4	1085863eb	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _captureRenderedImage]	
+1085863ec	1085864fb	decompiled	chunks/004/functions-000286.c		
+1085864fc	10858650b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _supportedVideoTrackCount:andImageOverlayCount:]	
+10858650c	108586853	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer _avPlayerItemFromNGSMESnap:renderSize:circumstanceEngine:]	
+108586854	1085868b3	decompiled	chunks/004/functions-000286.c	-[SCNGSMEInteractivePlayer .cxx_destruct]	
+1085868b4	10858694b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView initWithFrame:]	
+10858694c	1085869eb	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView dealloc]	
+1085869ec	108586a63	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView layoutSubviews]	
+108586a64	108586aef	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView outputRenderer]	
+108586af0	108586af7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView playerModelCanChange]	
+108586af8	108586aff	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView setPlayerPixelBufferToPlaceholder]	
+108586b00	108586b03	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView setPlaceholderPixelBufferTransform:]	
+108586b04	108586bf7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView setImageOnOverlayLayer:]	
+108586bf8	108586c3b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView clearImageOverlayLayer]	
+108586c3c	108586c93	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView _setGLLayerHidden:]	
+108586c94	108586e0b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView _updateImageOrientation:]	
+108586e0c	108586e1b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView videoGravity]	
+108586e1c	108586e27	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView setVideoGravity:]	
+108586e28	108586e37	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView glLayer]	
+108586e38	108586e97	decompiled	chunks/004/functions-000286.c	-[SCNGSMEPlayerGPURenderView .cxx_destruct]	
+108586e98	108587287	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator generateMutatedVideoAndImagePlayerItemWithErrorType:shouldRenderInternally:circumstanceEngine:]	
+108587288	1085872b7	decompiled	chunks/004/functions-000286.c		
+1085872b8	1085875a3	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator generateAssetReaderVideoCompositionOutputWithMutatorOutput:errorType:shouldRunIPPThroughCustomCompositor:circumstanceEngine:]	
+1085875a4	1085875d3	decompiled	chunks/004/functions-000286.c		
+1085875d4	1085876ab	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _shouldClearUnusedCompositionForInternalRender:compositor:videoTrackContainsHDR:circumstanceEngine:]	
+1085876ac	1085877a7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _shouldSetupCustomCompositor:shouldRunIPPThroughCustomCompositor:]	
+1085877a8	1085877f7	decompiled	chunks/004/functions-000286.c		
+1085877f8	1085878ff	decompiled	chunks/004/functions-000286.c		
+108587900	10858792f	decompiled	chunks/004/functions-000286.c		
+108587930	108587947	decompiled	chunks/004/functions-000286.c		
+108587948	108587a4f	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _hasRenderEffects:]	
+108587a50	108587c53	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _hasOnlyIdentityCommand:]	
+108587c54	1085880af	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _videoProcessorWithErrorType:renderInputImagesAsBGRA:sessionTextureCacheEnabled:]	
+1085880b0	108588223	decompiled	chunks/004/functions-000286.c		
+108588224	108588227	decompiled	chunks/004/functions-000286.c		
+108588228	108588383	decompiled	chunks/004/functions-000286.c		
+108588384	10858898b	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _buildCustomCompositor:videoTrackIDs:circumstanceEngine:withErrorType:setRenderEffects:playbackMode:]	
+10858898c	108588aff	decompiled	chunks/004/functions-000286.c		
+108588b00	108588b03	decompiled	chunks/004/functions-000286.c		
+108588b04	108588c5f	decompiled	chunks/004/functions-000286.c		
+108588c60	108588ee7	decompiled	chunks/004/functions-000286.c	-[SCNGSMEVideoAssetMutator _updateZeroDurationRenderEffectDags:]	
+108588ee8	108588f5b	decompiled	chunks/004/functions-000286.c	-[SCGrapheneNgsmePlayerMetric2 init]	
+108588f5c	108588fd3	decompiled	chunks/004/functions-000286.c		
+108588fd4	10858904b	decompiled	chunks/004/functions-000286.c		
+10858904c	1085891b7	decompiled	chunks/004/functions-000286.c		
+1085891b8	1085894ab	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger initWithPerformer:userBlizzardLogger:performanceAutomationLogger:notificationServices:grapheneRegistry:applicationLifecycleEvents:logVideoTranscodeErrorTypeEnabled:logFrameStatisticsEnabled:]	
+1085894ac	10858951b	decompiled	chunks/004/functions-000286.c		
+10858951c	1085897f3	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger startCameraVideoTranscodingLoggingWithTaskId:captureSessionId:snapSessionId:clientMessageId:inputVideoDurationMS:inputMediaFormat:inputResolution:inputFileSize:inputVideoBitrate:mediaSource:mediaDestination:mediaQualityLevel:numSegments:segmentIndex:segmentTimeRange:lensIds:spotlightModes:playbackRateMultiplier:inputHasAudio:inputAudioBitrate:snapIsMuted:keyframeInterval:inputFrameRate:inputAudioChannels:inputIsHDR:snapSource:mediaOrchestrationId:]	
+1085897f4	1085899e7	decompiled	chunks/004/functions-000286.c		
+1085899e8	108589d03	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger startCameraVideoTranscodingMultipleInputLoggingWithTaskId:captureSessionId:snapSessionId:clientMessageId:inputVideoFilesNumber:inputVideoTotalDurationMS:inputTotalFileSize:inputMediaFormat:inputResolution:inputVideoBitrate:mediaSource:mediaDestination:mediaQualityLevel:numSegments:segmentIndex:segmentTimeRange:lensIds:spotlightModes:playbackRateMultiplier:hasAudioMixing:inputHasAudio:inputAudioBitrate:inputAudioChannels:snapIsMuted:keyframeInterval:inputFrameRate:isORT:inputIsHDR:snapSource:mediaOrchestrationId:]	
+108589d04	108589f27	decompiled	chunks/004/functions-000286.c		
+108589f28	108589f7b	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger stopCameraVideoTranscodingLoggingStatusSuccessWithTaskId:clientMessageId:reasons:imageProcessCommandsInfo:outputVideoDurationMS:outputVideoTrackDurationMS:outputAudioTrackDurationMS:outputMediaFormat:outputResolution:outputFileSize:outputVideoBitrate:outputHasAudio:outputOverlayFileSize:outputFrameRate:imageProcessingError:retryCount:captureSessionId:]	
+108589f7c	10858a18f	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger stopCameraVideoTranscodingMultipleOutputLoggingStatusSuccessWithTaskId:clientMessageId:reasons:imageProcessCommandsInfo:outputVideoDurationMS:outputVideoTrackDurationMS:outputAudioTrackDurationMS:outputMediaFormat:outputResolution:outputFileSize:outputVideoBitrate:outputHasAudio:outputOverlayFileSize:outputFrameRate:keyframeInterval:outputVideoFilesNumber:outputVideoFileIndex:imageProcessingError:retryCount:captureSessionId:]	
+10858a190	10858a37b	decompiled	chunks/004/functions-000286.c		
+10858a37c	10858a3af	decompiled	chunks/004/functions-000286.c	-[SCMediaTranscodingLogger stopCameraVideoTranscodingLoggingStatusFailedWithTaskId:imageProcessCommandsInfo:error:imageProcessingError:retryCount:]	
+10858a3b0	10858a8e7	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger stopCameraVideoTranscodingMultipleOutputLoggingStatusFailedWithTaskId:imageProcessCommandsInfo:outputVideoFilesNumber:outputVideoFileIndex:error:imageProcessingError:retryCount:]	
+10858a8e8	10858a9cb	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger stopCameraVideoTranscodingMultipleOutputLoggingStatusCancelledWithTaskId:imageProcessCommandsInfo:outputVideoFilesNumber:outputVideoFileIndex:error:retryCount:]	
+10858a9cc	10858aae3	decompiled	chunks/004/functions-000287.c		
+10858aae4	10858ac9f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger startCameraImageTranscodingLoggingWithTaskId:captureSessionId:snapSessionId:inputMediaFormat:lensIds:imageProcessCommandsInfo:inputResolution:mediaSource:mediaDestination:mediaOrchestrationId:]	
+10858aca0	10858ad6b	decompiled	chunks/004/functions-000287.c		
+10858ad6c	10858ae73	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger stopCameraImageTranscodingLoggingStatusSuccessWithTaskId:outputMediaFormat:outputResolution:outputFileSize:outputOverlayFileSize:imageProcessingError:]	
+10858ae74	10858af8b	decompiled	chunks/004/functions-000287.c		
+10858af8c	10858b10f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger stopCameraImageTranscodingLoggingStatusFailedWithTaskId:imageProcessingError:]	
+10858b110	10858b293	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger stopCameraTranscodingLoggingStatusCancelledWithTaskId:imageProcessCommandsInfo:error:]	
+10858b294	10858b377	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger markEventTimeForTaskId:event:timeSec:]	
+10858b378	10858b3bf	decompiled	chunks/004/functions-000287.c		
+10858b3c0	10858b4a3	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger markFrameStatisticsForTaskId:muxerVideoProcessedFrameCount:muxerAudioProcessedFrameCount:]	
+10858b4a4	10858b52f	decompiled	chunks/004/functions-000287.c		
+10858b530	10858b667	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger markRetryContextForTaskId:retryContext:]	
+10858b668	10858b8a7	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger logSkipTranscodingWithTaskId:captureSessionId:snapSessionId:clientMessageId:inputVideoTotalDurationMS:inputTotalFileSize:inputMediaFormat:inputResolution:inputVideoBitrate:mediaSource:mediaDestination:mediaQualityLevel:spotlightModes:playbackRateMultiplier:inputHasAudio:inputAudioBitrate:snapSource:mediaOrchestrationId:]	
+10858b8a8	10858bab3	decompiled	chunks/004/functions-000287.c		
+10858bab4	10858bc97	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _markLifecycleEvent:inBackground:]	
+10858bc98	10858bd3f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _addTask:]	
+10858bd40	10858bd4f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _removeTaskWithTaskId:]	
+10858bd50	10858bd7b	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _getTaskWithTaskId:]	
+10858bd7c	10858c66b	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logBlizzardEvent:]	
+10858c66c	10858c6b7	decompiled	chunks/004/functions-000287.c		
+10858c6b8	10858c6ff	decompiled	chunks/004/functions-000287.c		
+10858c700	10858c83f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _setFrameStatisticsOnEvent:fromTask:]	
+10858c840	10858c91f	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logTranscodingGrapheneEventWithTask:]	
+10858c920	10858cbcf	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logGrapheneMetricsForVideo:]	
+10858cbd0	10858cd47	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logGrapheneMetricsForImage:]	
+10858cd48	10858cdf7	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logGrapheneTranscodingStartIsImage:source:destination:type:]	
+10858cdf8	10858cfbb	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _logBlizzardVideoTranscodingStart:]	
+10858cfbc	10858cfe3	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _stringFromMediaSource:]	
+10858cfe4	10858d007	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _stringFromMediaDestination:]	
+10858d008	10858d02b	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _stringFromStatus:]	
+10858d02c	10858d0db	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger _traceTranscodingForName:startTimeSecs:endTimeSecs:]	
+10858d0dc	10858d147	decompiled	chunks/004/functions-000287.c	-[SCMediaTranscodingLogger .cxx_destruct]	
+10858d148	10858d1d7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase initWithTaskId:]	
+10858d1d8	10858d1e3	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase metricType]	
+10858d1e4	10858d203	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase markKeyEventTime:timeSec:]	
+10858d204	10858d2a7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase keyEventTimes]	
+10858d2a8	10858d2af	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase taskId]	
+10858d2b0	10858d2b7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase captureSessionId]	
+10858d2b8	10858d2bf	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setCaptureSessionId:]	
+10858d2c0	10858d2c7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase snapSessionId]	
+10858d2c8	10858d2cf	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setSnapSessionId:]	
+10858d2d0	10858d2d7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase clientMessageId]	
+10858d2d8	10858d2df	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setClientMessageId:]	
+10858d2e0	10858d2e7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase mediaOrchestrationId]	
+10858d2e8	10858d2ef	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setMediaOrchestrationId:]	
+10858d2f0	10858d2f7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase inputMediaMetadata]	
+10858d2f8	10858d2ff	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase outputMediaMetadata]	
+10858d300	10858d307	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase mediaSource]	
+10858d308	10858d30f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setMediaSource:]	
+10858d310	10858d317	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase mediaDestination]	
+10858d318	10858d31f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setMediaDestination:]	
+10858d320	10858d327	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase mediaQualityLevel]	
+10858d328	10858d32f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setMediaQualityLevel:]	
+10858d330	10858d337	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase startTimeSecs]	
+10858d338	10858d33f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setStartTimeSecs:]	
+10858d340	10858d347	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase stopTimeSecs]	
+10858d348	10858d34f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setStopTimeSecs:]	
+10858d350	10858d357	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase transcodingStatus]	
+10858d358	10858d35f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setTranscodingStatus:]	
+10858d360	10858d367	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase errorMessage]	
+10858d368	10858d36f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setErrorMessage:]	
+10858d370	10858d377	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase imageProcessingErrorMessage]	
+10858d378	10858d37f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setImageProcessingErrorMessage:]	
+10858d380	10858d387	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase freeDiskSpaceInMb]	
+10858d388	10858d38f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setFreeDiskSpaceInMb:]	
+10858d390	10858d397	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase isSkipped]	
+10858d398	10858d39f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase setIsSkipped:]	
+10858d3a0	10858d43b	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricBase .cxx_destruct]	
+10858d43c	10858d5bb	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode inputMediaMetadata]	
+10858d5bc	10858d853	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode outputMediaMetadata]	
+10858d854	10858d85f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode metricType]	
+10858d860	10858d86f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode inputMediaFormat]	
+10858d870	10858d8af	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setInputMediaFormat:]	
+10858d8b0	10858d8c3	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode inputResolution]	
+10858d8c4	10858d8d7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setInputResolution:]	
+10858d8d8	10858d8e7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode outputMediaFormat]	
+10858d8e8	10858d927	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setOutputMediaFormat:]	
+10858d928	10858d937	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode lensIds]	
+10858d938	10858d977	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setLensIds:]	
+10858d978	10858d987	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode imageProcessCommandInfo]	
+10858d988	10858d9c7	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setImageProcessCommandInfo:]	
+10858d9c8	10858d9db	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode outputResolution]	
+10858d9dc	10858d9ef	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setOutputResolution:]	
+10858d9f0	10858d9ff	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode outputFileSize]	
+10858da00	10858da0f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setOutputFileSize:]	
+10858da10	10858da1f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode outputOverlayFileSize]	
+10858da20	10858da2f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode setOutputOverlayFileSize:]	
+10858da30	10858da8f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricImageTranscode .cxx_destruct]	
+10858da90	10858df9b	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode inputMediaMetadata]	
+10858df9c	10858e553	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode outputMediaMetadata]	
+10858e554	10858e55f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode metricType]	
+10858e560	10858e56f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode inputVideoDurationMS]	
+10858e570	10858e57f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode setInputVideoDurationMS:]	
+10858e580	10858e58f	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode inputMediaFormat]	
+10858e590	10858e59b	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode setInputMediaFormat:]	
+10858e59c	10858e5af	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode inputResolution]	
+10858e5b0	10858e5c3	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode setInputResolution:]	
+10858e5c4	10858e5d3	decompiled	chunks/004/functions-000287.c	-[SCTranscodingMetricVideoTranscode inputFileSize]	
+10858e5d4	10858e5e3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputFileSize:]	
+10858e5e4	10858e5f3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputVideoBitrate]	
+10858e5f4	10858e603	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputVideoBitrate:]	
+10858e604	10858e613	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputVideoFilesNumber]	
+10858e614	10858e623	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputVideoFilesNumber:]	
+10858e624	10858e633	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode spotlightModes]	
+10858e634	10858e63f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSpotlightModes:]	
+10858e640	10858e64f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode playbackRateMultiplier]	
+10858e650	10858e65f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setPlaybackRateMultiplier:]	
+10858e660	10858e66f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode hasAudioMixing]	
+10858e670	10858e67f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setHasAudioMixing:]	
+10858e680	10858e68f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputVideoHasAudio]	
+10858e690	10858e69f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputVideoHasAudio:]	
+10858e6a0	10858e6af	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode snapIsMuted]	
+10858e6b0	10858e6bf	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSnapIsMuted:]	
+10858e6c0	10858e6cf	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputAudioBitrate]	
+10858e6d0	10858e6df	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputAudioBitrate:]	
+10858e6e0	10858e6ef	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode keyframeInterval]	
+10858e6f0	10858e6ff	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setKeyframeInterval:]	
+10858e700	10858e70f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputFrameRate]	
+10858e710	10858e71f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputFrameRate:]	
+10858e720	10858e72f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputAudioChannels]	
+10858e730	10858e73f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputAudioChannels:]	
+10858e740	10858e74f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode inputIsHDR]	
+10858e750	10858e75f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setInputIsHDR:]	
+10858e760	10858e76f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode snapSource]	
+10858e770	10858e77b	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSnapSource:]	
+10858e77c	10858e78b	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode transcodeReasons]	
+10858e78c	10858e797	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setTranscodeReasons:]	
+10858e798	10858e7a7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode imageProcessCommandsInfo]	
+10858e7a8	10858e7b3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setImageProcessCommandsInfo:]	
+10858e7b4	10858e7c3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoDurationMS]	
+10858e7c4	10858e7d3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoDurationMS:]	
+10858e7d4	10858e7e3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoTrackDurationMS]	
+10858e7e4	10858e7f3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoTrackDurationMS:]	
+10858e7f4	10858e803	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputAudioTrackDurationMS]	
+10858e804	10858e813	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputAudioTrackDurationMS:]	
+10858e814	10858e823	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputMediaFormat]	
+10858e824	10858e82f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputMediaFormat:]	
+10858e830	10858e843	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputResolution]	
+10858e844	10858e857	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputResolution:]	
+10858e858	10858e867	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputFileSize]	
+10858e868	10858e877	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputFileSize:]	
+10858e878	10858e887	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoBitrate]	
+10858e888	10858e897	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoBitrate:]	
+10858e898	10858e8a7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputOverlayFileSize]	
+10858e8a8	10858e8b7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputOverlayFileSize:]	
+10858e8b8	10858e8c7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode userSendStartTimeSecs]	
+10858e8c8	10858e8d7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setUserSendStartTimeSecs:]	
+10858e8d8	10858e8e7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoFilesNumber]	
+10858e8e8	10858e8f7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoFilesNumber:]	
+10858e8f8	10858e907	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoFileIndex]	
+10858e908	10858e917	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoFileIndex:]	
+10858e918	10858e927	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputVideoHasAudio]	
+10858e928	10858e937	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputVideoHasAudio:]	
+10858e938	10858e947	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode outputFrameRate]	
+10858e948	10858e957	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setOutputFrameRate:]	
+10858e958	10858e967	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode isORT]	
+10858e968	10858e977	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setIsORT:]	
+10858e978	10858e987	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode numSegments]	
+10858e988	10858e997	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setNumSegments:]	
+10858e998	10858e9a7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode segmentIndex]	
+10858e9a8	10858e9b7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSegmentIndex:]	
+10858e9b8	10858e9c7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode segmentStartTime]	
+10858e9c8	10858e9d7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSegmentStartTime:]	
+10858e9d8	10858e9e7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode segmentDuration]	
+10858e9e8	10858e9f7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setSegmentDuration:]	
+10858e9f8	10858ea07	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode splits]	
+10858ea08	10858ea17	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode retryCount]	
+10858ea18	10858ea27	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setRetryCount:]	
+10858ea28	10858ea37	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode lensIds]	
+10858ea38	10858ea43	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setLensIds:]	
+10858ea44	10858ea53	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode errorTypeString]	
+10858ea54	10858ea5f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setErrorTypeString:]	
+10858ea60	10858ea6f	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode muxerVideoProcessedFrameCount]	
+10858ea70	10858ea7b	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setMuxerVideoProcessedFrameCount:]	
+10858ea7c	10858ea8b	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode muxerAudioProcessedFrameCount]	
+10858ea8c	10858ea97	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setMuxerAudioProcessedFrameCount:]	
+10858ea98	10858eaa7	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode retryContextValue]	
+10858eaa8	10858eab3	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode setRetryContextValue:]	
+10858eab4	10858eb93	decompiled	chunks/004/functions-000288.c	-[SCTranscodingMetricVideoTranscode .cxx_destruct]	
+10858eb94	10858ec07	decompiled	chunks/004/functions-000288.c	-[SCGrapheneTranscodeMetric2 init]	
+10858ec08	10858eec7	decompiled	chunks/004/functions-000288.c		
+10858eec8	10858f187	decompiled	chunks/004/functions-000288.c		
+10858f188	10858f23b	decompiled	chunks/004/functions-000288.c		
+10858f23c	10858f4fb	decompiled	chunks/004/functions-000288.c		
+10858f4fc	10858f5af	decompiled	chunks/004/functions-000288.c		
+10858f5b0	10858f7df	decompiled	chunks/004/functions-000288.c		
+10858f7e0	10858fa0f	decompiled	chunks/004/functions-000288.c		
+10858fa10	10858fc3f	decompiled	chunks/004/functions-000288.c		
+10858fc40	10858fe6f	decompiled	chunks/004/functions-000288.c		
+10858fe70	10859009f	decompiled	chunks/004/functions-000288.c		
+1085900a0	1085902cf	decompiled	chunks/004/functions-000288.c		
+1085902d0	1085904ff	decompiled	chunks/004/functions-000288.c		
+108590500	1085907bf	decompiled	chunks/004/functions-000288.c		
+1085907c0	108590a7f	decompiled	chunks/004/functions-000288.c		
+108590a80	108590bf3	decompiled	chunks/004/functions-000288.c		
+108590bf4	108590e23	decompiled	chunks/004/functions-000288.c		
+108590e24	1085910e3	decompiled	chunks/004/functions-000288.c		
+1085910e4	108591313	decompiled	chunks/004/functions-000288.c		
+108591314	1085915d3	decompiled	chunks/004/functions-000289.c		
+1085915d4	10859179f	decompiled	chunks/004/functions-000289.c		
+1085917a0	108591957	decompiled	chunks/004/functions-000289.c	+[SCTranscodingSkipControlUtils requiresReRenderingReasionsWithOriginalDuration:timeRanges:imageCommandCount:audioEnabled:hasAudioEffect:videoPlaybackRate:targetOrientation:]	
+108591958	108591b67	decompiled	chunks/004/functions-000289.c	+[SCTranscodingSkipControlUtils requiresReEncodingReasonsWithConfigProviderInput:outputConfig:inputVideoCodec:inputAudioCodec:inputResolution:inputIsHDR:circumstanceEngine:]	
+108591b68	108591b8b	decompiled	chunks/004/functions-000289.c	+[SCTranscodingSkipControlUtils _isVideoCodec:equalToTranscodeCodec:]	
+108591b8c	108591c37	decompiled	chunks/004/functions-000289.c	+[SCTranscodingSkipControlUtils _equalTime:toTime:precision:]	
+108591c38	108591ee7	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils enableReUploadWithDestination:preUploadVideoTargetSize:reUploadVideoTargetSize:circumstanceEngine:featureProvidedSignals:]	
+108591ee8	108591fb3	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils videoTargetSizeForDestination:sourceVideoSize:circumstanceEngine:featureProvidedSignals:]	
+108591fb4	1085920ef	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils enableSkipTranscodeWithDestination:mediaSource:isMultiSnap:circumstanceEngine:]	
+1085920f0	10859210b	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCrOrMemoriesToSpotlight:]	
+10859210c	108592127	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCameraToSpotlight:]	
+108592128	108592143	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCrOrMemoriesToPublicStory:]	
+108592144	10859215f	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCameraToPublicStory:]	
+108592160	10859217b	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCrOrMemoriesToFriendStory:]	
+10859217c	108592197	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForSkipTranscodeFromCameraToFriendStory:]	
+108592198	1085921b3	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForReUploadToPublicStory:featureProvidedSignals:]	
+1085921b4	1085921cf	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualityControllerUtils abEnabledForReUploadSpotlighAndStoryPost:featureProvidedSignals:]	
+1085921d0	10859229b	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualitySelectorUtils qualityLevelForDestination:featureSignals:circumstanceEngine:callbackPerformer:completion:]	
+10859229c	1085922ab	decompiled	chunks/004/functions-000289.c		
+1085922ac	1085924a7	decompiled	chunks/004/functions-000289.c	+[SCUploadMediaQualitySelectorUtils qualityLevelForDestination:featureSignals:circumstanceEngine:]	
+1085924a8	1085924d7	decompiled	chunks/004/functions-000289.c		
+1085924d8	108592667	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl initWithUserSession:activeVideoPaths:imageCommandProvider:previewCameraSourceOverlayService:targetTrajectoryFactory:stickerInjector:ctpItemViewService:]	
+108592668	1085926ab	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl activeVideoPaths]	
+1085926ac	1085926fb	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl addVideoPathToActiveVideoPaths:]	
+1085926fc	10859274b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl removeVideoPathFromActiveVideoPaths:]	
+10859274c	10859278b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl currentUserId]	
+10859278c	10859296f	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl generateOverlayAndTrackedImagesForMultiSnapWithOverlaySize:outputSize:inputVideoDurationMS:spectaclesTranscodingConfig:videoPlaybackSpeed:mediaDestination:completion:]	
+108592970	108592a13	decompiled	chunks/004/functions-000289.c		
+108592a14	108592a53	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl hasMultiSnapOverlayState]	
+108592a54	108592bf3	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl hasSameMultiSnapOverlayStateWithAdaptor:]	
+108592bf4	108592cab	decompiled	chunks/004/functions-000289.c		
+108592cac	108592cef	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl containsTrackedImagesForMultiSnapOverlayState]	
+108592cf0	108592cff	decompiled	chunks/004/functions-000289.c		
+108592d00	108592d07	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl clearMultiSnapOverlayState]	
+108592d08	108592ed7	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl generateOverlayAndTrackedImagesForMultiSnapAtIndex:overlaySize:outputSize:spectaclesTranscodingConfig:videoPlaybackSpeed:mediaDestination:completion:]	
+108592ed8	108592ee3	decompiled	chunks/004/functions-000289.c		
+108592ee4	108592f4f	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl virtualCommandsForRequest:]	
+108592f50	108592fbb	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl commandsForRequest:]	
+108592fbc	108593047	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl videoCPUCommandForFilterName:config:isSpectacles:]	
+108593048	1085930db	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl imageCommandForFilterName:config:]	
+1085930dc	10859315f	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl imageCommandForCommandConfiguration:filterConfiguration:]	
+108593160	108593167	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl mainAppImageProcessCommandProvider]	
+108593168	1085931c7	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl imageCommandForMultiSnapV2ThumbnailFromFilterName:]	
+1085931c8	108593233	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl spectaclesRectificationCommandForConfig:]	
+108593234	10859323b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl _legacyCameraActiveVideoPaths]	
+10859323c	108593243	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl previewCameraSourceOverlayService]	
+108593244	108593273	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl setPreviewCameraSourceOverlayService:]	
+108593274	10859327b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl overlayAndTrackedImagesHandler]	
+10859327c	108593283	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl setOverlayAndTrackedImagesHandler:]	
+108593284	10859328b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl multiSnapOverlayStates]	
+10859328c	1085932bb	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl setMultiSnapOverlayStates:]	
+1085932bc	1085932c3	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl multiSnapDrawingCache]	
+1085932c4	1085932f3	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl setMultiSnapDrawingCache:]	
+1085932f4	10859338b	decompiled	chunks/004/functions-000289.c	-[SCSnapVideoFilterAdaptorImpl .cxx_destruct]	
+10859338c	108593397	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesOnDemandResourcesServices .cxx_destruct]	
+108593398	10859345f	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject initWithVideoUrl:imageUrl:videoShouldLoop:startTime:endTime:]	
+108593460	108593483	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject copyWithZone:]	
+108593484	10859353f	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject hash]	
+108593540	10859365f	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject isEqual:]	
+108593660	108593667	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject videoUrl]	
+108593668	10859366f	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject imageUrl]	
+108593670	108593677	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject videoShouldLoop]	
+108593678	10859367f	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject startTime]	
+108593680	108593687	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject endTime]	
+108593688	1085936b7	decompiled	chunks/004/functions-000289.c	-[SCSpectaclesVideoObject .cxx_destruct]	
+1085936b8	10859374b	decompiled	chunks/004/functions-000289.c		
+10859374c	1085938cf	decompiled	chunks/004/functions-000289.c		
+1085938d0	108593963	decompiled	chunks/004/functions-000289.c		
+108593964	1085941e7	decompiled	chunks/004/functions-000289.c		
+1085941e8	108594577	decompiled	chunks/004/functions-000289.c		
+108594578	10859459f	decompiled	chunks/004/functions-000289.c		
+1085945a0	108594603	decompiled	chunks/004/functions-000289.c		
+108594604	10859462f	decompiled	chunks/004/functions-000289.c		
+108594630	10859463f	decompiled	chunks/004/functions-000289.c		
+108594640	108594667	decompiled	chunks/004/functions-000289.c		
+108594668	108594673	decompiled	chunks/004/functions-000289.c		
+108594674	10859469b	decompiled	chunks/004/functions-000289.c		
+10859469c	1085946a7	decompiled	chunks/004/functions-000289.c		
+1085946a8	1085946cf	decompiled	chunks/004/functions-000289.c		
+1085946d0	108594733	decompiled	chunks/004/functions-000289.c		
+108594734	10859475b	decompiled	chunks/004/functions-000289.c		
+10859475c	108594767	decompiled	chunks/004/functions-000289.c		
+108594768	108594863	decompiled	chunks/004/functions-000289.c		
+108594864	108594873	decompiled	chunks/004/functions-000289.c		
+108594874	10859489b	decompiled	chunks/004/functions-000289.c		
+10859489c	1085948a7	decompiled	chunks/004/functions-000289.c		
+1085948a8	1085948cf	decompiled	chunks/004/functions-000289.c		
+1085948d0	1085948db	decompiled	chunks/004/functions-000289.c		
+1085948dc	108594903	decompiled	chunks/004/functions-000289.c		
+108594904	10859490f	decompiled	chunks/004/functions-000289.c		
+108594910	108594937	decompiled	chunks/004/functions-000289.c		
+108594938	108594943	decompiled	chunks/004/functions-000289.c		
+108594944	10859496b	decompiled	chunks/004/functions-000289.c		
+10859496c	108594977	decompiled	chunks/004/functions-000289.c		
+108594978	10859499f	decompiled	chunks/004/functions-000289.c		
+1085949a0	1085949ab	decompiled	chunks/004/functions-000289.c		
+1085949ac	1085949d3	decompiled	chunks/004/functions-000289.c		
+1085949d4	1085949df	decompiled	chunks/004/functions-000289.c		
+1085949e0	108594a07	decompiled	chunks/004/functions-000289.c		
+108594a08	108594a13	decompiled	chunks/004/functions-000289.c		
+108594a14	108594a3b	decompiled	chunks/004/functions-000290.c		
+108594a3c	108594a47	decompiled	chunks/004/functions-000290.c		
+108594a48	108594a6f	decompiled	chunks/004/functions-000290.c		
+108594a70	108594a7b	decompiled	chunks/004/functions-000290.c		
+108594a7c	108594aa3	decompiled	chunks/004/functions-000290.c		
+108594aa4	108594aaf	decompiled	chunks/004/functions-000290.c		
+108594ab0	108594ad7	decompiled	chunks/004/functions-000290.c		
+108594ad8	108594ae3	decompiled	chunks/004/functions-000290.c		
+108594ae4	108594b0b	decompiled	chunks/004/functions-000290.c		
+108594b0c	108594b17	decompiled	chunks/004/functions-000290.c		
+108594b18	108594b3f	decompiled	chunks/004/functions-000290.c		
+108594b40	108594baf	decompiled	chunks/004/functions-000290.c		
+108594bb0	108594bd7	decompiled	chunks/004/functions-000290.c		
+108594bd8	108594be3	decompiled	chunks/004/functions-000290.c		
+108594be4	108594c0b	decompiled	chunks/004/functions-000290.c		
+108594c0c	108594c17	decompiled	chunks/004/functions-000290.c		
+108594c18	108594c3f	decompiled	chunks/004/functions-000290.c		
+108594c40	108594c4b	decompiled	chunks/004/functions-000290.c		
+108594c4c	108594c73	decompiled	chunks/004/functions-000290.c		
+108594c74	108594cd7	decompiled	chunks/004/functions-000290.c		
+108594cd8	108594cff	decompiled	chunks/004/functions-000290.c		
+108594d00	108594d0b	decompiled	chunks/004/functions-000290.c		
+108594d0c	108594d37	decompiled	chunks/004/functions-000290.c		
+108594d38	108594d47	decompiled	chunks/004/functions-000290.c		
+108594d48	108594d6f	decompiled	chunks/004/functions-000290.c		
+108594d70	108594d7b	decompiled	chunks/004/functions-000290.c		
+108594d7c	108594da3	decompiled	chunks/004/functions-000290.c		
+108594da4	108594daf	decompiled	chunks/004/functions-000290.c		
+108594db0	108594dd7	decompiled	chunks/004/functions-000290.c		
+108594dd8	108594de3	decompiled	chunks/004/functions-000290.c		
+108594de4	108594e0b	decompiled	chunks/004/functions-000290.c		
+108594e0c	108594e6f	decompiled	chunks/004/functions-000290.c		
+108594e70	108594e97	decompiled	chunks/004/functions-000290.c		
+108594e98	108594efb	decompiled	chunks/004/functions-000290.c		
+108594efc	108594f23	decompiled	chunks/004/functions-000290.c		
+108594f24	108594f2f	decompiled	chunks/004/functions-000290.c		
+108594f30	108594f57	decompiled	chunks/004/functions-000290.c		
+108594f58	108594f63	decompiled	chunks/004/functions-000290.c		
+108594f64	108594f8b	decompiled	chunks/004/functions-000290.c		
+108594f8c	108594f97	decompiled	chunks/004/functions-000290.c		
+108594f98	108594fbf	decompiled	chunks/004/functions-000290.c		
+108594fc0	108594fcb	decompiled	chunks/004/functions-000290.c		
+108594fcc	10859507b	decompiled	chunks/004/functions-000290.c		
+10859507c	108595087	decompiled	chunks/004/functions-000290.c		

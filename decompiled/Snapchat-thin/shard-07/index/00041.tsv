@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105788ebc	105788f2f	decompiled	chunks/006/functions-000410.c	-[UNISCBitmojiFashion initWithUnifiedGrpcService:]	
+105788f30	105789013	decompiled	chunks/006/functions-000410.c	-[UNISCBitmojiFashion claimDropItemWithRequest:callOptionsBuilder:handler:]	
+105789014	1057890f7	decompiled	chunks/006/functions-000410.c	-[UNISCBitmojiFashion getDropWithRequest:callOptionsBuilder:handler:]	
+1057890f8	105789103	decompiled	chunks/006/functions-000410.c	-[UNISCBitmojiFashion .cxx_destruct]	
+105789104	10578912f	decompiled	chunks/006/functions-000410.c	+[SCGrapheneBitmojiFashionDropMetric getDropSuccess]	
+105789130	10578915b	decompiled	chunks/006/functions-000410.c	+[SCGrapheneBitmojiFashionDropMetric getDropFailure]	
+10578915c	1057891fb	decompiled	chunks/006/functions-000410.c	-[SCGrapheneBitmojiFashionDropMetric description]	
+1057891fc	105789347	decompiled	chunks/006/functions-000410.c	-[SCGrapheneRegistry bitmojiFashionDropGraphene]	
+105789348	1057893bb	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropServices initWithFashionDropFetcher:]	
+1057893bc	1057893c3	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropServices fashionDropFetcher]	
+1057893c4	1057893cf	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropServices .cxx_destruct]	
+1057893d0	10578950f	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop initWithDropId:garments:assets:backgroundColor:startTime:endTime:creatorName:isSponsored:bannerEndTime:]	
+105789510	105789533	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop copyWithZone:]	
+105789534	1057895e3	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop hash]	
+1057895e4	10578970b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop isEqual:]	
+10578970c	105789713	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop dropId]	
+105789714	10578971b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop garments]	
+10578971c	105789723	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop assets]	
+105789724	10578972b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop backgroundColor]	
+10578972c	105789733	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop startTime]	
+105789734	10578973b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop endTime]	
+10578973c	105789743	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop creatorName]	
+105789744	10578974b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop isSponsored]	
+10578974c	105789753	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop bannerEndTime]	
+105789754	10578979b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDrop .cxx_destruct]	
+10578979c	10578985f	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment initWithOptionIds:garmentType:name:merchandisedGarmentId:]	
+105789860	105789883	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment copyWithZone:]	
+105789884	105789907	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment hash]	
+105789908	1057899cf	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment isEqual:]	
+1057899d0	1057899d7	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment optionIds]	
+1057899d8	1057899df	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment garmentType]	
+1057899e0	1057899e7	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment name]	
+1057899e8	1057899ef	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment merchandisedGarmentId]	
+1057899f0	105789a1f	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionGarment .cxx_destruct]	
+105789a20	105789b2b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets initWithBannerImageUrl2x:bannerImageUrl3x:brandLogoUrl2x:brandLogoUrl3x:]	
+105789b2c	105789b4f	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets copyWithZone:]	
+105789b50	105789bdb	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets hash]	
+105789bdc	105789cb3	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets isEqual:]	
+105789cb4	105789cbb	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets bannerImageUrl2x]	
+105789cbc	105789cc3	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets bannerImageUrl3x]	
+105789cc4	105789ccb	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets brandLogoUrl2x]	
+105789ccc	105789cd3	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets brandLogoUrl3x]	
+105789cd4	105789d1b	decompiled	chunks/006/functions-000410.c	-[SCBitmojiFashionDropAssets .cxx_destruct]	
+105789d1c	105789e1f	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenter initWithBitmojiAvatarProvider:bitmojiAvatarBuilderScopeExposer:notificationServices:linkPage:uiContainer:]	
+105789e20	105789e83	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenter presentAvatarBuilderWithCallback:]	
+105789e84	105789edf	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenter bitmojiCreateFlowDidCompleteWithAvatarId:]	
+105789ee0	105789eeb	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenter pushToValdiMarshaller:]	
+105789eec	105789f3f	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenter .cxx_destruct]	
+105789f40	10578a00b	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenterFactoryImpl initWithBitmojiAvatarProvider:bitmojiAvatarBuilderScopeExposer:notificationServices:]	
+10578a00c	10578a09f	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenterFactoryImpl presenterWithLinkPage:uiContainer:]	
+10578a0a0	10578a0db	decompiled	chunks/006/functions-000410.c	-[SCComposerAvatarBuilderPresenterFactoryImpl .cxx_destruct]	
+10578a0dc	10578a1fb	decompiled	chunks/006/functions-000410.c	-[SCComposerBitmojiAvatarBuilderEntryPoint begin]	
+10578a1fc	10578a25f	decompiled	chunks/006/functions-000410.c	-[SCComposerBitmojiAvatarBuilderEntryPoint .cxx_destruct]	
+10578a260	10578a2c7	decompiled	chunks/006/functions-000410.c	+[AiStoryReplyClientConfig descriptor]	
+10578a2c8	10578a3c3	decompiled	chunks/006/functions-000410.c		
+10578a3c4	10578a4e7	decompiled	chunks/006/functions-000410.c		
+10578a4e8	10578a553	decompiled	chunks/006/functions-000410.c	-[SCGenerativeAIDreamsServiceProvider .cxx_destruct]	
+10578a554	10578a65f	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl initWithCircumstanceEngine:featureSettingsService:userPreferences:dreamsService:]	
+10578a660	10578a6bf	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl shouldShowDreamsBadgeOnMemoriesButton:]	
+10578a6c0	10578a7d3	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl _checkGenerationReadyNotificationSeenState]	
+10578a7d4	10578a8af	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl _checkToShowNewPackBadgeOnMemoriesButton]	
+10578a8b0	10578a97b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl updateDreamsTabLastSeenTimestamp]	
+10578a97c	10578aa3f	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl updateDreamsBadgeInMemoriesLastSeenTimestamp]	
+10578aa40	10578aa67	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl dreamsBadgeObservable]	
+10578aa68	10578ab0f	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl didReceiveGenerationReadyNotification]	
+10578ab10	10578ab5b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl shouldShowDreamsBadgeOnDreamsTab:]	
+10578ab5c	10578ab5f	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl shouldShowBadgeOnAISnapsTab]	
+10578ab60	10578ab67	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl setAISnapsTabFocused:]	
+10578ab68	10578abbb	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsBadgeServiceImpl .cxx_destruct]	
+10578abbc	10578ace7	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl initWithFeatureSettingsService:circumstanceEngine:plusServices:]	
+10578ace8	10578adcf	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl isDreamsFeatureAvailable]	
+10578add0	10578ae3b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl isAiSnapsTabEnabled]	
+10578ae3c	10578ae57	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl aiSnapsTabM4ShouldSuppressNotificationForCloudSync]	
+10578ae58	10578ae73	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl aiSnapsTabM4ShouldDismissPresentingOpera]	
+10578ae74	10578ae7b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl aiSnapsTabM4DebugModeEnabled]	
+10578ae7c	10578aee7	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl isAiSnapsHideGenAISnapsInHomeTabEnabled]	
+10578aee8	10578af03	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl aiSnapsM5SaveLensCarouselGenAISnapsDuringSharing]	
+10578af04	10578af1f	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl genAIWatermarkWithSnapDocEnabled]	
+10578af20	10578af3b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl genAIWatermarkMultiSnapCameraRollExportEnabled]	
+10578af3c	10578afb3	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl isDreamsFeatureEarlyAccess]	
+10578afb4	10578afcf	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl dreamsFollowSuggestedOperaPlaylistLimit]	
+10578afd0	10578afeb	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl dreamsOperaShouldLaunchProvidingGalleryModels]	
+10578afec	10578b013	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl dreamsContextCardTapSubject]	
+10578b014	10578b03b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl aiSnapsAutoSaveObservable]	
+10578b03c	10578b043	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl genAiSnapFeedDidAutoSaveDuringSendingToChatsOrPostingToStories:]	
+10578b044	10578b0a3	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsServiceImpl .cxx_destruct]	
+10578b0a4	10578b147	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackBottomBannerSUPWrapper initWithFeatureSettings:dreamsTweak:]	
+10578b148	10578b1c7	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackBottomBannerSUPWrapper supString]	
+10578b1c8	10578b237	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackBottomBannerSUPWrapper setSupString:]	
+10578b238	10578b267	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackBottomBannerSUPWrapper .cxx_destruct]	
+10578b268	10578b30b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackTopBannerSUPWrapper initWithFeatureSettings:dreamsTweak:]	
+10578b30c	10578b38b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackTopBannerSUPWrapper supString]	
+10578b38c	10578b3fb	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackTopBannerSUPWrapper setSupString:]	
+10578b3fc	10578b46b	decompiled	chunks/006/functions-000410.c	-[SCGenAIDreamsNewPackTopBannerSUPWrapper .cxx_destruct]	
+10578b46c	10578b68f	decompiled	chunks/006/functions-000410.c	-[SCNetworkImageEntryPoint _imageDownloader]	
+10578b690	10578b713	decompiled	chunks/006/functions-000410.c	-[SCNetworkImageEntryPoint .cxx_destruct]	
+10578b714	10578b71b	decompiled	chunks/006/functions-000410.c	-[SCCacheManagerUserAvailabilityEntryPoint begin]	
+10578b71c	10578b7ab	decompiled	chunks/006/functions-000410.c	-[SCCacheManagerUserAvailabilityEntryPoint end]	
+10578b7ac	10578b7e3	decompiled	chunks/006/functions-000410.c	-[SCCacheManagerUserAvailabilityEntryPoint .cxx_destruct]	
+10578b7e4	10578b86b	decompiled	chunks/006/functions-000410.c	-[SCStorageManagementEntryPoint init]	
+10578b86c	10578babb	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint begin]	
+10578babc	10578bc5f	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint _scheduleStorageManagementWithObservable:]	
+10578bc60	10578bcbb	decompiled	chunks/006/functions-000411.c		
+10578bcbc	10578bd3f	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint _didEnterBackground]	
+10578bd40	10578bd47	decompiled	chunks/006/functions-000411.c		
+10578bd48	10578be37	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint _performStorageManagement]	
+10578be38	10578be6f	decompiled	chunks/006/functions-000411.c		
+10578be70	10578beb7	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint _setInBackground:]	
+10578beb8	10578bf03	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint _isInBackground]	
+10578bf04	10578bf3b	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint setStorageEventHandler:]	
+10578bf3c	10578bfdb	decompiled	chunks/006/functions-000411.c	-[SCStorageManagementEntryPoint .cxx_destruct]	
+10578bfdc	10578c133	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServiceProvider provide]	
+10578c134	10578c307	decompiled	chunks/006/functions-000411.c		
+10578c308	10578c33f	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServiceProvider .cxx_destruct]	
+10578c340	10578c3e3	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServices initWithLoqConfigRateLimiter:allUpdatesRateLimiter:]	
+10578c3e4	10578c3eb	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServices loqConfigRateLimiter]	
+10578c3ec	10578c3f3	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServices allUpdatesRateLimiter]	
+10578c3f4	10578c423	decompiled	chunks/006/functions-000411.c	-[SCLegacyRateLimitServices .cxx_destruct]	
+10578c424	10578c47f	decompiled	chunks/006/functions-000411.c	-[SCCanaryStudyUserEntryPoint begin]	
+10578c480	10578c4b7	decompiled	chunks/006/functions-000411.c	-[SCCanaryStudyUserEntryPoint .cxx_destruct]	
+10578c4b8	10578c59b	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManagementServiceProvider provide]	
+10578c59c	10578c5db	decompiled	chunks/006/functions-000411.c		
+10578c5dc	10578c723	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManagementServiceProvider _connectionManager]	
+10578c724	10578c767	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManagementServiceProvider .cxx_destruct]	
+10578c768	10578c943	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager initWithHttpMetadataService:httpRequestModifier:cognacUserContextTokenProvider:currentUserId:]	
+10578c944	10578caf7	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager submitAuthRequestToOAuthServiceWithAuthRequest:completionQueue:completionBlock:]	
+10578caf8	10578cb5f	decompiled	chunks/006/functions-000411.c		
+10578cb60	10578cdab	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager submitOAuthApprovalRequestWithApprovalToken:scopesApprovedArray:OAuthClientId:completionQueue:completionBlock:]	
+10578cdac	10578cdb3	decompiled	chunks/006/functions-000411.c		
+10578cdb4	10578ceab	decompiled	chunks/006/functions-000411.c		
+10578ceac	10578cedf	decompiled	chunks/006/functions-000411.c		
+10578cee0	10578d1bf	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager submitCreateConnectionRequestWithOAuthClientId:features:termsVersion:completionQueue:completionBlock:]	
+10578d1c0	10578d37f	decompiled	chunks/006/functions-000411.c		
+10578d380	10578d3e7	decompiled	chunks/006/functions-000411.c		
+10578d3e8	10578d457	decompiled	chunks/006/functions-000411.c		
+10578d458	10578d587	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager listConnectionsForSettingsWithForceFetchFromServer:completionQueue:completionBlock:]	
+10578d588	10578d5bb	decompiled	chunks/006/functions-000411.c		
+10578d5bc	10578d62f	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager listConnectionsWithCompletionQueue:completionBlock:]	
+10578d630	10578d70f	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager checkConnectionWithApplicationId:completionQueue:completionBlock:]	
+10578d710	10578d8cb	decompiled	chunks/006/functions-000411.c		
+10578d8cc	10578d95f	decompiled	chunks/006/functions-000411.c		
+10578d960	10578d97f	decompiled	chunks/006/functions-000411.c		
+10578d980	10578d997	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager deleteConnectionWithApplicationId:completionQueue:completionBlock:]	
+10578d998	10578dbdf	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager deleteConnectionWithApplicationId:isAppConnected:appHasPrivateStorageData:requestedDataDeletion:completionQueue:completionBlock:]	
+10578dbe0	10578dca7	decompiled	chunks/006/functions-000411.c		
+10578dca8	10578dcb7	decompiled	chunks/006/functions-000411.c		
+10578dcb8	10578df4b	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager updateConnectionWithApplicationId:scopes:features:completionQueue:completionBlock:]	
+10578df4c	10578e033	decompiled	chunks/006/functions-000411.c		
+10578e034	10578e047	decompiled	chunks/006/functions-000411.c		
+10578e048	10578e04f	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager resetConnection]	
+10578e050	10578e057	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager connectionsObservable]	
+10578e058	10578e1ef	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _extendedScopesList]	
+10578e1f0	10578e29b	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _filterAllExceptBasicScopes:]	
+10578e29c	10578e2a7	decompiled	chunks/006/functions-000411.c		
+10578e2a8	10578e4db	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _submitConnectionManagementServiceRequestWithEndpoint:protoRequest:method:requestId:responseClass:completionQueue:completionBlock:]	
+10578e4dc	10578e523	decompiled	chunks/006/functions-000411.c		
+10578e524	10578e743	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _submitOAuthServiceRequestWithEndpoint:protoRequest:method:requestId:responseClass:completionQueue:completionBlock:]	
+10578e744	10578e787	decompiled	chunks/006/functions-000411.c		
+10578e788	10578e977	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _submitRequest:requestId:responseClass:maxRequestAttempts:completionQueue:completionBlock:]	
+10578e978	10578ea9f	decompiled	chunks/006/functions-000411.c		
+10578eaa0	10578ebdf	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _handleListConnectionsOnDataAccessQueueWithCompletionQueue:completionBlock:]	
+10578ebe0	10578ec1f	decompiled	chunks/006/functions-000411.c		
+10578ec20	10578ed97	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _fetchConnectionListFromEndpoint:completionQueue:completionBlock:]	
+10578ed98	10578ee77	decompiled	chunks/006/functions-000411.c		
+10578ee78	10578ee8b	decompiled	chunks/006/functions-000411.c		
+10578ee8c	10578f033	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _handleDidFetchConnectionsWithResponse:completionQueue:completionBlock:]	
+10578f034	10578f047	decompiled	chunks/006/functions-000411.c		
+10578f048	10578f163	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _handleDidUpdateConnectionWithResponse:completionQueue:completionBlock:]	
+10578f164	10578f177	decompiled	chunks/006/functions-000411.c		
+10578f178	10578f253	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _handleDidDeleteConnectionWithApplicationId:completionQueue:completionBlock:]	
+10578f254	10578f263	decompiled	chunks/006/functions-000411.c		
+10578f264	10578f2c7	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager _announceObservableEventWithConnections:]	
+10578f2c8	10578f2df	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager delegate]	
+10578f2e0	10578f2eb	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager setDelegate:]	
+10578f2ec	10578f40f	decompiled	chunks/006/functions-000411.c	-[SCCanvasConnectionManager .cxx_destruct]	
+10578f410	10578f4af	decompiled	chunks/006/functions-000411.c		
+10578f4b0	10578f583	decompiled	chunks/006/functions-000411.c		
+10578f584	10578f7d7	decompiled	chunks/006/functions-000411.c		
+10578f7d8	10578f82b	decompiled	chunks/006/functions-000411.c		
+10578f82c	10578f833	decompiled	chunks/006/functions-000411.c		
+10578f834	10578f9fb	decompiled	chunks/006/functions-000411.c		
+10578f9fc	10578fb6f	decompiled	chunks/006/functions-000411.c		
+10578fb70	10578fcd7	decompiled	chunks/006/functions-000411.c		
+10578fcd8	10578fd5b	decompiled	chunks/006/functions-000411.c		
+10578fd5c	10578fe43	decompiled	chunks/006/functions-000411.c		
+10578fe44	10578fef3	decompiled	chunks/006/functions-000411.c		
+10578fef4	10578ffdb	decompiled	chunks/006/functions-000411.c		
+10578ffdc	10578ffdf	decompiled	chunks/006/functions-000411.c	+[SCCanvasConnectionManagerUUID UUID]	
+10578ffe0	105790057	decompiled	chunks/006/functions-000411.c		
+105790058	10579018b	decompiled	chunks/006/functions-000411.c		
+10579018c	1057901e7	decompiled	chunks/006/functions-000411.c	-[SCCognacDataServiceProvider end]	
+1057901e8	10579023b	decompiled	chunks/006/functions-000411.c	-[SCCognacDataServiceProvider .cxx_destruct]	
+10579023c	105790377	decompiled	chunks/006/functions-000411.c	-[SCCognacGRPCService initWithGRPCClientFactory:]	
+105790378	105790413	decompiled	chunks/006/functions-000411.c		
+105790414	10579050b	decompiled	chunks/006/functions-000411.c		
+10579050c	1057905a7	decompiled	chunks/006/functions-000411.c		
+1057905a8	1057907af	decompiled	chunks/006/functions-000411.c	-[SCCognacGRPCService getCanvasTokenWithAppId:externalUserId:sessionId:completionQueue:completionBlock:]	
+1057907b0	105790813	decompiled	chunks/006/functions-000411.c		
+105790814	105790a3f	decompiled	chunks/006/functions-000411.c		
+105790a40	105790ca3	decompiled	chunks/006/functions-000411.c	-[SCCognacGRPCService submitLeaderboardScoreWithAppId:leaderboardId:score:orderingType:isStudioLens:lensId:optInStatus:completionQueue:completionBlock:]	
+105790ca4	105790d6b	decompiled	chunks/006/functions-000412.c		
+105790d6c	105790e47	decompiled	chunks/006/functions-000412.c		
+105790e48	105790e5b	decompiled	chunks/006/functions-000412.c		
+105790e5c	105791037	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService getScoreVisibilityWithAppId:leaderboardId:completionQueue:completionBlock:]	
+105791038	10579109b	decompiled	chunks/006/functions-000412.c		
+10579109c	10579145b	decompiled	chunks/006/functions-000412.c		
+10579145c	105791473	decompiled	chunks/006/functions-000412.c		
+105791474	1057914d3	decompiled	chunks/006/functions-000412.c		
+1057914d4	1057914ef	decompiled	chunks/006/functions-000412.c		
+1057914f0	1057916d3	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService setScoreVisibilityWithAppId:scoreVisible:completionQueue:completionBlock:]	
+1057916d4	105791713	decompiled	chunks/006/functions-000412.c		
+105791714	1057917c3	decompiled	chunks/006/functions-000412.c		
+1057917c4	1057917d3	decompiled	chunks/006/functions-000412.c		
+1057917d4	10579196b	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService getLeaderboardWithLeaderboardId:completionQueue:completionBlock:]	
+10579196c	10579197f	decompiled	chunks/006/functions-000412.c		
+105791980	105791a97	decompiled	chunks/006/functions-000412.c		
+105791a98	105791aab	decompiled	chunks/006/functions-000412.c		
+105791aac	105791c83	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService batchGetLeaderboardEntriesWithLeaderboardId:userIds:completionQueue:completionBlock:]	
+105791c84	105791cc7	decompiled	chunks/006/functions-000412.c		
+105791cc8	105791e33	decompiled	chunks/006/functions-000412.c		
+105791e34	105791e5b	decompiled	chunks/006/functions-000412.c		
+105791e5c	105791f43	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService listFriendLeaderboardDataWithLeaderboardId:currentUserId:limit:orderingType:isStudioLens:completionQueue:completionBlock:]	
+105791f44	10579200b	decompiled	chunks/006/functions-000412.c		
+10579200c	1057921f7	decompiled	chunks/006/functions-000412.c		
+1057921f8	1057922cf	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService listFriendLeaderboardEntriesWithLeaderboardId:currentUserId:completionQueue:completionBlock:]	
+1057922d0	10579237f	decompiled	chunks/006/functions-000412.c		
+105792380	1057923c3	decompiled	chunks/006/functions-000412.c		
+1057923c4	10579248b	decompiled	chunks/006/functions-000412.c		
+10579248c	10579249f	decompiled	chunks/006/functions-000412.c		
+1057924a0	10579257f	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService getLeaderboardTopScoresDataWithLeaderboardId:limit:orderingType:isStudioLens:completionQueue:completionBlock:]	
+105792580	105792647	decompiled	chunks/006/functions-000412.c		
+105792648	1057927b7	decompiled	chunks/006/functions-000412.c		
+1057927b8	105792923	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService getLeaderboardTopScoresEntriesWithLeaderboardId:limit:completionQueue:completionBlock:]	
+105792924	1057929fb	decompiled	chunks/006/functions-000412.c		
+1057929fc	105792a0f	decompiled	chunks/006/functions-000412.c		
+105792a10	105792b33	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService getGlobalOptInStatusWithCompletionQueue:completionBlock:]	
+105792b34	105792c5f	decompiled	chunks/006/functions-000412.c		
+105792c60	105792ed3	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService setGlobalOptInStatusWithOptInStatus:completionQueue:completionBlock:]	
+105792ed4	105792ee3	decompiled	chunks/006/functions-000412.c		
+105792ee4	105792f93	decompiled	chunks/006/functions-000412.c		
+105792f94	105792fa3	decompiled	chunks/006/functions-000412.c		
+105792fa4	1057931b3	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService sendLeaderboardNotificationsWithLensId:leaderboardId:recipientUserIds:completionQueue:completionBlock:]	
+1057931b4	1057931f3	decompiled	chunks/006/functions-000412.c		
+1057931f4	1057932a3	decompiled	chunks/006/functions-000412.c		
+1057932a4	1057932b3	decompiled	chunks/006/functions-000412.c		
+1057932b4	1057932e3	decompiled	chunks/006/functions-000412.c	-[SCCognacGRPCService .cxx_destruct]	
+1057932e4	105793387	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl initWithCognacGRPCService:cognacDataStorage:]	
+105793388	1057933ab	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl submitLeaderboardScoreWithAppId:leaderboardId:score:orderingType:isStudioLens:lensId:optInStatus:completionQueue:completionBlock:]	
+1057933ac	1057934d3	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl getLeaderboardScoreVisibilityWithAppId:leaderboardId:completionQueue:completionBlock:]	
+1057934d4	105793757	decompiled	chunks/006/functions-000412.c		
+105793758	10579378b	decompiled	chunks/006/functions-000412.c		
+10579378c	10579385b	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl updateScoreVisibilityForAppId:scoreVisible:completionQueue:completionBlock:]	
+10579385c	10579390b	decompiled	chunks/006/functions-000412.c		
+10579390c	10579391b	decompiled	chunks/006/functions-000412.c		
+10579391c	105793ac3	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl fetchLeaderboardWithLeaderboardId:completionQueue:completionBlock:]	
+105793ac4	105793ad7	decompiled	chunks/006/functions-000412.c		
+105793ad8	105793c6b	decompiled	chunks/006/functions-000412.c		
+105793c6c	105793c7f	decompiled	chunks/006/functions-000412.c		
+105793c80	105793d1f	decompiled	chunks/006/functions-000412.c		
+105793d20	105793d33	decompiled	chunks/006/functions-000412.c		
+105793d34	105793e0b	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl batchGetLeaderboardEntriesWithLeaderboardId:userIds:completionQueue:completionBlock:]	
+105793e0c	105793e17	decompiled	chunks/006/functions-000412.c		
+105793e18	105793fc3	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl listFriendLeaderboardEntriesForLeaderboardId:currentUserId:completionQueue:completionBlock:]	
+105793fc4	10579400b	decompiled	chunks/006/functions-000412.c		
+10579400c	10579402f	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl listFriendLeaderboardDataWithLeaderboardId:currentUserId:limit:orderingType:isStudioLens:completionQueue:completionBlock:]	
+105794030	1057940df	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl getLeaderboardTopScoresEntriesWithLeaderboardId:limit:completionQueue:completionBlock:]	
+1057940e0	1057940f3	decompiled	chunks/006/functions-000412.c		
+1057940f4	105794117	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl getLeaderboardTopScoresDataWithLeaderboardId:limit:orderingType:isStudioLens:completionQueue:completionBlock:]	
+105794118	105794207	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl getLeaderboardGlobalOptInStatusWithCompletionQueue:completionBlock:]	
+105794208	105794277	decompiled	chunks/006/functions-000412.c		
+105794278	10579427f	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl setLeaderboardGlobalOptInStatusWithOptInStatus:completionQueue:completionBlock:]	
+105794280	105794287	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl sendLeaderboardNotificationsWithLensId:leaderboardId:recipientUserIds:completionQueue:completionBlock:]	
+105794288	1057942b7	decompiled	chunks/006/functions-000412.c	-[SCCognacLeaderboardDataServiceImpl .cxx_destruct]	
+1057942b8	10579432b	decompiled	chunks/006/functions-000412.c	-[SCCognacUserContextTokenProviderImplementation initWithCognacServiceClient:]	
+10579432c	105794333	decompiled	chunks/006/functions-000412.c	-[SCCognacUserContextTokenProviderImplementation userContextToken]	
+105794334	10579434b	decompiled	chunks/006/functions-000412.c	-[SCCognacUserContextTokenProviderImplementation .cxx_destruct]	
+10579434c	1057943bf	decompiled	chunks/006/functions-000412.c	-[UNISCGamesAuthAuth initWithUnifiedGrpcService:]	
+1057943c0	1057944a3	decompiled	chunks/006/functions-000412.c	-[UNISCGamesAuthAuth getCanvasTokenWithRequest:callOptionsBuilder:handler:]	
+1057944a4	1057944af	decompiled	chunks/006/functions-000412.c	-[UNISCGamesAuthAuth .cxx_destruct]	
+1057944b0	10579457b	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient setHostName:]	
+10579457c	105794687	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient getUserContextToken]	
+105794688	10579469f	decompiled	chunks/006/functions-000412.c		
+1057946a0	10579475b	decompiled	chunks/006/functions-000412.c		
+10579475c	105794763	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient hostName]	
+105794764	10579476f	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient baseURL]	
+105794770	105794777	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient setBaseURL:]	
+105794778	1057947d7	decompiled	chunks/006/functions-000412.c	-[SCCognacServiceClient .cxx_destruct]	
+1057947d8	105794807	decompiled	chunks/006/functions-000412.c		
+105794808	1057948d7	decompiled	chunks/006/functions-000412.c		
+1057948d8	105794cbb	decompiled	chunks/006/functions-000412.c		
+105794cbc	105794cdb	decompiled	chunks/006/functions-000412.c		
+105794cdc	105794ce7	decompiled	chunks/006/functions-000412.c		
+105794ce8	105794de7	decompiled	chunks/006/functions-000412.c		
+105794de8	105794e93	decompiled	chunks/006/functions-000412.c		
+105794e94	105794e9f	decompiled	chunks/006/functions-000412.c	+[SCCognacDataStorage announcerIdentifier]	
+105794ea0	105794ea7	decompiled	chunks/006/functions-000412.c	-[SCCognacDataStorage addListener:]	
+105794ea8	105794eaf	decompiled	chunks/006/functions-000412.c	-[SCCognacDataStorage removeListener:]	
+105794eb0	105794fdf	decompiled	chunks/006/functions-000412.c	-[SCCognacDataStorage init]	
+105794fe0	10579516f	decompiled	chunks/006/functions-000412.c	-[SCCognacDataStorage updateWithLeaderboard:completionQueue:completionBlock:]	
+105795170	1057952eb	decompiled	chunks/006/functions-000412.c		
+1057952ec	10579536b	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage leaderboardWithLeaderboardId:]	
+10579536c	1057954f3	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage updateLeaderboardScoreVisibilitiesWithAppScopeScoreVisibilities:leaderboardScopeScoreVisibilities:completionQueue:completionBlock:]	
+1057954f4	1057956fb	decompiled	chunks/006/functions-000413.c		
+1057956fc	10579581b	decompiled	chunks/006/functions-000413.c		
+10579581c	1057958b3	decompiled	chunks/006/functions-000413.c		
+1057958b4	105795933	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage leaderboardScoreVisibilityWithAppId:]	
+105795934	1057959b3	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage leaderboardScoreVisibilityWithLeaderboardId:]	
+1057959b4	105795a5b	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage cleanUp]	
+105795a5c	105795b67	decompiled	chunks/006/functions-000413.c		
+105795b68	105795b73	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage leaderboardIdToLeaderboard]	
+105795b74	105795b7b	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage setLeaderboardIdToLeaderboard:]	
+105795b7c	105795b87	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage appIdToLeaderboardScoreVisibility]	
+105795b88	105795b8f	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage setAppIdToLeaderboardScoreVisibility:]	
+105795b90	105795b9b	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage leaderboardIdToLeaderboardScoreVisibility]	
+105795b9c	105795ba3	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage setLeaderboardIdToLeaderboardScoreVisibility:]	
+105795ba4	105795bf7	decompiled	chunks/006/functions-000413.c	-[SCCognacDataStorage .cxx_destruct]	
+105795bf8	105795c53	decompiled	chunks/006/functions-000413.c	-[SCUserSession cognacDataStorage]	
+105795c54	105795c6f	decompiled	chunks/006/functions-000413.c		
+105795c70	105795d33	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences initWithAppId:updateDate:acceptedContentAlert:acceptedLeaderboardAlert:]	
+105795d34	105795e0b	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences initWithCoder:]	
+105795e0c	105795e2f	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences copyWithZone:]	
+105795e30	105795eb7	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences encodeWithCoder:]	
+105795eb8	105795f37	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences hash]	
+105795f38	105795fff	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences isEqual:]	
+105796000	105796007	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences appId]	
+105796008	10579600f	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences updateDate]	
+105796010	105796017	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences acceptedContentAlert]	
+105796018	10579601f	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences acceptedLeaderboardAlert]	
+105796020	10579604f	decompiled	chunks/006/functions-000413.c	-[SCCognacUserAppPreferences .cxx_destruct]	
+105796050	1057960b7	decompiled	chunks/006/functions-000413.c	+[SCCognacAutosuggestKeywordConfiguration descriptor]	
+1057960b8	105796133	decompiled	chunks/006/functions-000413.c	+[SCCognacLocalhostPolicy descriptor]	
+105796134	1057961af	decompiled	chunks/006/functions-000413.c	+[SCCognacScoreShareMessage descriptor]	
+1057961b0	10579623b	decompiled	chunks/006/functions-000413.c	+[SCCognacTalkSessionMessage descriptor]	
+10579623c	1057962a3	decompiled	chunks/006/functions-000413.c	+[SCCognacTalkSessionTextMessage descriptor]	
+1057962a4	105796387	decompiled	chunks/006/functions-000413.c	+[SCCognacStatusStreamMessage descriptor]	
+105796388	105796393	decompiled	chunks/006/functions-000413.c		
+105796394	10579641f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesAppInstanceScope descriptor]	
+105796420	105796487	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesAppInstance descriptor]	
+105796488	1057964ef	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesChatDockEntry descriptor]	
+1057964f0	105796557	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesChatDock descriptor]	
+105796558	1057965d3	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesNotificationPayload descriptor]	
+1057965d4	10579663b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesLaunchAppInstanceRequest descriptor]	
+10579663c	1057966a3	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesLaunchAppInstanceResponse descriptor]	
+1057966a4	10579670b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesTerminateAppInstanceRequest descriptor]	
+10579670c	105796773	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesTerminateAppInstanceResponse descriptor]	
+105796774	1057967db	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetAppInstanceAuthTokenRequest descriptor]	
+1057967dc	105796843	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetAppInstanceAuthTokenResponse descriptor]	
+105796844	1057968ab	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetChatDockRequest descriptor]	
+1057968ac	105796913	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetChatDockResponse descriptor]	
+105796914	10579697b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesBatchGetChatDockRequest descriptor]	
+10579697c	1057969e3	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesBatchGetChatDockResponse descriptor]	
+1057969e4	105796a4b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetAppInstanceRequest descriptor]	
+105796a4c	105796ac7	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesGetAppInstanceResponse descriptor]	
+105796ac8	105796b2f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesBatchGetAppInstanceRequest descriptor]	
+105796b30	105796bab	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesBatchGetAppInstanceResponse descriptor]	
+105796bac	105796c13	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesUpdateAppInstancePrivacyRequest descriptor]	
+105796c14	105796d0b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppInstancesUpdateAppInstancePrivacyResponse descriptor]	
+105796d0c	105796d17	decompiled	chunks/006/functions-000413.c		
+105796d18	105796d93	decompiled	chunks/006/functions-000413.c		
+105796d94	105796d9f	decompiled	chunks/006/functions-000413.c		
+105796da0	105796e1b	decompiled	chunks/006/functions-000413.c		
+105796e1c	105796e27	decompiled	chunks/006/functions-000413.c		
+105796e28	105796ea3	decompiled	chunks/006/functions-000413.c		
+105796ea4	105796eaf	decompiled	chunks/006/functions-000413.c		
+105796eb0	105796f2b	decompiled	chunks/006/functions-000413.c		
+105796f2c	105796f37	decompiled	chunks/006/functions-000413.c		
+105796f38	105796fb3	decompiled	chunks/006/functions-000413.c		
+105796fb4	105796fbf	decompiled	chunks/006/functions-000413.c		
+105796fc0	10579703b	decompiled	chunks/006/functions-000413.c		
+10579703c	105797047	decompiled	chunks/006/functions-000413.c		
+105797048	1057970c3	decompiled	chunks/006/functions-000413.c		
+1057970c4	1057970cf	decompiled	chunks/006/functions-000413.c		
+1057970d0	10579714b	decompiled	chunks/006/functions-000413.c		
+10579714c	105797157	decompiled	chunks/006/functions-000413.c		
+105797158	1057971bf	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsPublisher descriptor]	
+1057971c0	10579723b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsImageResources descriptor]	
+10579723c	1057972a3	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsPlayerLimits descriptor]	
+1057972a4	10579731f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsBuild descriptor]	
+105797320	105797387	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsDevMetadata descriptor]	
+105797388	10579741b	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsDevMetadata_PlayCanvasMetadata descriptor]	
+10579741c	105797483	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsLensMetadata descriptor]	
+105797484	1057974eb	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsBuildLocalization descriptor]	
+1057974ec	105797567	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsBuildLocalizationContent descriptor]	
+105797568	1057975cf	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsLeaderboardInfo descriptor]	
+1057975d0	10579764f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsApp descriptor]	
+105797650	1057976b7	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsSnapCanvasSDKInfo descriptor]	
+1057976b8	10579771f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsDiscoverApp descriptor]	
+105797720	105797787	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsContentUpdateAlert descriptor]	
+105797788	1057977ef	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsGetAppRequest descriptor]	
+1057977f0	105797857	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsBatchGetAppRequest descriptor]	
+105797858	1057978bf	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsBatchGetAppResponse descriptor]	
+1057978c0	105797927	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListAppsRequest descriptor]	
+105797928	10579798f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListAppsResponse descriptor]	
+105797990	1057979f7	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListDiscoverAppsResponse descriptor]	
+1057979f8	105797a5f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListDestinationAppsRequest descriptor]	
+105797a60	105797ac7	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListDestinationAppsResponse descriptor]	
+105797ac8	105797b2f	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListSearchAppsRequest descriptor]	
+105797b30	105797b97	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListSearchAppsResponse descriptor]	
+105797b98	105797bff	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsUpdatedApp descriptor]	
+105797c00	105797c67	decompiled	chunks/006/functions-000413.c	+[SCCognacAppsListUpdatedAppsRequest descriptor]	
+105797c68	105797ccf	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsListUpdatedAppsResponse descriptor]	
+105797cd0	105797d37	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRankingSignal descriptor]	
+105797d38	105797d9f	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsDeviceCompatibility descriptor]	
+105797da0	105797e07	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsLocalizedMajorUpdateDescription descriptor]	
+105797e08	105797e6f	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsMajorUpdateVersion descriptor]	
+105797e70	105797ed7	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsMajorUpdate descriptor]	
+105797ed8	105797f3f	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsGetAppDeeplinkMetadataRequest descriptor]	
+105797f40	105797fbb	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsGetAppDeeplinkMetadataResponse descriptor]	
+105797fbc	105798023	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsListRecentAppsRequest descriptor]	
+105798024	1057980af	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsAppScope descriptor]	
+1057980b0	105798117	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsListRecentAppsResponse descriptor]	
+105798118	10579817f	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRecentApp descriptor]	
+105798180	1057981e7	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRemoveFromRecentAppsRequest descriptor]	
+1057981e8	10579824f	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRemoveFromRecentAppsResponse descriptor]	
+105798250	1057982cb	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsIsAppUrlWhitelistedRequest descriptor]	
+1057982cc	105798333	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsIsAppUrlWhitelistedResponse descriptor]	
+105798334	10579839b	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsListShortcutAppsRequest descriptor]	
+10579839c	105798403	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsListShortcutAppsResponse descriptor]	
+105798404	10579846b	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsAddToShortcutAppsRequest descriptor]	
+10579846c	1057984d3	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsAddToShortcutAppsResponse descriptor]	
+1057984d4	10579853b	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRemoveFromShortcutAppsRequest descriptor]	
+10579853c	1057985a3	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsRemoveFromShortcutAppsResponse descriptor]	
+1057985a4	10579860b	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsUpdateShortcutAppsRequest descriptor]	
+10579860c	105798673	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsUpdateShortcutAppsResponse descriptor]	
+105798674	1057986db	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsFilterEligibleAppDetailsRequest descriptor]	
+1057986dc	105798743	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsFilterEligibleAppDetailsResponse descriptor]	
+105798744	1057987bf	decompiled	chunks/006/functions-000414.c	+[SCCognacAppsFilteredAppDetails descriptor]	
+1057987c0	105798827	decompiled	chunks/006/functions-000414.c	+[SCCognacAuthClientAuthClient descriptor]	
+105798828	10579888f	decompiled	chunks/006/functions-000414.c	+[SCCognacAuthClientAuthScope descriptor]	
+105798890	105798973	decompiled	chunks/006/functions-000414.c	+[SCCognacClientContextDeviceBlacklist descriptor]	
+105798974	10579897f	decompiled	chunks/006/functions-000414.c		
+105798980	1057989fb	decompiled	chunks/006/functions-000414.c	+[SCCognacClientRuntimeClientRuntimeInfo descriptor]	
+1057989fc	105798a63	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetValidSessionsRequest descriptor]	
+105798a64	105798acb	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetValidSessionsResponse descriptor]	
+105798acc	105798b33	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetRecentSessionsRequest descriptor]	
+105798b34	105798b9b	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetRecentSessionsResponse descriptor]	
+105798b9c	105798c27	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiSessionInfo descriptor]	
+105798c28	105798c8f	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetAllParticipantsRequest descriptor]	
+105798c90	105798cf7	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiGetAllParticipantsResponse descriptor]	
+105798cf8	105798d5f	decompiled	chunks/006/functions-000414.c	+[SCCognacConnectionApiParticipants descriptor]	
+105798d60	105798dc7	decompiled	chunks/006/functions-000414.c	+[SCCognacContextSwitchingSwitchAppInstanceRequest descriptor]	
+105798dc8	105798e2f	decompiled	chunks/006/functions-000414.c	+[SCCognacContextSwitchingSwitchAppInstanceResponse descriptor]	
+105798e30	105798e97	decompiled	chunks/006/functions-000414.c	+[SCCognacDeviceClassGetDeviceClassRequest descriptor]	
+105798e98	105798eff	decompiled	chunks/006/functions-000414.c	+[SCCognacDeviceClassGetDeviceClassResponse descriptor]	
+105798f00	105798f67	decompiled	chunks/006/functions-000414.c	+[SCCognacDiscoverRankingFeaturesDiscoverRankingFeatures descriptor]	
+105798f68	105798fe3	decompiled	chunks/006/functions-000414.c	+[SCCognacDiscoverRankingFeaturesDiscoverRankingFeatures_InteractionFeatures descriptor]	
+105798fe4	10579904b	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesExternalUserProfile descriptor]	
+10579904c	1057990b3	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesGetExternalUserProfileRequest descriptor]	
+1057990b4	10579911b	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesBatchGetExternalUserProfileRequest descriptor]	
+10579911c	105799183	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesBatchGetExternalUserProfileResponse descriptor]	
+105799184	1057991eb	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesUserInfo descriptor]	
+1057991ec	105799253	decompiled	chunks/006/functions-000414.c	+[SCCognacExternalUserProfilesFullUserProfile descriptor]	
+105799254	1057992bb	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesInvitation descriptor]	
+1057992bc	105799323	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesInviteFriendsRequest descriptor]	
+105799324	10579938b	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesInviteError descriptor]	
+10579938c	1057993f3	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesInviteFriendsResponse descriptor]	
+1057993f4	10579945b	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesAbandonInvitesRequest descriptor]	
+10579945c	1057994c3	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesListInvitationsRequest descriptor]	
+1057994c4	10579952b	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesListInvitationsResponse descriptor]	
+10579952c	105799593	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesRemoveInvitationRequest descriptor]	
+105799594	105799677	decompiled	chunks/006/functions-000414.c	+[SCCognacInvitesRemoveInvitationResponse descriptor]	
+105799678	105799683	decompiled	chunks/006/functions-000414.c		
+105799684	1057996ff	decompiled	chunks/006/functions-000414.c		
+105799700	10579970b	decompiled	chunks/006/functions-000414.c		
+10579970c	105799787	decompiled	chunks/006/functions-000414.c		
+105799788	105799793	decompiled	chunks/006/functions-000414.c		
+105799794	10579980f	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsLeaderboard descriptor]	
+105799810	105799877	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsLeaderboardEntry descriptor]	
+105799878	1057998df	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsSubmitScoreRequest descriptor]	
+1057998e0	105799947	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsSubmitScoreResponse descriptor]	
+105799948	1057999af	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsBatchSubmitScoreRequest descriptor]	
+1057999b0	105799a17	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsBatchSubmitScoreResponse descriptor]	
+105799a18	105799a7f	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListLeaderboardsRequest descriptor]	
+105799a80	105799ae7	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListLeaderboardsResponse descriptor]	
+105799ae8	105799b4f	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsGetLeaderboardRequest descriptor]	
+105799b50	105799bb7	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsGetLeaderboardResponse descriptor]	
+105799bb8	105799c1f	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListFriendLeaderboardEntriesRequest descriptor]	
+105799c20	105799c87	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListFriendLeaderboardEntriesResponse descriptor]	
+105799c88	105799cef	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListGlobalLeaderboardEntriesRequest descriptor]	
+105799cf0	105799d57	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsListGlobalLeaderboardEntriesResponse descriptor]	
+105799d58	105799de3	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsScoreVisibility descriptor]	
+105799de4	105799e4b	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsSetScoreVisibilityRequest descriptor]	
+105799e4c	105799eb3	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsSetScoreVisibilityResponse descriptor]	
+105799eb4	105799f1b	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsGetScoreVisibilitiesRequest descriptor]	
+105799f1c	105799f83	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsGetScoreVisibilitiesResponse descriptor]	
+105799f84	105799feb	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsBatchGetLeaderboardEntriesRequest descriptor]	
+105799fec	10579a053	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsBatchGetLeaderboardEntriesResponse descriptor]	
+10579a054	10579a0bb	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsUserScore descriptor]	
+10579a0bc	10579a123	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsLeaderboardMetadata descriptor]	
+10579a124	10579a18b	decompiled	chunks/006/functions-000414.c	+[SCCognacLeaderboardsScoreMetadata descriptor]	
+10579a18c	10579a1f3	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesUserAppPreferences descriptor]	
+10579a1f4	10579a25b	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesGetUserAppPreferencesRequest descriptor]	
+10579a25c	10579a2c3	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesGetUserAppPreferencesResponse descriptor]	
+10579a2c4	10579a32b	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesBatchGetUserAppPreferencesRequest descriptor]	
+10579a32c	10579a393	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesBatchGetUserAppPreferencesResponse descriptor]	
+10579a394	10579a3fb	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesSetUserAppPreferencesRequest descriptor]	
+10579a3fc	10579a463	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppPreferencesSetUserAppPreferencesResponse descriptor]	
+10579a464	10579a4cb	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppSessionsUserAppSession descriptor]	
+10579a4cc	10579a533	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppSessionsCreateUserAppSessionRequest descriptor]	
+10579a534	10579a59b	decompiled	chunks/006/functions-000414.c	+[SCCognacUserAppSessionsCreateUserAppSessionResponse descriptor]	
+10579a59c	10579a603	decompiled	chunks/006/functions-000415.c	+[SCCognacUserAppSessionsTerminateUserAppSessionRequest descriptor]	
+10579a604	10579a67f	decompiled	chunks/006/functions-000415.c	+[SCCognacUpdateNotificationPayload descriptor]	
+10579a680	10579a6e7	decompiled	chunks/006/functions-000415.c	+[SCCognacSendChatStatusInfo descriptor]	
+10579a6e8	10579a74f	decompiled	chunks/006/functions-000415.c	+[SCCognacSendChatStatusMessageRequest descriptor]	
+10579a750	10579a7b7	decompiled	chunks/006/functions-000415.c	+[SCCognacSendChatStatusMessageResponse descriptor]	
+10579a7b8	10579a843	decompiled	chunks/006/functions-000415.c	+[SCCognacConversationContext descriptor]	
+10579a844	10579a8bf	decompiled	chunks/006/functions-000415.c	+[SCCognacSendNotificationRequest descriptor]	
+10579a8c0	10579a927	decompiled	chunks/006/functions-000415.c	+[SCCognacSendNotificationResponse descriptor]	
+10579a928	10579a98f	decompiled	chunks/006/functions-000415.c	+[SCGamesAuthGetOIDCTokenRequest descriptor]	
+10579a990	10579a9f7	decompiled	chunks/006/functions-000415.c	+[SCGamesAuthGetOIDCTokenResponse descriptor]	
+10579a9f8	10579aa83	decompiled	chunks/006/functions-000415.c	+[SCGamesAuthGetCanvasTokenRequest descriptor]	
+10579aa84	10579aaeb	decompiled	chunks/006/functions-000415.c	+[SCGamesAuthGetCanvasTokenResponse descriptor]	
+10579aaec	10579ab5f	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards initWithUnifiedGrpcService:]	
+10579ab60	10579ac43	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards clientSubmitScoreWithRequest:callOptionsBuilder:handler:]	
+10579ac44	10579ad27	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards getClientLeaderboardWithRequest:callOptionsBuilder:handler:]	
+10579ad28	10579ae0b	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards listFriendLeaderboardEntriesWithRequest:callOptionsBuilder:handler:]	
+10579ae0c	10579aeef	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards setScoreVisibilityWithRequest:callOptionsBuilder:handler:]	
+10579aef0	10579afd3	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards getScoreVisibilitiesWithRequest:callOptionsBuilder:handler:]	
+10579afd4	10579b0b7	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards getOptInStatusWithRequest:callOptionsBuilder:handler:]	
+10579b0b8	10579b19b	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards setOptInStatusWithRequest:callOptionsBuilder:handler:]	
+10579b19c	10579b27f	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards batchGetLeaderboardEntriesWithRequest:callOptionsBuilder:handler:]	
+10579b280	10579b363	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards getLeaderboardTopScoresWithRequest:callOptionsBuilder:handler:]	
+10579b364	10579b447	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards getEligibleLeaderboardNotificationsWithRequest:callOptionsBuilder:handler:]	
+10579b448	10579b52b	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards deleteScoreWithRequest:callOptionsBuilder:handler:]	
+10579b52c	10579b60f	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards deleteUserLensDataWithRequest:callOptionsBuilder:handler:]	
+10579b610	10579b6f3	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards deleteAllUserDataWithRequest:callOptionsBuilder:handler:]	
+10579b6f4	10579b7d7	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards sendLeaderboardNotificationsWithRequest:callOptionsBuilder:handler:]	
+10579b7d8	10579b7e3	decompiled	chunks/006/functions-000415.c	-[UNISCGamesLeaderboardsClientLeaderboards .cxx_destruct]	
+10579b7e4	10579b857	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingImpl initWithUserBlizzardLogger:]	
+10579b858	10579b987	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingImpl logTokenShopImpressionWithEntryPoint:hasBadged:]	
+10579b988	10579bb53	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingImpl logUnconsumedGrantWithTokenCount:tokenPackId:transactionId:transactionStatus:]	
+10579bb54	10579bb9b	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingImpl logGiftShopImpression]	
+10579bb9c	10579bba7	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingImpl .cxx_destruct]	
+10579bba8	10579bc8b	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingServiceProvider provide]	
+10579bc8c	10579bd1b	decompiled	chunks/006/functions-000415.c		
+10579bd1c	10579bd53	decompiled	chunks/006/functions-000415.c	-[SCCognacIAPTokenLoggingServiceProvider .cxx_destruct]	
+10579bd54	10579be4f	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher initWithContentFetcher:bitmojiImageFetcher:imageRenderer:queue:]	
+10579be50	10579bf3f	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher fetchCompositeNetworkImage:]	
+10579bf40	10579c03b	decompiled	chunks/006/functions-000415.c		
+10579c03c	10579c06f	decompiled	chunks/006/functions-000415.c		
+10579c070	10579c24f	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher fetchCompositeNetworkImage:observer:]	
+10579c250	10579c25b	decompiled	chunks/006/functions-000415.c		
+10579c25c	10579c33b	decompiled	chunks/006/functions-000415.c		
+10579c33c	10579c34b	decompiled	chunks/006/functions-000415.c		
+10579c34c	10579c4a7	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher _compositeImages:images:]	
+10579c4a8	10579c4af	decompiled	chunks/006/functions-000415.c		
+10579c4b0	10579c5f3	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher _loadImageForLayer:]	
+10579c5f4	10579c60b	decompiled	chunks/006/functions-000415.c		
+10579c60c	10579c64f	decompiled	chunks/006/functions-000415.c		
+10579c650	10579c757	decompiled	chunks/006/functions-000415.c		
+10579c758	10579c80b	decompiled	chunks/006/functions-000415.c		
+10579c80c	10579c9b3	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher _loadNetworkImage:]	
+10579c9b4	10579ca6b	decompiled	chunks/006/functions-000415.c		
+10579ca6c	10579cb53	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher _loadBitmojiImage:]	
+10579cb54	10579cbc3	decompiled	chunks/006/functions-000415.c		
+10579cbc4	10579cc0b	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageFetcher .cxx_destruct]	
+10579cc0c	10579d617	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageRenderer renderCompositeImage:loadedImages:]	
+10579d618	10579d763	decompiled	chunks/006/functions-000415.c		
+10579d764	10579d847	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageServiceProvider provide]	
+10579d848	10579d887	decompiled	chunks/006/functions-000415.c		
+10579d888	10579da37	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageServiceProvider _createCompositeImageFetcher]	
+10579da38	10579db47	decompiled	chunks/006/functions-000415.c	-[SCCommerceCompositeImageServiceProvider .cxx_destruct]	
+10579db48	10579dc0f	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseServiceProvider _vendComposerShowcaseGrpcService]	
+10579dc10	10579dcc7	decompiled	chunks/006/functions-000415.c	+[SCCommerceShowcaseServiceProvider _vendGrpcParamsBuilder]	
+10579dcc8	10579de1b	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseServiceProvider _vendLegacyShowcaseFetcher]	
+10579de1c	10579dfd3	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseServiceProvider _vendShowcaseFetcher]	
+10579dfd4	10579e077	decompiled	chunks/006/functions-000415.c		
+10579e078	10579e107	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseServiceProvider .cxx_destruct]	
+10579e108	10579e213	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher initWithGrapheneRegistry:showcaseGrpcService:countryCodeProvider:configProvider:]	
+10579e214	10579e4bb	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getCatalogWithQuery:limit:cursor:filter:completionBlock:]	
+10579e4bc	10579e5c7	decompiled	chunks/006/functions-000415.c		
+10579e5c8	10579e813	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getProductDetails:source:completionBlock:]	
+10579e814	10579e8eb	decompiled	chunks/006/functions-000415.c		
+10579e8ec	10579ebb7	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getWidgetProductsWithWidgetContext:source:limit:cursor:completionBlock:]	
+10579ebb8	10579ec8f	decompiled	chunks/006/functions-000415.c		
+10579ec90	10579ee43	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getItemVariantData:completionBlock:]	
+10579ee44	10579eeb3	decompiled	chunks/006/functions-000415.c		
+10579eeb4	10579f017	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getStoresForUser:]	
+10579f018	10579f0ef	decompiled	chunks/006/functions-000415.c		
+10579f0f0	10579f26f	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher getStoreWithId:completionBlock:]	
+10579f270	10579f347	decompiled	chunks/006/functions-000415.c		
+10579f348	10579f54f	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetShowcaseResponse:error:completion:]	
+10579f550	10579f5e7	decompiled	chunks/006/functions-000415.c		
+10579f5e8	10579f82f	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetProductDetailsResponse:error:completion:]	
+10579f830	10579f83f	decompiled	chunks/006/functions-000415.c		
+10579f840	10579fa47	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetRecommendationsResponse:error:completion:]	
+10579fa48	10579fadf	decompiled	chunks/006/functions-000415.c		
+10579fae0	10579fc43	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetStoresForUserResponse:error:completion:]	
+10579fc44	10579fc53	decompiled	chunks/006/functions-000415.c		
+10579fc54	10579fda7	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetStoresWithIdResponse:error:completion:]	
+10579fda8	10579ffdb	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _didGetVariantDataResponse:error:request:startTimestamp:completion:]	
+10579ffdc	1057a00e3	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _showcaseContextForSource:]	
+1057a00e4	1057a00fb	decompiled	chunks/006/functions-000415.c		
+1057a00fc	1057a0143	decompiled	chunks/006/functions-000415.c		
+1057a0144	1057a01bf	decompiled	chunks/006/functions-000415.c		
+1057a01c0	1057a034b	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _checkForErrorWithResponse:grpcError:responseError:requestId:]	
+1057a034c	1057a04d3	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _logRequestMetricForService:additionalContext:request:response:startTimestamp:responseError:grpcError:]	
+1057a04d4	1057a0677	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _vendGRPCCallBuilder]	
+1057a0678	1057a06d7	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _vendDeviceContext]	
+1057a06d8	1057a0737	decompiled	chunks/006/functions-000415.c	-[SCCommerceShowcaseFetcher _showcaseRoutingHeader]	
+1057a0738	1057a073f	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher grapheneNetworkLogger]	
+1057a0740	1057a076f	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher setGrapheneNetworkLogger:]	
+1057a0770	1057a0777	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher showcaseGRPCService]	
+1057a0778	1057a07a7	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher setShowcaseGRPCService:]	
+1057a07a8	1057a07af	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher countryCodeProvider]	
+1057a07b0	1057a07df	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher setCountryCodeProvider:]	
+1057a07e0	1057a07e7	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher configProvider]	
+1057a07e8	1057a0817	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher setConfigProvider:]	
+1057a0818	1057a085f	decompiled	chunks/006/functions-000416.c	-[SCCommerceShowcaseFetcher .cxx_destruct]	
+1057a0860	1057a08d3	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService initWithUnifiedGrpcService:]	
+1057a08d4	1057a09b7	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getShowcaseWithRequest:callOptionsBuilder:handler:]	
+1057a09b8	1057a0a9b	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getItemDetailPageWithRequest:callOptionsBuilder:handler:]	
+1057a0a9c	1057a0b7f	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getItemRecommendationsWithRequest:callOptionsBuilder:handler:]	
+1057a0b80	1057a0c63	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getItemVariantDataWithRequest:callOptionsBuilder:handler:]	
+1057a0c64	1057a0d47	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getStoresForUserWithRequest:callOptionsBuilder:handler:]	
+1057a0d48	1057a0e2b	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getStoreMetadataWithRequest:callOptionsBuilder:handler:]	
+1057a0e2c	1057a0f0f	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getSizeRecommendationsWithRequest:callOptionsBuilder:handler:]	
+1057a0f10	1057a0ff3	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService getCommercePageWithRequest:callOptionsBuilder:handler:]	
+1057a0ff4	1057a0fff	decompiled	chunks/006/functions-000416.c	-[UNIShowcaseGrpcService .cxx_destruct]	
+1057a1000	1057a1067	decompiled	chunks/006/functions-000416.c	+[GetItemDetailPageRequest descriptor]	
+1057a1068	1057a10cf	decompiled	chunks/006/functions-000416.c	+[GetItemVariantDataRequest descriptor]	
+1057a10d0	1057a1137	decompiled	chunks/006/functions-000416.c	+[GetShowcaseRequest descriptor]	
+1057a1138	1057a119f	decompiled	chunks/006/functions-000416.c	+[UserContext descriptor]	
+1057a11a0	1057a1207	decompiled	chunks/006/functions-000416.c	+[GetSizeRecommendationsRequest descriptor]	
+1057a1208	1057a126f	decompiled	chunks/006/functions-000416.c	+[GetStoreMetadataRequest descriptor]	
+1057a1270	1057a12d7	decompiled	chunks/006/functions-000416.c	+[GetStoresForUserRequest descriptor]	
+1057a12d8	1057a1363	decompiled	chunks/006/functions-000416.c	+[GetCommercePageResponse descriptor]	
+1057a1364	1057a1447	decompiled	chunks/006/functions-000416.c	+[CommercePage descriptor]	
+1057a1448	1057a1453	decompiled	chunks/006/functions-000416.c		
+1057a1454	1057a14df	decompiled	chunks/006/functions-000416.c	+[CommercePageWidget descriptor]	
+1057a14e0	1057a155b	decompiled	chunks/006/functions-000416.c		
+1057a155c	1057a1567	decompiled	chunks/006/functions-000416.c		
+1057a1568	1057a15cf	decompiled	chunks/006/functions-000416.c	+[FitProfilePreferencesWidget descriptor]	
+1057a15d0	1057a1637	decompiled	chunks/006/functions-000416.c	+[RecentlyViewedPreferencesWidget descriptor]	
+1057a1638	1057a169f	decompiled	chunks/006/functions-000416.c	+[ShoppingHubWidget descriptor]	
+1057a16a0	1057a1783	decompiled	chunks/006/functions-000416.c	+[TryOnPreferencesWidget descriptor]	
+1057a1784	1057a178f	decompiled	chunks/006/functions-000416.c		
+1057a1790	1057a17f7	decompiled	chunks/006/functions-000416.c	+[CommerceItemWidget descriptor]	
+1057a17f8	1057a185f	decompiled	chunks/006/functions-000416.c	+[CommerceItemWidgetHeader descriptor]	
+1057a1860	1057a18c7	decompiled	chunks/006/functions-000416.c	+[CommerceTabWidget descriptor]	
+1057a18c8	1057a192f	decompiled	chunks/006/functions-000416.c	+[CommerceTab descriptor]	
+1057a1930	1057a1997	decompiled	chunks/006/functions-000416.c	+[LookBuilderCategoryWidget descriptor]	
+1057a1998	1057a1a7b	decompiled	chunks/006/functions-000416.c	+[LensInfo descriptor]	
+1057a1a7c	1057a1a87	decompiled	chunks/006/functions-000416.c		
+1057a1a88	1057a1b13	decompiled	chunks/006/functions-000416.c	+[CommerceAction descriptor]	
+1057a1b14	1057a1b9f	decompiled	chunks/006/functions-000416.c	+[PageNavigation descriptor]	
+1057a1ba0	1057a1c07	decompiled	chunks/006/functions-000416.c	+[CommercePageMetricsMetadata descriptor]	
+1057a1c08	1057a1ceb	decompiled	chunks/006/functions-000416.c	+[GetCommercePageRequest descriptor]	
+1057a1cec	1057a1cf7	decompiled	chunks/006/functions-000416.c		
+1057a1cf8	1057a1d5f	decompiled	chunks/006/functions-000416.c	+[CommercePageContext descriptor]	
+1057a1d60	1057a1deb	decompiled	chunks/006/functions-000416.c	+[CommerceContextInternal descriptor]	
+1057a1dec	1057a1e53	decompiled	chunks/006/functions-000416.c	+[CommerceTabInternal descriptor]	
+1057a1e54	1057a1ebb	decompiled	chunks/006/functions-000416.c	+[GetItemRecommendationsRequest descriptor]	
+1057a1ebc	1057a1f47	decompiled	chunks/006/functions-000416.c	+[GetItemRecommendationsResponse descriptor]	
+1057a1f48	1057a1fc3	decompiled	chunks/006/functions-000416.c	+[GetItemRecommendationsResponse_Recommendation descriptor]	
+1057a1fc4	1057a204f	decompiled	chunks/006/functions-000416.c	+[GetSizeRecommendationsResponse descriptor]	
+1057a2050	1057a20db	decompiled	chunks/006/functions-000416.c	+[SizeRecommendationResponse descriptor]	
+1057a20dc	1057a2143	decompiled	chunks/006/functions-000416.c	+[SizeRecommendationList descriptor]	
+1057a2144	1057a21ab	decompiled	chunks/006/functions-000416.c	+[SizeRecommendation descriptor]	
+1057a21ac	1057a2237	decompiled	chunks/006/functions-000416.c	+[GetStoreMetadataResponse descriptor]	
+1057a2238	1057a22c3	decompiled	chunks/006/functions-000416.c	+[GetStoresForUserResponse descriptor]	
+1057a22c4	1057a23bb	decompiled	chunks/006/functions-000416.c	+[GetStoresForUserResponse_StoreData descriptor]	
+1057a23bc	1057a23c7	decompiled	chunks/006/functions-000416.c		
+1057a23c8	1057a242f	decompiled	chunks/006/functions-000416.c	+[DeviceContext descriptor]	
+1057a2430	1057a25a7	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher initWithRequestManager:grapheneRegistry:configProvider:snapTokenProvider:]	
+1057a25a8	1057a27fb	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher getPCSProductSetWithProductSetId:adId:limit:cursor:completionBlock:]	
+1057a27fc	1057a2887	decompiled	chunks/006/functions-000416.c		
+1057a2888	1057a289f	decompiled	chunks/006/functions-000416.c		
+1057a28a0	1057a2a7f	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher _makeCommerceRequestWithModel:success:failure:]	
+1057a2a80	1057a2b4b	decompiled	chunks/006/functions-000416.c		
+1057a2b4c	1057a2b77	decompiled	chunks/006/functions-000416.c		
+1057a2b78	1057a2cff	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher _didGetSnapToken:forRequestModel:completionBlock:]	
+1057a2d00	1057a2e93	decompiled	chunks/006/functions-000416.c		
+1057a2e94	1057a31ff	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher _didGetShowcaseProductSetResponse:data:request:commerceRequestModel:completion:]	
+1057a3200	1057a323b	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher _showcaseRoutingHeader]	
+1057a323c	1057a3243	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher grapheneNetworkLogger]	
+1057a3244	1057a3273	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher setGrapheneNetworkLogger:]	
+1057a3274	1057a327b	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher requestManager]	
+1057a327c	1057a32ab	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher setRequestManager:]	
+1057a32ac	1057a32b3	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher queuePerformer]	
+1057a32b4	1057a32e3	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher setQueuePerformer:]	
+1057a32e4	1057a32eb	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher snapTokenProvider]	
+1057a32ec	1057a331b	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher setSnapTokenProvider:]	
+1057a331c	1057a3323	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher configProvider]	
+1057a3324	1057a3353	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher setConfigProvider:]	
+1057a3354	1057a33a7	decompiled	chunks/006/functions-000416.c	-[SCCommerceLegacyShowcaseFetcher .cxx_destruct]	
+1057a33a8	1057a347f	decompiled	chunks/006/functions-000416.c		
+1057a3480	1057a3573	decompiled	chunks/006/functions-000416.c		
+1057a3574	1057a35bf	decompiled	chunks/006/functions-000416.c		
+1057a35c0	1057a3edb	decompiled	chunks/006/functions-000416.c		
+1057a3edc	1057a3eef	decompiled	chunks/006/functions-000416.c		
+1057a3ef0	1057a432f	decompiled	chunks/006/functions-000416.c		
+1057a4330	1057a4397	decompiled	chunks/006/functions-000416.c	+[ProductDetails descriptor]	
+1057a4398	1057a43ff	decompiled	chunks/006/functions-000416.c	+[GetItemsRequest descriptor]	
+1057a4400	1057a448b	decompiled	chunks/006/functions-000416.c	+[StoreContext descriptor]	
+1057a448c	1057a44f3	decompiled	chunks/006/functions-000416.c	+[GetItemsResponse descriptor]	
+1057a44f4	1057a457f	decompiled	chunks/006/functions-000416.c	+[ShowcaseItem descriptor]	
+1057a4580	1057a45e7	decompiled	chunks/006/functions-000416.c	+[Merchant descriptor]	
+1057a45e8	1057a464f	decompiled	chunks/006/functions-000416.c	+[ProductMetadata descriptor]	
+1057a4650	1057a4777	decompiled	chunks/006/functions-000416.c	+[ProductPrice descriptor]	
+1057a4778	1057a4813	decompiled	chunks/006/functions-000417.c	-[SCScreenshopServiceProvider _createLazyPersistenceService]	
+1057a4814	1057a495f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopServiceProvider _createLazyModelService]	
+1057a4960	1057a4983	decompiled	chunks/006/functions-000417.c		
+1057a4984	1057a4bb7	decompiled	chunks/006/functions-000417.c	-[SCScreenshopServiceProvider _createLazyScreenshopNetworkService]	
+1057a4bb8	1057a4c43	decompiled	chunks/006/functions-000417.c	-[SCScreenshopServiceProvider .cxx_destruct]	
+1057a4c44	1057a4d7f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl initWithCommerceConfigProvider:mlModelProvider:applicationLifecycleEvents:]	
+1057a4d80	1057a4dc3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl fashionThreshold]	
+1057a4dc4	1057a4ec3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl checkForFashionWithImage:completion:]	
+1057a4ec4	1057a4ef7	decompiled	chunks/006/functions-000417.c		
+1057a4ef8	1057a4f2f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl getDownloadModelLatency]	
+1057a4f30	1057a4f43	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl getDownloadModelStatus]	
+1057a4f44	1057a5033	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _paddedImageFromImage:scaledToSize:]	
+1057a5034	1057a5417	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _checkForFashionWithImage:completion:]	
+1057a5418	1057a542f	decompiled	chunks/006/functions-000417.c		
+1057a5430	1057a54ef	decompiled	chunks/006/functions-000417.c		
+1057a54f0	1057a551b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _destroyModelExpirationTimer]	
+1057a551c	1057a55cf	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _safelyDestroyModelExpirationTimer]	
+1057a55d0	1057a5683	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _startModelExpirationTimer]	
+1057a5684	1057a577b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _createModelExpirationTimer]	
+1057a577c	1057a57a7	decompiled	chunks/006/functions-000417.c		
+1057a57a8	1057a58af	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _startObservingAppLifecycle]	
+1057a58b0	1057a58db	decompiled	chunks/006/functions-000417.c		
+1057a58dc	1057a5987	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _respondToModelExpirationTimer]	
+1057a5988	1057a59b3	decompiled	chunks/006/functions-000417.c		
+1057a59b4	1057a5a5f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _respondToMemoryWarning]	
+1057a5a60	1057a5a8b	decompiled	chunks/006/functions-000417.c		
+1057a5a8c	1057a5a9b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _finishModelExpirationTimerExecution]	
+1057a5a9c	1057a5ae3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _finishMemoryWarning]	
+1057a5ae4	1057a5b6b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _canContinueProcessing]	
+1057a5b6c	1057a5c17	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl _vendFashionModelInfo]	
+1057a5c18	1057a5c9b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopModelServiceImpl .cxx_destruct]	
+1057a5c9c	1057a5ea3	decompiled	chunks/006/functions-000417.c	-[SCPSSShoppableCategoriesResponse categoryResultWithModelVersion:]	
+1057a5ea4	1057a5f63	decompiled	chunks/006/functions-000417.c		
+1057a5f64	1057a601b	decompiled	chunks/006/functions-000417.c	-[SCPSSShoppableCategoriesResponse _stringForCategory:]	
+1057a601c	1057a60fb	decompiled	chunks/006/functions-000417.c	-[SCPSSShoppableCategoriesResponse _stringForColor:]	
+1057a60fc	1057a61df	decompiled	chunks/006/functions-000417.c	-[SCPSSShoppableCategoriesResponse _stringForPattern:]	
+1057a61e0	1057a628f	decompiled	chunks/006/functions-000417.c		
+1057a6290	1057a63b3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl initWithGrapheneRegistry:grpcClientFactory:commerceConfigProvider:countryCodeProvider:grpcComposerFactory:]	
+1057a63b4	1057a64f3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl categorizeImages:completion:completionQueue:]	
+1057a64f4	1057a652b	decompiled	chunks/006/functions-000417.c		
+1057a652c	1057a679b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _createGRPCServiceWithFactory:grpcComposerFactory:]	
+1057a679c	1057a67c7	decompiled	chunks/006/functions-000417.c		
+1057a67c8	1057a68a3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _getGRPCCallOptionsBuilder]	
+1057a68a4	1057a69ef	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _fetchShoppabilityVersion]	
+1057a69f0	1057a6a5f	decompiled	chunks/006/functions-000417.c		
+1057a6a60	1057a6aff	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _processShoppabilityVersionResponse:request:startTimestamp:error:]	
+1057a6b00	1057a6d5b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _categorizeImages:completion:completionQueue:]	
+1057a6d5c	1057a6dd7	decompiled	chunks/006/functions-000417.c		
+1057a6dd8	1057a6e7f	decompiled	chunks/006/functions-000417.c		
+1057a6e80	1057a6ffb	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _executeCategoryCompletion:completionQueue:request:response:startTimestamp:expectedResponseCount:error:]	
+1057a6ffc	1057a70c3	decompiled	chunks/006/functions-000417.c		
+1057a70c4	1057a710b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _metricErrorFromResponse:responseLength:grpcError:]	
+1057a710c	1057a7267	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _logVersionMetricWithRequest:response:startTimestamp:grpcError:]	
+1057a7268	1057a73c3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _logContextMetricWithRequest:response:startTimestamp:grpcError:]	
+1057a73c4	1057a751f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl _logRequestMetricWithRequest:response:startTimestamp:grpcError:]	
+1057a7520	1057a7527	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl categorizationMaxHeight]	
+1057a7528	1057a752f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl screenshopComposerGrpcService]	
+1057a7530	1057a7537	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl shoppabilityVersion]	
+1057a7538	1057a7567	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl setShoppabilityVersion:]	
+1057a7568	1057a756f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl commerceConfigProvider]	
+1057a7570	1057a759f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl setCommerceConfigProvider:]	
+1057a75a0	1057a75a7	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl grapheneNetworkLogger]	
+1057a75a8	1057a75d7	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl setGrapheneNetworkLogger:]	
+1057a75d8	1057a75df	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl countryCodeProvider]	
+1057a75e0	1057a760f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl setCountryCodeProvider:]	
+1057a7610	1057a7617	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl perceptionScreenshopService]	
+1057a7618	1057a7647	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl setPerceptionScreenshopService:]	
+1057a7648	1057a76a7	decompiled	chunks/006/functions-000417.c	-[SCScreenshopNetworkServiceImpl .cxx_destruct]	
+1057a76a8	1057a771b	decompiled	chunks/006/functions-000417.c	-[UNISCPSSScreenshopService initWithUnifiedGrpcService:]	
+1057a771c	1057a77ff	decompiled	chunks/006/functions-000417.c	-[UNISCPSSScreenshopService showcaseWithRequest:callOptionsBuilder:handler:]	
+1057a7800	1057a78e3	decompiled	chunks/006/functions-000417.c	-[UNISCPSSScreenshopService shoppableWithRequest:callOptionsBuilder:handler:]	
+1057a78e4	1057a79c7	decompiled	chunks/006/functions-000417.c	-[UNISCPSSScreenshopService shoppabilityVersionWithRequest:callOptionsBuilder:handler:]	
+1057a79c8	1057a79d3	decompiled	chunks/006/functions-000417.c	-[UNISCPSSScreenshopService .cxx_destruct]	
+1057a79d4	1057a7a57	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl initWithDocObjectContext:]	
+1057a7a58	1057a7bd3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl storeAssetWithAssetId:tapped:localSimilarityScore:modelVersion:shoppable:categories:colors:patterns:categorized:completion:]	
+1057a7bd4	1057a7dab	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl updateAssetWithAssetId:shoppable:categories:colors:patterns:modelVersion:completion:]	
+1057a7dac	1057a7db3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl getMetadataForAssetId:]	
+1057a7db4	1057a7dbb	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchFashionAssetMetadata]	
+1057a7dbc	1057a7dc3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchNonFashionAssetMetadata]	
+1057a7dc4	1057a7e07	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchUnprocessedFashionAssetMetadata]	
+1057a7e08	1057a7e23	decompiled	chunks/006/functions-000417.c		
+1057a7e24	1057a7edf	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchUnprocessedFashionAndShoppableAssetMetadata]	
+1057a7ee0	1057a7f23	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchShoppableAssetMetadata]	
+1057a7f24	1057a7f2b	decompiled	chunks/006/functions-000417.c		
+1057a7f2c	1057a7f6f	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchNonShoppableAssetMetadata]	
+1057a7f70	1057a7f8b	decompiled	chunks/006/functions-000417.c		
+1057a7f8c	1057a7f93	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchShoppableAssetMetadataWithVersionNumber:]	
+1057a7f94	1057a7f9b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchNonShoppableAssetMetadataWithVersionNumber:]	
+1057a7f9c	1057a8023	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchCategorizedShoppableAssetMetadata]	
+1057a8024	1057a80ab	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl fetchUncategorizedShoppableAssetMetadata]	
+1057a80ac	1057a80bb	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl _logErrorUpdatingAssetWithAssetId:error:completion:]	
+1057a80bc	1057a80c3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl screenshopStore]	
+1057a80c4	1057a80f3	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl setScreenshopStore:]	
+1057a80f4	1057a80ff	decompiled	chunks/006/functions-000417.c	-[SCScreenshopPersistenceServiceImpl .cxx_destruct]	
+1057a8100	1057a8187	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore initWithDocObjectContext:]	
+1057a8188	1057a82a7	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore fetchAssetMetadata]	
+1057a82a8	1057a892b	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore fetchAssetMetadataForFashion]	
+1057a892c	1057a8d53	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore fetchAssetMetadataForNonFashion]	
+1057a8d54	1057a8f93	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore fetchAssetMetadataForShoppableWithVersionNumber:]	
+1057a8f94	1057a91cf	decompiled	chunks/006/functions-000417.c	-[SCScreenshopDataModelsDocStore fetchAssetMetadataForNonShoppableWithVersionNumber:]	
+1057a91d0	1057a9493	decompiled	chunks/006/functions-000418.c	-[SCScreenshopDataModelsDocStore assetMetadataForId:]	
+1057a9494	1057a95cf	decompiled	chunks/006/functions-000418.c	-[SCScreenshopDataModelsDocStore storeAssetMetadata:completion:]	
+1057a95d0	1057a965b	decompiled	chunks/006/functions-000418.c		
+1057a965c	1057a9667	decompiled	chunks/006/functions-000418.c		
+1057a9668	1057a966f	decompiled	chunks/006/functions-000418.c	-[SCScreenshopDataModelsDocStore docObjectContext]	
+1057a9670	1057a969f	decompiled	chunks/006/functions-000418.c	-[SCScreenshopDataModelsDocStore setDocObjectContext:]	
+1057a96a0	1057a96ab	decompiled	chunks/006/functions-000418.c	-[SCScreenshopDataModelsDocStore .cxx_destruct]	
+1057a96ac	1057a970f	decompiled	chunks/006/functions-000418.c		
+1057a9710	1057a9797	decompiled	chunks/006/functions-000418.c		
+1057a9798	1057a9823	decompiled	chunks/006/functions-000418.c		
+1057a9824	1057a98df	decompiled	chunks/006/functions-000418.c		
+1057a98e0	1057a9913	decompiled	chunks/006/functions-000418.c		
+1057a9914	1057a996f	decompiled	chunks/006/functions-000418.c		
+1057a9970	1057a9a2b	decompiled	chunks/006/functions-000418.c		
+1057a9a2c	1057a9a6b	decompiled	chunks/006/functions-000418.c		
+1057a9a6c	1057a9abf	decompiled	chunks/006/functions-000418.c		
+1057a9ac0	1057a9b7b	decompiled	chunks/006/functions-000418.c		
+1057a9b7c	1057a9bbb	decompiled	chunks/006/functions-000418.c		
+1057a9bbc	1057a9c0f	decompiled	chunks/006/functions-000418.c		
+1057a9c10	1057a9c1b	decompiled	chunks/006/functions-000418.c	+[SCScreenshopAssetMetadata table]	
+1057a9c1c	1057a9f23	decompiled	chunks/006/functions-000418.c	+[SCScreenshopAssetMetadata immutableObjectParse:bufferSize:]	
+1057a9f24	1057a9f47	decompiled	chunks/006/functions-000418.c	+[SCScreenshopAssetMetadata objectClassFunctionPointer]	
+1057a9f48	1057aa0bf	decompiled	chunks/006/functions-000418.c		
+1057aa0c0	1057aa8c7	decompiled	chunks/006/functions-000418.c		
+1057aa8c8	1057aa953	decompiled	chunks/006/functions-000418.c		
+1057aa954	1057aa99b	decompiled	chunks/006/functions-000418.c	-[SCScreenshopAssetMetadataChangeRequest .cxx_destruct]	
+1057aa99c	1057aa9a7	decompiled	chunks/006/functions-000418.c	-[SCScreenshopAssetMetadataChangeRequest table]	
+1057aa9a8	1057aa9ef	decompiled	chunks/006/functions-000418.c	-[SCScreenshopAssetMetadataChangeRequest createTableWithSQLite:]	
+1057aa9f0	1057aad77	decompiled	chunks/006/functions-000418.c	-[SCScreenshopAssetMetadataChangeRequest transactWithSQLite:flatbuffers:]	
+1057aad78	1057ab0e3	decompiled	chunks/006/functions-000418.c		
+1057ab0e4	1057ab1cf	decompiled	chunks/006/functions-000418.c		
+1057ab1d0	1057ab33f	decompiled	chunks/006/functions-000418.c		
+1057ab340	1057ab46f	decompiled	chunks/006/functions-000418.c		
+1057ab470	1057ab65f	decompiled	chunks/006/functions-000418.c	-[SCCommerceDataServicesEntryPoint begin]	
+1057ab660	1057ab727	decompiled	chunks/006/functions-000418.c		
+1057ab728	1057ab897	decompiled	chunks/006/functions-000418.c	-[SCCommerceDataServicesEntryPoint _createAccountProvider]	
+1057ab898	1057ab8bb	decompiled	chunks/006/functions-000418.c		
+1057ab8bc	1057aba73	decompiled	chunks/006/functions-000418.c	-[SCCommerceDataServicesEntryPoint _createPaymentInfoProviderWithTokenizer:]	
+1057aba74	1057aba97	decompiled	chunks/006/functions-000418.c		
+1057aba98	1057abb53	decompiled	chunks/006/functions-000418.c	-[SCCommerceDataServicesEntryPoint _createTokenizer]	
+1057abb54	1057abbcb	decompiled	chunks/006/functions-000418.c	-[SCCommerceDataServicesEntryPoint .cxx_destruct]	
+1057abbcc	1057abccb	decompiled	chunks/006/functions-000418.c	-[SCCommercePaymentsInfraServicesEntryPoint begin]	
+1057abccc	1057abd0b	decompiled	chunks/006/functions-000418.c		
+1057abd0c	1057abdc7	decompiled	chunks/006/functions-000418.c	-[SCCommercePaymentsInfraServicesEntryPoint _createTokenizer]	
+1057abdc8	1057abdeb	decompiled	chunks/006/functions-000418.c		
+1057abdec	1057abebf	decompiled	chunks/006/functions-000418.c	-[SCCommercePaymentsInfraServicesEntryPoint .cxx_destruct]	
+1057abec0	1057ac057	decompiled	chunks/006/functions-000418.c	-[SCCommerceServiceProvider _createStoreFetcher]	
+1057ac058	1057ac07b	decompiled	chunks/006/functions-000418.c		
+1057ac07c	1057ac1cf	decompiled	chunks/006/functions-000418.c	-[SCCommerceServiceProvider _createPixelMetricsLogger]	
+1057ac1d0	1057ac237	decompiled	chunks/006/functions-000418.c	-[SCCommerceServiceProvider .cxx_destruct]	
+1057ac238	1057ac2ab	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService initWithUnifiedGrpcService:]	
+1057ac2ac	1057ac38f	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService getAccountInfoWithRequest:callOptionsBuilder:handler:]	
+1057ac390	1057ac473	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService updateContactDetailsWithRequest:callOptionsBuilder:handler:]	
+1057ac474	1057ac557	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService addNewShippingAddressWithRequest:callOptionsBuilder:handler:]	
+1057ac558	1057ac63b	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService updateShippingAddressWithRequest:callOptionsBuilder:handler:]	
+1057ac63c	1057ac71f	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService deleteShippingAddressWithRequest:callOptionsBuilder:handler:]	
+1057ac720	1057ac72b	decompiled	chunks/006/functions-000418.c	-[UNIAccountInfoService .cxx_destruct]	
+1057ac72c	1057ac9c7	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider initWithUserSession:userInfoServices:grapheneRegistry:unifiedGRPCClientFactory:]	
+1057ac9c8	1057acab3	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _vendCallOptions]	
+1057acab4	1057acb53	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider prefillPhone]	
+1057acb54	1057acb9b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider prefillPhoneCode]	
+1057acb9c	1057acbe3	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider prefillEmail]	
+1057acbe4	1057acc8b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider prefillUserInfoFromUserAccount:completionBlock:]	
+1057acc8c	1057ace2b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _handleAccountInfoResponse:error:completion:]	
+1057ace2c	1057ace33	decompiled	chunks/006/functions-000418.c		
+1057ace34	1057ad007	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider fetchAccountInfoCompletionQueue:context:completionBlock:]	
+1057ad008	1057ad167	decompiled	chunks/006/functions-000418.c		
+1057ad168	1057ad24b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _updateContactDetailsHelper:completion:error:]	
+1057ad24c	1057ad4b3	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider updateContactDetails:context:completionQueue:completion:]	
+1057ad4b4	1057ad613	decompiled	chunks/006/functions-000418.c		
+1057ad614	1057ad6f7	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _handleAddShippingResponse:error:completion:]	
+1057ad6f8	1057ad90f	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider addShippingAddress:context:completionQueue:completion:]	
+1057ad910	1057ada6f	decompiled	chunks/006/functions-000418.c		
+1057ada70	1057adb53	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _handleUpdateShippingResponse:error:completion:]	
+1057adb54	1057add6b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider updateShippingAddress:context:completionQueue:completion:]	
+1057add6c	1057adecb	decompiled	chunks/006/functions-000418.c		
+1057adecc	1057adfab	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider _handleDeleteShippingResponse:error:completion:]	
+1057adfac	1057ae1c7	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider deleteShippingAddress:context:completionQueue:completion:]	
+1057ae1c8	1057ae327	decompiled	chunks/006/functions-000418.c		
+1057ae328	1057ae32f	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider grapheneNetworkLogger]	
+1057ae330	1057ae35f	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider setGrapheneNetworkLogger:]	
+1057ae360	1057ae3d7	decompiled	chunks/006/functions-000418.c	-[SCCommerceAccountsProvider .cxx_destruct]	
+1057ae3d8	1057ae43f	decompiled	chunks/006/functions-000418.c	+[AddNewShippingAddressRequest descriptor]	
+1057ae440	1057ae4cb	decompiled	chunks/006/functions-000418.c	+[AddNewShippingAddressResponse descriptor]	
+1057ae4cc	1057ae547	decompiled	chunks/006/functions-000418.c	+[AddNewShippingAddressResponse_AddNewShippingAddressResult descriptor]	
+1057ae548	1057ae5af	decompiled	chunks/006/functions-000418.c	+[DeleteShippingAddressRequest descriptor]	
+1057ae5b0	1057ae63b	decompiled	chunks/006/functions-000418.c	+[DeleteShippingAddressResponse descriptor]	
+1057ae63c	1057ae6a3	decompiled	chunks/006/functions-000418.c	+[GetAccountInfoRequest descriptor]	
+1057ae6a4	1057ae72f	decompiled	chunks/006/functions-000418.c	+[GetAccountInfoResponse descriptor]	
+1057ae730	1057ae797	decompiled	chunks/006/functions-000418.c	+[AccountInfo descriptor]	
+1057ae798	1057ae7ff	decompiled	chunks/006/functions-000418.c	+[UpdateContactDetailsRequest descriptor]	
+1057ae800	1057ae88b	decompiled	chunks/006/functions-000418.c	+[UpdateContactDetailsResponse descriptor]	
+1057ae88c	1057ae8f3	decompiled	chunks/006/functions-000418.c	+[UpdateShippingAddressRequest descriptor]	
+1057ae8f4	1057ae97f	decompiled	chunks/006/functions-000418.c	+[UpdateShippingAddressResponse descriptor]	
+1057ae980	1057aead3	decompiled	chunks/006/functions-000418.c	-[SCCommerceAPIGatewayPaymentInfoProvider initWithHttpMetadataService:httpRequestModifier:paymentTokenizer:userId:deviceId:]	
+1057aead4	1057aec2f	decompiled	chunks/006/functions-000418.c	-[SCCommerceAPIGatewayPaymentInfoProvider fetchPaymentMethodsCompletionQueue:context:completionBlock:]	
+1057aec30	1057aec9b	decompiled	chunks/006/functions-000418.c		
+1057aec9c	1057aedbf	decompiled	chunks/006/functions-000418.c	-[SCCommerceAPIGatewayPaymentInfoProvider addPaymentMethod:context:completionQueue:completionBlock:]	
+1057aedc0	1057aee37	decompiled	chunks/006/functions-000418.c		
+1057aee38	1057aef8b	decompiled	chunks/006/functions-000418.c	-[SCCommerceAPIGatewayPaymentInfoProvider updatePaymentMethod:paymentIdentifier:context:completionQueue:completionBlock:]	
+1057aef8c	1057af003	decompiled	chunks/006/functions-000419.c		
+1057af004	1057af177	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider deletePaymentMethod:context:completionQueue:completionBlock:]	
+1057af178	1057af1e3	decompiled	chunks/006/functions-000419.c		
+1057af1e4	1057af4b7	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _submitRequestWithData:endpoint:completionHelperBlock:]	
+1057af4b8	1057af4f3	decompiled	chunks/006/functions-000419.c		
+1057af4f4	1057af587	decompiled	chunks/006/functions-000419.c		
+1057af588	1057af657	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _handlePaymentResponse:outcome:data:error:completionHelperBlock:]	
+1057af658	1057af873	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _handleFetchPaymentResponseData:error:completion:completionQueue:]	
+1057af874	1057af8db	decompiled	chunks/006/functions-000419.c		
+1057af8dc	1057afa83	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _handleUpdatePaymentResponseData:error:completion:completionQueue:]	
+1057afa84	1057afac3	decompiled	chunks/006/functions-000419.c		
+1057afac4	1057afb3f	decompiled	chunks/006/functions-000419.c		
+1057afb40	1057afc3b	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _handleDeletePaymentResponseData:error:completion:completionQueue:]	
+1057afc3c	1057afc6f	decompiled	chunks/006/functions-000419.c		
+1057afc70	1057afe87	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider _handleTokenizedCard:paymentIdentifier:error:endpoint:completionQueue:completionBlock:]	
+1057afe88	1057afea7	decompiled	chunks/006/functions-000419.c		
+1057afea8	1057aff13	decompiled	chunks/006/functions-000419.c		
+1057aff14	1057aff73	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentInfoProvider .cxx_destruct]	
+1057aff74	1057b007f	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer initWithHttpMetadataService:httpRequestModifier:]	
+1057b0080	1057b01af	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer tokenizePaymentCard:completion:completionQueue:]	
+1057b01b0	1057b021f	decompiled	chunks/006/functions-000419.c		
+1057b0220	1057b02ff	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer tokenizePaymentCard:braintreeClientToken:completion:completionQueue:]	
+1057b0300	1057b0397	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer _cardClientWithClientToken:]	
+1057b0398	1057b0653	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer _fetchBrainTreeToken:completion:]	
+1057b0654	1057b068f	decompiled	chunks/006/functions-000419.c		
+1057b0690	1057b0723	decompiled	chunks/006/functions-000419.c		
+1057b0724	1057b08f7	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer _handleBraintreeResponse:outcome:data:error:completion:]	
+1057b08f8	1057b0a87	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer _tokenizeCardWithBraintreeCardClient:paymentCard:error:completion:completionQueue:]	
+1057b0a88	1057b0aa7	decompiled	chunks/006/functions-000419.c		
+1057b0aa8	1057b0bd7	decompiled	chunks/006/functions-000419.c		
+1057b0bd8	1057b0c13	decompiled	chunks/006/functions-000419.c	-[SCCommerceAPIGatewayPaymentMethodTokenizer .cxx_destruct]	
+1057b0c14	1057b0cb7	decompiled	chunks/006/functions-000419.c	-[SCCommerceDataServices initWithAccountInfoProvider:paymentInfoProvider:]	
+1057b0cb8	1057b0cbf	decompiled	chunks/006/functions-000419.c	-[SCCommerceDataServices accountInfoProvider]	
+1057b0cc0	1057b0cc7	decompiled	chunks/006/functions-000419.c	-[SCCommerceDataServices paymentInfoProvider]	
+1057b0cc8	1057b0cf7	decompiled	chunks/006/functions-000419.c	-[SCCommerceDataServices .cxx_destruct]	
+1057b0cf8	1057b0d6b	decompiled	chunks/006/functions-000419.c	-[SCCommercePaymentInfraServices initWithPaymentMethodTokenizer:]	
+1057b0d6c	1057b0d73	decompiled	chunks/006/functions-000419.c	-[SCCommercePaymentInfraServices paymentMethodTokenizer]	
+1057b0d74	1057b0d7f	decompiled	chunks/006/functions-000419.c	-[SCCommercePaymentInfraServices .cxx_destruct]	
+1057b0d80	1057b117b	decompiled	chunks/006/functions-000419.c		
+1057b117c	1057b127b	decompiled	chunks/006/functions-000419.c		
+1057b127c	1057b1407	decompiled	chunks/006/functions-000419.c		
+1057b1408	1057b156f	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel initWithKey:path:parameters:headers:uploadData:requestMethod:requestParsingType:metricsEndpointType:metricsUserAction:metricsContext:authViaSnaptoken:]	
+1057b1570	1057b1593	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel copyWithZone:]	
+1057b1594	1057b159b	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel key]	
+1057b159c	1057b15a3	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel path]	
+1057b15a4	1057b15ab	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel parameters]	
+1057b15ac	1057b15b3	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel headers]	
+1057b15b4	1057b15bb	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel uploadData]	
+1057b15bc	1057b15c3	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel requestMethod]	
+1057b15c4	1057b15cb	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel requestParsingType]	
+1057b15cc	1057b15d3	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel metricsEndpointType]	
+1057b15d4	1057b15db	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel metricsUserAction]	
+1057b15dc	1057b15e3	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel metricsContext]	
+1057b15e4	1057b15eb	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel authViaSnaptoken]	
+1057b15ec	1057b163f	decompiled	chunks/006/functions-000419.c	-[SCCommerceRequestModel .cxx_destruct]	
+1057b1640	1057b1eab	decompiled	chunks/006/functions-000419.c		
+1057b1eac	1057b1f13	decompiled	chunks/006/functions-000419.c		
+1057b1f14	1057b1f87	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestClientImpl initWithRequestManager:]	
+1057b1f88	1057b212b	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestClientImpl sendPixelRequest:completionQueue:success:failure:]	
+1057b212c	1057b2137	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestClientImpl .cxx_destruct]	
+1057b2138	1057b21bb	decompiled	chunks/006/functions-000419.c	+[SCCommercePixelEventHelpers requestKey]	
+1057b21bc	1057b227f	decompiled	chunks/006/functions-000419.c	+[SCCommercePixelEventHelpers hashedEmail:]	
+1057b2280	1057b23ab	decompiled	chunks/006/functions-000419.c	+[SCCommercePixelEventHelpers hashedPhoneNum:]	
+1057b23ac	1057b245f	decompiled	chunks/006/functions-000419.c	+[SCCommercePixelEventHelpers hashedAdId]	
+1057b2460	1057b255f	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl initWithRequestManager:userInfoServices:grapheneRegistry:]	
+1057b2560	1057b278b	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl logViewContentWithPixelId:pixelItemId:currency:priceAmount:]	
+1057b278c	1057b29b7	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl logAddToCartWithWithPixelId:pixelItemId:currency:priceAmount:]	
+1057b29b8	1057b2bd3	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl logAddBillingWithItemIds:pixelId:success:]	
+1057b2bd4	1057b2e63	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl logStartCheckoutWithPixelId:itemIds:hasPaymentMethods:currency:priceAmount:transactionId:numItems:]	
+1057b2e64	1057b3183	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl logViewShowcaseWithProductSetId:serveItemId:pixelId:itemIds:]	
+1057b3184	1057b327b	decompiled	chunks/006/functions-000419.c		
+1057b327c	1057b32df	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl _sendPixelRequest:]	
+1057b32e0	1057b32e7	decompiled	chunks/006/functions-000419.c		
+1057b32e8	1057b3607	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl _buildShowcasePixelDataWithPixelId:serveItemId:productSetId:itemIds:conversionType:eventType:]	
+1057b3608	1057b3803	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl _dictionaryToEncodedData:]	
+1057b3804	1057b380b	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl blockEventSending]	
+1057b380c	1057b3813	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl setBlockEventSending:]	
+1057b3814	1057b381b	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl grapheneNetworkLogger]	
+1057b381c	1057b384b	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl setGrapheneNetworkLogger:]	
+1057b384c	1057b3893	decompiled	chunks/006/functions-000419.c	-[SCCommercePixelMetricsLoggerImpl .cxx_destruct]	
+1057b3894	1057b3b83	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel initWithPixelId:eventType:sdkVersion:timestamp:key:hashedEmail:hashedPhoneNum:hashedAdId:itemIds:numItems:currency:price:success:paymentInfoAvailable:transactionId:]	
+1057b3b84	1057b3ba7	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel copyWithZone:]	
+1057b3ba8	1057b3cbf	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel hash]	
+1057b3cc0	1057b3eab	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel isEqual:]	
+1057b3eac	1057b3eb3	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel pixelId]	
+1057b3eb4	1057b3ebb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel eventType]	
+1057b3ebc	1057b3ec3	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel sdkVersion]	
+1057b3ec4	1057b3ecb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel timestamp]	
+1057b3ecc	1057b3ed3	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel key]	
+1057b3ed4	1057b3edb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel hashedEmail]	
+1057b3edc	1057b3ee3	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel hashedPhoneNum]	
+1057b3ee4	1057b3eeb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel hashedAdId]	
+1057b3eec	1057b3ef3	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel itemIds]	
+1057b3ef4	1057b3efb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel numItems]	
+1057b3efc	1057b3f03	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel currency]	
+1057b3f04	1057b3f0b	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel price]	
+1057b3f0c	1057b3f13	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel success]	
+1057b3f14	1057b3f1b	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel paymentInfoAvailable]	
+1057b3f1c	1057b3f23	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel transactionId]	
+1057b3f24	1057b3fcb	decompiled	chunks/006/functions-000419.c	-[SCPixelRequestDataModel .cxx_destruct]	

@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105f58a04	105f58a3f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setPitch:]	
+105f58a40	105f58a7f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController pitch]	
+105f58a80	105f58ac3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setPitch:animated:]	
+105f58ac4	105f58b0f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setPitch:andDirection:animated:]	
+105f58b10	105f58b43	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController resetPitchAndDirectionAnimated:]	
+105f58b44	105f58ba7	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCenterCoordinate:zoomLevel:animated:]	
+105f58ba8	105f58be7	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController direction]	
+105f58be8	105f58bef	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setDirection:]	
+105f58bf0	105f58c3b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setDirection:animated:]	
+105f58c3c	105f58d37	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController visibleCoordinateBounds]	
+105f58d38	105f58d4f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setVisibleCoordinateBounds:]	
+105f58d50	105f58d63	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setVisibleCoordinateBounds:animated:]	
+105f58d64	105f58e1f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setVisibleCoordinateBounds:edgePadding:animated:]	
+105f58e20	105f58e93	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController convertPoint:toCoordinateFromView:]	
+105f58e94	105f58f07	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController convertCoordinate:toPointToView:]	
+105f58f08	105f58fa3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController convertRect:toCoordinateBoundsFromView:]	
+105f58fa4	105f5903f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController convertCoordinateBounds:toRectToView:]	
+105f59040	105f590cb	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController viewportAwareCompareCoordinate1:coordinate2:toView:]	
+105f590cc	105f590f3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController target]	
+105f590f4	105f59157	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setTarget:]	
+105f59158	105f59167	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setTarget:transition:completion:]	
+105f59168	105f5937f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setTarget:layerGate:transition:completion:]	
+105f59380	105f593d7	decompiled	chunks/002/functions-000190.c		
+105f593d8	105f59417	decompiled	chunks/002/functions-000190.c		
+105f59418	105f5970f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController flyToCoordinate:zoomLevel:pitch:duration:edgePadding:completion:]	
+105f59710	105f59793	decompiled	chunks/002/functions-000190.c		
+105f59794	105f5992f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController camera]	
+105f59930	105f59ad7	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController cameraThatFitsCoordinateBounds:edgePadding:]	
+105f59ad8	105f59f17	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController flyToCamera:withDuration:completion:]	
+105f59f18	105f59f97	decompiled	chunks/002/functions-000190.c		
+105f59f98	105f59fdf	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCamera:]	
+105f59fe0	105f5a3f3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCamera:withDuration:completion:]	
+105f5a3f4	105f5a473	decompiled	chunks/002/functions-000190.c		
+105f5a474	105f5a537	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCameraWithDynamicDuration:completion:]	
+105f5a538	105f5a547	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCamera:withTransition:completion:]	
+105f5a548	105f5ac2b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setCamera:layerGate:withTransition:completion:]	
+105f5ac2c	105f5ad2b	decompiled	chunks/002/functions-000190.c		
+105f5ad2c	105f5af5b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController easeToZoomLevel:withDuration:completion:]	
+105f5af5c	105f5af9b	decompiled	chunks/002/functions-000190.c		
+105f5af9c	105f5afd7	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController setTileDebuggingOverlayEnabled:]	
+105f5afd8	105f5b033	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController screenLocationForCoordinate:]	
+105f5b034	105f5b2cb	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController screenLocationForCoordinate:visibleCoordinateBounds:]	
+105f5b2cc	105f5b3fb	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController relativeScreenCoordinatesForLocation:]	
+105f5b3fc	105f5b583	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController mapView:regionWillChangeAnimated:]	
+105f5b584	105f5b587	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController mapViewRegionIsChanging:]	
+105f5b588	105f5b58f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController mapView:regionDidChangeAnimated:]	
+105f5b590	105f5b597	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController mapView:didChangeUserTrackingMode:animated:]	
+105f5b598	105f5b59b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController mapView:willSettleOnCoordinateFromPanning:]	
+105f5b59c	105f5b5af	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _clearTargetIfNecessary]	
+105f5b5b0	105f5b6eb	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _handleTargetChange:layerGate:completion:]	
+105f5b6ec	105f5b6f7	decompiled	chunks/002/functions-000190.c		
+105f5b6f8	105f5b89b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _handleDividingVisibleBoundsIntoSectionsWithVisibleBounds:]	
+105f5b89c	105f5ba2b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _areVisibleBoundsSectionsCalculatedForBounds:]	
+105f5ba2c	105f5ba87	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishDidChangeFollowingUserLocationWithAnimatedEvent:]	
+105f5ba88	105f5bae3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishDidChangeTargetEvent]	
+105f5bae4	105f5bb3f	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishDidChangeWithoutGesturesEvent]	
+105f5bb40	105f5bb83	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishViewportIsChangingEvent]	
+105f5bb84	105f5bbdf	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishRegionDidChangeWithAnimatedEvent:]	
+105f5bbe0	105f5bc3b	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishRegionWillChangeWithAnimatedEvent:]	
+105f5bc3c	105f5bc97	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishWillMoveWithCoordinateEvent:]	
+105f5bc98	105f5bcf3	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController _publishWillSettleOnCoordinateFromPanningWithCoordinate:]	
+105f5bcf4	105f5bd63	decompiled	chunks/002/functions-000190.c	-[SCMapboxViewportController .cxx_destruct]	
+105f5bd64	105f5bebb	decompiled	chunks/002/functions-000190.c	-[SCMapboxView initWithFrame:maxMapZoomLevel:nativeMapSDK:configProvider:]	
+105f5bebc	105f5beeb	decompiled	chunks/002/functions-000190.c	-[SCMapboxView traitCollectionObservable]	
+105f5beec	105f5c0bf	decompiled	chunks/002/functions-000190.c	-[SCMapboxView traitCollectionDidChange:]	
+105f5c0c0	105f5c0d3	decompiled	chunks/002/functions-000190.c	-[SCMapboxView .cxx_destruct]	
+105f5c0d4	105f5c113	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil centerMap:bounds:edgePadding:animated:completion:]	
+105f5c114	105f5c22b	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil centerMap:bounds:duration:edgePadding:completion:]	
+105f5c22c	105f5c31f	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil centerMap:coordinate:zoomLevel:edgePadding:duration:completion:]	
+105f5c320	105f5c3bf	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil flyToCoordinate:zoomLevel:mapView:duration:completion:]	
+105f5c3c0	105f5c3ef	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil flyToCoordinate:zoomLevel:mapView:duration:edgePadding:completion:]	
+105f5c3f0	105f5c7a7	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil flyToCoordinate:zoomLevel:pitch:mapView:duration:edgePadding:completion:]	
+105f5c7a8	105f5c7bf	decompiled	chunks/002/functions-000190.c		
+105f5c7c0	105f5c84f	decompiled	chunks/002/functions-000190.c		
+105f5c850	105f5c86b	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil flyToCoordinateBounds:mapView:duration:edgePadding:completion:]	
+105f5c86c	105f5cb53	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil flyToCoordinateBounds:pitch:mapView:duration:edgePadding:completion:]	
+105f5cb54	105f5cc4b	decompiled	chunks/002/functions-000190.c		
+105f5cc4c	105f5cd23	decompiled	chunks/002/functions-000190.c	+[SCMapboxCameraUtil _mapCamera:isEqualToCamera:ignoreAltitude:]	
+105f5cd24	105f5ce9f	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer description]	
+105f5cea0	105f5ceff	decompiled	chunks/002/functions-000190.c		
+105f5cf00	105f5d1ab	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer addListener:]	
+105f5d1ac	105f5d2eb	decompiled	chunks/002/functions-000190.c		
+105f5d2ec	105f5d333	decompiled	chunks/002/functions-000190.c		
+105f5d334	105f5d563	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer removeListener:]	
+105f5d564	105f5d673	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:regionWillChangeAnimated:]	
+105f5d674	105f5d77b	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewRegionIsChanging:]	
+105f5d77c	105f5d88b	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:regionDidChangeAnimated:]	
+105f5d88c	105f5d9ab	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:willSettleOnCoordinateFromPanning:]	
+105f5d9ac	105f5dab3	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewWillStartLoadingMap:]	
+105f5dab4	105f5dbbb	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewDidFinishLoadingMap:]	
+105f5dbbc	105f5dce3	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewDidFailLoadingMap:withError:]	
+105f5dce4	105f5ddf3	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewDidFinishRenderingFrame:fullyRendered:]	
+105f5ddf4	105f5df1b	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:didFinishLoadingStyleWithName:]	
+105f5df1c	105f5e023	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapViewDidReportMapReady:]	
+105f5e024	105f5e133	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:didReportMapFriendLoadWithVisibleFriends:]	
+105f5e134	105f5e253	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer mapView:didChangeUserTrackingMode:animated:]	
+105f5e254	105f5e27b	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer .cxx_destruct]	
+105f5e27c	105f5e29b	decompiled	chunks/002/functions-000190.c	-[SCMGLMapViewListenerAnnouncer .cxx_construct]	
+105f5e29c	105f5e2af	decompiled	chunks/002/functions-000190.c		
+105f5e2b0	105f5e307	decompiled	chunks/002/functions-000190.c		
+105f5e308	105f5e317	decompiled	chunks/002/functions-000191.c		
+105f5e318	105f5e337	decompiled	chunks/002/functions-000191.c		
+105f5e338	105f5e39f	decompiled	chunks/002/functions-000191.c		
+105f5e3a0	105f5e3a3	decompiled	chunks/002/functions-000191.c		
+105f5e3a4	105f5e417	decompiled	chunks/002/functions-000191.c	-[SCGrapheneMapViewportMetric2 init]	
+105f5e418	105f5e48f	decompiled	chunks/002/functions-000191.c		
+105f5e490	105f5e507	decompiled	chunks/002/functions-000191.c		
+105f5e508	105f5e57f	decompiled	chunks/002/functions-000191.c		
+105f5e580	105f5e5f7	decompiled	chunks/002/functions-000191.c		
+105f5e5f8	105f5e66f	decompiled	chunks/002/functions-000191.c		
+105f5e670	105f5e6e7	decompiled	chunks/002/functions-000191.c		
+105f5e6e8	105f5e75f	decompiled	chunks/002/functions-000191.c		
+105f5e760	105f5e873	decompiled	chunks/002/functions-000191.c		
+105f5e874	105f5e943	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController initWithValdiRootView:layerName:]	
+105f5e944	105f5ea13	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController initWithValdiRootView:trayName:]	
+105f5ea14	105f5ea23	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController loadView]	
+105f5ea24	105f5ea6f	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController viewDidLoad]	
+105f5ea70	105f5ea7f	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController scrollView]	
+105f5ea80	105f5eacb	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController handleGripperAreaTapped]	
+105f5eacc	105f5ead3	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController autoSizingEnabled]	
+105f5ead4	105f5eb6f	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController trayFeatureName]	
+105f5eb70	105f5ebbf	decompiled	chunks/002/functions-000191.c	-[SCMapLayerTrayViewController .cxx_destruct]	
+105f5ebc0	105f5ed53	decompiled	chunks/002/functions-000191.c	-[SCMapTraySubscreenView initWithValdiRootView:]	
+105f5ed54	105f5eda3	decompiled	chunks/002/functions-000191.c		
+105f5eda4	105f5edb3	decompiled	chunks/002/functions-000191.c	-[SCMapTraySubscreenView innerScrollView]	
+105f5edb4	105f5edc7	decompiled	chunks/002/functions-000191.c	-[SCMapTraySubscreenView .cxx_destruct]	
+105f5edc8	105f5eddb	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesCreateVideoLauncher valdiMarshallableObjectDescriptor]	
+105f5eddc	105f5edef	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerActionHandler valdiMarshallableObjectDescriptor]	
+105f5edf0	105f5ee03	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerCameraLauncher valdiMarshallableObjectDescriptor]	
+105f5ee04	105f5ee17	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerDataPostFilter valdiMarshallableObjectDescriptor]	
+105f5ee18	105f5ee2b	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerMultiCallbacks valdiMarshallableObjectDescriptor]	
+105f5ee2c	105f5ee3f	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerSingleCallbacks valdiMarshallableObjectDescriptor]	
+105f5ee40	105f5ee53	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerThumbnailBarSkipConfig valdiMarshallableObjectDescriptor]	
+105f5ee54	105f5ee67	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerTrimEditorLauncher valdiMarshallableObjectDescriptor]	
+105f5ee68	105f5ee7b	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesV2CreateVideoCtaTreatmentProvider valdiMarshallableObjectDescriptor]	
+105f5ee7c	105f5ee8f	decompiled	chunks/002/functions-000191.c	+[SCMemoriesTwoChatMediaDrawerActionHandler valdiMarshallableObjectDescriptor]	
+105f5ee90	105f5eea3	decompiled	chunks/002/functions-000191.c	+[SCMemoriesTwoChatMediaDrawerEditLauncher valdiMarshallableObjectDescriptor]	
+105f5eea4	105f5eeaf	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesTwoPickerView componentPath]	
+105f5eeb0	105f5eecf	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesTwoPickerView initWithViewModel:componentContext:runtime:]	
+105f5eed0	105f5ef03	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesTwoPickerView setViewModel:]	
+105f5ef04	105f5ef3b	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesTwoPickerView viewModel]	
+105f5ef3c	105f5ef47	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesV2LandingPage componentPath]	
+105f5ef48	105f5ef67	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LandingPage initWithViewModel:componentContext:runtime:]	
+105f5ef68	105f5ef9b	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LandingPage setViewModel:]	
+105f5ef9c	105f5efd3	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LandingPage viewModel]	
+105f5efd4	105f5efdf	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesV2LockSnapsPageView componentPath]	
+105f5efe0	105f5efff	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockSnapsPageView initWithViewModel:componentContext:runtime:]	
+105f5f000	105f5f033	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockSnapsPageView setViewModel:]	
+105f5f034	105f5f06b	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockSnapsPageView viewModel]	
+105f5f06c	105f5f077	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesV2LockedSnapsInGridModal componentPath]	
+105f5f078	105f5f097	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockedSnapsInGridModal initWithViewModel:componentContext:runtime:]	
+105f5f098	105f5f0cb	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockedSnapsInGridModal setViewModel:]	
+105f5f0cc	105f5f103	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2LockedSnapsInGridModal viewModel]	
+105f5f104	105f5f10f	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesV2QuotaStatusBar componentPath]	
+105f5f110	105f5f12f	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2QuotaStatusBar initWithViewModel:componentContext:runtime:]	
+105f5f130	105f5f163	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2QuotaStatusBar setViewModel:]	
+105f5f164	105f5f19b	decompiled	chunks/002/functions-000191.c	-[SCCMemoriesV2QuotaStatusBar viewModel]	
+105f5f19c	105f5f1a7	decompiled	chunks/002/functions-000191.c	+[SCMemoriesTwoChatMediaDrawer componentPath]	
+105f5f1a8	105f5f1c7	decompiled	chunks/002/functions-000191.c	-[SCMemoriesTwoChatMediaDrawer initWithViewModel:componentContext:runtime:]	
+105f5f1c8	105f5f1fb	decompiled	chunks/002/functions-000191.c	-[SCMemoriesTwoChatMediaDrawer setViewModel:]	
+105f5f1fc	105f5f233	decompiled	chunks/002/functions-000191.c	-[SCMemoriesTwoChatMediaDrawer viewModel]	
+105f5f234	105f5f2af	decompiled	chunks/002/functions-000191.c		
+105f5f2b0	105f5f2bb	decompiled	chunks/002/functions-000191.c	+[SCCMapMemoriesDataProviderFactory modulePath]	
+105f5f2bc	105f5f2c3	decompiled	chunks/002/functions-000191.c	+[SCCMapMemoriesDataProviderFactory asyncStrictMode]	
+105f5f2c4	105f5f333	decompiled	chunks/002/functions-000191.c	-[SCCMapMemoriesDataProviderFactory createMapMemoriesDataProviderWithMemTwoDataService:]	
+105f5f334	105f5f4a3	decompiled	chunks/002/functions-000191.c	+[SCCMapMemoriesDataProviderFactory invokeWithJSRuntimeProvider:memTwoDataService:completionHandler:]	
+105f5f4a4	105f5f4c7	decompiled	chunks/002/functions-000191.c	+[SCCMapMemoriesDataProviderFactory valdiMarshallableObjectDescriptor]	
+105f5f4c8	105f5f4d3	decompiled	chunks/002/functions-000191.c	+[SCCCreateMemTwoTundraEngineFactory modulePath]	
+105f5f4d4	105f5f4db	decompiled	chunks/002/functions-000191.c	+[SCCCreateMemTwoTundraEngineFactory asyncStrictMode]	
+105f5f4dc	105f5f52f	decompiled	chunks/002/functions-000191.c	-[SCCCreateMemTwoTundraEngineFactory createMemTwoTundraEngineProxyWithParams:]	
+105f5f530	105f5f62b	decompiled	chunks/002/functions-000191.c	+[SCCCreateMemTwoTundraEngineFactory invokeWithJSRuntimeProvider:params:completionHandler:]	
+105f5f62c	105f5f63f	decompiled	chunks/002/functions-000191.c	+[SCCCreateMemTwoTundraEngineFactory valdiMarshallableObjectDescriptor]	
+105f5f640	105f5f64b	decompiled	chunks/002/functions-000191.c	+[SCCMemTwoDataServiceFactory modulePath]	
+105f5f64c	105f5f653	decompiled	chunks/002/functions-000191.c	+[SCCMemTwoDataServiceFactory asyncStrictMode]	
+105f5f654	105f5f6a7	decompiled	chunks/002/functions-000191.c	-[SCCMemTwoDataServiceFactory getMemTwoDataServiceWithParams:]	
+105f5f6a8	105f5f7a3	decompiled	chunks/002/functions-000191.c	+[SCCMemTwoDataServiceFactory invokeWithJSRuntimeProvider:params:completionHandler:]	
+105f5f7a4	105f5f7b7	decompiled	chunks/002/functions-000191.c	+[SCCMemTwoDataServiceFactory valdiMarshallableObjectDescriptor]	
+105f5f7b8	105f5f7cb	decompiled	chunks/002/functions-000191.c	+[SCCBackupServiceProvider valdiMarshallableObjectDescriptor]	
+105f5f7cc	105f5f8bf	decompiled	chunks/002/functions-000191.c	+[SCCMemTwoTundraEngine valdiMarshallableObjectDescriptor]	
+105f5f8c0	105f5f8f7	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupCofStore valdiMarshallableObjectDescriptor]	
+105f5f8f8	105f5f947	decompiled	chunks/002/functions-000191.c		
+105f5f948	105f5f95f	decompiled	chunks/002/functions-000191.c		
+105f5f960	105f5f9af	decompiled	chunks/002/functions-000191.c		
+105f5f9b0	105f5f9c3	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupJobSchedulingDelegate valdiMarshallableObjectDescriptor]	
+105f5f9c4	105f5f9d7	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupLocalNotificationSchedulingDelegate valdiMarshallableObjectDescriptor]	
+105f5f9d8	105f5f9fb	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupRuntimeConditionsDelegate valdiMarshallableObjectDescriptor]	
+105f5f9fc	105f5fa1b	decompiled	chunks/002/functions-000191.c		
+105f5fa1c	105f5fa6b	decompiled	chunks/002/functions-000191.c		
+105f5fa6c	105f5fa7f	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupService valdiMarshallableObjectDescriptor]	
+105f5fa80	105f5fa93	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesBackupStatusDelegate valdiMarshallableObjectDescriptor]	
+105f5fa94	105f5faa7	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesCleanupService valdiMarshallableObjectDescriptor]	
+105f5faa8	105f5fadf	decompiled	chunks/002/functions-000191.c		
+105f5fae0	105f5fb1f	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesContentUnderstandBackfillProxy valdiMarshallableObjectDescriptor]	
+105f5fb20	105f5fb6f	decompiled	chunks/002/functions-000191.c		
+105f5fb70	105f5fb83	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesFlipperService valdiMarshallableObjectDescriptor]	
+105f5fb84	105f5fbbb	decompiled	chunks/002/functions-000191.c		
+105f5fbbc	105f5fbcf	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesService valdiMarshallableObjectDescriptor]	
+105f5fbd0	105f5fc07	decompiled	chunks/002/functions-000191.c		
+105f5fc08	105f5fc1b	decompiled	chunks/002/functions-000191.c	+[SCCMemoriesSnapDocRenderService valdiMarshallableObjectDescriptor]	
+105f5fc1c	105f5fc53	decompiled	chunks/002/functions-000191.c		
+105f5fc54	105f5fc67	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesThumbnailGenerationService valdiMarshallableObjectDescriptor]	
+105f5fc68	105f5fc9f	decompiled	chunks/003/functions-000192.c		
+105f5fca0	105f5fcb3	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTranscodeService valdiMarshallableObjectDescriptor]	
+105f5fcb4	105f5fceb	decompiled	chunks/003/functions-000192.c		
+105f5fcec	105f5fcff	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesUploadService valdiMarshallableObjectDescriptor]	
+105f5fd00	105f5fd37	decompiled	chunks/003/functions-000192.c		
+105f5fd38	105f5fde7	decompiled	chunks/003/functions-000192.c		
+105f5fde8	105f5feab	decompiled	chunks/003/functions-000192.c		
+105f5feac	105f5febf	decompiled	chunks/003/functions-000192.c	+[SCCTundraFlipperService valdiMarshallableObjectDescriptor]	
+105f5fec0	105f5fee7	decompiled	chunks/003/functions-000192.c	+[SCCTundraJobSchedulingDelegate valdiMarshallableObjectDescriptor]	
+105f5fee8	105f5fef3	decompiled	chunks/003/functions-000192.c	+[SCCSpotlightDraftsGating valdiMarshallableObjectDescriptor]	
+105f5fef4	105f5ff13	decompiled	chunks/003/functions-000192.c	+[SCCSpotlightDraftsPresenter valdiMarshallableObjectDescriptor]	
+105f5ff14	105f5ff1b	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoPickerFeature__Enum init]	
+105f5ff1c	105f5ff1f	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoPickerTabConfig__Enum init]	
+105f5ff20	105f5ff23	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerDismissButtonStyle__Enum init]	
+105f5ff24	105f5ff2b	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LandingPageLifecycleEvent__Enum init]	
+105f5ff2c	105f5ff2f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LandingPageNavigationCommandType__Enum init]	
+105f5ff30	105f5ff37	decompiled	chunks/003/functions-000192.c	-[SCMemTwoDataFilterOption__Enum init]	
+105f5ff38	105f5ff5f	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoSnapDocResult initWithThumbnailURL:snapDoc:]	
+105f5ff60	105f5ff73	decompiled	chunks/003/functions-000192.c	+[SCCMemTwoSnapDocResult valdiMarshallableObjectDescriptor]	
+105f5ff74	105f5ffab	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoTabSetting initWithTabConfig:]	
+105f5ffac	105f5ffbf	decompiled	chunks/003/functions-000192.c	+[SCCMemTwoTabSetting valdiMarshallableObjectDescriptor]	
+105f5ffc0	105f5ffdf	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerActionBarConfig init]	
+105f5ffe0	105f5fff3	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerActionBarConfig valdiMarshallableObjectDescriptor]	
+105f5fff4	105f6004f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerContext initWithActionHandler:cameraRollProvider:memoriesDataServiceProvider:serializedWorker:deckContainerFactory:feature:deckTransitionEventsObservable:trimEditorLauncher:cameraLauncher:]	
+105f60050	105f60063	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerContext valdiMarshallableObjectDescriptor]	
+105f60064	105f60083	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerHeaderConfig init]	
+105f60084	105f60097	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerHeaderConfig valdiMarshallableObjectDescriptor]	
+105f60098	105f600c3	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerItemLimitConfig initWithLimit:]	
+105f600c4	105f600d3	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerItemLimitConfig valdiMarshallableObjectDescriptor]	
+105f600d4	105f60107	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerMultiConfig initWithPreselectedItems:clickHandler:]	
+105f60108	105f6011b	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerMultiConfig valdiMarshallableObjectDescriptor]	
+105f6011c	105f60143	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerPreselection initWithItemId:allowDeselection:]	
+105f60144	105f60157	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerPreselection valdiMarshallableObjectDescriptor]	
+105f60158	105f6017f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerResult initWithSnapDocs:original:]	
+105f60180	105f60193	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerResult valdiMarshallableObjectDescriptor]	
+105f60194	105f601c3	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerSelectionModeConfig initWithDisabledItems:]	
+105f601c4	105f601d7	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerSelectionModeConfig valdiMarshallableObjectDescriptor]	
+105f601d8	105f601ff	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerSingleConfig initWithClickHandler:]	
+105f60200	105f60213	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerSingleConfig valdiMarshallableObjectDescriptor]	
+105f60214	105f60243	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerSlot initWithLocked:durationMs:]	
+105f60244	105f60257	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerSlot valdiMarshallableObjectDescriptor]	
+105f60258	105f6027f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerSlotsConfig initWithSlots:]	
+105f60280	105f60293	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerSlotsConfig valdiMarshallableObjectDescriptor]	
+105f60294	105f602bb	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerSupplementaryComponent initWithComponentPath:]	
+105f602bc	105f602cb	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerSupplementaryComponent valdiMarshallableObjectDescriptor]	
+105f602cc	105f6030f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesTwoPickerViewModel initWithTabSettings:selectionModeConfig:]	
+105f60310	105f60323	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesTwoPickerViewModel valdiMarshallableObjectDescriptor]	
+105f60324	105f603bb	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LandingPageContext initWithCameraRollProvider:backupServiceProvider:serializedWorker:memoriesDataServiceProvider:deckContainerFactory:cameraRollPermissionHandler:emptyStateController:actionSheetPresenter:networkStatusProvider:webLauncher:lifecycleObservable:]	
+105f603bc	105f603cf	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LandingPageContext valdiMarshallableObjectDescriptor]	
+105f603d0	105f603f7	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LandingPageNavigationCommand initWithType:]	
+105f603f8	105f6040b	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LandingPageNavigationCommand valdiMarshallableObjectDescriptor]	
+105f6040c	105f6042b	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LandingPageViewModel init]	
+105f6042c	105f6043f	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LandingPageViewModel valdiMarshallableObjectDescriptor]	
+105f60440	105f60483	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LockSnapsPageContext initWithSource:isMeoMode:storageQuotaManaging:]	
+105f60484	105f60497	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LockSnapsPageContext valdiMarshallableObjectDescriptor]	
+105f60498	105f604b7	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LockSnapsPageViewModel init]	
+105f604b8	105f604c7	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LockSnapsPageViewModel valdiMarshallableObjectDescriptor]	
+105f604c8	105f60503	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LockedSnapsInGridModalContext initWithSource:storageQuotaManaging:]	
+105f60504	105f60517	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LockedSnapsInGridModalContext valdiMarshallableObjectDescriptor]	
+105f60518	105f60537	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2LockedSnapsInGridModalViewModel init]	
+105f60538	105f60547	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2LockedSnapsInGridModalViewModel valdiMarshallableObjectDescriptor]	
+105f60548	105f6056f	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2MemTwoDeeplinkPayload initWithUri:]	
+105f60570	105f6057f	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2MemTwoDeeplinkPayload valdiMarshallableObjectDescriptor]	
+105f60580	105f605a7	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2QuotaStatusBarContext initWithStorageQuotaManaging:]	
+105f605a8	105f605bb	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2QuotaStatusBarContext valdiMarshallableObjectDescriptor]	
+105f605bc	105f605db	decompiled	chunks/003/functions-000192.c	-[SCCMemoriesV2QuotaStatusBarViewModel init]	
+105f605dc	105f605eb	decompiled	chunks/003/functions-000192.c	+[SCCMemoriesV2QuotaStatusBarViewModel valdiMarshallableObjectDescriptor]	
+105f605ec	105f60613	decompiled	chunks/003/functions-000192.c	-[SCGooglePhotoResult initWithId2:uri:]	
+105f60614	105f60623	decompiled	chunks/003/functions-000192.c	+[SCGooglePhotoResult valdiMarshallableObjectDescriptor]	
+105f60624	105f6066f	decompiled	chunks/003/functions-000192.c	-[SCMemoriesTwoChatMediaDrawerContext initWithCameraRollProvider:memoriesDataServiceProvider:deckContainerFactory:actionHandler:editLauncher:cameraRollPermissionHandlerProvider:]	
+105f60670	105f60683	decompiled	chunks/003/functions-000192.c	+[SCMemoriesTwoChatMediaDrawerContext valdiMarshallableObjectDescriptor]	
+105f60684	105f606a3	decompiled	chunks/003/functions-000192.c	-[SCMemoriesTwoChatMediaDrawerViewModel init]	
+105f606a4	105f606b7	decompiled	chunks/003/functions-000192.c	+[SCMemoriesTwoChatMediaDrawerViewModel valdiMarshallableObjectDescriptor]	
+105f606b8	105f606e7	decompiled	chunks/003/functions-000192.c	-[SCMemoriesTwoPickerThumbnailsConfig initWithProgressBarVisible:deleteClipEnabled:trimClipEnabled:clipDurationVisible:]	
+105f606e8	105f606f7	decompiled	chunks/003/functions-000192.c	+[SCMemoriesTwoPickerThumbnailsConfig valdiMarshallableObjectDescriptor]	
+105f606f8	105f6072b	decompiled	chunks/003/functions-000192.c	-[SCMemoriesTwoPickerVideoDurationConfig initWithWarningText:]	
+105f6072c	105f607d7	decompiled	chunks/003/functions-000192.c	+[SCMemoriesTwoPickerVideoDurationConfig valdiMarshallableObjectDescriptor]	
+105f607d8	105f60823	decompiled	chunks/003/functions-000192.c	-[SCCCreateMemTwoTundraEngineParams initWithJobSchedulingDelegate:serializedWorker:snapDocClaimManager:snapDocUploader:snapDocTranscoder:runtimeConditionsDelegate:searchNativeBridge:]	
+105f60824	105f60837	decompiled	chunks/003/functions-000192.c	+[SCCCreateMemTwoTundraEngineParams valdiMarshallableObjectDescriptor]	
+105f60838	105f60877	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoDataServiceFactoryParams initWithUserId:backupService:serializedWorker:snapDocClaimManager:cryptoService:]	
+105f60878	105f6088b	decompiled	chunks/003/functions-000192.c	+[SCCMemTwoDataServiceFactoryParams valdiMarshallableObjectDescriptor]	
+105f6088c	105f608c3	decompiled	chunks/003/functions-000192.c	-[SCCMemTwoTundraResult initWithSuccess:]	
+105f608c4	105f608f3	decompiled	chunks/003/functions-000192.c	+[SCCMemTwoTundraResult valdiMarshallableObjectDescriptor]	
+105f608f4	105f60947	decompiled	chunks/003/functions-000192.c	-[SCCTundraAppLifecycleConstraint__Enum init]	
+105f60948	105f609a7	decompiled	chunks/003/functions-000192.c	-[SCCTundraExistingJobPolicy__Enum init]	
+105f609a8	105f609fb	decompiled	chunks/003/functions-000192.c	-[SCCTundraNetworkConstraint__Enum init]	
+105f609fc	105f60a4f	decompiled	chunks/003/functions-000192.c	-[SCCTundraPersistence__Enum init]	
+105f60a50	105f60aaf	decompiled	chunks/003/functions-000192.c	-[SCCTundraRetryType__Enum init]	
+105f60ab0	105f60aff	decompiled	chunks/003/functions-000192.c	-[SCCTundraJobConfig initWithSerializedRequest:]	
+105f60b00	105f60b13	decompiled	chunks/003/functions-000192.c	+[SCCTundraJobConfig valdiMarshallableObjectDescriptor]	
+105f60b14	105f60b4f	decompiled	chunks/003/functions-000192.c	-[SCCTundraRetryConfig initWithRetryType:retryDelaySec:maxBackoffExponent:maxNumRetries:]	
+105f60b50	105f60c07	decompiled	chunks/003/functions-000192.c	+[SCCTundraRetryConfig valdiMarshallableObjectDescriptor]	
+105f60c08	105f60c43	decompiled	chunks/003/functions-000192.c	-[SCCSpotlightDraftsServices initWithGating:presenter:]	
+105f60c44	105f60c63	decompiled	chunks/003/functions-000192.c	+[SCCSpotlightDraftsServices valdiMarshallableObjectDescriptor]	
+105f60c64	105f60d03	decompiled	chunks/003/functions-000192.c	-[SCMemoriesCameraRollAlbum initWithPHAssetCollection:]	
+105f60d04	105f60d0b	decompiled	chunks/003/functions-000192.c	-[SCMemoriesCameraRollAlbum shouldRetainInstanceWhenMarshalling]	
+105f60d0c	105f60d17	decompiled	chunks/003/functions-000192.c	-[SCMemoriesCameraRollAlbum pushToValdiMarshaller:]	
+105f60d18	105f60d1f	decompiled	chunks/003/functions-000192.c	-[SCMemoriesCameraRollAlbum id2]	
+105f60d20	105f60d27	decompiled	chunks/003/functions-000192.c	-[SCMemoriesCameraRollAlbum setId2:]	
+105f60d28	105f60d2f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollAlbum name]	
+105f60d30	105f60d37	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollAlbum setName:]	
+105f60d38	105f60d67	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollAlbum .cxx_destruct]	
+105f60d68	105f60ddb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData initWithFetchResult:]	
+105f60ddc	105f60df7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData itemCount]	
+105f60df8	105f60dfb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData setItemCount:]	
+105f60dfc	105f60e7f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData getItemWithIndex:preferredWidth:preferredHeight:]	
+105f60e80	105f60e8b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData pushToValdiMarshaller:]	
+105f60e8c	105f60ec3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData isValidIndex:]	
+105f60ec4	105f60ecf	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollData .cxx_destruct]	
+105f60ed0	105f61267	decompiled	chunks/003/functions-000193.c		
+105f61268	105f6127b	decompiled	chunks/003/functions-000193.c		
+105f6127c	105f6148b	decompiled	chunks/003/functions-000193.c		
+105f6148c	105f61577	decompiled	chunks/003/functions-000193.c		
+105f61578	105f616ff	decompiled	chunks/003/functions-000193.c		
+105f61700	105f61c57	decompiled	chunks/003/functions-000193.c		
+105f61c58	105f61edb	decompiled	chunks/003/functions-000193.c		
+105f61edc	105f61f27	decompiled	chunks/003/functions-000193.c		
+105f61f28	105f62277	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator initWithPhotoLibraryFetcher:photoPermissionCoordinator:allowPhotoEntries:allowVideoEntries:coreConfigProvider:shouldUseAlbums:userPreference:source:cameraRollConfig:]	
+105f62278	105f6229f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator selectedAssetCollectionObservable]	
+105f622a0	105f623b7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator setSelectedAssetCollection:]	
+105f623b8	105f6258f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator fetchCameraRoll]	
+105f62590	105f62687	decompiled	chunks/003/functions-000193.c		
+105f62688	105f62693	decompiled	chunks/003/functions-000193.c		
+105f62694	105f6284b	decompiled	chunks/003/functions-000193.c		
+105f6284c	105f62857	decompiled	chunks/003/functions-000193.c		
+105f62858	105f62917	decompiled	chunks/003/functions-000193.c		
+105f62918	105f629d7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator reset]	
+105f629d8	105f62a8f	decompiled	chunks/003/functions-000193.c		
+105f62a90	105f62a97	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator observe]	
+105f62a98	105f62a9f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator observeUpdates]	
+105f62aa0	105f62b53	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator loadNextPage]	
+105f62b54	105f62c37	decompiled	chunks/003/functions-000193.c		
+105f62c38	105f62cb3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator hasReachedLastPage]	
+105f62cb4	105f62d13	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator _refreshCachedHasReachedLastPage]	
+105f62d14	105f62d1b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator shouldRetainInstanceWhenMarshalling]	
+105f62d1c	105f62d27	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator pushToValdiMarshaller:]	
+105f62d28	105f62e13	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator _getPaginateItemsWithStartIndex:endIndex:]	
+105f62e14	105f62e5b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator _initialLoadWithFetchResult:]	
+105f62e5c	105f62eb3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator _updateSelectedAssetCollection:]	
+105f62eb4	105f63003	decompiled	chunks/003/functions-000193.c	+[SCMemoriesCameraRollPaginator _defaultAssetCollectionForSource:userPreference:]	
+105f63004	105f6302b	decompiled	chunks/003/functions-000193.c	+[SCMemoriesCameraRollPaginator _selectedAlbumKeyForSource:]	
+105f6302c	105f630a3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator _isCameraRollFullAccess]	
+105f630a4	105f630ab	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator selectedAssetCollection]	
+105f630ac	105f63147	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollPaginator .cxx_destruct]	
+105f63148	105f63273	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider initWithMemoriesCameraRollPaginator:photoPermissionCoordinator:coreConfigProvider:photoLibraryFetcher:allowPhotoEntries:allowVideoEntries:]	
+105f63274	105f6336f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider createPaginator]	
+105f63370	105f6338f	decompiled	chunks/003/functions-000193.c		
+105f63390	105f633ff	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider currentAlbumObservable]	
+105f63400	105f6344b	decompiled	chunks/003/functions-000193.c		
+105f6344c	105f63617	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider limitPhotoLibraryAccessObservable]	
+105f63618	105f63623	decompiled	chunks/003/functions-000193.c		
+105f63624	105f636e7	decompiled	chunks/003/functions-000193.c		
+105f636e8	105f637b3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider _updatePermissionStatusForAuthorizedState:]	
+105f637b4	105f63ad3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider observeDataWithAlbumId:]	
+105f63ad4	105f63c1b	decompiled	chunks/003/functions-000193.c		
+105f63c1c	105f63c23	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider shouldRetainInstanceWhenMarshalling]	
+105f63c24	105f63c2f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider pushToValdiMarshaller:]	
+105f63c30	105f63ca7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider _isCameraRollFullAccess]	
+105f63ca8	105f63d1b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider switchToRecentsAlbum]	
+105f63d1c	105f63d8f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider switchToFavoritesAlbum]	
+105f63d90	105f63e03	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider switchToVideosAlbum]	
+105f63e04	105f63e57	decompiled	chunks/003/functions-000193.c	-[SCMemoriesCameraRollProvider .cxx_destruct]	
+105f63e58	105f63efb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController initWithPhotoPermissionCoordinator:cameraRollFetcher:]	
+105f63efc	105f63f03	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController shouldShowOnboardingScreen]	
+105f63f04	105f63f0b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController getOnboardingScreenPortraitUri]	
+105f63f0c	105f63f0f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController onTapOnboardingGotIt]	
+105f63f10	105f63f13	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController onTapOnboardingLearnMore]	
+105f63f14	105f63f17	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController onTapCreateSnap]	
+105f63f18	105f6403b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController onTapAcquireCameraRollAuthorization]	
+105f6403c	105f640c3	decompiled	chunks/003/functions-000193.c		
+105f640c4	105f640cb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController shouldHideCreateSnapButton]	
+105f640cc	105f640d3	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController shouldRetainInstanceWhenMarshalling]	
+105f640d4	105f640df	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController pushToValdiMarshaller:]	
+105f640e0	105f640f7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController delegate]	
+105f640f8	105f64103	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController setDelegate:]	
+105f64104	105f6413b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesEmptyStateController .cxx_destruct]	
+105f6413c	105f64143	decompiled	chunks/003/functions-000193.c	-[SCMemoriesPhotoLibraryAuthorizedState setAuthorizedState:]	
+105f64144	105f6414b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesPhotoLibraryAuthorizedState authorizedState]	
+105f6414c	105f64157	decompiled	chunks/003/functions-000193.c	-[SCMemoriesPhotoLibraryAuthorizedState pushToValdiMarshaller:]	
+105f64158	105f641cb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData initWithMemoriesSnapItem:]	
+105f641cc	105f641e7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData itemCount]	
+105f641e8	105f641eb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData setItemCount:]	
+105f641ec	105f641f7	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData getItemWithIndex:preferredWidth:preferredHeight:]	
+105f641f8	105f64203	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData pushToValdiMarshaller:]	
+105f64204	105f64243	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData isValidIndex:]	
+105f64244	105f6424f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapData .cxx_destruct]	
+105f64250	105f6459f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore initWithMergedDataSource:coreConfigProvider:entrySyncStatusGenerator:memoriesEncryptedDatabase:dataObjectContext:entryEligibility:]	
+105f645a0	105f64607	decompiled	chunks/003/functions-000193.c		
+105f64608	105f6479b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore createPaginator]	
+105f6479c	105f647a3	decompiled	chunks/003/functions-000193.c		
+105f647a4	105f6481f	decompiled	chunks/003/functions-000193.c		
+105f64820	105f64827	decompiled	chunks/003/functions-000193.c		
+105f64828	105f6482f	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore shouldRetainInstanceWhenMarshalling]	
+105f64830	105f6483b	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore pushToValdiMarshaller:]	
+105f6483c	105f64843	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore observeData]	
+105f64844	105f648fb	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore observeSnapsInTimeRangeWithQuery:]	
+105f648fc	105f6496f	decompiled	chunks/003/functions-000193.c		
+105f64970	105f64b93	decompiled	chunks/003/functions-000193.c	+[SCMemoriesSnapStore snapsMatchingQuery:items:]	
+105f64b94	105f64caf	decompiled	chunks/003/functions-000193.c	-[SCMemoriesSnapStore dataSource:didChangeEntries:failedEntries:fetchEntryError:]	
+105f64cb0	105f652fb	decompiled	chunks/003/functions-000194.c		
+105f652fc	105f6539f	decompiled	chunks/003/functions-000194.c		
+105f653a0	105f6542f	decompiled	chunks/003/functions-000194.c		
+105f65430	105f655a3	decompiled	chunks/003/functions-000194.c		
+105f655a4	105f6567b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _updateAndMarhsallItems:]	
+105f6567c	105f656cb	decompiled	chunks/003/functions-000194.c		
+105f656cc	105f6576b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _marshallUpdatedItems]	
+105f6576c	105f657ab	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _updateMarshallRange]	
+105f657ac	105f65853	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _loadNextPage]	
+105f65854	105f658e3	decompiled	chunks/003/functions-000194.c		
+105f658e4	105f65953	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _nextMarshallRange]	
+105f65954	105f65987	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _refreshCachedHasReachedLastPage]	
+105f65988	105f65a6b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _hasReachedLastPage]	
+105f65a6c	105f65aa7	decompiled	chunks/003/functions-000194.c		
+105f65aa8	105f65b47	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _getCGSizeForThumbnail]	
+105f65b48	105f65bef	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore .cxx_destruct]	
+105f65bf0	105f65c17	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapStore _gridItemsSubjectForTesting]	
+105f65c18	105f65dff	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapSyncStateListener initWithSyncStatusGenerator:gallerySnap:galleryEntry:]	
+105f65e00	105f65e0b	decompiled	chunks/003/functions-000194.c		
+105f65e0c	105f65e13	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapSyncStateListener observe]	
+105f65e14	105f65e6b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapSyncStateListener syncStatusGenerator:didUpdateStatus:]	
+105f65e6c	105f65ec3	decompiled	chunks/003/functions-000194.c		
+105f65ec4	105f65ee7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapSyncStateListener _getUploadStatesFromSyncStatus:]	
+105f65ee8	105f65f23	decompiled	chunks/003/functions-000194.c	-[SCMemoriesSnapSyncStateListener .cxx_destruct]	
+105f65f24	105f66047	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl initWithUserSession:cameraConfigurationServices:temporaryFileWriterServices:mediaVideoImportServices:contentDeliveryServices:]	
+105f66048	105f6604b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl transcodeMediaSegments:]	
+105f6604c	105f6604f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl transcodeImageSegmentWithImage:asset:trimmedTimeRangeValue:]	
+105f66050	105f66053	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl transcodeVideoSegmentWithVideoAVAsset:asset:trimmedTimeRangeValue:]	
+105f66054	105f66057	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl imageOutputURLForUUID:]	
+105f66058	105f6605b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl videoOutputURLForUUID:]	
+105f6605c	105f660ef	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _isCameraRollImportWithContentManagerEnabled]	
+105f660f0	105f66183	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _enable1080pVideoImporting]	
+105f66184	105f6622b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _transcodeMediaSegments:]	
+105f6622c	105f6628b	decompiled	chunks/003/functions-000194.c		
+105f6628c	105f664c3	decompiled	chunks/003/functions-000194.c		
+105f664c4	105f664db	decompiled	chunks/003/functions-000194.c		
+105f664dc	105f66513	decompiled	chunks/003/functions-000194.c		
+105f66514	105f666db	decompiled	chunks/003/functions-000194.c		
+105f666dc	105f66723	decompiled	chunks/003/functions-000194.c		
+105f66724	105f6689b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _transcodeImageSegmentWithImage:asset:trimmedTimeRangeValue:]	
+105f6689c	105f66bc7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _transcodeVideoSegmentWithVideoAVAsset:asset:trimmedTimeRangeValue:]	
+105f66bc8	105f66c77	decompiled	chunks/003/functions-000194.c		
+105f66c78	105f66d27	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _imageOutputURLForUUID:]	
+105f66d28	105f66dd7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _videoOutputURLForUUID:]	
+105f66dd8	105f66ea3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl _tempFileWriterPathForFileName:]	
+105f66ea4	105f66f07	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl temporaryVideoDatastore]	
+105f66f08	105f66f6b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl temporaryImageDataStore]	
+105f66f6c	105f66f73	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl userSession]	
+105f66f74	105f66fa3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setUserSession:]	
+105f66fa4	105f66fab	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl cameraConfigurationServices]	
+105f66fac	105f66fdb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setCameraConfigurationServices:]	
+105f66fdc	105f66fe3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl temporaryFileWriterServices]	
+105f66fe4	105f67013	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setTemporaryFileWriterServices:]	
+105f67014	105f6701b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl mediaVideoImportServices]	
+105f6701c	105f6704b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setMediaVideoImportServices:]	
+105f6704c	105f67053	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl contentDeliveryServices]	
+105f67054	105f67083	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setContentDeliveryServices:]	
+105f67084	105f6708b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl temporaryImageDatastore]	
+105f6708c	105f670bb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setTemporaryImageDatastore:]	
+105f670bc	105f670eb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl setTemporaryVideoDatastore:]	
+105f670ec	105f67157	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerImporterImpl .cxx_destruct]	
+105f67158	105f671eb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerUtilServiceProvider provide]	
+105f671ec	105f67347	decompiled	chunks/003/functions-000194.c		
+105f67348	105f673a3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerUtilServiceProvider .cxx_destruct]	
+105f673a4	105f674cb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint begin]	
+105f674cc	105f67643	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint end]	
+105f67644	105f6764b	decompiled	chunks/003/functions-000194.c		
+105f6764c	105f67733	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint _presentNativePicker]	
+105f67734	105f677cb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint _presentMemTwoPicker]	
+105f677cc	105f677ef	decompiled	chunks/003/functions-000194.c		
+105f677f0	105f682bb	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint _presentMemoriesPicker]	
+105f682bc	105f68437	decompiled	chunks/003/functions-000194.c		
+105f68438	105f68467	decompiled	chunks/003/functions-000194.c		
+105f68468	105f684af	decompiled	chunks/003/functions-000194.c		
+105f684b0	105f68523	decompiled	chunks/003/functions-000194.c		
+105f68524	105f689ab	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint _createActionHandler]	
+105f689ac	105f68b8f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint _createPostArchiveConfiguration]	
+105f68b90	105f68d5f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2EntryPoint .cxx_destruct]	
+105f68d60	105f68ed7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter initWithMemoriesPickerV2Scope:actionHandler:photoPermissionCoordinator:]	
+105f68ed8	105f68f6f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter presentNativePhotoLibrary]	
+105f68f70	105f69123	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter _createPhotoLibraryController]	
+105f69124	105f6917b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter _onCancel]	
+105f6917c	105f691c7	decompiled	chunks/003/functions-000194.c		
+105f691c8	105f692a3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter _selectAsset:]	
+105f692a4	105f693b3	decompiled	chunks/003/functions-000194.c		
+105f693b4	105f6940f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter imagePickerController:didFinishPickingMediaWithInfo:]	
+105f69410	105f6958f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter picker:didFinishPicking:]	
+105f69590	105f6969b	decompiled	chunks/003/functions-000194.c		
+105f6969c	105f6969f	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter presentationControllerDidDismiss:]	
+105f696a0	105f696f3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2NativePhotoLibraryRouter .cxx_destruct]	
+105f696f4	105f69b1b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController initWithRuntime:config:actionHandler:composerBlizzardLogger:memoriesCameraRollProvider:memoriesSnapStore:composerApplication:emptyStateController:composerCoreUIServices:memoriesCameraRollPaginator:memoriesCameraRollAlbumPickerScopeExposer:usePaginatorForCameraRoll:usePaginatorForMemoriesSnap:postArchiveConfiguration:photoPermissionCoordinator:circumstanceEngine:cloudSync:memoriesExperimentService:featuredStoryProvider:]	
+105f69b1c	105f69ba3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController dealloc]	
+105f69ba4	105f69ba7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController preferredStatusBarStyle]	
+105f69ba8	105f69bd7	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController loadView]	
+105f69bd8	105f69d17	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController viewDidLoad]	
+105f69d18	105f69dd3	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController viewWillAppear:]	
+105f69dd4	105f69e6b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController prepareWithCompletion:]	
+105f69e6c	105f69e7f	decompiled	chunks/003/functions-000194.c		
+105f69e80	105f69edf	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController handleSwipeDown:]	
+105f69ee0	105f69f2b	decompiled	chunks/003/functions-000194.c	-[SCMemoriesPickerV2ViewController onBackPressed]	
+105f69f2c	105f69f67	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onGrantCameraRollAccessButtonClicked]	
+105f69f68	105f69f77	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onItemsSelectedWithItems:]	
+105f69f78	105f69f87	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onItemClickedWithItem:thumbnailCell:]	
+105f69f88	105f6a07f	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onCameraRollAlbumClickedWithCameraRollAlbumId:]	
+105f6a080	105f6a147	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onTrimItemTappedWithItem:selectedItems:remainingDurationMs:disallowDurationChange:]	
+105f6a148	105f6a1a3	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onItemsSelectionChangedWithItems:]	
+105f6a1a4	105f6a1eb	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onCameraIconClicked]	
+105f6a1ec	105f6a233	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController onSkipPressed]	
+105f6a234	105f6a29b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController emptyStateController:didUpdateAuthorizationStatus:]	
+105f6a29c	105f6a317	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController cameraRollAlbumPickerViewWillDimiss:]	
+105f6a318	105f6a31b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController didSelectCameraRollAlbumPill:]	
+105f6a31c	105f6a31f	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController willAlbumPillsViewBeginScrolling]	
+105f6a320	105f6a323	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController didAlbumPillsViewFinishScrolling]	
+105f6a324	105f6a327	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController showAlbumPicker]	
+105f6a328	105f6a32f	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController shouldRetainInstanceWhenMarshalling]	
+105f6a330	105f6a33b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController pushToValdiMarshaller:]	
+105f6a33c	105f6a6ef	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController _loadContentViewIfNeeded]	
+105f6a6f0	105f6a723	decompiled	chunks/003/functions-000195.c		
+105f6a724	105f6ae03	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController _createViewModelWithAuthorizationStatus:]	
+105f6ae04	105f6af57	decompiled	chunks/003/functions-000195.c		
+105f6af58	105f6afbb	decompiled	chunks/003/functions-000195.c		
+105f6afbc	105f6b043	decompiled	chunks/003/functions-000195.c		
+105f6b044	105f6b153	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController _createTabSettingWithTabConfig:allowVideoEntries:allowPhotoEntries:dataValidator:]	
+105f6b154	105f6b203	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController attachUI:]	
+105f6b204	105f6b247	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController detachUI:]	
+105f6b248	105f6b257	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController tray:positionDidChange:]	
+105f6b258	105f6b2df	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController _didDismissAlbumPickerTray]	
+105f6b2e0	105f6b44f	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewController .cxx_destruct]	
+105f6b450	105f6b87b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler initWithDelegate:dataObjectContext:encryptedContentManager:cloudFSService:memoriesMergedDataSource:snapDocDownloadingService:mediaVideoImportServices:importEditsResolver:mediaImportEditorScopeExposer:quickCaptureCameraScopeExposer:circumstanceEngine:snapDocEditorFactory:pickerSource:preserveAllEdits:musicSelectionLoader:]	
+105f6b87c	105f6b8eb	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onBackPressed]	
+105f6b8ec	105f6b9b3	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onItemsSelectedWithItems:]	
+105f6b9b4	105f6baaf	decompiled	chunks/003/functions-000195.c		
+105f6bab0	105f6bae7	decompiled	chunks/003/functions-000195.c		
+105f6bae8	105f6bbfb	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onItemClickedWithItem:thumbnailCell:]	
+105f6bbfc	105f6bc9f	decompiled	chunks/003/functions-000195.c		
+105f6bca0	105f6bca3	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onCameraRollAlbumClickedWithCameraRollAlbumId:]	
+105f6bca4	105f6bccf	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler memoriesPickerV2DidDismiss]	
+105f6bcd0	105f6c19b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onTrimItemTappedWithItem:remainingDurationMs:selectedItems:disallowDurationChange:]	
+105f6c19c	105f6c2a7	decompiled	chunks/003/functions-000195.c		
+105f6c2a8	105f6c2bf	decompiled	chunks/003/functions-000195.c		
+105f6c2c0	105f6c337	decompiled	chunks/003/functions-000195.c		
+105f6c338	105f6c47f	decompiled	chunks/003/functions-000195.c		
+105f6c480	105f6c583	decompiled	chunks/003/functions-000195.c		
+105f6c584	105f6c5bb	decompiled	chunks/003/functions-000195.c		
+105f6c5bc	105f6c6bf	decompiled	chunks/003/functions-000195.c		
+105f6c6c0	105f6c6f7	decompiled	chunks/003/functions-000195.c		
+105f6c6f8	105f6c837	decompiled	chunks/003/functions-000195.c		
+105f6c838	105f6c987	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onCameraIconClicked]	
+105f6c988	105f6c9b3	decompiled	chunks/003/functions-000195.c		
+105f6c9b4	105f6ca37	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler setPickerViewController:]	
+105f6ca38	105f6caa7	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler onSkipPressed]	
+105f6caa8	105f6cc2f	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler quickCaptureCameraDidCaptureMediaWith:]	
+105f6cc30	105f6ccaf	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _shouldLaunchQuickCapture]	
+105f6ccb0	105f6cde3	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _createUIContainerWithOnDetach:]	
+105f6cde4	105f6cdef	decompiled	chunks/003/functions-000195.c		
+105f6cdf0	105f6ce8f	decompiled	chunks/003/functions-000195.c		
+105f6ce90	105f6cecf	decompiled	chunks/003/functions-000195.c		
+105f6ced0	105f6cf17	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _removeQuickCaptureScopeIfNeeded]	
+105f6cf18	105f6d08b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _mediaSegmentForPostArchiveSnap:]	
+105f6d08c	105f6d13b	decompiled	chunks/003/functions-000195.c		
+105f6d13c	105f6d29f	decompiled	chunks/003/functions-000195.c		
+105f6d2a0	105f6d46b	decompiled	chunks/003/functions-000195.c		
+105f6d46c	105f6d5df	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _mediaSegmentForMemoriesSnap:]	
+105f6d5e0	105f6d7e7	decompiled	chunks/003/functions-000195.c		
+105f6d7e8	105f6d95f	decompiled	chunks/003/functions-000195.c		
+105f6d960	105f6db3b	decompiled	chunks/003/functions-000195.c		
+105f6db3c	105f6dd87	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _kickOffSnapDocDownloadingWithSnapDocKey:snapDoc:promiseToComplete:]	
+105f6dd88	105f6de63	decompiled	chunks/003/functions-000195.c		
+105f6de64	105f6dec7	decompiled	chunks/003/functions-000195.c		
+105f6dec8	105f6df37	decompiled	chunks/003/functions-000195.c		
+105f6df38	105f6df6f	decompiled	chunks/003/functions-000195.c		
+105f6df70	105f6e6f3	decompiled	chunks/003/functions-000195.c		
+105f6e6f4	105f6e767	decompiled	chunks/003/functions-000195.c		
+105f6e768	105f6e7c7	decompiled	chunks/003/functions-000195.c		
+105f6e7c8	105f6e7db	decompiled	chunks/003/functions-000195.c		
+105f6e7dc	105f6ecfb	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _restorePreservedOverlays:toSnapDocEditor:snapDocKey:originalSnapDoc:]	
+105f6ecfc	105f6ed7b	decompiled	chunks/003/functions-000195.c		
+105f6ed7c	105f6ee4f	decompiled	chunks/003/functions-000195.c		
+105f6ee50	105f6eeb7	decompiled	chunks/003/functions-000195.c		
+105f6eeb8	105f6ef63	decompiled	chunks/003/functions-000195.c		
+105f6ef64	105f6f003	decompiled	chunks/003/functions-000195.c		
+105f6f004	105f6f2a7	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _showTrimVCWithImportMediaContent:contentTimeRange:trimmedTimeRange:remainingDurationMs:segmentsEndSeconds:disallowDurationChange:]	
+105f6f2a8	105f6f3a3	decompiled	chunks/003/functions-000195.c		
+105f6f3a4	105f6f44b	decompiled	chunks/003/functions-000195.c		
+105f6f44c	105f6f47b	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler _setFakePerformer:]	
+105f6f47c	105f6f587	decompiled	chunks/003/functions-000195.c	-[SCMemoriesPickerV2ViewControllerDefaultActionHandler .cxx_destruct]	
+105f6f588	105f6f633	decompiled	chunks/003/functions-000195.c		
+105f6f634	105f6f68b	decompiled	chunks/003/functions-000195.c		
+105f6f68c	105f6f737	decompiled	chunks/003/functions-000195.c		
+105f6f738	105f6f747	decompiled	chunks/003/functions-000195.c		
+105f6f748	105f6f907	decompiled	chunks/003/functions-000195.c		
+105f6f908	105f6faf3	decompiled	chunks/003/functions-000195.c		
+105f6faf4	105f6fc4f	decompiled	chunks/003/functions-000195.c		
+105f6fc50	105f6fca3	decompiled	chunks/003/functions-000195.c		
+105f6fca4	105f6ff93	decompiled	chunks/003/functions-000195.c	-[SCFuture mapAsync:]	
+105f6ff94	105f6fff7	decompiled	chunks/003/functions-000195.c	-[SCAddToGroupScopeEntryPoint begin]	
+105f6fff8	105f70033	decompiled	chunks/003/functions-000195.c	-[SCAddToGroupScopeEntryPoint .cxx_destruct]	
+105f70034	105f700ab	decompiled	chunks/003/functions-000195.c	-[SCCancelMenuActionSheetEntryPoint begin]	
+105f700ac	105f704eb	decompiled	chunks/003/functions-000195.c	-[SCCancelMenuActionSheetEntryPoint _actionSheet]	
+105f704ec	105f705a3	decompiled	chunks/003/functions-000195.c		
+105f705a4	105f705d7	decompiled	chunks/003/functions-000196.c		
+105f705d8	105f7068f	decompiled	chunks/003/functions-000196.c		
+105f70690	105f706c3	decompiled	chunks/003/functions-000196.c		
+105f706c4	105f70767	decompiled	chunks/003/functions-000196.c		
+105f70768	105f70793	decompiled	chunks/003/functions-000196.c		
+105f70794	105f7084b	decompiled	chunks/003/functions-000196.c		
+105f7084c	105f7087f	decompiled	chunks/003/functions-000196.c		
+105f70880	105f70a23	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _retryBlockWithActionSheet:]	
+105f70a24	105f70a6b	decompiled	chunks/003/functions-000196.c		
+105f70a6c	105f70ad3	decompiled	chunks/003/functions-000196.c		
+105f70ad4	105f70b1b	decompiled	chunks/003/functions-000196.c		
+105f70b1c	105f70ba3	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _retryForConversationId:]	
+105f70ba4	105f70c4b	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _retryForConversationId:messageId:]	
+105f70c4c	105f70d03	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _retryForConversationIds:]	
+105f70d04	105f70d13	decompiled	chunks/003/functions-000196.c		
+105f70d14	105f70eb7	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _cancelBlockWithActionSheet:]	
+105f70eb8	105f70fd7	decompiled	chunks/003/functions-000196.c		
+105f70fd8	105f7101f	decompiled	chunks/003/functions-000196.c		
+105f71020	105f710d7	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _cancelForConversationIds:]	
+105f710d8	105f710e7	decompiled	chunks/003/functions-000196.c		
+105f710e8	105f7118f	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _cancelForConversationId:messageId:]	
+105f71190	105f7128b	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint _didTapMoreCell]	
+105f7128c	105f712ff	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint actionSheetDidDismiss:]	
+105f71300	105f71363	decompiled	chunks/003/functions-000196.c	-[SCCancelMenuActionSheetEntryPoint .cxx_destruct]	
+105f71364	105f71393	decompiled	chunks/003/functions-000196.c		
+105f71394	105f71437	decompiled	chunks/003/functions-000196.c	-[SCGenerativeContentPlusUpsellPresenter initWithPlusSubscribeScopeExposer:plusSubscribeScopeServices:]	
+105f71438	105f714ef	decompiled	chunks/003/functions-000196.c	-[SCGenerativeContentPlusUpsellPresenter presentPlusUpsellInContainer:pageType:plusFeatureType:]	
+105f714f0	105f71537	decompiled	chunks/003/functions-000196.c	-[SCGenerativeContentPlusUpsellPresenter plusSubscribeDidDismiss]	
+105f71538	105f71567	decompiled	chunks/003/functions-000196.c	-[SCGenerativeContentPlusUpsellPresenter .cxx_destruct]	
+105f71568	105f716e3	decompiled	chunks/003/functions-000196.c	-[SCChatCustomizationHubImageLoaderEntryPoint begin]	
+105f716e4	105f7172b	decompiled	chunks/003/functions-000196.c		
+105f7172c	105f7180f	decompiled	chunks/003/functions-000196.c	-[SCChatCustomizationHubImageLoaderEntryPoint end]	
+105f71810	105f7187f	decompiled	chunks/003/functions-000196.c	-[SCChatCustomizationHubImageLoaderEntryPoint _isLoaderEnabled]	
+105f71880	105f718df	decompiled	chunks/003/functions-000196.c	-[SCChatCustomizationHubImageLoaderEntryPoint .cxx_destruct]	
+105f718e0	105f71b2b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl initGrpcServiceFactory:cofStoring:subscriptionInfoProvider:loggingHelper:disclaimerPresenter:disclaimerHandler:plusUpsellPresenter:actionSheetPresenterFactory:generativeContentReportScopeExposer:bitmojiFlatlandConfigProvider:generativeContentType:]	
+105f71b2c	105f71c4b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl createViewContextWithContainer:presentingViewController:]	
+105f71c4c	105f71c73	decompiled	chunks/003/functions-000196.c		
+105f71c74	105f71c8b	decompiled	chunks/003/functions-000196.c		
+105f71c8c	105f7201b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl createViewContextWithContainerBlock:presentingViewControllerBlock:]	
+105f7201c	105f72143	decompiled	chunks/003/functions-000196.c		
+105f72144	105f721a3	decompiled	chunks/003/functions-000196.c		
+105f721a4	105f72283	decompiled	chunks/003/functions-000196.c		
+105f72284	105f7256b	decompiled	chunks/003/functions-000196.c		
+105f7256c	105f725f3	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl _featurePlusStatus]	
+105f725f4	105f7265b	decompiled	chunks/003/functions-000196.c		
+105f7265c	105f726e3	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl _subscribedToSnapchatPlus]	
+105f726e4	105f72713	decompiled	chunks/003/functions-000196.c		
+105f72714	105f7280b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl _presentDisclaimerInContainer:]	
+105f7280c	105f728bf	decompiled	chunks/003/functions-000196.c		
+105f728c0	105f72907	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl generativeContentReportDidCompleteWithCancelled:]	
+105f72908	105f72997	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerContextFactoryImpl .cxx_destruct]	
+105f72998	105f72a3b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader initWithContentDelivery:circumstanceEngine:]	
+105f72a3c	105f72aa7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader supportedURLSchemes]	
+105f72aa8	105f72beb	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader requestPayloadWithURL:error:]	
+105f72bec	105f730bf	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader loadImageWithRequestPayload:parameters:completion:]	
+105f730c0	105f73187	decompiled	chunks/003/functions-000196.c		
+105f73188	105f7318f	decompiled	chunks/003/functions-000196.c		
+105f73190	105f732ef	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader _retrieveAssetForContentKey:pageInfo:backgroundURL:completion:]	
+105f732f0	105f7334b	decompiled	chunks/003/functions-000196.c		
+105f7334c	105f734f7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader _handleContentManagerResult:backgroundURL:completion:]	
+105f734f8	105f7354f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader _expirationInDatesForFeatureAttribution:]	
+105f73550	105f73607	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader _pageInfoForFeatureAttribution:]	
+105f73608	105f73617	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader _contentAttributionForFeatureAttribution:]	
+105f73618	105f73647	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerImageLoader .cxx_destruct]	
+105f73648	105f736bb	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerLoggingHelper initWithBlizzardLogger:]	
+105f736bc	105f736c7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerLoggingHelper pushToValdiMarshaller:]	
+105f736c8	105f736cf	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerLoggingHelper blizzardLogger]	
+105f736d0	105f736ff	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerLoggingHelper setBlizzardLogger:]	
+105f73700	105f7370b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsComposerLoggingHelper .cxx_destruct]	
+105f7370c	105f73887	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsEntryPoint begin]	
+105f73888	105f7391f	decompiled	chunks/003/functions-000196.c		
+105f73920	105f73c5b	decompiled	chunks/003/functions-000196.c		
+105f73c5c	105f73dff	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsEntryPoint _disclaimerConfiguration]	
+105f73e00	105f73f0f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsEntryPoint _disclaimerHandler]	
+105f73f10	105f74043	decompiled	chunks/003/functions-000196.c		
+105f74044	105f7410f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsEntryPoint .cxx_destruct]	
+105f74110	105f74183	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFeatureStatusProvider initWithCircumstanceEngine:]	
+105f74184	105f7419b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFeatureStatusProvider isFeatureEnabled]	
+105f7419c	105f741b3	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFeatureStatusProvider isViewingEnabled]	
+105f741b4	105f741bf	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFeatureStatusProvider .cxx_destruct]	
+105f741c0	105f74233	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFlatlandConfigProvider initWithBitmojiFlatlandConfigProvider:]	
+105f74234	105f742bb	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFlatlandConfigProvider getDefaultBitmojiBackgroundIdObservableWithUserId:]	
+105f742bc	105f74343	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFlatlandConfigProvider getDefaultBitmojiSceneIdObservableWithUserId:]	
+105f74344	105f7434f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsFlatlandConfigProvider .cxx_destruct]	
+105f74350	105f744bb	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageLoaderEntryPoint begin]	
+105f744bc	105f744df	decompiled	chunks/003/functions-000196.c		
+105f744e0	105f745e7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageLoaderEntryPoint end]	
+105f745e8	105f74647	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageLoaderEntryPoint .cxx_destruct]	
+105f74648	105f7472b	decompiled	chunks/003/functions-000196.c	-[SCGenerativeChatWallpapersServiceProvider provide]	
+105f7472c	105f74a23	decompiled	chunks/003/functions-000196.c		
+105f74a24	105f74bc7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeChatWallpapersServiceProvider _disclaimerConfiguration]	
+105f74bc8	105f74cd7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeChatWallpapersServiceProvider _disclaimerHandler]	
+105f74cd8	105f74e0b	decompiled	chunks/003/functions-000196.c		
+105f74e0c	105f74ec7	decompiled	chunks/003/functions-000196.c	-[SCGenerativeChatWallpapersServiceProvider .cxx_destruct]	
+105f74ec8	105f74f4f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest initWithBackgroundURL:feature:]	
+105f74f50	105f74f73	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest copyWithZone:]	
+105f74f74	105f74fdf	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest hash]	
+105f74fe0	105f7507f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest isEqual:]	
+105f75080	105f75087	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest backgroundURL]	
+105f75088	105f7508f	decompiled	chunks/003/functions-000196.c	-[SCGenerativeBackgroundsImageRequest feature]	
+105f75090	105f7509b	decompiled	chunks/003/functions-000197.c	-[SCGenerativeBackgroundsImageRequest .cxx_destruct]	
+105f7509c	105f7524b	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin initWithBlizzardLogger:grapheneRegistry:adAttachmentHandlerScopeExposer:adAttachmentHandlerScopeBuilder:networkingClient:postbackInfoEventHandler:dwellRequestsEnabled:mainQueuePerformer:messagingMessageProvider:]	
+105f7524c	105f75893	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f75894	105f75e4b	decompiled	chunks/003/functions-000197.c		
+105f75e4c	105f75e93	decompiled	chunks/003/functions-000197.c		
+105f75e94	105f75efb	decompiled	chunks/003/functions-000197.c		
+105f75efc	105f75f57	decompiled	chunks/003/functions-000197.c		
+105f75f58	105f75f6f	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin pluginDidRegister]	
+105f75f70	105f75f9f	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin identifier]	
+105f75fa0	105f75fa7	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin pluginType]	
+105f75fa8	105f75fab	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerViewWillFullyAppear:]	
+105f75fac	105f76043	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerDidComplete:result:]	
+105f76044	105f76047	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerDidPresent:]	
+105f76048	105f7604b	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerViewDidFullyAppear:]	
+105f7604c	105f7604f	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerViewDidFullyDisappear:]	
+105f76050	105f76053	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin adAttachmentHandlerViewWillFullyDisappear:]	
+105f76054	105f7609b	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin dismissPresentedView]	
+105f7609c	105f762bb	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _handleTapAdWithIndex:browserType:partnerRequestId:productAdShareItems:]	
+105f762bc	105f762ef	decompiled	chunks/003/functions-000197.c		
+105f762f0	105f763b7	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _launchBrowserWithCommonAdConfig:webViewAttachment:]	
+105f763b8	105f763c3	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _adBrowserTypeFromMessagingBrowserType:]	
+105f763c4	105f7642b	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _composerBrowserTypeFromMessagingBrowserType:]	
+105f7642c	105f76447	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _partnerFromMessagingPartner:]	
+105f76448	105f764f7	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin _internalBrowserDismissedFrom:]	
+105f764f8	105f764ff	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin activeConversationIdObservable]	
+105f76500	105f7652f	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin setActiveConversationIdObservable:]	
+105f76530	105f76537	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin activeConversationInformationObservable]	
+105f76538	105f76567	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin setActiveConversationInformationObservable:]	
+105f76568	105f7657f	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin uiContainer]	
+105f76580	105f7658b	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin setUiContainer:]	
+105f7658c	105f76593	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin messageViewEvents]	
+105f76594	105f765c3	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin setMessageViewEvents:]	
+105f765c4	105f76667	decompiled	chunks/003/functions-000197.c	-[SCProductAdMessagePlugin .cxx_destruct]	
+105f76668	105f767bb	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin initWithBlizzardLogger:adAttachmentHandlerScopeExposer:adAttachmentHandlerScopeBuilder:mainQueuePerformer:messagingMessageProvider:grapheneRegistry:]	
+105f767bc	105f76d1f	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f76d20	105f76f53	decompiled	chunks/003/functions-000197.c		
+105f76f54	105f76feb	decompiled	chunks/003/functions-000197.c		
+105f76fec	105f76fef	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin pluginDidRegister]	
+105f76ff0	105f7701f	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin identifier]	
+105f77020	105f77027	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin pluginType]	
+105f77028	105f7706f	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin dismissPresentedView]	
+105f77070	105f77073	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerViewWillFullyAppear:]	
+105f77074	105f770bb	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerDidComplete:result:]	
+105f770bc	105f770bf	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerDidPresent:]	
+105f770c0	105f770c3	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerViewDidFullyAppear:]	
+105f770c4	105f770c7	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerViewDidFullyDisappear:]	
+105f770c8	105f770cb	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin adAttachmentHandlerViewWillFullyDisappear:]	
+105f770cc	105f7736f	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin _handleTapAdWithIndex:browserType:commerceItems:adId:serveItemId:conversationId:]	
+105f77370	105f773a3	decompiled	chunks/003/functions-000197.c		
+105f773a4	105f77467	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin _launchBrowserWithWebViewAttachment:]	
+105f77468	105f775ff	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin _visibilityObservableForMessage:]	
+105f77600	105f776af	decompiled	chunks/003/functions-000197.c		
+105f776b0	105f776bb	decompiled	chunks/003/functions-000197.c	+[SCSponsoredSnapAiProductAdMessagePlugin adBrowserTypeFromMessagingBrowserType:]	
+105f776bc	105f776c3	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin activeConversationIdObservable]	
+105f776c4	105f776f3	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setActiveConversationIdObservable:]	
+105f776f4	105f776fb	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin activeConversationInformationObservable]	
+105f776fc	105f7772b	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setActiveConversationInformationObservable:]	
+105f7772c	105f77733	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin messageViewEvents]	
+105f77734	105f77763	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setMessageViewEvents:]	
+105f77764	105f7776b	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin visibleMessageIds]	
+105f7776c	105f7779b	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setVisibleMessageIds:]	
+105f7779c	105f777a3	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin messageListScrollObservable]	
+105f777a4	105f777d3	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setMessageListScrollObservable:]	
+105f777d4	105f777eb	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin messageVisibilityFractionProvider]	
+105f777ec	105f777f7	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setMessageVisibilityFractionProvider:]	
+105f777f8	105f7780f	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin uiContainer]	
+105f77810	105f7781b	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin setUiContainer:]	
+105f7781c	105f778c7	decompiled	chunks/003/functions-000197.c	-[SCSponsoredSnapAiProductAdMessagePlugin .cxx_destruct]	
+105f778c8	105f779eb	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin initWithBlizzardLogger:urlPreviewProvider:adAttachmentHandlerScopeExposer:adAttachmentHandlerScopeBuilder:messagingMessageProvider:]	
+105f779ec	105f77d7b	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f77d7c	105f77e47	decompiled	chunks/003/functions-000197.c		
+105f77e48	105f77ec3	decompiled	chunks/003/functions-000197.c		
+105f77ec4	105f77ec7	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin pluginDidRegister]	
+105f77ec8	105f77ef7	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin identifier]	
+105f77ef8	105f77eff	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin pluginType]	
+105f77f00	105f77f47	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin dismissPresentedView]	
+105f77f48	105f78123	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin _handleTapSuggestedSeachAdShare:browserType:]	
+105f78124	105f7816b	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerDidComplete:result:]	
+105f7816c	105f7816f	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerDidPresent:]	
+105f78170	105f78173	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerViewDidFullyAppear:]	
+105f78174	105f78177	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerViewDidFullyDisappear:]	
+105f78178	105f7817b	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerViewWillFullyAppear:]	
+105f7817c	105f7817f	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin adAttachmentHandlerViewWillFullyDisappear:]	
+105f78180	105f78187	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin activeConversationIdObservable]	
+105f78188	105f781b7	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin setActiveConversationIdObservable:]	
+105f781b8	105f781bf	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin activeConversationInformationObservable]	
+105f781c0	105f781ef	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin setActiveConversationInformationObservable:]	
+105f781f0	105f78207	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin uiContainer]	
+105f78208	105f78213	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin setUiContainer:]	
+105f78214	105f78287	decompiled	chunks/003/functions-000197.c	-[SCSuggestedSearchMessagePlugin .cxx_destruct]	
+105f78288	105f783bb	decompiled	chunks/003/functions-000197.c	-[SCTextAdMessagePlugin initWithBlizzardLogger:webBrowsingScopeExposer:networkingClient:postbackInfoEventHandler:dwellRequestsEnabled:messagingMessageProvider:]	
+105f783bc	105f78903	decompiled	chunks/003/functions-000197.c	-[SCTextAdMessagePlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f78904	105f78b03	decompiled	chunks/003/functions-000197.c		
+105f78b04	105f78bdb	decompiled	chunks/003/functions-000197.c		
+105f78bdc	105f78c63	decompiled	chunks/003/functions-000197.c		
+105f78c64	105f78ccb	decompiled	chunks/003/functions-000197.c		
+105f78ccc	105f78d27	decompiled	chunks/003/functions-000197.c		
+105f78d28	105f78d3f	decompiled	chunks/003/functions-000197.c	-[SCTextAdMessagePlugin pluginDidRegister]	
+105f78d40	105f78d6f	decompiled	chunks/003/functions-000197.c	-[SCTextAdMessagePlugin identifier]	
+105f78d70	105f78d77	decompiled	chunks/003/functions-000197.c	-[SCTextAdMessagePlugin pluginType]	
+105f78d78	105f78deb	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin webBrowserDidDismiss:]	
+105f78dec	105f78e33	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin dismissPresentedView]	
+105f78e34	105f78ed3	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin _handleTapOpenExternalBrowserWithURLString:]	
+105f78ed4	105f7909b	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin _handleTapOpenInAppBrowserWithURLString:]	
+105f7909c	105f790b3	decompiled	chunks/003/functions-000198.c		
+105f790b4	105f790bb	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin activeConversationIdObservable]	
+105f790bc	105f790eb	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin setActiveConversationIdObservable:]	
+105f790ec	105f790f3	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin activeConversationInformationObservable]	
+105f790f4	105f79123	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin setActiveConversationInformationObservable:]	
+105f79124	105f7913b	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin uiContainer]	
+105f7913c	105f79147	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin setUiContainer:]	
+105f79148	105f7914f	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin messageViewEvents]	
+105f79150	105f7917f	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin setMessageViewEvents:]	
+105f79180	105f791ff	decompiled	chunks/003/functions-000198.c	-[SCTextAdMessagePlugin .cxx_destruct]	
+105f79200	105f7920b	decompiled	chunks/003/functions-000198.c	+[SCCChatProductAdView componentPath]	
+105f7920c	105f7923f	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdView initWithViewModel:componentContext:runtime:]	
+105f79240	105f7928f	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdView setViewModel:]	
+105f79290	105f792d3	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdView viewModel]	
+105f792d4	105f7937b	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdBrowserType__Enum init]	
+105f7937c	105f7940b	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdContext initWithBlizzardLogger:onTap:]	
+105f7940c	105f7942f	decompiled	chunks/003/functions-000198.c	+[SCCChatProductAdContext valdiMarshallableObjectDescriptor]	
+105f79430	105f79453	decompiled	chunks/003/functions-000198.c		
+105f79454	105f794d3	decompiled	chunks/003/functions-000198.c		
+105f794d4	105f7951f	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdItem initWithBrandName:productName:attachmentUrl:productImageUrl:adId:impressionId:rank:]	
+105f79520	105f7953b	decompiled	chunks/003/functions-000198.c	+[SCCChatProductAdItem valdiMarshallableObjectDescriptor]	
+105f7953c	105f7956b	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdItemInstallmentInfo initWithInstallmentPayment:installmentDescription:]	
+105f7956c	105f7957f	decompiled	chunks/003/functions-000198.c	+[SCCChatProductAdItemInstallmentInfo valdiMarshallableObjectDescriptor]	
+105f79580	105f795af	decompiled	chunks/003/functions-000198.c	-[SCCChatProductAdViewModel initWithProductAdItems:]	
+105f795b0	105f795cb	decompiled	chunks/003/functions-000198.c	+[SCCChatProductAdViewModel valdiMarshallableObjectDescriptor]	
+105f795cc	105f795f7	decompiled	chunks/003/functions-000198.c		
+105f795f8	105f7961f	decompiled	chunks/003/functions-000198.c		
+105f79620	105f7962b	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapAiProductAdView componentPath]	
+105f7962c	105f7965f	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdView initWithViewModel:componentContext:runtime:]	
+105f79660	105f796af	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdView setViewModel:]	
+105f796b0	105f796f3	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdView viewModel]	
+105f796f4	105f79787	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdContext initWithBlizzardLogger:messageVisibilityObservable:onTap:]	
+105f79788	105f797ab	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapAiProductAdContext valdiMarshallableObjectDescriptor]	
+105f797ac	105f797cf	decompiled	chunks/003/functions-000198.c		
+105f797d0	105f7984f	decompiled	chunks/003/functions-000198.c		
+105f79850	105f7988f	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdItem initWithProductName:attachmentUrl:productImageUrl:price:]	
+105f79890	105f798a3	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapAiProductAdItem valdiMarshallableObjectDescriptor]	
+105f798a4	105f798e7	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapAiProductAdViewModel initWithProductAdItems:conversationId:messageId:]	
+105f798e8	105f79903	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapAiProductAdViewModel valdiMarshallableObjectDescriptor]	
+105f79904	105f7992f	decompiled	chunks/003/functions-000198.c		
+105f79930	105f79947	decompiled	chunks/003/functions-000198.c		
+105f79948	105f79953	decompiled	chunks/003/functions-000198.c	+[SCCChatSuggestedSearchView componentPath]	
+105f79954	105f79987	decompiled	chunks/003/functions-000198.c	-[SCCChatSuggestedSearchView initWithViewModel:componentContext:runtime:]	
+105f79988	105f799d7	decompiled	chunks/003/functions-000198.c	-[SCCChatSuggestedSearchView setViewModel:]	
+105f799d8	105f79a1b	decompiled	chunks/003/functions-000198.c	-[SCCChatSuggestedSearchView viewModel]	
+105f79a1c	105f79a4f	decompiled	chunks/003/functions-000198.c	-[SCCChatSuggestedSearchContext init]	
+105f79a50	105f79a6f	decompiled	chunks/003/functions-000198.c	+[SCCChatSuggestedSearchContext valdiMarshallableObjectDescriptor]	
+105f79a70	105f79aaf	decompiled	chunks/003/functions-000198.c	-[SCCChatSuggestedSearchViewModel initWithUrl:]	
+105f79ab0	105f79ac7	decompiled	chunks/003/functions-000198.c	+[SCCChatSuggestedSearchViewModel valdiMarshallableObjectDescriptor]	
+105f79ac8	105f79ad3	decompiled	chunks/003/functions-000198.c	+[SCCChatTextAdView componentPath]	
+105f79ad4	105f79b07	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdView initWithViewModel:componentContext:runtime:]	
+105f79b08	105f79b57	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdView setViewModel:]	
+105f79b58	105f79b9b	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdView viewModel]	
+105f79b9c	105f79bcf	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdContext init]	
+105f79bd0	105f79be3	decompiled	chunks/003/functions-000198.c	+[SCCChatTextAdContext valdiMarshallableObjectDescriptor]	
+105f79be4	105f79c2f	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdItem initWithTitle:displayDomain:displayUrl:abstract:destinationUrl:adId:impressionId:]	
+105f79c30	105f79c43	decompiled	chunks/003/functions-000198.c	+[SCCChatTextAdItem valdiMarshallableObjectDescriptor]	
+105f79c44	105f79c8f	decompiled	chunks/003/functions-000198.c	-[SCCChatTextAdViewModel initWithItems:]	
+105f79c90	105f79cb3	decompiled	chunks/003/functions-000198.c	+[SCCChatTextAdViewModel valdiMarshallableObjectDescriptor]	
+105f79cb4	105f79ce7	decompiled	chunks/003/functions-000198.c	-[SCCChatAdItemPostbackInfoContext initWithImpressionToken:urlPingSuffix:]	
+105f79ce8	105f79cf7	decompiled	chunks/003/functions-000198.c	+[SCCChatAdItemPostbackInfoContext valdiMarshallableObjectDescriptor]	
+105f79cf8	105f79d2b	decompiled	chunks/003/functions-000198.c	-[SCCChatAdSharePostbackInfoContext initWithVisibilityFeedbackURL:pageLoadPingURL:pingURLBase:]	
+105f79d2c	105f79d57	decompiled	chunks/003/functions-000198.c	+[SCCChatAdSharePostbackInfoContext valdiMarshallableObjectDescriptor]	
+105f79d58	105f79e07	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler initWithConversationEventObservable:]	
+105f79e08	105f79f03	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler listenToConversationEvents]	
+105f79f04	105f79ff7	decompiled	chunks/003/functions-000198.c		
+105f79ff8	105f7a04f	decompiled	chunks/003/functions-000198.c		
+105f7a050	105f7a09f	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler dwellRequestBridgeObservableIfNeeded]	
+105f7a0a0	105f7a0a7	decompiled	chunks/003/functions-000198.c		
+105f7a0a8	105f7a0b7	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler fireDwellRequest]	
+105f7a0b8	105f7a0df	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler _cleanup]	
+105f7a0e0	105f7a11b	decompiled	chunks/003/functions-000198.c	-[SCAdMessagePostbackInfoEventHandler .cxx_destruct]	
+105f7a11c	105f7a127	decompiled	chunks/003/functions-000198.c	+[SCCChatAdAttachmentView componentPath]	
+105f7a128	105f7a147	decompiled	chunks/003/functions-000198.c	-[SCCChatAdAttachmentView initWithViewModel:componentContext:runtime:]	
+105f7a148	105f7a17b	decompiled	chunks/003/functions-000198.c	-[SCCChatAdAttachmentView setViewModel:]	
+105f7a17c	105f7a1b3	decompiled	chunks/003/functions-000198.c	-[SCCChatAdAttachmentView viewModel]	
+105f7a1b4	105f7a1bf	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapBannerView componentPath]	
+105f7a1c0	105f7a1df	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerView initWithViewModel:componentContext:runtime:]	
+105f7a1e0	105f7a213	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerView setViewModel:]	
+105f7a214	105f7a24b	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerView viewModel]	
+105f7a24c	105f7a257	decompiled	chunks/003/functions-000198.c	+[SCCChatSponsoredSnapView componentPath]	
+105f7a258	105f7a277	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapView initWithViewModel:componentContext:runtime:]	
+105f7a278	105f7a2ab	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapView setViewModel:]	
+105f7a2ac	105f7a2e3	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapView viewModel]	
+105f7a2e4	105f7a2ef	decompiled	chunks/003/functions-000198.c	+[SCCSponsoredSnapModalComponent componentPath]	
+105f7a2f0	105f7a30f	decompiled	chunks/003/functions-000198.c	-[SCCSponsoredSnapModalComponent initWithViewModel:componentContext:runtime:]	
+105f7a310	105f7a343	decompiled	chunks/003/functions-000198.c	-[SCCSponsoredSnapModalComponent setViewModel:]	
+105f7a344	105f7a37b	decompiled	chunks/003/functions-000198.c	-[SCCSponsoredSnapModalComponent viewModel]	
+105f7a37c	105f7a3d7	decompiled	chunks/003/functions-000198.c		
+105f7a3d8	105f7a44b	decompiled	chunks/003/functions-000198.c	-[SCGrapheneSponsoredSnapDisclaimerMetric2 init]	
+105f7a44c	105f7a5bf	decompiled	chunks/003/functions-000198.c		
+105f7a5c0	105f7a5c7	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerAccessoryViewType__Enum init]	
+105f7a5c8	105f7a5cf	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerColorTheme__Enum init]	
+105f7a5d0	105f7a5d7	decompiled	chunks/003/functions-000198.c	-[SCCChatSponsoredSnapBannerEnvelopeStyle__Enum init]	
+105f7a5d8	105f7a5f7	decompiled	chunks/003/functions-000198.c	-[SCCAppInstallAttachmentViewModel init]	
+105f7a5f8	105f7a60b	decompiled	chunks/003/functions-000198.c	+[SCCAppInstallAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a60c	105f7a62b	decompiled	chunks/003/functions-000199.c	-[SCCAttachmentViewModel init]	
+105f7a62c	105f7a63f	decompiled	chunks/003/functions-000199.c	+[SCCAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a640	105f7a65f	decompiled	chunks/003/functions-000199.c	-[SCCChatAdAttachmentContext init]	
+105f7a660	105f7a673	decompiled	chunks/003/functions-000199.c	+[SCCChatAdAttachmentContext valdiMarshallableObjectDescriptor]	
+105f7a674	105f7a6a7	decompiled	chunks/003/functions-000199.c	-[SCCChatAdAttachmentViewModel initWithAdAttachmentObservable:]	
+105f7a6a8	105f7a6bb	decompiled	chunks/003/functions-000199.c	+[SCCChatAdAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a6bc	105f7a6f3	decompiled	chunks/003/functions-000199.c	-[SCCChatPharmaDisclaimerCta initWithDisclaimerType:url:]	
+105f7a6f4	105f7a707	decompiled	chunks/003/functions-000199.c	+[SCCChatPharmaDisclaimerCta valdiMarshallableObjectDescriptor]	
+105f7a708	105f7a823	decompiled	chunks/003/functions-000199.c	-[SCCChatSponsoredSnapBannerContext initWithOnTapProfile:onTapBody:onLongPress:onTapAttachment:onDismiss:]	
+105f7a824	105f7a837	decompiled	chunks/003/functions-000199.c	+[SCCChatSponsoredSnapBannerContext valdiMarshallableObjectDescriptor]	
+105f7a838	105f7a887	decompiled	chunks/003/functions-000199.c	-[SCCChatSponsoredSnapBannerViewModel initWithHasAudio:isOpened:titleText:subtitleText:profileImageUrl:accessoryViewType:colorTheme:envelopeStyle:adBadgeText:]	
+105f7a888	105f7a89b	decompiled	chunks/003/functions-000199.c	+[SCCChatSponsoredSnapBannerViewModel valdiMarshallableObjectDescriptor]	
+105f7a89c	105f7a8bb	decompiled	chunks/003/functions-000199.c	-[SCCChatSponsoredSnapContext init]	
+105f7a8bc	105f7a8cf	decompiled	chunks/003/functions-000199.c	+[SCCChatSponsoredSnapContext valdiMarshallableObjectDescriptor]	
+105f7a8d0	105f7a907	decompiled	chunks/003/functions-000199.c	-[SCCChatSponsoredSnapViewModel initWithThumbnailMediaType:]	
+105f7a908	105f7a91b	decompiled	chunks/003/functions-000199.c	+[SCCChatSponsoredSnapViewModel valdiMarshallableObjectDescriptor]	
+105f7a91c	105f7a93b	decompiled	chunks/003/functions-000199.c	-[SCCCollectionAttachmentViewModel init]	
+105f7a93c	105f7a94f	decompiled	chunks/003/functions-000199.c	+[SCCCollectionAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a950	105f7a96f	decompiled	chunks/003/functions-000199.c	-[SCCCommonAttachmentViewModel init]	
+105f7a970	105f7a983	decompiled	chunks/003/functions-000199.c	+[SCCCommonAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a984	105f7a9a3	decompiled	chunks/003/functions-000199.c	-[SCCDeepLinkAttachmentViewModel init]	
+105f7a9a4	105f7a9b7	decompiled	chunks/003/functions-000199.c	+[SCCDeepLinkAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a9b8	105f7a9d7	decompiled	chunks/003/functions-000199.c	-[SCCLeadGenAttachmentViewModel init]	
+105f7a9d8	105f7a9eb	decompiled	chunks/003/functions-000199.c	+[SCCLeadGenAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7a9ec	105f7aa7f	decompiled	chunks/003/functions-000199.c	-[SCCSponsoredSnapModalContext initWithOnDismiss:onConfirm:]	
+105f7aa80	105f7aaa3	decompiled	chunks/003/functions-000199.c	+[SCCSponsoredSnapModalContext valdiMarshallableObjectDescriptor]	
+105f7aaa4	105f7aacb	decompiled	chunks/003/functions-000199.c		
+105f7aacc	105f7ab2b	decompiled	chunks/003/functions-000199.c		
+105f7ab2c	105f7ab4b	decompiled	chunks/003/functions-000199.c	-[SCCWebViewAttachmentViewModel init]	
+105f7ab4c	105f7ab6f	decompiled	chunks/003/functions-000199.c	+[SCCWebViewAttachmentViewModel valdiMarshallableObjectDescriptor]	
+105f7ab70	105f7ab97	decompiled	chunks/003/functions-000199.c		
+105f7ab98	105f7abf7	decompiled	chunks/003/functions-000199.c		
+105f7abf8	105f7ac57	decompiled	chunks/003/functions-000199.c		
+105f7ac58	105f7accf	decompiled	chunks/003/functions-000199.c		
+105f7acd0	105f7acdb	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiComicStyleMessageAccessoryComponent componentPath]	
+105f7acdc	105f7ad0f	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiComicStyleMessageAccessoryComponent initWithViewModel:componentContext:runtime:]	
+105f7ad10	105f7ad5f	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiComicStyleMessageAccessoryComponent setViewModel:]	
+105f7ad60	105f7ada3	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiComicStyleMessageAccessoryComponent viewModel]	
+105f7ada4	105f7aec3	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiComicStyleMessageAccessoryContext initWithMessageIsSaved:renderedAsBubble:receiverUserId:receiverAvatarId:receiverSelfieId:onTap:onImpression:]	
+105f7aec4	105f7aee3	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiComicStyleMessageAccessoryContext valdiMarshallableObjectDescriptor]	
+105f7aee4	105f7aeef	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiTryOnMessageAccessoryComponent componentPath]	
+105f7aef0	105f7af23	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiTryOnMessageAccessoryComponent initWithViewModel:componentContext:runtime:]	
+105f7af24	105f7af73	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiTryOnMessageAccessoryComponent setViewModel:]	
+105f7af74	105f7afb7	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiTryOnMessageAccessoryComponent viewModel]	
+105f7afb8	105f7b053	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiTryOnMessageAccessoryContext initWithMessageIsSaved:renderedAsBubble:onTap:]	
+105f7b054	105f7b073	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiTryOnMessageAccessoryContext valdiMarshallableObjectDescriptor]	
+105f7b074	105f7b07f	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiUserShareMessageView componentPath]	
+105f7b080	105f7b0b3	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiUserShareMessageView initWithViewModel:componentContext:runtime:]	
+105f7b0b4	105f7b103	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiUserShareMessageView setViewModel:]	
+105f7b104	105f7b147	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiUserShareMessageView viewModel]	
+105f7b148	105f7b16b	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiUserShareMessageViewContext init]	
+105f7b16c	105f7b17f	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiUserShareMessageViewContext valdiMarshallableObjectDescriptor]	
+105f7b180	105f7b1a3	decompiled	chunks/003/functions-000199.c	-[SCCBitmojiUserShareMessageViewModel init]	
+105f7b1a4	105f7b1db	decompiled	chunks/003/functions-000199.c	+[SCCBitmojiUserShareMessageViewModel valdiMarshallableObjectDescriptor]	
+105f7b1dc	105f7b29b	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin initWithBitmojiAvatarProvider:featureSettingsService:]	
+105f7b29c	105f7b3cf	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin prefetchDataForMessageViewModel:isGroupConversation:]	
+105f7b3d0	105f7b4af	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin prefetchedDataForMessage:]	
+105f7b4b0	105f7b4df	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin identifier]	
+105f7b4e0	105f7b4e7	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin pluginType]	
+105f7b4e8	105f7b643	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin setActiveConversationIdObservable:]	
+105f7b644	105f7b66f	decompiled	chunks/003/functions-000199.c		
+105f7b670	105f7b69b	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin _handleConversationChange]	
+105f7b69c	105f7b717	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin _showCTAForMessageId:orderKey:]	
+105f7b718	105f7b7bb	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin _incrementBitmojiCreateAvatarChatImpressions]	
+105f7b7bc	105f7b7d3	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin delegate]	
+105f7b7d4	105f7b7df	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin setDelegate:]	
+105f7b7e0	105f7b7e7	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin activeConversationIdObservable]	
+105f7b7e8	105f7b7ef	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin activeConversationInformationObservable]	
+105f7b7f0	105f7b81f	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin setActiveConversationInformationObservable:]	
+105f7b820	105f7b82b	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin ctaMessageId]	
+105f7b82c	105f7b833	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin setCtaMessageId:]	
+105f7b834	105f7b83f	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin ctaOrderKey]	
+105f7b840	105f7b847	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin setCtaOrderKey:]	
+105f7b848	105f7b8bb	decompiled	chunks/003/functions-000199.c	-[SCBitmojiCreateCTAMessageFetchingPlugin .cxx_destruct]	
+105f7b8bc	105f7b8c7	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService hasBitmojiCreateAvatarCTAInChatImpressionsCount]	
+105f7b8c8	105f7b8d3	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService bitmojiCreateAvatarCTAInChatImpressionsCountServerParam]	
+105f7b8d4	105f7b8e3	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService setBitmojiCreateAvatarCTAInChatImpressionsCount:]	
+105f7b8e4	105f7b8eb	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService BITMOJI_CREATE_AVATAR_CTA_IN_CHAT_client_value:]	
+105f7b8ec	105f7b8f3	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService BITMOJI_CREATE_AVATAR_CTA_IN_CHAT_server_value:]	
+105f7b8f4	105f7b903	decompiled	chunks/003/functions-000199.c	-[SCFeatureSettingsService bitmojiCreateAvatarCTAInChatImpressionsCount]	
+105f7b904	105f7bacb	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin initWithUserId:countdownsServices:friendStore:userInfoProvider:grpcServiceFactory:blizzardLogger:cofStore:messagingMessageProvider:]	
+105f7bacc	105f7bd9b	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin valdiContextParamsForMessage:conversationParticipants:]	
+105f7bd9c	105f7be6f	decompiled	chunks/003/functions-000199.c		
+105f7be70	105f7bea3	decompiled	chunks/003/functions-000199.c		
+105f7bea4	105f7bf8f	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin _providers]	
+105f7bf90	105f7c1af	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin _presentListPageForParticipants:countdownId:]	
+105f7c1b0	105f7c1c7	decompiled	chunks/003/functions-000199.c		
+105f7c1c8	105f7c1ff	decompiled	chunks/003/functions-000199.c		
+105f7c200	105f7c213	decompiled	chunks/003/functions-000199.c		
+105f7c214	105f7c223	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin _countdownStatusTypeFromProtoObjectType:]	
+105f7c224	105f7c253	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin identifier]	
+105f7c254	105f7c25b	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin pluginType]	
+105f7c25c	105f7c377	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin setActiveConversationIdObservable:]	
+105f7c378	105f7c3bf	decompiled	chunks/003/functions-000199.c		
+105f7c3c0	105f7c3fb	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin conversationId]	
+105f7c3fc	105f7c46b	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin _handleConversationId:]	
+105f7c46c	105f7c4bb	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin dismissPresentedView]	
+105f7c4bc	105f7c4c3	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin activeConversationIdObservable]	
+105f7c4c4	105f7c4cb	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin activeConversationInformationObservable]	
+105f7c4cc	105f7c4fb	decompiled	chunks/003/functions-000199.c	-[SCChatCountdownStatusPlugin setActiveConversationInformationObservable:]	

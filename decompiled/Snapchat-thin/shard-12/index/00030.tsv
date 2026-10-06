@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+109113f00	109113f07	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshot playbackPosition]	
+109113f08	109113f0f	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshot totalDuration]	
+109113f10	109113f17	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshot state]	
+109113f18	109113f33	decompiled	chunks/004/functions-000300.c	+[SCPlaybackPlayerSnapshotBuilder playbackPlayerSnapshot]	
+109113f34	109114003	decompiled	chunks/004/functions-000300.c	+[SCPlaybackPlayerSnapshotBuilder playbackPlayerSnapshotFromExistingPlaybackPlayerSnapshot:]	
+109114004	109114037	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshotBuilder build]	
+109114038	10911403f	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshotBuilder withPlaybackPosition:]	
+109114040	109114047	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshotBuilder withTotalDuration:]	
+109114048	10911404f	decompiled	chunks/004/functions-000300.c	-[SCPlaybackPlayerSnapshotBuilder withState:]	
+109114050	10911409b	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime initWithEventTime:playbackPosition:]	
+10911409c	1091140bf	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime copyWithZone:]	
+1091140c0	109114153	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime hash]	
+109114154	109114233	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime isEqual:]	
+109114234	10911423b	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime eventTime]	
+10911423c	109114243	decompiled	chunks/004/functions-000300.c	-[SCPlaybackEventTime playbackPosition]	
+109114244	10911434f	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData initWithModelId:videoFrameRate:framesProcessed:framesSkipped:scaleFactor:minProcessingTimeMs:maxProcessingTimeMs:meanProcessingTimeMs:firstFrameProcessingTimeMs:modelLoadingTimeMs:disableReason:]	
+109114350	109114373	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData copyWithZone:]	
+109114374	1091144d7	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData hash]	
+1091144d8	109114713	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData isEqual:]	
+109114714	10911471b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData modelId]	
+10911471c	109114723	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData videoFrameRate]	
+109114724	10911472b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData framesProcessed]	
+10911472c	109114733	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData framesSkipped]	
+109114734	10911473b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData scaleFactor]	
+10911473c	109114743	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData minProcessingTimeMs]	
+109114744	10911474b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData maxProcessingTimeMs]	
+10911474c	109114753	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData meanProcessingTimeMs]	
+109114754	10911475b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData firstFrameProcessingTimeMs]	
+10911475c	109114763	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData modelLoadingTimeMs]	
+109114764	10911476b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData disableReason]	
+10911476c	10911479b	decompiled	chunks/004/functions-000300.c	-[SCNeoPlayerSuperResolutionAnalyticsData .cxx_destruct]	
+10911479c	10911498f	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator initWithNGSMESnap:videoRenderSize:ignoreSegmentTransform:recordDetailedErrors:]	
+109114990	109114a9b	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator generateMutatedVideoAssetWithErrorType:isForPlayback:]	
+109114a9c	109114ac3	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator NGSMEInputIdToTrackId]	
+109114ac4	109114e1b	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator _setUpAudiotracksInComposition:audioRenderDAGs:withErrorType:isForPlayback:]	
+109114e1c	109115063	decompiled	chunks/004/functions-000300.c	+[SCNGSMEVideoAssetMutator audioMixForSnap:]	
+109115064	10911513b	decompiled	chunks/004/functions-000300.c		
+10911513c	1091153f7	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator _singleAudioTrackToTranscode:audioRenderDAG:]	
+1091153f8	109115d7f	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator _setUpVideoTracksInComposition:isForPlayback:withErrorType:]	
+109115d80	109116c03	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator _insertNGSMESegment:toTrack:ofMediaType:withOrientationLayerInstruction:withTransformLayerInstruction:isForPlayback:withErrorType:]	
+109116c04	109116c1b	decompiled	chunks/004/functions-000300.c		
+109116c1c	109116ff3	decompiled	chunks/004/functions-000300.c		
+109116ff4	1091170bf	decompiled	chunks/004/functions-000300.c		
+1091170c0	109117113	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator _loadPlaceHolderAssetIfNecessary]	
+109117114	1091171bf	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator aggregatedErrorDetails]	
+1091171c0	1091171c7	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator ngsmeSnap]	
+1091171c8	1091171cf	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator videoRenderSize]	
+1091171d0	1091171e3	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator singleAssetPreferredTransform]	
+1091171e4	1091171eb	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator ignoreSegmentTransform]	
+1091171ec	1091171f3	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator useMinimalPlaceholderVideo]	
+1091171f4	1091171fb	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator setUseMinimalPlaceholderVideo:]	
+1091171fc	109117203	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator alignVideoCompositionFrameDurationToSourceTimescale]	
+109117204	10911720b	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator setAlignVideoCompositionFrameDurationToSourceTimescale:]	
+10911720c	109117213	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator videoCompositionFrameRateOverride]	
+109117214	10911721b	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator setVideoCompositionFrameRateOverride:]	
+10911721c	10911726f	decompiled	chunks/004/functions-000300.c	-[SCNGSMEVideoAssetMutator .cxx_destruct]	
+109117270	10911734b	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator initWithInputVideoAsset:audioOverrideAsset:outputPlaybackRate:outputTimeRanges:]	
+10911734c	1091174db	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator initWithInputVideoAssets:videoTimeRanges:videoRenderSize:audioOverrideAssets:audioOverrideLoopingEnabled:outputPlaybackRate:]	
+1091174dc	1091175d7	decompiled	chunks/004/functions-000300.c		
+1091175d8	109117647	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator generateMutatedVideoAssetWithErrorType:]	
+109117648	109117dbb	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator _generateMutatedVideoAssetForSingleInputWithErrorType:]	
+109117dbc	109118c73	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator _generateMutatedVideoAssetForMultipleInputsWithErrorType:]	
+109118c74	109118e13	decompiled	chunks/004/functions-000300.c		
+109118e14	109118ee3	decompiled	chunks/004/functions-000300.c		
+109118ee4	109118efb	decompiled	chunks/004/functions-000300.c		
+109118efc	10911918f	decompiled	chunks/004/functions-000300.c		
+109119190	1091191ef	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutator .cxx_destruct]	
+1091191f0	10911927b	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetRandomAccessor initWithVideoAsset:keyFrameInterval:isReverseOrderAccess:]	
+10911927c	1091195d7	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetRandomAccessor startAccessingWithError:]	
+1091195d8	109119627	decompiled	chunks/004/functions-000300.c		
+109119628	10911977f	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetRandomAccessor accessNextRandomAccessFrame]	
+109119780	1091197b3	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetRandomAccessor stopAccessing]	
+1091197b4	1091197e3	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetRandomAccessor .cxx_destruct]	
+1091197e4	10911984f	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessBounce initWithPreviewAssetVideoProviderFactory:]	
+109119850	109119b0b	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessBounce processSegments:onCompletion:]	
+109119b0c	109119b2b	decompiled	chunks/004/functions-000300.c		
+109119b2c	109119bb3	decompiled	chunks/004/functions-000300.c		
+109119bb4	109119f4f	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessBounce _generateBouncedSegmentFromSegment:repeatCount:error:]	
+109119f50	109119fcf	decompiled	chunks/004/functions-000300.c		
+109119fd0	109119fd3	decompiled	chunks/004/functions-000300.c		
+109119fd4	109119fdb	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessBounce .cxx_destruct]	
+109119fdc	10911a2cf	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessJumpCut processSegments:onCompletion:]	
+10911a2d0	10911a2e7	decompiled	chunks/004/functions-000300.c		
+10911a2e8	10911a31f	decompiled	chunks/004/functions-000300.c		
+10911a320	10911a327	decompiled	chunks/004/functions-000300.c		
+10911a328	10911a7df	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessJumpCut _generateJumpCutSegmentFromSegment:timeRanges:error:]	
+10911a7e0	10911a857	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessPipeline initWithProcessors:]	
+10911a858	10911a8df	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessPipeline processSegments:onCompletion:]	
+10911a8e0	10911a9fb	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessPipeline _runPreprocessorWithIndex:segments:error:onCompletion:]	
+10911a9fc	10911aa17	decompiled	chunks/004/functions-000300.c		
+10911aa18	10911aa23	decompiled	chunks/004/functions-000300.c	-[SCNGSMESegmentPreprocessPipeline .cxx_destruct]	
+10911aa24	10911aaff	decompiled	chunks/004/functions-000300.c		
+10911ab00	10911ab23	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutatorOutput copyWithZone:]	
+10911ab24	10911aba3	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutatorOutput hash]	
+10911aba4	10911ac63	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutatorOutput isEqual:]	
+10911ac64	10911ac9f	decompiled	chunks/004/functions-000300.c	-[SCVideoAssetMutatorOutput .cxx_destruct]	
+10911aca0	10911ad13	decompiled	chunks/004/functions-000300.c	-[SCGrapheneNgsmeMutatorMetric2 init]	
+10911ad14	10911af43	decompiled	chunks/004/functions-000300.c		
+10911af44	10911afdf	decompiled	chunks/004/functions-000300.c	-[SCImageColorExtractor extractColorsFromImage:shouldFlip:]	
+10911afe0	10911b07b	decompiled	chunks/004/functions-000300.c	-[SCImageColorExtractor extractColorsFromPixelBuffer:shouldFlip:]	
+10911b07c	10911b143	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils gradientColorsFromImage:shouldFlip:]	
+10911b144	10911b20b	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils gradientColorsFromPixelBuffer:shouldFlip:]	
+10911b20c	10911b2db	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils resizeImage:newSize:]	
+10911b2dc	10911b2f3	decompiled	chunks/004/functions-000301.c		
+10911b2f4	10911b363	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils dominantColorsInImage:clusterCount:]	
+10911b364	10911b423	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils dominantColorsInPixelBuffer:clusterCount:]	
+10911b424	10911b6a7	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils resizedImageFromYUVPixelBuffer:]	
+10911b6a8	10911b81f	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils resizedImageFromBGRAPixelBuffer:]	
+10911b820	10911b9df	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils _dominantColorsInImage:clusterCount:]	
+10911b9e0	10911ba5b	decompiled	chunks/004/functions-000301.c		
+10911ba5c	10911bd9b	decompiled	chunks/004/functions-000301.c	+[SCImageGradientColorsUtils _kMeansClusteringOnColors:totalPixels:clusterCount:]	
+10911bd9c	10911be3f	decompiled	chunks/004/functions-000301.c		
+10911be40	10911beb7	decompiled	chunks/004/functions-000301.c		
+10911beb8	10911bf77	decompiled	chunks/004/functions-000301.c		
+10911bf78	10911c0ab	decompiled	chunks/004/functions-000301.c		
+10911c0ac	10911c2ff	decompiled	chunks/004/functions-000301.c		
+10911c300	10911c5af	decompiled	chunks/004/functions-000301.c		
+10911c5b0	10911c65f	decompiled	chunks/004/functions-000301.c		
+10911c660	10911c683	decompiled	chunks/004/functions-000301.c	-[SCImageGradientColors copyWithZone:]	
+10911c684	10911c6b3	decompiled	chunks/004/functions-000301.c	-[SCImageGradientColors .cxx_destruct]	
+10911c6b4	10911c74f	decompiled	chunks/004/functions-000301.c		
+10911c750	10911c883	decompiled	chunks/004/functions-000301.c		
+10911c884	10911c93f	decompiled	chunks/004/functions-000301.c		
+10911c940	10911c95f	decompiled	chunks/004/functions-000301.c		
+10911c960	10911cb4b	decompiled	chunks/004/functions-000301.c		
+10911cb4c	10911cc47	decompiled	chunks/004/functions-000301.c		
+10911cc48	10911cc8b	decompiled	chunks/004/functions-000301.c		
+10911cc8c	10911cde3	decompiled	chunks/004/functions-000301.c		
+10911cde4	10911d6fb	decompiled	chunks/004/functions-000301.c		
+10911d6fc	10911d75b	decompiled	chunks/004/functions-000301.c		
+10911d75c	10911d9c7	decompiled	chunks/004/functions-000301.c		
+10911d9c8	10911db9b	decompiled	chunks/004/functions-000301.c		
+10911db9c	10911de43	decompiled	chunks/004/functions-000301.c		
+10911de44	10911df47	decompiled	chunks/004/functions-000301.c		
+10911df48	10911e58f	decompiled	chunks/004/functions-000301.c		
+10911e590	10911e793	decompiled	chunks/004/functions-000301.c		
+10911e794	10911e79b	decompiled	chunks/004/functions-000301.c		
+10911e79c	10911e847	decompiled	chunks/004/functions-000301.c		
+10911e848	10911ea33	decompiled	chunks/004/functions-000301.c		
+10911ea34	10911eac7	decompiled	chunks/004/functions-000301.c		
+10911eac8	10911eebb	decompiled	chunks/004/functions-000301.c		
+10911eebc	10911f1ab	decompiled	chunks/004/functions-000301.c		
+10911f1ac	10911f1d7	decompiled	chunks/004/functions-000301.c		
+10911f1d8	10911f6bb	decompiled	chunks/004/functions-000301.c		
+10911f6bc	10911f7b7	decompiled	chunks/004/functions-000301.c		
+10911f7b8	10911f88b	decompiled	chunks/004/functions-000301.c		
+10911f88c	10911fc0b	decompiled	chunks/004/functions-000301.c		
+10911fc0c	10911fc23	decompiled	chunks/004/functions-000301.c		
+10911fc24	10911fccb	decompiled	chunks/004/functions-000301.c		
+10911fccc	10911fccf	decompiled	chunks/004/functions-000301.c		
+10911fcd0	10911fda3	decompiled	chunks/004/functions-000301.c		
+10911fda4	10911feab	decompiled	chunks/004/functions-000301.c		
+10911feac	10911feb3	decompiled	chunks/004/functions-000301.c		
+10911feb4	10911ff6b	decompiled	chunks/004/functions-000301.c		
+10911ff6c	10911ff8b	decompiled	chunks/004/functions-000301.c		
+10911ff8c	109120337	decompiled	chunks/004/functions-000301.c		
+109120338	109120aa7	decompiled	chunks/004/functions-000301.c		
+109120aa8	109120ba7	decompiled	chunks/004/functions-000301.c		
+109120ba8	109120c37	decompiled	chunks/004/functions-000301.c		
+109120c38	109120c3b	decompiled	chunks/004/functions-000301.c		
+109120c3c	109120c73	decompiled	chunks/004/functions-000301.c		
+109120c74	109120d83	decompiled	chunks/004/functions-000301.c		
+109120d84	109120dbb	decompiled	chunks/004/functions-000301.c		
+109120dbc	109120dc3	decompiled	chunks/004/functions-000301.c		
+109120dc4	10912152b	decompiled	chunks/004/functions-000301.c		
+10912152c	1091217cf	decompiled	chunks/004/functions-000301.c		
+1091217d0	109121873	decompiled	chunks/004/functions-000301.c		
+109121874	109122007	decompiled	chunks/004/functions-000301.c		
+109122008	10912203f	decompiled	chunks/004/functions-000301.c		
+109122040	1091220ff	decompiled	chunks/004/functions-000301.c		
+109122100	109122597	decompiled	chunks/004/functions-000301.c		
+109122598	109122693	decompiled	chunks/004/functions-000301.c		
+109122694	10912278f	decompiled	chunks/004/functions-000301.c		
+109122790	109122907	decompiled	chunks/004/functions-000301.c		
+109122908	109122927	decompiled	chunks/004/functions-000301.c		
+109122928	109122d9b	decompiled	chunks/004/functions-000301.c		
+109122d9c	109122e17	decompiled	chunks/004/functions-000301.c		
+109122e18	109122e3b	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionCore copyWithZone:]	
+109122e3c	109122e43	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionCore hash]	
+109122e44	109122ed3	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionCore isEqual:]	
+109122ed4	109122edf	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionCore .cxx_destruct]	
+109122ee0	109122fa3	decompiled	chunks/004/functions-000301.c		
+109122fa4	109122fc7	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackCore copyWithZone:]	
+109122fc8	109123043	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackCore hash]	
+109123044	10912310b	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackCore isEqual:]	
+10912310c	10912313b	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackCore .cxx_destruct]	
+10912313c	109123263	decompiled	chunks/004/functions-000301.c		
+109123264	109123287	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackSegmentCore copyWithZone:]	
+109123288	10912333b	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackSegmentCore hash]	
+10912333c	109123457	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackSegmentCore isEqual:]	
+109123458	109123513	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTrackSegmentCore .cxx_destruct]	
+109123514	109123537	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTransforms copyWithZone:]	
+109123538	10912370b	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTransforms hash]	
+10912370c	1091237fb	decompiled	chunks/004/functions-000301.c	-[SCNGSMEMediaCompositionTransforms isEqual:]	
+1091237fc	109123853	decompiled	chunks/004/functions-000301.c		
+109123854	109123997	decompiled	chunks/004/functions-000301.c	+[SCSnapDocGridUtil encodeFloat:originalUnit:encodeUnit:]	
+109123998	109123a9f	decompiled	chunks/004/functions-000301.c	+[SCSnapDocGridUtil decodeFloat:originalUnit:encodeUnit:]	
+109123aa0	109123c8b	decompiled	chunks/004/functions-000301.c	+[SCSnapDocGridUtil encodeFloatArrays:originalUnit:encodeUnit:]	
+109123c8c	109123e47	decompiled	chunks/004/functions-000301.c	+[SCSnapDocGridUtil decodeFloatArraysFromEncodedArray:originalUnit:encodeUnit:]	
+109123e48	10912402f	decompiled	chunks/004/functions-000301.c	+[SCSnapDocGridUtil encodeUintArrays:originalUnit:encodeUnit:]	
+109124030	1091241e3	decompiled	chunks/004/functions-000302.c	+[SCSnapDocGridUtil decodeUIntArraysFromEncodedArray:originalUnit:encodeUnit:]	
+1091241e4	109124537	decompiled	chunks/004/functions-000302.c	+[SCSnapDocGridUtil encodePaths:xOriginalUnit:xEncodeUnit:yOriginalUnit:yEncodeUnit:]	
+109124538	10912489f	decompiled	chunks/004/functions-000302.c	+[SCSnapDocGridUtil decodePaths:xOriginalUnit:xEncodeUnit:yOriginalUnit:yEncodeUnit:]	
+1091248a0	109124f03	decompiled	chunks/004/functions-000302.c	+[SCSnapDocGridUtil encodeTransforms:xEncodeUnit:yEncodeUnit:]	
+109124f04	1091254b7	decompiled	chunks/004/functions-000302.c	+[SCSnapDocGridUtil decodeTransforms:xEncodeUnit:yEncodeUnit:]	
+1091254b8	109125593	decompiled	chunks/004/functions-000302.c		
+109125594	1091255f3	decompiled	chunks/004/functions-000302.c		
+1091255f4	109125647	decompiled	chunks/004/functions-000302.c	+[SCVideoTranscodingConcurrencyCounterImpl sharedInstance]	
+109125648	109125677	decompiled	chunks/004/functions-000302.c		
+109125678	10912571b	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl initPrivate]	
+10912571c	10912574f	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl count]	
+109125750	1091257b7	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl increment]	
+1091257b8	109125827	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl decrement]	
+109125828	10912584f	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl observable]	
+109125850	10912585b	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingConcurrencyCounterImpl .cxx_destruct]	
+10912585c	109125907	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContent initWithData:contentType:]	
+109125908	10912590f	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContent data]	
+109125910	109125917	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContent contentType]	
+109125918	109125947	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContent .cxx_destruct]	
+109125948	10912599b	decompiled	chunks/004/functions-000302.c	+[SCAVAssetDataContentSharedLoader sharedInstance]	
+10912599c	1091259c7	decompiled	chunks/004/functions-000302.c		
+1091259c8	109125a33	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContentSharedLoader init]	
+109125a34	109125b1b	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContentSharedLoader dataContent:forAsset:]	
+109125b1c	109125d07	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContentSharedLoader resourceLoader:shouldWaitForLoadingOfRequestedResource:]	
+109125d08	109125d1b	decompiled	chunks/004/functions-000302.c	-[SCAVAssetDataContentSharedLoader .cxx_destruct]	
+109125d1c	109125e6f	decompiled	chunks/004/functions-000302.c		
+109125e70	109125f47	decompiled	chunks/004/functions-000302.c		
+109125f48	109126017	decompiled	chunks/004/functions-000302.c		
+109126018	109126077	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoDurationForURL:]	
+109126078	10912607f	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoSizeForAsset:]	
+109126080	109126087	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoSizeForURL:]	
+109126088	10912619f	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoSizeForAsset:waitWhileLoadingTracksIfNeeded:]	
+1091261a0	10912620f	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoSizeForURL:waitWhileLoadingTracksIfNeeded:]	
+109126210	1091262ff	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils videoDurationForAsset:waitWhileLoadingTracksIfNeeded:error:]	
+109126300	10912681f	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils synchronouslyLoadAttributes:forAssetTrack:timeout:error:]	
+109126820	109126827	decompiled	chunks/004/functions-000302.c		
+109126828	1091268ab	decompiled	chunks/004/functions-000302.c	+[SCVideoAssetUtils synchronouslyLoadAttributes:forVideo:error:]	
+1091268ac	109126a87	decompiled	chunks/004/functions-000302.c		
+109126a88	109126b2f	decompiled	chunks/004/functions-000302.c		
+109126b30	109126d53	decompiled	chunks/004/functions-000302.c		
+109126d54	109126e67	decompiled	chunks/004/functions-000302.c		
+109126e68	109126fdb	decompiled	chunks/004/functions-000302.c		
+109126fdc	109127017	decompiled	chunks/004/functions-000302.c		
+109127018	1091270b7	decompiled	chunks/004/functions-000302.c		
+1091270b8	109127287	decompiled	chunks/004/functions-000302.c		
+109127288	1091274ab	decompiled	chunks/004/functions-000302.c		
+1091274ac	10912757f	decompiled	chunks/004/functions-000302.c		
+109127580	10912774b	decompiled	chunks/004/functions-000302.c		
+10912774c	1091278ff	decompiled	chunks/004/functions-000302.c		
+109127900	1091279a7	decompiled	chunks/004/functions-000302.c		
+1091279a8	109127a37	decompiled	chunks/004/functions-000302.c		
+109127a38	109127c43	decompiled	chunks/004/functions-000302.c		
+109127c44	109127d0b	decompiled	chunks/004/functions-000302.c		
+109127d0c	109127d27	decompiled	chunks/004/functions-000302.c		
+109127d28	109127d4f	decompiled	chunks/004/functions-000302.c		
+109127d50	109127dbf	decompiled	chunks/004/functions-000302.c		
+109127dc0	109127dd3	decompiled	chunks/004/functions-000302.c		
+109127dd4	109127f47	decompiled	chunks/004/functions-000302.c		
+109127f48	109127fbb	decompiled	chunks/004/functions-000302.c		
+109127fbc	10912802b	decompiled	chunks/004/functions-000302.c		
+10912802c	109128083	decompiled	chunks/004/functions-000302.c		
+109128084	109128153	decompiled	chunks/004/functions-000302.c		
+109128154	10912817b	decompiled	chunks/004/functions-000302.c		
+10912817c	10912820b	decompiled	chunks/004/functions-000302.c		
+10912820c	109128243	decompiled	chunks/004/functions-000302.c		
+109128244	109128553	decompiled	chunks/004/functions-000302.c		
+109128554	1091285bf	decompiled	chunks/004/functions-000302.c		
+1091285c0	1091285ff	decompiled	chunks/004/functions-000302.c		
+109128600	109128633	decompiled	chunks/004/functions-000302.c		
+109128634	10912865f	decompiled	chunks/004/functions-000302.c		
+109128660	109128737	decompiled	chunks/004/functions-000302.c		
+109128738	1091288e3	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingParameterProvider averageTranscodingBitRate:isRecording:highQuality:duration:iFrameOnly:originalVideoBitRate:overlayImageFileSizeBits:videoPlaybackRate:isLagunaVideo:hasOverlayToBlend:isHighFrameRate:]	
+1091288e4	109128b57	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingParameterProvider hevcCapturedVideoBitrateWithFrameSize:config:]	
+109128b58	109128b7f	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingParameterProvider avcCapturedVideoBitrateWithFrameSize:config:]	
+109128b80	109128c23	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingParameterProvider deviceMeetsRequirementsForContentAdaptiveVideoEncoding]	
+109128c24	109128c2b	decompiled	chunks/004/functions-000302.c	-[SCVideoTranscodingParameterProvider enabledPlaybackDebugView]	
+109128c2c	109128d27	decompiled	chunks/004/functions-000302.c		
+109128d28	109128d4f	decompiled	chunks/004/functions-000302.c		
+109128d50	109128e17	decompiled	chunks/004/functions-000302.c		
+109128e18	109128f03	decompiled	chunks/004/functions-000302.c		
+109128f04	109128f87	decompiled	chunks/004/functions-000302.c		
+109128f88	109128fcb	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker dealloc]	
+109128fcc	109128fd3	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker totalBadFrameCount]	
+109128fd4	109128fdf	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker pauseDisplay]	
+109128fe0	109128ff7	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker frameDurationBuckets]	
+109128ff8	109128fff	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker totalFrameCount]	
+109129000	109129013	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker totalBadFrameDurationMs]	
+109129014	109129027	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker hangThresholdMs]	
+109129028	10912902f	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker totalHangsCount]	
+109129030	109129043	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker totalHangFrameDurationMs]	
+109129044	109129177	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _setBadFrameBucket:]	
+109129178	10912922b	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _insertTraceSpanWithFrameInterval:]	
+10912922c	1091292df	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _insertJankSpanWithFrameInterval:]	
+1091292e0	10912930b	decompiled	chunks/004/functions-000302.c		
+10912930c	109129347	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _cancelWatchdogTimer]	
+109129348	1091293cb	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _checkMainThreadResponsiveness]	
+1091293cc	1091294af	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _reportHangNonFatalErrorWithHangDuration:timestamp:]	
+1091294b0	1091294ef	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker _hangNonFatalThreadCaptureOption]	
+1091294f0	10912954f	decompiled	chunks/004/functions-000302.c	-[SCBadFrameRateStatsTracker .cxx_destruct]	
+109129550	10912982f	decompiled	chunks/004/functions-000302.c	-[SCFrameRateLogger toDict]	
+109129830	10912987f	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger reset]	
+109129880	109129883	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger logEventAndReetWithEventName:]	
+109129884	1091298a7	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger frameRate]	
+1091298a8	1091298bb	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger totalFrameDropCount]	
+1091298bc	1091298cf	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger maxFrameDropCount]	
+1091298d0	1091298d7	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger largeFrameDropCount]	
+1091298d8	109129907	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger _formattedStringForFloat:]	
+109129908	10912990f	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger firstFrameTime]	
+109129910	109129917	decompiled	chunks/004/functions-000303.c	-[SCFrameRateLogger lastFrameTime]	
+109129918	1091299c3	decompiled	chunks/004/functions-000303.c		
+1091299c4	1091299cf	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor applicationWillResignActive]	
+1091299d0	1091299d3	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor applicationDidEnterBackground]	
+1091299d4	109129a17	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor dealloc]	
+109129a18	109129a1b	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor applicationWillEnterForeground]	
+109129a1c	109129a47	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor _invalidateDisplayLink]	
+109129a48	109129ac7	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor _pauseDisplayLink]	
+109129ac8	109129c8f	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor averageFrameRateInTheLastSecondsWithSeconds:]	
+109129c90	109129d9f	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor _syncFrameRatesWithinStartTime:endTime:]	
+109129da0	109129db7	decompiled	chunks/004/functions-000303.c		
+109129db8	109129fdb	decompiled	chunks/004/functions-000303.c		
+109129fdc	10912a047	decompiled	chunks/004/functions-000303.c	-[SCFrameRateMonitor .cxx_destruct]	
+10912a048	10912a053	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo initWithController:keyPath:options:block:]	
+10912a054	10912a063	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo initWithController:keyPath:options:context:]	
+10912a064	10912a077	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo initWithController:keyPath:]	
+10912a078	10912a0ef	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo isEqual:]	
+10912a0f0	10912a2b7	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo debugDescription]	
+10912a2b8	10912a2ef	decompiled	chunks/004/functions-000303.c	-[_FBKVOInfo .cxx_destruct]	
+10912a2f0	10912a337	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController dealloc]	
+10912a338	10912a507	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController debugDescription]	
+10912a508	10912a597	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController unobserve:info:]	
+10912a598	10912a793	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController unobserve:infos:]	
+10912a794	10912a927	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController observeValueForKeyPath:ofObject:change:context:]	
+10912a928	10912a933	decompiled	chunks/004/functions-000303.c	-[_FBKVOSharedController .cxx_destruct]	
+10912a934	10912a97b	decompiled	chunks/004/functions-000303.c	+[FBKVOController controllerWithObserver:]	
+10912a97c	10912a9c7	decompiled	chunks/004/functions-000303.c	-[FBKVOController dealloc]	
+10912a9c8	10912ac5b	decompiled	chunks/004/functions-000303.c	-[FBKVOController debugDescription]	
+10912ac5c	10912ac9b	decompiled	chunks/004/functions-000303.c		
+10912ac9c	10912ad8b	decompiled	chunks/004/functions-000303.c	-[FBKVOController _unobserve:info:]	
+10912ad8c	10912ae27	decompiled	chunks/004/functions-000303.c	-[FBKVOController _unobserve:]	
+10912ae28	10912af97	decompiled	chunks/004/functions-000303.c	-[FBKVOController _unobserveAll]	
+10912af98	10912b04f	decompiled	chunks/004/functions-000303.c	-[FBKVOController observe:keyPath:options:block:]	
+10912b050	10912b1b3	decompiled	chunks/004/functions-000303.c	-[FBKVOController observe:keyPaths:options:block:]	
+10912b1b4	10912b307	decompiled	chunks/004/functions-000303.c	-[FBKVOController observe:keyPaths:options:action:]	
+10912b308	10912b3ab	decompiled	chunks/004/functions-000303.c	-[FBKVOController observe:keyPath:options:context:]	
+10912b3ac	10912b4fb	decompiled	chunks/004/functions-000303.c	-[FBKVOController observe:keyPaths:options:context:]	
+10912b4fc	10912b57b	decompiled	chunks/004/functions-000303.c	-[FBKVOController unobserve:keyPath:]	
+10912b57c	10912b587	decompiled	chunks/004/functions-000303.c	-[FBKVOController unobserve:]	
+10912b588	10912b58b	decompiled	chunks/004/functions-000303.c	-[FBKVOController unobserveAll]	
+10912b58c	10912b5a3	decompiled	chunks/004/functions-000303.c	-[FBKVOController observer]	
+10912b5a4	10912b633	decompiled	chunks/004/functions-000303.c	-[FBKVOController .cxx_destruct]	
+10912b634	10912b643	decompiled	chunks/004/functions-000303.c		
+10912b644	10912b6a7	decompiled	chunks/004/functions-000303.c		
+10912b6a8	10912b6b7	decompiled	chunks/004/functions-000303.c		
+10912b6b8	10912b7af	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataProvider initWithLensUserProvider:userInfoServices:userIPInferredLocationServices:]	
+10912b7b0	10912b81f	decompiled	chunks/004/functions-000303.c		
+10912b820	10912b953	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataProvider getUserCountryCode]	
+10912b954	10912bcbb	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataProvider lensUserData]	
+10912bcbc	10912bd43	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataProvider .cxx_destruct]	
+10912bd44	10912be23	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataServiceProvider _makeLensUserDataProvider]	
+10912be24	10912be73	decompiled	chunks/004/functions-000303.c	-[SCLensUserDataServiceProvider .cxx_destruct]	
+10912be74	10912bf17	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIServiceWeatherDataRequestHandler initWithWeatherServiceProvider:weatherLocalizationProvider:]	
+10912bf18	10912c003	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIServiceWeatherDataRequestHandler handleWithRequest:completion:]	
+10912c004	10912c007	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIServiceWeatherDataRequestHandler reset]	
+10912c008	10912c02f	decompiled	chunks/004/functions-000303.c	+[SCLensProcessingURIServiceWeatherDataRequestHandler weatherConditionFromWeatherCondition:]	
+10912c030	10912c31b	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIServiceWeatherDataRequestHandler _getCurrentWeatherConditionWithCompletion:request:]	
+10912c31c	10912c543	decompiled	chunks/004/functions-000303.c		
+10912c544	10912ca43	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIServiceWeatherDataRequestHandler .cxx_destruct]	
+10912ca44	10912ca6b	decompiled	chunks/004/functions-000303.c	+[SCDevice blizzardDeviceClass]	
+10912ca6c	10912ca8f	decompiled	chunks/004/functions-000303.c	+[SCDevice lsaDeviceClass]	
+10912ca90	10912cafb	decompiled	chunks/004/functions-000303.c	+[SCDevice startupType]	
+10912cafc	10912cb07	decompiled	chunks/004/functions-000303.c	+[SCDevice defaultFieldOfView]	
+10912cb08	10912cbbf	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest requestMethod]	
+10912cbc0	10912cbd7	decompiled	chunks/004/functions-000303.c		
+10912cbd8	10912cc97	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest errorResponseWithErrorCode:description:]	
+10912cc98	10912cca7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest invalidRequestResponse]	
+10912cca8	10912ccb7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest forbiddenRequestResponse]	
+10912ccb8	10912ccc7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest notFoundResponse]	
+10912ccc8	10912ccd7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest methodNotAllowedResponse]	
+10912ccd8	10912cce7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest notAcceptableResponse]	
+10912cce8	10912ccf7	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest conflictResponse]	
+10912ccf8	10912cd07	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest internalServerErrorResponse]	
+10912cd08	10912cd17	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest serviceUnavailableResponse]	
+10912cd18	10912cd27	decompiled	chunks/004/functions-000303.c	-[SCLensProcessingURIRequest internalErrorResponse]	
+10912cd28	10912cd8f	decompiled	chunks/004/functions-000303.c	+[SCLensWeather descriptor]	
+10912cd90	10912cdf7	decompiled	chunks/004/functions-000303.c	+[SCLensCurrentWeatherRequest descriptor]	
+10912cdf8	10912ce5f	decompiled	chunks/004/functions-000303.c	+[SCLensCurrentWeatherRequestResponse descriptor]	
+10912ce60	10912cec7	decompiled	chunks/004/functions-000303.c	+[SCLensLatLng descriptor]	
+10912cec8	10912d057	decompiled	chunks/004/functions-000303.c	+[SCAudioDependencyFetcher fetchDependenciesForAudio:completion:]	
+10912d058	10912d063	decompiled	chunks/004/functions-000303.c		
+10912d064	10912d0cb	decompiled	chunks/004/functions-000303.c		
+10912d0cc	10912d11f	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput validationErrors]	
+10912d120	10912d127	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput audioData]	
+10912d128	10912d157	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput setAudioData:]	
+10912d158	10912d15f	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput metadata]	
+10912d160	10912d18f	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput setMetadata:]	
+10912d190	10912d1bf	decompiled	chunks/004/functions-000303.c	-[SCAudioDownloadedInput .cxx_destruct]	
+10912d1c0	10912d47f	decompiled	chunks/004/functions-000303.c	+[SCArSegmentationDependencyFetcher fetchDependenciesForArSegmentation:completion:]	
+10912d480	10912d497	decompiled	chunks/004/functions-000303.c		
+10912d498	10912d4ff	decompiled	chunks/004/functions-000303.c		
+10912d500	10912d56b	decompiled	chunks/004/functions-000303.c	-[SCArSegmentationDownloadedInput validationErrors]	
+10912d56c	10912d59f	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput detectionType]	
+10912d5a0	10912d5a7	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput shouldStillDisplayWithoutSegmentationMatch]	
+10912d5a8	10912d5af	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput setShouldStillDisplayWithoutSegmentationMatch:]	
+10912d5b0	10912d5b7	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput sky]	
+10912d5b8	10912d5e7	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput setSky:]	
+10912d5e8	10912d5f3	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedInput .cxx_destruct]	
+10912d5f4	10912d677	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky validationErrors]	
+10912d678	10912d67f	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky metadata]	
+10912d680	10912d6af	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky setMetadata:]	
+10912d6b0	10912d6b7	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky replacementSkyImage]	
+10912d6b8	10912d6e7	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky setReplacementSkyImage:]	
+10912d6e8	10912d6ef	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky blimpImage]	
+10912d6f0	10912d71f	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky setBlimpImage:]	
+10912d720	10912d75b	decompiled	chunks/004/functions-000304.c	-[SCArSegmentationDownloadedSky .cxx_destruct]	
+10912d75c	10912d907	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter initWithLocationId:geoFenceLocationPoints:filterId:displayName:isFromPostCaptureLensExplorer:expirationDate:scaleSetting:positionSetting:isSponsored:sponsoredSlug:targetingType:autoRefreshDelayInMilliseconds:autoRefreshLabelPosition:dynamicFilterRefreshHint:dynamicFilterUpdatingMessage:belowDrawingLayer:isAnimated:encryptedGeoData:unlockableContentType:isFrameFilter:unlockableTrackInfo:imageURL:imageURLParams:dynamicResources:dynamicContextProperties:autoStacking:arSegmentation:carouselGroup:carouselGlobalScoreList:audio:isSnapchatPlusExclusive:]	
+10912d908	10912db83	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter initWithCTPFilterEntity:requestId:]	
+10912db84	10912ddcf	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter initWithDictionary:isPreCached:isUnifiedCameraObject:]	
+10912ddd0	10912de9b	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilter _sharedPerformer]	
+10912de9c	10912df37	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter initWithCoder:]	
+10912df38	10912dfcb	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter encodeWithCoder:]	
+10912dfcc	10912e05b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter initPerformer]	
+10912e05c	10912e157	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter imageLoadingKey:userName:displayName:]	
+10912e158	10912e327	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter prepareGeoFilterImageWithCompletion:contextData:unifiedCameraObjectDataFetcher:userSession:bitmojiImageFetcher:bitmojiAvatarProvider:displayName:skipLensContent:]	
+10912e328	10912e927	decompiled	chunks/004/functions-000304.c		
+10912e928	10912e94b	decompiled	chunks/004/functions-000304.c		
+10912e94c	10912ea0b	decompiled	chunks/004/functions-000304.c		
+10912ea0c	10912ea17	decompiled	chunks/004/functions-000304.c		
+10912ea18	10912ec63	decompiled	chunks/004/functions-000304.c		
+10912ec64	10912ed57	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter _onCacheMissWithContextData:CFTimeInterval:completion:contextFilterInput:isUnifiedCameraObject:userSession:displayName:bitmojiImageFetcher:bitmojiAvatarProvider:]	
+10912ed58	10912edcf	decompiled	chunks/004/functions-000304.c		
+10912edd0	10912f21b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter _fetchDataAndRenderImageWithCompletion:contextData:userSession:displayName:bitmojiImageFetcher:bitmojiAvatarProvider:]	
+10912f21c	10912f2a3	decompiled	chunks/004/functions-000304.c		
+10912f2a4	10912f2ab	decompiled	chunks/004/functions-000304.c		
+10912f2ac	10912f333	decompiled	chunks/004/functions-000304.c		
+10912f334	10912f99f	decompiled	chunks/004/functions-000304.c		
+10912f9a0	10912fa97	decompiled	chunks/004/functions-000304.c		
+10912fa98	10912fd6b	decompiled	chunks/004/functions-000304.c		
+10912fd6c	10912fd6f	decompiled	chunks/004/functions-000304.c		
+10912fd70	1091304eb	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter compositeGeoFilterImageWithBackgroundImage:backgroundImageData:andResourceImages:andResourceRevisedLayouts:]	
+1091304ec	109130503	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter shouldFlattenImageLayers]	
+109130504	10913050b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter geofilterMissLoggingType]	
+10913050c	10913081f	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter unhashedCacheKeyForCompositedImageWithContextData:dynamicContextProperties:userName:displayName:]	
+109130820	109130827	decompiled	chunks/004/functions-000304.c		
+109130828	1091308f7	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter cacheKeyForCompositedImageWithContextData:dynamicContextProperties:userName:displayName:]	
+1091308f8	109130907	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter dynamicResources]	
+109130908	109130913	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter setDynamicResources:]	
+109130914	109130953	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilter .cxx_destruct]	
+109130954	109130bcb	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle initWithTextResouce:]	
+109130bcc	109130e23	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilterBundle bundleKeyWithTextResource:]	
+109130e24	109130ea7	decompiled	chunks/004/functions-000304.c		
+109130ea8	109130f2b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle mergeWithBundle:]	
+109130f2c	10913135f	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle getUIImagesWithCanvasSize:completion:performerQueue:contextData:dynamicContextProperties:displayName:]	
+109131360	109131367	decompiled	chunks/004/functions-000304.c		
+109131368	109131783	decompiled	chunks/004/functions-000304.c		
+109131784	10913179b	decompiled	chunks/004/functions-000304.c		
+10913179c	1091318af	decompiled	chunks/004/functions-000304.c		
+1091318b0	1091318df	decompiled	chunks/004/functions-000304.c		
+1091318e0	109131a9b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle _bundleUrl]	
+109131a9c	109131aa3	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle bundleKey]	
+109131aa4	109131ad3	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterBundle .cxx_destruct]	
+109131ad4	109131cc7	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterImageResource getUIImagesWithCanvasSize:completion:contextData:dynamicContextProperties:]	
+109131cc8	109131ccf	decompiled	chunks/004/functions-000304.c		
+109131cd0	109131e23	decompiled	chunks/004/functions-000304.c		
+109131e24	109131ebf	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore initWithSimpleContentFetcher:]	
+109131ec0	109131f9b	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilterOffensiveWordStore sharedInstanceWithSimpleContentFetcher:]	
+109131f9c	109131fdb	decompiled	chunks/004/functions-000304.c		
+109131fdc	109131fe3	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilterOffensiveWordStore sharedInstance]	
+109131fe4	109132397	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore offensiveWordInText:]	
+109132398	1091324bf	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore _isOffensiveSubstringInNormalizedText:languageCode:]	
+1091324c0	1091325e7	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore _isOffensiveExactWordInNormalizedText:languageCode:]	
+1091325e8	1091326a3	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore _getDictFromData:]	
+1091326a4	1091328e3	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore _loadOffensiveWordStore]	
+1091328e4	109132a13	decompiled	chunks/004/functions-000304.c		
+109132a14	109132a2b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore simpleContentFetcher]	
+109132a2c	109132a37	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore setSimpleContentFetcher:]	
+109132a38	109132a87	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterOffensiveWordStore .cxx_destruct]	
+109132a88	109132bcb	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource hashableValuesFromDisplayParameters]	
+109132bcc	109132cc3	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilterResource resourceWithDictionary:filterId:]	
+109132cc4	109133457	decompiled	chunks/004/functions-000304.c	+[SCDynamicGeoFilterResource resourceWithCTPDynamicFilterContent:filterId:]	
+109133458	1091335c7	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource initWithlayout:source:resourceId:rotation:minRefreshInterval:type:filterId:]	
+1091335c8	1091339ab	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource initWithDictionary:filterId:]	
+1091339ac	109133aef	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource initWithCoder:]	
+109133af0	109133c13	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource encodeWithCoder:]	
+109133c14	109133cab	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource getUIImagesWithCanvasSize:completion:performerQueue:contextData:dynamicContextProperties:displayName:]	
+109133cac	109133ccf	decompiled	chunks/004/functions-000304.c		
+109133cd0	109133d1b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource renderCacheComponentKeyWithContextData:dynamicContextProperties:userName:displayName:]	
+109133d1c	109133d23	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource resourceId]	
+109133d24	109133d2b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setResourceId:]	
+109133d2c	109133d37	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource layout]	
+109133d38	109133d43	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setLayout:]	
+109133d44	109133d4b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource rotation]	
+109133d4c	109133d53	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setRotation:]	
+109133d54	109133d5b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource source]	
+109133d5c	109133d63	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setSource:]	
+109133d64	109133d6b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource dynamicContextSource]	
+109133d6c	109133d73	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setDynamicContextSource:]	
+109133d74	109133d7b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource type]	
+109133d7c	109133d83	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource filterId]	
+109133d84	109133d8b	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource setFilterId:]	
+109133d8c	109133d93	decompiled	chunks/004/functions-000304.c	-[SCDynamicGeoFilterResource minRefreshInterval]	
+109133d94	109133d9b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterResource setMinRefreshInterval:]	
+109133d9c	109133de3	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterResource .cxx_destruct]	
+109133de4	109134203	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource hashableValuesFromDisplayParameters]	
+109134204	10913452b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource initWithfontSize:maxFontSize:fontURL:staticText:fontColor:fontColorAlpha:autoResizeEnabled:shadow:fallbackText:capitalization:alignment:layout:source:resourceId:rotation:minRefreshInterval:type:dynamicText:targetDatetime:targetDateTimeDirection:fallbackMethod:filterId:]	
+10913452c	1091349d3	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource initWithDictionary:filterId:]	
+1091349d4	1091349f3	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource textAlignmentToString:]	
+1091349f4	109134a6f	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _textAlignmentFromString:]	
+109134a70	109134c0f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource parseShadow:]	
+109134c10	109134ea3	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource initWithCoder:]	
+109134ea4	109135067	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource encodeWithCoder:]	
+109135068	109135083	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource getUIImagesWithCanvasSize:completion:performerQueue:contextData:dynamicContextProperties:displayName:]	
+109135084	10913541b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource getUIImagesWithCanvasSize:preloadedText:completion:performerQueue:contextData:dynamicContextProperties:displayName:]	
+10913541c	109135423	decompiled	chunks/004/functions-000305.c		
+109135424	1091355b7	decompiled	chunks/004/functions-000305.c		
+1091355b8	109135607	decompiled	chunks/004/functions-000305.c		
+109135608	1091357bf	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource renderCacheComponentKeyWithContextData:dynamicContextProperties:userName:displayName:]	
+1091357c0	109135c27	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _handleFontUrlFetchWithNSData:error:completion:canvasSize:preloadedText:contextData:dynamicContextProperties:displayName:]	
+109135c28	109135d1b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _logFilterResourceDataNilMetricForReason:]	
+109135d1c	10913617f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _imageWithCanvasSize:font:completion:contextData:dynamicContextProperties:displayName:]	
+109136180	10913618f	decompiled	chunks/004/functions-000305.c		
+109136190	109136297	decompiled	chunks/004/functions-000305.c		
+109136298	109136a4b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource stringBySubstitutingDynamicTextWithContextData:dynamicContextProperties:userName:displayName:]	
+109136a4c	109136b93	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _substituteUsernameWhenEmpty:fallbackMethod:fallbackText:userName:]	
+109136b94	109136bbb	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _setDynamicTextWithSubstitutionAndReturn:]	
+109136bbc	10913723f	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _getRelativeTime:direction:withFormat:fromCurrentTime:fallbackText:relativeTimeComponents:]	
+109137240	109137717	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _intervalStringFrom:withFormat:targetDirection:relativeTimeComponents:]	
+109137718	10913774f	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _unitNameFromTimeComponent:withValue:]	
+109137750	109137863	decompiled	chunks/004/functions-000305.c	+[SCDynamicGeoFilterTextResource _unitValueFromString:withDateComponents:]	
+109137864	109138147	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _imageWithCanvasSize:font:text:completion:]	
+109138148	1091381c7	decompiled	chunks/004/functions-000305.c		
+1091381c8	1091382e7	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _sizeFontAndFitWithText:boundingBox:attributes:font:singleLineParagraphStyle:multiLineParagraphStyle:returnHeight:stringDrawingOptions:stringDrawingContext:]	
+1091382e8	10913854f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _attributedStringSizedToFitForText:boundingBox:attributes:font:paragraphStyle:returnHeight:]	
+109138550	10913893f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource _attributedStringSizedToFitMultilineForText:boundingBox:attributes:font:paragraphStyle:returnHeight:stringDrawingOptions:stringDrawingContext:]	
+109138940	10913896f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fetchesTextDataFromServer]	
+109138970	10913897f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource staticText]	
+109138980	10913898b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setStaticText:]	
+10913898c	10913899b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource dynamicText]	
+10913899c	1091389a7	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setDynamicText:]	
+1091389a8	1091389b7	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource targetDateTime]	
+1091389b8	1091389c3	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setTargetDateTime:]	
+1091389c4	1091389d3	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource targetDirection]	
+1091389d4	1091389df	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setTargetDirection:]	
+1091389e0	1091389ef	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fallbackMethod]	
+1091389f0	1091389ff	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setFallbackMethod:]	
+109138a00	109138a0f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fontColor]	
+109138a10	109138a4f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setFontColor:]	
+109138a50	109138a5f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fontSize]	
+109138a60	109138a6f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setFontSize:]	
+109138a70	109138a7f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource maxFontSize]	
+109138a80	109138a8f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setMaxFontSize:]	
+109138a90	109138a9f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fontURL]	
+109138aa0	109138adf	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setFontURL:]	
+109138ae0	109138aef	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource alignment]	
+109138af0	109138aff	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setAlignment:]	
+109138b00	109138b0f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource shadow]	
+109138b10	109138b4f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setShadow:]	
+109138b50	109138b5f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource autoResizeEnabled]	
+109138b60	109138b6f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setAutoResizeEnabled:]	
+109138b70	109138b7f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource fallbackText]	
+109138b80	109138bbf	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setFallbackText:]	
+109138bc0	109138bcf	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource capitalization]	
+109138bd0	109138c0f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setCapitalization:]	
+109138c10	109138c1f	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource lastRetrieved]	
+109138c20	109138c2b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource setLastRetrieved:]	
+109138c2c	109138d4b	decompiled	chunks/004/functions-000305.c	-[SCDynamicGeoFilterTextResource .cxx_destruct]	
+109138d4c	10913903b	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter appearanceSettings]	
+10913903c	109139043	decompiled	chunks/004/functions-000305.c	+[SCGeoFilter geoFilterWithDictionary:isPreCached:]	
+109139044	1091390eb	decompiled	chunks/004/functions-000305.c	+[SCGeoFilter geoFilterWithDictionary:isPreCached:isUnifiedCameraObject:]	
+1091390ec	10913918b	decompiled	chunks/004/functions-000305.c	+[SCGeoFilter geoFilterWithCTPFilterEntity:requestId:]	
+10913918c	10913b5d3	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithCTPFilterEntity:requestId:]	
+10913b5d4	10913b693	decompiled	chunks/004/functions-000305.c		
+10913b694	10913b76f	decompiled	chunks/004/functions-000305.c		
+10913b770	10913b8ff	decompiled	chunks/004/functions-000305.c		
+10913b900	10913be13	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithLocationId:geoFenceLocationPoints:filterId:displayName:isFromPostCaptureLensExplorer:expirationDate:scaleSetting:positionSetting:isSponsored:sponsoredSlug:targetingType:autoRefreshDelayInMilliseconds:autoRefreshLabelPosition:dynamicFilterRefreshHint:dynamicFilterUpdatingMessage:belowDrawingLayer:isAnimated:encryptedGeoData:unlockableContentType:isFrameFilter:unlockableTrackInfo:imageURL:imageURLParams:dynamicContextProperties:autoStacking:arSegmentation:carouselGroup:carouselGlobalScoreList:audio:isUnifiedCameraObject:isSnapchatPlusExclusive:]	
+10913be14	10913be1f	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithDictionary:]	
+10913be20	10913beb7	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithFilterId:isUnifiedCameraObject:]	
+10913beb8	10913cdf3	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithDictionary:isPreCached:isUnifiedCameraObject:]	
+10913cdf4	10913d033	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter mapUnlockablesContext:]	
+10913d034	10913d063	decompiled	chunks/004/functions-000305.c		
+10913d064	10913d6eb	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter initWithCoder:]	
+10913d6ec	10913dd43	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter encodeWithCoder:]	
+10913dd44	10913de87	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter geoFilterImageWithCompletion:contextData:unifiedCameraObjectDataFetcher:userSession:bitmojiImageFetcher:bitmojiAvatarProvider:displayName:skipLensContent:]	
+10913de88	10913dfab	decompiled	chunks/004/functions-000305.c		
+10913dfac	10913e05f	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter prepareGeoFilterImageWithCompletion:contextData:unifiedCameraObjectDataFetcher:userSession:bitmojiImageFetcher:bitmojiAvatarProvider:displayName:skipLensContent:]	
+10913e060	10913e53f	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter fetchBitmojiImageWithContextData:bitmojiImageFetcher:bitmojiAvatarProvider:completion:]	
+10913e540	10913e5a3	decompiled	chunks/004/functions-000305.c		
+10913e5a4	10913e67b	decompiled	chunks/004/functions-000305.c		
+10913e67c	10913e72f	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter imageLoadingKey:]	
+10913e730	10913e877	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter loadContextFilterInputWithGroup:userSession:fetchErrors:contextFilterInputWrapper:]	
+10913e878	10913e8ef	decompiled	chunks/004/functions-000305.c		
+10913e8f0	10913ea37	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter loadAudioInputWithGroup:userSession:fetchErrors:audioInputWrapper:]	
+10913ea38	10913eaaf	decompiled	chunks/004/functions-000305.c		
+10913eab0	10913ed83	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter loadUCODataWithGroup:unifiedCameraObjectDataFetcher:fetchErrors:]	
+10913ed84	10913f057	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter loadUCOIconWithGroup:UCODataFetcher:fetchErrors:]	
+10913f058	10913f063	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter isEqual:]	
+10913f064	10913f067	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter hash]	
+10913f068	10913f0bb	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter geofilterMissLoggingType]	
+10913f0bc	10913f11b	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter urlAttachment]	
+10913f11c	10913f183	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter isActionmoji]	
+10913f184	10913f1ef	decompiled	chunks/004/functions-000305.c	-[SCGeoFilter isFriendFilter]	
+10913f1f0	10913f213	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isBitmoji]	
+10913f214	10913f24b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter mediaFilterSubType]	
+10913f24c	10913f253	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter shouldFlattenImageLayers]	
+10913f254	10913f283	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableId]	
+10913f284	10913f2cf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter editingStateIdentifier]	
+10913f2d0	10913f337	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter _encodingForAdsBase64:]	
+10913f338	10913f4a7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter _carouselGlobalScoreListFromCarouselPosition:]	
+10913f4a8	10913f4b7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableContexts]	
+10913f4b8	10913f4c7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter expirationDate]	
+10913f4c8	10913f4d7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter assetTTL]	
+10913f4d8	10913f4e7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter eligibility]	
+10913f4e8	10913f4f7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter filterId]	
+10913f4f8	10913f507	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter venueId]	
+10913f508	10913f517	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter displayName]	
+10913f518	10913f527	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isFromPostCaptureLensExplorer]	
+10913f528	10913f537	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isSnapchatPlusExclusive]	
+10913f538	10913f547	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableContentType]	
+10913f548	10913f557	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter priority]	
+10913f558	10913f567	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter scaleSetting]	
+10913f568	10913f577	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter positionSetting]	
+10913f578	10913f587	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter targetingType]	
+10913f588	10913f597	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isSponsored]	
+10913f598	10913f5a7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isFrameFilter]	
+10913f5a8	10913f5b7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isUnifiedCameraObject]	
+10913f5b8	10913f5c7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter sponsoredSlug]	
+10913f5c8	10913f5d7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter loadingMetaData]	
+10913f5d8	10913f5e7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isBelowDrawingLayer]	
+10913f5e8	10913f5f7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isAnimated]	
+10913f5f8	10913f607	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter encryptedGeoData]	
+10913f608	10913f617	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter imageURL]	
+10913f618	10913f627	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter croppedImageURL]	
+10913f628	10913f637	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter extraImageMetadata]	
+10913f638	10913f647	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter imageURLParams]	
+10913f648	10913f657	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isPrecached]	
+10913f658	10913f667	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter autoStacking]	
+10913f668	10913f677	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableAttributes]	
+10913f678	10913f687	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableCategory]	
+10913f688	10913f697	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter requestId]	
+10913f698	10913f6d7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter setRequestId:]	
+10913f6d8	10913f6e7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter autoRefreshDelayInMilliseconds]	
+10913f6e8	10913f6fb	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter autoRefreshLabelPosition]	
+10913f6fc	10913f70b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter dynamicFilterRefreshHint]	
+10913f70c	10913f71b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter dynamicFilterUpdatingMessage]	
+10913f71c	10913f72b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockImageLink]	
+10913f72c	10913f737	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter setUnlockImageLink:]	
+10913f738	10913f747	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter filterPrompt]	
+10913f748	10913f757	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter filterScore]	
+10913f758	10913f767	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter carouselGlobalScoreList]	
+10913f768	10913f777	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter exclusionTags]	
+10913f778	10913f787	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter excludedByTags]	
+10913f788	10913f797	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter scheduleIntervals]	
+10913f798	10913f7a7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter isMenuFilter]	
+10913f7a8	10913f7b7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter metaTags]	
+10913f7b8	10913f7c7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter carouselGroup]	
+10913f7c8	10913f7d7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter tooltip]	
+10913f7d8	10913f7e7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter attachment]	
+10913f7e8	10913f7f7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter unlockableTrackInfo]	
+10913f7f8	10913f807	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter eligibleForNotification]	
+10913f808	10913f817	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter arSegmentation]	
+10913f818	10913f827	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter audio]	
+10913f828	10913f837	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter dynamicContextProperties]	
+10913f838	10913f847	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter debugInfo]	
+10913f848	10913fa7b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilter .cxx_destruct]	
+10913fa7c	10913fb57	decompiled	chunks/004/functions-000306.c		
+10913fb58	10913fb5f	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration shouldApplyAreaCheckToCachedFilters]	
+10913fb60	10913fb67	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration minAreaPercentForAreaCheck]	
+10913fb68	10913fb6f	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration shouldOptimizeLocData]	
+10913fb70	10913fb7b	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration locDataExpirationTime]	
+10913fb7c	10913fb83	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration locDataMovementRateLimitSeconds]	
+10913fb84	10913fb8f	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration locDataMovementMinDistance]	
+10913fb90	10913fb97	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration locDataDebounceTimeMillis]	
+10913fb98	10913fb9f	decompiled	chunks/004/functions-000306.c	+[SCGeoFilterConfiguration locDataAccuracyImprovementRatio]	
+10913fba0	10913fcf3	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage initWithImageData:filterId:displayName:geoFilterLoadingMetaData:scaleSetting:positionSetting:mediaFilterSubType:requestId:]	
+10913fcf4	10913fd9b	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage isReadyForDisplay]	
+10913fd9c	10913fdbf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage copyWithZone:]	
+10913fdc0	10913fdc7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage imageData]	
+10913fdc8	10913fdcf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage filterId]	
+10913fdd0	10913fdd7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage displayName]	
+10913fdd8	10913fddf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage scaleSetting]	
+10913fde0	10913fde7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage positionSetting]	
+10913fde8	10913fdef	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage mediaFilterSubType]	
+10913fdf0	10913fdf7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage extraImageMetadata]	
+10913fdf8	10913fe27	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setExtraImageMetadata:]	
+10913fe28	10913fe2f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage croppedImageUrlString]	
+10913fe30	10913fe5f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setCroppedImageUrlString:]	
+10913fe60	10913fe67	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage requestId]	
+10913fe68	10913fe97	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setRequestId:]	
+10913fe98	10913fe9f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage loadingMetaData]	
+10913fea0	10913fecf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setLoadingMetaData:]	
+10913fed0	10913fed7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage encryptedGeoData]	
+10913fed8	10913fedf	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setEncryptedGeoData:]	
+10913fee0	10913fee7	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage contextFilterInput]	
+10913fee8	10913ff17	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setContextFilterInput:]	
+10913ff18	10913ff1f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage skipFilteredImageCheck]	
+10913ff20	10913ff27	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setSkipFilteredImageCheck:]	
+10913ff28	10913ff2f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage audioInput]	
+10913ff30	10913ff5f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setAudioInput:]	
+10913ff60	10913ff67	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage isUnifiedCameraObject]	
+10913ff68	10913ff6f	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage setIsUnifiedCameraObject:]	
+10913ff70	10913ff77	decompiled	chunks/004/functions-000306.c	-[SCGeoFilterImage croppedImageData]	
+10913ff78	10913ffa7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage setCroppedImageData:]	
+10913ffa8	10913ffaf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage croppedImageSticker]	
+10913ffb0	10913ffdf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage setCroppedImageSticker:]	
+10913ffe0	10913ffe7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage filteredCaptureImage]	
+10913ffe8	10913ffef	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage setFilteredCaptureImage:]	
+10913fff0	10913fff7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage dynamicResourceImageData]	
+10913fff8	109140027	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage setDynamicResourceImageData:]	
+109140028	1091400e7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImage .cxx_destruct]	
+1091400e8	1091401c3	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView initWithFrame:animated:]	
+1091401c4	10914023f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView isWebp:]	
+109140240	10914048f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView setImageFromData:scaleSetting:positionSetting:]	
+109140490	1091405fb	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView videoTrackedImage]	
+1091405fc	10914060b	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView imageView]	
+10914060c	10914061f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterImageView .cxx_destruct]	
+109140620	109140777	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData initWithFilterId:isSponsored:targetingType:fenceArea:cacheTTLMinutes:isPrecached:geofilterMissLoggingType:]	
+109140778	109140787	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData initWithFilterId:isSponsored:targetingType:fenceArea:isPrecached:geofilterMissLoggingType:]	
+109140788	109140793	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData initWithFilterId:isSponsored:targetingType:fenceArea:cacheTTLMinutes:geofilterMissLoggingType:]	
+109140794	10914079f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData initWithFilterId:isSponsored:targetingType:fenceArea:geofilterMissLoggingType:]	
+1091407a0	1091409e3	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData getLogParametersWithReferenceTime:]	
+1091409e4	109140a63	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData updateWithStage:]	
+109140a64	109140a97	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData updateIfNotSetWithStage:]	
+109140a98	109140ab7	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterLoadingMetaData loadingStageToString:]	
+109140ab8	109140ad7	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterLoadingMetaData loadStageToLoggingKey:]	
+109140ad8	109140ca7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData copyWithZone:]	
+109140ca8	109140caf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData filterId]	
+109140cb0	109140cb7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData loadingStage]	
+109140cb8	109140cbf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData isPrecached]	
+109140cc0	109140cc7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData isSponsored]	
+109140cc8	109140ccf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData fenceArea]	
+109140cd0	109140cd7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData downloadLatencySeconds]	
+109140cd8	109140cdf	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setDownloadLatencySeconds:]	
+109140ce0	109140ce7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData targetingType]	
+109140ce8	109140cef	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData numDynamicItems]	
+109140cf0	109140cf7	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setNumDynamicItems:]	
+109140cf8	109140cff	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData lastUpdateDate]	
+109140d00	109140d07	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData cacheTTLMinutes]	
+109140d08	109140d0f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData dynamicContextSources]	
+109140d10	109140d17	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setDynamicContextSources:]	
+109140d18	109140d1f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData geofilterMissLoggingType]	
+109140d20	109140d27	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData compositeTimeSeconds]	
+109140d28	109140d2f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setCompositeTimeSeconds:]	
+109140d30	109140d37	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData isCacheHit]	
+109140d38	109140d3f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setIsCacheHit:]	
+109140d40	109140d47	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData carouselGroup]	
+109140d48	109140d4f	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData setCarouselGroup:]	
+109140d50	109140da3	decompiled	chunks/004/functions-000307.c	-[SCGeoFilterLoadingMetaData .cxx_destruct]	
+109140da4	109140e0b	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterPositionSetter scaleSettingFromString:]	
+109140e0c	109140f1b	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterPositionSetter positionSettingFromString:]	
+109140f1c	109140fb3	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterPositionSetter scaledAndPositionedImageFrameWithOriginalImageSize:containerSize:scaleSetting:positionSetting:]	
+109140fb4	109140fe3	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterPositionSetter scaledImageSize:containerSize:scaleSetting:]	
+109140fe4	10914101f	decompiled	chunks/004/functions-000307.c	+[SCGeoFilterPositionSetter scaleFactorForSize:containerSize:scaleSetting:]	
+109141020	1091410cb	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject initWithLocationId:geoFenceLocationPoints:]	
+1091410cc	10914132b	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject initWithSoju:]	
+10914132c	10914164b	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject initWithDictionary:]	
+10914164c	10914172b	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject s2Polygon]	
+10914172c	10914174f	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject copyWithZone:]	
+109141750	10914183b	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject initWithCoder:]	
+10914183c	1091418e3	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject encodeWithCoder:]	
+1091418e4	109141ad3	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject geoFenceContainsLocation:]	
+109141ad4	109141b93	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject geoFenceAreaIsTooSmallForAccuracy:]	
+109141b94	109141e23	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject geoFenceArea]	
+109141e24	109141f73	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject isEqual:]	
+109141f74	109141fc7	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject hash]	
+109141fc8	109141fcf	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject hasContextCards]	
+109141fd0	109141fd7	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject setHasContextCards:]	
+109141fd8	109141fdf	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject geoFenceLocationPoints]	
+109141fe0	109141fe7	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject setGeoFenceLocationPoints:]	
+109141fe8	109141fef	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject locationId]	
+109141ff0	109141ff7	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject setLocationId:]	
+109141ff8	109142033	decompiled	chunks/004/functions-000307.c	-[SCGeofencedObject .cxx_destruct]	
+109142034	1091420bb	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher initWithDomain:]	
+1091420bc	1091422b3	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher fetchURLData:itemCompletion:]	
+1091422b4	1091422bb	decompiled	chunks/004/functions-000307.c		
+1091422bc	10914234f	decompiled	chunks/004/functions-000307.c		
+109142350	1091423e3	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher fetchURLImage:itemCompletion:]	
+1091423e4	10914242f	decompiled	chunks/004/functions-000307.c		
+109142430	1091424fb	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher setGroupCompletionHandler:]	
+1091424fc	109142527	decompiled	chunks/004/functions-000307.c		
+109142528	10914252f	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher domain]	
+109142530	10914255f	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher setDomain:]	
+109142560	109142567	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher hasErrors]	
+109142568	10914256f	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher setHasErrors:]	
+109142570	109142577	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher dispatchGroup]	
+109142578	1091425a7	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher setDispatchGroup:]	
+1091425a8	1091425d7	decompiled	chunks/004/functions-000307.c	-[SCGeofilterDependencyFetcher .cxx_destruct]	
+1091425d8	10914269b	decompiled	chunks/004/functions-000307.c	+[SCImageURLParamsParseError errorWithCode:]	
+10914269c	1091426cb	decompiled	chunks/004/functions-000307.c	+[SCImageURLParamsParseError descriptionForCode:]	
+1091426cc	10914295b	decompiled	chunks/004/functions-000307.c	+[SCStaticImageGeoFilter ucoGeoFilterWithLensId:displayName:isFromPostCaptureLensExplorer:carouselGroup:carouselGlobalScoreList:unlockableContexts:unlockableTrackInfo:isAnimated:isSnapchatPlusExclusive:]	
+10914295c	109142ae7	decompiled	chunks/004/functions-000307.c	-[SCStaticImageGeoFilter prepareGeoFilterImageWithCompletion:contextData:unifiedCameraObjectDataFetcher:userSession:bitmojiImageFetcher:bitmojiAvatarProvider:displayName:skipLensContent:]	
+109142ae8	109143023	decompiled	chunks/004/functions-000307.c		
+109143024	10914303b	decompiled	chunks/004/functions-000307.c		
+10914303c	1091430e7	decompiled	chunks/004/functions-000307.c		
+1091430e8	1091430ef	decompiled	chunks/004/functions-000307.c		
+1091430f0	1091431d7	decompiled	chunks/004/functions-000307.c		
+1091431d8	10914338f	decompiled	chunks/004/functions-000307.c		
+109143390	1091433af	decompiled	chunks/004/functions-000307.c	-[SCStaticImageGeoFilter geofilterMissLoggingType]	
+1091433b0	1091434db	decompiled	chunks/004/functions-000307.c	-[SCStaticImageGeoFilter _geofilterImageWithImageData:]	
+1091434dc	1091434ff	decompiled	chunks/004/functions-000307.c		
+109143500	1091435a7	decompiled	chunks/004/functions-000307.c	-[SCArSegmentationImageGenerator initWithUserSession:image:mediaOrientation:]	
+1091435a8	109143873	decompiled	chunks/004/functions-000307.c	-[SCArSegmentationImageGenerator initWithUserSession:imageFuture:mediaOrientation:]	
+109143874	109143953	decompiled	chunks/004/functions-000308.c		
+109143954	10914395b	decompiled	chunks/004/functions-000308.c		
+10914395c	1091439f7	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator dealloc]	
+1091439f8	109143a63	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator _resumeBlendingPerformerIfNeeded]	
+109143a64	109143a6b	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator clear]	
+109143a6c	109143a8f	decompiled	chunks/004/functions-000308.c	+[SCArSegmentationImageGenerator shouldEnableGenerator]	
+109143a90	109143aab	decompiled	chunks/004/functions-000308.c	+[SCArSegmentationImageGenerator shouldEnableHighEndModel]	
+109143aac	109143cc7	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator _segmentInputImage:withCompletion:]	
+109143cc8	109143df3	decompiled	chunks/004/functions-000308.c		
+109143df4	109143f57	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator generateContextImageFromInput:completionQueue:completion:]	
+109143f58	109144293	decompiled	chunks/004/functions-000308.c		
+109144294	1091442c3	decompiled	chunks/004/functions-000308.c		
+1091442c4	1091445a7	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator _toCVMatWithResize:]	
+1091445a8	109144f4f	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator _getContextImageFromDownloadedSky:imageMat:skyMaskMat:]	
+109144f50	109144faf	decompiled	chunks/004/functions-000308.c	+[SCArSegmentationImageGenerator _getDeviceMode]	
+109144fb0	10914502f	decompiled	chunks/004/functions-000308.c	+[SCArSegmentationImageGenerator _getProcessingSizeForInputSize:minDimension:]	
+109145030	109145113	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator .cxx_destruct]	
+109145114	109145157	decompiled	chunks/004/functions-000308.c	-[SCArSegmentationImageGenerator .cxx_construct]	
+109145158	10914523f	decompiled	chunks/004/functions-000308.c		
+109145240	109145247	decompiled	chunks/004/functions-000308.c		
+109145248	10914533f	decompiled	chunks/004/functions-000308.c		
+109145340	1091453ff	decompiled	chunks/004/functions-000308.c		
+109145400	109145727	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting initWithIsSponsored:isUpdatable:isBelowDrawingLayer:isAnimated:isFrameFilter:isActionmoji:isBitmoji:isFriendFilter:eligibleForNotification:isFromPostCaptureLensExplorer:isSnapchatPlusExclusive:autoStacking:unlockableContentType:unlockableCategory:unlockableAttributes:updateLabelPosition:sponsoredSlug:unlockableTrackInfo:dynamicFilterRefreshHint:dynamicFilterUpdatingMessage:filterPrompt:filterScore:eligibility:carouselGroup:carouselGlobalScoreList:attachment:debugInfo:]	
+109145728	10914574b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting copyWithZone:]	
+10914574c	1091458fb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting hash]	
+1091458fc	109145b97	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isEqual:]	
+109145b98	109145b9f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isSponsored]	
+109145ba0	109145ba7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isUpdatable]	
+109145ba8	109145baf	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isBelowDrawingLayer]	
+109145bb0	109145bb7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isAnimated]	
+109145bb8	109145bbf	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isFrameFilter]	
+109145bc0	109145bc7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isActionmoji]	
+109145bc8	109145bcf	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isBitmoji]	
+109145bd0	109145bd7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isFriendFilter]	
+109145bd8	109145bdf	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting eligibleForNotification]	
+109145be0	109145be7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isFromPostCaptureLensExplorer]	
+109145be8	109145bef	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting isSnapchatPlusExclusive]	
+109145bf0	109145bf7	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting autoStacking]	
+109145bf8	109145bff	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting unlockableContentType]	
+109145c00	109145c07	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting unlockableCategory]	
+109145c08	109145c0f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting unlockableAttributes]	
+109145c10	109145c17	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting updateLabelPosition]	
+109145c18	109145c1f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting sponsoredSlug]	
+109145c20	109145c27	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting unlockableTrackInfo]	
+109145c28	109145c2f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting dynamicFilterRefreshHint]	
+109145c30	109145c37	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting dynamicFilterUpdatingMessage]	
+109145c38	109145c3f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting filterPrompt]	
+109145c40	109145c47	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting filterScore]	
+109145c48	109145c4f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting eligibility]	
+109145c50	109145c57	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting carouselGroup]	
+109145c58	109145c5f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting carouselGlobalScoreList]	
+109145c60	109145c67	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting attachment]	
+109145c68	109145c6f	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting debugInfo]	
+109145c70	109145d17	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSetting .cxx_destruct]	
+109145d18	109145d33	decompiled	chunks/004/functions-000308.c	+[SCGeoFilterAppearanceSettingBuilder geoFilterAppearanceSetting]	
+109145d34	109146323	decompiled	chunks/004/functions-000308.c	+[SCGeoFilterAppearanceSettingBuilder geoFilterAppearanceSettingFromExistingGeoFilterAppearanceSetting:]	
+109146324	1091463c3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder build]	
+1091463c4	1091463cb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsSponsored:]	
+1091463cc	1091463d3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsUpdatable:]	
+1091463d4	1091463db	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsBelowDrawingLayer:]	
+1091463dc	1091463e3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsAnimated:]	
+1091463e4	1091463eb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsFrameFilter:]	
+1091463ec	1091463f3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsActionmoji:]	
+1091463f4	1091463fb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsBitmoji:]	
+1091463fc	109146403	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsFriendFilter:]	
+109146404	10914640b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withEligibleForNotification:]	
+10914640c	109146413	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsFromPostCaptureLensExplorer:]	
+109146414	10914641b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withIsSnapchatPlusExclusive:]	
+10914641c	109146423	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withAutoStacking:]	
+109146424	10914642b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withUnlockableContentType:]	
+10914642c	109146463	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withUnlockableCategory:]	
+109146464	10914649b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withUnlockableAttributes:]	
+10914649c	1091464a3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withUpdateLabelPosition:]	
+1091464a4	1091464db	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withSponsoredSlug:]	
+1091464dc	109146513	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withUnlockableTrackInfo:]	
+109146514	10914654b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withDynamicFilterRefreshHint:]	
+10914654c	109146583	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withDynamicFilterUpdatingMessage:]	
+109146584	1091465bb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withFilterPrompt:]	
+1091465bc	1091465f3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withFilterScore:]	
+1091465f4	1091465fb	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withEligibility:]	
+1091465fc	109146633	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withCarouselGroup:]	
+109146634	10914666b	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withCarouselGlobalScoreList:]	
+10914666c	1091466a3	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withAttachment:]	
+1091466a4	1091466db	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder withDebugInfo:]	
+1091466dc	109146783	decompiled	chunks/004/functions-000308.c	-[SCGeoFilterAppearanceSettingBuilder .cxx_destruct]	
+109146784	109146933	decompiled	chunks/004/functions-000308.c	+[SCSponsoredSlug defaultValues]	
+109146934	109146b87	decompiled	chunks/004/functions-000308.c	+[SCSponsoredSlug adSlugDefaultValuesWithConfigProvider:]	
+109146b88	109146bd7	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug init]	
+109146bd8	109146cf3	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug initWithDictionary:]	
+109146cf4	109146db3	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug initWithParameters:]	
+109146db4	109147023	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug copyWithZone:]	
+109147024	1091472a3	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug initWithCoder:]	
+1091472a4	109147557	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug encodeWithCoder:]	
+109147558	10914779b	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug parseStyle:]	
+10914779c	109147bdb	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug parseParameters:]	
+109147bdc	109147c3b	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug font]	
+109147c3c	109147c3f	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug didDecodeObject]	
+109147c40	109147c43	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug willEncodeObject]	
+109147c44	109148133	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug isEqual:]	
+109148134	109148257	decompiled	chunks/004/functions-000308.c	-[SCSponsoredSlug hash]	
+109148258	109148287	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug setFont:]	
+109148288	10914828f	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug fontSize]	
+109148290	109148297	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug textColor]	
+109148298	10914829f	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug dropshadowColor]	
+1091482a0	1091482a7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug dropshadowOffset]	
+1091482a8	1091482af	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug text]	
+1091482b0	1091482b7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug longformText]	
+1091482b8	1091482bf	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug timeBeforeFadeout]	
+1091482c0	1091482c7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug longformTimeBeforeFadeout]	
+1091482c8	1091482cf	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug hmargin]	
+1091482d0	1091482d7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug vmargin]	
+1091482d8	1091482df	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug position]	
+1091482e0	1091482e7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug sponsoredText]	
+1091482e8	1091482ef	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug sponsoredChannelText]	
+1091482f0	10914838b	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlug .cxx_destruct]	
+10914838c	10914884b	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView initWithSlug:tappablePadding:isLens:]	
+10914884c	109148917	decompiled	chunks/004/functions-000309.c		
+109148918	109148cdf	decompiled	chunks/004/functions-000309.c		
+109148ce0	1091492cf	decompiled	chunks/004/functions-000309.c		
+1091492d0	109149397	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView _logInvalidSponsoredSlugMetric:]	
+109149398	1091493a7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView slug]	
+1091493a8	1091493b7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView fadeoutDuration]	
+1091493b8	1091493c7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView label]	
+1091493c8	109149407	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView setLabel:]	
+109149408	109149417	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView icon]	
+109149418	109149457	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView setIcon:]	
+109149458	1091494a7	decompiled	chunks/004/functions-000309.c	-[SCSponsoredSlugInteractiveView .cxx_destruct]	
+1091494a8	10914954b	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarView initWithFrame:]	
+10914954c	109149573	decompiled	chunks/004/functions-000309.c	+[SCStoryAdProgressBarView unviewedSegmentColor]	
+109149574	1091497b3	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarView configureWithViewModel:]	
+1091497b4	1091498d3	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarView teardown]	
+1091498d4	109149a87	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarView layoutSubviews]	
+109149a88	109149ac7	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarView .cxx_destruct]	
+109149ac8	109149bc3	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView initWithStarWidth:starOffset:]	
+109149bc4	109149c8b	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView layoutSubviews]	
+109149c8c	109149cb3	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView intrinsicContentSize]	
+109149cb4	109149d0b	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView setAppRatingStarCount:tintColor:]	
+109149d0c	109149e7f	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView _populateStars]	
+109149e80	109149fb7	decompiled	chunks/004/functions-000309.c	-[SCOperaAppStarRatingView .cxx_destruct]	
+109149fb8	10914a043	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel initWithTotalSnapCount:currentSnapIndex:barColor:]	
+10914a044	10914a067	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel copyWithZone:]	
+10914a068	10914a0cf	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel hash]	
+10914a0d0	10914a17f	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel isEqual:]	
+10914a180	10914a187	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel totalSnapCount]	
+10914a188	10914a18f	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel currentSnapIndex]	
+10914a190	10914a197	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel barColor]	
+10914a198	10914a1a3	decompiled	chunks/004/functions-000309.c	-[SCStoryAdProgressBarViewModel .cxx_destruct]	
+10914a1a4	10914a1cf	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric requestFailedSubmitInfo]	
+10914a1d0	10914a1fb	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric requestSize]	
+10914a1fc	10914a227	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric idfaStatus]	
+10914a228	10914a253	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adTrackInfo]	
+10914a254	10914a27f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adMediaCacheHit]	
+10914a280	10914a2ab	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adMediaDownload]	
+10914a2ac	10914a2d7	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adMediaLoadStatus]	
+10914a2d8	10914a303	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adMediaPayload]	
+10914a304	10914a32f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adMediaFetchMethod]	
+10914a330	10914a35b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric targetingRequestStatus]	
+10914a35c	10914a387	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adPreferenceRequestStatus]	
+10914a388	10914a3b3	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric getBatteryDataLatency]	
+10914a3b4	10914a3df	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric getDiskDataLatency]	
+10914a3e0	10914a40b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric initRefineLatencyMs]	
+10914a40c	10914a437	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric initRefineStatus]	
+10914a438	10914a463	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric serveRefineLatencyMs]	
+10914a464	10914a48f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric serveRefineStatus]	
+10914a490	10914a4bb	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric trackRefineLatencyMs]	
+10914a4bc	10914a4e7	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric trackRefineStatus]	
+10914a4e8	10914a513	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelRefineLatencyMs]	
+10914a514	10914a53f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelRefineStatus]	
+10914a540	10914a56b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric serveTriggerType]	
+10914a56c	10914a597	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric trackRefineSize]	
+10914a598	10914a5c3	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric reinitFromWrongRegion]	
+10914a5c4	10914a5ef	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adRequestGateEudEmpty]	
+10914a5f0	10914a61b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adRequestGateNoInit]	
+10914a61c	10914a647	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adRequestGateInitStale]	
+10914a648	10914a673	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric trackResponseError]	
+10914a674	10914a69f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric lateTrackSkip]	
+10914a6a0	10914a6cb	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric lateTrackServeDelay]	
+10914a6cc	10914a6f7	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric serveSerializeLatencyMs]	
+10914a6f8	10914a723	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric serveSerializeStatus]	
+10914a724	10914a74f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric responseParsingLatencyMillis]	
+10914a750	10914a77b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric responseInfo]	
+10914a77c	10914a7a7	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric responseSize]	
+10914a7a8	10914a7d3	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric skippableAdInfo]	
+10914a7d4	10914a7ff	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric dataInvalid]	
+10914a800	10914a82b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelCookieAvailability]	
+10914a82c	10914a857	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelPassSridStatus]	
+10914a858	10914a883	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelPassSridLatency]	
+10914a884	10914a8af	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelSridSyncLatency]	
+10914a8b0	10914a8db	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelSridSyncStatus]	
+10914a8dc	10914a907	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelSridEmptyPixelId]	
+10914a908	10914a933	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelSridOnCookieId]	
+10914a934	10914a95f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelGetSridLatency]	
+10914a960	10914a98b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelHijackLatency]	
+10914a98c	10914a9b7	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric pixelHijackStatus]	
+10914a9b8	10914a9e3	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adInsertSuccess]	
+10914a9e4	10914aa0f	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric adInsertError]	
+10914aa10	10914aa3b	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric lastInsertedAdViewStatus]	
+10914aa3c	10914aa67	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric cachedAd]	
+10914aa68	10914aa93	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric insertionRuleSource]	
+10914aa94	10914aabf	decompiled	chunks/004/functions-000309.c	+[SCGrapheneAdMetric initialAdLoadingScreen]	

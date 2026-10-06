@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+105690b84	105690d73	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor initWithPageName:badFrameStatsTracker:circumstanceEngine:logger:]	
+105690d74	105690e4f	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor enterIntoNewPage:fromPage:]	
+105690e50	105690e87	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor _didEnterBackground]	
+105690e88	105690eaf	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor _didEnterForeground]	
+105690eb0	105690eeb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor _reset]	
+105690eec	105690f4b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFramePerformanceMonitor .cxx_destruct]	
+105690f4c	105690fb7	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameServicesEntryPoint .cxx_destruct]	
+105690fb8	10569114f	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics initWithEvent:badFrameStatsTracker:traceSpanName:logger:]	
+105691150	1056912ef	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics eventStart]	
+1056912f0	105691343	decompiled	chunks/005/functions-000360.c		
+105691344	1056914b7	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics eventEnd]	
+1056914b8	10569150b	decompiled	chunks/005/functions-000360.c		
+10569150c	1056915fb	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics reportEventWithPage:prevPage:]	
+1056915fc	10569180b	decompiled	chunks/005/functions-000360.c		
+10569180c	10569186b	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics endAndReportEventWithPage:prevPage:]	
+10569186c	105691d03	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics _reportBadFrameEvent:prevPage:eventDurationInSec:badFrameDurationInMs:totalFrameCount:totalDroppedFrameCount:durationBuckets:jankFrameDurationMs:totalBadFrameCount:totalHangsCount:totalHangFrameDurationMs:hangThresholdMs:mainThreadCpuTimeMs:]	
+105691d04	105691e73	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics _badFrameDurationBucketsWithPage:prevPage:]	
+105691e74	105691ee7	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics dealloc]	
+105691ee8	105691f5f	decompiled	chunks/005/functions-000360.c	-[SCBadFrameAnalytics .cxx_destruct]	
+105691f60	105691f8f	decompiled	chunks/005/functions-000360.c		
+105691f90	10569203f	decompiled	chunks/005/functions-000360.c		
+105692040	1056920af	decompiled	chunks/005/functions-000360.c	-[SCSwipePerformanceMonitor _pageViewDidChange:]	
+1056920b0	10569213b	decompiled	chunks/005/functions-000360.c		
+10569213c	105692147	decompiled	chunks/005/functions-000360.c		
+105692148	105692193	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats initWithTotalDuration:jankDuration:]	
+105692194	1056921b7	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats copyWithZone:]	
+1056921b8	10569224b	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats hash]	
+10569224c	10569232b	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats isEqual:]	
+10569232c	105692333	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats totalDuration]	
+105692334	10569233b	decompiled	chunks/005/functions-000360.c	-[SCInteractionJankStats jankDuration]	
+10569233c	105692403	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot initWithBadFrameBuckets:badFrameDurationMs:hangFrameDurationMs:eventTime:totalFrameCount:totalBadFrameCount:totalHangsCount:mainThreadCpuTimeMs:]	
+105692404	105692427	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot copyWithZone:]	
+105692428	10569252b	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot hash]	
+10569252c	1056926bb	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot isEqual:]	
+1056926bc	1056926c3	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot badFrameBuckets]	
+1056926c4	1056926cb	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot badFrameDurationMs]	
+1056926cc	1056926d3	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot hangFrameDurationMs]	
+1056926d4	1056926db	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot eventTime]	
+1056926dc	1056926e3	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot totalFrameCount]	
+1056926e4	1056926eb	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot totalBadFrameCount]	
+1056926ec	1056926f3	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot totalHangsCount]	
+1056926f4	1056926fb	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot mainThreadCpuTimeMs]	
+1056926fc	105692707	decompiled	chunks/005/functions-000360.c	-[SCBadFrameStatsSnapshot .cxx_destruct]	
+105692708	10569277b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameBlizzardLogger initWithLogger:]	
+10569277c	105692a87	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameBlizzardLogger logAppBadFrameWithParams:]	
+105692a88	105692a93	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameBlizzardLogger .cxx_destruct]	
+105692a94	105692c7f	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters initWithBadFrameDurationMs:hangFrameDurationMs:pageDurationSec:eventDurationMs:jankFrameDurationMs:pageDurationBucket:eventVisitNum:totalFrameCount:totalDroppedFrameCount:totalBadFrameCount:totalHangsCount:hangThresholdMs:mainThreadCpuTimeMs:frameBucket0:frameBucket1:frameBucket2:frameBucket3:frameBucket4:frameBucket5:frameBucket6:frameBucket7:frameBucket8:attribution:prev_attribution:uiEventName:]	
+105692c80	105692ca3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters copyWithZone:]	
+105692ca4	105692e53	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters hash]	
+105692e54	10569316b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters isEqual:]	
+10569316c	105693173	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters badFrameDurationMs]	
+105693174	10569317b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters hangFrameDurationMs]	
+10569317c	105693183	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters pageDurationSec]	
+105693184	10569318b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters eventDurationMs]	
+10569318c	105693193	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters jankFrameDurationMs]	
+105693194	10569319b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters pageDurationBucket]	
+10569319c	1056931a3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters eventVisitNum]	
+1056931a4	1056931ab	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters totalFrameCount]	
+1056931ac	1056931b3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters totalDroppedFrameCount]	
+1056931b4	1056931bb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters totalBadFrameCount]	
+1056931bc	1056931c3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters totalHangsCount]	
+1056931c4	1056931cb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters hangThresholdMs]	
+1056931cc	1056931d3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters mainThreadCpuTimeMs]	
+1056931d4	1056931db	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket0]	
+1056931dc	1056931e3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket1]	
+1056931e4	1056931eb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket2]	
+1056931ec	1056931f3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket3]	
+1056931f4	1056931fb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket4]	
+1056931fc	105693203	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket5]	
+105693204	10569320b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket6]	
+10569320c	105693213	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket7]	
+105693214	10569321b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters frameBucket8]	
+10569321c	105693223	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters attribution]	
+105693224	10569322b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters prev_attribution]	
+10569322c	105693233	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters uiEventName]	
+105693234	10569327b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParameters .cxx_destruct]	
+10569327c	105693297	decompiled	chunks/005/functions-000360.c	+[SCAppBadFrameLogParametersBuilder appBadFrameLogParameters]	
+105693298	105693777	decompiled	chunks/005/functions-000360.c	+[SCAppBadFrameLogParametersBuilder appBadFrameLogParametersFromExistingAppBadFrameLogParameters:]	
+105693778	1056937fb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder build]	
+1056937fc	105693803	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withBadFrameDurationMs:]	
+105693804	10569380b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withHangFrameDurationMs:]	
+10569380c	105693813	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withPageDurationSec:]	
+105693814	10569381b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withEventDurationMs:]	
+10569381c	105693853	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withJankFrameDurationMs:]	
+105693854	10569385b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withPageDurationBucket:]	
+10569385c	105693863	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withEventVisitNum:]	
+105693864	10569386b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withTotalFrameCount:]	
+10569386c	105693873	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withTotalDroppedFrameCount:]	
+105693874	10569387b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withTotalBadFrameCount:]	
+10569387c	105693883	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withTotalHangsCount:]	
+105693884	10569388b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withHangThresholdMs:]	
+10569388c	105693893	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withMainThreadCpuTimeMs:]	
+105693894	10569389b	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket0:]	
+10569389c	1056938a3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket1:]	
+1056938a4	1056938ab	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket2:]	
+1056938ac	1056938b3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket3:]	
+1056938b4	1056938bb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket4:]	
+1056938bc	1056938c3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket5:]	
+1056938c4	1056938cb	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket6:]	
+1056938cc	1056938d3	decompiled	chunks/005/functions-000360.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket7:]	
+1056938d4	1056938db	decompiled	chunks/005/functions-000361.c	-[SCAppBadFrameLogParametersBuilder withFrameBucket8:]	
+1056938dc	105693913	decompiled	chunks/005/functions-000361.c	-[SCAppBadFrameLogParametersBuilder withAttribution:]	
+105693914	10569394b	decompiled	chunks/005/functions-000361.c	-[SCAppBadFrameLogParametersBuilder withPrev_attribution:]	
+10569394c	105693983	decompiled	chunks/005/functions-000361.c	-[SCAppBadFrameLogParametersBuilder withUiEventName:]	
+105693984	1056939cb	decompiled	chunks/005/functions-000361.c	-[SCAppBadFrameLogParametersBuilder .cxx_destruct]	
+1056939cc	105693a9f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl initWithGrapheneRegistry:circumstanceEngine:]	
+105693aa0	105693bdf	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl createSubtitleAssetFromSubtitleBundle:bundleId:mediaContextType:assetRepository:]	
+105693be0	105693c0f	decompiled	chunks/005/functions-000361.c		
+105693c10	105693d93	decompiled	chunks/005/functions-000361.c		
+105693d94	105693ea7	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl compositeVideoAsset:multiLanguageSubtitleAsset:subtitleConfig:completion:]	
+105693ea8	10569413f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl compositeVideoAsset:subtitleAsset:completion:]	
+105694140	105694527	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl _loadTracksToComposeFromAssets:startTime:completion:]	
+105694528	10569453f	decompiled	chunks/005/functions-000361.c		
+105694540	10569484f	decompiled	chunks/005/functions-000361.c		
+105694850	105694a0b	decompiled	chunks/005/functions-000361.c		
+105694a0c	105694a1f	decompiled	chunks/005/functions-000361.c		
+105694a20	105694ca7	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl _compositeWithStartTime:timeRange:tracks:mediaAsset:completion:]	
+105694ca8	105694d83	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl _insertToAssetsComposition:withTrack:timeRange:]	
+105694d84	105694e23	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl _logAssetCompositionWithSuccess:startTime:]	
+105694e24	105694e53	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetCompositorImpl .cxx_destruct]	
+105694e54	105694ec7	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryFactoryImpl initWithAssetRepository:]	
+105694ec8	105694eef	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryFactoryImpl create]	
+105694ef0	105694efb	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryFactoryImpl .cxx_destruct]	
+105694efc	105694f2b	decompiled	chunks/005/functions-000361.c		
+105694f2c	105694f5b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryFactoryImpl .cxx_destruct]	
+105694f5c	105695027	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl initWithStreamingResourceLoader:assetCompositor:bufferedContentFetcher:]	
+105695028	1056950af	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createAssetFromContentResult:resourceId:]	
+1056950b0	105695137	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createSubtitleAssetFromContentResult:resourceId:]	
+105695138	1056952b7	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createPlaybackAssetFromContentBundle:metadata:]	
+1056952b8	10569540f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createPlaybackAssetFromUrl:mediaContextType:]	
+105695410	1056954af	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createAssetFromSingleResolutionResult:]	
+1056954b0	1056957df	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl createAssetFromResolutionResult:completion:]	
+1056957e0	1056957fb	decompiled	chunks/005/functions-000361.c		
+1056957fc	105695893	decompiled	chunks/005/functions-000361.c		
+105695894	10569589b	decompiled	chunks/005/functions-000361.c		
+10569589c	10569590f	decompiled	chunks/005/functions-000361.c		
+105695910	105695a17	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl observeAssetErrors]	
+105695a18	105695a1b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl releaseAsset:]	
+105695a1c	105695b47	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl cancelContentResultForAsset:]	
+105695b48	105695b4b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl releaseAllAssets]	
+105695b4c	105695cc3	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl _createVideoAssetFromSingleResolutionResult:]	
+105695cc4	105695d3f	decompiled	chunks/005/functions-000361.c		
+105695d40	105695f27	decompiled	chunks/005/functions-000361.c		
+105695f28	105695f2b	decompiled	chunks/005/functions-000361.c		
+105695f2c	10569603f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl _createSubtitleAssetFromSingleResolutionResult:]	
+105696040	1056960a7	decompiled	chunks/005/functions-000361.c		
+1056960a8	105696157	decompiled	chunks/005/functions-000361.c		
+105696158	10569615f	decompiled	chunks/005/functions-000361.c		
+105696160	10569625b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl _createSubtitleAssetFromUrl:]	
+10569625c	105696297	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetRepositoryImpl .cxx_destruct]	
+105696298	10569635f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl initWithAssetRepository:withPerformer:]	
+105696360	105696437	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl _trackAsset:]	
+105696438	105696473	decompiled	chunks/005/functions-000361.c		
+105696474	10569650f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createAssetFromContentResult:resourceId:]	
+105696510	1056965ab	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createSubtitleAssetFromContentResult:resourceId:]	
+1056965ac	105696647	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createPlaybackAssetFromContentBundle:metadata:]	
+105696648	1056966cb	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createPlaybackAssetFromUrl:mediaContextType:]	
+1056966cc	105696747	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createAssetFromSingleResolutionResult:]	
+105696748	105696857	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl createAssetFromResolutionResult:completion:]	
+105696858	1056968c7	decompiled	chunks/005/functions-000361.c		
+1056968c8	10569690f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl observeAssetErrors]	
+105696910	1056969eb	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl releaseAsset:]	
+1056969ec	105696a53	decompiled	chunks/005/functions-000361.c		
+105696a54	105696aab	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl releaseAllAssets]	
+105696aac	105696c0b	decompiled	chunks/005/functions-000361.c		
+105696c0c	105696c5b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl cancelContentResultForAsset:]	
+105696c5c	105696d1f	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetScopedRepositoryImpl .cxx_destruct]	
+105696d20	105696e63	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetServiceEntryPoint _streamingResourceLoader]	
+105696e64	105696ecf	decompiled	chunks/005/functions-000361.c		
+105696ed0	105696f17	decompiled	chunks/005/functions-000361.c		
+105696f18	105696fcf	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetServiceEntryPoint _createPlaybackAssetRepositoryWithResourceLoader:assetCompositor:]	
+105696fd0	10569708b	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetServiceEntryPoint _assetCompositorImplWithResourceLoader:]	
+10569708c	105697117	decompiled	chunks/005/functions-000361.c	-[SCPlaybackAssetServiceEntryPoint .cxx_destruct]	
+105697118	10569720f	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl initWithPerformerProvider:grpcClientFactory:snapchattersObservables:snapchattersDataMutator:]	
+105697210	10569725b	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl pinnedBestFriend]	
+10569725c	105697347	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl pinBestFriendWithUserId:]	
+105697348	10569740b	decompiled	chunks/005/functions-000361.c		
+10569740c	105697647	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl _pinBestFriendWithUserId:observer:]	
+105697648	10569769b	decompiled	chunks/005/functions-000361.c		
+10569769c	10569771f	decompiled	chunks/005/functions-000361.c		
+105697720	105697817	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl unpinBestFriend]	
+105697818	105697943	decompiled	chunks/005/functions-000361.c		
+105697944	10569795b	decompiled	chunks/005/functions-000361.c		
+10569795c	1056979a7	decompiled	chunks/005/functions-000361.c		
+1056979a8	105697a37	decompiled	chunks/005/functions-000361.c		
+105697a38	105697b23	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl _unpinBestFriendWithUserId:]	
+105697b24	105697be7	decompiled	chunks/005/functions-000361.c		
+105697be8	105697e23	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl _unpinBestFriendWithUserId:observer:]	
+105697e24	105697ea7	decompiled	chunks/005/functions-000361.c		
+105697ea8	105697f13	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl _syncFriendsResponse]	
+105697f14	105697f4f	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceImpl .cxx_destruct]	
+105697f50	10569809f	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceProvider provide]	
+1056980a0	1056980ef	decompiled	chunks/005/functions-000361.c	-[SCPlusPinBestFriendServiceProvider .cxx_destruct]	
+1056980f0	105698157	decompiled	chunks/005/functions-000361.c	+[PinBestFriendRequest descriptor]	
+105698158	1056981bf	decompiled	chunks/005/functions-000361.c	+[PinBestFriendResponse descriptor]	
+1056981c0	105698227	decompiled	chunks/005/functions-000361.c	+[UnpinBestFriendRequest descriptor]	
+105698228	1056982d7	decompiled	chunks/005/functions-000361.c	+[UnpinBestFriendResponse descriptor]	
+1056982d8	1056982e3	decompiled	chunks/005/functions-000361.c		
+1056982e4	105698357	decompiled	chunks/005/functions-000361.c	-[SCPayoutsConfigurationImpl initWithCircumstanceEngine:]	
+105698358	10569835f	decompiled	chunks/005/functions-000361.c	-[SCPayoutsConfigurationImpl isSpotlightTabEnabled]	
+105698360	105698367	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl forcedOnboardingState]	
+105698368	10569836f	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl shouldForceHasEarnings]	
+105698370	105698377	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl shouldForceSecurityCheckPass]	
+105698378	10569837b	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl monetizationServiceRouteTag]	
+10569837c	105698383	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl grpcTimeoutInSeconds]	
+105698384	10569838b	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl isCrystalsHubForceOpenABEnabled]	
+10569838c	105698397	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationImpl .cxx_destruct]	
+105698398	10569856b	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationServiceProvider provide]	
+10569856c	105698633	decompiled	chunks/005/functions-000362.c		
+105698634	1056987bf	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationServiceProvider _createGRPCService]	
+1056987c0	10569892b	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationServiceProvider _createEligibilityHandler:]	
+10569892c	1056989a7	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationServiceProvider _createConfiguration]	
+1056989a8	105698a0f	decompiled	chunks/005/functions-000362.c	-[SCPayoutsConfigurationServiceProvider .cxx_destruct]	
+105698a10	105698c53	decompiled	chunks/005/functions-000362.c	-[SCPayoutsEligibilityHandler initWithGrpcService:userPreferences:userId:isSnapstar:]	
+105698c54	105698d0f	decompiled	chunks/005/functions-000362.c	-[SCPayoutsEligibilityHandler elegibilityStatusFromPreviousCheck]	
+105698d10	105698e5b	decompiled	chunks/005/functions-000362.c	-[SCPayoutsEligibilityHandler checkForEligibility:]	
+105698e5c	1056991ef	decompiled	chunks/005/functions-000362.c		
+1056991f0	1056992a7	decompiled	chunks/005/functions-000362.c	-[SCPayoutsEligibilityHandler .cxx_destruct]	
+1056992a8	1056992b3	decompiled	chunks/005/functions-000362.c		
+1056992b4	10569932f	decompiled	chunks/005/functions-000362.c		
+105699330	10569933b	decompiled	chunks/005/functions-000362.c		
+10569933c	1056993b7	decompiled	chunks/005/functions-000362.c		
+1056993b8	1056993c3	decompiled	chunks/005/functions-000362.c		
+1056993c4	10569943f	decompiled	chunks/005/functions-000362.c		
+105699440	10569944b	decompiled	chunks/005/functions-000362.c		
+10569944c	1056994c7	decompiled	chunks/005/functions-000362.c		
+1056994c8	1056994d3	decompiled	chunks/005/functions-000362.c		
+1056994d4	10569954f	decompiled	chunks/005/functions-000362.c		
+105699550	10569955b	decompiled	chunks/005/functions-000362.c		
+10569955c	1056995d7	decompiled	chunks/005/functions-000362.c		
+1056995d8	1056995e3	decompiled	chunks/005/functions-000362.c		
+1056995e4	10569965f	decompiled	chunks/005/functions-000362.c		
+105699660	10569966b	decompiled	chunks/005/functions-000362.c		
+10569966c	1056996e7	decompiled	chunks/005/functions-000362.c		
+1056996e8	1056996f3	decompiled	chunks/005/functions-000362.c		
+1056996f4	10569976f	decompiled	chunks/005/functions-000362.c		
+105699770	10569977b	decompiled	chunks/005/functions-000362.c		
+10569977c	1056997f7	decompiled	chunks/005/functions-000362.c		
+1056997f8	105699803	decompiled	chunks/005/functions-000362.c		
+105699804	10569987f	decompiled	chunks/005/functions-000362.c		
+105699880	10569988b	decompiled	chunks/005/functions-000362.c		
+10569988c	105699907	decompiled	chunks/005/functions-000362.c		
+105699908	105699913	decompiled	chunks/005/functions-000362.c		
+105699914	10569997b	decompiled	chunks/005/functions-000362.c	+[IMPIsPayoutOnboardingEligibleRequest descriptor]	
+10569997c	1056999e7	decompiled	chunks/005/functions-000362.c	+[IMPIsPayoutOnboardingEligibleResponse descriptor]	
+1056999e8	105699a4f	decompiled	chunks/005/functions-000362.c	+[IMPInternalIsPayoutOnboardingEligibleRequest descriptor]	
+105699a50	105699ab7	decompiled	chunks/005/functions-000362.c	+[IMPInternalIsPayoutOnboardingEligibleResponse descriptor]	
+105699ab8	105699b1f	decompiled	chunks/005/functions-000362.c	+[IMPGetPayoutsRequest descriptor]	
+105699b20	105699b87	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetPayoutsRequest descriptor]	
+105699b88	105699bf3	decompiled	chunks/005/functions-000362.c	+[IMPPayout descriptor]	
+105699bf4	105699c5b	decompiled	chunks/005/functions-000362.c	+[IMPPayoutSource descriptor]	
+105699c5c	105699cc3	decompiled	chunks/005/functions-000362.c	+[IMPOnboardingStepStatus descriptor]	
+105699cc4	105699d2b	decompiled	chunks/005/functions-000362.c	+[IMPOnboardingSection descriptor]	
+105699d2c	105699d93	decompiled	chunks/005/functions-000362.c	+[IMPGetOnboardingProgressRequest descriptor]	
+105699d94	105699dfb	decompiled	chunks/005/functions-000362.c	+[IMPGetOnboardingProgressResponse descriptor]	
+105699dfc	105699e63	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetOnboardingProgressRequest descriptor]	
+105699e64	105699ecb	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetOnboardingProgressResponse descriptor]	
+105699ecc	105699f33	decompiled	chunks/005/functions-000362.c	+[IMPAcceptPayoutProgramTermRequest descriptor]	
+105699f34	105699f9b	decompiled	chunks/005/functions-000362.c	+[IMPAcceptPayoutProgramTermResponse descriptor]	
+105699f9c	10569a007	decompiled	chunks/005/functions-000362.c	+[IMPGetPayoutsResponse descriptor]	
+10569a008	10569a06f	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetPayoutsResponse descriptor]	
+10569a070	10569a0d7	decompiled	chunks/005/functions-000362.c	+[IMPStartCashOutRequest descriptor]	
+10569a0d8	10569a13f	decompiled	chunks/005/functions-000362.c	+[IMPInternalStartCashOutRequest descriptor]	
+10569a140	10569a1a7	decompiled	chunks/005/functions-000362.c	+[IMPStartCashOutResponse descriptor]	
+10569a1a8	10569a20f	decompiled	chunks/005/functions-000362.c	+[IMPInternalStartCashOutResponse descriptor]	
+10569a210	10569a277	decompiled	chunks/005/functions-000362.c	+[IMPCashout descriptor]	
+10569a278	10569a2df	decompiled	chunks/005/functions-000362.c	+[IMPActivity descriptor]	
+10569a2e0	10569a347	decompiled	chunks/005/functions-000362.c	+[IMPGetCrystalActivitySummaryRequest descriptor]	
+10569a348	10569a3af	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetCrystalActivitySummaryRequest descriptor]	
+10569a3b0	10569a41b	decompiled	chunks/005/functions-000362.c	+[IMPGetCrystalActivitySummaryResponse descriptor]	
+10569a41c	10569a483	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetCrystalActivitySummaryResponse descriptor]	
+10569a484	10569a4eb	decompiled	chunks/005/functions-000362.c	+[IMPGetActivityRequest descriptor]	
+10569a4ec	10569a553	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetActivityRequest descriptor]	
+10569a554	10569a5bb	decompiled	chunks/005/functions-000362.c	+[IMPGetActivityResponse descriptor]	
+10569a5bc	10569a623	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetActivityResponse descriptor]	
+10569a624	10569a68b	decompiled	chunks/005/functions-000362.c	+[IMPBrandPartnershipPermissions descriptor]	
+10569a68c	10569a6f3	decompiled	chunks/005/functions-000362.c	+[IMPGetBrandPartnershipPermissionsRequest descriptor]	
+10569a6f4	10569a75b	decompiled	chunks/005/functions-000362.c	+[IMPGetBrandPartnershipPermissionsResponse descriptor]	
+10569a75c	10569a7c3	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetBrandPartnershipPermissionsRequest descriptor]	
+10569a7c4	10569a82b	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetBrandPartnershipPermissionsResponse descriptor]	
+10569a82c	10569a893	decompiled	chunks/005/functions-000362.c	+[IMPEffectiveCreatorDiscoverySettings descriptor]	
+10569a894	10569a8fb	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetEffectiveCreatorDiscoverySettingsRequest descriptor]	
+10569a8fc	10569a963	decompiled	chunks/005/functions-000362.c	+[IMPInternalGetEffectiveCreatorDiscoverySettingsResponse descriptor]	
+10569a964	10569a9cb	decompiled	chunks/005/functions-000362.c	+[IMPListBrandPartnershipsForBrandRequest descriptor]	
+10569a9cc	10569aa33	decompiled	chunks/005/functions-000362.c	+[IMPListBrandPartnershipsForBrandResponse descriptor]	
+10569aa34	10569aa9b	decompiled	chunks/005/functions-000362.c	+[IMPCreatorPartnershipProfile descriptor]	
+10569aa9c	10569ab03	decompiled	chunks/005/functions-000362.c	+[IMPUpdateSharedSnapAccessLevel descriptor]	
+10569ab04	10569ab6f	decompiled	chunks/005/functions-000362.c	+[IMPUpdateBrandPartnershipPermissionsRequest descriptor]	
+10569ab70	10569abd7	decompiled	chunks/005/functions-000362.c	+[IMPUpdateBrandPartnershipPermissionsResponse descriptor]	
+10569abd8	10569ac3f	decompiled	chunks/005/functions-000362.c	+[IMPListBrandPartnershipsForCreatorRequest descriptor]	
+10569ac40	10569aca7	decompiled	chunks/005/functions-000362.c	+[IMPListBrandPartnershipsForCreatorResponse descriptor]	
+10569aca8	10569ad0f	decompiled	chunks/005/functions-000362.c	+[IMPBrandPartnershipProfile descriptor]	
+10569ad10	10569ad7b	decompiled	chunks/005/functions-000362.c	+[IMPCreatorBrandExclusion descriptor]	
+10569ad7c	10569ade3	decompiled	chunks/005/functions-000362.c	+[IMPUpdateCreatorBrandExclusionRequest descriptor]	
+10569ade4	10569ae4b	decompiled	chunks/005/functions-000362.c	+[IMPUpdateCreatorBrandExclusionResponse descriptor]	
+10569ae4c	10569aeb3	decompiled	chunks/005/functions-000362.c	+[IMPGetCreatorBrandExclusionRequest descriptor]	
+10569aeb4	10569af1b	decompiled	chunks/005/functions-000362.c	+[IMPGetCreatorBrandExclusionResponse descriptor]	
+10569af1c	10569af83	decompiled	chunks/005/functions-000362.c	+[IMPListCreatorBrandExclusionsRequest descriptor]	
+10569af84	10569afeb	decompiled	chunks/005/functions-000362.c	+[IMPListCreatorBrandExclusionsResponse descriptor]	
+10569afec	10569b083	decompiled	chunks/005/functions-000362.c		
+10569b084	10569b0bb	decompiled	chunks/005/functions-000363.c	-[SCUcoCarouselConfigServiceProvider .cxx_destruct]	
+10569b0bc	10569b1d7	decompiled	chunks/005/functions-000363.c		
+10569b1d8	10569b1f3	decompiled	chunks/005/functions-000363.c		
+10569b1f4	10569b287	decompiled	chunks/005/functions-000363.c		
+10569b288	10569b427	decompiled	chunks/005/functions-000363.c		
+10569b428	10569b46f	decompiled	chunks/005/functions-000363.c		
+10569b470	10569b477	decompiled	chunks/005/functions-000363.c		
+10569b478	10569b587	decompiled	chunks/005/functions-000363.c	-[SCUcoServicesEntryPoint _ucoRemoteAssetsLoaderWithUserSession:dataFetcher:lensUserProvider:]	
+10569b588	10569b6f3	decompiled	chunks/005/functions-000363.c		
+10569b6f4	10569b893	decompiled	chunks/005/functions-000363.c		
+10569b894	10569b95b	decompiled	chunks/005/functions-000363.c		
+10569b95c	10569bb4b	decompiled	chunks/005/functions-000363.c		
+10569bb4c	10569bc5b	decompiled	chunks/005/functions-000363.c		
+10569bc5c	10569bd0f	decompiled	chunks/005/functions-000363.c	-[SCUcoServicesEntryPoint _bundledLensesMetadataStore]	
+10569bd10	10569be3f	decompiled	chunks/005/functions-000363.c		
+10569be40	10569beaf	decompiled	chunks/005/functions-000363.c	+[SCUcoServicesEntryPoint _defaultBundleLenses]	
+10569beb0	10569bf3b	decompiled	chunks/005/functions-000363.c	+[SCUcoServicesEntryPoint _ucoBundledLenses]	
+10569bf3c	10569c097	decompiled	chunks/005/functions-000363.c	-[SCUcoServicesEntryPoint .cxx_destruct]	
+10569c098	10569c0df	decompiled	chunks/005/functions-000363.c	-[SCPreviewCameraSourceOverlayEntryPoint .cxx_destruct]	
+10569c0e0	10569c0eb	decompiled	chunks/005/functions-000363.c	-[SCPreviewCameraSourceOverlayProviderImpl .cxx_destruct]	
+10569c0ec	10569c12b	decompiled	chunks/005/functions-000363.c		
+10569c12c	10569c153	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl configProvider]	
+10569c154	10569c163	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl consistentMuteEnabled]	
+10569c164	10569c173	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl respectMuteSwitchInPreviewEnabled]	
+10569c174	10569c183	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl convertMemoriesSnapToSnapDocEnabled]	
+10569c184	10569c18b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl snapWidth]	
+10569c18c	10569c20f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shouldUpdateSendToButtonTitle]	
+10569c210	10569c23f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isMemoriesMultiSelectThumbnailPreviewEnabled]	
+10569c240	10569c247	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isSkipCameraRollVideoTranscodingEnabled]	
+10569c248	10569c257	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl storiesTrayRefreshEnabled]	
+10569c258	10569c267	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl storiesQuickPostTrayRefreshEnabled]	
+10569c268	10569c27f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl deferQuickPostSendFlowEventEnabled]	
+10569c280	10569c297	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl previewLensAttributionFallbackEnabled]	
+10569c298	10569c2af	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl previewPlusPostSaveUpsellFromDialogEnabled]	
+10569c2b0	10569c323	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl storiesOneTapQuickPostEnabled]	
+10569c324	10569c33b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl storiesQuickPostRecencyFixEnabled]	
+10569c33c	10569c353	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl operaScaleFillVerticalMediaEnabled]	
+10569c354	10569c36b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl publicStoryOneTapQuickPostEnabled]	
+10569c36c	10569c387	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl filtersCTItemEnabled]	
+10569c388	10569c38f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl filtersCTItemSave]	
+10569c390	10569c3cf	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl clearStaleLensIdCaptureFixEnabled]	
+10569c3d0	10569c3d7	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl loadAutoCaptionVideoCacheUIThread]	
+10569c3d8	10569c3ef	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl memoriesPostSaveIconEnabled]	
+10569c3f0	10569c42f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl prefetchRadius]	
+10569c430	10569c4eb	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _prefetchConfig]	
+10569c4ec	10569c54b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _treatmentForSendToUpdate]	
+10569c54c	10569c5c3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _cofTreatmentForSendToUpdate]	
+10569c5c4	10569c637	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _enabledForStatus:key:]	
+10569c638	10569c693	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _ctItemSaveForToolType:]	
+10569c694	10569c6a3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl ucoStackingLimitationsRemoved]	
+10569c6a4	10569c713	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isCTLensToolbarEnabled]	
+10569c714	10569c80b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl ctLensToolConfig]	
+10569c80c	10569c8ff	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl toggleToolLenses]	
+10569c900	10569c907	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl maxVideoDurationStrategy]	
+10569c908	10569c947	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl maxVideoDurationInSec]	
+10569c948	10569c957	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isCTLensToolRemoteInferenceEnabled]	
+10569c958	10569c96f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isUserEligibleForAgeGatedFeatures]	
+10569c970	10569c987	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isUCOFilterUIMaxZIndexEnabled]	
+10569c988	10569c9c3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeEnabled]	
+10569c9c4	10569ca93	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl lensIdForAiMode]	
+10569ca94	10569caaf	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl lensIdForAiRemix]	
+10569cab0	10569cac7	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiRemixEmptyTextInputEnabled]	
+10569cac8	10569cadf	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiRemixV2InputBarEnabled]	
+10569cae0	10569caf7	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiRemixViewportTapGenerateDisabled]	
+10569caf8	10569cb0f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeV2InputBarEnabled]	
+10569cb10	10569cb27	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeTrayUnderPreviewEnabled]	
+10569cb28	10569cb3f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeStartWithTrendingListOpenEnabled]	
+10569cb40	10569cb57	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeGenerateOnTapOnVisualPromptEnabled]	
+10569cb58	10569cb6f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isMentionEnabledForAiMode]	
+10569cb70	10569cb87	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isMentionEnabledForAiRemix]	
+10569cb88	10569cb9f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isMentionPinCurrentUserEnabledForAiRemix]	
+10569cba0	10569cbdb	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeEnabledOnReplyCamera]	
+10569cbdc	10569cc17	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeEnabledForMemoriesImport]	
+10569cc18	10569cc53	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAiModeEnabledForCrImport]	
+10569cc54	10569cca3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl aiModeAspectRatioThreshold]	
+10569cca4	10569ccdf	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl aiModeFaceDetectionEnabled]	
+10569cce0	10569ccf7	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl watermarkEnabledForAIMode]	
+10569ccf8	10569cd33	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAIModeLensShareable]	
+10569cd34	10569cd6f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAIModeCheckSubscriptionNatively]	
+10569cd70	10569cdab	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shouldApplyCaptionInPreviewFromAIMode]	
+10569cdac	10569ce2b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shareableLensId]	
+10569ce2c	10569ce43	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl plusShowLightningSnapsLast]	
+10569ce44	10569ce5b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shouldSaveImageSnapAsSnapDoc]	
+10569ce5c	10569ce73	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shouldSaveVideoSnapAsSnapDoc]	
+10569ce74	10569ce7f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl retouchFilterId]	
+10569ce80	10569ce8b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl repostLensId]	
+10569ce8c	10569cf13	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _aiModeConfig]	
+10569cf14	10569cfe3	decompiled	chunks/005/functions-000363.c		
+10569cfe4	10569cffb	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl quickPostPreselectRefreshEnabled]	
+10569cffc	10569d003	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl previewToolbarIconStyle]	
+10569d004	10569d01b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl shouldShowSaveButtonTitle]	
+10569d01c	10569d033	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl allowUserInteractionsWhileSaving]	
+10569d034	10569d04b	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl imageFilterExportAtFullResolution]	
+10569d04c	10569d063	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl embedOverlayForSnapSaverImageProviderEnabled]	
+10569d064	10569d0ab	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl venueLensId]	
+10569d0ac	10569d0c3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl enableVenueLensForMultiSnap]	
+10569d0c4	10569d0db	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isAIModeGenerationAttemptMigrationEnabled]	
+10569d0dc	10569d0f3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl isPreviewAIModeAiCreationFlowEnabled]	
+10569d0f4	10569d2f3	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl createPostStoryPolicyForConfig:]	
+10569d2f4	10569d38f	decompiled	chunks/005/functions-000363.c	-[SCPreviewABProviderImpl _boolForCofKey:orDefault:]	
+10569d390	10569d3a7	decompiled	chunks/005/functions-000364.c	-[SCPreviewABProviderImpl navigateToSpotlightAfterPostFromMusicCamera]	
+10569d3a8	10569d413	decompiled	chunks/005/functions-000364.c	-[SCPreviewABProviderImpl .cxx_destruct]	
+10569d414	10569d487	decompiled	chunks/005/functions-000364.c	-[SCPreviewABServiceProvider .cxx_destruct]	
+10569d488	10569d4ef	decompiled	chunks/005/functions-000364.c	+[SCCTPToggleToolConfig descriptor]	
+10569d4f0	10569d557	decompiled	chunks/005/functions-000364.c	+[SCPrefetchUCOConfig descriptor]	
+10569d558	10569d5cb	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl initWithStickerInjector:]	
+10569d5cc	10569d5d3	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl saveType]	
+10569d5d4	10569d617	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl hasEditsInOverlay:]	
+10569d618	10569d61f	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl hasCTItemsInEditor:segment:]	
+10569d620	10569d643	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569d644	10569d647	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569d648	10569d64b	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569d64c	10569d7af	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569d7b0	10569d7bb	decompiled	chunks/005/functions-000364.c	-[SCAttachmentCTItemConverterImpl .cxx_destruct]	
+10569d7bc	10569d7c3	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl saveType]	
+10569d7c4	10569d7fb	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl hasEditsInOverlay:]	
+10569d7fc	10569d84f	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl hasCTItemsInEditor:segment:]	
+10569d850	10569d8b3	decompiled	chunks/005/functions-000364.c		
+10569d8b4	10569d98b	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569d98c	10569d9ef	decompiled	chunks/005/functions-000364.c		
+10569d9f0	10569da6b	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569da6c	10569dbff	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569dc00	10569dc63	decompiled	chunks/005/functions-000364.c		
+10569dc64	10569dc87	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569dc88	10569dd13	decompiled	chunks/005/functions-000364.c	-[SCAutoCaptionsCTItemConverterImpl _addAutoCaptionPlaybackLayersWithEditor:autoCaptionsState:segment:]	
+10569dd14	10569dd1b	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl saveType]	
+10569dd1c	10569dd53	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl hasEditsInOverlay:]	
+10569dd54	10569dd5b	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl hasCTItemsInEditor:segment:]	
+10569dd5c	10569e1c3	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569e1c4	10569e207	decompiled	chunks/005/functions-000364.c		
+10569e208	10569e39b	decompiled	chunks/005/functions-000364.c		
+10569e39c	10569e39f	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569e3a0	10569e723	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569e724	10569e767	decompiled	chunks/005/functions-000364.c		
+10569e768	10569e887	decompiled	chunks/005/functions-000364.c		
+10569e888	10569e8eb	decompiled	chunks/005/functions-000364.c	-[SCCTLensConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569e8ec	10569e95f	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl initWithSnapchatterDataFetcher:creativeToolsABProvider:]	
+10569e960	10569e967	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl saveType]	
+10569e968	10569eab7	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569eab8	10569eb0b	decompiled	chunks/005/functions-000364.c		
+10569eb0c	10569eceb	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569ecec	10569ed4f	decompiled	chunks/005/functions-000364.c		
+10569ed50	10569eeeb	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569eeec	10569ef3f	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl hasCTItemsInEditor:segment:]	
+10569ef40	10569efa3	decompiled	chunks/005/functions-000364.c		
+10569efa4	10569efe7	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl hasEditsInOverlay:]	
+10569efe8	10569f00b	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569f00c	10569f017	decompiled	chunks/005/functions-000364.c	-[SCCaptionCTItemConverterImpl .cxx_destruct]	
+10569f018	10569f01f	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl saveType]	
+10569f020	10569f057	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl hasEditsInOverlay:]	
+10569f058	10569f05f	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl hasCTItemsInEditor:segment:]	
+10569f060	10569f1b3	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569f1b4	10569f227	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569f228	10569f40f	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569f410	10569f49b	decompiled	chunks/005/functions-000364.c		
+10569f49c	10569f4bf	decompiled	chunks/005/functions-000364.c	-[SCCropConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569f4c0	10569f4c7	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl saveType]	
+10569f4c8	10569f58b	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl hasEditsInOverlay:]	
+10569f58c	10569f5df	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl hasCTItemsInEditor:segment:]	
+10569f5e0	10569f643	decompiled	chunks/005/functions-000364.c		
+10569f644	10569f713	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+10569f714	10569f78f	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+10569f790	10569f84b	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+10569f84c	10569f89b	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+10569f89c	10569f9e7	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl _addDrawingPlaybackLayersWithEditor:strokes:segment:]	
+10569f9e8	10569fceb	decompiled	chunks/005/functions-000364.c	-[SCDrawingsCTItemConverterImpl hydrateCTItemInstancesInEditor:]	
+10569fcec	10569fd67	decompiled	chunks/005/functions-000364.c		
+10569fd68	10569fef7	decompiled	chunks/005/functions-000364.c		
+10569fef8	10569ff03	decompiled	chunks/005/functions-000364.c		
+10569ff04	10569ff6f	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl initWithABProvider:]	
+10569ff70	1056a080b	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+1056a080c	1056a0823	decompiled	chunks/005/functions-000364.c		
+1056a0824	1056a0897	decompiled	chunks/005/functions-000364.c		
+1056a0898	1056a08cf	decompiled	chunks/005/functions-000364.c		
+1056a08d0	1056a0fd3	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+1056a0fd4	1056a1067	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl hasCTItemsInEditor:segment:]	
+1056a1068	1056a109f	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl hasEditsInOverlay:]	
+1056a10a0	1056a10c3	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+1056a10c4	1056a10cb	decompiled	chunks/005/functions-000364.c	-[SCFiltersCTItemConverterImpl saveType]	
+1056a10cc	1056a10d3	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl saveType]	
+1056a10d4	1056a11a7	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl hasEditsInOverlay:]	
+1056a11a8	1056a1303	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl hasCTItemsInEditor:segment:]	
+1056a1304	1056a137f	decompiled	chunks/005/functions-000364.c		
+1056a1380	1056a15df	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+1056a15e0	1056a165f	decompiled	chunks/005/functions-000364.c		
+1056a1660	1056a1973	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+1056a1974	1056a1aa7	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+1056a1aa8	1056a1c0f	decompiled	chunks/005/functions-000364.c		
+1056a1c10	1056a1ca3	decompiled	chunks/005/functions-000364.c		
+1056a1ca4	1056a1d1b	decompiled	chunks/005/functions-000364.c	-[SCMetadataConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+1056a1d1c	1056a1d23	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl saveType]	
+1056a1d24	1056a1d5b	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl hasEditsInOverlay:]	
+1056a1d5c	1056a1d63	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl hasCTItemsInEditor:segment:]	
+1056a1d64	1056a1e4f	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+1056a1e50	1056a1f07	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+1056a1f08	1056a1feb	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+1056a1fec	1056a200f	decompiled	chunks/005/functions-000364.c	-[SCMuteConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+1056a2010	1056a2017	decompiled	chunks/005/functions-000364.c	-[SCSpectaclesConverterImpl saveType]	
+1056a2018	1056a2093	decompiled	chunks/005/functions-000364.c	-[SCSpectaclesConverterImpl hasEditsInOverlay:]	
+1056a2094	1056a209b	decompiled	chunks/005/functions-000364.c	-[SCSpectaclesConverterImpl hasCTItemsInEditor:segment:]	
+1056a209c	1056a2327	decompiled	chunks/005/functions-000365.c	-[SCSpectaclesConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+1056a2328	1056a236b	decompiled	chunks/005/functions-000365.c		
+1056a236c	1056a253b	decompiled	chunks/005/functions-000365.c		
+1056a253c	1056a253f	decompiled	chunks/005/functions-000365.c	-[SCSpectaclesConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+1056a2540	1056a2817	decompiled	chunks/005/functions-000365.c	-[SCSpectaclesConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+1056a2818	1056a285b	decompiled	chunks/005/functions-000365.c		
+1056a285c	1056a2937	decompiled	chunks/005/functions-000365.c		
+1056a2938	1056a299b	decompiled	chunks/005/functions-000365.c	-[SCSpectaclesConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+1056a299c	1056a2b43	decompiled	chunks/005/functions-000365.c	-[SCSpectaclesConverterImpl _addRenderEffect:layerIds:editor:]	
+1056a2b44	1056a2bb7	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl initWithStickerInjector:]	
+1056a2bb8	1056a2bbf	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl saveType]	
+1056a2bc0	1056a2c03	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl hasEditsInOverlay:]	
+1056a2c04	1056a2c8b	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl hasCTItemsInEditor:segment:]	
+1056a2c8c	1056a2d13	decompiled	chunks/005/functions-000365.c		
+1056a2d14	1056a2de3	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl addEditsToSnapDocWithEditor:overlay:segment:]	
+1056a2de4	1056a2f23	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl addEditsToSnapDocWithEditor:editingState:segment:]	
+1056a2f24	1056a2fcb	decompiled	chunks/005/functions-000365.c		
+1056a2fcc	1056a30ab	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl addEditsToOverlayFromEditor:overlayBuilder:segment:]	
+1056a30ac	1056a30fb	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl removeLegacyEditsFromOverlayBuilder:]	
+1056a30fc	1056a3367	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl _addStickerPlaybackLayersWithEditor:sojuGalleryStickers:sojuGalleryInfoFilters:segment:]	
+1056a3368	1056a3493	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl _setSojuGalleryFiltersWithSnapOverlayBuilder:infoFilters:]	
+1056a3494	1056a349f	decompiled	chunks/005/functions-000365.c	-[SCStickerCTItemConverterImpl .cxx_destruct]	
+1056a34a0	1056a3723	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl initWithPreviewABProvider:stickerInjector:snapchatterDataFetcher:creativeToolsABProvider:]	
+1056a3724	1056a372b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl removeLegacyModelsFromEditor:migrateToLatestModel:]	
+1056a372c	1056a3a2b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl removeLegacyModelsFromEditor:migrateToLatestModel:respectSaveType:]	
+1056a3a2c	1056a3a8f	decompiled	chunks/005/functions-000365.c		
+1056a3a90	1056a3e0b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl addSojuWithEditor:]	
+1056a3e0c	1056a3e6f	decompiled	chunks/005/functions-000365.c		
+1056a3e70	1056a3f9f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl _addOverlay:toSegment:withEditor:]	
+1056a3fa0	1056a40f3	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl _overlayAtSegment:withEditor:]	
+1056a40f4	1056a416f	decompiled	chunks/005/functions-000365.c		
+1056a4170	1056a41d3	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterImpl .cxx_destruct]	
+1056a41d4	1056a422f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocConverterServiceProvider .cxx_destruct]	
+1056a4230	1056a4237	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl editorWithSnapDoc:]	
+1056a4238	1056a4247	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl editorWithSnapDoc:serialSnapDocUpdatePerformer:]	
+1056a4248	1056a424f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl editorWithSnapDoc:mediaIdToAssetId:snapDocKey:]	
+1056a4250	1056a437b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl editorWithSnapDoc:mediaIdToAssetId:snapDocKey:serialSnapDocUpdatePerformer:]	
+1056a437c	1056a46af	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl editorWithBaseMediaInput:]	
+1056a46b0	1056a47c7	decompiled	chunks/005/functions-000365.c		
+1056a47c8	1056a4897	decompiled	chunks/005/functions-000365.c		
+1056a4898	1056a49b3	decompiled	chunks/005/functions-000365.c		
+1056a49b4	1056a4ab7	decompiled	chunks/005/functions-000365.c		
+1056a4ab8	1056a4abf	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl useSerialQueueInsteadOfLocks]	
+1056a4ac0	1056a4b37	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorFactoryImpl .cxx_destruct]	
+1056a4b38	1056a52ab	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl initWithSnapDoc:serialSnapDocUpdatePerformer:pixelWidth:defaultGridWidth:mediaIdToAssetId:snapDocKey:snapDocConverterServices:snapDocManagerServices:nsDataWriterServices:temporaryFileWriterServices:mediaVideoImportServices:composerServices:capabilitiesServices:]	
+1056a52ac	1056a5383	decompiled	chunks/005/functions-000365.c		
+1056a5384	1056a538f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl resetWithSnapDoc:]	
+1056a5390	1056a539f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl locklessMode]	
+1056a53a0	1056a53a7	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl resetWithSnapDoc:snapDocKey:]	
+1056a53a8	1056a53b3	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl resetWithSnapDoc:mediaIdToAssetId:]	
+1056a53b4	1056a562b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056a562c	1056a585b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl waitUntil:]	
+1056a585c	1056a5873	decompiled	chunks/005/functions-000365.c		
+1056a5874	1056a5983	decompiled	chunks/005/functions-000365.c		
+1056a5984	1056a5a47	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl snapDoc]	
+1056a5a48	1056a5a83	decompiled	chunks/005/functions-000365.c		
+1056a5a84	1056a5a8b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl snapDocKey]	
+1056a5a8c	1056a5aa3	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl mediaIdToAssetId]	
+1056a5aa4	1056a5b43	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl localSegmentCount]	
+1056a5b44	1056a5b77	decompiled	chunks/005/functions-000365.c		
+1056a5b78	1056a5bdb	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl setLocalSegmentCount:]	
+1056a5bdc	1056a5be7	decompiled	chunks/005/functions-000365.c		
+1056a5be8	1056a5cdf	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl playbackLayerWithId:]	
+1056a5ce0	1056a5d23	decompiled	chunks/005/functions-000365.c		
+1056a5d24	1056a5e1b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl playbackLayerIdsAtSegment:]	
+1056a5e1c	1056a5e77	decompiled	chunks/005/functions-000365.c		
+1056a5e78	1056a5f9f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl playbackLayerIdsAtSegment:where:]	
+1056a5fa0	1056a5fe7	decompiled	chunks/005/functions-000365.c		
+1056a5fe8	1056a60df	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl playbackLayerIdsWhere:]	
+1056a60e0	1056a6123	decompiled	chunks/005/functions-000365.c		
+1056a6124	1056a621b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl segmentOfPlaybackLayerWithId:]	
+1056a621c	1056a625f	decompiled	chunks/005/functions-000365.c		
+1056a6260	1056a62eb	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl updateSnapDoc:]	
+1056a62ec	1056a62ff	decompiled	chunks/005/functions-000365.c		
+1056a6300	1056a63ff	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl deletePlaybackLayerWithId:]	
+1056a6400	1056a64f7	decompiled	chunks/005/functions-000365.c		
+1056a64f8	1056a6627	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl deletePlaybackLayersAtSegment:where:]	
+1056a6628	1056a679f	decompiled	chunks/005/functions-000365.c		
+1056a67a0	1056a6897	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl trackSegmentAtIndex:]	
+1056a6898	1056a68db	decompiled	chunks/005/functions-000365.c		
+1056a68dc	1056a697f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl trackIndexOfType:]	
+1056a6980	1056a69b7	decompiled	chunks/005/functions-000365.c		
+1056a69b8	1056a6a1f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl moveLocalSegmentAtIndex:toIndex:]	
+1056a6a20	1056a6a33	decompiled	chunks/005/functions-000365.c		
+1056a6a34	1056a6b33	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl deleteSegment:]	
+1056a6b34	1056a6ca7	decompiled	chunks/005/functions-000365.c		
+1056a6ca8	1056a6dd7	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl addPlaybackLayer:segment:]	
+1056a6dd8	1056a6e1f	decompiled	chunks/005/functions-000365.c		
+1056a6e20	1056a6f1f	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl addTimedPlaybackLayer:]	
+1056a6f20	1056a6f63	decompiled	chunks/005/functions-000365.c		
+1056a6f64	1056a7093	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl updatePlaybackLayerWithId:update:]	
+1056a7094	1056a70db	decompiled	chunks/005/functions-000365.c		
+1056a70dc	1056a720b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl updateTrackSegmentWithIndex:update:]	
+1056a720c	1056a7253	decompiled	chunks/005/functions-000365.c		
+1056a7254	1056a72a3	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl dispose]	
+1056a72a4	1056a72bb	decompiled	chunks/005/functions-000365.c		
+1056a72bc	1056a738b	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl setRenderEffect:onPlaybackLayer:forFeature:renderEffectType:]	
+1056a738c	1056a73a3	decompiled	chunks/005/functions-000365.c		
+1056a73a4	1056a7477	decompiled	chunks/005/functions-000365.c	-[SCSnapDocEditorImpl setRenderEffect:onPlaybackLayer:forFeature:featureTagId:renderEffectType:]	
+1056a7478	1056a748f	decompiled	chunks/005/functions-000365.c		
+1056a7490	1056a7587	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl renderEffectNodesWhere:]	
+1056a7588	1056a75cb	decompiled	chunks/005/functions-000366.c		
+1056a75cc	1056a76c3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl getRenderEffectWithPlaybackLayerInput:]	
+1056a76c4	1056a7707	decompiled	chunks/005/functions-000366.c		
+1056a7708	1056a780f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl getRenderEffectNodeWithInput:renderEffectType:]	
+1056a7810	1056a7857	decompiled	chunks/005/functions-000366.c		
+1056a7858	1056a794f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl getFilterRenderEffectNodeWithInput:]	
+1056a7950	1056a7993	decompiled	chunks/005/functions-000366.c		
+1056a7994	1056a7a77	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl containsRenderEffectNodeOfType:where:]	
+1056a7a78	1056a7aaf	decompiled	chunks/005/functions-000366.c		
+1056a7ab0	1056a7b53	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl maxOutputIndexOfRenderEffectNodesForType:]	
+1056a7b54	1056a7b8b	decompiled	chunks/005/functions-000366.c		
+1056a7b8c	1056a7c0f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl removeRenderEffectNodesWhere:]	
+1056a7c10	1056a7c1b	decompiled	chunks/005/functions-000366.c		
+1056a7c1c	1056a7cb7	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl removeRenderEffectsFromPlaybackLayerWithId:renderEffectType:]	
+1056a7cb8	1056a7ccb	decompiled	chunks/005/functions-000366.c		
+1056a7ccc	1056a7d57	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl removeAllRenderEffectsFromPlaybackLayerWithId:]	
+1056a7d58	1056a7d63	decompiled	chunks/005/functions-000366.c		
+1056a7d64	1056a7dff	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl addRenderEffectNode:renderEffectType:]	
+1056a7e00	1056a7e13	decompiled	chunks/005/functions-000366.c		
+1056a7e14	1056a7eaf	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl removeRenderEffectNode:renderEffectType:]	
+1056a7eb0	1056a7ec3	decompiled	chunks/005/functions-000366.c		
+1056a7ec4	1056a7f87	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl gridProperties]	
+1056a7f88	1056a7fcb	decompiled	chunks/005/functions-000366.c		
+1056a7fcc	1056a808f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl pixelSize]	
+1056a8090	1056a80c3	decompiled	chunks/005/functions-000366.c		
+1056a80c4	1056a812b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setGridAspectRatio:]	
+1056a812c	1056a813b	decompiled	chunks/005/functions-000366.c		
+1056a813c	1056a81e3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl gridAspectRatio]	
+1056a81e4	1056a8217	decompiled	chunks/005/functions-000366.c		
+1056a8218	1056a82bb	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeX:]	
+1056a82bc	1056a82f3	decompiled	chunks/005/functions-000366.c		
+1056a82f4	1056a839f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeX:]	
+1056a83a0	1056a83d7	decompiled	chunks/005/functions-000366.c		
+1056a83d8	1056a847b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeY:]	
+1056a847c	1056a84b3	decompiled	chunks/005/functions-000366.c		
+1056a84b4	1056a855f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeY:]	
+1056a8560	1056a8597	decompiled	chunks/005/functions-000366.c		
+1056a8598	1056a863b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeRelativeX:]	
+1056a863c	1056a8673	decompiled	chunks/005/functions-000366.c		
+1056a8674	1056a871f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeRelativeX:]	
+1056a8720	1056a8757	decompiled	chunks/005/functions-000366.c		
+1056a8758	1056a87fb	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeRelativeY:]	
+1056a87fc	1056a8833	decompiled	chunks/005/functions-000366.c		
+1056a8834	1056a88df	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeRelativeY:]	
+1056a88e0	1056a8917	decompiled	chunks/005/functions-000366.c		
+1056a8918	1056a8a0f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodePaths:]	
+1056a8a10	1056a8a53	decompiled	chunks/005/functions-000366.c		
+1056a8a54	1056a8b4b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodePaths:]	
+1056a8b4c	1056a8b8f	decompiled	chunks/005/functions-000366.c		
+1056a8b90	1056a8c87	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeTransforms:]	
+1056a8c88	1056a8ccb	decompiled	chunks/005/functions-000366.c		
+1056a8ccc	1056a8dc3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeTransforms:]	
+1056a8dc4	1056a8e07	decompiled	chunks/005/functions-000366.c		
+1056a8e08	1056a8eff	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl encodeTimestampsMs:]	
+1056a8f00	1056a8f43	decompiled	chunks/005/functions-000366.c		
+1056a8f44	1056a903b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl decodeTimestampsMs:]	
+1056a903c	1056a907f	decompiled	chunks/005/functions-000366.c		
+1056a9080	1056a91af	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl addDrawingPlaybackLayerWithStroke:segment:]	
+1056a91b0	1056a91f7	decompiled	chunks/005/functions-000366.c		
+1056a91f8	1056a92ef	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl drawingStrokesAtSegment:]	
+1056a92f0	1056a9333	decompiled	chunks/005/functions-000366.c		
+1056a9334	1056a942b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl drawingStrokeOfPlaybackLayerWithId:]	
+1056a942c	1056a946f	decompiled	chunks/005/functions-000366.c		
+1056a9470	1056a9533	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl playbackCharacteristics]	
+1056a9534	1056a9577	decompiled	chunks/005/functions-000366.c		
+1056a9578	1056a9603	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setPlaybackCharacteristics:]	
+1056a9604	1056a960f	decompiled	chunks/005/functions-000366.c		
+1056a9610	1056a96d3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl location]	
+1056a96d4	1056a9717	decompiled	chunks/005/functions-000366.c		
+1056a9718	1056a97a3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setLocation:]	
+1056a97a4	1056a97af	decompiled	chunks/005/functions-000366.c		
+1056a97b0	1056a9873	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl createdTime]	
+1056a9874	1056a98b7	decompiled	chunks/005/functions-000366.c		
+1056a98b8	1056a9943	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setCreatedTime:]	
+1056a9944	1056a994f	decompiled	chunks/005/functions-000366.c		
+1056a9950	1056a9a13	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl captureSessionId]	
+1056a9a14	1056a9a57	decompiled	chunks/005/functions-000366.c		
+1056a9a58	1056a9ae3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setCaptureSessionId:]	
+1056a9ae4	1056a9aef	decompiled	chunks/005/functions-000366.c		
+1056a9af0	1056a9b8f	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl captureMode]	
+1056a9b90	1056a9bc3	decompiled	chunks/005/functions-000366.c		
+1056a9bc4	1056a9c2b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setCaptureMode:]	
+1056a9c2c	1056a9c3b	decompiled	chunks/005/functions-000366.c		
+1056a9c3c	1056a9cff	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl weatherInfo]	
+1056a9d00	1056a9d43	decompiled	chunks/005/functions-000366.c		
+1056a9d44	1056a9dcf	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setWeatherInfo:]	
+1056a9dd0	1056a9ddb	decompiled	chunks/005/functions-000366.c		
+1056a9ddc	1056a9e7b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl batteryStatus]	
+1056a9e7c	1056a9eaf	decompiled	chunks/005/functions-000366.c		
+1056a9eb0	1056a9f17	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl setBatteryStatus:]	
+1056a9f18	1056a9f27	decompiled	chunks/005/functions-000366.c		
+1056a9f28	1056a9fb3	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl updateContextClientInfo:]	
+1056a9fb4	1056a9fbf	decompiled	chunks/005/functions-000366.c		
+1056a9fc0	1056aa083	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl exportedContentMetadata]	
+1056aa084	1056aa0c7	decompiled	chunks/005/functions-000366.c		
+1056aa0c8	1056aa18b	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl fileEmbeddedMetadata]	
+1056aa18c	1056aa1cf	decompiled	chunks/005/functions-000366.c		
+1056aa1d0	1056aa293	decompiled	chunks/005/functions-000366.c	-[SCSnapDocEditorImpl contextAttachmentContextClientInfo]	
+1056aa294	1056aa2d7	decompiled	chunks/005/functions-000366.c		
+1056aa2d8	1056aa407	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl addAutoCaptionsPlaybackLayerWithAutoCaptionsState:segment:]	
+1056aa408	1056aa44f	decompiled	chunks/005/functions-000367.c		
+1056aa450	1056aa577	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl decodeAutoCaptionsMetadata:playbackLayerId:]	
+1056aa578	1056aa5bf	decompiled	chunks/005/functions-000367.c		
+1056aa5c0	1056aa6b7	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl autoCaptionsStateAtSegment:]	
+1056aa6b8	1056aa6fb	decompiled	chunks/005/functions-000367.c		
+1056aa6fc	1056aa7b7	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl updateRenderEffectsWithFilter:segment:]	
+1056aa7b8	1056aa7cb	decompiled	chunks/005/functions-000367.c		
+1056aa7cc	1056aa887	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl replaceRenderEffectsWithFilters:atSegment:]	
+1056aa888	1056aa89b	decompiled	chunks/005/functions-000367.c		
+1056aa89c	1056aa927	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl deleteRenderEffectsLastFilterNodeAtSegment:]	
+1056aa928	1056aa933	decompiled	chunks/005/functions-000367.c		
+1056aa934	1056aaa07	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl numberOfFiltersAppliedOnSegment:]	
+1056aaa08	1056aaa3b	decompiled	chunks/005/functions-000367.c		
+1056aaa3c	1056aab33	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl filtersAtSegment:]	
+1056aab34	1056aab77	decompiled	chunks/005/functions-000367.c		
+1056aab78	1056aac3b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl appliedFilters]	
+1056aac3c	1056aac7f	decompiled	chunks/005/functions-000367.c		
+1056aac80	1056aac87	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setShouldKeepClaimOnDealloc:]	
+1056aac88	1056aac8f	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl shouldKeepClaimOnDealloc]	
+1056aac90	1056aad87	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl mediaReferenceWithId:]	
+1056aad88	1056aadcb	decompiled	chunks/005/functions-000367.c		
+1056aadcc	1056aaec3	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl mediaWithId:]	
+1056aaec4	1056aaf07	decompiled	chunks/005/functions-000367.c		
+1056aaf08	1056aafff	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl contentResultWithMediaId:]	
+1056ab000	1056ab043	decompiled	chunks/005/functions-000367.c		
+1056ab044	1056ab04b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl mediaUrlWithId:]	
+1056ab04c	1056ab153	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl addBaseMediaWithInput:removeSoftTrim:]	
+1056ab154	1056ab19b	decompiled	chunks/005/functions-000367.c		
+1056ab19c	1056ab2af	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl addMediaWithInput:type:]	
+1056ab2b0	1056ab2e7	decompiled	chunks/005/functions-000367.c		
+1056ab2e8	1056ab413	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl updateMediaReferenceWithInput:mediaId:]	
+1056ab414	1056ab447	decompiled	chunks/005/functions-000367.c		
+1056ab448	1056ab487	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl syncAddMediaWithInput:type:]	
+1056ab488	1056ab59b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl deleteMediaWithId:]	
+1056ab59c	1056ab5df	decompiled	chunks/005/functions-000367.c		
+1056ab5e0	1056ab6d7	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl localCacheKeyWithInput:]	
+1056ab6d8	1056ab71b	decompiled	chunks/005/functions-000367.c		
+1056ab71c	1056ab867	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl applySDOMCommands:]	
+1056ab868	1056ab92b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl validate]	
+1056ab92c	1056ab96f	decompiled	chunks/005/functions-000367.c		
+1056ab970	1056aba33	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl getSnapDocTextualView]	
+1056aba34	1056aba77	decompiled	chunks/005/functions-000367.c		
+1056aba78	1056abc93	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl importMediaReferencesFrom:]	
+1056abc94	1056abd8b	decompiled	chunks/005/functions-000367.c		
+1056abd8c	1056abd97	decompiled	chunks/005/functions-000367.c		
+1056abd98	1056abf8f	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _importBaseMediaPlaybackLayersFromSnapDoc:segmentForPlaybackLayer:]	
+1056abf90	1056ac017	decompiled	chunks/005/functions-000367.c		
+1056ac018	1056ac133	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _importPlaybackLayer:matchingSegmentType:]	
+1056ac134	1056ac1db	decompiled	chunks/005/functions-000367.c		
+1056ac1dc	1056ac27f	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _didPlaybackLayerChange:]	
+1056ac280	1056ac323	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _didSegmentChange:]	
+1056ac324	1056ac3c7	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _didRenderEffectChange:]	
+1056ac3c8	1056ac46f	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _publishSnapDocChange]	
+1056ac470	1056ac58b	decompiled	chunks/005/functions-000367.c		
+1056ac58c	1056ac5c7	decompiled	chunks/005/functions-000367.c		
+1056ac5c8	1056ac6d3	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _synchronizedOnSerialQueueOrLocks:]	
+1056ac6d4	1056ac727	decompiled	chunks/005/functions-000367.c		
+1056ac728	1056ac763	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl _isComposerThread]	
+1056ac764	1056ac76b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl changeObservable]	
+1056ac76c	1056ac773	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl enabled]	
+1056ac774	1056ac77b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setEnabled:]	
+1056ac77c	1056ac783	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl layerEditor]	
+1056ac784	1056ac7b3	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setLayerEditor:]	
+1056ac7b4	1056ac7bb	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl renderEffectsEditor]	
+1056ac7bc	1056ac7eb	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setRenderEffectsEditor:]	
+1056ac7ec	1056ac7f3	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl gridEditor]	
+1056ac7f4	1056ac823	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setGridEditor:]	
+1056ac824	1056ac82b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl drawingEditor]	
+1056ac82c	1056ac85b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setDrawingEditor:]	
+1056ac85c	1056ac863	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl metadataEditor]	
+1056ac864	1056ac893	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setMetadataEditor:]	
+1056ac894	1056ac89b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl autoCaptionsEditor]	
+1056ac89c	1056ac8cb	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setAutoCaptionsEditor:]	
+1056ac8cc	1056ac8d3	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl mediaEditor]	
+1056ac8d4	1056ac903	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setMediaEditor:]	
+1056ac904	1056ac90b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl sdomEditor]	
+1056ac90c	1056ac93b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setSdomEditor:]	
+1056ac93c	1056ac943	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl filtersEditor]	
+1056ac944	1056ac973	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setFiltersEditor:]	
+1056ac974	1056ac97b	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl serialSnapDocUpdatePerformer]	
+1056ac97c	1056ac9ab	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl setSerialSnapDocUpdatePerformer:]	
+1056ac9ac	1056acaa7	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorImpl .cxx_destruct]	
+1056acaa8	1056acb33	decompiled	chunks/005/functions-000367.c	-[SCSnapDocEditorServiceProvider .cxx_destruct]	
+1056acb34	1056acbe3	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl initWithSnapDoc:]	
+1056acbe4	1056ad1af	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056ad1b0	1056ad213	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl localSegmentCount]	
+1056ad214	1056ad22f	decompiled	chunks/005/functions-000367.c		
+1056ad230	1056ad2fb	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl setLocalSegmentCount:]	
+1056ad2fc	1056ad33b	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl playbackLayerWithId:]	
+1056ad33c	1056ad64b	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl playbackLayerIds]	
+1056ad64c	1056ad65f	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl playbackLayerIdsAtSegment:]	
+1056ad660	1056ad7bf	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl playbackLayerIdsAtSegment:where:]	
+1056ad7c0	1056ad8fb	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl playbackLayerIdsWhere:]	
+1056ad8fc	1056adaf3	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl segmentOfPlaybackLayerWithId:]	
+1056adaf4	1056adb0f	decompiled	chunks/005/functions-000367.c		
+1056adb10	1056ae28b	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl deletePlaybackLayerWithId:]	
+1056ae28c	1056ae2bf	decompiled	chunks/005/functions-000367.c		
+1056ae2c0	1056ae413	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl deletePlaybackLayersAtSegment:where:]	
+1056ae414	1056ae44f	decompiled	chunks/005/functions-000367.c	-[SCPlaybackLayerEditorImpl trackSegmentAtIndex:]	
+1056ae450	1056ae54f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl trackIndexOfType:]	
+1056ae550	1056ae76f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl moveLocalSegmentAtIndex:toIndex:]	
+1056ae770	1056ae78b	decompiled	chunks/005/functions-000368.c		
+1056ae78c	1056aeb4f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl deleteSegment:]	
+1056aeb50	1056aeb67	decompiled	chunks/005/functions-000368.c		
+1056aeb68	1056aebeb	decompiled	chunks/005/functions-000368.c		
+1056aebec	1056aee2b	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl addPlaybackLayer:segment:]	
+1056aee2c	1056aee6f	decompiled	chunks/005/functions-000368.c		
+1056aee70	1056aefc7	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl addTimedPlaybackLayer:]	
+1056aefc8	1056af10f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl updatePlaybackLayerWithId:update:]	
+1056af110	1056af20f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl updateTrackSegmentWithIndex:update:]	
+1056af210	1056af3df	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _insertPlaybackLayer:segment:]	
+1056af3e0	1056af753	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _addSegmentIfNeededForSegment:]	
+1056af754	1056af82f	decompiled	chunks/005/functions-000368.c		
+1056af830	1056af863	decompiled	chunks/005/functions-000368.c		
+1056af864	1056af8bf	decompiled	chunks/005/functions-000368.c	+[SCPlaybackLayerEditorImpl _defaultPlaybackLayerTypeCountsArray]	
+1056af8c0	1056af9eb	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _trackSegmentAtIndex:]	
+1056af9ec	1056afa1f	decompiled	chunks/005/functions-000368.c		
+1056afa20	1056afb83	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _firstTrackWhere:]	
+1056afb84	1056afcb7	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _errorWithMessage:]	
+1056afcb8	1056b03db	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl _assertValidStateForPlaybackLayerId:exists:segment:]	
+1056b03dc	1056b03e3	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl playbackLayerChangeObservable]	
+1056b03e4	1056b03eb	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl segmentChangeObservable]	
+1056b03ec	1056b03f3	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl snapDoc]	
+1056b03f4	1056b048f	decompiled	chunks/005/functions-000368.c	-[SCPlaybackLayerEditorImpl .cxx_destruct]	
+1056b0490	1056b0593	decompiled	chunks/005/functions-000368.c	-[SCSegmentObjects get:]	
+1056b0594	1056b05ab	decompiled	chunks/005/functions-000368.c		
+1056b05ac	1056b05eb	decompiled	chunks/005/functions-000368.c		
+1056b05ec	1056b068f	decompiled	chunks/005/functions-000368.c		
+1056b0690	1056b074f	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl initWithSnapDoc:layerEditor:]	
+1056b0750	1056b0843	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b0844	1056b084f	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl setRenderEffect:onPlaybackLayer:forFeature:renderEffectType:]	
+1056b0850	1056b0ae7	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl setRenderEffect:onPlaybackLayer:forFeature:featureTagId:renderEffectType:]	
+1056b0ae8	1056b0af3	decompiled	chunks/005/functions-000368.c		
+1056b0af4	1056b0bcb	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl addRenderEffectNode:renderEffectType:]	
+1056b0bcc	1056b0d47	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl removeRenderEffectNode:renderEffectType:]	
+1056b0d48	1056b0d93	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl removeAllRenderEffectsFromPlaybackLayerWithId:]	
+1056b0d94	1056b1137	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl removeRenderEffectNodesWhere:]	
+1056b1138	1056b135b	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl removeRenderEffectsFromPlaybackLayerWithId:renderEffectType:]	
+1056b135c	1056b1367	decompiled	chunks/005/functions-000368.c		
+1056b1368	1056b1603	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl getRenderEffectWithPlaybackLayerInput:]	
+1056b1604	1056b18d7	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl renderEffectNodesWhere:]	
+1056b18d8	1056b1ba3	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl getRenderEffectNodeWithInput:renderEffectType:]	
+1056b1ba4	1056b1f5f	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl getFilterRenderEffectNodeWithInput:]	
+1056b1f60	1056b2077	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl containsRenderEffectNodeOfType:where:]	
+1056b2078	1056b215f	decompiled	chunks/005/functions-000368.c		
+1056b2160	1056b21bf	decompiled	chunks/005/functions-000368.c		
+1056b21c0	1056b22ef	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl maxOutputIndexOfRenderEffectNodesForType:]	
+1056b22f0	1056b2663	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl _renderEffectDAGFromSceneOfType:]	
+1056b2664	1056b2833	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl _hasRenderEffectDAGFromSceneOfType:]	
+1056b2834	1056b2ccb	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl _removeRenderEffectsWithInput:renderEffectType:]	
+1056b2ccc	1056b2cd7	decompiled	chunks/005/functions-000368.c		
+1056b2cd8	1056b2cdf	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl renderEffectChangeObservable]	
+1056b2ce0	1056b2d1b	decompiled	chunks/005/functions-000368.c	-[SCRenderEffectsEditorImpl .cxx_destruct]	
+1056b2d1c	1056b2de7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl initWithSnapDoc:layerEditor:gridEditor:]	
+1056b2de8	1056b2e17	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b2e18	1056b30bb	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl addAutoCaptionsPlaybackLayerWithAutoCaptionsState:segment:]	
+1056b30bc	1056b331b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl decodeAutoCaptionsMetadata:playbackLayerId:]	
+1056b331c	1056b3417	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl autoCaptionsStateAtSegment:]	
+1056b3418	1056b347b	decompiled	chunks/005/functions-000368.c		
+1056b347c	1056b350f	decompiled	chunks/005/functions-000368.c	-[SCSnapDocAutoCaptionsEditorImpl .cxx_destruct]	
+1056b3510	1056b3517	decompiled	chunks/005/functions-000368.c		
+1056b3518	1056b37b7	decompiled	chunks/005/functions-000368.c		
+1056b37b8	1056b3883	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl initWithSnapDoc:layerEditor:gridEditor:]	
+1056b3884	1056b38b3	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b38b4	1056b3cd7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl addDrawingPlaybackLayerWithStroke:segment:]	
+1056b3cd8	1056b3d03	decompiled	chunks/005/functions-000368.c		
+1056b3d04	1056b3e63	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl drawingStrokesAtSegment:]	
+1056b3e64	1056b3ec7	decompiled	chunks/005/functions-000368.c		
+1056b3ec8	1056b3fb7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl drawingStrokeOfPlaybackLayerWithId:]	
+1056b3fb8	1056b3ff3	decompiled	chunks/005/functions-000368.c	-[SCSnapDocDrawingEditorImpl .cxx_destruct]	
+1056b3ff4	1056b432b	decompiled	chunks/005/functions-000368.c	+[SCDrawingCTItemUtil drawingStrokeFromMetadata:uniqueId:canvasWidth:]	
+1056b432c	1056b4393	decompiled	chunks/005/functions-000368.c		
+1056b4394	1056b4493	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl initWithSnapDoc:layerEditor:renderEffectsEditor:sdomEditor:]	
+1056b4494	1056b44c3	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b44c4	1056b47a7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl updateRenderEffectsWithFilter:segment:]	
+1056b47a8	1056b47fb	decompiled	chunks/005/functions-000368.c		
+1056b47fc	1056b4807	decompiled	chunks/005/functions-000368.c		
+1056b4808	1056b493b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl replaceRenderEffectsWithFilters:atSegment:]	
+1056b493c	1056b4a6f	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl deleteRenderEffectsLastFilterNodeAtSegment:]	
+1056b4a70	1056b4d43	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl deleteRenderEffectsAllFiltersNodesAtSegment:]	
+1056b4d44	1056b4d47	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl numberOfFiltersAppliedOnSegment:]	
+1056b4d48	1056b4eab	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl _findLastNodeAtSegment:]	
+1056b4eac	1056b4ee7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl _nodeCountOfSegment:]	
+1056b4ee8	1056b51eb	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl filtersAtSegment:]	
+1056b51ec	1056b57c7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl appliedFilters]	
+1056b57c8	1056b58f3	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl _renderEffectNodeInputsForSegmentIndex:]	
+1056b58f4	1056b590b	decompiled	chunks/005/functions-000368.c		
+1056b590c	1056b5a5b	decompiled	chunks/005/functions-000368.c		
+1056b5a5c	1056b5ae7	decompiled	chunks/005/functions-000368.c		
+1056b5ae8	1056b5c37	decompiled	chunks/005/functions-000368.c		
+1056b5c38	1056b5cc3	decompiled	chunks/005/functions-000368.c		
+1056b5cc4	1056b5d0b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocFiltersEditorImpl .cxx_destruct]	
+1056b5d0c	1056b5d9f	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl initWithSnapDoc:pixelWidth:defaultGridWidth:]	
+1056b5da0	1056b5de3	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl isGridSizeSet]	
+1056b5de4	1056b5e0b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl pixelHeight]	
+1056b5e0c	1056b5e3b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b5e3c	1056b5e93	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl gridProperties]	
+1056b5e94	1056b5f1b	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl pixelSize]	
+1056b5f1c	1056b5fc7	decompiled	chunks/005/functions-000368.c	-[SCSnapDocGridEditorImpl gridAspectRatio]	
+1056b5fc8	1056b60b3	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl setGridAspectRatio:]	
+1056b60b4	1056b612f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeX:]	
+1056b6130	1056b61af	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeX:]	
+1056b61b0	1056b622f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeY:]	
+1056b6230	1056b62b3	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeY:]	
+1056b62b4	1056b6323	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeRelativeX:]	
+1056b6324	1056b639b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeRelativeX:]	
+1056b639c	1056b640b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeRelativeY:]	
+1056b640c	1056b6483	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeRelativeY:]	
+1056b6484	1056b655f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodePaths:]	
+1056b6560	1056b663b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodePaths:]	
+1056b663c	1056b66f3	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeTransforms:]	
+1056b66f4	1056b67ab	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeTransforms:]	
+1056b67ac	1056b686f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl encodeTimestampsMs:]	
+1056b6870	1056b692b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl decodeTimestampsMs:]	
+1056b692c	1056b692f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl _assertSizeSet]	
+1056b6930	1056b693b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocGridEditorImpl .cxx_destruct]	
+1056b693c	1056b6c0f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl initWithSnapDoc:lock:serialSnapDocUpdatePerformer:mediaIdToAssetId:snapDocKey:snapDocManagerServices:nsDataWriterServices:temporaryFileWriterServices:mediaVideoImportServices:]	
+1056b6c10	1056b6f27	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl resetWithSnapDoc:snapDocKey:mediaIdToAssetId:]	
+1056b6f28	1056b6fcb	decompiled	chunks/005/functions-000369.c		
+1056b6fcc	1056b700f	decompiled	chunks/005/functions-000369.c		
+1056b7010	1056b7063	decompiled	chunks/005/functions-000369.c		
+1056b7064	1056b712b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl dealloc]	
+1056b712c	1056b712f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl dispose]	
+1056b7130	1056b7157	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl snapDocKey]	
+1056b7158	1056b716f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl mediaIdToAssetId]	
+1056b7170	1056b71f7	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl mediaReferenceWithId:]	
+1056b71f8	1056b732b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl mediaUrlWithId:]	
+1056b732c	1056b7373	decompiled	chunks/005/functions-000369.c		
+1056b7374	1056b777b	decompiled	chunks/005/functions-000369.c		
+1056b777c	1056b77c7	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl mediaWithId:]	
+1056b77c8	1056b77cf	decompiled	chunks/005/functions-000369.c		
+1056b77d0	1056b78eb	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl contentResultWithMediaId:]	
+1056b78ec	1056b7a23	decompiled	chunks/005/functions-000369.c		
+1056b7a24	1056b7a3b	decompiled	chunks/005/functions-000369.c		
+1056b7a3c	1056b7c23	decompiled	chunks/005/functions-000369.c		
+1056b7c24	1056b7d2b	decompiled	chunks/005/functions-000369.c		
+1056b7d2c	1056b7d9b	decompiled	chunks/005/functions-000369.c		
+1056b7d9c	1056b7ff3	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl deleteMediaWithId:]	
+1056b7ff4	1056b808f	decompiled	chunks/005/functions-000369.c		
+1056b8090	1056b8217	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl addBaseMediaWithInput:removeSoftTrim:]	
+1056b8218	1056b82ff	decompiled	chunks/005/functions-000369.c		
+1056b8300	1056b8323	decompiled	chunks/005/functions-000369.c		
+1056b8324	1056b840b	decompiled	chunks/005/functions-000369.c		
+1056b840c	1056b842f	decompiled	chunks/005/functions-000369.c		
+1056b8430	1056b862b	decompiled	chunks/005/functions-000369.c		
+1056b862c	1056b87eb	decompiled	chunks/005/functions-000369.c		
+1056b87ec	1056b8823	decompiled	chunks/005/functions-000369.c		
+1056b8824	1056b8917	decompiled	chunks/005/functions-000369.c		
+1056b8918	1056b896f	decompiled	chunks/005/functions-000369.c		
+1056b8970	1056b89af	decompiled	chunks/005/functions-000369.c		
+1056b89b0	1056b8aa3	decompiled	chunks/005/functions-000369.c		
+1056b8aa4	1056b8ab7	decompiled	chunks/005/functions-000369.c		
+1056b8ab8	1056b8af7	decompiled	chunks/005/functions-000369.c		
+1056b8af8	1056b8c27	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl addMediaWithInput:type:]	
+1056b8c28	1056b8ce3	decompiled	chunks/005/functions-000369.c		
+1056b8ce4	1056b8cf7	decompiled	chunks/005/functions-000369.c		
+1056b8cf8	1056b8e47	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl updateMediaReferenceWithInput:mediaId:]	
+1056b8e48	1056b8f13	decompiled	chunks/005/functions-000369.c		
+1056b8f14	1056b8f23	decompiled	chunks/005/functions-000369.c		
+1056b8f24	1056b8fe7	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl syncAddMediaWithInput:type:]	
+1056b8fe8	1056b9107	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl localCacheKeyWithInput:]	
+1056b9108	1056b928f	decompiled	chunks/005/functions-000369.c		
+1056b9290	1056b9793	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _importAndRemapMediaReferencesFromSnapDocs:]	
+1056b9794	1056b9a23	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _importMediaReferencesFrom:]	
+1056b9a24	1056b9cdb	decompiled	chunks/005/functions-000369.c		
+1056b9cdc	1056b9d87	decompiled	chunks/005/functions-000369.c		
+1056b9d88	1056b9dcb	decompiled	chunks/005/functions-000369.c		
+1056b9dcc	1056b9ddf	decompiled	chunks/005/functions-000369.c		
+1056b9de0	1056b9e1f	decompiled	chunks/005/functions-000369.c		
+1056b9e20	1056b9ebb	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _runInSerialQueueIfPresent:]	
+1056b9ebc	1056b9ec7	decompiled	chunks/005/functions-000369.c		
+1056b9ec8	1056b9f8b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _cloneSnapDocOnSerialQueueIfPresent]	
+1056b9f8c	1056b9fc7	decompiled	chunks/005/functions-000369.c		
+1056b9fc8	1056ba06f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _runInSerialQueueIfPresentAndWait:]	
+1056ba070	1056ba07b	decompiled	chunks/005/functions-000369.c		
+1056ba07c	1056ba0b7	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _canPerformOnSnapDocUpdatePerformer]	
+1056ba0b8	1056ba0eb	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _isDisposedCheck]	
+1056ba0ec	1056ba11b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _setDisposed]	
+1056ba11c	1056ba157	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _isComposerThread]	
+1056ba158	1056ba25f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _addMediaWithType:metadataMediaType:mediaInputBlock:mediaMetadataBlock:]	
+1056ba260	1056ba513	decompiled	chunks/005/functions-000369.c		
+1056ba514	1056ba51f	decompiled	chunks/005/functions-000369.c		
+1056ba520	1056ba71f	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _contentWriterWithInput:]	
+1056ba720	1056ba917	decompiled	chunks/005/functions-000369.c		
+1056ba918	1056ba92b	decompiled	chunks/005/functions-000369.c		
+1056ba92c	1056baa83	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _addMediaReferenceWithInputAsync:type:promise:]	
+1056baa84	1056babab	decompiled	chunks/005/functions-000369.c		
+1056babac	1056baca3	decompiled	chunks/005/functions-000369.c		
+1056baca4	1056bae4b	decompiled	chunks/005/functions-000369.c		
+1056bae4c	1056bb02b	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _addMediaReferenceWithInputBlocking:type:snapDoc:]	
+1056bb02c	1056bb10b	decompiled	chunks/005/functions-000369.c		
+1056bb10c	1056bb237	decompiled	chunks/005/functions-000369.c		
+1056bb238	1056bb2ef	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _addMediaReferenceWithContentWriterBlocking:input:type:snapDoc:]	
+1056bb2f0	1056bb673	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _addMediaReferenceWithContentWriterAsync:input:type:promise:]	
+1056bb674	1056bb7d7	decompiled	chunks/005/functions-000369.c		
+1056bb7d8	1056bb967	decompiled	chunks/005/functions-000369.c	-[SCSnapDocMediaEditorImpl _updateMediaReferenceWithInputAsync:mediaId:promise:]	
+1056bb968	1056bba87	decompiled	chunks/005/functions-000369.c		
+1056bba88	1056bbb97	decompiled	chunks/005/functions-000369.c		
+1056bbb98	1056bbd0f	decompiled	chunks/005/functions-000369.c		

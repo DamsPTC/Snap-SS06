@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1066dacfc	1066dae83	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator _notifySection:itemsDisappeared:]	
+1066dae84	1066dae8b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator pageViewDidLoad]	
+1066dae8c	1066dae93	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator pageViewWillAppear]	
+1066dae94	1066dae9b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator pageViewWillDisappear]	
+1066dae9c	1066daea3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator pageViewDidReceiveMemoryWarning]	
+1066daea4	1066daeab	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator pageViewDidAppear]	
+1066daeac	1066daeb3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator sectionsObservable]	
+1066daeb4	1066daebb	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator configureCell:indexPath:]	
+1066daebc	1066daec3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator willDisplayCell:indexPath:]	
+1066daec4	1066daed7	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator willDisplayRequiredCellPortion:indexPath:impressionSet:]	
+1066daed8	1066daedf	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator didEndDisplayingCell:indexPath:]	
+1066daee0	1066daef3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator didEndDisplayingRequiredCellPortion:indexPath:impressionSet:]	
+1066daef4	1066daefb	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator configureSupplementaryView:kind:indexPath:sectionIdentifier:]	
+1066daefc	1066daf03	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator prefetchItemsAtIndexPaths:]	
+1066daf04	1066daf0b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator cancelPrefetchingForItemsAtIndexPaths:]	
+1066daf0c	1066daf13	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator didScrollToEndForSection:]	
+1066daf14	1066db063	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator didUpdateSections:insertedIndexes:removedIndexes:movedIndexes:completion:]	
+1066db064	1066db0ab	decompiled	chunks/008/functions-000570.c		
+1066db0ac	1066db1fb	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator didUpdateSection:insertedIndexes:removedIndexes:movedIndexes:completion:]	
+1066db1fc	1066db243	decompiled	chunks/008/functions-000570.c		
+1066db244	1066db24b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator loggingConfigurationForSectionConfiguration:]	
+1066db24c	1066db2a3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator registerCollectioViewColleague:]	
+1066db2a4	1066db2ab	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator registerCategoryFetchingColleague:]	
+1066db2ac	1066db303	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator registerViewModelProviderColleague:]	
+1066db304	1066db30b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator registerExplorerPageColleague:]	
+1066db30c	1066db313	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator handleFetchError:]	
+1066db314	1066db387	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator _loggerForSection:]	
+1066db388	1066db3db	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerManualItemTrackingMediator .cxx_destruct]	
+1066db3dc	1066db543	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator initWithCategoryId:preselectedItemId:loggingColleague:networkMonitoringColleague:sectionItemsTrackingColleague:]	
+1066db544	1066db573	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator registerCollectioViewColleague:]	
+1066db574	1066db5a3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator registerCategoryFetchingColleague:]	
+1066db5a4	1066db5d3	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator registerViewModelProviderColleague:]	
+1066db5d4	1066db603	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator registerExplorerPageColleague:]	
+1066db604	1066db74b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator pageViewDidLoad]	
+1066db74c	1066db86b	decompiled	chunks/008/functions-000570.c		
+1066db86c	1066db8bb	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator pageViewWillAppear]	
+1066db8bc	1066db8fb	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator pageViewWillDisappear]	
+1066db8fc	1066db903	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator pageViewDidReceiveMemoryWarning]	
+1066db904	1066db90b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator pageViewDidAppear]	
+1066db90c	1066dba5b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator sectionsObservable]	
+1066dba5c	1066dbc33	decompiled	chunks/008/functions-000570.c		
+1066dbc34	1066dbc3f	decompiled	chunks/008/functions-000570.c		
+1066dbc40	1066dbd23	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator configureCell:indexPath:]	
+1066dbd24	1066dbe07	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator willDisplayCell:indexPath:]	
+1066dbe08	1066dbf37	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator willDisplayRequiredCellPortion:indexPath:impressionSet:]	
+1066dbf38	1066dc01f	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator didEndDisplayingCell:indexPath:]	
+1066dc020	1066dc14f	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator didEndDisplayingRequiredCellPortion:indexPath:impressionSet:]	
+1066dc150	1066dc33f	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator configureSupplementaryView:kind:indexPath:sectionIdentifier:]	
+1066dc340	1066dc417	decompiled	chunks/008/functions-000570.c		
+1066dc418	1066dc48b	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator prefetchItemsAtIndexPaths:]	
+1066dc48c	1066dc56b	decompiled	chunks/008/functions-000570.c		
+1066dc56c	1066dc5df	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator cancelPrefetchingForItemsAtIndexPaths:]	
+1066dc5e0	1066dc6bf	decompiled	chunks/008/functions-000570.c		
+1066dc6c0	1066dc7a7	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator didScrollToEndForSection:]	
+1066dc7a8	1066dca03	decompiled	chunks/008/functions-000570.c	-[SCLensExplorerMediator _sectionsMapFromIndexPaths:]	
+1066dca04	1066dca77	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator _scrollToPreselectedItemIfNeeded]	
+1066dca78	1066dcba3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator _indexPathForItemIdenfier:]	
+1066dcba4	1066dcbef	decompiled	chunks/008/functions-000571.c		
+1066dcbf0	1066dce0f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator didUpdateSections:insertedIndexes:removedIndexes:movedIndexes:completion:]	
+1066dce10	1066dcfb3	decompiled	chunks/008/functions-000571.c		
+1066dcfb4	1066dcffb	decompiled	chunks/008/functions-000571.c		
+1066dcffc	1066dd293	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator didUpdateSection:insertedIndexes:removedIndexes:movedIndexes:completion:]	
+1066dd294	1066dd2cb	decompiled	chunks/008/functions-000571.c		
+1066dd2cc	1066dd4ef	decompiled	chunks/008/functions-000571.c		
+1066dd4f0	1066dd503	decompiled	chunks/008/functions-000571.c		
+1066dd504	1066dd50b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator loggingConfigurationForSectionConfiguration:]	
+1066dd50c	1066dd513	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator handleFetchError:]	
+1066dd514	1066dd54f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator didRestoreNetworkConnection]	
+1066dd550	1066dd5c3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator _loggerForSection:]	
+1066dd5c4	1066dd65f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerMediator .cxx_destruct]	
+1066dd660	1066ddbaf	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel initWithMediator:dataStore:lensExplorerImagesDataStore:sectionHeaderProvider:actionHandler:creatorsBlocklist:viewModelConfiguration:sectionConfiguration:sectionLayoutConfiguration:lensPerformerProvider:avatarProvider:avatarImageDownloading:dynamicLayoutFetcher:dynamicLayoutBuilder:lazyDailyGameBadgeProvider:selectionTracker:performer:styleOverride:studySettings:]	
+1066ddbb0	1066ddbb3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel warmup]	
+1066ddbb4	1066ddbbb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel cancelAllDownloads]	
+1066ddbbc	1066ddbe3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel sectionConfiguration]	
+1066ddbe4	1066ddc0b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel sectionLayoutConfiguration]	
+1066ddc0c	1066ddd4f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel identifierToCellClassMap]	
+1066ddd50	1066dde5f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel supplementaryModels]	
+1066dde60	1066dde67	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel contentCount]	
+1066dde68	1066ddff7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel reuseIdentifierForIndex:]	
+1066ddff8	1066de00f	decompiled	chunks/008/functions-000571.c		
+1066de010	1066de063	decompiled	chunks/008/functions-000571.c		
+1066de064	1066de07f	decompiled	chunks/008/functions-000571.c		
+1066de080	1066de0df	decompiled	chunks/008/functions-000571.c		
+1066de0e0	1066de117	decompiled	chunks/008/functions-000571.c		
+1066de118	1066de2bf	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel sizeForIndex:]	
+1066de2c0	1066de3af	decompiled	chunks/008/functions-000571.c		
+1066de3b0	1066de593	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel prefetchItemsForIndexes:]	
+1066de594	1066de5d7	decompiled	chunks/008/functions-000571.c		
+1066de5d8	1066de7bb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel cancelPrefetchingForItemsAtIndexes:]	
+1066de7bc	1066de7ff	decompiled	chunks/008/functions-000571.c		
+1066de800	1066debdb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel configureCell:index:]	
+1066debdc	1066dedab	decompiled	chunks/008/functions-000571.c		
+1066dedac	1066dedaf	decompiled	chunks/008/functions-000571.c		
+1066dedb0	1066dee3f	decompiled	chunks/008/functions-000571.c		
+1066dee40	1066def0f	decompiled	chunks/008/functions-000571.c		
+1066def10	1066def13	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel willAppearCell:index:]	
+1066def14	1066df0cb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel didDisappearCell:index:clearMedia:]	
+1066df0cc	1066df113	decompiled	chunks/008/functions-000571.c		
+1066df114	1066df117	decompiled	chunks/008/functions-000571.c		
+1066df118	1066df1ef	decompiled	chunks/008/functions-000571.c		
+1066df1f0	1066df1f7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel configureSupplementaryView:kind:]	
+1066df1f8	1066df237	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel hasMoreItems]	
+1066df238	1066df30f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel indexOfItemWithIdentifier:]	
+1066df310	1066df577	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel lensExplorer_renderedLensViewModelsSnapshot]	
+1066df578	1066df597	decompiled	chunks/008/functions-000571.c		
+1066df598	1066df62b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel lensExplorer_activateLensViewModel:]	
+1066df62c	1066df633	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel diffIdentifier]	
+1066df634	1066df7c3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel _subscribeOnDataStoreItems]	
+1066df7c4	1066df7d7	decompiled	chunks/008/functions-000571.c		
+1066df7d8	1066df867	decompiled	chunks/008/functions-000571.c		
+1066df868	1066df9a7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel _handleDataStoreUpdatesWithItems:availableLayoutAttributes:]	
+1066df9a8	1066df9db	decompiled	chunks/008/functions-000571.c		
+1066df9dc	1066dfcef	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel _filterBlocklistedFeedItems:]	
+1066dfcf0	1066dfdaf	decompiled	chunks/008/functions-000571.c		
+1066dfdb0	1066dfeaf	decompiled	chunks/008/functions-000571.c		
+1066dfeb0	1066e0227	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel _updateViewModelsWithItems:existingViewModels:availableLayoutAttributes:]	
+1066e0228	1066e03ab	decompiled	chunks/008/functions-000571.c		
+1066e03ac	1066e04e7	decompiled	chunks/008/functions-000571.c		
+1066e04e8	1066e0557	decompiled	chunks/008/functions-000571.c		
+1066e0558	1066e0667	decompiled	chunks/008/functions-000571.c		
+1066e0668	1066e0747	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel _correctedItems:]	
+1066e0748	1066e074f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel isEmptyObservable]	
+1066e0750	1066e085f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSectionViewModel .cxx_destruct]	
+1066e0860	1066e0903	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider initWithImagesDataStore:lensPerformerProvider:]	
+1066e0904	1066e090f	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider viewModelWithStoryItem:index:sectionIndex:isTextRightToLeftDirection:]	
+1066e0910	1066e09fb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider viewModelObservableFromViewModel:]	
+1066e09fc	1066e0afb	decompiled	chunks/008/functions-000571.c		
+1066e0afc	1066e0b2f	decompiled	chunks/008/functions-000571.c		
+1066e0b30	1066e0b37	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider prefetchForViewModel:]	
+1066e0b38	1066e0bd7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider cancelPrefetchingForViewModel:]	
+1066e0bd8	1066e0daf	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider _fetchPreviewForViewModel:observer:]	
+1066e0db0	1066e0e77	decompiled	chunks/008/functions-000571.c		
+1066e0e78	1066e0ea7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerStoryViewModelProvider .cxx_destruct]	
+1066e0ea8	1066e0f1b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSIGNotificationPresenter initWithNotificationPool:]	
+1066e0f1c	1066e0fef	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSIGNotificationPresenter showDestructiveNotificationWithText:]	
+1066e0ff0	1066e0ffb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerSIGNotificationPresenter .cxx_destruct]	
+1066e0ffc	1066e11fb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator initWithRequestManager:requestProvider:responseParser:dynamicUpdateHandler:dataStore:queryStatusChecker:]	
+1066e11fc	1066e1203	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator isEmpty]	
+1066e1204	1066e120b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator requestForQuery:]	
+1066e120c	1066e12a3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator handleResponse:forQueryResult:]	
+1066e12a4	1066e12ab	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator handleReceivedResponseFeeds:forQueryResult:]	
+1066e12ac	1066e14db	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066e14dc	1066e14e3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator handleError:forQueryResult:]	
+1066e14e4	1066e158b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator reset]	
+1066e158c	1066e15c3	decompiled	chunks/008/functions-000571.c		
+1066e15c4	1066e15cb	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator canPerformQuery:]	
+1066e15cc	1066e15d3	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator currentQuery]	
+1066e15d4	1066e15db	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator setCurrentQuery:]	
+1066e15dc	1066e1867	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator resultsForQuery:updatingBlock:]	
+1066e1868	1066e1873	decompiled	chunks/008/functions-000571.c		
+1066e1874	1066e1917	decompiled	chunks/008/functions-000571.c		
+1066e1918	1066e1963	decompiled	chunks/008/functions-000571.c		
+1066e1964	1066e1a9b	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator _didUpdateDataStoreWithQuery:]	
+1066e1a9c	1066e1bbf	decompiled	chunks/008/functions-000571.c		
+1066e1bc0	1066e1cf7	decompiled	chunks/008/functions-000571.c	-[SCLensExplorerBaseQueryCoordinator _sendQuery:request:]	
+1066e1cf8	1066e1dcb	decompiled	chunks/008/functions-000572.c		
+1066e1dcc	1066e1dff	decompiled	chunks/008/functions-000572.c		
+1066e1e00	1066e1f37	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator _handleRequestResult:query:]	
+1066e1f38	1066e2063	decompiled	chunks/008/functions-000572.c		
+1066e2064	1066e2187	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator _notifyUpdatingBlocksWithResult:]	
+1066e2188	1066e2203	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator _queryResultWithQuery:source:]	
+1066e2204	1066e2243	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator _addPendingUpdatingBlock:]	
+1066e2244	1066e224b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator isLoading]	
+1066e224c	1066e2253	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator requestProvider]	
+1066e2254	1066e225b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator responseParser]	
+1066e225c	1066e22df	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerBaseQueryCoordinator .cxx_destruct]	
+1066e22e0	1066e2383	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesAggregatorMapper initWithCategoriesFactory:selectedFeedId:]	
+1066e2384	1066e2563	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesAggregatorMapper categoriesAggregatorFromResponseFeedModels:]	
+1066e2564	1066e2693	decompiled	chunks/008/functions-000572.c		
+1066e2694	1066e269b	decompiled	chunks/008/functions-000572.c		
+1066e269c	1066e2767	decompiled	chunks/008/functions-000572.c		
+1066e2768	1066e2797	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesAggregatorMapper .cxx_destruct]	
+1066e2798	1066e298b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator initWithRequestManager:queryFactory:categoriesFactory:categoriesAggregator:requestProvider:responseParser:dynamicUpdateHandler:queryStatusChecker:configuration:]	
+1066e298c	1066e29c7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator categoriesResponse]	
+1066e29c8	1066e2abb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator _requestCategoriesWithSubject:]	
+1066e2abc	1066e2baf	decompiled	chunks/008/functions-000572.c		
+1066e2bb0	1066e2d27	decompiled	chunks/008/functions-000572.c		
+1066e2d28	1066e2db7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator _fetchCategoriesQuery]	
+1066e2db8	1066e2e23	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator requestForQuery:]	
+1066e2e24	1066e3003	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator handleReceivedResponseFeeds:forQueryResult:]	
+1066e3004	1066e314b	decompiled	chunks/008/functions-000572.c		
+1066e314c	1066e3153	decompiled	chunks/008/functions-000572.c		
+1066e3154	1066e323b	decompiled	chunks/008/functions-000572.c		
+1066e323c	1066e324b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator categoriesAggregator]	
+1066e324c	1066e32bb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchQueryCoordinator .cxx_destruct]	
+1066e32bc	1066e33cb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchRefreshQueryCoordinator initWithRequestManager:requestProvider:responseParser:dynamicUpdateHandler:queryStatusChecker:sectionsDataStore:queryFactory:]	
+1066e33cc	1066e350f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchRefreshQueryCoordinator refreshSectionsWithIdentifiers:]	
+1066e3510	1066e3557	decompiled	chunks/008/functions-000572.c		
+1066e3558	1066e35c7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchRefreshQueryCoordinator requestForQuery:]	
+1066e35c8	1066e36e7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchRefreshQueryCoordinator _refreshSectionsWithConfigurations:]	
+1066e36e8	1066e36ef	decompiled	chunks/008/functions-000572.c		
+1066e36f0	1066e3707	decompiled	chunks/008/functions-000572.c		
+1066e3708	1066e3757	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerCategoriesBatchRefreshQueryCoordinator .cxx_destruct]	
+1066e3758	1066e37fb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerContainerFeedsBatchUpdateHandler handleFeeds:forQueryResult:]	
+1066e37fc	1066e3807	decompiled	chunks/008/functions-000572.c		
+1066e3808	1066e380f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerContainerFeedsBatchUpdateHandler handleItems:forFeedId:remoteState:queryResult:]	
+1066e3810	1066e39cb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerContainerFeedsBatchUpdateHandler _containerSubfeedsFromFeed:]	
+1066e39cc	1066e3b6f	decompiled	chunks/008/functions-000572.c		
+1066e3b70	1066e3b87	decompiled	chunks/008/functions-000572.c		
+1066e3b88	1066e3bbf	decompiled	chunks/008/functions-000572.c		
+1066e3bc0	1066e3c4f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerContainerFeedsBatchUpdateHandler _emptyContainerFeedItemFromContainer:]	
+1066e3c50	1066e3c5b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerContainerFeedsBatchUpdateHandler .cxx_destruct]	
+1066e3c5c	1066e3dcb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler handleFeeds:forQueryResult:]	
+1066e3dcc	1066e3f1f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler handleItems:forFeedId:remoteState:queryResult:]	
+1066e3f20	1066e4207	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler _storeSectionForFeed:]	
+1066e4208	1066e421f	decompiled	chunks/008/functions-000572.c		
+1066e4220	1066e42bb	decompiled	chunks/008/functions-000572.c		
+1066e42bc	1066e42c3	decompiled	chunks/008/functions-000572.c		
+1066e42c4	1066e4367	decompiled	chunks/008/functions-000572.c		
+1066e4368	1066e45c3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler _updateCoordinatorForFeed:queryResult:]	
+1066e45c4	1066e45e7	decompiled	chunks/008/functions-000572.c		
+1066e45e8	1066e45eb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler _logInfoForHandledFeed:queryResult:]	
+1066e45ec	1066e470f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler _isContainerFeed:withinFeeds:]	
+1066e4710	1066e47f3	decompiled	chunks/008/functions-000572.c		
+1066e47f4	1066e487b	decompiled	chunks/008/functions-000572.c		
+1066e487c	1066e4893	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler coordinatorFactory]	
+1066e4894	1066e489f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler setCoordinatorFactory:]	
+1066e48a0	1066e48d7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicBatchUpdateHandler .cxx_destruct]	
+1066e48d8	1066e4ad3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler handleFeeds:forQueryResult:]	
+1066e4ad4	1066e4b27	decompiled	chunks/008/functions-000572.c		
+1066e4b28	1066e4b2f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler handleItems:forFeedId:remoteState:queryResult:]	
+1066e4b30	1066e4c37	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler _heroItemFromFeedItem:]	
+1066e4c38	1066e4c4f	decompiled	chunks/008/functions-000572.c		
+1066e4c50	1066e4cf3	decompiled	chunks/008/functions-000572.c		
+1066e4cf4	1066e4d63	decompiled	chunks/008/functions-000572.c		
+1066e4d64	1066e4dc3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler _dynamicLayoutIdsFromFeeds:]	
+1066e4dc4	1066e4eab	decompiled	chunks/008/functions-000572.c		
+1066e4eac	1066e4fc3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler _handleLayoutContainerAttributes:responseFeeds:forQueryResult:]	
+1066e4fc4	1066e4fcb	decompiled	chunks/008/functions-000572.c		
+1066e4fcc	1066e512f	decompiled	chunks/008/functions-000572.c		
+1066e5130	1066e51b3	decompiled	chunks/008/functions-000572.c		
+1066e51b4	1066e51fb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerDynamicLayoutBatchUpdateHandler .cxx_destruct]	
+1066e51fc	1066e524b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerFeedLensesBatchUpdateHandler feedResponse]	
+1066e524c	1066e52db	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerFeedLensesBatchUpdateHandler handleFeeds:forQueryResult:]	
+1066e52dc	1066e52e3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerFeedLensesBatchUpdateHandler handleItems:forFeedId:remoteState:queryResult:]	
+1066e52e4	1066e5313	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerFeedLensesBatchUpdateHandler .cxx_destruct]	
+1066e5314	1066e54bf	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator initWithBaseCategoriesProvider:batchUpdateHandler:feedModelPersisting:categoriesAggregatorMapper:queryFactory:performer:configuration:prefetchPreselectedFeedEnabled:]	
+1066e54c0	1066e587f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator categoriesResponse]	
+1066e5880	1066e58eb	decompiled	chunks/008/functions-000572.c		
+1066e58ec	1066e599f	decompiled	chunks/008/functions-000572.c		
+1066e59a0	1066e59ab	decompiled	chunks/008/functions-000572.c		
+1066e59ac	1066e5a8b	decompiled	chunks/008/functions-000572.c		
+1066e5a8c	1066e5a97	decompiled	chunks/008/functions-000572.c		
+1066e5a98	1066e5b5f	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator categoriesAggregator]	
+1066e5b60	1066e5c27	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _localFeedsObservable]	
+1066e5c28	1066e5cf7	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _mapCacheToBatchResponseObservable:]	
+1066e5cf8	1066e5e2f	decompiled	chunks/008/functions-000572.c		
+1066e5e30	1066e5edb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _handleCacheFeedModels:]	
+1066e5edc	1066e5f5b	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _categoriesQuery]	
+1066e5f5c	1066e6047	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _isValidFetchResult:allowInProgressState:]	
+1066e6048	1066e60fb	decompiled	chunks/008/functions-000572.c		
+1066e60fc	1066e610b	decompiled	chunks/008/functions-000572.c		
+1066e610c	1066e61a3	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator _isValidAggregator:]	
+1066e61a4	1066e6283	decompiled	chunks/008/functions-000572.c	+[SCLensExplorerLocalCategoriesBatchQueryCoordinator _emptyResultError]	
+1066e6284	1066e62fb	decompiled	chunks/008/functions-000572.c	-[SCLensExplorerLocalCategoriesBatchQueryCoordinator .cxx_destruct]	
+1066e62fc	1066e63e7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerPersistingBatchUpdateHandler handleFeeds:forQueryResult:]	
+1066e63e8	1066e63ef	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerPersistingBatchUpdateHandler handleItems:forFeedId:remoteState:queryResult:]	
+1066e63f0	1066e656f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerPersistingBatchUpdateHandler _shouldUpdatePersistenceForQueryResult:]	
+1066e6570	1066e659f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerPersistingBatchUpdateHandler .cxx_destruct]	
+1066e65a0	1066e6687	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSingleCategoryRefreshManager initWithQueryCoordinatorFactory:sectionsDataStore:queryFactory:]	
+1066e6688	1066e67ef	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSingleCategoryRefreshManager refreshSectionsWithIdentifiers:]	
+1066e67f0	1066e693f	decompiled	chunks/008/functions-000573.c		
+1066e6940	1066e6943	decompiled	chunks/008/functions-000573.c		
+1066e6944	1066e698b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSingleCategoryRefreshManager .cxx_destruct]	
+1066e698c	1066e6b77	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory initWithqRequestProvider:responseParser:requestManager:queryFactory:queryCoordinatorFactory:categoriesFactory:dynamicUpdateHandler:context:mixerNamespaceServices:lensGatorEnabled:mixerNamespaceCacheOptimizationEnabled:gamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066e6b78	1066e6df7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory categoriesProviderWithConfiguration:]	
+1066e6df8	1066e6e2f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory reset]	
+1066e6e30	1066e6ebf	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory batchQueryStatusChecker]	
+1066e6ec0	1066e6ee7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory _shouldPrefetchPreselectedFeed]	
+1066e6ee8	1066e6f7f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchFactory .cxx_destruct]	
+1066e6f80	1066e715b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchRefreshFactory initWithRequestManager:requestProvider:responseParser:dynamicUpdateHandler:sectionsDataStore:queryFactory:queryCoordinatorFactory:mixerNamespaceServices:lensGatorEnabled:mixerNamespaceCacheOptimizationEnabled:gamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066e715c	1066e7277	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchRefreshFactory categoriesBatchRefresher]	
+1066e7278	1066e72b3	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchRefreshFactory _queryStatusChecker]	
+1066e72b4	1066e72bb	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchRefreshFactory _isMocksAvailable]	
+1066e72bc	1066e7333	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerCategoriesBatchRefreshFactory .cxx_destruct]	
+1066e7334	1066e7433	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerFavoritesQueryCoordinatorFactory initWithBaseQueryCoordinatorFactory:dataStoreFactory:lensFavoritesUpdater:lensFavoritesMockedObservable:]	
+1066e7434	1066e74b7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerFavoritesQueryCoordinatorFactory lensQueryCoordinatorWithSectionIdentifier:]	
+1066e74b8	1066e76c7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerFavoritesQueryCoordinatorFactory lensFavoritesQueryCoordinatorWithSectionIdentifier:]	
+1066e76c8	1066e7717	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerFavoritesQueryCoordinatorFactory reset]	
+1066e7718	1066e776b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerFavoritesQueryCoordinatorFactory .cxx_destruct]	
+1066e776c	1066e78c7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalCategoriesBatchFactory initWithBaseCategoriesProviderFactory:feedModelsStorage:batchUpdateHandler:queryFactory:categoriesFactory:performerProvider:context:]	
+1066e78c8	1066e7a13	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalCategoriesBatchFactory categoriesProviderWithConfiguration:]	
+1066e7a14	1066e7a1b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalCategoriesBatchFactory reset]	
+1066e7a1c	1066e7a43	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalCategoriesBatchFactory _shouldPrefetchPreselectedFeed]	
+1066e7a44	1066e7aa3	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalCategoriesBatchFactory .cxx_destruct]	
+1066e7aa4	1066e7b6f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalQueryCoordinatorFactory initWithBaseQueryCoordinatorFactory:feedModelsStorage:dynamicUpdateHandler:]	
+1066e7b70	1066e7bef	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalQueryCoordinatorFactory lensQueryCoordinatorWithSectionIdentifier:]	
+1066e7bf0	1066e7bf7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalQueryCoordinatorFactory reset]	
+1066e7bf8	1066e7c33	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerLocalQueryCoordinatorFactory .cxx_destruct]	
+1066e7c34	1066e7e03	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryCoordinatorFactory initWithRequestManager:requestProvider:responseParser:dataStoreFactory:dynamicUpdateHandler:selectedBatchStatusCheckerFactory:mixerNamespaceServices:lensGatorEnabled:mixerNamespaceCacheOptimizationEnabled:gamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066e7e04	1066e801f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryCoordinatorFactory lensQueryCoordinatorWithSectionIdentifier:]	
+1066e8020	1066e80ab	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryCoordinatorFactory categoriesQueryStatusCheckerWithSectionIdentifier:]	
+1066e80ac	1066e80ef	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryCoordinatorFactory reset]	
+1066e80f0	1066e8167	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryCoordinatorFactory .cxx_destruct]	
+1066e8168	1066e820b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryStatusUpdatingCategoriesBatchFactory initWithBaseCategoriesProviderFactory:selectedBatchStatusCheckerFactory:]	
+1066e820c	1066e826f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryStatusUpdatingCategoriesBatchFactory categoriesProviderWithConfiguration:]	
+1066e8270	1066e8297	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryStatusUpdatingCategoriesBatchFactory reset]	
+1066e8298	1066e82c7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerQueryStatusUpdatingCategoriesBatchFactory .cxx_destruct]	
+1066e82c8	1066e833b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSubscriptionsQueryCoordinatorFactory initWithBaseQueryCoordinatorFactory:]	
+1066e833c	1066e83b3	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSubscriptionsQueryCoordinatorFactory lensQueryCoordinatorWithSectionIdentifier:]	
+1066e83b4	1066e83bb	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSubscriptionsQueryCoordinatorFactory reset]	
+1066e83bc	1066e83c7	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerSubscriptionsQueryCoordinatorFactory .cxx_destruct]	
+1066e83c8	1066e841f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerStoredInteractionHistoryProvider interactionHistory]	
+1066e8420	1066e842b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerStoredInteractionHistoryProvider .cxx_destruct]	
+1066e842c	1066e8533	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockedContainerItemWithContainerId:]	
+1066e8534	1066e8663	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockedDynamicContainerItemWithContainerId:]	
+1066e8664	1066e8a73	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockLensTopicContainerWithContainerId:]	
+1066e8a74	1066e8bbf	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockCreatorContainerWithContainerId:creatorItems:]	
+1066e8bc0	1066e8c17	decompiled	chunks/008/functions-000573.c		
+1066e8c18	1066e8d4b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockedHeroTileContainerWithContainerId:]	
+1066e8d4c	1066e8e9f	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems mockedTaxonomyContainer]	
+1066e8ea0	1066e8eaf	decompiled	chunks/008/functions-000573.c		
+1066e8eb0	1066e9507	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _mockedContainerLensItemsWithAddAttribution:]	
+1066e9508	1066e985f	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _mockedTaxonomyContainerItems]	
+1066e9860	1066e992b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _updateLoggingInfoForCreatorItem:]	
+1066e992c	1066e993b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _containerLayoutOrientation]	
+1066e993c	1066e99b3	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _defaultOrthogonalRenderStrategy]	
+1066e99b4	1066e9a2b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _iconsOrthogonalRenderStrategy]	
+1066e9a2c	1066e9aaf	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _updatedLoggingInfoFromLoggingInfo:withContainerId:]	
+1066e9ab0	1066e9adb	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerContainerKarmaItems _noMoreItemsRemoteState]	
+1066e9adc	1066e9b67	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerHeroTileKarmaHelpers heroItemImageElementWithId:url:]	
+1066e9b68	1066e9bf3	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerHeroTileKarmaHelpers heroItemImageElementWithId:predefinedIcon:]	
+1066e9bf4	1066e9c57	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerHeroTileKarmaHelpers heroItemTextElementWithId:text:predefinedIcon:]	
+1066e9c58	1066ea553	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedLensItems]	
+1066ea554	1066ea59f	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedLensItems]	
+1066ea5a0	1066ea5af	decompiled	chunks/008/functions-000573.c		
+1066ea5b0	1066ea5fb	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedCreatorItems]	
+1066ea5fc	1066ea60b	decompiled	chunks/008/functions-000573.c		
+1066ea60c	1066ead13	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems _mockedCreatorItems]	
+1066ead14	1066eae5b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedWithContainerItems]	
+1066eae5c	1066eaeeb	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedWithDynamicContainerItems]	
+1066eaeec	1066eb193	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedModelsWithPrefetchedItems:]	
+1066eb194	1066eb3bb	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedModelsForARBarWithRecentFeed:defaultIdentifier:]	
+1066eb3bc	1066eb4cb	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedModelsForPostCaptureARBar]	
+1066eb4cc	1066eb62b	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedFeedModelsForTokenPage]	
+1066eb62c	1066eb7e7	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedCreatorsFeedModelsWithSubscription:]	
+1066eb7e8	1066eb883	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems mockedLensCollectionFeedWithCollectionId:]	
+1066eb884	1066eb8a3	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems _categoryFeedModelWithIdentifier:name:subtitleDisplayName:isDefault:subcategoriesData:items:]	
+1066eb8a4	1066eba33	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems _categoryFeedModelWithIdentifier:name:subtitleDisplayName:isDefault:subcategoriesData:items:feedActivation:]	
+1066eba34	1066ebb97	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerKarmaItems _subcategoryFeedModelWithIdentifier:name:contentType:items:]	
+1066ebb98	1066ebd0b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator initWithQueryCoordinatorFactory:queryFactory:categoriesFactory:categoriesAggregator:dynamicUpdateHandler:configuration:]	
+1066ebd0c	1066ebd13	decompiled	chunks/008/functions-000573.c	+[SCLensExplorerMockedBatchQueryCoordinator isAvailable]	
+1066ebd14	1066ebd4f	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator categoriesResponse]	
+1066ebd50	1066ec60b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator _requestCategoriesOnObserver:]	
+1066ec60c	1066ec707	decompiled	chunks/008/functions-000573.c		
+1066ec708	1066ec70f	decompiled	chunks/008/functions-000573.c		
+1066ec710	1066ec7df	decompiled	chunks/008/functions-000573.c		
+1066ec7e0	1066ec857	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator _batchResponseWithAggregator:]	
+1066ec858	1066ec87b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator _prefetchedFeedItems]	
+1066ec87c	1066ec95b	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator _requestShouldFailError]	
+1066ec95c	1066ec963	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator categoriesAggregator]	
+1066ec964	1066ec9cb	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedBatchQueryCoordinator .cxx_destruct]	
+1066ec9cc	1066ecb07	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedFavoritesQueryCoordinator initWithBaseQueryCoordinator:lensDataStore:queryStatusChecker:lensFavoritesUpdater:favoritesMockedObservable:favoritesUpdatePerformer:]	
+1066ecb08	1066ecbd3	decompiled	chunks/008/functions-000573.c	-[SCLensExplorerMockedFavoritesQueryCoordinator resultsForQuery:updatingBlock:]	
+1066ecbd4	1066ecc8f	decompiled	chunks/008/functions-000573.c		
+1066ecc90	1066ecc97	decompiled	chunks/008/functions-000574.c	+[SCLensExplorerMockedFavoritesQueryCoordinator isAvailable]	
+1066ecc98	1066ecc9b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066ecc9c	1066eccab	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator currentQuery]	
+1066eccac	1066eccbb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator canPerformQuery:]	
+1066eccbc	1066ecccb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator isEmpty]	
+1066ecccc	1066eccdb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator reset]	
+1066eccdc	1066ecdff	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator _handleQuery:updatingBlock:]	
+1066ece00	1066ecf27	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator _setupFavoritesObservable:]	
+1066ecf28	1066ecfc3	decompiled	chunks/008/functions-000574.c		
+1066ecfc4	1066ed3a7	decompiled	chunks/008/functions-000574.c		
+1066ed3a8	1066ed3b7	decompiled	chunks/008/functions-000574.c		
+1066ed3b8	1066ed41b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator _updateDataStoreWithRegularLenses]	
+1066ed41c	1066ed427	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator setCurrentQuery:]	
+1066ed428	1066ed437	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator isLoading]	
+1066ed438	1066ed4a7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedFavoritesQueryCoordinator .cxx_destruct]	
+1066ed4a8	1066ed657	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator initWithRealQueryCoordinator:queryStatusChecker:dataStore:dynamicUpdateHandler:corrdinatorSectionIdentifier:]	
+1066ed658	1066ed73b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator resultsForQuery:updatingBlock:]	
+1066ed73c	1066ed743	decompiled	chunks/008/functions-000574.c	+[SCLensExplorerMockedQueryCoordinator isAvailable]	
+1066ed744	1066ed81f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066ed820	1066ed85f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator currentQuery]	
+1066ed860	1066ed997	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator canPerformQuery:]	
+1066ed998	1066ed9d7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator isEmpty]	
+1066ed9d8	1066eda07	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator reset]	
+1066eda08	1066edb43	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _updateDataStoreWithRegularLensesForQuery:]	
+1066edb44	1066edbc3	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _updateDataStoreWithCreatorItems]	
+1066edbc4	1066edbcb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _realResultsForQuery:updatingBlock:]	
+1066edbcc	1066ede17	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _mockedResultsForQuery:updatingBlock:]	
+1066ede18	1066edf1f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _shouldOverrideResultsForQuery:]	
+1066edf20	1066edf33	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _fallbackToRealCoordinator]	
+1066edf34	1066ee05b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator _reloadRealSubscription]	
+1066ee05c	1066ee063	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator setCurrentQuery:]	
+1066ee064	1066ee06b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator isLoading]	
+1066ee06c	1066ee0e3	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerMockedQueryCoordinator .cxx_destruct]	
+1066ee0e4	1066ee0eb	decompiled	chunks/008/functions-000574.c	+[SCStoriesThumbnailCoordinatorMock isAvailable]	
+1066ee0ec	1066ee0f3	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock addListener:]	
+1066ee0f4	1066ee107	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock addThumbnail:thumbnailMedia:expirationDate:completionBlock:]	
+1066ee108	1066ee11b	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock addThumbnailFromImage:thumbnailInfo:expirationDate:completionBlock:]	
+1066ee11c	1066ee1d7	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock queryThumbnailForThumbnailInfo:completionQueue:completion:]	
+1066ee1d8	1066ee1eb	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock removeAllThumbnailsWithCompletion:]	
+1066ee1ec	1066ee1ef	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock removeListener:]	
+1066ee1f0	1066ee1f3	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock removeThumbnailsForSnapMediaCacheKey:]	
+1066ee1f4	1066ee21f	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock retrieveThumbnailFromContentDelivery:completion:]	
+1066ee220	1066ee223	decompiled	chunks/008/functions-000574.c	-[SCStoriesThumbnailCoordinatorMock updateWithMediaProvider:]	
+1066ee224	1066ee337	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator initWithBaseQueryCoordinator:lensDataStore:lensFavoritesUpdater:favoritesUpdatePerformer:]	
+1066ee338	1066ee33f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator isEmpty]	
+1066ee340	1066ee347	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator isLoading]	
+1066ee348	1066ee34f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator currentQuery]	
+1066ee350	1066ee357	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator setCurrentQuery:]	
+1066ee358	1066ee35f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator canPerformQuery:]	
+1066ee360	1066ee367	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator resultsForQuery:updatingBlock:]	
+1066ee368	1066ee43f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066ee440	1066ee447	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator reset]	
+1066ee448	1066ee61f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator _observeFavoritesDataStores]	
+1066ee620	1066ee6b3	decompiled	chunks/008/functions-000574.c		
+1066ee6b4	1066ee723	decompiled	chunks/008/functions-000574.c		
+1066ee724	1066ee7ff	decompiled	chunks/008/functions-000574.c		
+1066ee800	1066ee88f	decompiled	chunks/008/functions-000574.c		
+1066ee890	1066ee93b	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator _synchronizeFavoritesData:requestId:]	
+1066ee93c	1066eea27	decompiled	chunks/008/functions-000574.c		
+1066eea28	1066eea3f	decompiled	chunks/008/functions-000574.c		
+1066eea40	1066eea8f	decompiled	chunks/008/functions-000574.c		
+1066eea90	1066eeafb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerFavoritesQueryCoordinator .cxx_destruct]	
+1066eeafc	1066eebd7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator initWithQueryCoordinator:feedModelsStorage:dynamicUpdateHandler:sectionId:]	
+1066eebd8	1066eedbf	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator resultsForQuery:updatingBlock:]	
+1066eedc0	1066eee9f	decompiled	chunks/008/functions-000574.c		
+1066eeea0	1066eeea7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator isEmpty]	
+1066eeea8	1066eeeaf	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator isLoading]	
+1066eeeb0	1066eeeb7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator canPerformQuery:]	
+1066eeeb8	1066eeebf	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator currentQuery]	
+1066eeec0	1066eeec7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator setCurrentQuery:]	
+1066eeec8	1066eeecf	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066eeed0	1066eef07	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator reset]	
+1066eef08	1066ef063	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator _setupCachedItemsObserverForQuery:completionHandler:]	
+1066ef064	1066ef14b	decompiled	chunks/008/functions-000574.c		
+1066ef14c	1066ef187	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator _isObservingCachedItems]	
+1066ef188	1066ef1e7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator _setCachedItemsObserver:]	
+1066ef1e8	1066ef233	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator _cancelCachedItemsObservation]	
+1066ef234	1066ef2cf	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator _isCacheDataValidWithFeedModels:]	
+1066ef2d0	1066ef2db	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator isFeedsDataHandled]	
+1066ef2dc	1066ef2e3	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator setIsFeedsDataHandled:]	
+1066ef2e4	1066ef337	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerLocalQueryCoordinator .cxx_destruct]	
+1066ef338	1066ef3fb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator initWithRequestManager:dataStore:remoteStateProvider:queryStatusChecker:requestProvider:responseParser:dynamicUpdateHandler:]	
+1066ef3fc	1066ef4bb	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator requestForQuery:]	
+1066ef4bc	1066ef56f	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066ef570	1066ef663	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator canPerformQuery:]	
+1066ef664	1066ef6af	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator reset]	
+1066ef6b0	1066ef6c3	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator initialRequestCompleted]	
+1066ef6c4	1066ef6d3	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator setInitialRequestCompleted:]	
+1066ef6d4	1066ef6e7	decompiled	chunks/008/functions-000574.c	-[SCLensExplorerRankingLensesQueryCoordinator .cxx_destruct]	
+1066ef6e8	1066ef8ef	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator initWithMixerNamespaceServices:dataMapper:dynamicUpdateHandler:dataStore:queryStatusChecker:mixerNamespaceCacheOptimizationEnabled:]	
+1066ef8f0	1066ef8f7	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator isEmpty]	
+1066ef8f8	1066ef8fb	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator handleError:forQueryResult:]	
+1066ef8fc	1066efa03	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator handleReceivedMixerNamespaceData:forQueryResult:]	
+1066efa04	1066efacb	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator handleReceivedMixerFeeds:namespaceData:forQueryResult:]	
+1066efacc	1066efcdb	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066efcdc	1066efd83	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator reset]	
+1066efd84	1066efda3	decompiled	chunks/008/functions-000574.c		
+1066efda4	1066efdab	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator canPerformQuery:]	
+1066efdac	1066efdb3	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator currentQuery]	
+1066efdb4	1066efdbb	decompiled	chunks/008/functions-000574.c	-[SCMixerBaseQueryCoordinator setCurrentQuery:]	
+1066efdbc	1066f0047	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator resultsForQuery:updatingBlock:]	
+1066f0048	1066f0053	decompiled	chunks/008/functions-000575.c		
+1066f0054	1066f00eb	decompiled	chunks/008/functions-000575.c		
+1066f00ec	1066f0117	decompiled	chunks/008/functions-000575.c		
+1066f0118	1066f02cf	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _sendMixerQuery:]	
+1066f02d0	1066f07c3	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _observeMixerService:forQuery:]	
+1066f07c4	1066f07e3	decompiled	chunks/008/functions-000575.c		
+1066f07e4	1066f088b	decompiled	chunks/008/functions-000575.c		
+1066f088c	1066f08b3	decompiled	chunks/008/functions-000575.c		
+1066f08b4	1066f099f	decompiled	chunks/008/functions-000575.c		
+1066f09a0	1066f0b7b	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _createMixerServiceForQuery:]	
+1066f0b7c	1066f0bc7	decompiled	chunks/008/functions-000575.c		
+1066f0bc8	1066f0c33	decompiled	chunks/008/functions-000575.c	+[SCMixerBaseQueryCoordinator _isBatchRequest:]	
+1066f0c34	1066f0cc3	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _groupIdForQuery:]	
+1066f0cc4	1066f0ddf	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _createMixerServiceWithNamespaces:groupId:]	
+1066f0de0	1066f0eaf	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _handleMixerNamespaceData:query:]	
+1066f0eb0	1066f0f1f	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _handleMixerFeeds:query:]	
+1066f0f20	1066f0fcb	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _handleMixerFeeds:namespaceData:query:]	
+1066f0fcc	1066f10a3	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _handleMixerError:query:]	
+1066f10a4	1066f11cf	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _notifyUpdatingBlocksWithResult:]	
+1066f11d0	1066f124b	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _queryResultWithQuery:source:]	
+1066f124c	1066f128b	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator _addPendingUpdatingBlock:]	
+1066f128c	1066f12e3	decompiled	chunks/008/functions-000575.c	+[SCMixerBaseQueryCoordinator _logStringFromNamespaces:]	
+1066f12e4	1066f12eb	decompiled	chunks/008/functions-000575.c		
+1066f12ec	1066f12f3	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator isLoading]	
+1066f12f4	1066f1377	decompiled	chunks/008/functions-000575.c	-[SCMixerBaseQueryCoordinator .cxx_destruct]	
+1066f1378	1066f156b	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator initWithMixerNamespaceServices:dataMapper:queryFactory:categoriesFactory:categoriesAggregator:dynamicUpdateHandler:queryStatusChecker:configuration:mixerNamespaceCacheOptimizationEnabled:]	
+1066f156c	1066f15a3	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator categoriesResponse]	
+1066f15a4	1066f166b	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator _requestCategories]	
+1066f166c	1066f16fb	decompiled	chunks/008/functions-000575.c		
+1066f16fc	1066f16ff	decompiled	chunks/008/functions-000575.c		
+1066f1700	1066f1753	decompiled	chunks/008/functions-000575.c		
+1066f1754	1066f17e3	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator _fetchCategoriesQuery]	
+1066f17e4	1066f1c8b	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator handleReceivedMixerFeeds:namespaceData:forQueryResult:]	
+1066f1c8c	1066f1d3b	decompiled	chunks/008/functions-000575.c		
+1066f1d3c	1066f1d73	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator handleReceivedMixerNamespaceData:withFeeds:forQueryResult:]	
+1066f1d74	1066f1d83	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator categoriesAggregator]	
+1066f1d84	1066f1e03	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchQueryCoordinator .cxx_destruct]	
+1066f1e04	1066f1f13	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchRefreshQueryCoordinator initWithMixerNamespaceServices:dataMapper:dynamicUpdateHandler:queryStatusChecker:sectionsDataStore:queryFactory:mixerNamespaceCacheOptimizationEnabled:]	
+1066f1f14	1066f2057	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchRefreshQueryCoordinator refreshSectionsWithIdentifiers:]	
+1066f2058	1066f209f	decompiled	chunks/008/functions-000575.c		
+1066f20a0	1066f21bf	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchRefreshQueryCoordinator _refreshSectionsWithConfigurations:]	
+1066f21c0	1066f21c7	decompiled	chunks/008/functions-000575.c		
+1066f21c8	1066f21df	decompiled	chunks/008/functions-000575.c		
+1066f21e0	1066f222f	decompiled	chunks/008/functions-000575.c	-[SCMixerCategoriesBatchRefreshQueryCoordinator .cxx_destruct]	
+1066f2230	1066f223b	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper init]	
+1066f223c	1066f228b	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper initWithGamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066f228c	1066f2607	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mapMixerFeedsWithEmptyFeedItems:remoteState:]	
+1066f2608	1066f27cf	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mapMixerNamespaceDataToLensItems:]	
+1066f27d0	1066f27d3	decompiled	chunks/008/functions-000575.c		
+1066f27d4	1066f2847	decompiled	chunks/008/functions-000575.c		
+1066f2848	1066f292f	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mapMixerRequestMetadataToRemoteState:]	
+1066f2930	1066f2a67	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mapMixerRenderStrategyToLensExplorerRenderStrategy:]	
+1066f2a68	1066f2a7b	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper _mapMixerLensTileLayout:]	
+1066f2a7c	1066f2a8b	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mixerGroupIdForContext:]	
+1066f2a8c	1066f2acb	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper mixerGroupIdForContext:batchRequest:]	
+1066f2acc	1066f2aeb	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper publishesCategoriesFromFeedsForGroupId:]	
+1066f2aec	1066f2b13	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper _usesContextGroupForContext:batchRequest:]	
+1066f2b14	1066f2b57	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper _mapMixerOrientationToLensExplorerOrientation:]	
+1066f2b58	1066f2b63	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper _mapMixerContentTypeToLensExplorerContentType:]	
+1066f2b64	1066f2bf3	decompiled	chunks/008/functions-000575.c	-[SCMixerDataMapper arBarNamespaceForGatorNamespace:]	
+1066f2bf4	1066f2c47	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator initWithMixerNamespaceServices:dataMapper:dataStore:queryStatusChecker:dynamicUpdateHandler:mixerNamespaceCacheOptimizationEnabled:]	
+1066f2c48	1066f2cfb	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066f2cfc	1066f2def	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator canPerformQuery:]	
+1066f2df0	1066f2e3b	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator reset]	
+1066f2e3c	1066f2e4f	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator initialRequestCompleted]	
+1066f2e50	1066f2e5f	decompiled	chunks/008/functions-000575.c	-[SCMixerRankingLensesQueryCoordinator setInitialRequestCompleted:]	
+1066f2e60	1066f2fb3	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _dataStoreFactoryWithStudySettingsServices:sectionsDataStore:containerStore:context:shouldEnableDailyGames:dailyGamesAuxiliaryNamespaceId:]	
+1066f2fb4	1066f3187	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _dailiesDataStoreWithFactory:context:shouldEnableDailyGames:dailyGamesAuxiliaryNamespaceId:]	
+1066f3188	1066f347b	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _categoriesProviderFactoryWithQueryFactory:queryCoordinatorFactory:requestProviderFactory:requestManager:studySettingsServices:dynamicUpdateHandler:selectedBatchStatusCheckerFactory:context:performerServices:feedModelsStorage:cacheEnabled:mixerNamespaceServices:lensGatorEnabled:mixerNamespaceCacheOptimizationEnabled:gamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066f347c	1066f3723	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _queryCoordinatorFactoryWithDataStoreFactory:requestProviderFactory:requestManager:lensFavoritesService:lensFavoritesMockService:batchUpdateHandler:selectedBatchStatusCheckerFactory:feedModelsStorage:cacheEnabled:mixerNamespaceServices:lensGatorEnabled:mixerNamespaceCacheOptimizationEnabled:gamesExplorerAuxFeedRankingFixEnabled:gamesExplorerCategoriesFromFeedsEnabled:]	
+1066f3724	1066f3777	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _queryFactoryWithContext:]	
+1066f3778	1066f38d3	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _lensCollectionDataProviderWithNetworkServices:studySettings:countryCodeProvider:performerServices:lensCoreVersionProvider:]	
+1066f38d4	1066f39db	decompiled	chunks/008/functions-000575.c	+[SCLensExplorerDataQueryContextFactory _collectionCategoryProviderWithLensCollectionProvider:responseParser:batchUpdateHandler:queryFactory:studySettings:]	
+1066f39dc	1066f3a03	decompiled	chunks/008/functions-000575.c		
+1066f3a04	1066f3a0b	decompiled	chunks/008/functions-000575.c		
+1066f3a0c	1066f3a8b	decompiled	chunks/008/functions-000575.c		
+1066f3a8c	1066f3acf	decompiled	chunks/008/functions-000575.c		
+1066f3ad0	1066f3ae3	decompiled	chunks/008/functions-000575.c		
+1066f3ae4	1066f3e83	decompiled	chunks/008/functions-000575.c		
+1066f3e84	1066f3f4f	decompiled	chunks/008/functions-000575.c		
+1066f3f50	1066f406b	decompiled	chunks/008/functions-000575.c		
+1066f406c	1066f40db	decompiled	chunks/008/functions-000575.c		
+1066f40dc	1066f415f	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerDataQueryContextFactory .cxx_destruct]	
+1066f4160	1066f41e3	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory initWithBaseQueryFactory:context:]	
+1066f41e4	1066f4237	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory fetchCategoriesBatchWithPreselectedFeedId:]	
+1066f4238	1066f428b	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory fetchCategoryWithFeedId:]	
+1066f428c	1066f42df	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory fetchLensesWithDataSource:]	
+1066f42e0	1066f4333	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory fetchTailLensesWithDataSource:]	
+1066f4334	1066f4387	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory refreshLensesWithDataSource:]	
+1066f4388	1066f43db	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory batchRefreshLensesWithDataSources:]	
+1066f43dc	1066f44f3	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory _queryWithUpdatedContextFromQuery:]	
+1066f44f4	1066f44ff	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerContextQueryFactory .cxx_destruct]	
+1066f4500	1066f457b	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory fetchLensesWithDataSource:]	
+1066f457c	1066f45f7	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory refreshLensesWithDataSource:]	
+1066f45f8	1066f4853	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory batchRefreshLensesWithDataSources:]	
+1066f4854	1066f48cf	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory fetchTailLensesWithDataSource:]	
+1066f48d0	1066f4b0f	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory _lensesQueryWithQueryType:sectionDataSource:]	
+1066f4b10	1066f4b17	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory fetchCategoriesBatchWithPreselectedFeedId:]	
+1066f4b18	1066f4b1f	decompiled	chunks/008/functions-000575.c	-[SCLensExplorerQueryFactory fetchCategoryWithFeedId:]	
+1066f4b20	1066f4cf7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryFactory _categoriesQueryWithFeedId:requestAllCategories:]	
+1066f4cf8	1066f4d6b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBaseLensItemQueryProvider initWithQueryFactory:]	
+1066f4d6c	1066f4d73	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBaseLensItemQueryProvider fetchLensItemsQueryWithSectionDataSource:]	
+1066f4d74	1066f4d7b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBaseLensItemQueryProvider refreshLensesQueryWithSectionDataSource:]	
+1066f4d7c	1066f4d83	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBaseLensItemQueryProvider fetchTailLensesQueryWithSectionDataSource:]	
+1066f4d84	1066f4d8f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBaseLensItemQueryProvider .cxx_destruct]	
+1066f4d90	1066f4e53	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerLensItemQueryProvider initWithQueryFactory:blocklistFilter:currentDateProvider:]	
+1066f4e54	1066f4fbb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerLensItemQueryProvider fetchLensItemsQueryWithSectionDataSource:]	
+1066f4fbc	1066f500b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerLensItemQueryProvider .cxx_destruct]	
+1066f500c	1066f507f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker initWithQueryStatusChecker:]	
+1066f5080	1066f5087	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker currentQuery]	
+1066f5088	1066f5147	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker canPerformQuery:]	
+1066f5148	1066f514f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker finishMonitoringQuery:]	
+1066f5150	1066f5157	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker activateCacheForQuery:]	
+1066f5158	1066f515f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker cancelInProgressQuery:]	
+1066f5160	1066f5167	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker cancelAllInProgressQueries]	
+1066f5168	1066f5173	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerBatchQueryStatusChecker .cxx_destruct]	
+1066f5174	1066f51f7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker initWithQueryStatusChecker:]	
+1066f51f8	1066f51ff	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker currentQuery]	
+1066f5200	1066f53eb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker canPerformQuery:]	
+1066f53ec	1066f5437	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker cancelInProgressQuery:]	
+1066f5438	1066f547f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker cancelAllInProgressQueries]	
+1066f5480	1066f54d7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker finishMonitoringQuery:]	
+1066f54d8	1066f5523	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker activateCacheForQuery:]	
+1066f5524	1066f555f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerNoBatchRefreshQueryStatusChecker .cxx_destruct]	
+1066f5560	1066f5613	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker initWithQueryDeduplicationGap:]	
+1066f5614	1066f5807	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker canPerformQuery:]	
+1066f5808	1066f5963	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker finishMonitoringQuery:]	
+1066f5964	1066f59d3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker activateCacheForQuery:]	
+1066f59d4	1066f5b0b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker cancelInProgressQuery:]	
+1066f5b0c	1066f5b5f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker cancelAllInProgressQueries]	
+1066f5b60	1066f5bf7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker _isDuplicatedQuery:]	
+1066f5bf8	1066f5e4f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker _hasInProgressQuery:]	
+1066f5e50	1066f5e93	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker currentQuery]	
+1066f5e94	1066f5e9f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker lastQuery]	
+1066f5ea0	1066f5ea7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker setLastQuery:]	
+1066f5ea8	1066f5eb3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker lastPassedQueryCheckTime]	
+1066f5eb4	1066f5ebb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker setLastPassedQueryCheckTime:]	
+1066f5ebc	1066f5f03	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerQueryStatusChecker .cxx_destruct]	
+1066f5f04	1066f5fa7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker initWithQueryStatusChecker:remoteStateProvider:]	
+1066f5fa8	1066f5faf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker currentQuery]	
+1066f5fb0	1066f60c3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker canPerformQuery:]	
+1066f60c4	1066f60cb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker cancelInProgressQuery:]	
+1066f60cc	1066f60d3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker cancelAllInProgressQueries]	
+1066f60d4	1066f60db	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker finishMonitoringQuery:]	
+1066f60dc	1066f60e3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker activateCacheForQuery:]	
+1066f60e4	1066f6113	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRankingQueryStatusChecker .cxx_destruct]	
+1066f6114	1066f6263	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker initWithQueryStatusChecker:categoriesAggregators:]	
+1066f6264	1066f62ab	decompiled	chunks/009/functions-000576.c		
+1066f62ac	1066f62db	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker _setCategoriesAggregator:]	
+1066f62dc	1066f62e3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker currentQuery]	
+1066f62e4	1066f649f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker canPerformQuery:]	
+1066f64a0	1066f64a7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker finishMonitoringQuery:]	
+1066f64a8	1066f64af	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker activateCacheForQuery:]	
+1066f64b0	1066f64b7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker cancelInProgressQuery:]	
+1066f64b8	1066f64bf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker cancelAllInProgressQueries]	
+1066f64c0	1066f64fb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusChecker .cxx_destruct]	
+1066f64fc	1066f65d3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusCheckerFactory setCategoriesAggregatorObservable:]	
+1066f65d4	1066f6623	decompiled	chunks/009/functions-000576.c		
+1066f6624	1066f667f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusCheckerFactory decoratedStatusCheckerWithStatusChecker:]	
+1066f6680	1066f66bb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusCheckerFactory reset]	
+1066f66bc	1066f66eb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerSelectedBatchQueryStatusCheckerFactory .cxx_destruct]	
+1066f66ec	1066f67e7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerGRPCRequestManager initWithGrpcClientFactory:serviceURL:performer:lensCoreVersionProvider:]	
+1066f67e8	1066f6a7f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerGRPCRequestManager sendRequest:completion:]	
+1066f6a80	1066f6b4b	decompiled	chunks/009/functions-000576.c		
+1066f6b4c	1066f6c5b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerGRPCRequestManager _createGrpcServiceIfNeeded]	
+1066f6c5c	1066f6caf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerGRPCRequestManager .cxx_destruct]	
+1066f6cb0	1066f6dab	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerHTTPRequestManager initWithHTTPMetadataService:httpRequestModifier:performer:lensCoreVersionProvider:]	
+1066f6dac	1066f6ecf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerHTTPRequestManager sendRequest:completion:]	
+1066f6ed0	1066f701f	decompiled	chunks/009/functions-000576.c		
+1066f7020	1066f71d7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerHTTPRequestManager _httpRequestFromRequest:]	
+1066f71d8	1066f7283	decompiled	chunks/009/functions-000576.c		
+1066f7284	1066f739f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerHTTPRequestManager _httpContextFromRequest:]	
+1066f73a0	1066f741b	decompiled	chunks/009/functions-000576.c	+[SCLensExplorerHTTPRequestManager _responseFromData:]	
+1066f741c	1066f7463	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerHTTPRequestManager .cxx_destruct]	
+1066f7464	1066f74ff	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerCountryCodeProviderImpl countryCode]	
+1066f7500	1066f752f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerCountryCodeProviderImpl .cxx_destruct]	
+1066f7530	1066f75d3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider initWithCountryCodeProvider:interactionHistoryProvider:]	
+1066f75d4	1066f76eb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider lensesRequestDataWithQuery:streamToken:]	
+1066f76ec	1066f77b7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider _baseLensExplorerRequestedFeedIds:]	
+1066f77b8	1066f78ab	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider _requestInfo]	
+1066f78ac	1066f78ff	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider _acceptLanguageString]	
+1066f7900	1066f798f	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider _screenInfo]	
+1066f7990	1066f79b3	decompiled	chunks/009/functions-000576.c	+[SCLensExplorerRequestDataProvider _requestContextFromContext:]	
+1066f79b4	1066f79e3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestDataProvider .cxx_destruct]	
+1066f79e4	1066f7abf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProvider initWithRequestDataProvider:requestUrl:apiRouteTag:maxNumOfRequestAttempts:]	
+1066f7ac0	1066f7b17	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProvider categoriesBatchRequestWithQuery:]	
+1066f7b18	1066f7b6b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProvider lensesRequestWithQuery:streamToken:]	
+1066f7b6c	1066f7beb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProvider _lensExplorerRequestWithRequestData:]	
+1066f7bec	1066f7c27	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProvider .cxx_destruct]	
+1066f7c28	1066f7cb7	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProviderFactory lensItemsRequestProvider]	
+1066f7cb8	1066f7cd3	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProviderFactory responseParser]	
+1066f7cd4	1066f7d1b	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProviderFactory baseLensExplorerURL]	
+1066f7d1c	1066f7d67	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProviderFactory requestUrl]	
+1066f7d68	1066f7daf	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerRequestProviderFactory .cxx_destruct]	
+1066f7db0	1066f7e73	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerResponseParser feedsFromBatchResponseData:]	
+1066f7e74	1066f839f	decompiled	chunks/009/functions-000576.c		
+1066f83a0	1066f8417	decompiled	chunks/009/functions-000576.c		
+1066f8418	1066f8427	decompiled	chunks/009/functions-000576.c		
+1066f8428	1066f85fb	decompiled	chunks/009/functions-000576.c	-[SCLensExplorerResponseParser feedFromLensCollectionResponseData:]	
+1066f85fc	1066f8657	decompiled	chunks/009/functions-000577.c		
+1066f8658	1066f87e7	decompiled	chunks/009/functions-000577.c	+[SCLensExplorerResponseParser renderStrategyFromStrategy:]	
+1066f87e8	1066f89cf	decompiled	chunks/009/functions-000577.c	+[SCLensExplorerResponseParser renderStrategyFromCategoryStrategy:]	
+1066f89d0	1066f8a93	decompiled	chunks/009/functions-000577.c	+[SCLensExplorerResponseParser lensTileLayoutFromStrategy:]	
+1066f8a94	1066f8a9f	decompiled	chunks/009/functions-000577.c	+[SCLensExplorerResponseParser feedActionFromActivationAction:]	
+1066f8aa0	1066f8b33	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator initWithQueryCoordinatorFactory:]	
+1066f8b34	1066f8b47	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator isEmpty]	
+1066f8b48	1066f8baf	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator canPerformQuery:]	
+1066f8bb0	1066f8c6f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator resultsForQuery:updatingBlock:]	
+1066f8c70	1066f8c73	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator handleFeedItems:remoteState:forQueryResult:]	
+1066f8c74	1066f8c77	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator reset]	
+1066f8c78	1066f8d83	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator _coordinatorForQuery:]	
+1066f8d84	1066f8d8b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator isLoading]	
+1066f8d8c	1066f8d93	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator currentQuery]	
+1066f8d94	1066f8d9b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator setCurrentQuery:]	
+1066f8d9c	1066f8dd7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerDynamicQueryCoordinator .cxx_destruct]	
+1066f8dd8	1066f8e4b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshCompositHandler initWithRefreshHandlers:]	
+1066f8e4c	1066f8f37	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshCompositHandler handleUpdatesWithCategoriesFetcher:]	
+1066f8f38	1066f8f43	decompiled	chunks/009/functions-000577.c		
+1066f8f44	1066f9033	decompiled	chunks/009/functions-000577.c		
+1066f9034	1066f903f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshCompositHandler .cxx_destruct]	
+1066f9040	1066f90e3	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshFavortireHandler initWithLensFavoritesObservable:studySettings:]	
+1066f90e4	1066f91c7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshFavortireHandler handleUpdatesWithCategoriesFetcher:]	
+1066f91c8	1066f9203	decompiled	chunks/009/functions-000577.c		
+1066f9204	1066f927f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshFavortireHandler _refreshSectionIdentifiers]	
+1066f9280	1066f92af	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshFavortireHandler .cxx_destruct]	
+1066f92b0	1066f9323	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshSubscriptionsHandler initWithSnapProProfilesProvider:]	
+1066f9324	1066f93db	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshSubscriptionsHandler handleUpdatesWithCategoriesFetcher:]	
+1066f93dc	1066f946f	decompiled	chunks/009/functions-000577.c		
+1066f9470	1066f947b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerExternalRefreshSubscriptionsHandler .cxx_destruct]	
+1066f947c	1066f94ef	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerHTTPRanker initWithHTTPMetadataService:]	
+1066f94f0	1066f9587	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerHTTPRanker activateLensExplorerContext]	
+1066f9588	1066f959b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerHTTPRanker deactivateLensExplorerContext]	
+1066f959c	1066f95a7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerHTTPRanker .cxx_destruct]	
+1066f95a8	1066f9627	decompiled	chunks/009/functions-000577.c		
+1066f9628	1066f978b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter initWithLensExplorerFactory:dependencyProvider:loggerFactory:configuration:pageUIConfiguration:infoCardSource:storyConfiguration:]	
+1066f978c	1066f9a43	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter _setupWithLensExplorerDependencyProvider:storyConfiguration:]	
+1066f9a44	1066f9aa3	decompiled	chunks/009/functions-000577.c		
+1066f9aa4	1066f9ab3	decompiled	chunks/009/functions-000577.c		
+1066f9ab4	1066f9adf	decompiled	chunks/009/functions-000577.c		
+1066f9ae0	1066f9b6f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter currentlyPresentedLensExplorerViewController]	
+1066f9b70	1066f9bcf	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lensExplorerUIContainer]	
+1066f9bd0	1066f9c97	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter singleCategoryViewControllerWithModelProvider:isLensCollectionCategory:accessoryView:]	
+1066f9c98	1066f9e23	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter singleCategoryViewControllerWithPresentationType:accessoryView:]	
+1066f9e24	1066f9e3b	decompiled	chunks/009/functions-000577.c		
+1066f9e3c	1066fa053	decompiled	chunks/009/functions-000577.c		
+1066fa054	1066fa087	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter isPresenting]	
+1066fa088	1066fa0c7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentFeedFullPageWith:]	
+1066fa0c8	1066fa0cb	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentLensExplorerFrom:accessoryView:]	
+1066fa0cc	1066fa0cf	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentLensExplorerWith:accessoryView:]	
+1066fa0d0	1066fa197	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentLensExplorerViewController:fromViewController:uiContainer:completion:]	
+1066fa198	1066fa233	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter dismissIfNeededWithAnimated:completion:]	
+1066fa234	1066fa317	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter removeViewController]	
+1066fa318	1066fa38b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter handleApplicationDidEnterBackground]	
+1066fa38c	1066fa4c7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter finishDismissWorkflowAnimated:completion:]	
+1066fa4c8	1066fa513	decompiled	chunks/009/functions-000577.c		
+1066fa514	1066fa69f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentCreatorViewControllerWithCreator:source:]	
+1066fa6a0	1066fa78b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentStoryWithCreatorStory:baseView:]	
+1066fa78c	1066fa897	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentStoryWithStoryId:sectionId:baseView:]	
+1066fa898	1066faa97	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentLiveLensPreviewCameraWithLensItem:fromCategoryId:]	
+1066faa98	1066faaa7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentOnboardingPresentable:]	
+1066faaa8	1066fab4b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentInfoCardWithLensItem:]	
+1066fab4c	1066faeb7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentLensTopicWithStoryItem:]	
+1066faeb8	1066faf9b	decompiled	chunks/009/functions-000577.c		
+1066faf9c	1066faff7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter handlePickedItem:selectionTrigger:]	
+1066faff8	1066fb067	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentActionSheet:completion:]	
+1066fb068	1066fb0af	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lensReplyParameters]	
+1066fb0b0	1066fb17f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter presentSingleCategoryPage:]	
+1066fb180	1066fb1d7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter modularCameraSendEvent:]	
+1066fb1d8	1066fb22b	decompiled	chunks/009/functions-000577.c		
+1066fb22c	1066fb29f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter requestDismissForController:source:completion:]	
+1066fb2a0	1066fb35b	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter _storyPresenterEventHander]	
+1066fb35c	1066fb3d7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter _notifyStoryEvent:]	
+1066fb3d8	1066fb3ef	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter delegate]	
+1066fb3f0	1066fb3fb	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setDelegate:]	
+1066fb3fc	1066fb413	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lifeCycleDelegate]	
+1066fb414	1066fb41f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setLifeCycleDelegate:]	
+1066fb420	1066fb427	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter currentViewController]	
+1066fb428	1066fb457	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setCurrentViewController:]	
+1066fb458	1066fb45f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter navigationController]	
+1066fb460	1066fb48f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setNavigationController:]	
+1066fb490	1066fb497	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lensExplorerDependencyProvider]	
+1066fb498	1066fb49f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lensExplorerFactory]	
+1066fb4a0	1066fb4a7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter lensExplorerLoggingSession]	
+1066fb4a8	1066fb4d7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setLensExplorerLoggingSession:]	
+1066fb4d8	1066fb4df	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter userSettings]	
+1066fb4e0	1066fb4e7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter loggerFactory]	
+1066fb4e8	1066fb4ef	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter infoCardsPresenter]	
+1066fb4f0	1066fb4f7	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter infoCardSource]	
+1066fb4f8	1066fb4ff	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter disposable]	
+1066fb500	1066fb52f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter setDisposable:]	
+1066fb530	1066fb537	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter configuration]	
+1066fb538	1066fb53f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter pageUIConfiguration]	
+1066fb540	1066fb547	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter isDismissProcessStarted]	
+1066fb548	1066fb623	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerBaseRouter .cxx_destruct]	
+1066fb624	1066fb72f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerRouterV3 initWithLensExplorerFactory:dependencyProvider:loggerFactory:configuration:pageUIConfiguration:externalRefreshHandler:headerActionButtonFactory:infoCardSource:searchType:storyConfiguration:]	
+1066fb730	1066fb8ff	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerRouterV3 cardTransitionShouldBeginWithView:touchLocation:]	
+1066fb900	1066fb903	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerRouterV3 cardToExpandTransition]	
+1066fb904	1066fba0f	decompiled	chunks/009/functions-000577.c	-[SCLensExplorerRouterV3 cardTransitionWillBeginWithView:]	
+1066fba10	1066fba7f	decompiled	chunks/009/functions-000577.c		
+1066fba80	1066fbb17	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 cardTransitionDidUpdateProgress:]	
+1066fbb18	1066fbb77	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 cardTransitionEndedWithView:transitionType:]	
+1066fbb78	1066fbb87	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 animationControllerForPresentedController:presentingController:sourceController:]	
+1066fbb88	1066fbb97	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 animationControllerForDismissedController:]	
+1066fbb98	1066fbbc7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 interactionControllerForPresentation:]	
+1066fbbc8	1066fbbd7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 interactionControllerForDismissal:]	
+1066fbbd8	1066fbc1f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 didSelectDismissalActionWithHeaderItem:]	
+1066fbc20	1066fbc2b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 presentLensExplorerFrom:accessoryView:]	
+1066fbc2c	1066fbc3b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 presentLensExplorerWith:accessoryView:]	
+1066fbc3c	1066fc1bb	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 _presentLensExplorerFromViewController:uiContainer:accessoryView:]	
+1066fc1bc	1066fc203	decompiled	chunks/009/functions-000578.c		
+1066fc204	1066fc2a7	decompiled	chunks/009/functions-000578.c		
+1066fc2a8	1066fc2fb	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 removeViewController]	
+1066fc2fc	1066fc34b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 lensSearchDidPickLens:]	
+1066fc34c	1066fc463	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 _createSearchPresenterWithPickerModeEnabled:]	
+1066fc464	1066fc4eb	decompiled	chunks/009/functions-000578.c		
+1066fc4ec	1066fc6a7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 _categoriesFetcherForConfiguration:]	
+1066fc6a8	1066fc6bf	decompiled	chunks/009/functions-000578.c		
+1066fc6c0	1066fc717	decompiled	chunks/009/functions-000578.c		
+1066fc718	1066fc797	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerRouterV3 .cxx_destruct]	
+1066fc798	1066fc84f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerSingleCategoryRouter lensExplorerSingleCategoryViewControllerWillBeginDismissing:]	
+1066fc850	1066fc8c7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerSingleCategoryRouter lensExplorerSingleCategoryViewControllerDidDismiss:]	
+1066fc8c8	1066fc8d3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerSingleCategoryRouter presentLensExplorerFrom:accessoryView:]	
+1066fc8d4	1066fc8e3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerSingleCategoryRouter presentLensExplorerWith:accessoryView:]	
+1066fc8e4	1066fcbef	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerSingleCategoryRouter _presentLensExplorerFromViewController:uiContainer:accessoryView:]	
+1066fcbf0	1066fcc93	decompiled	chunks/009/functions-000578.c		
+1066fcc94	1066fcd8f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter initWithLensExplorerStoryScopeExposer:lensExplorerStoryScopeServices:storyConfiguration:storyDataSourceFactory:]	
+1066fcd90	1066fcdc7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter isPresenting]	
+1066fcdc8	1066fcdff	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter dismissWithCompletion:]	
+1066fce00	1066fcfd3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter presentWithCreatorStory:baseView:sourceViewController:eventHandler:]	
+1066fcfd4	1066fd0d3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter presentWithStoryId:sectionId:baseView:sourceViewController:eventHandler:]	
+1066fd0d4	1066fd1bb	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter _presentWithStoryInfo:baseView:sourceViewController:eventHandler:]	
+1066fd1bc	1066fd203	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter _storyConfiguration]	
+1066fd204	1066fd253	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter didFinishDismissingWithScope:]	
+1066fd254	1066fd287	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter didFailToPresentStoryWithScope:]	
+1066fd288	1066fd2cf	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter _removeScopeIfNeeded]	
+1066fd2d0	1066fd2e7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter _notifyEventHandler:]	
+1066fd2e8	1066fd347	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerStoryScopePresenter .cxx_destruct]	
+1066fd348	1066fd64b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 initWithLensExplorerFactory:navigationContainer:dependencyProvider:loggerFactory:configuration:pageUIConfiguration:externalRefreshHandler:selectedCategoryIdentifier:uiConfiguration:sessionControlEvents:entryCategory:infoCardSource:searchType:storyConfiguration:]	
+1066fd64c	1066fd693	decompiled	chunks/009/functions-000578.c		
+1066fd694	1066fd93b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 presentLensExplorerWithUIContainer:]	
+1066fd93c	1066fda27	decompiled	chunks/009/functions-000578.c		
+1066fda28	1066fda6b	decompiled	chunks/009/functions-000578.c		
+1066fda6c	1066fda97	decompiled	chunks/009/functions-000578.c		
+1066fda98	1066fddc3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 prepareViewControllerWithConfiguration:]	
+1066fddc4	1066fde0f	decompiled	chunks/009/functions-000578.c		
+1066fde10	1066fdef7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 finishDismissWorkflowAnimated:completion:]	
+1066fdef8	1066fdf43	decompiled	chunks/009/functions-000578.c		
+1066fdf44	1066fdfcb	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 removeViewController]	
+1066fdfcc	1066fdfeb	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 lensExplorer_renderedController]	
+1066fdfec	1066fe0cf	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 singleCategoryViewControllerWithModelProvider:isLensCollectionCategory:]	
+1066fe0d0	1066fe13b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 presentSingleCategoryPage:]	
+1066fe13c	1066fe14b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 lensExplorerSingleCategoryViewControllerWillBeginDismissing:]	
+1066fe14c	1066fe14f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 lensExplorerSingleCategoryViewControllerDidDismiss:]	
+1066fe150	1066fe19f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 lensSearchDidPickLens:]	
+1066fe1a0	1066fe1af	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 _handleVerticalScrollEnabled:horizontalScrollEnabled:]	
+1066fe1b0	1066fe207	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 _detachUIWithCompletion:]	
+1066fe208	1066fe3c3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 _categoriesFetcherForConfiguration:]	
+1066fe3c4	1066fe3db	decompiled	chunks/009/functions-000578.c		
+1066fe3dc	1066fe433	decompiled	chunks/009/functions-000578.c		
+1066fe434	1066fe51f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 _presentSearch]	
+1066fe520	1066fe647	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 _createSearchPresenterWithDependencyProvider:]	
+1066fe648	1066fe6cf	decompiled	chunks/009/functions-000578.c		
+1066fe6d0	1066fe6ef	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 pageTransitionDelegate]	
+1066fe6f0	1066fe703	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 setPageTransitionDelegate:]	
+1066fe704	1066fe7c7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerTabLessRouterV2 .cxx_destruct]	
+1066fe7c8	1066fe7fb	decompiled	chunks/009/functions-000578.c	+[SCLensExplorerPageUIConfiguration defaultConfiguration]	
+1066fe7fc	1066fe9bf	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage initWithCategoryId:lensExplorerFactory:layoutProvider:categoryFetchingColleague:sectionsProviderColleague:mediator:disableContentReloadAnimations:]	
+1066fe9c0	1066fea0f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage didReceiveMemoryWarning]	
+1066fea10	1066feb1f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage lensExplorer_sectionViewModelWithIdentifier:]	
+1066feb20	1066feb67	decompiled	chunks/009/functions-000578.c		
+1066feb68	1066febd7	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage viewDidLoad]	
+1066febd8	1066fec47	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage viewDidLayoutSubviews]	
+1066fec48	1066fec97	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage viewDidAppear:]	
+1066fec98	1066fee77	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage _setupContentView]	
+1066fee78	1066feea3	decompiled	chunks/009/functions-000578.c		
+1066feea4	1066fef9b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage _setupCollectionViewColleagueIfNeeded]	
+1066fef9c	1066ff02f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage _setupPageColleague]	
+1066ff030	1066ff0b3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage _handleOrthogonalSectionScroll]	
+1066ff0b4	1066ff0c3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage scrollView]	
+1066ff0c4	1066ff0d3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage didScrollObservable]	
+1066ff0d4	1066ff0ff	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage pageViewWillAppear]	
+1066ff100	1066ff12b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage pageViewWillDisappear]	
+1066ff12c	1066ff12f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage pageViewWasSelected]	
+1066ff130	1066ff15f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage defaultProjectNameV2]	
+1066ff160	1066ff18f	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage defaultSubProjectName]	
+1066ff190	1066ff193	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage _setupKarma]	
+1066ff194	1066ff1a3	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage categoryIdentifier]	
+1066ff1a4	1066ff253	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPage .cxx_destruct]	
+1066ff254	1066ff2ff	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider initWithStudyProvider:forceLegacyOrthogonalLayout:uiConfiguration:]	
+1066ff300	1066ff303	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider createLayoutWithSectionProvider:orthogonalScrollHandler:]	
+1066ff304	1066ff36b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider collectionViewContentInsets]	
+1066ff36c	1066ff373	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider appliesBottomSafeAreaInset]	
+1066ff374	1066ff37b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider requiresManualItemsTracking]	
+1066ff37c	1066ff553	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider visibleItemsInCollectionView:]	
+1066ff554	1066ff58b	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider _createOrthogonalLayoutWithSectionProvider:orthogonalScrollHandler:]	
+1066ff58c	1066ff5db	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider headerModelForSection:]	
+1066ff5dc	1066ff727	decompiled	chunks/009/functions-000578.c		
+1066ff728	1066ff887	decompiled	chunks/009/functions-000578.c	-[SCLensExplorerCategoryPageLayoutProvider createCompositionalLayoutWithSectionProvider:orthogonalScrollHandler:]	
+1066ff888	1066ff9bb	decompiled	chunks/009/functions-000578.c		
+1066ff9bc	1066fff0f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _compositionalSectionFromSection:headerEnabled:environment:orthogonalScrollHandler:]	
+1066fff10	1066fff27	decompiled	chunks/009/functions-000579.c		
+1066fff28	1067005d3	decompiled	chunks/009/functions-000579.c		
+1067005d4	1067005e7	decompiled	chunks/009/functions-000579.c		
+1067005e8	10670070b	decompiled	chunks/009/functions-000579.c		
+10670070c	10670081f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _compositionalHeaderSupplementaryItem:]	
+106700820	10670082f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _orthogonalScrollingBehaviourFrom:]	
+106700830	1067009a3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider createLensExplorerOrthogonalLayoutWithSectionProvider:]	
+1067009a4	106700acb	decompiled	chunks/009/functions-000579.c		
+106700acc	106700b27	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _lensExplorerLayouFallBackSection]	
+106700b28	106700fab	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _lensExplorerLayoutSectionFromSection:headerEnabled:]	
+106700fac	10670105b	decompiled	chunks/009/functions-000579.c		
+10670105c	10670120f	decompiled	chunks/009/functions-000579.c		
+106701210	106701243	decompiled	chunks/009/functions-000579.c		
+106701244	10670124f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider _orthogonalSectionScrollBehaviorFrom:]	
+106701250	10670127f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageLayoutProvider .cxx_destruct]	
+106701280	1067013b3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider initWithLensExplorerFactory:uiConfiguration:autoSelectionBehavior:performerProvider:]	
+1067013b4	10670174b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider pageForCategoryId:categoryObservable:isFullPage:isLensCollectionCategoryPage:]	
+10670174c	10670175f	decompiled	chunks/009/functions-000579.c		
+106701760	1067018bb	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider _mediatorWithCategoryId:loggingColleague:networkMonitoringColleague:itemsTrackingColleague:manualItemsTracking:]	
+1067018bc	10670191b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider _setupMediator:withFetchingColleague:viewModelColleague:]	
+10670191c	106701a4f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider _categorySectionsProviderWithFactory:isFullPage:]	
+106701a50	106701b3f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider _dynamicSectionProviderColleagueWithMediator:factory:sectionConfigurations:]	
+106701b40	106701c5b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider _dynamicCategoryFetchingColleagueWithCategoryId:mediator:factory:sectionConfigurations:]	
+106701c5c	106701caf	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerCategoryPageProvider .cxx_destruct]	
+106701cb0	106701d53	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPageColleague initWithConentView:notificationPresenter:]	
+106701d54	106701d5b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPageColleague showLoadingIndicator]	
+106701d5c	106701d63	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPageColleague hideLoadingIndicator]	
+106701d64	106701d9f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPageColleague handleFetchError:]	
+106701da0	106701dcf	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPageColleague .cxx_destruct]	
+106701dd0	106701dd3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 addPermissionHandlerNoOpButton]	
+106701dd4	106701e03	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 defaultProjectNameV2]	
+106701e04	106701e33	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 defaultSubProjectName]	
+106701e34	106702057	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 initWithSearchViewPresenter:categoriesFetcher:pageProvider:cardTransition:actionButtonProvider:studySettings:searchEnabled:accessoryView:styleOverride:]	
+106702058	1067020d7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewDidLoad]	
+1067020d8	10670218b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewWillAppear:]	
+10670218c	106702277	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewWillDisappear:]	
+106702278	10670227b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 preferredStatusBarStyle]	
+10670227c	1067022cb	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 setHeaderItemDelegate:]	
+1067022cc	10670230f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 headerItemDelegate]	
+106702310	1067024a7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewDidLayoutSubviews]	
+1067024a8	1067025cb	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 headerItem]	
+1067025cc	10670274f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 setViewControllers:]	
+106702750	106702783	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 reset]	
+106702784	10670295b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupAccessoryView]	
+10670295c	106702a47	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupHeaderView]	
+106702a48	106702bdb	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupScrollView]	
+106702bdc	106702cff	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupLoadingView]	
+106702d00	106702d2b	decompiled	chunks/009/functions-000579.c		
+106702d2c	1067032df	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupConstraints]	
+1067032e0	106703427	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupCategoriesIfNeeded]	
+106703428	1067034e3	decompiled	chunks/009/functions-000579.c		
+1067034e4	10670351f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _requestCategoriesIfNeeded]	
+106703520	1067039d7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _updateTabBarWithCategoryModels:categoiresAggregator:]	
+1067039d8	1067039df	decompiled	chunks/009/functions-000579.c		
+1067039e0	106703aef	decompiled	chunks/009/functions-000579.c		
+106703af0	106703ba7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _categoryPageForIdentifier:]	
+106703ba8	106703bef	decompiled	chunks/009/functions-000579.c		
+106703bf0	106703c3f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _categoryIdentifierForTabItem:]	
+106703c40	106703f8b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _selectedCategoryFromCategoryModels:]	
+106703f8c	10670401b	decompiled	chunks/009/functions-000579.c		
+10670401c	106704443	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _updateViewControllersWithCategories:categoiresAggregator:]	
+106704444	1067044a3	decompiled	chunks/009/functions-000579.c		
+1067044a4	10670457b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _categoryObservableForCategoryId:]	
+10670457c	106704663	decompiled	chunks/009/functions-000579.c		
+106704664	1067048af	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _updateScrollViewCoordinator]	
+1067048b0	1067048fb	decompiled	chunks/009/functions-000579.c		
+1067048fc	10670496b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 pageDidAppearForIndex:]	
+10670496c	10670497b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 onCategorySelectionChanged:]	
+10670497c	106704c37	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 observeValueForKeyPath:ofObject:change:context:]	
+106704c38	106704c4f	decompiled	chunks/009/functions-000579.c		
+106704c50	106704cff	decompiled	chunks/009/functions-000579.c		
+106704d00	106704d57	decompiled	chunks/009/functions-000579.c		
+106704d58	106704da3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 textFieldShouldBeginEditing:]	
+106704da4	106704da7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 _setupKarma]	
+106704da8	106704daf	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 pageViewName]	
+106704db0	106704f13	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 dealloc]	
+106704f14	106704f47	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewControllerPrefersSelfDismiss]	
+106704f48	106704fa7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewControllerDismissSelf:]	
+106704fa8	106704fe7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 didSelectDismissalActionWithHeaderItem:]	
+106704fe8	106704ff7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewControllers]	
+106704ff8	106705017	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 viewControllerDelegate]	
+106705018	10670502b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 setViewControllerDelegate:]	
+10670502c	10670503b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 scrollView]	
+10670503c	106705177	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerViewControllerV3 .cxx_destruct]	
+106705178	10670521b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerFavoritesOnboardingPresenter initWithLensExplorerAssetsProvider:lensPerformerProvider:]	
+10670521c	10670541b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerFavoritesOnboardingPresenter showWithPresentViewController:]	
+10670541c	106705433	decompiled	chunks/009/functions-000579.c		
+106705434	106705463	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerFavoritesOnboardingPresenter .cxx_destruct]	
+106705464	10670557f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerOnboardingManager initWithRouter:userSettings:studySettingsProvider:lensExplorerAssetsProvider:lensPerformerProvider:]	
+106705580	1067055eb	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerOnboardingManager presentLensFavoritesOnboardingIfNeeded]	
+1067055ec	10670563b	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerOnboardingManager .cxx_destruct]	
+10670563c	10670571f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView initWithLensExplorerAssetsProvider:lensPerformerProvider:]	
+106705720	1067058d3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView _setupLoadingView]	
+1067058d4	106705ad7	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView _configure]	
+106705ad8	106705bcb	decompiled	chunks/009/functions-000579.c		
+106705bcc	10670647f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView _setupWithPreviews:pressAndHoldHand:]	
+106706480	1067064d3	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView beginPreviewAnimation]	
+1067064d4	10670675f	decompiled	chunks/009/functions-000579.c	-[SCLensExplorerPressAndHoldOnboardingView _beginPressAnimation]	
+106706760	106706843	decompiled	chunks/009/functions-000579.c		
+106706844	10670690f	decompiled	chunks/009/functions-000580.c		
+106706910	106706adb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView _beginHoldAnimation]	
+106706adc	106706c2b	decompiled	chunks/009/functions-000580.c		
+106706c2c	106706c3f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView intrinsicContentSize]	
+106706c40	106706d9f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView _createCircleImage]	
+106706da0	106706daf	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView imagePreviewPropertyAnimator]	
+106706db0	106706def	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView setImagePreviewPropertyAnimator:]	
+106706df0	106706dff	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView previewView]	
+106706e00	106706e3f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView setPreviewView:]	
+106706e40	106706e4f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView circleView]	
+106706e50	106706e8f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView setCircleView:]	
+106706e90	106706e9f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView handView]	
+106706ea0	106706edf	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView setHandView:]	
+106706ee0	106706f6f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerPressAndHoldOnboardingView .cxx_destruct]	
+106706f70	1067070ff	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController initWithCategoryModelProvider:categoryPageProvider:isLensCollectionCategory:isModal:styleOverride:accessoryView:]	
+106707100	1067071cb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController viewDidLoad]	
+1067071cc	106707227	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController viewWillAppear:]	
+106707228	10670727b	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController viewWillDisappear:]	
+10670727c	10670727f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController preferredStatusBarStyle]	
+106707280	106707323	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController headerItem]	
+106707324	106707447	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupLoadingView]	
+106707448	106707473	decompiled	chunks/009/functions-000580.c		
+106707474	106707657	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupAccessoryView]	
+106707658	106707763	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _loadCategory]	
+106707764	1067077cb	decompiled	chunks/009/functions-000580.c		
+1067077cc	106707837	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _handleCategoryFetchedWithCategoryModel:error:]	
+106707838	106707adf	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupPageWithCategoryModel:]	
+106707ae0	106707bcb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupHeaderView]	
+106707bcc	106707fcb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupConstraints]	
+106707fcc	10670826f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _setupPageViewConstraints]	
+106708270	106708337	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController _performDismiss]	
+106708338	1067083a3	decompiled	chunks/009/functions-000580.c		
+1067083a4	1067083e7	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController setVerticalScrollEnabled:horizontalScrollEnabled:]	
+1067083e8	1067084ef	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController tray:canUseGestureToExpandOrCollapse:]	
+1067084f0	1067084ff	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController scrollViewForTray:]	
+106708500	106708503	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController didSelectDismissalActionWithHeaderItem:]	
+106708504	106708507	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController cardToExpandTransition]	
+106708508	10670850b	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController cardTransitionWillBeginWithView:]	
+10670850c	10670856f	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController cardTransitionShouldBeginWithView:touchLocation:]	
+106708570	1067085fb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController cardTransitionDidUpdateProgress:]	
+1067085fc	106708643	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController cardTransitionEndedWithView:transitionType:]	
+106708644	10670876b	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController observeValueForKeyPath:ofObject:change:context:]	
+10670876c	10670879b	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController defaultProjectNameV2]	
+10670879c	1067087cb	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController defaultSubProjectName]	
+1067087cc	1067087d3	decompiled	chunks/009/functions-000580.c	-[SCLensExplorerSingleCategoryViewController pageViewName]	
