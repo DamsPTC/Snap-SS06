@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/decompile.yml]
+    paths: [.github/workflows/decompile.yml, scripts/ExportShard.java, scripts/run_decompilation.py, scripts/prepare_decompilation.py, scripts/finalize_decompilation.py]
 
 permissions:
   contents: read

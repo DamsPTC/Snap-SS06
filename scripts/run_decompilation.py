@@ -3,6 +3,8 @@ import argparse
 import json
 import os
 import subprocess
+import tempfile
+import shutil
 from pathlib import Path
 
 p=argparse.ArgumentParser()
@@ -21,8 +23,7 @@ for ident,shard in work:
     source=args.inputs/ident
     target=args.output/'decompiled'/ident/f'shard-{shard:02}'
     target.mkdir(parents=True,exist_ok=True)
-    project=target/'.project'
-    project.mkdir(exist_ok=True)
+    project=Path(tempfile.mkdtemp(prefix='snap-ss06-ghidra-'))
     cmd=[str(args.ghidra/'support/analyzeHeadless'),str(project),'analysis','-import',str(source/'binary'),'-noanalysis','-max-cpu','2','-scriptPath',str(Path(__file__).resolve().parent),'-postScript','ExportShard.java',str(source/f'functions-{shard:02}.tsv'),str(target.resolve()),'-deleteProject','-log',str(target.resolve()/'ghidra.log')]
     print('Decompiling',ident,'shard',shard,flush=True)
     result=subprocess.run(cmd,env=os.environ.copy())
@@ -31,5 +32,5 @@ for ident,shard in work:
         raise SystemExit(f'Ghidra failed for {ident}/{shard}: exit={result.returncode}; coverage={report.exists()}')
     if json.loads(report.read_text())['decompiled']==0:
         raise SystemExit('No pseudocode generated')
-    project.rmdir()
+    shutil.rmtree(project)
 print('All selected slices exported',flush=True)
