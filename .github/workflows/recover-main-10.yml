@@ -1,0 +1,112 @@
+name: Terminer le dernier lot et publier tous les fichiers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/recover-main-10.yml]
+
+permissions:
+  contents: read
+  actions: read
+
+env:
+  IPA_URL: https://github.com/DamsPTC/sandbox-fictif-snapchat/releases/download/nouvelle-version-14.25.0.48/com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa
+  GHIDRA_URL: https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip
+  GHIDRA_HEADLESS_MAXMEM: 4G
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Préparer une partie du lot restant
+        shell: bash
+        env:
+          PART: ${{ matrix.part }}
+        run: |
+          mkdir -p .work
+          curl --fail --location --retry 3 "$GHIDRA_URL" --output .work/ghidra.zip
+          printf '%s\n' 'ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db  .work/ghidra.zip' | sha256sum --check -
+          unzip -q .work/ghidra.zip -d .work/tool
+          curl --fail --location --retry 3 "$IPA_URL" --output .work/original.ipa
+          python3 scripts/prepare_decompilation.py .work/original.ipa .work/inputs --task main-10
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          path = Path('.work/inputs/Snapchat-thin/functions-10.tsv')
+          lines = path.read_text().splitlines(keepends=True)
+          assert len(lines) == 62097
+          part = int(os.environ['PART'])
+          chosen = lines[len(lines)*part//4:len(lines)*(part+1)//4]
+          path.write_text(''.join(chosen))
+          print(f'Part {part}: {len(chosen)} candidates')
+          PY
+      - name: Décompiler cette partie
+        shell: bash
+        env:
+          PART: ${{ matrix.part }}
+        run: |
+          python3 scripts/run_decompilation.py main-10 .work/tool/ghidra_12.1.4_PUBLIC .work/inputs .work/output
+          mkdir -p .work/recovery/parts
+          PART_NAME=$(printf 'part-%02d' "$PART")
+          mv .work/output/decompiled/Snapchat-thin/shard-10 ".work/recovery/parts/$PART_NAME"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recovered-main-10-${{ matrix.part }}
+          path: .work/recovery
+          retention-days: 1
+
+  publish:
+    needs: recover
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            docs
+            analysis/decompilation
+      - name: Récupérer les lots déjà terminés
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 37398060701
+          pattern: pseudocode-*
+          path: .work/original
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: recovered-main-10-*
+          path: .work/recovery
+          merge-multiple: true
+      - name: Vérifier puis publier le résultat complet
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp -a .work/original/decompiled .
+          python3 scripts/merge_recovery.py
+          python3 scripts/finalize_decompilation.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse decompiled analysis/decompilation README.md docs/release-notes.md
+          git commit -m 'Publish complete Ghidra pseudocode including recovered main shard 10'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          gh release edit v14.25.0.48 --notes-file docs/release-notes.md
