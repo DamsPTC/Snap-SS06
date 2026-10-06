@@ -5,13 +5,15 @@ trap 'status=$?; echo "Échec du build à la ligne $LINENO : $BASH_COMMAND (code
 
 BUILD_VARIANT="${BUILD_VARIANT:-full}"
 case "$BUILD_VARIANT" in
-    none|swizzle|full|dccheckoff|noattest|logonly|selfread) ;;
-    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff, noattest, logonly ou selfread)." >&2; exit 2 ;;
+    none|swizzle|full|dccheckoff|noattest|logonly|selfread|selfblock) ;;
+    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff, noattest, logonly, selfread ou selfblock)." >&2; exit 2 ;;
 esac
 LOGONLY_FAMILY=0
 SELFREAD=0
-if [[ "$BUILD_VARIANT" == logonly || "$BUILD_VARIANT" == selfread ]]; then LOGONLY_FAMILY=1; fi
-if [[ "$BUILD_VARIANT" == selfread ]]; then SELFREAD=1; fi
+SELFREAD_BLOCK=0
+if [[ "$BUILD_VARIANT" == logonly || "$BUILD_VARIANT" == selfread || "$BUILD_VARIANT" == selfblock ]]; then LOGONLY_FAMILY=1; fi
+if [[ "$BUILD_VARIANT" == selfread || "$BUILD_VARIANT" == selfblock ]]; then SELFREAD=1; fi
+if [[ "$BUILD_VARIANT" == selfblock ]]; then SELFREAD_BLOCK=1; fi
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/build"
 WORK="$OUT/spoof-work-$BUILD_VARIANT"
@@ -49,6 +51,8 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         # file principale. Le test hôte n'accède pas au presse-papiers du runner.
         xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
             -DSS06_SELFREAD="$SELFREAD" \
+            -DSS06_SELFREAD_BLOCK="$SELFREAD_BLOCK" \
+            -DSS06_SELFBLOCK="$SELFREAD_BLOCK" \
             -framework Foundation "$ROOT/spoof/tests/logonly_passthrough.m" \
             -o "$WORK/logonly-passthrough-test"
         if ! "$WORK/logonly-passthrough-test" 2> "$WORK/logonly-test.log"; then
@@ -75,11 +79,13 @@ if [[ "$BUILD_VARIANT" != none ]]; then
     if [[ "$SELFREAD" == 1 ]]; then
         # Calls originate in another Mach-O image, exercising actual dyld bindings.
         xcrun --sdk macosx clang -dynamiclib -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -DSS06_SELFREAD_BLOCK="$SELFREAD_BLOCK" \
             -framework Foundation "$ROOT/spoof/tests/selfread_interposer.m" \
             -Wl,-install_name,@rpath/libSS06SelfReadTest.dylib -o "$WORK/libSS06SelfReadTest.dylib"
         xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -DSS06_SELFBLOCK_HOST="$SELFREAD_BLOCK" \
             -framework Foundation "$ROOT/spoof/tests/selfread_host.m" \
-            -L"$WORK" -lSS06SelfReadTest -Wl,-rpath,"$WORK" -o "$WORK/selfread-host-test"
+            -L"$WORK" -lSS06SelfRead -Wl,-rpath,"$WORK" -o "$WORK/selfread-host-test"
         if ! "$WORK/selfread-host-test" 2> "$WORK/selfread-test.log"; then
             cat "$WORK/selfread-test.log" >&2; exit 1
         fi
@@ -102,6 +108,8 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         -DSS06_DISABLE_DEVICECHECK="$DISABLE_DEVICECHECK" \
         -DSS06_DISABLE_LOGIN_ATTESTATION="$DISABLE_LOGIN_ATTESTATION" \
         -DSS06_SELFREAD="$SELFREAD" \
+        -DSS06_SELFREAD_BLOCK="$SELFREAD_BLOCK" \
+        -DSS06_SELFBLOCK="$SELFREAD_BLOCK" \
         "${FRAMEWORK_FLAGS[@]}" -lobjc \
         -Wl,-install_name,@executable_path/SS06Spoof.dylib \
         "$DYLIB_SOURCE" -o "$WORK/SS06Spoof.dylib"
@@ -182,7 +190,7 @@ else
     elif [[ "$SELFREAD" == 1 ]]; then
         grep -Fq '__interpose' "$WORK/dylib-load-commands.txt"
         if grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"; then
-            echo "Interposition Keychain inattendue dans selfread." >&2; exit 1
+            echo "Interposition Keychain inattendue dans $BUILD_VARIANT." >&2; exit 1
         fi
         for function in open fopen read pread mmap; do
             if ! grep -Eq "[[:space:]]_SS06SelfRead_${function}$" "$WORK/dylib-symbols.txt"; then
@@ -200,6 +208,13 @@ commands = pathlib.Path(sys.argv[1]).read_text()
 match = re.search(r'sectname __interpose\s+segname __DATA\s+addr 0x[0-9a-fA-F]+\s+size (0x[0-9a-fA-F]+)', commands)
 assert match and int(match.group(1), 16) == 5 * 2 * 8, 'Expected five ARM64 interpose pairs'
 PY
+        if [[ "$BUILD_VARIANT" == selfblock ]]; then
+            # La fenêtre d'attestation et l'échec mmap doivent être compilés.
+            grep -Eq '[[:space:]]_SS06SelfReadAttestationWindowOpen$' "$WORK/dylib-symbols.txt" || {
+                echo "Fenêtre selfblock absente." >&2; cat "$WORK/dylib-symbols.txt" >&2; exit 1; }
+            grep -Eq '[[:space:]]_SS06SelfReadAttestationWindowClose$' "$WORK/dylib-symbols.txt" || {
+                echo "Fenêtre selfblock absente." >&2; cat "$WORK/dylib-symbols.txt" >&2; exit 1; }
+        fi
     elif grep -Fq '__interpose' "$WORK/dylib-load-commands.txt" || \
          grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"; then
         echo "Interposition Keychain inattendue dans $BUILD_VARIANT." >&2; exit 1
@@ -257,7 +272,8 @@ unzip -tq "$OUT/$IPA_NAME"
 python3 - "$BUILD_VARIANT" "$OUT/$IPA_NAME" "$MANIFEST" "$SOURCE_APP/Snapchat" "$APP" "$INSERT_REV" <<'PY'
 import hashlib, json, os, pathlib, struct, sys
 variant, ipa_name, manifest_name, source, app_name, insert_rev = sys.argv[1:]
-logonly_family = variant in ('logonly', 'selfread')
+logonly_family = variant in ('logonly', 'selfread', 'selfblock')
+selfread = variant in ('selfread', 'selfblock')
 def sha256(path):
     digest = hashlib.sha256()
     with open(path, 'rb') as file:
@@ -294,7 +310,7 @@ manifest = {
     'repacked_main_sha256': sha256(app / 'Snapchat'),
     'repacked_main_macho_landmarks': macho_landmarks(app / 'Snapchat'),
     'dylib_present': dylib.exists(), 'keychain_interposition_compiled': variant == 'full',
-    'idfv_idfa_swizzles_compiled': variant not in ('none', 'logonly', 'selfread'),
+    'idfv_idfa_swizzles_compiled': variant not in ('none', 'logonly', 'selfread', 'selfblock'),
     'devicecheck_is_supported_no_compiled': variant in ('dccheckoff', 'noattest'),
     'login_attestation_nil_compiled': variant == 'noattest',
     'logonly_observers_compiled': logonly_family,
@@ -302,16 +318,18 @@ manifest = {
     'logonly_timestamped_history_compiled': logonly_family,
     'logonly_automatic_clipboard_compiled': logonly_family,
     'logonly_clipboard_host_tests_passed': logonly_family,
-    'logonly_trace_version': 'selfread-v1' if variant == 'selfread' else ('values-v3' if logonly_family else None),
+    'logonly_trace_version': 'selfblock-v1' if variant == 'selfblock' else ('selfread-v1' if variant == 'selfread' else ('values-v3' if logonly_family else None)),
     'logonly_transport_targets_compiled': 34 if logonly_family else 0,
     'logonly_transport_host_tests_passed': logonly_family,
     'logonly_value_dumps_compiled': logonly_family,
     'logonly_value_dump_host_tests_passed': logonly_family,
     'logonly_offline_analysis_tests_passed': logonly_family,
-    'selfread_posix_interposition_compiled': variant == 'selfread',
-    'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if variant == 'selfread' else [],
-    'selfread_dyld_host_tests_passed': variant == 'selfread',
-    'selfread_exact_path_filter': 'Snapchat.app/Snapchat' if variant == 'selfread' else None,
+    'selfread_posix_interposition_compiled': selfread,
+    'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if selfread else [],
+    'selfread_dyld_host_tests_passed': selfread,
+    'selfread_exact_path_filter': 'Snapchat.app/Snapchat' if selfread else None,
+    'selfblock_mmap_failure_compiled': variant == 'selfblock',
+    'selfblock_attestation_window_host_tests_passed': variant == 'selfblock',
     'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
                         'iosDeviceCheckToken.utf8_bytes', 'Janus.login_registration.rpc',
                         'SCNGrpcUnifiedGrpcService.unaryCall', 'SCDeviceCheckFeature.apple_request',

@@ -15,6 +15,16 @@ extern NSString *SS06SelfReadTestClipboard(void);
 extern void SS06SelfReadTestReset(void);
 extern void SS06SelfReadTestSetClipboardCallback(void (*callback)(void));
 
+#if SS06_SELFBLOCK_HOST
+// Définies par l'interposeur compilé avec SS06_SELFREAD_BLOCK=1.
+extern void SS06SelfReadAttestationWindowOpen(void);
+extern void SS06SelfReadAttestationWindowClose(void);
+static NSUInteger SS06CountBlockedLines(void)
+{
+    return [SS06SelfReadTestHistory() componentsSeparatedByString:@"op_result=blocked"].count - 1;
+}
+#endif
+
 #define CHECK(condition) do { if (!(condition)) { fprintf(stderr, "FAIL selfread line %d: %s errno=%d\n", __LINE__, #condition, errno); return 1; } } while (0)
 static int ClipboardFD;
 static int ClipboardCallbacks, ClipboardReadFailures;
@@ -141,6 +151,40 @@ int main(void)
         CHECK([SS06SelfReadTestClipboard() isEqualToString:before]);
         CHECK([before hasPrefix:@"[SS06LogOnly] "]);
         SS06SelfReadTestSetClipboardCallback(NULL);
+
+#if SS06_SELFBLOCK_HOST
+        // selfblock : le mappage du principal échoue seulement pendant la fenêtre
+        // d'attestation ; les autres fichiers restent mappables en toute circonstance.
+        SS06SelfReadTestReset();
+        errno = 0;
+        void *outsideWindow = mmap(NULL, 4096, PROT_READ, MAP_PRIVATE, fd, 0x28000);
+        CHECK(outsideWindow != MAP_FAILED && errno == 0 && memcmp(outsideWindow, marker, 4) == 0);
+        CHECK(munmap(outsideWindow, 4096) == 0);
+        CHECK(SS06CountBlockedLines() == 0);
+
+        SS06SelfReadAttestationWindowOpen();
+        errno = 0;
+        void *insideWindow = mmap(NULL, 4096, PROT_READ, MAP_PRIVATE, fd, 0x28000);
+        CHECK(insideWindow == MAP_FAILED && errno == ENOMEM);
+        CHECK(SS06CountBlockedLines() == 1);
+        CHECK([SS06SelfReadTestHistory() containsString:@"op=mmap op_result=blocked"]);
+        CHECK([SS06SelfReadTestHistory() containsString:@"errno=12"]);
+        int otherWindow = open(otherPath.fileSystemRepresentation, O_RDONLY);
+        CHECK(otherWindow >= 0);
+        void *otherMapping = mmap(NULL, 4, PROT_READ, MAP_PRIVATE, otherWindow, 0);
+        CHECK(otherMapping != MAP_FAILED && memcmp(otherMapping, marker, 4) == 0);
+        CHECK(munmap(otherMapping, 4) == 0 && close(otherWindow) == 0);
+        CHECK(SS06CountBlockedLines() == 1); // Seul le principal est bloqué.
+        SS06SelfReadAttestationWindowClose();
+
+        errno = 0;
+        void *afterWindow = mmap(NULL, 4096, PROT_READ, MAP_PRIVATE, fd, 0x28000);
+        CHECK(afterWindow != MAP_FAILED && errno == 0 && memcmp(afterWindow, marker, 4) == 0);
+        CHECK(munmap(afterWindow, 4096) == 0);
+        CHECK(SS06CountBlockedLines() == 1); // La fenêtre fermée ne bloque plus.
+        Drain();
+        puts("PASS: attestation-window mmap failure for the main binary only (selfblock)");
+#endif
 
         CHECK(close(fd) == 0);
         CHECK(unlink(mainPath.fileSystemRepresentation) == 0);
