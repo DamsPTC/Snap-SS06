@@ -9,6 +9,14 @@
 #include <stdarg.h>
 #include <string.h>
 
+#ifndef SS06_SELFREAD
+#define SS06_SELFREAD 0
+#endif
+static void SS06LogOnlyRecord(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
+#if SS06_SELFREAD
+#import "SS06SelfRead.h"
+#endif
+
 #if SS06_ENABLE_KEYCHAIN_INTERPOSE || SS06_DISABLE_DEVICECHECK || SS06_DISABLE_LOGIN_ATTESTATION
 #error "logonly ne doit inclure aucun remplacement de valeur"
 #endif
@@ -58,6 +66,10 @@ static void SS06LogOnlyPrepareHistory(void)
 
 static void SS06LogOnlyPublishClipboard(void)
 {
+#if SS06_SELFREAD
+    unsigned int depth = SS06SelfReadDepth++;
+    int entryErrno = errno;
+#endif
     @try {
         // L'init peut précéder l'activation d'UIApplication. Les lignes restent
         // en mémoire et seront publiées à UIApplicationDidBecomeActiveNotification.
@@ -78,11 +90,17 @@ static void SS06LogOnlyPublishClipboard(void)
         // Laisse la révision en attente pour la prochaine mesure/activation.
         // Ne pas journaliser ici : cela réenclencherait la copie en boucle.
     }
+#if SS06_SELFREAD
+    @finally { SS06SelfReadDepth = depth; errno = entryErrno; }
+#endif
 }
 
-static void SS06LogOnlyRecord(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 static void SS06LogOnlyRecord(NSString *format, ...)
 {
+#if SS06_SELFREAD
+    unsigned int depth = SS06SelfReadDepth++;
+    int entryErrno = errno;
+#endif
     va_list arguments;
     va_start(arguments, format);
     @try {
@@ -96,12 +114,27 @@ static void SS06LogOnlyRecord(NSString *format, ...)
             ++SS06LogOnlyHistoryRevision;
         }
         // Aucun accès UIKit ni attente de la file principale dans l'observateur.
+#if SS06_SELFREAD
+        // A page scan may produce thousands of lines. Keep only one pending
+        // clipboard task; its snapshot contains every accumulated line.
+        if (!atomic_exchange_explicit(&SS06SelfReadClipboardPending, true, memory_order_relaxed)) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                atomic_store_explicit(&SS06SelfReadClipboardPending, false, memory_order_relaxed);
+                SS06LogOnlyPublishClipboard();
+            });
+        }
+#else
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyPublishClipboard(); });
+#endif
         NSLog(@"%@", line);
     } @catch (__unused NSException *exception) {
         // Le diagnostic ne doit pas modifier le résultat de la méthode observée.
     } @finally {
         va_end(arguments);
+#if SS06_SELFREAD
+        SS06SelfReadDepth = depth;
+        errno = entryErrno;
+#endif
     }
 }
 
@@ -258,7 +291,12 @@ static void SS06LogOnlyStart(void)
 {
     @autoreleasepool {
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
+#if SS06_SELFREAD
+        SS06LogOnlyRecord(@"init logonly active; trace=selfread-v1; base=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic");
+        SS06SelfReadStart();
+#else
         SS06LogOnlyRecord(@"init logonly active; trace=values-v3; local attestation/token dumps; original values preserved; clipboard=automatic");
+#endif
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation
             // du processus. Une classe toujours absente reste explicitement signalée.

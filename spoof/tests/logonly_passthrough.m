@@ -154,7 +154,7 @@ int main(void)
         CHECK([firstHistory containsString:@"iosDeviceCheckToken state=nonempty chars=1 utf8_bytes=2"]);
         CHECK(![firstHistory containsString:@"SS06_PRIVATE_TEST_SENTINEL"]);
         NSArray<NSString *> *lines = [firstHistory componentsSeparatedByString:@"\n"];
-        CHECK(lines.count == 16 + SS06LogOnlyTargetCount + 1); // 4 captures du setter en plus des mesures/installations.
+        CHECK(lines.count == 16 + SS06LogOnlyTargetCount + 1 + SS06_SELFREAD);
         NSRegularExpression *prefix = [NSRegularExpression
             regularExpressionWithPattern:@"^\\[SS06LogOnly\\] [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z .+$"
             options:0 error:NULL];

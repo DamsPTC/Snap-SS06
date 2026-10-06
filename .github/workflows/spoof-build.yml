@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       BUILD_VARIANT:
-        description: Variante à construire (all = les six variantes)
+        description: Variante à construire (all = les sept variantes)
         required: true
         default: all
         type: choice
@@ -16,6 +16,7 @@ on:
           - dccheckoff
           - noattest
           - logonly
+          - selfread
 
 permissions:
   contents: read
@@ -28,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
+        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly","selfread"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
     env:
       BUILD_VARIANT: ${{ matrix.variant }}
     steps:
@@ -43,7 +44,7 @@ jobs:
           sparse-checkout-cone-mode: true
 
       - name: Python pour l'analyse locale logonly
-        if: ${{ matrix.variant == 'logonly' }}
+        if: ${{ matrix.variant == 'logonly' || matrix.variant == 'selfread' }}
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -61,12 +62,14 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write(f"Variante : **{variant}**\n\nIPA : `{manifest['ipa']}`\n\n")
               summary.write(f"Taille : {manifest['ipa_bytes']} octets\n\nSHA-256 : `{manifest['ipa_sha256']}`\n\n")
-              summary.write(f"Dylib : `{manifest['dylib_present']}` ; interposition compilée : `{manifest['keychain_interposition_compiled']}`.\n\n")
+              summary.write(f"Dylib : `{manifest['dylib_present']}` ; interposition Keychain compilée : `{manifest['keychain_interposition_compiled']}`.\n\n")
               summary.write(f"Swizzles compilés : IDFV/IDFA `{manifest['idfv_idfa_swizzles_compiled']}` ; DeviceCheck NO `{manifest['devicecheck_is_supported_no_compiled']}` ; attestation login nil `{manifest['login_attestation_nil_compiled']}`.\n\n")
               summary.write(f"Observateurs logonly : `{manifest['logonly_observers_compiled']}` ; tests de transmission sur hôte macOS : `{manifest['logonly_host_tests_passed']}`.\n\n")
               summary.write(f"Historique horodaté : `{manifest['logonly_timestamped_history_compiled']}` ; copie automatique : `{manifest['logonly_automatic_clipboard_compiled']}` ; tests du presse-papiers simulé : `{manifest['logonly_clipboard_host_tests_passed']}`.\n\n")
               summary.write(f"Trace : `{manifest['logonly_trace_version']}` ; cibles transport compilées : `{manifest['logonly_transport_targets_compiled']}` ; tests des observateurs transport : `{manifest['logonly_transport_host_tests_passed']}`.\n\n")
               summary.write(f"Dumps locaux : `{manifest['logonly_value_dumps_compiled']}` ; tests des valeurs : `{manifest['logonly_value_dump_host_tests_passed']}` ; tests protobuf/comparaison : `{manifest['logonly_offline_analysis_tests_passed']}`.\n\n")
+              summary.write(f"Interposition POSIX selfread : `{manifest['selfread_posix_interposition_compiled']}` ; fonctions : `{manifest['selfread_interposed_functions']}` ; tests dyld macOS : `{manifest['selfread_dyld_host_tests_passed']}`.\n\n")
+              summary.write('Repères du principal après re-signature (offsets en décimal) :\n\n```json\n' + json.dumps(manifest['repacked_main_macho_landmarks'], indent=2) + '\n```\n\n')
               summary.write('Signature ad hoc : une nouvelle signature est nécessaire pour une installation iOS standard.\n')
               summary.write('Contrôles statiques réussis ; fonctionnement sur appareil non testé.\n')
           PY

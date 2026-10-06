@@ -12,7 +12,7 @@ sa section 4, détaille le chemin DeviceCheck dans le principal et les champs pr
 
 ## Variantes
 
-`BUILD_VARIANT` accepte `none`, `swizzle`, `full`, `dccheckoff`, `noattest` ou `logonly` ; sa valeur par défaut
+`BUILD_VARIANT` accepte `none`, `swizzle`, `full`, `dccheckoff`, `noattest`, `logonly` ou `selfread` ; sa valeur par défaut
 est `full`. Une autre valeur arrête le script avant toute modification.
 
 | Variante | Dylib injectée | IDFV / IDFA | Interposition Keychain | `DCDevice.isSupported` | Getter d'attestation pré-login |
@@ -23,12 +23,14 @@ est `full`. Une autre valeur arrête le script avant toute modification.
 | `dccheckoff` | Oui | UUID stables dans `NSUserDefaults` | Code exclu | Retourne `NO` | D'origine |
 | `noattest` | Oui | UUID stables dans `NSUserDefaults` | Code exclu | Retourne `NO` | Retourne `nil` |
 | `logonly` | Oui, source séparée | D'origine | Code exclu | D'origine | Appel original unique, retour intact et longueur journalisée |
+| `selfread` | Oui, base `logonly` + observation POSIX | D'origine | Code exclu | D'origine | Identique à `logonly` ; journalise aussi les accès au Mach-O principal |
 
 La macro `SS06_ENABLE_KEYCHAIN_INTERPOSE=0` exclut toute la couche Keychain
 de `swizzle`, `dccheckoff` et `noattest`, y compris l'enregistrement `__interpose` et la résolution par
 `dlsym`. `full` la compile avec la valeur `1`. `none` ne compile ni la dylib
-ni l'outil d'injection. `logonly` compile uniquement `SS06LogOnly.m`, sans
-compiler `SS06Spoof.m`. Les six variantes conservent les attributs matériels.
+ni l'outil d'injection. `logonly` et `selfread` compilent uniquement `SS06LogOnly.m`, sans
+compiler `SS06Spoof.m`. `selfread` définit aussi `SS06_SELFREAD=1` pour inclure
+`SS06SelfRead.h` et ses cinq interpositions POSIX. Les sept variantes conservent les attributs matériels.
 
 `SS06_DISABLE_DEVICECHECK=1` compile le remplacement de la méthode d'instance
 `-[DCDevice isSupported]` dans `dccheckoff` et `noattest` ; DeviceCheck est alors
@@ -241,6 +243,98 @@ payload synthétique de 1421 octets, les chaînes DeviceCheck nil/vides/sentinel
 le callback différé sur une autre file et ses exceptions. Les tests Python de
 `tests/test_attestation_analysis.py` valident les parseurs et la comparaison.
 
+## Observer les lectures du principal avec selfread
+
+`BUILD_VARIANT=selfread` conserve les observateurs et les captures de valeurs de
+`logonly` (`values-v3`), puis ajoute cinq paires dans `__DATA,__interpose` :
+`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v1`**.
+L'objectif est d'observer si le principal est relu pendant la génération
+d'attestation, et à quels offsets. Ces interpositions ne capturent pas les octets
+lus et ne les remplacent pas ; les dumps d'attestation/DeviceCheck hérités restent actifs.
+
+Le filtre accepte exclusivement un chemin se terminant par le composant exact
+`Snapchat.app/Snapchat`. `Snapchat.extra`, `Info.plist`, frameworks et autres
+fichiers du bundle sont exclus. Chaque appel résout à nouveau le descripteur par
+`fcntl(F_GETPATH)` ; il n'y a pas de cache susceptible de devenir périmé après
+`close`, `dup` ou réutilisation d'un numéro. Après un `open`/`fopen` réussi,
+le chemin fourni sert de repli si `F_GETPATH` échoue. Une ouverture échouée
+n'a pas de descripteur et n'est pas journalisée. Pour `fopen`, le fd est obtenu
+par `fileno` ; une ouverture interne imbriquée ne crée pas une seconde ligne.
+
+| Appel | Offset journalisé | Taille et résultat |
+| --- | --- | --- |
+| `open`, `fopen` | Position après ouverture, ou `unknown` | `requested=0`, `read_bytes=0` ; fd retourné pour `open`, `result=1` pour un flux non nul |
+| `read` | Position obtenue par `lseek(fd, 0, SEEK_CUR)` avant l'appel | Taille demandée et nombre d'octets effectivement retournés ; EOF et erreurs inclus |
+| `pread` | Argument `offset` | Taille demandée et nombre effectivement retourné ; curseur du fd inchangé |
+| `mmap` | Argument `offset` | `mapped_bytes` vaut la longueur demandée en cas de succès ; `result=0` signifie succès, `-1` échec ; `read_bytes=0` |
+
+Exemple **illustratif**, pas une mesure du client :
+
+```text
+[SS06LogOnly] 2026-10-06T14:00:00.123Z selfread op=pread fd=42 file={"path":"/example/Snapchat.app/Snapchat"} offset=0x1788 offset_dec=6024 offset_source=argument requested=4 result=4 read_bytes=4 mapped_bytes=0 errno=0 thread=123
+```
+
+Les chemins sont échappés en JSON pour conserver une seule ligne. `thread`
+identifie le thread appelant ; `errno` est sauvegardé immédiatement après
+l'original et n'indique une erreur que si son retour signale un échec.
+Chaque original reçoit les arguments intacts, est appelé une fois et conserve
+son retour, ses données et son `errno`, y compris le mode variadique de `open`.
+L'observation démarre après l'initialisation du journal. Une garde par thread
+exclut les appels imbriqués et les accès produits par la journalisation ou
+la publication du presse-papiers, pour éviter une boucle d'auto-observation.
+
+Pour recueillir une session : installer l'IPA `selfread`, lancer l'app,
+tenter un login ou une inscription, attendre l'erreur et laisser brièvement
+l'app active. Ouvrir **Notes** et coller. Vérifier `trace=selfread-v1` puis
+`selfread init enabled=YES interpose_entries=5`. Les lignes sont cumulées
+avec les événements d'attestation dans le même historique horodaté et émises
+par `NSLog`. Une seule tâche de copie peut être en attente ; elle prend
+l'historique complet au moment de son exécution. Aucun bouton n'est ajouté.
+
+Repères fournis pour le binaire de référence :
+
+| Offset / motif | Interprétation à rechercher |
+| --- | --- |
+| `0x1788`, 4 octets | Champ `cryptid` de `LC_ENCRYPTION_INFO_64` |
+| `0x28000` | Début de la plage déclarée par `cryptoff` ; le principal décrypté déclare `cryptid=0` |
+| `0x134db9c0` | Position du blob de signature dans le binaire de référence |
+| Lectures de 4096 octets à `n`, `n+0x1000`, etc. | Parcours séquentiel par blocs ; 4096 est la taille de lecture, pas une mesure de la taille de page virtuelle d'iOS |
+
+Examiner les **plages** `[offset, offset + read_bytes)` : une lecture de
+l'en-tête entier peut couvrir `cryptid` sans commencer à `0x1788`. Pour `mmap`,
+utiliser `mapped_bytes`, en conservant la distinction entre mapping et lecture.
+Le manifeste contient `repacked_main_macho_landmarks`, extrait des commandes
+Mach-O **après** la signature ad hoc du build : offsets de `cryptid`, plage
+`cryptoff`/`cryptsize`, valeur `cryptid` et `LC_CODE_SIGNATURE.dataoff/datasize`.
+La position de la signature peut différer du repère fourni et changer encore
+lors de la signature d'installation. La dylib ne relit pas elle-même le
+principal pour calculer ces repères.
+
+Limites d'interprétation : un mapping ne démontre pas la consultation de
+toutes ses pages, et une proximité temporelle avec l'attestation n'identifie
+pas à elle seule son appelant. Pour `read`, la mesure préalable du curseur
+n'est pas atomique avec la lecture si plusieurs threads partagent le même fd.
+Les syscalls directs, `openat`, `readv`, variantes internes/nocancel, lectures
+internes à la libc de `fread`, données déjà en mémoire ou appels antérieurs
+à l'activation peuvent éviter ces cinq symboles. L'absence de ligne ne
+démontre donc pas l'absence de contrôle d'intégrité. Les autres fichiers
+ne produisent aucune ligne, mais leur résolution `F_GETPATH` ajoute un coût.
+L'historique complet reste en mémoire et peut grossir pendant un long parcours.
+
+Le build exécute aussi `tests/selfread_host.m`, un exécutable macOS séparé
+lié à la dylib de `tests/selfread_interposer.m`. Sur un fichier synthétique,
+il vérifie l'interposition dyld réelle des cinq fonctions, données, mode,
+offsets, retours, `errno`, EOF/erreurs, fd dupliqués/réutilisés, filtre et
+absence de récursion du presse-papiers simulé. Les contrôles ARM64 exigent
+cinq paires d'interposition (80 octets) et aucun import Keychain.
+Ces tests ne prouvent ni l'application de l'interposition par le chargeur
+iOS installé, ni une lecture du principal par le générateur sur l'appareil.
+
+Références : [exemple dyld d'Apple](https://github.com/apple-oss-distributions/dyld/blob/dyld-1042.1/include/mach-o/dyld-interposing.h),
+[F_GETPATH](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fcntl.2.html),
+[read/pread](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/pread.2.html),
+[mmap](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mmap.2.html).
+
 ## Les trois couches
 
 | Couche | Mécanisme | Effet attendu et limites |
@@ -294,9 +388,9 @@ au résultat d'un contrôle côté serveur.
 Depuis GitHub : **Actions → Build spoofed IPA → Run workflow → main**.
 Le workflow est exclusivement manuel (`workflow_dispatch`) et utilise un
 runner macOS avec Xcode et Git LFS.
-Le choix manuel `BUILD_VARIANT=all` lance **les six variantes dans la même
+Le choix manuel `BUILD_VARIANT=all` lance **les sept variantes dans la même
 exécution**, sur des jobs isolés. Il est aussi possible de choisir une seule
-variante, notamment `logonly`. Dans chaque job, la variable d'environnement
+variante, notamment `logonly` ou `selfread`. Dans chaque job, la variable d'environnement
 `BUILD_VARIANT` reçoit la valeur de `matrix.variant`. Le choix `all` appartient
 au workflow uniquement ; ce n'est pas une valeur acceptée par le script local.
 
@@ -310,6 +404,7 @@ BUILD_VARIANT=full bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=dccheckoff bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=noattest bash spoof/build_spoof_ipa.sh
 BUILD_VARIANT=logonly bash spoof/build_spoof_ipa.sh
+BUILD_VARIANT=selfread bash spoof/build_spoof_ipa.sh
 ```
 
 Pour toutes les variantes sauf `none`, le script compile la dylib ARM64 pour iPhoneOS et l'outil
@@ -339,6 +434,7 @@ Résultats :
 | `dccheckoff` | `Snap-SS06-14.25.0.48-dccheckoff.ipa` | `Snap-SS06-spoofed-ipa-dccheckoff` |
 | `noattest` | `Snap-SS06-14.25.0.48-noattest.ipa` | `Snap-SS06-spoofed-ipa-noattest` |
 | `logonly` | `Snap-SS06-14.25.0.48-logonly.ipa` | `Snap-SS06-spoofed-ipa-logonly` |
+| `selfread` | `Snap-SS06-14.25.0.48-selfread.ipa` | `Snap-SS06-spoofed-ipa-selfread` |
 
 Lorsqu'une exécution réussie inclut `logonly`, un job séparé publie également
 son IPA et son manifeste dans une prérelease
@@ -354,9 +450,9 @@ Les booléens `idfv_idfa_swizzles_compiled`,
 `devicecheck_is_supported_no_compiled` et `login_attestation_nil_compiled`
 précisent les remplacements inclus ; `ios_runtime_tested` reste à `false`.
 `logonly_observers_compiled` et `logonly_host_tests_passed` valent `true`
-uniquement pour `logonly` après réussite de ses contrôles. `logonly_observes`
+pour `logonly` et `selfread` après réussite de leurs contrôles. `logonly_observes`
 énumère les mesures de longueur et les familles d'observateurs. `logonly_trace_version`
-vaut `values-v3` ; `logonly_transport_targets_compiled` vaut 34 et
+vaut `values-v3` dans `logonly` et `selfread-v1` dans `selfread` ; `logonly_transport_targets_compiled` vaut 34 et
 `logonly_transport_host_tests_passed` confirme les tests hôte des nouveaux points.
 Ces nombres décrivent la compilation, pas le nombre de hooks installés sur l'appareil.
 `logonly_value_dumps_compiled`, `logonly_value_dump_host_tests_passed` et
@@ -368,7 +464,10 @@ de décodage ou une égalité login/inscription.
 décrivent l'historique, la copie automatique et ses tests avec un presse-papiers
 simulé ; ils ne signifient pas que la copie UIKit a été exécutée sur appareil.
 Les booléens de remplacement d'identité,
-de DeviceCheck, d'attestation et de Keychain valent tous `false` dans ce mode.
+de DeviceCheck, d'attestation et de Keychain valent tous `false` dans ces deux modes.
+`selfread_posix_interposition_compiled`, `selfread_interposed_functions`,
+`selfread_exact_path_filter` et `selfread_dyld_host_tests_passed` décrivent
+l'observation POSIX et ses tests ; ils ne sont actifs que pour `selfread`.
 
 Le build vérifie le format ARM64 non chiffré du principal, les signatures
 des fichiers modifiés, l'absence des trois dossiers retirés et l'intégrité ZIP.
@@ -376,15 +475,16 @@ Pour les variantes injectées, il contrôle aussi la place réservée à la comm
 Mach-O et la dépendance ajoutée. Il exige l'absence de dylib/dépendance dans
 `none`, l'absence de section `__interpose` et d'import `_SecItemCopyMatching`
 dans les dylibs `swizzle`, `dccheckoff`, `noattest` et `logonly`, et leur présence dans `full`.
-Il vérifie les symboles des remplacements IDFV/IDFA dans les dylibs autres que `logonly`,
+Il exige cinq paires POSIX dans `selfread`, sans import `_SecItemCopyMatching`.
+Il vérifie les symboles des remplacements IDFV/IDFA dans les dylibs autres que `logonly` et `selfread`,
 l'inclusion du remplacement DeviceCheck uniquement dans `dccheckoff`/`noattest`
 et celle du retour `nil` uniquement dans `noattest`. La dépendance DeviceCheck
 est également contrôlée pour les deux nouvelles variantes.
-Dans `logonly`, il exige les deux observateurs métier, l'installateur des
+Dans `logonly` et `selfread`, il exige les deux observateurs métier, l'installateur des
 observateurs de transport et l'absence des fonctions de
 remplacement, de `NSUserDefaults`, de `NSUUID` et des imports Keychain/dlsym.
 Il exige aussi l'import `UIPasteboard`, l'option de copie locale et la
-dépendance UIKit de la dylib `logonly`.
+dépendance UIKit de ces deux dylibs.
 Ces contrôles attestent l'assemblage. Le chargement sur
 iOS, la stabilité en session et le résultat du test serveur demandent une
 validation sur appareil ; ils ne sont pas évalués par GitHub Actions.

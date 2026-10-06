@@ -4,9 +4,13 @@ set -euo pipefail
 
 BUILD_VARIANT="${BUILD_VARIANT:-full}"
 case "$BUILD_VARIANT" in
-    none|swizzle|full|dccheckoff|noattest|logonly) ;;
-    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff, noattest ou logonly)." >&2; exit 2 ;;
+    none|swizzle|full|dccheckoff|noattest|logonly|selfread) ;;
+    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff, noattest, logonly ou selfread)." >&2; exit 2 ;;
 esac
+LOGONLY_FAMILY=0
+SELFREAD=0
+if [[ "$BUILD_VARIANT" == logonly || "$BUILD_VARIANT" == selfread ]]; then LOGONLY_FAMILY=1; fi
+if [[ "$BUILD_VARIANT" == selfread ]]; then SELFREAD=1; fi
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/build"
 WORK="$OUT/spoof-work-$BUILD_VARIANT"
@@ -36,16 +40,19 @@ if [[ "$BUILD_VARIANT" != none ]]; then
     DISABLE_LOGIN_ATTESTATION=0
     DYLIB_SOURCE="$ROOT/spoof/SS06Spoof.m"
     FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit -framework AdSupport)
-    if [[ "$BUILD_VARIANT" == logonly ]]; then
+    if [[ "$LOGONLY_FAMILY" == 1 ]]; then
         DYLIB_SOURCE="$ROOT/spoof/SS06LogOnly.m"
         FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit)
         # Vérifie sur le runtime macOS les appels originaux, _cmd, objets,
         # exceptions, résolution dynamique, historique et copie simulée sur la
         # file principale. Le test hôte n'accède pas au presse-papiers du runner.
         xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -DSS06_SELFREAD="$SELFREAD" \
             -framework Foundation "$ROOT/spoof/tests/logonly_passthrough.m" \
             -o "$WORK/logonly-passthrough-test"
-        "$WORK/logonly-passthrough-test" 2> "$WORK/logonly-test.log"
+        if ! "$WORK/logonly-passthrough-test" 2> "$WORK/logonly-test.log"; then
+            cat "$WORK/logonly-test.log" >&2; exit 1
+        fi
         cat "$WORK/logonly-test.log"
         grep -Fq 'clientAttestationPayload state=nonempty bytes=26' "$WORK/logonly-test.log"
         grep -Fq 'clientAttestationPayload state=empty bytes=0' "$WORK/logonly-test.log"
@@ -64,6 +71,19 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         "$WORK/analysis-venv/bin/python" -m unittest discover \
             -s "$ROOT/spoof/tests" -p 'test_attestation_analysis.py' -v
     fi
+    if [[ "$SELFREAD" == 1 ]]; then
+        # Calls originate in another Mach-O image, exercising actual dyld bindings.
+        xcrun --sdk macosx clang -dynamiclib -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -framework Foundation "$ROOT/spoof/tests/selfread_interposer.m" \
+            -Wl,-install_name,@rpath/libSS06SelfReadTest.dylib -o "$WORK/libSS06SelfReadTest.dylib"
+        xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
+            -framework Foundation "$ROOT/spoof/tests/selfread_host.m" \
+            -L"$WORK" -lSS06SelfReadTest -Wl,-rpath,"$WORK" -o "$WORK/selfread-host-test"
+        if ! "$WORK/selfread-host-test" 2> "$WORK/selfread-test.log"; then
+            cat "$WORK/selfread-test.log" >&2; exit 1
+        fi
+        cat "$WORK/selfread-test.log"
+    fi
     if [[ "$BUILD_VARIANT" == full ]]; then
         INTERPOSE=1
         FRAMEWORK_FLAGS+=(-framework Security)
@@ -80,6 +100,7 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         -DSS06_ENABLE_KEYCHAIN_INTERPOSE="$INTERPOSE" \
         -DSS06_DISABLE_DEVICECHECK="$DISABLE_DEVICECHECK" \
         -DSS06_DISABLE_LOGIN_ATTESTATION="$DISABLE_LOGIN_ATTESTATION" \
+        -DSS06_SELFREAD="$SELFREAD" \
         "${FRAMEWORK_FLAGS[@]}" -lobjc \
         -Wl,-install_name,@executable_path/SS06Spoof.dylib \
         "$DYLIB_SOURCE" -o "$WORK/SS06Spoof.dylib"
@@ -157,6 +178,21 @@ else
     if [[ "$BUILD_VARIANT" == full ]]; then
         grep -Fq '__interpose' "$WORK/dylib-load-commands.txt"
         grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"
+    elif [[ "$SELFREAD" == 1 ]]; then
+        grep -Fq '__interpose' "$WORK/dylib-load-commands.txt"
+        if grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"; then
+            echo "Interposition Keychain inattendue dans selfread." >&2; exit 1
+        fi
+        for function in open fopen read pread mmap; do
+            grep -Eq "[[:space:]]_SS06SelfRead_${function}$" "$WORK/dylib-symbols.txt"
+            grep -Eq "[[:space:]]_${function}$" "$WORK/dylib-imports.txt"
+        done
+        python3 - "$WORK/dylib-load-commands.txt" <<'PY'
+import pathlib, re, sys
+commands = pathlib.Path(sys.argv[1]).read_text()
+match = re.search(r'sectname __interpose\s+segname __DATA\s+addr 0x[0-9a-fA-F]+\s+size (0x[0-9a-fA-F]+)', commands)
+assert match and int(match.group(1), 16) == 5 * 2 * 8, 'Expected five ARM64 interpose pairs'
+PY
     elif grep -Fq '__interpose' "$WORK/dylib-load-commands.txt" || \
          grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"; then
         echo "Interposition Keychain inattendue dans $BUILD_VARIANT." >&2; exit 1
@@ -166,10 +202,10 @@ else
                 SS06_deviceCheckIsSupported SS06_appLoginClientAttestationPayload \
                 SS06LogOnly_appLoginClientAttestationPayload SS06LogOnly_setIosDeviceCheckToken; do
         expected=0
-        if [[ "$BUILD_VARIANT" != logonly && ( "$hook" == SS06_identifierForVendor || "$hook" == SS06_advertisingIdentifier ) ]] || \
+        if [[ "$LOGONLY_FAMILY" != 1 && ( "$hook" == SS06_identifierForVendor || "$hook" == SS06_advertisingIdentifier ) ]] || \
            [[ "$hook" == SS06_deviceCheckIsSupported && "$DISABLE_DEVICECHECK" == 1 ]] || \
            [[ "$hook" == SS06_appLoginClientAttestationPayload && "$DISABLE_LOGIN_ATTESTATION" == 1 ]] || \
-           [[ "$BUILD_VARIANT" == logonly && "$hook" == SS06LogOnly_* ]]; then
+           [[ "$LOGONLY_FAMILY" == 1 && "$hook" == SS06LogOnly_* ]]; then
             expected=1
         fi
         present=0
@@ -181,7 +217,7 @@ else
             exit 1
         fi
     done
-    if [[ "$BUILD_VARIANT" == logonly ]]; then
+    if [[ "$LOGONLY_FAMILY" == 1 ]]; then
         grep -Fq '_method_exchangeImplementations' "$WORK/dylib-imports.txt"
         grep -Fq '_imp_implementationWithBlock' "$WORK/dylib-imports.txt"
         grep -Eq '[[:space:]]_SS06LogOnlyInstallTransportObservers$' "$WORK/dylib-symbols.txt"
@@ -212,8 +248,9 @@ unzip -tq "$OUT/$IPA_NAME"
 
 # Trace de provenance et des contrôles, publiée avec chaque IPA.
 python3 - "$BUILD_VARIANT" "$OUT/$IPA_NAME" "$MANIFEST" "$SOURCE_APP/Snapchat" "$APP" "$INSERT_REV" <<'PY'
-import hashlib, json, os, pathlib, sys
+import hashlib, json, os, pathlib, struct, sys
 variant, ipa_name, manifest_name, source, app_name, insert_rev = sys.argv[1:]
+logonly_family = variant in ('logonly', 'selfread')
 def sha256(path):
     digest = hashlib.sha256()
     with open(path, 'rb') as file:
@@ -222,31 +259,58 @@ def sha256(path):
     return digest.hexdigest()
 ipa, app = pathlib.Path(ipa_name), pathlib.Path(app_name)
 dylib = app / 'SS06Spoof.dylib'
+def macho_landmarks(path):
+    result = {}
+    with path.open('rb') as stream:
+        header = struct.unpack('<8I', stream.read(32))
+        assert header[0] == 0xfeedfacf
+        commands = stream.read(header[5])
+    pos = 0
+    for _ in range(header[4]):
+        cmd, size = struct.unpack_from('<II', commands, pos)
+        assert size >= 8 and pos + size <= len(commands)
+        if cmd == 0x2c:
+            cryptoff, cryptsize, cryptid = struct.unpack_from('<III', commands, pos + 8)
+            result['encryption_info_64'] = {
+                'cryptid_file_offset': 32 + pos + 16, 'cryptid_bytes': 4,
+                'cryptid': cryptid, 'cryptoff': cryptoff, 'cryptsize': cryptsize,
+            }
+        elif cmd == 0x1d:
+            dataoff, datasize = struct.unpack_from('<II', commands, pos + 8)
+            result['code_signature'] = {'dataoff': dataoff, 'datasize': datasize}
+        pos += size
+    assert pos == len(commands)
+    return result
 manifest = {
     'variant': variant, 'ipa': ipa.name, 'ipa_bytes': ipa.stat().st_size,
     'ipa_sha256': sha256(ipa), 'source_main_sha256': sha256(source),
     'repacked_main_sha256': sha256(app / 'Snapchat'),
+    'repacked_main_macho_landmarks': macho_landmarks(app / 'Snapchat'),
     'dylib_present': dylib.exists(), 'keychain_interposition_compiled': variant == 'full',
-    'idfv_idfa_swizzles_compiled': variant not in ('none', 'logonly'),
+    'idfv_idfa_swizzles_compiled': variant not in ('none', 'logonly', 'selfread'),
     'devicecheck_is_supported_no_compiled': variant in ('dccheckoff', 'noattest'),
     'login_attestation_nil_compiled': variant == 'noattest',
-    'logonly_observers_compiled': variant == 'logonly',
-    'logonly_host_tests_passed': variant == 'logonly',
-    'logonly_timestamped_history_compiled': variant == 'logonly',
-    'logonly_automatic_clipboard_compiled': variant == 'logonly',
-    'logonly_clipboard_host_tests_passed': variant == 'logonly',
-    'logonly_trace_version': 'values-v3' if variant == 'logonly' else None,
-    'logonly_transport_targets_compiled': 34 if variant == 'logonly' else 0,
-    'logonly_transport_host_tests_passed': variant == 'logonly',
-    'logonly_value_dumps_compiled': variant == 'logonly',
-    'logonly_value_dump_host_tests_passed': variant == 'logonly',
-    'logonly_offline_analysis_tests_passed': variant == 'logonly',
+    'logonly_observers_compiled': logonly_family,
+    'logonly_host_tests_passed': logonly_family,
+    'logonly_timestamped_history_compiled': logonly_family,
+    'logonly_automatic_clipboard_compiled': logonly_family,
+    'logonly_clipboard_host_tests_passed': logonly_family,
+    'logonly_trace_version': 'selfread-v1' if variant == 'selfread' else ('values-v3' if logonly_family else None),
+    'logonly_transport_targets_compiled': 34 if logonly_family else 0,
+    'logonly_transport_host_tests_passed': logonly_family,
+    'logonly_value_dumps_compiled': logonly_family,
+    'logonly_value_dump_host_tests_passed': logonly_family,
+    'logonly_offline_analysis_tests_passed': logonly_family,
+    'selfread_posix_interposition_compiled': variant == 'selfread',
+    'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if variant == 'selfread' else [],
+    'selfread_dyld_host_tests_passed': variant == 'selfread',
+    'selfread_exact_path_filter': 'Snapchat.app/Snapchat' if variant == 'selfread' else None,
     'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
                         'iosDeviceCheckToken.utf8_bytes', 'Janus.login_registration.rpc',
                         'SCNGrpcUnifiedGrpcService.unaryCall', 'SCDeviceCheckFeature.apple_request',
                         'SCPreLoginAttestationImpl.wrappers', 'SCArgosImpl.generateAttestationPayload',
                         'SCPreLoginAttestationImpl._getAttestationPayload.base64',
-                        'SCDeviceCheckFeature.callback.token', 'iosDeviceCheckToken.value'] if variant == 'logonly' else [],
+                        'SCDeviceCheckFeature.callback.token', 'iosDeviceCheckToken.value'] if logonly_family else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,
