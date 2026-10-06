@@ -17,7 +17,7 @@ for part in range(4):
     report = json.loads((source / 'coverage.json').read_text())
     assert report['requested'] == report['decompiled'] + report['failed']
     indexed = 0
-    for index in sorted((source / 'index').glob('*.tsv')):
+    for index in sorted(source.rglob('index/*.tsv')):
         for line in index.read_text().splitlines()[1:]:
             address = line.split('\t', 1)[0]
             assert address not in addresses, f'Duplicate candidate {address}'
