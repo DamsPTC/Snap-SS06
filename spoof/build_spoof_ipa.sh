@@ -189,7 +189,7 @@ else
                 echo "Observateur selfread absent : $function" >&2
                 cat "$WORK/dylib-symbols.txt" >&2; exit 1
             fi
-            if ! grep -Eq "[[:space:]]_${function}$" "$WORK/dylib-imports.txt"; then
+            if ! grep -Eq "(^|[[:space:]])_${function}$" "$WORK/dylib-imports.txt"; then
                 echo "Import POSIX selfread absent : $function" >&2
                 cat "$WORK/dylib-imports.txt" >&2; exit 1
             fi
