@@ -4,8 +4,8 @@ set -euo pipefail
 
 BUILD_VARIANT="${BUILD_VARIANT:-full}"
 case "$BUILD_VARIANT" in
-    none|swizzle|full) ;;
-    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle ou full)." >&2; exit 2 ;;
+    none|swizzle|full|dccheckoff|noattest) ;;
+    *) echo "BUILD_VARIANT invalide : $BUILD_VARIANT (none, swizzle, full, dccheckoff ou noattest)." >&2; exit 2 ;;
 esac
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/build"
@@ -32,14 +32,25 @@ echo "BUILD_VARIANT=$BUILD_VARIANT"
 if [[ "$BUILD_VARIANT" != none ]]; then
     SDK="$(xcrun --sdk iphoneos --show-sdk-path)"
     INTERPOSE=0
+    DISABLE_DEVICECHECK=0
+    DISABLE_LOGIN_ATTESTATION=0
     FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit -framework AdSupport)
     if [[ "$BUILD_VARIANT" == full ]]; then
         INTERPOSE=1
         FRAMEWORK_FLAGS+=(-framework Security)
     fi
+    if [[ "$BUILD_VARIANT" == dccheckoff || "$BUILD_VARIANT" == noattest ]]; then
+        DISABLE_DEVICECHECK=1
+        FRAMEWORK_FLAGS+=(-framework DeviceCheck)
+    fi
+    if [[ "$BUILD_VARIANT" == noattest ]]; then
+        DISABLE_LOGIN_ATTESTATION=1
+    fi
     xcrun --sdk iphoneos clang -target arm64-apple-ios14.0 -dynamiclib \
         -isysroot "$SDK" -fobjc-arc -fblocks \
         -DSS06_ENABLE_KEYCHAIN_INTERPOSE="$INTERPOSE" \
+        -DSS06_DISABLE_DEVICECHECK="$DISABLE_DEVICECHECK" \
+        -DSS06_DISABLE_LOGIN_ATTESTATION="$DISABLE_LOGIN_ATTESTATION" \
         "${FRAMEWORK_FLAGS[@]}" -lobjc \
         -Wl,-install_name,@executable_path/SS06Spoof.dylib \
         "$ROOT/spoof/SS06Spoof.m" -o "$WORK/SS06Spoof.dylib"
@@ -113,12 +124,36 @@ else
     grep -Fq '@executable_path/SS06Spoof.dylib' "$WORK/dependencies.txt"
     otool -l "$APP/SS06Spoof.dylib" > "$WORK/dylib-load-commands.txt"
     nm -u "$APP/SS06Spoof.dylib" > "$WORK/dylib-imports.txt"
+    nm "$APP/SS06Spoof.dylib" > "$WORK/dylib-symbols.txt"
     if [[ "$BUILD_VARIANT" == full ]]; then
         grep -Fq '__interpose' "$WORK/dylib-load-commands.txt"
         grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"
     elif grep -Fq '__interpose' "$WORK/dylib-load-commands.txt" || \
          grep -Fq '_SecItemCopyMatching' "$WORK/dylib-imports.txt"; then
-        echo "Interposition Keychain inattendue dans swizzle." >&2; exit 1
+        echo "Interposition Keychain inattendue dans $BUILD_VARIANT." >&2; exit 1
+    fi
+    # Confirme l'inclusion/exclusion des fonctions de remplacement compilées.
+    for hook in SS06_identifierForVendor SS06_advertisingIdentifier; do
+        grep -Eq "[[:space:]]_${hook}$" "$WORK/dylib-symbols.txt"
+    done
+    for hook in SS06_deviceCheckIsSupported SS06_appLoginClientAttestationPayload; do
+        expected=0
+        if [[ "$hook" == SS06_deviceCheckIsSupported && "$DISABLE_DEVICECHECK" == 1 ]] || \
+           [[ "$hook" == SS06_appLoginClientAttestationPayload && "$DISABLE_LOGIN_ATTESTATION" == 1 ]]; then
+            expected=1
+        fi
+        present=0
+        if grep -Eq "[[:space:]]_${hook}$" "$WORK/dylib-symbols.txt"; then
+            present=1
+        fi
+        if [[ "$present" != "$expected" ]]; then
+            echo "Hook $hook incohérent pour $BUILD_VARIANT (présent=$present, attendu=$expected)." >&2
+            exit 1
+        fi
+    done
+    if [[ "$DISABLE_DEVICECHECK" == 1 ]]; then
+        otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
+        grep -Fq 'DeviceCheck.framework/DeviceCheck' "$WORK/dylib-dependencies.txt"
     fi
     codesign --verify --verbose=2 "$APP/SS06Spoof.dylib"
 fi
@@ -149,6 +184,9 @@ manifest = {
     'ipa_sha256': sha256(ipa), 'source_main_sha256': sha256(source),
     'repacked_main_sha256': sha256(app / 'Snapchat'),
     'dylib_present': dylib.exists(), 'keychain_interposition_compiled': variant == 'full',
+    'idfv_idfa_swizzles_compiled': variant != 'none',
+    'devicecheck_is_supported_no_compiled': variant in ('dccheckoff', 'noattest'),
+    'login_attestation_nil_compiled': variant == 'noattest',
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,

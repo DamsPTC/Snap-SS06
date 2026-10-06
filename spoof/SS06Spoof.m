@@ -9,13 +9,25 @@
 #import <objc/runtime.h>
 #import <dispatch/dispatch.h>
 
-// 0 : swizzles seuls ; 1 : swizzles et interposition Keychain (défaut).
+// Couche Keychain compilée uniquement dans full.
 #ifndef SS06_ENABLE_KEYCHAIN_INTERPOSE
 #define SS06_ENABLE_KEYCHAIN_INTERPOSE 1
+#endif
+#ifndef SS06_DISABLE_DEVICECHECK
+#define SS06_DISABLE_DEVICECHECK 0
+#endif
+#ifndef SS06_DISABLE_LOGIN_ATTESTATION
+#define SS06_DISABLE_LOGIN_ATTESTATION 0
+#endif
+#if SS06_DISABLE_LOGIN_ATTESTATION && !SS06_DISABLE_DEVICECHECK
+#error "noattest exige aussi la désactivation de DeviceCheck"
 #endif
 #if SS06_ENABLE_KEYCHAIN_INTERPOSE
 #import <Security/Security.h>
 #import <dlfcn.h>
+#endif
+#if SS06_DISABLE_DEVICECHECK
+#import <DeviceCheck/DeviceCheck.h>
 #endif
 
 #pragma mark - UUID stables
@@ -46,19 +58,36 @@ static id SS06_advertisingIdentifier(id self, SEL _cmd)
     return [[NSUUID alloc] initWithUUIDString:SS06StoredUUID(@"ss06.idfa")];
 }
 
-static void SS06SwizzleInstanceMethod(Class cls, NSString *selector, IMP imp)
+static BOOL SS06SwizzleInstanceMethod(Class cls, NSString *selector, IMP imp)
 {
-    if (!cls) return;
+    if (!cls) return NO;
     SEL sel = NSSelectorFromString(selector);
     Method original = class_getInstanceMethod(cls, sel);
-    if (!original) return;
+    if (!original) return NO;
 
     SEL spoofSel = NSSelectorFromString([NSString stringWithFormat:@"ss06_%@", selector]);
     BOOL added = class_addMethod(cls, spoofSel, imp, method_getTypeEncoding(original));
-    if (!added) return;
+    if (!added) return NO;
     Method spoofed = class_getInstanceMethod(cls, spoofSel);
     method_exchangeImplementations(original, spoofed);
+    return YES;
 }
+
+#pragma mark - Variantes DeviceCheck / attestation pré-login
+
+#if SS06_DISABLE_DEVICECHECK
+static BOOL SS06_deviceCheckIsSupported(id self, SEL _cmd)
+{
+    return NO;
+}
+#endif
+
+#if SS06_DISABLE_LOGIN_ATTESTATION
+static id SS06_appLoginClientAttestationPayload(id self, SEL _cmd)
+{
+    return nil;
+}
+#endif
 
 #pragma mark - Interposition SecItemCopyMatching
 
@@ -137,7 +166,24 @@ static void SS06Init(void)
         SS06SwizzleInstanceMethod(NSClassFromString(@"ASIdentifierManager"),
                                    @"advertisingIdentifier",
                                    (IMP)SS06_advertisingIdentifier);
-#if SS06_ENABLE_KEYCHAIN_INTERPOSE
+#if SS06_DISABLE_DEVICECHECK
+        // currentDevice est une méthode de classe : elle reste inchangée.
+        BOOL deviceCheckInstalled = SS06SwizzleInstanceMethod([DCDevice class],
+                                    @"isSupported", (IMP)SS06_deviceCheckIsSupported);
+        NSLog(@"[SS06Spoof] hook DCDevice.isSupported : %@",
+              deviceCheckInstalled ? @"installé (NO)" : @"non installé");
+#endif
+#if SS06_DISABLE_LOGIN_ATTESTATION
+        BOOL loginAttestationInstalled = SS06SwizzleInstanceMethod(
+                                    NSClassFromString(@"SCLoginJanusService"),
+                                    @"_appLoginClientAttestationPayload",
+                                    (IMP)SS06_appLoginClientAttestationPayload);
+        NSLog(@"[SS06Spoof] hook SCLoginJanusService._appLoginClientAttestationPayload : %@",
+              loginAttestationInstalled ? @"installé (nil)" : @"non installé");
+        NSLog(@"[SS06Spoof] variante noattest — sans interposition Keychain");
+#elif SS06_DISABLE_DEVICECHECK
+        NSLog(@"[SS06Spoof] variante dccheckoff — sans interposition Keychain");
+#elif SS06_ENABLE_KEYCHAIN_INTERPOSE
         NSLog(@"[SS06Spoof] variante full — interposition déclarée, swizzles tentés");
 #else
         NSLog(@"[SS06Spoof] variante swizzle — swizzles tentés, sans interposition Keychain");
