@@ -1,8 +1,12 @@
 // Observation des longueurs uniquement. Aucun remplacement d'identité/token.
-// Compilé séparément de SS06Spoof.m, avec Foundation et le runtime Objective-C.
+// Compilé séparément de SS06Spoof.m. UIKit sert uniquement au presse-papiers.
 #import <Foundation/Foundation.h>
+#ifndef SS06_LOGONLY_TESTING
+#import <UIKit/UIKit.h>
+#endif
 #import <objc/runtime.h>
 #import <dispatch/dispatch.h>
+#include <stdarg.h>
 #include <string.h>
 
 #if SS06_ENABLE_KEYCHAIN_INTERPOSE || SS06_DISABLE_DEVICECHECK || SS06_DISABLE_LOGIN_ATTESTATION
@@ -12,21 +16,126 @@
 static IMP SS06LogOnlyOriginalPayload;
 static IMP SS06LogOnlyOriginalTokenSetter;
 
+// Historique complet du processus, sans persistance sur disque ni contenu secret.
+// Le verrou protège aussi le formateur de date et le compteur de révision.
+static NSMutableString *SS06LogOnlyHistory;
+static NSDateFormatter *SS06LogOnlyTimestampFormatter;
+static NSUInteger SS06LogOnlyHistoryRevision;
+static NSUInteger SS06LogOnlyPublishedRevision; // File principale uniquement.
+
+#ifdef SS06_LOGONLY_TESTING
+// Le test hôte remplace seulement les accès UIKit ; aucun presse-papiers réel.
+static BOOL SS06LogOnlyAppIsActive(void);
+static void SS06LogOnlyWriteClipboard(NSString *snapshot);
+static NSString * const SS06LogOnlyActiveNotification = @"SS06LogOnlyTestDidBecomeActive";
+#else
+static BOOL SS06LogOnlyAppIsActive(void)
+{
+    return [UIApplication sharedApplication].applicationState == UIApplicationStateActive;
+}
+
+static void SS06LogOnlyWriteClipboard(NSString *snapshot)
+{
+    [[UIPasteboard generalPasteboard]
+        setItems:@[@{@"public.utf8-plain-text": snapshot}]
+        options:@{UIPasteboardOptionLocalOnly: @YES}];
+}
+#endif
+
+static void SS06LogOnlyPrepareHistory(void)
+{
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        SS06LogOnlyHistory = [NSMutableString new];
+        SS06LogOnlyTimestampFormatter = [NSDateFormatter new];
+        SS06LogOnlyTimestampFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        SS06LogOnlyTimestampFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+        SS06LogOnlyTimestampFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+    });
+}
+
+static void SS06LogOnlyPublishClipboard(void)
+{
+    @try {
+        // L'init peut précéder l'activation d'UIApplication. Les lignes restent
+        // en mémoire et seront publiées à UIApplicationDidBecomeActiveNotification.
+        if (!SS06LogOnlyAppIsActive()) return;
+        SS06LogOnlyPrepareHistory();
+        NSString *snapshot;
+        NSUInteger revision;
+        @synchronized (SS06LogOnlyHistory) {
+            revision = SS06LogOnlyHistoryRevision;
+            if (revision <= SS06LogOnlyPublishedRevision) return;
+            snapshot = [SS06LogOnlyHistory copy];
+        }
+        // Snapshot pris au moment de l'exécution, jamais capturé dans une tâche
+        // ancienne : une copie retardée ne peut pas rétablir un historique périmé.
+        SS06LogOnlyWriteClipboard(snapshot);
+        SS06LogOnlyPublishedRevision = revision;
+    } @catch (__unused NSException *exception) {
+        // Laisse la révision en attente pour la prochaine mesure/activation.
+        // Ne pas journaliser ici : cela réenclencherait la copie en boucle.
+    }
+}
+
+static void SS06LogOnlyRecord(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
+static void SS06LogOnlyRecord(NSString *format, ...)
+{
+    va_list arguments;
+    va_start(arguments, format);
+    @try {
+        NSString *message = [[NSString alloc] initWithFormat:format arguments:arguments];
+        SS06LogOnlyPrepareHistory();
+        NSString *line;
+        @synchronized (SS06LogOnlyHistory) {
+            NSString *timestamp = [SS06LogOnlyTimestampFormatter stringFromDate:[NSDate date]];
+            line = [NSString stringWithFormat:@"[SS06LogOnly] %@ %@", timestamp, message];
+            [SS06LogOnlyHistory appendFormat:@"%@\n", line];
+            ++SS06LogOnlyHistoryRevision;
+        }
+        // Aucun accès UIKit ni attente de la file principale dans l'observateur.
+        dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyPublishClipboard(); });
+        NSLog(@"%@", line);
+    } @catch (__unused NSException *exception) {
+        // Le diagnostic ne doit pas modifier le résultat de la méthode observée.
+    } @finally {
+        va_end(arguments);
+    }
+}
+
+static void SS06LogOnlyObserveActivation(void)
+{
+    static dispatch_once_t once;
+    static id activationObserver;
+    dispatch_once(&once, ^{
+        activationObserver = [[NSNotificationCenter defaultCenter]
+#ifdef SS06_LOGONLY_TESTING
+            addObserverForName:SS06LogOnlyActiveNotification
+#else
+            addObserverForName:UIApplicationDidBecomeActiveNotification
+#endif
+            object:nil queue:[NSOperationQueue mainQueue]
+            usingBlock:^(__unused NSNotification *notification) { SS06LogOnlyPublishClipboard(); }];
+    });
+    (void)activationObserver; // Conservé pendant toute la vie du processus.
+    SS06LogOnlyPublishClipboard();
+}
+
 static void SS06LogOnlyMeasurePayload(id value)
 {
     @try {
         if (!value) {
-            NSLog(@"[SS06LogOnly] clientAttestationPayload state=nil bytes=0");
+            SS06LogOnlyRecord(@"clientAttestationPayload state=nil bytes=0");
         } else if ([value isKindOfClass:[NSData class]]) {
             NSUInteger length = [(NSData *)value length];
-            NSLog(@"[SS06LogOnly] clientAttestationPayload state=%@ bytes=%lu",
+            SS06LogOnlyRecord(@"clientAttestationPayload state=%@ bytes=%lu",
                   length ? @"nonempty" : @"empty", (unsigned long)length);
         } else {
-            NSLog(@"[SS06LogOnly] clientAttestationPayload state=unexpected-type bytes=unknown");
+            SS06LogOnlyRecord(@"clientAttestationPayload state=unexpected-type bytes=unknown");
         }
     } @catch (__unused NSException *exception) {
         // Une exception de mesure ne remplace pas le résultat de l'application.
-        NSLog(@"[SS06LogOnly] clientAttestationPayload state=measurement-failed");
+        SS06LogOnlyRecord(@"clientAttestationPayload state=measurement-failed");
     }
 }
 
@@ -34,17 +143,17 @@ static void SS06LogOnlyMeasureToken(id value)
 {
     @try {
         if (!value) {
-            NSLog(@"[SS06LogOnly] iosDeviceCheckToken state=nil chars=0 utf8_bytes=0");
+            SS06LogOnlyRecord(@"iosDeviceCheckToken state=nil chars=0 utf8_bytes=0");
         } else if ([value isKindOfClass:[NSString class]]) {
             NSUInteger chars = [(NSString *)value length];
             NSUInteger bytes = [(NSString *)value lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
-            NSLog(@"[SS06LogOnly] iosDeviceCheckToken state=%@ chars=%lu utf8_bytes=%lu",
+            SS06LogOnlyRecord(@"iosDeviceCheckToken state=%@ chars=%lu utf8_bytes=%lu",
                   chars ? @"nonempty" : @"empty", (unsigned long)chars, (unsigned long)bytes);
         } else {
-            NSLog(@"[SS06LogOnly] iosDeviceCheckToken state=unexpected-type length=unknown");
+            SS06LogOnlyRecord(@"iosDeviceCheckToken state=unexpected-type length=unknown");
         }
     } @catch (__unused NSException *exception) {
-        NSLog(@"[SS06LogOnly] iosDeviceCheckToken state=measurement-failed");
+        SS06LogOnlyRecord(@"iosDeviceCheckToken state=measurement-failed");
     }
 }
 
@@ -76,7 +185,7 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
 {
     if (*originalSlot) return YES; // Une seconde tentative ne ré-échange pas.
     if (!cls) {
-        NSLog(@"[SS06LogOnly] observer %@ unavailable=class", NSStringFromSelector(selector));
+        SS06LogOnlyRecord(@"observer %@ unavailable=class", NSStringFromSelector(selector));
         return NO;
     }
 
@@ -86,21 +195,21 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
         Method original = class_getInstanceMethod(cls, selector);
         char returnType[32] = {0}, argumentType[32] = {0};
         if (!original || method_getNumberOfArguments(original) != (setter ? 3u : 2u)) {
-            NSLog(@"[SS06LogOnly] observer %@ unavailable=method", NSStringFromSelector(selector));
+            SS06LogOnlyRecord(@"observer %@ unavailable=method", NSStringFromSelector(selector));
             return NO;
         }
         method_getReturnType(original, returnType, sizeof(returnType));
         if (setter) method_getArgumentType(original, 2, argumentType, sizeof(argumentType));
         if (SS06LogOnlyTypeCode(returnType) != (setter ? 'v' : '@') ||
             (setter && SS06LogOnlyTypeCode(argumentType) != '@')) {
-            NSLog(@"[SS06LogOnly] observer %@ unavailable=signature", NSStringFromSelector(selector));
+            SS06LogOnlyRecord(@"observer %@ unavailable=signature", NSStringFromSelector(selector));
             return NO;
         }
 
         IMP implementation = method_getImplementation(original);
         const char *encoding = method_getTypeEncoding(original);
         if (!class_addMethod(cls, alias, observer, encoding)) {
-            NSLog(@"[SS06LogOnly] observer %@ unavailable=alias", NSStringFromSelector(selector));
+            SS06LogOnlyRecord(@"observer %@ unavailable=alias", NSStringFromSelector(selector));
             return NO;
         }
         // Une méthode héritée est localisée sur la classe ciblée : la classe
@@ -109,10 +218,10 @@ static BOOL SS06LogOnlyInstallObserver(Class cls, SEL selector, SEL alias,
         original = class_getInstanceMethod(cls, selector);
         *originalSlot = implementation;
         method_exchangeImplementations(original, class_getInstanceMethod(cls, alias));
-        NSLog(@"[SS06LogOnly] observer %@ installed", NSStringFromSelector(selector));
+        SS06LogOnlyRecord(@"observer %@ installed", NSStringFromSelector(selector));
         return YES;
     } @catch (__unused NSException *exception) {
-        NSLog(@"[SS06LogOnly] observer %@ unavailable=initialization", NSStringFromSelector(selector));
+        SS06LogOnlyRecord(@"observer %@ unavailable=initialization", NSStringFromSelector(selector));
         return NO;
     }
 }
@@ -132,12 +241,11 @@ static BOOL SS06LogOnlyInstallObservers(void)
     return payload && token;
 }
 
-#ifndef SS06_LOGONLY_TESTING
-__attribute__((constructor))
-static void SS06LogOnlyInit(void)
+static void SS06LogOnlyStart(void)
 {
     @autoreleasepool {
-        NSLog(@"[SS06LogOnly] logonly active; lengths only; original values preserved");
+        dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
+        SS06LogOnlyRecord(@"init logonly active; lengths only; original values preserved; clipboard=automatic");
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation
             // du processus. Une classe toujours absente reste explicitement signalée.
@@ -146,5 +254,12 @@ static void SS06LogOnlyInit(void)
             });
         }
     }
+}
+
+#ifndef SS06_LOGONLY_TESTING
+__attribute__((constructor))
+static void SS06LogOnlyInit(void)
+{
+    SS06LogOnlyStart();
 }
 #endif

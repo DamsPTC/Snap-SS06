@@ -28,7 +28,7 @@ trap 'rm -rf "$WORK"' EXIT
 rm -f "$OUT/$IPA_NAME" "$MANIFEST"
 echo "BUILD_VARIANT=$BUILD_VARIANT"
 
-# 1) dylib ARM64 iPhoneOS. logonly est une unité séparée, Foundation uniquement.
+# 1) dylib ARM64 iPhoneOS. logonly est une unité séparée, Foundation + UIKit.
 if [[ "$BUILD_VARIANT" != none ]]; then
     SDK="$(xcrun --sdk iphoneos --show-sdk-path)"
     INTERPOSE=0
@@ -38,9 +38,10 @@ if [[ "$BUILD_VARIANT" != none ]]; then
     FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit -framework AdSupport)
     if [[ "$BUILD_VARIANT" == logonly ]]; then
         DYLIB_SOURCE="$ROOT/spoof/SS06LogOnly.m"
-        FRAMEWORK_FLAGS=(-framework Foundation)
+        FRAMEWORK_FLAGS=(-framework Foundation -framework UIKit)
         # Vérifie sur le runtime macOS les appels originaux, _cmd, objets,
-        # exceptions et la résolution dynamique utilisée par les setters GPB.
+        # exceptions, résolution dynamique, historique et copie simulée sur la
+        # file principale. Le test hôte n'accède pas au presse-papiers du runner.
         xcrun --sdk macosx clang -fobjc-arc -fblocks -Wall -Wextra -Werror \
             -framework Foundation "$ROOT/spoof/tests/logonly_passthrough.m" \
             -o "$WORK/logonly-passthrough-test"
@@ -173,6 +174,10 @@ else
     done
     if [[ "$BUILD_VARIANT" == logonly ]]; then
         grep -Fq '_method_exchangeImplementations' "$WORK/dylib-imports.txt"
+        grep -Fq '_OBJC_CLASS_$_UIPasteboard' "$WORK/dylib-imports.txt"
+        grep -Fq '_UIPasteboardOptionLocalOnly' "$WORK/dylib-imports.txt"
+        otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
+        grep -Fq 'UIKit.framework/UIKit' "$WORK/dylib-dependencies.txt"
         if grep -Eq 'SS06StoredUUID|NSUserDefaults|NSUUID' "$WORK/dylib-symbols.txt" || \
            grep -Eq '_SecItem|_dlsym' "$WORK/dylib-imports.txt"; then
             echo "Code de remplacement inattendu dans logonly." >&2; exit 1
@@ -216,6 +221,9 @@ manifest = {
     'login_attestation_nil_compiled': variant == 'noattest',
     'logonly_observers_compiled': variant == 'logonly',
     'logonly_host_tests_passed': variant == 'logonly',
+    'logonly_timestamped_history_compiled': variant == 'logonly',
+    'logonly_automatic_clipboard_compiled': variant == 'logonly',
+    'logonly_clipboard_host_tests_passed': variant == 'logonly',
     'logonly_observes': ['clientAttestationPayload.length', 'iosDeviceCheckToken.length',
                         'iosDeviceCheckToken.utf8_bytes'] if variant == 'logonly' else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,

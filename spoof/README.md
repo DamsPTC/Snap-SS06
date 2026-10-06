@@ -67,7 +67,9 @@ valeurs d'attestation. Elle ne lit/écrit pas `NSUserDefaults` ou le Keychain,
 et ne contient pas d'interposition C (`__interpose`). Elle utilise deux
 **swizzles d'observation** via `method_exchangeImplementations` : le swizzle
 est le mécanisme qui permet de journaliser, tout en conservant les valeurs.
-La dylib ne dépend que de Foundation et du runtime Objective-C.
+L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
+`SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
+pour la copie dans le presse-papiers.
 
 | Point observé | Mesure | Transmission |
 | --- | --- | --- |
@@ -81,10 +83,32 @@ Il mesure la **chaîne du champ protobuf**, pas les octets Apple après décodag
 base64. Une sentinelle d'indisponibilité est également une chaîne non vide :
 `nonempty` ne prouve donc pas qu'un token Apple valide est présent.
 
-Seuls les états et longueurs sont journalisés par `NSLog`, avec le préfixe
-`[SS06LogOnly]`. Ni payload, ni token, ni base64, ni empreinte de leur contenu
-ne sont écrits dans les logs. Aucun fichier de diagnostic ni envoi réseau
-supplémentaire n'est créé. Les exceptions des méthodes originales se
+Chaque mesure, l'événement `init` de la dylib et les états d'installation
+des observateurs sont ajoutés à une **chaîne mutable globale en mémoire**,
+avec le préfixe `[SS06LogOnly]` et un horodatage UTC à la milliseconde
+(`yyyy-MM-dd'T'HH:mm:ss.SSS'Z'`). La même ligne est émise par `NSLog`.
+**Chaque nouvelle ligne programme la copie de l'historique complet dans
+`UIPasteboard.generalPasteboard`**, sur la file principale, sans attente
+bloquante dans les méthodes observées. Toutes les anciennes lignes sont
+conservées pendant la vie du processus ; aucun fichier de diagnostic ni
+envoi réseau supplémentaire n'est créé. L'historique repart à zéro lors
+d'un nouveau lancement du processus.
+
+Les ajouts concurrents sont protégés par un verrou. Une tâche de copie lit
+le dernier historique disponible : elle ne peut pas rétablir un ancien
+snapshot. Si l'app est inactive (notamment pendant l'init), les lignes
+restent en mémoire et sont copiées à sa prochaine activation. Plusieurs
+mesures rapprochées peuvent être réunies en une copie contenant toutes les
+lignes. Une activation sans nouvelle ligne ne recopie pas l'historique.
+Une exception de copie laisse les lignes en attente de la prochaine mesure
+ou activation.
+
+La copie **remplace le contenu courant du presse-papiers**, sans le lire.
+L'option `UIPasteboardOptionLocalOnly` est activée et aucune expiration n'est
+ajoutée par la dylib. Aucun bouton, alerte, geste de secousse ni modification
+des vues de l'app n'est ajouté. Seuls les états, longueurs, horodatages et
+événements d'installation sont copiés : ni payload, ni token, ni base64,
+ni empreinte de leur contenu. Les exceptions des méthodes originales se
 propagent ; une exception pendant la mesure est traitée séparément.
 Un type inattendu produit `unexpected-type`, sans conversion de son contenu.
 
@@ -95,18 +119,30 @@ localisée sur la classe ciblée avant l'échange, sans modifier sa classe de
 base. Une seule nouvelle tentative d'installation est programmée sur la
 file principale si la première échoue.
 
-Pour le test sur appareil :
+Pour lire les mesures **sans outil externe** sur l'appareil :
 
-1. Construire `BUILD_VARIANT=logonly`, resigner puis installer l'IPA.
-2. Collecter les journaux de l'application et filtrer `[SS06LogOnly]`.
-3. Vérifier les deux lignes `observer ... installed`.
-4. Effectuer la tentative de login et relever les états/longueurs.
+1. Installer l'IPA `logonly` après signature adaptée, puis lancer l'app.
+2. Tenter le login ou l'inscription et attendre l'erreur. Laisser l'app
+   active un court instant pour que la file principale traite la copie.
+3. Ouvrir **Notes**, créer une note et **coller** le presse-papiers.
+4. Vérifier la ligne `init`, les deux lignes `observer ... installed`, puis
+   lire les états et longueurs. L'heure et les anciennes lignes permettent
+   de distinguer plusieurs tentatives au sein d'une même session.
+
+Les points observés appartiennent à la construction de la requête **AppLogin**.
+Un parcours d'inscription peut ne pas les appeler. Si seules l'init et
+l'installation apparaissent, cela ne démontre pas une payload vide.
+Si rien n'est collé, revenir dans l'app pour permettre une copie en attente,
+puis réessayer Notes ; vérifier également que l'IPA installée est bien cette
+version `logonly`. Un autre contenu copié entre-temps remplace l'historique
+dans le presse-papiers. `NSLog` reste disponible en complément.
 
 Exemples **illustratifs**, pas des mesures de cet appareil :
 
 ```text
-[SS06LogOnly] clientAttestationPayload state=nonempty bytes=256
-[SS06LogOnly] iosDeviceCheckToken state=nonempty chars=172 utf8_bytes=172
+[SS06LogOnly] 2026-10-06T10:00:00.000Z init logonly active; lengths only; original values preserved; clipboard=automatic
+[SS06LogOnly] 2026-10-06T10:00:04.120Z clientAttestationPayload state=nonempty bytes=256
+[SS06LogOnly] 2026-10-06T10:00:04.123Z iosDeviceCheckToken state=nonempty chars=172 utf8_bytes=172
 ```
 
 `bytes > 0` établit uniquement que ce getter a retourné un `NSData` non vide
@@ -119,9 +155,13 @@ modifications du build, et la journalisation ajoute un coût d'exécution.
 Le test hôte [`tests/logonly_passthrough.m`](tests/logonly_passthrough.m)
 vérifie sur macOS l'appel unique, l'identité des objets et des sélecteurs,
 les valeurs nil/vides, la propagation des exceptions, une méthode héritée
-et un setter résolu dynamiquement. Il contrôle aussi les messages de taille
-et l'absence du contenu de test dans les logs. **Ce test utilise des classes
-de simulation : il ne remplace pas une exécution du client sur iPhone.**
+et un setter résolu dynamiquement. Il contrôle aussi les horodatages,
+l'historique complet, les ajouts concurrents, la publication sur la file
+principale, la copie différée à l'activation et la reprise après exception
+de copie. Le presse-papiers est simulé : celui du runner n'est pas touché.
+Le contenu de test doit rester absent des logs et de l'historique copié.
+**Ces tests ne remplacent pas une exécution du client sur iPhone : la copie
+réelle via UIKit et les mesures de cet appareil restent à vérifier.**
 
 ## Les trois couches
 
@@ -237,7 +277,11 @@ Les booléens `idfv_idfa_swizzles_compiled`,
 précisent les remplacements inclus ; `ios_runtime_tested` reste à `false`.
 `logonly_observers_compiled` et `logonly_host_tests_passed` valent `true`
 uniquement pour `logonly` après réussite de ses contrôles. `logonly_observes`
-énumère les trois mesures de longueur. Les booléens de remplacement d'identité,
+énumère les trois mesures de longueur. `logonly_timestamped_history_compiled`,
+`logonly_automatic_clipboard_compiled` et `logonly_clipboard_host_tests_passed`
+décrivent l'historique, la copie automatique et ses tests avec un presse-papiers
+simulé ; ils ne signifient pas que la copie UIKit a été exécutée sur appareil.
+Les booléens de remplacement d'identité,
 de DeviceCheck, d'attestation et de Keychain valent tous `false` dans ce mode.
 
 Le build vérifie le format ARM64 non chiffré du principal, les signatures
@@ -252,6 +296,8 @@ et celle du retour `nil` uniquement dans `noattest`. La dépendance DeviceCheck
 est également contrôlée pour les deux nouvelles variantes.
 Dans `logonly`, il exige les deux observateurs et l'absence des fonctions de
 remplacement, de `NSUserDefaults`, de `NSUUID` et des imports Keychain/dlsym.
+Il exige aussi l'import `UIPasteboard`, l'option de copie locale et la
+dépendance UIKit de la dylib `logonly`.
 Ces contrôles attestent l'assemblage. Le chargement sur
 iOS, la stabilité en session et le résultat du test serveur demandent une
 validation sur appareil ; ils ne sont pas évalués par GitHub Actions.
