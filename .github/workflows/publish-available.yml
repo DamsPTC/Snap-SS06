@@ -1,0 +1,40 @@
+name: Publier les lots décompilés déjà terminés
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-available.yml]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: decompiled
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 37398060701
+          pattern: pseudocode-*
+          path: .work/results
+          merge-multiple: true
+      - name: Publier les fichiers terminés
+        shell: bash
+        run: |
+          test -d .work/results/decompiled
+          cp -a .work/results/decompiled .
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse decompiled
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish completed Ghidra batches while remaining batches run'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
