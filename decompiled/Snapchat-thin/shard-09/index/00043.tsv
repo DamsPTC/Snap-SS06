@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+106fabcfc	106fabd03	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setWifiApList:]	
+106fabd04	106fabd0b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage shareWiFiCredentials:password:]	
+106fabd0c	106fabd13	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getLastCloudUploadTime]	
+106fabd14	106fabd1b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getWiFiStatusWithForceBoot:]	
+106fabd1c	106fabd23	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getAvailableWiFiNetworksWithForceBoot:]	
+106fabd24	106fabe0f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage enableSpectaclesWiFiSettings:]	
+106fabe10	106fabe17	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage forgetWiFiWithSSID:]	
+106fabe18	106fabe1f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage exchangeNonce:channelType:]	
+106fabe20	106fabeff	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage unpair]	
+106fabf00	106fabf07	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage postPairingCompletionEvent]	
+106fabf08	106fabf0f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getLocationEnabledWithForceBoot:]	
+106fabf10	106fabf17	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setLocationEnabled:]	
+106fabf18	106fabf1f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setAudioLevel:]	
+106fabf20	106fabf27	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getAudioLevelWithForceBoot:]	
+106fabf28	106fabf2f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setBrightnessLevel:]	
+106fabf30	106fabf37	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getBrightnessLevelWithForceBoot:]	
+106fabf38	106fabf3f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setAutoBrightness:]	
+106fabf40	106fabf47	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getAutoBrightness]	
+106fabf48	106fabf4f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage muteSystemSound:]	
+106fabf50	106fabf57	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getSystemSoundMutedStatus]	
+106fabf58	106fabf5f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage playSound:]	
+106fabf60	106fac027	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setUSBImportState:]	
+106fac028	106fac107	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getUSBImportState]	
+106fac108	106fac1e7	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getUSBConnectionStatus]	
+106fac1e8	106fac1ef	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage proxyStarted:password:port:ipv4:]	
+106fac1f0	106fac1f7	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage proxyStatus:]	
+106fac1f8	106fac1ff	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage proxyManualStart]	
+106fac200	106fac207	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage proxyManualStop]	
+106fac208	106fac20f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage eventRegisterListenerRequest]	
+106fac210	106fac217	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage eventUnregisterListenerRequest]	
+106fac218	106fac31b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage mediaListRequest]	
+106fac31c	106fac5e3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage readRequestWithUUID:fileType:fileRange:]	
+106fac5e4	106fac743	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage markTransferredRequestForContentUUID:]	
+106fac744	106fac8a3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage deletionRequestForContentUUID:]	
+106fac8a4	106faca33	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getGenericAssetWithFileIdentifier:range:]	
+106faca34	106faca3b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage cancelBackupForIdentifiers:]	
+106faca3c	106faca43	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage resumeBackup]	
+106faca44	106faca4b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setPhoneName:]	
+106faca4c	106faca53	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getLowPowerMode]	
+106faca54	106faca5b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setLowPowerMode:]	
+106faca5c	106faca63	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage provideLocationWithStatus:location:debugMessage:]	
+106faca64	106faca6b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage provideLocationWithStatus:location:heading:debugMessage:]	
+106faca6c	106faca73	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getQuickSaveMode]	
+106faca74	106faca7b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setQuickSaveMode:]	
+106faca7c	106faca83	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage performFactoryResetRequest]	
+106faca84	106faca8b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage clearCacheRequest]	
+106faca8c	106faca93	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage qcomDownRequest]	
+106faca94	106faca9b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage qcomUpRequest]	
+106faca9c	106facaa3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getQcomStateRequest]	
+106facaa4	106facaab	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getAvailableLens:]	
+106facaac	106facb73	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage enableDeveloperMode:]	
+106facb74	106facb7b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage enableOemUnlocking:]	
+106facb7c	106facb83	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage enableDemoMode]	
+106facb84	106facc63	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getDeveloperModeState]	
+106facc64	106facc6b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setAdbKey:]	
+106facc6c	106facc73	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getBatteryPreservationMode]	
+106facc74	106facc7b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setBatteryPreservationMode:]	
+106facc7c	106facc83	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage sendShakeToReportData:description:]	
+106facc84	106facc8b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage activateFastboot]	
+106facc8c	106facc93	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage requestUserDeviceSecurityData]	
+106facc94	106facc9b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setPhoneProximityEnable:lagunaId:passcode:]	
+106facc9c	106facca3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setLockOutEvent:lockOutTime:lagunaId:passcode:]	
+106facca4	106faccab	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setRequirePasscodeEnabled:lagunaId:passcode:]	
+106faccac	106faccb3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage changePasscode:newPasscode:]	
+106faccb4	106faccbb	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage verifyPasscode:]	
+106faccbc	106faccc3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage performProximityUnlockWithPasscode:]	
+106faccc4	106facccb	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setBatchSettingsRequest:]	
+106facccc	106faccd3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getSettingsInCategory:]	
+106faccd4	106facdb3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage abortFlightRequest]	
+106facdb4	106face93	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getFlightMode]	
+106face94	106facf73	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getFlightStatus]	
+106facf74	106fad053	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getFlightStateError]	
+106fad054	106fad157	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage disableFlightRequest:]	
+106fad158	106fad237	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage getAllFlightSettings]	
+106fad238	106fad383	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setFlightCaptureDuration:flightMode:]	
+106fad384	106fad503	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setFlightDistance:flightMode:]	
+106fad504	106fad65b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setFlightCaptureType:flightMode:]	
+106fad65c	106fad7af	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setFlightTracking:flightMode:]	
+106fad7b0	106fad8d3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage setFlightCustomMode:]	
+106fad8d4	106fad8db	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage launchLensWithLensId:]	
+106fad8dc	106fad8e3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage syncLenses]	
+106fad8e4	106fada2f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareUpdateUpload:startPosition:overwriteExistingFile:]	
+106fada30	106fadb0b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareGetChecksum]	
+106fadb0c	106fadbe7	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwwareRebootAndSwitchPartition]	
+106fadbe8	106fadcc3	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareApplyPatch]	
+106fadcc4	106fadd9f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareApplyFullUpdate]	
+106fadda0	106fade7f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareGetScheduledUpdateStatus]	
+106fade80	106fade87	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareScheduleUpdate:windowLength:targetVersion:targetDigest:]	
+106fade88	106fadf67	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareCancelScheduledUpdate]	
+106fadf68	106fae14f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage firmwareScheduleUpdate:targetDigest:isFullUpdate:]	
+106fae150	106fae253	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage debugLogFileListRequest]	
+106fae254	106fae42b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage debugLogFileRequestWithFilename:range:]	
+106fae42c	106fae52f	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage analyticsFileListRequest]	
+106fae530	106fae707	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage analyticsFileGetWithFilename:range:]	
+106fae708	106fae80b	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage analyticsFileDeleteRequest]	
+106fae80c	106fae8eb	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage enableLostMode]	
+106fae8ec	106fae9cb	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage startFlightImuCalibrationRequest]	
+106fae9cc	106faeaab	decompiled	chunks/006/functions-000430.c	+[SCSpectaclesCheeriosRequestMessage stopFlightImuCalibrationRequest]	
+106faeaac	106faeab3	decompiled	chunks/006/functions-000430.c	-[SCSpectaclesCheeriosRequestMessage cheeriosRpcRequests]	
+106faeab4	106faeabf	decompiled	chunks/006/functions-000430.c	-[SCSpectaclesCheeriosRequestMessage .cxx_destruct]	
+106faeac0	106faeb33	decompiled	chunks/006/functions-000431.c	-[SCSpectaclesHermosaRequestMessage initWithHermosaRequests:]	
+106faeb34	106faeb3b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage turnBluetoothClassicOn:name:]	
+106faeb3c	106faeb43	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage turnBluetoothClassicOff]	
+106faeb44	106faed0f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage turnWiFiOn:ssidPassword:countryCode:]	
+106faed10	106faee67	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage connectWifiTo:password:]	
+106faee68	106faef47	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage turnWiFiOff]	
+106faef48	106faf033	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage enableSpectaclesWiFiSettings:]	
+106faf034	106faf127	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage forgetWiFiWithSSID:]	
+106faf128	106faf203	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage ambaWatchdogKick]	
+106faf204	106faf2df	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceRestart]	
+106faf2e0	106faf55b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceMinimalInfoRequest]	
+106faf55c	106faf63b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage serialNumberRequest]	
+106faf63c	106faf7ef	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceInfoUpdate]	
+106faf7f0	106faf8ef	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceInfoUpdateLowBattery]	
+106faf8f0	106fafa13	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceLeftBatteryStatus]	
+106fafa14	106fafb37	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceRightBatteryStatus]	
+106fafb38	106fafef7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceInfoInitialEnableHevc:enableLocation:forceBoot:]	
+106fafef8	106faffeb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deviceNameUpdateRequest:]	
+106faffec	106fafff3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareGetDigest]	
+106fafff4	106fafffb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareApplyPatch]	
+106fafffc	106fb0003	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareRevertBinary]	
+106fb0004	106fb000b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareFlashUpdate]	
+106fb000c	106fb0013	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareGetScheduledUpdateStatus]	
+106fb0014	106fb0147	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage checkOTAUpdateAvailability:forceBoot:]	
+106fb0148	106fb0263	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage installOTAUpdate:]	
+106fb0264	106fb036b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setOTAAutoUpdateEnabled:]	
+106fb036c	106fb044b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getOTAAutoUpdateEnabled]	
+106fb044c	106fb052b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage cancelOTAUpdate]	
+106fb052c	106fb0533	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage firmwareScheduleUpdate:windowLength:targetVersion:targetDigest:]	
+106fb0534	106fb0613	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage requestCrashReport]	
+106fb0614	106fb06f3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage clearCrashReport]	
+106fb06f4	106fb06fb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage prepShippingState]	
+106fb06fc	106fb0703	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage userAssociationRequest:]	
+106fb0704	106fb070b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage pairingTimerKick]	
+106fb070c	106fb07ff	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage validatePairingWithUserId:]	
+106fb0800	106fb093f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage exchangeKey:nonce:]	
+106fb0940	106fb0a7f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage verifyPeer:tag:]	
+106fb0a80	106fb0b7f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage encryptionSetupNonce:]	
+106fb0b80	106fb1207	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage accessToken:refreshToken:expirationTimeMs:userId:snapadsId:email:birthday:fideliusKeyProvider:scopes:]	
+106fb1208	106fb1327	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setPairingSessionId:]	
+106fb1328	106fb1407	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getClientId]	
+106fb1408	106fb140f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage authzCode:codeVerifier:redirectUri:]	
+106fb1410	106fb1417	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getWifiApList]	
+106fb1418	106fb141f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setWifiApList:]	
+106fb1420	106fb159b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage shareWiFiCredentials:password:]	
+106fb159c	106fb15a3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getLastCloudUploadTime]	
+106fb15a4	106fb16df	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage exchangeNonce:channelType:]	
+106fb16e0	106fb17bf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage unpair]	
+106fb17c0	106fb189f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage postPairingCompletionEvent]	
+106fb18a0	106fb198f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getLocationEnabledWithForceBoot:]	
+106fb1990	106fb1a7b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setLocationEnabled:]	
+106fb1a7c	106fb1b43	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setAudioLevel:]	
+106fb1b44	106fb1c33	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getAudioLevelWithForceBoot:]	
+106fb1c34	106fb1cfb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setBrightnessLevel:]	
+106fb1cfc	106fb1deb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getBrightnessLevelWithForceBoot:]	
+106fb1dec	106fb1ef3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setAutoBrightness:]	
+106fb1ef4	106fb1fd3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getAutoBrightness]	
+106fb1fd4	106fb20db	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage muteSystemSound:]	
+106fb20dc	106fb21bb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getSystemSoundMutedStatus]	
+106fb21bc	106fb22bf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage playSound:]	
+106fb22c0	106fb22c7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setUSBImportState:]	
+106fb22c8	106fb22cf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getUSBImportState]	
+106fb22d0	106fb22d7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getUSBConnectionStatus]	
+106fb22d8	106fb2427	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage proxyStarted:password:port:ipv4:]	
+106fb2428	106fb252b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage proxyStatus:]	
+106fb252c	106fb260b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage proxyManualStart]	
+106fb260c	106fb26eb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage proxyManualStop]	
+106fb26ec	106fb28bf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage eventRegisterListenerRequest]	
+106fb28c0	106fb299f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage eventUnregisterListenerRequest]	
+106fb29a0	106fb2aaf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage mediaListRequest]	
+106fb2ab0	106fb2d87	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage readRequestWithUUID:fileType:fileRange:]	
+106fb2d88	106fb2f23	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getGenericAssetWithFileIdentifier:range:]	
+106fb2f24	106fb3003	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage cancelBackupForIdentifiers:]	
+106fb3004	106fb30e3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage resumeBackup]	
+106fb30e4	106fb324f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage markTransferredRequestForContentUUID:]	
+106fb3250	106fb33bb	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage deletionRequestForContentUUID:]	
+106fb33bc	106fb3497	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setPhoneName:]	
+106fb3498	106fb3587	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getWiFiStatusWithForceBoot:]	
+106fb3588	106fb3677	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getAvailableWiFiNetworksWithForceBoot:]	
+106fb3678	106fb3757	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getLowPowerMode]	
+106fb3758	106fb385f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setLowPowerMode:]	
+106fb3860	106fb393f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getQuickSaveMode]	
+106fb3940	106fb3a1f	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setQuickSaveMode:]	
+106fb3a20	106fb3aff	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage performFactoryResetRequest]	
+106fb3b00	106fb3bdf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage clearAllContent]	
+106fb3be0	106fb3cbf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage clearCacheRequest]	
+106fb3cc0	106fb3dc3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage qcomDownRequest]	
+106fb3dc4	106fb3ec7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage qcomUpRequest]	
+106fb3ec8	106fb3fa7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getQcomStateRequest]	
+106fb3fa8	106fb3fb7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage _pblocationStatusWithStatus:]	
+106fb3fb8	106fb3fbf	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage _pbLocationWithCLLocation:]	
+106fb3fc0	106fb40ff	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage _pbLocationWithCLLocation:heading:]	
+106fb4100	106fb410b	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage provideLocationWithStatus:location:debugMessage:]	
+106fb410c	106fb42b3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage provideLocationWithStatus:location:heading:debugMessage:]	
+106fb42b4	106fb43df	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getAvailableLens:]	
+106fb43e0	106fb44e7	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage enableDeveloperMode:]	
+106fb44e8	106fb45ef	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage enableOemUnlocking:]	
+106fb45f0	106fb46f3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage enableDemoMode]	
+106fb46f4	106fb47d3	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage getDeveloperModeState]	
+106fb47d4	106fb48ef	decompiled	chunks/006/functions-000431.c	+[SCSpectaclesHermosaRequestMessage setAdbKey:]	
+106fb48f0	106fb49cf	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage getBatteryPreservationMode]	
+106fb49d0	106fb4ae3	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage setBatteryPreservationMode:]	
+106fb4ae4	106fb4c17	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage sendShakeToReportData:description:]	
+106fb4c18	106fb4cf3	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage activateFastboot]	
+106fb4cf4	106fb4dd3	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage requestUserDeviceSecurityData]	
+106fb4dd4	106fb4f7b	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage setPhoneProximityEnable:lagunaId:passcode:]	
+106fb4f7c	106fb4f9b	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage _HRMPBLockOutEventFromSCSpectaclesLockOutEvent:]	
+106fb4f9c	106fb51ab	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage setLockOutEvent:lockOutTime:lagunaId:passcode:]	
+106fb51ac	106fb532f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage setRequirePasscodeEnabled:lagunaId:passcode:]	
+106fb5330	106fb548b	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage changePasscode:newPasscode:]	
+106fb548c	106fb55cb	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage verifyPasscode:]	
+106fb55cc	106fb570b	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage performProximityUnlockWithPasscode:]	
+106fb570c	106fb58ab	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage _setSettingRequestWithValue:forKey:]	
+106fb58ac	106fb5973	decompiled	chunks/006/functions-000432.c		
+106fb5974	106fb59b7	decompiled	chunks/006/functions-000432.c		
+106fb59b8	106fb59bb	decompiled	chunks/006/functions-000432.c		
+106fb59bc	106fb5bff	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage setBatchSettingsRequest:]	
+106fb5c00	106fb5d17	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage getSettingsInCategory:]	
+106fb5d18	106fb5d33	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage _HRMPBSettingCategoryFromCategory:]	
+106fb5d34	106fb5e4f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage launchLensWithLensId:]	
+106fb5e50	106fb5f2f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage syncLenses]	
+106fb5f30	106fb5f37	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareUpdateUpload:startPosition:overwriteExistingFile:]	
+106fb5f38	106fb5f3f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareGetCurrentVersion]	
+106fb5f40	106fb5f47	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareApplyFullUpdate]	
+106fb5f48	106fb5f4f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareGetChecksum]	
+106fb5f50	106fb5f57	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwwareRebootAndSwitchPartition]	
+106fb5f58	106fb5f5f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareScheduleUpdate:targetDigest:isFullUpdate:]	
+106fb5f60	106fb5f67	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage firmwareCancelScheduledUpdate]	
+106fb5f68	106fb5f6f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage debugLogFileListRequest]	
+106fb5f70	106fb5f77	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage debugLogFileRequestWithFilename:range:]	
+106fb5f78	106fb5f7f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage analyticsFileListRequest]	
+106fb5f80	106fb5f87	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage analyticsFileGetWithFilename:range:]	
+106fb5f88	106fb5f8f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage analyticsFileDeleteRequest]	
+106fb5f90	106fb5f97	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage enableLostMode]	
+106fb5f98	106fb5f9f	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage startFlightImuCalibrationRequest]	
+106fb5fa0	106fb5fa7	decompiled	chunks/006/functions-000432.c	+[SCSpectaclesHermosaRequestMessage stopFlightImuCalibrationRequest]	
+106fb5fa8	106fb5faf	decompiled	chunks/006/functions-000432.c	-[SCSpectaclesHermosaRequestMessage hermosaRequests]	
+106fb5fb0	106fb5fbb	decompiled	chunks/006/functions-000432.c	-[SCSpectaclesHermosaRequestMessage .cxx_destruct]	
+106fb5fbc	106fb6037	decompiled	chunks/006/functions-000432.c		
+106fb6038	106fb6047	decompiled	chunks/006/functions-000432.c		
+106fb6048	106fb60d3	decompiled	chunks/006/functions-000432.c	+[CHRPBCheeriosRpcRequest descriptor]	
+106fb60d4	106fb6163	decompiled	chunks/006/functions-000432.c	+[CHRPBCheeriosRpcResponse descriptor]	
+106fb6164	106fb61df	decompiled	chunks/006/functions-000432.c		
+106fb61e0	106fb61eb	decompiled	chunks/006/functions-000432.c		
+106fb61ec	106fb6267	decompiled	chunks/006/functions-000432.c		
+106fb6268	106fb6273	decompiled	chunks/006/functions-000432.c		
+106fb6274	106fb62db	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaTypeAndSize descriptor]	
+106fb62dc	106fb6343	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaMetadata descriptor]	
+106fb6344	106fb63ab	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaFileTransferRequest descriptor]	
+106fb63ac	106fb6413	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaFileDeletionRequest descriptor]	
+106fb6414	106fb647b	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaFileMarkTransferredRequest descriptor]	
+106fb647c	106fb64e3	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaRequest descriptor]	
+106fb64e4	106fb654b	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaData descriptor]	
+106fb654c	106fb65b3	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaResponse descriptor]	
+106fb65b4	106fb661b	decompiled	chunks/006/functions-000432.c	+[CHRPBGetFileRequest descriptor]	
+106fb661c	106fb66ff	decompiled	chunks/006/functions-000432.c	+[CHRPBGetFileResponse descriptor]	
+106fb6700	106fb670b	decompiled	chunks/006/functions-000432.c		
+106fb670c	106fb6787	decompiled	chunks/006/functions-000432.c		
+106fb6788	106fb6793	decompiled	chunks/006/functions-000432.c		
+106fb6794	106fb67fb	decompiled	chunks/006/functions-000432.c	+[CHRPBTimeData descriptor]	
+106fb67fc	106fb6863	decompiled	chunks/006/functions-000432.c	+[CHRPBDroppedFramesData descriptor]	
+106fb6864	106fb68cb	decompiled	chunks/006/functions-000432.c	+[CHRPBVideoData descriptor]	
+106fb68cc	106fb6933	decompiled	chunks/006/functions-000432.c	+[CHRPBImageData descriptor]	
+106fb6934	106fb69b7	decompiled	chunks/006/functions-000432.c	+[CHRPBImageData_Burst descriptor]	
+106fb69b8	106fb6a1f	decompiled	chunks/006/functions-000432.c	+[CHRPBCameraSensorData descriptor]	
+106fb6a20	106fb6a87	decompiled	chunks/006/functions-000432.c	+[CHRPBFirmwareVersion descriptor]	
+106fb6a88	106fb6aef	decompiled	chunks/006/functions-000432.c	+[CHRPBFlightData descriptor]	
+106fb6af0	106fb6b57	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaFileMetadata descriptor]	
+106fb6b58	106fb6bbf	decompiled	chunks/006/functions-000432.c	+[CHRPBAsset descriptor]	
+106fb6bc0	106fb6c27	decompiled	chunks/006/functions-000432.c	+[CHRPBGenericAssetsMetadata descriptor]	
+106fb6c28	106fb6c8f	decompiled	chunks/006/functions-000432.c	+[CHRPBCameraData descriptor]	
+106fb6c90	106fb6cf7	decompiled	chunks/006/functions-000432.c	+[CHRPBAttitudeFrame descriptor]	
+106fb6cf8	106fb6d73	decompiled	chunks/006/functions-000432.c	+[CHRPBAttitudeFrame_Translation descriptor]	
+106fb6d74	106fb6def	decompiled	chunks/006/functions-000432.c	+[CHRPBAttitudeFrame_Quaternion descriptor]	
+106fb6df0	106fb6e57	decompiled	chunks/006/functions-000432.c	+[CHRPBSixDof descriptor]	
+106fb6e58	106fb6ebf	decompiled	chunks/006/functions-000432.c	+[CHRPBBleName descriptor]	
+106fb6ec0	106fb6f27	decompiled	chunks/006/functions-000432.c	+[CHRPBMediaCountsResponse descriptor]	
+106fb6f28	106fb6f8f	decompiled	chunks/006/functions-000432.c	+[CHRPBChargerStateResponse descriptor]	
+106fb6f90	106fb6ff7	decompiled	chunks/006/functions-000432.c	+[CHRPBBoardIdResponse descriptor]	
+106fb6ff8	106fb705f	decompiled	chunks/006/functions-000432.c	+[CHRPBKeyExchangeMessage descriptor]	
+106fb7060	106fb70c7	decompiled	chunks/006/functions-000432.c	+[CHRPBPairingSignatureMessage descriptor]	
+106fb70c8	106fb712f	decompiled	chunks/006/functions-000432.c	+[CHRPBPeerVerificationMessage descriptor]	
+106fb7130	106fb7197	decompiled	chunks/006/functions-000432.c	+[CHRPBRealTimeMessage descriptor]	
+106fb7198	106fb71ff	decompiled	chunks/006/functions-000432.c	+[CHRPBValidatePairingRequest descriptor]	
+106fb7200	106fb72e3	decompiled	chunks/006/functions-000432.c	+[CHRPBValidatePairingResponse descriptor]	
+106fb72e4	106fb72ef	decompiled	chunks/006/functions-000432.c		
+106fb72f0	106fb736b	decompiled	chunks/006/functions-000432.c		
+106fb736c	106fb737b	decompiled	chunks/006/functions-000432.c		
+106fb737c	106fb73f7	decompiled	chunks/006/functions-000432.c		
+106fb73f8	106fb7403	decompiled	chunks/006/functions-000432.c		
+106fb7404	106fb747f	decompiled	chunks/006/functions-000432.c		
+106fb7480	106fb748b	decompiled	chunks/006/functions-000432.c		
+106fb748c	106fb751b	decompiled	chunks/006/functions-000432.c		
+106fb751c	106fb7527	decompiled	chunks/006/functions-000432.c		
+106fb7528	106fb75b7	decompiled	chunks/006/functions-000432.c		
+106fb75b8	106fb75c3	decompiled	chunks/006/functions-000432.c		
+106fb75c4	106fb763f	decompiled	chunks/006/functions-000432.c		
+106fb7640	106fb764b	decompiled	chunks/006/functions-000432.c		
+106fb764c	106fb76c7	decompiled	chunks/006/functions-000432.c		
+106fb76c8	106fb76e3	decompiled	chunks/006/functions-000432.c		
+106fb76e4	106fb775f	decompiled	chunks/006/functions-000433.c		
+106fb7760	106fb776b	decompiled	chunks/006/functions-000433.c		
+106fb776c	106fb77e7	decompiled	chunks/006/functions-000433.c		
+106fb77e8	106fb77f7	decompiled	chunks/006/functions-000433.c		
+106fb77f8	106fb7873	decompiled	chunks/006/functions-000433.c		
+106fb7874	106fb7883	decompiled	chunks/006/functions-000433.c		
+106fb7884	106fb78ff	decompiled	chunks/006/functions-000433.c		
+106fb7900	106fb790f	decompiled	chunks/006/functions-000433.c		
+106fb7910	106fb798b	decompiled	chunks/006/functions-000433.c		
+106fb798c	106fb799b	decompiled	chunks/006/functions-000433.c		
+106fb799c	106fb7a17	decompiled	chunks/006/functions-000433.c		
+106fb7a18	106fb7a23	decompiled	chunks/006/functions-000433.c		
+106fb7a24	106fb7a9f	decompiled	chunks/006/functions-000433.c		
+106fb7aa0	106fb7aab	decompiled	chunks/006/functions-000433.c		
+106fb7aac	106fb7b27	decompiled	chunks/006/functions-000433.c		
+106fb7b28	106fb7b33	decompiled	chunks/006/functions-000433.c		
+106fb7b34	106fb7baf	decompiled	chunks/006/functions-000433.c		
+106fb7bb0	106fb7bbb	decompiled	chunks/006/functions-000433.c		
+106fb7bbc	106fb7c37	decompiled	chunks/006/functions-000433.c		
+106fb7c38	106fb7c43	decompiled	chunks/006/functions-000433.c		
+106fb7c44	106fb7cbf	decompiled	chunks/006/functions-000433.c		
+106fb7cc0	106fb7ccb	decompiled	chunks/006/functions-000433.c		
+106fb7ccc	106fb7d47	decompiled	chunks/006/functions-000433.c		
+106fb7d48	106fb7d53	decompiled	chunks/006/functions-000433.c		
+106fb7d54	106fb7dcf	decompiled	chunks/006/functions-000433.c		
+106fb7dd0	106fb7ddb	decompiled	chunks/006/functions-000433.c		
+106fb7ddc	106fb7e57	decompiled	chunks/006/functions-000433.c		
+106fb7e58	106fb7e63	decompiled	chunks/006/functions-000433.c		
+106fb7e64	106fb7ecb	decompiled	chunks/006/functions-000433.c	+[CHRPBGitResponse descriptor]	
+106fb7ecc	106fb7f33	decompiled	chunks/006/functions-000433.c	+[CHRPBEmpty descriptor]	
+106fb7f34	106fb7f9f	decompiled	chunks/006/functions-000433.c	+[CHRPBSystemState descriptor]	
+106fb7fa0	106fb8007	decompiled	chunks/006/functions-000433.c	+[CHRPBMediaCountsMessage descriptor]	
+106fb8008	106fb806f	decompiled	chunks/006/functions-000433.c	+[CHRPBRange descriptor]	
+106fb8070	106fb80d7	decompiled	chunks/006/functions-000433.c	+[CHRPBWifiParams descriptor]	
+106fb80d8	106fb813f	decompiled	chunks/006/functions-000433.c	+[CHRPBBatteryStatusResponse descriptor]	
+106fb8140	106fb81a7	decompiled	chunks/006/functions-000433.c	+[CHRPBCrashReportDetails descriptor]	
+106fb81a8	106fb820f	decompiled	chunks/006/functions-000433.c	+[CHRPBCrashReport descriptor]	
+106fb8210	106fb8277	decompiled	chunks/006/functions-000433.c	+[CHRPBLogsResponse descriptor]	
+106fb8278	106fb82e3	decompiled	chunks/006/functions-000433.c	+[CHRPBLocationData descriptor]	
+106fb82e4	106fb834b	decompiled	chunks/006/functions-000433.c	+[CHRPBTemperatureResponse descriptor]	
+106fb834c	106fb83b3	decompiled	chunks/006/functions-000433.c	+[CHRPBEncryptionNonceExchange descriptor]	
+106fb83b4	106fb841b	decompiled	chunks/006/functions-000433.c	+[CHRPBOTAUpdateRequest descriptor]	
+106fb841c	106fb8483	decompiled	chunks/006/functions-000433.c	+[CHRPBOTAUpdateEventData descriptor]	
+106fb8484	106fb850f	decompiled	chunks/006/functions-000433.c	+[CHRPBOTAUpdateResponse descriptor]	
+106fb8510	106fb8577	decompiled	chunks/006/functions-000433.c	+[CHRPBFirmwareUpdateUploadRequest descriptor]	
+106fb8578	106fb85df	decompiled	chunks/006/functions-000433.c	+[CHRPBFirmwareUpdateUploadResponse descriptor]	
+106fb85e0	106fb8647	decompiled	chunks/006/functions-000433.c	+[CHRPBDialPosition descriptor]	
+106fb8648	106fb86af	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStateFlyingManual descriptor]	
+106fb86b0	106fb8717	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStatePreTakeOff descriptor]	
+106fb8718	106fb877f	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStateTakingOff descriptor]	
+106fb8780	106fb87e7	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStateLanding descriptor]	
+106fb87e8	106fb884f	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStateIdle descriptor]	
+106fb8850	106fb88b7	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainStateFlyingTraj descriptor]	
+106fb88b8	106fb8943	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptainInfo descriptor]	
+106fb8944	106fb89ab	decompiled	chunks/006/functions-000433.c	+[CHRPBStorageCapacity descriptor]	
+106fb89ac	106fb8a13	decompiled	chunks/006/functions-000433.c	+[CHRPBOTAScheduledUpdate descriptor]	
+106fb8a14	106fb8a7b	decompiled	chunks/006/functions-000433.c	+[CHRPBOTACancelScheduledUpdateResponse descriptor]	
+106fb8a7c	106fb8ae3	decompiled	chunks/006/functions-000433.c	+[CHRPBDisableFlightRequest descriptor]	
+106fb8ae4	106fb8b4b	decompiled	chunks/006/functions-000433.c	+[CHRPBDisableFlightResponse descriptor]	
+106fb8b4c	106fb8bb3	decompiled	chunks/006/functions-000433.c	+[CHRPBFlightModeConfig descriptor]	
+106fb8bb4	106fb8c1b	decompiled	chunks/006/functions-000433.c	+[CHRPBDurationParams descriptor]	
+106fb8c1c	106fb8c83	decompiled	chunks/006/functions-000433.c	+[CHRPBVideoResolutionParams descriptor]	
+106fb8c84	106fb8ceb	decompiled	chunks/006/functions-000433.c	+[CHRPBPhotoResolutionParams descriptor]	
+106fb8cec	106fb8d53	decompiled	chunks/006/functions-000433.c	+[CHRPBDistanceParams descriptor]	
+106fb8d54	106fb8dbb	decompiled	chunks/006/functions-000433.c	+[CHRPBCaptureTypeParams descriptor]	
+106fb8dbc	106fb8e23	decompiled	chunks/006/functions-000433.c	+[CHRPBTrackingParams descriptor]	
+106fb8e24	106fb8e8b	decompiled	chunks/006/functions-000433.c	+[CHRPBRemainingFlightInfo descriptor]	
+106fb8e8c	106fb8ef3	decompiled	chunks/006/functions-000433.c	+[CHRPBFlightStatusError descriptor]	
+106fb8ef4	106fb8f5b	decompiled	chunks/006/functions-000433.c	+[CHRPBVideoFormatParams descriptor]	
+106fb8f5c	106fb8fc3	decompiled	chunks/006/functions-000433.c	+[CHRPBCustomFlightMode descriptor]	
+106fb8fc4	106fb902b	decompiled	chunks/006/functions-000433.c	+[CHRPBUSBConnectionStatus descriptor]	
+106fb902c	106fb9093	decompiled	chunks/006/functions-000433.c	+[CHRPBErrorResponse descriptor]	
+106fb9094	106fb90fb	decompiled	chunks/006/functions-000433.c	+[CHRPBLogFileTransferRequest descriptor]	
+106fb90fc	106fb9163	decompiled	chunks/006/functions-000433.c	+[CHRPBLogRequest descriptor]	
+106fb9164	106fb91cb	decompiled	chunks/006/functions-000433.c	+[CHRPBLogFileMetadata descriptor]	
+106fb91cc	106fb9233	decompiled	chunks/006/functions-000433.c	+[CHRPBLogData descriptor]	
+106fb9234	106fb929b	decompiled	chunks/006/functions-000433.c	+[CHRPBLogResponse descriptor]	
+106fb929c	106fb9303	decompiled	chunks/006/functions-000433.c	+[CHRPBKeepDeviceActiveParams descriptor]	
+106fb9304	106fb936b	decompiled	chunks/006/functions-000433.c	+[CHRPBKeepDeviceActiveResult descriptor]	
+106fb936c	106fb93d3	decompiled	chunks/006/functions-000433.c	+[CHRPBCalibrationResult descriptor]	
+106fb93d4	106fb943b	decompiled	chunks/006/functions-000433.c	+[CHRPBCalibrationStatus descriptor]	
+106fb943c	106fb94a3	decompiled	chunks/006/functions-000433.c	+[CHRPBStartCalibrationRequest descriptor]	
+106fb94a4	106fb950b	decompiled	chunks/006/functions-000433.c	+[CHRPBStartCalibrationResponse descriptor]	
+106fb950c	106fb9573	decompiled	chunks/006/functions-000433.c	+[CHRPBStopCalibrationRequest descriptor]	
+106fb9574	106fb95db	decompiled	chunks/006/functions-000433.c	+[CHRPBStopCalibrationResponse descriptor]	
+106fb95dc	106fb9643	decompiled	chunks/006/functions-000433.c	+[CHRPBActivateLostModeRequest descriptor]	
+106fb9644	106fb96ab	decompiled	chunks/006/functions-000433.c	+[CHRPBActivateLostModeResponse descriptor]	
+106fb96ac	106fb9713	decompiled	chunks/006/functions-000433.c	+[CHRPBDeactivateLostModeRequest descriptor]	
+106fb9714	106fb977b	decompiled	chunks/006/functions-000433.c	+[CHRPBDeactivateLostModeResponse descriptor]	
+106fb977c	106fb97e3	decompiled	chunks/006/functions-000433.c	+[CHRPBGetLostModeStateRequest descriptor]	
+106fb97e4	106fb984b	decompiled	chunks/006/functions-000433.c	+[CHRPBGetLostModeStateResponse descriptor]	
+106fb984c	106fb98b3	decompiled	chunks/006/functions-000433.c	+[CHRPBLostModeBeginEvent descriptor]	
+106fb98b4	106fb991b	decompiled	chunks/006/functions-000433.c	+[CHRPBLostModeEndEvent descriptor]	
+106fb991c	106fb99a7	decompiled	chunks/006/functions-000433.c	+[CHRPBLostModeEvent descriptor]	
+106fb99a8	106fb9a0f	decompiled	chunks/006/functions-000433.c	+[CHRPBFlightModeSettings descriptor]	
+106fb9a10	106fb9af3	decompiled	chunks/006/functions-000433.c	+[CHRPBFlightSettings descriptor]	
+106fb9af4	106fb9b03	decompiled	chunks/006/functions-000433.c		
+106fb9b04	106fb9b8f	decompiled	chunks/006/functions-000433.c	+[HRMPBHermosaRpcRequest descriptor]	
+106fb9b90	106fb9c1f	decompiled	chunks/006/functions-000433.c	+[HRMPBHermosaRpcResponse descriptor]	
+106fb9c20	106fb9d03	decompiled	chunks/006/functions-000433.c	+[HRMPBBoolValue descriptor]	
+106fb9d04	106fb9d0f	decompiled	chunks/006/functions-000434.c		
+106fb9d10	106fb9d8b	decompiled	chunks/006/functions-000434.c		
+106fb9d8c	106fb9d97	decompiled	chunks/006/functions-000434.c		
+106fb9d98	106fb9e13	decompiled	chunks/006/functions-000434.c		
+106fb9e14	106fb9e1f	decompiled	chunks/006/functions-000434.c		
+106fb9e20	106fb9e87	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaTypeAndSize descriptor]	
+106fb9e88	106fb9eef	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaMetadata descriptor]	
+106fb9ef0	106fb9f57	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaFileTransferRequest descriptor]	
+106fb9f58	106fb9fbf	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaFileDeletionRequest descriptor]	
+106fb9fc0	106fba027	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaFileMarkTransferredRequest descriptor]	
+106fba028	106fba08f	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaRequest descriptor]	
+106fba090	106fba0f7	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaData descriptor]	
+106fba0f8	106fba15f	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaResponse descriptor]	
+106fba160	106fba1c7	decompiled	chunks/006/functions-000434.c	+[HRMPBGetFileRequest descriptor]	
+106fba1c8	106fba22f	decompiled	chunks/006/functions-000434.c	+[HRMPBGetFileResponse descriptor]	
+106fba230	106fba297	decompiled	chunks/006/functions-000434.c	+[HRMPBCancelBackupParams descriptor]	
+106fba298	106fba2ff	decompiled	chunks/006/functions-000434.c	+[HRMPBCancelBackupResult descriptor]	
+106fba300	106fba367	decompiled	chunks/006/functions-000434.c	+[HRMPBResumeBackupParams descriptor]	
+106fba368	106fba44b	decompiled	chunks/006/functions-000434.c	+[HRMPBResumeBackupResult descriptor]	
+106fba44c	106fba457	decompiled	chunks/006/functions-000434.c		
+106fba458	106fba4d3	decompiled	chunks/006/functions-000434.c		
+106fba4d4	106fba4df	decompiled	chunks/006/functions-000434.c		
+106fba4e0	106fba547	decompiled	chunks/006/functions-000434.c	+[HRMPBTimeData descriptor]	
+106fba548	106fba5af	decompiled	chunks/006/functions-000434.c	+[HRMPBDroppedFramesData descriptor]	
+106fba5b0	106fba617	decompiled	chunks/006/functions-000434.c	+[HRMPBVideoData descriptor]	
+106fba618	106fba67f	decompiled	chunks/006/functions-000434.c	+[HRMPBImageData descriptor]	
+106fba680	106fba703	decompiled	chunks/006/functions-000434.c	+[HRMPBImageData_Burst descriptor]	
+106fba704	106fba76b	decompiled	chunks/006/functions-000434.c	+[HRMPBNordicData descriptor]	
+106fba76c	106fba7d3	decompiled	chunks/006/functions-000434.c	+[HRMPBAmbaData descriptor]	
+106fba7d4	106fba83b	decompiled	chunks/006/functions-000434.c	+[HRMPBCameraSensorData descriptor]	
+106fba83c	106fba8a3	decompiled	chunks/006/functions-000434.c	+[HRMPBGpsData descriptor]	
+106fba8a4	106fba90b	decompiled	chunks/006/functions-000434.c	+[HRMPBFwVersion descriptor]	
+106fba90c	106fba973	decompiled	chunks/006/functions-000434.c	+[HRMPBMultisnap descriptor]	
+106fba974	106fba9db	decompiled	chunks/006/functions-000434.c	+[HRMPBPerformanceData descriptor]	
+106fba9dc	106fbaa43	decompiled	chunks/006/functions-000434.c	+[HRMPBMediaFileMetadata descriptor]	
+106fbaa44	106fbaaab	decompiled	chunks/006/functions-000434.c	+[HRMPBCoulombCtrlData descriptor]	
+106fbaaac	106fbab13	decompiled	chunks/006/functions-000434.c	+[HRMPBAsset descriptor]	
+106fbab14	106fbab7b	decompiled	chunks/006/functions-000434.c	+[HRMPBGenericAssetsMetadata descriptor]	
+106fbab7c	106fbabe3	decompiled	chunks/006/functions-000434.c	+[HRMPBAvailableLensesGetRequest descriptor]	
+106fbabe4	106fbac4b	decompiled	chunks/006/functions-000434.c	+[HRMPBAvailableLensesGetResponse descriptor]	
+106fbac4c	106fbad2f	decompiled	chunks/006/functions-000434.c	+[HRMPBLens descriptor]	
+106fbad30	106fbad3f	decompiled	chunks/006/functions-000434.c		
+106fbad40	106fbada7	decompiled	chunks/006/functions-000434.c	+[HRMPBSetSettingRequest descriptor]	
+106fbada8	106fbae0f	decompiled	chunks/006/functions-000434.c	+[HRMPBSetBatchSettingsRequest descriptor]	
+106fbae10	106fbae77	decompiled	chunks/006/functions-000434.c	+[HRMPBGetSettingsForCategoryRequest descriptor]	
+106fbae78	106fbaedf	decompiled	chunks/006/functions-000434.c	+[HRMPBGetSettingsForCategoryResponse descriptor]	
+106fbaee0	106fbaf47	decompiled	chunks/006/functions-000434.c	+[HRMPBSetting descriptor]	
+106fbaf48	106fbafd3	decompiled	chunks/006/functions-000434.c	+[HRMPBSettingValue descriptor]	
+106fbafd4	106fbb0b7	decompiled	chunks/006/functions-000434.c	+[HRMPBSettingOption descriptor]	
+106fbb0b8	106fbb0c7	decompiled	chunks/006/functions-000434.c		
+106fbb0c8	106fbb143	decompiled	chunks/006/functions-000434.c		
+106fbb144	106fbb14f	decompiled	chunks/006/functions-000434.c		
+106fbb150	106fbb1cb	decompiled	chunks/006/functions-000434.c		
+106fbb1cc	106fbb1db	decompiled	chunks/006/functions-000434.c		
+106fbb1dc	106fbb257	decompiled	chunks/006/functions-000434.c		
+106fbb258	106fbb267	decompiled	chunks/006/functions-000434.c		
+106fbb268	106fbb2e3	decompiled	chunks/006/functions-000434.c		
+106fbb2e4	106fbb2ef	decompiled	chunks/006/functions-000434.c		
+106fbb2f0	106fbb36b	decompiled	chunks/006/functions-000434.c		
+106fbb36c	106fbb37b	decompiled	chunks/006/functions-000434.c		
+106fbb37c	106fbb3f7	decompiled	chunks/006/functions-000434.c		
+106fbb3f8	106fbb407	decompiled	chunks/006/functions-000434.c		
+106fbb408	106fbb46f	decompiled	chunks/006/functions-000434.c	+[HRMPBSpecsEvent descriptor]	
+106fbb470	106fbb4d7	decompiled	chunks/006/functions-000434.c	+[HRMPBTaskInfo descriptor]	
+106fbb4d8	106fbb53f	decompiled	chunks/006/functions-000434.c	+[HRMPBRTOSHeapInfo descriptor]	
+106fbb540	106fbb5db	decompiled	chunks/006/functions-000434.c	+[HRMPBSpectaclesPushMessage descriptor]	
+106fbb5dc	106fbb657	decompiled	chunks/006/functions-000434.c	+[HRMPBSpectaclesPushMessage_InvalidatedRequest descriptor]	
+106fbb658	106fbb6e3	decompiled	chunks/006/functions-000434.c	+[HRMPBNrfFdsEntry descriptor]	
+106fbb6e4	106fbb75f	decompiled	chunks/006/functions-000434.c		
+106fbb760	106fbb76b	decompiled	chunks/006/functions-000434.c		
+106fbb76c	106fbb7fb	decompiled	chunks/006/functions-000434.c		
+106fbb7fc	106fbb813	decompiled	chunks/006/functions-000434.c		
+106fbb814	106fbb87b	decompiled	chunks/006/functions-000434.c	+[HRMPBButtonEvent descriptor]	
+106fbb87c	106fbb8e3	decompiled	chunks/006/functions-000434.c	+[HRMPBUserData descriptor]	
+106fbb8e4	106fbb9c7	decompiled	chunks/006/functions-000434.c	+[HRMPBShipmodeStatus descriptor]	
+106fbb9c8	106fbb9d3	decompiled	chunks/006/functions-000434.c		
+106fbb9d4	106fbba4f	decompiled	chunks/006/functions-000434.c		
+106fbba50	106fbba5b	decompiled	chunks/006/functions-000434.c		
+106fbba5c	106fbbad7	decompiled	chunks/006/functions-000434.c		
+106fbbad8	106fbbae3	decompiled	chunks/006/functions-000434.c		
+106fbbae4	106fbbb5f	decompiled	chunks/006/functions-000434.c		
+106fbbb60	106fbbb6b	decompiled	chunks/006/functions-000434.c		
+106fbbb6c	106fbbbd3	decompiled	chunks/006/functions-000434.c	+[HRMPBImuCalibrationOffsets descriptor]	
+106fbbbd4	106fbbc3b	decompiled	chunks/006/functions-000434.c	+[HRMPBAlsCalibrationFamily descriptor]	
+106fbbc3c	106fbbca3	decompiled	chunks/006/functions-000434.c	+[HRMPBAlsCalibration descriptor]	
+106fbbca4	106fbbd1f	decompiled	chunks/006/functions-000434.c	+[HRMPBProxCalibration descriptor]	
+106fbbd20	106fbbdab	decompiled	chunks/006/functions-000434.c	+[HRMPBCalibInfo descriptor]	
+106fbbdac	106fbbe13	decompiled	chunks/006/functions-000434.c	+[HRMPBProjectorCalibration descriptor]	
+106fbbe14	106fbbe7b	decompiled	chunks/006/functions-000434.c	+[HRMPBDisplayCalibration descriptor]	
+106fbbe7c	106fbbee3	decompiled	chunks/006/functions-000434.c	+[HRMPBCameraCalibration descriptor]	
+106fbbee4	106fbbf4b	decompiled	chunks/006/functions-000434.c	+[HRMPBStereoCalibration descriptor]	
+106fbbf4c	106fbbfb3	decompiled	chunks/006/functions-000434.c	+[HRMPBBattLearningParams descriptor]	
+106fbbfb4	106fbc01b	decompiled	chunks/006/functions-000434.c	+[HRMPBTelemetryLogDataEvent descriptor]	
+106fbc01c	106fbc083	decompiled	chunks/006/functions-000434.c	+[HRMPBTelemetryLoggerConfigEvent descriptor]	
+106fbc084	106fbc107	decompiled	chunks/006/functions-000434.c	+[HRMPBTelemetryLoggerConfigEvent_LoggerConfigData descriptor]	
+106fbc108	106fbc16f	decompiled	chunks/006/functions-000434.c	+[HRMPBBatteryPreservationModeResponse descriptor]	
+106fbc170	106fbc1d7	decompiled	chunks/006/functions-000434.c	+[HRMPBDisplayToggleRequest descriptor]	
+106fbc1d8	106fbc23f	decompiled	chunks/006/functions-000434.c	+[HRMPBDisplayToggleResponse descriptor]	
+106fbc240	106fbc2a7	decompiled	chunks/006/functions-000434.c	+[HRMPBBatteryStatus descriptor]	
+106fbc2a8	106fbc323	decompiled	chunks/006/functions-000434.c	+[HRMPBBatteryStatus_Status descriptor]	
+106fbc324	106fbc38b	decompiled	chunks/006/functions-000435.c	+[HRMPBSocPlummetStatuses descriptor]	
+106fbc38c	106fbc407	decompiled	chunks/006/functions-000435.c	+[HRMPBSocPlummetStatuses_Status descriptor]	
+106fbc408	106fbc46f	decompiled	chunks/006/functions-000435.c	+[HRMPBKauaiGetCrashInfoRequest descriptor]	
+106fbc470	106fbc4d7	decompiled	chunks/006/functions-000435.c	+[HRMPBKauaiGetCrashInfoResponse descriptor]	
+106fbc4d8	106fbc53f	decompiled	chunks/006/functions-000435.c	+[HRMPBUsbPathGetResponse descriptor]	
+106fbc540	106fbc5a7	decompiled	chunks/006/functions-000435.c	+[HRMPBAccessoryConnectionChangedEvent descriptor]	
+106fbc5a8	106fbc60f	decompiled	chunks/006/functions-000435.c	+[HRMPBAccessoryReadyEvent descriptor]	
+106fbc610	106fbc677	decompiled	chunks/006/functions-000435.c	+[HRMPBAccessoryErrorEvent descriptor]	
+106fbc678	106fbc6df	decompiled	chunks/006/functions-000435.c	+[HRMPBUsbLinkState descriptor]	
+106fbc6e0	106fbc76b	decompiled	chunks/006/functions-000435.c	+[HRMPBHermosaEventPb descriptor]	
+106fbc76c	106fbc7e7	decompiled	chunks/006/functions-000435.c		
+106fbc7e8	106fbc7f3	decompiled	chunks/006/functions-000435.c		
+106fbc7f4	106fbc86f	decompiled	chunks/006/functions-000435.c		
+106fbc870	106fbc87b	decompiled	chunks/006/functions-000435.c		
+106fbc87c	106fbc8f7	decompiled	chunks/006/functions-000435.c		
+106fbc8f8	106fbc903	decompiled	chunks/006/functions-000435.c		
+106fbc904	106fbc97f	decompiled	chunks/006/functions-000435.c		
+106fbc980	106fbc98b	decompiled	chunks/006/functions-000435.c		
+106fbc98c	106fbca07	decompiled	chunks/006/functions-000435.c		
+106fbca08	106fbca13	decompiled	chunks/006/functions-000435.c		
+106fbca14	106fbca8f	decompiled	chunks/006/functions-000435.c		
+106fbca90	106fbca9b	decompiled	chunks/006/functions-000435.c		
+106fbca9c	106fbcb17	decompiled	chunks/006/functions-000435.c		
+106fbcb18	106fbcb23	decompiled	chunks/006/functions-000435.c		
+106fbcb24	106fbcb9f	decompiled	chunks/006/functions-000435.c		
+106fbcba0	106fbcbab	decompiled	chunks/006/functions-000435.c		
+106fbcbac	106fbcc27	decompiled	chunks/006/functions-000435.c		
+106fbcc28	106fbcc33	decompiled	chunks/006/functions-000435.c		
+106fbcc34	106fbccaf	decompiled	chunks/006/functions-000435.c		
+106fbccb0	106fbccbb	decompiled	chunks/006/functions-000435.c		
+106fbccbc	106fbcd37	decompiled	chunks/006/functions-000435.c		
+106fbcd38	106fbcd43	decompiled	chunks/006/functions-000435.c		
+106fbcd44	106fbcdbf	decompiled	chunks/006/functions-000435.c		
+106fbcdc0	106fbcdd7	decompiled	chunks/006/functions-000435.c		
+106fbcdd8	106fbce53	decompiled	chunks/006/functions-000435.c		
+106fbce54	106fbce5f	decompiled	chunks/006/functions-000435.c		
+106fbce60	106fbcedb	decompiled	chunks/006/functions-000435.c		
+106fbcedc	106fbcee7	decompiled	chunks/006/functions-000435.c		
+106fbcee8	106fbcf63	decompiled	chunks/006/functions-000435.c		
+106fbcf64	106fbcf6f	decompiled	chunks/006/functions-000435.c		
+106fbcf70	106fbcfeb	decompiled	chunks/006/functions-000435.c		
+106fbcfec	106fbcff7	decompiled	chunks/006/functions-000435.c		
+106fbcff8	106fbd073	decompiled	chunks/006/functions-000435.c		
+106fbd074	106fbd07f	decompiled	chunks/006/functions-000435.c		
+106fbd080	106fbd0fb	decompiled	chunks/006/functions-000435.c		
+106fbd0fc	106fbd117	decompiled	chunks/006/functions-000435.c		
+106fbd118	106fbd193	decompiled	chunks/006/functions-000435.c		
+106fbd194	106fbd19f	decompiled	chunks/006/functions-000435.c		
+106fbd1a0	106fbd21b	decompiled	chunks/006/functions-000435.c		
+106fbd21c	106fbd22b	decompiled	chunks/006/functions-000435.c		
+106fbd22c	106fbd2a7	decompiled	chunks/006/functions-000435.c		
+106fbd2a8	106fbd2b3	decompiled	chunks/006/functions-000435.c		
+106fbd2b4	106fbd32f	decompiled	chunks/006/functions-000435.c		
+106fbd330	106fbd33b	decompiled	chunks/006/functions-000435.c		
+106fbd33c	106fbd3b7	decompiled	chunks/006/functions-000435.c		
+106fbd3b8	106fbd3c3	decompiled	chunks/006/functions-000435.c		
+106fbd3c4	106fbd43f	decompiled	chunks/006/functions-000435.c		
+106fbd440	106fbd44f	decompiled	chunks/006/functions-000435.c		
+106fbd450	106fbd4cb	decompiled	chunks/006/functions-000435.c		
+106fbd4cc	106fbd4d7	decompiled	chunks/006/functions-000435.c		
+106fbd4d8	106fbd553	decompiled	chunks/006/functions-000435.c		
+106fbd554	106fbd55f	decompiled	chunks/006/functions-000435.c		
+106fbd560	106fbd5db	decompiled	chunks/006/functions-000435.c		
+106fbd5dc	106fbd5e7	decompiled	chunks/006/functions-000435.c		
+106fbd5e8	106fbd663	decompiled	chunks/006/functions-000435.c		
+106fbd664	106fbd66f	decompiled	chunks/006/functions-000435.c		
+106fbd670	106fbd6eb	decompiled	chunks/006/functions-000435.c		
+106fbd6ec	106fbd6f7	decompiled	chunks/006/functions-000435.c		
+106fbd6f8	106fbd773	decompiled	chunks/006/functions-000435.c		
+106fbd774	106fbd77f	decompiled	chunks/006/functions-000435.c		
+106fbd780	106fbd7fb	decompiled	chunks/006/functions-000435.c		
+106fbd7fc	106fbd807	decompiled	chunks/006/functions-000435.c		
+106fbd808	106fbd883	decompiled	chunks/006/functions-000435.c		
+106fbd884	106fbd88f	decompiled	chunks/006/functions-000435.c		
+106fbd890	106fbd90b	decompiled	chunks/006/functions-000435.c		
+106fbd90c	106fbd917	decompiled	chunks/006/functions-000435.c		
+106fbd918	106fbd993	decompiled	chunks/006/functions-000435.c		
+106fbd994	106fbd99f	decompiled	chunks/006/functions-000435.c		
+106fbd9a0	106fbda1b	decompiled	chunks/006/functions-000435.c		
+106fbda1c	106fbda27	decompiled	chunks/006/functions-000435.c		
+106fbda28	106fbdaa3	decompiled	chunks/006/functions-000435.c		
+106fbdaa4	106fbdaaf	decompiled	chunks/006/functions-000435.c		
+106fbdab0	106fbdb17	decompiled	chunks/006/functions-000435.c	+[HRMPBBoardIdResponse descriptor]	
+106fbdb18	106fbdb7f	decompiled	chunks/006/functions-000435.c	+[HRMPBBleName descriptor]	
+106fbdb80	106fbdbe7	decompiled	chunks/006/functions-000435.c	+[HRMPBRealTimeMessage descriptor]	
+106fbdbe8	106fbdc4f	decompiled	chunks/006/functions-000435.c	+[HRMPBFrameColorMessage descriptor]	
+106fbdc50	106fbdcbb	decompiled	chunks/006/functions-000435.c	+[HRMPBBatteryStatusRequest descriptor]	
+106fbdcbc	106fbdd23	decompiled	chunks/006/functions-000435.c	+[HRMPBShipmodeRequest descriptor]	
+106fbdd24	106fbdd8b	decompiled	chunks/006/functions-000435.c	+[HRMPBMediaCountsResponse descriptor]	
+106fbdd8c	106fbddf3	decompiled	chunks/006/functions-000435.c	+[HRMPBKeyExchangeMessage descriptor]	
+106fbddf4	106fbde5b	decompiled	chunks/006/functions-000435.c	+[HRMPBClientID descriptor]	
+106fbde5c	106fbdedb	decompiled	chunks/006/functions-000435.c	+[HRMPBChargerStateResponse descriptor]	
+106fbdedc	106fbdf57	decompiled	chunks/006/functions-000435.c	+[HRMPBProxyStartedRequest descriptor]	
+106fbdf58	106fbdfd3	decompiled	chunks/006/functions-000435.c	+[HRMPBProxyNotifyStatusRequest descriptor]	
+106fbdfd4	106fbe04f	decompiled	chunks/006/functions-000435.c	+[HRMPBPairingSignatureMessage descriptor]	
+106fbe050	106fbe0b7	decompiled	chunks/006/functions-000435.c	+[HRMPBHaltRequest descriptor]	
+106fbe0b8	106fbe11f	decompiled	chunks/006/functions-000435.c	+[HRMPBPowerManagerRequest descriptor]	
+106fbe120	106fbe187	decompiled	chunks/006/functions-000435.c	+[HRMPBPowerManagerResponse descriptor]	
+106fbe188	106fbe1ef	decompiled	chunks/006/functions-000435.c	+[HRMPBPairingSessionIdRequest descriptor]	
+106fbe1f0	106fbe257	decompiled	chunks/006/functions-000435.c	+[HRMPBProxyStartManualRequest descriptor]	
+106fbe258	106fbe2d3	decompiled	chunks/006/functions-000436.c	+[HRMPBProxyStartManualResponse descriptor]	
+106fbe2d4	106fbe33b	decompiled	chunks/006/functions-000436.c	+[HRMPBProxyStopManualRequest descriptor]	
+106fbe33c	106fbe3a3	decompiled	chunks/006/functions-000436.c	+[HRMPBProxyStopManualResponse descriptor]	
+106fbe3a4	106fbe40b	decompiled	chunks/006/functions-000436.c	+[HRMPBValidatePairingRequest descriptor]	
+106fbe40c	106fbe473	decompiled	chunks/006/functions-000436.c	+[HRMPBValidatePairingResponse descriptor]	
+106fbe474	106fbe4db	decompiled	chunks/006/functions-000436.c	+[HRMPBForgetNetworkRequest descriptor]	
+106fbe4dc	106fbe557	decompiled	chunks/006/functions-000436.c	+[HRMPBForgetNetworkResponse descriptor]	
+106fbe558	106fbe5bf	decompiled	chunks/006/functions-000436.c	+[HRMPBQcomBootType descriptor]	
+106fbe5c0	106fbe627	decompiled	chunks/006/functions-000436.c	+[HRMPBNrfCrashInfoRequest descriptor]	
+106fbe628	106fbe68f	decompiled	chunks/006/functions-000436.c	+[HRMPBNrfCrashInfoResponse descriptor]	
+106fbe690	106fbe6f7	decompiled	chunks/006/functions-000436.c	+[HRMPBEncryptionNonceExchange descriptor]	
+106fbe6f8	106fbe773	decompiled	chunks/006/functions-000436.c	+[HRMPBSetAutoBrightnessRequest descriptor]	
+106fbe774	106fbe7db	decompiled	chunks/006/functions-000436.c	+[HRMPBSetAutoBrightnessResponse descriptor]	
+106fbe7dc	106fbe843	decompiled	chunks/006/functions-000436.c	+[HRMPBGetAutoBrightnessRequest descriptor]	
+106fbe844	106fbe8ab	decompiled	chunks/006/functions-000436.c	+[HRMPBGetAutoBrightnessResponse descriptor]	
+106fbe8ac	106fbe913	decompiled	chunks/006/functions-000436.c	+[HRMPBSetSystemSoundRequest descriptor]	
+106fbe914	106fbe97b	decompiled	chunks/006/functions-000436.c	+[HRMPBSetSystemSoundResponse descriptor]	
+106fbe97c	106fbe9e3	decompiled	chunks/006/functions-000436.c	+[HRMPBGetSystemSoundRequest descriptor]	
+106fbe9e4	106fbea4b	decompiled	chunks/006/functions-000436.c	+[HRMPBGetSystemSoundResponse descriptor]	
+106fbea4c	106fbeab3	decompiled	chunks/006/functions-000436.c	+[HRMPBSoundData descriptor]	
+106fbeab4	106fbeb1b	decompiled	chunks/006/functions-000436.c	+[HRMPBBleCentralPairRequest descriptor]	
+106fbeb1c	106fbeb83	decompiled	chunks/006/functions-000436.c	+[HRMPBBleCentralPairResponse descriptor]	
+106fbeb84	106fbebeb	decompiled	chunks/006/functions-000436.c	+[HRMPBHermosaDevFeatureSet descriptor]	
+106fbebec	106fbec53	decompiled	chunks/006/functions-000436.c	+[HRMPBAdbPublicKeySetup descriptor]	
+106fbec54	106fbecbb	decompiled	chunks/006/functions-000436.c	+[HRMPBShakeToReportRequest descriptor]	
+106fbecbc	106fbed27	decompiled	chunks/006/functions-000436.c	+[HRMPBSetUserDeviceSecurityRequest descriptor]	
+106fbed28	106fbed93	decompiled	chunks/006/functions-000436.c	+[HRMPBGetUserDeviceSecurityResponse descriptor]	
+106fbed94	106fbedfb	decompiled	chunks/006/functions-000436.c	+[HRMPBSetUserDevicePasswordRequest descriptor]	
+106fbedfc	106fbee63	decompiled	chunks/006/functions-000436.c	+[HRMPBSetUserDevicePasswordResponse descriptor]	
+106fbee64	106fbeecb	decompiled	chunks/006/functions-000436.c	+[HRMPBVerifyPasscodeRequest descriptor]	
+106fbeecc	106fbef33	decompiled	chunks/006/functions-000436.c	+[HRMPBVerifyPasscodeResponse descriptor]	
+106fbef34	106fbefaf	decompiled	chunks/006/functions-000436.c	+[HRMPBLensLaunchInfo descriptor]	
+106fbefb0	106fbf017	decompiled	chunks/006/functions-000436.c	+[HRMPBLensSyncRequest descriptor]	
+106fbf018	106fbf07f	decompiled	chunks/006/functions-000436.c	+[HRMPBLensSyncResponse descriptor]	
+106fbf080	106fbf0e7	decompiled	chunks/006/functions-000436.c	+[HRMPBLensLaunchResponse descriptor]	
+106fbf0e8	106fbf14f	decompiled	chunks/006/functions-000436.c	+[HRMPBGetQcomStateRequest descriptor]	
+106fbf150	106fbf1b7	decompiled	chunks/006/functions-000436.c	+[HRMPBGetQcomStateResponse descriptor]	
+106fbf1b8	106fbf21f	decompiled	chunks/006/functions-000436.c	+[HRMPBQcomStateChangeEvent descriptor]	
+106fbf220	106fbf287	decompiled	chunks/006/functions-000436.c	+[HRMPBGetBatteryPreservationModeResponse descriptor]	
+106fbf288	106fbf2f3	decompiled	chunks/006/functions-000436.c	+[HRMPBSetSardoCalibrationActionRequest descriptor]	
+106fbf2f4	106fbf35b	decompiled	chunks/006/functions-000436.c	+[HRMPBPhoneScreenData descriptor]	
+106fbf35c	106fbf3c3	decompiled	chunks/006/functions-000436.c	+[HRMPBMarkerData descriptor]	
+106fbf3c4	106fbf42b	decompiled	chunks/006/functions-000436.c	+[HRMPBSetSardoCalibrationActionResponse descriptor]	
+106fbf42c	106fbf493	decompiled	chunks/006/functions-000436.c	+[HRMPBTranslation descriptor]	
+106fbf494	106fbf4fb	decompiled	chunks/006/functions-000436.c	+[HRMPBQuaternion descriptor]	
+106fbf4fc	106fbf567	decompiled	chunks/006/functions-000436.c	+[HRMPBSardoDataRequest descriptor]	
+106fbf568	106fbf5e7	decompiled	chunks/006/functions-000436.c	+[HRMPBSardoSpectaclesStatus descriptor]	
+106fbf5e8	106fbf64f	decompiled	chunks/006/functions-000436.c	+[HRMPBGetSardoSpectaclesStatusRequest descriptor]	
+106fbf650	106fbf6b7	decompiled	chunks/006/functions-000436.c	+[HRMPBGetSardoSpectaclesStatusResponse descriptor]	
+106fbf6b8	106fbf71f	decompiled	chunks/006/functions-000436.c	+[HRMPBSardoDataResponse descriptor]	
+106fbf720	106fbf787	decompiled	chunks/006/functions-000436.c	+[HRMPBSardoMobileStatusRequest descriptor]	
+106fbf788	106fbf7ef	decompiled	chunks/006/functions-000436.c	+[HRMPBSardoMobileStatusResponse descriptor]	
+106fbf7f0	106fbf857	decompiled	chunks/006/functions-000436.c	+[HRMPBGetServiceInfoRequest descriptor]	
+106fbf858	106fbf8bf	decompiled	chunks/006/functions-000436.c	+[HRMPBGetServiceInfoResponse descriptor]	
+106fbf8c0	106fbf927	decompiled	chunks/006/functions-000436.c	+[HRMPBStartWifiSubnetMonitorRequest descriptor]	
+106fbf928	106fbf98f	decompiled	chunks/006/functions-000436.c	+[HRMPBStartWifiSubnetMonitorResponse descriptor]	
+106fbf990	106fbf9f7	decompiled	chunks/006/functions-000436.c	+[HRMPBStopWifiSubnetMonitorRequest descriptor]	
+106fbf9f8	106fbfa5f	decompiled	chunks/006/functions-000436.c	+[HRMPBStopWifiSubnetMonitorResponse descriptor]	
+106fbfa60	106fbfacb	decompiled	chunks/006/functions-000436.c	+[HRMPBAcquireServiceAccessPointRequest descriptor]	
+106fbfacc	106fbfb33	decompiled	chunks/006/functions-000436.c	+[HRMPBAcquireServiceAccessPointResponse descriptor]	
+106fbfb34	106fbfb9b	decompiled	chunks/006/functions-000436.c	+[HRMPBRenewServiceAccessPointRequest descriptor]	
+106fbfb9c	106fbfc03	decompiled	chunks/006/functions-000436.c	+[HRMPBRenewServiceAccessPointResponse descriptor]	
+106fbfc04	106fbfc6b	decompiled	chunks/006/functions-000436.c	+[HRMPBReleaseServiceAccessPointRequest descriptor]	
+106fbfc6c	106fbfcd3	decompiled	chunks/006/functions-000436.c	+[HRMPBReleaseServiceAccessPointResponse descriptor]	
+106fbfcd4	106fbfd3b	decompiled	chunks/006/functions-000436.c	+[HRMPBEnvelopeMessage descriptor]	
+106fbfd3c	106fbfda3	decompiled	chunks/006/functions-000436.c	+[HRMPBSendEnvelopeRequest descriptor]	
+106fbfda4	106fbfe0b	decompiled	chunks/006/functions-000436.c	+[HRMPBSendEnvelopeResponse descriptor]	
+106fbfe0c	106fbfe73	decompiled	chunks/006/functions-000436.c	+[HRMPBKauaiBootCompletedEvent descriptor]	
+106fbfe74	106fbfedb	decompiled	chunks/006/functions-000436.c	+[HRMPBHapticEvent descriptor]	
+106fbfedc	106fbff43	decompiled	chunks/006/functions-000436.c	+[HRMPBHingeEvent descriptor]	
+106fbff44	106fc0027	decompiled	chunks/006/functions-000436.c	+[HRMPBKauaiResetEvent descriptor]	
+106fc0028	106fc0033	decompiled	chunks/006/functions-000436.c		
+106fc0034	106fc009b	decompiled	chunks/006/functions-000436.c	+[HRMPBOTACheckRequest descriptor]	
+106fc009c	106fc0127	decompiled	chunks/006/functions-000436.c	+[HRMPBOTACheckResponse descriptor]	
+106fc0128	106fc018f	decompiled	chunks/006/functions-000436.c	+[HRMPBOTADownloadAndInstallRequest descriptor]	
+106fc0190	106fc021b	decompiled	chunks/006/functions-000436.c	+[HRMPBOTADownloadAndInstallResponse descriptor]	
+106fc021c	106fc0297	decompiled	chunks/006/functions-000436.c		
+106fc0298	106fc02a3	decompiled	chunks/006/functions-000436.c		
+106fc02a4	106fc031f	decompiled	chunks/006/functions-000436.c		
+106fc0320	106fc032b	decompiled	chunks/006/functions-000436.c		
+106fc032c	106fc0393	decompiled	chunks/006/functions-000436.c	+[HRMPBLocationRequestEvent descriptor]	
+106fc0394	106fc0477	decompiled	chunks/006/functions-000436.c	+[HRMPBClientLocation descriptor]	
+106fc0478	106fc0483	decompiled	chunks/006/functions-000436.c		
+106fc0484	106fc04ff	decompiled	chunks/006/functions-000436.c		
+106fc0500	106fc050b	decompiled	chunks/006/functions-000436.c		
+106fc050c	106fc0587	decompiled	chunks/006/functions-000436.c		
+106fc0588	106fc0593	decompiled	chunks/006/functions-000436.c		
+106fc0594	106fc060f	decompiled	chunks/006/functions-000436.c		
+106fc0610	106fc061b	decompiled	chunks/006/functions-000436.c		
+106fc061c	106fc0697	decompiled	chunks/006/functions-000436.c		
+106fc0698	106fc06af	decompiled	chunks/006/functions-000436.c		
+106fc06b0	106fc072b	decompiled	chunks/006/functions-000436.c		
+106fc072c	106fc0737	decompiled	chunks/006/functions-000436.c		
+106fc0738	106fc07c7	decompiled	chunks/006/functions-000436.c		
+106fc07c8	106fc07d3	decompiled	chunks/006/functions-000436.c		
+106fc07d4	106fc0863	decompiled	chunks/006/functions-000436.c		
+106fc0864	106fc086f	decompiled	chunks/006/functions-000436.c		
+106fc0870	106fc08eb	decompiled	chunks/006/functions-000436.c		
+106fc08ec	106fc08f7	decompiled	chunks/006/functions-000436.c		
+106fc08f8	106fc0973	decompiled	chunks/006/functions-000436.c		
+106fc0974	106fc097f	decompiled	chunks/006/functions-000437.c		
+106fc0980	106fc09fb	decompiled	chunks/006/functions-000437.c		
+106fc09fc	106fc0a07	decompiled	chunks/006/functions-000437.c		
+106fc0a08	106fc0a97	decompiled	chunks/006/functions-000437.c		
+106fc0a98	106fc0aa3	decompiled	chunks/006/functions-000437.c		
+106fc0aa4	106fc0b1f	decompiled	chunks/006/functions-000437.c		
+106fc0b20	106fc0b2b	decompiled	chunks/006/functions-000437.c		
+106fc0b2c	106fc0ba7	decompiled	chunks/006/functions-000437.c		
+106fc0ba8	106fc0bb3	decompiled	chunks/006/functions-000437.c		
+106fc0bb4	106fc0c2f	decompiled	chunks/006/functions-000437.c		
+106fc0c30	106fc0c3b	decompiled	chunks/006/functions-000437.c		
+106fc0c3c	106fc0ccb	decompiled	chunks/006/functions-000437.c		
+106fc0ccc	106fc0cd7	decompiled	chunks/006/functions-000437.c		
+106fc0cd8	106fc0d67	decompiled	chunks/006/functions-000437.c		
+106fc0d68	106fc0d73	decompiled	chunks/006/functions-000437.c		
+106fc0d74	106fc0def	decompiled	chunks/006/functions-000437.c		
+106fc0df0	106fc0dfb	decompiled	chunks/006/functions-000437.c		
+106fc0dfc	106fc0e77	decompiled	chunks/006/functions-000437.c		
+106fc0e78	106fc0e83	decompiled	chunks/006/functions-000437.c		
+106fc0e84	106fc0eff	decompiled	chunks/006/functions-000437.c		
+106fc0f00	106fc0f0b	decompiled	chunks/006/functions-000437.c		
+106fc0f0c	106fc0f87	decompiled	chunks/006/functions-000437.c		
+106fc0f88	106fc0f93	decompiled	chunks/006/functions-000437.c		
+106fc0f94	106fc100f	decompiled	chunks/006/functions-000437.c		
+106fc1010	106fc101b	decompiled	chunks/006/functions-000437.c		
+106fc101c	106fc1097	decompiled	chunks/006/functions-000437.c		
+106fc1098	106fc10a3	decompiled	chunks/006/functions-000437.c		
+106fc10a4	106fc1133	decompiled	chunks/006/functions-000437.c		
+106fc1134	106fc113f	decompiled	chunks/006/functions-000437.c		
+106fc1140	106fc11cf	decompiled	chunks/006/functions-000437.c		
+106fc11d0	106fc11db	decompiled	chunks/006/functions-000437.c		
+106fc11dc	106fc1257	decompiled	chunks/006/functions-000437.c		
+106fc1258	106fc1263	decompiled	chunks/006/functions-000437.c		
+106fc1264	106fc12df	decompiled	chunks/006/functions-000437.c		
+106fc12e0	106fc12eb	decompiled	chunks/006/functions-000437.c		
+106fc12ec	106fc1367	decompiled	chunks/006/functions-000437.c		
+106fc1368	106fc1373	decompiled	chunks/006/functions-000437.c		
+106fc1374	106fc13ef	decompiled	chunks/006/functions-000437.c		
+106fc13f0	106fc13fb	decompiled	chunks/006/functions-000437.c		
+106fc13fc	106fc1477	decompiled	chunks/006/functions-000437.c		
+106fc1478	106fc1493	decompiled	chunks/006/functions-000437.c		
+106fc1494	106fc150f	decompiled	chunks/006/functions-000437.c		
+106fc1510	106fc151b	decompiled	chunks/006/functions-000437.c		
+106fc151c	106fc1597	decompiled	chunks/006/functions-000437.c		
+106fc1598	106fc15a3	decompiled	chunks/006/functions-000437.c		
+106fc15a4	106fc161f	decompiled	chunks/006/functions-000437.c		
+106fc1620	106fc162b	decompiled	chunks/006/functions-000437.c		
+106fc162c	106fc16a7	decompiled	chunks/006/functions-000437.c		
+106fc16a8	106fc16b3	decompiled	chunks/006/functions-000437.c		
+106fc16b4	106fc172f	decompiled	chunks/006/functions-000437.c		
+106fc1730	106fc173b	decompiled	chunks/006/functions-000437.c		
+106fc173c	106fc17a3	decompiled	chunks/006/functions-000437.c	+[HRMPBBatteryPreservationModeRequest descriptor]	
+106fc17a4	106fc1823	decompiled	chunks/006/functions-000437.c	+[HRMPBBatteryStatusResponse descriptor]	
+106fc1824	106fc188b	decompiled	chunks/006/functions-000437.c	+[HRMPBMediaCountsMessage descriptor]	
+106fc188c	106fc18f3	decompiled	chunks/006/functions-000437.c	+[HRMPBUserMediaCountsMessage descriptor]	
+106fc18f4	106fc195f	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiParams descriptor]	
+106fc1960	106fc19c7	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiAPInfo descriptor]	
+106fc19c8	106fc1a2f	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiAPList descriptor]	
+106fc1a30	106fc1aaf	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiStatus descriptor]	
+106fc1ab0	106fc1b2f	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiScanResult descriptor]	
+106fc1b30	106fc1b97	decompiled	chunks/006/functions-000437.c	+[HRMPBAvailableWifiNetworks descriptor]	
+106fc1b98	106fc1c13	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiStartResponse descriptor]	
+106fc1c14	106fc1c7b	decompiled	chunks/006/functions-000437.c	+[HRMPBInternetConnectivityCheckRequest descriptor]	
+106fc1c7c	106fc1ce3	decompiled	chunks/006/functions-000437.c	+[HRMPBInternetConnectivityCheckResponse descriptor]	
+106fc1ce4	106fc1d4b	decompiled	chunks/006/functions-000437.c	+[HRMPBEmpty descriptor]	
+106fc1d4c	106fc1db7	decompiled	chunks/006/functions-000437.c	+[HRMPBGitResponse descriptor]	
+106fc1db8	106fc1e1f	decompiled	chunks/006/functions-000437.c	+[HRMPBBoolMessage descriptor]	
+106fc1e20	106fc1e87	decompiled	chunks/006/functions-000437.c	+[HRMPBSystemCounters descriptor]	
+106fc1e88	106fc1ef3	decompiled	chunks/006/functions-000437.c	+[HRMPBAppCrashReport descriptor]	
+106fc1ef4	106fc1f5f	decompiled	chunks/006/functions-000437.c	+[HRMPBHardFaultReport descriptor]	
+106fc1f60	106fc1fc7	decompiled	chunks/006/functions-000437.c	+[HRMPBSoftDeviceCrashReport descriptor]	
+106fc1fc8	106fc2033	decompiled	chunks/006/functions-000437.c	+[HRMPBWatchdogCrashReport descriptor]	
+106fc2034	106fc209f	decompiled	chunks/006/functions-000437.c	+[HRMPBAndroidTombstone descriptor]	
+106fc20a0	106fc2107	decompiled	chunks/006/functions-000437.c	+[HRMPBKernelPanicLog descriptor]	
+106fc2108	106fc216f	decompiled	chunks/006/functions-000437.c	+[HRMPBAnrLog descriptor]	
+106fc2170	106fc21ef	decompiled	chunks/006/functions-000437.c	+[HRMPBBatterySocCapLog descriptor]	
+106fc21f0	106fc2257	decompiled	chunks/006/functions-000437.c	+[HRMPBBatterySocCapLogResponse descriptor]	
+106fc2258	106fc22c3	decompiled	chunks/006/functions-000437.c	+[HRMPBCrashReport descriptor]	
+106fc22c4	106fc2343	decompiled	chunks/006/functions-000437.c	+[HRMPBResetReason descriptor]	
+106fc2344	106fc23ab	decompiled	chunks/006/functions-000437.c	+[HRMPBEncryptionSetupNonceExchangeMessage descriptor]	
+106fc23ac	106fc2417	decompiled	chunks/006/functions-000437.c	+[HRMPBImuVectorData descriptor]	
+106fc2418	106fc2483	decompiled	chunks/006/functions-000437.c	+[HRMPBImuVectorUncalibratedData descriptor]	
+106fc2484	106fc24ef	decompiled	chunks/006/functions-000437.c	+[HRMPBImuPdrData descriptor]	
+106fc24f0	106fc2557	decompiled	chunks/006/functions-000437.c	+[HRMPBImuActivityRecognitionData descriptor]	
+106fc2558	106fc25e7	decompiled	chunks/006/functions-000437.c	+[HRMPBImuDataEvent descriptor]	
+106fc25e8	106fc264f	decompiled	chunks/006/functions-000437.c	+[HRMPBPeerVerificationMessage descriptor]	
+106fc2650	106fc26b7	decompiled	chunks/006/functions-000437.c	+[HRMPBLinuxCrash descriptor]	
+106fc26b8	106fc271f	decompiled	chunks/006/functions-000437.c	+[HRMPBAmbaError descriptor]	
+106fc2720	106fc27a7	decompiled	chunks/006/functions-000437.c	+[HRMPBAmbaError_AmbaAssertError descriptor]	
+106fc27a8	106fc282f	decompiled	chunks/006/functions-000437.c	+[HRMPBAmbaError_AmbaCpuException descriptor]	
+106fc2830	106fc2897	decompiled	chunks/006/functions-000437.c	+[HRMPBTemperatureRequest descriptor]	
+106fc2898	106fc2903	decompiled	chunks/006/functions-000437.c	+[HRMPBTemperatureResponse descriptor]	
+106fc2904	106fc2983	decompiled	chunks/006/functions-000437.c	+[HRMPBErrorReport descriptor]	
+106fc2984	106fc29eb	decompiled	chunks/006/functions-000437.c	+[HRMPBButtonHoldEvent descriptor]	
+106fc29ec	106fc2a57	decompiled	chunks/006/functions-000437.c	+[HRMPBFideliusKeys descriptor]	
+106fc2a58	106fc2ac3	decompiled	chunks/006/functions-000437.c	+[HRMPBUserAssociationRequest descriptor]	
+106fc2ac4	106fc2b2f	decompiled	chunks/006/functions-000437.c	+[HRMPBUserAdditionalInfo descriptor]	
+106fc2b30	106fc2b9b	decompiled	chunks/006/functions-000437.c	+[HRMPBSystemState descriptor]	
+106fc2b9c	106fc2c03	decompiled	chunks/006/functions-000437.c	+[HRMPBWifiThrottlingReport descriptor]	
+106fc2c04	106fc2c7f	decompiled	chunks/006/functions-000437.c	+[HRMPBUbloxMessage descriptor]	
+106fc2c80	106fc2ceb	decompiled	chunks/006/functions-000438.c	+[HRMPBAlsReading descriptor]	
+106fc2cec	106fc2d57	decompiled	chunks/006/functions-000438.c	+[HRMPBLocationData descriptor]	
+106fc2d58	106fc2dbf	decompiled	chunks/006/functions-000438.c	+[HRMPBBleDisconnectReason descriptor]	
+106fc2dc0	106fc2e27	decompiled	chunks/006/functions-000438.c	+[HRMPBGpsStatistics descriptor]	
+106fc2e28	106fc2e93	decompiled	chunks/006/functions-000438.c	+[HRMPBPhoneNotification descriptor]	
+106fc2e94	106fc2efb	decompiled	chunks/006/functions-000438.c	+[HRMPBPowerAnalytics descriptor]	
+106fc2efc	106fc2f7b	decompiled	chunks/006/functions-000438.c	+[HRMPBContextNotifAnim descriptor]	
+106fc2f7c	106fc2fe7	decompiled	chunks/006/functions-000438.c	+[HRMPBAncsNotificationRule descriptor]	
+106fc2fe8	106fc304f	decompiled	chunks/006/functions-000438.c	+[HRMPBRange descriptor]	
+106fc3050	106fc30b7	decompiled	chunks/006/functions-000438.c	+[HRMPBWearDetectorState descriptor]	
+106fc30b8	106fc311f	decompiled	chunks/006/functions-000438.c	+[HRMPBEventRegisterListenerRequest descriptor]	
+106fc3120	106fc3187	decompiled	chunks/006/functions-000438.c	+[HRMPBWearDetectorEvent descriptor]	
+106fc3188	106fc31f3	decompiled	chunks/006/functions-000438.c	+[HRMPBThermalEvent descriptor]	
+106fc31f4	106fc325b	decompiled	chunks/006/functions-000438.c	+[HRMPBThermalShutdownEvent descriptor]	
+106fc325c	106fc32c3	decompiled	chunks/006/functions-000438.c	+[HRMPBServiceStartedEvent descriptor]	
+106fc32c4	106fc332b	decompiled	chunks/006/functions-000438.c	+[HRMPBMediaCountEvent descriptor]	
+106fc332c	106fc3393	decompiled	chunks/006/functions-000438.c	+[HRMPBLowPowerModeMessage descriptor]	
+106fc3394	106fc33fb	decompiled	chunks/006/functions-000438.c	+[HRMPBChargerEvent descriptor]	
+106fc33fc	106fc3463	decompiled	chunks/006/functions-000438.c	+[HRMPBSlamEvent descriptor]	
+106fc3464	106fc34df	decompiled	chunks/006/functions-000438.c	+[HRMPBWifiConnectedClientCountChangeEvent descriptor]	
+106fc34e0	106fc3547	decompiled	chunks/006/functions-000438.c	+[HRMPBPhoneNotificationStatus descriptor]	
+106fc3548	106fc35af	decompiled	chunks/006/functions-000438.c	+[HRMPBBootCompletedEvent descriptor]	
+106fc35b0	106fc3617	decompiled	chunks/006/functions-000438.c	+[HRMPBLockedBootCompletedEvent descriptor]	
+106fc3618	106fc367f	decompiled	chunks/006/functions-000438.c	+[HRMPBUnlockedBootCompletedEvent descriptor]	
+106fc3680	106fc36fb	decompiled	chunks/006/functions-000438.c	+[HRMPBBrightnessLevelChangeEvent descriptor]	
+106fc36fc	106fc377b	decompiled	chunks/006/functions-000438.c	+[HRMPBBackupStatusEvent descriptor]	
+106fc377c	106fc37f7	decompiled	chunks/006/functions-000438.c	+[HRMPBBackupStatusResponse descriptor]	
+106fc37f8	106fc3877	decompiled	chunks/006/functions-000438.c	+[HRMPBBackupStatusData descriptor]	
+106fc3878	106fc38df	decompiled	chunks/006/functions-000438.c	+[HRMPBSpectaclesLockedWaitingForUnlockEvent descriptor]	
+106fc38e0	106fc3947	decompiled	chunks/006/functions-000438.c	+[HRMPBCameraSessionEvent descriptor]	
+106fc3948	106fc39af	decompiled	chunks/006/functions-000438.c	+[HRMPBBrightnessStateChangeRequestEvent descriptor]	
+106fc39b0	106fc3a17	decompiled	chunks/006/functions-000438.c	+[HRMPBDosaAudioEvent descriptor]	
+106fc3a18	106fc3a7f	decompiled	chunks/006/functions-000438.c	+[HRMPBSocketConnectionError descriptor]	
+106fc3a80	106fc3ae7	decompiled	chunks/006/functions-000438.c	+[HRMPBOpenSocketConnectionResponse descriptor]	
+106fc3ae8	106fc3b4f	decompiled	chunks/006/functions-000438.c	+[HRMPBOpenSocketConnectionRequest descriptor]	
+106fc3b50	106fc3bb7	decompiled	chunks/006/functions-000438.c	+[HRMPBActionPointer descriptor]	
+106fc3bb8	106fc3c1f	decompiled	chunks/006/functions-000438.c	+[HRMPBTouchEventRequest descriptor]	
+106fc3c20	106fc3c87	decompiled	chunks/006/functions-000438.c	+[HRMPBTouchEventResponse descriptor]	
+106fc3c88	106fc3cef	decompiled	chunks/006/functions-000438.c	+[HRMPBKeyValuePair descriptor]	
+106fc3cf0	106fc3d6b	decompiled	chunks/006/functions-000438.c	+[HRMPBRemoteMedia descriptor]	
+106fc3d6c	106fc3dd3	decompiled	chunks/006/functions-000438.c	+[HRMPBFeatureActionSendMedia descriptor]	
+106fc3dd4	106fc3e6f	decompiled	chunks/006/functions-000438.c	+[HRMPBFeatureActionRequest descriptor]	
+106fc3e70	106fc3eeb	decompiled	chunks/006/functions-000438.c	+[HRMPBFeatureActionResponse descriptor]	
+106fc3eec	106fc3f53	decompiled	chunks/006/functions-000438.c	+[HRMPBWifiSubnetStateChangedEvent descriptor]	
+106fc3f54	106fc3fbb	decompiled	chunks/006/functions-000438.c	+[HRMPBCipherConfig descriptor]	
+106fc3fbc	106fc4023	decompiled	chunks/006/functions-000438.c	+[HRMPBCipherKeyData descriptor]	
+106fc4024	106fc408b	decompiled	chunks/006/functions-000438.c	+[HRMPBServiceConnectionType descriptor]	
+106fc408c	106fc40f7	decompiled	chunks/006/functions-000438.c	+[HRMPBServiceInfo descriptor]	
+106fc40f8	106fc4163	decompiled	chunks/006/functions-000438.c	+[HRMPBSubnetInfo descriptor]	
+106fc4164	106fc41ef	decompiled	chunks/006/functions-000438.c	+[HRMPBSubnetReachabilityDetection descriptor]	
+106fc41f0	106fc4257	decompiled	chunks/006/functions-000438.c	+[HRMPBSubnetReachabilityUdpEcho descriptor]	
+106fc4258	106fc42bf	decompiled	chunks/006/functions-000438.c	+[HRMPBSubnetReachabilityTcpEcho descriptor]	
+106fc42c0	106fc4327	decompiled	chunks/006/functions-000438.c	+[HRMPBSubnetReachabilityNsdDiscovery descriptor]	
+106fc4328	106fc438f	decompiled	chunks/006/functions-000438.c	+[HRMPBWifiNetwork descriptor]	
+106fc4390	106fc441f	decompiled	chunks/006/functions-000438.c	+[HRMPBAccessPoint descriptor]	
+106fc4420	106fc4487	decompiled	chunks/006/functions-000438.c	+[HRMPBSocketAddress descriptor]	
+106fc4488	106fc44ef	decompiled	chunks/006/functions-000438.c	+[HRMPBBTCAddress descriptor]	
+106fc44f0	106fc4557	decompiled	chunks/006/functions-000438.c	+[HRMPBBLEAddress descriptor]	
+106fc4558	106fc45e3	decompiled	chunks/006/functions-000438.c	+[HRMPBCipherSecret descriptor]	
+106fc45e4	106fc464b	decompiled	chunks/006/functions-000438.c	+[HRMPBAesSecret descriptor]	
+106fc464c	106fc46b7	decompiled	chunks/006/functions-000438.c	+[HRMPBLagunaSecret descriptor]	
+106fc46b8	106fc4733	decompiled	chunks/006/functions-000438.c	+[HRMPBAudioLevelChangeEvent descriptor]	
+106fc4734	106fc479b	decompiled	chunks/006/functions-000438.c	+[HRMPBScreenChangeEvent descriptor]	
+106fc479c	106fc4803	decompiled	chunks/006/functions-000438.c	+[HRMPBScreenStateRequest descriptor]	
+106fc4804	106fc486b	decompiled	chunks/006/functions-000438.c	+[HRMPBScreenStateResponse descriptor]	
+106fc486c	106fc494f	decompiled	chunks/006/functions-000438.c	+[HRMPBSyncClockEvent descriptor]	
+106fc4950	106fc495f	decompiled	chunks/006/functions-000438.c		
+106fc4960	106fc49db	decompiled	chunks/006/functions-000438.c		
+106fc49dc	106fc49eb	decompiled	chunks/006/functions-000438.c		
+106fc49ec	106fc4a67	decompiled	chunks/006/functions-000438.c		
+106fc4a68	106fc4a77	decompiled	chunks/006/functions-000438.c		
+106fc4a78	106fc4af3	decompiled	chunks/006/functions-000438.c		
+106fc4af4	106fc4b03	decompiled	chunks/006/functions-000438.c		
+106fc4b04	106fc4b7f	decompiled	chunks/006/functions-000438.c		
+106fc4b80	106fc4b8f	decompiled	chunks/006/functions-000438.c		
+106fc4b90	106fc4c0b	decompiled	chunks/006/functions-000438.c		
+106fc4c0c	106fc4c17	decompiled	chunks/006/functions-000438.c		
+106fc4c18	106fc4c93	decompiled	chunks/006/functions-000438.c		
+106fc4c94	106fc4ca3	decompiled	chunks/006/functions-000438.c		
+106fc4ca4	106fc4d33	decompiled	chunks/006/functions-000438.c		
+106fc4d34	106fc4d43	decompiled	chunks/006/functions-000438.c		
+106fc4d44	106fc4dbf	decompiled	chunks/006/functions-000438.c		
+106fc4dc0	106fc4dcf	decompiled	chunks/006/functions-000438.c		
+106fc4dd0	106fc4e4b	decompiled	chunks/006/functions-000438.c		
+106fc4e4c	106fc4e63	decompiled	chunks/006/functions-000438.c		
+106fc4e64	106fc4edf	decompiled	chunks/006/functions-000438.c		
+106fc4ee0	106fc4eef	decompiled	chunks/006/functions-000438.c		
+106fc4ef0	106fc4f6b	decompiled	chunks/006/functions-000438.c		
+106fc4f6c	106fc4f83	decompiled	chunks/006/functions-000438.c		
+106fc4f84	106fc4fff	decompiled	chunks/006/functions-000438.c		
+106fc5000	106fc500b	decompiled	chunks/006/functions-000438.c		
+106fc500c	106fc509b	decompiled	chunks/006/functions-000438.c		
+106fc509c	106fc50ab	decompiled	chunks/006/functions-000438.c		
+106fc50ac	106fc5127	decompiled	chunks/006/functions-000438.c		
+106fc5128	106fc5137	decompiled	chunks/006/functions-000438.c		
+106fc5138	106fc51b3	decompiled	chunks/006/functions-000438.c		
+106fc51b4	106fc51c3	decompiled	chunks/006/functions-000438.c		
+106fc51c4	106fc523f	decompiled	chunks/006/functions-000438.c		
+106fc5240	106fc524f	decompiled	chunks/006/functions-000438.c		
+106fc5250	106fc52df	decompiled	chunks/006/functions-000438.c		
+106fc52e0	106fc52ef	decompiled	chunks/006/functions-000439.c		
+106fc52f0	106fc536b	decompiled	chunks/006/functions-000439.c		
+106fc536c	106fc5377	decompiled	chunks/006/functions-000439.c		
+106fc5378	106fc53f3	decompiled	chunks/006/functions-000439.c		
+106fc53f4	106fc53ff	decompiled	chunks/006/functions-000439.c		
+106fc5400	106fc547b	decompiled	chunks/006/functions-000439.c	+[VLKNrfWifiRequest descriptor]	
+106fc547c	106fc54f7	decompiled	chunks/006/functions-000439.c	+[VLKNrfAuthRequest descriptor]	
+106fc54f8	106fc5573	decompiled	chunks/006/functions-000439.c	+[VLKNrfAuthResponse descriptor]	
+106fc5574	106fc55ef	decompiled	chunks/006/functions-000439.c	+[VLKNrfBluetoothRequest descriptor]	
+106fc55f0	106fc566b	decompiled	chunks/006/functions-000439.c	+[VLKNrfTimeRequest descriptor]	
+106fc566c	106fc56e7	decompiled	chunks/006/functions-000439.c	+[VLKNrfOTARequest descriptor]	
+106fc56e8	106fc574f	decompiled	chunks/006/functions-000439.c	+[VLKNrfStatusRequest descriptor]	
+106fc5750	106fc57b7	decompiled	chunks/006/functions-000439.c	+[VLKNrfActionRequest descriptor]	
+106fc57b8	106fc5833	decompiled	chunks/006/functions-000439.c	+[VLKNrfUserAssociationRequest descriptor]	
+106fc5834	106fc58af	decompiled	chunks/006/functions-000439.c	+[VLKHardwareVersion descriptor]	
+106fc58b0	106fc592b	decompiled	chunks/006/functions-000439.c	+[VLKNrfGpsUpdateRequest descriptor]	
+106fc592c	106fc5993	decompiled	chunks/006/functions-000439.c	+[VLKNrfDeviceRenameRequest descriptor]	
+106fc5994	106fc5a0f	decompiled	chunks/006/functions-000439.c	+[VLKNrfTemperatureReport descriptor]	
+106fc5a10	106fc5a8b	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport descriptor]	
+106fc5a8c	106fc5b1f	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_AppError descriptor]	
+106fc5b20	106fc5ba3	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_HardfaultError descriptor]	
+106fc5ba4	106fc5c27	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_WatchdogTimeoutError descriptor]	
+106fc5c28	106fc5cbb	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_AmbaError descriptor]	
+106fc5cbc	106fc5d3f	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_AmbaError_AmbaKernelError descriptor]	
+106fc5d40	106fc5dd3	decompiled	chunks/006/functions-000439.c	+[VLKNrfDebugReport_AmbaError_AmbaAssertFailure descriptor]	
+106fc5dd4	106fc5e4f	decompiled	chunks/006/functions-000439.c	+[VLKNrfDiffUpdateRequest descriptor]	
+106fc5e50	106fc5ecb	decompiled	chunks/006/functions-000439.c	+[VLKNrfBackgroundUpdateRequest descriptor]	
+106fc5ecc	106fc5f47	decompiled	chunks/006/functions-000439.c	+[VLKNrfShellCmdRequest descriptor]	
+106fc5f48	106fc5fc3	decompiled	chunks/006/functions-000439.c	+[VLKNrfDiffUpdateResponse descriptor]	
+106fc5fc4	106fc603f	decompiled	chunks/006/functions-000439.c	+[VLKNrfBackgroundUpdateResponse descriptor]	
+106fc6040	106fc60bb	decompiled	chunks/006/functions-000439.c	+[VLKNrfBatteryInfo descriptor]	
+106fc60bc	106fc6137	decompiled	chunks/006/functions-000439.c	+[VLKAmbaFsStatus descriptor]	
+106fc6138	106fc61b3	decompiled	chunks/006/functions-000439.c	+[VLKNrfEventLogData descriptor]	
+106fc61b4	106fc622f	decompiled	chunks/006/functions-000439.c	+[VLKNrfFirmwareVersionInfo descriptor]	
+106fc6230	106fc62ab	decompiled	chunks/006/functions-000439.c	+[VLKNrfRequest descriptor]	
+106fc62ac	106fc632b	decompiled	chunks/006/functions-000439.c	+[VLKNrfResponse descriptor]	
+106fc632c	106fc637b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation git:]	
+106fc637c	106fc63cb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation boardId:]	
+106fc63cc	106fc641b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setName:]	
+106fc641c	106fc646b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation advertise:]	
+106fc646c	106fc64bb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation amba:]	
+106fc64bc	106fc650b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation flash:]	
+106fc650c	106fc655b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setLed:]	
+106fc655c	106fc65ab	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setLeds:]	
+106fc65ac	106fc65fb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation anim:]	
+106fc65fc	106fc664b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation als:]	
+106fc664c	106fc669b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setTime:]	
+106fc669c	106fc66eb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getSerialNumber:]	
+106fc66ec	106fc673b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getName:]	
+106fc673c	106fc678b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getBleAddr:]	
+106fc678c	106fc67db	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getWifiState:]	
+106fc67dc	106fc682b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation wifiStart:]	
+106fc682c	106fc687b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation wifiStop:]	
+106fc687c	106fc68cb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getTemperature:]	
+106fc68cc	106fc691b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation imu:]	
+106fc691c	106fc696b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation ambaGit:]	
+106fc696c	106fc69bb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation authChipTest:]	
+106fc69bc	106fc6a0b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getFrameColor:]	
+106fc6a0c	106fc6a5b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getAlsCalib:]	
+106fc6a5c	106fc6aab	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation batteryStatus:]	
+106fc6aac	106fc6afb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation watchdog:]	
+106fc6afc	106fc6b4b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation halt:]	
+106fc6b4c	106fc6b9b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation shipmode:]	
+106fc6b9c	106fc6beb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation bug:]	
+106fc6bec	106fc6c3b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getCameraTemperature:]	
+106fc6c3c	106fc6c8b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getMediaCounts:]	
+106fc6c8c	106fc6cdb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getResetReason:]	
+106fc6cdc	106fc6d2b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation bluetoothStart:]	
+106fc6d2c	106fc6d7b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation bluetoothStop:]	
+106fc6d7c	106fc6dcb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getFirmwareUpdateHash:]	
+106fc6dcc	106fc6e1b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation surfaceFirmwareRecoveryImage:]	
+106fc6e1c	106fc6e6b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation applyFirmwareDelta:]	
+106fc6e6c	106fc6ebb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation untarFirmwareImage:]	
+106fc6ebc	106fc6f0b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation cancelBackgroundUpdate:]	
+106fc6f0c	106fc6f5b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getBackgroundUpdateParams:]	
+106fc6f5c	106fc6fab	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation scheduleBackgroundUpdate:]	
+106fc6fac	106fc6ffb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation feedWatchdog:]	
+106fc6ffc	106fc704b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation clearBug:]	
+106fc704c	106fc709b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation keyExchange:]	
+106fc709c	106fc70eb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation encryptionSetupNonceExchange:]	
+106fc70ec	106fc713b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation peerVerification:]	
+106fc713c	106fc718b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation userAssociation:]	
+106fc718c	106fc71db	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation updateGPSRequest:]	
+106fc71dc	106fc722b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getClientID:]	
+106fc722c	106fc727b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setAuthzCode:]	
+106fc727c	106fc72cb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation revokeRefreshToken:]	
+106fc72cc	106fc731b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setWifiAP:]	
+106fc731c	106fc736b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getWifiAPList:]	
+106fc736c	106fc73bb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation setWifiAPList:]	
+106fc73bc	106fc740b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getUploadToClientStatus:]	
+106fc740c	106fc745b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation startUploadToClient:]	
+106fc745c	106fc74ab	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation clearContent:]	
+106fc74ac	106fc74fb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation chargerState:]	
+106fc74fc	106fc754b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getUserMediaCounts:]	
+106fc754c	106fc759b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation pairingWaitForUser:]	
+106fc759c	106fc75eb	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation enableHevc:]	
+106fc75ec	106fc763b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getLastCloudUploadTime:]	
+106fc763c	106fc768b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation availableStoragePercentage:]	
+106fc768c	106fc76db	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation unpair:]	
+106fc76dc	106fc772b	decompiled	chunks/006/functions-000439.c	+[SCSpectaclesRpcInvocation getAlsWeights:]	

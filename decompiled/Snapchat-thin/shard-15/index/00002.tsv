@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+10b772eec	10b772eef	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedItem initWithIds:]	
+10b772ef0	10b772f67	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedItem registerMessageFields:]	
+10b772f68	10b772f87	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedItemId initWithIdValue:type:]	
+10b772f88	10b77309b	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedItemId registerMessageFields:]	
+10b77309c	10b7730f7	decompiled	chunks/000/functions-000020.c		
+10b7730f8	10b773117	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedItemWithSignals initWithFeedItem:signalsDeprecated:serverSideSignals:]	
+10b773118	10b7731d3	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedItemWithSignals registerMessageFields:]	
+10b7731d4	10b7731ef	decompiled	chunks/000/functions-000020.c		
+10b7731f0	10b77322b	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedRankingMetadata initWithAstGroupToUse:debugRankingMetadata:backgroundTimeThresholdInSeconds:rerankerStoryDemotionFactor:rerankerChatDemotionFactor:rerankerEnabled:lastFullRankingTimeThresholdInSecs:warmStartLastFullRankingTimeThresholdInSecs:warmStartFriendFeedTimeAwayThresholdInSecsDeprecated:friendFeedTimeAwayThresholdInSecs:warmStartBackgroundTimeThresholdInSeconds:rerankerV2Metadata:]	
+10b77322c	10b773347	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRankingMetadata registerMessageFields:]	
+10b773348	10b773397	decompiled	chunks/000/functions-000020.c		
+10b773398	10b773407	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedRequest initWithTimestamp:reqToken:username:snapchatUserId:chatFeedRequest:storyFriendFeedRequest:sessionId:requestId:callOriginationType:creationTimestamp:layoutType:conversationIdsToFetch:previousPagesItemIds:debugParam:lastFullSyncTimestamp:returnRankedStoriesOnly:notificationId:sinceTimestamp:limit:returnFriendStoriesOnly:returnFeedItemWithSignals:userStoryInteractionHistory:friendRankingSignals:filterOutUnidirectionalFriendStories:friendStoryRankingSignals:]	
+10b773408	10b7736b3	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRequest registerMessageFields:]	
+10b7736b4	10b773747	decompiled	chunks/000/functions-000020.c		
+10b773748	10b773753	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRequestBuilder messageClass]	
+10b773754	10b773757	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRequestBuilder withJUFriendFeedRequest:]	
+10b773758	10b7737d7	decompiled	chunks/000/functions-000020.c		
+10b7737d8	10b773833	decompiled	chunks/000/functions-000020.c		
+10b773834	10b77388f	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedRequestDebugParam initWithIsDebugRequest:disableFriendsSignalMemcache:disableStoriesAdapter:disableFriendsSignalAdapter:disableConversationsAdapter:disableConversationsMultiGetAdapter:trackItems:isReplayRequest:numRecentConversationsToFetch:numStoriesToSelectFromRanking:numFriendsToSelectFromRanking:conversationsScoringModelToUse:storiesScoringModelToUse:friendsScoringModelToUse:shouldReturnAllSignals:disableConversationsPreFetchAdapter:studyIdToUse:shouldReturnDebugInfoHtml:shouldReturnStoryScores:]	
+10b773890	10b773a13	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRequestDebugParam registerMessageFields:]	
+10b773a14	10b773a67	decompiled	chunks/000/functions-000020.c		
+10b773a68	10b773adb	decompiled	chunks/000/functions-000020.c		
+10b773adc	10b773b37	decompiled	chunks/000/functions-000020.c		
+10b773b38	10b773b5b	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedRerankerV2Metadata initWithEnable:maxBoost:maxStoriesToBoost:targetPosStart:targetPosInc:]	
+10b773b5c	10b773bf3	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedRerankerV2Metadata registerMessageFields:]	
+10b773bf4	10b773c1f	decompiled	chunks/000/functions-000020.c		
+10b773c20	10b773c23	decompiled	chunks/000/functions-000020.c	-[SOJUFriendFeedUserSignals initWithSignals:]	
+10b773c24	10b773c9b	decompiled	chunks/000/functions-000020.c	+[SOJUFriendFeedUserSignals registerMessageFields:]	
+10b773c9c	10b773cd7	decompiled	chunks/000/functions-000020.c	-[SOJUFriendSearchResultItem initWithUserId:username:displayName:storyPrivacy:friendmojiCategories:friendmojiDictionary:position:keywords:latestStoryThumbnailUrl:latestStoryThumbnailIv:latestStoryMediaKey:displayUsername:]	
+10b773cd8	10b773e5f	decompiled	chunks/000/functions-000020.c	+[SOJUFriendSearchResultItem registerMessageFields:]	
+10b773e60	10b773ebb	decompiled	chunks/000/functions-000020.c		
+10b773ebc	10b773edf	decompiled	chunks/000/functions-000020.c	-[SOJUFriendShortcut initWithShortcutId:emoji:imageSrc:name:userIds:]	
+10b773ee0	10b773f9b	decompiled	chunks/000/functions-000020.c	+[SOJUFriendShortcut registerMessageFields:]	
+10b773f9c	10b773fc7	decompiled	chunks/000/functions-000020.c		
+10b773fc8	10b773fd3	decompiled	chunks/000/functions-000020.c	+[SOJUFriendShortcutBuilder messageClass]	
+10b773fd4	10b773fd7	decompiled	chunks/000/functions-000020.c	+[SOJUFriendShortcutBuilder withJUFriendShortcut:]	
+10b773fd8	10b77403b	decompiled	chunks/000/functions-000020.c	-[SOJUFriendStories initWithUsername:stories:displayName:isLocal:profileDescription:deepLinkUrl:sharedId:matureContent:adPlacementMetadata:thumbnails:allowStoryExplorer:hasCustomDescription:showViewingJit:featuredStory:isManifestStory:type:publisherId:officialStoriesMetadata:sojuNewStoryCount:userId:mobType:]	
+10b77403c	10b77422f	decompiled	chunks/000/functions-000020.c	+[SOJUFriendStories registerMessageFields:]	
+10b774230	10b7742cb	decompiled	chunks/000/functions-000020.c		
+10b7742cc	10b7742eb	decompiled	chunks/000/functions-000020.c	-[SOJUFriendStory initWithStory:viewed:flushableStoryId:]	
+10b7742ec	10b77439f	decompiled	chunks/000/functions-000020.c	+[SOJUFriendStory registerMessageFields:]	
+10b7743a0	10b7743ab	decompiled	chunks/000/functions-000020.c		
+10b7743ac	10b7743cf	decompiled	chunks/000/functions-000020.c	-[SOJUFriendStoryInteraction initWithIdValue:totalImpressionTimeMs:latestImpressionTimestamp:numWatches:latestWatchTimestamp:]	
+10b7743d0	10b774477	decompiled	chunks/000/functions-000020.c	+[SOJUFriendStoryInteraction registerMessageFields:]	
+10b774478	10b774497	decompiled	chunks/000/functions-000020.c		
+10b774498	10b7744b7	decompiled	chunks/000/functions-000020.c	-[SOJUFriendmoji initWithCategoryName:expirationTime:]	
+10b7744b8	10b77452b	decompiled	chunks/000/functions-000020.c	+[SOJUFriendmoji registerMessageFields:]	
+10b77452c	10b774537	decompiled	chunks/000/functions-000020.c		
+10b774538	10b77455b	decompiled	chunks/000/functions-000020.c	-[SOJUFriendsRequest initWithFriendsSyncToken:requestTokenOnlyDeprecated:addedFriendsSyncToken:isRequestFromBackground:excludeIncomingFriends:]	
+10b77455c	10b77455f	decompiled	chunks/000/functions-000020.c	+[SOJUFriendsRequestBuilder withJUFriendsRequest:]	
+10b774560	10b7745a7	decompiled	chunks/000/functions-000020.c	-[SOJUFriendsResponse initWithFriends:friendsSyncToken:friendsSyncType:addedFriends:bests:extraFriendmojiMutableDict:extraFriendmojiReadOnlyDict:addedFriendsSyncToken:addedFriendsSyncType:partialFriends:bestsUserIds:isResponseWithPartialColumns:invitedUsers:isNumberOneBestFriendPinned:reverseBestFriends:extendedBestsUserIds:]	
+10b7745a8	10b774613	decompiled	chunks/000/functions-000020.c		
+10b774614	10b77464f	decompiled	chunks/000/functions-000020.c		
+10b774650	10b77465b	decompiled	chunks/000/functions-000020.c	+[SOJUFriendsResponseBuilder messageClass]	
+10b77465c	10b7746af	decompiled	chunks/000/functions-000020.c	+[SOJUFriendsResponseBuilder withJUFriendsResponse:]	
+10b7746b0	10b7746cf	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryAltitudeInfoFilter initWithAltitude:type:units:]	
+10b7746d0	10b77476b	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilter registerMessageFields:]	
+10b77476c	10b774783	decompiled	chunks/000/functions-000020.c		
+10b774784	10b77478f	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilterBuilder messageClass]	
+10b774790	10b774793	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilterBuilder withJUGalleryAltitudeInfoFilter:]	
+10b774794	10b7747b3	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryAltitudeInfoFilterStyle initWithType:units:]	
+10b7747b4	10b77482f	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilterStyle registerMessageFields:]	
+10b774830	10b774843	decompiled	chunks/000/functions-000020.c		
+10b774844	10b77484f	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilterStyleBuilder messageClass]	
+10b774850	10b774853	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAltitudeInfoFilterStyleBuilder withJUGalleryAltitudeInfoFilterStyle:]	
+10b774854	10b7748bf	decompiled	chunks/000/functions-000020.c		
+10b7748c0	10b7748f7	decompiled	chunks/000/functions-000020.c		
+10b7748f8	10b774963	decompiled	chunks/000/functions-000020.c		
+10b774964	10b77499b	decompiled	chunks/000/functions-000020.c		
+10b77499c	10b774a07	decompiled	chunks/000/functions-000020.c		
+10b774a08	10b774a3f	decompiled	chunks/000/functions-000020.c		
+10b774a40	10b774aab	decompiled	chunks/000/functions-000020.c		
+10b774aac	10b774ae3	decompiled	chunks/000/functions-000020.c		
+10b774ae4	10b774b07	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryAppStickerStyle initWithAppName:attachmentUrl:type:appId:]	
+10b774b08	10b774bab	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAppStickerStyle registerMessageFields:]	
+10b774bac	10b774bc3	decompiled	chunks/000/functions-000020.c		
+10b774bc4	10b774c5f	decompiled	chunks/000/functions-000020.c		
+10b774c60	10b774cd3	decompiled	chunks/000/functions-000020.c		
+10b774cd4	10b774cf3	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryAutoCaptions initWithTransform:phrases:]	
+10b774cf4	10b774d73	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptions registerMessageFields:]	
+10b774d74	10b774d8f	decompiled	chunks/000/functions-000020.c		
+10b774d90	10b774d9b	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptionsBuilder messageClass]	
+10b774d9c	10b774d9f	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptionsBuilder withJUGalleryAutoCaptions:]	
+10b774da0	10b774dbf	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryAutoCaptionsPhrase initWithText:startTimeMs:endTimeMs:]	
+10b774dc0	10b774e33	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptionsPhrase registerMessageFields:]	
+10b774e34	10b774e53	decompiled	chunks/000/functions-000020.c		
+10b774e54	10b774e5f	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptionsPhraseBuilder messageClass]	
+10b774e60	10b774e63	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryAutoCaptionsPhraseBuilder withJUGalleryAutoCaptionsPhrase:]	
+10b774e64	10b774e67	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryBatteryInfoFilter initWithLevel:]	
+10b774e68	10b774eb3	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryBatteryInfoFilter registerMessageFields:]	
+10b774eb4	10b774ebf	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryBatteryInfoFilterBuilder messageClass]	
+10b774ec0	10b774ec3	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryBatteryInfoFilterBuilder withJUGalleryBatteryInfoFilter:]	
+10b774ec4	10b774f2f	decompiled	chunks/000/functions-000020.c		
+10b774f30	10b774f67	decompiled	chunks/000/functions-000020.c		
+10b774f68	10b774f6b	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryBounceState initWithOffset:]	
+10b774f6c	10b774fab	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryBounceState registerMessageFields:]	
+10b774fac	10b774fcb	decompiled	chunks/000/functions-000020.c	-[SOJUGalleryCameraRollStickerStyle initWithType:imageUrl:]	
+10b774fcc	10b77505b	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryCameraRollStickerStyle registerMessageFields:]	
+10b77505c	10b775067	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryCameraRollStickerStyleBuilder messageClass]	
+10b775068	10b77506b	decompiled	chunks/000/functions-000020.c	+[SOJUGalleryCameraRollStickerStyleBuilder withJUGalleryCameraRollStickerStyle:]	
+10b77506c	10b775177	decompiled	chunks/000/functions-000021.c		
+10b775178	10b775267	decompiled	chunks/000/functions-000021.c		
+10b775268	10b7752cf	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCaption initWithType:text:textAttributes:styleAttributes:fontSize:editingFontSize:position:rotation:isTracking:trackingTrajectory:typeface:captionStyle:pickedColor:userTags:dynamicCaptionStyle:isPositionCenterOfCaption:isTranslateCenterOfCaption:isTimed:additionalCaptionStyles:appliedCaptionStyle:placeTags:relativeWidth:relativeHeight:generatedMagicCaptionText:]	
+10b7752d0	10b775577	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaption registerMessageFields:]	
+10b775578	10b775607	decompiled	chunks/000/functions-000021.c		
+10b775608	10b775613	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionBuilder messageClass]	
+10b775614	10b775617	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionBuilder withJUGalleryCaption:]	
+10b775618	10b775637	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCaptionColorRange initWithColor:range:]	
+10b775638	10b7756ab	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionColorRange registerMessageFields:]	
+10b7756ac	10b7756c3	decompiled	chunks/000/functions-000021.c		
+10b7756c4	10b7756cf	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionColorRangeBuilder messageClass]	
+10b7756d0	10b7756d3	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionColorRangeBuilder withJUGalleryCaptionColorRange:]	
+10b7756d4	10b7756f3	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCaptionPlaceTag initWithStartPosition:endPosition:placeId:]	
+10b7756f4	10b775777	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionPlaceTag registerMessageFields:]	
+10b775778	10b77578f	decompiled	chunks/000/functions-000021.c		
+10b775790	10b77579b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionPlaceTagBuilder messageClass]	
+10b77579c	10b77579f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionPlaceTagBuilder withJUGalleryCaptionPlaceTag:]	
+10b7757a0	10b7757c3	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCaptionStyleRange initWithBold:underline:italics:range:]	
+10b7757c4	10b77585b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionStyleRange registerMessageFields:]	
+10b77585c	10b77587f	decompiled	chunks/000/functions-000021.c		
+10b775880	10b77588b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionStyleRangeBuilder messageClass]	
+10b77588c	10b77588f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionStyleRangeBuilder withJUGalleryCaptionStyleRange:]	
+10b775890	10b77592b	decompiled	chunks/000/functions-000021.c		
+10b77592c	10b77599f	decompiled	chunks/000/functions-000021.c		
+10b7759a0	10b7759bf	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCaptionUserTag initWithStartPosition:userId:]	
+10b7759c0	10b775a33	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionUserTag registerMessageFields:]	
+10b775a34	10b775a3f	decompiled	chunks/000/functions-000021.c		
+10b775a40	10b775a4b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionUserTagBuilder messageClass]	
+10b775a4c	10b775a4f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCaptionUserTagBuilder withJUGalleryCaptionUserTag:]	
+10b775a50	10b775a73	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCommerceStickerStyle initWithActionId:snapItemId:storeId:categoryId:displayName:]	
+10b775a74	10b775b0b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCommerceStickerStyle registerMessageFields:]	
+10b775b0c	10b775b2f	decompiled	chunks/000/functions-000021.c		
+10b775b30	10b775b9b	decompiled	chunks/000/functions-000021.c		
+10b775b9c	10b775bd7	decompiled	chunks/000/functions-000021.c		
+10b775bd8	10b775bfb	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryCropping initWithTranslationX:translationY:rotation:scale:]	
+10b775bfc	10b775c6f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCropping registerMessageFields:]	
+10b775c70	10b775c93	decompiled	chunks/000/functions-000021.c		
+10b775c94	10b775c9f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCroppingBuilder messageClass]	
+10b775ca0	10b775ca3	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryCroppingBuilder withJUGalleryCropping:]	
+10b775ca4	10b775cc3	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDateInfoFilter initWithType:time:timeZone:]	
+10b775cc4	10b775d53	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDateInfoFilter registerMessageFields:]	
+10b775d54	10b775d73	decompiled	chunks/000/functions-000021.c		
+10b775d74	10b775d7f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDateInfoFilterBuilder messageClass]	
+10b775d80	10b775d83	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDateInfoFilterBuilder withJUGalleryDateInfoFilter:]	
+10b775d84	10b775e03	decompiled	chunks/000/functions-000021.c		
+10b775e04	10b775e5b	decompiled	chunks/000/functions-000021.c		
+10b775e5c	10b775e7b	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDecryptionBlob initWithDecryptionKey:decryptionIv:]	
+10b775e7c	10b775ed7	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDecryptionBlob registerMessageFields:]	
+10b775ed8	10b775eef	decompiled	chunks/000/functions-000021.c		
+10b775ef0	10b775efb	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDecryptionBlobBuilder messageClass]	
+10b775efc	10b775eff	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDecryptionBlobBuilder withJUGalleryDecryptionBlob:]	
+10b775f00	10b775f1f	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDiscoverDeeplinkStickerStyle initWithDeeplinkUrl:title:]	
+10b775f20	10b775f8b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDiscoverDeeplinkStickerStyle registerMessageFields:]	
+10b775f8c	10b775f9b	decompiled	chunks/000/functions-000021.c		
+10b775f9c	10b775fa7	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDiscoverDeeplinkStickerStyleBuilder messageClass]	
+10b775fa8	10b775fab	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDiscoverDeeplinkStickerStyleBuilder withJUGalleryDiscoverDeeplinkStickerStyle:]	
+10b775fac	10b775fcf	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDrawing initWithType:strokes:imageData:smoothingVersion:]	
+10b775fd0	10b776087	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawing registerMessageFields:]	
+10b776088	10b7760b7	decompiled	chunks/000/functions-000021.c		
+10b7760b8	10b7760c3	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingBuilder messageClass]	
+10b7760c4	10b7760c7	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingBuilder withJUGalleryDrawing:]	
+10b7760c8	10b7760eb	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDrawingStroke initWithColor:strokeSize:points:emoji:drawerType:]	
+10b7760ec	10b7761df	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingStroke registerMessageFields:]	
+10b7761e0	10b7761ff	decompiled	chunks/000/functions-000021.c		
+10b776200	10b77620b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingStrokeBuilder messageClass]	
+10b77620c	10b77620f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingStrokeBuilder withJUGalleryDrawingStroke:]	
+10b776210	10b77628f	decompiled	chunks/000/functions-000021.c		
+10b776290	10b7762eb	decompiled	chunks/000/functions-000021.c		
+10b7762ec	10b776357	decompiled	chunks/000/functions-000021.c		
+10b776358	10b776393	decompiled	chunks/000/functions-000021.c		
+10b776394	10b776397	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDrawingV2 initWithStrokes:]	
+10b776398	10b77640f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingV2 registerMessageFields:]	
+10b776410	10b776433	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDrawingV2Stroke initWithColor:strokeSize:points:brushId:emoji:]	
+10b776434	10b776513	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDrawingV2Stroke registerMessageFields:]	
+10b776514	10b776533	decompiled	chunks/000/functions-000021.c		
+10b776534	10b776537	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryDynamicCaptionStyle initWithCaptionStyle:]	
+10b776538	10b7765ab	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDynamicCaptionStyle registerMessageFields:]	
+10b7765ac	10b7765b7	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDynamicCaptionStyleBuilder messageClass]	
+10b7765b8	10b7765bb	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryDynamicCaptionStyleBuilder withJUGalleryDynamicCaptionStyle:]	
+10b7765bc	10b7765db	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryEncryptionBlob initWithEncryptionKey:encryptionIv:encrypted:]	
+10b7765dc	10b77665f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryEncryptionBlob registerMessageFields:]	
+10b776660	10b776677	decompiled	chunks/000/functions-000021.c		
+10b776678	10b776683	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryEncryptionBlobBuilder messageClass]	
+10b776684	10b776687	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryEncryptionBlobBuilder withJUGalleryEncryptionBlob:]	
+10b776688	10b7766af	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryEraser initWithTotalEraseCount:finalEraseCount:resetCount:eraserSessionCount:hasInpaintedImage:finalEraseSequence:]	
+10b7766b0	10b77674b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryEraser registerMessageFields:]	
+10b77674c	10b77678f	decompiled	chunks/000/functions-000021.c		
+10b776790	10b776793	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryFanPassStickerStyle initWithDeeplinkUrl:]	
+10b776794	10b7767d3	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFanPassStickerStyle registerMessageFields:]	
+10b7767d4	10b7767df	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFanPassStickerStyleBuilder messageClass]	
+10b7767e0	10b7767e3	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFanPassStickerStyleBuilder withJUGalleryFanPassStickerStyle:]	
+10b7767e4	10b776833	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryFilters initWithVisualFilters:visualFilterSelectedType:infoFilters:infoFilterSelectedType:speedMotionFilters:speedMotionFilterSelectedType:reverseMotionFilterEnabled:reverseMotionFilterSelected:geoFilters:geoFilterSelectedId:venueFilter:venueFilterSelected:streakFilter:streakFilterSelected:contextFilters:contextFilterSelectedId:geoFilterSelectedIds:ucoFilterIds:]	
+10b776834	10b776a8f	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFilters registerMessageFields:]	
+10b776a90	10b776aef	decompiled	chunks/000/functions-000021.c		
+10b776af0	10b776afb	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFiltersBuilder messageClass]	
+10b776afc	10b776aff	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryFiltersBuilder withJUGalleryFilters:]	
+10b776b00	10b776b03	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryGallerySupercut initWithSupercut:]	
+10b776b04	10b776b43	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryGallerySupercut registerMessageFields:]	
+10b776b44	10b776b9f	decompiled	chunks/000/functions-000021.c	-[SOJUGalleryGeoFilter initWithType:unlockableContentType:idValue:imageUrl:imageUrlParams:dynamicContent:scaleSetting:positionSetting:belowDrawingLayer:isSponsored:geofilterMarkups:dynamicContentSetting:autoStacking:isAnimated:arSegmentation:carouselGroup:audio:postCaptureLensDataDeprecated:isUnifiedCameraObject:carouselGlobalScore:]	
+10b776ba0	10b776e1b	decompiled	chunks/000/functions-000021.c	+[SOJUGalleryGeoFilter registerMessageFields:]	
+10b776e1c	10b776ebf	decompiled	chunks/000/functions-000022.c		
+10b776ec0	10b776ecb	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGeoFilterBuilder messageClass]	
+10b776ecc	10b776ecf	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGeoFilterBuilder withJUGalleryGeoFilter:]	
+10b776ed0	10b776f0b	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryGeoFilterDynamicResource initWithType:source:xOffset:yOffset:xSize:ySize:rotation:staticText:fontSize:fontUrl:fontColor:]	
+10b776f0c	10b777013	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGeoFilterDynamicResource registerMessageFields:]	
+10b777014	10b777067	decompiled	chunks/000/functions-000022.c		
+10b777068	10b7770d3	decompiled	chunks/000/functions-000022.c		
+10b7770d4	10b77710b	decompiled	chunks/000/functions-000022.c		
+10b77710c	10b777233	decompiled	chunks/000/functions-000022.c		
+10b777234	10b777343	decompiled	chunks/000/functions-000022.c		
+10b777344	10b7773c3	decompiled	chunks/000/functions-000022.c		
+10b7773c4	10b77741f	decompiled	chunks/000/functions-000022.c		
+10b777420	10b77748b	decompiled	chunks/000/functions-000022.c		
+10b77748c	10b7774c7	decompiled	chunks/000/functions-000022.c		
+10b7774c8	10b7774cb	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryGroupInfoFilterStyle initWithGroupInviteProtoBase64:]	
+10b7774cc	10b77750b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGroupInfoFilterStyle registerMessageFields:]	
+10b77750c	10b777517	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGroupInfoFilterStyleBuilder messageClass]	
+10b777518	10b77751b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryGroupInfoFilterStyleBuilder withJUGalleryGroupInfoFilterStyle:]	
+10b77751c	10b777543	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryInfoFilter initWithType:battery:date:speed:weather:altitude:]	
+10b777544	10b777623	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoFilter registerMessageFields:]	
+10b777624	10b777647	decompiled	chunks/000/functions-000022.c		
+10b777648	10b777653	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoFilterBuilder messageClass]	
+10b777654	10b777657	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoFilterBuilder withJUGalleryInfoFilter:]	
+10b777658	10b777957	decompiled	chunks/000/functions-000022.c		
+10b777958	10b777c43	decompiled	chunks/000/functions-000022.c		
+10b777c44	10b777cab	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryInfoStickerStyle initWithDate:weather:altitude:rating:venue:group:mention:request:snapcode:topic:storyinvite:music:attachment:poll:commerce:cameraRoll:question:lensNft:discoverDeeplink:uvIndex:fanPass:plan:snapMe:shareYours:]	
+10b777cac	10b777f7b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoStickerStyle registerMessageFields:]	
+10b777f7c	10b777fc3	decompiled	chunks/000/functions-000022.c		
+10b777fc4	10b777fcf	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoStickerStyleBuilder messageClass]	
+10b777fd0	10b777fd3	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryInfoStickerStyleBuilder withJUGalleryInfoStickerStyle:]	
+10b777fd4	10b777fff	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryLensNftStickerStyle initWithLensId:ownerText:iconUrl:primaryText:secondaryText:showVerifiedBadge:lensCollectibleUrl:]	
+10b778000	10b7780af	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryLensNftStickerStyle registerMessageFields:]	
+10b7780b0	10b7780db	decompiled	chunks/000/functions-000022.c		
+10b7780dc	10b7780ff	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryLensTool initWithLensTypeDeprecated:lensTypeEnum:isFromToolbar:lensId:hasUiElements:]	
+10b778100	10b7781a7	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryLensTool registerMessageFields:]	
+10b7781a8	10b7781c7	decompiled	chunks/000/functions-000022.c		
+10b7781c8	10b7781e7	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMagicMomentState initWithFrameTime:version:]	
+10b7781e8	10b778253	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMagicMomentState registerMessageFields:]	
+10b778254	10b778263	decompiled	chunks/000/functions-000022.c		
+10b778264	10b77826f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMagicMomentStateBuilder messageClass]	
+10b778270	10b778273	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMagicMomentStateBuilder withJUGalleryMagicMomentState:]	
+10b778274	10b7782a3	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMagicToolIndividual initWithMagicToolType:totalEditCount:finalEditCount:resetCount:sessionCount:hasMagicImage:resourceId:resourceUrl:]	
+10b7782a4	10b778377	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMagicToolIndividual registerMessageFields:]	
+10b778378	10b7783b7	decompiled	chunks/000/functions-000022.c		
+10b7783b8	10b778437	decompiled	chunks/000/functions-000022.c		
+10b778438	10b778493	decompiled	chunks/000/functions-000022.c		
+10b778494	10b7784c3	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMagicTools initWithTotalEditCount:finalEditCount:resetCount:sessionCount:hasMagicImage:magicToolMetadata:finalEditSequence:purikuraMetadata:]	
+10b7784c4	10b7785bb	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMagicTools registerMessageFields:]	
+10b7785bc	10b77860f	decompiled	chunks/000/functions-000022.c		
+10b778610	10b778613	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMediaAttribute initWithAttribute:]	
+10b778614	10b77865f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMediaAttribute registerMessageFields:]	
+10b778660	10b7786fb	decompiled	chunks/000/functions-000022.c		
+10b7786fc	10b77876f	decompiled	chunks/000/functions-000022.c		
+10b778770	10b778793	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMentionStickerStyle initWithUserId:username:type:mutableUsername:displayName:]	
+10b778794	10b778853	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMentionStickerStyle registerMessageFields:]	
+10b778854	10b778873	decompiled	chunks/000/functions-000022.c		
+10b778874	10b77887f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMentionStickerStyleBuilder messageClass]	
+10b778880	10b778883	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMentionStickerStyleBuilder withJUGalleryMentionStickerStyle:]	
+10b778884	10b778903	decompiled	chunks/000/functions-000022.c		
+10b778904	10b77895b	decompiled	chunks/000/functions-000022.c		
+10b77895c	10b77897b	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMultiSnapSegment initWithTrimmedLeftTime:trimmedRightTime:]	
+10b77897c	10b7789d7	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMultiSnapSegment registerMessageFields:]	
+10b7789d8	10b7789ef	decompiled	chunks/000/functions-000022.c		
+10b7789f0	10b778a17	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryMusicStickerStyle initWithTitle:artistName:trackId:offsetMs:lottieUrl:musicStickerType:]	
+10b778a18	10b778aef	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMusicStickerStyle registerMessageFields:]	
+10b778af0	10b778b0f	decompiled	chunks/000/functions-000022.c		
+10b778b10	10b778b1b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMusicStickerStyleBuilder messageClass]	
+10b778b1c	10b778b1f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryMusicStickerStyleBuilder withJUGalleryMusicStickerStyle:]	
+10b778b20	10b778bd7	decompiled	chunks/000/functions-000022.c		
+10b778bd8	10b778c63	decompiled	chunks/000/functions-000022.c		
+10b778c64	10b778c93	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryPlanStickerStyle initWithEventId:title:startTimestampMs:locationText:eventEmojiOrGraphicId:tzid:participantCount:creatorUserId:]	
+10b778c94	10b778d5f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPlanStickerStyle registerMessageFields:]	
+10b778d60	10b778db3	decompiled	chunks/000/functions-000022.c		
+10b778db4	10b778dbf	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPlanStickerStyleBuilder messageClass]	
+10b778dc0	10b778dc3	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPlanStickerStyleBuilder withJUGalleryPlanStickerStyle:]	
+10b778dc4	10b778de3	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryPoint initWithX:y:]	
+10b778de4	10b778e3f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPoint registerMessageFields:]	
+10b778e40	10b778e57	decompiled	chunks/000/functions-000022.c		
+10b778e58	10b778e63	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPointBuilder messageClass]	
+10b778e64	10b778e67	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPointBuilder withJUGalleryPoint:]	
+10b778e68	10b778e87	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryPollStickerStyle initWithPollInfoProtoBase64:isDynamic:]	
+10b778e88	10b778efb	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPollStickerStyle registerMessageFields:]	
+10b778efc	10b778f07	decompiled	chunks/000/functions-000022.c		
+10b778f08	10b778f13	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPollStickerStyleBuilder messageClass]	
+10b778f14	10b778f17	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPollStickerStyleBuilder withJUGalleryPollStickerStyle:]	
+10b778f18	10b778f3b	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryPostCaptureLensTool initWithPostCaptureLensType:isFromToolbar:lensId:hasUiElements:]	
+10b778f3c	10b778fcb	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPostCaptureLensTool registerMessageFields:]	
+10b778fcc	10b778feb	decompiled	chunks/000/functions-000022.c		
+10b778fec	10b778ff7	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPostCaptureLensToolBuilder messageClass]	
+10b778ff8	10b778ffb	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryPostCaptureLensToolBuilder withJUGalleryPostCaptureLensTool:]	
+10b778ffc	10b77901b	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryQuestionStickerStyle initWithQuestion:answer:]	
+10b77901c	10b779077	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryQuestionStickerStyle registerMessageFields:]	
+10b779078	10b77908f	decompiled	chunks/000/functions-000022.c		
+10b779090	10b77909b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryQuestionStickerStyleBuilder messageClass]	
+10b77909c	10b77909f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryQuestionStickerStyleBuilder withJUGalleryQuestionStickerStyle:]	
+10b7790a0	10b7790bf	decompiled	chunks/000/functions-000022.c	-[SOJUGalleryRange initWithStart:length:]	
+10b7790c0	10b77911b	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryRange registerMessageFields:]	
+10b77911c	10b779133	decompiled	chunks/000/functions-000022.c		
+10b779134	10b77913f	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryRangeBuilder messageClass]	
+10b779140	10b779143	decompiled	chunks/000/functions-000022.c	+[SOJUGalleryRangeBuilder withJUGalleryRange:]	
+10b779144	10b779163	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryRatingStickerStyle initWithRating:styleId:]	
+10b779164	10b77928f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryRatingStickerStyle registerMessageFields:]	
+10b779290	10b7792ff	decompiled	chunks/000/functions-000023.c		
+10b779300	10b77931f	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryRequestStickerStyle initWithRequestText:requestId:stickerStyle:]	
+10b779320	10b7793b3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryRequestStickerStyle registerMessageFields:]	
+10b7793b4	10b7793c7	decompiled	chunks/000/functions-000023.c		
+10b7793c8	10b7793d3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryRequestStickerStyleBuilder messageClass]	
+10b7793d4	10b7793d7	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryRequestStickerStyleBuilder withJUGalleryRequestStickerStyle:]	
+10b7793d8	10b779457	decompiled	chunks/000/functions-000023.c		
+10b779458	10b7794af	decompiled	chunks/000/functions-000023.c		
+10b7794b0	10b7794cf	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletAddSnapsRequest initWithSnaps:storageVersionDeprecated:storageType:]	
+10b7794d0	10b7795a7	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletAddSnapsRequest registerMessageFields:]	
+10b7795a8	10b7795b3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletAddSnapsRequestBuilder messageClass]	
+10b7795b4	10b7795b7	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletAddSnapsRequestBuilder withJUGalleryServletAddSnapsRequest:]	
+10b7795b8	10b7795ef	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletAddSnapsResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:snaps:lastSeqnum:storageType:]	
+10b7795f0	10b779727	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletAddSnapsResponse registerMessageFields:]	
+10b779728	10b779763	decompiled	chunks/000/functions-000023.c		
+10b779764	10b77978b	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletBaseResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:]	
+10b77978c	10b77984f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletBaseResponse registerMessageFields:]	
+10b779850	10b779883	decompiled	chunks/000/functions-000023.c		
+10b779884	10b7798b3	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletClientConfigResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:defaultQueries:blockedTags:]	
+10b7798b4	10b779a0b	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletClientConfigResponse registerMessageFields:]	
+10b779a0c	10b779a27	decompiled	chunks/000/functions-000023.c		
+10b779a28	10b779a47	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletCollectionsFaceTagInfo initWithTopFriendNames:containsSelf:hasUnlabeledClusters:]	
+10b779a48	10b779ad7	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsFaceTagInfo registerMessageFields:]	
+10b779ad8	10b779af7	decompiled	chunks/000/functions-000023.c		
+10b779af8	10b779b03	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsFaceTagInfoBuilder messageClass]	
+10b779b04	10b779b07	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsFaceTagInfoBuilder withJUGalleryServletCollectionsFaceTagInfo:]	
+10b779b08	10b779b87	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletCollectionsGalleryCollection initWithCollectionId:title:createTime:lastUpdatedTime:expirationTime:collectionType:category:groups:thumbnailUrl:thumbnailFormat:encryption:minimumGroupsCountRequirement:bitmojiComicId:subtitle:thumbnailUrlType:isThumbnailEncrypted:titleOverlayUrl:titleOverlayUrlType:personalizedThumbnailUrl:personalizedThumbnailUrlType:isPersonalizedThumbnailEncrypted:personalizedThumbnailSnapIds:priority:additionalAttributes:recommendedThumbnailSnapIds:supercuts:templateName:activationTime:failureHandlingConfig:featuredStoryMetadata:faceTagInfo:featuredStoryLoggingInfo:]	
+10b779b88	10b779ea3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollection registerMessageFields:]	
+10b779ea4	10b779f3b	decompiled	chunks/000/functions-000023.c		
+10b779f3c	10b779f5f	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletCollectionsGalleryCollectionAttributes initWithFriendUserId:playbackChromeTitle:playbackChromeSubtitle:prefillChatMessage:compositions:]	
+10b779f60	10b77a027	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollectionAttributes registerMessageFields:]	
+10b77a028	10b77a03f	decompiled	chunks/000/functions-000023.c		
+10b77a040	10b77a04b	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollectionBuilder messageClass]	
+10b77a04c	10b77a04f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollectionBuilder withJUGalleryServletCollectionsGalleryCollection:]	
+10b77a050	10b77a087	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletCollectionsGalleryCollectionGroup initWithName:minimumSnapsCountRequirement:snaps:titleSnapIds:mashups:serverGeneratedSnaps:cameraRollItems:itemOrder:chromeSubtitle:]	
+10b77a088	10b77a1fb	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollectionGroup registerMessageFields:]	
+10b77a1fc	10b77a243	decompiled	chunks/000/functions-000023.c		
+10b77a244	10b77a263	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletCollectionsGalleryCollectionSnapComposition initWithServerSnapId:originalSnapIds:]	
+10b77a264	10b77a2fb	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletCollectionsGalleryCollectionSnapComposition registerMessageFields:]	
+10b77a2fc	10b77a307	decompiled	chunks/000/functions-000023.c		
+10b77a308	10b77a327	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletDefunctMedia initWithMediaId:defunctReason:]	
+10b77a328	10b77a39b	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletDefunctMedia registerMessageFields:]	
+10b77a39c	10b77a3a7	decompiled	chunks/000/functions-000023.c		
+10b77a3a8	10b77a3ab	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletDeleteEntriesRequest initWithEntries:]	
+10b77a3ac	10b77a423	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletDeleteEntriesRequest registerMessageFields:]	
+10b77a424	10b77a42f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletDeleteEntriesRequestBuilder messageClass]	
+10b77a430	10b77a433	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletDeleteEntriesRequestBuilder withJUGalleryServletDeleteEntriesRequest:]	
+10b77a434	10b77a463	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletDeleteEntriesResponse initWithEntries:lastSeqnum:serviceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:]	
+10b77a464	10b77a55b	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletDeleteEntriesResponse registerMessageFields:]	
+10b77a55c	10b77a597	decompiled	chunks/000/functions-000023.c		
+10b77a598	10b77a5f3	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletEntryParams initWithEntryId:entryType:snapIds:snapsUploadInfo:highlightedSnapIds:seqNum:createTime:title:isPrivate:lastAutosaveTime:externalId:snapOperations:entrySource:deleteAllShared:snapDoc:assetsDeprecated:entryAssets:folderType:memDataId:]	
+10b77a5f4	10b77a84f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletEntryParams registerMessageFields:]	
+10b77a850	10b77a893	decompiled	chunks/000/functions-000023.c		
+10b77a894	10b77a89f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletEntryParamsBuilder messageClass]	
+10b77a8a0	10b77a8a3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletEntryParamsBuilder withJUGalleryServletEntryParams:]	
+10b77a8a4	10b77a8cf	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletEntryResult initWithEntryId:seqNum:statusCode:debugInfo:snapMediaReferences:snapMemDataIds:memDataId:]	
+10b77a8d0	10b77a9eb	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletEntryResult registerMessageFields:]	
+10b77a9ec	10b77aa23	decompiled	chunks/000/functions-000023.c		
+10b77aa24	10b77aa5f	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletFaceParams initWithFaceId:mediaId:boundingBox:relativeBoundingBox:mediaBytes:faceVersion:gender:genderScore:smileScore:hatScore:mediaTimestampMs:]	
+10b77aa60	10b77abb3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletFaceParams registerMessageFields:]	
+10b77abb4	10b77abf7	decompiled	chunks/000/functions-000023.c		
+10b77abf8	10b77ac77	decompiled	chunks/000/functions-000023.c		
+10b77ac78	10b77acd3	decompiled	chunks/000/functions-000023.c		
+10b77acd4	10b77ad2f	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGalleryEntry initWithEntryId:seqNum:entryType:snaps:highlightedSnapIds:createTime:status:title:isPrivate:lastAutosaveTime:externalId:entrySource:snapOrder:snapOrderV2:shareLinkInfo:snapDoc:assets:folderType:memDataId:]	
+10b77ad30	10b77af87	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGalleryEntry registerMessageFields:]	
+10b77af88	10b77afeb	decompiled	chunks/000/functions-000023.c		
+10b77afec	10b77b143	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGallerySnap initWithSnapId:defunct:mediaId:encryption:mediaType:overlay:createTime:orientation:overlayOrientation:location:timeZone:temperature:speed:battery:width:height:duration:size:mediaDownloadUrl:hdMediaDownloadUrl:hdMediaStatus:overlayDownloadUrl:hasOverlayImage:thumbnailDownloadUrl:hasThumbnail:tags:tagsVersion:cameraHardwareMountingDegrees:cameraFrontFacing:source:framing:statusCode:contentScore:deviceId:isInfiniteDurationDeprecated:miniThumbnailBytes:thumbnailRedirectUrlDeprecated:infiniteDuration:thumbnailRedirectUri:overlayRedirectUri:mediaRedirectUri:hdMediaRedirectUri:gzippedOverlay:thumbnailSize:overlayImageSize:hdMediaSize:captureTime:mediaFormat:multiSnapSegment:multiSnapGroupId:sensorBlob:toolVersions:spectaclesMetadataUrl:hasSpectaclesMetadata:spectaclesMetadataRedirectUri:hasDepthEffectDeprecated:mediaAttributes:spectaclesSecondaryMetadataUrl:hasSpectaclesSecondaryMetadata:spectaclesSecondaryMetadataRedirectUri:snapAssets:assets:thumbnailDirectDownloadUrl:overlayDirectDownloadUrl:mediaDirectDownloadUrl:snapDocDeprecated:snapDocString:externalMetadata:memDataIds:]	
+10b77b144	10b77b6eb	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySnap registerMessageFields:]	
+10b77b6ec	10b77b7cb	decompiled	chunks/000/functions-000023.c		
+10b77b7cc	10b77b7d7	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySnapBuilder messageClass]	
+10b77b7d8	10b77b7db	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySnapBuilder withJUGalleryServletGallerySnap:]	
+10b77b7dc	10b77b81f	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGallerySyncRequest initWithClientCompatVersion:lastSeqnum:mediaUrl:thumbnailUrl:overlayImageUrl:pageSize:sojuInitSync:lowSeqnum:highSeqnum:syncToken:miniThumbnailBytes:snapTags:mediaFormat:]	
+10b77b820	10b77b943	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySyncRequest registerMessageFields:]	
+10b77b944	10b77b983	decompiled	chunks/000/functions-000023.c		
+10b77b984	10b77b98f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySyncRequestBuilder messageClass]	
+10b77b990	10b77b993	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySyncRequestBuilder withJUGalleryServletGallerySyncRequest:]	
+10b77b994	10b77b9ef	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGallerySyncResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:lastSeqnum:highestSeqnum:entries:hasMore:userSettings:defunctMedias:batchLowSeqnum:batchHighSeqnum:lowestSeqnum:syncToken:minTimestamp:syncState:lastFullSyncStartAtEpochSec:isMemDs:]	
+10b77b9f0	10b77bbdb	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGallerySyncResponse registerMessageFields:]	
+10b77bbdc	10b77bc33	decompiled	chunks/000/functions-000023.c		
+10b77bc34	10b77bc6b	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGalleryUrls initWithIdValue:type:mediaUrl:hdMediaUrl:thumbnailUrl:overlayImageUrl:mediaUploadHeaders:overlayUploadHeaders:thumbnailUploadHeaders:]	
+10b77bc6c	10b77bda3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGalleryUrls registerMessageFields:]	
+10b77bda4	10b77bde7	decompiled	chunks/000/functions-000023.c		
+10b77bde8	10b77be2b	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGalleryUserSetting initWithStoryAutoSaving:autoSaveToCameraRoll:backupOnCellular:privateGalleryEnabled:topSecretPrivateGalleryEnabled:saveToPrivateGalleryByDefault:snapSaveOption:entriesToPrefetchGrid:entriesToPrefetchBrowse:minMediaCacheSize:mediaCachePercentage:swipedIntoMemoriesPage:forceSyncRequired:]	
+10b77be2c	10b77bf57	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGalleryUserSetting registerMessageFields:]	
+10b77bf58	10b77bf97	decompiled	chunks/000/functions-000023.c		
+10b77bf98	10b77bfc3	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGetCollectionsResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:collections:]	
+10b77bfc4	10b77c0b3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetCollectionsResponse registerMessageFields:]	
+10b77c0b4	10b77c0ef	decompiled	chunks/000/functions-000023.c		
+10b77c0f0	10b77c0f3	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGetRedirectUrlRequest initWithRedirectUri:]	
+10b77c0f4	10b77c133	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetRedirectUrlRequest registerMessageFields:]	
+10b77c134	10b77c13f	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetRedirectUrlRequestBuilder messageClass]	
+10b77c140	10b77c143	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetRedirectUrlRequestBuilder withJUGalleryServletGetRedirectUrlRequest:]	
+10b77c144	10b77c18b	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGetSnapsRequest initWithSnapIds:memDataIds:overlayData:mediaUrl:thumbnailUrl:overlayImageUrl:snapTags:snapLocation:encryption:miniThumbnailBytes:gzippedOverlayData:mediaFormat:sensorBlob:spectaclesMetadataUrl:spectaclesSecondaryMetadataUrl:]	
+10b77c18c	10b77c2c3	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetSnapsRequest registerMessageFields:]	
+10b77c2c4	10b77c30b	decompiled	chunks/000/functions-000023.c		
+10b77c30c	10b77c317	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetSnapsRequestBuilder messageClass]	
+10b77c318	10b77c31b	decompiled	chunks/000/functions-000023.c	+[SOJUGalleryServletGetSnapsRequestBuilder withJUGalleryServletGetSnapsRequest:]	
+10b77c31c	10b77c347	decompiled	chunks/000/functions-000023.c	-[SOJUGalleryServletGetSnapsResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:snaps:]	
+10b77c348	10b77c437	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletGetSnapsResponse registerMessageFields:]	
+10b77c438	10b77c473	decompiled	chunks/000/functions-000024.c		
+10b77c474	10b77c497	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletGetUploadUrlsRequest initWithIds:type:storageVersionDeprecated:storageType:]	
+10b77c498	10b77c57f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletGetUploadUrlsRequest registerMessageFields:]	
+10b77c580	10b77c58b	decompiled	chunks/000/functions-000024.c		
+10b77c58c	10b77c6b3	decompiled	chunks/000/functions-000024.c		
+10b77c6b4	10b77c7c3	decompiled	chunks/000/functions-000024.c		
+10b77c7c4	10b77c7e7	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletMediaResult initWithMediaId:uploadUrl:statusCode:debugInfo:uploadHeaders:]	
+10b77c7e8	10b77c8a3	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMediaResult registerMessageFields:]	
+10b77c8a4	10b77c8d3	decompiled	chunks/000/functions-000024.c		
+10b77c8d4	10b77c8f3	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletMemDataId initWithUuid:creationTimeMs:entryType:]	
+10b77c8f4	10b77c96f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataId registerMessageFields:]	
+10b77c970	10b77c98f	decompiled	chunks/000/functions-000024.c		
+10b77c990	10b77c99b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataIdBuilder messageClass]	
+10b77c99c	10b77c99f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataIdBuilder withJUGalleryServletMemDataId:]	
+10b77c9a0	10b77c9bf	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletMemDataIds initWithEntryMemDataId:snapMemDataId:]	
+10b77c9c0	10b77ca27	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataIds registerMessageFields:]	
+10b77ca28	10b77ca4b	decompiled	chunks/000/functions-000024.c		
+10b77ca4c	10b77ca57	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataIdsBuilder messageClass]	
+10b77ca58	10b77ca5b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletMemDataIdsBuilder withJUGalleryServletMemDataIds:]	
+10b77ca5c	10b77ca7f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletPrintSnapResult initWithSnapId:statusCode:encryption:printUrl:]	
+10b77ca80	10b77cb1b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletPrintSnapResult registerMessageFields:]	
+10b77cb1c	10b77cb37	decompiled	chunks/000/functions-000024.c		
+10b77cb38	10b77cb57	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletQuota initWithUnlimited:snapNumber:]	
+10b77cb58	10b77cbd3	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletQuota registerMessageFields:]	
+10b77cbd4	10b77cbe7	decompiled	chunks/000/functions-000024.c		
+10b77cbe8	10b77cc07	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletQuotaUsage initWithRemaining:total:]	
+10b77cc08	10b77cc63	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletQuotaUsage registerMessageFields:]	
+10b77cc64	10b77cc7b	decompiled	chunks/000/functions-000024.c		
+10b77cc7c	10b77cc9b	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSensorBlob initWithData:sensorMajorVersion:sensorMinorVersion:]	
+10b77cc9c	10b77cd0f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSensorBlob registerMessageFields:]	
+10b77cd10	10b77cd2f	decompiled	chunks/000/functions-000024.c		
+10b77cd30	10b77cd57	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapAssetsAddSnapAssetRequest initWithIdValue:assetDescriptor:size:md5hash:createTime:assetMetadata:]	
+10b77cd58	10b77ce47	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapAssetsAddSnapAssetRequest registerMessageFields:]	
+10b77ce48	10b77ce63	decompiled	chunks/000/functions-000024.c		
+10b77ce64	10b77ce83	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapAssetsAddSnapAssetResponse initWithIdValue:uploadUrl:uploadHeaders:]	
+10b77ce84	10b77cf3f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapAssetsAddSnapAssetResponse registerMessageFields:]	
+10b77cf40	10b77cf4b	decompiled	chunks/000/functions-000024.c		
+10b77cf4c	10b77cf6f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapAssetsGalleryMediaAssetMetadata initWithMediaType:captureTime:mediaFormat:mediaAttributes:]	
+10b77cf70	10b77d04f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapAssetsGalleryMediaAssetMetadata registerMessageFields:]	
+10b77d050	10b77d063	decompiled	chunks/000/functions-000024.c		
+10b77d064	10b77d087	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapAssetsGallerySnapAsset initWithIdValue:assetDescriptor:downloadUrl:assetMetadata:]	
+10b77d088	10b77d13f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapAssetsGallerySnapAsset registerMessageFields:]	
+10b77d140	10b77d15f	decompiled	chunks/000/functions-000024.c		
+10b77d160	10b77d163	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapAssetsGallerySnapAssetMetadata initWithMediaMetadata:]	
+10b77d164	10b77d1d7	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapAssetsGallerySnapAssetMetadata registerMessageFields:]	
+10b77d1d8	10b77d1fb	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapOperation initWithOperationType:snapId:orderDeprecated:orderV2:snap:]	
+10b77d1fc	10b77d2db	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapOperation registerMessageFields:]	
+10b77d2dc	10b77d2f3	decompiled	chunks/000/functions-000024.c		
+10b77d2f4	10b77d2ff	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapOperationBuilder messageClass]	
+10b77d300	10b77d303	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapOperationBuilder withJUGalleryServletSnapOperation:]	
+10b77d304	10b77d3f3	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapParams initWithMemDataIds:snapId:sojuCopyFromSnapId:sojuCopyFromMemDataIds:mediaId:encryption:mediaMd5hash:mediaPhotoDnaHash:mediaType:overlay:overlayImageMd5hash:thumbnailMd5hash:createTime:orientation:overlayOrientation:location:timeZone:temperature:speed:battery:width:height:duration:size:backlogIndex:backlogTotal:cameraHardwareMountingDegrees:cameraFrontFacing:source:framing:contentScore:deviceId:customStickerPresent:isInfiniteDurationDeprecated:miniThumbnailBytes:infiniteDuration:thumbnailSize:overlayImageSize:captureTime:mediaFormat:mediaTranscoderVersion:mediaFormatProvided:multiSnapSegment:multiSnapGroupId:sensorBlob:toolVersions:mediaAttributes:snapAssets:assets:mediaBoltContentUrl:overlayImageBoltContentUrl:thumbnailBoltContentUrl:snapDocDeprecated:snapDocString:externalMetadata:decryption:]	
+10b77d3f4	10b77d90f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapParams registerMessageFields:]	
+10b77d910	10b77d9bf	decompiled	chunks/000/functions-000024.c		
+10b77d9c0	10b77d9cb	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapParamsBuilder messageClass]	
+10b77d9cc	10b77d9cf	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapParamsBuilder withJUGalleryServletSnapParams:]	
+10b77d9d0	10b77da1f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapResult initWithSnapId:statusCode:debugInfo:mediaUploaded:mediaUrl:overlayUrl:thumbnailUrl:mediaUploadHeaders:overlayUploadHeaders:thumbnailUploadHeaders:mediaRedirectUri:overlayImageRedirectUri:thumbnailRedirectUri:snapAssets:assets:thumbnailDirectDownloadUrl:overlayDirectDownloadUrl:mediaDirectDownloadUrl:]	
+10b77da20	10b77dbfb	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapResult registerMessageFields:]	
+10b77dbfc	10b77dc67	decompiled	chunks/000/functions-000024.c		
+10b77dc68	10b77dce7	decompiled	chunks/000/functions-000024.c		
+10b77dce8	10b77dd43	decompiled	chunks/000/functions-000024.c		
+10b77dd44	10b77dd6b	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapTags initWithMemDataIds:timeZone:snapId:snapCreationTimeMs:tagVersion:tags:]	
+10b77dd6c	10b77de4f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapTags registerMessageFields:]	
+10b77de50	10b77de6f	decompiled	chunks/000/functions-000024.c		
+10b77de70	10b77de7b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapTagsBuilder messageClass]	
+10b77de7c	10b77de7f	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapTagsBuilder withJUGalleryServletSnapTags:]	
+10b77de80	10b77de9f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapTagsResult initWithSnapId:statusCode:]	
+10b77dea0	10b77df13	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapTagsResult registerMessageFields:]	
+10b77df14	10b77df1f	decompiled	chunks/000/functions-000024.c		
+10b77df20	10b77df3f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletSnapUploadInfo initWithMediaUploadInfo:overlayUploadInfo:]	
+10b77df40	10b77df9b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapUploadInfo registerMessageFields:]	
+10b77df9c	10b77dfb3	decompiled	chunks/000/functions-000024.c		
+10b77dfb4	10b77dfbf	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapUploadInfoBuilder messageClass]	
+10b77dfc0	10b77dfc3	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletSnapUploadInfoBuilder withJUGalleryServletSnapUploadInfo:]	
+10b77dfc4	10b77e05f	decompiled	chunks/000/functions-000024.c		
+10b77e060	10b77e0d3	decompiled	chunks/000/functions-000024.c		
+10b77e0d4	10b77e0db	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletTagsInOneSnap canInitFromProto]	
+10b77e0dc	10b77e11f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletTagsInOneSnap initWithLocationTagList:timeTagList:metaTagList:visualTagToConfidenceMap:languageId:tagCluster:locationCluster:caption:qualityScore:blurrinessScore:lightingQualityScore:noisinessScore:tinyClip:faceTag:]	
+10b77e120	10b77e2a7	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletTagsInOneSnap registerMessageFields:]	
+10b77e2a8	10b77e30b	decompiled	chunks/000/functions-000024.c		
+10b77e30c	10b77e317	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletTagsInOneSnapBuilder messageClass]	
+10b77e318	10b77e31b	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletTagsInOneSnapBuilder withJUGalleryServletTagsInOneSnap:]	
+10b77e31c	10b77e31f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUpdateEntriesRequest initWithEntries:]	
+10b77e320	10b77e397	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateEntriesRequest registerMessageFields:]	
+10b77e398	10b77e3a3	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateEntriesRequestBuilder messageClass]	
+10b77e3a4	10b77e3a7	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateEntriesRequestBuilder withJUGalleryServletUpdateEntriesRequest:]	
+10b77e3a8	10b77e3d7	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUpdateEntriesResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:entries:lastSeqnum:]	
+10b77e3d8	10b77e4db	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateEntriesResponse registerMessageFields:]	
+10b77e4dc	10b77e517	decompiled	chunks/000/functions-000024.c		
+10b77e518	10b77e537	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUpdateMediaResult initWithMediaId:statusCode:debugInfo:]	
+10b77e538	10b77e5bb	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateMediaResult registerMessageFields:]	
+10b77e5bc	10b77e5d3	decompiled	chunks/000/functions-000024.c		
+10b77e5d4	10b77e5ff	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUpdateSnapsResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:snaps:]	
+10b77e600	10b77e6ef	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUpdateSnapsResponse registerMessageFields:]	
+10b77e6f0	10b77e72b	decompiled	chunks/000/functions-000024.c		
+10b77e72c	10b77e72f	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUploadTagsRequest initWithSnapTagsList:]	
+10b77e730	10b77e7a7	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUploadTagsRequest registerMessageFields:]	
+10b77e7a8	10b77e7b3	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUploadTagsRequestBuilder messageClass]	
+10b77e7b4	10b77e7b7	decompiled	chunks/000/functions-000024.c	+[SOJUGalleryServletUploadTagsRequestBuilder withJUGalleryServletUploadTagsRequest:]	
+10b77e7b8	10b77e7e3	decompiled	chunks/000/functions-000024.c	-[SOJUGalleryServletUploadTagsResponse initWithServiceStatusCode:userString:backoffTime:debugInfo:quota:totalEntryCount:snaps:]	
+10b77e7e4	10b77e8d3	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryServletUploadTagsResponse registerMessageFields:]	
+10b77e8d4	10b77e90f	decompiled	chunks/000/functions-000025.c		
+10b77e910	10b77e92f	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryShareYoursStickerStyle initWithShareYoursId:prompt:participants:]	
+10b77e930	10b77e9e7	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryShareYoursStickerStyle registerMessageFields:]	
+10b77e9e8	10b77e9f3	decompiled	chunks/000/functions-000025.c		
+10b77e9f4	10b77e9ff	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryShareYoursStickerStyleBuilder messageClass]	
+10b77ea00	10b77ea03	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryShareYoursStickerStyleBuilder withJUGalleryShareYoursStickerStyle:]	
+10b77ea04	10b77ea07	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySnapMeStickerStyle initWithPrompt:]	
+10b77ea08	10b77ea47	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapMeStickerStyle registerMessageFields:]	
+10b77ea48	10b77ea53	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapMeStickerStyleBuilder messageClass]	
+10b77ea54	10b77ea57	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapMeStickerStyleBuilder withJUGallerySnapMeStickerStyle:]	
+10b77ea58	10b77ead7	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySnapOverlay initWithFilters:caption:drawing:drawingV2:stickers:lensId:audioDisabled:snapcraftStyleId:snapAttachments:eraser:magicTools:audiofilterStyleId:cropping:captions:craftType:previewLensId:bounceState:userBitmojiAvatarId:friendBitmojiAvatarId:magicMoment:lensMetadata:spectaclesMetadata:baseVideoPlaybackRate:autoCaptions:lensMusicTrackId:autoCropEnabled:superCutEffectApplied:voiceOverEnabled:lensRankingId:lensToolDeprecated:postCaptureLensTool:mediaOrigin:]	
+10b77ead8	10b77ee5b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapOverlay registerMessageFields:]	
+10b77ee5c	10b77ef07	decompiled	chunks/000/functions-000025.c		
+10b77ef08	10b77ef13	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapOverlayBuilder messageClass]	
+10b77ef14	10b77ef17	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapOverlayBuilder withJUGallerySnapOverlay:]	
+10b77ef18	10b77ef83	decompiled	chunks/000/functions-000025.c		
+10b77ef84	10b77efbf	decompiled	chunks/000/functions-000025.c		
+10b77efc0	10b77efe7	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySnapSource initWithType:attribution:cameraRollId:externalId:saverUserId:creatorAttribution:]	
+10b77efe8	10b77f0bb	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapSource registerMessageFields:]	
+10b77f0bc	10b77f0fb	decompiled	chunks/000/functions-000025.c		
+10b77f0fc	10b77f107	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapSourceBuilder messageClass]	
+10b77f108	10b77f10b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapSourceBuilder withJUGallerySnapSource:]	
+10b77f10c	10b77f12f	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySnapcodeStickerStyle initWithType:username:userId:bitmojiAvatarId:bitmojiSelfieId:]	
+10b77f130	10b77f1cb	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapcodeStickerStyle registerMessageFields:]	
+10b77f1cc	10b77f1ff	decompiled	chunks/000/functions-000025.c		
+10b77f200	10b77f20b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapcodeStickerStyleBuilder messageClass]	
+10b77f20c	10b77f20f	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySnapcodeStickerStyleBuilder withJUGallerySnapcodeStickerStyle:]	
+10b77f210	10b77f27b	decompiled	chunks/000/functions-000025.c		
+10b77f27c	10b77f2b7	decompiled	chunks/000/functions-000025.c		
+10b77f2b8	10b77f2bb	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySpeedInfoFilter initWithSpeed:]	
+10b77f2bc	10b77f2fb	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedInfoFilter registerMessageFields:]	
+10b77f2fc	10b77f307	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedInfoFilterBuilder messageClass]	
+10b77f308	10b77f30b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedInfoFilterBuilder withJUGallerySpeedInfoFilter:]	
+10b77f30c	10b77f30f	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySpeedMotionFilter initWithVideoPlayRate:]	
+10b77f310	10b77f35b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedMotionFilter registerMessageFields:]	
+10b77f35c	10b77f367	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedMotionFilterBuilder messageClass]	
+10b77f368	10b77f36b	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySpeedMotionFilterBuilder withJUGallerySpeedMotionFilter:]	
+10b77f36c	10b77f3e3	decompiled	chunks/000/functions-000025.c		
+10b77f3e4	10b77f43f	decompiled	chunks/000/functions-000025.c		
+10b77f440	10b77f4bb	decompiled	chunks/000/functions-000025.c	-[SOJUGallerySticker initWithType:emoji:packId:stickerId:relativeWidth:relativeHeight:position:rotation:isRotationRadians:scale:isTracking:trackingTrajectory:isPositionCenterOfSticker:infoStickerType:infoStickerStyle:isAnimated:externalSrcUrl:isTranslateCenterOfSticker:isSponsored:isFlipped:appStickerStyle:capabilities:miniAppMetadata:customText:isTimed:commerceStickerStyle:startTimeMs:endTimeMs:rendererId:]	
+10b77f4bc	10b77f793	decompiled	chunks/000/functions-000025.c	+[SOJUGallerySticker registerMessageFields:]	
+10b77f794	10b77f83f	decompiled	chunks/000/functions-000025.c		
+10b77f840	10b77f84b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStickerBuilder messageClass]	
+10b77f84c	10b77f84f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStickerBuilder withJUGallerySticker:]	
+10b77f850	10b77f9cb	decompiled	chunks/000/functions-000025.c		
+10b77f9cc	10b77fb2f	decompiled	chunks/000/functions-000025.c		
+10b77fb30	10b77fb57	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryStoryInviteStickerStyle initWithStoryName:storyId:inviteId:username:bitmojiAvatarId:storyType:]	
+10b77fb58	10b77fc23	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStoryInviteStickerStyle registerMessageFields:]	
+10b77fc24	10b77fc47	decompiled	chunks/000/functions-000025.c		
+10b77fc48	10b77fc53	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStoryInviteStickerStyleBuilder messageClass]	
+10b77fc54	10b77fc57	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStoryInviteStickerStyleBuilder withJUGalleryStoryInviteStickerStyle:]	
+10b77fc58	10b77fc5b	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryStreakFilter initWithStreak:]	
+10b77fc5c	10b77fc9b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryStreakFilter registerMessageFields:]	
+10b77fc9c	10b77fcbb	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryTimeTransform initWithTime:transform:]	
+10b77fcbc	10b77fd2f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryTimeTransform registerMessageFields:]	
+10b77fd30	10b77fd47	decompiled	chunks/000/functions-000025.c		
+10b77fd48	10b77fd67	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryToolVersion initWithTool:version:]	
+10b77fd68	10b77ffc7	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryToolVersion registerMessageFields:]	
+10b77ffc8	10b78017f	decompiled	chunks/000/functions-000025.c		
+10b780180	10b78019f	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryTopicStickerStyle initWithTopicStickerInfoProtoBase64:type:]	
+10b7801a0	10b78022f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryTopicStickerStyle registerMessageFields:]	
+10b780230	10b78023b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryTopicStickerStyleBuilder messageClass]	
+10b78023c	10b78023f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryTopicStickerStyleBuilder withJUGalleryTopicStickerStyle:]	
+10b780240	10b7802bf	decompiled	chunks/000/functions-000025.c		
+10b7802c0	10b780317	decompiled	chunks/000/functions-000025.c		
+10b780318	10b780337	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryTransform initWithTranslation:scale:rotation:]	
+10b780338	10b7803c3	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryTransform registerMessageFields:]	
+10b7803c4	10b7803e3	decompiled	chunks/000/functions-000025.c		
+10b7803e4	10b7803e7	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryUvIndexStickerStyle initWithUvIndex:]	
+10b7803e8	10b780427	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryUvIndexStickerStyle registerMessageFields:]	
+10b780428	10b780433	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryUvIndexStickerStyleBuilder messageClass]	
+10b780434	10b780437	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryUvIndexStickerStyleBuilder withJUGalleryUvIndexStickerStyle:]	
+10b780438	10b780457	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryVenueFilter initWithYOffset:venues:selectedVenueId:]	
+10b780458	10b780513	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilter registerMessageFields:]	
+10b780514	10b78051b	decompiled	chunks/000/functions-000025.c		
+10b78051c	10b780527	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilterBuilder messageClass]	
+10b780528	10b78052b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilterBuilder withJUGalleryVenueFilter:]	
+10b78052c	10b78054b	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryVenueFilterInfoStyle initWithVenue:type:]	
+10b78054c	10b7805f3	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilterInfoStyle registerMessageFields:]	
+10b7805f4	10b7805ff	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilterInfoStyleBuilder messageClass]	
+10b780600	10b780603	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVenueFilterInfoStyleBuilder withJUGalleryVenueFilterInfoStyle:]	
+10b780604	10b78069f	decompiled	chunks/000/functions-000025.c		
+10b7806a0	10b78070f	decompiled	chunks/000/functions-000025.c		
+10b780710	10b780713	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryVisualFilter initWithType:]	
+10b780714	10b78075f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVisualFilter registerMessageFields:]	
+10b780760	10b78076b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVisualFilterBuilder messageClass]	
+10b78076c	10b78076f	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryVisualFilterBuilder withJUGalleryVisualFilter:]	
+10b780770	10b78080b	decompiled	chunks/000/functions-000025.c		
+10b78080c	10b78087f	decompiled	chunks/000/functions-000025.c		
+10b780880	10b7808a7	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryWeatherInfoFilter initWithCelsius:fahrenheit:locationName:hourlyForecasts:dailyForecasts:viewType:]	
+10b7808a8	10b78097b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryWeatherInfoFilter registerMessageFields:]	
+10b78097c	10b7809cf	decompiled	chunks/000/functions-000025.c		
+10b7809d0	10b7809db	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryWeatherInfoFilterBuilder messageClass]	
+10b7809dc	10b7809df	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryWeatherInfoFilterBuilder withJUGalleryWeatherInfoFilter:]	
+10b7809e0	10b780a03	decompiled	chunks/000/functions-000025.c	-[SOJUGalleryWebAttachmentStickerStyle initWithAttachmentUrl:title:faviconUrl:shortenedUrl:imageUrl:]	
+10b780a04	10b780a9b	decompiled	chunks/000/functions-000025.c	+[SOJUGalleryWebAttachmentStickerStyle registerMessageFields:]	
+10b780a9c	10b780abf	decompiled	chunks/000/functions-000025.c		
+10b780ac0	10b780ba7	decompiled	chunks/000/functions-000025.c	-[SOJUGenericSnap initWithIdValue:st:m:ts:sts:zipped:pts:orientation:snapMetadata:sendStartTimestamp:replyMedias:seqNum:viewTimestamp:sn:t:timer:capTextDeprecated:capPosDeprecated:capOriDeprecated:broadcast:broadcastMediaUrl:broadcastUrl:broadcastActionText:broadcastSecondaryText:broadcastHideTimer:filterId:rp:cId:replayed:pending:c:esId:egData:uvTags:fiNeedsRetry:fiVersion:fiSenderOutAlphaDeprecated:fiRecipientOutAlphaDeprecated:fiRecipientOutDeltaDeprecated:fiRecipientOutDeltaCheckDeprecated:fiSendTimestampDeprecated:fideliusInfo:fiRecipientOutGammaDeprecated:fiSnapKey:fiSnapIv:fiPrevSenderGammaDeprecated:fiPrevSenderGammaCountDeprecated:fiSenderOutBeta:fiSnapReleaseTs:screenCaptureShotCount:screenCaptureRecordingCount:fiRetried:directDownloadUrl:]	
+10b780ba8	10b781083	decompiled	chunks/000/functions-000025.c	+[SOJUGenericSnap registerMessageFields:]	
+10b781084	10b78110f	decompiled	chunks/000/functions-000026.c		
+10b781110	10b781137	decompiled	chunks/000/functions-000026.c	-[SOJUGeoGeoLocation initWithTimestamp:lat:lon:altitude:horizontalAccuracy:speed:]	
+10b781138	10b7811df	decompiled	chunks/000/functions-000026.c	+[SOJUGeoGeoLocation registerMessageFields:]	
+10b7811e0	10b781203	decompiled	chunks/000/functions-000026.c		
+10b781204	10b78120f	decompiled	chunks/000/functions-000026.c	+[SOJUGeoGeoLocationBuilder messageClass]	
+10b781210	10b781213	decompiled	chunks/000/functions-000026.c	+[SOJUGeoGeoLocationBuilder withJUGeoGeoLocation:]	
+10b781214	10b781233	decompiled	chunks/000/functions-000026.c	-[SOJUGeofence initWithIdValue:coordinates:]	
+10b781234	10b7812cf	decompiled	chunks/000/functions-000026.c	+[SOJUGeofence registerMessageFields:]	
+10b7812d0	10b781317	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterDisplayParameters initWithSize:color:font:staticText:align:textAlpha:textShadow:autoResizeEnabled:fallbackText:maxFontSize:dynamicText:targetDatetime:targetDatetimeDirection:capitalization:calculatedDynamicText:fallbackMethod:]	
+10b781318	10b7814bb	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterDisplayParameters registerMessageFields:]	
+10b7814bc	10b781547	decompiled	chunks/000/functions-000026.c		
+10b781548	10b7815c7	decompiled	chunks/000/functions-000026.c		
+10b7815c8	10b781623	decompiled	chunks/000/functions-000026.c		
+10b781624	10b7816a3	decompiled	chunks/000/functions-000026.c		
+10b7816a4	10b7816ff	decompiled	chunks/000/functions-000026.c		
+10b781700	10b78176b	decompiled	chunks/000/functions-000026.c		
+10b78176c	10b7817a3	decompiled	chunks/000/functions-000026.c		
+10b7817a4	10b7817c3	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterImageMetadata initWithImageSizePx:croppedImageSizePx:croppedImageOffset:]	
+10b7817c4	10b781843	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterImageMetadata registerMessageFields:]	
+10b781844	10b781867	decompiled	chunks/000/functions-000026.c		
+10b781868	10b78188f	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterLayoutParameters initWithXOffset:yOffset:xSize:ySize:rotation:zIndex:]	
+10b781890	10b78193b	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterLayoutParameters registerMessageFields:]	
+10b78193c	10b78196b	decompiled	chunks/000/functions-000026.c		
+10b78196c	10b781997	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterMarkup initWithRefreshRate:type:source:layoutParameters:displayParameters:displayScheduleDeprecated:companionCreativeProperties:]	
+10b781998	10b781aa7	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterMarkup registerMessageFields:]	
+10b781aa8	10b781aeb	decompiled	chunks/000/functions-000026.c		
+10b781aec	10b781b87	decompiled	chunks/000/functions-000026.c		
+10b781b88	10b781bf7	decompiled	chunks/000/functions-000026.c		
+10b781bf8	10b781c17	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterMusicTrackMetadata initWithTrackId:contentRestrictions:]	
+10b781c18	10b781cab	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterMusicTrackMetadata registerMessageFields:]	
+10b781cac	10b781cb7	decompiled	chunks/000/functions-000026.c		
+10b781cb8	10b781cc3	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterMusicTrackMetadataBuilder messageClass]	
+10b781cc4	10b781cc7	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterMusicTrackMetadataBuilder withJUGeofilterMusicTrackMetadata:]	
+10b781cc8	10b781ceb	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterPrompt initWithText:position:fadeInTimeMs:onScreenTimeMs:fadeOutTimeMs:]	
+10b781cec	10b781d87	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterPrompt registerMessageFields:]	
+10b781d88	10b781dbb	decompiled	chunks/000/functions-000026.c		
+10b781dbc	10b781e3b	decompiled	chunks/000/functions-000026.c		
+10b781e3c	10b781e93	decompiled	chunks/000/functions-000026.c		
+10b781e94	10b781e9b	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterResponse canInitFromProto]	
+10b781e9c	10b782023	decompiled	chunks/000/functions-000026.c	-[SOJUGeofilterResponse initWithFilterId:expiresCountdown:image:urlParams:imageCroppedToVisible:extraImageMetadata:geofence:unlockableContentType:unlockableContentId:priority:position:dynamicContent:isDynamicGeofilter:clientCacheExpirationDateTimeDeprecated:clientCacheTtlMinutes:isSponsored:sponsoredSlug:sponsoredSlugPosition:sponsoredSlugImgLink:dynamicContentSetting:isLens:lensData:lensCategories:section:isFeatured:appstoreIapId:gplayIapId:targetingType:belowDrawingLayer:encGeoData:geofilterPrompt:schedule:unlockDurationMessage:filterScore:shouldSubsampleImage:lensCategoriesData:serverTimestamp:guaranteeDelivery:exclusionTags:excludedByTags:lensCarouselIndex:lensPlacementInfo:isFrameFilter:unlockableTrackInfo:unlockableCategory:unlockableContext:unlockableAttributes:eligibleForNotification:dynamicContextProperties:stickerPackData:autoStacking:isAnimated:syncSensitivity:populatedUnlockableContextTypes:sponsoredSlugStyle:isMenuFilter:metaTags:hasContextCard:carouselGroup:arSegmentation:attachment:debugInfo:scannableData:tooltip:contextHint:audio:postCaptureLensDataDeprecated:captionStyle:filterIdLong:checksum:eligibleForLensExplorer:snapInfo:additionalCaptionStyles:musicTrackMetadata:adPlacements:sponsoredType:]	
+10b782024	10b7827e3	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterResponse registerMessageFields:]	
+10b7827e4	10b782913	decompiled	chunks/000/functions-000026.c		
+10b782914	10b78291f	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterResponseBuilder messageClass]	
+10b782920	10b782923	decompiled	chunks/000/functions-000026.c	+[SOJUGeofilterResponseBuilder withJUGeofilterResponse:]	
+10b782924	10b78298f	decompiled	chunks/000/functions-000026.c		
+10b782990	10b7829c7	decompiled	chunks/000/functions-000026.c		
+10b7829c8	10b782aef	decompiled	chunks/000/functions-000026.c		
+10b782af0	10b782bff	decompiled	chunks/000/functions-000026.c		
+10b782c00	10b782c6b	decompiled	chunks/000/functions-000026.c		
+10b782c6c	10b782c9f	decompiled	chunks/000/functions-000026.c		
+10b782ca0	10b782cc3	decompiled	chunks/000/functions-000026.c	-[SOJUGetSavedMessagesByTypesResponse initWithMessages:notModified:checksum:iterSequenceNumber:]	
+10b782cc4	10b782db7	decompiled	chunks/000/functions-000026.c	+[SOJUGetSavedMessagesByTypesResponse registerMessageFields:]	
+10b782db8	10b782dc3	decompiled	chunks/000/functions-000026.c		
+10b782dc4	10b782e2f	decompiled	chunks/000/functions-000026.c		
+10b782e30	10b782e6b	decompiled	chunks/000/functions-000026.c		
+10b782e6c	10b782e93	decompiled	chunks/000/functions-000026.c	-[SOJUHeader initWithFrom:to:convId:isv3:auth:connSeqNum:]	
+10b782e94	10b782f83	decompiled	chunks/000/functions-000026.c	+[SOJUHeader registerMessageFields:]	
+10b782f84	10b782fb7	decompiled	chunks/000/functions-000026.c		
+10b782fb8	10b782fc3	decompiled	chunks/000/functions-000026.c	+[SOJUHeaderBuilder messageClass]	
+10b782fc4	10b782fc7	decompiled	chunks/000/functions-000026.c	+[SOJUHeaderBuilder withJUHeader:]	
+10b782fc8	10b782feb	decompiled	chunks/000/functions-000026.c	-[SOJUHourlyForecast initWithFahrenheit:celsius:weatherCondition:displayTime:]	
+10b782fec	10b7830b3	decompiled	chunks/000/functions-000026.c	+[SOJUHourlyForecast registerMessageFields:]	
+10b7830b4	10b7830bf	decompiled	chunks/000/functions-000026.c		
+10b7830c0	10b7830ef	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityContactItem initWithUsername:userId:displayName:displayUsername:lastUpdated:hasStarred:hasPhoto:hasSavedDate:]	
+10b7830f0	10b7831ab	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityContactItem registerMessageFields:]	
+10b7831ac	10b7831f7	decompiled	chunks/000/functions-000026.c		
+10b7831f8	10b7831fb	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityContactResponse initWithContacts:]	
+10b7831fc	10b783273	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityContactResponse registerMessageFields:]	
+10b783274	10b7832a3	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityContactWithData initWithNumber:displayName:lastUpdatedTimestamp:hasStarred:hasPhoto:hasSavedDate:emailAddress:hasSocialLink:]	
+10b7832a4	10b7833ab	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityContactWithData registerMessageFields:]	
+10b7833ac	10b7833e7	decompiled	chunks/000/functions-000026.c		
+10b7833e8	10b78341f	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityCreateMischiefRequest initWithTimestamp:reqToken:username:snapchatUserId:uuid:name:participants:mischiefMobCreationRequest:mischiefCreationSource:minimumGroupSizeDisabled:]	
+10b783420	10b783583	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefRequest registerMessageFields:]	
+10b783584	10b7835c3	decompiled	chunks/000/functions-000026.c		
+10b7835c4	10b7835cf	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefRequestBuilder messageClass]	
+10b7835d0	10b7835d3	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefRequestBuilder withJUIdentityCreateMischiefRequest:]	
+10b7835d4	10b7835f3	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityCreateMischiefResponse initWithRequestUuid:sojuNewMischief:errorType:]	
+10b7835f4	10b7836a7	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefResponse registerMessageFields:]	
+10b7836a8	10b7836bb	decompiled	chunks/000/functions-000026.c		
+10b7836bc	10b783773	decompiled	chunks/000/functions-000026.c		
+10b783774	10b7837fb	decompiled	chunks/000/functions-000026.c		
+10b7837fc	10b78381f	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityCreateMischiefsRequest initWithTimestamp:reqToken:username:snapchatUserId:createMischiefRequests:]	
+10b783820	10b783907	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefsRequest registerMessageFields:]	
+10b783908	10b783917	decompiled	chunks/000/functions-000026.c		
+10b783918	10b783923	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefsRequestBuilder messageClass]	
+10b783924	10b783927	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefsRequestBuilder withJUIdentityCreateMischiefsRequest:]	
+10b783928	10b78392b	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityCreateMischiefsResponse initWithCreateResults:]	
+10b78392c	10b7839a3	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityCreateMischiefsResponse registerMessageFields:]	
+10b7839a4	10b7839cf	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityDeepLinkRequest initWithTimestamp:reqToken:username:snapchatUserId:deepLinkAction:friendUsername:linkId:]	
+10b7839d0	10b783a9f	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityDeepLinkRequest registerMessageFields:]	
+10b783aa0	10b783acf	decompiled	chunks/000/functions-000026.c		
+10b783ad0	10b783adb	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityDeepLinkRequestBuilder messageClass]	
+10b783adc	10b783adf	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityDeepLinkRequestBuilder withJUIdentityDeepLinkRequest:]	
+10b783ae0	10b783b5f	decompiled	chunks/000/functions-000026.c		
+10b783b60	10b783bb7	decompiled	chunks/000/functions-000026.c		
+10b783bb8	10b783bdb	decompiled	chunks/000/functions-000026.c	-[SOJUIdentityDeepLinkResponse initWithDeepLinkAction:friendExists:friendValue:snap:]	
+10b783bdc	10b783cd3	decompiled	chunks/000/functions-000026.c	+[SOJUIdentityDeepLinkResponse registerMessageFields:]	
+10b783cd4	10b783cdb	decompiled	chunks/000/functions-000026.c		
+10b783cdc	10b783d5b	decompiled	chunks/000/functions-000026.c		
+10b783d5c	10b783db3	decompiled	chunks/000/functions-000026.c		
+10b783db4	10b783f3b	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindFriendsContact initWithName:userId:type:display:birthday:ts:reverseTs:direction:storyPrivacy:canSeeCustomStories:pendingSnapsCountDeprecated:expirationDeprecated:isSharedStoryDeprecated:hasCustomDescriptionDeprecated:sharedStoryIdDeprecated:localStoryDeprecated:ignoredLink:hiddenLink:addSource:addSourceType:friendmojiString:needsLoveDeprecated:autoAddedDeprecated:sojuNewLinkDeprecated:dontDecayThumbnailDeprecated:venueDeprecated:friendmojiSymbols:friendmojis:snapStreakCount:snapStreakExpiration:bitmojiAvatarId:potentialHighQualityScoreDeprecated:pendingChatsCountDeprecated:bitmojiSelfieId:canBeSharedByFriendsDeprecated:fideliusInfo:bitmojiSnapcodeSelfieId:studySettings:isPopular:isStoryMuted:isIncomingFriendRequestViewed:displayUsername:snapProId:isCognacNotificationMuted:mutableUsername:isCameosSharingSupported:snapshotMetadata:bitmojiSceneId:bitmojiBackgroundId:bitmojiFriendmojiPolicyDeprecated:isBitmojiFriendmojiSharingSupported:cameosSharingPolicy:plusBadgeVisibility:postViewEmoji:bitmojiBackgroundUrl:cameosAdsPolicy:dreamsGeneratingPolicy:encodedAvatarMetadata:snapProInfo:encodedActionmojiPreferences:canUseMySelfie:isHighQualityForBlending:considerForLocationSharingProtection:postSendEmoji:incomingFriendRequestImpressionCount:isSuppressedOnAddedMe:profileTheme:isPlusSubscriber:saturnUserId:isMemoryOnlySubscriber:isAiChatbot:linkCreationTs:isNewContact:isRecommended:recommendationScore:isRecentlyActive:]	
+10b783f3c	10b784577	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsContact registerMessageFields:]	
+10b784578	10b784663	decompiled	chunks/000/functions-000027.c		
+10b784664	10b784687	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindFriendsNonSnapchatterContact initWithDisplayName:score:hashedPhoneNumber:subtext:]	
+10b784688	10b784723	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsNonSnapchatterContact registerMessageFields:]	
+10b784724	10b78473f	decompiled	chunks/000/functions-000027.c		
+10b784740	10b78474b	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsNonSnapchatterContactBuilder messageClass]	
+10b78474c	10b78474f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsNonSnapchatterContactBuilder withJUIdentityFindFriendsNonSnapchatterContact:]	
+10b784750	10b78479f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindFriendsRequest initWithDtoken1i:dsig:timestamp:reqToken:username:snapchatUserId:numbers:countryCode:contactsWithMetaData:shouldRecommend:isFullSync:source:signUpTapTimeStamp:sojuNewContactNotificationType:contactBookSyncType:removeImcSuggestions:enableFindFriendsForUKUnderAge:]	
+10b7847a0	10b78499b	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsRequest registerMessageFields:]	
+10b78499c	10b7849f3	decompiled	chunks/000/functions-000027.c		
+10b7849f4	10b7849ff	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsRequestBuilder messageClass]	
+10b784a00	10b784a03	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsRequestBuilder withJUIdentityFindFriendsRequest:]	
+10b784a04	10b784a83	decompiled	chunks/000/functions-000027.c		
+10b784a84	10b784adf	decompiled	chunks/000/functions-000027.c		
+10b784ae0	10b784b4b	decompiled	chunks/000/functions-000027.c		
+10b784b4c	10b784b87	decompiled	chunks/000/functions-000027.c		
+10b784b88	10b784bc3	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindFriendsResponse initWithResults:lastAddressBookUpdatedDate:isTrimmed:suggestedFriendResultsV2:registrationSuggestedFriendOrdering:officialAccountSuggestionsOrdering:contentSuggestionPagePosition:suggestedPublisherResults:recentlyActiveText:nonSnapchatterResult:contactRankingSessionId:preselectionNumber:]	
+10b784bc4	10b784d3f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindFriendsResponse registerMessageFields:]	
+10b784d40	10b784da3	decompiled	chunks/000/functions-000027.c		
+10b784da4	10b784e23	decompiled	chunks/000/functions-000027.c		
+10b784e24	10b784e7b	decompiled	chunks/000/functions-000027.c		
+10b784e7c	10b784e9b	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindUserResultItem initWithFriendValue:friendStories:]	
+10b784e9c	10b784f3b	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindUserResultItem registerMessageFields:]	
+10b784f3c	10b784f47	decompiled	chunks/000/functions-000027.c		
+10b784f48	10b784f67	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFindUsersResponse initWithUsers:verifiedUsers:]	
+10b784f68	10b784fef	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFindUsersResponse registerMessageFields:]	
+10b784ff0	10b78500f	decompiled	chunks/000/functions-000027.c		
+10b785010	10b78507f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFriendActionRequest initWithTimestamp:reqToken:username:snapchatUserId:action:friendValue:friends:friendId:addedBy:identityProfilePage:identityCellIndex:display:blockReasonId:suggestionToken:groupStoryId:suggestionTokenMap:storySection:isOfficial:deletedBy:suggestedPublishers:widgetSource:pageSource:entryPoint:snapId:compositeStoryId:]	
+10b785080	10b7852df	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFriendActionRequest registerMessageFields:]	
+10b7852e0	10b78536f	decompiled	chunks/000/functions-000027.c		
+10b785370	10b78537b	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFriendActionRequestBuilder messageClass]	
+10b78537c	10b78537f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFriendActionRequestBuilder withJUIdentityFriendActionRequest:]	
+10b785380	10b7853af	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityFriendActionResponse initWithObject:friends:message:logged:showPrivacySettingPrompt:extraFriendmojiMutableDict:extraFriendmojiReadOnlyDict:suggestedPublishers:]	
+10b7853b0	10b7854fb	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityFriendActionResponse registerMessageFields:]	
+10b7854fc	10b78553f	decompiled	chunks/000/functions-000027.c		
+10b785540	10b78555f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityGroupDeltaRequest initWithMischiefId:latestSequenceNumbers:earliestSequenceNumbers:]	
+10b785560	10b785607	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityGroupDeltaRequest registerMessageFields:]	
+10b785608	10b785627	decompiled	chunks/000/functions-000027.c		
+10b785628	10b785633	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityGroupDeltaRequestBuilder messageClass]	
+10b785634	10b785637	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityGroupDeltaRequestBuilder withJUIdentityGroupDeltaRequest:]	
+10b785638	10b7856eb	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityLagunaLagunaRealTimeEvent initWithEventName:userId:sessionId:pairingSessionId:userInitiationPage:pairingType:otherPairedDeviceCount:durationInMs:nordicLastBootSession:deviceId:deviceBattery:bleUuid:bleConnected:timeOfCapture:contentName:hdVideoFileSize:hdVideoFileName:sdVideoFileSize:sdVideoFileName:thumbnailFileSize:thumbnailFileName:firmwareVersion:ambientLightIntensity:deviceBatteryAtStart:deviceBatteryAtEnd:ambaTemperature:nordicTemperature:buttonPressType:deviceStorage:transferBatchId:dataResponseSize:numberOfSdVideoBeingTransferred:numberOfHdVideoBeingTransferred:totalFileSizeTransferred:transferChannel:timeOfTransferStartUtc:timeOfTransferEndUtc:bluetoothBootTimeInMs:wifiBootTimeInMs:updateSessionId:failureReason:transferDurationInMs:downloadDurationInMs:updateDurationInMs:]	
+10b7856ec	10b785973	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityLagunaLagunaRealTimeEvent registerMessageFields:]	
+10b785974	10b7859d3	decompiled	chunks/000/functions-000027.c		
+10b7859d4	10b7859df	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityLagunaLagunaRealTimeEventBuilder messageClass]	
+10b7859e0	10b7859e3	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityLagunaLagunaRealTimeEventBuilder withJUIdentityLagunaLagunaRealTimeEvent:]	
+10b7859e4	10b785b0b	decompiled	chunks/000/functions-000027.c		
+10b785b0c	10b785c1b	decompiled	chunks/000/functions-000027.c		
+10b785c1c	10b785cb3	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischief initWithMischiefId:mischiefMetadata:mischiefName:participants:exParticipants:createMischiefTimestamp:lastInteractionTimestamp:lastClearedTimestamp:latestSequenceNumbers:lastMischiefChatAction:stickerFavorites:iterToken:contentType:content:contentOrder:chatMessages:releaseMessages:updateMessages:notificationStatus:videoChatParams:earlierContentExists:earliestSequenceNumbers:messageStateMessages:snapStateMessages:laterContentExists:lastMischiefContent:blockedParticipantExceptions:pageLatestSequenceNumbers:participantLastContent:mischiefMobId:isStoryMuted:creatorId:mischiefCreationSource:seenChatSequenceNumbers:messageEraseMessages:mentionNotificationStatus:isCognacNotificationMuted:migrationState:]	
+10b785cb4	10b78611f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischief registerMessageFields:]	
+10b786120	10b7861db	decompiled	chunks/000/functions-000027.c		
+10b7861dc	10b786373	decompiled	chunks/000/functions-000027.c		
+10b786374	10b7864f3	decompiled	chunks/000/functions-000027.c		
+10b7864f4	10b78658f	decompiled	chunks/000/functions-000027.c		
+10b786590	10b7865fb	decompiled	chunks/000/functions-000027.c		
+10b7865fc	10b7866b3	decompiled	chunks/000/functions-000027.c		
+10b7866b4	10b78673f	decompiled	chunks/000/functions-000027.c		
+10b786740	10b786763	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischiefExParticipant initWithUserId:username:display:mischiefVersion:]	
+10b786764	10b7867ff	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefExParticipant registerMessageFields:]	
+10b786800	10b78681b	decompiled	chunks/000/functions-000027.c		
+10b78681c	10b78683f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischiefMetadata initWithMischiefName:participants:exParticipants:version:]	
+10b786840	10b786917	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefMetadata registerMessageFields:]	
+10b786918	10b78692f	decompiled	chunks/000/functions-000027.c		
+10b786930	10b786933	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischiefMobCreationRequest initWithAutoSaveForCaller:]	
+10b786934	10b786973	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefMobCreationRequest registerMessageFields:]	
+10b786974	10b7869f3	decompiled	chunks/000/functions-000027.c		
+10b7869f4	10b786a4f	decompiled	chunks/000/functions-000027.c		
+10b786a50	10b786a8b	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischiefParticipant initWithUserId:username:display:color:joinTimestamp:videoChatUserId:mischiefVersion:bitmojiAvatarId:bitmojiSelfieId:bitmojiSnapcodeSelfieId:colorHex:]	
+10b786a8c	10b786b87	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefParticipant registerMessageFields:]	
+10b786b88	10b786beb	decompiled	chunks/000/functions-000027.c		
+10b786bec	10b786c3b	decompiled	chunks/000/functions-000027.c	-[SOJUIdentityMischiefRequest initWithTimestamp:reqToken:username:snapchatUserId:mischiefId:mischiefAction:mischiefName:participantsToAdd:turnNotificationOn:latestSequenceNumbers:earliestSequenceNumbers:paginationType:sojuNewBlockedParticipantExceptions:muteMischiefStory:muteCognacNotification:groupInviteId:groupInviteType:]	
+10b786c3c	10b786e6f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefRequest registerMessageFields:]	
+10b786e70	10b786ed7	decompiled	chunks/000/functions-000027.c		
+10b786ed8	10b786ee3	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefRequestBuilder messageClass]	
+10b786ee4	10b786ee7	decompiled	chunks/000/functions-000027.c	+[SOJUIdentityMischiefRequestBuilder withJUIdentityMischiefRequest:]	
+10b786ee8	10b786f2f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentitySnapchatterPublicInfo initWithUserId:username:displayUsername:displayName:bitmojiAvatarId:bitmojiSelfieId:isOfficial:isPopular:snapProId:mutableUsername:bitmojiSceneId:bitmojiBackgroundId:bitmojiBackgroundUrl:encodedAvatarMetadata:tier:profileLogo:]	
+10b786f30	10b787083	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySnapchatterPublicInfo registerMessageFields:]	
+10b787084	10b7870f7	decompiled	chunks/000/functions-000027.c		
+10b7870f8	10b7870fb	decompiled	chunks/000/functions-000027.c	-[SOJUIdentitySnapchatterPublicInfoResponse initWithSnapchatters:]	
+10b7870fc	10b787173	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySnapchatterPublicInfoResponse registerMessageFields:]	
+10b787174	10b7871e3	decompiled	chunks/000/functions-000027.c	-[SOJUIdentitySuggestedFriendActionRequest initWithTimestamp:reqToken:username:snapchatUserId:action:seen:hide:friendValueDeprecated:friendIdDeprecated:identityCellIndex:seenSuggestedFriendList:placement:suggestedFriendCellInfoList:suggestedFriendRankingTweak:impressionId:addedSuggestedFriendCellInfoList:notificationPrefetch:seenFriendRequestCellInfoList:impressionTimeMs:widgetSource:pageSource:entryPoint:lastSyncTimestamp:pageSessionId:clientSessionId:fetchRequestId:]	
+10b7871e4	10b78744f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendActionRequest registerMessageFields:]	
+10b787450	10b7874d7	decompiled	chunks/000/functions-000027.c		
+10b7874d8	10b7874e3	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendActionRequestBuilder messageClass]	
+10b7874e4	10b7874e7	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendActionRequestBuilder withJUIdentitySuggestedFriendActionRequest:]	
+10b7874e8	10b78754f	decompiled	chunks/000/functions-000027.c	-[SOJUIdentitySuggestedFriendActionResponse initWithSuggestedFriendResults:message:logged:suggestionPlacementToReasonMapping:suggestedFriendResultsV2:addFriendsFooterOrdering:storiesPageOrdering:sendToPageOrdering:feedPageOrdering:searchPageOrdering:searchResultPageOrdering:fullPageOrdering:storiesViewAllPageOrdering:friendsHorizontalPageOrdering:friendsViewAllPageOrdering:discoverCarouselStyle:discoverCarouselClientImpression:badgingStartIndex:badgingEndIndex:badgingType:suggestionsWithActiveStoryOrdering:suggestedFriendsShortcuts:notifCampMetadata:badgeSuggestionUserIds:]	
+10b787550	10b7877c3	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendActionResponse registerMessageFields:]	
+10b7877c4	10b787847	decompiled	chunks/000/functions-000027.c		
+10b787848	10b7878e3	decompiled	chunks/000/functions-000027.c		
+10b7878e4	10b787957	decompiled	chunks/000/functions-000027.c		
+10b787958	10b7879c3	decompiled	chunks/000/functions-000027.c		
+10b7879c4	10b7879ff	decompiled	chunks/000/functions-000027.c		
+10b787a00	10b787a37	decompiled	chunks/000/functions-000027.c	-[SOJUIdentitySuggestedFriendCellInformation initWithUserId:usernameDeprecated:suggestionToken:cellIndex:displayUsername:hideFeedback:mutableUsername:isAccepted:isRecentlyActive:]	
+10b787a38	10b787b3f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendCellInformation registerMessageFields:]	
+10b787b40	10b787b83	decompiled	chunks/000/functions-000027.c		
+10b787b84	10b787b8f	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendCellInformationBuilder messageClass]	
+10b787b90	10b787b93	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendCellInformationBuilder withJUIdentitySuggestedFriendCellInformation:]	
+10b787b94	10b787bff	decompiled	chunks/000/functions-000027.c		
+10b787c00	10b787c3b	decompiled	chunks/000/functions-000027.c		
+10b787c3c	10b787c43	decompiled	chunks/000/functions-000027.c	+[SOJUIdentitySuggestedFriendDeprecated canInitFromProto]	
+10b787c44	10b787c7b	decompiled	chunks/000/functions-000028.c	-[SOJUIdentitySuggestedFriendDeprecated initWithIdValue:name:suggestReason:score:suggestReasonDisplay:display:isHidden:storyPrivacy:isNewSnapchatter:]	
+10b787c7c	10b787d8b	decompiled	chunks/000/functions-000028.c	+[SOJUIdentitySuggestedFriendDeprecated registerMessageFields:]	
+10b787d8c	10b787dcb	decompiled	chunks/000/functions-000028.c		
+10b787dcc	10b787def	decompiled	chunks/000/functions-000028.c	-[SOJUIdentitySuggestedFriendDisplayInformation initWithUserId:suggestionSubtext:suggestionToken:suggestionSubtextLowercase:]	
+10b787df0	10b787e6f	decompiled	chunks/000/functions-000028.c	+[SOJUIdentitySuggestedFriendDisplayInformation registerMessageFields:]	
+10b787e70	10b787e8f	decompiled	chunks/000/functions-000028.c		
+10b787e90	10b787ef7	decompiled	chunks/000/functions-000028.c	-[SOJUIdentitySuggestedFriendV2 initWithUserId:username:displayName:storyPrivacy:bitmojiAvatarId:metadata:bitmojiSelfieId:bitmojiSnapcodeSelfieId:emojiSymbol:isPopularAccout:displayUsernameDeprecated:mutableUsername:snapshotMetadata:bitmojiSceneId:bitmojiBackgroundId:snapshotMetadataString:isRecentlyActive:bitmojiBackgroundUrl:snapProId:encodedAvatarMetadata:snapProInfo:isHighQuality:impressionCount:]	
+10b787ef8	10b78810f	decompiled	chunks/000/functions-000028.c	+[SOJUIdentitySuggestedFriendV2 registerMessageFields:]	
+10b788110	10b788183	decompiled	chunks/000/functions-000028.c		
+10b788184	10b7881ab	decompiled	chunks/000/functions-000028.c	-[SOJUIdentitySuggestedPublisher initWithUserId:displayText:thumbnailUrl:iconUrl:suggestionToken:descriptionValue:]	
+10b7881ac	10b78824b	decompiled	chunks/000/functions-000028.c	+[SOJUIdentitySuggestedPublisher registerMessageFields:]	
+10b78824c	10b78827b	decompiled	chunks/000/functions-000028.c		
+10b78827c	10b78829b	decompiled	chunks/000/functions-000028.c	-[SOJUIdentitySuggestionPlacementReasonPairDeprecated initWithPlacement:reason:]	
+10b78829c	10b7882f7	decompiled	chunks/000/functions-000028.c	+[SOJUIdentitySuggestionPlacementReasonPairDeprecated registerMessageFields:]	
+10b7882f8	10b78830f	decompiled	chunks/000/functions-000028.c		
+10b788310	10b78832f	decompiled	chunks/000/functions-000028.c	-[SOJUIdentityTwoFaVerifiedDevice initWithIdValue:name:lastLogin:]	
+10b788330	10b7883c7	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityTwoFaVerifiedDevice registerMessageFields:]	
+10b7883c8	10b7883d3	decompiled	chunks/000/functions-000028.c		
+10b7883d4	10b7883fb	decompiled	chunks/000/functions-000028.c	-[SOJUIdentityUserExistsRequest initWithTimestamp:reqToken:username:snapchatUserId:requestUsername:includePublicStory:]	
+10b7883fc	10b7884b3	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityUserExistsRequest registerMessageFields:]	
+10b7884b4	10b7884d7	decompiled	chunks/000/functions-000028.c		
+10b7884d8	10b7884e3	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityUserExistsRequestBuilder messageClass]	
+10b7884e4	10b7884e7	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityUserExistsRequestBuilder withJUIdentityUserExistsRequest:]	
+10b7884e8	10b78850b	decompiled	chunks/000/functions-000028.c	-[SOJUIdentityUserExistsResponse initWithExists:throttled:logged:friendValue:friendStories:]	
+10b78850c	10b7885cf	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityUserExistsResponse registerMessageFields:]	
+10b7885d0	10b7885ff	decompiled	chunks/000/functions-000028.c		
+10b788600	10b78861f	decompiled	chunks/000/functions-000028.c	-[SOJUIdentityVerificationNeeded initWithType:prompt:]	
+10b788620	10b788697	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityVerificationNeeded registerMessageFields:]	
+10b788698	10b7886ab	decompiled	chunks/000/functions-000028.c		
+10b7886ac	10b788717	decompiled	chunks/000/functions-000028.c		
+10b788718	10b788753	decompiled	chunks/000/functions-000028.c		
+10b788754	10b78878b	decompiled	chunks/000/functions-000028.c	-[SOJUIdentityVerifyPhoneNumberResponse initWithLogged:message:isTwoFaEnabled:allowedToUseCash:verificationNeeded:twoFaVerifiedDevices:deepLinkResponse:reauthRequired:noTentativePhoneNumber:twoFaRecoveryCode:]	
+10b78878c	10b7888db	decompiled	chunks/000/functions-000028.c	+[SOJUIdentityVerifyPhoneNumberResponse registerMessageFields:]	
+10b7888dc	10b788917	decompiled	chunks/000/functions-000028.c		
+10b788918	10b788937	decompiled	chunks/000/functions-000028.c	-[SOJUIntegerPoint initWithX:y:]	
+10b788938	10b788993	decompiled	chunks/000/functions-000028.c	+[SOJUIntegerPoint registerMessageFields:]	
+10b788994	10b7889ab	decompiled	chunks/000/functions-000028.c		
+10b7889ac	10b7889cb	decompiled	chunks/000/functions-000028.c	-[SOJUInvitedUser initWithUserId:phoneNumber:displayName:]	
+10b7889cc	10b788a3b	decompiled	chunks/000/functions-000028.c	+[SOJUInvitedUser registerMessageFields:]	
+10b788a3c	10b788a53	decompiled	chunks/000/functions-000028.c		
+10b788a54	10b788a5f	decompiled	chunks/000/functions-000028.c	+[SOJUInvitedUserBuilder messageClass]	
+10b788a60	10b788a63	decompiled	chunks/000/functions-000028.c	+[SOJUInvitedUserBuilder withJUInvitedUser:]	
+10b788a64	10b788a67	decompiled	chunks/000/functions-000028.c	-[SOJUKhaleesiShare initWithAttachedUrl:]	
+10b788a68	10b788aa7	decompiled	chunks/000/functions-000028.c	+[SOJUKhaleesiShare registerMessageFields:]	
+10b788aa8	10b788acb	decompiled	chunks/000/functions-000028.c	-[SOJULastChatActions initWithLastReader:lastReadTimestamp:lastWriter:lastWriteTimestamp:lastWriteType:]	
+10b788acc	10b788b63	decompiled	chunks/000/functions-000028.c	+[SOJULastChatActions registerMessageFields:]	
+10b788b64	10b788b9b	decompiled	chunks/000/functions-000028.c		
+10b788b9c	10b788bbb	decompiled	chunks/000/functions-000028.c	-[SOJULastMischiefChatAction initWithIsReadAction:lastActionTimestamp:]	
+10b788bbc	10b788c2f	decompiled	chunks/000/functions-000028.c	+[SOJULastMischiefChatAction registerMessageFields:]	
+10b788c30	10b788c3b	decompiled	chunks/000/functions-000028.c		
+10b788c3c	10b788c63	decompiled	chunks/000/functions-000028.c	-[SOJULastMischiefContent initWithSenderUsername:sentTimestamp:senderMessageSeqNum:messageBodyType:viewedTimestamp:firstMediaType:]	
+10b788c64	10b788cf7	decompiled	chunks/000/functions-000028.c	+[SOJULastMischiefContent registerMessageFields:]	
+10b788cf8	10b788d2f	decompiled	chunks/000/functions-000028.c		
+10b788d30	10b788d6b	decompiled	chunks/000/functions-000028.c	-[SOJULensAssetManifestItem initWithType:idValue:requestTiming:scale:assetUrl:assetSignature:preloadLimit:animationGroup:originalFilename:contentSignature:storageOptions:]	
+10b788d6c	10b788edb	decompiled	chunks/000/functions-000028.c	+[SOJULensAssetManifestItem registerMessageFields:]	
+10b788edc	10b788f13	decompiled	chunks/000/functions-000028.c		
+10b788f14	10b788f93	decompiled	chunks/000/functions-000028.c		
+10b788f94	10b788fef	decompiled	chunks/000/functions-000028.c		
+10b788ff0	10b7890fb	decompiled	chunks/000/functions-000028.c		
+10b7890fc	10b7891eb	decompiled	chunks/000/functions-000028.c		
+10b7891ec	10b78920b	decompiled	chunks/000/functions-000028.c	-[SOJULensAssetStorageOption initWithOptionType:fileUrl:checksum:]	
+10b78920c	10b7892ab	decompiled	chunks/000/functions-000028.c	+[SOJULensAssetStorageOption registerMessageFields:]	
+10b7892ac	10b7892bb	decompiled	chunks/000/functions-000028.c		
+10b7892bc	10b789327	decompiled	chunks/000/functions-000028.c		
+10b789328	10b78935b	decompiled	chunks/000/functions-000028.c		
+10b78935c	10b789387	decompiled	chunks/000/functions-000028.c	-[SOJULensCategoryDatum initWithIdValue:name:activator:config:configChecksum:additionalCarouselCategories:additionalCarouselLensesLimitDeprecated:]	
+10b789388	10b789497	decompiled	chunks/000/functions-000028.c	+[SOJULensCategoryDatum registerMessageFields:]	
+10b789498	10b7894bf	decompiled	chunks/000/functions-000028.c		
+10b7894c0	10b78955f	decompiled	chunks/000/functions-000028.c	-[SOJULensData initWithCode:configPath:iconLink:lensLink:hintId:hintTranslations:signature:demoStartDate:bitmojiComicId:assetManifest:hideUntilAssetsDownloaded:isThirdParty:isStudioPreview:lensCreatorUsername:lensAttributionName:activationCamera:isDisabledForVideoChat:unlockCompanionBackReferenceId:name:filterImageLink:lensDescriptors:snappableReplyType:lensCreatorUserId:lensCreatorAvatarId:snappableTaglineKey:snappablePlayButtonGradient:isLeftCarousel:clientCacheTtl:lensCreatorSelfieId:lensResources:snapProProfileId:isCreatorDeactivated:isOfficialLensCreator:isCommunity:lensThumbnailPreviewImageUrl:apiLevel:lensCollectionId:connectedLensInfo:shoppingLensMetadata:remoteApiInfo:]	
+10b789560	10b7898ef	decompiled	chunks/000/functions-000028.c	+[SOJULensData registerMessageFields:]	
+10b7898f0	10b7899a7	decompiled	chunks/000/functions-000028.c		
+10b7899a8	10b789a13	decompiled	chunks/000/functions-000028.c		
+10b789a14	10b789a4b	decompiled	chunks/000/functions-000028.c		
+10b789a4c	10b789acb	decompiled	chunks/000/functions-000028.c		
+10b789acc	10b789b23	decompiled	chunks/000/functions-000028.c		
+10b789b24	10b789b2f	decompiled	chunks/000/functions-000028.c	+[SOJULensDataBuilder messageClass]	
+10b789b30	10b789b33	decompiled	chunks/000/functions-000028.c	+[SOJULensDataBuilder withJULensData:]	
+10b789b34	10b789b9f	decompiled	chunks/000/functions-000028.c		
+10b789ba0	10b789bdb	decompiled	chunks/000/functions-000028.c		
+10b789bdc	10b789bfb	decompiled	chunks/000/functions-000028.c	-[SOJULensPlacementInfo initWithAdServeRequestId:rawAdData:]	
+10b789bfc	10b789c57	decompiled	chunks/000/functions-000028.c	+[SOJULensPlacementInfo registerMessageFields:]	
+10b789c58	10b789c6f	decompiled	chunks/000/functions-000028.c		
+10b789c70	10b789c9b	decompiled	chunks/000/functions-000028.c	-[SOJULensResource initWithResourceType:quality:archiveLink:checksum:signature:lastUpdated:algorithmVersion:]	
+10b789c9c	10b789d9f	decompiled	chunks/000/functions-000028.c	+[SOJULensResource registerMessageFields:]	
+10b789da0	10b789dc7	decompiled	chunks/000/functions-000028.c		
+10b789dc8	10b789e47	decompiled	chunks/000/functions-000028.c		
+10b789e48	10b789e9b	decompiled	chunks/000/functions-000028.c		
+10b789e9c	10b789f1b	decompiled	chunks/000/functions-000028.c		
+10b789f1c	10b789f6f	decompiled	chunks/000/functions-000028.c		
+10b789f70	10b789f8f	decompiled	chunks/000/functions-000028.c	-[SOJULensSnappablePlayButtonGradientColor initWithStartColor:endColor:]	
+10b789f90	10b789feb	decompiled	chunks/000/functions-000028.c	+[SOJULensSnappablePlayButtonGradientColor registerMessageFields:]	
+10b789fec	10b78a003	decompiled	chunks/000/functions-000028.c		
+10b78a004	10b78a03b	decompiled	chunks/000/functions-000028.c	-[SOJULoadScheduledLensesResponseV2 initWithActiveLenses:precachedLenses:cacheTtlMillis:lensListSignature:preselectedLensId:activeRearLenses:medianIndexDepth:activeLensesChecksums:precachedLensesChecksums:activeRearLensesChecksums:]	
+10b78a03c	10b78a157	decompiled	chunks/000/functions-000028.c	+[SOJULoadScheduledLensesResponseV2 registerMessageFields:]	
+10b78a158	10b78a19f	decompiled	chunks/000/functions-000028.c		
+10b78a1a0	10b78a1bf	decompiled	chunks/000/functions-000028.c	-[SOJULocalDateTimeInterval initWithStart:end:]	
+10b78a1c0	10b78a22b	decompiled	chunks/000/functions-000028.c	+[SOJULocalDateTimeInterval registerMessageFields:]	
+10b78a22c	10b78a243	decompiled	chunks/000/functions-000028.c		
+10b78a244	10b78a263	decompiled	chunks/000/functions-000028.c	-[SOJULocationDeliveryPurpose initWithPurposeType:responseTimestamp:]	
+10b78a264	10b78a35f	decompiled	chunks/000/functions-000028.c	+[SOJULocationDeliveryPurpose registerMessageFields:]	
+10b78a360	10b78a39b	decompiled	chunks/000/functions-000029.c		
+10b78a39c	10b78a3ff	decompiled	chunks/000/functions-000029.c	-[SOJUMedia initWithMediaId:mediaType:mediaUrl:mediaAttributes:key:iv:width:height:owner:timerSec:isZipped:venueId:snapAttachments:isInfiniteDuration:sourceId:animatedSnapType:creatorAttribution:directDownloadUrl:miniThumbnailData:lensMetadata:contextClientInfo:]	
+10b78a400	10b78a61f	decompiled	chunks/000/functions-000029.c	+[SOJUMedia registerMessageFields:]	
+10b78a620	10b78a697	decompiled	chunks/000/functions-000029.c		
+10b78a698	10b78a6a3	decompiled	chunks/000/functions-000029.c	+[SOJUMediaBuilder messageClass]	
+10b78a6a4	10b78a6a7	decompiled	chunks/000/functions-000029.c	+[SOJUMediaBuilder withJUMedia:]	
+10b78a6a8	10b78a6cb	decompiled	chunks/000/functions-000029.c	-[SOJUMediaCardAttribute initWithStart:end:type:url:]	
+10b78a6cc	10b78a77b	decompiled	chunks/000/functions-000029.c	+[SOJUMediaCardAttribute registerMessageFields:]	
+10b78a77c	10b78a797	decompiled	chunks/000/functions-000029.c		
+10b78a798	10b78a86b	decompiled	chunks/000/functions-000029.c		
+10b78a86c	10b78a90b	decompiled	chunks/000/functions-000029.c		
+10b78a90c	10b78a92f	decompiled	chunks/000/functions-000029.c	-[SOJUMediaSave initWithSavedMessageSenderId:savedMessageId:mediaTypeSavedCount:destination:]	
+10b78a930	10b78aa13	decompiled	chunks/000/functions-000029.c	+[SOJUMediaSave registerMessageFields:]	
+10b78aa14	10b78aa1f	decompiled	chunks/000/functions-000029.c		
+10b78aa20	10b78aa2b	decompiled	chunks/000/functions-000029.c	+[SOJUMediaSaveBuilder messageClass]	
+10b78aa2c	10b78aa2f	decompiled	chunks/000/functions-000029.c	+[SOJUMediaSaveBuilder withJUMediaSave:]	
+10b78aa30	10b78aa9b	decompiled	chunks/000/functions-000029.c		
+10b78aa9c	10b78aad7	decompiled	chunks/000/functions-000029.c		
+10b78aad8	10b78aafb	decompiled	chunks/000/functions-000029.c	-[SOJUMediaUrl initWithUrl:expirySecs:type:region:]	
+10b78aafc	10b78abab	decompiled	chunks/000/functions-000029.c	+[SOJUMediaUrl registerMessageFields:]	
+10b78abac	10b78abc7	decompiled	chunks/000/functions-000029.c		
+10b78abc8	10b78abd3	decompiled	chunks/000/functions-000029.c	+[SOJUMediaUrlBuilder messageClass]	
+10b78abd4	10b78abd7	decompiled	chunks/000/functions-000029.c	+[SOJUMediaUrlBuilder withJUMediaUrl:]	
+10b78abd8	10b78abf7	decompiled	chunks/000/functions-000029.c	-[SOJUMegaStickerPackMetadata initWithVersion:stickers:]	
+10b78abf8	10b78ac7f	decompiled	chunks/000/functions-000029.c	+[SOJUMegaStickerPackMetadata registerMessageFields:]	
+10b78ac80	10b78ac93	decompiled	chunks/000/functions-000029.c		
+10b78ac94	10b78acb7	decompiled	chunks/000/functions-000029.c	-[SOJUMegaStickerPackStickerMetadata initWithPackId:stickerId:stickerType:capabilities:isAnimated:]	
+10b78acb8	10b78adab	decompiled	chunks/000/functions-000029.c	+[SOJUMegaStickerPackStickerMetadata registerMessageFields:]	
+10b78adac	10b78adc7	decompiled	chunks/000/functions-000029.c		
+10b78adc8	10b78ade7	decompiled	chunks/000/functions-000029.c	-[SOJUMessage initWithType:idValue:appEngineTarget:]	
+10b78ade8	10b78ae8b	decompiled	chunks/000/functions-000029.c	+[SOJUMessage registerMessageFields:]	
+10b78ae8c	10b78ae9b	decompiled	chunks/000/functions-000029.c		
+10b78ae9c	10b78af0b	decompiled	chunks/000/functions-000029.c	-[SOJUMessageBody initWithMedia:medias:sticker:snapchatter:type:typeVersion:text:attributes:mediaCardAttributes:storyTitle:storyShare:obfuscation:snapMetadata:khaleesiShare:nycShare:searchShareStorySnap:searchShareStory:mediaSave:replyMedias:messagePallet:sendStartTimestamp:isScreenRecording:messageParcel:screenCaptureSource:speedwayStoryV2Source:snapProStoryReplyInfo:]	
+10b78af0c	10b78b213	decompiled	chunks/000/functions-000029.c	+[SOJUMessageBody registerMessageFields:]	
+10b78b214	10b78b2cb	decompiled	chunks/000/functions-000029.c		
+10b78b2cc	10b78b2d7	decompiled	chunks/000/functions-000029.c	+[SOJUMessageBodyBuilder messageClass]	
+10b78b2d8	10b78b2db	decompiled	chunks/000/functions-000029.c	+[SOJUMessageBodyBuilder withJUMessageBody:]	
+10b78b2dc	10b78b72f	decompiled	chunks/000/functions-000029.c		
+10b78b730	10b78bb87	decompiled	chunks/000/functions-000029.c		
+10b78bb88	10b78bbc3	decompiled	chunks/000/functions-000029.c	-[SOJUMessageEraseMessage initWithHeader:retried:knownChatSequenceNumbers:mischiefVersion:seqNum:timestamp:type:idValue:appEngineTarget:chatMessageId:chatMessageSeqNum:chatMessageSenderId:]	
+10b78bbc4	10b78bd73	decompiled	chunks/000/functions-000029.c	+[SOJUMessageEraseMessage registerMessageFields:]	
+10b78bd74	10b78bd9f	decompiled	chunks/000/functions-000029.c		
+10b78bda0	10b78bdcb	decompiled	chunks/000/functions-000029.c	-[SOJUMessageParcel initWithIdValue:type:contents:payloadDeprecated:media:tag:tagVersion:]	
+10b78bdcc	10b78bef7	decompiled	chunks/000/functions-000029.c	+[SOJUMessageParcel registerMessageFields:]	
+10b78bef8	10b78bf17	decompiled	chunks/000/functions-000029.c		
+10b78bf18	10b78bf23	decompiled	chunks/000/functions-000029.c	+[SOJUMessageParcelBuilder messageClass]	
+10b78bf24	10b78bf27	decompiled	chunks/000/functions-000029.c	+[SOJUMessageParcelBuilder withJUMessageParcel:]	
+10b78bf28	10b78bf63	decompiled	chunks/000/functions-000029.c	-[SOJUMessagePreservationMessage initWithHeader:retried:knownChatSequenceNumbers:mischiefVersion:seqNum:timestamp:type:idValue:appEngineTarget:chatMessageId:preserved:chatMessageSeqNum:]	
+10b78bf64	10b78c12b	decompiled	chunks/000/functions-000029.c	+[SOJUMessagePreservationMessage registerMessageFields:]	
+10b78c12c	10b78c147	decompiled	chunks/000/functions-000029.c		
+10b78c148	10b78c18b	decompiled	chunks/000/functions-000029.c	-[SOJUMessageStateMessage initWithHeader:retried:knownChatSequenceNumbers:mischiefVersion:seqNum:timestamp:type:idValue:appEngineTarget:chatMessageId:state:version:chatMessageSenderId:chatMessageSeqNum:]	
+10b78c18c	10b78c35f	decompiled	chunks/000/functions-000029.c	+[SOJUMessageStateMessage registerMessageFields:]	
+10b78c360	10b78c3a7	decompiled	chunks/000/functions-000029.c		
+10b78c3a8	10b78c413	decompiled	chunks/000/functions-000029.c		
+10b78c414	10b78c44f	decompiled	chunks/000/functions-000029.c		
+10b78c450	10b78c767	decompiled	chunks/000/functions-000029.c		
+10b78c768	10b78ca6f	decompiled	chunks/000/functions-000029.c		
+10b78ca70	10b78ca93	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingChatMediaInput initWithMediaId:type:uploadUrl:key:iv:]	
+10b78ca94	10b78cb33	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingChatMediaInput registerMessageFields:]	
+10b78cb34	10b78cb53	decompiled	chunks/000/functions-000029.c		
+10b78cb54	10b78cb5f	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingChatMediaInputBuilder messageClass]	
+10b78cb60	10b78cb63	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingChatMediaInputBuilder withJUMessagingChatMediaInput:]	
+10b78cb64	10b78cb93	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingConversationStoryElementRequest initWithTimestamp:reqToken:username:snapchatUserId:storyId:senderUsername:sequenceNumber:conversationId:]	
+10b78cb94	10b78cc63	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingConversationStoryElementRequest registerMessageFields:]	
+10b78cc64	10b78cc93	decompiled	chunks/000/functions-000029.c		
+10b78cc94	10b78cc9f	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingConversationStoryElementRequestBuilder messageClass]	
+10b78cca0	10b78cca3	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingConversationStoryElementRequestBuilder withJUMessagingConversationStoryElementRequest:]	
+10b78cca4	10b78ccc7	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingConversationStoryElementResponse initWithStory:status:publisherData:type:]	
+10b78ccc8	10b78cd83	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingConversationStoryElementResponse registerMessageFields:]	
+10b78cd84	10b78cdbf	decompiled	chunks/000/functions-000029.c		
+10b78cdc0	10b78cddf	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingGatewayInfo initWithGatewayAuthToken:gatewayServer:]	
+10b78cde0	10b78ce7b	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingGatewayInfo registerMessageFields:]	
+10b78ce7c	10b78ce9b	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingParcelMedia initWithIdValue:version:]	
+10b78ce9c	10b78cf0b	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingParcelMedia registerMessageFields:]	
+10b78cf0c	10b78cf1b	decompiled	chunks/000/functions-000029.c		
+10b78cf1c	10b78cf27	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingParcelMediaBuilder messageClass]	
+10b78cf28	10b78cf2b	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingParcelMediaBuilder withJUMessagingParcelMedia:]	
+10b78cf2c	10b78cf67	decompiled	chunks/000/functions-000029.c	-[SOJUMessagingStorySharePublisherData initWithUserId:username:displayName:thumbnailUrl:profileDescription:live:publishTimestamp:bitmojiAvatarId:bitmojiSelfieId:bitmojiSnapcodeSelfieId:isUserPopular:]	
+10b78cf68	10b78d04b	decompiled	chunks/000/functions-000029.c	+[SOJUMessagingStorySharePublisherData registerMessageFields:]	
+10b78d04c	10b78d0af	decompiled	chunks/000/functions-000029.c		
+10b78d0b0	10b78d12f	decompiled	chunks/000/functions-000029.c		
+10b78d130	10b78d18b	decompiled	chunks/000/functions-000029.c		
+10b78d18c	10b78d3cb	decompiled	chunks/000/functions-000029.c		
+10b78d3cc	10b78d5f3	decompiled	chunks/000/functions-000029.c		
+10b78d5f4	10b78d64f	decompiled	chunks/000/functions-000029.c	-[SOJUMischiefUpdateMessage initWithBody:chatMessageId:savedState:preservations:lastReleasedSeqNum:header:retried:knownChatSequenceNumbers:mischiefVersion:seqNum:timestamp:type:idValue:appEngineTarget:mischiefUpdateMessageType:originParticipantId:participantsIds:sojuNewMischiefName:mischiefMetadataResult:]	
+10b78d650	10b78d903	decompiled	chunks/000/functions-000029.c	+[SOJUMischiefUpdateMessage registerMessageFields:]	
+10b78d904	10b78d97b	decompiled	chunks/000/functions-000029.c		
+10b78d97c	10b78daa3	decompiled	chunks/000/functions-000029.c		
+10b78daa4	10b78dbb3	decompiled	chunks/000/functions-000029.c		
+10b78dbb4	10b78dbd3	decompiled	chunks/000/functions-000029.c	-[SOJUMultiSnapMetadata initWithBundleId:segmentIndex:segmentCount:]	
+10b78dbd4	10b78dc47	decompiled	chunks/000/functions-000029.c	+[SOJUMultiSnapMetadata registerMessageFields:]	
+10b78dc48	10b78dc67	decompiled	chunks/000/functions-000029.c		
+10b78dc68	10b78dc8b	decompiled	chunks/000/functions-000029.c	-[SOJUMyGroupStories initWithGroupId:displayName:stories:hasCustomDescription:searchLookupData:]	
+10b78dc8c	10b78dd5f	decompiled	chunks/000/functions-000029.c	+[SOJUMyGroupStories registerMessageFields:]	
+10b78dd60	10b78dd97	decompiled	chunks/000/functions-000029.c		
+10b78dd98	10b78ddbb	decompiled	chunks/000/functions-000029.c	-[SOJUMyVerifiedCollabStories initWithUsername:userId:displayName:stories:collabStories:]	
+10b78ddbc	10b78de97	decompiled	chunks/000/functions-000029.c	+[SOJUMyVerifiedCollabStories registerMessageFields:]	
+10b78de98	10b78dec3	decompiled	chunks/000/functions-000029.c		
+10b78dec4	10b78dee3	decompiled	chunks/000/functions-000029.c	-[SOJUNycShare initWithStoryId:mediaType:poiId:]	
+10b78dee4	10b78df53	decompiled	chunks/000/functions-000029.c	+[SOJUNycShare registerMessageFields:]	

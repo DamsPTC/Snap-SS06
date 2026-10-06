@@ -1,0 +1,125 @@
+2026-10-06 01:16:08 INFO  (LoggingInitialization) Using log config file: jar:file:/home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-06 01:16:08 INFO  (LoggingInitialization) Using log file: /home/runner/work/Snap-SS06/Snap-SS06/.work/output/decompiled/SnapchatKeyboardExtension-thin/shard-00/ghidra.log  
+2026-10-06 01:16:08 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-06 01:16:08 INFO  (Preferences) Loading user preferences: /home/runner/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences  
+2026-10-06 01:16:08 INFO  (ClassSearcher) Searching for classes...  
+2026-10-06 01:16:09 INFO  (ClassSearcher) Class search complete (941 ms)  
+2026-10-06 01:16:09 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-06 01:16:09 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-06 01:16:09 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-10-06 01:16:09 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-06 01:16:10 INFO  (AnalyzeHeadless) Headless startup complete (2253 ms)  
+2026-10-06 01:16:10 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/runner/work/Snap-SS06/Snap-SS06/.work/tool/ghidra_12.1.4_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer) Creating temporary project: /tmp/snap-ss06-ghidra-inn04izl/analysis  
+2026-10-06 01:16:10 INFO  (DefaultProject) Creating project: /tmp/snap-ss06-ghidra-inn04izl/analysis  
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer)      project: /tmp/snap-ss06-ghidra-inn04izl/analysis  
+2026-10-06 01:16:10 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/runner/work/Snap-SS06/Snap-SS06/.work/inputs/SnapchatKeyboardExtension-thin/binary  
+2026-10-06 01:16:11 INFO  (ProgramLoader) Using Loader: Mac OS X Mach-O  
+2026-10-06 01:16:11 INFO  (ProgramLoader) Using Language/Compiler: AARCH64:LE:64:AppleSilicon:swift  
+2026-10-06 01:16:11 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-10-06 01:16:13 INFO  (ProgramLoader) Additional info:
+Loading file:///home/runner/work/Snap-SS06/Snap-SS06/.work/inputs/SnapchatKeyboardExtension-thin/binary?MD5=c40442575f6865bb1470b169d55b299a...
+Discovered 1684 DYLD_CHAINED_PTR_64_OFFSET chained pointers.
+Fixed up 1684 chained pointers.
+binary: installed 8 objc SpecExtensions
+------------------------------------------------
+
+Linking the External Programs of 'binary' to imported libraries...
+  [/usr/lib/libc++.1.dylib] -> not found in project
+  [/System/Library/Frameworks/Foundation.framework/Foundation] -> not found in project
+  [/System/Library/Frameworks/UIKit.framework/UIKit] -> not found in project
+  [/System/Library/Frameworks/Combine.framework/Combine] -> not found in project
+  [/System/Library/Frameworks/SwiftUI.framework/SwiftUI] -> not found in project
+  [/System/Library/Frameworks/UserNotifications.framework/UserNotifications] -> not found in project
+  [/System/Library/Frameworks/ImageIO.framework/ImageIO] -> not found in project
+  [/System/Library/Frameworks/Accelerate.framework/Accelerate] -> not found in project
+  [/System/Library/Frameworks/QuartzCore.framework/QuartzCore] -> not found in project
+  [/System/Library/Frameworks/Security.framework/Security] -> not found in project
+  [/System/Library/Frameworks/WidgetKit.framework/WidgetKit] -> not found in project
+  [/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation] -> not found in project
+  [/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics] -> not found in project
+  [/usr/lib/libSystem.B.dylib] -> not found in project
+  [/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration] -> not found in project
+  [/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony] -> not found in project
+  [/usr/lib/libresolv.9.dylib] -> not found in project
+  [/usr/lib/libz.1.dylib] -> not found in project
+  [/System/Library/Frameworks/CoreText.framework/CoreText] -> not found in project
+  [/System/Library/Frameworks/AVFoundation.framework/AVFoundation] -> not found in project
+  [/System/Library/Frameworks/CoreLocation.framework/CoreLocation] -> not found in project
+  [/System/Library/Frameworks/CoreMedia.framework/CoreMedia] -> not found in project
+  [/System/Library/Frameworks/Metal.framework/Metal] -> not found in project
+  [/usr/lib/libsqlite3.dylib] -> not found in project
+  [/System/Library/Frameworks/MessageUI.framework/MessageUI] -> not found in project
+  [/System/Library/Frameworks/AdSupport.framework/AdSupport] -> not found in project
+  [/System/Library/Frameworks/AppIntents.framework/AppIntents] -> not found in project
+  [/System/Library/Frameworks/ActivityKit.framework/ActivityKit] -> not found in project
+  [@rpath/ExtensionsSharedDependencies.framework/ExtensionsSharedDependencies] -> not found in project
+  [/usr/lib/libobjc.A.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreImage.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreLocation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDarwin.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDispatch.dylib] -> not found in project
+  [/usr/lib/swift/libswiftIntents.dylib] -> not found in project
+  [/usr/lib/swift/libswiftMetal.dylib] -> not found in project
+  [/usr/lib/swift/libswiftOSLog.dylib] -> not found in project
+  [/usr/lib/swift/libswiftObjectiveC.dylib] -> not found in project
+  [/usr/lib/swift/libswiftQuartzCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftSpatial.dylib] -> not found in project
+  [/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib] -> not found in project
+  [/usr/lib/swift/libswiftXPC.dylib] -> not found in project
+  [/usr/lib/swift/libswift_Concurrency.dylib] -> not found in project
+  [/usr/lib/swift/libswiftos.dylib] -> not found in project
+  [/usr/lib/swift/libswiftsimd.dylib] -> not found in project
+  [/usr/lib/swift/libswiftFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftUIKit.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreGraphics.dylib] -> not found in project
+------------------------------------------------
+
+  
+2026-10-06 01:16:13 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-06 01:16:14 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportShard.java '.work/inputs/SnapchatKeyboardExtension-thin/functions-00.tsv' '/home/runner/work/Snap-SS06/Snap-SS06/.work/output/decompiled/SnapchatKeyboardExtension-thin/shard-00'   
+2026-10-06 01:16:14 INFO  (HeadlessAnalyzer) SCRIPT: /home/runner/work/Snap-SS06/Snap-SS06/scripts/ExportShard.java  
+2026-10-06 01:16:14 INFO  (GhidraScript) ExportShard.java> Disassembling 704 candidate functions  
+2026-10-06 01:16:15 INFO  (GhidraScript) ExportShard.java> Prepared 704 function bodies  
+2026-10-06 01:16:16 INFO  (GhidraScript) ExportShard.java> Export progress 0/704; success=0; failed=0  
+2026-10-06 01:16:23 INFO  (GhidraScript) ExportShard.java> {
+  "program": "binary",
+  "requested": 704,
+  "prepared": 704,
+  "decompiled": 704,
+  "failed": 0,
+  "tool": "Ghidra 12.1.4",
+  "method": "Static per-range disassembly and decompilation; candidate entries from compact unwind, function starts and Objective-C metadata."
+}
+  
+2026-10-06 01:16:23 INFO  (LocalFileSystem) /binary: file created (runner)  
+2026-10-06 01:16:23 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /binary (analysis:/binary)  
+2026-10-06 01:16:23 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

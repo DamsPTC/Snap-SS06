@@ -1,0 +1,47 @@
+# Pseudo-code Ghidra
+
+38310 fonctions décompilées sur 38316 entrées candidates. 6 échecs documentés dans les index.
+
+Les types et limites de fonctions sont approximatifs. Aucun code de l’application n’est exécuté.
+
+## Index par adresse
+
+- [00010000 — lot 0](index/00000.tsv)
+- [0004b29c — lot 1](index/00001.tsv)
+- [0006ffe8 — lot 2](index/00002.tsv)
+- [00094a3c — lot 3](index/00003.tsv)
+- [000c0150 — lot 4](index/00004.tsv)
+- [000f745c — lot 5](index/00005.tsv)
+- [0013d120 — lot 6](index/00006.tsv)
+- [00162a9c — lot 7](index/00007.tsv)
+- [00189d90 — lot 8](index/00008.tsv)
+- [001ac904 — lot 9](index/00009.tsv)
+- [001d5dc8 — lot 10](index/00010.tsv)
+- [0020521c — lot 11](index/00011.tsv)
+- [00217c30 — lot 12](index/00012.tsv)
+- [00346d98 — lot 13](index/00013.tsv)
+- [003758fc — lot 14](index/00014.tsv)
+- [003b055c — lot 15](index/00015.tsv)
+- [003ebfac — lot 16](index/00016.tsv)
+- [00417910 — lot 17](index/00017.tsv)
+- [0043f444 — lot 18](index/00018.tsv)
+- [0045e4d4 — lot 19](index/00019.tsv)
+- [0047c16c — lot 20](index/00020.tsv)
+- [00496960 — lot 21](index/00021.tsv)
+- [004ba0d0 — lot 22](index/00022.tsv)
+- [004d4500 — lot 23](index/00023.tsv)
+- [004ec2cc — lot 24](index/00024.tsv)
+- [00507b58 — lot 25](index/00025.tsv)
+- [0051f5d8 — lot 26](index/00026.tsv)
+- [0054ebc0 — lot 27](index/00027.tsv)
+- [00595848 — lot 28](index/00028.tsv)
+- [005b0cac — lot 29](index/00029.tsv)
+- [005d95a0 — lot 30](index/00030.tsv)
+- [0061cf58 — lot 31](index/00031.tsv)
+- [0063f004 — lot 32](index/00032.tsv)
+- [0066d704 — lot 33](index/00033.tsv)
+- [006984b0 — lot 34](index/00034.tsv)
+- [006ed960 — lot 35](index/00035.tsv)
+- [0072b7dc — lot 36](index/00036.tsv)
+- [0074a600 — lot 37](index/00037.tsv)
+- [00763398 — lot 38](index/00038.tsv)

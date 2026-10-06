@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+106824d1c	106824d63	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementActionHandler qrCodeCardPageDidDismiss]	
+106824d64	106824d67	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementActionHandler didDismissCreatorSubscriptionOnboardingScope]	
+106824d68	106824e6f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementActionHandler .cxx_destruct]	
+106824e70	106825307	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController initWithUserSession:publicProfileManagementContextServices:circumstanceEngine:complianceEngine:businessId:featureSettingsService:webBrowserScopeExposer:snapProProfilesProvider:chatCameraScopeExposer:chatCameraScopeServices:unifiedPublicProfilesPresenterScopeLauncher:deepLinkSendToScopeExposer:sendToScopeExposer:activityFeedScopeExposer:memoriesPickerScopeExposer:contentProductPlaybackScopeExposer:adPreviewScopeExposer:shareScopeExposer:addToStoryCameraScopeLauncher:communityPillTapScopeExposer:communityStoreProvider:multiProfileServices:directorModeScopeExposer:friendingExperimentReader:]	
+106825308	10682543b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController provideViewModel]	
+10682543c	10682587b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController provideContextAndBindWithViewController:]	
+10682587c	106825983	decompiled	chunks/000/functions-000020.c		
+106825984	106825a0b	decompiled	chunks/000/functions-000020.c		
+106825a0c	106825a4f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController dealloc]	
+106825a50	106825bdb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController _businessProfileChanged:]	
+106825bdc	106825be3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController _removeBusinessProfileObserverWithKey:]	
+106825be4	106825c8b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController _onCommunityPillTap:withUserId:]	
+106825c8c	106825cd3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController didCompleteCommunityPillTapScope]	
+106825cd4	106825e93	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController addSnapToBusinessStory:]	
+106825e94	106825f4f	decompiled	chunks/000/functions-000020.c		
+106825f50	106825f53	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController getFriends:]	
+106825f54	10682614f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController observeBusinessProfile:]	
+106826150	10682618b	decompiled	chunks/000/functions-000020.c		
+10682618c	10682645f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController reloadManagedBusinessProfiles:]	
+106826460	106826463	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController back:]	
+106826464	106826467	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController dismiss:]	
+106826468	10682646b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController present:]	
+10682646c	10682646f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController push:]	
+106826470	1068264db	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController unsubscribe]	
+1068264dc	106826523	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController dismissCameraScope:]	
+106826524	10682662b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController _updateNotificationSettingsIfNecessary]	
+10682662c	106826657	decompiled	chunks/000/functions-000020.c		
+106826658	1068266f3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController _performNotificationSettingsChanges]	
+1068266f4	1068266f7	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController impalaProfileDidComplete]	
+1068266f8	1068266fb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController impalaProfileNeedsRemoval]	
+1068266fc	106826747	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController impalaProfileDidReloadManagedProfiles]	
+106826748	10682674f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController notificationMidrollOn]	
+106826750	106826757	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController setNotificationMidrollOn:]	
+106826758	10682675f	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController notificationMilestoneOn]	
+106826760	106826767	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController setNotificationMilestoneOn:]	
+106826768	1068268f3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementComposerController .cxx_destruct]	
+1068268f4	106827107	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext initWithApplication:actionHandler:storyPlayer:snapViewStateProvider:lensActionHandler:urlActionHandler:cameraRollLibrary:imageFactory:boltUploader:tempFileProvider:mediaPickerPresenter:memoriesTranscoder:networkingClient:serviceConfig:friendStore:actionSheetPresenter:alertPresenter:storySharingActionHandler:cofStore:supStore:publicProfileManager:blizzardLogger:grpcServiceFactory:activityFeedPresenter:notificationSettingsActionHandler:nativeStoryClientModelGenerator:discoverFeedStoryPlayer:profileManagementNuxHandler:adsTabHandlers:navigator:profileSwitcherContext:communityPillContext:pageLauncher:localStoryStore:livePublicStoryStateObserver:presentationController:notificationPresenter:safetyReportLauncher:navigatorToDeckContainerConverter:storefrontProvider:subscriptionDisplayNameObservable:isFanPassCreatorObservable:]	
+106827108	106827113	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext pushToValdiMarshaller:]	
+106827114	10682711b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext application]	
+10682711c	10682714b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setApplication:]	
+10682714c	106827153	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext actionHandler]	
+106827154	106827183	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setActionHandler:]	
+106827184	10682718b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext storyPlayer]	
+10682718c	1068271bb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setStoryPlayer:]	
+1068271bc	1068271c3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext snapViewStateProvider]	
+1068271c4	1068271f3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setSnapViewStateProvider:]	
+1068271f4	1068271fb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext lensActionHandler]	
+1068271fc	10682722b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setLensActionHandler:]	
+10682722c	106827233	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext urlActionHandler]	
+106827234	106827263	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setUrlActionHandler:]	
+106827264	10682726b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext cameraRollLibrary]	
+10682726c	10682729b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setCameraRollLibrary:]	
+10682729c	1068272a3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext imageFactory]	
+1068272a4	1068272d3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setImageFactory:]	
+1068272d4	1068272db	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext boltUploader]	
+1068272dc	10682730b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setBoltUploader:]	
+10682730c	106827313	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext tempFileProvider]	
+106827314	106827343	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setTempFileProvider:]	
+106827344	10682734b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext mediaPickerPresenter]	
+10682734c	10682737b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setMediaPickerPresenter:]	
+10682737c	106827383	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext memoriesTranscoder]	
+106827384	1068273b3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setMemoriesTranscoder:]	
+1068273b4	1068273bb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext networkingClient]	
+1068273bc	1068273eb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setNetworkingClient:]	
+1068273ec	1068273f3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext serviceConfig]	
+1068273f4	106827423	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setServiceConfig:]	
+106827424	10682742b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext friendStore]	
+10682742c	10682745b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setFriendStore:]	
+10682745c	106827463	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext blizzardLogger]	
+106827464	106827493	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setBlizzardLogger:]	
+106827494	10682749b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext feedbackReporterPresenter]	
+10682749c	1068274cb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setFeedbackReporterPresenter:]	
+1068274cc	1068274d3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext actionSheetPresenter]	
+1068274d4	106827503	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setActionSheetPresenter:]	
+106827504	10682750b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext alertPresenter]	
+10682750c	10682753b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setAlertPresenter:]	
+10682753c	106827543	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext storySharingActionHandler]	
+106827544	106827573	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setStorySharingActionHandler:]	
+106827574	10682757b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext cofStore]	
+10682757c	1068275ab	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setCofStore:]	
+1068275ac	1068275b3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext supStore]	
+1068275b4	1068275e3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setSupStore:]	
+1068275e4	1068275eb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext grpcServiceFactory]	
+1068275ec	10682761b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setGrpcServiceFactory:]	
+10682761c	106827623	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext activityFeedPresenter]	
+106827624	106827653	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setActivityFeedPresenter:]	
+106827654	10682765b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext publicProfileManager]	
+10682765c	10682768b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setPublicProfileManager:]	
+10682768c	106827693	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext notificationSettingsActionHandler]	
+106827694	1068276c3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setNotificationSettingsActionHandler:]	
+1068276c4	1068276cb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext discoverFeedStoryPlayer]	
+1068276cc	1068276fb	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setDiscoverFeedStoryPlayer:]	
+1068276fc	106827703	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext nativeModelGenerator]	
+106827704	106827733	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setNativeModelGenerator:]	
+106827734	10682773b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext profileManagementNuxHandler]	
+10682773c	10682776b	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setProfileManagementNuxHandler:]	
+10682776c	106827773	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext adsTabHandlers]	
+106827774	1068277a3	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setAdsTabHandlers:]	
+1068277a4	1068277ab	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext navigator]	
+1068277ac	1068277db	decompiled	chunks/000/functions-000020.c	-[SCPublicProfileManagementContext setNavigator:]	
+1068277dc	1068277e3	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext communityPillContext]	
+1068277e4	106827813	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setCommunityPillContext:]	
+106827814	10682781b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext profileSwitcherContext]	
+10682781c	10682784b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setProfileSwitcherContext:]	
+10682784c	106827853	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext pageLauncher]	
+106827854	106827883	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setPageLauncher:]	
+106827884	10682788b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext localStoryStore]	
+10682788c	1068278bb	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setLocalStoryStore:]	
+1068278bc	1068278c3	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext livePublicStoryStateObserver]	
+1068278c4	1068278cb	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext presentationController]	
+1068278cc	1068278fb	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setPresentationController:]	
+1068278fc	106827903	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext notificationPresenter]	
+106827904	106827933	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setNotificationPresenter:]	
+106827934	10682793b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext safetyReportLauncher]	
+10682793c	10682796b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setSafetyReportLauncher:]	
+10682796c	106827973	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext navigatorToDeckContainerConverter]	
+106827974	1068279a3	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setNavigatorToDeckContainerConverter:]	
+1068279a4	1068279ab	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext storefrontProvider]	
+1068279ac	1068279db	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setStorefrontProvider:]	
+1068279dc	1068279e3	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext subscriptionDisplayNameObservable]	
+1068279e4	106827a13	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setSubscriptionDisplayNameObservable:]	
+106827a14	106827a1b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext isFanPassCreatorObservable]	
+106827a1c	106827a4b	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext setIsFanPassCreatorObservable:]	
+106827a4c	106827c67	decompiled	chunks/000/functions-000021.c	-[SCPublicProfileManagementContext .cxx_destruct]	
+106827c68	106827dff	decompiled	chunks/000/functions-000021.c		
+106827e00	106827ecf	decompiled	chunks/000/functions-000021.c		
+106827ed0	106827f0f	decompiled	chunks/000/functions-000021.c		
+106827f10	106827fdf	decompiled	chunks/000/functions-000021.c		
+106827fe0	10682801f	decompiled	chunks/000/functions-000021.c		
+106828020	1068280ef	decompiled	chunks/000/functions-000021.c		
+1068280f0	10682812f	decompiled	chunks/000/functions-000021.c		
+106828130	1068281ff	decompiled	chunks/000/functions-000021.c		
+106828200	10682823f	decompiled	chunks/000/functions-000021.c		
+106828240	1068282ef	decompiled	chunks/000/functions-000021.c		
+1068282f0	106828353	decompiled	chunks/000/functions-000021.c		
+106828354	1068285bf	decompiled	chunks/000/functions-000021.c		
+1068285c0	106828607	decompiled	chunks/000/functions-000021.c		
+106828608	1068286ab	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile initWithFileUrl:performer:]	
+1068286ac	1068286df	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile dealloc]	
+1068286e0	1068286e7	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile getUrl]	
+1068286e8	10682885b	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile getDataWithCallback:]	
+10682885c	1068289c7	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile deleteWithCallback:]	
+1068289c8	1068289d3	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile pushToValdiMarshaller:]	
+1068289d4	106828a03	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFile .cxx_destruct]	
+106828a04	106828a77	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFileProvider initWithPerformer:]	
+106828a78	106828b2f	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFileProvider getTempFileForDataWithData:callback:]	
+106828b30	106828c97	decompiled	chunks/000/functions-000021.c		
+106828c98	106828c9f	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFileProvider shouldRetainInstanceWhenMarshalling]	
+106828ca0	106828cab	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFileProvider pushToValdiMarshaller:]	
+106828cac	106828cdb	decompiled	chunks/000/functions-000021.c	-[SCComposerFoundationTempFileProvider .cxx_destruct]	
+106828cdc	106828dd7	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessProfileIdProvider initWithUserProfileIdProvider:profilesProvider:]	
+106828dd8	106828e1f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessProfileIdProvider dealloc]	
+106828e20	106828e27	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessProfileIdProvider observeBusinessProfileData]	
+106828e28	106828f0f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessProfileIdProvider _startObservingProfileData]	
+106828f10	106829157	decompiled	chunks/000/functions-000021.c		
+106829158	1068292e7	decompiled	chunks/000/functions-000021.c		
+1068292e8	10682933b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessProfileIdProvider .cxx_destruct]	
+10682933c	106829413	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData initWithProfileId:profileLogoUrl:hostUserId:]	
+106829414	10682941b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData profileId]	
+10682941c	106829423	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData setProfileId:]	
+106829424	10682942b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData profileLogoUrl]	
+10682942c	106829433	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData setProfileLogoUrl:]	
+106829434	10682943b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData hostUserId]	
+10682943c	106829443	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData setHostUserId:]	
+106829444	10682947f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsBusinessPublicProfileData .cxx_destruct]	
+106829480	106829573	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher initWithViewController:businessProfileId:addToStoryCameraScopeLauncher:addToStoryCameraScopeBuilder:]	
+106829574	1068296ab	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher launchCamera]	
+1068296ac	1068296b7	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher pushToValdiMarshaller:]	
+1068296b8	10682972b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher dismissCameraScope:]	
+10682972c	10682972f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher captureWorkflowDidDismissWithDidSendSnap:]	
+106829730	106829773	decompiled	chunks/000/functions-000021.c	-[SCCreatorsCameraLauncher .cxx_destruct]	
+106829774	10682981b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler initWithViewController:roleType:lensModularCameraPresentation:deepLinkSendToScopeExposer:]	
+10682981c	106829917	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler initWithViewController:roleType:lensModularCameraPresentation:deepLinkSendToScopeExposer:mainPerformer:]	
+106829918	10682997f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler presentLensWithLens:]	
+106829980	106829a37	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler presentLensWithContextWithLens:analyticsContext:]	
+106829a38	106829be3	decompiled	chunks/000/functions-000021.c		
+106829be4	106829cef	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler presentLensesWithContextWithLenses:selectedLens:analyticsContext:onCarouselEnd:]	
+106829cf0	106829ec3	decompiled	chunks/000/functions-000021.c		
+106829ec4	106829fd3	decompiled	chunks/000/functions-000021.c		
+106829fd4	106829fdb	decompiled	chunks/000/functions-000021.c		
+106829fdc	10682a04b	decompiled	chunks/000/functions-000021.c		
+10682a04c	10682a0db	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler sendLensWithLens:]	
+10682a0dc	10682a0e7	decompiled	chunks/000/functions-000021.c		
+10682a0e8	10682a0eb	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler openLensExplorer]	
+10682a0ec	10682a0ef	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler openLensExplorerFeedWithFeedId:]	
+10682a0f0	10682a273	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler _sendLensWithLensItem:]	
+10682a274	10682a3a7	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler _lensReplyParamsWithAnalyticsContext:]	
+10682a3a8	10682a44f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler didDismissWithRecipientsCount:groupsCount:]	
+10682a450	10682a4a7	decompiled	chunks/000/functions-000021.c		
+10682a4a8	10682a4af	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler shouldRetainInstanceWhenMarshalling]	
+10682a4b0	10682a4bb	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler pushToValdiMarshaller:]	
+10682a4bc	10682a50b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsLensActionHandler .cxx_destruct]	
+10682a50c	10682a673	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler initWithSpotlightRepliesRequestSender:ourStoryDeepLinkScopeExposer:viewController:safetyReportScopeExposer:safetyReportScopeDelegate:spotlightRepliesUpdateAnnouncer:circumstanceEngine:]	
+10682a674	10682a707	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler approveReplyWithSnapId:replyIdLowBits:replyIdHighBits:callback:]	
+10682a708	10682a79b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler rejectReplyWithSnapId:replyIdLowBits:replyIdHighBits:callback:]	
+10682a79c	10682a8f3	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler reportReplyWithUserId:snapId:replyIdLowBits:replyIdHighBits:]	
+10682a8f4	10682a913	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler openSpotlightSnapWithSnapId:commentsDefaultTab:baseView:storyPlayerModerationData:commentInteractionInfo:compositeStoryId:]	
+10682a914	10682ac3f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler _openSpotlightSnapWithSnapId:commentsDefaultTab:baseView:storyPlayerModerationData:commentInteractionInfo:compositeStoryId:hashtag:musicId:]	
+10682ac40	10682ac6f	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler observeReplyUpdatesWithCallback:]	
+10682ac70	10682ac7b	decompiled	chunks/000/functions-000021.c	-[SCCreatorsSpotlightActionHandler pushToValdiMarshaller:]	
+10682ac7c	10682ac93	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler presentingViewControllerForOurStoryDeepLinkHandlerScope]	
+10682ac94	10682acd3	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler removeOurStoryDeeplinkScope]	
+10682acd4	10682aceb	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler handleSpotlightSnapDeepLinkWithSnapId:compositeStoryId:]	
+10682acec	10682ad1f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler handleSpotlightSnapDeepLinkWithSnapId:compositeStoryId:hashtag:musicId:]	
+10682ad20	10682ae87	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+10682ae88	10682aef7	decompiled	chunks/000/functions-000022.c	-[SCCreatorsSpotlightActionHandler .cxx_destruct]	
+10682aef8	10682b073	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler initWithUiContainer:sendToScopeExposer:sendToScopeServices:snapProShareMessageSender:simpleContentFetcher:offPlatformLinkGenerationService:circumstanceEngine:]	
+10682b074	10682b1ab	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler shareSavedStoryWithStoryId:profileId:username:thumbnailUrl:]	
+10682b1ac	10682b33b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler shareFeedCardWithCompositeFeedCardId:profileId:username:thumbnailCO:]	
+10682b33c	10682b3df	decompiled	chunks/000/functions-000022.c		
+10682b3e0	10682b44b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler _getHighlightIdFromStoryIdString:]	
+10682b44c	10682b69b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler shareSavedStoryWithCompositeId:profileId:username:thumbnailImage:]	
+10682b69c	10682b81f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler _sendToShareSheetConfigurationWithUsername:compositeId:]	
+10682b820	10682b913	decompiled	chunks/000/functions-000022.c		
+10682b914	10682ba33	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler _sendToPreviewConfigurationWithPreviewModel:]	
+10682ba34	10682ba3b	decompiled	chunks/000/functions-000022.c		
+10682ba3c	10682ba83	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler didDismissWithSelectedItems:sendToDismissSource:]	
+10682ba84	10682bd87	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler didSendWithSelectionState:]	
+10682bd88	10682bef7	decompiled	chunks/000/functions-000022.c		
+10682bef8	10682beff	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler shouldRetainInstanceWhenMarshalling]	
+10682bf00	10682bf0b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler pushToValdiMarshaller:]	
+10682bf0c	10682bf9b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySharingActionHandler .cxx_destruct]	
+10682bf9c	10682c00f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider initWithReadReceiptCoordinator:]	
+10682c010	10682c0df	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider getViewStatesWithSnapIds:callback:]	
+10682c0e0	10682c28b	decompiled	chunks/000/functions-000022.c		
+10682c28c	10682c697	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider observeViewStateWithOrganicStoryIdSnapIdPairs:promotedStoryIdSnapCountPairs:callback:]	
+10682c698	10682c69f	decompiled	chunks/000/functions-000022.c		
+10682c6a0	10682c96b	decompiled	chunks/000/functions-000022.c		
+10682c96c	10682c97b	decompiled	chunks/000/functions-000022.c		
+10682c97c	10682c983	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider shouldRetainInstanceWhenMarshalling]	
+10682c984	10682c98f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider pushToValdiMarshaller:]	
+10682c990	10682c99b	decompiled	chunks/000/functions-000022.c	-[SCCreatorsStorySnapViewStateProvider .cxx_destruct]	
+10682c99c	10682cb77	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler initWithNavigationDelegate:viewController:deepLinkHandler:deepLinkSendToScopeExposer:webBrowserScopeExposer:webBrowsingScopeServices:safeBrowsingAPI:businessProfileId:spotlightSnapDeepLinkHandler:circumstanceEngine:]	
+10682cb78	10682cbab	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler initWithNavigationDelegate:viewController:deepLinkHandler:deepLinkSendToScopeExposer:webBrowserScopeExposer:safeBrowsingAPI:businessProfileId:spotlightSnapDeepLinkHandler:circumstanceEngine:]	
+10682cbac	10682cc4f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler shareUrlWithUrl:]	
+10682cc50	10682cebb	decompiled	chunks/000/functions-000022.c		
+10682cebc	10682d063	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler _compositeStoryIdFromURL:]	
+10682d064	10682d153	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler openUrlWithUrl:sourceType:]	
+10682d154	10682d96f	decompiled	chunks/000/functions-000022.c		
+10682d970	10682d987	decompiled	chunks/000/functions-000022.c		
+10682d988	10682da4f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler sendUrlWithUrl:]	
+10682da50	10682db67	decompiled	chunks/000/functions-000022.c		
+10682db68	10682dc0f	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler didDismissWithRecipientsCount:groupsCount:]	
+10682dc10	10682dc67	decompiled	chunks/000/functions-000022.c		
+10682dc68	10682dcaf	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler webBrowserDidDismiss:]	
+10682dcb0	10682dcb7	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler shouldRetainInstanceWhenMarshalling]	
+10682dcb8	10682dcc3	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler pushToValdiMarshaller:]	
+10682dcc4	10682dd53	decompiled	chunks/000/functions-000022.c	-[SCCreatorsUrlActionHandler .cxx_destruct]	
+10682dd54	10682e097	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter initWithActionHandler:dataModel:config:deleteStorySnapScopeExposer:deleteStorySnapScopeServices:memoriesAutosaveMigrator:sendToScopeExposer:sendToScopeServices:snapProShareMessageSender:snapProProfilesProvider:circumstanceEngine:offPlatformLinkGenerationService:creatorInfoProvider:plusFeatureGating:]	
+10682e098	10682e20b	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter presentActionSheetWithViewController:]	
+10682e20c	10682e233	decompiled	chunks/000/functions-000022.c		
+10682e234	10682e913	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _configureCellsForDataModel:]	
+10682e914	10682e96b	decompiled	chunks/000/functions-000022.c		
+10682e96c	10682e973	decompiled	chunks/000/functions-000022.c		
+10682e974	10682ea17	decompiled	chunks/000/functions-000022.c		
+10682ea18	10682ea4b	decompiled	chunks/000/functions-000022.c		
+10682ea4c	10682eaeb	decompiled	chunks/000/functions-000022.c		
+10682eaec	10682ebb3	decompiled	chunks/000/functions-000022.c		
+10682ebb4	10682ebf7	decompiled	chunks/000/functions-000022.c		
+10682ebf8	10682ecaf	decompiled	chunks/000/functions-000022.c		
+10682ecb0	10682ece7	decompiled	chunks/000/functions-000022.c		
+10682ece8	10682edaf	decompiled	chunks/000/functions-000022.c		
+10682edb0	10682edf3	decompiled	chunks/000/functions-000022.c		
+10682edf4	10682ee4b	decompiled	chunks/000/functions-000022.c		
+10682ee4c	10682eecb	decompiled	chunks/000/functions-000022.c		
+10682eecc	10682efe7	decompiled	chunks/000/functions-000022.c		
+10682efe8	10682f0ab	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _addToPublicStory]	
+10682f0ac	10682f16f	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _addToSubscriptionStory]	
+10682f170	10682f1df	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _isFanPassSubscriptionStoryEnabled]	
+10682f1e0	10682f25b	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _saveStoryWithIdentifier:]	
+10682f25c	10682f46f	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _deleteSnapForStoriesDataModel:]	
+10682f470	10682f59b	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _sendSnapWithBusinessId:thumbnailImage:]	
+10682f59c	10682f6e3	decompiled	chunks/000/functions-000022.c		
+10682f6e4	10682fceb	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _sendSnapWithThumbnailImage:businessProfile:]	
+10682fcec	10682fcf3	decompiled	chunks/000/functions-000022.c		
+10682fcf4	10682fe43	decompiled	chunks/000/functions-000022.c		
+10682fe44	10682feab	decompiled	chunks/000/functions-000022.c		
+10682feac	10682febf	decompiled	chunks/000/functions-000022.c		
+10682fec0	10682fecf	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter _detachUI]	
+10682fed0	10682fedf	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter actionSheetDidDismiss:]	
+10682fee0	10682ff27	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter didSelectDeleteStorySnaps:clientIdsBeingDeleted:]	
+10682ff28	10682ff6f	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter didCancelDeleteStorySnap]	
+10682ff70	10682ff73	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter didDeleteSnapProStorySnaps:]	
+10682ff74	10682ffbb	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter didDismissWithSelectedItems:sendToDismissSource:]	
+10682ffbc	106830213	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter didSendWithSelectionState:]	
+106830214	10683037b	decompiled	chunks/000/functions-000022.c		
+10683037c	106830483	decompiled	chunks/000/functions-000022.c	-[SCPublicStoryActionSheetPresenter .cxx_destruct]	
+106830484	10683048f	decompiled	chunks/000/functions-000022.c	+[SCCCreatorActivityFeedCreateActivityFeedSyncApi modulePath]	
+106830490	106830497	decompiled	chunks/000/functions-000022.c	+[SCCCreatorActivityFeedCreateActivityFeedSyncApi asyncStrictMode]	
+106830498	1068304d7	decompiled	chunks/000/functions-000022.c	-[SCCCreatorActivityFeedCreateActivityFeedSyncApi createActivityFeedSyncApi]	
+1068304d8	106830587	decompiled	chunks/000/functions-000022.c	+[SCCCreatorActivityFeedCreateActivityFeedSyncApi invokeWithJSRuntimeProvider:completionHandler:]	
+106830588	10683060f	decompiled	chunks/000/functions-000022.c		
+106830610	106830633	decompiled	chunks/000/functions-000022.c	+[SCCCreatorActivityFeedCreateActivityFeedSyncApi valdiMarshallableObjectDescriptor]	
+106830634	10683066f	decompiled	chunks/000/functions-000022.c	+[SCCCreatorActivityFeedActivityFeedSyncApi valdiMarshallableObjectDescriptor]	
+106830670	1068306bf	decompiled	chunks/000/functions-000022.c		
+1068306c0	1068306d7	decompiled	chunks/000/functions-000022.c	+[SCImpalaSnapInsightsHandling valdiMarshallableObjectDescriptor]	
+1068306d8	1068306fb	decompiled	chunks/000/functions-000022.c		
+1068306fc	10683074b	decompiled	chunks/000/functions-000022.c		
+10683074c	106830787	decompiled	chunks/000/functions-000022.c		
+106830788	10683079f	decompiled	chunks/000/functions-000022.c	+[SCImpalaSnapMentionsHandling valdiMarshallableObjectDescriptor]	
+1068307a0	1068307d3	decompiled	chunks/000/functions-000023.c		
+1068307d4	106830823	decompiled	chunks/000/functions-000023.c		
+106830824	10683085f	decompiled	chunks/000/functions-000023.c		
+106830860	10683087f	decompiled	chunks/000/functions-000023.c	+[SCImpalaSpotlightActionHandling valdiMarshallableObjectDescriptor]	
+106830880	1068308a7	decompiled	chunks/000/functions-000023.c		
+1068308a8	1068308f7	decompiled	chunks/000/functions-000023.c		
+1068308f8	106830917	decompiled	chunks/000/functions-000023.c		
+106830918	106830967	decompiled	chunks/000/functions-000023.c		
+106830968	106830987	decompiled	chunks/000/functions-000023.c		
+106830988	1068309d7	decompiled	chunks/000/functions-000023.c		
+1068309d8	106830a0b	decompiled	chunks/000/functions-000023.c		
+106830a0c	106830a5b	decompiled	chunks/000/functions-000023.c		
+106830a5c	106830a87	decompiled	chunks/000/functions-000023.c		
+106830a88	106830ad7	decompiled	chunks/000/functions-000023.c		
+106830ad8	106830b13	decompiled	chunks/000/functions-000023.c		
+106830b14	106830b1f	decompiled	chunks/000/functions-000023.c	+[SCActivityFeedView componentPath]	
+106830b20	106830b53	decompiled	chunks/000/functions-000023.c	-[SCActivityFeedView initWithViewModel:componentContext:runtime:]	
+106830b54	106830b9f	decompiled	chunks/000/functions-000023.c	-[SCActivityFeedView setViewModel:]	
+106830ba0	106830bdb	decompiled	chunks/000/functions-000023.c	-[SCActivityFeedView viewModel]	
+106830bdc	106830d23	decompiled	chunks/000/functions-000023.c		
+106830d24	106830e07	decompiled	chunks/000/functions-000023.c		
+106830e08	106830e13	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkHandleBusinessDeeplink modulePath]	
+106830e14	106830e1b	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkHandleBusinessDeeplink asyncStrictMode]	
+106830e1c	106830e8b	decompiled	chunks/000/functions-000023.c	-[SCCBusinessDeeplinkHandleBusinessDeeplink handleBusinessDeeplinkWithParams:]	
+106830e8c	106830ffb	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkHandleBusinessDeeplink invokeWithJSRuntimeProvider:params:completionHandler:]	
+106830ffc	10683101f	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkHandleBusinessDeeplink valdiMarshallableObjectDescriptor]	
+106831020	10683109f	decompiled	chunks/000/functions-000023.c	-[SCActivityFeedContext initWithGrpcServiceFactory:]	
+1068310a0	1068310b3	decompiled	chunks/000/functions-000023.c	+[SCActivityFeedContext valdiMarshallableObjectDescriptor]	
+1068310b4	106831103	decompiled	chunks/000/functions-000023.c	-[SCActivityFeedViewModel initWithProfileId:loggedInUserId:hasSpotlightPosts:hasStoryRepliesEnabled:]	
+106831104	10683111b	decompiled	chunks/000/functions-000023.c	+[SCActivityFeedViewModel valdiMarshallableObjectDescriptor]	
+10683111c	10683114f	decompiled	chunks/000/functions-000023.c	-[SCImpalaActivityFeedServiceConfig init]	
+106831150	106831173	decompiled	chunks/000/functions-000023.c	+[SCImpalaActivityFeedServiceConfig valdiMarshallableObjectDescriptor]	
+106831174	1068311b3	decompiled	chunks/000/functions-000023.c	-[SCCBusinessDeeplinkBusinessDeeplinkParams initWithDeeplinkUrl:pageLauncher:encodedProfileDataList:networkingClient:]	
+1068311b4	1068311d3	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkBusinessDeeplinkParams valdiMarshallableObjectDescriptor]	
+1068311d4	10683120f	decompiled	chunks/000/functions-000023.c	-[SCCBusinessDeeplinkChatPageLaunchPayload initWithUserId:navigateToChatSource:]	
+106831210	106831227	decompiled	chunks/000/functions-000023.c	+[SCCBusinessDeeplinkChatPageLaunchPayload valdiMarshallableObjectDescriptor]	
+106831228	1068314ab	decompiled	chunks/000/functions-000023.c	-[SCCLensItem asLensMetadata]	
+1068314ac	10683151f	decompiled	chunks/000/functions-000023.c	-[SCPublicProfileManagementContextServices initWithProvider:]	
+106831520	106831527	decompiled	chunks/000/functions-000023.c	-[SCPublicProfileManagementContextServices provider]	
+106831528	106831533	decompiled	chunks/000/functions-000023.c	-[SCPublicProfileManagementContextServices .cxx_destruct]	
+106831534	106831627	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope initWithEntityId:entityType:uiContainer:delegate:]	
+106831628	10683162f	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope entityId]	
+106831630	10683163b	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope entityType]	
+10683163c	106831643	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope uiContainer]	
+106831644	10683165b	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope delegate]	
+10683165c	106831763	decompiled	chunks/000/functions-000023.c	-[SCAdPreviewScope .cxx_destruct]	
+106831764	10683182f	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader initWithDataUploader:]	
+106831830	106831a1f	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader uploadWithData:callback:onUploadProgress:]	
+106831a20	106831afb	decompiled	chunks/000/functions-000023.c		
+106831afc	106831b77	decompiled	chunks/000/functions-000023.c		
+106831b78	106831cb3	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader uploadEncryptedWithData:encryptionType:callback:onUploadProgress:]	
+106831cb4	106832057	decompiled	chunks/000/functions-000023.c		
+106832058	106832153	decompiled	chunks/000/functions-000023.c		
+106832154	1068321fb	decompiled	chunks/000/functions-000023.c		
+1068321fc	1068321ff	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader uploadUrlWithUrl:mediaType:callback:onUploadProgress:]	
+106832200	1068322c7	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader _listenForUploadProgress:uniqueMediaId:]	
+1068322c8	106832353	decompiled	chunks/000/functions-000023.c		
+106832354	10683235f	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader pushToValdiMarshaller:]	
+106832360	10683238f	decompiled	chunks/000/functions-000023.c	-[SCComposerNetworkingBoltUploader .cxx_destruct]	
+106832390	106832443	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration initWithUserContext:replyConfiguration:shouldPreselectCameraRoll:allowCameraOption:allowPhotoEntries:triggeringSection:]	
+106832444	10683244b	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration userContext]	
+10683244c	106832453	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration replyConfiguration]	
+106832454	10683245f	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration shouldPreselectCameraRoll]	
+106832460	10683246b	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration allowCameraOption]	
+10683246c	106832477	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration allowPhotoEntries]	
+106832478	10683247f	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration memoriesPickerTitle]	
+106832480	106832487	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration setMemoriesPickerTitle:]	
+106832488	10683248f	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration musicSelection]	
+106832490	106832497	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration setMusicSelection:]	
+106832498	10683249f	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration triggeringSection]	
+1068324a0	1068324db	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostConfiguration .cxx_destruct]	
+1068324dc	10683259f	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostScope initWithDelegate:uiContainer:configuration:]	
+1068325a0	1068325a7	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostScope uiContainer]	
+1068325a8	1068325bf	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostScope delegate]	
+1068325c0	1068325c7	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostScope configuration]	
+1068325c8	1068325ff	decompiled	chunks/000/functions-000023.c	-[SCMemoriesQuickPostScope .cxx_destruct]	
+106832600	106832633	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider init]	
+106832634	1068327cf	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider getViewModelWithSurface:]	
+1068327d0	106832827	decompiled	chunks/000/functions-000023.c		
+106832828	10683282b	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider onDispose]	
+10683282c	10683287f	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider _launchPublicProfile]	
+106832880	106832927	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider _dismissPublicProfile]	
+106832928	10683296b	decompiled	chunks/000/functions-000023.c		
+10683296c	106832a6b	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider _handleAction:fromSourceView:]	
+106832a6c	106832ac3	decompiled	chunks/000/functions-000023.c		
+106832ac4	106832adb	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider privateProfileActionHandler]	
+106832adc	106832ae7	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider setPrivateProfileActionHandler:]	
+106832ae8	106832aff	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider profileManagementScopeDelegate]	
+106832b00	106832b0b	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider setProfileManagementScopeDelegate:]	
+106832b0c	106832b33	decompiled	chunks/000/functions-000023.c	-[SCCommonProfileSwitcherButtonContextProvider .cxx_destruct]	
+106832b34	106832b3b	decompiled	chunks/000/functions-000023.c	-[SCProfileSharePageConfiguration textConfiguration]	
+106832b3c	106832b6b	decompiled	chunks/000/functions-000023.c	-[SCProfileSharePageConfiguration setTextConfiguration:]	
+106832b6c	106832b73	decompiled	chunks/000/functions-000023.c	-[SCProfileSharePageConfiguration mediaConfiguration]	
+106832b74	106832ba3	decompiled	chunks/000/functions-000023.c	-[SCProfileSharePageConfiguration setMediaConfiguration:]	
+106832ba4	106832bd3	decompiled	chunks/000/functions-000023.c	-[SCProfileSharePageConfiguration .cxx_destruct]	
+106832bd4	106832f83	decompiled	chunks/000/functions-000023.c	-[SCQRCodeCardSharePageControllerHelper initWithSnapSaver:notificationPool:userTrackedLogger:performerProvider:grapheneRegistry:usernameProvider:displayNameProvider:linkGenerationService:watermarkGenerator:userSession:temporaryFileWriter:galleryStorySaver:inviteService:circumstanceEngine:crashServices:ephemeralMediaFactory:previewSnapSenderFactory:featureSettingsService:]	
+106832f84	10683311f	decompiled	chunks/000/functions-000023.c	-[SCQRCodeCardSharePageControllerHelper getAvailableDestinations]	
+106833120	10683312b	decompiled	chunks/000/functions-000023.c		
+10683312c	10683341f	decompiled	chunks/000/functions-000023.c	-[SCQRCodeCardSharePageControllerHelper _createSharePageConfig:]	
+106833420	1068334bb	decompiled	chunks/000/functions-000023.c		
+1068334bc	1068334ef	decompiled	chunks/000/functions-000024.c		
+1068334f0	10683357f	decompiled	chunks/000/functions-000024.c		
+106833580	1068337df	decompiled	chunks/000/functions-000024.c	-[SCQRCodeCardSharePageControllerHelper onSelectShareDestination:previewView:presentingViewController:]	
+1068337e0	1068338df	decompiled	chunks/000/functions-000024.c		
+1068338e0	106833a5f	decompiled	chunks/000/functions-000024.c	-[SCQRCodeCardSharePageControllerHelper sendProfilePreviewImage:presentingViewController:workflowDelegate:preSelectedItems:]	
+106833a60	106833e3f	decompiled	chunks/000/functions-000024.c	-[SCQRCodeCardSharePageControllerHelper sendScreenshotToRecipients:storiesConfig:businessIds:groups:additionalText:profilePreviewImage:]	
+106833e40	106833e4f	decompiled	chunks/000/functions-000024.c		
+106833e50	106833f6f	decompiled	chunks/000/functions-000024.c	-[SCQRCodeCardSharePageControllerHelper .cxx_destruct]	
+106833f70	106833f87	decompiled	chunks/000/functions-000024.c		
+106833f88	106833f93	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService isHasSeenMemoryLinkPrivacyAlertAvailable]	
+106833f94	106833f9f	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService hasSeenMemoryLinkPrivacyAlertServerParam]	
+106833fa0	106833faf	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService setHasSeenMemoryLinkPrivacyAlert:]	
+106833fb0	106833fb7	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService SHARING_HAS_SEEN_MEDIA_LINK_PRIVACY_ALERT_client_value:]	
+106833fb8	106833fbf	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService SHARING_HAS_SEEN_MEDIA_LINK_PRIVACY_ALERT_server_value:]	
+106833fc0	106833fcf	decompiled	chunks/000/functions-000024.c	-[SCFeatureSettingsService hasSeenMemoryLinkPrivacyAlert]	
+106833fd0	106834143	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource activityViewControllerPlaceholderItem:]	
+106834144	10683415b	decompiled	chunks/000/functions-000024.c		
+10683415c	1068341cb	decompiled	chunks/000/functions-000024.c		
+1068341cc	10683436b	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource activityViewController:itemForActivityType:]	
+10683436c	1068343db	decompiled	chunks/000/functions-000024.c		
+1068343dc	1068345cf	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource activityViewControllerLinkMetadata:]	
+1068345d0	10683467b	decompiled	chunks/000/functions-000024.c		
+10683467c	106834847	decompiled	chunks/000/functions-000024.c		
+106834848	10683484f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource isFirstItem]	
+106834850	106834857	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setIsFirstItem:]	
+106834858	10683485f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource title]	
+106834860	10683488f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setTitle:]	
+106834890	106834897	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource media]	
+106834898	1068348c7	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setMedia:]	
+1068348c8	1068348cf	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource textContent]	
+1068348d0	1068348ff	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setTextContent:]	
+106834900	106834907	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource url]	
+106834908	106834937	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setUrl:]	
+106834938	10683493f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource namedMediaFile]	
+106834940	10683496f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setNamedMediaFile:]	
+106834970	106834977	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource preferSharingText]	
+106834978	10683497f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource setPreferSharingText:]	
+106834980	1068349d3	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareExportItemSource .cxx_destruct]	
+1068349d4	106834c93	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger initWithUserTrackedLogger:eventSubject:shareSessionId:shareSource:shareUIType:performerProvider:circumstanceEngine:]	
+106834c94	106834d23	decompiled	chunks/000/functions-000024.c		
+106834d24	106834e1b	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _respondToEvent:]	
+106834e1c	10683504f	decompiled	chunks/000/functions-000024.c		
+106835050	10683511f	decompiled	chunks/000/functions-000024.c		
+106835120	106835123	decompiled	chunks/000/functions-000024.c		
+106835124	106835183	decompiled	chunks/000/functions-000024.c		
+106835184	10683528b	decompiled	chunks/000/functions-000024.c		
+10683528c	10683528f	decompiled	chunks/000/functions-000024.c		
+106835290	106835383	decompiled	chunks/000/functions-000024.c		
+106835384	1068353ab	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _requestShareSheet]	
+1068353ac	1068353d3	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _shareSheetRenderComplete]	
+1068353d4	1068353ff	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _selectShare]	
+106835400	106835407	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _shareLinkGenerationStartWithTimestamp:]	
+106835408	10683540f	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _shareLinkGenerationCompleteWithTimestamp:]	
+106835410	106835417	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _generateMediaStartWithTimestamp:]	
+106835418	10683541f	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _generateMediaCompleteWithTimestamp:]	
+106835420	106835427	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _mediaExportStartWithTimestamp:]	
+106835428	10683542f	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _mediaExportCompleteWithTimestamp:]	
+106835430	10683565f	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _completeShareWithDestination:shareResult:textConfiguration:mediaConfiguration:completedTimestamp:]	
+106835660	1068357ef	decompiled	chunks/000/functions-000024.c		
+1068357f0	10683587b	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _addStageWithName:timestamp:]	
+10683587c	1068358d7	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _createPerformerWithPerformerProvider:]	
+1068358d8	106835927	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _getStages]	
+106835928	106835987	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _resetLoggingParams]	
+106835988	106835a5f	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger _logGrapheneExportCompleteLatencyWithTimestamp:deepLinkSourceType:mediaType:]	
+106835a60	106835ad7	decompiled	chunks/000/functions-000024.c	-[SCOffPlatformShareOperationLogger .cxx_destruct]	
+106835ad8	106835f47	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger initWithShareSource:destinationsAvailable:shareUIType:eventSubject:userTrackedLogger:shareSessionId:sendToSessionId:captureSessionId:performerProvider:grapheneRegistry:dreamsMetadata:posterId:snapId:memoriesLogger:circumstanceEngine:sharingMetadata:]	
+106835f48	106835fd7	decompiled	chunks/000/functions-000024.c		
+106835fd8	10683601b	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger dealloc]	
+10683601c	106836113	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _respondToEvent:]	
+106836114	1068362a7	decompiled	chunks/000/functions-000024.c		
+1068362a8	1068362b3	decompiled	chunks/000/functions-000024.c		
+1068362b4	106836323	decompiled	chunks/000/functions-000024.c		
+106836324	10683636b	decompiled	chunks/000/functions-000024.c		
+10683636c	10683636f	decompiled	chunks/000/functions-000024.c		
+106836370	1068363b7	decompiled	chunks/000/functions-000024.c		
+1068363b8	1068363bb	decompiled	chunks/000/functions-000024.c		
+1068363bc	1068364ab	decompiled	chunks/000/functions-000024.c		
+1068364ac	106836553	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _handleDismiss]	
+106836554	10683682b	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _handleSelectShareWithMediaConfiguration:phoneNumber:destination:]	
+10683682c	106836b7b	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _handleCompleteShareWithShareDestination:textConfiguration:mediaConfiguration:activityType:shortLinkURL:lensLoggingInfo:shareIdOverride:]	
+106836b7c	106836e87	decompiled	chunks/000/functions-000024.c		
+106836e88	106836ea3	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _resetLoggingParametersAfterCompleteShare]	
+106836ea4	106836eaf	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _handleGenerateMediaWithShareDestination:duration:]	
+106836eb0	106836ebb	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _handleGenerateMediaLinkWithShareDestination:duration:]	
+106836ebc	10683705f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _emitGrapheneShareSheetContentGeneratedWithDestination:duration:type:]	
+106837060	10683723b	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _emitGrapheneShareSheetSelectedWithShareDestination:activityType:]	
+10683723c	106837297	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger _createPerformerWithPerformerProvider:]	
+106837298	106837387	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareLogger .cxx_destruct]	
+106837388	1068375b3	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareActionHandler generateWatermarkedMediaConfigurationWithMediaConfiguration:textConfiguration:watermarkLayout:watermarkType:]	
+1068375b4	1068377f3	decompiled	chunks/000/functions-000024.c		
+1068377f4	1068378b3	decompiled	chunks/000/functions-000024.c		
+1068378b4	1068378c7	decompiled	chunks/000/functions-000024.c		
+1068378c8	106837c4f	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareActionHandler _generateWatermarkedMediaWithNonWatermarkedMedia:nonWatermarkedMediaContent:textConfiguration:watermarkProfile:watermarkLayout:watermarkType:]	
+106837c50	106837d43	decompiled	chunks/000/functions-000024.c		
+106837d44	106837ddf	decompiled	chunks/000/functions-000024.c		
+106837de0	106837fd7	decompiled	chunks/000/functions-000024.c	-[SCStandardExternalShareActionHandler _generateWatermarkedMediaWithNonWatermarkedMedia:textConfiguration:watermarkProfile:watermarkLayout:watermarkType:enableWatermarkImages:enableWatermarkVideos:]	
+106837fd8	10683812f	decompiled	chunks/000/functions-000024.c		
+106838130	10683825b	decompiled	chunks/000/functions-000024.c		
+10683825c	106838273	decompiled	chunks/000/functions-000024.c		
+106838274	1068382ab	decompiled	chunks/000/functions-000024.c		
+1068382ac	1068382af	decompiled	chunks/000/functions-000025.c		
+1068382b0	106838423	decompiled	chunks/000/functions-000025.c		
+106838424	106838483	decompiled	chunks/000/functions-000025.c		
+106838484	1068389cf	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler initWithUiContainer:router:textConfiguration:mediaConfiguration:phoneNumber:shareUIType:shareSource:eventSubject:performerProvider:externalMediaLinkSendingService:watermarkGenerator:videoWatermarkService:circumstanceEngine:delegate:notificationPool:genAIDreamsService:featureSettingsService:]	
+1068389d0	106838a93	decompiled	chunks/000/functions-000025.c		
+106838a94	106838ba7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler handleShareDestination:]	
+106838ba8	106838bdb	decompiled	chunks/000/functions-000025.c		
+106838bdc	106838ca3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler handleDismiss]	
+106838ca4	106838ccf	decompiled	chunks/000/functions-000025.c		
+106838cd0	106838f27	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _generateMediaLinkWithShareDestination:mediaConfiguration:textConfiguration:phoneNumber:]	
+106838f28	106839167	decompiled	chunks/000/functions-000025.c		
+106839168	1068392b3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _generateMediaForShareDestination:]	
+1068392b4	10683943f	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _updateMediaConfigurationForShareDestination:lensData:]	
+106839440	106839713	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _updateMediaConfigurationWithWatermarkProfile:]	
+106839714	1068398b7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _updateMediaConfigurationWatermarkProfileShareDestination:]	
+1068398b8	106839ad3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _handleShareDestination:]	
+106839ad4	106839e23	decompiled	chunks/000/functions-000025.c		
+106839e24	106839f8b	decompiled	chunks/000/functions-000025.c		
+106839f8c	10683a2bb	decompiled	chunks/000/functions-000025.c		
+10683a2bc	10683a3d7	decompiled	chunks/000/functions-000025.c		
+10683a3d8	10683a407	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _handleDismiss]	
+10683a408	10683a4ff	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _respondToEvent:]	
+10683a500	10683a617	decompiled	chunks/000/functions-000025.c		
+10683a618	10683a623	decompiled	chunks/000/functions-000025.c		
+10683a624	10683a6b3	decompiled	chunks/000/functions-000025.c		
+10683a6b4	10683a6c3	decompiled	chunks/000/functions-000025.c		
+10683a6c4	10683a6f7	decompiled	chunks/000/functions-000025.c		
+10683a6f8	10683a72b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _handleCompleteShareWithShareDestination:]	
+10683a72c	10683a817	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _routeShareAction:mediaConfiguration:textConfiguration:phoneNumber:]	
+10683a818	10683aa07	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _routeShareActionForMediaLink:mediaConfiguration:textConfiguration:phoneNumber:]	
+10683aa08	10683aaab	decompiled	chunks/000/functions-000025.c		
+10683aaac	10683ab7b	decompiled	chunks/000/functions-000025.c		
+10683ab7c	10683ab9f	decompiled	chunks/000/functions-000025.c		
+10683aba0	10683ad2f	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _displayPrivacyAlertIfNeededForMediaLinkGeneration:mediaConfiguration:textConfiguration:phoneNumber:]	
+10683ad30	10683af57	decompiled	chunks/000/functions-000025.c		
+10683af58	10683b0a7	decompiled	chunks/000/functions-000025.c		
+10683b0a8	10683b0e3	decompiled	chunks/000/functions-000025.c		
+10683b0e4	10683b5a7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _routeShareActionForMediaLinkResponse:linkCreationError:shareDestination:mediaConfiguration:textConfiguration:phoneNumber:]	
+10683b5a8	10683b5af	decompiled	chunks/000/functions-000025.c		
+10683b5b0	10683b713	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _routeShareActionAndRemoveNotificationIfNeeded:mediaConfiguration:textConfiguration:phoneNumber:shareIdOverride:]	
+10683b714	10683b74f	decompiled	chunks/000/functions-000025.c		
+10683b750	10683ba07	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _routeShareActionAfterLoadingDismissal:mediaConfiguration:textConfiguration:phoneNumber:shareIdOverride:]	
+10683ba08	10683ba23	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _shareDestinationSupportsTextOnly:]	
+10683ba24	10683ba3f	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _shareDestinationSupportsMediaOnly:]	
+10683ba40	10683bac7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _enableExportedMediaLinksWithShareSource:shareDestination:mediaConfiguration:]	
+10683bac8	10683bb23	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _createPerformerWithPerformerProvider:]	
+10683bb24	10683bc07	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _showAsyncMediaUploadNotificationForShareDestination:]	
+10683bc08	10683bcf3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _removeLoadingNotificationIfNeededWithCompletion:]	
+10683bcf4	10683bdfb	decompiled	chunks/000/functions-000025.c		
+10683bdfc	10683be07	decompiled	chunks/000/functions-000025.c		
+10683be08	10683bebf	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _cancelLoadingNotificationIfNeededHelperWithCompletion:]	
+10683bec0	10683bed3	decompiled	chunks/000/functions-000025.c		
+10683bed4	10683bfa7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler _showLoadingNotificationAfterDelayForShareDestination:]	
+10683bfa8	10683bfdb	decompiled	chunks/000/functions-000025.c		
+10683bfdc	10683c05b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler dealloc]	
+10683c05c	10683c063	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler circumstanceEngine]	
+10683c064	10683c06b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler watermarkGenerator]	
+10683c06c	10683c073	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler performer]	
+10683c074	10683c07b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler subscription]	
+10683c07c	10683c083	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler videoWatermarkService]	
+10683c084	10683c08b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler genAIDreamsService]	
+10683c08c	10683c19b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionHandler .cxx_destruct]	
+10683c19c	10683c54b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter initWithUiContainer:eventSubject:snapSavingService:notificationPool:performerProvider:temporaryFileWriter:inviteService:circumstanceEngine:textConfiguration:delegate:crashLogger:shareSource:pageLauncher:]	
+10683c54c	10683c5fb	decompiled	chunks/000/functions-000025.c		
+10683c5fc	10683c68f	decompiled	chunks/000/functions-000025.c		
+10683c690	10683c84f	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter presentTextOnlyForShareDestination:textConfiguration:mediaConfiguration:phoneNumber:shareIdOverride:]	
+10683c850	10683c90f	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter presentSingleMediaForShareDestination:textConfiguration:mediaConfiguration:phoneNumber:shareIdOverride:]	
+10683c910	10683cb13	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _presentSingleMediaForShareDestination:textConfiguration:mediaConfiguration:phoneNumber:]	
+10683cb14	10683cbd3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter presentMultipleMediaForShareDestination:textConfiguration:mediaConfiguration:phoneNumber:shareIdOverride:]	
+10683cbd4	10683cdbf	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _presentMultipleMediaForShareDestination:textConfiguration:mediaConfiguration:phoneNumber:]	
+10683cdc0	10683d017	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleCopyLinkShare:shareDestination:]	
+10683d018	10683d043	decompiled	chunks/000/functions-000025.c		
+10683d044	10683d1e7	decompiled	chunks/000/functions-000025.c		
+10683d1e8	10683d37b	decompiled	chunks/000/functions-000025.c		
+10683d37c	10683d3a7	decompiled	chunks/000/functions-000025.c		
+10683d3a8	10683d663	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOrMediaShareForSystemShareSheet:mediaConfiguration:]	
+10683d664	10683d81b	decompiled	chunks/000/functions-000025.c		
+10683d81c	10683da23	decompiled	chunks/000/functions-000025.c		
+10683da24	10683dd0b	decompiled	chunks/000/functions-000025.c		
+10683dd0c	10683dd23	decompiled	chunks/000/functions-000025.c		
+10683dd24	10683e02f	decompiled	chunks/000/functions-000025.c		
+10683e030	10683e057	decompiled	chunks/000/functions-000025.c		
+10683e058	10683e153	decompiled	chunks/000/functions-000025.c		
+10683e154	10683e273	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForFacebook:]	
+10683e274	10683e353	decompiled	chunks/000/functions-000025.c		
+10683e354	10683e4a3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForWhatsApp:phoneNumber:]	
+10683e4a4	10683e593	decompiled	chunks/000/functions-000025.c		
+10683e594	10683e6b3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForMessenger:]	
+10683e6b4	10683e79f	decompiled	chunks/000/functions-000025.c		
+10683e7a0	10683e8bf	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForTwitter:]	
+10683e8c0	10683e9ab	decompiled	chunks/000/functions-000025.c		
+10683e9ac	10683eacb	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForLine:]	
+10683eacc	10683ebb7	decompiled	chunks/000/functions-000025.c		
+10683ebb8	10683ecd7	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForTelegram:]	
+10683ecd8	10683edc3	decompiled	chunks/000/functions-000025.c		
+10683edc4	10683eee3	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForViber:]	
+10683eee4	10683efcf	decompiled	chunks/000/functions-000025.c		
+10683efd0	10683f12b	decompiled	chunks/000/functions-000025.c	-[SCStandardExternalShareActionRouter _handleLinkShareForLinktree:]	
+10683f12c	10683f2a3	decompiled	chunks/000/functions-000025.c		
+10683f2a4	10683f32b	decompiled	chunks/000/functions-000025.c		
+10683f32c	10683f33b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForSMS:phoneNumber:]	
+10683f33c	10683f65f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleShareWithSystemShareForDestination:excludedActivityTypes:localizedAppName:mediaConfiguration:textConfiguration:lensLoggingInfo:]	
+10683f660	10683fd3f	decompiled	chunks/000/functions-000026.c		
+10683fd40	10683fdbf	decompiled	chunks/000/functions-000026.c		
+10683fdc0	10683ff1b	decompiled	chunks/000/functions-000026.c		
+10683ff1c	106840183	decompiled	chunks/000/functions-000026.c		
+106840184	10684040b	decompiled	chunks/000/functions-000026.c		
+10684040c	10684052b	decompiled	chunks/000/functions-000026.c		
+10684052c	106840627	decompiled	chunks/000/functions-000026.c		
+106840628	10684085b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleMediaShareForCopy:textConfiguration:shareDestination:]	
+10684085c	10684099b	decompiled	chunks/000/functions-000026.c		
+10684099c	106840c3b	decompiled	chunks/000/functions-000026.c		
+106840c3c	106840c67	decompiled	chunks/000/functions-000026.c		
+106840c68	106840e9f	decompiled	chunks/000/functions-000026.c		
+106840ea0	106840f77	decompiled	chunks/000/functions-000026.c		
+106840f78	106841007	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleMultipleMediaShareForCopy:textConfiguration:]	
+106841008	106841217	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleMediaShareForInstagramStories:textConfiguration:]	
+106841218	1068414e7	decompiled	chunks/000/functions-000026.c		
+1068414e8	106841677	decompiled	chunks/000/functions-000026.c		
+106841678	106841797	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForInstagramDirect:]	
+106841798	1068418c7	decompiled	chunks/000/functions-000026.c		
+1068418c8	1068419c7	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleTextOnlyShareForSnap:]	
+1068419c8	106841ca7	decompiled	chunks/000/functions-000026.c		
+106841ca8	106841d07	decompiled	chunks/000/functions-000026.c		
+106841d08	106841f17	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleMediaShareForInstagramFeed:textConfiguration:]	
+106841f18	1068422d7	decompiled	chunks/000/functions-000026.c		
+1068422d8	1068423eb	decompiled	chunks/000/functions-000026.c		
+1068423ec	10684244b	decompiled	chunks/000/functions-000026.c		
+10684244c	10684245f	decompiled	chunks/000/functions-000026.c		
+106842460	106842563	decompiled	chunks/000/functions-000026.c		
+106842564	1068425c3	decompiled	chunks/000/functions-000026.c		
+1068425c4	1068425d7	decompiled	chunks/000/functions-000026.c		
+1068425d8	106842627	decompiled	chunks/000/functions-000026.c		
+106842628	106842723	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleMultipleMediaShareForInstagramStoriesAndFeed:textConfiguration:]	
+106842724	10684286b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleTextOrMediaShareForDiscord:textConfiguration:]	
+10684286c	106842967	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForWhatsApp:textConfiguration:]	
+106842968	106842a63	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForLine:textConfiguration:]	
+106842a64	106842b5f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForTelegram:textConfiguration:]	
+106842b60	106842c5b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForViber:textConfiguration:]	
+106842c5c	106842c5f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForSMS:textConfiguration:phoneNumber:]	
+106842c60	106842ecf	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleShareForSMS:textConfiguration:phoneNumber:]	
+106842ed0	106843183	decompiled	chunks/000/functions-000026.c		
+106843184	106843213	decompiled	chunks/000/functions-000026.c		
+106843214	1068435fb	decompiled	chunks/000/functions-000026.c		
+1068435fc	10684371b	decompiled	chunks/000/functions-000026.c		
+10684371c	1068438cf	decompiled	chunks/000/functions-000026.c		
+1068438d0	106843ab3	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForTikTok:textConfiguration:]	
+106843ab4	106843bf3	decompiled	chunks/000/functions-000026.c		
+106843bf4	106843d93	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForTwitter:textConfiguration:]	
+106843d94	106843f37	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForMessenger:textConfiguration:]	
+106843f38	1068440db	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleSingleOrMultipleMediaShareForFacebook:textConfiguration:]	
+1068440dc	106844363	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _saveToCameraRollWithMedia:textConfiguration:]	
+106844364	1068448df	decompiled	chunks/000/functions-000026.c		
+1068448e0	1068449f3	decompiled	chunks/000/functions-000026.c		
+1068449f4	106844a83	decompiled	chunks/000/functions-000026.c		
+106844a84	106844b9f	decompiled	chunks/000/functions-000026.c		
+106844ba0	106844c2f	decompiled	chunks/000/functions-000026.c		
+106844c30	106844c87	decompiled	chunks/000/functions-000026.c		
+106844c88	106844d1f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _showDropdownForSavedToCameraRoll]	
+106844d20	106844dc7	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter presentShareFailureFeedback]	
+106844dc8	106844df3	decompiled	chunks/000/functions-000026.c		
+106844df4	106844e8b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _showDropdownForSomethingWentWrong]	
+106844e8c	106844f23	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _showDropdownForLinkCopied]	
+106844f24	106844faf	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _showDropdownForUnableToOpenApplication]	
+106844fb0	1068450df	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter messageComposeViewController:didFinishWithResult:]	
+1068450e0	1068451bb	decompiled	chunks/000/functions-000026.c		
+1068451bc	106845347	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _handleShareDestinationByDelegate:textConfiguration:mediaConfiguration:]	
+106845348	1068453ff	decompiled	chunks/000/functions-000026.c		
+106845400	10684586b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _openURLOptionallyAndEmitCompletedEventsWithTextConfiguration:mediaConfiguration:destination:openURL:shortLinkURL:exportSucceeded:exportStartTimestamp:exportCompleteTimestamp:destinationRoutingCookie:]	
+10684586c	1068458b7	decompiled	chunks/000/functions-000026.c		
+1068458b8	106845acb	decompiled	chunks/000/functions-000026.c		
+106845acc	106845af7	decompiled	chunks/000/functions-000026.c		
+106845af8	106845b9f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _openURL:completion:]	
+106845ba0	106845c47	decompiled	chunks/000/functions-000026.c		
+106845c48	106845c5b	decompiled	chunks/000/functions-000026.c		
+106845c5c	106845e0f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _imageCountFromMedia:]	
+106845e10	106845e2b	decompiled	chunks/000/functions-000026.c		
+106845e2c	106845fdf	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _videoCountFromMedia:]	
+106845fe0	106845ffb	decompiled	chunks/000/functions-000026.c		
+106845ffc	1068460a3	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _detachUI]	
+1068460a4	1068460db	decompiled	chunks/000/functions-000026.c		
+1068460dc	1068461af	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _attachUI:]	
+1068461b0	1068461eb	decompiled	chunks/000/functions-000026.c		
+1068461ec	1068463b3	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _allActivityTypes]	
+1068463b4	106846523	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _hardLinkFromURL:toURL:]	
+106846524	106846603	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _writeImageToTempDirectory:filename:]	
+106846604	10684670f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _logExportNonFatalError:destination:contentType:]	
+106846710	10684683f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _textConfigurationURLForTextConfiguration:completion:]	
+106846840	1068468bb	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _textConfigurationTitleForTextConfiguration:]	
+1068468bc	1068469ff	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _generateShortLinkURLWithTextConfiguration:]	
+106846a00	106846a47	decompiled	chunks/000/functions-000026.c		
+106846a48	106846b8f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _updateShortLinkURL:]	
+106846b90	106846d9b	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _getShortLinkURLWithTextConfiguration:completion:]	
+106846d9c	106846e0b	decompiled	chunks/000/functions-000026.c		
+106846e0c	106846e37	decompiled	chunks/000/functions-000026.c		
+106846e38	106846e9f	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _logExternalAppOpenOutcome:destination:]	
+106846ea0	106846ebb	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _logExternalShareOutcome:destination:]	
+106846ebc	106846ec7	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter _logFailedShareMediaSaveOutcome:contentType:]	
+106846ec8	106846faf	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter didSendSnap]	
+106846fb0	106846fb3	decompiled	chunks/000/functions-000026.c	-[SCStandardExternalShareActionRouter didSaveSnap]	
+106846fb4	1068470ab	decompiled	chunks/000/functions-000027.c	-[SCStandardExternalShareActionRouter .cxx_destruct]	
+1068470ac	1068472bb	decompiled	chunks/000/functions-000027.c		
+1068472bc	10684732f	decompiled	chunks/000/functions-000027.c	-[SCGrapheneOffPlatformShareServicesMetric2 init]	
+106847330	1068474a3	decompiled	chunks/000/functions-000027.c		
+1068474a4	106847617	decompiled	chunks/000/functions-000027.c		
+106847618	10684778b	decompiled	chunks/000/functions-000027.c		
+10684778c	1068478ff	decompiled	chunks/000/functions-000027.c		
+106847900	106847a73	decompiled	chunks/000/functions-000027.c		
+106847a74	106847d33	decompiled	chunks/000/functions-000027.c		
+106847d34	106847ff3	decompiled	chunks/000/functions-000027.c		
+106847ff4	10684801f	decompiled	chunks/000/functions-000027.c	+[SCGrapheneShareSheetMetric shareSheetAvailable]	
+106848020	10684804b	decompiled	chunks/000/functions-000027.c	+[SCGrapheneShareSheetMetric shareSheetOpened]	
+10684804c	106848077	decompiled	chunks/000/functions-000027.c	+[SCGrapheneShareSheetMetric shareSheetSelected]	
+106848078	1068480a3	decompiled	chunks/000/functions-000027.c	+[SCGrapheneShareSheetMetric shareSheetContentGenerated]	
+1068480a4	106848143	decompiled	chunks/000/functions-000027.c	-[SCGrapheneShareSheetMetric description]	
+106848144	1068482a3	decompiled	chunks/000/functions-000027.c	-[SCGrapheneRegistry shareSheetGraphene]	
+1068482a4	10684835f	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope initWithGroupId:presentingViewController:delegate:]	
+106848360	10684844b	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope initWithGroupId:userId:presentingViewController:delegate:]	
+10684844c	106848453	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope groupId]	
+106848454	10684845b	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope userId]	
+10684845c	106848473	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope presentingViewController]	
+106848474	10684848b	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope delegate]	
+10684848c	1068484cb	decompiled	chunks/000/functions-000027.c	-[SCCommunityPillTapScope .cxx_destruct]	
+1068484cc	1068484f7	decompiled	chunks/000/functions-000027.c	+[SCGraphenePayToPromotePushMetric payToPromotePushView]	
+1068484f8	106848523	decompiled	chunks/000/functions-000027.c	+[SCGraphenePayToPromotePushMetric payToPromotePushTapped]	
+106848524	1068485c3	decompiled	chunks/000/functions-000027.c	-[SCGraphenePayToPromotePushMetric description]	
+1068485c4	10684870f	decompiled	chunks/000/functions-000027.c	-[SCGrapheneRegistry payToPromotePushGraphene]	
+106848710	106848783	decompiled	chunks/000/functions-000027.c	-[SCCameraCompositeFeatureMetricCoordinatorImpl initWithCoordinators:]	
+106848784	10684888b	decompiled	chunks/000/functions-000027.c	-[SCCameraCompositeFeatureMetricCoordinatorImpl resetMetrics]	
+10684888c	1068489e7	decompiled	chunks/000/functions-000027.c	-[SCCameraCompositeFeatureMetricCoordinatorImpl usageMetrics]	
+1068489e8	1068489f3	decompiled	chunks/000/functions-000027.c	-[SCCameraCompositeFeatureMetricCoordinatorImpl .cxx_destruct]	
+1068489f4	106848a27	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl dealloc]	
+106848a28	106848b33	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl resetMetrics]	
+106848b34	106848c97	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl usageMetrics]	
+106848c98	106848cc3	decompiled	chunks/000/functions-000027.c		
+106848cc4	106848d73	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl cancelFeatureActivation]	
+106848d74	106848db3	decompiled	chunks/000/functions-000027.c		
+106848db4	106848e87	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl _activateFeatures]	
+106848e88	106848e97	decompiled	chunks/000/functions-000027.c		
+106848e98	106848faf	decompiled	chunks/000/functions-000027.c		
+106848fb0	106849027	decompiled	chunks/000/functions-000027.c	-[SCCameraDefaultFeatureActivatorImpl .cxx_destruct]	
+106849028	106849143	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureAnimatableTransitionCoordinatorImpl animateFeatureTransition:]	
+106849144	106849233	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureCapabilitiesImpl invalidate]	
+106849234	106849293	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureCapabilitiesImpl .cxx_destruct]	
+106849294	10684933f	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureCapabilityCoordinator assertIfNotResolved]	
+106849340	106849353	decompiled	chunks/000/functions-000027.c		
+106849354	1068493ab	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureCapabilityCoordinator invalidate]	
+1068493ac	1068493b7	decompiled	chunks/000/functions-000027.c		
+1068493b8	106849433	decompiled	chunks/000/functions-000027.c	-[SCCameraFeatureCapabilityCoordinator .cxx_destruct]	
+106849434	1068495ab	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureInteractionCoordinatorImpl handleInteractionEvent:]	
+1068495ac	10684970f	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureInteractionCoordinatorImpl shouldBlockInteractionEvent:]	
+106849710	106849777	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureInteractionCoordinatorImpl _sortedReferences]	
+106849778	1068497d3	decompiled	chunks/000/functions-000027.c		
+1068497d4	1068497e7	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureInteractionCoordinatorImpl .cxx_destruct]	
+1068497e8	1068497ff	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureResponderReference feature]	
+106849800	106849807	decompiled	chunks/000/functions-000027.c	-[SCCameraGestureResponderReference responderChainPriority]	
+106849808	106849817	decompiled	chunks/000/functions-000027.c	-[SCCameraLegacyDelegateProvidingActivatorImpl .cxx_destruct]	
+106849818	1068498cb	decompiled	chunks/000/functions-000027.c	-[SCCameraPrivateFeatureContainerImpl insertFeature:withContext:]	
+1068498cc	1068498db	decompiled	chunks/000/functions-000027.c		
+1068498dc	10684996f	decompiled	chunks/000/functions-000027.c	-[SCCameraPrivateFeatureContainerImpl insertFeature:withClassContext:]	
+106849970	106849983	decompiled	chunks/000/functions-000027.c		
+106849984	10684999b	decompiled	chunks/000/functions-000027.c	-[SCCameraPrivateFeatureContainerImpl debugFeatureArray]	
+10684999c	1068499b3	decompiled	chunks/000/functions-000027.c	-[SCCameraPrivateFeatureContainerImpl debugFeatureDictionary]	
+1068499b4	1068499ef	decompiled	chunks/000/functions-000027.c	-[SCCameraPrivateFeatureContainerImpl .cxx_destruct]	
+1068499f0	106849a63	decompiled	chunks/000/functions-000027.c	-[SCCameraServiceImpl initWithCameraServiceFuture:]	
+106849a64	106849b37	decompiled	chunks/000/functions-000027.c	-[SCCameraServiceImpl startCamera:completion:]	
+106849b38	106849b73	decompiled	chunks/000/functions-000027.c		
+106849b74	106849c23	decompiled	chunks/000/functions-000027.c	-[SCCameraServiceImpl stopCamera:]	
+106849c24	106849c5f	decompiled	chunks/000/functions-000027.c		
+106849c60	106849d0f	decompiled	chunks/000/functions-000027.c	-[SCCameraServiceImpl stopCameraSofty:]	
+106849d10	106849d4b	decompiled	chunks/000/functions-000027.c		
+106849d4c	106849d57	decompiled	chunks/000/functions-000027.c	-[SCCameraServiceImpl .cxx_destruct]	
+106849d58	106849e23	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl modalUIContainerImmediateValue]	
+106849e24	106849e57	decompiled	chunks/000/functions-000027.c		
+106849e58	106849f23	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl nonAnimatedModalUIContainerImmediateValue]	
+106849f24	106849f57	decompiled	chunks/000/functions-000027.c		
+106849f58	10684a023	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl trayContainerImmediateValue]	
+10684a024	10684a057	decompiled	chunks/000/functions-000027.c		
+10684a058	10684a05f	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl modalUIContainerFuture]	
+10684a060	10684a067	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl trayContainerFuture]	
+10684a068	10684a06f	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl nonAnimatedModalUIContainerFuture]	
+10684a070	10684a12f	decompiled	chunks/000/functions-000027.c	-[SCCameraUIScopeViewContainerImpl .cxx_destruct]	
+10684a130	10684a16f	decompiled	chunks/000/functions-000027.c	-[SCCameraVerticalToolbarUIConfigurationCoordinatorImpl .cxx_destruct]	
+10684a170	10684a177	decompiled	chunks/000/functions-000027.c	-[SCPublicCameraFeatureCatalogProviderImpl .cxx_destruct]	
+10684a178	10684a1e3	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInvalidatablePresentationInteractionControllerImpl initWithInteractionController:]	
+10684a1e4	10684a21f	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInvalidatablePresentationInteractionControllerImpl updateInteractiveTransition:]	
+10684a220	10684a273	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInvalidatablePresentationInteractionControllerImpl completeTransition:animated:]	
+10684a274	10684a2df	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInvalidatablePresentationInteractionControllerImpl completeTransition:animated:withVelocity:]	
+10684a2e0	10684a2e7	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInvalidatablePresentationInteractionControllerImpl .cxx_destruct]	
+10684a2e8	10684a3b7	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl initWithContainerViewController:presenter:]	
+10684a3b8	10684a3bf	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl setPanGestureRecognizerDelegate:]	
+10684a3c0	10684a3c7	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl panGestureRecognizerDelegate]	
+10684a3c8	10684a683	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl beginInteractiveTransition]	
+10684a684	10684a71f	decompiled	chunks/000/functions-000027.c		
+10684a720	10684a83b	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl presentViewController:]	
+10684a83c	10684a8db	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl wireToView:gestureDriver:]	
+10684a8dc	10684a96f	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl attachUI:]	
+10684a970	10684a97b	decompiled	chunks/000/functions-000027.c		
+10684a97c	10684aa9b	decompiled	chunks/000/functions-000027.c	-[SCMainCameraInteractiveModalTransitionControllerImpl detachUI:]	
+10684aa9c	10684aaaf	decompiled	chunks/000/functions-000027.c		
+10684aab0	10684ab13	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _attachGestureRecognizerToAttachedUIIfNeeded]	
+10684ab14	10684ab7b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _attachGestureRecognizerToContainerViewIfNeeded]	
+10684ab7c	10684ab8b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _didPan:]	
+10684ab8c	10684ac03	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _dismissalStyle]	
+10684ac04	10684ac7b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _presentationStyle]	
+10684ac7c	10684ace3	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl reset]	
+10684ace4	10684acef	decompiled	chunks/000/functions-000028.c		
+10684acf0	10684ad17	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl _ui]	
+10684ad18	10684ad2f	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl delegate]	
+10684ad30	10684ad3b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl setDelegate:]	
+10684ad3c	10684ad43	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl isUIPresented]	
+10684ad44	10684ad4b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl presentationStyleProvider]	
+10684ad4c	10684ad7b	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl setPresentationStyleProvider:]	
+10684ad7c	10684adfb	decompiled	chunks/000/functions-000028.c	-[SCMainCameraInteractiveModalTransitionControllerImpl .cxx_destruct]	
+10684adfc	10684b02f	decompiled	chunks/000/functions-000028.c		
+10684b030	10684b037	decompiled	chunks/000/functions-000028.c		
+10684b038	10684b197	decompiled	chunks/000/functions-000028.c	-[SCInteractiveStickersNotificationActionHandler initWithPresentingViewController:customStoriesDataSyncer:customStoryMembersScopeLauncher:startChatDelegate:navigationDelegate:spotlightNavigationDelegate:onInviteAccepted:]	
+10684b198	10684b2c7	decompiled	chunks/000/functions-000028.c	-[SCInteractiveStickersNotificationActionHandler handleActionWithSender:actionModel:fromSourceView:]	
+10684b2c8	10684b2fb	decompiled	chunks/000/functions-000028.c	-[SCInteractiveStickersNotificationActionHandler didDismissCustomStoryMembers]	
+10684b2fc	10684b357	decompiled	chunks/000/functions-000028.c	-[SCInteractiveStickersNotificationActionHandler .cxx_destruct]	
+10684b358	10684b53f	decompiled	chunks/000/functions-000028.c		
+10684b540	10684b57b	decompiled	chunks/000/functions-000028.c		
+10684b57c	10684b57f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl showDiscoverFeedWithCompletion:]	
+10684b580	10684b653	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl showDiscoverFeedWithNotification:]	
+10684b654	10684b687	decompiled	chunks/000/functions-000028.c		
+10684b688	10684b6df	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl showDiscoverFeedWithDeepLinkURL:additionalInfo:completion:]	
+10684b6e0	10684b737	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl refreshLocalizedTabBarLabels]	
+10684b738	10684b93f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _tabBarItemTapped:]	
+10684b940	10684b9cb	decompiled	chunks/000/functions-000028.c		
+10684b9cc	10684ba5f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _getSelectedImageWithName:withFilledButton:]	
+10684ba60	10684bae7	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl attachViewController:]	
+10684bae8	10684bcc3	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl exposeFeatureScopeIfNeeded]	
+10684bcc4	10684bd0b	decompiled	chunks/000/functions-000028.c		
+10684bd0c	10684bd0f	decompiled	chunks/000/functions-000028.c		
+10684bd10	10684bd67	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _showDiscoverFeedWithCompletion:]	
+10684bd68	10684bdf3	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _handleNotificationPressed:]	
+10684bdf4	10684be4f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _updateFeedPageEntryTypeWithDeepLinkURL:additionalInfo:]	
+10684be50	10684bf8b	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _updateFeedPageEntryType:]	
+10684bf8c	10684bff3	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl searchWorkflowDidEnd]	
+10684bff4	10684c0d3	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _handleSearchViewTapped]	
+10684c0d4	10684c1cf	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _subscribeToPageChangeEvents]	
+10684c1d0	10684c217	decompiled	chunks/000/functions-000028.c		
+10684c218	10684c2e7	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl _didChangeCurrentPageEvent:]	
+10684c2e8	10684c363	decompiled	chunks/000/functions-000028.c		
+10684c364	10684c36f	decompiled	chunks/000/functions-000028.c		
+10684c370	10684c37f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl fromSwipeViewType]	
+10684c380	10684c38f	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl setFromSwipeViewType:]	
+10684c390	10684c4c3	decompiled	chunks/000/functions-000028.c	-[SCDiscoverFeedNavigationServiceImpl .cxx_destruct]	
+10684c4c4	10684c537	decompiled	chunks/000/functions-000028.c	-[SCGrapheneDfDeeplinkMetric2 init]	
+10684c538	10684c5bf	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider initWithSpotlightSpotlightPlaybackManagerInfo:]	
+10684c5c0	10684c5ff	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider currentPageSessionId]	
+10684c600	10684c627	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider feedEventEventObservable]	
+10684c628	10684c66b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider spotlightViewControllerWillAppear]	
+10684c66c	10684c6af	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider spotlightViewControllerDidDisappear]	
+10684c6b0	10684c757	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider playbackManagerDidRequestPagination]	
+10684c758	10684c79b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider spotlightViewControllerWillSwitchFeedType:]	
+10684c79c	10684c7df	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider spotlightViewControllerDidStartPlayingStoryWithId:feedType:]	
+10684c7e0	10684c80b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDataProvider .cxx_destruct]	
+10684c80c	10684c87f	decompiled	chunks/000/functions-000028.c	-[SCSpotlightSubFeedContentFetcher initWithSpotlightQueryCoordinator:]	
+10684c880	10684ca83	decompiled	chunks/000/functions-000028.c	-[SCSpotlightSubFeedContentFetcher fetchMetadataForFeedType:storiesNumber:querySource:pageSessionId:]	
+10684ca84	10684cabf	decompiled	chunks/000/functions-000028.c	-[SCSpotlightSubFeedContentFetcher _mapQuerySource:]	
+10684cac0	10684cacb	decompiled	chunks/000/functions-000028.c	-[SCSpotlightSubFeedContentFetcher .cxx_destruct]	
+10684cacc	10684cb7f	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController initWithFeedIdentifier:panPolicy:panGestureDelegate:]	
+10684cb80	10684cbf3	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController viewDidAppear:]	
+10684cbf4	10684cc67	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController viewDidDisappear:]	
+10684cc68	10684cc6f	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController pageViewName]	
+10684cc70	10684d00f	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController _addFullscreenChildViewController:]	
+10684d010	10684d073	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController attachUI:]	
+10684d074	10684d0d7	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController detachUI:]	
+10684d0d8	10684d133	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController _detachChildViewController:]	
+10684d134	10684d173	decompiled	chunks/000/functions-000028.c	-[SCContentFeedContainerViewController .cxx_destruct]	
+10684d174	10684d29f	decompiled	chunks/000/functions-000028.c	-[SCContentSubFeedTransition initWithPreparation:animation:completion:]	
+10684d2a0	10684d2b3	decompiled	chunks/000/functions-000028.c		
+10684d2b4	10684d2bb	decompiled	chunks/000/functions-000028.c	-[SCContentSubFeedTransition updateProgress:]	
+10684d2bc	10684d2c3	decompiled	chunks/000/functions-000028.c	-[SCContentSubFeedTransition complete]	
+10684d2c4	10684d2ef	decompiled	chunks/000/functions-000028.c	-[SCContentSubFeedTransition cancel]	
+10684d2f0	10684d2fb	decompiled	chunks/000/functions-000028.c	-[SCContentSubFeedTransition .cxx_destruct]	
+10684d2fc	10684d4cb	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker initWithStoriesConfigProvider:]	
+10684d4cc	10684d55b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker updateTrackedStories:]	
+10684d55c	10684d567	decompiled	chunks/000/functions-000028.c		
+10684d568	10684d60f	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker handleInteractionForDedupeFp:sentimentPolarity:confidence:]	
+10684d610	10684d623	decompiled	chunks/000/functions-000028.c		
+10684d624	10684d717	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker queryProximitiesFromStory:completionQueue:completion:]	
+10684d718	10684d727	decompiled	chunks/000/functions-000028.c		
+10684d728	10684d74f	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker boostValuesByDedupeFp]	
+10684d750	10684da8b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _updateTrackedStories:]	
+10684da8c	10684df3b	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _handleInteractionForDedupeFp:sentimentPolarity:confidence:]	
+10684df3c	10684e163	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _queryProximitiesFromStory:completionQueue:completion:]	
+10684e164	10684e17f	decompiled	chunks/000/functions-000028.c		
+10684e180	10684e1ab	decompiled	chunks/000/functions-000028.c		
+10684e1ac	10684e1bb	decompiled	chunks/000/functions-000028.c		
+10684e1bc	10684e257	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _embeddingDictionaryForId:]	
+10684e258	10684e407	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _untrackDedupeFps:]	
+10684e408	10684e40f	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _calculateBoostDeltasForEmbedding:targetDedupeFp:embeddingsByDedupeFp:sentimentPolarity:confidence:]	
+10684e410	10684e767	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _orderedTokensByDistanceFrom:targetDedupeFp:scoringMethod:embeddingsByDedupeFp:]	
+10684e768	10684e78f	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _polarityString:]	
+10684e790	10684e8df	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _distanceSquaredBetween:vectorCount:embedding:]	
+10684e8e0	10684eacf	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _cosineSimilarityBetween:vectorCount:embedding:]	
+10684ead0	10684ebf3	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker _dotProductBetween:vectorCount:embedding:]	
+10684ebf4	10684ec83	decompiled	chunks/000/functions-000028.c	-[SCSpotlightDynamicRanker .cxx_destruct]	
+10684ec84	10684ed07	decompiled	chunks/000/functions-000029.c	-[SCSpotlightDynamicRankerSortToken initWithDedupeFp:score:]	
+10684ed08	10684ed73	decompiled	chunks/000/functions-000029.c	-[SCSpotlightDynamicRankerSortToken compare:]	
+10684ed74	10684ed7b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightDynamicRankerSortToken dedupeFp]	
+10684ed7c	10684ed83	decompiled	chunks/000/functions-000029.c	-[SCSpotlightDynamicRankerSortToken score]	
+10684ed84	10684ed8f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightDynamicRankerSortToken .cxx_destruct]	
+10684ed90	10684ee93	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger initWithStoriesGraphene:viewLocation:]	
+10684ee94	10684ef9f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logStartedLoadingWithLoadingTrigger:]	
+10684efa0	10684efd3	decompiled	chunks/000/functions-000029.c		
+10684efd4	10684f037	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _setTrigger:startTime:]	
+10684f038	10684f143	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logFeedSwitchToFeedType:]	
+10684f144	10684f177	decompiled	chunks/000/functions-000029.c		
+10684f178	10684f233	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logFeedSwitchToFeedType:time:]	
+10684f234	10684f267	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logFeedSwitchViaAdvancementToFeedType:]	
+10684f268	10684f26f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logSpotlightAbandonDiskNotLoaded:]	
+10684f270	10684f277	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logSpotlightAbandonmentReason:feedType:viewLocation:]	
+10684f278	10684f35b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logOperaPresented]	
+10684f35c	10684f38f	decompiled	chunks/000/functions-000029.c		
+10684f390	10684f3ef	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logOperaPresented:]	
+10684f3f0	10684f4fb	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logPlaybackBeginIfNecessaryForFeedType:]	
+10684f4fc	10684f52f	decompiled	chunks/000/functions-000029.c		
+10684f530	10684f62f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logPlaybackBeginIfNecessaryForFeedType:time:]	
+10684f630	10684f6d7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logLoadingAbandonedIfNecessary]	
+10684f6d8	10684f703	decompiled	chunks/000/functions-000029.c		
+10684f704	10684f787	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logLoadingAbandonedIfNecessary]	
+10684f788	10684f82f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logReachEndOfPlaylist]	
+10684f830	10684f85b	decompiled	chunks/000/functions-000029.c		
+10684f85c	10684f893	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logReachEndOfPlaylist]	
+10684f894	10684f93b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger resetPlaylist]	
+10684f93c	10684f967	decompiled	chunks/000/functions-000029.c		
+10684f968	10684f96f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _resetPlaylist]	
+10684f970	10684fa17	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logReceiveNoNewStoriesInResponse]	
+10684fa18	10684fa43	decompiled	chunks/000/functions-000029.c		
+10684fa44	10684fa5b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logReceiveNoNewStoriesInResponse]	
+10684fa5c	10684fb17	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logEndSpotlightSession]	
+10684fb18	10684fb27	decompiled	chunks/000/functions-000029.c		
+10684fb28	10684fbcf	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger resetSpotlightSession]	
+10684fbd0	10684fbfb	decompiled	chunks/000/functions-000029.c		
+10684fbfc	10684fc03	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _resetSpotlightSession]	
+10684fc04	10684fc0b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logMetadataAvailableAtStartCount:feedType:]	
+10684fc0c	10684fc13	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logMediaAvailableAtStartCount:feedType:]	
+10684fc14	10684fc5b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _viewLocationStringFromViewLocation:]	
+10684fc5c	10684fd03	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logSubsFeedEmptyStateShown]	
+10684fd04	10684fd2f	decompiled	chunks/000/functions-000029.c		
+10684fd30	10684fd6b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger _logSubsFeedEmptyStateShown]	
+10684fd6c	10684fe1f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logFeedSwitcherSubsBadgeShown]	
+10684fe20	10684fe2b	decompiled	chunks/000/functions-000029.c		
+10684fe2c	10684fedf	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logFeedSwitcherEnterSubsWithBadge]	
+10684fee0	10684feeb	decompiled	chunks/000/functions-000029.c		
+10684feec	10684ff9f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger logFeedSwitcherTooltipShown]	
+10684ffa0	10684ffab	decompiled	chunks/000/functions-000029.c		
+10684ffac	106850017	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedGrapheneLogger .cxx_destruct]	
+106850018	106850187	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedResponsivenessTriggerManager initWithCircumstanceEngine:]	
+106850188	10685024f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedResponsivenessTriggerManager updateTriggersWithRecentInteraction:callback:]	
+106850250	10685025f	decompiled	chunks/000/functions-000029.c		
+106850260	1068503af	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedResponsivenessTriggerManager _updateTriggersWithRecentInteraction:callback:]	
+1068503b0	10685054f	decompiled	chunks/000/functions-000029.c		
+106850550	10685063f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedResponsivenessTriggerManager _shouldMarkTriggerAsValidAndInitiateFetchMoreContentCallbackForInteraction:]	
+106850640	10685067b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightFeedResponsivenessTriggerManager .cxx_destruct]	
+10685067c	1068506b7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController init]	
+1068506b8	1068507d7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController configureWithContainerView:observedPanGestureRecognizer:]	
+1068507d8	106850827	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController teardown]	
+106850828	106850837	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController resetToIdle]	
+106850838	1068508b7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController pullToRefreshOverlayCanBeginPulling]	
+1068508b8	106850933	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController pullToRefreshOverlayDidTriggerRefresh]	
+106850934	1068509b7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController pullToRefreshOverlayDidChangeDraggingState:]	
+1068509b8	1068509d7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController delegate]	
+1068509d8	1068509eb	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController setDelegate:]	
+1068509ec	106850a3f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshController .cxx_destruct]	
+106850a40	106850a47	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshPassthroughView hitTest:withEvent:]	
+106850a48	106850ab3	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay initWithContainerView:]	
+106850ab4	106850af3	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _layoutOverlayContainerIfNeeded]	
+106850af4	106850f9b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay setup]	
+106850f9c	106851027	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay teardown]	
+106851028	10685107f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay resetToIdle]	
+106851080	106851087	decompiled	chunks/000/functions-000029.c		
+106851088	1068510bf	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _resetToIdle]	
+1068510c0	106851213	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay gestureRecognizerShouldBegin:]	
+106851214	10685121b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]	
+10685121c	10685128f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _setContainerVerticalOffset:]	
+106851290	10685152b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _setupPullToRefreshView]	
+10685152c	10685156b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _updatePullToRefreshViewWithDragOffset:]	
+10685156c	1068515a3	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _resetPullToRefreshView]	
+1068515a4	1068515ab	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _handlePullToRefreshEnded]	
+1068515ac	106851693	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _triggerRefresh]	
+106851694	10685169f	decompiled	chunks/000/functions-000029.c		
+1068516a0	106851733	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _setDraggingPullToRefresh:]	
+106851734	1068519d3	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay _handlePan:]	
+1068519d4	1068519d7	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay pullToRefreshViewTriggered:]	
+1068519d8	1068519ef	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay delegate]	
+1068519f0	1068519fb	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay setDelegate:]	
+1068519fc	106851a13	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay observedPanGestureRecognizer]	
+106851a14	106851a1f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay setObservedPanGestureRecognizer:]	
+106851a20	106851a7f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightPullToRefreshOverlay .cxx_destruct]	
+106851a80	106851a8f	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderTapGestureRecognizer feedType]	
+106851a90	106851acf	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderTapGestureRecognizer setFeedType:]	
+106851ad0	106851ae3	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderTapGestureRecognizer .cxx_destruct]	
+106851ae4	106852987	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderView initWithAvailableSubfeeds:hapticsManager:customAppThemeProvider:]	
+106852988	106852b2b	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderView _subscribeToThemeUpdates]	
+106852b2c	106852d57	decompiled	chunks/000/functions-000029.c		
+106852d58	106852dbb	decompiled	chunks/000/functions-000029.c	-[SCSpotlightSideBySideHeaderView _badgeColor]	

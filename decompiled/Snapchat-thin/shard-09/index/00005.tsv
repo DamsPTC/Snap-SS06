@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+1068b7620	1068b7673	decompiled	chunks/000/functions-000050.c	-[SCSpotlightMediaFetcherUsingPlaybackMediaResolver _feedTypeString]	
+1068b7674	1068b7797	decompiled	chunks/000/functions-000050.c	-[SCSpotlightMediaFetcherUsingPlaybackMediaResolver .cxx_destruct]	
+1068b7798	1068b7aa7	decompiled	chunks/000/functions-000050.c	-[SCSpotlightMediaFetchingServiceProvider _createSpotlightMediaFetcherFactory]	
+1068b7aa8	1068b7b6f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightMediaFetchingServiceProvider .cxx_destruct]	
+1068b7b70	1068b7e33	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesServiceProvider provide]	
+1068b7e34	1068b7eef	decompiled	chunks/000/functions-000050.c		
+1068b7ef0	1068b7f5f	decompiled	chunks/000/functions-000050.c		
+1068b7f60	1068b7f93	decompiled	chunks/000/functions-000050.c		
+1068b7f94	1068b80e3	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesServiceProvider _recentStoryRepoWithPerformer:]	
+1068b80e4	1068b8127	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesServiceProvider .cxx_destruct]	
+1068b8128	1068b8253	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository initWithTransactorProvider:config:performer:]	
+1068b8254	1068b82c7	decompiled	chunks/000/functions-000050.c		
+1068b82c8	1068b82cf	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository initDatabase]	
+1068b82d0	1068b8433	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository recordInteractionWithStory:interactionType:completion:]	
+1068b8434	1068b846f	decompiled	chunks/000/functions-000050.c		
+1068b8470	1068b85fb	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _recordInteractionWithStory:interactionType:timestamp:completion:]	
+1068b85fc	1068b8693	decompiled	chunks/000/functions-000050.c		
+1068b8694	1068b879f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository removeRecordForDedupeFp:interactionType:completion:]	
+1068b87a0	1068b87d7	decompiled	chunks/000/functions-000050.c		
+1068b87d8	1068b88af	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _removeRecordForDedupeFp:interactionType:completion:]	
+1068b88b0	1068b8907	decompiled	chunks/000/functions-000050.c		
+1068b8908	1068b8a27	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository getLatestStoriesWithInteractionType:afterTimestamp:limit:completion:]	
+1068b8a28	1068b8a67	decompiled	chunks/000/functions-000050.c		
+1068b8a68	1068b8bfb	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _getLatestStoriesWithInteractionType:afterTimestamp:limit:completion:]	
+1068b8bfc	1068b8c2b	decompiled	chunks/000/functions-000050.c		
+1068b8c2c	1068b8d03	decompiled	chunks/000/functions-000050.c		
+1068b8d04	1068b8dfb	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository clearOldStoriesWithCompletion:]	
+1068b8dfc	1068b8e2f	decompiled	chunks/000/functions-000050.c		
+1068b8e30	1068b8ef7	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _clearOldStoriesWithCompletion:]	
+1068b8ef8	1068b903b	decompiled	chunks/000/functions-000050.c		
+1068b903c	1068b9047	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _allInteractionTypes]	
+1068b9048	1068b910f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _decodeDiscoverFeedStoryWithStoredData:]	
+1068b9110	1068b91ef	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository _recordLimitForInteractionType:]	
+1068b91f0	1068b91f7	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository performer]	
+1068b91f8	1068b91ff	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository transactor]	
+1068b9200	1068b9207	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository config]	
+1068b9208	1068b9237	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository setConfig:]	
+1068b9238	1068b9273	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoryRepository .cxx_destruct]	
+1068b9274	1068b92fb	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig initWithDefaultRecordLimit:overrideRecordLimitForInteractionType:]	
+1068b92fc	1068b931f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig copyWithZone:]	
+1068b9320	1068b937f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig hash]	
+1068b9380	1068b941f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig isEqual:]	
+1068b9420	1068b9427	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig defaultRecordLimit]	
+1068b9428	1068b942f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig overrideRecordLimitForInteractionType]	
+1068b9430	1068b943b	decompiled	chunks/000/functions-000050.c	-[SCSpotlightRecentStoriesRepoConfig .cxx_destruct]	
+1068b943c	1068b94bf	decompiled	chunks/000/functions-000050.c	+[SQLSpotlightRecentStoriesDB schema]	
+1068b94c0	1068b94e7	decompiled	chunks/000/functions-000050.c	-[SQLSpotlightRecentStoriesDB getConn]	
+1068b94e8	1068b956f	decompiled	chunks/000/functions-000050.c	-[SQLSpotlightRecentStoriesDB initWithSqliteConnection:]	
+1068b9570	1068b9653	decompiled	chunks/000/functions-000050.c	-[SQLSpotlightRecentStoriesDB .cxx_destruct]	
+1068b9654	1068b9663	decompiled	chunks/000/functions-000050.c	-[SQLSpotlightRecentStoriesDB .cxx_construct]	
+1068b9664	1068b97bb	decompiled	chunks/000/functions-000050.c		
+1068b97bc	1068b982f	decompiled	chunks/000/functions-000050.c		
+1068b9830	1068b996b	decompiled	chunks/000/functions-000050.c		
+1068b996c	1068b9a87	decompiled	chunks/000/functions-000050.c		
+1068b9a88	1068b9ba3	decompiled	chunks/000/functions-000050.c		
+1068b9ba4	1068b9d07	decompiled	chunks/000/functions-000050.c		
+1068b9d08	1068b9df3	decompiled	chunks/000/functions-000050.c		
+1068b9df4	1068b9e17	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryRecord copyWithZone:]	
+1068b9e18	1068b9ea3	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryRecord hash]	
+1068b9ea4	1068b9f7f	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryRecord isEqual:]	
+1068b9f80	1068b9fa3	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryMetadata copyWithZone:]	
+1068b9fa4	1068ba00b	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryMetadata hash]	
+1068ba00c	1068ba0ab	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryMetadata isEqual:]	
+1068ba0ac	1068ba0b7	decompiled	chunks/000/functions-000050.c	-[SQLRecentStoryMetadata .cxx_destruct]	
+1068ba0b8	1068ba133	decompiled	chunks/000/functions-000050.c		
+1068ba134	1068ba157	decompiled	chunks/000/functions-000050.c	-[SQLGetLatestStoriesMetadata copyWithZone:]	
+1068ba158	1068ba15f	decompiled	chunks/000/functions-000050.c	-[SQLGetLatestStoriesMetadata hash]	
+1068ba160	1068ba1ef	decompiled	chunks/000/functions-000050.c	-[SQLGetLatestStoriesMetadata isEqual:]	
+1068ba1f0	1068ba1fb	decompiled	chunks/000/functions-000050.c	-[SQLGetLatestStoriesMetadata .cxx_destruct]	
+1068ba1fc	1068ba207	decompiled	chunks/000/functions-000050.c	+[SCSpotlightLogger announcerIdentifier]	
+1068ba208	1068ba2d3	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger initWithDiscoverFeedEventsController:interactionHistoryManager:discoverFeedDataFetcher:]	
+1068ba2d4	1068ba507	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger _logFeedItemsLongImpression:pageType:itemId:]	
+1068ba508	1068ba647	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger _logFeedItemAction:pageType:]	
+1068ba648	1068ba74f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger _logFeedItemAction:extraData:]	
+1068ba750	1068ba7d3	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logImpressionEventForContextLayer:impressionType:contextPageType:itemId:]	
+1068ba7d4	1068ba7d7	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logSpotlightFeedItemActionEvent:pageType:]	
+1068ba7d8	1068ba7db	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logSpotlightFeedItemActionEvent:extraData:]	
+1068ba7dc	1068ba98b	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logContentTooltipImpressionEventWithItemId:itemType:tooltipType:]	
+1068ba98c	1068baa1f	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger performLoggerUpdateWithExtraData:]	
+1068baa20	1068bab1b	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logOneTapToShareDisplayed]	
+1068bab1c	1068bacdb	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger logInFeedSurveyResponseWithData:storyDedupeFp:pageSessionId:feedActionType:]	
+1068bacdc	1068badcf	decompiled	chunks/000/functions-000050.c		
+1068badd0	1068bae0b	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLogger .cxx_destruct]	
+1068bae0c	1068baeef	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLoggingServiceProvider provide]	
+1068baef0	1068baf2f	decompiled	chunks/000/functions-000050.c		
+1068baf30	1068bb017	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLoggingServiceProvider _createSpotlightLogger]	
+1068bb018	1068bb067	decompiled	chunks/000/functions-000050.c	-[SCSpotlightLoggingServiceProvider .cxx_destruct]	
+1068bb068	1068bb09f	decompiled	chunks/000/functions-000050.c		
+1068bb0a0	1068bb0a7	decompiled	chunks/000/functions-000050.c		
+1068bb0a8	1068bb0df	decompiled	chunks/000/functions-000050.c		
+1068bb0e0	1068bb0e7	decompiled	chunks/000/functions-000050.c		
+1068bb0e8	1068bb13b	decompiled	chunks/000/functions-000050.c		
+1068bb13c	1068bb143	decompiled	chunks/000/functions-000050.c		
+1068bb144	1068bb17b	decompiled	chunks/000/functions-000050.c		
+1068bb17c	1068bb183	decompiled	chunks/000/functions-000050.c		
+1068bb184	1068bb1bb	decompiled	chunks/000/functions-000050.c		
+1068bb1bc	1068bb2db	decompiled	chunks/000/functions-000050.c	-[SCActiveUserStartupCompleteEntryPoint end]	
+1068bb2dc	1068bb3f7	decompiled	chunks/000/functions-000050.c		
+1068bb3f8	1068bb55f	decompiled	chunks/000/functions-000050.c	-[SCActiveUserStartupCompleteEntryPoint .cxx_destruct]	
+1068bb560	1068bb623	decompiled	chunks/000/functions-000050.c		
+1068bb624	1068bb6e7	decompiled	chunks/000/functions-000051.c		
+1068bb6e8	1068bb71f	decompiled	chunks/000/functions-000051.c		
+1068bb720	1068bb77b	decompiled	chunks/000/functions-000051.c		
+1068bb77c	1068bb797	decompiled	chunks/000/functions-000051.c		
+1068bb798	1068bb7f3	decompiled	chunks/000/functions-000051.c		
+1068bb7f4	1068bb913	decompiled	chunks/000/functions-000051.c	-[SCUserNavStartupCompletedEntryPoint end]	
+1068bb914	1068bb9a7	decompiled	chunks/000/functions-000051.c		
+1068bb9a8	1068bbaeb	decompiled	chunks/000/functions-000051.c	-[SCUserNavStartupCompletedEntryPoint .cxx_destruct]	
+1068bbaec	1068bbb6f	decompiled	chunks/000/functions-000051.c		
+1068bbb70	1068bbbe7	decompiled	chunks/000/functions-000051.c	-[SCLegacyWarmStartupServicesEntryPoint .cxx_destruct]	
+1068bbbe8	1068bbcab	decompiled	chunks/000/functions-000051.c	-[SCBoostCleanupEntryPoint begin]	
+1068bbcac	1068bbd77	decompiled	chunks/000/functions-000051.c		
+1068bbd78	1068bbdbb	decompiled	chunks/000/functions-000051.c	-[SCBoostCleanupEntryPoint .cxx_destruct]	
+1068bbdbc	1068bbf9f	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator initWithDocObjectContext:currentUserId:requestManager:snapTokenProvider:attestationProvider:networkConnectivityMonitor:locationProvider:]	
+1068bbfa0	1068bc02b	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator observableBoostStatesWithStoryId:snapId:observationQueue:]	
+1068bc02c	1068bc0a7	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator observableBoostStatesWithItemIds:observationQueue:]	
+1068bc0a8	1068bc203	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator fetchBoostStatesWithItemIds:completionQueue:completionBlock:]	
+1068bc204	1068bc21b	decompiled	chunks/000/functions-000051.c		
+1068bc21c	1068bc27b	decompiled	chunks/000/functions-000051.c		
+1068bc27c	1068bc293	decompiled	chunks/000/functions-000051.c		
+1068bc294	1068bc41f	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator fetchBoostStatesWithStoryId:snapId:completionQueue:completionBlock:]	
+1068bc420	1068bc47f	decompiled	chunks/000/functions-000051.c		
+1068bc480	1068bc497	decompiled	chunks/000/functions-000051.c		
+1068bc498	1068bc603	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator saveBoostAction:completion:]	
+1068bc604	1068bc613	decompiled	chunks/000/functions-000051.c		
+1068bc614	1068bc667	decompiled	chunks/000/functions-000051.c		
+1068bc668	1068bc773	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator saveBoostActionLocally:completion:]	
+1068bc774	1068bc797	decompiled	chunks/000/functions-000051.c		
+1068bc798	1068bc803	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator deleteExpiredStatesWithCompletion:]	
+1068bc804	1068bc80b	decompiled	chunks/000/functions-000051.c		
+1068bc80c	1068bc82b	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator resetBoostActionsForUploading]	
+1068bc82c	1068bc9ab	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator _fetchAccessTokenAndUploadBoostActionToServer:]	
+1068bc9ac	1068bc9ff	decompiled	chunks/000/functions-000051.c		
+1068bca00	1068bca03	decompiled	chunks/000/functions-000051.c		
+1068bca04	1068bcbbb	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator _fetchArgosTokenAndUploadBoostActionToServer:accessToken:]	
+1068bcbbc	1068bcc0f	decompiled	chunks/000/functions-000051.c		
+1068bcc10	1068bcc13	decompiled	chunks/000/functions-000051.c		
+1068bcc14	1068bcdf3	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator _uploadBoostActionToServerWithRetryLogic:accessToken:attestationHeaders:]	
+1068bcdf4	1068bce2b	decompiled	chunks/000/functions-000051.c		
+1068bce2c	1068bcfdf	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator _uploadBoostActionToServer:accessToken:attestationHeaders:]	
+1068bcfe0	1068bd143	decompiled	chunks/000/functions-000051.c		
+1068bd144	1068bd1d3	decompiled	chunks/000/functions-000051.c	-[SCBoostCoordinator .cxx_destruct]	
+1068bd1d4	1068bd9bf	decompiled	chunks/000/functions-000051.c		
+1068bd9c0	1068bd9ff	decompiled	chunks/000/functions-000051.c		
+1068bda00	1068bdc2b	decompiled	chunks/000/functions-000051.c	-[SCBoostServiceProvider _createBoostCoordinator]	
+1068bdc2c	1068bdc9f	decompiled	chunks/000/functions-000051.c	-[SCBoostServiceProvider .cxx_destruct]	
+1068bdca0	1068bdfe3	decompiled	chunks/000/functions-000051.c		
+1068bdfe4	1068be1bf	decompiled	chunks/000/functions-000051.c		
+1068be1c0	1068be277	decompiled	chunks/000/functions-000051.c		
+1068be278	1068be8cf	decompiled	chunks/000/functions-000051.c		
+1068be8d0	1068bea13	decompiled	chunks/000/functions-000051.c		
+1068bea14	1068bf4d7	decompiled	chunks/000/functions-000051.c		
+1068bf4d8	1068bfb0b	decompiled	chunks/000/functions-000051.c		
+1068bfb0c	1068bfc57	decompiled	chunks/000/functions-000051.c		
+1068bfc58	1068c0313	decompiled	chunks/000/functions-000051.c		
+1068c0314	1068c039b	decompiled	chunks/000/functions-000051.c		
+1068c039c	1068c04cf	decompiled	chunks/000/functions-000051.c		
+1068c04d0	1068c057f	decompiled	chunks/000/functions-000051.c		
+1068c0580	1068c05bb	decompiled	chunks/000/functions-000051.c		
+1068c05bc	1068c0767	decompiled	chunks/000/functions-000051.c		
+1068c0768	1068c08fb	decompiled	chunks/000/functions-000051.c		
+1068c08fc	1068c0993	decompiled	chunks/000/functions-000051.c		
+1068c0994	1068c0a0b	decompiled	chunks/000/functions-000051.c		
+1068c0a0c	1068c0a47	decompiled	chunks/000/functions-000051.c		
+1068c0a48	1068c0a5b	decompiled	chunks/000/functions-000051.c		
+1068c0a5c	1068c0afb	decompiled	chunks/000/functions-000051.c		
+1068c0afc	1068c11b7	decompiled	chunks/000/functions-000051.c		
+1068c11b8	1068c123f	decompiled	chunks/000/functions-000051.c		
+1068c1240	1068c1373	decompiled	chunks/000/functions-000051.c		
+1068c1374	1068c157f	decompiled	chunks/000/functions-000051.c		
+1068c1580	1068c17fb	decompiled	chunks/000/functions-000051.c		
+1068c17fc	1068c18b7	decompiled	chunks/000/functions-000051.c		
+1068c18b8	1068c18eb	decompiled	chunks/000/functions-000051.c		
+1068c18ec	1068c1947	decompiled	chunks/000/functions-000051.c		
+1068c1948	1068c1a03	decompiled	chunks/000/functions-000051.c		
+1068c1a04	1068c1a3b	decompiled	chunks/000/functions-000051.c		
+1068c1a3c	1068c1a8f	decompiled	chunks/000/functions-000051.c		
+1068c1a90	1068c1a9b	decompiled	chunks/000/functions-000051.c	+[SCBoostAction table]	
+1068c1a9c	1068c1d43	decompiled	chunks/000/functions-000051.c	+[SCBoostAction immutableObjectParse:bufferSize:]	
+1068c1d44	1068c1d67	decompiled	chunks/000/functions-000051.c	+[SCBoostAction objectClassFunctionPointer]	
+1068c1d68	1068c1f0f	decompiled	chunks/000/functions-000051.c		
+1068c1f10	1068c2057	decompiled	chunks/000/functions-000051.c		
+1068c2058	1068c20cb	decompiled	chunks/000/functions-000051.c		
+1068c20cc	1068c2547	decompiled	chunks/000/functions-000051.c		
+1068c2548	1068c25bb	decompiled	chunks/000/functions-000051.c		
+1068c25bc	1068c263f	decompiled	chunks/000/functions-000051.c		
+1068c2640	1068c267b	decompiled	chunks/000/functions-000051.c	-[SCBoostActionChangeRequest .cxx_destruct]	
+1068c267c	1068c2687	decompiled	chunks/000/functions-000051.c	-[SCBoostActionChangeRequest table]	
+1068c2688	1068c26cf	decompiled	chunks/000/functions-000051.c	-[SCBoostActionChangeRequest createTableWithSQLite:]	
+1068c26d0	1068c2a57	decompiled	chunks/000/functions-000051.c	-[SCBoostActionChangeRequest transactWithSQLite:flatbuffers:]	
+1068c2a58	1068c2cdb	decompiled	chunks/000/functions-000051.c		
+1068c2cdc	1068c2df7	decompiled	chunks/000/functions-000051.c		
+1068c2df8	1068c2f07	decompiled	chunks/000/functions-000051.c		
+1068c2f08	1068c3037	decompiled	chunks/000/functions-000051.c		
+1068c3038	1068c30a7	decompiled	chunks/000/functions-000051.c		
+1068c30a8	1068c310b	decompiled	chunks/000/functions-000051.c		
+1068c310c	1068c3193	decompiled	chunks/000/functions-000051.c		
+1068c3194	1068c321f	decompiled	chunks/000/functions-000051.c		
+1068c3220	1068c32db	decompiled	chunks/000/functions-000051.c		
+1068c32dc	1068c3347	decompiled	chunks/000/functions-000051.c		
+1068c3348	1068c33ef	decompiled	chunks/000/functions-000052.c		
+1068c33f0	1068c34ab	decompiled	chunks/000/functions-000052.c		
+1068c34ac	1068c3517	decompiled	chunks/000/functions-000052.c		
+1068c3518	1068c35bf	decompiled	chunks/000/functions-000052.c		
+1068c35c0	1068c35cb	decompiled	chunks/000/functions-000052.c	+[SCBoostState table]	
+1068c35cc	1068c37af	decompiled	chunks/000/functions-000052.c	+[SCBoostState immutableObjectParse:bufferSize:]	
+1068c37b0	1068c37d3	decompiled	chunks/000/functions-000052.c	+[SCBoostState objectClassFunctionPointer]	
+1068c37d4	1068c38ef	decompiled	chunks/000/functions-000052.c		
+1068c38f0	1068c3cd3	decompiled	chunks/000/functions-000052.c		
+1068c3cd4	1068c3d47	decompiled	chunks/000/functions-000052.c		
+1068c3d48	1068c3ff7	decompiled	chunks/000/functions-000052.c		
+1068c3ff8	1068c4063	decompiled	chunks/000/functions-000052.c		
+1068c4064	1068c409f	decompiled	chunks/000/functions-000052.c	-[SCBoostStateChangeRequest .cxx_destruct]	
+1068c40a0	1068c40ab	decompiled	chunks/000/functions-000052.c	-[SCBoostStateChangeRequest table]	
+1068c40ac	1068c40f3	decompiled	chunks/000/functions-000052.c	-[SCBoostStateChangeRequest createTableWithSQLite:]	
+1068c40f4	1068c447b	decompiled	chunks/000/functions-000052.c	-[SCBoostStateChangeRequest transactWithSQLite:flatbuffers:]	
+1068c447c	1068c46cb	decompiled	chunks/000/functions-000052.c		
+1068c46cc	1068c48a7	decompiled	chunks/000/functions-000052.c		
+1068c48a8	1068c4a4f	decompiled	chunks/000/functions-000052.c		
+1068c4a50	1068c4b7f	decompiled	chunks/000/functions-000052.c		
+1068c4b80	1068c4b8b	decompiled	chunks/000/functions-000052.c	+[SCBoostMetadata table]	
+1068c4b8c	1068c4b97	decompiled	chunks/000/functions-000052.c	+[SCBoostMetadata immutableObjectParse:bufferSize:]	
+1068c4b98	1068c4bbb	decompiled	chunks/000/functions-000052.c	+[SCBoostMetadata objectClassFunctionPointer]	
+1068c4bbc	1068c4c27	decompiled	chunks/000/functions-000052.c		
+1068c4c28	1068c4c57	decompiled	chunks/000/functions-000052.c	-[SCBoostMetadataChangeRequest .cxx_destruct]	
+1068c4c58	1068c4c63	decompiled	chunks/000/functions-000052.c	-[SCBoostMetadataChangeRequest table]	
+1068c4c64	1068c4cab	decompiled	chunks/000/functions-000052.c	-[SCBoostMetadataChangeRequest createTableWithSQLite:]	
+1068c4cac	1068c5033	decompiled	chunks/000/functions-000052.c	-[SCBoostMetadataChangeRequest transactWithSQLite:flatbuffers:]	
+1068c5034	1068c51f3	decompiled	chunks/000/functions-000052.c		
+1068c51f4	1068c5a5f	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator initWithUserSession:circumstanceEngine:discoverFeedDataFetcher:discoverFeedDataMutator:discoverFeedDataLoader:snapTokenProvider:interactionHistoryManager:sectionsCoordinator:storiesConfigProvider:endpointManager:bitmojiAvatarProvider:bitmojiFriendAvatarProvider:userRegistrationInfoProvider:snapchattersDataFetcher:userSegmentsProvider:networkConnectivityMonitor:locationProvider:adsClientInfoProvider:readReceiptCoordinator:promotedStoriesLogger:storiesGrapheneMetricsEmitter:discoverFeedEventsController:crashLogger:blizzardLogger:httpRequestModifier:httpMetadataService:rtusClientCacheManager:pageLoadMetricManager:dpaConfigProvider:friendStoriesSyncer:mixedStoriesDataCoordinator:discoverPerformanceLogging:adRenderDataParser:storiesSyncNetworkRequester:]	
+1068c5a60	1068c5a8f	decompiled	chunks/000/functions-000052.c		
+1068c5a90	1068c5acf	decompiled	chunks/000/functions-000052.c	+[SCStoriesEverywhereQueryCoordinator announcerIdentifier]	
+1068c5ad0	1068c5b1f	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator setSectionExtensionServices:]	
+1068c5b20	1068c5b27	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator canPerformQuery:]	
+1068c5b28	1068c5be3	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator resultsForQuery:updatingBlock:]	
+1068c5be4	1068c5d1b	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator _triggerUpdatingBlockIfNeeded:query:resultState:error:]	
+1068c5d1c	1068c5d5f	decompiled	chunks/000/functions-000052.c		
+1068c5d60	1068c5df7	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator _triggerUpdatingBlockIfNeededOnPerformer:query:resultState:error:]	
+1068c5df8	1068c5f5b	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator _getSearchQueryResultWithQuery:resultState:]	
+1068c5f5c	1068c5f93	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator _fetchRemoteFriendStoriesWithQuery]	
+1068c5f94	1068c5f9b	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator isLoading]	
+1068c5f9c	1068c5fa3	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator currentQuery]	
+1068c5fa4	1068c5fab	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator setCurrentQuery:]	
+1068c5fac	1068c5fb3	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator sectionExtensionServices]	
+1068c5fb4	1068c5fcb	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator delegate]	
+1068c5fcc	1068c5fd7	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator setDelegate:]	
+1068c5fd8	1068c6207	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryCoordinator .cxx_destruct]	
+1068c6208	1068c62eb	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryServiceProvider provide]	
+1068c62ec	1068c632b	decompiled	chunks/000/functions-000052.c		
+1068c632c	1068c6ae3	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryServiceProvider _createQueryCoordinator]	
+1068c6ae4	1068c6c6b	decompiled	chunks/000/functions-000052.c	-[SCStoriesEverywhereQueryServiceProvider .cxx_destruct]	
+1068c6c6c	1068c77fb	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedActionHandlerServiceProvider provide]	
+1068c77fc	1068c783b	decompiled	chunks/000/functions-000052.c		
+1068c783c	1068c7a97	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedActionHandlerServiceProvider _actionHandlersFuture]	
+1068c7a98	1068c7c4f	decompiled	chunks/000/functions-000052.c		
+1068c7c50	1068c7c97	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedActionHandlerServiceProvider _creatorSubscriptionsInfoProvider]	
+1068c7c98	1068c7ec3	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedActionHandlerServiceProvider .cxx_destruct]	
+1068c7ec4	1068c7f67	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl initWithFeatureSettingsService:userPreferences:]	
+1068c7f68	1068c7fa7	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl vOperaV2OnboardingComplete]	
+1068c7fa8	1068c8087	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl setVOperaV2OnboardingComplete:]	
+1068c8088	1068c80e7	decompiled	chunks/000/functions-000052.c		
+1068c80e8	1068c812f	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl vOperaScrollEducationComplete]	
+1068c8130	1068c8173	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl setVOperaScrollEducationComplete:]	
+1068c8174	1068c81b3	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl spotlightFeedOnboardingComplete]	
+1068c81b4	1068c8293	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl setSpotlightFeedOnboardingComplete:]	
+1068c8294	1068c82c7	decompiled	chunks/000/functions-000052.c		
+1068c82c8	1068c8303	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl _setSpotlightFeedOnboardingComplete:]	
+1068c8304	1068c8333	decompiled	chunks/000/functions-000052.c	-[SCDiscoverOnboardingTrackerImpl .cxx_destruct]	
+1068c8334	1068c833f	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService isCompletedVOperaV2Onboarding]	
+1068c8340	1068c834b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completedVOperaV2OnboardingServerParam]	
+1068c834c	1068c835b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService setCompletedVOperaV2Onboarding:]	
+1068c835c	1068c8363	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_vopera_v2_onboarding_with_swiep_left_client_value:]	
+1068c8364	1068c836b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_vopera_v2_onboarding_with_swiep_left_server_value:]	
+1068c836c	1068c837b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completedVOperaV2Onboarding]	
+1068c837c	1068c8387	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService getDateLastCompletedVOperaOnboardingExitTooltipMilliseconds]	
+1068c8388	1068c8393	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService dateLastCompletedVOperaOnboardingExitTooltipMillisecondsServerParam]	
+1068c8394	1068c83a3	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService setDateLastCompletedVOperaOnboardingExitTooltipMilliseconds:]	
+1068c83a4	1068c83ab	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_vertical_opera_onboarding_exit_tooltip_date_client_value:]	
+1068c83ac	1068c83b3	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_vertical_opera_onboarding_exit_tooltip_date_server_value:]	
+1068c83b4	1068c83c3	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService dateLastCompletedVOperaOnboardingExitTooltipMilliseconds]	
+1068c83c4	1068c83cf	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService isCompletedSpotlightFeedOnboarding]	
+1068c83d0	1068c83db	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completedSpotlightFeedOnboardingServerParam]	
+1068c83dc	1068c83eb	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService setCompletedSpotlightFeedOnboarding:]	
+1068c83ec	1068c83f3	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_spotlight_feed_onboarding_client_value:]	
+1068c83f4	1068c83fb	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completed_spotlight_feed_onboarding_server_value:]	
+1068c83fc	1068c840b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService completedSpotlightFeedOnboarding]	
+1068c840c	1068c8417	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService isOneTapQuickPostToolTipShownCountAvailable]	
+1068c8418	1068c8423	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService oneTapQuickPostToolTipShownCountServerParam]	
+1068c8424	1068c8433	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService setSeenOneTapQuickPostToolTipShownCount:]	
+1068c8434	1068c843b	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService one_tap_quick_post_preview_long_press_tooltip_client_value:]	
+1068c843c	1068c8443	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService one_tap_quick_post_preview_long_press_tooltip_server_value:]	
+1068c8444	1068c8453	decompiled	chunks/000/functions-000052.c	-[SCFeatureSettingsService oneTapQuickPostToolTipShownCount]	
+1068c8454	1068c85e7	decompiled	chunks/000/functions-000052.c		
+1068c85e8	1068c864f	decompiled	chunks/000/functions-000052.c		
+1068c8650	1068c875b	decompiled	chunks/000/functions-000052.c		
+1068c875c	1068c8877	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedDataServicesEntryPoint end]	
+1068c8878	1068c8d2b	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverFeedDataStoreWithlazyDiscoverFeedRanker:lazyDiscoverFeedInteractionHistoryManager:lazyDiscoverCrashLogger:]	
+1068c8d2c	1068c8d73	decompiled	chunks/000/functions-000052.c		
+1068c8d74	1068c8d7f	decompiled	chunks/000/functions-000052.c		
+1068c8d80	1068c8e2b	decompiled	chunks/000/functions-000052.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverFeedRanker:]	
+1068c8e2c	1068c8ee7	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createFriendStoriesRanker]	
+1068c8ee8	1068c8fdf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _creatDiscoverFeedInteractionHistoryManager]	
+1068c8fe0	1068c905b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverFeedSectionsCoordinator]	
+1068c905c	1068c90cf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createCollapseCoordinatorManager:]	
+1068c90d0	1068c9547	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverFeedEventsController:lazyDiscoverFeedRanker:lensPlayTimeProvider:]	
+1068c9548	1068c95fb	decompiled	chunks/000/functions-000053.c		
+1068c95fc	1068c985b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverFeedLoggingCreator]	
+1068c985c	1068c99d7	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _createDiscoverLogger]	
+1068c99d8	1068c9a7f	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _discoverPerformanceLogger]	
+1068c9a80	1068c9afb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint _discoverCrashLogger]	
+1068c9afc	1068c9b1b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint notificationServices]	
+1068c9b1c	1068c9b2f	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint setNotificationServices:]	
+1068c9b30	1068c9ceb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedDataServicesEntryPoint .cxx_destruct]	
+1068c9cec	1068c9d2b	decompiled	chunks/000/functions-000053.c	-[SCLensPlayTimeProviderInSpotlightController setCurrentProvider:]	
+1068c9d2c	1068c9dcf	decompiled	chunks/000/functions-000053.c	-[SCLensPlayTimeProviderInSpotlightController playTimeForLensId:storyId:]	
+1068c9dd0	1068c9ddb	decompiled	chunks/000/functions-000053.c	-[SCLensPlayTimeProviderInSpotlightController .cxx_destruct]	
+1068c9ddc	1068c9de7	decompiled	chunks/000/functions-000053.c	+[SCDiscoverFeedEventsAnnouncer announcerIdentifier]	
+1068c9de8	1068c9def	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedEventsAnnouncer addListener:]	
+1068c9df0	1068c9df7	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedEventsAnnouncer removeListener:]	
+1068c9df8	1068c9dff	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedEventsAnnouncer didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+1068c9e00	1068c9e0b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedEventsAnnouncer .cxx_destruct]	
+1068c9e0c	1068c9ed7	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager init]	
+1068c9ed8	1068c9faf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager addCollapseCoordinator:]	
+1068c9fb0	1068c9fe3	decompiled	chunks/000/functions-000053.c		
+1068c9fe4	1068ca057	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager _addCollapseCoordinator:]	
+1068ca058	1068ca07f	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager collapsedAllSectionCoordinator]	
+1068ca080	1068ca127	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager updateCollapseState]	
+1068ca128	1068ca153	decompiled	chunks/000/functions-000053.c		
+1068ca154	1068ca437	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager _updateCollapseState]	
+1068ca438	1068ca45f	decompiled	chunks/000/functions-000053.c		
+1068ca460	1068ca46b	decompiled	chunks/000/functions-000053.c		
+1068ca46c	1068ca4e3	decompiled	chunks/000/functions-000053.c		
+1068ca4e4	1068ca52f	decompiled	chunks/000/functions-000053.c		
+1068ca530	1068ca7f7	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager _collapseAllIfNecessary:]	
+1068ca7f8	1068ca8cf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager expandSectionBasedOnSectionType:]	
+1068ca8d0	1068ca903	decompiled	chunks/000/functions-000053.c		
+1068ca904	1068ca93b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager _expandSectionBasedOnSectionType:]	
+1068ca93c	1068ca983	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager didUpdateWithAnnouncerIdentifier:]	
+1068ca984	1068ca9bf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionCollapseCoordinatingManager .cxx_destruct]	
+1068ca9c0	1068ca9cb	decompiled	chunks/000/functions-000053.c	+[SCDiscoverFeedSectionsCoordinator announcerIdentifier]	
+1068ca9cc	1068ca9d3	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator addUpdateListener:]	
+1068ca9d4	1068ca9db	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator removeUpdateListener:]	
+1068ca9dc	1068caadb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator initWithLazyDocObjectContext:]	
+1068caadc	1068cabb3	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator updatePages:]	
+1068cabb4	1068cabe7	decompiled	chunks/000/functions-000053.c		
+1068cabe8	1068cabef	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator updateSections:]	
+1068cabf0	1068cacef	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator updateSections:completion:]	
+1068cacf0	1068cad23	decompiled	chunks/000/functions-000053.c		
+1068cad24	1068cae9b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator updateSectionAfterPaginationForFeedType:newStoryIdentifiers:streamToken:frontierToken:fetchedDate:hasMoreStories:]	
+1068cae9c	1068caedb	decompiled	chunks/000/functions-000053.c		
+1068caedc	1068cafbb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator fetchSectionsForPageType:completion:]	
+1068cafbc	1068caff3	decompiled	chunks/000/functions-000053.c		
+1068caff4	1068cb0f3	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator fetchSectionsForFeedTypes:completion:]	
+1068cb0f4	1068cb127	decompiled	chunks/000/functions-000053.c		
+1068cb128	1068cb227	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator deleteSectionsForFeedTypes:completion:]	
+1068cb228	1068cb25b	decompiled	chunks/000/functions-000053.c		
+1068cb25c	1068cb32b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _updatePages:]	
+1068cb32c	1068cb33b	decompiled	chunks/000/functions-000053.c		
+1068cb33c	1068cb4ab	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _updateSections:completion:]	
+1068cb4ac	1068cb4eb	decompiled	chunks/000/functions-000053.c		
+1068cb4ec	1068cb4ff	decompiled	chunks/000/functions-000053.c		
+1068cb500	1068cb997	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _updateSectionAfterPaginationForFeedType:newStoryIdentifiers:streamToken:frontierToken:fetchedDate:hasMoreStories:]	
+1068cb998	1068cb9b7	decompiled	chunks/000/functions-000053.c		
+1068cb9b8	1068cba7b	decompiled	chunks/000/functions-000053.c		
+1068cba7c	1068cbafb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _fetchSectionsForPageType:completion:]	
+1068cbafc	1068cbb8b	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _fetchSectionsForFeedTypes:completion:]	
+1068cbb8c	1068cbcaf	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _deleteSectionsForFeedTypes:completion:]	
+1068cbcb0	1068cbcd3	decompiled	chunks/000/functions-000053.c		
+1068cbcd4	1068cbd13	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _announceUpdate]	
+1068cbd14	1068cbdbb	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _clearExpiredData]	
+1068cbdbc	1068cbde7	decompiled	chunks/000/functions-000053.c		
+1068cbde8	1068cbfa3	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator _clearExpiredDataHelper]	
+1068cbfa4	1068cbfdb	decompiled	chunks/000/functions-000053.c		
+1068cbfdc	1068cbfeb	decompiled	chunks/000/functions-000053.c		
+1068cbfec	1068cc027	decompiled	chunks/000/functions-000053.c	-[SCDiscoverFeedSectionsCoordinator .cxx_destruct]	
+1068cc028	1068cc157	decompiled	chunks/000/functions-000053.c		
+1068cc158	1068cc36f	decompiled	chunks/000/functions-000053.c		
+1068cc370	1068cc72f	decompiled	chunks/000/functions-000053.c		
+1068cc730	1068ccc6b	decompiled	chunks/000/functions-000053.c		
+1068ccc6c	1068cccf7	decompiled	chunks/000/functions-000053.c		
+1068cccf8	1068cce3f	decompiled	chunks/000/functions-000053.c		
+1068cce40	1068ccf87	decompiled	chunks/000/functions-000053.c		
+1068ccf88	1068cd0cf	decompiled	chunks/000/functions-000053.c		
+1068cd0d0	1068cd1ab	decompiled	chunks/000/functions-000053.c		
+1068cd1ac	1068cd2c3	decompiled	chunks/000/functions-000053.c		
+1068cd2c4	1068cd667	decompiled	chunks/000/functions-000053.c		
+1068cd668	1068cd727	decompiled	chunks/000/functions-000053.c		
+1068cd728	1068cd797	decompiled	chunks/000/functions-000053.c		
+1068cd798	1068cde53	decompiled	chunks/000/functions-000053.c		
+1068cde54	1068cdedb	decompiled	chunks/000/functions-000053.c		
+1068cdedc	1068ce00f	decompiled	chunks/000/functions-000053.c		
+1068ce010	1068ce0bf	decompiled	chunks/000/functions-000053.c		
+1068ce0c0	1068ce0fb	decompiled	chunks/000/functions-000053.c		
+1068ce0fc	1068ce2a7	decompiled	chunks/000/functions-000053.c		
+1068ce2a8	1068ce43b	decompiled	chunks/000/functions-000053.c		
+1068ce43c	1068ce4d3	decompiled	chunks/000/functions-000053.c		
+1068ce4d4	1068ce54b	decompiled	chunks/000/functions-000053.c		
+1068ce54c	1068ce587	decompiled	chunks/000/functions-000053.c		
+1068ce588	1068ce59b	decompiled	chunks/000/functions-000053.c		
+1068ce59c	1068ce63b	decompiled	chunks/000/functions-000053.c		
+1068ce63c	1068cecf7	decompiled	chunks/000/functions-000054.c		
+1068cecf8	1068ced7f	decompiled	chunks/000/functions-000054.c		
+1068ced80	1068ceeb3	decompiled	chunks/000/functions-000054.c		
+1068ceeb4	1068cf0bf	decompiled	chunks/000/functions-000054.c		
+1068cf0c0	1068cf33b	decompiled	chunks/000/functions-000054.c		
+1068cf33c	1068cf3af	decompiled	chunks/000/functions-000054.c		
+1068cf3b0	1068cf467	decompiled	chunks/000/functions-000054.c		
+1068cf468	1068cf49f	decompiled	chunks/000/functions-000054.c		
+1068cf4a0	1068cf4f3	decompiled	chunks/000/functions-000054.c		
+1068cf4f4	1068cf4ff	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedPage table]	
+1068cf500	1068cf66b	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedPage immutableObjectParse:bufferSize:]	
+1068cf66c	1068cf68f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedPage objectClassFunctionPointer]	
+1068cf690	1068cf733	decompiled	chunks/000/functions-000054.c		
+1068cf734	1068cfb97	decompiled	chunks/000/functions-000054.c		
+1068cfb98	1068cfbf7	decompiled	chunks/000/functions-000054.c		
+1068cfbf8	1068cfc03	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedPageChangeRequest .cxx_destruct]	
+1068cfc04	1068cfc0f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedPageChangeRequest table]	
+1068cfc10	1068cfc57	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedPageChangeRequest createTableWithSQLite:]	
+1068cfc58	1068cffef	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedPageChangeRequest transactWithSQLite:flatbuffers:]	
+1068cfff0	1068d023b	decompiled	chunks/000/functions-000054.c		
+1068d023c	1068d02f3	decompiled	chunks/000/functions-000054.c		
+1068d02f4	1068d032b	decompiled	chunks/000/functions-000054.c		
+1068d032c	1068d037f	decompiled	chunks/000/functions-000054.c		
+1068d0380	1068d0417	decompiled	chunks/000/functions-000054.c		
+1068d0418	1068d0423	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedSection table]	
+1068d0424	1068d0d1b	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedSection immutableObjectParse:bufferSize:]	
+1068d0d1c	1068d0d3f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedSection objectClassFunctionPointer]	
+1068d0d40	1068d0f7f	decompiled	chunks/000/functions-000054.c		
+1068d0f80	1068d14ef	decompiled	chunks/000/functions-000054.c		
+1068d14f0	1068d1563	decompiled	chunks/000/functions-000054.c		
+1068d1564	1068d1a5b	decompiled	chunks/000/functions-000054.c		
+1068d1a5c	1068d1af3	decompiled	chunks/000/functions-000054.c		
+1068d1af4	1068d1b6b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedSectionChangeRequest .cxx_destruct]	
+1068d1b6c	1068d1b77	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedSectionChangeRequest table]	
+1068d1b78	1068d1bbf	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedSectionChangeRequest createTableWithSQLite:]	
+1068d1bc0	1068d1f57	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedSectionChangeRequest transactWithSQLite:flatbuffers:]	
+1068d1f58	1068d2b9b	decompiled	chunks/000/functions-000054.c		
+1068d2b9c	1068d2c8f	decompiled	chunks/000/functions-000054.c		
+1068d2c90	1068d2dbf	decompiled	chunks/000/functions-000054.c		
+1068d2dc0	1068d2dd3	decompiled	chunks/000/functions-000054.c		
+1068d2dd4	1068d2ddb	decompiled	chunks/000/functions-000054.c		
+1068d2ddc	1068d2e0f	decompiled	chunks/000/functions-000054.c		
+1068d2e10	1068d2e4f	decompiled	chunks/000/functions-000054.c		
+1068d2e50	1068d2e8b	decompiled	chunks/000/functions-000054.c		
+1068d2e8c	1068d2ea7	decompiled	chunks/000/functions-000054.c		
+1068d2ea8	1068d2f6b	decompiled	chunks/000/functions-000054.c		
+1068d2f6c	1068d3033	decompiled	chunks/000/functions-000054.c		
+1068d3034	1068d303f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverFeedDataStore announcerIdentifier]	
+1068d3040	1068d3047	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore addUpdateListener:]	
+1068d3048	1068d304f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore removeUpdateListener:]	
+1068d3050	1068d3057	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore addListener:]	
+1068d3058	1068d305f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore removeListener:]	
+1068d3060	1068d3757	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore initWithDocObjectContext:discoverFeedRanker:interactionHistoryManager:snapReadReceiptCoordinator:creatorSettingsDataTracker:creatorSettingsFetcher:creatorSettingsMutator:circumstanceEngine:networkConnectivityMonitor:storiesConfigProvider:contentFeedRepository:storiesBlizzardLogger:discoverCrashLogger:spotlightUsageTracker:userPreferences:]	
+1068d3758	1068d377f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore diskCacheLoadingStateObservable]	
+1068d3780	1068d384b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore sectionMetadataByFeedType]	
+1068d384c	1068d3863	decompiled	chunks/000/functions-000054.c		
+1068d3864	1068d38af	decompiled	chunks/000/functions-000054.c		
+1068d38b0	1068d38b7	decompiled	chunks/000/functions-000054.c		
+1068d38b8	1068d38df	decompiled	chunks/000/functions-000054.c		
+1068d38e0	1068d39ab	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore sectionDataModelsByFeedType]	
+1068d39ac	1068d39f7	decompiled	chunks/000/functions-000054.c		
+1068d39f8	1068d39ff	decompiled	chunks/000/functions-000054.c		
+1068d3a00	1068d3a27	decompiled	chunks/000/functions-000054.c		
+1068d3a28	1068d3af3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore feedTypes]	
+1068d3af4	1068d3b37	decompiled	chunks/000/functions-000054.c		
+1068d3b38	1068d3b3f	decompiled	chunks/000/functions-000054.c		
+1068d3b40	1068d3c0b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore feedIdentifiers]	
+1068d3c0c	1068d3c47	decompiled	chunks/000/functions-000054.c		
+1068d3c48	1068d3c6b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore _defaultFeedIdentifiers]	
+1068d3c6c	1068d3cb7	decompiled	chunks/000/functions-000054.c		
+1068d3cb8	1068d3f33	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore _defaultSectionMetadataForFeedIdentifiers:]	
+1068d3f34	1068d4077	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore _setFeedIdentifiers:]	
+1068d4078	1068d414f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore sections]	
+1068d4150	1068d42a7	decompiled	chunks/000/functions-000054.c		
+1068d42a8	1068d435f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore querySectionMetadataWithCompletionQueue:completion:]	
+1068d4360	1068d452f	decompiled	chunks/000/functions-000054.c		
+1068d4530	1068d457b	decompiled	chunks/000/functions-000054.c		
+1068d457c	1068d4653	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore setSections:]	
+1068d4654	1068d4687	decompiled	chunks/000/functions-000054.c		
+1068d4688	1068d47a7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore updateWithSectionMetadata:allFeedTypesToKeep:completionQueue:completion:]	
+1068d47a8	1068d47f3	decompiled	chunks/000/functions-000054.c		
+1068d47f4	1068d4ba7	decompiled	chunks/000/functions-000054.c		
+1068d4ba8	1068d4bb7	decompiled	chunks/000/functions-000054.c		
+1068d4bb8	1068d4cf7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore sectionDataModelForFeedType:]	
+1068d4cf8	1068d4d3b	decompiled	chunks/000/functions-000054.c		
+1068d4d3c	1068d4d6f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore indexForStory:inFeedType:]	
+1068d4d70	1068d4e9b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore indexForStoryDedupeFp:inFeedType:]	
+1068d4e9c	1068d4f17	decompiled	chunks/000/functions-000054.c		
+1068d4f18	1068d4f6b	decompiled	chunks/000/functions-000054.c		
+1068d4f6c	1068d506b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore loadCachedStoriesForAllFeedTypesWithQuerySource:completion:]	
+1068d506c	1068d509f	decompiled	chunks/000/functions-000054.c		
+1068d50a0	1068d50c7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore fullyViewedPromotedStoriesObservable]	
+1068d50c8	1068d5737	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore _loadCachedStoriesForAllFeedTypesWithQuerySource:completion:]	
+1068d5738	1068d580b	decompiled	chunks/000/functions-000054.c		
+1068d580c	1068d593b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore loadCachedStoriesForFeedType:querySource:completion:]	
+1068d593c	1068d5973	decompiled	chunks/000/functions-000054.c		
+1068d5974	1068d5e77	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore _loadCachedStoriesForFeedType:querySource:completion:]	
+1068d5e78	1068d5fb7	decompiled	chunks/000/functions-000054.c		
+1068d5fb8	1068d6163	decompiled	chunks/000/functions-000054.c		
+1068d6164	1068d621b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverFeedDataStore queryStoryDeltaInfoWithCompletionQueue:completion:]	
+1068d621c	1068d64fb	decompiled	chunks/000/functions-000055.c		
+1068d64fc	1068d6517	decompiled	chunks/000/functions-000055.c		
+1068d6518	1068d6647	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore accessDataOnPerformer:completionQueue:completion:]	
+1068d6648	1068d66cb	decompiled	chunks/000/functions-000055.c		
+1068d66cc	1068d67fb	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore saveSectionsWithMutationBlock:completionQueue:completion:]	
+1068d67fc	1068d688f	decompiled	chunks/000/functions-000055.c		
+1068d6890	1068d69bf	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore appendSectionWithMutationBlock:completionQueue:completion:]	
+1068d69c0	1068d6a53	decompiled	chunks/000/functions-000055.c		
+1068d6a54	1068d6b83	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore amendUpNextDefaultPlaylist:completionQueue:completion:]	
+1068d6b84	1068d6bd3	decompiled	chunks/000/functions-000055.c		
+1068d6bd4	1068d6cb3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore prependStories:forFeedType:]	
+1068d6cb4	1068d6d07	decompiled	chunks/000/functions-000055.c		
+1068d6d08	1068d6de7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore appendStories:forFeedType:]	
+1068d6de8	1068d6e3b	decompiled	chunks/000/functions-000055.c		
+1068d6e3c	1068d6f1b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore saveStories:forFeedType:]	
+1068d6f1c	1068d6f6f	decompiled	chunks/000/functions-000055.c		
+1068d6f70	1068d6f77	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore updateStories:]	
+1068d6f78	1068d7057	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore updateStories:updateCreatorSettings:]	
+1068d7058	1068d70bf	decompiled	chunks/000/functions-000055.c		
+1068d70c0	1068d7197	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore removeStories:]	
+1068d7198	1068d71cb	decompiled	chunks/000/functions-000055.c		
+1068d71cc	1068d7223	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore deleteExpiredSnaps]	
+1068d7224	1068d72b7	decompiled	chunks/000/functions-000055.c		
+1068d72b8	1068d79d3	decompiled	chunks/000/functions-000055.c		
+1068d79d4	1068d7b0b	decompiled	chunks/000/functions-000055.c		
+1068d7b0c	1068d7c7b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore updateStoryWithCreator:isPublisher:isSubscribed:isOptedInNotification:isHidden:]	
+1068d7c7c	1068d7cf3	decompiled	chunks/000/functions-000055.c		
+1068d7cf4	1068d7de3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore removeStories:forFeedType:flushAllImpressions:]	
+1068d7de4	1068d7e27	decompiled	chunks/000/functions-000055.c		
+1068d7e28	1068d7eff	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore unsubscribeStories:]	
+1068d7f00	1068d7f4f	decompiled	chunks/000/functions-000055.c		
+1068d7f50	1068d8087	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore removeStoriesByStoriesDedupFp:forFeedType:completionQueue:completion:]	
+1068d8088	1068d80c7	decompiled	chunks/000/functions-000055.c		
+1068d80c8	1068d81f7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore removeStoriesByCreatorId:similarStoryIdFpsArray:feedTypes:]	
+1068d81f8	1068d822f	decompiled	chunks/000/functions-000055.c		
+1068d8230	1068d8343	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore removeSubfeedForFeedType:]	
+1068d8344	1068d8377	decompiled	chunks/000/functions-000055.c		
+1068d8378	1068d84e3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore replaceStory:withNewStory:inFeedType:]	
+1068d84e4	1068d851b	decompiled	chunks/000/functions-000055.c		
+1068d851c	1068d88a3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore _replaceStoryOnPerformer:withNewStory:inFeedType:]	
+1068d88a4	1068d892f	decompiled	chunks/000/functions-000055.c		
+1068d8930	1068d8957	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storiesCache]	
+1068d8958	1068d89af	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore triggerLoadedStoriesFromDiskIfNecessary]	
+1068d89b0	1068d8a97	decompiled	chunks/000/functions-000055.c		
+1068d8a98	1068d8ac3	decompiled	chunks/000/functions-000055.c		
+1068d8ac4	1068d8bb3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore loadStoriesFromDiskWithCompletion:]	
+1068d8bb4	1068d8c5f	decompiled	chunks/000/functions-000055.c		
+1068d8c60	1068d8db3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore _loadStoriesFromClientSQLWithStartTime:completion:]	
+1068d8db4	1068d90e3	decompiled	chunks/000/functions-000055.c		
+1068d90e4	1068d9127	decompiled	chunks/000/functions-000055.c		
+1068d9128	1068d9f87	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore _loadDBRecordsIntoMemoryWithFeeds:cards:feedCardRanks:preservedStories:startTime:completion:]	
+1068d9f88	1068da03b	decompiled	chunks/000/functions-000055.c		
+1068da03c	1068da0b7	decompiled	chunks/000/functions-000055.c		
+1068da0b8	1068da1f7	decompiled	chunks/000/functions-000055.c		
+1068da1f8	1068da26b	decompiled	chunks/000/functions-000055.c		
+1068da26c	1068da377	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithCompositeStoryId:]	
+1068da378	1068da523	decompiled	chunks/000/functions-000055.c		
+1068da524	1068da5f3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithDedupeFp:]	
+1068da5f4	1068da66b	decompiled	chunks/000/functions-000055.c		
+1068da66c	1068da66f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore assertQueuePerformer]	
+1068da670	1068da6c7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithDedupeFpOnPerformer:]	
+1068da6c8	1068da753	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storiesWithStoryDedupeFpsOnPerformer:]	
+1068da754	1068da86f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStoriesForFeedTypeOnPerformer:]	
+1068da870	1068daa73	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStoriesForFeedTypesOnPerformer:]	
+1068daa74	1068daa7b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStoriesOnPerformer]	
+1068daa7c	1068daad7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore updateStoriesOnPerformer:feedType:isFromMetadataPrefetch:]	
+1068daad8	1068dab2b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore appendStoriesOnPerformer:feedType:]	
+1068dab2c	1068dabfb	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithDedupeFp:completionQueue:completion:]	
+1068dabfc	1068dacd3	decompiled	chunks/000/functions-000055.c		
+1068dacd4	1068dace3	decompiled	chunks/000/functions-000055.c		
+1068dace4	1068dadcf	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storiesWithDedupeFps:completionQueue:completion:]	
+1068dadd0	1068daea7	decompiled	chunks/000/functions-000055.c		
+1068daea8	1068daecf	decompiled	chunks/000/functions-000055.c		
+1068daed0	1068daedf	decompiled	chunks/000/functions-000055.c		
+1068daee0	1068daf17	decompiled	chunks/000/functions-000055.c		
+1068daf18	1068db003	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStoriesInCacheWithDedupeFps:completionQueue:completion:]	
+1068db004	1068db0db	decompiled	chunks/000/functions-000055.c		
+1068db0dc	1068db103	decompiled	chunks/000/functions-000055.c		
+1068db104	1068db113	decompiled	chunks/000/functions-000055.c		
+1068db114	1068db14b	decompiled	chunks/000/functions-000055.c		
+1068db14c	1068db21b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithPublisherId:]	
+1068db21c	1068db443	decompiled	chunks/000/functions-000055.c		
+1068db444	1068db54f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithUsername:]	
+1068db550	1068db747	decompiled	chunks/000/functions-000055.c		
+1068db748	1068db857	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithUserId:]	
+1068db858	1068db89b	decompiled	chunks/000/functions-000055.c		
+1068db89c	1068dba47	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithUserIdOnPerformer:]	
+1068dba48	1068dbb1b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore mostRecentStorySavedForFeedTypeOnPerformer:]	
+1068dbb1c	1068dbde3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore dedupeWithExistingStoriesForFeedTypeOnPerformer:newStories:]	
+1068dbde4	1068dbeef	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithCompositeStoryIdVersionInsensitive:]	
+1068dbef0	1068dc0bb	decompiled	chunks/000/functions-000055.c		
+1068dc0bc	1068dc297	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore storyWithCompositeStoryIdVersionInsensitiveOnPerformer:]	
+1068dc298	1068dc3a3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStories]	
+1068dc3a4	1068dc40b	decompiled	chunks/000/functions-000055.c		
+1068dc40c	1068dc4db	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore allStoriesForFeedType:]	
+1068dc4dc	1068dc51f	decompiled	chunks/000/functions-000055.c		
+1068dc520	1068dc5f7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore cachedOrganicCompositeStoryIdsForFeedType:]	
+1068dc5f8	1068dc797	decompiled	chunks/000/functions-000055.c		
+1068dc798	1068dc883	decompiled	chunks/000/functions-000055.c	-[SCDiscoverFeedDataStore cachedUnimpressedPromotedStoryCountForFeedType:impressedDedupeFps:]	
+1068dc884	1068dca2f	decompiled	chunks/000/functions-000055.c		
+1068dca30	1068dcb4f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore allStoriesForFeedType:completionQueue:completion:]	
+1068dcb50	1068dccaf	decompiled	chunks/000/functions-000056.c		
+1068dccb0	1068dccc3	decompiled	chunks/000/functions-000056.c		
+1068dccc4	1068dcddb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore allStoriesForFeedType:waitForStoriesToLoad:completionQueue:completion:]	
+1068dcddc	1068dce17	decompiled	chunks/000/functions-000056.c		
+1068dce18	1068dcfbb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _allStoriesForFeedType:waitForStoriesToLoad:completionQueue:completion:]	
+1068dcfbc	1068dcfdb	decompiled	chunks/000/functions-000056.c		
+1068dcfdc	1068dd013	decompiled	chunks/000/functions-000056.c		
+1068dd014	1068dd0ff	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore allStoriesForFeedTypes:completionQueue:completion:]	
+1068dd100	1068dd39b	decompiled	chunks/000/functions-000056.c		
+1068dd39c	1068dd3d3	decompiled	chunks/000/functions-000056.c		
+1068dd3d4	1068dd50b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore reorderStoriesLocallyForFeedTypesIfPossible:isDebouncedQuery:completion:]	
+1068dd50c	1068dd57f	decompiled	chunks/000/functions-000056.c		
+1068dd580	1068dd6b7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _reorderStoriesForFeedTypesUnderBarrier:interactionHistoryArray:isDebouncedQuery:completion:]	
+1068dd6b8	1068dd6f3	decompiled	chunks/000/functions-000056.c		
+1068dd6f4	1068dd7bf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore saveStoriesToDiskOnAppResignActive:withNewData:]	
+1068dd7c0	1068dda7f	decompiled	chunks/000/functions-000056.c		
+1068dda80	1068ddabb	decompiled	chunks/000/functions-000056.c		
+1068ddabc	1068ddba3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore clearStoriesCacheWithCompletion:]	
+1068ddba4	1068ddc17	decompiled	chunks/000/functions-000056.c		
+1068ddc18	1068ddc2b	decompiled	chunks/000/functions-000056.c		
+1068ddc2c	1068ddd0b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore updateStoriesForFeedType:mutationBlock:]	
+1068ddd0c	1068ddd43	decompiled	chunks/000/functions-000056.c		
+1068ddd44	1068dde6b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _updateStoriesForFeedType:mutationBlock:]	
+1068dde6c	1068ddf7b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore updateUnviewableSnapsByStoryDedupeFp:downloadDateByStoryDedupeFp:shouldTakedown:]	
+1068ddf7c	1068ddfb3	decompiled	chunks/000/functions-000056.c		
+1068ddfb4	1068de4eb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _updateUnviewableSnapsByStoryDedupeFp:downloadDateByStoryDedupeFp:shouldTakedown:]	
+1068de4ec	1068de66b	decompiled	chunks/000/functions-000056.c		
+1068de66c	1068de6fb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore markDedupeFpIneligibleForPersistenceInMixedFeed:]	
+1068de6fc	1068de707	decompiled	chunks/000/functions-000056.c		
+1068de708	1068de7df	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore cacheCurrentPlayingStoryInMixedFeed:]	
+1068de7e0	1068de823	decompiled	chunks/000/functions-000056.c		
+1068de824	1068de8db	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore prepareToFetchNewDataForQuery:]	
+1068de8dc	1068de9c3	decompiled	chunks/000/functions-000056.c		
+1068de9c4	1068de9ef	decompiled	chunks/000/functions-000056.c		
+1068de9f0	1068deaa7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore didFinishFetchingNewDataForQuery:]	
+1068deaa8	1068deb13	decompiled	chunks/000/functions-000056.c		
+1068deb14	1068debdf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore prepareForLogout:]	
+1068debe0	1068debf3	decompiled	chunks/000/functions-000056.c		
+1068debf4	1068ded43	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+1068ded44	1068dee87	decompiled	chunks/000/functions-000056.c		
+1068dee88	1068def83	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore didUpdateWithStoriesSnapReadReceiptUpdateRequest:fromPullToRefreshSync:]	
+1068def84	1068defe7	decompiled	chunks/000/functions-000056.c		
+1068defe8	1068defff	decompiled	chunks/000/functions-000056.c		
+1068df000	1068df0bb	decompiled	chunks/000/functions-000056.c		
+1068df0bc	1068df0ef	decompiled	chunks/000/functions-000056.c		
+1068df0f0	1068df61f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _correctStoriesViewedState]	
+1068df620	1068df63f	decompiled	chunks/000/functions-000056.c		
+1068df640	1068dfca3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _updateStoryWatchStateByStoryDedupFp:]	
+1068dfca4	1068dfcab	decompiled	chunks/000/functions-000056.c		
+1068dfcac	1068dfdd7	decompiled	chunks/000/functions-000056.c		
+1068dfdd8	1068dfddf	decompiled	chunks/000/functions-000056.c		
+1068dfde0	1068e051f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _applyWatchStateMap:forLongformShowStories:]	
+1068e0520	1068e0757	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _updateViewedStateForStoryDedupToSnapIdsDict:storyDedupToStoryDict:]	
+1068e0758	1068e0baf	decompiled	chunks/000/functions-000056.c		
+1068e0bb0	1068e0d23	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _markDiscoverStoriesAsViewed:publisherStoryIdToStoryDict:viewStatesMap:]	
+1068e0d24	1068e0d77	decompiled	chunks/000/functions-000056.c		
+1068e0d78	1068e0fa3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _applyWatchStates:viewStatesMap:forPublisherStories:]	
+1068e0fa4	1068e113b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _applyWatchState:forPublisherStory:]	
+1068e113c	1068e1143	decompiled	chunks/000/functions-000056.c		
+1068e1144	1068e1283	decompiled	chunks/000/functions-000056.c		
+1068e1284	1068e1963	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _modifiedStoryWithWatchState:viewStateMap:story:publisherStory:]	
+1068e1964	1068e1a47	decompiled	chunks/000/functions-000056.c		
+1068e1a48	1068e1c23	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _markDiscoverFeedStoriesAsViewed:]	
+1068e1c24	1068e1d33	decompiled	chunks/000/functions-000056.c		
+1068e1d34	1068e1dcb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore setDiskCacheLoadingState:]	
+1068e1dcc	1068e1e13	decompiled	chunks/000/functions-000056.c		
+1068e1e14	1068e1eff	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _dispatchAnnounceRerankingUpdateWithExtraData:]	
+1068e1f00	1068e1f33	decompiled	chunks/000/functions-000056.c		
+1068e1f34	1068e1fab	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _announceRerankingUpdateWithExtraData:]	
+1068e1fac	1068e2cef	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _prepareCachedStreamAndSaveToDiskWithStoryDedupeFpDictionary:sectionDataModels:sectionMetadata:feedIdentifiers:stories:preservedStoryStore:loadState:withNewData:]	
+1068e2cf0	1068e2d13	decompiled	chunks/000/functions-000056.c		
+1068e2d14	1068e2d4b	decompiled	chunks/000/functions-000056.c		
+1068e2d4c	1068e2d57	decompiled	chunks/000/functions-000056.c		
+1068e2d58	1068e2fbb	decompiled	chunks/000/functions-000056.c		
+1068e2fbc	1068e3223	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _handleCachedData:startTime:completion:]	
+1068e3224	1068e32ef	decompiled	chunks/000/functions-000056.c		
+1068e32f0	1068e333f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _handleCachedFailureWithCompletion:]	
+1068e3340	1068e344f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _dispatchAnnounceDataStoreStoriesUpdateWithEvent:extraData:]	
+1068e3450	1068e3483	decompiled	chunks/000/functions-000056.c		
+1068e3484	1068e35ab	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _announceDataStoreUpdateWithEvent:extraData:]	
+1068e35ac	1068e35eb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _announceDataLoadingUpdate]	
+1068e35ec	1068e3647	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _announceDatastoreLoadedFromDisk]	
+1068e3648	1068e3687	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _allStories]	
+1068e3688	1068e3953	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _setSections:]	
+1068e3954	1068e3963	decompiled	chunks/000/functions-000056.c		
+1068e3964	1068e3fb3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _appendSection:]	
+1068e3fb4	1068e4203	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _amendUpNextDefaultPlaylist:]	
+1068e4204	1068e420f	decompiled	chunks/000/functions-000056.c		
+1068e4210	1068e432b	decompiled	chunks/000/functions-000056.c		
+1068e432c	1068e46b7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _prependStories:forFeedType:]	
+1068e46b8	1068e4ba3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _appendStories:forFeedType:]	
+1068e4ba4	1068e4ea3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _saveStories:forFeedType:]	
+1068e4ea4	1068e5343	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _saveSections:]	
+1068e5344	1068e5703	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _removeStories:]	
+1068e5704	1068e59af	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _removeStoriesInFeedIdentifierMapping:]	
+1068e59b0	1068e5c63	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _storyForCreator:isPublisher:]	
+1068e5c64	1068e5d0f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _removeStoryByCreator:isPublisher:]	
+1068e5d10	1068e5e03	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _removeStoriesByStoriesDedupFp:forFeedType:flushAllImpressions:completionQueue:completion:]	
+1068e5e04	1068e5e9b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverFeedDataStore _creatorIdByStory:]	
+1068e5e9c	1068e62a3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _removeStoriesByCreatorId:similarStoryIdFpsArray:feedTypes:]	
+1068e62a4	1068e6943	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _removeStories:forFeedType:flushAllImpressions:completionQueue:completion:]	
+1068e6944	1068e698b	decompiled	chunks/000/functions-000057.c		
+1068e698c	1068e6bd7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _removeStoriesInFeedIdentifierMapping:forFeedType:]	
+1068e6bd8	1068e6f23	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateUnsubscribedStoriesInDedupeFp:]	
+1068e6f24	1068e6f53	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateStoryDedupeFpsByFeedIdentifier:]	
+1068e6f54	1068e6f83	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateStoriesByStoryDedupeFp:]	
+1068e6f84	1068e717f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateStories:]	
+1068e7180	1068e7377	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _replaceFeedType:withStories:isFromMetadataPrefetch:]	
+1068e7378	1068e73a7	decompiled	chunks/000/functions-000057.c		
+1068e73a8	1068e74c7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateStoryForCreator:isPublisher:isSubscribed:isOptedInNotification:]	
+1068e74c8	1068e762f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateWithCachedStream:startTime:completion:]	
+1068e7630	1068e76b7	decompiled	chunks/000/functions-000057.c		
+1068e76b8	1068e7dc7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateWithCachedStream:startTime:interactionHistoryArray:completion:]	
+1068e7dc8	1068e7fa3	decompiled	chunks/000/functions-000057.c		
+1068e7fa4	1068e81eb	decompiled	chunks/000/functions-000057.c		
+1068e81ec	1068e87df	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _reorderStoriesForFeedTypes:interactionHistoryArray:isDebouncedQuery:completion:]	
+1068e87e0	1068e880f	decompiled	chunks/000/functions-000057.c		
+1068e8810	1068e8a37	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _removeFeedIdentifier:]	
+1068e8a38	1068e8a57	decompiled	chunks/000/functions-000057.c		
+1068e8a58	1068e8b37	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _creatorSettingsDidUpdateWithCreatorSettings:didSubscribe:]	
+1068e8b38	1068e8b6f	decompiled	chunks/000/functions-000057.c		
+1068e8b70	1068e9157	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _creatorSettingsUpdateOnPerformerWithCreatorSettings:didSubscribe:]	
+1068e9158	1068e924f	decompiled	chunks/000/functions-000057.c		
+1068e9250	1068e957b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _creatorSettingsDidUpdate]	
+1068e957c	1068e9837	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateCreatorSettingsWithStory:transactionContext:]	
+1068e9838	1068e9873	decompiled	chunks/000/functions-000057.c		
+1068e9874	1068e98f3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateCreatorSettingsTracker:]	
+1068e98f4	1068e998b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updateCreatorSettingsWithStories:]	
+1068e998c	1068e9aa3	decompiled	chunks/000/functions-000057.c		
+1068e9aa4	1068e9b5b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _legacyAnnouncerIdentifierWithExtraData:]	
+1068e9b5c	1068e9cc3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore onSnapProSubscriptionEvent:]	
+1068e9cc4	1068e9e7b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _logTakedownSnaps:]	
+1068e9e7c	1068ea10f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _rerankViewedStories]	
+1068ea110	1068ea11b	decompiled	chunks/000/functions-000057.c		
+1068ea11c	1068ea14b	decompiled	chunks/000/functions-000057.c		
+1068ea14c	1068ea25b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore preserveFreshPromotedStories:forFeedType:completion:]	
+1068ea25c	1068ea2af	decompiled	chunks/000/functions-000057.c		
+1068ea2b0	1068ea4ff	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _preserveFreshPromotedStoriesOnPerformer:forFeedType:]	
+1068ea500	1068ea59f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _updatePreservedStories]	
+1068ea5a0	1068ea67f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _preservedStoriesForFeedIdentifier:]	
+1068ea680	1068ea757	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore markLastEmptySubsSectionFetchedDate:]	
+1068ea758	1068ea78b	decompiled	chunks/000/functions-000057.c		
+1068ea78c	1068ea80b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _setLastEmptySubsSectionFetchedDate:]	
+1068ea80c	1068ea883	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _getLastEmptySubsSectionFetchedDate]	
+1068ea884	1068ea88f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore _lastEmptySubsSectionFetchedDateKey]	
+1068ea890	1068ea897	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore diskCacheLoadingState]	
+1068ea898	1068eaa53	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedDataStore .cxx_destruct]	
+1068eaa54	1068eaa5f	decompiled	chunks/000/functions-000057.c		
+1068eaa60	1068eaa9b	decompiled	chunks/000/functions-000057.c		
+1068eaa9c	1068eab47	decompiled	chunks/000/functions-000057.c		
+1068eab48	1068eaeab	decompiled	chunks/000/functions-000057.c		
+1068eaeac	1068eaebb	decompiled	chunks/000/functions-000057.c		
+1068eaebc	1068eaf8b	decompiled	chunks/000/functions-000057.c		
+1068eaf8c	1068eaf9b	decompiled	chunks/000/functions-000057.c		
+1068eaf9c	1068eafff	decompiled	chunks/000/functions-000057.c		
+1068eb000	1068eb02f	decompiled	chunks/000/functions-000057.c		
+1068eb030	1068eb04f	decompiled	chunks/000/functions-000057.c		
+1068eb050	1068eb0eb	decompiled	chunks/000/functions-000057.c		
+1068eb0ec	1068eb2ab	decompiled	chunks/000/functions-000057.c		
+1068eb2ac	1068eb447	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver initWithNetworkConnectivityMonitor:storiesConfigProvider:storiesPerformer:]	
+1068eb448	1068eb4a7	decompiled	chunks/000/functions-000057.c		
+1068eb4a8	1068eb5f7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver defaultTTLInSecondsForQuerySource:]	
+1068eb5f8	1068eb7bf	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver perFeedTTLInSecondsForQuerySource:feedType:]	
+1068eb7c0	1068eb833	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver resolvedTTLInSecondsForQuerySource:feedType:]	
+1068eb834	1068eb897	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver _networkConnectivityStatusDidChange:]	
+1068eb898	1068eb8a7	decompiled	chunks/000/functions-000057.c		
+1068eb8a8	1068eb8e3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedMetadataCacheTTLResolver .cxx_destruct]	
+1068eb8e4	1068eb967	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore init]	
+1068eb968	1068ebb5b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore initWithFeedIdentifier:preservedStories:]	
+1068ebb5c	1068ebcaf	decompiled	chunks/000/functions-000057.c	+[SCDiscoverFeedPreservedStoryStore arrayByPurgingExpiredStoriesFromArray:]	
+1068ebcb0	1068ebeab	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore updateWithStoryDedupeFpsByFeedIdentifier:storiesByStoryDedupeFp:]	
+1068ebeac	1068ebedb	decompiled	chunks/000/functions-000057.c		
+1068ebedc	1068ec117	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore updateWithPromotedStoriesByFeedIdentifier:]	
+1068ec118	1068ec147	decompiled	chunks/000/functions-000057.c		
+1068ec148	1068ec29f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore purgeExpiredStories]	
+1068ec2a0	1068ec2ff	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore preservedStoriesForFeedIdentifier:]	
+1068ec300	1068ec367	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore copyWithZone:]	
+1068ec368	1068ec36f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore feedIdentifier]	
+1068ec370	1068ec39f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedPreservedStoryStore .cxx_destruct]	
+1068ec3a0	1068ec4c7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream initWithCoder:]	
+1068ec4c8	1068ec5ff	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream initWithFeedIdentifiers:storyDedupeFpsByFeedIdentifier:sectionMetadataByFeedIdentifier:sectionDataModelsByFeedIdentifier:storiesByStoryDedupeFp:]	
+1068ec600	1068ec623	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream copyWithZone:]	
+1068ec624	1068ec6bf	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream encodeWithCoder:]	
+1068ec6c0	1068ec757	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream hash]	
+1068ec758	1068ec847	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream isEqual:]	
+1068ec848	1068ec84f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream feedIdentifiers]	
+1068ec850	1068ec857	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream storyDedupeFpsByFeedIdentifier]	
+1068ec858	1068ec85f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream sectionMetadataByFeedIdentifier]	
+1068ec860	1068ec867	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream sectionDataModelsByFeedIdentifier]	
+1068ec868	1068ec86f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream storiesByStoryDedupeFp]	
+1068ec870	1068ec8c3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverFeedCachedStream .cxx_destruct]	
+1068ec8c4	1068ec98b	decompiled	chunks/000/functions-000057.c		
+1068ec98c	1068ec9af	decompiled	chunks/000/functions-000057.c	-[SCContentFeedDatabaseCard copyWithZone:]	
+1068ec9b0	1068eca3b	decompiled	chunks/000/functions-000057.c	-[SCContentFeedDatabaseCard hash]	
+1068eca3c	1068ecb03	decompiled	chunks/000/functions-000057.c	-[SCContentFeedDatabaseCard isEqual:]	
+1068ecb04	1068ecb33	decompiled	chunks/000/functions-000057.c		
+1068ecb34	1068ecb63	decompiled	chunks/000/functions-000057.c	-[SCContentFeedDatabaseCard .cxx_destruct]	
+1068ecb64	1068ecc27	decompiled	chunks/000/functions-000057.c		
+1068ecc28	1068ecc4b	decompiled	chunks/000/functions-000057.c	-[SCContentFeedDatabaseFeedCardRank copyWithZone:]	
+1068ecc4c	1068eccfb	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeedCardRank hash]	
+1068eccfc	1068ece0f	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeedCardRank isEqual:]	
+1068ece10	1068ece47	decompiled	chunks/000/functions-000058.c		
+1068ece48	1068ece53	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeedCardRank .cxx_destruct]	
+1068ece54	1068ecf2f	decompiled	chunks/000/functions-000058.c		
+1068ecf30	1068ecf53	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeed copyWithZone:]	
+1068ecf54	1068ecfeb	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeed hash]	
+1068ecfec	1068ed0d3	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeed isEqual:]	
+1068ed0d4	1068ed11b	decompiled	chunks/000/functions-000058.c		
+1068ed11c	1068ed14b	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabaseFeed .cxx_destruct]	
+1068ed14c	1068ed1eb	decompiled	chunks/000/functions-000058.c		
+1068ed1ec	1068ed20f	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabasePreservedStory copyWithZone:]	
+1068ed210	1068ed28f	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabasePreservedStory hash]	
+1068ed290	1068ed34f	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabasePreservedStory isEqual:]	
+1068ed350	1068ed35b	decompiled	chunks/000/functions-000058.c	-[SCContentFeedDatabasePreservedStory .cxx_destruct]	
+1068ed35c	1068ee3e3	decompiled	chunks/000/functions-000058.c	-[SCDiscoverFeedDeeplinkHandlingServiceProvider provide]	
+1068ee3e4	1068ee797	decompiled	chunks/000/functions-000058.c	-[SCDiscoverFeedDeeplinkHandlingServiceProvider .cxx_destruct]	
+1068ee798	1068ee80b	decompiled	chunks/000/functions-000058.c	-[SCDiscoverFeedFriendsSectionLegacyServiceProvider .cxx_destruct]	
+1068ee80c	1068ee8c7	decompiled	chunks/000/functions-000058.c	-[SCDiscoverFeedMessagingServiceProvider _initializeDiscoverMessageSender]	
+1068ee8c8	1068ee907	decompiled	chunks/000/functions-000058.c		
+1068ee908	1068ee94b	decompiled	chunks/000/functions-000058.c	-[SCDiscoverFeedMessagingServiceProvider .cxx_destruct]	
+1068ee94c	1068ee9ef	decompiled	chunks/000/functions-000058.c	-[SCDiscoverMessageSender initWithTextMessageSender:externalMediaPreparer:]	
+1068ee9f0	1068eef43	decompiled	chunks/000/functions-000058.c	-[SCDiscoverMessageSender sendAdShare:conversationIds:platformAnalytics:additionalTextPlatformAnalytics:completionQueue:completionHandler:]	
+1068eef44	1068eef73	decompiled	chunks/000/functions-000058.c	-[SCDiscoverMessageSender .cxx_destruct]	
+1068eef74	1068ef08b	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer initWithMediaDataIngester:mediaStateManager:contentDelivery:circumstanceEngine:]	
+1068ef08c	1068ef153	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _durationMs:]	
+1068ef154	1068ef16b	decompiled	chunks/000/functions-000058.c		
+1068ef16c	1068ef34f	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer prepareUploadForMedia:mediaMetadata:trackingId:captureSessionId:conversationIds:]	
+1068ef350	1068ef49b	decompiled	chunks/000/functions-000058.c		
+1068ef49c	1068ef767	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer prepareUploadForMedia:snapDocKey:snapDocMediaMetadata:trackingId:captureSessionId:conversationIds:]	
+1068ef768	1068ef8f3	decompiled	chunks/000/functions-000058.c		
+1068ef8f4	1068efa6f	decompiled	chunks/000/functions-000058.c		
+1068efa70	1068efc87	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer prepareUploadForMediaData:mediaMetadata:trackingId:captureSessionId:conversationIds:]	
+1068efc88	1068efd17	decompiled	chunks/000/functions-000058.c		
+1068efd18	1068efd8f	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _recordVideoCodecHintFromMedia:forMediaId:]	
+1068efd90	1068eff63	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _setMediaUploadReferenceForMediaData:mediaMetadata:trackingId:captureSessionId:]	
+1068eff64	1068f0087	decompiled	chunks/000/functions-000058.c		
+1068f0088	1068f0097	decompiled	chunks/000/functions-000058.c		
+1068f0098	1068f032f	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _setMediaUploadReferenceForMediaData:snapDocKey:snapDocMediaMetadata:trackingId:captureSessionId:]	
+1068f0330	1068f0453	decompiled	chunks/000/functions-000058.c		
+1068f0454	1068f0463	decompiled	chunks/000/functions-000058.c		
+1068f0464	1068f0717	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _setMediaUploadReferenceForVideoFilter:snapDocKey:snapDocMediaMetadata:trackingId:captureSessionId:transcodeCompletionHandler:]	
+1068f0718	1068f087b	decompiled	chunks/000/functions-000058.c		
+1068f087c	1068f08fb	decompiled	chunks/000/functions-000058.c		
+1068f08fc	1068f09a7	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer _eligibleForChunkedUploadingWithMedia:]	
+1068f09a8	1068f09fb	decompiled	chunks/000/functions-000058.c	-[SCChatExternalMediaPreparer .cxx_destruct]	
+1068f09fc	1068f0a6f	decompiled	chunks/000/functions-000058.c	-[SCGrapheneChatMediaChunkedTranscodingMetric2 init]	
+1068f0a70	1068f0c9f	decompiled	chunks/000/functions-000058.c		
+1068f0ca0	1068f0ca3	decompiled	chunks/000/functions-000058.c	-[SCAttribute initWithDictionary:]	
+1068f0ca4	1068f0ca7	decompiled	chunks/000/functions-000058.c	-[SCAttribute initWithCoder:]	
+1068f0ca8	1068f0cab	decompiled	chunks/000/functions-000058.c	-[SCAttribute encodeWithCoder:]	
+1068f0cac	1068f0cb7	decompiled	chunks/000/functions-000058.c	-[SCAttribute attributeParameters]	
+1068f0cb8	1068f0d77	decompiled	chunks/000/functions-000058.c	-[SCAttribute attributeType]	
+1068f0d78	1068f0deb	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger initWithUserTrackedLogger:]	
+1068f0dec	1068f0eb7	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger logInputDrawer:activationFromState:]	
+1068f0eb8	1068f0fa7	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger logInputDrawer:deactivationFromState:]	
+1068f0fa8	1068f10ff	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger logInputDrawer:transitionFromState:toState:]	
+1068f1100	1068f117f	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger logSubmenuExpansion:]	
+1068f1180	1068f11a7	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger drawerSessionId]	
+1068f11a8	1068f1387	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger _logLoggableDrawer:viewMode:actionType:drawerType:drawerSessionId:]	
+1068f1388	1068f13db	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger _setDrawerSessionIfNecessary:]	
+1068f13dc	1068f1417	decompiled	chunks/000/functions-000058.c	-[SCChatInputViewControllerLogger .cxx_destruct]	
+1068f1418	1068f1533	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem initWithChatMediaContent:messageBodyType:messageId:analyticsMessageId:conversationId:userInitiated:requestSource:]	
+1068f1534	1068f153b	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem mediaId]	
+1068f153c	1068f1543	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem conversationId]	
+1068f1544	1068f154b	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem messageId]	
+1068f154c	1068f1553	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem analyticsMessageId]	
+1068f1554	1068f155b	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem messageBodyType]	
+1068f155c	1068f1563	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem chatMediaContent]	
+1068f1564	1068f156b	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem userInitiated]	
+1068f156c	1068f1573	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem requestSource]	
+1068f1574	1068f15bb	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadableItem .cxx_destruct]	
+1068f15bc	1068f1677	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadHandler initWithChatRequestManager:mediaStateManager:chatLogger:]	
+1068f1678	1068f1933	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadHandler downloadItem:completion:]	
+1068f1934	1068f19d7	decompiled	chunks/000/functions-000058.c		
+1068f19d8	1068f1ae7	decompiled	chunks/000/functions-000058.c		
+1068f1ae8	1068f1bbf	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadHandler _updateMediaStateForItem:state:]	
+1068f1bc0	1068f1cbf	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadHandler boostDownloadRequest:]	
+1068f1cc0	1068f1cf3	decompiled	chunks/000/functions-000058.c	-[SCChatMediaContentDownloadHandler .cxx_destruct]	
+1068f1cf4	1068f1dff	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager addReferenceToMediaId:forMessage:conversationId:]	
+1068f1e00	1068f1f47	decompiled	chunks/000/functions-000058.c		
+1068f1f48	1068f200f	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager referencesForMediaId:block:]	
+1068f2010	1068f2057	decompiled	chunks/000/functions-000058.c		
+1068f2058	1068f20f7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager removeReferencesForConversationId:]	
+1068f20f8	1068f21f7	decompiled	chunks/000/functions-000058.c		
+1068f21f8	1068f22c7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager removeReferencesForMessageId:conversationId:]	
+1068f22c8	1068f230b	decompiled	chunks/000/functions-000058.c		
+1068f230c	1068f24a7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager _removeIdentifier:]	
+1068f24a8	1068f2573	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager _identifiersMatchingConversationId:]	
+1068f2574	1068f25bb	decompiled	chunks/000/functions-000058.c		
+1068f25bc	1068f25f7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaReferenceManager .cxx_destruct]	
+1068f25f8	1068f265f	decompiled	chunks/000/functions-000058.c		
+1068f2660	1068f26bb	decompiled	chunks/000/functions-000058.c		
+1068f26bc	1068f28e7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaRequestManager downloadChatMediaForChatMediaContent:messageBodyType:messageId:messageTrackingId:conversationId:isGroupConversation:requestContext:requestSource:downloadSuccess:downloadFailure:]	
+1068f28e8	1068f293f	decompiled	chunks/000/functions-000058.c		
+1068f2940	1068f2cb3	decompiled	chunks/000/functions-000058.c	-[SCChatMediaRequestManager _downloadChatMediaForChatMediaContent:messageBodyType:messageId:messageTrackingId:conversationId:isGroupConversation:requestContext:requestSource:downloadSuccess:downloadFailure:]	
+1068f2cb4	1068f315b	decompiled	chunks/000/functions-000058.c	-[SCChatMediaRequestManager _logDiscreteStepForMessageId:mediaId:itemMediaId:mediaDurationSec:bodyType:conversationId:mediaType:isGroupConversation:multiSnapMetadata:requestContext:]	
+1068f315c	1068f3307	decompiled	chunks/000/functions-000058.c	-[SCChatMediaRequestManager _startDownloadHandler:downloableItem:downloadSuccess:downloadFailure:]	
+1068f3308	1068f33b3	decompiled	chunks/000/functions-000058.c		
+1068f33b4	1068f34f7	decompiled	chunks/000/functions-000058.c	-[SCChatMediaRequestManager _startDownloadHandler:downloableItem:mediaId:]	
+1068f34f8	1068f3683	decompiled	chunks/000/functions-000059.c		
+1068f3684	1068f37cf	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _boostDownloadRequestForHandler:downloableItem:]	
+1068f37d0	1068f37db	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _startDownloadHandler:downloableItem:]	
+1068f37dc	1068f388b	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _removeDownloadableItem:]	
+1068f388c	1068f391f	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _isDownloadingForMediaId:]	
+1068f3920	1068f3a4b	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _insertDownloadableItem:]	
+1068f3a4c	1068f3b7f	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _insertDownloadCompletionHandler:failureHandler:mediaId:]	
+1068f3b80	1068f3cdf	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager _dispatchCompletionHandlersWithSuccess:mediaId:]	
+1068f3ce0	1068f3d6f	decompiled	chunks/000/functions-000059.c	-[SCChatMediaRequestManager .cxx_destruct]	
+1068f3d70	1068f3ec7	decompiled	chunks/000/functions-000059.c	-[SCChatMediaStateManager updateAllMessagesForMediaId:messageId:conversationId:messageBodyType:mediaLoadState:]	
+1068f3ec8	1068f3f23	decompiled	chunks/000/functions-000059.c		
+1068f3f24	1068f416b	decompiled	chunks/000/functions-000059.c	-[SCChatMediaStateManager _updateAllMessagesForMediaId:messageId:conversationId:messageBodyType:mediaLoadState:conversationAndMessageIdentifiers:]	
+1068f416c	1068f421f	decompiled	chunks/000/functions-000059.c	-[SCChatMediaStateManager addReferenceAndUpdateAllMessagesForMediaId:messageId:conversationId:messageBodyType:mediaLoadState:]	
+1068f4220	1068f4247	decompiled	chunks/000/functions-000059.c	-[SCChatMediaStateManager .cxx_destruct]	
+1068f4248	1068f4373	decompiled	chunks/000/functions-000059.c	-[SCChatMessageLoader loadMessageContentForConversationId:loadMessageId:isGroupConversation:requestContext:requestSource:]	
+1068f4374	1068f43cb	decompiled	chunks/000/functions-000059.c		
+1068f43cc	1068f4617	decompiled	chunks/000/functions-000059.c	-[SCChatMessageLoader loadMessageContent:isGroupConversation:requestContext:requestSource:]	
+1068f4618	1068f46d7	decompiled	chunks/000/functions-000059.c		
+1068f46d8	1068f46ef	decompiled	chunks/000/functions-000059.c	-[SCChatMessageLoader delegate]	
+1068f46f0	1068f4777	decompiled	chunks/000/functions-000059.c	-[SCChatMessageLoader .cxx_destruct]	
+1068f4778	1068f483f	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties initWithTableHeight:heightOfContentBelowTheFold:belowTheFoldOffset:firstBelowTheFoldIndexPath:firstUnseenIndexPath:]	
+1068f4840	1068f4847	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties tableHeight]	
+1068f4848	1068f484f	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties heightOfContentBelowTheFold]	
+1068f4850	1068f4857	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties belowTheFoldOffset]	
+1068f4858	1068f485f	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties firstBelowTheFoldIndexPath]	
+1068f4860	1068f4867	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties firstUnseenIndexPath]	
+1068f4868	1068f4897	decompiled	chunks/000/functions-000059.c	-[SCChatViewModelVerticalLayoutProperties .cxx_destruct]	
+1068f4898	1068f4a1f	decompiled	chunks/000/functions-000059.c	+[SCChatViewModelVerticalLayoutCalculator layoutPropertiesForMessageViewModels:]	
+1068f4a20	1068f4b3f	decompiled	chunks/000/functions-000059.c	+[SCChatViewModelVerticalLayoutCalculator updateHeightForMessageViewModels:]	
+1068f4b40	1068f4b47	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig snapshot]	
+1068f4b48	1068f4b77	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig setSnapshot:]	
+1068f4b78	1068f4b7f	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig dateHeaderHeight]	
+1068f4b80	1068f4b87	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig setDateHeaderHeight:]	
+1068f4b88	1068f4b8f	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig topMargin]	
+1068f4b90	1068f4b97	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig setTopMargin:]	
+1068f4b98	1068f4b9f	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig payloadHorizontalMargin]	
+1068f4ba0	1068f4ba7	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig setPayloadHorizontalMargin:]	
+1068f4ba8	1068f4baf	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig isFirstViewModel]	
+1068f4bb0	1068f4bb7	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig setIsFirstViewModel:]	
+1068f4bb8	1068f4bc3	decompiled	chunks/000/functions-000059.c	-[SCChatMessageViewModelConfig .cxx_destruct]	
+1068f4bc4	1068f4c73	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView init]	
+1068f4c74	1068f4c93	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setTopInset:]	
+1068f4c94	1068f4d37	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setMinBottomInset:]	
+1068f4d38	1068f4dff	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView _updateContentInsetAndScrollIfNecessary]	
+1068f4e00	1068f4e2b	decompiled	chunks/000/functions-000059.c		
+1068f4e2c	1068f4eb7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView layoutSubviews]	
+1068f4eb8	1068f4f77	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView isScrollViewAtBottom]	
+1068f4f78	1068f4fcb	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView isScrollViewAtFoldEdge]	
+1068f4fcc	1068f5083	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView updateContentInset]	
+1068f5084	1068f50c7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView _offsetForFirstViewableChat]	
+1068f50c8	1068f5123	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView _chatScrollPanDiagnostic:]	
+1068f5124	1068f5143	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView chatDelegate]	
+1068f5144	1068f5157	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setChatDelegate:]	
+1068f5158	1068f5167	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView minBottomInset]	
+1068f5168	1068f5177	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView topInset]	
+1068f5178	1068f5187	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView prevContentHeight]	
+1068f5188	1068f5197	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setPrevContentHeight:]	
+1068f5198	1068f51a7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView previousHeight]	
+1068f51a8	1068f51b7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setPreviousHeight:]	
+1068f51b8	1068f51c7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView lastMinBottomInsetUpdateTime]	
+1068f51c8	1068f51d7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setLastMinBottomInsetUpdateTime:]	
+1068f51d8	1068f51e7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView rapidInsetUpdateCount]	
+1068f51e8	1068f51f7	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setRapidInsetUpdateCount:]	
+1068f51f8	1068f5207	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView firstRapidInsetUpdateTime]	
+1068f5208	1068f5217	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView setFirstRapidInsetUpdateTime:]	
+1068f5218	1068f5227	decompiled	chunks/000/functions-000059.c	-[SCChatBaseTableView .cxx_destruct]	
+1068f5228	1068f523b	decompiled	chunks/000/functions-000059.c	-[SCMultiScrollTableView init]	
+1068f523c	1068f528b	decompiled	chunks/000/functions-000059.c	-[SCMultiScrollTableView initWithFrame:]	
+1068f528c	1068f5317	decompiled	chunks/000/functions-000059.c	-[SCMultiScrollTableView configureSettings]	
+1068f5318	1068f531f	decompiled	chunks/000/functions-000059.c	-[SCMultiScrollTableView gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]	
+1068f5320	1068f663f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 initWithConversation:group:earlierContentExists:chatViewHeaderViewModel:messageViewModels:reactionMetadata:verticalLayoutProperties:activeChatMetadata:currentUserSnapchatter:recipientSnapchatter:userId:displayName:snapshot:isNonFriendConversation:isLockedConversation:groupsCustomColorsFetcher:campaignAdResponse:isEligibleForAnchorAboveInputBar:openChatToFirstUnreadEligible:]	
+1068f6640	1068f6657	decompiled	chunks/000/functions-000059.c		
+1068f6658	1068f66cf	decompiled	chunks/000/functions-000059.c		
+1068f66d0	1068f66f7	decompiled	chunks/000/functions-000059.c		
+1068f66f8	1068f66ff	decompiled	chunks/000/functions-000059.c		
+1068f6700	1068f6bab	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 initLoadingViewModelWithConversationId:loadingSpinnerViewModel:group:isGroup:recipientSnapchatter:recipientUsername:recipientUserId:cursorColor:verticalLayoutProperies:isLockedConversation:isInitialLoad:]	
+1068f6bac	1068f6bd3	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 conversationId]	
+1068f6bd4	1068f6ccf	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 indexPathForIdentifier:]	
+1068f6cd0	1068f6d6b	decompiled	chunks/000/functions-000059.c		
+1068f6d6c	1068f6df3	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 viewModelAtIndexPath:]	
+1068f6df4	1068f6e27	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 lastIndexPath]	
+1068f6e28	1068f6e2f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 canLoadMoreMessagesByRetrying:]	
+1068f6e30	1068f6e57	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 recipientUsername]	
+1068f6e58	1068f6e7f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 recipientUserId]	
+1068f6e80	1068f6ed7	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 messageTrackingIds]	
+1068f6ed8	1068f6edf	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 firstBelowTheFoldIndexPath]	
+1068f6ee0	1068f6ee7	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 firstUnseenIndexPath]	
+1068f6ee8	1068f6eef	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 belowTheFoldOffset]	
+1068f6ef0	1068f6ef7	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 messageViewModels]	
+1068f6ef8	1068f6eff	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 tableHeight]	
+1068f6f00	1068f6f07	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 heightOfContentBelowTheFold]	
+1068f6f08	1068f6f0f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 isGroupConversation]	
+1068f6f10	1068f6f17	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 cursorColor]	
+1068f6f18	1068f6f1f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 group]	
+1068f6f20	1068f6f27	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 chatViewHeaderViewModel]	
+1068f6f28	1068f6f2f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 chatDisabledInputFooterViewModel]	
+1068f6f30	1068f6f37	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 conversationSubtypeMetadata]	
+1068f6f38	1068f6f3f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 messageRetentionInMinutes]	
+1068f6f40	1068f6f47	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 displayName]	
+1068f6f48	1068f6f4f	decompiled	chunks/000/functions-000059.c	-[SCChatConversationViewModelV3 debugConversation]	
