@@ -1,0 +1,122 @@
+name: Publish selfblock IPA release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-selfblock-release.yml'
+
+concurrency:
+  group: publish-selfblock-37490906344
+  cancel-in-progress: false
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: v14.25.0.48-selfblock-37490906344
+      SOURCE_SHA: 1316a8dcfa2704702f8766cac3988145c25b1d35
+      SOURCE_RUN_ID: '37490906344'
+    steps:
+      - name: Télécharger selfblock déjà compilée
+        uses: actions/download-artifact@v4
+        with:
+          name: Snap-SS06-spoofed-ipa-selfblock
+          path: release
+          run-id: ${{ env.SOURCE_RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Vérifier les fichiers et préparer les notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run view "$SOURCE_RUN_ID" --repo "$GITHUB_REPOSITORY" \
+            --json headSha,conclusion > source-run.json
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib
+          source = json.loads(pathlib.Path('source-run.json').read_text())
+          assert source['headSha'] == os.environ['SOURCE_SHA']
+          assert source['conclusion'] == 'success'
+          directory = pathlib.Path('release')
+          ipa = directory / 'Snap-SS06-14.25.0.48-selfblock.ipa'
+          manifest_path = directory / 'Snap-SS06-14.25.0.48-selfblock.manifest.json'
+          manifest = json.loads(manifest_path.read_text())
+          def digest(path):
+              with path.open('rb') as stream:
+                  return hashlib.file_digest(stream, 'sha256').hexdigest()
+          expected = '98ba25ce13b3c14161fd7eac8009f55ad2ad53af40f4145235fc73bd0c370b81'
+          assert ipa.stat().st_size == manifest['ipa_bytes'] == 168513981
+          assert digest(ipa) == manifest['ipa_sha256'] == expected
+          assert manifest['variant'] == 'selfblock' and manifest['ipa'] == ipa.name
+          assert manifest['github_sha'] == os.environ['SOURCE_SHA']
+          assert str(manifest['github_run_id']) == os.environ['SOURCE_RUN_ID']
+          assert manifest['logonly_trace_version'] == 'selfblock-v1'
+          assert manifest['selfread_interposed_functions'] == ['open', 'fopen', 'read', 'pread', 'mmap']
+          for key in ('selfread_posix_interposition_compiled', 'selfread_dyld_host_tests_passed',
+                      'selfblock_mmap_failure_compiled', 'selfblock_attestation_window_host_tests_passed',
+                      'logonly_host_tests_passed', 'logonly_clipboard_host_tests_passed',
+                      'logonly_transport_host_tests_passed', 'logonly_value_dump_host_tests_passed',
+                      'logonly_offline_analysis_tests_passed', 'static_checks_passed'):
+              assert manifest[key] is True, key
+          for key in ('keychain_interposition_compiled', 'idfv_idfa_swizzles_compiled',
+                      'devicecheck_is_supported_no_compiled', 'login_attestation_nil_compiled'):
+              assert manifest[key] is False, key
+          assets = [{'name': p.name, 'size': p.stat().st_size, 'digest': 'sha256:' + digest(p)}
+                    for p in (ipa, manifest_path)]
+          (directory / 'verified-assets.json').write_text(json.dumps(assets))
+          notes = [
+              'IPA **selfblock**, trace `selfblock-v1`, directement téléchargeable pour signature.',
+              '',
+              'Fichier identique à celui du build #12, publié sans recompilation.',
+              'Variante selfblock déjà validée par les tests hôte macOS du build source, avec son manifeste de provenance.',
+              'Utilisation : lancer l’app, tenter login/inscription, attendre l’erreur, puis ouvrir Notes et coller.',
+              '',
+              f"Build source : https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['SOURCE_RUN_ID']}",
+              f"Commit source : `{os.environ['SOURCE_SHA']}`.",
+              f"Taille : {ipa.stat().st_size} octets ; SHA-256 : `{expected}`.",
+              '',
+              'Tests macOS et contrôles statiques réussis. Fonctionnement sur iPhone à vérifier.',
+              'Signature ad hoc : signer et provisionner l’IPA avant installation iOS standard.',
+          ]
+          (directory / 'notes.md').write_text('\n'.join(notes) + '\n')
+          PY
+
+      - name: Publier l'IPA et son manifeste vérifiés
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Cette release existe déjà ; aucun fichier ne sera remplacé." >&2
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            release/Snap-SS06-14.25.0.48-selfblock.ipa \
+            release/Snap-SS06-14.25.0.48-selfblock.manifest.json \
+            --repo "$GITHUB_REPOSITORY" --target "$SOURCE_SHA" \
+            --draft --prerelease --title "Snap SS06 14.25.0.48 — selfblock" \
+            --notes-file release/notes.md
+          gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq ".[] | select(.tag_name == \"$RELEASE_TAG\")" > release/published.json
+          python3 - <<'PY'
+          import json, os, pathlib
+          release = json.loads(pathlib.Path('release/published.json').read_text())
+          expected = json.loads(pathlib.Path('release/verified-assets.json').read_text())
+          assert len(release['assets']) == len(expected)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              for item in expected:
+                  asset, = [a for a in release['assets'] if a['name'] == item['name']]
+                  assert asset['size'] == item['size'] and asset['digest'] == item['digest']
+                  assert asset['state'] == 'uploaded'
+                  summary.write(f"[{asset['name']}]({asset['browser_download_url']})\n\n")
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --draft=false
