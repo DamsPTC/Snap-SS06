@@ -52,6 +52,12 @@ jobs:
           chosen = lines[len(lines)*part//4:len(lines)*(part+1)//4]
           path.write_text(''.join(chosen))
           print(f'Part {part}: {len(chosen)} candidates')
+          exporter = Path('scripts/ExportShard.java')
+          code = exporter.read_text()
+          old = 'decompiler.decompileFunction(item.function,20,monitor)'
+          assert code.count(old) == 1
+          exporter.write_text(code.replace(old, 'decompiler.decompileFunction(item.function,5,monitor)'))
+          print('Recovery timeout: 5 seconds per function')
           PY
       - name: Décompiler cette partie
         shell: bash

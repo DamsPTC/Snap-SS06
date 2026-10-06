@@ -6,6 +6,9 @@ from pathlib import Path
 
 root = Path('.work/recovery/parts')
 target = Path('decompiled/Snapchat-thin/shard-10')
+if target.exists():
+    # The canceled attempt may have uploaded an incomplete shard without coverage.
+    shutil.rmtree(target)
 target.mkdir(parents=True, exist_ok=True)
 reports = []
 addresses = set()
@@ -31,11 +34,12 @@ summary = {key: sum(r[key] for r in reports)
            for key in ('requested', 'prepared', 'decompiled', 'failed')}
 summary.update(program='binary', tool='Ghidra 12.1.4',
                method='Four disjoint contiguous parts of original main shard 10.',
+               timeout_seconds_per_function=5,
                parts=reports)
 (target / 'coverage.json').write_text(json.dumps(summary, indent=2) + '\n')
 lines = ['# Pseudo-code Ghidra — lot 10', '',
          f"{summary['decompiled']} fonctions décompilées sur {summary['requested']} entrées candidates ; {summary['failed']} échecs documentés.", '',
-         'Ce lot a été repris en quatre parties après un blocage du runner GitHub.', '',
+         'Ce lot a été repris en quatre parties avec un délai de 5 secondes par fonction pour isoler les fonctions coûteuses.', '',
          'Les index, pseudo-codes et rapports sont conservés dans chaque partie.', '']
 for part, report in enumerate(reports):
     lines.append(f"- [Partie {part + 1}](part-{part:02}/) : {report['decompiled']} fonctions récupérées ; {report['failed']} échecs.")
