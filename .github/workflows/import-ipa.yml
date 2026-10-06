@@ -1,0 +1,56 @@
+name: Importer l’IPA et publier la release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/import-ipa.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-ipa-14.25.0.48
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      IPA_NAME: com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa
+      IPA_URL: https://github.com/DamsPTC/sandbox-fictif-snapchat/releases/download/nouvelle-version-14.25.0.48/com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Récupérer et vérifier l’IPA
+        shell: bash
+        run: |
+          mkdir -p .work
+          curl --fail --location --retry 3 "$IPA_URL" --output ".work/$IPA_NAME"
+          python3 scripts/extract_ipa.py ".work/$IPA_NAME" --output .
+      - name: Publier tous les fichiers dans le dépôt
+        shell: bash
+        run: |
+          git lfs install --local
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .gitattributes extracted readable objc analysis SHA256SUMS.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import IPA 14.25.0.48 and recovered Objective-C metadata'
+            git push origin HEAD:main
+          fi
+      - name: Publier le fichier IPA directement en release
+        shell: bash
+        run: |
+          if ! gh release view v14.25.0.48 >/dev/null 2>&1; then
+            gh release create v14.25.0.48 \
+              --target main \
+              --title 'Snap SS06 — 14.25.0.48' \
+              --notes-file docs/release-notes.md \
+              --prerelease
+          fi
+          gh release upload v14.25.0.48 ".work/$IPA_NAME" SHA256SUMS.txt --clobber
+          gh release view v14.25.0.48 --json url,assets
