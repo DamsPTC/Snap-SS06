@@ -1,5 +1,6 @@
 // Included only by SS06LogOnly.m with SS06_SELFREAD=1.
-// Metadata observation only: no buffer, file, mapping or return-value changes.
+// Metadata observation only: no buffer, file, mapping or return-value changes,
+// except the optional attestation-window mmap failure (SS06_SELFREAD_BLOCK).
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
@@ -11,9 +12,31 @@
 #include <sys/mman.h>
 #include <unistd.h>
 
+#ifndef SS06_SELFREAD_BLOCK
+#define SS06_SELFREAD_BLOCK 0
+#endif
+
 static _Atomic(bool) SS06SelfReadEnabled;
 static _Thread_local unsigned int SS06SelfReadDepth;
 static _Atomic(bool) SS06SelfReadClipboardPending;
+#if SS06_SELFREAD_BLOCK
+// Fenêtre globale : le générateur peut mapper depuis son propre thread.
+// Aucun autre composant ne mappe le binaire principal pendant l'attestation.
+static _Atomic(int) SS06SelfReadAttestationWindow;
+#endif
+
+// Linkage externe : le test hôte macOS les appelle depuis une autre image.
+#if SS06_SELFREAD_BLOCK
+void SS06SelfReadAttestationWindowOpen(void)
+{
+    atomic_fetch_add_explicit(&SS06SelfReadAttestationWindow, 1, memory_order_relaxed);
+}
+
+void SS06SelfReadAttestationWindowClose(void)
+{
+    atomic_fetch_sub_explicit(&SS06SelfReadAttestationWindow, 1, memory_order_relaxed);
+}
+#endif
 
 static bool SS06SelfReadBegin(void)
 {
@@ -72,6 +95,30 @@ static void SS06SelfReadEmit(const char *operation, int fd, const char *path,
         // A diagnostic failure must not replace the original result/errno.
     }
 }
+
+#if SS06_SELFREAD_BLOCK
+// Échec volontaire du mappage du principal pendant la fenêtre d'attestation :
+// même format que SS06SelfReadEmit, avec op_result=blocked et errno=ENOMEM.
+static void SS06SelfReadEmitBlocked(int fd, const char *path, off_t offset, size_t requested)
+{
+    @try {
+        @autoreleasepool {
+            NSString *name = [[NSString alloc] initWithUTF8String:path];
+            if (!name) name = @"<non-utf8-path>";
+            NSData *encoded = [NSJSONSerialization dataWithJSONObject:@{@"path": name} options:0 error:NULL];
+            NSString *file = [[NSString alloc] initWithData:encoded encoding:NSUTF8StringEncoding];
+            NSString *hex = offset >= 0 ? [NSString stringWithFormat:@"0x%llx", (unsigned long long)offset] : @"unknown";
+            uint64_t thread = 0;
+            pthread_threadid_np(NULL, &thread);
+            SS06LogOnlyRecord(@"selfread op=mmap op_result=blocked fd=%d file=%@ offset=%@ offset_dec=%lld offset_source=argument requested=%zu result=-1 read_bytes=0 mapped_bytes=0 errno=%d thread=%llu",
+                              fd, file ?: @"<path-encoding-failed>", hex, (long long)offset, requested,
+                              ENOMEM, (unsigned long long)thread);
+        }
+    } @catch (__unused NSException *exception) {
+        // A diagnostic failure must not replace the original result/errno.
+    }
+}
+#endif
 
 static void SS06SelfReadFinish(int originalErrno)
 {
@@ -156,6 +203,16 @@ static void *SS06SelfRead_mmap(void *address, size_t length, int protection, int
     if (!SS06SelfReadBegin()) { errno = entryErrno; return mmap(address, length, protection, flags, fd, offset); }
     char path[PATH_MAX];
     bool target = !(flags & MAP_ANON) && SS06SelfReadPath(fd, NULL, path);
+#if SS06_SELFREAD_BLOCK
+    if (target && atomic_load_explicit(&SS06SelfReadAttestationWindow, memory_order_relaxed) > 0) {
+        // Le générateur mesure son propre binaire : le mappage échoue
+        // volontairement (ENOMEM) pendant la fenêtre d'attestation, comme un
+        // fichier momentanément illisible. open/read/pread restent intacts.
+        SS06SelfReadEmitBlocked(fd, path, offset, length);
+        SS06SelfReadFinish(ENOMEM);
+        return MAP_FAILED;
+    }
+#endif
     errno = entryErrno;
     void *result = mmap(address, length, protection, flags, fd, offset);
     int originalErrno = errno;
@@ -177,5 +234,9 @@ SS06SelfReadInterposes[] __attribute__((section("__DATA,__interpose,interposing"
 static void SS06SelfReadStart(void)
 {
     if (atomic_exchange_explicit(&SS06SelfReadEnabled, true, memory_order_relaxed)) return;
+#if SS06_SELFREAD_BLOCK
+    SS06LogOnlyRecord(@"selfread init enabled=YES interpose_entries=5 filter=exact-Snapchat.app/Snapchat content_capture=NO mmap_block=attestation-window");
+#else
     SS06LogOnlyRecord(@"selfread init enabled=YES interpose_entries=5 filter=exact-Snapchat.app/Snapchat content_capture=NO");
+#endif
 }
