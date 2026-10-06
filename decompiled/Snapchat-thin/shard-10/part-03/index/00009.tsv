@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+107e9f590	107e9fa1b	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _applyCollectioViewUpdates:]	
+107e9fa1c	107e9faef	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _didPerformBatchUpdate:]	
+107e9faf0	107e9fcab	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _executeCompletionAsFinished:]	
+107e9fcac	107e9fdeb	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _reload]	
+107e9fdec	107e9fe77	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _bail]	
+107e9fe78	107e9ff03	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction _finishWithoutUpdate]	
+107e9ff04	107e9ff1f	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction cancel]	
+107e9ff20	107e9ff8f	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction insertItemsAtIndexPaths:]	
+107e9ff90	107e9ffff	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction deleteItemsAtIndexPaths:]	
+107ea0000	107ea00ab	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction moveItemFromIndexPath:toIndexPath:]	
+107ea00ac	107ea0157	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction reloadItemFromIndexPath:toIndexPath:]	
+107ea0158	107ea01c7	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction reloadSections:]	
+107ea01c8	107ea0243	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction addCompletionBlock:]	
+107ea0244	107ea024b	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction collectionView]	
+107ea024c	107ea0263	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction updater]	
+107ea0264	107ea027b	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction delegate]	
+107ea027c	107ea0287	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction config]	
+107ea0288	107ea028f	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction animated]	
+107ea0290	107ea0297	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction sectionData]	
+107ea0298	107ea029f	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction applySectionDataBlock]	
+107ea02a0	107ea02a7	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction itemUpdateBlocks]	
+107ea02a8	107ea02af	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction completionBlocks]	
+107ea02b0	107ea02b7	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction inUpdateItemCollector]	
+107ea02b8	107ea02bf	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction inUpdateCompletionBlocks]	
+107ea02c0	107ea02c7	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction state]	
+107ea02c8	107ea02cf	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction setState:]	
+107ea02d0	107ea02d7	decompiled	chunks/001/functions-000089.c	-[IGListBatchUpdateTransaction mode]	
+107ea02d8	107ea02df	decompiled	chunks/001/functions-000090.c	-[IGListBatchUpdateTransaction setMode:]	
+107ea02e0	107ea02e7	decompiled	chunks/001/functions-000090.c	-[IGListBatchUpdateTransaction actualCollectionViewUpdates]	
+107ea02e8	107ea0317	decompiled	chunks/001/functions-000090.c	-[IGListBatchUpdateTransaction setActualCollectionViewUpdates:]	
+107ea0318	107ea039f	decompiled	chunks/001/functions-000090.c	-[IGListBatchUpdateTransaction .cxx_destruct]	
+107ea03a0	107ea047f	decompiled	chunks/001/functions-000090.c	-[IGListBindingSectionController debugDescription]	
+107ea0480	107ea049b	decompiled	chunks/001/functions-000090.c	-[IGListBindingSectionController debugDescriptionLines]	
+107ea049c	107ea056b	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction initWithChangeBlock:itemUpdateBlocks:completionBlocks:]	
+107ea056c	107ea0573	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction state]	
+107ea0574	107ea07d3	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction begin]	
+107ea07d4	107ea07db	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction cancel]	
+107ea07dc	107ea07df	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction insertItemsAtIndexPaths:]	
+107ea07e0	107ea07e3	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction deleteItemsAtIndexPaths:]	
+107ea07e4	107ea07e7	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction moveItemFromIndexPath:toIndexPath:]	
+107ea07e8	107ea07eb	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction reloadItemFromIndexPath:toIndexPath:]	
+107ea07ec	107ea07ef	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction reloadSections:]	
+107ea07f0	107ea086b	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction addCompletionBlock:]	
+107ea086c	107ea08b3	decompiled	chunks/001/functions-000090.c	-[IGListDataSourceChangeTransaction .cxx_destruct]	
+107ea08b4	107ea08b7	decompiled	chunks/001/functions-000090.c	+[IGListDebugger trackAdapter:]	
+107ea08b8	107ea09c7	decompiled	chunks/001/functions-000090.c	+[IGListDebugger adapterDescriptions]	
+107ea09c8	107ea09cf	decompiled	chunks/001/functions-000090.c	+[IGListDebugger clear]	
+107ea09d0	107ea0a1b	decompiled	chunks/001/functions-000090.c	+[IGListDebugger dump]	
+107ea0a1c	107ea0b73	decompiled	chunks/001/functions-000090.c		
+107ea0b74	107ea0c03	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler init]	
+107ea0c04	107ea0c7b	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler _pluckObjectForView:]	
+107ea0c7c	107ea0daf	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler _willDisplayReusableView:forListAdapter:sectionController:object:indexPath:]	
+107ea0db0	107ea0e97	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler _didEndDisplayingReusableView:forListAdapter:sectionController:object:indexPath:]	
+107ea0e98	107ea0e9b	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler willDisplaySupplementaryView:forListAdapter:sectionController:object:indexPath:]	
+107ea0e9c	107ea0f4f	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler didEndDisplayingSupplementaryView:forListAdapter:sectionController:indexPath:]	
+107ea0f50	107ea1013	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler willDisplayCell:forListAdapter:sectionController:object:indexPath:]	
+107ea1014	107ea10e7	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler didEndDisplayingCell:forListAdapter:sectionController:indexPath:]	
+107ea10e8	107ea10ef	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler visibleListSections]	
+107ea10f0	107ea10f7	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler visibleViewObjectMap]	
+107ea10f8	107ea1127	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler setVisibleViewObjectMap:]	
+107ea1128	107ea1157	decompiled	chunks/001/functions-000090.c	-[IGListDisplayHandler .cxx_destruct]	
+107ea1158	107ea121f	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector init]	
+107ea1220	107ea1323	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector hasChanges]	
+107ea1324	107ea132b	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector sectionReloads]	
+107ea132c	107ea1333	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector itemInserts]	
+107ea1334	107ea133b	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector itemDeletes]	
+107ea133c	107ea1343	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector itemReloads]	
+107ea1344	107ea134b	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector itemMoves]	
+107ea134c	107ea139f	decompiled	chunks/001/functions-000090.c	-[IGListItemUpdatesCollector .cxx_destruct]	
+107ea13a0	107ea1443	decompiled	chunks/001/functions-000090.c	-[IGListReloadIndexPath initWithFromIndexPath:toIndexPath:]	
+107ea1444	107ea144b	decompiled	chunks/001/functions-000090.c	-[IGListReloadIndexPath fromIndexPath]	
+107ea144c	107ea1453	decompiled	chunks/001/functions-000090.c	-[IGListReloadIndexPath toIndexPath]	
+107ea1454	107ea1483	decompiled	chunks/001/functions-000090.c	-[IGListReloadIndexPath .cxx_destruct]	
+107ea1484	107ea15f3	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction initWithCollectionViewBlock:updater:delegate:reloadBlock:itemUpdateBlocks:completionBlocks:]	
+107ea15f4	107ea194b	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction begin]	
+107ea194c	107ea1b23	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction _executeCompletionBlocks:]	
+107ea1b24	107ea1b2b	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction cancel]	
+107ea1b2c	107ea1b2f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction insertItemsAtIndexPaths:]	
+107ea1b30	107ea1b33	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction deleteItemsAtIndexPaths:]	
+107ea1b34	107ea1b37	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction moveItemFromIndexPath:toIndexPath:]	
+107ea1b38	107ea1b3b	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction reloadItemFromIndexPath:toIndexPath:]	
+107ea1b3c	107ea1b3f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction reloadSections:]	
+107ea1b40	107ea1be7	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction addCompletionBlock:]	
+107ea1be8	107ea1bef	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction collectionView]	
+107ea1bf0	107ea1c07	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction updater]	
+107ea1c08	107ea1c1f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction delegate]	
+107ea1c20	107ea1c27	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction reloadBlock]	
+107ea1c28	107ea1c2f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction itemUpdateBlocks]	
+107ea1c30	107ea1c37	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction completionBlocks]	
+107ea1c38	107ea1c3f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction state]	
+107ea1c40	107ea1c47	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction setState:]	
+107ea1c48	107ea1c4f	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction inUpdateCompletionBlocks]	
+107ea1c50	107ea1cb3	decompiled	chunks/001/functions-000090.c	-[IGListReloadTransaction .cxx_destruct]	
+107ea1cb4	107ea1ccf	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap debugDescriptionLines]	
+107ea1cd0	107ea1d8f	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap initWithMapTable:]	
+107ea1d90	107ea1dcb	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap objects]	
+107ea1dcc	107ea1e57	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap sectionForSectionController:]	
+107ea1e58	107ea1ed3	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap sectionControllerForSection:]	
+107ea1ed4	107ea210b	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap updateWithObjects:sectionControllers:]	
+107ea210c	107ea2177	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap sectionControllerForObject:]	
+107ea2178	107ea21db	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap objectForSection:]	
+107ea21dc	107ea223b	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap sectionForObject:]	
+107ea223c	107ea22eb	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap reset]	
+107ea22ec	107ea23f7	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap updateObject:]	
+107ea23f8	107ea24ef	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap enumerateUsingBlock:]	
+107ea24f0	107ea25b7	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap copyWithZone:]	
+107ea25b8	107ea25bf	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap objectToSectionControllerMap]	
+107ea25c0	107ea25c7	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap sectionControllerToSectionMap]	
+107ea25c8	107ea25cf	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap mObjects]	
+107ea25d0	107ea25ff	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap setMObjects:]	
+107ea2600	107ea263b	decompiled	chunks/001/functions-000090.c	-[IGListSectionMap .cxx_destruct]	
+107ea263c	107ea26bf	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder init]	
+107ea26c0	107ea27db	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder addSectionBatchUpdateAnimated:collectionViewBlock:sectionDataBlock:applySectionDataBlock:completion:]	
+107ea27dc	107ea2907	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder addItemBatchUpdateAnimated:collectionViewBlock:itemUpdates:completion:]	
+107ea2908	107ea29e7	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder addReloadDataWithCollectionViewBlock:reloadBlock:completion:]	
+107ea29e8	107ea2a3b	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder addDataSourceChange:]	
+107ea2a3c	107ea2ca7	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder addChangesFromBuilder:]	
+107ea2ca8	107ea2f03	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder buildWithConfig:delegate:updater:]	
+107ea2f04	107ea2f8f	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder hasChanges]	
+107ea2f90	107ea2f97	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder sectionDataBlock]	
+107ea2f98	107ea2f9f	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder setSectionDataBlock:]	
+107ea2fa0	107ea2fa7	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder applySectionDataBlock]	
+107ea2fa8	107ea2faf	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder setApplySectionDataBlock:]	
+107ea2fb0	107ea2fb7	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder itemUpdateBlocks]	
+107ea2fb8	107ea2fbf	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder animated]	
+107ea2fc0	107ea2fc7	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder setAnimated:]	
+107ea2fc8	107ea2fcf	decompiled	chunks/001/functions-000090.c	-[IGListUpdateTransactionBuilder reloadBlock]	
+107ea2fd0	107ea2fd7	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder setReloadBlock:]	
+107ea2fd8	107ea2fdf	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder dataSourceChangeBlock]	
+107ea2fe0	107ea2fe7	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder setDataSourceChangeBlock:]	
+107ea2fe8	107ea2fef	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder mode]	
+107ea2ff0	107ea2ff7	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder setMode:]	
+107ea2ff8	107ea2fff	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder collectionViewBlock]	
+107ea3000	107ea3007	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder setCollectionViewBlock:]	
+107ea3008	107ea300f	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder completionBlocks]	
+107ea3010	107ea307b	decompiled	chunks/001/functions-000091.c	-[IGListUpdateTransactionBuilder .cxx_destruct]	
+107ea307c	107ea3097	decompiled	chunks/001/functions-000091.c		
+107ea3098	107ea3377	decompiled	chunks/001/functions-000091.c		
+107ea3378	107ea33c3	decompiled	chunks/001/functions-000091.c	+[IGListAdapterWeakContainer newWithObject:]	
+107ea33c4	107ea33db	decompiled	chunks/001/functions-000091.c	-[IGListAdapterWeakContainer weakObject]	
+107ea33dc	107ea33e7	decompiled	chunks/001/functions-000091.c	-[IGListAdapterWeakContainer setWeakObject:]	
+107ea33e8	107ea33ef	decompiled	chunks/001/functions-000091.c	-[IGListAdapterWeakContainer .cxx_destruct]	
+107ea33f0	107ea3437	decompiled	chunks/001/functions-000091.c		
+107ea3438	107ea353b	decompiled	chunks/001/functions-000091.c		
+107ea353c	107ea369f	decompiled	chunks/001/functions-000091.c		
+107ea36a0	107ea373f	decompiled	chunks/001/functions-000091.c		
+107ea3740	107ea39c3	decompiled	chunks/001/functions-000091.c		
+107ea39c4	107ea3a67	decompiled	chunks/001/functions-000091.c		
+107ea3a68	107ea3ac7	decompiled	chunks/001/functions-000091.c		
+107ea3ac8	107ea3ba7	decompiled	chunks/001/functions-000091.c		
+107ea3ba8	107ea3bc7	decompiled	chunks/001/functions-000091.c		
+107ea3bc8	107ea3beb	decompiled	chunks/001/functions-000091.c		
+107ea3bec	107ea3e53	decompiled	chunks/001/functions-000091.c	+[IGListBatchUpdateData _cleanIndexPathsWithMap:moves:indexPaths:deletes:inserts:]	
+107ea3e54	107ea4607	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData initWithInsertSections:deleteSections:moveSections:insertIndexPaths:deleteIndexPaths:updateIndexPaths:moveIndexPaths:]	
+107ea4608	107ea49b7	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData isEqual:]	
+107ea49b8	107ea4b9f	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData description]	
+107ea4ba0	107ea4ba7	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData insertSections]	
+107ea4ba8	107ea4baf	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData deleteSections]	
+107ea4bb0	107ea4bb7	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData moveSections]	
+107ea4bb8	107ea4bbf	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData insertIndexPaths]	
+107ea4bc0	107ea4bc7	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData deleteIndexPaths]	
+107ea4bc8	107ea4bcf	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData updateIndexPaths]	
+107ea4bd0	107ea4bd7	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData moveIndexPaths]	
+107ea4bd8	107ea4c43	decompiled	chunks/001/functions-000091.c	-[IGListBatchUpdateData .cxx_destruct]	
+107ea4c44	107ea4e63	decompiled	chunks/001/functions-000091.c		
+107ea4e64	107ea507f	decompiled	chunks/001/functions-000091.c		
+107ea5080	107ea50c7	decompiled	chunks/001/functions-000091.c		
+107ea50c8	107ea50fb	decompiled	chunks/001/functions-000091.c		
+107ea50fc	107ea5df7	decompiled	chunks/001/functions-000091.c		
+107ea5df8	107ea5e2b	decompiled	chunks/001/functions-000091.c		
+107ea5e2c	107ea5edf	decompiled	chunks/001/functions-000091.c		
+107ea5ee0	107ea5ef3	decompiled	chunks/001/functions-000091.c		
+107ea5ef4	107ea5faf	decompiled	chunks/001/functions-000091.c		
+107ea5fb0	107ea5fc3	decompiled	chunks/001/functions-000091.c		
+107ea5fc4	107ea603f	decompiled	chunks/001/functions-000091.c		
+107ea6040	107ea6113	decompiled	chunks/001/functions-000091.c		
+107ea6114	107ea61a3	decompiled	chunks/001/functions-000091.c		
+107ea61a4	107ea61b7	decompiled	chunks/001/functions-000091.c		
+107ea61b8	107ea6603	decompiled	chunks/001/functions-000091.c		
+107ea6604	107ea6637	decompiled	chunks/001/functions-000091.c		
+107ea6638	107ea66fb	decompiled	chunks/001/functions-000091.c		
+107ea66fc	107ea6a07	decompiled	chunks/001/functions-000091.c		
+107ea6a08	107ea6afb	decompiled	chunks/001/functions-000091.c		
+107ea6afc	107ea6b2f	decompiled	chunks/001/functions-000091.c		
+107ea6b30	107ea6b8f	decompiled	chunks/001/functions-000091.c		
+107ea6b90	107ea6bf3	decompiled	chunks/001/functions-000091.c		
+107ea6bf4	107ea6c03	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayoutInvalidationContext ig_invalidateSupplementaryAttributes]	
+107ea6c04	107ea6c13	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayoutInvalidationContext setIg_invalidateSupplementaryAttributes:]	
+107ea6c14	107ea6c23	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayoutInvalidationContext ig_invalidateAllAttributes]	
+107ea6c24	107ea6c33	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayoutInvalidationContext setIg_invalidateAllAttributes:]	
+107ea6c34	107ea6c3f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout initWithStickyHeaders:topContentInset:stretchToEdge:]	
+107ea6c40	107ea6e3f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout initWithStickyHeaders:scrollDirection:topContentInset:stretchToEdge:]	
+107ea6e40	107ea6e4f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout initWithCoder:]	
+107ea6e50	107ea6fb7	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout initialLayoutAttributesForAppearingItemAtIndexPath:]	
+107ea6fb8	107ea711f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout finalLayoutAttributesForDisappearingItemAtIndexPath:]	
+107ea7120	107ea74bf	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout layoutAttributesForElementsInRect:]	
+107ea74c0	107ea7653	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout layoutAttributesForItemAtIndexPath:]	
+107ea7654	107ea772b	decompiled	chunks/001/functions-000091.c		
+107ea772c	107ea7b53	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout layoutAttributesForSupplementaryViewOfKind:atIndexPath:]	
+107ea7b54	107ea7b6b	decompiled	chunks/001/functions-000091.c		
+107ea7b6c	107ea7ce3	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout collectionViewContentSize]	
+107ea7ce4	107ea7e03	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout invalidateLayoutWithContext:]	
+107ea7e04	107ea7e0f	decompiled	chunks/001/functions-000091.c	+[IGListCollectionViewLayout invalidationContextClass]	
+107ea7e10	107ea7f03	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout invalidationContextForBoundsChange:]	
+107ea7f04	107ea800b	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout shouldInvalidateLayoutForBoundsChange:]	
+107ea800c	107ea800f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout prepareLayout]	
+107ea8010	107ea808b	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout setStickyHeaderYOffset:]	
+107ea808c	107ea821b	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout _classNameForDelegate:sectionIndex:]	
+107ea821c	107ea8e5b	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout _calculateLayoutIfNeeded]	
+107ea8e5c	107ea8e73	decompiled	chunks/001/functions-000091.c		
+107ea8e74	107ea901f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout _rangeOfSectionsInRect:]	
+107ea9020	107ea903f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout _resetSupplementaryAttributesCache]	
+107ea9040	107ea906f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout didModifySection:]	
+107ea9070	107ea907f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout scrollDirection]	
+107ea9080	107ea908f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout stickyHeaderYOffset]	
+107ea9090	107ea909f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout showHeaderWhenEmpty]	
+107ea90a0	107ea90af	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout setShowHeaderWhenEmpty:]	
+107ea90b0	107ea90bf	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout stickyHeaders]	
+107ea90c0	107ea90cf	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout topContentInset]	
+107ea90d0	107ea90df	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout stretchToEdge]	
+107ea90e0	107ea917f	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout .cxx_destruct]	
+107ea9180	107ea9197	decompiled	chunks/001/functions-000091.c	-[IGListCollectionViewLayout .cxx_construct]	
+107ea9198	107ea920f	decompiled	chunks/001/functions-000091.c		
+107ea9210	107ea924f	decompiled	chunks/001/functions-000091.c		
+107ea9250	107ea9277	decompiled	chunks/001/functions-000091.c		
+107ea9278	107ea92bf	decompiled	chunks/001/functions-000091.c	-[IGListWorkingRangeHandler initWithWorkingRangeSize:]	
+107ea92c0	107ea96cb	decompiled	chunks/001/functions-000091.c	-[IGListWorkingRangeHandler willDisplayItemAtIndexPath:forListAdapter:]	
+107ea96cc	107ea98f7	decompiled	chunks/001/functions-000092.c	-[IGListWorkingRangeHandler didEndDisplayingItemAtIndexPath:forListAdapter:]	
+107ea98f8	107ea9f6f	decompiled	chunks/001/functions-000092.c	-[IGListWorkingRangeHandler _updateWorkingRangesWithListAdapter:]	
+107ea9f70	107ea9f77	decompiled	chunks/001/functions-000092.c	-[IGListWorkingRangeHandler workingRangeSize]	
+107ea9f78	107ea9fcb	decompiled	chunks/001/functions-000092.c	-[IGListWorkingRangeHandler .cxx_destruct]	
+107ea9fcc	107ea9feb	decompiled	chunks/001/functions-000092.c	-[IGListWorkingRangeHandler .cxx_construct]	
+107ea9fec	107eaa1af	decompiled	chunks/001/functions-000092.c		
+107eaa1b0	107eaa26b	decompiled	chunks/001/functions-000092.c		
+107eaa26c	107eaa343	decompiled	chunks/001/functions-000092.c		
+107eaa344	107eaa713	decompiled	chunks/001/functions-000092.c		
+107eaa714	107eaa8d7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler initWithDependencyProvider:dataObjectContext:dataVault:networker:thumbnailFileGenerator:networkConnectivityMonitor:experimentService:timeProvider:]	
+107eaa8d8	107eaab17	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler scheduleBackgroundMediaUploadForOperation:]	
+107eaab18	107eaab77	decompiled	chunks/001/functions-000092.c		
+107eaab78	107eaac4b	decompiled	chunks/001/functions-000092.c		
+107eaac4c	107eaac93	decompiled	chunks/001/functions-000092.c		
+107eaac94	107eab2ab	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _checkAndScheduleUploadForOperation:]	
+107eab2ac	107eab2e3	decompiled	chunks/001/functions-000092.c		
+107eab2e4	107eab2eb	decompiled	chunks/001/functions-000092.c		
+107eab2ec	107eab323	decompiled	chunks/001/functions-000092.c		
+107eab324	107eab3e7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _logSchedulingResult:]	
+107eab3e8	107eab3eb	decompiled	chunks/001/functions-000092.c		
+107eab3ec	107eab47b	decompiled	chunks/001/functions-000092.c		
+107eab47c	107eab877	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _scheduleCUPSBackgroundMediaUploadForAddSnapEntities:entry:]	
+107eab878	107eabb57	decompiled	chunks/001/functions-000092.c		
+107eabb58	107eabc9b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _generateStepsWithInitialDBWriteResult:initialStepData:]	
+107eabc9c	107eabcb3	decompiled	chunks/001/functions-000092.c		
+107eabcb4	107eabd83	decompiled	chunks/001/functions-000092.c		
+107eabd84	107eabd93	decompiled	chunks/001/functions-000092.c		
+107eabd94	107eabdff	decompiled	chunks/001/functions-000092.c		
+107eabe00	107eabf43	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _startOrchestrationWithStepGenerationResult:initialStepData:]	
+107eabf44	107eabfff	decompiled	chunks/001/functions-000092.c		
+107eac000	107eac00f	decompiled	chunks/001/functions-000092.c		
+107eac010	107eac07b	decompiled	chunks/001/functions-000092.c		
+107eac07c	107eac1af	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler _processUploadSchedulingResult:analyticsType:snap:entry:]	
+107eac1b0	107eac33f	decompiled	chunks/001/functions-000092.c		
+107eac340	107eac503	decompiled	chunks/001/functions-000092.c		
+107eac504	107eac5e3	decompiled	chunks/001/functions-000092.c		
+107eac5e4	107eac6b7	decompiled	chunks/001/functions-000092.c		
+107eac6b8	107eac73b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadScheduler .cxx_destruct]	
+107eac73c	107eac9cb	decompiled	chunks/001/functions-000092.c		
+107eac9cc	107eaca73	decompiled	chunks/001/functions-000092.c		
+107eaca74	107eacf03	decompiled	chunks/001/functions-000092.c		
+107eacf04	107eacf73	decompiled	chunks/001/functions-000092.c		
+107eacf74	107ead0cb	decompiled	chunks/001/functions-000092.c		
+107ead0cc	107ead187	decompiled	chunks/001/functions-000092.c		
+107ead188	107ead3eb	decompiled	chunks/001/functions-000092.c		
+107ead3ec	107ead543	decompiled	chunks/001/functions-000092.c		
+107ead544	107ead5ff	decompiled	chunks/001/functions-000092.c		
+107ead600	107eadbcf	decompiled	chunks/001/functions-000092.c		
+107eadbd0	107eadccb	decompiled	chunks/001/functions-000092.c		
+107eadccc	107eadd0b	decompiled	chunks/001/functions-000092.c		
+107eadd0c	107eadf43	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadSchedulingServiceProvider _backgroundUploadScheduler]	
+107eadf44	107eae003	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncBackgroundUploadSchedulingServiceProvider .cxx_destruct]	
+107eae004	107eae217	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggingServiceProvider _cloudSyncLogger]	
+107eae218	107eae28b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggingServiceProvider .cxx_destruct]	
+107eae28c	107eae39b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncServiceProvider end]	
+107eae39c	107eae4c3	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncServiceProvider .cxx_destruct]	
+107eae4c4	107eae507	decompiled	chunks/001/functions-000092.c	-[SCMemoriesBackupServiceProvider .cxx_destruct]	
+107eae508	107eae693	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl initWithPerformer:userTrackedLogger:grapheneRegistry:crashLogger:dataObjectContext:dreamsSessionService:]	
+107eae694	107eae797	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl beginUploadForURL:snapId:contentType:dataSizeInBytes:]	
+107eae798	107eae817	decompiled	chunks/001/functions-000092.c		
+107eae818	107eae93b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl beginUploadForURL:snapId:assetDescriptor:dataSizeInBytes:]	
+107eae93c	107eae9bb	decompiled	chunks/001/functions-000092.c		
+107eae9bc	107eaeaaf	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl endUploadForURL:succeeded:statusCode:parameters:]	
+107eaeab0	107eaedf3	decompiled	chunks/001/functions-000092.c		
+107eaedf4	107eaf503	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logNewQueuedOperationWithParams:queueLength:blockedDurationInSec:]	
+107eaf504	107eaf5c7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logFinishedOperationWithOperationType:totalTimeInSec:networkProcessingTimeInSec:queueLength:logContexts:tempCellularBackupEnabled:]	
+107eaf5c8	107eaf6fb	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBlizzardAbandonOperation:entryId:snapId:mediaId:operationType:abandonReason:detail:]	
+107eaf6fc	107eaf773	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logSkipedOperationsFromOutOfOrderDeletion:logContexts:deleteEntryIds:backupNowEnabled:operationType:]	
+107eaf774	107eaf777	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl cloudSyncDidPerformStep:consoleParam:]	
+107eaf778	107eaf89f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupNetworkErrorWithStatusCode:detailStatusCode:retryCount:retryPolicy:backupStatus:analyticsType:]	
+107eaf8a0	107eafa6f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupCloudFileLocalAvailability:IsSnapDuplicated:uploadState:analyticsType:]	
+107eafa70	107eafb6f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupCloudFileMissingErrorWithCloudFileLocalAvailability:IsSnapDuplicated:uploadState:analyticsType:]	
+107eafb70	107eafc47	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBlizzardBackupError:fromRetry:errorMessage:statusCode:detailStatusCode:]	
+107eafc48	107eafc5b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logServletResponseErrorWithEntryType:]	
+107eafc5c	107eafc6f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupSnapDocError:]	
+107eafc70	107eafd87	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupNonFatalError:errorCategory:]	
+107eafd88	107eafe4b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupTranscodingError:]	
+107eafe4c	107eb0167	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logSkipTranscodingReasonsWithSelectionMetrics:]	
+107eb0168	107eb0293	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupFatalRetry:retriedSnapCount:coreDataUpdateDidSucceed:]	
+107eb0294	107eb02a7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logLegacyEditsSize:mediaType:]	
+107eb02a8	107eb04df	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupStepLatencies:mediaType:operationType:]	
+107eb04e0	107eb06f7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupStepFailureForOperationType:step:errorCategory:mediaType:]	
+107eb06f8	107eb08f7	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupLatency:mediaType:operationType:]	
+107eb08f8	107eb0a57	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupCompleteForOperationType:isSuccess:mediaType:]	
+107eb0a58	107eb0b63	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupAttemptForOperationType:mediaType:]	
+107eb0b64	107eb0c43	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logDbAttemptBegin:operation:snapState:]	
+107eb0c44	107eb0e33	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logDbAttemptEnd:operation:snapState:success:dbLatencyMs:]	
+107eb0e34	107eb1157	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logDedupeAddSnapsResult:entryType:isReplacingSnap:analytics:]	
+107eb1158	107eb1213	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackgroundUploadError:]	
+107eb1214	107eb12cf	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackgroundUploadStep:]	
+107eb12d0	107eb135b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl logBackupJobAppendLatencyInSeconds:]	
+107eb135c	107eb156b	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _logDedupeAddSnapsResultForMetric:operationType:entryType:analytics:isReplacedSnap:isDuplicatedSnap:]	
+107eb156c	107eb1577	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _shouldReportBlizzardEvent:]	
+107eb1578	107eb16db	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _logGallerySnapUploadMetrics:totalTimeInSec:tempCellularBackupEnabled:skipOperation:operationType:]	
+107eb16dc	107eb183f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _logSnapGallerySnapUpload:totalTimeInSec:tempCellularBackupEnabled:skipOperation:]	
+107eb1840	107eb1997	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _logTimelineDraftGallerySnapUpload:totalTimeInSec:tempCellularBackupEnabled:skipOperation:operationType:]	
+107eb1998	107eb1c1f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _emitTimelineDraftGallerySnapUpload:totalTimeInSec:tempCellularBackupEnabled:skipOperation:]	
+107eb1c20	107eb1f3f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _emitGallerySnapUploadWithSnapId:captureSessionId:mediaId:entryId:entryType:totalTimeInSec:skipOperation:requestId:]	
+107eb1f40	107eb1f5f	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _convertCloudSyncOperationType:]	
+107eb1f60	107eb2067	decompiled	chunks/001/functions-000092.c	-[SCCloudSyncLoggerImpl _addDbAttemptDimensions:stepName:operation:snapState:]	
+107eb2068	107eb20d3	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl _cloudSyncDbOperationSnapStateToString:]	
+107eb20d4	107eb20fb	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl _cloudSyncBackupStatusToString:]	
+107eb20fc	107eb211f	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl _cloudSyncNetworkRetryCountToString:]	
+107eb2120	107eb2127	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl grapheneRegistry]	
+107eb2128	107eb212f	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl crashLogger]	
+107eb2130	107eb2137	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl userTrackedLogger]	
+107eb2138	107eb21a3	decompiled	chunks/001/functions-000093.c	-[SCCloudSyncLoggerImpl .cxx_destruct]	
+107eb21a4	107eb22b7	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo initWithBeginTime:snapId:gcsURL:contentType:assetDescriptor:dataSizeInBytes:]	
+107eb22b8	107eb22db	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo gcsPath]	
+107eb22dc	107eb22ff	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo host]	
+107eb2300	107eb236b	decompiled	chunks/001/functions-000093.c	+[SCGalleryLoggerGcsInfo gcsPath:]	
+107eb236c	107eb23d7	decompiled	chunks/001/functions-000093.c	+[SCGalleryLoggerGcsInfo host:]	
+107eb23d8	107eb23df	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo beginTime]	
+107eb23e0	107eb23e7	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo snapId]	
+107eb23e8	107eb23ef	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo gcsURL]	
+107eb23f0	107eb23f7	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo contentType]	
+107eb23f8	107eb23ff	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo assetDescriptor]	
+107eb2400	107eb2407	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo dataSizeInBytes]	
+107eb2408	107eb244f	decompiled	chunks/001/functions-000093.c	-[SCGalleryLoggerGcsInfo .cxx_destruct]	
+107eb2450	107eb24a3	decompiled	chunks/001/functions-000093.c	+[SCMediaRenderedLowResUpload sharedInstance]	
+107eb24a4	107eb24cf	decompiled	chunks/001/functions-000093.c		
+107eb24d0	107eb257f	decompiled	chunks/001/functions-000093.c	-[SCMediaRenderedLowResUpload init]	
+107eb2580	107eb2753	decompiled	chunks/001/functions-000093.c	-[SCMediaRenderedLowResUpload resumeUploadRenderedLowresMediaWithURL:snap:renderedLowresMediaData:networker:logger:additionalHTTPHeaders:callbackQueue:successBlock:failureBlock:]	
+107eb2754	107eb29e3	decompiled	chunks/001/functions-000093.c		
+107eb29e4	107eb2aff	decompiled	chunks/001/functions-000093.c		
+107eb2b00	107eb2b0b	decompiled	chunks/001/functions-000093.c	-[SCMediaRenderedLowResUpload .cxx_destruct]	
+107eb2b0c	107eb2e53	decompiled	chunks/001/functions-000093.c	-[SCBackgroundMediaUploadFinishNotifier initWithSnapIds:dataObjectContext:]	
+107eb2e54	107eb2e73	decompiled	chunks/001/functions-000093.c		
+107eb2e74	107eb2f1b	decompiled	chunks/001/functions-000093.c		
+107eb2f1c	107eb2f97	decompiled	chunks/001/functions-000093.c	-[SCBackgroundMediaUploadFinishNotifier _backgroundUploadFinished]	
+107eb2f98	107eb2fa3	decompiled	chunks/001/functions-000093.c		
+107eb2fa4	107eb2fab	decompiled	chunks/001/functions-000093.c	-[SCBackgroundMediaUploadFinishNotifier waitUntil:]	
+107eb2fac	107eb2fdb	decompiled	chunks/001/functions-000093.c	-[SCBackgroundMediaUploadFinishNotifier .cxx_destruct]	
+107eb2fdc	107eb345f	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier initWithFeatureSettingsService:networkConnectivityMonitor:memoriesExperimentService:memoriesUserDefaultsManager:]	
+107eb3460	107eb351b	decompiled	chunks/001/functions-000093.c		
+107eb351c	107eb3563	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier dealloc]	
+107eb3564	107eb35ef	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier _updateWithBackupOnCellular:]	
+107eb35f0	107eb3613	decompiled	chunks/001/functions-000093.c		
+107eb3614	107eb36db	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier _shouldBackupNow]	
+107eb36dc	107eb36e3	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier waitUntil:]	
+107eb36e4	107eb374f	decompiled	chunks/001/functions-000093.c	-[SCBackupOnCellularChangeNotifier .cxx_destruct]	
+107eb3750	107eb38c3	decompiled	chunks/001/functions-000093.c	-[SCNetworkConnectivityNotifier initWithNetworkConnectivity:networkConnectivityMonitor:]	
+107eb38c4	107eb3923	decompiled	chunks/001/functions-000093.c		
+107eb3924	107eb392b	decompiled	chunks/001/functions-000093.c	-[SCNetworkConnectivityNotifier waitUntil:]	
+107eb392c	107eb39ef	decompiled	chunks/001/functions-000093.c	-[SCNetworkConnectivityNotifier networkConnectivityStatusDidChange:]	
+107eb39f0	107eb39ff	decompiled	chunks/001/functions-000093.c		
+107eb3a00	107eb3a0b	decompiled	chunks/001/functions-000093.c	-[SCNetworkConnectivityNotifier .cxx_destruct]	
+107eb3a0c	107eb3a13	decompiled	chunks/001/functions-000093.c	-[SCUploadDataCapNotifier initWithDependencyProvider:cloudSyncOperation:featureSettingsService:]	
+107eb3a14	107eb3efb	decompiled	chunks/001/functions-000093.c	-[SCUploadDataCapNotifier initWithDependencyProvider:cloudSyncOperation:featureSettingsService:performer:]	
+107eb3efc	107eb3f03	decompiled	chunks/001/functions-000093.c	-[SCUploadDataCapNotifier waitUntil:]	
+107eb3f04	107eb3f7f	decompiled	chunks/001/functions-000093.c	-[SCUploadDataCapNotifier _updateWaitTimeAndNotifyServiceLoop]	
+107eb3f80	107eb3f8b	decompiled	chunks/001/functions-000093.c		
+107eb3f8c	107eb3f97	decompiled	chunks/001/functions-000093.c	-[SCUploadDataCapNotifier .cxx_destruct]	
+107eb3f98	107eb41eb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE initWithProfile:entryPlaceholder:addSnapEntity:dataVaultEncryption:userContext:]	
+107eb41ec	107eb41f3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE type]	
+107eb41f4	107eb41fb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE analyticsType]	
+107eb41fc	107eb422b	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE requestID]	
+107eb422c	107eb42c3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE entryIds]	
+107eb42c4	107eb4333	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE makeSnapshot]	
+107eb4334	107eb463f	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE initWithSnapshot:requestID:]	
+107eb4640	107eb4ec3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107eb4ec4	107eb51b3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE executeOptimisticallyWithDataObjectContext:]	
+107eb51b4	107eb51bb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107eb51bc	107eb55b7	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107eb55b8	107eb5667	decompiled	chunks/001/functions-000093.c		
+107eb5668	107eb58a3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE commitWithEntryUpdates:dataObjectContext:]	
+107eb58a4	107eb58f7	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107eb58f8	107eb5a63	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE changedSnapContextsWithEntryUpdate:]	
+107eb5a64	107eb5aa3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE eligibleForOutOfOrderExecution]	
+107eb5aa4	107eb5ae3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE doesNotRequireMediaUpload]	
+107eb5ae4	107eb5b23	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE isOperationFromRetryEntry]	
+107eb5b24	107eb5b27	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE allMediaUploadsCompleteWithBoltDataUploader:]	
+107eb5b28	107eb5b2f	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE needRunImmediately]	
+107eb5b30	107eb5b37	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107eb5b38	107eb5b3f	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107eb5b40	107eb6003	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE _updateEntriesFromNetworker:queue:snapsUploadInfo:failureHandler:successHandler:]	
+107eb6004	107eb6173	decompiled	chunks/001/functions-000093.c		
+107eb6174	107eb61bb	decompiled	chunks/001/functions-000093.c		
+107eb61bc	107eb64fb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE logParameters]	
+107eb64fc	107eb6503	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE requiresSyncStatusUpdate]	
+107eb6504	107eb650b	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE isEligibleForTacomaWithCOFService:]	
+107eb650c	107eb657b	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE snapPlaceholders]	
+107eb657c	107eb65eb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE detailPlaceholders]	
+107eb65ec	107eb665b	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE miniThumbnailPlaceholders]	
+107eb665c	107eb6663	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE numberOfSnaps]	
+107eb6664	107eb6693	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE dataVaultEncryption]	
+107eb6694	107eb672b	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE isPrivateWithDataObjectContext:]	
+107eb672c	107eb67cb	decompiled	chunks/001/functions-000093.c	-[SCCloudAddSnapEntryOperation_DEPRECATED_DO_NOT_USE .cxx_destruct]	
+107eb67cc	107eb67d3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE type]	
+107eb67d4	107eb67db	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE analyticsType]	
+107eb67dc	107eb6b03	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE initWithProfile:entryPlaceholder:addSnapEntities:dataVaultEncryption:userContext:]	
+107eb6b04	107eb6b1b	decompiled	chunks/001/functions-000093.c		
+107eb6b1c	107eb6fe3	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE initWithSnapshot:requestID:]	
+107eb6fe4	107eb7013	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE requestID]	
+107eb7014	107eb70ab	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE entryIds]	
+107eb70ac	107eb7117	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE makeSnapshot]	
+107eb7118	107eb7783	decompiled	chunks/001/functions-000093.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107eb7784	107eb778b	decompiled	chunks/001/functions-000093.c		
+107eb778c	107eb77cf	decompiled	chunks/001/functions-000093.c		
+107eb77d0	107eb77df	decompiled	chunks/001/functions-000093.c		
+107eb77e0	107eb7cff	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE executeOptimisticallyWithDataObjectContext:]	
+107eb7d00	107eb803f	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE commitWithEntryUpdates:dataObjectContext:]	
+107eb8040	107eb816b	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107eb816c	107eb81d7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE changedSnapContextsWithEntryUpdate:]	
+107eb81d8	107eb82eb	decompiled	chunks/001/functions-000094.c		
+107eb82ec	107eb82f3	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107eb82f4	107eb86e7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107eb86e8	107eb86ef	decompiled	chunks/001/functions-000094.c		
+107eb86f0	107eb87ef	decompiled	chunks/001/functions-000094.c		
+107eb87f0	107eb8aef	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE logParameters]	
+107eb8af0	107eb8b9f	decompiled	chunks/001/functions-000094.c		
+107eb8ba0	107eb8cbb	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE eligibleForOutOfOrderExecution]	
+107eb8cbc	107eb8dd7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE doesNotRequireMediaUpload]	
+107eb8dd8	107eb8e17	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE isOperationFromRetryEntry]	
+107eb8e18	107eb8eb7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE allMediaUploadsCompleteWithBoltDataUploader:]	
+107eb8eb8	107eb8ebf	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE requiresSyncStatusUpdate]	
+107eb8ec0	107eb8ec7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE needRunImmediately]	
+107eb8ec8	107eb8ecf	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107eb8ed0	107eb8ed7	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107eb8ed8	107eb8edf	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE isEligibleForTacomaWithCOFService:]	
+107eb8ee0	107eb8f0f	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE snapPlaceholders]	
+107eb8f10	107eb8f3f	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE detailPlaceholders]	
+107eb8f40	107eb8f6f	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE miniThumbnailPlaceholders]	
+107eb8f70	107eb8f7f	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE numberOfSnaps]	
+107eb8f80	107eb8faf	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE dataVaultEncryption]	
+107eb8fb0	107eb9047	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE isPrivateWithDataObjectContext:]	
+107eb9048	107eb9553	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE _updateEntryFromCloudFS:networker:dataObjectContext:snapsUploadInfo:queue:failureHandler:successHandler:]	
+107eb9554	107eb96c3	decompiled	chunks/001/functions-000094.c		
+107eb96c4	107eb970b	decompiled	chunks/001/functions-000094.c		
+107eb970c	107eb97ab	decompiled	chunks/001/functions-000094.c	-[SCCloudAddStoryEntryOperation_DEPRECATED_DO_NOT_USE .cxx_destruct]	
+107eb97ac	107eb9867	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation initWithEntryPlaceholder:addSnapEntities:autosaveTimeUtc:snapsOrder:dataVaultEncryption:profile:userContext:memoriesExperimentService:]	
+107eb9868	107eb9bf3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation initWithEntryPlaceholder:addSnapEntities:autosaveTimeUtc:dataVaultEncryption:profile:userContext:memoriesExperimentService:]	
+107eb9bf4	107eb9c0b	decompiled	chunks/001/functions-000094.c		
+107eb9c0c	107eb9c13	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation type]	
+107eb9c14	107eb9c1b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation analyticsType]	
+107eb9c1c	107eb9c4b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation requestID]	
+107eb9c4c	107eb9ce3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation entryIds]	
+107eb9ce4	107eb9d5f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation makeSnapshot]	
+107eb9d60	107eb9ff3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation initWithSnapshot:requestID:]	
+107eb9ff4	107eba67f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107eba680	107eba687	decompiled	chunks/001/functions-000094.c		
+107eba688	107eba887	decompiled	chunks/001/functions-000094.c		
+107eba888	107ebab63	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation executeOptimisticallyWithDataObjectContext:]	
+107ebab64	107ebac87	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ebac88	107ebb0a3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ebb0a4	107ebb0ab	decompiled	chunks/001/functions-000094.c		
+107ebb0ac	107ebb25f	decompiled	chunks/001/functions-000094.c		
+107ebb260	107ebb617	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation commitWithEntryUpdates:dataObjectContext:]	
+107ebb618	107ebb7b3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ebb7b4	107ebb81f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation changedSnapContextsWithEntryUpdate:]	
+107ebb820	107ebb957	decompiled	chunks/001/functions-000094.c		
+107ebb958	107ebb997	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation isEligibleForTacomaWithCOFService:]	
+107ebb998	107ebbfef	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation _updateEntryFromCloudFS:networker:dataObjectContext:logger:queue:snapsUploadInfo:failureHandler:successHandler:]	
+107ebbff0	107ebc15f	decompiled	chunks/001/functions-000094.c		
+107ebc160	107ebc1a7	decompiled	chunks/001/functions-000094.c		
+107ebc1a8	107ebc4c3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation logParameters]	
+107ebc4c4	107ebc573	decompiled	chunks/001/functions-000094.c		
+107ebc574	107ebc68f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation eligibleForOutOfOrderExecution]	
+107ebc690	107ebc7ab	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation doesNotRequireMediaUpload]	
+107ebc7ac	107ebc7eb	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation isOperationFromRetryEntry]	
+107ebc7ec	107ebc88b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ebc88c	107ebc893	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation requiresSyncStatusUpdate]	
+107ebc894	107ebc89b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation needRunImmediately]	
+107ebc89c	107ebcb7b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ebcb7c	107ebcbd7	decompiled	chunks/001/functions-000094.c		
+107ebcbd8	107ebcccf	decompiled	chunks/001/functions-000094.c		
+107ebccd0	107ebccff	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ebcd00	107ebcd2f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation snapPlaceholders]	
+107ebcd30	107ebcd5f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation detailPlaceholders]	
+107ebcd60	107ebcd8f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation miniThumbnailPlaceholders]	
+107ebcd90	107ebcd9f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation numberOfSnaps]	
+107ebcda0	107ebcdcf	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation dataVaultEncryption]	
+107ebcdd0	107ebce67	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation isPrivateWithDataObjectContext:]	
+107ebce68	107ebcf37	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperation .cxx_destruct]	
+107ebcf38	107ebd173	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 initWithEntryPlaceholder:addSnapEntity:dataVaultEncryption:profile:userContext:memoriesExperimentService:]	
+107ebd174	107ebd17b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 type]	
+107ebd17c	107ebd183	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 analyticsType]	
+107ebd184	107ebd1b3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 requestID]	
+107ebd1b4	107ebd24b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 entryIds]	
+107ebd24c	107ebd2b7	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 makeSnapshot]	
+107ebd2b8	107ebd503	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 initWithSnapshot:requestID:]	
+107ebd504	107ebd6f7	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ebd6f8	107ebdf2b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 executeOptimisticallyWithDataObjectContext:]	
+107ebdf2c	107ebe00b	decompiled	chunks/001/functions-000094.c		
+107ebe00c	107ebe12f	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ebe130	107ebeb6b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ebeb6c	107ebec5f	decompiled	chunks/001/functions-000094.c		
+107ebec60	107ebecdb	decompiled	chunks/001/functions-000094.c		
+107ebecdc	107ebeffb	decompiled	chunks/001/functions-000094.c		
+107ebeffc	107ebf013	decompiled	chunks/001/functions-000094.c		
+107ebf014	107ebf1e7	decompiled	chunks/001/functions-000094.c		
+107ebf1e8	107ebf327	decompiled	chunks/001/functions-000094.c		
+107ebf328	107ebf42f	decompiled	chunks/001/functions-000094.c		
+107ebf430	107ebf933	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 commitWithEntryUpdates:dataObjectContext:]	
+107ebf934	107ebf9f3	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ebf9f4	107ebfb73	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 changedSnapContextsWithEntryUpdate:]	
+107ebfb74	107ebfe5b	decompiled	chunks/001/functions-000094.c	-[SCCloudCreateOrExtendEntryOperationV2 _updateEntryForAddSnapEntity:dependencyProvider:thumbnailFileGenerator:dataVault:networker:snapsUploadInfo:snapRequestInfoResult:failureHandler:successHandler:]	
+107ebfe5c	107ebff87	decompiled	chunks/001/functions-000094.c		
+107ebff88	107ebff93	decompiled	chunks/001/functions-000094.c		
+107ebff94	107ec0053	decompiled	chunks/001/functions-000094.c		
+107ec0054	107ec005f	decompiled	chunks/001/functions-000095.c		
+107ec0060	107ec036b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 logParameters]	
+107ec036c	107ec03ab	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 eligibleForOutOfOrderExecution]	
+107ec03ac	107ec03eb	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 doesNotRequireMediaUpload]	
+107ec03ec	107ec042b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 isOperationFromRetryEntry]	
+107ec042c	107ec04b3	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 allMediaUploadsCompleteWithBoltDataUploader:]	
+107ec04b4	107ec04bb	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 requiresSyncStatusUpdate]	
+107ec04bc	107ec04c3	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 needRunImmediately]	
+107ec04c4	107ec063f	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ec0640	107ec075b	decompiled	chunks/001/functions-000095.c		
+107ec075c	107ec0767	decompiled	chunks/001/functions-000095.c		
+107ec0768	107ec0797	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ec0798	107ec0807	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 snapPlaceholders]	
+107ec0808	107ec0877	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 detailPlaceholders]	
+107ec0878	107ec08e7	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 miniThumbnailPlaceholders]	
+107ec08e8	107ec08ef	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 numberOfSnaps]	
+107ec08f0	107ec09b3	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 dataVaultEncryption]	
+107ec09b4	107ec0a4b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 isPrivateWithDataObjectContext:]	
+107ec0a4c	107ec0aeb	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 _getCloudSyncEntryData]	
+107ec0aec	107ec0c2b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 isEligibleForTacomaWithCOFService:]	
+107ec0c2c	107ec0ceb	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendEntryOperationV2 .cxx_destruct]	
+107ec0cec	107ec0cf3	decompiled	chunks/001/functions-000095.c		
+107ec0cf4	107ec0f1b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendOperationProgressReporter initWithReporterQueue:progressHandler:]	
+107ec0f1c	107ec0fcb	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendOperationProgressReporter reporterWithIdentifier:didReportFractionCompleted:]	
+107ec0fcc	107ec1067	decompiled	chunks/001/functions-000095.c		
+107ec1068	107ec107f	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendOperationProgressReporter progressReceiver]	
+107ec1080	107ec108b	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendOperationProgressReporter setProgressReceiver:]	
+107ec108c	107ec10db	decompiled	chunks/001/functions-000095.c	-[SCCloudCreateOrExtendOperationProgressReporter .cxx_destruct]	
+107ec10dc	107ec11a7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesCleanupContext initWithDeletedSnaps:snapIdToEntryIdMap:entryIdToDeletedEntryAssets:]	
+107ec11a8	107ec11af	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesCleanupContext deletedSnaps]	
+107ec11b0	107ec11b7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesCleanupContext snapIdToEntryIdMap]	
+107ec11b8	107ec11bf	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesCleanupContext entryIdToDeletedEntryAssets]	
+107ec11c0	107ec11fb	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesCleanupContext .cxx_destruct]	
+107ec11fc	107ec1363	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation initWithProfile:entryIds:entryIdToSnapIdsMap:prioritized:deleteSharedSnapForAll:userContext:]	
+107ec1364	107ec136b	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation type]	
+107ec136c	107ec1373	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation analyticsType]	
+107ec1374	107ec13a3	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation requestID]	
+107ec13a4	107ec13d3	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation entryIds]	
+107ec13d4	107ec142b	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation makeSnapshot]	
+107ec142c	107ec1617	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation initWithSnapshot:requestID:]	
+107ec1618	107ec1873	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ec1874	107ec1afb	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation executeOptimisticallyWithDataObjectContext:]	
+107ec1afc	107ec1b53	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ec1b54	107ec1cab	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ec1cac	107ec20c3	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation commitWithEntryUpdates:dataObjectContext:]	
+107ec20c4	107ec20d7	decompiled	chunks/001/functions-000095.c		
+107ec20d8	107ec226b	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ec226c	107ec227f	decompiled	chunks/001/functions-000095.c		
+107ec2280	107ec2353	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation changedSnapContextsWithEntryUpdate:]	
+107ec2354	107ec2487	decompiled	chunks/001/functions-000095.c		
+107ec2488	107ec25d7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation logParameters]	
+107ec25d8	107ec25df	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation eligibleForOutOfOrderExecution]	
+107ec25e0	107ec25e7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation doesNotRequireMediaUpload]	
+107ec25e8	107ec25ef	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ec25f0	107ec25f7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation requiresSyncStatusUpdate]	
+107ec25f8	107ec2607	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation needRunImmediately]	
+107ec2608	107ec2aaf	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ec2ab0	107ec2b6f	decompiled	chunks/001/functions-000095.c		
+107ec2b70	107ec2b83	decompiled	chunks/001/functions-000095.c		
+107ec2b84	107ec2ccb	decompiled	chunks/001/functions-000095.c		
+107ec2ccc	107ec2cdf	decompiled	chunks/001/functions-000095.c		
+107ec2ce0	107ec2ce7	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ec2ce8	107ec2d27	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation isEligibleForTacomaWithCOFService:]	
+107ec2d28	107ec2e93	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation _deleteEntriesWithNetworker:dataObjectContext:memoriesAssetRepository:logger:performer:successHandler:failureHandler:]	
+107ec2e94	107ec2f87	decompiled	chunks/001/functions-000095.c		
+107ec2f88	107ec2f93	decompiled	chunks/001/functions-000095.c		
+107ec2f94	107ec3053	decompiled	chunks/001/functions-000095.c		
+107ec3054	107ec30c3	decompiled	chunks/001/functions-000095.c	-[SCCloudDeleteEntriesOperation .cxx_destruct]	
+107ec30c4	107ec34df	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE initWithEntryId:title:autosaveTimeUtc:addSnapEntities:dataVaultEncryption:profile:userContext:memoriesExperimentService:]	
+107ec34e0	107ec34f7	decompiled	chunks/001/functions-000095.c		
+107ec34f8	107ec358b	decompiled	chunks/001/functions-000095.c		
+107ec358c	107ec3593	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE type]	
+107ec3594	107ec359b	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE analyticsType]	
+107ec359c	107ec35cb	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE requestID]	
+107ec35cc	107ec363b	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE entryIds]	
+107ec363c	107ec36b7	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE makeSnapshot]	
+107ec36b8	107ec3bc3	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE initWithSnapshot:requestID:]	
+107ec3bc4	107ec4183	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ec4184	107ec42f3	decompiled	chunks/001/functions-000095.c		
+107ec42f4	107ec477b	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE executeOptimisticallyWithDataObjectContext:]	
+107ec477c	107ec4913	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE _indexSetForInserting:into:]	
+107ec4914	107ec491b	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ec491c	107ec4d0f	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ec4d10	107ec4d17	decompiled	chunks/001/functions-000095.c		
+107ec4d18	107ec4dcb	decompiled	chunks/001/functions-000095.c		
+107ec4dcc	107ec50bb	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE commitWithEntryUpdates:dataObjectContext:]	
+107ec50bc	107ec51e7	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ec51e8	107ec5253	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE changedSnapContextsWithEntryUpdate:]	
+107ec5254	107ec5333	decompiled	chunks/001/functions-000095.c		
+107ec5334	107ec54df	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE logParameters]	
+107ec54e0	107ec558f	decompiled	chunks/001/functions-000095.c		
+107ec5590	107ec56ab	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE eligibleForOutOfOrderExecution]	
+107ec56ac	107ec57c7	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE doesNotRequireMediaUpload]	
+107ec57c8	107ec5867	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE allMediaUploadsCompleteWithBoltDataUploader:]	
+107ec5868	107ec586f	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE requiresSyncStatusUpdate]	
+107ec5870	107ec5877	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE needRunImmediately]	
+107ec5878	107ec587f	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ec5880	107ec5887	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ec5888	107ec588f	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE isEligibleForTacomaWithCOFService:]	
+107ec5890	107ec58bf	decompiled	chunks/001/functions-000095.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE snapPlaceholders]	
+107ec58c0	107ec58ef	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE detailPlaceholders]	
+107ec58f0	107ec591f	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE miniThumbnailPlaceholders]	
+107ec5920	107ec592f	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE numberOfSnaps]	
+107ec5930	107ec595f	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE dataVaultEncryption]	
+107ec5960	107ec59b7	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE isPrivateWithDataObjectContext:]	
+107ec59b8	107ec5efb	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE _updateEntriesFromNetworker:dataObjectContext:queue:snapsUploadInfo:failureHandler:successHandler:]	
+107ec5efc	107ec606b	decompiled	chunks/001/functions-000096.c		
+107ec606c	107ec60b3	decompiled	chunks/001/functions-000096.c		
+107ec60b4	107ec6207	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE _snapIdsForSnaps:]	
+107ec6208	107ec62d7	decompiled	chunks/001/functions-000096.c	-[SCCloudExtendEntryOperation_DEPRECATED_DO_NOT_USE .cxx_destruct]	
+107ec62d8	107ec6553	decompiled	chunks/001/functions-000096.c		
+107ec6554	107ec673b	decompiled	chunks/001/functions-000096.c		
+107ec673c	107ec6e4f	decompiled	chunks/001/functions-000096.c		
+107ec6e50	107ec6edb	decompiled	chunks/001/functions-000096.c		
+107ec6edc	107ec7243	decompiled	chunks/001/functions-000096.c		
+107ec7244	107ec72e7	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault initWithDataVault:cachedEncrytion:]	
+107ec72e8	107ec72ef	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault addLocationsWithSnaps:]	
+107ec72f0	107ec72f7	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault addEncryptionInfoWithSnaps:]	
+107ec72f8	107ec72ff	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault addLocation:forSnapId:]	
+107ec7300	107ec7307	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault addKey:IV:isEncrypted:forSnapId:shouldSkipCoredataPersisting:]	
+107ec7308	107ec7453	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault requestLocationForSnapId:synchronous:queue:resultHandler:]	
+107ec7454	107ec7463	decompiled	chunks/001/functions-000096.c		
+107ec7464	107ec761b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault requestKeyForSnap:memoriesGrapheneContext:queue:resultHandler:]	
+107ec761c	107ec766b	decompiled	chunks/001/functions-000096.c		
+107ec766c	107ec7673	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault requestKeyForEntryExternalId:memoriesGrapheneContext:queue:resultHandler:]	
+107ec7674	107ec780f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault requestKeyForIdentifier:memoriesGrapheneContext:queue:resultHandler:]	
+107ec7810	107ec785f	decompiled	chunks/001/functions-000096.c		
+107ec7860	107ec7867	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault duplicateFromSnapIds:toSnapIds:localOnly:shouldSkipCoredataPersisting:memoriesGrapheneContext:]	
+107ec7868	107ec78cb	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault deleteRecordForSnapIds:memoriesGrapheneContext:]	
+107ec78cc	107ec78fb	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCachedDataVault .cxx_destruct]	
+107ec78fc	107ec7b3f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation initWithSnapDoc:entryPlaceholder:addSnapEntity:snapIdToReplace:snapsOrder:dataVaultEncryption:profile:userContext:memoriesExperimentService:]	
+107ec7b40	107ec7b47	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation type]	
+107ec7b48	107ec7b4f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation analyticsType]	
+107ec7b50	107ec7b7f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation requestID]	
+107ec7b80	107ec7c17	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation entryIds]	
+107ec7c18	107ec7c87	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation makeSnapshot]	
+107ec7c88	107ec7e9f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation initWithSnapshot:requestID:]	
+107ec7ea0	107ec80e3	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ec80e4	107ec860b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation executeOptimisticallyWithDataObjectContext:]	
+107ec860c	107ec868f	decompiled	chunks/001/functions-000096.c		
+107ec8690	107ec87db	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ec87dc	107ec8caf	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ec8cb0	107ec8d2b	decompiled	chunks/001/functions-000096.c		
+107ec8d2c	107ec8f9f	decompiled	chunks/001/functions-000096.c		
+107ec8fa0	107ec8fb7	decompiled	chunks/001/functions-000096.c		
+107ec8fb8	107ec903f	decompiled	chunks/001/functions-000096.c		
+107ec9040	107ec9077	decompiled	chunks/001/functions-000096.c		
+107ec9078	107ec943f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation commitWithEntryUpdates:dataObjectContext:]	
+107ec9440	107ec94bf	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ec94c0	107ec966f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation changedSnapContextsWithEntryUpdate:]	
+107ec9670	107ec9977	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation logParameters]	
+107ec9978	107ec997f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation doesNotRequireMediaUpload]	
+107ec9980	107ec99bf	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation isOperationFromRetryEntry]	
+107ec99c0	107ec99c7	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ec99c8	107ec99cf	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation requiresSyncStatusUpdate]	
+107ec99d0	107ec99d7	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation eligibleForOutOfOrderExecution]	
+107ec99d8	107ec99df	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation needRunImmediately]	
+107ec99e0	107ec9b67	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ec9b68	107ec9bf7	decompiled	chunks/001/functions-000096.c		
+107ec9bf8	107ec9c03	decompiled	chunks/001/functions-000096.c		
+107ec9c04	107ec9c13	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ec9c14	107ec9c53	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation isEligibleForTacomaWithCOFService:]	
+107ec9c54	107ec9cfb	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation detailPlaceholders]	
+107ec9cfc	107ec9d93	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation isPrivateWithDataObjectContext:]	
+107ec9d94	107ec9e63	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation snapPlaceholders]	
+107ec9e64	107ec9f33	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncCreateSnapDocEntryOperation .cxx_destruct]	
+107ec9f34	107eca263	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation initWithEntryId:gallerySnapDoc:entryAssets:addSnapEntities:snapDataVaultEncryptions:shouldRemoveSyncedSnaps:entryPlaceholder:profile:userContext:memoriesExperimentService:]	
+107eca264	107eca26b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation type]	
+107eca26c	107eca273	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation analyticsType]	
+107eca274	107eca2a3	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation requestID]	
+107eca2a4	107eca313	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation entryIds]	
+107eca314	107eca4df	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation makeSnapshot]	
+107eca4e0	107eca843	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation initWithSnapshot:requestID:]	
+107eca844	107ecb49f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ecb4a0	107ecb77b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation executeOptimisticallyWithDataObjectContext:]	
+107ecb77c	107ecb84b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ecb84c	107ecbb6f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ecbb70	107ecc1e3	decompiled	chunks/001/functions-000096.c		
+107ecc1e4	107ecc1ef	decompiled	chunks/001/functions-000096.c		
+107ecc1f0	107ecc62f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation commitWithEntryUpdates:dataObjectContext:]	
+107ecc630	107ecc997	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ecc998	107eccb07	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation logParameters]	
+107eccb08	107eccb0f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation doesNotRequireMediaUpload]	
+107eccb10	107eccb17	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107eccb18	107eccb1f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation requiresSyncStatusUpdate]	
+107eccb20	107eccb27	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation eligibleForOutOfOrderExecution]	
+107eccb28	107eccb2f	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation needRunImmediately]	
+107eccb30	107ecce87	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ecce88	107eccf77	decompiled	chunks/001/functions-000096.c		
+107eccf78	107ecd093	decompiled	chunks/001/functions-000096.c		
+107ecd094	107ecd19b	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation changedSnapContextsWithEntryUpdate:]	
+107ecd19c	107ecd1cb	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ecd1cc	107ecd1d3	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation isEligibleForTacomaWithCOFService:]	
+107ecd1d4	107ecd823	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation _updateEntryFromNetworker:dataObjectContext:cloudFS:addAssetsResponse:snapsUploadInfo:snapUploadRequestInfoMap:queue:failureHandler:successHandler:]	
+107ecd824	107ecd987	decompiled	chunks/001/functions-000096.c		
+107ecd988	107ecda47	decompiled	chunks/001/functions-000096.c	-[SCCloudSyncSnapDocBasedEntryOperation .cxx_destruct]	
+107ecda48	107ecdb8f	decompiled	chunks/001/functions-000096.c	-[SCCloudUpdateEntryHighlightsOperation initWithProfile:entryId:highlightedSnapIdSet:userContext:]	
+107ecdb90	107ecdb97	decompiled	chunks/001/functions-000096.c	-[SCCloudUpdateEntryHighlightsOperation type]	
+107ecdb98	107ecdb9f	decompiled	chunks/001/functions-000096.c	-[SCCloudUpdateEntryHighlightsOperation analyticsType]	
+107ecdba0	107ecdbcf	decompiled	chunks/001/functions-000096.c	-[SCCloudUpdateEntryHighlightsOperation requestID]	
+107ecdbd0	107ecdc3f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation entryIds]	
+107ecdc40	107ecdc8b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation makeSnapshot]	
+107ecdc8c	107ecde2b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation initWithSnapshot:requestID:]	
+107ecde2c	107ece127	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ece128	107ece2cb	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation executeOptimisticallyWithDataObjectContext:]	
+107ece2cc	107ece323	decompiled	chunks/001/functions-000097.c		
+107ece324	107ece32b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ece32c	107ece91f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ece920	107ece93f	decompiled	chunks/001/functions-000097.c		
+107ece940	107eceaaf	decompiled	chunks/001/functions-000097.c		
+107eceab0	107eceaf7	decompiled	chunks/001/functions-000097.c		
+107eceaf8	107ececeb	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation commitWithEntryUpdates:dataObjectContext:]	
+107ececec	107eced43	decompiled	chunks/001/functions-000097.c		
+107eced44	107eced47	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107eced48	107eced4f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation changedSnapContextsWithEntryUpdate:]	
+107eced50	107eceecf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation logParameters]	
+107eceed0	107eceed7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation doesNotRequireMediaUpload]	
+107eceed8	107eceedf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107eceee0	107eceee7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation requiresSyncStatusUpdate]	
+107eceee8	107eceeef	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation eligibleForOutOfOrderExecution]	
+107eceef0	107eceef7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation needRunImmediately]	
+107eceef8	107eceeff	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ecef00	107ecef07	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ecef08	107ecef47	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation isEligibleForTacomaWithCOFService:]	
+107ecef48	107ecefb7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryHighlightsOperation .cxx_destruct]	
+107ecefb8	107ecf05b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryCleanupContext initWithAddedSnap:deletedSnap:]	
+107ecf05c	107ecf063	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryCleanupContext deletedSnap]	
+107ecf064	107ecf06b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryCleanupContext addedSnap]	
+107ecf06c	107ecf09b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryCleanupContext .cxx_destruct]	
+107ecf09c	107ecf2eb	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithProfile:entryId:title:deletedSnapId:addSnapEntity:dataVaultEncryption:updatedSnapsOrder:userContext:]	
+107ecf2ec	107ecf33f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithEntryId:deleteSnapId:deleteSharedSnapForAll:profile:userContext:]	
+107ecf340	107ecf4cb	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithEntryId:replaceSnapId:addSnapEntity:dataVaultEncryption:profile:userContext:]	
+107ecf4cc	107ecf51f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithEntryId:title:profile:userContext:]	
+107ecf520	107ecf573	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithEntryId:title:updatedSnapsOrder:profile:userContext:]	
+107ecf574	107ecf57b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation type]	
+107ecf57c	107ecf583	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation analyticsType]	
+107ecf584	107ecf5b3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation requestID]	
+107ecf5b4	107ecf623	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation entryIds]	
+107ecf624	107ecf6b7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation makeSnapshot]	
+107ecf6b8	107ecf98f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation initWithSnapshot:requestID:]	
+107ecf990	107ed0033	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ed0034	107ed009b	decompiled	chunks/001/functions-000097.c		
+107ed009c	107ed011f	decompiled	chunks/001/functions-000097.c		
+107ed0120	107ed0127	decompiled	chunks/001/functions-000097.c		
+107ed0128	107ed0b33	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation executeOptimisticallyWithDataObjectContext:]	
+107ed0b34	107ed0bb7	decompiled	chunks/001/functions-000097.c		
+107ed0bb8	107ed0bbf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ed0bc0	107ed0cf3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ed0cf4	107ed13f7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation commitWithEntryUpdates:dataObjectContext:]	
+107ed13f8	107ed14eb	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ed14ec	107ed16ff	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation changedSnapContextsWithEntryUpdate:]	
+107ed1700	107ed17ff	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation isEligibleForTacomaWithCOFService:]	
+107ed1800	107ed1e4f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation _orchestrateUpdateEntryWithDependencyProvider:networker:thumbnailFileGenerator:dataVault:dataObjectContext:coreConfigProvider:progressHandler:]	
+107ed1e50	107ed1ecb	decompiled	chunks/001/functions-000097.c		
+107ed1ecc	107ed21bb	decompiled	chunks/001/functions-000097.c		
+107ed21bc	107ed21d3	decompiled	chunks/001/functions-000097.c		
+107ed21d4	107ed2323	decompiled	chunks/001/functions-000097.c		
+107ed2324	107ed23d3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation _getCloudSyncEntryData:]	
+107ed23d4	107ed2597	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation logParameters]	
+107ed2598	107ed25a7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation requiresSyncStatusUpdate]	
+107ed25a8	107ed25af	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation eligibleForOutOfOrderExecution]	
+107ed25b0	107ed25b7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation doesNotRequireMediaUpload]	
+107ed25b8	107ed25bf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ed25c0	107ed25c7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation needRunImmediately]	
+107ed25c8	107ed2727	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ed2728	107ed2843	decompiled	chunks/001/functions-000097.c		
+107ed2844	107ed284f	decompiled	chunks/001/functions-000097.c		
+107ed2850	107ed28cf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ed28d0	107ed294b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation snapPlaceholders]	
+107ed294c	107ed29c7	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation detailPlaceholders]	
+107ed29c8	107ed2a43	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation miniThumbnailPlaceholders]	
+107ed2a44	107ed2a5b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation numberOfSnaps]	
+107ed2a5c	107ed2a8b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation dataVaultEncryption]	
+107ed2a8c	107ed2ae3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation isPrivateWithDataObjectContext:]	
+107ed2ae4	107ed2bb3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdateEntryOperation .cxx_destruct]	
+107ed2bb4	107ed2c7f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesCleanupContext initWithAddedSnaps:deletedSnaps:snapIdToEntryIdMap:]	
+107ed2c80	107ed2c87	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesCleanupContext deletedSnaps]	
+107ed2c88	107ed2c8f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesCleanupContext addedSnaps]	
+107ed2c90	107ed2c97	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesCleanupContext snapIdToEntryIdMap]	
+107ed2c98	107ed2cd3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesCleanupContext .cxx_destruct]	
+107ed2cd4	107ed2eff	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation initWithProfile:entryId:addSnapEntities:isPrivate:dataVaultEncryption:userContext:]	
+107ed2f00	107ed2f07	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation type]	
+107ed2f08	107ed2f0f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation analyticsType]	
+107ed2f10	107ed2f3f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation requestID]	
+107ed2f40	107ed2faf	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation entryIds]	
+107ed2fb0	107ed3007	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation makeSnapshot]	
+107ed3008	107ed3233	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation initWithSnapshot:requestID:]	
+107ed3234	107ed32a7	decompiled	chunks/001/functions-000097.c		
+107ed32a8	107ed37c3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ed37c4	107ed4047	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation executeOptimisticallyWithDataObjectContext:]	
+107ed4048	107ed404f	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ed4050	107ed4317	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ed4318	107ed43df	decompiled	chunks/001/functions-000097.c		
+107ed43e0	107ed4be3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation commitWithEntryUpdates:dataObjectContext:]	
+107ed4be4	107ed4dc3	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ed4dc4	107ed4e97	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation changedSnapContextsWithEntryUpdate:]	
+107ed4e98	107ed4fcb	decompiled	chunks/001/functions-000097.c		
+107ed4fcc	107ed500b	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation isEligibleForTacomaWithCOFService:]	
+107ed500c	107ed58db	decompiled	chunks/001/functions-000097.c	-[SCCloudUpdatePrivateEntriesOperation _updateEntriesFromNetworker:dependencyProvider:snapsUploadInfo:failureHandler:successHandler:]	
+107ed58dc	107ed5a4b	decompiled	chunks/001/functions-000097.c		
+107ed5a4c	107ed5a93	decompiled	chunks/001/functions-000098.c		
+107ed5a94	107ed5c1f	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation logParameters]	
+107ed5c20	107ed5c27	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation eligibleForOutOfOrderExecution]	
+107ed5c28	107ed5c2f	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation doesNotRequireMediaUpload]	
+107ed5c30	107ed5c37	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ed5c38	107ed5c3f	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation requiresSyncStatusUpdate]	
+107ed5c40	107ed5c47	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation needRunImmediately]	
+107ed5c48	107ed5c4f	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ed5c50	107ed5e37	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ed5e38	107ed5eb7	decompiled	chunks/001/functions-000098.c	-[SCCloudUpdatePrivateEntriesOperation .cxx_destruct]	
+107ed5eb8	107ed5ff7	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE initWithProfile:gallerySnap:gallerySnapDetail:userContext:]	
+107ed5ff8	107ed5fff	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE type]	
+107ed6000	107ed6007	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE analyticsType]	
+107ed6008	107ed6037	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE requestID]	
+107ed6038	107ed603f	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE entryIds]	
+107ed6040	107ed608b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE makeSnapshot]	
+107ed608c	107ed622b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE initWithSnapshot:requestID:]	
+107ed622c	107ed6233	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ed6234	107ed623b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE executeOptimisticallyWithDataObjectContext:]	
+107ed623c	107ed6243	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ed6244	107ed626b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE remoteSyncFromCloudFS:thumbnailFileGenerator:dataVault:dataObjectContext:networker:logger:coreConfigProvider:boltDataUploader:memoriesAssetRepository:snapUploadWorkflow:performer:progressHandler:failureHandler:successHandler:]	
+107ed626c	107ed6273	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE commitWithEntryUpdates:dataObjectContext:]	
+107ed6274	107ed6277	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ed6278	107ed62e3	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE changedSnapContextsWithEntryUpdate:]	
+107ed62e4	107ed63b7	decompiled	chunks/001/functions-000098.c		
+107ed63b8	107ed653b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE logParameters]	
+107ed653c	107ed6543	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE eligibleForOutOfOrderExecution]	
+107ed6544	107ed654b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE doesNotRequireMediaUpload]	
+107ed654c	107ed6553	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE allMediaUploadsCompleteWithBoltDataUploader:]	
+107ed6554	107ed655b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE requiresSyncStatusUpdate]	
+107ed655c	107ed6563	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE needRunImmediately]	
+107ed6564	107ed656b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ed656c	107ed6573	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ed6574	107ed657b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE isEligibleForTacomaWithCOFService:]	
+107ed657c	107ed65eb	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE snapPlaceholders]	
+107ed65ec	107ed665b	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE detailPlaceholders]	
+107ed665c	107ed671f	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE isPrivateWithDataObjectContext:]	
+107ed6720	107ed67c3	decompiled	chunks/001/functions-000098.c	-[SCCloudUploadOptionalMediaOperation_DEPRECATED_DO_NOT_USE .cxx_destruct]	
+107ed67c4	107ed68ab	decompiled	chunks/001/functions-000098.c	-[SCCloudSync triggerSyncStateRefresh]	
+107ed68ac	107ed68e7	decompiled	chunks/001/functions-000098.c		
+107ed68e8	107ed690f	decompiled	chunks/001/functions-000098.c	-[SCCloudSync observableForSnapBackupEvents]	
+107ed6910	107ed698f	decompiled	chunks/001/functions-000098.c	-[SCCloudSync observableForBackupServiceStatus]	
+107ed6990	107ed6993	decompiled	chunks/001/functions-000098.c	-[SCCloudSync currentBackupStatus]	
+107ed6994	107ed69e3	decompiled	chunks/001/functions-000098.c	-[SCCloudSync appendOperationAndExecuteOptimistically:fromFailedEntry:tacomaOperationType:dependencyEntryIds:detailedState:origin:shouldNotRecluster:shouldNotScheduleBackupJobs:queue:completionHandler:]	
+107ed69e4	107ed6a0b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync appendOperationAndExecuteOptimistically:fromFailedEntry:tacomaOperationType:dependencyEntryIds:detailedState:origin:queue:completionHandler:]	
+107ed6a0c	107ed6a33	decompiled	chunks/001/functions-000098.c	-[SCCloudSync appendOperationAndExecuteOptimistically:fromFailedEntry:approximateTotalMediaSizeInBytes:tacomaOperationType:dependencyEntryIds:detailedState:queue:completionHandler:]	
+107ed6a34	107ed6b5b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync appendOperationAndExecuteOptimistically:fromFailedEntry:approximateTotalMediaSizeInBytes:tacomaOperationType:dependencyEntryIds:detailedState:backupSchedulingGate:queue:completionHandler:]	
+107ed6b5c	107ed6f77	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _appendOperationAndExecuteOptimistically:fromFailedEntry:approximateTotalMediaSizeInBytes:tacomaOperationType:dependencyEntryIds:detailedState:origin:shouldNotRecluster:shouldNotScheduleBackupJobs:backupSchedulingGate:queue:completionHandler:]	
+107ed6f78	107ed6ff7	decompiled	chunks/001/functions-000098.c		
+107ed6ff8	107ed700f	decompiled	chunks/001/functions-000098.c		
+107ed7010	107ed787b	decompiled	chunks/001/functions-000098.c		
+107ed787c	107ed7a63	decompiled	chunks/001/functions-000098.c		
+107ed7a64	107ed7b6b	decompiled	chunks/001/functions-000098.c		
+107ed7b6c	107ed7bc3	decompiled	chunks/001/functions-000098.c		
+107ed7bc4	107ed7bc7	decompiled	chunks/001/functions-000098.c		
+107ed7bc8	107ed7c63	decompiled	chunks/001/functions-000098.c		
+107ed7c64	107ed7f9b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _fastInsertionToTacomaWithResolvedOperation:operation:approximateTotalMediaSizeInBytes:tacomaOperationType:dependencyEntryIds:detailedState:origin:cloudSyncAppendSuccess:error:startTime:shouldNotScheduleBackupJobs:backupSchedulingGate:queue:completionHandlerWithLatencyReporting:]	
+107ed7f9c	107ed833b	decompiled	chunks/001/functions-000098.c		
+107ed833c	107ed83f7	decompiled	chunks/001/functions-000098.c		
+107ed83f8	107ed86fb	decompiled	chunks/001/functions-000098.c		
+107ed86fc	107ed87b7	decompiled	chunks/001/functions-000098.c		
+107ed87b8	107ed87cf	decompiled	chunks/001/functions-000098.c		
+107ed87d0	107ed88eb	decompiled	chunks/001/functions-000098.c		
+107ed88ec	107ed891f	decompiled	chunks/001/functions-000098.c	-[SCCloudSync schedulePendingBackupJobsForEnteringMemories]	
+107ed8920	107ed8a6b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _scheduleBackupJobsIfNeeded:tacomaOperationType:]	
+107ed8a6c	107ed8a6f	decompiled	chunks/001/functions-000098.c		
+107ed8a70	107ed8cab	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _tacomaBackupForEntryIds:operationType:dependencyEntryIds:detailedState:requestId:approximateTotalMediaSizeInBytes:origin:callbackQueue:callback:]	
+107ed8cac	107ed8cbb	decompiled	chunks/001/functions-000098.c		
+107ed8cbc	107ed8d93	decompiled	chunks/001/functions-000098.c		
+107ed8d94	107ed8da3	decompiled	chunks/001/functions-000098.c		
+107ed8da4	107ed8f73	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _updateStatusForUploadingForTacoma:snapIds:backupStatus:seqNum:shouldTransitionState:]	
+107ed8f74	107ed9097	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _announceChangeEntrySyncStatus:entryId:snapIds:]	
+107ed9098	107ed916b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _resetStatusAfterUpload]	
+107ed916c	107ed9173	decompiled	chunks/001/functions-000098.c	-[SCCloudSync removeListener:]	
+107ed9174	107ed92ef	decompiled	chunks/001/functions-000098.c	-[SCCloudSync fetchLastErrorWithCompletionHandler:]	
+107ed92f0	107ed92ff	decompiled	chunks/001/functions-000098.c		
+107ed9300	107ed9483	decompiled	chunks/001/functions-000098.c	-[SCCloudSync selectivelySyncOperationsWithEntryId:]	
+107ed9484	107ed94cf	decompiled	chunks/001/functions-000098.c	-[SCCloudSync isInitialPageSyncCompleted]	
+107ed94d0	107ed951b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync isFullySynced]	
+107ed951c	107ed9547	decompiled	chunks/001/functions-000098.c	-[SCCloudSync isLoading]	
+107ed9548	107ed9a07	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _uploadStateNotifierWithTacomaEnabled:]	
+107ed9a08	107ed9b33	decompiled	chunks/001/functions-000098.c	-[SCCloudSync allowInitialSync]	
+107ed9b34	107ed9ba3	decompiled	chunks/001/functions-000098.c	-[SCCloudSync registerSyncService]	
+107ed9ba4	107ed9bb3	decompiled	chunks/001/functions-000098.c	+[SCCloudSync defaultImmediateNotifier]	
+107ed9bb4	107ed9bc7	decompiled	chunks/001/functions-000098.c	+[SCCloudSync defaultLongRunningNotifier]	
+107ed9bc8	107ed9c2f	decompiled	chunks/001/functions-000098.c	-[SCCloudSync dedicatedQueue]	
+107ed9c30	107eda423	decompiled	chunks/001/functions-000098.c	-[SCCloudSync runWithServiceTerm:]	
+107eda424	107eda5a3	decompiled	chunks/001/functions-000098.c		
+107eda5a4	107eda5d7	decompiled	chunks/001/functions-000098.c		
+107eda5d8	107eda83b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _transitionToState:serviceTerm:backOffTimeInMilliseconds:]	
+107eda83c	107eda933	decompiled	chunks/001/functions-000098.c	-[SCCloudSync setIsBackingUpNowAsynchronously:completionHandler:]	
+107eda934	107edaa9b	decompiled	chunks/001/functions-000098.c		
+107edaa9c	107edaaa3	decompiled	chunks/001/functions-000098.c		
+107edaaa4	107edab4b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _galleryResyncRequired]	
+107edab4c	107edab9b	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _shouldResyncWithRemote]	
+107edab9c	107edabd7	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _resetResyncWithRemoteFlag]	
+107edabd8	107edad33	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _resyncAfterAbortingOperationSnapshot:serviceTerm:]	
+107edad34	107edadbb	decompiled	chunks/001/functions-000098.c		
+107edadbc	107edadcf	decompiled	chunks/001/functions-000098.c		
+107edadd0	107edb9ef	decompiled	chunks/001/functions-000098.c	-[SCCloudSync _onOperationFailed:snapshot:serviceTerm:]	
+107edb9f0	107edbf33	decompiled	chunks/001/functions-000099.c		
+107edbf34	107edbfb3	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _hasPendingOperations]	
+107edbfb4	107edc07f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _uploadNotNeededForOperation:tacomaEnabled:pendingOperationSnapshot:]	
+107edc080	107edc0db	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _checkToUploadWithServiceTerm:]	
+107edc0dc	107edc17f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _checkIfSyncRequiredBeforeTransition:]	
+107edc180	107edc31b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _checkBackgroundMediaUploadStatus]	
+107edc31c	107edc547	decompiled	chunks/001/functions-000099.c		
+107edc548	107edc557	decompiled	chunks/001/functions-000099.c		
+107edc558	107edd14f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _uploadWithServiceTerm:]	
+107edd150	107edd1d7	decompiled	chunks/001/functions-000099.c		
+107edd1d8	107edd1eb	decompiled	chunks/001/functions-000099.c		
+107edd1ec	107edd233	decompiled	chunks/001/functions-000099.c		
+107edd234	107edd36b	decompiled	chunks/001/functions-000099.c		
+107edd36c	107edd383	decompiled	chunks/001/functions-000099.c		
+107edd384	107edd3bb	decompiled	chunks/001/functions-000099.c		
+107edd3bc	107edd54b	decompiled	chunks/001/functions-000099.c		
+107edd54c	107edd5bf	decompiled	chunks/001/functions-000099.c		
+107edd5c0	107edd5d7	decompiled	chunks/001/functions-000099.c		
+107edd5d8	107edd993	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _handleSuccessForSyncOperation:requestID:entryUpdateMap:deleteOperationsBeforeSync:deleteOperationsAfterSync:syncOperationSnapshot:serviceTerm:]	
+107edd994	107eddac7	decompiled	chunks/001/functions-000099.c		
+107eddac8	107eddd7b	decompiled	chunks/001/functions-000099.c		
+107eddd7c	107ede217	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _handleStepFailureForSyncOperation:cloudSyncStepError:requestID:syncOperationSnapshot:serviceTerm:]	
+107ede218	107edeb93	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _handleFailureForSyncOperation:error:requestID:syncOperationSnapshot:serviceTerm:loggingRetryCount:]	
+107edeb94	107edf027	decompiled	chunks/001/functions-000099.c		
+107edf028	107edf15b	decompiled	chunks/001/functions-000099.c		
+107edf15c	107edf837	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _handleServletPartialError:requestId:syncOperation:syncOperationSnapshot:retryCount:serviceTerm:]	
+107edf838	107edf95b	decompiled	chunks/001/functions-000099.c		
+107edf95c	107edfb1b	decompiled	chunks/001/functions-000099.c		
+107edfb1c	107edfb2f	decompiled	chunks/001/functions-000099.c		
+107edfb30	107edfc63	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _handleNetworkErrorForRequestId:syncOperation:syncOperationSnapshot:serviceTerm:retryPolicy:loggingNetworkErrorStatusCode:backOffTimeMillis:loggingRetryCount:]	
+107edfc64	107edfdff	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _markCloudSyncFatalForSyncOperation:syncOperationSnapshot:serviceTerm:loggingStatusCode:loggingDetailsStatusCode:loggingErrorMessage:loggingRetryCount:retryPolicy:]	
+107edfe00	107edff3b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _markCloudSyncRetryForRequestId:serviceTerm:newTransitionState:backOffTimeMillis:retryPolicy:loggingRetryCount:loggingStatusCode:loggingDetailsStatusCode:analyticsType:]	
+107edff3c	107ee00bb	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _resetSeqNumIfNecessary]	
+107ee00bc	107ee049b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _resyncWithServiceTerm:forceRebase:]	
+107ee049c	107ee0723	decompiled	chunks/001/functions-000099.c		
+107ee0724	107ee091b	decompiled	chunks/001/functions-000099.c		
+107ee091c	107ee1467	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _processResyncResponse:forceRebase:serviceTerm:]	
+107ee1468	107ee15bf	decompiled	chunks/001/functions-000099.c		
+107ee15c0	107ee15f7	decompiled	chunks/001/functions-000099.c		
+107ee15f8	107ee17e7	decompiled	chunks/001/functions-000099.c		
+107ee17e8	107ee359f	decompiled	chunks/001/functions-000099.c		
+107ee35a0	107ee35d7	decompiled	chunks/001/functions-000099.c		
+107ee35d8	107ee35e7	decompiled	chunks/001/functions-000099.c		
+107ee35e8	107ee384b	decompiled	chunks/001/functions-000099.c		
+107ee384c	107ee3987	decompiled	chunks/001/functions-000099.c		
+107ee3988	107ee39c3	decompiled	chunks/001/functions-000099.c		
+107ee39c4	107ee3c5f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _cleanupBackupDependenciesPreservingSnapshotsForEntryIds:entryIdsDeletedByServer:serviceTerm:profile:]	
+107ee3c60	107ee3d4b	decompiled	chunks/001/functions-000099.c		
+107ee3d4c	107ee3d57	decompiled	chunks/001/functions-000099.c		
+107ee3d58	107ee3e3b	decompiled	chunks/001/functions-000099.c		
+107ee3e3c	107ee3e47	decompiled	chunks/001/functions-000099.c		
+107ee3e48	107ee3f6f	decompiled	chunks/001/functions-000099.c		
+107ee3f70	107ee40f3	decompiled	chunks/001/functions-000099.c		
+107ee40f4	107ee435b	decompiled	chunks/001/functions-000099.c		
+107ee435c	107ee436b	decompiled	chunks/001/functions-000099.c		
+107ee436c	107ee44c7	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _cleanupBackupDependenciesDeletingAllSnapshotsForEntryIds:serviceTerm:profile:]	
+107ee44c8	107ee4643	decompiled	chunks/001/functions-000099.c		
+107ee4644	107ee486b	decompiled	chunks/001/functions-000099.c		
+107ee486c	107ee487b	decompiled	chunks/001/functions-000099.c		
+107ee487c	107ee496b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _transferStateAfterLastPageSyncDBUpdateCompleteWithServiceTerm:profile:]	
+107ee496c	107ee4a63	decompiled	chunks/001/functions-000099.c		
+107ee4a64	107ee4acb	decompiled	chunks/001/functions-000099.c		
+107ee4acc	107ee565b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _cleanUncommittedChanges:]	
+107ee565c	107ee586f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _detectAndResolveConflictsForOperation:]	
+107ee5870	107ee5d77	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _reExecuteOptimisticallyWithBackgroundMediaUploadScheduled:]	
+107ee5d78	107ee5d7b	decompiled	chunks/001/functions-000099.c		
+107ee5d7c	107ee5e1f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _getAllSnapIdsForBackgroundUploadOperation:]	
+107ee5e20	107ee5e27	decompiled	chunks/001/functions-000099.c		
+107ee5e28	107ee6053	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _resetBackgroundMediaUploadedStateForSyncOperation:completionHandler:]	
+107ee6054	107ee605b	decompiled	chunks/001/functions-000099.c		
+107ee605c	107ee6177	decompiled	chunks/001/functions-000099.c		
+107ee6178	107ee6183	decompiled	chunks/001/functions-000099.c		
+107ee6184	107ee625b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _applicationWillEnterForeground]	

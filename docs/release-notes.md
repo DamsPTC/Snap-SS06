@@ -8,5 +8,4 @@ IPA de référence du projet, publiée directement en `.ipa`.
 - Fichier identique à l’asset source : aucune modification ni nouvelle signature.
 
 Le dépôt regroupe les fichiers extraits, les propriétés converties en XML
-et les métadonnées Objective-C récupérées. Les corps de fonctions ne sont
-pas encore décompilés ; ces exports ne sont pas les sources originales.
+et les métadonnées Objective-C récupérées. Le pseudo-code Ghidra est disponible sur la branche `main` dans `decompiled/` : 1039518 fonctions récupérées ; 544 échecs documentés. Ces exports ne sont pas les sources originales.

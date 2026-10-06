@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+107e37d6c	107e37d73	decompiled	chunks/001/functions-000069.c	-[SCPreviewFeatureOverlayCompositionServices overlayComposition]	
+107e37d74	107e37d7f	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureOverlayCompositionServices .cxx_destruct]	
+107e37d80	107e37e97	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest initWithCoder:]	
+107e37e98	107e37f37	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest initWithOriginalImageIncluded:filteredImageIncluded:videoOverlayImageIncluded:captionIncluded:filterOverlayImageIncluded:shouldGenerateOverlayImageForMask:shouldGenerateVideoThumbnailImageWithOverlay:unifiedCameraObjectImageIncluded:croppingAspectRatio:]	
+107e37f38	107e37f5b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest copyWithZone:]	
+107e37f5c	107e3804b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest encodeWithCoder:]	
+107e3804c	107e3810f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest hash]	
+107e38110	107e3823b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest isEqual:]	
+107e3823c	107e38243	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest originalImageIncluded]	
+107e38244	107e3824b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest filteredImageIncluded]	
+107e3824c	107e38253	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest videoOverlayImageIncluded]	
+107e38254	107e3825b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest captionIncluded]	
+107e3825c	107e38263	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest filterOverlayImageIncluded]	
+107e38264	107e3826b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest shouldGenerateOverlayImageForMask]	
+107e3826c	107e38273	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest shouldGenerateVideoThumbnailImageWithOverlay]	
+107e38274	107e3827b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest unifiedCameraObjectImageIncluded]	
+107e3827c	107e38283	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequest croppingAspectRatio]	
+107e38284	107e3829f	decompiled	chunks/001/functions-000070.c	+[SCPreviewOverlayCompositionRequestBuilder previewOverlayCompositionRequest]	
+107e382a0	107e3847f	decompiled	chunks/001/functions-000070.c	+[SCPreviewOverlayCompositionRequestBuilder previewOverlayCompositionRequestFromExistingPreviewOverlayCompositionRequest:]	
+107e38480	107e384d7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder build]	
+107e384d8	107e384df	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withOriginalImageIncluded:]	
+107e384e0	107e384e7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withFilteredImageIncluded:]	
+107e384e8	107e384ef	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withVideoOverlayImageIncluded:]	
+107e384f0	107e384f7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withCaptionIncluded:]	
+107e384f8	107e384ff	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withFilterOverlayImageIncluded:]	
+107e38500	107e38507	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withShouldGenerateOverlayImageForMask:]	
+107e38508	107e3850f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withShouldGenerateVideoThumbnailImageWithOverlay:]	
+107e38510	107e38517	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withUnifiedCameraObjectImageIncluded:]	
+107e38518	107e3851f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionRequestBuilder withCroppingAspectRatio:]	
+107e38520	107e38697	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse initWithCoder:]	
+107e38698	107e3882f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse initWithScreenshotOrOverlay:overlayPngData:rotationalOverlay:overlayImageForMask:videoThumbnailImageWithOverlay:videoTrackedImages:unifiedCameraObjectAppliedImage:]	
+107e38830	107e38853	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse copyWithZone:]	
+107e38854	107e38917	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse encodeWithCoder:]	
+107e38918	107e389c7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse hash]	
+107e389c8	107e38ae7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse isEqual:]	
+107e38ae8	107e38aef	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse screenshotOrOverlay]	
+107e38af0	107e38af7	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse overlayPngData]	
+107e38af8	107e38aff	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse rotationalOverlay]	
+107e38b00	107e38b07	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse overlayImageForMask]	
+107e38b08	107e38b0f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse videoThumbnailImageWithOverlay]	
+107e38b10	107e38b17	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse videoTrackedImages]	
+107e38b18	107e38b1f	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse unifiedCameraObjectAppliedImage]	
+107e38b20	107e38b8b	decompiled	chunks/001/functions-000070.c	-[SCPreviewOverlayCompositionResponse .cxx_destruct]	
+107e38b8c	107e38bff	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureSwipeDownDismissServices initWithSwipeDownDismiss:]	
+107e38c00	107e38c07	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureSwipeDownDismissServices swipeDownDismiss]	
+107e38c08	107e38c13	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureSwipeDownDismissServices .cxx_destruct]	
+107e38c14	107e38c87	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureVideoPlaybackControlsLegacyServices initWithVideoPlaybackControls:]	
+107e38c88	107e38c8f	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureVideoPlaybackControlsLegacyServices videoPlaybackControls]	
+107e38c90	107e38c9b	decompiled	chunks/001/functions-000070.c	-[SCPreviewFeatureVideoPlaybackControlsLegacyServices .cxx_destruct]	
+107e38c9c	107e38d0f	decompiled	chunks/001/functions-000070.c	-[SCPreviewGenericAssetsServices initWithRegistry:]	
+107e38d10	107e38d17	decompiled	chunks/001/functions-000070.c	-[SCPreviewGenericAssetsServices registry]	
+107e38d18	107e38d23	decompiled	chunks/001/functions-000070.c	-[SCPreviewGenericAssetsServices .cxx_destruct]	
+107e38d24	107e38dc7	decompiled	chunks/001/functions-000070.c	-[SCPreviewLensServices initWithDataProviderCommonFactory:lensRemoteAssetsAvalabilityProvider:]	
+107e38dc8	107e38dcf	decompiled	chunks/001/functions-000070.c	-[SCPreviewLensServices dataProviderCommonFactory]	
+107e38dd0	107e38dd7	decompiled	chunks/001/functions-000070.c	-[SCPreviewLensServices lensRemoteAssetsAvalabilityProvider]	
+107e38dd8	107e38e07	decompiled	chunks/001/functions-000070.c	-[SCPreviewLensServices .cxx_destruct]	
+107e38e08	107e391a3	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates initWithUserSession:configuration:geoFilterProvider:circumstanceEngine:]	
+107e391a4	107e3923b	decompiled	chunks/001/functions-000070.c		
+107e3923c	107e3929b	decompiled	chunks/001/functions-000070.c		
+107e3929c	107e393d7	decompiled	chunks/001/functions-000070.c		
+107e393d8	107e39413	decompiled	chunks/001/functions-000070.c		
+107e39414	107e3954b	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates setState:forDependency:]	
+107e3954c	107e39627	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates stateForType:]	
+107e39628	107e39733	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates allDependenciesLoaded]	
+107e39734	107e3974b	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates delegate]	
+107e3974c	107e39757	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates setDelegate:]	
+107e39758	107e39783	decompiled	chunks/001/functions-000070.c	-[SCPreviewDependencyLoadingStates .cxx_destruct]	
+107e39784	107e39863	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList forEachContextSetters:]	
+107e39864	107e398e7	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setAppMetadataWithAppAttachment:]	
+107e398e8	107e398f3	decompiled	chunks/001/functions-000070.c		
+107e398f4	107e39977	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setTopics:]	
+107e39978	107e39983	decompiled	chunks/001/functions-000070.c		
+107e39984	107e39a07	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setCameosStickersIds:]	
+107e39a08	107e39a13	decompiled	chunks/001/functions-000070.c		
+107e39a14	107e39a97	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setAuraProfileInfo:]	
+107e39a98	107e39aa3	decompiled	chunks/001/functions-000070.c		
+107e39aa4	107e39b27	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setMusicTrack:]	
+107e39b28	107e39b33	decompiled	chunks/001/functions-000070.c		
+107e39b34	107e39bb7	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setMusicSelection:]	
+107e39bb8	107e39bc3	decompiled	chunks/001/functions-000070.c		
+107e39bc4	107e39c47	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setMusicStickerStyle:]	
+107e39c48	107e39c53	decompiled	chunks/001/functions-000070.c		
+107e39c54	107e39d0b	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setRemixSourceSnapId:remixSourceUserId:remixLaunchSource:]	
+107e39d0c	107e39d1b	decompiled	chunks/001/functions-000070.c		
+107e39d1c	107e39d9f	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setRepostSourceSnapId:]	
+107e39da0	107e39dab	decompiled	chunks/001/functions-000070.c		
+107e39dac	107e39dfb	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setUserDisabledMentionRemixing:]	
+107e39dfc	107e39e07	decompiled	chunks/001/functions-000070.c		
+107e39e08	107e39edf	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setSnapKitOAuthClientId:providedAppName:attachmentUrl:]	
+107e39ee0	107e39eef	decompiled	chunks/001/functions-000070.c		
+107e39ef0	107e39f73	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setTimelineMetadataWithConfiguration:]	
+107e39f74	107e39f7f	decompiled	chunks/001/functions-000070.c		
+107e39f80	107e3a003	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setDirectorModeMetadataWithConfiguration:]	
+107e3a004	107e3a00f	decompiled	chunks/001/functions-000070.c		
+107e3a010	107e3a093	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setMultiCamModeMetadataWithContextInfo:]	
+107e3a094	107e3a09f	decompiled	chunks/001/functions-000070.c		
+107e3a0a0	107e3a123	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setCommerceAttachmentV2DataModels:]	
+107e3a124	107e3a12f	decompiled	chunks/001/functions-000070.c		
+107e3a130	107e3a1b3	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setShoppingLensProductIds:]	
+107e3a1b4	107e3a1bf	decompiled	chunks/001/functions-000070.c		
+107e3a1c0	107e3a243	decompiled	chunks/001/functions-000070.c	-[SCPreviewEphemeralMediaList setCTItemInstances:]	
+107e3a244	107e3a24f	decompiled	chunks/001/functions-000071.c		
+107e3a250	107e3a263	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setIsCheeriosVideo]	
+107e3a264	107e3a2e7	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setLensConfigInfo:]	
+107e3a2e8	107e3a2f3	decompiled	chunks/001/functions-000071.c		
+107e3a2f4	107e3a377	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setLensMusicInfo:]	
+107e3a378	107e3a383	decompiled	chunks/001/functions-000071.c		
+107e3a384	107e3a397	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setAIModeTextToImageInfo]	
+107e3a398	107e3a3ab	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setPostCaptureAIInfo]	
+107e3a3ac	107e3a42f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setTemplateInfoWithTemplateId:]	
+107e3a430	107e3a43b	decompiled	chunks/001/functions-000071.c		
+107e3a43c	107e3a44f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setTextModeInfo]	
+107e3a450	107e3a4d3	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList overrideContextClientInfo:]	
+107e3a4d4	107e3a4df	decompiled	chunks/001/functions-000071.c		
+107e3a4e0	107e3a71f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initWithBatchCaptureConfiguration:galleryStorySaver:snapVideoFilterFactory:snapVideoFilterCoordinator:captureSessionID:snap:overlayFormatServices:circumstanceEngine:]	
+107e3a720	107e3a763	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList isMultiMedia]	
+107e3a764	107e3a7bf	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _setIsBatchCapture:]	
+107e3a7c0	107e3a803	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList isBatchCapture]	
+107e3a804	107e3a88f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setBatchCaptureSavingConfiguration:]	
+107e3a890	107e3a8f3	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList batchCaptureSavingConfiguration]	
+107e3a8f4	107e3a99f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList startBatchCaptureTranscoding]	
+107e3a9a0	107e3aafb	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList cancelBatchCaptureTranscoding]	
+107e3aafc	107e3abff	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList configureBatchCaptureWithStateHandler:configuration:drawingCache:]	
+107e3ac00	107e3ae2b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList generateBatchCaptureSnapVideoFilterList]	
+107e3ae2c	107e3ae73	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList enableCachingToGalleryStoryForBatchCaptureWithGallerySnapOverlays:]	
+107e3ae74	107e3b03b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _exportBatchCaptureMediaAtIndex:totalCount:]	
+107e3b03c	107e3b0e7	decompiled	chunks/001/functions-000071.c		
+107e3b0e8	107e3b1d7	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _exportImageMediaAtIndex:totalCount:]	
+107e3b1d8	107e3b3ef	decompiled	chunks/001/functions-000071.c		
+107e3b3f0	107e3b42b	decompiled	chunks/001/functions-000071.c		
+107e3b42c	107e3b443	decompiled	chunks/001/functions-000071.c		
+107e3b444	107e3b49f	decompiled	chunks/001/functions-000071.c		
+107e3b4a0	107e3b6ef	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _exportBatchCaptureSegment:toVideoMediaAtIndex:totalCount:]	
+107e3b6f0	107e3b80f	decompiled	chunks/001/functions-000071.c		
+107e3b810	107e3bc23	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _transcodeBatchCaptureSegment:toMediaAtIndex:count:]	
+107e3bc24	107e3bcf3	decompiled	chunks/001/functions-000071.c		
+107e3bcf4	107e3bd6b	decompiled	chunks/001/functions-000071.c		
+107e3bd6c	107e3be97	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _shouldSaveVideoAfterTranscodingSegment:toMediaAtIndex:]	
+107e3be98	107e3c0af	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _saveInputVideosToCameraRoll:]	
+107e3c0b0	107e3c10b	decompiled	chunks/001/functions-000071.c		
+107e3c10c	107e3c26b	decompiled	chunks/001/functions-000071.c		
+107e3c26c	107e3c273	decompiled	chunks/001/functions-000071.c		
+107e3c274	107e3c393	decompiled	chunks/001/functions-000071.c		
+107e3c394	107e3c957	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _generateSnapVideoFilterList:atIndex:forBatchCaptureSegment:]	
+107e3c958	107e3c9d3	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _cacheBatchCaptureStorySnapsToGalleryStore]	
+107e3c9d4	107e3cffb	decompiled	chunks/001/functions-000071.c		
+107e3cffc	107e3d003	decompiled	chunks/001/functions-000071.c		
+107e3d004	107e3d017	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initWithGalleryStorySaver:snapVideoFilterFactory:snapVideoFilterCoordinator:]	
+107e3d018	107e3d133	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initWithCount:galleryStorySaver:snapVideoFilterFactory:snapVideoFilterCoordinator:]	
+107e3d134	107e3d207	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initWithEphemeralMediaList:galleryStorySaver:snapVideoFilterFactory:snapVideoFilterCoordinator:]	
+107e3d208	107e3d42f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initMultiSnapWithVideoProvider:timeRanges:galleryStorySaver:snapVideoFilterFactory:snapVideoFilterCoordinator:captureSessionID:snapSessionID:multiSnapStateHandler:ucoConfigs:isSnapFromMemories:circumstanceEngine:]	
+107e3d430	107e3d77b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList initWithTimelineConfiguration:galleryStorySaver:lensCommandMetadataProvider:snapVideoFilterFactory:snapVideoFilterCoordinator:captureSessionID:snapSessionID:ucoConfigs:splitOutput:transcodingMediaSource:circumstanceEngine:]	
+107e3d77c	107e3d793	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList configureMultiSnapWithStateHandler:configuration:drawingCache:]	
+107e3d794	107e3d917	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList configureTimelineSnapWithDrawingCache:]	
+107e3d918	107e3d947	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList useOnlyForCameraRollExportTranscodingCompletionHandler:]	
+107e3d948	107e3d94f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList isMultiSnap]	
+107e3d950	107e3db8b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList dealloc]	
+107e3db8c	107e3db93	decompiled	chunks/001/functions-000071.c		
+107e3db94	107e3db9f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList generateEphemeralMediaListWithFactory:]	
+107e3dba0	107e3dd6b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList generateEphemeralMediaListWithGallerySnap:factory:]	
+107e3dd6c	107e3dd93	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList ephemeralMediaList]	
+107e3dd94	107e3dd9b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList firstEphemeralMedia]	
+107e3dd9c	107e3dda3	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList ephemeraMediaAtIndex:]	
+107e3dda4	107e3e02b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList generateTimelineSnapVideoFilterList]	
+107e3e02c	107e3e4b7	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList generateSnapVideoFilterListWithShouldClearOverlayDataForMultisnap:]	
+107e3e4b8	107e3e613	decompiled	chunks/001/functions-000071.c		
+107e3e614	107e3e63b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList snapVideoFilterList]	
+107e3e63c	107e3e643	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList firstSnapVideoFilter]	
+107e3e644	107e3e64b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList snapVideoFilterAtIndex:]	
+107e3e64c	107e3e757	failed		-[SCPreviewEphemeralMediaList addShareLoggingParameters:]	Exception while decompiling 107e3e64c: process: timeout 
+107e3e758	107e3e89f	failed		-[SCPreviewEphemeralMediaList setAttachmentUrl:]	Exception while decompiling 107e3e758: process: timeout 
+107e3e8a0	107e3e997	failed		-[SCPreviewEphemeralMediaList setCameraFrontFacing:]	Exception while decompiling 107e3e8a0: process: timeout 
+107e3e998	107e3eaa3	failed		-[SCPreviewEphemeralMediaList setCaptionText:]	Exception while decompiling 107e3e998: process: timeout 
+107e3eaa4	107e3ebcf	failed		-[SCPreviewEphemeralMediaList setStoryCaptionInfo:]	Exception while decompiling 107e3eaa4: process: timeout 
+107e3ebd0	107e3ecdb	failed		-[SCPreviewEphemeralMediaList setUnlockablesSnapInfo:]	Exception while decompiling 107e3ebd0: process: timeout 
+107e3ecdc	107e3ede7	failed		-[SCPreviewEphemeralMediaList setAdsTracking:]	Exception while decompiling 107e3ecdc: process: timeout 
+107e3ede8	107e3eef3	failed		-[SCPreviewEphemeralMediaList setLensMetadata:]	Exception while decompiling 107e3ede8: process: timeout 
+107e3eef4	107e3f093	failed		-[SCPreviewEphemeralMediaList setCommonLoggingParamsBuilder:]	Exception while decompiling 107e3eef4: process: timeout 
+107e3f094	107e3f19f	failed		-[SCPreviewEphemeralMediaList setStorySnapClientMetadata:]	Exception while decompiling 107e3f094: process: timeout 
+107e3f1a0	107e3f2ab	failed		-[SCPreviewEphemeralMediaList setEncryptedGeoData:]	Exception while decompiling 107e3f1a0: process: timeout 
+107e3f2ac	107e3f3b7	failed		-[SCPreviewEphemeralMediaList setVenueId:]	Exception while decompiling 107e3f2ac: process: timeout 
+107e3f3b8	107e3f4c3	failed		-[SCPreviewEphemeralMediaList setGeoFilterId:]	Exception while decompiling 107e3f3b8: process: timeout 
+107e3f4c4	107e3f5bb	failed		-[SCPreviewEphemeralMediaList setInfiniteDuration:]	Exception while decompiling 107e3f4c4: process: timeout 
+107e3f5bc	107e3f6c7	failed		-[SCPreviewEphemeralMediaList setPostLocation:]	Exception while decompiling 107e3f5bc: process: timeout 
+107e3f6c8	107e3f7d3	failed		-[SCPreviewEphemeralMediaList setCaptureLocation:]	Exception while decompiling 107e3f6c8: process: timeout 
+107e3f7d4	107e3f8ff	failed		-[SCPreviewEphemeralMediaList setLoggingParameters:forEvent:]	Exception while decompiling 107e3f7d4: process: timeout 
+107e3f900	107e3f9f7	failed		-[SCPreviewEphemeralMediaList setOrientation:]	Exception while decompiling 107e3f900: process: timeout 
+107e3f9f8	107e3fb23	failed		-[SCPreviewEphemeralMediaList setOverlayDataToUpload:]	Exception while decompiling 107e3f9f8: process: timeout 
+107e3fb24	107e3fc3b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setOverlayPresent:]	
+107e3fc3c	107e3fd47	failed		-[SCPreviewEphemeralMediaList setPlaceID:]	Exception while decompiling 107e3fc3c: process: timeout 
+107e3fd48	107e3fe3f	failed		-[SCPreviewEphemeralMediaList setShouldIncludeLocationData:]	Exception while decompiling 107e3fd48: process: timeout 
+107e3fe40	107e3ff3f	failed		-[SCPreviewEphemeralMediaList setTime:]	Exception while decompiling 107e3fe40: process: timeout 
+107e3ff40	107e40037	failed		-[SCPreviewEphemeralMediaList setType:]	Exception while decompiling 107e3ff40: process: timeout 
+107e40038	107e40143	failed		-[SCPreviewEphemeralMediaList setContextHint:]	Exception while decompiling 107e40038: process: timeout 
+107e40144	107e4024f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setNotifiedUsernames:]	
+107e40250	107e40347	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setSnapSource:]	
+107e40348	107e40453	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setCameraDeepLinkMetadata:]	
+107e40454	107e4054b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setRotationLocked:]	
+107e4054c	107e40643	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setAudioEnabled:]	
+107e40644	107e4074f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setAudioState:]	
+107e40750	107e4085b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setFilterName:]	
+107e4085c	107e40967	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setFrameHealthChecker:]	
+107e40968	107e40a73	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setOverlayImage:]	
+107e40a74	107e40b6b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setOverlayImageFileSizeBits:]	
+107e40b6c	107e40c77	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setOverlayImageForThumbnail:]	
+107e40c78	107e40d83	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setAudioOverrideAssets:]	
+107e40d84	107e40e7b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setSavesToCameraRoll:]	
+107e40e7c	107e40f73	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setHighQuality:]	
+107e40f74	107e4106b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setThumbnailOrientation:]	
+107e4106c	107e41163	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setUseOverlayImageAsMask:]	
+107e41164	107e4126f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setCroppingState:]	
+107e41270	107e4136f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setVideoPlaybackRate:]	
+107e41370	107e4147b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setVideoProvider:]	
+107e4147c	107e4157b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setVideoTargetAspectRatio:]	
+107e4157c	107e41687	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setVideoTrackedImages:]	
+107e41688	107e4177f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setSnapPageSource:]	
+107e41780	107e4188b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setSpectaclesTranscodingConfig:]	
+107e4188c	107e41997	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList setSpotlightModes:]	
+107e41998	107e41ab3	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList configureMultiSnapWithVideoPlaybackRate:]	
+107e41ab4	107e41b0b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList enableCachingToGalleryStoryWithGallerySnapOverlays:]	
+107e41b0c	107e41b5f	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList startTranscoding]	
+107e41b60	107e41bff	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList cancelTranscoding]	
+107e41c00	107e41caf	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList multiSnapV2AnySnapTrimmed]	
+107e41cb0	107e41e4b	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _startMultiSnapTranscoding]	
+107e41e4c	107e41f53	decompiled	chunks/001/functions-000071.c	-[SCPreviewEphemeralMediaList _cancelMultiSnapTranscoding]	
+107e41f54	107e41fcf	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _cacheAllSnapsToGalleryStore]	
+107e41fd0	107e42427	decompiled	chunks/001/functions-000072.c		
+107e42428	107e42517	decompiled	chunks/001/functions-000072.c		
+107e42518	107e4272b	decompiled	chunks/001/functions-000072.c		
+107e4272c	107e4272f	decompiled	chunks/001/functions-000072.c		
+107e42730	107e4283b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _exportSegmentAtIndex:count:]	
+107e4283c	107e4285f	decompiled	chunks/001/functions-000072.c		
+107e42860	107e42af3	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _transcodeSegmentAtIndex:count:]	
+107e42af4	107e42b0b	decompiled	chunks/001/functions-000072.c		
+107e42b0c	107e4340f	decompiled	chunks/001/functions-000072.c		
+107e43410	107e4364b	decompiled	chunks/001/functions-000072.c		
+107e4364c	107e43767	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _exportInputVideoToFileURL]	
+107e43768	107e4382f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _newMp4Url]	
+107e43830	107e4386b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _usecase]	
+107e4386c	107e438bb	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList combineMultiSnapSegmentsForChatSendingWithCompletion:]	
+107e438bc	107e439fb	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _combineMultiSnapSegmentsAndRunCompletionHandlersIfNecessary]	
+107e439fc	107e43a03	decompiled	chunks/001/functions-000072.c		
+107e43a04	107e43ab3	decompiled	chunks/001/functions-000072.c		
+107e43ab4	107e43abb	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList isTimelineOrDirectorModeSnap]	
+107e43abc	107e43b0f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _startTimelineSnapTranscoding]	
+107e43b10	107e43c33	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _cancelTimelineSnapTranscoding]	
+107e43c34	107e43ce7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _transcodeTimelineSnap]	
+107e43ce8	107e43cef	decompiled	chunks/001/functions-000072.c		
+107e43cf0	107e43d4b	decompiled	chunks/001/functions-000072.c		
+107e43d4c	107e43f0b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList _transcodeTimelineSnapVideoFilterIndex:videoURLs:timeRanges:inputSizeOverride:videoTargetSize:]	
+107e43f0c	107e43f6b	decompiled	chunks/001/functions-000072.c		
+107e43f6c	107e44323	decompiled	chunks/001/functions-000072.c		
+107e44324	107e4437f	decompiled	chunks/001/functions-000072.c		
+107e44380	107e4441b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setPublisherId:]	
+107e4441c	107e444eb	decompiled	chunks/001/functions-000072.c		
+107e444ec	107e445ef	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setMentionedUserIds:usernames:sources:textRanges:]	
+107e445f0	107e445ff	decompiled	chunks/001/functions-000072.c		
+107e44600	107e4464f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setGenAIFeaturedStoryInfo:]	
+107e44650	107e4465b	decompiled	chunks/001/functions-000072.c		
+107e4465c	107e4470b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setTopicStickers:storyTopics:]	
+107e4470c	107e44717	decompiled	chunks/001/functions-000072.c		
+107e44718	107e4479b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setPoll:]	
+107e4479c	107e447a7	decompiled	chunks/001/functions-000072.c		
+107e447a8	107e4482b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setQuestion:]	
+107e4482c	107e44837	decompiled	chunks/001/functions-000072.c		
+107e44838	107e448bb	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setSnapMeInfo:]	
+107e448bc	107e448c7	decompiled	chunks/001/functions-000072.c		
+107e448c8	107e449cb	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setStoryInviteWithPublicationId:inviteId:storyName:storyType:]	
+107e449cc	107e449db	decompiled	chunks/001/functions-000072.c		
+107e449dc	107e449df	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setSnapRequestMetadataWithPublicationId:inviteId:storyName:]	
+107e449e0	107e44a33	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setUserDisabledRemixing:leaveRemixSettingUnsetExperimentEnabled:]	
+107e44a34	107e44a43	decompiled	chunks/001/functions-000072.c		
+107e44a44	107e44b1b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setDreamsInfoWithDreamId:dreamPackId:lensId:]	
+107e44b1c	107e44b2b	decompiled	chunks/001/functions-000072.c		
+107e44b2c	107e44baf	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setSnapDocLensId:]	
+107e44bb0	107e44bbb	decompiled	chunks/001/functions-000072.c		
+107e44bbc	107e44c57	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setRankingSignalsBase64String:]	
+107e44c58	107e44c63	decompiled	chunks/001/functions-000072.c		
+107e44c64	107e44d03	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setExternalContent:]	
+107e44d04	107e44db3	decompiled	chunks/001/functions-000072.c		
+107e44db4	107e44e53	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setLocalPlatformData:]	
+107e44e54	107e44e5f	decompiled	chunks/001/functions-000072.c		
+107e44e60	107e44f07	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList addMediaOrigins:]	
+107e44f08	107e44fd3	decompiled	chunks/001/functions-000072.c		
+107e44fd4	107e4505b	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setBitmojiFashionContext:]	
+107e4505c	107e45067	decompiled	chunks/001/functions-000072.c		
+107e45068	107e4506f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList count]	
+107e45070	107e45077	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setCount:]	
+107e45078	107e4507f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList videoAsset]	
+107e45080	107e45087	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList timeRanges]	
+107e45088	107e4508f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setTimeRanges:]	
+107e45090	107e45097	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList isFromCamera]	
+107e45098	107e4509f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setIsFromCamera:]	
+107e450a0	107e450a7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList transcodingMediaDestinationInfo]	
+107e450a8	107e450af	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setTranscodingMediaDestinationInfo:]	
+107e450b0	107e450b7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList videoTargetSize]	
+107e450b8	107e450bf	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setVideoTargetSize:]	
+107e450c0	107e450c7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList inputVideoOverrideSize]	
+107e450c8	107e450cf	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setInputVideoOverrideSize:]	
+107e450d0	107e450d7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList backgroundColors]	
+107e450d8	107e45107	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setBackgroundColors:]	
+107e45108	107e4510f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setSnapVideoFilterList:]	
+107e45110	107e45117	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList progressHandler]	
+107e45118	107e4511f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setProgressHandler:]	
+107e45120	107e45127	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setEphemeralMediaList:]	
+107e45128	107e4512f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList cancelTranscodingSentinel]	
+107e45130	107e4515f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setCancelTranscodingSentinel:]	
+107e45160	107e45167	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList videoExportFinished]	
+107e45168	107e4516f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setVideoExportFinished:]	
+107e45170	107e45177	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList cameraRollSaveHandler]	
+107e45178	107e4517f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setCameraRollSaveHandler:]	
+107e45180	107e45187	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList chatSendingCombineHandler]	
+107e45188	107e4518f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setChatSendingCombineHandler:]	
+107e45190	107e45197	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList multiMediaSegmentExportedVideoURLs]	
+107e45198	107e451c7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setMultiMediaSegmentExportedVideoURLs:]	
+107e451c8	107e451cf	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList captureSessionID]	
+107e451d0	107e451d7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setCaptureSessionID:]	
+107e451d8	107e451df	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList snapSessionID]	
+107e451e0	107e451e7	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setSnapSessionID:]	
+107e451e8	107e451ef	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList batchCaptureConfiguration]	
+107e451f0	107e4521f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setBatchCaptureConfiguration:]	
+107e45220	107e45227	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList batchCaptureSegmentExportSession]	
+107e45228	107e45257	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setBatchCaptureSegmentExportSession:]	
+107e45258	107e4525f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList batchCaptureSavingError]	
+107e45260	107e4528f	decompiled	chunks/001/functions-000072.c	-[SCPreviewEphemeralMediaList setBatchCaptureSavingError:]	
+107e45290	107e45297	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList batchCaptureSegmentsToTranscode]	
+107e45298	107e4529f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setBatchCaptureSegmentsToTranscode:]	
+107e452a0	107e452a7	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList snap]	
+107e452a8	107e452d7	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setSnap:]	
+107e452d8	107e452df	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList circumstanceEngine]	
+107e452e0	107e4530f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setCircumstanceEngine:]	
+107e45310	107e45317	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList overlayFormatServices]	
+107e45318	107e45347	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setOverlayFormatServices:]	
+107e45348	107e4534f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList timelineConfiguration]	
+107e45350	107e4537f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setTimelineConfiguration:]	
+107e45380	107e45387	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList shouldCacheSnapsToGalleryStore]	
+107e45388	107e4538f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setShouldCacheSnapsToGalleryStore:]	
+107e45390	107e45397	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList gallerySnapOverlays]	
+107e45398	107e453c7	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setGallerySnapOverlays:]	
+107e453c8	107e453cf	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList galleryStorySaver]	
+107e453d0	107e453ff	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setGalleryStorySaver:]	
+107e45400	107e45407	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList snapVideoFilterFactory]	
+107e45408	107e45437	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setSnapVideoFilterFactory:]	
+107e45438	107e4543f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList snapVideoFilterCoordinator]	
+107e45440	107e4546f	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList setSnapVideoFilterCoordinator:]	
+107e45470	107e455e3	decompiled	chunks/001/functions-000073.c	-[SCPreviewEphemeralMediaList .cxx_destruct]	
+107e455e4	107e455eb	decompiled	chunks/001/functions-000073.c		
+107e455ec	107e4570f	decompiled	chunks/001/functions-000073.c		
+107e45710	107e4571f	decompiled	chunks/001/functions-000073.c		
+107e45720	107e4586f	decompiled	chunks/001/functions-000073.c		
+107e45870	107e4587f	decompiled	chunks/001/functions-000073.c		
+107e45880	107e458e7	decompiled	chunks/001/functions-000073.c	+[SCCTPVoiceoverAsset descriptor]	
+107e458e8	107e458ef	decompiled	chunks/001/functions-000073.c	-[SCGalleryStorySavingServices galleryStorySaver]	
+107e458f0	107e458fb	decompiled	chunks/001/functions-000073.c	-[SCGalleryStorySavingServices .cxx_destruct]	
+107e458fc	107e45983	decompiled	chunks/001/functions-000073.c	+[SCSnapSaver shared]	
+107e45984	107e45a1f	decompiled	chunks/001/functions-000073.c		
+107e45a20	107e45a2b	decompiled	chunks/001/functions-000073.c		
+107e45a2c	107e45b5f	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver initWithSnapSavingEventScopeExposer:circumstanceEngine:fetchLimit:grapheneRegistry:tmpFileWriter:]	
+107e45b60	107e45be7	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapImageToSnapAlbum:circumstanceEngine:completionBlock:]	
+107e45be8	107e45bf3	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapImageToSnapAlbum:completionBlock:]	
+107e45bf4	107e45c07	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapImageToSnapAlbum:snapId:completionBlock:]	
+107e45c08	107e4612b	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapImageToSnapAlbum:location:embeddedMetadata:snapId:completionBlock:]	
+107e4612c	107e46183	decompiled	chunks/001/functions-000073.c		
+107e46184	107e4619b	decompiled	chunks/001/functions-000073.c		
+107e4619c	107e463ab	decompiled	chunks/001/functions-000073.c		
+107e463ac	107e46453	decompiled	chunks/001/functions-000073.c		
+107e46454	107e46463	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapVideoToSnapAlbumWithCallsite:videoURL:completionBlock:deleteAfterSaving:]	
+107e46464	107e46473	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapVideoToSnapAlbumWithCallsite:videoURL:snapId:completionBlock:deleteAfterSaving:]	
+107e46474	107e46483	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapVideoToSnapAlbumWithCallsite:videoURL:deleteAfterSaving:completionBlock:]	
+107e46484	107e46497	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapVideoToSnapAlbumWithCallsite:videoURL:snapId:deleteAfterSaving:completionBlock:]	
+107e46498	107e464bb	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver saveSnapVideoToSnapAlbumWithCallsite:videoURL:location:snapId:deleteAfterSaving:completionBlock:]	
+107e464bc	107e46997	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _saveSnapVideoToSnapAlbumWithCallsite:videoURL:location:snapId:deleteAfterSaving:isReattempt:completionBlock:]	
+107e46998	107e469af	decompiled	chunks/001/functions-000073.c		
+107e469b0	107e46b53	decompiled	chunks/001/functions-000073.c		
+107e46b54	107e472c3	decompiled	chunks/001/functions-000073.c		
+107e472c4	107e47373	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _cleanupArtifactsWithOriginalURL:videoURL:shouldDelete:]	
+107e47374	107e475a7	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _reEncodeVideo:completionBlock:]	
+107e475a8	107e4761f	decompiled	chunks/001/functions-000073.c		
+107e47620	107e476e7	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _tempMp4FileURL]	
+107e476e8	107e47797	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver finishedSavingToAlbumWithError:completionBlock:]	
+107e47798	107e477a7	decompiled	chunks/001/functions-000073.c		
+107e477a8	107e47823	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _emitSaveEventWithPHAssetLocalIdentifier:snapId:]	
+107e47824	107e4783b	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _shouldConvertImageToPNG]	
+107e4783c	107e47863	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver snapSavingEvents]	
+107e47864	107e478ff	decompiled	chunks/001/functions-000073.c	+[SCSnapSaver _photoPermissionCoordinator]	
+107e47900	107e47907	decompiled	chunks/001/functions-000073.c		
+107e47908	107e47913	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _newMp4Url]	
+107e47914	107e4791f	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _newMovUrl]	
+107e47920	107e479fb	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver _newURLWithExtension:]	
+107e479fc	107e47a5b	decompiled	chunks/001/functions-000073.c	-[SCSnapSaver .cxx_destruct]	
+107e47a5c	107e47acf	decompiled	chunks/001/functions-000073.c	-[SCGrapheneSnapsaverMetric2 init]	
+107e47ad0	107e47b47	decompiled	chunks/001/functions-000073.c		
+107e47b48	107e47c6f	decompiled	chunks/001/functions-000073.c	+[SCMusicMemoriesHelpers generateSnapGenericAssetDataWithSelection:completion:]	
+107e47c70	107e47c7f	decompiled	chunks/001/functions-000073.c		
+107e47c80	107e47f1b	decompiled	chunks/001/functions-000073.c		
+107e47f1c	107e47f2b	decompiled	chunks/001/functions-000073.c		
+107e47f2c	107e4808f	decompiled	chunks/001/functions-000073.c	+[SCMusicMemoriesHelpers showUnavailableMusicAlertFromViewController:]	
+107e48090	107e48477	decompiled	chunks/001/functions-000073.c		
+107e48478	107e4888b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl initWithUserSession:previewConfiguration:timeline:dialogCoordinator:imageProcessCommandProvider:thumbnailGenerator:videoTrackingTargetTrajectoryFactory:snapCrop:lensExplorer:carouselOrderProvider:videoFilterStateController:previewScopeServices:previewABServices:smartTemplateService:tooltipPresenter:previewTooltipsServices:contentDelivery:circumstanceEngine:templateServices:viewportController:]	
+107e4888c	107e488cb	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl configureWithView:]	
+107e488cc	107e488d3	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl responderChainPriority]	
+107e488d4	107e48937	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl finishRewindingWithTrackableView:]	
+107e48938	107e48987	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl finishTouchControl:]	
+107e48988	107e489f7	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl preparePreviewEphemeralMediaList:destinationInfo:]	
+107e489f8	107e48a1f	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl previewThumbnailsController]	
+107e48a20	107e48a83	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl snapEditStateChangeShouldUpdateThumbnails:]	
+107e48a84	107e48ad3	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl exportBakedInEffectsToURLWithCompletion:]	
+107e48ad4	107e48b47	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl prepareEphemeralMediaListWithSegmentation:destinationInfo:]	
+107e48b48	107e48bb7	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl saveToCameraRollWithExportCompletion:saveToSnapAlbumCompletion:]	
+107e48bb8	107e48c33	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl clipsStateEditingType]	
+107e48c34	107e48c3b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl deselectSelectedSegmentIfAny]	
+107e48c3c	107e48c8b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl exportToMultipleVideosForGallerySavingWithCompletion:]	
+107e48c8c	107e48cd3	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl getOutputVideoTimeRangeForGallerySaving]	
+107e48cd4	107e48d1b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl globalEditingState]	
+107e48d1c	107e48e2b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl previewPlaybackDidPlayToVideoIndex:lastIndex:]	
+107e48e2c	107e48e4b	decompiled	chunks/001/functions-000073.c		
+107e48e4c	107e48e9b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl saveFilterDataWithInfoStickerDataProvider:]	
+107e48e9c	107e48eeb	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl setMusicPickerSelection:]	
+107e48eec	107e48f33	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl timelineSnapStateHandler]	
+107e48f34	107e4929b	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl setupPreviewWithPlayerHandler:]	
+107e4929c	107e492bf	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl _showDMTooltipsIfNecessary]	
+107e492c0	107e494b3	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl _showClipLevelEditsTooltipIfNecessary]	
+107e494b4	107e496b3	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl _showClipsReorderingTooltipIfNecessary]	
+107e496b4	107e49747	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl _dismissTooltipIfNecessary]	
+107e49748	107e49767	decompiled	chunks/001/functions-000073.c	-[SCPreviewFeatureDirectorModeImpl _isToolSupportedByClipLevelEditing:]	
+107e49768	107e497a7	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl tryToShowTimelineDraftEditFromMemoriesTooltip]	
+107e497a8	107e4980b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl onDismissPreview]	
+107e4980c	107e4982b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl shouldExitPreviewWithExitType:]	
+107e4982c	107e49833	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl isPlaybackManuallyPaused]	
+107e49834	107e49883	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl updateSnapCommonLoggingParamsBuilder:]	
+107e49884	107e49887	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl multiSnapStateHandler]	
+107e49888	107e4992f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl isTemplate]	
+107e49930	107e49977	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidTapAddMore:]	
+107e49978	107e49a5f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:clipLevelEditEnabled:thumbnailsHidden:]	
+107e49a60	107e49bdf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:updateEditedThumbnailForSegment:]	
+107e49be0	107e49c2b	decompiled	chunks/001/functions-000074.c		
+107e49c2c	107e49c77	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:didChangeVisibility:]	
+107e49c78	107e49d8b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:isPlaybackManuallyPaused:]	
+107e49d8c	107e49da7	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:didSeekToTime:]	
+107e49da8	107e49db3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidFinishSeeking:]	
+107e49db4	107e49ddb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnails:didTrimSegment:]	
+107e49ddc	107e49e7b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidEnterReorderingMode:]	
+107e49e7c	107e49f6b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidExitReorderingMode:]	
+107e49f6c	107e49f77	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidStartUpdatingCollectionView:]	
+107e49f78	107e49f83	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidFinishUpdatingCollectionView:]	
+107e49f84	107e49faf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidDeleteSegmentInReorder:]	
+107e49fb0	107e49fbb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl featureDirectorModeThumbnailsDidEndDroppingInReorder:]	
+107e49fbc	107e4a12b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _replaceNGSBottomActionBarWithQuickEditingBar]	
+107e4a12c	107e4a37b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _replaceQuickEditingBarWithNGSBottomActionBar]	
+107e4a37c	107e4a3af	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl videoPlaybackSession:didRenderFrameAtTime:]	
+107e4a3b0	107e4a3b7	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl videoPlaybackSessionDidStartRunning:]	
+107e4a3b8	107e4a3bf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl videoPlaybackSessionDidStopRunning:]	
+107e4a3c0	107e4a3c7	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl videoPlaybackSessionDidPauseRunning:]	
+107e4a3c8	107e4a3cf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl videoPlaybackSessionDidResumeRunning:]	
+107e4a3d0	107e4a5bb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl quickEditingBar]	
+107e4a5bc	107e4a5c3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl didTapPreviewQuickEditingCancelButton]	
+107e4a5c4	107e4a633	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl didTapPreviewQuickEditingDeleteButton]	
+107e4a634	107e4a6d7	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl didTapPreviewQuickEditingFinishButton]	
+107e4a6d8	107e4a783	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl editingIndex]	
+107e4a784	107e4aa4f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _updateSegmentEditedThumbnails]	
+107e4aa50	107e4ab2b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _generateOverlayStateAtIndex:overlayImage:videoTrackedImages:]	
+107e4ab2c	107e4b28b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _generateOverlayState:segmentIndex:overlayImage:videoTrackedImages:]	
+107e4b28c	107e4b2e3	decompiled	chunks/001/functions-000074.c		
+107e4b2e4	107e4b2f3	decompiled	chunks/001/functions-000074.c		
+107e4b2f4	107e4b4cf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _applyOverlayState:toSegment:]	
+107e4b4d0	107e4b6af	decompiled	chunks/001/functions-000074.c		
+107e4b6b0	107e4b6f7	decompiled	chunks/001/functions-000074.c		
+107e4b6f8	107e4b7ab	decompiled	chunks/001/functions-000074.c		
+107e4b7ac	107e4b83f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl cameraModeOnboardingDialogPresenter:presentDialog:]	
+107e4b840	107e4b967	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _subscrideOnFilterCarouselOrderProvider]	
+107e4b968	107e4ba0b	decompiled	chunks/001/functions-000074.c		
+107e4ba0c	107e4ba53	decompiled	chunks/001/functions-000074.c		
+107e4ba54	107e4bcfb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _handleCarouselOrderChanged:]	
+107e4bcfc	107e4bd9f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _isDraftFromMemories]	
+107e4bda0	107e4bec3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _showClipLevelEditsFTUEModalIfNecessary]	
+107e4bec4	107e4c1b3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _showDeleteDraftAlert]	
+107e4c1b4	107e4c25b	decompiled	chunks/001/functions-000074.c		
+107e4c25c	107e4c28f	decompiled	chunks/001/functions-000074.c		
+107e4c290	107e4c337	decompiled	chunks/001/functions-000074.c		
+107e4c338	107e4c37f	decompiled	chunks/001/functions-000074.c		
+107e4c380	107e4c38f	decompiled	chunks/001/functions-000074.c		
+107e4c390	107e4c5d3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _showDeleteSegmentAlert]	
+107e4c5d4	107e4c67b	decompiled	chunks/001/functions-000074.c		
+107e4c67c	107e4c6a7	decompiled	chunks/001/functions-000074.c		
+107e4c6a8	107e4c6b7	decompiled	chunks/001/functions-000074.c		
+107e4c6b8	107e4c83f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _deleteSelectedSegment]	
+107e4c840	107e4c86b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _deleteDraftAndExitPreview]	
+107e4c86c	107e4cb33	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _configPreviewView]	
+107e4cb34	107e4cb5f	decompiled	chunks/001/functions-000074.c		
+107e4cb60	107e4ccaf	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _setPreviewCarouselViewEnabled:]	
+107e4ccb0	107e4cdef	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _setAllOtherPreviewBottomComponentsHidden:]	
+107e4cdf0	107e4ce27	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _isClipLevelEditing]	
+107e4ce28	107e4ceff	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _updateSnapEditorStateForClipLevelEditEnabled:]	
+107e4cf00	107e4d01b	decompiled	chunks/001/functions-000074.c		
+107e4d01c	107e4d06f	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl _stopVideoAndShowVideoIfNecessary]	
+107e4d070	107e4d087	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl delegate]	
+107e4d088	107e4d093	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl setDelegate:]	
+107e4d094	107e4d09b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl thumbnailsFeature]	
+107e4d09c	107e4d0a3	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl thumbnailsViewController]	
+107e4d0a4	107e4d21b	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeImpl .cxx_destruct]	
+107e4d21c	107e4d333	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeServicesEntryPoint begin]	
+107e4d334	107e4d7ab	decompiled	chunks/001/functions-000074.c		
+107e4d7ac	107e4d8cb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeServicesEntryPoint .cxx_destruct]	
+107e4d8cc	107e4d977	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeServicesPluginEntryPoint begin]	
+107e4d978	107e4d9bb	decompiled	chunks/001/functions-000074.c	-[SCPreviewFeatureDirectorModeServicesPluginEntryPoint .cxx_destruct]	
+107e4d9bc	107e4de7f	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler initWithTimelineConfiguration:previewConfiguration:indexProvider:overlaySize:userSession:userInfoServices:previewCameraSourceOverlayService:overlayFormatServices:userTaggingFeature:previewABProvider:previewBlizzardLogger:targetTrajectoryFactory:snapDocEditor:snapDocManager:circumstanceEngine:stickerInjector:ctpItemViewService:snapDocConverterServices:snapDocEditorFactory:snapchatterFetcher:previewScopeServices:]	
+107e4de80	107e4e637	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler setConfiguration:]	
+107e4e638	107e4e6b3	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler restoreEditingStatesFromGalleryWithGlobalState:localStates:]	
+107e4e6b4	107e4e8ff	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler maxUniqueStickerId]	
+107e4e900	107e4eb4b	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler maxDrawingStrokeUniqueId]	
+107e4eb4c	107e4ecef	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler editingStatesForTimeRanges:withGlobalAndLocalStateResolved:]	
+107e4ecf0	107e4edf7	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler editingStateAtIndex:withGlobalAndLocalStateResolved:]	
+107e4edf8	107e4ee93	decompiled	chunks/001/functions-000074.c		
+107e4ee94	107e4ee9b	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler editingStateToSaveAtIndex:]	
+107e4ee9c	107e4ef17	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler hasEditsAtIndex:]	
+107e4ef18	107e4f4f3	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler resolvedClipEditingStateAtIndex:]	
+107e4f4f4	107e4f513	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler hasEditAtClipIndex:editType:uniqueId:]	
+107e4f514	107e4f6af	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler moveEditToGlobalAtClipIndex:editType:uniqueId:]	
+107e4f6b0	107e4f837	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler _findIndexOfEditAtClipIndex:editType:uniqueId:]	
+107e4f838	107e4f8df	decompiled	chunks/001/functions-000074.c		
+107e4f8e0	107e4faa3	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler drawingStrokeHistoryForDrawItemSelected:clipsStateEditingType:forSegmentIndex:]	
+107e4faa4	107e4fbb7	decompiled	chunks/001/functions-000074.c	-[SCTimelineSnapStateHandler didChangeStaticCaption:]	
+107e4fbb8	107e4fbef	decompiled	chunks/001/functions-000074.c		
+107e4fbf0	107e4fd6f	decompiled	chunks/001/functions-000074.c		
+107e4fd70	107e4fda7	decompiled	chunks/001/functions-000074.c		
+107e4fda8	107e4ffc3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeTrackingCaption:atIndex:]	
+107e4ffc4	107e50033	decompiled	chunks/001/functions-000075.c		
+107e50034	107e500e3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeAutoCaptionsState:]	
+107e500e4	107e500ef	decompiled	chunks/001/functions-000075.c		
+107e500f0	107e5028f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeStaticStickerView:]	
+107e50290	107e502c7	decompiled	chunks/001/functions-000075.c		
+107e502c8	107e5050f	decompiled	chunks/001/functions-000075.c		
+107e50510	107e508db	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didUpdateMetadataOfStickerView:atIndex:]	
+107e508dc	107e508f3	decompiled	chunks/001/functions-000075.c		
+107e508f4	107e5092b	decompiled	chunks/001/functions-000075.c		
+107e5092c	107e50a27	decompiled	chunks/001/functions-000075.c		
+107e50a28	107e50a97	decompiled	chunks/001/functions-000075.c		
+107e50a98	107e50bd7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler drawingView:addedStroke:]	
+107e50bd8	107e50cab	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler drawingView:removedStroke:]	
+107e50cac	107e50ce7	decompiled	chunks/001/functions-000075.c		
+107e50ce8	107e50d7b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler updateAvailableFiltersWithState:]	
+107e50d7c	107e50d87	decompiled	chunks/001/functions-000075.c		
+107e50d88	107e50d8f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler setOverlaySize:]	
+107e50d90	107e51327	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeFiltersState:]	
+107e51328	107e51373	decompiled	chunks/001/functions-000075.c		
+107e51374	107e514ab	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeVenueFilterView:]	
+107e514ac	107e515e3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeCroppingState:isInitialState:]	
+107e515e4	107e516eb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeAudioFilter:audioEnabled:]	
+107e516ec	107e5179b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeAttachmentURL:]	
+107e5179c	107e517a7	decompiled	chunks/001/functions-000075.c		
+107e517a8	107e51857	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeGenericAssets:]	
+107e51858	107e51863	decompiled	chunks/001/functions-000075.c		
+107e51864	107e51913	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeMusicSelection:]	
+107e51914	107e51ac7	decompiled	chunks/001/functions-000075.c		
+107e51ac8	107e51b4b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeBaseMediaMusicSelection:]	
+107e51b4c	107e51b57	decompiled	chunks/001/functions-000075.c		
+107e51b58	107e51c4f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeVoiceoverAudio:]	
+107e51c50	107e51ccb	decompiled	chunks/001/functions-000075.c		
+107e51ccc	107e51dc3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeMixedAudioTracks:]	
+107e51dc4	107e51e23	decompiled	chunks/001/functions-000075.c		
+107e51e24	107e51f1b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeMixedBaseAudioVolume:]	
+107e51f1c	107e51f7b	decompiled	chunks/001/functions-000075.c		
+107e51f7c	107e52073	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeTextToSpeechAudioAsset:]	
+107e52074	107e520d3	decompiled	chunks/001/functions-000075.c		
+107e520d4	107e52157	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangeLiveCameraLensConfiguration:]	
+107e52158	107e52163	decompiled	chunks/001/functions-000075.c		
+107e52164	107e521e7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler didChangePreviewLensConfiguration:]	
+107e521e8	107e521f3	decompiled	chunks/001/functions-000075.c		
+107e521f4	107e522f3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler statesContainAudioVisualEdits]	
+107e522f4	107e524bb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler statesContainInfoStickerOfType:]	
+107e524bc	107e524d3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _globalOnlyEditingOfType:]	
+107e524d4	107e524f3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _isStickerGlobalOnlyWithType:infoStickerType:]	
+107e524f4	107e52503	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _localOverrideEditingOfType:]	
+107e52504	107e525bf	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _updateEditingStateWithBlock:globalOnlyEditing:localOverrideEditing:]	
+107e525c0	107e52637	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _updateSelectedLocalStateWithBlock:atIndex:]	
+107e52638	107e5264f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _updateGlobalStateWithBlock:]	
+107e52650	107e526d7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _updateAllSegmentsWithBlock:]	
+107e526d8	107e5271f	decompiled	chunks/001/functions-000075.c	+[SCTimelineSnapStateHandler overlayAndVideoTrackedImagesForOverlayState:overlaySize:outputSize:durationMs:useOutputSizeForStaticOverlay:spectaclesTranscodingConfig:userSession:previewCameraSourceOverlayService:multiSnapDrawingCache:videoPlaybackSpeed:targetTrajectoryFactory:stickerInjector:ctpItemViewService:overlayGenerationType:disposableBag:completion:]	
+107e52720	107e5272b	decompiled	chunks/001/functions-000075.c	+[SCTimelineSnapStateHandler containsTrackedImagesForOverlayState:]	
+107e5272c	107e528bb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _iterateStatesWithTimeRanges:dataProcessBlock:]	
+107e528bc	107e52993	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler overlayAndVideoTrackedImagesForIndex:outputSize:useOutputSizeForStaticOverlay:useImageCacheForStaticOverlay:multiSnapDrawingCache:overlayGenerationType:completion:]	
+107e52994	107e52a8b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler globalOverlaysForThumbnailWithOutputSize:useOutputSizeForStaticOverlay:multiSnapDrawingCache:completion:]	
+107e52a8c	107e52b6b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler gallerySnapOverlaysWithTimeRanges:]	
+107e52b6c	107e52d33	decompiled	chunks/001/functions-000075.c		
+107e52d34	107e52f33	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler globalOverlayForGalleryWithCompletion:]	
+107e52f34	107e52fe7	decompiled	chunks/001/functions-000075.c		
+107e52fe8	107e53127	decompiled	chunks/001/functions-000075.c		
+107e53128	107e5331f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler overlaysForGalleryWithTimeRanges:multiSnapDrawingCache:completion:]	
+107e53320	107e53463	decompiled	chunks/001/functions-000075.c		
+107e53464	107e536d7	decompiled	chunks/001/functions-000075.c		
+107e536d8	107e5384f	decompiled	chunks/001/functions-000075.c		
+107e53850	107e53857	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler sendingStatesForTimeRanges:]	
+107e53858	107e5385f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler savingStatesForTimeRanges:]	
+107e53860	107e5396b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler configureEphemeralMedias:configuration:timeRanges:multiSnapDrawingCache:]	
+107e5396c	107e53bbb	decompiled	chunks/001/functions-000075.c		
+107e53bbc	107e541bb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler configureEphemeralMedia:withEditingState:index:timeRange:multiSnapDrawingCache:]	
+107e541bc	107e541c3	decompiled	chunks/001/functions-000075.c		
+107e541c4	107e5488f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _configureSnapVideoFilter:forState:index:multiSnapDrawingCache:timeRange:]	
+107e54890	107e549df	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _configureSnapVideoFilterForClipEditing:multiSnapDrawingCache:]	
+107e549e0	107e54e1f	decompiled	chunks/001/functions-000075.c		
+107e54e20	107e550b7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _generateOverlaysWithEditingState:outputSize:useOutputSizeForStaticOverlay:useImageCacheForStaticOverlay:multiSnapDrawingCache:overlayGenerationType:completion:]	
+107e550b8	107e55423	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _updateIndividualEditingLoggingParamsBuilder:from:]	
+107e55424	107e554e3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler hasIndividualCreativeTools]	
+107e554e4	107e5595b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _hasIdenticalCreativeToolsInState:toState:]	
+107e5595c	107e55a97	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _localStateWithSegment:timelineConfiguration:inoutNextStickerUniqueId:atIndex:]	
+107e55a98	107e565b3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _localStateWithTrimmedTimeRange:contentTimeRange:memoriesImportSnapDoc:inoutNextStickerUniqueId:atIndex:]	
+107e565b4	107e565bb	decompiled	chunks/001/functions-000075.c		
+107e565bc	107e56643	decompiled	chunks/001/functions-000075.c		
+107e56644	107e567af	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _moveTrackingEditsFromLocalState:toGlobalState:]	
+107e567b0	107e567bf	decompiled	chunks/001/functions-000075.c		
+107e567c0	107e56be3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _trimImportTrajectory:importContentTimeRange:]	
+107e56be4	107e56c67	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _hidingTransformAtTime:]	
+107e56c68	107e56ccb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfiguration:didAddSegment:]	
+107e56ccc	107e56d8f	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfiguration:didAddSegments:]	
+107e56d90	107e56f5b	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfiguration:didDeleteSegment:atIndex:]	
+107e56f5c	107e570e7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfiguration:didMoveSegment:atIndex:toDestinationIndex:]	
+107e570e8	107e5719f	decompiled	chunks/001/functions-000075.c		
+107e571a0	107e57247	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler _logDirectSegmentReorderWithSegment:]	
+107e57248	107e57277	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfigurationDidEnterReorderMode:]	
+107e57278	107e57287	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfigurationDidExitReorderMode:]	
+107e57288	107e57327	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfigurationDidRestoreToInitialState:]	
+107e57328	107e573df	decompiled	chunks/001/functions-000075.c		
+107e573e0	107e573e3	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfiguration:didUpdateSegmentTrim:atIndex:]	
+107e573e4	107e573e7	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfigurationWillDeleteAllSegments:]	
+107e573e8	107e573eb	decompiled	chunks/001/functions-000075.c	-[SCTimelineSnapStateHandler timelineConfigurationDidDeleteAllSegments:]	
+107e573ec	107e573ef	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler timelineConfigurationDidUpdateThumbnails:]	
+107e573f0	107e573f3	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler timelineConfiguration:didUpdateThumbnailsForSegment:]	
+107e573f4	107e5746b	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler didDeleteSegmentAtIndex:]	
+107e5746c	107e57533	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler didFinishTouchWithTarget:]	
+107e57534	107e57627	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler _handleConfiguration:didAddSegment:atIndex:]	
+107e57628	107e57cef	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler _translateEditingState:]	
+107e57cf0	107e57cff	decompiled	chunks/001/functions-000076.c		
+107e57d00	107e5814b	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler _trimTrajectory:withTrimmedTimeRanges:]	
+107e5814c	107e581ab	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler _localEditingStateForSegmentAtIndex:]	
+107e581ac	107e581b3	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler localStates]	
+107e581b4	107e581bb	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler globalState]	
+107e581bc	107e581d3	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler previewConfiguration]	
+107e581d4	107e581df	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler setPreviewConfiguration:]	
+107e581e0	107e581f7	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler configuration]	
+107e581f8	107e5820f	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler indexProvider]	
+107e58210	107e5821b	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler setIndexProvider:]	
+107e5821c	107e58233	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler snapDocEditor]	
+107e58234	107e5823f	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler setSnapDocEditor:]	
+107e58240	107e58387	decompiled	chunks/001/functions-000076.c	-[SCTimelineSnapStateHandler .cxx_destruct]	
+107e58388	107e583ff	decompiled	chunks/001/functions-000076.c		
+107e58400	107e58473	decompiled	chunks/001/functions-000076.c	-[SCPreviewFeatureDirectorModeServices initWithDirectorMode:]	
+107e58474	107e5847b	decompiled	chunks/001/functions-000076.c	-[SCPreviewFeatureDirectorModeServices directorMode]	
+107e5847c	107e58487	decompiled	chunks/001/functions-000076.c	-[SCPreviewFeatureDirectorModeServices .cxx_destruct]	
+107e58488	107e58513	decompiled	chunks/001/functions-000076.c	+[SCMemoriesSnapDocParsingUtils playbackValidationErrorForSnapDoc:]	
+107e58514	107e586b7	decompiled	chunks/001/functions-000076.c	+[SCMemoriesSnapDocParsingUtils baseMediaAudioRenderEffectFromSegmentEffects:]	
+107e586b8	107e58743	decompiled	chunks/001/functions-000076.c	+[SCMemoriesSnapDocParsingUtils plainAudioTrackFromSnapDocParser:completion:]	
+107e58744	107e58bdf	decompiled	chunks/001/functions-000076.c		
+107e58be0	107e58d57	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser initWithSnapDocManager:snapDoc:]	
+107e58d58	107e595e3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveCTItemRenderEffects]	
+107e595e4	107e597ef	decompiled	chunks/001/functions-000076.c		
+107e597f0	107e5998b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveBaseMediaRenderEffects]	
+107e5998c	107e5a207	decompiled	chunks/001/functions-000076.c		
+107e5a208	107e5a273	decompiled	chunks/001/functions-000076.c		
+107e5a274	107e5ae6b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveBaseMediasWithCompletionBlock:]	
+107e5ae6c	107e5aebb	decompiled	chunks/001/functions-000076.c		
+107e5aebc	107e5b197	decompiled	chunks/001/functions-000076.c		
+107e5b198	107e5b64b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveFirstSegmentMetadataWithCompletionBlock:]	
+107e5b64c	107e5b663	decompiled	chunks/001/functions-000076.c		
+107e5b664	107e5b78b	decompiled	chunks/001/functions-000076.c		
+107e5b78c	107e5b8c7	decompiled	chunks/001/functions-000076.c		
+107e5b8c8	107e5c06f	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveMultipleSegmentMetadataWithFullBaseMediaDownload:completionBlock:]	
+107e5c070	107e5c2e3	decompiled	chunks/001/functions-000076.c		
+107e5c2e4	107e5c483	decompiled	chunks/001/functions-000076.c		
+107e5c484	107e5c843	decompiled	chunks/001/functions-000076.c		
+107e5c844	107e5cadf	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveGlobalSOJUEditsSynchronouslyWithError:]	
+107e5cae0	107e5cceb	decompiled	chunks/001/functions-000076.c		
+107e5ccec	107e5d183	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveLocalSOJUEditsSynchronouslyWithError:]	
+107e5d184	107e5d83f	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveSegmentTimeRanges]	
+107e5d840	107e5d977	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveSegmentCreativeEditTags]	
+107e5d978	107e5dcf3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveGlobalOverlayFormatWithCompletionBlock:]	
+107e5dcf4	107e5de6f	decompiled	chunks/001/functions-000076.c		
+107e5de70	107e5e1db	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveGlobalGenericAssetWithAssetType:completionBlock:]	
+107e5e1dc	107e5e35b	decompiled	chunks/001/functions-000076.c		
+107e5e35c	107e5ec43	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser retrieveMultipleGlobalGenericAssetsWithAssetType:completionBlock:]	
+107e5ec44	107e5edab	decompiled	chunks/001/functions-000076.c		
+107e5edac	107e5edcb	decompiled	chunks/001/functions-000076.c		
+107e5edcc	107e5ee3b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser _keyForMedia:inSnapDoc:]	
+107e5ee3c	107e5f577	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser _retrieveSegmentWithMediaMetadata:baseMediaRenderEffect:overlayImageMetadata:sojuEditsData:genericAssetsMetadata:fullyLoadBaseMedia:isForThumbnail:completion:]	
+107e5f578	107e5f647	decompiled	chunks/001/functions-000076.c		
+107e5f648	107e5f6fb	decompiled	chunks/001/functions-000076.c		
+107e5f6fc	107e5f7cb	decompiled	chunks/001/functions-000076.c		
+107e5f7cc	107e5f8a7	decompiled	chunks/001/functions-000076.c		
+107e5f8a8	107e5f977	decompiled	chunks/001/functions-000076.c		
+107e5f978	107e5fa0f	decompiled	chunks/001/functions-000076.c		
+107e5fa10	107e5fba7	decompiled	chunks/001/functions-000076.c		
+107e5fba8	107e5fca7	decompiled	chunks/001/functions-000076.c		
+107e5fca8	107e5fd47	decompiled	chunks/001/functions-000076.c		
+107e5fd48	107e5fe53	decompiled	chunks/001/functions-000076.c		
+107e5fe54	107e5fedb	decompiled	chunks/001/functions-000076.c		
+107e5fedc	107e5fee3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser snapDoc]	
+107e5fee4	107e5ff1f	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSnapDocParser .cxx_destruct]	
+107e5ff20	107e60077	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata initWithMedia:baseMediaRenderEffect:overlayImage:sojuEdits:genericAssets:segmentDurationMs:mediaType:]	
+107e60078	107e6009b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata copyWithZone:]	
+107e6009c	107e6015f	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata hash]	
+107e60160	107e60293	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata isEqual:]	
+107e60294	107e6029b	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata media]	
+107e6029c	107e602a3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata baseMediaRenderEffect]	
+107e602a4	107e602ab	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata overlayImage]	
+107e602ac	107e602b3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata sojuEdits]	
+107e602b4	107e602bb	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata genericAssets]	
+107e602bc	107e602c3	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata segmentDurationMs]	
+107e602c4	107e602cb	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata mediaType]	
+107e602cc	107e6031f	decompiled	chunks/001/functions-000076.c	-[SCMemoriesTimelineSegmentMetadata .cxx_destruct]	
+107e60320	107e6059f	decompiled	chunks/001/functions-000076.c		
+107e605a0	107e60673	decompiled	chunks/001/functions-000076.c		
+107e60674	107e608bb	decompiled	chunks/001/functions-000076.c		
+107e608bc	107e6095b	decompiled	chunks/001/functions-000076.c		
+107e6095c	107e60ab3	decompiled	chunks/001/functions-000076.c		
+107e60ab4	107e60b3f	decompiled	chunks/001/functions-000076.c		
+107e60b40	107e60b5b	decompiled	chunks/001/functions-000076.c		
+107e60b5c	107e610fb	decompiled	chunks/001/functions-000076.c		
+107e610fc	107e611ff	decompiled	chunks/001/functions-000076.c		
+107e61200	107e6121b	decompiled	chunks/001/functions-000076.c		
+107e6121c	107e613df	decompiled	chunks/001/functions-000076.c		
+107e613e0	107e6149f	decompiled	chunks/001/functions-000076.c		
+107e614a0	107e616d7	decompiled	chunks/001/functions-000076.c		
+107e616d8	107e61c67	decompiled	chunks/001/functions-000076.c		
+107e61c68	107e61f8b	decompiled	chunks/001/functions-000076.c		
+107e61f8c	107e61fab	decompiled	chunks/001/functions-000076.c		
+107e61fac	107e6277b	decompiled	chunks/001/functions-000076.c		
+107e6277c	107e6277f	decompiled	chunks/001/functions-000077.c		
+107e62780	107e627db	decompiled	chunks/001/functions-000077.c		
+107e627dc	107e629bb	decompiled	chunks/001/functions-000077.c		
+107e629bc	107e629e3	decompiled	chunks/001/functions-000077.c		
+107e629e4	107e62d93	decompiled	chunks/001/functions-000077.c		
+107e62d94	107e6350b	decompiled	chunks/001/functions-000077.c		
+107e6350c	107e63717	decompiled	chunks/001/functions-000077.c		
+107e63718	107e639a3	decompiled	chunks/001/functions-000077.c		
+107e639a4	107e63d9f	decompiled	chunks/001/functions-000077.c		
+107e63da0	107e63ecf	decompiled	chunks/001/functions-000077.c		
+107e63ed0	107e6408b	failed			Exception while decompiling 107e63ed0: process: timeout 
+107e6408c	107e64873	failed			Exception while decompiling 107e6408c: process: timeout 
+107e64874	107e649e3	decompiled	chunks/001/functions-000077.c		
+107e649e4	107e65d33	decompiled	chunks/001/functions-000077.c		
+107e65d34	107e65eaf	decompiled	chunks/001/functions-000077.c		
+107e65eb0	107e65f6f	decompiled	chunks/001/functions-000077.c		
+107e65f70	107e66167	decompiled	chunks/001/functions-000077.c		
+107e66168	107e662db	decompiled	chunks/001/functions-000077.c		
+107e662dc	107e6635f	decompiled	chunks/001/functions-000077.c		
+107e66360	107e6640f	decompiled	chunks/001/functions-000077.c		
+107e66410	107e6669b	decompiled	chunks/001/functions-000077.c		
+107e6669c	107e666a3	decompiled	chunks/001/functions-000077.c		
+107e666a4	107e666ef	decompiled	chunks/001/functions-000077.c		
+107e666f0	107e66b37	decompiled	chunks/001/functions-000077.c		
+107e66b38	107e66b73	decompiled	chunks/001/functions-000077.c		
+107e66b74	107e66d5f	decompiled	chunks/001/functions-000077.c		
+107e66d60	107e66da7	decompiled	chunks/001/functions-000077.c		
+107e66da8	107e6734b	decompiled	chunks/001/functions-000077.c		
+107e6734c	107e674cf	decompiled	chunks/001/functions-000077.c		
+107e674d0	107e675bb	decompiled	chunks/001/functions-000077.c		
+107e675bc	107e675d3	decompiled	chunks/001/functions-000077.c		
+107e675d4	107e6770f	decompiled	chunks/001/functions-000077.c		
+107e67710	107e67793	decompiled	chunks/001/functions-000077.c		
+107e67794	107e6781f	decompiled	chunks/001/functions-000077.c		
+107e67820	107e68043	decompiled	chunks/001/functions-000077.c		
+107e68044	107e682fb	decompiled	chunks/001/functions-000077.c		
+107e682fc	107e6833b	decompiled	chunks/001/functions-000077.c		
+107e6833c	107e6868f	decompiled	chunks/001/functions-000077.c		
+107e68690	107e686d3	decompiled	chunks/001/functions-000077.c		
+107e686d4	107e68b7b	decompiled	chunks/001/functions-000077.c		
+107e68b7c	107e68b93	decompiled	chunks/001/functions-000077.c		
+107e68b94	107e68ddf	decompiled	chunks/001/functions-000077.c		
+107e68de0	107e68eff	decompiled	chunks/001/functions-000077.c		
+107e68f00	107e6959f	decompiled	chunks/001/functions-000077.c		
+107e695a0	107e696ef	decompiled	chunks/001/functions-000077.c		
+107e696f0	107e6973f	decompiled	chunks/001/functions-000077.c		
+107e69740	107e69913	decompiled	chunks/001/functions-000077.c		
+107e69914	107e69aff	decompiled	chunks/001/functions-000077.c		
+107e69b00	107e69bbf	decompiled	chunks/001/functions-000077.c		
+107e69bc0	107e69c2b	decompiled	chunks/001/functions-000077.c		
+107e69c2c	107e6a0db	decompiled	chunks/001/functions-000077.c		
+107e6a0dc	107e6a1a7	decompiled	chunks/001/functions-000077.c		
+107e6a1a8	107e6a2f7	decompiled	chunks/001/functions-000077.c		
+107e6a2f8	107e6a3c3	decompiled	chunks/001/functions-000077.c		
+107e6a3c4	107e6a66b	decompiled	chunks/001/functions-000077.c		
+107e6a66c	107e6a747	decompiled	chunks/001/functions-000077.c		
+107e6a748	107e6a897	decompiled	chunks/001/functions-000077.c		
+107e6a898	107e6ac9b	decompiled	chunks/001/functions-000077.c		
+107e6ac9c	107e6acd7	decompiled	chunks/001/functions-000077.c		
+107e6acd8	107e6b1c3	decompiled	chunks/001/functions-000077.c		
+107e6b1c4	107e6b20f	decompiled	chunks/001/functions-000077.c		
+107e6b210	107e6b313	decompiled	chunks/001/functions-000077.c		
+107e6b314	107e6b3d3	decompiled	chunks/001/functions-000077.c		
+107e6b3d4	107e6b5cb	decompiled	chunks/001/functions-000077.c		
+107e6b5cc	107e6b62b	decompiled	chunks/001/functions-000077.c		
+107e6b62c	107e6b733	decompiled	chunks/001/functions-000077.c		
+107e6b734	107e6b787	decompiled	chunks/001/functions-000077.c		
+107e6b788	107e6b793	decompiled	chunks/001/functions-000077.c	-[SCMemoriesMashupFeaturedStoryGenerationCoordinatorServices .cxx_destruct]	
+107e6b794	107e6b7ff	decompiled	chunks/001/functions-000077.c	+[SCMemoriesClientGenFeaturedStoryLocalEntry cameraRollFeaturedStoryWithCrFeaturedStory:]	
+107e6b800	107e6b863	decompiled	chunks/001/functions-000077.c	+[SCMemoriesClientGenFeaturedStoryLocalEntry galleryEntryWithGalleryEntry:]	
+107e6b864	107e6b8a7	decompiled	chunks/001/functions-000077.c	-[SCMemoriesClientGenFeaturedStoryLocalEntry internalInit]	
+107e6b8a8	107e6b92b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesClientGenFeaturedStoryLocalEntry matchGalleryEntry:cameraRollFeaturedStory:]	
+107e6b92c	107e6b95b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesClientGenFeaturedStoryLocalEntry .cxx_destruct]	
+107e6b95c	107e6b967	decompiled	chunks/001/functions-000077.c	-[SCMemoriesMashupSnapDocFactoryServices .cxx_destruct]	
+107e6b968	107e6ba2b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext initWithGenerationId:requiresMySelfie:friendId:syncGenerationModeEnabled:]	
+107e6ba2c	107e6ba4f	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext copyWithZone:]	
+107e6ba50	107e6bacb	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext hash]	
+107e6bacc	107e6bb93	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext isEqual:]	
+107e6bb94	107e6bb9b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext generationId]	
+107e6bb9c	107e6bba3	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext requiresMySelfie]	
+107e6bba4	107e6bbab	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext friendId]	
+107e6bbac	107e6bbb3	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext syncGenerationModeEnabled]	
+107e6bbb4	107e6bbe3	decompiled	chunks/001/functions-000077.c	-[SCMemoriesAISnapsLensContext .cxx_destruct]	
+107e6bbe4	107e6bbef	decompiled	chunks/001/functions-000077.c	-[SCMemoriesMashupStyleFeaturedStoriesGenerationWorkflowServices .cxx_destruct]	
+107e6bbf0	107e6be67	decompiled	chunks/001/functions-000077.c		
+107e6be68	107e6bec7	decompiled	chunks/001/functions-000077.c		
+107e6bec8	107e6bf87	decompiled	chunks/001/functions-000077.c		
+107e6bf88	107e6bfe7	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData initWithDateStickerYearsAgo:lastGenerateDateTimeIntervalSince1970:]	
+107e6bfe8	107e6c00b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData copyWithZone:]	
+107e6c00c	107e6c07b	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData hash]	
+107e6c07c	107e6c123	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData isEqual:]	
+107e6c124	107e6c133	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData dateStickerYearsAgo]	
+107e6c134	107e6c143	decompiled	chunks/001/functions-000077.c	-[SCMemoriesCameraRollCollageCoolDownData lastGenerateDateTimeIntervalSince1970]	
+107e6c144	107e6c1fb	decompiled	chunks/001/functions-000077.c		
+107e6c1fc	107e6c233	decompiled	chunks/001/functions-000077.c		
+107e6c234	107e6c287	decompiled	chunks/001/functions-000077.c		
+107e6c288	107e6c293	decompiled	chunks/001/functions-000077.c	+[SCMemoriesCameraRollCollageCoolDownData table]	
+107e6c294	107e6c30f	decompiled	chunks/001/functions-000077.c	+[SCMemoriesCameraRollCollageCoolDownData immutableObjectParse:bufferSize:]	
+107e6c310	107e6c333	decompiled	chunks/001/functions-000077.c	+[SCMemoriesCameraRollCollageCoolDownData objectClassFunctionPointer]	
+107e6c334	107e6c617	decompiled	chunks/001/functions-000077.c		
+107e6c618	107e6c7c3	decompiled	chunks/001/functions-000077.c		
+107e6c7c4	107e6c827	decompiled	chunks/001/functions-000077.c		
+107e6c828	107e6c833	decompiled	chunks/001/functions-000078.c	-[SCMemoriesCameraRollCollageCoolDownDataChangeRequest table]	
+107e6c834	107e6c87b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesCameraRollCollageCoolDownDataChangeRequest createTableWithSQLite:]	
+107e6c87c	107e6cceb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesCameraRollCollageCoolDownDataChangeRequest transactWithSQLite:flatbuffers:]	
+107e6ccec	107e6ccf3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesCRFeaturedStoryNetworkCoordinatorServices memoriesCRFeaturedStoryNetworkCoordinator]	
+107e6ccf4	107e6ccff	decompiled	chunks/001/functions-000078.c	-[SCMemoriesCRFeaturedStoryNetworkCoordinatorServices .cxx_destruct]	
+107e6cd00	107e6cd0b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryDataMutatorServices .cxx_destruct]	
+107e6cd0c	107e6cf4f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 initWithFrame:]	
+107e6cf50	107e6cfd7	decompiled	chunks/001/functions-000078.c		
+107e6cfd8	107e6d353	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 setViewModel:carouselDataSource:memoriesExperimentService:featuredStoryActionHanlder:featuredDataLogging:galleryLogger:thumbnailDownloader:snapchattersDataFetcher:bitmojiAvatarProvider:bitmojiImageFetcher:memoriesEntryThumbnailGeneratorBuilder:memoriesCRFeaturedStoryThumbnailGeneratorBuilder:circumstanceEngine:memoriesChatMediaFeaturedStoryThumbnailGeneratorBuilder:memoriesUserDefaultsManager:memoriesGraphene:]	
+107e6d354	107e6d383	decompiled	chunks/001/functions-000078.c	+[SCMemoriesFeaturedStoriesCarouselCellV2 cellSizeWithContainerWidth:circumstanceEngine:shouldUseNewLayout:]	
+107e6d384	107e6d477	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 scrollToIndexPath:animated:]	
+107e6d478	107e6d487	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 cellForItemAtIndexPath:]	
+107e6d488	107e6d4f3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 bindViewModel:]	
+107e6d4f4	107e6d4fb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 emptyViewForListAdapter:]	
+107e6d4fc	107e6d643	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 listAdapter:sectionControllerForObject:]	
+107e6d644	107e6d6ef	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 objectsForListAdapter:]	
+107e6d6f0	107e6d887	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 startGeneratingUpdates]	
+107e6d888	107e6d983	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 stopGeneratingUpdates]	
+107e6d984	107e6dd0b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 _fireGalleryCellViewWithCellIndex:storyViewModel:]	
+107e6dd0c	107e6dd2b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 carouselDataSource]	
+107e6dd2c	107e6dd3f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 setCarouselDataSource:]	
+107e6dd40	107e6de7f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoriesCarouselCellV2 .cxx_destruct]	
+107e6de80	107e6eaa7	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 initWithFrame:]	
+107e6eaa8	107e6eaf7	decompiled	chunks/001/functions-000078.c		
+107e6eaf8	107e6eb6f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 layoutSubviews]	
+107e6eb70	107e6ebeb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setHidden:]	
+107e6ebec	107e6ecb7	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 updateCornerRadius]	
+107e6ecb8	107e6ee67	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 prepareForReuse]	
+107e6ee68	107e6ee97	decompiled	chunks/001/functions-000078.c	+[SCMemoriesFeaturedStoryCellV2 cellHeightWithContainerWidth:circumstanceEngine:shouldUseNewLayout:]	
+107e6ee98	107e6eeff	decompiled	chunks/001/functions-000078.c	+[SCMemoriesFeaturedStoryCellV2 cellSizeForFeaturedStoriesWithContainerWidth:numberOfStories:sectionInsets:cellSpacing:circumstanceEngine:shouldUseNewLayout:]	
+107e6ef00	107e6f357	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setViewModel:snapchattersDataFetcher:numberOfStories:containerWidth:sectionInsets:cellSpacing:circumstanceEngine:memoriesGraphene:shouldUseNewLayout:]	
+107e6f358	107e6f367	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _updateSaveButtonWithType:]	
+107e6f368	107e6f443	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailFromEntrySource:snapchattersDataFetcher:]	
+107e6f444	107e6f4b3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailGenerator]	
+107e6f4b4	107e6f5d3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailGeneratorForRegularFeaturedStory]	
+107e6f5d4	107e6f6a7	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailGeneratorForCRFeaturedStory]	
+107e6f6a8	107e6f77b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailGeneratorForChatMediaFeaturedStory]	
+107e6f77c	107e6f897	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadThumbnailFromDownloading]	
+107e6f898	107e6f913	decompiled	chunks/001/functions-000078.c		
+107e6f914	107e6fa2f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _loadOverlayFromDownloading]	
+107e6fa30	107e6faab	decompiled	chunks/001/functions-000078.c		
+107e6faac	107e6fabb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _stopListenToThumbnailUpdates]	
+107e6fabc	107e6facf	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _startListenToThumbnailUpdates]	
+107e6fad0	107e6fb87	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _startSpinner]	
+107e6fb88	107e6fc67	decompiled	chunks/001/functions-000078.c		
+107e6fc68	107e6fc77	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _stopSpinner]	
+107e6fc78	107e6fd9b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _setViewingState:viewProgress:]	
+107e6fd9c	107e6fe17	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _getState]	
+107e6fe18	107e6fe27	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _removeSubtitleIfNeeded]	
+107e6fe28	107e6fe4b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _displaySubtitleIfNeeded]	
+107e6fe4c	107e7000f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _handleLongPressGesture:]	
+107e70010	107e700eb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _handleActionMenuLongPressGesture:]	
+107e700ec	107e701af	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 gestureRecognizerShouldBegin:]	
+107e701b0	107e70207	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 gestureRecognizer:shouldReceiveTouch:]	
+107e70208	107e7021f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]	
+107e70220	107e70223	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 bindViewModel:]	
+107e70224	107e7029b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 startGeneratingUpdates]	
+107e7029c	107e7030f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 stopGeneratingUpdates]	
+107e70310	107e7033b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didUpdateSnapThumbnailWithImage:snap:duration:]	
+107e7033c	107e7054b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didUpdateStoryThumbnailWithImage:snap:latestSnaps:duration:]	
+107e7054c	107e7056b	decompiled	chunks/001/functions-000078.c		
+107e7056c	107e705e3	decompiled	chunks/001/functions-000078.c		
+107e705e4	107e70663	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didFailToUpdateStoryThumbnailForSnap:]	
+107e70664	107e706db	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didLoadMiniThumbnail:snap:duration:]	
+107e706dc	107e707f7	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didUpdateMemoriesCRFeaturedStoryThumbnailWithImage:]	
+107e707f8	107e7086f	decompiled	chunks/001/functions-000078.c		
+107e70870	107e7098b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailGenerator:didUpdateChatMediaThumbnailWithImage:]	
+107e7098c	107e70a03	decompiled	chunks/001/functions-000078.c		
+107e70a04	107e70a07	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setSelected:selectOverlayImage:snapIds:]	
+107e70a08	107e70a0b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setSelectMode:]	
+107e70a0c	107e70a0f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setSelectionOrderNumber:orderNumbersBySnapId:]	
+107e70a10	107e70adf	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 animateLongTapForTouchLocation:reverse:]	
+107e70ae0	107e70b4f	decompiled	chunks/001/functions-000078.c		
+107e70b50	107e70b57	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 interactionMode]	
+107e70b58	107e70bcb	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 canSelectAtPoint:]	
+107e70bcc	107e70c7f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 _sendOutActionWithIdentifier:]	
+107e70c80	107e70c8f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 disableMode]	
+107e70c90	107e70c9f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setDisableMode:]	
+107e70ca0	107e70cbf	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 gestureHandler]	
+107e70cc0	107e70cd3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setGestureHandler:]	
+107e70cd4	107e70cf3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 thumbnailDownloader]	
+107e70cf4	107e70d07	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setThumbnailDownloader:]	
+107e70d08	107e70d27	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 featuredStoryActionHandler]	
+107e70d28	107e70d3b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setFeaturedStoryActionHandler:]	
+107e70d3c	107e70d5b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 featuredDataLogging]	
+107e70d5c	107e70d6f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setFeaturedDataLogging:]	
+107e70d70	107e70d7f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 bitmojiFetcher]	
+107e70d80	107e70dbf	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setBitmojiFetcher:]	
+107e70dc0	107e70dcf	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 memoriesEntryThumbnailGeneratorBuilder]	
+107e70dd0	107e70e0f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setMemoriesEntryThumbnailGeneratorBuilder:]	
+107e70e10	107e70e1f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 memoriesCRFeaturedStoryThumbnailGeneratorBuilder]	
+107e70e20	107e70e5f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setMemoriesCRFeaturedStoryThumbnailGeneratorBuilder:]	
+107e70e60	107e70e7f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 memoriesChatMediaThumbnailGeneratorBuilder]	
+107e70e80	107e70e93	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setMemoriesChatMediaThumbnailGeneratorBuilder:]	
+107e70e94	107e70ea3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 viewModel]	
+107e70ea4	107e70eb3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 circumstanceEngine]	
+107e70eb4	107e70ef3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 setCircumstanceEngine:]	
+107e70ef4	107e7107f	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFeaturedStoryCellV2 .cxx_destruct]	
+107e71080	107e710d3	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFtrStoriesCollectionViewFlowLayout init]	
+107e710d4	107e7111b	decompiled	chunks/001/functions-000078.c	-[SCMemoriesFtrStoriesCollectionViewFlowLayout flipsHorizontallyInOppositeLayoutDirection]	
+107e7111c	107e711cb	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFtrStoriesCollectionViewFlowLayout shouldInvalidateLayoutForBoundsChange:]	
+107e711cc	107e7128f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFtrStoriesCollectionViewFlowLayout invalidationContextForBoundsChange:]	
+107e71290	107e714f7	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoriesSectionViewModel diffIdentifier]	
+107e714f8	107e7153f	decompiled	chunks/001/functions-000079.c		
+107e71540	107e715f7	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoriesSectionViewModel isEqualToDiffableObject:]	
+107e715f8	107e716e3	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryViewModel diffIdentifier]	
+107e716e4	107e7175b	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryViewModel isEqualToDiffableObject:]	
+107e7175c	107e718b3	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader initWithCircumstanceEngine:contentDelivery:encryptedDatabase:networker:requestManager:]	
+107e718b4	107e71a3f	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader requestThumbnailForThumbnailDownloadInfo:thumbnailType:completionQueue:completion:]	
+107e71a40	107e71b03	decompiled	chunks/001/functions-000079.c		
+107e71b04	107e71b13	decompiled	chunks/001/functions-000079.c		
+107e71b14	107e71f4b	decompiled	chunks/001/functions-000079.c		
+107e71f4c	107e7205b	decompiled	chunks/001/functions-000079.c		
+107e7205c	107e721df	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _v2requestThumbnailForThumbnailDownloadInfo:thumbnailUrlString:thumbnailType:collectionId:isRedirect:isEncrypted:completion:]	
+107e721e0	107e72533	decompiled	chunks/001/functions-000079.c		
+107e72534	107e725a7	decompiled	chunks/001/functions-000079.c		
+107e725a8	107e7274f	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _retrieveContentDataAndExcuteCompletionHandlerWith:pageInfo:isEncrypted:collectionId:completion:]	
+107e72750	107e72813	decompiled	chunks/001/functions-000079.c		
+107e72814	107e72a77	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _decryptThumbnailData:forCollectionId:completion:]	
+107e72a78	107e72c23	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _downloadCompleteHandler:isEncrypted:thumbnailType:completion:]	
+107e72c24	107e72e4b	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _requestRedirectThumbnailUrl:requestKey:completion:]	
+107e72e4c	107e72f37	decompiled	chunks/001/functions-000079.c		
+107e72f38	107e73103	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader _requestThumbnailUrl:requestKey:completion:]	
+107e73104	107e73113	decompiled	chunks/001/functions-000079.c		
+107e73114	107e73173	decompiled	chunks/001/functions-000079.c	-[SCGalleryFeaturedStoryThumbnailDownloader .cxx_destruct]	
+107e73174	107e7356f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 initWithCollectionView:carouselDataSource:featuredStoryActionHanlder:featuredDataLogging:galleryLogger:thumbnailDownloader:snapchattersDataFetcher:bitmojiAvatarProvider:bitmojiImageFetcher:memoriesEntryThumbnailGeneratorBuilder:memoriesCRFeaturedStoryThumbnailGeneratorBuilder:circumstanceEngine:memoriesChatMediaFeaturedStoryThumbnailGeneratorBuilder:memoriesUserDefaultsManager:memoriesGraphene:memoriesExperimentService:]	
+107e73570	107e73603	decompiled	chunks/001/functions-000079.c		
+107e73604	107e7363f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 inset]	
+107e73640	107e736b7	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 _featuredStories]	
+107e736b8	107e73953	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 sectionController:cellForViewModel:atIndex:]	
+107e73954	107e739eb	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 _containerWidth]	
+107e739ec	107e73ab7	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 sectionController:sizeForViewModel:atIndex:]	
+107e73ab8	107e73abb	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 sectionController:viewModelsForObject:]	
+107e73abc	107e73bbf	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 featuredStoryCell:scrollToItem:]	
+107e73bc0	107e73c2f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 featuredStoryCell:gestureRecognizerShouldBegin:]	
+107e73c30	107e73c33	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:willDisplaySectionController:]	
+107e73c34	107e73c37	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:didEndDisplayingSectionController:]	
+107e73c38	107e73cf7	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:willDisplaySectionController:cell:atIndex:]	
+107e73cf8	107e73d57	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:didEndDisplayingSectionController:cell:atIndex:]	
+107e73d58	107e73d5b	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:didScrollSectionController:]	
+107e73d5c	107e73d6f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:willBeginDraggingSectionController:]	
+107e73d70	107e73d73	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:didEndDraggingSectionController:willDecelerate:]	
+107e73d74	107e73d77	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 listAdapter:didEndDeceleratingSectionController:]	
+107e73d78	107e74077	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 _fireGalleryCellViewWithCellIndex:]	
+107e74078	107e74163	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 _persistLoadingFirstSeenTimeWithViewModel:]	
+107e74164	107e743c7	decompiled	chunks/001/functions-000079.c		
+107e743c8	107e744e3	decompiled	chunks/001/functions-000079.c	-[SCMemoriesFeaturedStoryCarouselSectionControllerV2 .cxx_destruct]	
+107e744e4	107e74867	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 initWithSelectMode:carouselDataSource:memoriesExperimentService:featuredStoryActionHanlder:featuredDataLogging:galleryLogger:thumbnailDownloader:snapchattersDataFetcher:bitmojiAvatarProvider:bitmojiImageFetcher:memoriesEntryThumbnailGeneratorBuilder:memoriesCRFeaturedStoryThumbnailGeneratorBuilder:circumstanceEngine:memoriesChatMediaFeaturedStoryThumbnailGeneratorBuilder:memoriesUserDefaultsManager:memoriesGraphene:]	
+107e74868	107e748fb	decompiled	chunks/001/functions-000079.c		
+107e748fc	107e74967	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 inset]	
+107e74968	107e7496f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 numberOfItems]	
+107e74970	107e74b1b	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 cellForItemAtIndex:]	
+107e74b1c	107e74c57	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 sizeForItemAtIndex:]	
+107e74c58	107e74d47	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 didUpdateToObject:]	
+107e74d48	107e74e73	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 setSelectMode:]	
+107e74e74	107e74f2f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 deeplinkRequestForFeaturedStoryInfo:]	
+107e74f30	107e74f33	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 listAdapter:willDisplaySectionController:]	
+107e74f34	107e74f37	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 listAdapter:didEndDisplayingSectionController:]	
+107e74f38	107e74f9b	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 listAdapter:willDisplaySectionController:cell:atIndex:]	
+107e74f9c	107e74fff	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 listAdapter:didEndDisplayingSectionController:cell:atIndex:]	
+107e75000	107e7500f	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 selectMode]	
+107e75010	107e75193	decompiled	chunks/001/functions-000079.c	-[SCMemoriesSnapsTabFeaturedStorySectionControllerV2 .cxx_destruct]	
+107e75194	107e75377	decompiled	chunks/001/functions-000079.c		
+107e75378	107e7537f	decompiled	chunks/001/functions-000079.c		
+107e75380	107e754b7	decompiled	chunks/001/functions-000079.c		
+107e754b8	107e755ab	decompiled	chunks/001/functions-000079.c		
+107e755ac	107e756d7	decompiled	chunks/001/functions-000079.c		
+107e756d8	107e7574b	decompiled	chunks/001/functions-000079.c		
+107e7574c	107e757b3	decompiled	chunks/001/functions-000079.c		
+107e757b4	107e75a87	decompiled	chunks/001/functions-000079.c		
+107e75a88	107e75c2f	decompiled	chunks/001/functions-000079.c		
+107e75c30	107e75dc7	decompiled	chunks/001/functions-000079.c		
+107e75dc8	107e763af	decompiled	chunks/001/functions-000079.c		

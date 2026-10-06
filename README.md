@@ -23,9 +23,9 @@ Les fichiers `objc/*.h` sont des **exports de métadonnées runtime**, et non le
 fichiers source Objective-C/Swift originaux. Ils ne contiennent pas les corps
 des fonctions et ne constituent pas un projet Xcode recompilable.
 
-La décompilation des implémentations en pseudo-C reste à effectuer avec un
-décompilateur adapté. Aucun corps de fonction n’a été inventé. Les binaires
-originaux sont tous présents dans `extracted/` pour poursuivre cette analyse.
+Les implémentations récupérées en **pseudo-C** sont disponibles dans [`decompiled/`](decompiled/). Ghidra a exporté **1039518 fonctions** sur 1040062 entrées candidates. Les 544 échecs sont documentés. Les types et limites de fonctions restent approximatifs ; les fonctions non répertoriées dans les tables exploitées peuvent manquer.
+
+Les binaires originaux restent présents dans `extracted/` pour approfondir l’analyse.
 
 ## IPA source
 

@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+107a9405c	107a9406b	decompiled	chunks/000/functions-000049.c	-[SCSingleStoryViewingSession didOpenFriendStorySnap:]	
+107a9406c	107a940c7	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession startShowingLoadingStorySnap:]	
+107a940c8	107a9412b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession startShowingLoadedStorySnap:isViewingLongform:isStreaming:]	
+107a9412c	107a941e7	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _isLastStorySnapInStoriesPlaybackSequence:]	
+107a941e8	107a9426b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _updateCurrentStorySnap:]	
+107a9426c	107a9441f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession startPlayingStorySnap:lastInteraction:]	
+107a94420	107a94487	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession skipShowingStorySnap:]	
+107a94488	107a9487f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession stopShowingStorySnap:page:params:lastInteraction:isShowingStoryInterstitial:includeOperaPauseTime:isPresentingOverOpera:]	
+107a94880	107a9498b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _pauseShowingStorySnap:page:params:lastInteraction:isShowingStoryInterstitial:]	
+107a9498c	107a9498f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didDismissOptOutInterstitial]	
+107a94990	107a94a3f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession pauseShowingCurrentFriendStoriesWithIsShowingStoryInterstitial:lastInteraction:]	
+107a94a40	107a94a4f	decompiled	chunks/000/functions-000050.c		
+107a94a50	107a94a57	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession stopShowingFriendStoriesAndCancelRequests:isShowingStoryInterstitial:isPresentingOverOpera:]	
+107a94a58	107a94b37	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession stopShowingFriendStoriesAndCancelRequests:isShowingStoryInterstitial:isPresentingOverOpera:isMidrollAd:]	
+107a94b38	107a94b47	decompiled	chunks/000/functions-000050.c		
+107a94b48	107a94edb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didPassVideoSeekPointWithStorySnap:page:params:]	
+107a94edc	107a94faf	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession entryEvent]	
+107a94fb0	107a9505b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _entryIntent]	
+107a9505c	107a950df	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _exitIntent]	
+107a950e0	107a95263	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didTakeScreenshotOnCurrentStorySnapWithOperaPage:]	
+107a95264	107a953a3	decompiled	chunks/000/functions-000050.c		
+107a953a4	107a956e3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _reportStorySnapScreenshotWithStorySnap:]	
+107a956e4	107a956ef	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didSwipeUpOnStorySnap:]	
+107a956f0	107a95737	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _clearCurrentStoryStatus]	
+107a95738	107a95747	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didChangePanelForStorySnap:storiesPlaybackSequence:toPanelIndex:]	
+107a95748	107a95847	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _isStorySnapFullyViewed:currentProgress:]	
+107a95848	107a95a53	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _sendReadReceiptWithStorySnap:currentProgress:]	
+107a95a54	107a95bbb	decompiled	chunks/000/functions-000050.c		
+107a95bbc	107a95bcf	decompiled	chunks/000/functions-000050.c		
+107a95bd0	107a95d23	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _markStoryAsViewedWithStorySnap:currentProgress:]	
+107a95d24	107a95d27	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didLongPressForStorySnap:storiesPlaybackSequence:isTopSnap:]	
+107a95d28	107a95d2b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession willAdvanceToNextStorySnap:storiesPlaybackSequence:lastInteraction:]	
+107a95d2c	107a95d2f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession videoDidStartLoopAfterFullyViewedForStorySnap:page:params:]	
+107a95d30	107a95d37	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didUpdateIsFullScreen:]	
+107a95d38	107a95d3f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession extraPropertiesForStorySnap:]	
+107a95d40	107a95d47	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession setSkipSnapWithoutViewing:]	
+107a95d48	107a95d4f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession uniqueViewedSnapsCount]	
+107a95d50	107a95d57	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _snapTimeViewedSec]	
+107a95d58	107a95e9b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession updateShareCountWithParameters:]	
+107a95e9c	107a95ea3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _viewedStoryTime]	
+107a95ea4	107a95efb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _totalSnapCount]	
+107a95efc	107a95f6f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _totalStoryTime]	
+107a95f70	107a95feb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyAccessTypeForSnapchatter:isFromFanPass:]	
+107a95fec	107a9622b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyAccessTypeForStorySnap:completion:]	
+107a9622c	107a96293	decompiled	chunks/000/functions-000050.c		
+107a96294	107a96477	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyAccessTypeForStoriesPlaybackSequence:completion:]	
+107a96478	107a964df	decompiled	chunks/000/functions-000050.c		
+107a964e0	107a9660b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _isFullyViewedForStoriesPlaybackSequence:]	
+107a9660c	107a9679b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _containsGeofilter:]	
+107a9679c	107a9698f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyTypeToLogWithSnaps:]	
+107a96990	107a96a37	decompiled	chunks/000/functions-000050.c		
+107a96a38	107a96aaf	decompiled	chunks/000/functions-000050.c		
+107a96ab0	107a96adf	decompiled	chunks/000/functions-000050.c		
+107a96ae0	107a96bf3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyTypeVariantToLogWithSnaps:]	
+107a96bf4	107a96d5b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyIdToLog]	
+107a96d5c	107a96d7b	decompiled	chunks/000/functions-000050.c		
+107a96d7c	107a96ed3	decompiled	chunks/000/functions-000050.c		
+107a96ed4	107a96ed7	decompiled	chunks/000/functions-000050.c		
+107a96ed8	107a970cb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _storyTypeSpecificToLogWithSnap:]	
+107a970cc	107a971fb	decompiled	chunks/000/functions-000050.c		
+107a971fc	107a9723f	decompiled	chunks/000/functions-000050.c		
+107a97240	107a9728f	decompiled	chunks/000/functions-000050.c		
+107a97290	107a972f7	decompiled	chunks/000/functions-000050.c		
+107a972f8	107a9730b	decompiled	chunks/000/functions-000050.c		
+107a9730c	107a97493	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _snapTypesToLogWithSnaps:]	
+107a97494	107a97e2f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _buildStoryStoryViewLogParametersWithCompletion:isPresentingOverOpera:]	
+107a97e30	107a9801f	decompiled	chunks/000/functions-000050.c		
+107a98020	107a9823f	decompiled	chunks/000/functions-000050.c		
+107a98240	107a99df3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _reportStorySnapViewWithStorySnap:fullyViewed:isPresentingOverOpera:isMusicTrackBlocked:contextSnapViewMetrics:stalledTimeMs:isViewed:seekPointIndex:pageId:pageProperties:]	
+107a99df4	107a99df7	decompiled	chunks/000/functions-000050.c		
+107a99df8	107a99e17	decompiled	chunks/000/functions-000050.c		
+107a99e18	107a99e2b	decompiled	chunks/000/functions-000050.c		
+107a99e2c	107a99f5f	decompiled	chunks/000/functions-000050.c		
+107a99f60	107a9a113	decompiled	chunks/000/functions-000050.c		
+107a9a114	107a9a6cf	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _reportGeofilterStorySnapViewWithStorySnap:snappableInviteAction:]	
+107a9a6d0	107a9a7a7	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _subscribeToOperaAnalyticsEvents]	
+107a9a7a8	107a9a863	decompiled	chunks/000/functions-000050.c		
+107a9a864	107a9a8bb	decompiled	chunks/000/functions-000050.c		
+107a9a8bc	107a9a8c7	decompiled	chunks/000/functions-000050.c		
+107a9a8c8	107a9a98f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _handleOperaPlaybackEventPageId:isPlaying:]	
+107a9a990	107a9ab4b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _totalViewTimeForPageId:]	
+107a9ab4c	107a9ac2b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _isManagedSavedStory]	
+107a9ac2c	107a9ac43	decompiled	chunks/000/functions-000050.c		
+107a9ac44	107a9ac7f	decompiled	chunks/000/functions-000050.c		
+107a9ac80	107a9ac83	decompiled	chunks/000/functions-000050.c		
+107a9ac84	107a9afb3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession _logCreatorSubscribeEntryPointImpressionIfNeeded:]	
+107a9afb4	107a9afbb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession storiesPlaybackSequence]	
+107a9afbc	107a9afc3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession firstStorySnap]	
+107a9afc4	107a9afcb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession currentStorySnap]	
+107a9afcc	107a9afd3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession didSwipeUp]	
+107a9afd4	107a9afdb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession storyViewingActionContext]	
+107a9afdc	107a9afe3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession currentStoryDidShowLoadingScreen]	
+107a9afe4	107a9afeb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession isFullyViewed]	
+107a9afec	107a9aff3	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession totalViewedSnapsCount]	
+107a9aff4	107a9affb	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession totalOpenedSnapsCount]	
+107a9affc	107a9b003	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession currentStoryHasPlayed]	
+107a9b004	107a9b01b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession friendStoryViewingSession]	
+107a9b01c	107a9b023	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession entryInteraction]	
+107a9b024	107a9b02b	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession storyViewId]	
+107a9b02c	107a9b043	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession operaControlling]	
+107a9b044	107a9b04f	decompiled	chunks/000/functions-000050.c	-[SCSingleStoryViewingSession setOperaControlling:]	
+107a9b050	107a9b26f	decompiled	chunks/000/functions-000051.c	-[SCSingleStoryViewingSession .cxx_destruct]	
+107a9b270	107a9b733	decompiled	chunks/000/functions-000051.c		
+107a9b734	107a9b7cb	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView initWithFrame:]	
+107a9b7cc	107a9b833	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView setImage:]	
+107a9b834	107a9b937	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView layoutSubviews]	
+107a9b938	107a9b93f	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView centerVerticallyInFrame]	
+107a9b940	107a9b94f	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView image]	
+107a9b950	107a9b98f	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailView .cxx_destruct]	
+107a9b990	107a9ba33	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailViewProvider initWithThumbnailInfo:thumbnailCoordinator:]	
+107a9ba34	107a9ba8b	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailViewProvider getThumbnailView]	
+107a9ba8c	107a9bb8b	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailViewProvider _fetchThumbnailIntoView:]	
+107a9bb8c	107a9bc33	decompiled	chunks/000/functions-000051.c		
+107a9bc34	107a9bc8b	decompiled	chunks/000/functions-000051.c		
+107a9bc8c	107a9bcbb	decompiled	chunks/000/functions-000051.c	-[SCStoriesBadgingInterstitialThumbnailViewProvider .cxx_destruct]	
+107a9bcbc	107a9be0b	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider initWithCurrentUserId:conversationUpdatesPublisher:]	
+107a9be0c	107a9be8b	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider stopObserving]	
+107a9be8c	107a9bfd7	decompiled	chunks/000/functions-000051.c	+[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider isFriendOfGroupStory:customStoryMetadata:]	
+107a9bfd8	107a9c007	decompiled	chunks/000/functions-000051.c		
+107a9c008	107a9c013	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _membershipShowsHide:]	
+107a9c014	107a9c023	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _membershipShowsJoin:]	
+107a9c024	107a9c327	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _storeMembership:forPublicationId:]	
+107a9c328	107a9c337	decompiled	chunks/000/functions-000051.c		
+107a9c338	107a9c5cb	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider ensureObservingPublicationId:storySnapClientId:]	
+107a9c5cc	107a9c603	decompiled	chunks/000/functions-000051.c		
+107a9c604	107a9c76b	decompiled	chunks/000/functions-000051.c		
+107a9c76c	107a9c79b	decompiled	chunks/000/functions-000051.c		
+107a9c79c	107a9c847	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider membershipForPublicationId:]	
+107a9c848	107a9c863	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider hasResolvedMembershipForPublicationId:]	
+107a9c864	107a9c9cf	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider readMembershipForPublicationId:storySnapClientId:handler:]	
+107a9c9d0	107a9ca23	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider applyOptimisticMembership:forPublicationId:]	
+107a9ca24	107a9caeb	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _shouldShowFoGActionMenuForStorySnap:customStoryMetadata:]	
+107a9caec	107a9cbc3	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider shouldShowHideGroupStoryInActionMenuForStorySnap:customStoryMetadata:]	
+107a9cbc4	107a9cc9b	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider shouldShowJoinGroupStoryInActionMenuForStorySnap:customStoryMetadata:]	
+107a9cc9c	107a9cdc7	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _optionsToInsertForMembership:]	
+107a9cdc8	107a9cf4b	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _arrayByRemovingFriendOfGroupStoryButtons:isV2Options:]	
+107a9cf4c	107a9cffb	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider _insertIndexForConfigs:]	
+107a9cffc	107a9d4fb	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider mergedActionMenuPagePropertiesForPublicationId:basePageProperties:]	
+107a9d4fc	107a9d503	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider membershipDidChangeHandler]	
+107a9d504	107a9d50b	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider setMembershipDidChangeHandler:]	
+107a9d50c	107a9d583	decompiled	chunks/000/functions-000051.c	-[SCStoriesFriendOfGroupStoryActionMenuMembershipProvider .cxx_destruct]	
+107a9d584	107a9d6a3	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession initWithOperaControlling:nativeSessionManager:customStoriesDataFetcher:actionMenuMembershipProvider:currentUserId:]	
+107a9d6a4	107a9d75f	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession registeredEventsForOperaSession]	
+107a9d760	107a9d873	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession operaViewDidSendEvent:page:params:]	
+107a9d874	107a9d943	decompiled	chunks/000/functions-000051.c		
+107a9d944	107a9dc1b	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _handleJoinGroupStoryOperaEvent:page:]	
+107a9dc1c	107a9dc73	decompiled	chunks/000/functions-000051.c		
+107a9dc74	107a9df4b	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _handleHideGroupStoryOperaEvent:page:]	
+107a9df4c	107a9e017	decompiled	chunks/000/functions-000051.c		
+107a9e018	107a9e11b	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _groupDisplayNameForPublicationId:storySnap:]	
+107a9e11c	107a9e20b	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _presentJoinGroupStoryConfirmationForPage:publicationId:storySnap:]	
+107a9e20c	107a9e2fb	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _presentHideGroupStoryConfirmationForPage:publicationId:storySnap:]	
+107a9e2fc	107a9e7bb	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _presentJoinGroupStoryConfirmationForGroupName:publicationId:conversationUUID:nativeConversationManager:]	
+107a9e7bc	107a9e877	decompiled	chunks/000/functions-000051.c		
+107a9e878	107a9e883	decompiled	chunks/000/functions-000051.c		
+107a9e884	107a9e973	decompiled	chunks/000/functions-000051.c		
+107a9e974	107a9e993	decompiled	chunks/000/functions-000051.c		
+107a9e994	107a9ee53	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession _presentHideGroupStoryConfirmationForGroupName:publicationId:conversationUUID:nativeConversationManager:]	
+107a9ee54	107a9ef0f	decompiled	chunks/000/functions-000051.c		
+107a9ef10	107a9ef1b	decompiled	chunks/000/functions-000051.c		
+107a9ef1c	107a9f00b	decompiled	chunks/000/functions-000051.c		
+107a9f00c	107a9f02b	decompiled	chunks/000/functions-000051.c		
+107a9f02c	107a9f07b	decompiled	chunks/000/functions-000051.c	-[SCStoriesGroupStoryContextMenuSession .cxx_destruct]	
+107a9f07c	107a9f087	decompiled	chunks/000/functions-000051.c	+[SCStoriesReportSession announcerIdentifier]	
+107a9f088	107a9f26f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession initWithOperaControlling:userSession:discoverFeedEventsController:discoverFeedDataFetcher:viewLocation:safetyReportScopeExposer:bloopsReportScopeExposer:playlistItemController:contentRemovalDelegate:storiesConfigProvider:mapContentFilter:]	
+107a9f270	107a9f2a3	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession dealloc]	
+107a9f2a4	107a9f37f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession registeredEventsForOperaSession]	
+107a9f380	107a9f96b	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession operaViewDidSendEvent:page:params:]	
+107a9f96c	107a9f96f	decompiled	chunks/000/functions-000051.c		
+107a9f970	107a9fa6f	decompiled	chunks/000/functions-000051.c		
+107a9fa70	107a9fa73	decompiled	chunks/000/functions-000051.c		
+107a9fa74	107a9fe5f	decompiled	chunks/000/functions-000051.c		
+107a9fe60	107a9ff4f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _reportNotFromPlaceForSnapId:]	
+107a9ff50	107a9ff83	decompiled	chunks/000/functions-000051.c		
+107a9ff84	107aa0043	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _handleReportNotFromPlaceWithSuccess:]	
+107aa0044	107aa008b	decompiled	chunks/000/functions-000051.c		
+107aa008c	107aa017f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _startSafetyReportWithParams:]	
+107aa0180	107aa050f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _startBloopsReportFlowWithPage:storiesPlaybackSequence:]	
+107aa0510	107aa0537	decompiled	chunks/000/functions-000051.c		
+107aa0538	107aa0577	decompiled	chunks/000/functions-000051.c		
+107aa0578	107aa0583	decompiled	chunks/000/functions-000051.c		
+107aa0584	107aa0667	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession reportDidCompleteWithCancelled:]	
+107aa0668	107aa06ab	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession reportDidSubmitWithReasonId:comment:]	
+107aa06ac	107aa06f7	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession bloopsReportDidCompleteWithCancelled:]	
+107aa06f8	107aa0787	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession bloopsReportDidSubmitWithReasonId:comment:]	
+107aa0788	107aa0993	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _removeContentFromPlaylist]	
+107aa0994	107aa0a7b	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _onReportCompleted]	
+107aa0a7c	107aa0a7f	decompiled	chunks/000/functions-000051.c		
+107aa0a80	107aa0ae3	decompiled	chunks/000/functions-000051.c		
+107aa0ae4	107aa0d87	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _onReportSubmittedWithActionType:]	
+107aa0d88	107aa0dbb	decompiled	chunks/000/functions-000051.c		
+107aa0dbc	107aa0f6f	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _emitContextOperaLoggingReportEventWithStoryFeedActionType:]	
+107aa0f70	107aa0feb	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession _autoAdvanceToNextStory]	
+107aa0fec	107aa1087	decompiled	chunks/000/functions-000051.c	-[SCStoriesReportSession .cxx_destruct]	
+107aa1088	107aa108b	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession didUpdateFriendsPlaylistCount:]	
+107aa108c	107aa112b	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession startSession]	
+107aa112c	107aa126f	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession stopSession]	
+107aa1270	107aa13db	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession _pauseSession]	
+107aa13dc	107aa148b	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession _logStoryStoryViewSession]	
+107aa148c	107aa149b	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession _incrementTotalViewedStoriesCount]	
+107aa149c	107aa15ff	decompiled	chunks/000/functions-000051.c	-[SCStoriesViewingSession _shouldShowCheetahSwipeLeftInterstitial:]	
+107aa1600	107aa1633	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _markCheetahSwipeLeftInterstitialCompleted]	
+107aa1634	107aa1903	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _extraPropertiesForStorySnap:pageProperties:]	
+107aa1904	107aa1a4f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession extraPropertiesForStorySnap:]	
+107aa1a50	107aa1c83	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _extraToolTipsPropertiesForStorySnap:]	
+107aa1c84	107aa1dd7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _isFirstChunkWithStorySnap:]	
+107aa1dd8	107aa23f7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession registeredEventsForOperaSession]	
+107aa23f8	107aa3c17	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession operaViewDidSendEvent:page:params:]	
+107aa3c18	107aa3c33	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _updateViewLocationIfNeeded:withPage:]	
+107aa3c34	107aa3c37	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession triggerPaginationIfNecessary:]	
+107aa3c38	107aa3cdf	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession viewWillEnterForeground]	
+107aa3ce0	107aa3d47	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession viewDidEnterBackground]	
+107aa3d48	107aa3eff	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _startTrackingFriendStoryViewTimeIfNecessaryWithEvent:page:]	
+107aa3f00	107aa40b7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _onCloseViewWithCurrentStorySnap:page:params:]	
+107aa40b8	107aa4337	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _onViewerDidDisappearWithCurrentStorySnap:page:params:]	
+107aa4338	107aa438b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _editionDoesDisplaySinceForegroundedApp]	
+107aa438c	107aa43b7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _teardownForegroundDisplayLink]	
+107aa43b8	107aa43bf	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession hasSessionEnded]	
+107aa43c0	107aa44d7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _didStartPlayingStorySnap:storiesPlaybackSequence:]	
+107aa44d8	107aa4657	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _setupChromeInteractionSession]	
+107aa4658	107aa478f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _handleJoinGroupStoryEventWithPage:params:]	
+107aa4790	107aa48c7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _handleHideGroupStoryEventWithPage:params:]	
+107aa48c8	107aa4a13	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _setupReportSession]	
+107aa4a14	107aa4b9f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _setupSharingSession]	
+107aa4ba0	107aa4c63	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _updateOperaNavigationTypeWithParams:]	
+107aa4c64	107aa4cb7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession currentFriendStoryViewingSession]	
+107aa4cb8	107aa4d47	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession currentFriendStoriesAbsoluteIndex]	
+107aa4d48	107aa4d6f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession currentFriendStoriesRelativeIndex]	
+107aa4d70	107aa553b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _updateCurrentFriendStoryViewingSessionsWithEvent:page:]	
+107aa553c	107aa55db	decompiled	chunks/000/functions-000052.c		
+107aa55dc	107aa55f3	decompiled	chunks/000/functions-000052.c		
+107aa55f4	107aa5697	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _isMidrollAd:]	
+107aa5698	107aa576b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _isMergedMapStoryWithPrevStoriesPlaybackSequence:currentStoriesPlaybackSequence:]	
+107aa576c	107aa57df	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _removeFriendStoryViewingSession:]	
+107aa57e0	107aa582f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _userDidTakeScreenshotWithPage:]	
+107aa5830	107aa5943	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _sendViewLocationUpdateIfNeeded:withPage:]	
+107aa5944	107aa59d7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession exitReason]	
+107aa59d8	107aa5a37	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession lastInteraction]	
+107aa5a38	107aa5a3f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _uniqueViewedStoriesCount]	
+107aa5a40	107aa5b53	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _uniqueViewedSnapsCount]	
+107aa5b54	107aa5c67	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _totalViewedSnapsCount]	
+107aa5c68	107aa5d7b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession totalOpenedSnapsCount]	
+107aa5d7c	107aa5d83	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession totalViewedAdSnapsCount]	
+107aa5d84	107aa5d8b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _playSourceUponOpenOpera]	
+107aa5d8c	107aa5e8f	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _buildStoryStorySessionLogParameters]	
+107aa5e90	107aa5ecf	decompiled	chunks/000/functions-000052.c	+[SCStoriesViewingSession announcerIdentifier]	
+107aa5ed0	107aa6a63	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession initWithUserSession:startChatDelegate:storiesPlaybackDataProvider:storiesMediaCoordinator:storyPlayMode:viewLocation:viewingType:storyViewingActionContext:playSource:startingEntryEvent:navigationServices:storiesBlizzardLogger:unlockableBlizzardLogger:loggingInfo:unlockableViewTracker:snapchatterFetcher:snapchatterPublicInfoFetcher:discoverFeedEventsController:discoverFeedInteractionHistoryManager:spotlightShareSender:spotlightPlatformAnalyticsCreator:discoverFeedDataFetcher:chromeInteractionSessionBuildingFunc:storiesSharingSessionBuildingFunc:storiesUsageLogger:readReceiptCoordinator:circumstanceEngine:storiesConfigProvider:firstStoryId:grapheneMetricsEmitter:legacyStoriesTooltipsService:safetyReportScopeExposer:externalLinkSendingService:grapheneRegistry:subscriptionWorkflowStarter:boostCoordinator:bloopsReportScopeExposer:temporaryFileWriter:notificationOSSettingsRetriever:offPlatformShareServices:pageType:triggeringSection:contentRemovalDelegate:shareNotificationService:mapContentFilter:contentSharerUserId:contentSharerMischiefId:contentShareId:imageFetchingService:thumbnailCoordinator:searchSessionId:searchQueryId:searchActionId:searchResultRankingId:source:nativeSessionManager:customStoriesDataFetcher:conversationUpdatesPublisher:]	
+107aa6a64	107aa6af7	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setEventAnnouncing:]	
+107aa6af8	107aa6b53	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setOperaPageProvider:]	
+107aa6b54	107aa6b7b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession updateOperaConfiguration:]	
+107aa6b7c	107aa6cc3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setPlaylistItemController:]	
+107aa6cc4	107aa6d37	decompiled	chunks/000/functions-000052.c		
+107aa6d38	107aa6d77	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setOperaControlling:]	
+107aa6d78	107aa7157	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107aa7158	107aa733b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _refreshFriendOfGroupStoryMembershipForStorySnap:pageProperties:]	
+107aa733c	107aa7343	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession shouldUseExtendedResetToCamera]	
+107aa7344	107aa7393	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession _setupFriendStoryViewTimeFixConfigs]	
+107aa7394	107aa739b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession viewingType]	
+107aa739c	107aa73a3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setViewingType:]	
+107aa73a4	107aa73ab	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession liveStoriesCount]	
+107aa73ac	107aa73b3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setLiveStoriesCount:]	
+107aa73b4	107aa73bb	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession entryReason]	
+107aa73bc	107aa73c3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setEntryReason:]	
+107aa73c4	107aa73cb	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession defaultStoryViewingActionContext]	
+107aa73cc	107aa73d3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession setDefaultStoryViewingActionContext:]	
+107aa73d4	107aa73db	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession currentFriendStoriesViewingSessions]	
+107aa73dc	107aa73e3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession lastFriendStoryInteraction]	
+107aa73e4	107aa73eb	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession isTopSnap]	
+107aa73ec	107aa73f3	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession loadingScreenCount]	
+107aa73f4	107aa73fb	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession isViewingLongform]	
+107aa73fc	107aa7403	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession playSource]	
+107aa7404	107aa740b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession startingEntryEvent]	
+107aa740c	107aa7413	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession operaNavigationType]	
+107aa7414	107aa741b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession mediaPlaybackSessionId]	
+107aa741c	107aa7423	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession eventAnnouncing]	
+107aa7424	107aa743b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession operaPageProvider]	
+107aa743c	107aa7443	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession previousStoriesPlaybackSequenceDisplayed]	
+107aa7444	107aa745b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession operaControlling]	
+107aa745c	107aa7463	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession initialFriendsPlayListCount]	
+107aa7464	107aa747b	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession playlistItemController]	
+107aa747c	107aa7813	decompiled	chunks/000/functions-000052.c	-[SCStoriesViewingSession .cxx_destruct]	
+107aa7814	107aa79ff	decompiled	chunks/000/functions-000052.c		
+107aa7a00	107aa7a9b	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest initWithloadDataChunk:chunkSize:completion:]	
+107aa7a9c	107aa7aa3	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest respondWithData:]	
+107aa7aa4	107aa7abb	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest finishLoading]	
+107aa7abc	107aa7b37	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest finishLoadingWithError:]	
+107aa7b38	107aa7b3f	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest requestedLength]	
+107aa7b40	107aa7b47	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest requestedOffset]	
+107aa7b48	107aa7b4f	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest requestsAllDataToEndOfResource]	
+107aa7b50	107aa7b57	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest currentOffset]	
+107aa7b58	107aa7b87	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingDataRequest .cxx_destruct]	
+107aa7b88	107aa7c3b	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest initWithloadDataChunk:chunkSize:requestId:completion:]	
+107aa7c3c	107aa7c43	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest finishLoading]	
+107aa7c44	107aa7c4b	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest finishLoadingWithError:]	
+107aa7c4c	107aa7c73	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest dataRequest]	
+107aa7c74	107aa7c7b	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest requestId]	
+107aa7c7c	107aa7cab	decompiled	chunks/000/functions-000052.c	-[SCNeoPlayerResourceLoadingRequest .cxx_destruct]	
+107aa7cac	107aa7ec3	decompiled	chunks/000/functions-000052.c	-[SCResourceLoaderCMWriteStream initWithLoadingRequest:firstChunk:mediaId:contentLength:maxFetchBytes:enablePartialResponseFromFirstChunk:avoidBytesCopying:queue:completion:]	
+107aa7ec4	107aa803f	decompiled	chunks/000/functions-000052.c	-[SCResourceLoaderCMWriteStream initStreamForContentResult:]	
+107aa8040	107aa81ef	decompiled	chunks/000/functions-000052.c	-[SCResourceLoaderCMWriteStream putBytesSlice:]	
+107aa81f0	107aa8233	decompiled	chunks/000/functions-000052.c		
+107aa8234	107aa8343	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream setError:message:networkCode:]	
+107aa8344	107aa838f	decompiled	chunks/000/functions-000053.c		
+107aa8390	107aa8393	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream onComplete]	
+107aa8394	107aa841f	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream cancelForContentResult:playerCanceled:]	
+107aa8420	107aa859b	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _handleError:message:networkCode:]	
+107aa859c	107aa877f	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _putBytesHelper:range:callTimeUs:]	
+107aa8780	107aa884b	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _subrangeOfData:range:]	
+107aa884c	107aa885b	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _isWriteStreamInProgress]	
+107aa885c	107aa899b	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _emitPhaseSpansWithOutcome:]	
+107aa899c	107aa89ff	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream _finishRequestAndCallback]	
+107aa8a00	107aa8a0b	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream byteRangeFulfilled]	
+107aa8a0c	107aa8a67	decompiled	chunks/000/functions-000053.c	-[SCResourceLoaderCMWriteStream .cxx_destruct]	
+107aa8a68	107aa8b13	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceContentInfo initWithResourceId:contentResult:contentType:]	
+107aa8b14	107aa8b1b	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceContentInfo resourceId]	
+107aa8b1c	107aa8b23	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceContentInfo contentResult]	
+107aa8b24	107aa8b2b	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceContentInfo contentType]	
+107aa8b2c	107aa8b5b	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceContentInfo .cxx_destruct]	
+107aa8b5c	107aa8c07	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoaderRequestData initWithLoadingRequest:cancelable:end:]	
+107aa8c08	107aa8c0f	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoaderRequestData loadingRequest]	
+107aa8c10	107aa8c17	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoaderRequestData cancelable]	
+107aa8c18	107aa8c1f	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoaderRequestData end]	
+107aa8c20	107aa8c4f	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoaderRequestData .cxx_destruct]	
+107aa8c50	107aa8d53	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader initWithContentStreamer:queuePerformer:configProvider:estimatedBitrate:]	
+107aa8d54	107aa8e4b	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader resourceLoader:didCancelLoadingRequest:]	
+107aa8e4c	107aa916b	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader resourceLoader:shouldWaitForLoadingOfRequestedResource:]	
+107aa916c	107aa9213	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader cancel]	
+107aa9214	107aa923f	decompiled	chunks/000/functions-000053.c		
+107aa9240	107aa9317	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader onMetadataAvailable:]	
+107aa9318	107aa934b	decompiled	chunks/000/functions-000053.c		
+107aa934c	107aa944b	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader onDataReceived:dataSlice:]	
+107aa944c	107aa956b	decompiled	chunks/000/functions-000053.c		
+107aa956c	107aa9673	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader onFailure:error:]	
+107aa9674	107aa96fb	decompiled	chunks/000/functions-000053.c		
+107aa96fc	107aa96ff	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader onComplete]	
+107aa9700	107aa977f	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader setViewLocation:]	
+107aa9780	107aa98b7	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _cancel]	
+107aa98b8	107aa9983	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _setMetadata:forLoadingRequest:]	
+107aa9984	107aa9bdf	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _onMetadataAvailable:]	
+107aa9be0	107aa9f4b	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _onDataReceived:data:]	
+107aa9f4c	107aaa1bf	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _onFailure:error:]	
+107aaa1c0	107aaa2bf	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _shimsErrorToNSError:]	
+107aaa2c0	107aaa35b	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader _regenerateConfigsWithFeatureProvidedSignals:]	
+107aaa35c	107aaa373	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader player]	
+107aaa374	107aaa37f	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader setPlayer:]	
+107aaa380	107aaa387	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader viewLocation]	
+107aaa388	107aaa3d7	decompiled	chunks/000/functions-000053.c	-[SCContentLocationResourceLoader .cxx_destruct]	
+107aaa3d8	107aaa4bb	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector initWithExpectedByteCount:maxByteCount:performer:completion:]	
+107aaa4bc	107aaa4eb	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector setRequestHandle:]	
+107aaa4ec	107aaa5a3	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector scheduleTimeout:]	
+107aaa5a4	107aaa5d7	decompiled	chunks/000/functions-000053.c		
+107aaa5d8	107aaa6cb	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector putBytesSlice:]	
+107aaa6cc	107aaa72b	decompiled	chunks/000/functions-000053.c		
+107aaa72c	107aaa803	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector setError:message:networkCode:]	
+107aaa804	107aaa837	decompiled	chunks/000/functions-000053.c		
+107aaa838	107aaa8df	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector onComplete]	
+107aaa8e0	107aaa913	decompiled	chunks/000/functions-000053.c		
+107aaa914	107aaa9db	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector _finish]	
+107aaa9dc	107aaaa23	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerLocalBytesCollector .cxx_destruct]	
+107aaaa24	107aaac0f	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler initWithConfigProvider:contentInfo:callbackQueue:requestHandlerDelegate:]	
+107aaac10	107aaacab	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler setStreamingContext]	
+107aaacac	107aaad4f	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler dealloc]	
+107aaad50	107aaad53	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler setViewLocation:]	
+107aaad54	107aaadfb	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler cancel]	
+107aaadfc	107aaae37	decompiled	chunks/000/functions-000053.c		
+107aaae38	107aaaf7f	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler _tearDown]	
+107aaaf80	107aab037	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler cancelLoad:]	
+107aab038	107aab0ef	decompiled	chunks/000/functions-000053.c		
+107aab0f0	107aab177	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler getTotalDataSize:]	
+107aab178	107aab34f	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler copyLocallyAvailableDataWithCompletion:]	
+107aab350	107aab44f	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler loadDataChunk:chunkSize:completion:]	
+107aab450	107aab493	decompiled	chunks/000/functions-000053.c		
+107aab494	107aab733	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler _loadDataChunkWithByteOffset:chunkSize:externalRequestId:completion:]	
+107aab734	107aab79f	decompiled	chunks/000/functions-000053.c		
+107aab7a0	107aab873	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler _handleCMWriteStreamCallbackforNeoPlayerLoadingRequest:error:]	
+107aab874	107aab8cf	decompiled	chunks/000/functions-000053.c	-[SCStreamingNeoPlayerRequestHandler .cxx_destruct]	
+107aab8d0	107aab8df	decompiled	chunks/000/functions-000053.c		
+107aab8e0	107aab9f7	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader initWithConfigProvider:grapheneRegistry:contentResolver:contentFetcher:]	
+107aab9f8	107aabd37	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader createPlaybackAssetFromContentBundle:contentType:mediaContextType:]	
+107aabd38	107aabd3b	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader createPlaybackAssetFromContentResult:resourceId:contentType:]	
+107aabd3c	107aabd3f	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader createAssetFromContentResult:resourceId:contentType:]	
+107aabd40	107aac123	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader _assetFromContentResult:resourceId:contentType:]	
+107aac124	107aac183	decompiled	chunks/000/functions-000053.c		
+107aac184	107aac343	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader _estimatedBitrateKbpsFromPrefetchHint:]	
+107aac344	107aac3f3	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader requestHandlerDidFinish:withError:contentInfo:]	
+107aac3f4	107aac3fb	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader resourceLoaderErrorObservable]	
+107aac3fc	107aac44f	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoader .cxx_destruct]	
+107aac450	107aac4cf	decompiled	chunks/000/functions-000053.c	+[SCStreamingResourceLoadingRequestHandler _nextExponentialChunkSizeAtOffset:withFirstChunkSize:initialMultiplier:successiveMultiplier:maxMultiplier:maxChunkSize:]	
+107aac4d0	107aac817	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler initWithConfigProvider:grapheneRegistry:contentInfo:callbackQueue:requestHandlerDelegate:]	
+107aac818	107aac9b3	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler setPlayer:]	
+107aac9b4	107aac9ff	decompiled	chunks/000/functions-000053.c		
+107aaca00	107aaca17	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler player]	
+107aaca18	107aaca6b	decompiled	chunks/000/functions-000053.c	+[SCStreamingResourceLoadingRequestHandler _playerIsPaused:]	
+107aaca6c	107aacb57	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler _playerStatusDidChange:]	
+107aacb58	107aacc93	decompiled	chunks/000/functions-000053.c		
+107aacc94	107aacd2b	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler resourceLoader:didCancelLoadingRequest:]	
+107aacd2c	107aacdbf	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler resourceLoader:shouldWaitForLoadingOfRequestedResource:]	
+107aacdc0	107aace17	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler cancel]	
+107aace18	107aace2b	decompiled	chunks/000/functions-000053.c		
+107aace2c	107aaceab	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler setViewLocation:]	
+107aaceac	107aacfe3	decompiled	chunks/000/functions-000053.c	-[SCStreamingResourceLoadingRequestHandler _handleContentInfoLoadingRequest:finishLoading:]	
+107aacfe4	107aad063	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _handleDataLoadingRequest:]	
+107aad064	107aad1c3	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _tearDown]	
+107aad1c4	107aad39f	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _shouldProceedFetching:]	
+107aad3a0	107aad3e7	decompiled	chunks/000/functions-000054.c		
+107aad3e8	107aad8a7	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _handleCMDataLoadingRequest:]	
+107aad8a8	107aad913	decompiled	chunks/000/functions-000054.c		
+107aad914	107aadbfb	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _boostStreamingImportanceForActivePlayer]	
+107aadbfc	107aadd6f	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _handleCMWriteStreamCallback:error:]	
+107aadd70	107aadd9f	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _loadingRequestHash:]	
+107aadda0	107aade4b	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _regenerateConfigsWithFeatureProvidedSignals:]	
+107aade4c	107aae053	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler _configForActive:defaultConfig:featureProvidedSignals:]	
+107aae054	107aae05b	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler viewLocation]	
+107aae05c	107aae0fb	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoadingRequestHandler .cxx_destruct]	
+107aae0fc	107aae1a7	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError initWithResourceId:error:]	
+107aae1a8	107aae1cb	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError copyWithZone:]	
+107aae1cc	107aae23f	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError hash]	
+107aae240	107aae2e7	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError isEqual:]	
+107aae2e8	107aae2ef	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError resourceId]	
+107aae2f0	107aae2f7	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError error]	
+107aae2f8	107aae3a3	decompiled	chunks/000/functions-000054.c	-[SCStreamingResourceLoaderError .cxx_destruct]	
+107aae3a4	107aae3af	decompiled	chunks/000/functions-000054.c		
+107aae3b0	107aae417	decompiled	chunks/000/functions-000054.c	+[SCPBPlaybackIosStreamingResourceLoaderConfig descriptor]	
+107aae418	107aae4e3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCaption initWithUrl:language:type:]	
+107aae4e4	107aae4eb	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCaption language]	
+107aae4ec	107aae4f3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCaption url]	
+107aae4f4	107aae4fb	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCaption type]	
+107aae4fc	107aae537	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCaption .cxx_destruct]	
+107aae538	107aae9ef	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog initWithDictionary:]	
+107aae9f0	107aaecff	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog propertiesForCatalog]	
+107aaed00	107aaed07	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog videoURLs]	
+107aaed08	107aaed0f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog name]	
+107aaed10	107aaed17	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog accountID]	
+107aaed18	107aaed1f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog videoID]	
+107aaed20	107aaed27	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog playlist]	
+107aaed28	107aaed2f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog videoURLToCaption]	
+107aaed30	107aaed37	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog videoURLToCaptionPresent]	
+107aaed38	107aaeda3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalog .cxx_destruct]	
+107aaeda4	107aaeed3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService initWithCircumstanceEngine:networkConnectivityAnnouncer:]	
+107aaeed4	107aaef2f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService updateEndpointFromCircumstanceEngine]	
+107aaef30	107aaf027	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService _setupAdServiceEndpointFromCircumstanceEngine:]	
+107aaf028	107aaf06f	decompiled	chunks/000/functions-000054.c		
+107aaf070	107aaf123	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService _adServiceEndpointFromCircumstanceEngine:]	
+107aaf124	107aaf2ff	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService fetchCatalogForAdWithVideoId:withListener:]	
+107aaf300	107aaf4a7	decompiled	chunks/000/functions-000054.c		
+107aaf4a8	107aaf4ef	decompiled	chunks/000/functions-000054.c		
+107aaf4f0	107aaf577	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService catalogForVideoId:]	
+107aaf578	107aaf66f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService requestDidSucceed:]	
+107aaf670	107aaf673	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService propertiesForVideoId:]	
+107aaf674	107aaf72f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService fetchPropertiesForPage:listener:]	
+107aaf730	107aaf877	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService adVideoCatalogEndpoint]	
+107aaf878	107aaf87f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService listeners]	
+107aaf880	107aaf8af	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService setListeners:]	
+107aaf8b0	107aaf8b7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService loadingCatalogs]	
+107aaf8b8	107aaf8e7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService setLoadingCatalogs:]	
+107aaf8e8	107aaf8ef	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService videoCatalogMap]	
+107aaf8f0	107aaf91f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService setVideoCatalogMap:]	
+107aaf920	107aaf9af	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogService .cxx_destruct]	
+107aaf9b0	107aaf9f3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverVideoCatalogServiceProvider .cxx_destruct]	
+107aaf9f4	107aafaf3	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession initWithLogger:]	
+107aafaf4	107aafb5b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession _reset]	
+107aafb5c	107aafcef	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession registeredEventsForOperaSession]	
+107aafcf0	107ab018f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession operaViewDidSendEvent:page:params:]	
+107ab0190	107ab0413	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession _updateVideoTimers:]	
+107ab0414	107ab041b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession videoWithCaptionOnTimeViewedSeconds]	
+107ab041c	107ab0423	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession videoInLandscapeModeTimeViewedSeconds]	
+107ab0424	107ab042b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession startedWithCaptionOn]	
+107ab042c	107ab0433	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession inlineVideosViewedCount]	
+107ab0434	107ab043b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession setInlineVideosViewedCount:]	
+107ab043c	107ab0443	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession inlineVideosTotalTimeViewedSec]	
+107ab0444	107ab044b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession setInlineVideosTotalTimeViewedSec:]	
+107ab044c	107ab04b7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverRemoteVideoSession .cxx_destruct]	
+107ab04b8	107ab0513	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits isDSnap:]	
+107ab0514	107ab0597	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits dSnapId:]	
+107ab0598	107ab0603	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits isCommerce:]	
+107ab0604	107ab066f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits isCameos:]	
+107ab0670	107ab06f3	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits storyDedupeFp:]	
+107ab06f4	107ab0777	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits storyCompositeId:]	
+107ab0778	107ab07fb	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits uniqueIdentifier:]	
+107ab07fc	107ab087f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits publisherUniqueName:]	
+107ab0880	107ab0903	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits isTopSnap:]	
+107ab0904	107ab0987	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits longformVideoId:]	
+107ab0988	107ab0a0b	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits editionId:]	
+107ab0a0c	107ab0a8f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits publisherId:]	
+107ab0a90	107ab0b13	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits segmentId:]	
+107ab0b14	107ab0b97	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits showId:]	
+107ab0b98	107ab0c2f	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits isDSnapShareable:]	
+107ab0c30	107ab0cc7	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits enableContentManager:]	
+107ab0cc8	107ab0d4b	decompiled	chunks/000/functions-000054.c	+[SCDiscoverOperaPageTraits editionTimestamp:]	
+107ab0d4c	107ab0d57	decompiled	chunks/000/functions-000054.c	+[SCDiscoverPublisherOperaDataSource announcerIdentifier]	
+107ab0d58	107ab0f87	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource initWithEnableAutoAdvance:loggingContext:snapDocConfigurer:discoverFeedDataFetcher:discoverFeedEventsController:pagePropertiesManager:cachedViewStateProvider:readReceiptCoordinator:viewLocation:circumstanceEngine:creatorSettingsFetcher:storiesConfigProvider:]	
+107ab0f88	107ab0f93	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource setPlaylistItemController:]	
+107ab0f94	107ab0f9f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource setLoggingContext:]	
+107ab0fa0	107ab103b	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource _publisherStoryOperaGroupIdForPage:]	
+107ab103c	107ab10c7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource canResolvePlaylistItemGroupDataModel:]	
+107ab10c8	107ab11e7	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource playlistItemGroupModelForDataModel:]	
+107ab11e8	107ab1293	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource resolvePlaylistItemGroupWithMutator:]	
+107ab1294	107ab131f	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource loadMediaForPlaylistItemGroup:]	
+107ab1320	107ab1513	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource _singleDiscoverPublisherOperaDataSourceForStoryPlayableId:]	
+107ab1514	107ab15cf	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource dataModelFor:]	
+107ab15d0	107ab1653	decompiled	chunks/000/functions-000054.c	-[SCDiscoverPublisherOperaDataSource dataModelForGroup:]	
+107ab1654	107ab16cf	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource setEventAnnouncing:]	
+107ab16d0	107ab189b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource registeredEventsForOperaSession]	
+107ab189c	107ab1fef	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource operaViewDidSendEvent:page:params:]	
+107ab1ff0	107ab2037	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _loadSubtitlesOnDemand]	
+107ab2038	107ab2133	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _handleSubtitleStateUpdateIfNecessary:dSnapID:storyPlayableId:subtitleAsset:]	
+107ab2134	107ab2203	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _updateViewLocationIfNeeded:withPage:]	
+107ab2204	107ab230f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource pageDataForDataModel:completion:]	
+107ab2310	107ab2317	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource needToPrepareMediaBeforeDisplay]	
+107ab2318	107ab23f7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource prepareMediaForItem:startWaitingForDownloadCallback:completion:]	
+107ab23f8	107ab24a3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource removeMediaForItem:]	
+107ab24a4	107ab2783	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107ab2784	107ab279b	decompiled	chunks/000/functions-000055.c		
+107ab279c	107ab280b	decompiled	chunks/000/functions-000055.c		
+107ab280c	107ab28e3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _getDiscoverFeedStoryForPlaylistItem:]	
+107ab28e4	107ab2b83	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _createOperaItemAttributionInfoForPlaylistItem:]	
+107ab2b84	107ab2b8b	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource prefetchRequestFromPlaylistItem:prefetchSignals:importance:]	
+107ab2b8c	107ab2bf3	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource startPrefetchForPlaylistItem:completion:]	
+107ab2bf4	107ab2d4f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource generateSnapDocPrefetchRequestsForGroup:startPosition:prefetchSignalsList:importanceList:maxNumberOfItems:completion:completionQueue:]	
+107ab2d50	107ab2d6b	decompiled	chunks/000/functions-000055.c		
+107ab2d6c	107ab2e0f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _dataModelFor:]	
+107ab2e10	107ab2e9f	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource _cancelQueuedRequestForItem:]	
+107ab2ea0	107ab2ea7	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource eventAnnouncing]	
+107ab2ea8	107ab2f63	decompiled	chunks/000/functions-000055.c	-[SCDiscoverPublisherOperaDataSource .cxx_destruct]	
+107ab2f64	107ab2f6f	decompiled	chunks/000/functions-000055.c	+[SCSingleDiscoverPublisherOperaDataSource announcerIdentifier]	
+107ab2f70	107ab3217	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource initWithStoryPlayableDataModel:playlistItemController:snapDocConfigurer:discoverFeedDataFetcher:discoverFeedEventsController:pagePropertiesManager:cachedViewStateProvider:readReceiptCoordinator:viewLocation:creatorSettingsFetcher:circumstanceEngine:]	
+107ab3218	107ab324f	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource updateViewLocation:]	
+107ab3250	107ab342f	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource updateSubtitleAssetWithDSnapID:enabled:languageId:subtitleAsset:]	
+107ab3430	107ab345b	decompiled	chunks/000/functions-000055.c		
+107ab345c	107ab34fb	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _updateAssetKeyForDSnapIDIfNecessary:assetKey:]	
+107ab34fc	107ab35cb	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource disableAutoProgressingForIdentifier:isNext:isCurrent:]	
+107ab35cc	107ab3623	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _markSnapWithDisabledAutoProgression:]	
+107ab3624	107ab376b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource resetAutoProgression]	
+107ab376c	107ab3797	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _configurationWithViewLocation:circumstanceEngine:]	
+107ab3798	107ab390b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _nextStorySnapAfterStorySnapIdentifier:]	
+107ab390c	107ab3a37	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _prevStorySnapBeforeStorySnapIdentifier:]	
+107ab3a38	107ab3aaf	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _updatePlaylistItemWithStorySnap:]	
+107ab3ab0	107ab42bb	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource resolvePlaylistItemGroupWithMutator:]	
+107ab42bc	107ab449b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource loadMediaForPlaylistItemGroup:]	
+107ab449c	107ab44cf	decompiled	chunks/000/functions-000055.c		
+107ab44d0	107ab4523	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource dataModelFor:]	
+107ab4524	107ab46b7	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource prepareMediaForItem:startWaitingForDownloadCallback:completion:]	
+107ab46b8	107ab46eb	decompiled	chunks/000/functions-000055.c		
+107ab46ec	107ab481b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource removeMediaForItem:]	
+107ab481c	107ab4963	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource pageDataForDataModel:completion:]	
+107ab4964	107ab49f7	decompiled	chunks/000/functions-000055.c		
+107ab49f8	107ab4ce7	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _completeOnMainThreadForSnapPlayableDataModel:pageProperties:attachmentPageProperties:mediaIsLoaded:error:completion:]	
+107ab4ce8	107ab4ceb	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _editionChannelSubscribeStateDidChange]	
+107ab4cec	107ab4d6f	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource mediaLoadDidFailFor:error:]	
+107ab4d70	107ab4e07	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _playlistItemDidUpdateForSnapPlayableDataModel:]	
+107ab4e08	107ab4f27	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _fetchMediaIfNeeded:]	
+107ab4f28	107ab500f	decompiled	chunks/000/functions-000055.c		
+107ab5010	107ab5043	decompiled	chunks/000/functions-000055.c		
+107ab5044	107ab5157	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _fetchForSnapPlayableDataModel:]	
+107ab5158	107ab523f	decompiled	chunks/000/functions-000055.c		
+107ab5240	107ab5273	decompiled	chunks/000/functions-000055.c		
+107ab5274	107ab5313	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _updatePlaylistIfMediaIsNotPrepared:]	
+107ab5314	107ab5537	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _mediaIsLoadedForSnapPlayableDataModel:error:]	
+107ab5538	107ab556b	decompiled	chunks/000/functions-000055.c		
+107ab556c	107ab569f	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _prefetchForSnapPlayableDataModel:completion:]	
+107ab56a0	107ab572f	decompiled	chunks/000/functions-000055.c		
+107ab5730	107ab58a7	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource prefetchItem:completion:]	
+107ab58a8	107ab5957	decompiled	chunks/000/functions-000055.c		
+107ab5958	107ab5a0b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource cancelQueuedRequestForItem:]	
+107ab5a0c	107ab5b53	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _prepareSnapDocMediaAssetsForSnapDoc:completion:]	
+107ab5b54	107ab5c1f	decompiled	chunks/000/functions-000055.c		
+107ab5c20	107ab6073	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource generateSnapDocPrefetchRequestsWithStartPosition:prefetchSignalsList:importanceList:maxNumberOfItems:completion:completionQueue:]	
+107ab6074	107ab608f	decompiled	chunks/000/functions-000055.c		
+107ab6090	107ab6207	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107ab6208	107ab63cb	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _extraPropertiesForSnapPlayableDataModel:fullSnapDocDataModel:completion:]	
+107ab63cc	107ab643f	decompiled	chunks/000/functions-000055.c		
+107ab6440	107ab655f	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource _didGetPagePropertiesForPlayableDataModelIdentifier:pageProperties:completion:]	
+107ab6560	107ab6567	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource storyPlayableDataModel]	
+107ab6568	107ab6597	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource setStoryPlayableDataModel:]	
+107ab6598	107ab665b	decompiled	chunks/000/functions-000055.c	-[SCSingleDiscoverPublisherOperaDataSource .cxx_destruct]	
+107ab665c	107ab67bb	decompiled	chunks/000/functions-000055.c		
+107ab67bc	107ab67d7	decompiled	chunks/000/functions-000055.c		
+107ab67d8	107ab6993	decompiled	chunks/000/functions-000055.c		
+107ab6994	107ab6ba7	decompiled	chunks/000/functions-000055.c		
+107ab6ba8	107ab6d93	decompiled	chunks/000/functions-000055.c		
+107ab6d94	107ab6db3	decompiled	chunks/000/functions-000055.c		
+107ab6db4	107ab6eeb	decompiled	chunks/000/functions-000055.c		
+107ab6eec	107ab6f0b	decompiled	chunks/000/functions-000055.c		
+107ab6f0c	107ab727b	decompiled	chunks/000/functions-000055.c		
+107ab727c	107ab72fb	decompiled	chunks/000/functions-000055.c		
+107ab72fc	107ab75b3	decompiled	chunks/000/functions-000055.c		
+107ab75b4	107ab761f	decompiled	chunks/000/functions-000055.c		
+107ab7620	107ab785f	decompiled	chunks/000/functions-000055.c		
+107ab7860	107ab7aab	decompiled	chunks/000/functions-000055.c		
+107ab7aac	107ab7bcb	decompiled	chunks/000/functions-000055.c		
+107ab7bcc	107ab7bf3	decompiled	chunks/000/functions-000055.c		
+107ab7bf4	107ab7d47	decompiled	chunks/000/functions-000055.c		
+107ab7d48	107ab7eab	decompiled	chunks/000/functions-000055.c		
+107ab7eac	107ab7eb3	decompiled	chunks/000/functions-000055.c		
+107ab7eb4	107ab813b	decompiled	chunks/000/functions-000055.c		
+107ab813c	107ab825f	decompiled	chunks/000/functions-000055.c		
+107ab8260	107ab834f	decompiled	chunks/000/functions-000055.c		
+107ab8350	107ab84cb	decompiled	chunks/000/functions-000055.c		
+107ab84cc	107ab8863	decompiled	chunks/000/functions-000055.c		
+107ab8864	107ab88e7	decompiled	chunks/000/functions-000055.c		
+107ab88e8	107ab8a37	decompiled	chunks/000/functions-000055.c		
+107ab8a38	107ab8ba7	decompiled	chunks/000/functions-000056.c		
+107ab8ba8	107ab8cf7	decompiled	chunks/000/functions-000056.c		
+107ab8cf8	107ab90f7	decompiled	chunks/000/functions-000056.c		
+107ab90f8	107ab9217	decompiled	chunks/000/functions-000056.c		
+107ab9218	107ab9457	decompiled	chunks/000/functions-000056.c		
+107ab9458	107ab9553	decompiled	chunks/000/functions-000056.c		
+107ab9554	107ab95eb	decompiled	chunks/000/functions-000056.c		
+107ab95ec	107ab96af	decompiled	chunks/000/functions-000056.c		
+107ab96b0	107ab987b	decompiled	chunks/000/functions-000056.c		
+107ab987c	107ab98e7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCameosPropertiesProvider initWithCircumstanceEngine:]	
+107ab98e8	107ab997f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCameosPropertiesProvider pagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverPageProperties:fullSnapDoc:]	
+107ab9980	107ab9b8b	decompiled	chunks/000/functions-000056.c		
+107ab9b8c	107ab9c23	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCameosPropertiesProvider attachmentPagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverAttachmentPageProperties:fullSnapDoc:]	
+107ab9c24	107ab9c2b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCameosPropertiesProvider .cxx_destruct]	
+107ab9c2c	107ab9e87	decompiled	chunks/000/functions-000056.c		
+107ab9e88	107ab9f2b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCommercePagePropertiesProvider initWithUserSession:commerceSessionBuildingFunc:lazyUserTrackedLogger:]	
+107ab9f2c	107aba08f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCommercePagePropertiesProvider pagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverPageProperties:fullSnapDoc:]	
+107aba090	107aba1e3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCommercePagePropertiesProvider attachmentPagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverAttachmentPageProperties:fullSnapDoc:]	
+107aba1e4	107aba21b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherCommercePagePropertiesProvider .cxx_destruct]	
+107aba21c	107aba2bf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider initWithCircumstanceEngine:viewLocation:offPlatformLinkGenerationService:]	
+107aba2c0	107aba9f3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider pagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverPageProperties:fullSnapDoc:]	
+107aba9f4	107abaa13	decompiled	chunks/000/functions-000056.c		
+107abaa14	107abaa1b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider attachmentPagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverAttachmentPageProperties:fullSnapDoc:]	
+107abaa1c	107abaa23	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider updateViewLocation:]	
+107abaa24	107abaadb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider addCloseActionProperties:]	
+107abaadc	107abac63	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider _generateDeeplinkURLForStoryPlayableDataModel:snapPlayableDataModel:]	
+107abac64	107abac8f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherContextPagePropertiesProvider .cxx_destruct]	
+107abac90	107abb05f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager initWithUserSession:snapDocOperaMediaManager:snapDocConfigurer:discoverFeedDataFetcher:lazyBitmojiAvatarProvider:lazyBitmojiFriendAvatarProvider:commerceSessionBuildingFunc:lazyUserTrackedLogger:impalaOperaLayerViewControllerProviderCreator:circumstanceEngine:creatorSettingsFetcher:creatorSettingsMutator:creatorSettingsTracker:offPlatformLinkGenerationService:storiesConfigProvider:snapchatterObservableRepository:]	
+107abb060	107abb193	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager preparePagePropertyForSnapPlayableDataModel:storyPlayableDataModel:completion:]	
+107abb194	107abb2af	decompiled	chunks/000/functions-000056.c		
+107abb2b0	107abb2ef	decompiled	chunks/000/functions-000056.c		
+107abb2f0	107abb417	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager getPagePropertyForSnapPlayableDataModelOnMainThread:storyPlayableDataModel:completion:]	
+107abb418	107abb44f	decompiled	chunks/000/functions-000056.c		
+107abb450	107abb54f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager setError:forSnapPlayableDataModel:]	
+107abb550	107abb583	decompiled	chunks/000/functions-000056.c		
+107abb584	107abb58f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager updateViewLocation:]	
+107abb590	107abb5bf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager updateAutoProgressingConfig:]	
+107abb5c0	107abb6c3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _shouldUpdateBitmojiStoriesCachedProperties:storyPlayableDataModel:fullSnapDocDataModel:]	
+107abb6c4	107abbf93	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _pageDataForDataModel:storyPlayableDataModel:mediaIsLoaded:mediaIsLoading:fullSnapDocDataModel:completion:]	
+107abbf94	107abc15b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _pagePropertiesForAutoProgressingWithDataModel:autoProgressingConfiguration:viewLocation:circumstanceEngine:]	
+107abc15c	107abc2e7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _setupSubPageProperties]	
+107abc2e8	107abc503	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _noCachePagePropertiesForSnapPlayableDataModel:storyPlayableDataModel:fullSnapDocDataModel:mediaIsLoaded:]	
+107abc504	107abc71f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _noCacheAttachmentPagePropertiesForSnapPlayableDataModel:storyPlayableDataModel:fullSnapDocDataModel:mediaIsLoaded:]	
+107abc720	107abc77f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _getCachedPagePropertiesForSnapPlayableDataModel:storyPlayableDataModel:]	
+107abc780	107abc7df	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _getCachedAttachmentPagePropertiesForSnapPlayableDataModel:storyPlayableDataModel:]	
+107abc7e0	107abc877	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _setError:forSnapPlayableDataModel:]	
+107abc878	107abc8f3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _updateCachePageProperties:forSnapPlayableDataModel:storyPlayableDataModel:]	
+107abc8f4	107abc96f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _updateAttachmentCachePageProperties:forSnapPlayableDataModel:storyPlayableDataModel:]	
+107abc970	107abca83	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _getPagePropertyForSnapPlayableDataModelOnMainThread:storyPlayableDataModel:completion:]	
+107abca84	107abcba7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _keyForSnapPlayableDataModel:storyPlayableDataModel:]	
+107abcba8	107abcccf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _mediaTypeForSnapDocDataModel:]	
+107abccd0	107abcceb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _isMediaImage:]	
+107abccec	107abcd07	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager _isMediaVideo:]	
+107abcd08	107abcd0f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager snapDocOperaMediaManager]	
+107abcd10	107abce2f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherPagePropertiesManager .cxx_destruct]	
+107abce30	107abcf73	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherSubscriptionPagePropertiesProvider initWithDiscoverFeedDataFetcher:pagePropertiesManager:creatorSettingsFetcher:creatorSettingsMutator:creatorSettingsTracker:circumstanceEngine:snapchatterObservableRepository:]	
+107abcf74	107abd0b7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherSubscriptionPagePropertiesProvider pagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverPageProperties:fullSnapDoc:]	
+107abd0b8	107abda83	decompiled	chunks/000/functions-000056.c		
+107abda84	107abdbc7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherSubscriptionPagePropertiesProvider attachmentPagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverAttachmentPageProperties:fullSnapDoc:]	
+107abdbc8	107abdc17	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherSubscriptionPagePropertiesProvider .cxx_destruct]	
+107abdc18	107abdccb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherWebpagePagePropertiesProvider initWithLazyBitmojiAvatarProvider:lazyBitmojiFriendAvatarProvider:lazySnapDocConfigurer:]	
+107abdccc	107abddb7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherWebpagePagePropertiesProvider pagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverPageProperties:fullSnapDoc:]	
+107abddb8	107abe163	decompiled	chunks/000/functions-000056.c		
+107abe164	107abe24f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherWebpagePagePropertiesProvider attachmentPagePropertiesForStoryPlayableDataModel:snapPlayableDataModel:discoverAttachmentPageProperties:fullSnapDoc:]	
+107abe250	107abe27f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherWebpagePagePropertiesProvider .cxx_destruct]	
+107abe280	107abfaa7	decompiled	chunks/000/functions-000056.c		
+107abfaa8	107abffd3	decompiled	chunks/000/functions-000056.c		
+107abffd4	107ac0197	decompiled	chunks/000/functions-000056.c		
+107ac0198	107ac03a3	decompiled	chunks/000/functions-000056.c		
+107ac03a4	107ac03df	decompiled	chunks/000/functions-000056.c		
+107ac03e0	107ac0923	decompiled	chunks/000/functions-000056.c		
+107ac0924	107ac115f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin initWithUserSession:context:loggingContext:startWithAttachment:enableAutoAdvance:snapDocConfigurer:snapDocMediaResolver:discoverFeedDataFetcher:subscriptionStore:discoverFeedEventsController:webBrowsingURLChecker:webBrowsingURLInterceptor:publisherPagePropertiesManager:readReceiptCoordinator:cachedViewStateProvider:legacyStoriesTooltipsService:videoFilterAdaptor:permissionRequester:notificationOSSettingsRetriever:impalaProfilePresentHandler:storiesGrapheneMetricsEmitter:previewFilterDataProviderCreator:circumstanceEngine:viewLocation:networkConnectivityMonitor:notificationPool:creatorSettingsFetcher:imageDownloader:streamingMediaFetcher:grapheneRegistry:creatorSettingsMutator:creatorSettingsTracker:lazyDiscoverFeedInteractionHistoryManager:sendToScopeLauncher:lazyDiscoverFeedDataMutator:bitmojiImageFetcher:discoverFeedNotificationOptInRequestManager:discoverBlizzardLogger:offPlatformLinkGenerationService:snapVideoFilterFactory:previewURLVideoProvider:safetyReportScopeExposer:externalLinkSendingService:lazyUserTrackedLogger:boostCoordinator:subscriptionWorkflowStarter:offPlatformShareServices:currentPageTracker:storiesExperimentServices:snapDocEditorFactory:previewSnapSenderFactory:contentRemovalDelegate:triggeringSection:]	
+107ac1160	107ac118f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin type]	
+107ac1190	107ac1197	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin shouldUseExtendedResetToCamera]	
+107ac1198	107ac11bf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin playlistDataSource]	
+107ac11c0	107ac12ab	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin updateOperaDependencies:]	
+107ac12ac	107ac145b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin updateOperaConfiguration:]	
+107ac145c	107ac14d7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin addEventListenersWithEventAnnouncing:]	
+107ac14d8	107ac1527	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin setPlaylistItemController:]	
+107ac1528	107ac152b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin extraPropertiesProvider]	
+107ac152c	107ac15b7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin setOperaControlling:]	
+107ac15b8	107ac1607	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin teardown]	
+107ac1608	107ac184f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107ac1850	107ac18f7	decompiled	chunks/000/functions-000056.c		
+107ac18f8	107ac1967	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin registeredEventsForOperaSession]	
+107ac1968	107ac19ef	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin operaViewDidSendEvent:page:params:]	
+107ac19f0	107ac1aef	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin _updateViewLocationIfNeeded:]	
+107ac1af0	107ac1b2f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin _translateViewLocationToPageName:]	
+107ac1b30	107ac1b7b	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin _enableAuxViewAction]	
+107ac1b7c	107ac1bcf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin _operaPageModeOnNilNextViewModel]	
+107ac1bd0	107ac1bd7	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin discoverPublisherOperaSession]	
+107ac1bd8	107ac1ccf	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaPlugin .cxx_destruct]	
+107ac1cd0	107ac1cdb	decompiled	chunks/000/functions-000056.c	+[SCDiscoverPublisherOperaSession announcerIdentifier]	
+107ac1cdc	107ac1ce3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession addListener:]	
+107ac1ce4	107ac1ceb	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession removeListener:]	
+107ac1cec	107ac2523	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession initWithContext:userSession:loggingContext:subscriptionStore:discoverFeedEventsController:discoverFeedDataFetcher:snapDocConfigurer:publisherPagePropertiesManager:cachedViewStateProvider:legacyStoriesTooltipsService:readReceiptCoordinator:videoFilterAdaptor:permissionRequester:notificationOSSettingsRetriever:impalaProfilePresentHandler:storiesGrapheneMetricsEmitter:previewFilterDataProviderCreator:circumstanceEngine:networkConnectivityMonitor:notificationPool:imageDownloader:streamingMediaFetcher:grapheneRegistry:creatorSettingsMutator:creatorSettingsFetcher:creatorSettingsTracker:lazyDiscoverFeedInteractionHistoryManager:sendToScopeLauncher:lazyDiscoverFeedDataMutator:bitmojiImageFetcher:discoverFeedNotificationOptInRequestManager:discoverBlizzardLogger:offPlatformLinkGenerationService:snapVideoFilterFactory:previewURLVideoProvider:safetyReportScopeExposer:externalLinkSendingService:lazyUserTrackedLogger:boostCoordinator:subscriptionWorkflowStarter:offPlatformShareServices:snapDocEditorFactory:previewSnapSenderFactory:contentRemovalDelegate:triggeringSection:storiesConfigProvider:]	
+107ac2524	107ac258f	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession setOperaEventAnnouncing:]	
+107ac2590	107ac2597	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession currentSessionId]	
+107ac2598	107ac25a3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession setLoggingContext:]	
+107ac25a4	107ac27a3	decompiled	chunks/000/functions-000056.c	-[SCDiscoverPublisherOperaSession registeredEventsForOperaSession]	
+107ac27a4	107ac2b6b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession operaViewDidSendEvent:page:params:]	
+107ac2b6c	107ac2b73	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _forwardEventToCurrentSingleDiscoverPublisherOperaSession:page:params:]	
+107ac2b74	107ac2c5f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+107ac2c60	107ac2e87	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107ac2e88	107ac2e9f	decompiled	chunks/000/functions-000057.c		
+107ac2ea0	107ac2f0f	decompiled	chunks/000/functions-000057.c		
+107ac2f10	107ac2f67	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _addNotifications]	
+107ac2f68	107ac2f8f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _viewWillEnterForeground]	
+107ac2f90	107ac3123	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _setupReportSessionIfNecessary]	
+107ac3124	107ac34af	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _updateCurrentSingleDiscoverPublisherOperaSessionIfNecessaryWithPage:event:]	
+107ac34b0	107ac34b7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _endCurrentsingleDiscoverPublisherOperaSessionAndAggregateMetrics]	
+107ac34b8	107ac37a3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _singleDiscoverPublisherOperaSessionForStoryPlayableDataModel:openPage:]	
+107ac37a4	107ac37bb	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _endSession]	
+107ac37bc	107ac38f7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession _sendViewLocationUpdateIfNeeded:withPage:]	
+107ac38f8	107ac390f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession operaControlling]	
+107ac3910	107ac391b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession setOperaControlling:]	
+107ac391c	107ac3933	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession playlistItemController]	
+107ac3934	107ac393f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession setPlaylistItemController:]	
+107ac3940	107ac3b6f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherOperaSession .cxx_destruct]	
+107ac3b70	107ac3b7b	decompiled	chunks/000/functions-000057.c	+[SCDiscoverPublisherSubscriptionSession announcerIdentifier]	
+107ac3b7c	107ac3cf3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession initWithPublisherName:subscriptionStore:discoverFeedEventsController:discoverFeedDataFetcher:loggingContext:editionId:discoverBlizzardLogger:creatorSettingsFetcher:]	
+107ac3cf4	107ac3cff	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession setLoggingContext:]	
+107ac3d00	107ac3e4b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession registeredEventsForOperaSession]	
+107ac3e4c	107ac41e7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession operaViewDidSendEvent:page:params:]	
+107ac41e8	107ac43df	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession _performSubscriptionFromSource:publisherId:editionId:snapId:]	
+107ac43e0	107ac456b	decompiled	chunks/000/functions-000057.c		
+107ac456c	107ac4573	decompiled	chunks/000/functions-000057.c		
+107ac4574	107ac45ff	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession _subscriptionStateDidChange]	
+107ac4600	107ac4743	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession _logSubscribeToStoryWithIsSubscribed:]	
+107ac4744	107ac475b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession playlistItemController]	
+107ac475c	107ac4767	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession setPlaylistItemController:]	
+107ac4768	107ac47e7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverPublisherSubscriptionSession .cxx_destruct]	
+107ac47e8	107ac47f3	decompiled	chunks/000/functions-000057.c	+[SCDiscoverSharingSession announcerIdentifier]	
+107ac47f4	107ac47fb	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession addListener:]	
+107ac47fc	107ac4803	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession removeListener:]	
+107ac4804	107ac500f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession initWithStoryPlayableDataModel:userSession:operaControlling:playlistItemController:loggingContext:logger:videoFilterAdaptor:permissionRequester:notificationOSSettingsRetriever:impalaProfilePresentHandler:previewFilterDataProviderCreator:operaEventAnnouncing:notificationPool:viewLocation:imageDownloader:creatorSettingsMutator:creatorSettingsFetcher:creatorSettingsTracker:lazyDiscoverFeedEventsLogger:lazyDiscoverFeedInteractionHistoryManager:sendToScopeLauncher:lazyDiscoverFeedDataFetcher:lazyDiscoverFeedDataMutator:bitmojiImageFetcher:discoverFeedNotificationOptInRequestManager:offPlatformLinkGenerationService:snapVideoFilterFactory:previewURLVideoProvider:streamingMediaFetcher:circumstanceEngine:externalLinkSendingService:grapheneRegistry:boostCoordinator:subscriptionWorkflowStarter:offPlatformShareServices:storyViewingSessionId:snapDocEditorFactory:previewSnapSenderFactory:triggeringSection:storiesConfigProvider:imageFetchingService:]	
+107ac5010	107ac5017	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession state]	
+107ac5018	107ac530b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession registeredEventsForOperaSession]	
+107ac530c	107ac5df3	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession operaViewDidSendEvent:page:params:]	
+107ac5df4	107ac5e3b	decompiled	chunks/000/functions-000057.c		
+107ac5e3c	107ac5f5b	decompiled	chunks/000/functions-000057.c		
+107ac5f5c	107ac6033	decompiled	chunks/000/functions-000057.c		
+107ac6034	107ac6333	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleSubscribeButtonPressedWithPage:params:interactionContext:shouldLogSubscribeEvent:]	
+107ac6334	107ac6547	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleSubscribeButtonPressedWithStory:shouldSubscribe:shouldLogSubscribeEvent:interactionContext:currentItemPageId:]	
+107ac6548	107ac660f	decompiled	chunks/000/functions-000057.c		
+107ac6610	107ac6637	decompiled	chunks/000/functions-000057.c		
+107ac6638	107ac67af	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _updateFavoriteStatusForPage:params:]	
+107ac67b0	107ac67b7	decompiled	chunks/000/functions-000057.c		
+107ac67b8	107ac6a27	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleNotificationOptInWithPage:params:]	
+107ac6a28	107ac6a6b	decompiled	chunks/000/functions-000057.c		
+107ac6a6c	107ac6ac7	decompiled	chunks/000/functions-000057.c		
+107ac6ac8	107ac6d07	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleNotificationOptInWithStory:optingIn:page:interactionContext:]	
+107ac6d08	107ac6d5b	decompiled	chunks/000/functions-000057.c		
+107ac6d5c	107ac6dd7	decompiled	chunks/000/functions-000057.c		
+107ac6dd8	107ac6def	decompiled	chunks/000/functions-000057.c		
+107ac6df0	107ac6ef7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _denySharingWithPage:]	
+107ac6ef8	107ac70f7	decompiled	chunks/000/functions-000057.c		
+107ac70f8	107ac752f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _setupShareControllerWithPage:params:zoomIn:asUpdateListener:]	
+107ac7530	107ac7603	decompiled	chunks/000/functions-000057.c		
+107ac7604	107ac76cf	decompiled	chunks/000/functions-000057.c		
+107ac76d0	107ac76db	decompiled	chunks/000/functions-000057.c		
+107ac76dc	107ac774f	decompiled	chunks/000/functions-000057.c		
+107ac7750	107ac7a47	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleCopyLinkForPage:]	
+107ac7a48	107ac7ae7	decompiled	chunks/000/functions-000057.c		
+107ac7ae8	107ac8553	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareWithShareableMedias:touchOrigin:shareFrameMedia:linkToLongform:page:asUpdateListener:]	
+107ac8554	107ac8aa7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareControllerWithDSnapID:]	
+107ac8aa8	107ac8b17	decompiled	chunks/000/functions-000057.c		
+107ac8b18	107ac8b43	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareControllerDidBeginSharing:]	
+107ac8b44	107ac8c7b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareController:didCompleteSharing:withParameters:]	
+107ac8c7c	107ac8c7f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareControllerDidSaveSnap:parameters:]	
+107ac8c80	107ac8ce7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareControllerDidExitPreview]	
+107ac8ce8	107ac8d73	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareController:didChangeState:]	
+107ac8d74	107ac8f6f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _displayDiscoverProfileForPage:]	
+107ac8f70	107ac914f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _deprecatedDisplayPublisherProfileForPage:]	
+107ac9150	107ac9157	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+107ac9158	107ac922b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _logCheetahEventForActionType:story:interactionContext:]	
+107ac922c	107ac931b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession didUpdateWithAnnouncerIdentifier:]	
+107ac931c	107ac9557	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _handleConfirmationUnsubscribeAction:params:]	
+107ac9558	107ac9633	decompiled	chunks/000/functions-000057.c		
+107ac9634	107ac968b	decompiled	chunks/000/functions-000057.c		
+107ac968c	107ac97d7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _subscribeToPublisher:storyDedupeFp:shouldLogSubscribeEvent:interactionContext:currentItemPageId:]	
+107ac97d8	107ac9837	decompiled	chunks/000/functions-000057.c		
+107ac9838	107ac98d7	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _updatePlaylistItemForItemPageId:]	
+107ac98d8	107ac9933	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession _operaNavigationType]	
+107ac9934	107ac993b	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession handleShareDestination:standardExternalContentShareScope:]	
+107ac993c	107ac993f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession shareSheetDismissedWithShareDestination:]	
+107ac9940	107ac9947	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession actionMenuEntryEvent]	
+107ac9948	107ac994f	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession mediaPlaybackSessionId]	
+107ac9950	107ac9957	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession setMediaPlaybackSessionId:]	
+107ac9958	107ac9bab	decompiled	chunks/000/functions-000057.c	-[SCDiscoverSharingSession .cxx_destruct]	
+107ac9bac	107ac9bb7	decompiled	chunks/000/functions-000057.c	+[SCPublisherStoryReportSession announcerIdentifier]	
+107ac9bb8	107ac9d73	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession initWithOperaControlling:userSession:viewLocation:discoverFeedDataFetcher:safetyReportScopeExposer:bloopsReportScopeExposer:targetFeature:circumstanceEngine:playlistItemController:contentRemovalDelegate:]	
+107ac9d74	107ac9e57	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession registeredEventsForOperaSession]	
+107ac9e58	107aca457	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession operaViewDidSendEvent:page:params:]	
+107aca458	107aca45f	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession addListener:]	
+107aca460	107aca467	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession removeListener:]	
+107aca468	107aca553	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession reportDidCompleteWithCancelled:]	
+107aca554	107aca557	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession reportDidSubmitWithReasonId:comment:]	
+107aca558	107aca59f	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession bloopsReportDidCompleteWithCancelled:]	
+107aca5a0	107aca60f	decompiled	chunks/000/functions-000057.c	-[SCPublisherStoryReportSession bloopsReportDidSubmitWithReasonId:comment:]	
+107aca610	107aca837	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession _startBloopsReportFlowWithPage:]	
+107aca838	107acac63	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession _onReportSubmittedWithReasonId:]	
+107acac64	107acacdf	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession _autoAdvanceToNextStory]	
+107acace0	107acad67	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession _removeStoryFromPlaylist]	
+107acad68	107acad6f	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession playableDataModel]	
+107acad70	107acad9f	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession setPlayableDataModel:]	
+107acada0	107acae43	decompiled	chunks/000/functions-000058.c	-[SCPublisherStoryReportSession .cxx_destruct]	
+107acae44	107acae4f	decompiled	chunks/000/functions-000058.c	+[SCSingleDiscoverPublisherOperaSession announcerIdentifier]	
+107acae50	107acae57	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession addListener:]	
+107acae58	107acae5f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession removeListener:]	
+107acae60	107acae67	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+107acae68	107acba37	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession initWithOperaEventAnnouncing:viewContext:storyPlayableDataModel:userSession:operaControlling:playlistItemController:loggingContext:subscriptionStore:snapDocConfigurer:publisherPagePropertiesManager:cachedViewStateProvider:legacyStoriesTooltipsService:readReceiptCoordinator:videoFilterAdaptor:permissionRequester:notificationOSSettingsRetriever:impalaProfilePresentHandler:storiesGrapheneMetricsEmitter:previewFilterDataProviderCreator:networkConnectivityMonitor:notificationPool:circumstanceEngine:imageDownloader:creatorSettingsMutator:creatorSettingsFetcher:creatorSettingsTracker:lazyDiscoverFeedEventsLogger:lazyDiscoverFeedInteractionHistoryManager:sendToScopeLauncher:lazyDiscoverFeedDataFetcher:lazyDiscoverFeedDataMutator:bitmojiImageFetcher:discoverFeedNotificationOptInRequestManager:discoverBlizzardLogger:offPlatformLinkGenerationService:snapVideoFilterFactory:previewURLVideoProvider:streamingMediaFetcher:externalLinkSendingService:lazyUserTrackedLogger:grapheneRegistry:boostCoordinator:subscriptionWorkflowStarter:offPlatformShareServices:snapDocEditorFactory:previewSnapSenderFactory:triggeringSection:storiesConfigProvider:]	
+107acba38	107acba7f	decompiled	chunks/000/functions-000058.c		
+107acba80	107acba8f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession viewWillEnterForeground]	
+107acba90	107acbc1f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession beginViewingEdition:]	
+107acbc20	107acbdaf	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession endSession]	
+107acbdb0	107acbdb3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession teardown]	
+107acbdb4	107acc0bb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession extraPropertiesForDataModel:item:baseOperaPage:completion:]	
+107acc0bc	107acc113	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _addNotifications]	
+107acc114	107acc13f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession userDidTakeScreenshot]	
+107acc140	107acc18b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _fetchMediaIfNecessaryFromConnectivityUpdate:]	
+107acc18c	107acc47f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession registeredEventsForOperaSession]	
+107acc480	107acc5e7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _shouldHandleEvent:page:params:]	
+107acc5e8	107acd213	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession operaViewDidSendEvent:page:params:]	
+107acd214	107acd227	decompiled	chunks/000/functions-000058.c		
+107acd228	107acd25b	decompiled	chunks/000/functions-000058.c		
+107acd25c	107acd263	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _showTapTooltipsForCurrentPage:]	
+107acd264	107acd343	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _fetchMediaIfNecessary]	
+107acd344	107acd36f	decompiled	chunks/000/functions-000058.c		
+107acd370	107acd777	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _setupSubSessions]	
+107acd778	107acda07	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _startViewWithPage:logWaitTime:]	
+107acda08	107acdaa7	decompiled	chunks/000/functions-000058.c		
+107acdaa8	107acdf17	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _endViewWithPage:params:]	
+107acdf18	107ace31f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _reportPremiumStoryReadReceiptWithPage:params:]	
+107ace320	107ace43b	decompiled	chunks/000/functions-000058.c		
+107ace43c	107ace587	decompiled	chunks/000/functions-000058.c		
+107ace588	107ace6a3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _reportCurationSnapReadReceitptIfNecessaryWithAction:]	
+107ace6a4	107ace84b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _handleOpenViewEventWithPage:]	
+107ace84c	107ace87b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _startSessionTimer]	
+107ace87c	107ace9e3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _updateRequestManagerContexts]	
+107ace9e4	107acea3b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _updateCurrentPlaylistItem]	
+107acea3c	107acea97	decompiled	chunks/000/functions-000058.c		
+107acea98	107aceb93	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _logAffiliateWebpageImpressionWithIsTopSnap:]	
+107aceb94	107acebe7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession currentLongformVideoId]	
+107acebe8	107acebef	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession currentDSnapId]	
+107acebf0	107acebf7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession pageTimeViewedSec]	
+107acebf8	107acec33	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession sessionTimeViewedSansLoadingTimeSec]	
+107acec34	107acec3b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession numTopSnapsViewed]	
+107acec3c	107acec83	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession currentSnapIndexPos]	
+107acec84	107aced0f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession lastInteraction]	
+107aced10	107aced17	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession numLongformViewed]	
+107aced18	107aced7b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession indexOfChunk:]	
+107aced7c	107aced83	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingTopSnap]	
+107aced84	107acedd3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingTopSnapImage]	
+107acedd4	107acee23	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingTopSnapVideo]	
+107acee24	107acee73	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingLongform]	
+107acee74	107aceec3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingLongformVideo]	
+107aceec4	107acef13	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingRemoteWebpage]	
+107acef14	107acef63	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingContentTopSnapRemoteWebpage]	
+107acef64	107acefb3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingStore]	
+107acefb4	107acf003	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingSubscriptionLongform]	
+107acf004	107acf023	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingAd]	
+107acf024	107acf083	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingSubscriptionDSnap]	
+107acf084	107acf08b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isViewingShow]	
+107acf08c	107acf48f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession hasBeenFullyViewed]	
+107acf490	107acf54f	decompiled	chunks/000/functions-000058.c		
+107acf550	107acf5ab	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isSubscribed]	
+107acf5ac	107acf5bb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession hasEdition]	
+107acf5bc	107acf5c3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession areSubtitlesAvailable]	
+107acf5c4	107acf5cb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isShownWithSubtitles]	
+107acf5cc	107acf5d3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isPromoted]	
+107acf5d4	107acf5db	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isExplorationStory]	
+107acf5dc	107acf603	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession entryEvent]	
+107acf604	107acf697	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession entryIntent]	
+107acf698	107acf74b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession exitIntent]	
+107acf74c	107acf753	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession storyTypeSpecific]	
+107acf754	107acf7af	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession operaNavigationType]	
+107acf7b0	107acf7b7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession bloopsMetadata]	
+107acf7b8	107acf7bf	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession actionMenuEntryEvent]	
+107acf7c0	107acf7c7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession editionVersion]	
+107acf7c8	107acf7cf	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession editionId]	
+107acf7d0	107acf7d7	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession publisherId]	
+107acf7d8	107acf817	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession numSnaps]	
+107acf818	107acf927	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _subscribeToOperaAnalyticsEvents]	
+107acf928	107acf9e3	decompiled	chunks/000/functions-000058.c		
+107acf9e4	107acfa3b	decompiled	chunks/000/functions-000058.c		
+107acfa3c	107acfa47	decompiled	chunks/000/functions-000058.c		
+107acfa48	107acfb0f	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _handleOperaPlaybackEventPageId:isPlaying:]	
+107acfb10	107acfccb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession _totalViewTimeForPageId:]	
+107acfccc	107acfcd3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession sessionID]	
+107acfcd4	107acfcdb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession loggingContext]	
+107acfcdc	107acfce3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession sessionTimeViewedSec]	
+107acfce4	107acfceb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession channelIndex]	
+107acfcec	107acfcf3	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession sortOrderId]	
+107acfcf4	107acfcfb	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession context]	
+107acfcfc	107acfd03	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession deepLinkId]	
+107acfd04	107acfd0b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession topSnapsViewed]	
+107acfd0c	107acfd13	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession subtitlesLocale]	
+107acfd14	107acfd1b	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession isPayToPromote]	
+107acfd1c	107acfd23	decompiled	chunks/000/functions-000058.c	-[SCSingleDiscoverPublisherOperaSession hostUserId]	
+107acfd24	107acfd2b	decompiled	chunks/000/functions-000059.c	-[SCSingleDiscoverPublisherOperaSession mediaPlaybackSessionId]	
+107acfd2c	107acfd33	decompiled	chunks/000/functions-000059.c	-[SCSingleDiscoverPublisherOperaSession storyPlayableDataModel]	
+107acfd34	107acfd3b	decompiled	chunks/000/functions-000059.c	-[SCSingleDiscoverPublisherOperaSession snapPlayableDataModel]	
+107acfd3c	107ad0063	decompiled	chunks/000/functions-000059.c	-[SCSingleDiscoverPublisherOperaSession .cxx_destruct]	
+107ad0064	107ad019f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler initWithPublisherId:creatorSettingsFetcher:creatorSettingsMutator:creatorSettingsTracker:]	
+107ad01a0	107ad02eb	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler updateSubscribed:completion:]	
+107ad02ec	107ad0317	decompiled	chunks/000/functions-000059.c		
+107ad0318	107ad046b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler updateOptInNotifications:completion:]	
+107ad046c	107ad0497	decompiled	chunks/000/functions-000059.c		
+107ad0498	107ad05c3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler didTriggerEventWithEventName:announcerIdentifier:extraData:]	
+107ad05c4	107ad065b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler fetchIsSubscribed]	
+107ad065c	107ad065f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler canOptInForNotifications]	
+107ad0660	107ad06c7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler isOptedInForNotifications]	
+107ad06c8	107ad073f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler setCallbackForStoryUpdate:]	
+107ad0740	107ad078f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler _nextIsSubscribed]	
+107ad0790	107ad07f7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler _isSubscribed]	
+107ad07f8	107ad0857	decompiled	chunks/000/functions-000059.c	-[SCDiscoverPublisherOperaStatusHandler .cxx_destruct]	
+107ad0858	107ad08b7	decompiled	chunks/000/functions-000059.c	-[SCPublisherStoryAutoProgressingConfiguration initWithEnableImageAutoProgressing:minimumPhotoLength:enableVideoAutoProgressing:]	
+107ad08b8	107ad08db	decompiled	chunks/000/functions-000059.c	-[SCPublisherStoryAutoProgressingConfiguration copyWithZone:]	
+107ad08dc	107ad08e3	decompiled	chunks/000/functions-000059.c	-[SCPublisherStoryAutoProgressingConfiguration enableImageAutoProgressing]	
+107ad08e4	107ad08eb	decompiled	chunks/000/functions-000059.c	-[SCPublisherStoryAutoProgressingConfiguration minimumPhotoLength]	
+107ad08ec	107ad08f3	decompiled	chunks/000/functions-000059.c	-[SCPublisherStoryAutoProgressingConfiguration enableVideoAutoProgressing]	
+107ad08f4	107ad0933	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController initWithUserSession:videoFilterAdaptor:previewFilterDataProviderCreator:circumstanceEngine:notificationPool:sendToLauncher:ephemeralMediaFactory:galleryStorySaver:snapVideoFilterFactory:previewURLVideoProvider:streamingMediaFetcher:externalLinkSendingService:snapDocEditorFactory:discoverFeedEventsLogger:previewSnapSenderFactory:]	
+107ad0934	107ad0977	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController initWithUserSession:videoFilterAdaptor:previewFilterDataProviderCreator:circumstanceEngine:notificationPool:sendToScopeExposer:ephemeralMediaFactory:galleryStorySaver:snapVideoFilterFactory:previewURLVideoProvider:streamingMediaFetcher:externalLinkSendingService:snapDocEditorFactory:discoverFeedEventsLogger:previewSnapSenderFactory:]	
+107ad0978	107ad0e0f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _initWithUserSession:videoFilterAdaptor:previewFilterDataProviderCreator:circumstanceEngine:notificationPool:sendToLauncher:sendToScopeExposer:ephemeralMediaFactory:galleryStorySaver:snapVideoFilterFactory:previewURLVideoProvider:streamingMediaFetcher:externalLinkSendingService:snapDocEditorFactory:discoverFeedEventsLogger:previewSnapSenderFactory:]	
+107ad0e10	107ad10c7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController shareWithImage:overlayImages:fromViewController:touchOrigin:snapSaverImageProvider:savingDisabled:snapPageSource:]	
+107ad10c8	107ad148f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController shareWithVideo:overlayImages:firstFrame:shareFrameMedia:fromViewController:touchOrigin:enableRotationalPreview:manipulatorFormat:]	
+107ad1490	107ad1607	decompiled	chunks/000/functions-000059.c		
+107ad1608	107ad1657	decompiled	chunks/000/functions-000059.c		
+107ad1658	107ad1703	decompiled	chunks/000/functions-000059.c		
+107ad1704	107ad19c3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _shareLoaclFileMedia:overlayImages:firstFrame:shareFrameMedia:fromViewController:touchOrigin:enableRotationalPreview:manipulatorFormat:]	
+107ad19c4	107ad19ff	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController endDiscoverShare]	
+107ad1a00	107ad1a03	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController sendPressedFromContextMenuFromViewController:page:contextSessionId:]	
+107ad1a04	107ad208f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _sendPressedFromViewController:page:contextSessionId:]	
+107ad2090	107ad212b	decompiled	chunks/000/functions-000059.c		
+107ad212c	107ad23d7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _prepareDiscoverMediaWithCompletionQueue:completionBlock:]	
+107ad23d8	107ad23e3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController sendPressedFromMiniProfileFromViewController:]	
+107ad23e4	107ad2427	decompiled	chunks/000/functions-000059.c	+[SCDiscoverShareController selectRecipientConfiguration]	
+107ad2428	107ad2737	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _previewConfigurationForVideoURL:videoSize:videoOverlayImage:shareFrameMedia:firstFrame:]	
+107ad2738	107ad274b	decompiled	chunks/000/functions-000059.c		
+107ad274c	107ad2953	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _previewConfigurationForImage:snapSaverImageProvider:savingDisabled:snapPageSource:]	
+107ad2954	107ad2bff	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _performFromViewController:onNextStateChange:]	
+107ad2c00	107ad2c17	decompiled	chunks/000/functions-000059.c		
+107ad2c18	107ad2c9b	decompiled	chunks/000/functions-000059.c		
+107ad2c9c	107ad2d8b	decompiled	chunks/000/functions-000059.c		
+107ad2d8c	107ad2dcf	decompiled	chunks/000/functions-000059.c		
+107ad2dd0	107ad2f27	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController sendPressedFromTopLevelShareFromViewController:page:contextSessionId:]	
+107ad2f28	107ad3017	decompiled	chunks/000/functions-000059.c		
+107ad3018	107ad326f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController createLoadingViewController]	
+107ad3270	107ad33ff	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController legacySendToScopeDidDismiss:selectedItems:]	
+107ad3400	107ad3457	decompiled	chunks/000/functions-000059.c		
+107ad3458	107ad356b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController legacySendToScopeWillSend:sendToSelection:]	
+107ad356c	107ad35cb	decompiled	chunks/000/functions-000059.c		
+107ad35cc	107ad3793	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _didDetachUIWithSendToSelection:shareSheetConfiguration:]	
+107ad3794	107ad37fb	decompiled	chunks/000/functions-000059.c		
+107ad37fc	107ad39d7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _didEndFeatureWithSendToSelection:shareSheetConfiguration:]	
+107ad39d8	107ad3a2f	decompiled	chunks/000/functions-000059.c		
+107ad3a30	107ad3b8b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _sendMessageToRecipients:phoneNumbers:storiesPostingConfig:businessIds:groups:additionalText:shareSheetConfiguration:]	
+107ad3b8c	107ad3b9b	decompiled	chunks/000/functions-000059.c		
+107ad3b9c	107ad42ef	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _sendToRecipientUsernames:phoneNumbersToSendTo:recipientUserIds:businessIds:groups:additionalText:storiesPostingConfig:shareSheetConfiguration:]	
+107ad42f0	107ad44a3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _didFinishSendingWithRecipientsCount:groupsCount:didPostToStory:]	
+107ad44a4	107ad4567	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _didDismissSendViewController]	
+107ad4568	107ad45a7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _announceFullscreenSend]	
+107ad45a8	107ad45b3	decompiled	chunks/000/functions-000059.c	+[SCDiscoverShareController announcerIdentifier]	
+107ad45b4	107ad45bb	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController addUpdateListener:]	
+107ad45bc	107ad45c3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController removeUpdateListener:]	
+107ad45c4	107ad464b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController _setState:]	
+107ad464c	107ad4653	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController animationControllerForPresentedController:presentingController:sourceController:]	
+107ad4654	107ad46af	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController animationControllerForDismissedController:]	
+107ad46b0	107ad46c7	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController delegate]	
+107ad46c8	107ad46d3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setDelegate:]	
+107ad46d4	107ad46db	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController blob]	
+107ad46dc	107ad470b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setBlob:]	
+107ad470c	107ad4713	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController messageBodyType]	
+107ad4714	107ad471b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setMessageBodyType:]	
+107ad471c	107ad4723	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController enableSnapDocContentManager]	
+107ad4724	107ad472b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setEnableSnapDocContentManager:]	
+107ad472c	107ad4733	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController videoContentResult]	
+107ad4734	107ad4763	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setVideoContentResult:]	
+107ad4764	107ad476b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController snapId]	
+107ad476c	107ad479b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setSnapId:]	
+107ad479c	107ad47a3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController compositeStoryId]	
+107ad47a4	107ad47d3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setCompositeStoryId:]	
+107ad47d4	107ad47db	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController publisherDeepLink]	
+107ad47dc	107ad480b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setPublisherDeepLink:]	
+107ad480c	107ad4813	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController viewLocation]	
+107ad4814	107ad481b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setViewLocation:]	
+107ad481c	107ad4823	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController storyViewingSessionId]	
+107ad4824	107ad4853	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setStoryViewingSessionId:]	
+107ad4854	107ad485b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController streamId]	
+107ad485c	107ad488b	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setStreamId:]	
+107ad488c	107ad4893	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController mediaPlaybackSessionId]	
+107ad4894	107ad48c3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController setMediaPlaybackSessionId:]	
+107ad48c4	107ad48cb	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController state]	
+107ad48cc	107ad48d3	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController stateObservable]	
+107ad48d4	107ad4abb	decompiled	chunks/000/functions-000059.c	-[SCDiscoverShareController .cxx_destruct]	
+107ad4abc	107ad4b2f	decompiled	chunks/000/functions-000059.c	-[SCDiscoverSharePreviewFilterDataProviderCreator initWithPreviewFilterDataProviderFactory:]	
+107ad4b30	107ad4b37	decompiled	chunks/000/functions-000059.c	-[SCDiscoverSharePreviewFilterDataProviderCreator previewFilterDataProviderWithSnapSource:mediaType:]	
+107ad4b38	107ad4b43	decompiled	chunks/000/functions-000059.c	-[SCDiscoverSharePreviewFilterDataProviderCreator .cxx_destruct]	

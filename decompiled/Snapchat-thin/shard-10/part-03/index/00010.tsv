@@ -1,0 +1,1001 @@
+address	end_address	status	pseudocode_file	runtime_label	error
+107ee625c	107ee6263	decompiled	chunks/001/functions-000099.c		
+107ee6264	107ee6657	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _getFastlaneOperationSnapshot:operation:tacomaEnabled:]	
+107ee6658	107ee67ef	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _removeFailedEntry:]	
+107ee67f0	107ee67f7	decompiled	chunks/001/functions-000099.c		
+107ee67f8	107ee686b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _shouldInfiniteRetryGCSError:]	
+107ee686c	107ee686f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _checkEntryChanges:]	
+107ee6870	107ee6c7b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _skipPendingOperations:deleteEntryIds:]	
+107ee6c7c	107ee6dab	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _deleteTacomaRelatedOperationsWithRequestIDs:]	
+107ee6dac	107ee6db3	decompiled	chunks/001/functions-000099.c		
+107ee6db4	107ee6f67	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _updateDependentGraphRemovingSeqNum:]	
+107ee6f68	107ee706b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _announcerBackupStatusUpdate]	
+107ee706c	107ee712f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync invalidate]	
+107ee7130	107ee714f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _isInvalidated]	
+107ee7150	107ee720b	decompiled	chunks/001/functions-000099.c		
+107ee720c	107ee72ef	decompiled	chunks/001/functions-000099.c	-[SCCloudSync kickoffTacomaBackupForAllPendingOpsIfNeeded]	
+107ee72f0	107ee7327	decompiled	chunks/001/functions-000099.c		
+107ee7328	107ee740b	decompiled	chunks/001/functions-000099.c	-[SCCloudSync kickoffSnapGenForAllPendingOpsIfNeeded]	
+107ee740c	107ee7443	decompiled	chunks/001/functions-000099.c		
+107ee7444	107ee7487	decompiled	chunks/001/functions-000099.c	-[SCCloudSync forceTriggerSyncStateRefresh]	
+107ee7488	107ee7507	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _deleteTacomaOperationsAndCloudSyncSnapshots:]	
+107ee7508	107ee750f	decompiled	chunks/001/functions-000099.c		
+107ee7510	107ee7577	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _getGalleryProfile]	
+107ee7578	107ee75d7	decompiled	chunks/001/functions-000099.c	-[SCCloudSync _optimisticRebaseEnabled]	
+107ee75d8	107ee7607	decompiled	chunks/001/functions-000099.c	-[SCCloudSync setCloudSyncRetry:]	
+107ee7608	107ee760f	decompiled	chunks/001/functions-000099.c	-[SCCloudSync setStatus:]	
+107ee7610	107ee7617	decompiled	chunks/001/functions-000099.c	-[SCCloudSync setIsBackingUpNow:]	
+107ee7618	107ee7623	decompiled	chunks/001/functions-000099.c	-[SCCloudSync syncedFirstPage]	
+107ee7624	107ee762b	decompiled	chunks/001/functions-000100.c	-[SCCloudSync setSyncedFirstPage:]	
+107ee762c	107ee77c3	decompiled	chunks/001/functions-000100.c	-[SCCloudSync .cxx_destruct]	
+107ee77c4	107ee7833	decompiled	chunks/001/functions-000100.c		
+107ee7834	107ee78ef	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation serialize]	
+107ee78f0	107ee7977	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation deserializeData:requestID:userTrackedLogger:]	
+107ee7978	107ee7b5f	decompiled	chunks/001/functions-000100.c	+[SCCloudSyncOperation deserialize:requestID:userTrackedLogger:]	
+107ee7b60	107ee7ce7	decompiled	chunks/001/functions-000100.c	+[SCCloudSyncOperation numberOfSnapsForPayload:requestID:]	
+107ee7ce8	107ee7e9b	decompiled	chunks/001/functions-000100.c	+[SCCloudSyncOperation snaps:details:private:forPayload:requestID:dataObjectContext:userTrackedLogger:]	
+107ee7e9c	107ee7ed7	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation recordOperationStartNetworkProcessing]	
+107ee7ed8	107ee7edf	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation type]	
+107ee7ee0	107ee7ee7	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation analyticsType]	
+107ee7ee8	107ee7eef	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation requestID]	
+107ee7ef0	107ee7ef7	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation entryIds]	
+107ee7ef8	107ee7eff	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation makeSnapshot]	
+107ee7f00	107ee7f17	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation initWithSnapshot:requestID:]	
+107ee7f18	107ee7f1f	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation detectAndResolveConflictsWithCloudFS:dataObjectContext:logger:snapDocManager:]	
+107ee7f20	107ee7f27	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation executeOptimisticallyWithDataObjectContext:]	
+107ee7f28	107ee7f2b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation prepareRemoteSyncWithDataObjectContext:cloudFS:dataVault:networker:logger:queue:completionHandler:]	
+107ee7f2c	107ee7f37	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation remoteSyncWithDependencyProvider:thumbnailFileGenerator:dataVault:dataObjectContext:networker:coreConfigProvider:memoriesBackupTranscodingServices:snapUploadWorkflow:snapDocManager:progressHandler:failureHandler:successHandler:]	
+107ee7f38	107ee7f3f	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation commitWithEntryUpdates:dataObjectContext:]	
+107ee7f40	107ee7f43	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation cleanupWithContext:cloudFS:backupEventsSubject:snapDocManager:]	
+107ee7f44	107ee7f4b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation changedSnapContextsWithEntryUpdate:]	
+107ee7f4c	107ee7f53	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation eligibleForOutOfOrderExecution]	
+107ee7f54	107ee7f5b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation doesNotRequireMediaUpload]	
+107ee7f5c	107ee7f63	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation allMediaUploadsCompleteWithBoltDataUploader:]	
+107ee7f64	107ee7f6b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation isOperationFromRetryEntry]	
+107ee7f6c	107ee7f73	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation isOperationValidBeforeRemoteSync:dataObjectContext:]	
+107ee7f74	107ee7f7b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation logParameters]	
+107ee7f7c	107ee7f83	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation requiresSyncStatusUpdate]	
+107ee7f84	107ee7f8b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation needRunImmediately]	
+107ee7f8c	107ee7f93	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation isEligibleForTacomaWithCOFService:]	
+107ee7f94	107ee7f9b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation processAndCleanupForOutOfOrderDeletions:dataObjectContext:logger:queue:snapDocManager:]	
+107ee7f9c	107ee7fa3	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation cleanupContextForOutOfOrderDeletionWithDataObjectContext:]	
+107ee7fa4	107ee7fab	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation operationStartNetworkProcessingTimestampUtc]	
+107ee7fac	107ee7fb3	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation setOperationStartNetworkProcessingTimestampUtc:]	
+107ee7fb4	107ee7fbf	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperation .cxx_destruct]	
+107ee7fc0	107ee80e3	decompiled	chunks/001/functions-000100.c	+[SCCloudSyncOperationSnapChangeLogContext snapChangeLogWithSnapId:captureSessionId:mediaId:entryId:entryType:isFromRetry:requestId:]	
+107ee80e4	107ee80eb	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext snapId]	
+107ee80ec	107ee80f3	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext captureSessionId]	
+107ee80f4	107ee80fb	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext mediaId]	
+107ee80fc	107ee8103	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext entryId]	
+107ee8104	107ee810b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext entryType]	
+107ee810c	107ee8113	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext isFromRetry]	
+107ee8114	107ee811b	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext requestId]	
+107ee811c	107ee816f	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncOperationSnapChangeLogContext .cxx_destruct]	
+107ee8170	107ee81bb	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncRetry retryCountForRequestID:]	
+107ee81bc	107ee8257	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncRetry increaseRetryCountForRequestID:]	
+107ee8258	107ee8267	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncRetry removeForRequestID:]	
+107ee8268	107ee8273	decompiled	chunks/001/functions-000100.c	-[SCCloudSyncRetry .cxx_destruct]	
+107ee8274	107ee863f	decompiled	chunks/001/functions-000100.c		
+107ee8640	107ee8777	decompiled	chunks/001/functions-000100.c		
+107ee8778	107ee879b	decompiled	chunks/001/functions-000100.c		
+107ee879c	107ee87e3	decompiled	chunks/001/functions-000100.c		
+107ee87e4	107ee887f	decompiled	chunks/001/functions-000100.c		
+107ee8880	107ee892f	decompiled	chunks/001/functions-000100.c		
+107ee8930	107ee8a93	decompiled	chunks/001/functions-000100.c		
+107ee8a94	107ee8beb	decompiled	chunks/001/functions-000100.c		
+107ee8bec	107ee8c83	decompiled	chunks/001/functions-000100.c		
+107ee8c84	107ee8d8f	decompiled	chunks/001/functions-000100.c		
+107ee8d90	107ee8f07	decompiled	chunks/001/functions-000100.c		
+107ee8f08	107ee8f53	decompiled	chunks/001/functions-000100.c		
+107ee8f54	107ee904b	decompiled	chunks/001/functions-000100.c		
+107ee904c	107ee9ddb	decompiled	chunks/001/functions-000100.c		
+107ee9ddc	107eea02f	decompiled	chunks/001/functions-000100.c		
+107eea030	107eeb68b	decompiled	chunks/001/functions-000100.c		
+107eeb68c	107eeb763	decompiled	chunks/001/functions-000100.c		
+107eeb764	107eeb77b	decompiled	chunks/001/functions-000100.c		
+107eeb77c	107eeb8f3	decompiled	chunks/001/functions-000100.c		
+107eeb8f4	107eeb9d7	decompiled	chunks/001/functions-000100.c		
+107eeb9d8	107eebb1f	decompiled	chunks/001/functions-000100.c		
+107eebb20	107eebbf7	decompiled	chunks/001/functions-000100.c		
+107eebbf8	107eebbff	decompiled	chunks/001/functions-000100.c		
+107eebc00	107eebea3	decompiled	chunks/001/functions-000100.c		
+107eebea4	107eec017	decompiled	chunks/001/functions-000100.c		
+107eec018	107eec72f	decompiled	chunks/001/functions-000100.c		
+107eec730	107eec79f	decompiled	chunks/001/functions-000100.c		
+107eec7a0	107eec7a7	decompiled	chunks/001/functions-000100.c		
+107eec7a8	107eec99b	decompiled	chunks/001/functions-000100.c		
+107eec99c	107eecb33	decompiled	chunks/001/functions-000100.c		
+107eecb34	107eecc77	decompiled	chunks/001/functions-000100.c		
+107eecc78	107eecc83	decompiled	chunks/001/functions-000100.c		
+107eecc84	107eed1bf	decompiled	chunks/001/functions-000100.c		
+107eed1c0	107eed207	decompiled	chunks/001/functions-000100.c		
+107eed208	107eed28b	decompiled	chunks/001/functions-000100.c		
+107eed28c	107eed373	decompiled	chunks/001/functions-000100.c		
+107eed374	107eed717	decompiled	chunks/001/functions-000100.c		
+107eed718	107eed7c7	decompiled	chunks/001/functions-000100.c		
+107eed7c8	107eedfd3	decompiled	chunks/001/functions-000100.c		
+107eedfd4	107eee017	decompiled	chunks/001/functions-000100.c		
+107eee018	107eee1a7	decompiled	chunks/001/functions-000100.c		
+107eee1a8	107eee49b	decompiled	chunks/001/functions-000100.c		
+107eee49c	107eee8cf	decompiled	chunks/001/functions-000100.c		
+107eee8d0	107eee913	decompiled	chunks/001/functions-000100.c		
+107eee914	107eeeaaf	decompiled	chunks/001/functions-000100.c		
+107eeeab0	107eeeb1f	decompiled	chunks/001/functions-000100.c		
+107eeeb20	107eeed5f	decompiled	chunks/001/functions-000100.c		
+107eeed60	107eeedb7	decompiled	chunks/001/functions-000100.c		
+107eeedb8	107eeeddf	decompiled	chunks/001/functions-000100.c		
+107eeede0	107eeefa7	decompiled	chunks/001/functions-000100.c	-[SCCloudAddSnapEntrySnapshot initWithProfile:entryPlaceholder:snapPlaceholder:detailPlaceholder:miniThumbnailPlaceholder:duplicatedFromSnapId:dataVaultEncryption:userContext:]	
+107eeefa8	107eeefcb	decompiled	chunks/001/functions-000100.c	-[SCCloudAddSnapEntrySnapshot copyWithZone:]	
+107eeefcc	107eef16b	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot initWithCoder:]	
+107eef16c	107eef243	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot encodeWithCoder:]	
+107eef244	107eef24b	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot preferFasterCoding]	
+107eef24c	107eef2e3	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot encodeWithFasterCoder:]	
+107eef2e4	107eef417	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot decodeWithFasterDecoder:]	
+107eef418	107eef5a7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot setObject:forUInt64Key:]	
+107eef5a8	107eef5bb	decompiled	chunks/001/functions-000101.c	+[SCCloudAddSnapEntrySnapshot fasterCodingVersion]	
+107eef5bc	107eef5c7	decompiled	chunks/001/functions-000101.c	+[SCCloudAddSnapEntrySnapshot fasterCodingKeys]	
+107eef5c8	107eef5e3	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot isEqual:]	
+107eef5e4	107eef5f7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot hash]	
+107eef5f8	107eef5ff	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot profile]	
+107eef600	107eef607	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot entryPlaceholder]	
+107eef608	107eef60f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot snapPlaceholder]	
+107eef610	107eef617	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot detailPlaceholder]	
+107eef618	107eef61f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot miniThumbnailPlaceholder]	
+107eef620	107eef627	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot duplicatedFromSnapId]	
+107eef628	107eef62f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot dataVaultEncryption]	
+107eef630	107eef637	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot userContext]	
+107eef638	107eef6af	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshot .cxx_destruct]	
+107eef6b0	107eef87f	decompiled	chunks/001/functions-000101.c	+[SCCloudAddSnapEntrySnapshotBuilder withCloudAddSnapEntrySnapshot:]	
+107eef880	107eef8c7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder build]	
+107eef8c8	107eef8ff	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setProfile:]	
+107eef900	107eef937	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setEntryPlaceholder:]	
+107eef938	107eef96f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setSnapPlaceholder:]	
+107eef970	107eef9a7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setDetailPlaceholder:]	
+107eef9a8	107eef9df	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setMiniThumbnailPlaceholder:]	
+107eef9e0	107eefa17	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setDuplicatedFromSnapId:]	
+107eefa18	107eefa4f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setDataVaultEncryption:]	
+107eefa50	107eefa87	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder setUserContext:]	
+107eefa88	107eefaff	decompiled	chunks/001/functions-000101.c	-[SCCloudAddSnapEntrySnapshotBuilder .cxx_destruct]	
+107eefb00	107eefcc7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot initWithProfile:entryPlaceholder:snapPlaceholders:detailPlaceholders:miniThumbnailPlaceholders:dataVaultEncryption:duplicatedSnapIds:userContext:]	
+107eefcc8	107eefceb	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot copyWithZone:]	
+107eefcec	107eefe8b	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot initWithCoder:]	
+107eefe8c	107eeff63	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot encodeWithCoder:]	
+107eeff64	107eeff6b	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot preferFasterCoding]	
+107eeff6c	107ef0003	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot encodeWithFasterCoder:]	
+107ef0004	107ef0137	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot decodeWithFasterDecoder:]	
+107ef0138	107ef02c7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot setObject:forUInt64Key:]	
+107ef02c8	107ef02db	decompiled	chunks/001/functions-000101.c	+[SCCloudAddStoryEntrySnapshot fasterCodingVersion]	
+107ef02dc	107ef02e7	decompiled	chunks/001/functions-000101.c	+[SCCloudAddStoryEntrySnapshot fasterCodingKeys]	
+107ef02e8	107ef0303	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot isEqual:]	
+107ef0304	107ef0317	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot hash]	
+107ef0318	107ef031f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot profile]	
+107ef0320	107ef0327	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot entryPlaceholder]	
+107ef0328	107ef032f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot snapPlaceholders]	
+107ef0330	107ef0337	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot detailPlaceholders]	
+107ef0338	107ef033f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot miniThumbnailPlaceholders]	
+107ef0340	107ef0347	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot dataVaultEncryption]	
+107ef0348	107ef034f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot duplicatedSnapIds]	
+107ef0350	107ef0357	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot userContext]	
+107ef0358	107ef03cf	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshot .cxx_destruct]	
+107ef03d0	107ef059f	decompiled	chunks/001/functions-000101.c	+[SCCloudAddStoryEntrySnapshotBuilder withCloudAddStoryEntrySnapshot:]	
+107ef05a0	107ef05e7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder build]	
+107ef05e8	107ef061f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setProfile:]	
+107ef0620	107ef0657	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setEntryPlaceholder:]	
+107ef0658	107ef068f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setSnapPlaceholders:]	
+107ef0690	107ef06c7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setDetailPlaceholders:]	
+107ef06c8	107ef06ff	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setMiniThumbnailPlaceholders:]	
+107ef0700	107ef0737	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setDataVaultEncryption:]	
+107ef0738	107ef076f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setDuplicatedSnapIds:]	
+107ef0770	107ef07a7	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder setUserContext:]	
+107ef07a8	107ef081f	decompiled	chunks/001/functions-000101.c	-[SCCloudAddStoryEntrySnapshotBuilder .cxx_destruct]	
+107ef0820	107ef0a13	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot initWithProfile:entryPlaceholder:snapPlaceholders:detailPlaceholders:miniThumbnailPlaceholders:dataVaultEncryption:snapsOrder:autosaveTimeUtc:userContext:]	
+107ef0a14	107ef0a37	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot copyWithZone:]	
+107ef0a38	107ef0bff	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot initWithCoder:]	
+107ef0c00	107ef0ceb	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot encodeWithCoder:]	
+107ef0cec	107ef0cf3	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot preferFasterCoding]	
+107ef0cf4	107ef0d97	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot encodeWithFasterCoder:]	
+107ef0d98	107ef0eeb	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot decodeWithFasterDecoder:]	
+107ef0eec	107ef109b	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot setObject:forUInt64Key:]	
+107ef109c	107ef10af	decompiled	chunks/001/functions-000101.c	+[SCCloudCreateOrExtendEntrySnapshot fasterCodingVersion]	
+107ef10b0	107ef10bb	decompiled	chunks/001/functions-000101.c	+[SCCloudCreateOrExtendEntrySnapshot fasterCodingKeys]	
+107ef10bc	107ef10d7	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot isEqual:]	
+107ef10d8	107ef10eb	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot hash]	
+107ef10ec	107ef10f3	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot profile]	
+107ef10f4	107ef10fb	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot entryPlaceholder]	
+107ef10fc	107ef1103	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot snapPlaceholders]	
+107ef1104	107ef110b	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot detailPlaceholders]	
+107ef110c	107ef1113	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot miniThumbnailPlaceholders]	
+107ef1114	107ef111b	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot dataVaultEncryption]	
+107ef111c	107ef1123	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot snapsOrder]	
+107ef1124	107ef112b	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot autosaveTimeUtc]	
+107ef112c	107ef1133	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot userContext]	
+107ef1134	107ef11b7	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshot .cxx_destruct]	
+107ef11b8	107ef13b7	decompiled	chunks/001/functions-000101.c	+[SCCloudCreateOrExtendEntrySnapshotBuilder withCloudCreateOrExtendEntrySnapshot:]	
+107ef13b8	107ef1407	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder build]	
+107ef1408	107ef143f	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setProfile:]	
+107ef1440	107ef1477	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setEntryPlaceholder:]	
+107ef1478	107ef14af	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setSnapPlaceholders:]	
+107ef14b0	107ef14e7	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setDetailPlaceholders:]	
+107ef14e8	107ef151f	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setMiniThumbnailPlaceholders:]	
+107ef1520	107ef1557	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setDataVaultEncryption:]	
+107ef1558	107ef158f	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setSnapsOrder:]	
+107ef1590	107ef15c7	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setAutosaveTimeUtc:]	
+107ef15c8	107ef15ff	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder setUserContext:]	
+107ef1600	107ef1683	decompiled	chunks/001/functions-000101.c	-[SCCloudCreateOrExtendEntrySnapshotBuilder .cxx_destruct]	
+107ef1684	107ef17a7	decompiled	chunks/001/functions-000101.c	-[SCCloudDeleteEntriesSnapshot initWithProfile:entryIds:entryIdToSnapIdsMap:needRunImmediately:deleteSharedSnapForAll:userContext:]	
+107ef17a8	107ef17cb	decompiled	chunks/001/functions-000101.c	-[SCCloudDeleteEntriesSnapshot copyWithZone:]	
+107ef17cc	107ef18f3	decompiled	chunks/001/functions-000101.c	-[SCCloudDeleteEntriesSnapshot initWithCoder:]	
+107ef18f4	107ef19a3	decompiled	chunks/001/functions-000101.c	-[SCCloudDeleteEntriesSnapshot encodeWithCoder:]	
+107ef19a4	107ef19ab	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot preferFasterCoding]	
+107ef19ac	107ef1a2b	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot encodeWithFasterCoder:]	
+107ef1a2c	107ef1af7	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot decodeWithFasterDecoder:]	
+107ef1af8	107ef1bd7	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot setObject:forUInt64Key:]	
+107ef1bd8	107ef1c1b	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot setBool:forUInt64Key:]	
+107ef1c1c	107ef1c2f	decompiled	chunks/001/functions-000102.c	+[SCCloudDeleteEntriesSnapshot fasterCodingVersion]	
+107ef1c30	107ef1c3b	decompiled	chunks/001/functions-000102.c	+[SCCloudDeleteEntriesSnapshot fasterCodingKeys]	
+107ef1c3c	107ef1cbb	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot isEqual:]	
+107ef1cbc	107ef1d87	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot hash]	
+107ef1d88	107ef1d8f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot profile]	
+107ef1d90	107ef1d97	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot entryIds]	
+107ef1d98	107ef1d9f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot entryIdToSnapIdsMap]	
+107ef1da0	107ef1da7	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot needRunImmediately]	
+107ef1da8	107ef1daf	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot deleteSharedSnapForAll]	
+107ef1db0	107ef1db7	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot userContext]	
+107ef1db8	107ef1dff	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshot .cxx_destruct]	
+107ef1e00	107ef1f27	decompiled	chunks/001/functions-000102.c	+[SCCloudDeleteEntriesSnapshotBuilder withCloudDeleteEntriesSnapshot:]	
+107ef1f28	107ef1f67	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder build]	
+107ef1f68	107ef1f9f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setProfile:]	
+107ef1fa0	107ef1fd7	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setEntryIds:]	
+107ef1fd8	107ef200f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setEntryIdToSnapIdsMap:]	
+107ef2010	107ef2017	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setNeedRunImmediately:]	
+107ef2018	107ef201f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setDeleteSharedSnapForAll:]	
+107ef2020	107ef2057	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder setUserContext:]	
+107ef2058	107ef209f	decompiled	chunks/001/functions-000102.c	-[SCCloudDeleteEntriesSnapshotBuilder .cxx_destruct]	
+107ef20a0	107ef22bb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot initWithProfile:entryId:autosaveTimeUtc:snapPlaceholders:detailPlaceholders:miniThumbnailPlaceholders:dataVaultEncryption:duplicatedSnapIds:title:userContext:]	
+107ef22bc	107ef22df	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot copyWithZone:]	
+107ef22e0	107ef24cf	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot initWithCoder:]	
+107ef24d0	107ef25cf	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot encodeWithCoder:]	
+107ef25d0	107ef25d7	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot preferFasterCoding]	
+107ef25d8	107ef2687	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot encodeWithFasterCoder:]	
+107ef2688	107ef27fb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot decodeWithFasterDecoder:]	
+107ef27fc	107ef29cb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot setObject:forUInt64Key:]	
+107ef29cc	107ef29df	decompiled	chunks/001/functions-000102.c	+[SCCloudExtendEntrySnapshot fasterCodingVersion]	
+107ef29e0	107ef29eb	decompiled	chunks/001/functions-000102.c	+[SCCloudExtendEntrySnapshot fasterCodingKeys]	
+107ef29ec	107ef2a07	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot isEqual:]	
+107ef2a08	107ef2a1b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot hash]	
+107ef2a1c	107ef2a23	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot profile]	
+107ef2a24	107ef2a2b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot entryId]	
+107ef2a2c	107ef2a33	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot autosaveTimeUtc]	
+107ef2a34	107ef2a3b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot snapPlaceholders]	
+107ef2a3c	107ef2a43	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot detailPlaceholders]	
+107ef2a44	107ef2a4b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot miniThumbnailPlaceholders]	
+107ef2a4c	107ef2a53	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot dataVaultEncryption]	
+107ef2a54	107ef2a5b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot duplicatedSnapIds]	
+107ef2a5c	107ef2a63	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot title]	
+107ef2a64	107ef2a6b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot userContext]	
+107ef2a6c	107ef2afb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshot .cxx_destruct]	
+107ef2afc	107ef2d2b	decompiled	chunks/001/functions-000102.c	+[SCCloudExtendEntrySnapshotBuilder withCloudExtendEntrySnapshot:]	
+107ef2d2c	107ef2d7b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder build]	
+107ef2d7c	107ef2db3	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setProfile:]	
+107ef2db4	107ef2deb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setEntryId:]	
+107ef2dec	107ef2e23	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setAutosaveTimeUtc:]	
+107ef2e24	107ef2e5b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setSnapPlaceholders:]	
+107ef2e5c	107ef2e93	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setDetailPlaceholders:]	
+107ef2e94	107ef2ecb	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setMiniThumbnailPlaceholders:]	
+107ef2ecc	107ef2f03	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setDataVaultEncryption:]	
+107ef2f04	107ef2f3b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setDuplicatedSnapIds:]	
+107ef2f3c	107ef2f73	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setTitle:]	
+107ef2f74	107ef2fab	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder setUserContext:]	
+107ef2fac	107ef303b	decompiled	chunks/001/functions-000102.c	-[SCCloudExtendEntrySnapshotBuilder .cxx_destruct]	
+107ef303c	107ef3147	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot initWithProfile:entryId:highlightedSnapIdSet:userContext:]	
+107ef3148	107ef316b	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot copyWithZone:]	
+107ef316c	107ef326b	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot initWithCoder:]	
+107ef326c	107ef32f3	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot encodeWithCoder:]	
+107ef32f4	107ef32fb	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot preferFasterCoding]	
+107ef32fc	107ef3363	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot encodeWithFasterCoder:]	
+107ef3364	107ef3417	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot decodeWithFasterDecoder:]	
+107ef3418	107ef34f7	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot setObject:forUInt64Key:]	
+107ef34f8	107ef350b	decompiled	chunks/001/functions-000102.c	+[SCCloudUpdateEntryHighlightsSnapshot fasterCodingVersion]	
+107ef350c	107ef3517	decompiled	chunks/001/functions-000102.c	+[SCCloudUpdateEntryHighlightsSnapshot fasterCodingKeys]	
+107ef3518	107ef3533	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot isEqual:]	
+107ef3534	107ef3547	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot hash]	
+107ef3548	107ef354f	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot profile]	
+107ef3550	107ef3557	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot entryId]	
+107ef3558	107ef355f	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot highlightedSnapIdSet]	
+107ef3560	107ef3567	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot userContext]	
+107ef3568	107ef35af	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshot .cxx_destruct]	
+107ef35b0	107ef36bf	decompiled	chunks/001/functions-000102.c	+[SCCloudUpdateEntryHighlightsSnapshotBuilder withCloudUpdateEntryHighlightsSnapshot:]	
+107ef36c0	107ef36f3	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder build]	
+107ef36f4	107ef372b	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder setProfile:]	
+107ef372c	107ef3763	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder setEntryId:]	
+107ef3764	107ef379b	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder setHighlightedSnapIdSet:]	
+107ef379c	107ef37d3	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder setUserContext:]	
+107ef37d4	107ef381b	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntryHighlightsSnapshotBuilder .cxx_destruct]	
+107ef381c	107ef3a53	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot initWithProfile:entryId:title:deletedSnapId:snapPlaceholder:detailPlaceholder:miniThumbnailPlaceholder:dataVaultEncryption:updatedSnapsOrder:userContext:requiresSyncStatusUpdate:deleteSharedSnapForAll:]	
+107ef3a54	107ef3a77	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot copyWithZone:]	
+107ef3a78	107ef3c8f	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot initWithCoder:]	
+107ef3c90	107ef3db7	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot encodeWithCoder:]	
+107ef3db8	107ef3dbf	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot preferFasterCoding]	
+107ef3dc0	107ef3e87	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot encodeWithFasterCoder:]	
+107ef3e88	107ef4013	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot decodeWithFasterDecoder:]	
+107ef4014	107ef41e3	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot setObject:forUInt64Key:]	
+107ef41e4	107ef4227	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot setBool:forUInt64Key:]	
+107ef4228	107ef423b	decompiled	chunks/001/functions-000102.c	+[SCCloudUpdateEntrySnapshot fasterCodingVersion]	
+107ef423c	107ef4247	decompiled	chunks/001/functions-000102.c	+[SCCloudUpdateEntrySnapshot fasterCodingKeys]	
+107ef4248	107ef42c7	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot isEqual:]	
+107ef42c8	107ef43db	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot hash]	
+107ef43dc	107ef43e3	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot profile]	
+107ef43e4	107ef43eb	decompiled	chunks/001/functions-000102.c	-[SCCloudUpdateEntrySnapshot entryId]	
+107ef43ec	107ef43f3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot title]	
+107ef43f4	107ef43fb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot deletedSnapId]	
+107ef43fc	107ef4403	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot snapPlaceholder]	
+107ef4404	107ef440b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot detailPlaceholder]	
+107ef440c	107ef4413	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot miniThumbnailPlaceholder]	
+107ef4414	107ef441b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot dataVaultEncryption]	
+107ef441c	107ef4423	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot updatedSnapsOrder]	
+107ef4424	107ef442b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot userContext]	
+107ef442c	107ef4433	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot requiresSyncStatusUpdate]	
+107ef4434	107ef443b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot deleteSharedSnapForAll]	
+107ef443c	107ef44cb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshot .cxx_destruct]	
+107ef44cc	107ef4713	decompiled	chunks/001/functions-000103.c	+[SCCloudUpdateEntrySnapshotBuilder withCloudUpdateEntrySnapshot:]	
+107ef4714	107ef476b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder build]	
+107ef476c	107ef47a3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setProfile:]	
+107ef47a4	107ef47db	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setEntryId:]	
+107ef47dc	107ef4813	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setTitle:]	
+107ef4814	107ef484b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setDeletedSnapId:]	
+107ef484c	107ef4883	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setSnapPlaceholder:]	
+107ef4884	107ef48bb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setDetailPlaceholder:]	
+107ef48bc	107ef48f3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setMiniThumbnailPlaceholder:]	
+107ef48f4	107ef492b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setDataVaultEncryption:]	
+107ef492c	107ef4963	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setUpdatedSnapsOrder:]	
+107ef4964	107ef499b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setUserContext:]	
+107ef499c	107ef49a3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setRequiresSyncStatusUpdate:]	
+107ef49a4	107ef49ab	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder setDeleteSharedSnapForAll:]	
+107ef49ac	107ef4a3b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdateEntrySnapshotBuilder .cxx_destruct]	
+107ef4a3c	107ef4b83	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot initWithProfile:entryId:addSnapEntities:isPrivate:dataVaultEncryption:userContext:]	
+107ef4b84	107ef4ba7	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot copyWithZone:]	
+107ef4ba8	107ef4ce3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot initWithCoder:]	
+107ef4ce4	107ef4d93	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot encodeWithCoder:]	
+107ef4d94	107ef4d9b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot preferFasterCoding]	
+107ef4d9c	107ef4e1b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot encodeWithFasterCoder:]	
+107ef4e1c	107ef4efb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot decodeWithFasterDecoder:]	
+107ef4efc	107ef4ffb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot setObject:forUInt64Key:]	
+107ef4ffc	107ef501b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot setBool:forUInt64Key:]	
+107ef501c	107ef502f	decompiled	chunks/001/functions-000103.c	+[SCCloudUpdatePrivateEntriesSnapshot fasterCodingVersion]	
+107ef5030	107ef503b	decompiled	chunks/001/functions-000103.c	+[SCCloudUpdatePrivateEntriesSnapshot fasterCodingKeys]	
+107ef503c	107ef50ab	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot isEqual:]	
+107ef50ac	107ef517b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot hash]	
+107ef517c	107ef5183	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot profile]	
+107ef5184	107ef518b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot entryId]	
+107ef518c	107ef5193	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot addSnapEntities]	
+107ef5194	107ef519b	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot isPrivate]	
+107ef519c	107ef51a3	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot dataVaultEncryption]	
+107ef51a4	107ef51ab	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot userContext]	
+107ef51ac	107ef51ff	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshot .cxx_destruct]	
+107ef5200	107ef534b	decompiled	chunks/001/functions-000103.c	+[SCCloudUpdatePrivateEntriesSnapshotBuilder withCloudUpdatePrivateEntriesSnapshot:]	
+107ef534c	107ef5387	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder build]	
+107ef5388	107ef53bf	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setProfile:]	
+107ef53c0	107ef53f7	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setEntryId:]	
+107ef53f8	107ef542f	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setAddSnapEntities:]	
+107ef5430	107ef5437	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setIsPrivate:]	
+107ef5438	107ef546f	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setDataVaultEncryption:]	
+107ef5470	107ef54a7	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder setUserContext:]	
+107ef54a8	107ef54fb	decompiled	chunks/001/functions-000103.c	-[SCCloudUpdatePrivateEntriesSnapshotBuilder .cxx_destruct]	
+107ef54fc	107ef5607	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot initWithProfile:snapPlaceholder:detailPlaceholder:userContext:]	
+107ef5608	107ef562b	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot copyWithZone:]	
+107ef562c	107ef572b	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot initWithCoder:]	
+107ef572c	107ef57b3	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot encodeWithCoder:]	
+107ef57b4	107ef57bb	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot preferFasterCoding]	
+107ef57bc	107ef5823	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot encodeWithFasterCoder:]	
+107ef5824	107ef58d7	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot decodeWithFasterDecoder:]	
+107ef58d8	107ef59b7	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot setObject:forUInt64Key:]	
+107ef59b8	107ef59cb	decompiled	chunks/001/functions-000103.c	+[SCCloudUploadOptionalMediaSnapshot fasterCodingVersion]	
+107ef59cc	107ef59d7	decompiled	chunks/001/functions-000103.c	+[SCCloudUploadOptionalMediaSnapshot fasterCodingKeys]	
+107ef59d8	107ef59f3	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot isEqual:]	
+107ef59f4	107ef5a07	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot hash]	
+107ef5a08	107ef5a0f	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot profile]	
+107ef5a10	107ef5a17	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot snapPlaceholder]	
+107ef5a18	107ef5a1f	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot detailPlaceholder]	
+107ef5a20	107ef5a27	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot userContext]	
+107ef5a28	107ef5a6f	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshot .cxx_destruct]	
+107ef5a70	107ef5b7f	decompiled	chunks/001/functions-000103.c	+[SCCloudUploadOptionalMediaSnapshotBuilder withCloudUploadOptionalMediaSnapshot:]	
+107ef5b80	107ef5bb3	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder build]	
+107ef5bb4	107ef5beb	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder setProfile:]	
+107ef5bec	107ef5c23	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder setSnapPlaceholder:]	
+107ef5c24	107ef5c5b	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder setDetailPlaceholder:]	
+107ef5c5c	107ef5c93	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder setUserContext:]	
+107ef5c94	107ef5cdb	decompiled	chunks/001/functions-000103.c	-[SCCloudUploadOptionalMediaSnapshotBuilder .cxx_destruct]	
+107ef5cdc	107ef60f3	decompiled	chunks/001/functions-000103.c		
+107ef60f4	107ef61e7	decompiled	chunks/001/functions-000103.c		
+107ef61e8	107ef62c3	decompiled	chunks/001/functions-000103.c		
+107ef62c4	107ef63db	decompiled	chunks/001/functions-000103.c		
+107ef63dc	107ef63f3	decompiled	chunks/001/functions-000103.c		
+107ef63f4	107ef6463	decompiled	chunks/001/functions-000103.c		
+107ef6464	107ef67f7	decompiled	chunks/001/functions-000103.c		
+107ef67f8	107ef6897	decompiled	chunks/001/functions-000103.c		
+107ef6898	107ef68cf	decompiled	chunks/001/functions-000103.c		
+107ef68d0	107ef6d67	decompiled	chunks/001/functions-000103.c		
+107ef6d68	107ef6f9f	decompiled	chunks/001/functions-000103.c		
+107ef6fa0	107ef7f7b	decompiled	chunks/001/functions-000103.c		
+107ef7f7c	107ef8033	decompiled	chunks/001/functions-000103.c		
+107ef8034	107ef8183	decompiled	chunks/001/functions-000103.c		
+107ef8184	107ef832b	decompiled	chunks/001/functions-000103.c		
+107ef832c	107ef8443	decompiled	chunks/001/functions-000103.c		
+107ef8444	107ef8453	decompiled	chunks/001/functions-000103.c		
+107ef8454	107ef8563	decompiled	chunks/001/functions-000103.c		
+107ef8564	107ef86f3	decompiled	chunks/001/functions-000103.c		
+107ef86f4	107ef8723	decompiled	chunks/001/functions-000103.c		
+107ef8724	107ef8917	decompiled	chunks/001/functions-000103.c		
+107ef8918	107ef8ca7	decompiled	chunks/001/functions-000104.c		
+107ef8ca8	107ef8d73	decompiled	chunks/001/functions-000104.c		
+107ef8d74	107ef8de3	decompiled	chunks/001/functions-000104.c		
+107ef8de4	107ef8fbf	decompiled	chunks/001/functions-000104.c		
+107ef8fc0	107ef90d7	decompiled	chunks/001/functions-000104.c		
+107ef90d8	107ef9c53	decompiled	chunks/001/functions-000104.c		
+107ef9c54	107ef9cc3	decompiled	chunks/001/functions-000104.c		
+107ef9cc4	107ef9e0b	decompiled	chunks/001/functions-000104.c		
+107ef9e0c	107ef9e23	decompiled	chunks/001/functions-000104.c		
+107ef9e24	107efa1ab	decompiled	chunks/001/functions-000104.c		
+107efa1ac	107efa203	decompiled	chunks/001/functions-000104.c		
+107efa204	107efa27b	decompiled	chunks/001/functions-000104.c		
+107efa27c	107efa43f	decompiled	chunks/001/functions-000104.c		
+107efa440	107efa4d7	decompiled	chunks/001/functions-000104.c		
+107efa4d8	107efa5b7	decompiled	chunks/001/functions-000104.c		
+107efa5b8	107efa853	decompiled	chunks/001/functions-000104.c		
+107efa854	107efac8f	decompiled	chunks/001/functions-000104.c		
+107efac90	107efadff	decompiled	chunks/001/functions-000104.c		
+107efae00	107efae47	decompiled	chunks/001/functions-000104.c		
+107efae48	107efb0ff	decompiled	chunks/001/functions-000104.c		
+107efb100	107efb117	decompiled	chunks/001/functions-000104.c		
+107efb118	107efb807	decompiled	chunks/001/functions-000104.c		
+107efb808	107efb8e3	decompiled	chunks/001/functions-000104.c		
+107efb8e4	107efc383	decompiled	chunks/001/functions-000104.c		
+107efc384	107efc433	decompiled	chunks/001/functions-000104.c		
+107efc434	107efc93f	decompiled	chunks/001/functions-000104.c		
+107efc940	107efcb03	decompiled	chunks/001/functions-000104.c		
+107efcb04	107efd0bb	decompiled	chunks/001/functions-000104.c		
+107efd0bc	107efd133	decompiled	chunks/001/functions-000104.c		
+107efd134	107efd8bb	decompiled	chunks/001/functions-000104.c		
+107efd8bc	107efdcaf	decompiled	chunks/001/functions-000104.c		
+107efdcb0	107efdf8b	decompiled	chunks/001/functions-000104.c		
+107efdf8c	107efe6d7	decompiled	chunks/001/functions-000104.c		
+107efe6d8	107efeb6b	decompiled	chunks/001/functions-000104.c		
+107efeb6c	107efebbf	decompiled	chunks/001/functions-000104.c		
+107efebc0	107efec8f	decompiled	chunks/001/functions-000104.c		
+107efec90	107eff8cf	decompiled	chunks/001/functions-000104.c		
+107eff8d0	107eff8e7	decompiled	chunks/001/functions-000104.c		
+107eff8e8	107eff91f	decompiled	chunks/001/functions-000104.c		
+107eff920	107eff933	decompiled	chunks/001/functions-000104.c		
+107eff934	107eff9fb	decompiled	chunks/001/functions-000104.c		
+107eff9fc	107effb13	decompiled	chunks/001/functions-000104.c		
+107effb14	107effb2b	decompiled	chunks/001/functions-000104.c		
+107effb2c	107effb63	decompiled	chunks/001/functions-000104.c		
+107effb64	107effb6f	decompiled	chunks/001/functions-000104.c		
+107effb70	107effc6b	decompiled	chunks/001/functions-000104.c		
+107effc6c	107effd63	decompiled	chunks/001/functions-000104.c		
+107effd64	107effd77	decompiled	chunks/001/functions-000104.c		
+107effd78	107effdaf	decompiled	chunks/001/functions-000104.c		
+107effdb0	107efffa3	decompiled	chunks/001/functions-000104.c		
+107efffa4	107f00037	decompiled	chunks/001/functions-000104.c		
+107f00038	107f0019f	decompiled	chunks/001/functions-000104.c		
+107f001a0	107f0027f	decompiled	chunks/001/functions-000104.c		
+107f00280	107f002bf	decompiled	chunks/001/functions-000104.c		
+107f002c0	107f0040f	decompiled	chunks/001/functions-000104.c		
+107f00410	107f00a83	decompiled	chunks/001/functions-000104.c		
+107f00a84	107f00af3	decompiled	chunks/001/functions-000104.c		
+107f00af4	107f00b97	decompiled	chunks/001/functions-000104.c		
+107f00b98	107f00cff	decompiled	chunks/001/functions-000104.c		
+107f00d00	107f00e2f	decompiled	chunks/001/functions-000104.c		
+107f00e30	107f00f57	decompiled	chunks/001/functions-000104.c		
+107f00f58	107f01007	decompiled	chunks/001/functions-000104.c		
+107f01008	107f0104f	decompiled	chunks/001/functions-000104.c		
+107f01050	107f011b7	decompiled	chunks/001/functions-000104.c		
+107f011b8	107f011bf	decompiled	chunks/001/functions-000104.c		
+107f011c0	107f0123b	decompiled	chunks/001/functions-000104.c		
+107f0123c	107f014af	decompiled	chunks/001/functions-000104.c		
+107f014b0	107f01787	decompiled	chunks/001/functions-000104.c		
+107f01788	107f023b7	decompiled	chunks/001/functions-000104.c		
+107f023b8	107f0259b	decompiled	chunks/001/functions-000104.c		
+107f0259c	107f025e3	decompiled	chunks/001/functions-000104.c		
+107f025e4	107f026b3	decompiled	chunks/001/functions-000104.c		
+107f026b4	107f026c3	decompiled	chunks/001/functions-000104.c		
+107f026c4	107f03083	decompiled	chunks/001/functions-000104.c		
+107f03084	107f0320b	decompiled	chunks/001/functions-000104.c		
+107f0320c	107f03253	decompiled	chunks/001/functions-000104.c		
+107f03254	107f033db	decompiled	chunks/001/functions-000104.c		
+107f033dc	107f03ddb	decompiled	chunks/001/functions-000104.c		
+107f03ddc	107f03fc7	decompiled	chunks/001/functions-000104.c		
+107f03fc8	107f04063	decompiled	chunks/001/functions-000104.c		
+107f04064	107f0440b	decompiled	chunks/001/functions-000104.c		
+107f0440c	107f04423	decompiled	chunks/001/functions-000104.c		
+107f04424	107f04553	decompiled	chunks/001/functions-000104.c		
+107f04554	107f04923	decompiled	chunks/001/functions-000104.c		
+107f04924	107f04b87	decompiled	chunks/001/functions-000104.c		
+107f04b88	107f04c2b	decompiled	chunks/001/functions-000104.c		
+107f04c2c	107f04cc7	decompiled	chunks/001/functions-000104.c		
+107f04cc8	107f04f13	decompiled	chunks/001/functions-000104.c		
+107f04f14	107f051bb	decompiled	chunks/001/functions-000104.c		
+107f051bc	107f0533f	decompiled	chunks/001/functions-000104.c		
+107f05340	107f053ab	decompiled	chunks/001/functions-000104.c		
+107f053ac	107f056ff	decompiled	chunks/001/functions-000104.c		
+107f05700	107f057f3	decompiled	chunks/001/functions-000104.c		
+107f057f4	107f058cb	decompiled	chunks/001/functions-000104.c		
+107f058cc	107f0689f	decompiled	chunks/001/functions-000104.c		
+107f068a0	107f06a67	decompiled	chunks/001/functions-000104.c		
+107f06a68	107f06aaf	decompiled	chunks/001/functions-000104.c		
+107f06ab0	107f06c7b	decompiled	chunks/001/functions-000104.c		
+107f06c7c	107f072eb	decompiled	chunks/001/functions-000104.c		
+107f072ec	107f07aef	decompiled	chunks/001/functions-000104.c		
+107f07af0	107f07b0b	decompiled	chunks/001/functions-000105.c		
+107f07b0c	107f07ba7	decompiled	chunks/001/functions-000105.c		
+107f07ba8	107f08903	decompiled	chunks/001/functions-000105.c		
+107f08904	107f094b3	decompiled	chunks/001/functions-000105.c		
+107f094b4	107f096bf	decompiled	chunks/001/functions-000105.c		
+107f096c0	107f09773	decompiled	chunks/001/functions-000105.c		
+107f09774	107f099af	decompiled	chunks/001/functions-000105.c		
+107f099b0	107f09a2f	decompiled	chunks/001/functions-000105.c		
+107f09a30	107f09af3	decompiled	chunks/001/functions-000105.c		
+107f09af4	107f0a2d3	decompiled	chunks/001/functions-000105.c		
+107f0a2d4	107f0a31f	decompiled	chunks/001/functions-000105.c		
+107f0a320	107f0a3cb	decompiled	chunks/001/functions-000105.c		
+107f0a3cc	107f0a607	decompiled	chunks/001/functions-000105.c		
+107f0a608	107f0b0cf	decompiled	chunks/001/functions-000105.c		
+107f0b0d0	107f0b24f	decompiled	chunks/001/functions-000105.c		
+107f0b250	107f0b48b	decompiled	chunks/001/functions-000105.c		
+107f0b48c	107f0b51b	decompiled	chunks/001/functions-000105.c		
+107f0b51c	107f0b5d7	decompiled	chunks/001/functions-000105.c		
+107f0b5d8	107f0b813	decompiled	chunks/001/functions-000105.c		
+107f0b814	107f0bacf	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncAddSnapsStep initWithCloudFS:dataVault:dataObjectContext:thumbnailFileGenerator:networker:grapheneRegistry:progressReporter:userTrackedLogger:performer:logger:dependencyProvider:]	
+107f0bad0	107f0bad7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncAddSnapsStep stepName]	
+107f0bad8	107f0bc6f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncAddSnapsStep runWithStepData:]	
+107f0bc70	107f0bd83	decompiled	chunks/001/functions-000105.c		
+107f0bd84	107f0bf37	decompiled	chunks/001/functions-000105.c		
+107f0bf38	107f0c10f	decompiled	chunks/001/functions-000105.c		
+107f0c110	107f0c267	decompiled	chunks/001/functions-000105.c		
+107f0c268	107f0c42f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncAddSnapsStep _makeRequestWithStepData:resultHandler:]	
+107f0c430	107f0c4ff	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncAddSnapsStep .cxx_destruct]	
+107f0c500	107f0c5cf	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep initWithDependencyProvider:timeProvider:dbTimeoutInSeconds:]	
+107f0c5d0	107f0c5d7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep stepName]	
+107f0c5d8	107f0c8ab	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep runWithStepData:]	
+107f0c8ac	107f0c923	decompiled	chunks/001/functions-000105.c		
+107f0c924	107f0cdab	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep _uploadSnapsWithStepData:previouslyUploadedSnapRequestInfoMap:]	
+107f0cdac	107f0ced7	decompiled	chunks/001/functions-000105.c		
+107f0ced8	107f0ceef	decompiled	chunks/001/functions-000105.c		
+107f0cef0	107f0cf9b	decompiled	chunks/001/functions-000105.c		
+107f0cf9c	107f0d053	decompiled	chunks/001/functions-000105.c		
+107f0d054	107f0d19b	decompiled	chunks/001/functions-000105.c		
+107f0d19c	107f0d367	decompiled	chunks/001/functions-000105.c		
+107f0d368	107f0d3af	decompiled	chunks/001/functions-000105.c		
+107f0d3b0	107f0d6df	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep _uploadSnap:stepData:]	
+107f0d6e0	107f0d7a7	decompiled	chunks/001/functions-000105.c		
+107f0d7a8	107f0d90f	decompiled	chunks/001/functions-000105.c		
+107f0d910	107f0d94f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncCUPSUploadStep .cxx_destruct]	
+107f0d950	107f0da37	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncDedupeSnapsStep initWithMemoriesAssetRepository:logger:timeProvider:]	
+107f0da38	107f0da3f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncDedupeSnapsStep stepName]	
+107f0da40	107f0dbf7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncDedupeSnapsStep runWithStepData:]	
+107f0dbf8	107f0dea7	decompiled	chunks/001/functions-000105.c		
+107f0dea8	107f0deef	decompiled	chunks/001/functions-000105.c		
+107f0def0	107f0df07	decompiled	chunks/001/functions-000105.c		
+107f0df08	107f0df77	decompiled	chunks/001/functions-000105.c		
+107f0df78	107f0e3a7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncDedupeSnapsStep _dedupeSnapsWithIds:stepData:timeProvider:]	
+107f0e3a8	107f0e4a7	decompiled	chunks/001/functions-000105.c		
+107f0e4a8	107f0e4eb	decompiled	chunks/001/functions-000105.c		
+107f0e4ec	107f0e547	decompiled	chunks/001/functions-000105.c		
+107f0e548	107f0e597	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncDedupeSnapsStep .cxx_destruct]	
+107f0e598	107f0e653	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareSnapDocThumbnailStep initWithThumbnailFileGenerator:logger:]	
+107f0e654	107f0e65b	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareSnapDocThumbnailStep stepName]	
+107f0e65c	107f0e81b	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareSnapDocThumbnailStep runWithStepData:]	
+107f0e81c	107f0e98b	decompiled	chunks/001/functions-000105.c		
+107f0e98c	107f0ea57	decompiled	chunks/001/functions-000105.c		
+107f0ea58	107f0ea97	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareSnapDocThumbnailStep .cxx_destruct]	
+107f0ea98	107f0eb5f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareStep initWithDependencyProvider:thumbnailFileGenerator:shouldUseCups:]	
+107f0eb60	107f0eb67	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareStep stepName]	
+107f0eb68	107f0eceb	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareStep runWithStepData:]	
+107f0ecec	107f0ef7b	decompiled	chunks/001/functions-000105.c		
+107f0ef7c	107f0ef93	decompiled	chunks/001/functions-000105.c		
+107f0ef94	107f0f00f	decompiled	chunks/001/functions-000105.c		
+107f0f010	107f0f293	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareStep _generateCommonPropsWithStepData:]	
+107f0f294	107f0f2d3	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncPrepareStep .cxx_destruct]	
+107f0f2d4	107f0f4bf	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep initWithDataObjectContext:dataVault:thumbnailFileGenerator:networker:logger:progressReporter:performer:snapDocManager:]	
+107f0f4c0	107f0f4c7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep stepName]	
+107f0f4c8	107f0f6ff	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep runWithStepData:]	
+107f0f700	107f0f8bb	decompiled	chunks/001/functions-000105.c		
+107f0f8bc	107f0f8d3	decompiled	chunks/001/functions-000105.c		
+107f0f8d4	107f0f91b	decompiled	chunks/001/functions-000105.c		
+107f0f91c	107f0f993	decompiled	chunks/001/functions-000105.c		
+107f0f994	107f0faa7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep _handleSnapDocUpdateEntriesRequestWithStepData:encryptionBlob:]	
+107f0faa8	107f0fc6f	decompiled	chunks/001/functions-000105.c		
+107f0fc70	107f0fdfb	decompiled	chunks/001/functions-000105.c		
+107f0fdfc	107f1002b	decompiled	chunks/001/functions-000105.c		
+107f1002c	107f1013f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep _buildEncryptBlobForSnapId:stepData:]	
+107f10140	107f10467	decompiled	chunks/001/functions-000105.c		
+107f10468	107f105e3	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep _makeSnapDocUpdateEntriesRequestWithSnapDoc:entryData:addSnapEntity:thumbnailUrl:thumbnailData:encryptionBlob:resultHandler:]	
+107f105e4	107f10683	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncSnapDocUpdateEntriesStep .cxx_destruct]	
+107f10684	107f106d7	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncStep stepName]	
+107f106d8	107f10737	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncStep runWithStepData:]	
+107f10738	107f109b7	decompiled	chunks/001/functions-000105.c		
+107f109b8	107f109bf	decompiled	chunks/001/functions-000105.c		
+107f109c0	107f10c7f	decompiled	chunks/001/functions-000105.c		
+107f10c80	107f10e3f	decompiled	chunks/001/functions-000105.c		
+107f10e40	107f10e57	decompiled	chunks/001/functions-000105.c		
+107f10e58	107f10fbb	decompiled	chunks/001/functions-000105.c		
+107f10fbc	107f11113	decompiled	chunks/001/functions-000105.c		
+107f11114	107f111bb	decompiled	chunks/001/functions-000105.c		
+107f111bc	107f11233	decompiled	chunks/001/functions-000105.c		
+107f11234	107f1134f	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncTranscodeStep initWithMemoriesBackupBatchTranscoder:logger:fileManager:performer:]	
+107f11350	107f11357	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncTranscodeStep stepName]	
+107f11358	107f11587	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncTranscodeStep runWithStepData:]	
+107f11588	107f117af	decompiled	chunks/001/functions-000105.c	-[SCCloudSyncTranscodeStep _generateMediaTranscodingResultWithStepData:]	
+107f117b0	107f11907	decompiled	chunks/001/functions-000106.c		
+107f11908	107f1191f	decompiled	chunks/001/functions-000106.c		
+107f11920	107f11957	decompiled	chunks/001/functions-000106.c		
+107f11958	107f119db	decompiled	chunks/001/functions-000106.c		
+107f119dc	107f11a3b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncTranscodeStep .cxx_destruct]	
+107f11a3c	107f11d07	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntriesStep initWithCloudFS:dataVault:dataObjectContext:thumbnailFileGenerator:networker:logger:progressReporter:shouldUseCups:memoriesAssetRepository:shouldWriteToAssetRespository:performer:timeProvider:dbTimeoutInSeconds:dependencyProvider:]	
+107f11d08	107f11d0f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntriesStep stepName]	
+107f11d10	107f11f73	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntriesStep runWithStepData:]	
+107f11f74	107f1228f	decompiled	chunks/001/functions-000106.c		
+107f12290	107f1241b	decompiled	chunks/001/functions-000106.c		
+107f1241c	107f12647	decompiled	chunks/001/functions-000106.c		
+107f12648	107f127eb	decompiled	chunks/001/functions-000106.c		
+107f127ec	107f12883	decompiled	chunks/001/functions-000106.c		
+107f12884	107f12aa3	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntriesStep _updateUploadStateInAssetRepository:uploadStateEnum:]	
+107f12aa4	107f12b67	decompiled	chunks/001/functions-000106.c		
+107f12b68	107f12c37	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntriesStep .cxx_destruct]	
+107f12c38	107f12d1f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntryOperationStep initWithDataObjectContext:networker:performer:]	
+107f12d20	107f12d27	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntryOperationStep stepName]	
+107f12d28	107f12e9f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntryOperationStep runWithStepData:]	
+107f12ea0	107f1312f	decompiled	chunks/001/functions-000106.c		
+107f13130	107f132c3	decompiled	chunks/001/functions-000106.c		
+107f132c4	107f134f3	decompiled	chunks/001/functions-000106.c		
+107f134f4	107f1361f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntryOperationStep _updateEntriesWithEntryId:addSnapEntity:deletedSnapId:title:deleteSharedSnapForAll:updatedSnapsOrder:snapsUploadInfo:resultHandler:]	
+107f13620	107f1366f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUpdateEntryOperationStep .cxx_destruct]	
+107f13670	107f1388b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep initWithCloudFS:networker:logger:progressReporter:memoriesAssetRepository:shouldWriteToAssetRespository:performer:timeProvider:dbTimeoutInSeconds:fileManager:]	
+107f1388c	107f13893	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep stepName]	
+107f13894	107f13a5b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep runWithStepData:]	
+107f13a5c	107f13b43	decompiled	chunks/001/functions-000106.c		
+107f13b44	107f13c83	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep _runUploadMediaStepWithStepData:uploadRequestInfoMap:]	
+107f13c84	107f13def	decompiled	chunks/001/functions-000106.c		
+107f13df0	107f13f03	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep _handleUploadMedia:uploadRequestInfoMap:]	
+107f13f04	107f14113	decompiled	chunks/001/functions-000106.c		
+107f14114	107f1424f	decompiled	chunks/001/functions-000106.c		
+107f14250	107f143cf	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep _handleUploadResult:stepData:]	
+107f143d0	107f144db	decompiled	chunks/001/functions-000106.c		
+107f144dc	107f146db	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep _makeUploadRequestWithCommonProps:mediaTranscodingResult:addSnapEntities:uploadRequestInfoMap:backgroundUploadedSnapIds:successHandler:failureHandler:]	
+107f146dc	107f146e3	decompiled	chunks/001/functions-000106.c		
+107f146e4	107f14907	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep _updateUploadStateInAssetRepository:uploadStateEnum:]	
+107f14908	107f149cb	decompiled	chunks/001/functions-000106.c		
+107f149cc	107f14a6b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadMediaStep .cxx_destruct]	
+107f14a6c	107f14b53	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep initWithSnapUploadWorkflow:logger:performer:]	
+107f14b54	107f14b5b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep stepName]	
+107f14b5c	107f14da7	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep runWithStepData:]	
+107f14da8	107f14f3b	decompiled	chunks/001/functions-000106.c		
+107f14f3c	107f151a7	decompiled	chunks/001/functions-000106.c		
+107f151a8	107f152c7	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep _uploadMediaInSnapDoc:snapDocKey:resultHandler:]	
+107f152c8	107f153fb	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep _updateStepData:resultHandlerReulst:]	
+107f153fc	107f15413	decompiled	chunks/001/functions-000106.c		
+107f15414	107f154db	decompiled	chunks/001/functions-000106.c		
+107f154dc	107f15523	decompiled	chunks/001/functions-000106.c		
+107f15524	107f15573	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocStep .cxx_destruct]	
+107f15574	107f1568f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocThumbnailStep initWithBoltDataUploader:logger:notificationPool:performer:]	
+107f15690	107f15697	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocThumbnailStep stepName]	
+107f15698	107f157ab	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocThumbnailStep runWithStepData:]	
+107f157ac	107f15b27	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocThumbnailStep _uploadSnapDocThumbnailWithStepData:boltDataUploader:performer:]	
+107f15b28	107f15b9f	decompiled	chunks/001/functions-000106.c		
+107f15ba0	107f15cc7	decompiled	chunks/001/functions-000106.c		
+107f15cc8	107f15cdf	decompiled	chunks/001/functions-000106.c		
+107f15ce0	107f15dcb	decompiled	chunks/001/functions-000106.c		
+107f15dcc	107f15e13	decompiled	chunks/001/functions-000106.c		
+107f15e14	107f15f2b	decompiled	chunks/001/functions-000106.c		
+107f15f2c	107f16073	decompiled	chunks/001/functions-000106.c		
+107f16074	107f161c3	decompiled	chunks/001/functions-000106.c		
+107f161c4	107f1628f	decompiled	chunks/001/functions-000106.c		
+107f16290	107f162ff	decompiled	chunks/001/functions-000106.c		
+107f16300	107f1635f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncUploadSnapDocThumbnailStep .cxx_destruct]	
+107f16360	107f16537	decompiled	chunks/001/functions-000106.c		
+107f16538	107f166c3	decompiled	chunks/001/functions-000106.c		
+107f166c4	107f1671f	decompiled	chunks/001/functions-000106.c		
+107f16720	107f1674b	decompiled	chunks/001/functions-000106.c	+[SCGrapheneMemoriesCupsMetric verifyServerDedup]	
+107f1674c	107f167eb	decompiled	chunks/001/functions-000106.c	-[SCGrapheneMemoriesCupsMetric description]	
+107f167ec	107f1692f	decompiled	chunks/001/functions-000106.c	-[SCGrapheneRegistry memoriesCupsGraphene]	
+107f16930	107f169a7	decompiled	chunks/001/functions-000106.c		
+107f169a8	107f16b5b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot initWithCoder:]	
+107f16b5c	107f16d23	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot initWithTargetEntryId:snapDocData:addEntryAssetEntities:userContext:shouldRemoveSyncedSnaps:addSnapEntities:snapDataVaultEncryptions:profile:entryPlaceholder:]	
+107f16d24	107f16d47	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot copyWithZone:]	
+107f16d48	107f16e33	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot encodeWithCoder:]	
+107f16e34	107f16ef3	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot hash]	
+107f16ef4	107f1703b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot isEqual:]	
+107f1703c	107f17043	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot targetEntryId]	
+107f17044	107f1704b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot snapDocData]	
+107f1704c	107f17053	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot addEntryAssetEntities]	
+107f17054	107f1705b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot userContext]	
+107f1705c	107f17063	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot shouldRemoveSyncedSnaps]	
+107f17064	107f1706b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot addSnapEntities]	
+107f1706c	107f17073	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot snapDataVaultEncryptions]	
+107f17074	107f1707b	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot profile]	
+107f1707c	107f17083	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot entryPlaceholder]	
+107f17084	107f170fb	decompiled	chunks/001/functions-000106.c	-[SCCloudUpdateEntryAssetSnapshot .cxx_destruct]	
+107f170fc	107f1729b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot initWithCoder:]	
+107f1729c	107f1745b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot initWithSnapDoc:userContext:addSnapEntity:dataVaultEncryption:profile:entryPlaceholder:snapIdToReplace:snapsOrder:]	
+107f1745c	107f1747f	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot copyWithZone:]	
+107f17480	107f17557	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot encodeWithCoder:]	
+107f17558	107f17613	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot hash]	
+107f17614	107f1774b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot isEqual:]	
+107f1774c	107f17753	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot snapDoc]	
+107f17754	107f1775b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot userContext]	
+107f1775c	107f17763	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot addSnapEntity]	
+107f17764	107f1776b	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot dataVaultEncryption]	
+107f1776c	107f17773	decompiled	chunks/001/functions-000106.c	-[SCCloudSyncCreateSnapDocEntrySnapshot profile]	
+107f17774	107f1777b	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncCreateSnapDocEntrySnapshot entryPlaceholder]	
+107f1777c	107f17783	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncCreateSnapDocEntrySnapshot snapIdToReplace]	
+107f17784	107f1778b	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncCreateSnapDocEntrySnapshot snapsOrder]	
+107f1778c	107f17803	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncCreateSnapDocEntrySnapshot .cxx_destruct]	
+107f17804	107f1788b	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity initWithCoder:]	
+107f1788c	107f17903	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity initWithEntryAsset:]	
+107f17904	107f17927	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity copyWithZone:]	
+107f17928	107f1793f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity encodeWithCoder:]	
+107f17940	107f17947	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity hash]	
+107f17948	107f179d7	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity isEqual:]	
+107f179d8	107f179df	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity entryAsset]	
+107f179e0	107f179eb	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncAddEntryAssetEntity .cxx_destruct]	
+107f179ec	107f179f7	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncBackgroundUploadSchedulingServices .cxx_destruct]	
+107f179f8	107f17a07	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices releaseMemoriesAssetRepository]	
+107f17a08	107f17a0f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices profile]	
+107f17a10	107f17a17	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices memoriesProfileHandler]	
+107f17a18	107f17a1f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices dataObjectContext]	
+107f17a20	107f17a27	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices boltDataUploader]	
+107f17a28	107f17a2f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices cloudFS]	
+107f17a30	107f17a37	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices notificationPool]	
+107f17a38	107f17a3f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices logger]	
+107f17a40	107f17a47	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices cloudSyncDataCapManager]	
+107f17a48	107f17a4f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices memoriesUserDefaultsManager]	
+107f17a50	107f17a57	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices fileManager]	
+107f17a58	107f17a5f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices userSession]	
+107f17a60	107f17a67	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices statusServices]	
+107f17a68	107f17a6f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices memoriesCSAMKeyIvFetcherObjc]	
+107f17a70	107f17a77	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices memoriesCSAMKeyIvSaver]	
+107f17a78	107f17a7f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices memoriesLegacyBackupDeprecationLogger]	
+107f17a80	107f17b6f	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncDependencyProvidingServices .cxx_destruct]	
+107f17b70	107f17d27	decompiled	chunks/001/functions-000107.c		
+107f17d28	107f17faf	decompiled	chunks/001/functions-000107.c		
+107f17fb0	107f1823f	decompiled	chunks/001/functions-000107.c		
+107f18240	107f182a3	decompiled	chunks/001/functions-000107.c		
+107f182a4	107f1848b	decompiled	chunks/001/functions-000107.c		
+107f1848c	107f18557	decompiled	chunks/001/functions-000107.c		
+107f18558	107f185a3	decompiled	chunks/001/functions-000107.c		
+107f185a4	107f1866b	decompiled	chunks/001/functions-000107.c		
+107f1866c	107f18693	decompiled	chunks/001/functions-000107.c		
+107f18694	107f186c7	decompiled	chunks/001/functions-000107.c	-[SCCloudSyncLoggingServices .cxx_destruct]	
+107f186c8	107f187bf	decompiled	chunks/001/functions-000107.c		
+107f187c0	107f1880f	decompiled	chunks/001/functions-000107.c		
+107f18810	107f18843	decompiled	chunks/001/functions-000107.c		
+107f18844	107f188d3	decompiled	chunks/001/functions-000107.c		
+107f188d4	107f188fb	decompiled	chunks/001/functions-000107.c		
+107f188fc	107f18a27	decompiled	chunks/001/functions-000107.c		
+107f18a28	107f18a9f	decompiled	chunks/001/functions-000107.c		
+107f18aa0	107f18b67	decompiled	chunks/001/functions-000107.c		
+107f18b68	107f18c5f	decompiled	chunks/001/functions-000107.c		
+107f18c60	107f18d27	decompiled	chunks/001/functions-000107.c		
+107f18d28	107f1918b	decompiled	chunks/001/functions-000107.c		
+107f1918c	107f19253	decompiled	chunks/001/functions-000107.c		
+107f19254	107f192d3	decompiled	chunks/001/functions-000107.c		
+107f192d4	107f1939b	decompiled	chunks/001/functions-000107.c		
+107f1939c	107f1949b	decompiled	chunks/001/functions-000107.c		
+107f1949c	107f194d3	decompiled	chunks/001/functions-000107.c		
+107f194d4	107f1953b	decompiled	chunks/001/functions-000107.c		
+107f1953c	107f19613	decompiled	chunks/001/functions-000107.c		
+107f19614	107f1963b	decompiled	chunks/001/functions-000107.c		
+107f1963c	107f1992f	decompiled	chunks/001/functions-000107.c		
+107f19930	107f1995b	decompiled	chunks/001/functions-000107.c		
+107f1995c	107f19a37	decompiled	chunks/001/functions-000107.c		
+107f19a38	107f19b67	decompiled	chunks/001/functions-000107.c		
+107f19b68	107f19bab	decompiled	chunks/001/functions-000107.c		
+107f19bac	107f19d03	decompiled	chunks/001/functions-000107.c		
+107f19d04	107f19d1f	decompiled	chunks/001/functions-000107.c		
+107f19d20	107f19edb	decompiled	chunks/001/functions-000107.c		
+107f19edc	107f19eeb	decompiled	chunks/001/functions-000107.c		
+107f19eec	107f1a0e7	decompiled	chunks/001/functions-000107.c		
+107f1a0e8	107f1a0ef	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices transcoder]	
+107f1a0f0	107f1a0f7	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices batchTranscoder]	
+107f1a0f8	107f1a0ff	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices transcodingCache]	
+107f1a100	107f1a107	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices transcodingHelper]	
+107f1a108	107f1a10f	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices bitrateCalculator]	
+107f1a110	107f1a117	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices transcodingCanceler]	
+107f1a118	107f1a177	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodingServices .cxx_destruct]	
+107f1a178	107f1a223	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult initWithTranscodableVideoSnaps:selectionMetrics:]	
+107f1a224	107f1a247	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult copyWithZone:]	
+107f1a248	107f1a2bb	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult hash]	
+107f1a2bc	107f1a363	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult isEqual:]	
+107f1a364	107f1a36b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult transcodableVideoSnaps]	
+107f1a36c	107f1a373	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult selectionMetrics]	
+107f1a374	107f1a3a3	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableGallerySnapsResult .cxx_destruct]	
+107f1a3a4	107f1a413	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics initWithVideoSnapCount:videoSnapInMeoCount:videoSnapNotFromSnapchatCameraCount:videoSnapBackgroundUploadedCount:videoSnapTranscodableCount:]	
+107f1a414	107f1a437	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics copyWithZone:]	
+107f1a438	107f1a49b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics hash]	
+107f1a49c	107f1a563	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics isEqual:]	
+107f1a564	107f1a56b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics videoSnapCount]	
+107f1a56c	107f1a573	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics videoSnapInMeoCount]	
+107f1a574	107f1a57b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics videoSnapNotFromSnapchatCameraCount]	
+107f1a57c	107f1a583	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics videoSnapBackgroundUploadedCount]	
+107f1a584	107f1a58b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupSelectSnapsToTranscodeMetrics videoSnapTranscodableCount]	
+107f1a58c	107f1a637	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult initWithTranscodableVideoSnaps:selectionMetrics:]	
+107f1a638	107f1a65b	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult copyWithZone:]	
+107f1a65c	107f1a6cf	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult hash]	
+107f1a6d0	107f1a777	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult isEqual:]	
+107f1a778	107f1a77f	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult transcodableVideoSnaps]	
+107f1a780	107f1a787	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult selectionMetrics]	
+107f1a788	107f1a7b7	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupTranscodableMemoriesSnapsResult .cxx_destruct]	
+107f1a7b8	107f1a803	decompiled	chunks/001/functions-000107.c	-[SCMemoriesBackupBitrateResult initWithStatus:targetBitrate:]	
+107f1a804	107f1a827	decompiled	chunks/001/functions-000108.c	-[SCMemoriesBackupBitrateResult copyWithZone:]	
+107f1a828	107f1a887	decompiled	chunks/001/functions-000108.c	-[SCMemoriesBackupBitrateResult hash]	
+107f1a888	107f1a91f	decompiled	chunks/001/functions-000108.c	-[SCMemoriesBackupBitrateResult isEqual:]	
+107f1a920	107f1a927	decompiled	chunks/001/functions-000108.c	-[SCMemoriesBackupBitrateResult status]	
+107f1a928	107f1a92f	decompiled	chunks/001/functions-000108.c	-[SCMemoriesBackupBitrateResult targetBitrate]	
+107f1a930	107f1a9b7	decompiled	chunks/001/functions-000108.c		
+107f1a9b8	107f1adab	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider _createMemoriesSearch]	
+107f1adac	107f1adb3	decompiled	chunks/001/functions-000108.c		
+107f1adb4	107f1ae43	decompiled	chunks/001/functions-000108.c		
+107f1ae44	107f1b333	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider _createSearchIndexerWithMemoriesSearch:]	
+107f1b334	107f1b433	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider end]	
+107f1b434	107f1b453	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider circumstanceEngineServices]	
+107f1b454	107f1b467	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider setCircumstanceEngineServices:]	
+107f1b468	107f1b487	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider faceTaggingDataServices]	
+107f1b488	107f1b49b	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider setFaceTaggingDataServices:]	
+107f1b49c	107f1b4bb	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider faceTaggingPermissionsServices]	
+107f1b4bc	107f1b4cf	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider setFaceTaggingPermissionsServices:]	
+107f1b4d0	107f1b61b	decompiled	chunks/001/functions-000108.c	-[SCMemoriesSearchServiceProvider .cxx_destruct]	
+107f1b61c	107f1b68f	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer initWithEncryptedDatabase:]	
+107f1b690	107f1b70f	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer dateStringForSnapCreationDate:]	
+107f1b710	107f1bc2b	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer resultsForSnap:]	
+107f1bc2c	107f1bc43	decompiled	chunks/001/functions-000108.c		
+107f1bc44	107f1bc7b	decompiled	chunks/001/functions-000108.c		
+107f1bc7c	107f1bfbf	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer _seasonNamesForDate:isInNorthernHemisphere:]	
+107f1bfc0	107f1c067	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer _isDate:betweenStartDate:endDate:]	
+107f1c068	107f1c19b	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer _timeOfDayForHour:]	
+107f1c19c	107f1c1a3	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer shouldBlockUpload]	
+107f1c1a4	107f1c1f7	decompiled	chunks/001/functions-000108.c	+[SCGalleryDatetimeIndexer holidayMap]	
+107f1c1f8	107f1c30f	decompiled	chunks/001/functions-000108.c		
+107f1c310	107f1c363	decompiled	chunks/001/functions-000108.c	+[SCGalleryDatetimeIndexer timeParserDateFormatter]	
+107f1c364	107f1c3df	decompiled	chunks/001/functions-000108.c		
+107f1c3e0	107f1c41b	decompiled	chunks/001/functions-000108.c	-[SCGalleryDatetimeIndexer .cxx_destruct]	
+107f1c41c	107f1c4cf	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer initWithPerformer:]	
+107f1c4d0	107f1c65b	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer geoTagsForLocation:queue:completionHandler:]	
+107f1c65c	107f1c717	decompiled	chunks/001/functions-000108.c		
+107f1c718	107f1c8e3	decompiled	chunks/001/functions-000108.c		
+107f1c8e4	107f1c923	decompiled	chunks/001/functions-000108.c		
+107f1c924	107f1caaf	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer addressTitleForLocation:queue:completionHandler:]	
+107f1cab0	107f1cb6b	decompiled	chunks/001/functions-000108.c		
+107f1cb6c	107f1ccff	decompiled	chunks/001/functions-000108.c		
+107f1cd00	107f1cd3b	decompiled	chunks/001/functions-000108.c		
+107f1cd3c	107f1cd9f	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer _dequeueGeoRequestIfNecessary]	
+107f1cda0	107f1cdf7	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer _enqueueGeoRequestIfNecessary:]	
+107f1cdf8	107f1d0ef	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer _geoTagsFromPlacemark:]	
+107f1d0f0	107f1d193	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer _iconicPlaceNameForLocation:]	
+107f1d194	107f1d337	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer _addressTitleFromPlacemark:]	
+107f1d338	107f1d38b	decompiled	chunks/001/functions-000108.c	+[SCGalleryGeolocationIndexer usStateFullNameMap]	
+107f1d38c	107f1d3a3	decompiled	chunks/001/functions-000108.c		
+107f1d3a4	107f1d3ab	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer shouldBlockUpload]	
+107f1d3ac	107f1d3e7	decompiled	chunks/001/functions-000108.c	-[SCGalleryGeolocationIndexer .cxx_destruct]	
+107f1d3e8	107f1d8db	decompiled	chunks/001/functions-000108.c	-[SCGalleryMetadataIndexer resultsForSnap:dataObjectContext:]	
+107f1d8dc	107f1da8b	decompiled	chunks/001/functions-000108.c	-[SCGalleryMetadataIndexer _parseSnapStickers:]	
+107f1da8c	107f1df6f	decompiled	chunks/001/functions-000108.c	-[SCGalleryMetadataIndexer _parseSnapFilter:]	
+107f1df70	107f1df77	decompiled	chunks/001/functions-000108.c	-[SCGalleryMetadataIndexer shouldBlockUpload]	
+107f1df78	107f1e2c3	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer initWithMemoriesSearchDatabase:searchIndexer:cloudSync:profile:keyService:dataObjectContext:docObjectContext:circumstanceEngine:snapInfoFetcher:grapheneRegistry:]	
+107f1e2c4	107f1e2cb	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer dedicatedQueue]	
+107f1e2cc	107f1e35f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer runWithServiceTerm:]	
+107f1e360	107f1e46b	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _fullySyncedNotifier:]	
+107f1e46c	107f1e473	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer defaultImmediateNotifier]	
+107f1e474	107f1e47f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer defaultLongRunningNotifier]	
+107f1e480	107f1e50f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _transitToState:serviceTerm:]	
+107f1e510	107f1e7fb	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _fetchSnapsWithServiceTerm:]	
+107f1e7fc	107f1ed1b	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _fetchIndexedSnapsWithServiceTerm:]	
+107f1ed1c	107f1f273	decompiled	chunks/001/functions-000108.c		
+107f1f274	107f1f28b	decompiled	chunks/001/functions-000108.c		
+107f1f28c	107f1f34b	decompiled	chunks/001/functions-000108.c		
+107f1f34c	107f1f383	decompiled	chunks/001/functions-000108.c		
+107f1f384	107f1f5ff	decompiled	chunks/001/functions-000108.c		
+107f1f600	107f1f667	decompiled	chunks/001/functions-000108.c		
+107f1f668	107f1f837	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _indexSnapWithServiceTerm:]	
+107f1f838	107f1f99b	decompiled	chunks/001/functions-000108.c		
+107f1f99c	107f1fb3f	decompiled	chunks/001/functions-000108.c		
+107f1fb40	107f1fbe7	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _isSnapIndexed:isTinyClipEmbeddingsRequired:]	
+107f1fbe8	107f1fc63	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _shouldFetchSnapDetailOnFlyWithSnap:]	
+107f1fc64	107f1fd63	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _logMobileClipLatestVersionBackfillPercentageForCofValue:totalSnapsCount:isSince2024:]	
+107f1fd64	107f1fd8b	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer _getPercentageFrom:indexedSnaps:]	
+107f1fd8c	107f1fe6f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchDataSynchronizer .cxx_destruct]	
+107f1fe70	107f1ff13	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending initWithSnap:fromSnap:]	
+107f1ff14	107f1ffdf	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending isEqualToPendingSnap:]	
+107f1ffe0	107f20057	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending isEqual:]	
+107f20058	107f200b3	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending hash]	
+107f200b4	107f200bb	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending snap]	
+107f200bc	107f200c3	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending fromSnap]	
+107f200c4	107f200f3	decompiled	chunks/001/functions-000108.c	-[SCGalleryIndexPending .cxx_destruct]	
+107f200f4	107f20833	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer initWithDataObjectContext:cloudFS:encryptedContentManager:galleryEncryptedDatabase:gallerySearch:galleryProfile:memoriesSearchDatabase:networker:appTerminator:percMLModelProvider:applicationLifecycleEvents:coreConfigProvider:aserConfigProvider:circumstanceEngine:docObjectContext:cachingMediaManager:memoriesVisualTagAnalyzer:faceTaggingDataProvider:faceTaggingPermissionsManager:]	
+107f20834	107f208cb	decompiled	chunks/001/functions-000108.c		
+107f208cc	107f209e7	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer resumeServiceWithCloudSyncIfNeeded:]	
+107f209e8	107f20a8f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer suspendServiceIfNeeded]	
+107f20a90	107f20a97	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer dedicatedQueue]	
+107f20a98	107f20be7	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer runWithServiceTerm:]	
+107f20be8	107f20c4b	decompiled	chunks/001/functions-000108.c		
+107f20c4c	107f20c9b	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer defaultNotifierWithLowPowerMode]	
+107f20c9c	107f20ca7	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer defaultLongRunningNotifier]	
+107f20ca8	107f20d7f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer indexGallerySnap:]	
+107f20d80	107f20e37	decompiled	chunks/001/functions-000108.c		
+107f20e38	107f20f37	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer indexDuplicateSnap:fromSnap:]	
+107f20f38	107f20feb	decompiled	chunks/001/functions-000108.c		
+107f20fec	107f2145f	decompiled	chunks/001/functions-000108.c	-[SCGallerySearchIndexer insertTagsForSnapId:locationTags:timeTags:metaTags:visualTagToConfidenceMap:tagVersion:languageId:tagCluster:locationCluster:caption:creationDate:tinyClipCaptionToConfidenceMaps:tinyClipEmbeddings:tinyClipModelVersion:fromServer:shouldNotifyListener:]	
+107f21460	107f21c1b	decompiled	chunks/001/functions-000108.c		
+107f21c1c	107f21ce3	decompiled	chunks/001/functions-000108.c		
+107f21ce4	107f21ce7	decompiled	chunks/001/functions-000109.c		
+107f21ce8	107f21e9f	decompiled	chunks/001/functions-000109.c		
+107f21ea0	107f21ea3	decompiled	chunks/001/functions-000109.c		
+107f21ea4	107f22097	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer addressTitleForGallerySnap:queue:completionHandler:]	
+107f22098	107f220ab	decompiled	chunks/001/functions-000109.c		
+107f220ac	107f22247	decompiled	chunks/001/functions-000109.c		
+107f22248	107f2238f	decompiled	chunks/001/functions-000109.c		
+107f22390	107f2244b	decompiled	chunks/001/functions-000109.c		
+107f2244c	107f22507	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer fetchTagsWithSnapId:database:]	
+107f22508	107f22f2f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _fetchTagsWithSnapId:fromRowid:database:]	
+107f22f30	107f22fff	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer deleteSnapWithSnapIds:]	
+107f23000	107f23037	decompiled	chunks/001/functions-000109.c		
+107f23038	107f2311b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer addListener:]	
+107f2311c	107f231e7	decompiled	chunks/001/functions-000109.c		
+107f231e8	107f23227	decompiled	chunks/001/functions-000109.c		
+107f23228	107f2322f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer removeListener:]	
+107f23230	107f23393	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _transitToState:serviceTerm:]	
+107f23394	107f2340f	decompiled	chunks/001/functions-000109.c		
+107f23410	107f234f7	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _indexSnapsWithServiceTerm:]	
+107f234f8	107f235db	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _adjustPendingSnapsWithServiceTerm:]	
+107f235dc	107f239af	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _setupDatabase:]	
+107f239b0	107f23bcb	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _indexDuplicateSnap:fromSnap:serviceTerm:]	
+107f23bcc	107f23d93	decompiled	chunks/001/functions-000109.c		
+107f23d94	107f23eaf	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _rowid:forGallerySnapId:languageId:database:]	
+107f23eb0	107f24093	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _addOneRowInEachTableForGallerySnapId:languageId:tagVersion:database:]	
+107f24094	107f24beb	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _updateSnapInfoAtDocid:snap:fromSnap:cloudFile:duplicateDocid:commonlanguageId:database:serviceTerm:]	
+107f24bec	107f24c03	decompiled	chunks/001/functions-000109.c		
+107f24c04	107f25887	decompiled	chunks/001/functions-000109.c		
+107f25888	107f258bf	decompiled	chunks/001/functions-000109.c		
+107f258c0	107f2598b	decompiled	chunks/001/functions-000109.c		
+107f2598c	107f2614b	decompiled	chunks/001/functions-000109.c		
+107f2614c	107f261b7	decompiled	chunks/001/functions-000109.c		
+107f261b8	107f26363	decompiled	chunks/001/functions-000109.c		
+107f26364	107f266cb	decompiled	chunks/001/functions-000109.c		
+107f266cc	107f26b03	decompiled	chunks/001/functions-000109.c		
+107f26b04	107f26b8f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _shouldForceFetchSnap:]	
+107f26b90	107f26d47	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _normalizeString:]	
+107f26d48	107f27113	decompiled	chunks/001/functions-000109.c		
+107f27114	107f271eb	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _tokenize:]	
+107f271ec	107f2724f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _joinTags:]	
+107f27250	107f272cb	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _tagsRecoveredFromJoinedString:]	
+107f272cc	107f273af	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _saveTagClusterWithSnapId:clusterName:database:]	
+107f273b0	107f27493	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _saveLocationClusterWithSnapId:clusterName:database:]	
+107f27494	107f27577	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _saveDateTagWithSnapId:dateTag:database:]	
+107f27578	107f2765b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _updateLanguageIdWithSnapId:languageId:database:]	
+107f2765c	107f27773	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _updateTagVersionBySnapId:languageId:tagVersion:database:]	
+107f27774	107f279c7	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _replaceVisualTagsConfidenceWithSnapId:visualTags:database:shouldNotifyListener:]	
+107f279c8	107f27aff	decompiled	chunks/001/functions-000109.c		
+107f27b00	107f27b37	decompiled	chunks/001/functions-000109.c		
+107f27b38	107f27b97	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer invalidate]	
+107f27b98	107f27bb7	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _isInvalidated]	
+107f27bb8	107f27ccb	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer _addSnapToRetryIfNeededWithSnap:fromSnap:indexer:shouldUpload:]	
+107f27ccc	107f27f2b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer .cxx_destruct]	
+107f27f2c	107f2802b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchIndexer debugInfoFromSearchIndexer:completionHandler:]	
+107f2802c	107f280db	decompiled	chunks/001/functions-000109.c		
+107f280dc	107f280ef	decompiled	chunks/001/functions-000109.c		
+107f280f0	107f280f7	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload tagsStringWithoutFace]	
+107f280f8	107f280ff	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload setTagsStringWithoutFace:]	
+107f28100	107f28107	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload memDataIds]	
+107f28108	107f28137	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload setMemDataIds:]	
+107f28138	107f2813f	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload tagVersion]	
+107f28140	107f2816f	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload setTagVersion:]	
+107f28170	107f28177	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload backupStatus]	
+107f28178	107f281a7	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload setBackupStatus:]	
+107f281a8	107f281ef	decompiled	chunks/001/functions-000109.c	-[SCWaitingForFacePayload .cxx_destruct]	
+107f281f0	107f281f7	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploaderEligibilityResult eligibleSyncedSnapIdSet]	
+107f281f8	107f281ff	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploaderEligibilityResult setEligibleSyncedSnapIdSet:]	
+107f28200	107f28207	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploaderEligibilityResult ineligibleSnapIds]	
+107f28208	107f2820f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploaderEligibilityResult setIneligibleSnapIds:]	
+107f28210	107f2823f	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploaderEligibilityResult .cxx_destruct]	
+107f28240	107f28503	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploader initWithMemoriesSearchDatabase:networker:dataObjectContext:docObjectContext:coreConfigProvider:galleryProfile:faceTaggingDataProvider:faceTaggingPermissionsManager:]	
+107f28504	107f2850b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploader dedicatedQueue]	
+107f2850c	107f2859b	decompiled	chunks/001/functions-000109.c	-[SCGallerySearchTagUploader runWithServiceTerm:]	
