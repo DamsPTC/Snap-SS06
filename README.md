@@ -6,6 +6,10 @@ L’IPA de référence est conservée sans modification dans la [release 14.25.0
 
 **[Télécharger le fichier IPA](https://github.com/DamsPTC/Snap-SS06/releases/download/v14.25.0.48/com.toyopagroup.picaboo_14.25.0.48_und3fined.ipa)** · **[Parcourir le code décompilé](decompiled/)**
 
+## Inventaire des informations d’appareil
+
+Le [rapport d’inventaire](docs/device-inventory.md) et son [index JSON](docs/device-inventory.json) recoupent les API, adresses de fonctions, sélecteurs, chaînes et niveaux de preuve du binaire principal et des composants de notification. Les extraits complémentaires sont dans [analysis/device-inventory/pseudocode](analysis/device-inventory/pseudocode).
+
 ## Contenu
 
 | Dossier | Contenu |
