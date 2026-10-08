@@ -299,13 +299,13 @@ static void SS06LogOnlyStart(void)
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
 #if SS06_SELFREAD
     #if SS06_SELFBLOCK
-        SS06LogOnlyRecord(@"init logonly active; trace=selfblock-v3; base=responses-v5; correlated Janus responses; attestation-window mmap failure; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=selfblock-v4; base=responses-v6; correlated Janus responses; attestation-window mmap failure; clipboard=automatic");
     #else
-        SS06LogOnlyRecord(@"init logonly active; trace=selfread-v3; base=responses-v5; correlated Janus responses; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=selfread-v4; base=responses-v6; correlated Janus responses; original values preserved; clipboard=automatic");
     #endif
         SS06SelfReadStart();
 #else
-        SS06LogOnlyRecord(@"init logonly active; trace=responses-v5; correlated Janus responses; local attestation/token dumps; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=responses-v6; correlated Janus responses; local attestation/token dumps; original values preserved; clipboard=automatic");
 #endif
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation

@@ -72,6 +72,8 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         grep -Fq 'attestation_sha256' "$WORK/logonly-test.log"
         grep -Fq '"request_context_source":"loginHeader"' "$WORK/logonly-test.log"
         grep -Fq '"error_data_presence_source":"payloadOneOfCase"' "$WORK/logonly-test.log"
+        grep -Fq '"status_name_source":"protobuf_enum_descriptor"' "$WORK/logonly-test.log"
+        grep -Fq '"message_preview_filter":"patterns-v1"' "$WORK/logonly-test.log"
         if grep -Fq 'SS06_PRIVATE_TEST_SENTINEL' "$WORK/logonly-test.log"; then
             echo "Description de requête ou exception exposée dans les logs logonly." >&2; exit 1
         fi
@@ -252,6 +254,8 @@ PY
         grep -Eq '[[:space:]]_SS06LogOnlyWrapRPCHandler$' "$WORK/dylib-symbols.txt"
         grep -Eq '[[:space:]]_SS06LogOnlyRPCResponse$' "$WORK/dylib-symbols.txt"
         grep -Eq '[[:space:]]_SS06LogOnlyErrorDataPresent$' "$WORK/dylib-symbols.txt"
+        grep -Eq '[[:space:]]_SS06LogOnlyStatusName$' "$WORK/dylib-symbols.txt"
+        grep -Eq '[[:space:]]_SS06LogOnlyMessagePreview$' "$WORK/dylib-symbols.txt"
         grep -Fq '_OBJC_CLASS_$_UIPasteboard' "$WORK/dylib-imports.txt"
         grep -Fq '_UIPasteboardOptionLocalOnly' "$WORK/dylib-imports.txt"
         otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
@@ -327,7 +331,7 @@ manifest = {
     'logonly_timestamped_history_compiled': logonly_family,
     'logonly_automatic_clipboard_compiled': logonly_family,
     'logonly_clipboard_host_tests_passed': logonly_family,
-    'logonly_trace_version': 'selfblock-v3' if variant == 'selfblock' else ('selfread-v3' if variant == 'selfread' else ('responses-v5' if logonly_family else None)),
+    'logonly_trace_version': 'selfblock-v4' if variant == 'selfblock' else ('selfread-v4' if variant == 'selfread' else ('responses-v6' if logonly_family else None)),
     'logonly_transport_targets_compiled': 34 if logonly_family else 0,
     'logonly_transport_host_tests_passed': logonly_family,
     'logonly_value_dumps_compiled': logonly_family,
@@ -340,6 +344,9 @@ manifest = {
     'logonly_nested_login_header_compiled': logonly_family,
     'logonly_oneof_error_presence_compiled': logonly_family,
     'logonly_schema_host_tests_passed': logonly_family,
+    'logonly_status_enum_names_compiled': logonly_family,
+    'logonly_error_message_preview_compiled': logonly_family,
+    'logonly_response_diagnostics_host_tests_passed': logonly_family,
     'selfread_posix_interposition_compiled': selfread,
     'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if selfread else [],
     'selfread_dyld_host_tests_passed': selfread,

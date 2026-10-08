@@ -1,5 +1,6 @@
 // Passive Janus response observations, included by SS06LogOnlyTransport.h.
-// No request/response serialization, session fields, NSError.userInfo or text dump.
+// No request/response serialization, session fields or NSError.userInfo.
+// Only the selected error message gets a bounded, pattern-redacted preview.
 #import <CommonCrypto/CommonDigest.h>
 #include <stdbool.h>
 #include <stdint.h>
@@ -69,6 +70,42 @@ static id SS06LogOnlyFieldDescriptor(id message, NSString *name)
     method_getArgumentType(method, 2, argument, sizeof(argument));
     if (SS06LogOnlyTypeCode(result) != '@' || SS06LogOnlyTypeCode(argument) != '@') return nil;
     return ((id (*)(id, SEL, id))method_getImplementation(method))(descriptor, selector, name);
+}
+
+static BOOL SS06LogOnlyIsSchemaName(id value)
+{
+    if (![value isKindOfClass:[NSString class]] || ![value length] || [value length] > 256) return NO;
+    NSCharacterSet *allowed = [NSCharacterSet characterSetWithCharactersInString:
+        @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"];
+    return [value rangeOfCharacterFromSet:allowed.invertedSet].location == NSNotFound;
+}
+
+static void SS06LogOnlyStatusName(id response, int32_t value, NSMutableDictionary *facts)
+{
+    // Optional reflection must not hide an otherwise observable response.
+    @try {
+        facts[@"status_name_state"] = @"descriptor_unavailable";
+        id field = SS06LogOnlyFieldDescriptor(response, @"statusCode");
+        id descriptor = SS06LogOnlyReadObject(field, "enumDescriptor", NULL);
+        if (!descriptor) return;
+        id enumName = SS06LogOnlyReadObject(descriptor, "name", NULL);
+        if (SS06LogOnlyIsSchemaName(enumName)) facts[@"status_enum"] = enumName;
+        SEL selector = sel_registerName("enumNameForValue:");
+        Method method = class_getInstanceMethod(object_getClass(descriptor), selector);
+        if (!method || method_getNumberOfArguments(method) != 3) return;
+        char result[128] = {0}, argument[128] = {0};
+        method_getReturnType(method, result, sizeof(result));
+        method_getArgumentType(method, 2, argument, sizeof(argument));
+        if (SS06LogOnlyTypeCode(result) != '@' || SS06LogOnlyTypeCode(argument) != 'i') return;
+        id name = ((id (*)(id, SEL, int32_t))method_getImplementation(method))(descriptor, selector, value);
+        facts[@"status_name_source"] = @"protobuf_enum_descriptor";
+        if (SS06LogOnlyIsSchemaName(name)) {
+            facts[@"status_name"] = name;
+            facts[@"status_name_state"] = @"resolved";
+        } else facts[@"status_name_state"] = name ? @"invalid_schema_name" : @"unknown_value";
+    } @catch (__unused NSException *exception) {
+        facts[@"status_name_state"] = @"observation_failed";
+    }
 }
 
 static BOOL SS06LogOnlyErrorDataPresent(id response, NSMutableDictionary *facts)
@@ -167,13 +204,71 @@ static NSArray<NSString *> *SS06LogOnlySupportCodes(NSString *message)
     static NSRegularExpression *expression;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        expression = [NSRegularExpression regularExpressionWithPattern:@"(?<![A-Za-z0-9])SS[0-9]{2}(?![A-Za-z0-9])" options:0 error:NULL];
+        expression = [NSRegularExpression regularExpressionWithPattern:@"(?<![A-Za-z0-9])SS[0-9]{2}(?![A-Za-z0-9])" options:NSRegularExpressionCaseInsensitive error:NULL];
     });
     NSMutableOrderedSet<NSString *> *codes = [NSMutableOrderedSet new];
     NSRange range = NSMakeRange(0, MIN(message.length, (NSUInteger)4096));
     for (NSTextCheckingResult *match in [expression matchesInString:message options:0 range:range])
-        [codes addObject:[message substringWithRange:match.range]];
+        [codes addObject:[[message substringWithRange:match.range] uppercaseString]];
     return codes.array;
+}
+
+static void SS06LogOnlyMessagePreview(NSString *message, NSMutableDictionary *facts)
+{
+    @try {
+        facts[@"message_preview_filter"] = @"patterns-v1";
+        facts[@"message_preview_state"] = @"omitted_oversize";
+        // Process the complete bounded input before truncation, so a cut token
+        // or quoted value cannot evade its redaction pattern at the boundary.
+        if (message.length > 4096) return;
+        static NSArray<NSRegularExpression *> *patterns;
+        static NSArray<NSString *> *replacements;
+        static dispatch_once_t once;
+        dispatch_once(&once, ^{
+            NSArray<NSString *> *sources = @[
+                @"(?i)\\b(?:bearer|basic)\\s+[A-Za-z0-9._~+/=-]+",
+                @"(?i)\\b(password|passwd|pwd|passcode|mot de passe|(?:access|refresh|auth)[_ -]?token|token|authorization|session(?:[_ -]?(?:id|token))?|username|user[_ -]?id|email|e-mail|phone(?:[_ -]?number)?)([\\\"']?\\s*[:=]\\s*)(?:\\\"[^\\\"]*(?:\\\"|$)|'[^']*(?:'|$)|[^\\s,;]+)",
+                @"(?i)\\b(?:https?|snapchat)://[^\\s<>\\\"']+",
+                @"(?i)(?<![A-Z0-9._%+-])[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}",
+                @"(?i)(?<![A-Z0-9])[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?![A-Z0-9])",
+                @"(?<![A-Za-z0-9])\\+?\\d(?:[\\s().-]*\\d){6,}(?![A-Za-z0-9])",
+                @"(?<![A-Za-z0-9_+/-])[A-Za-z0-9_+/-]{24,}={0,2}(?![A-Za-z0-9_+/-])",
+                @"<[^>]*>",
+                @"[\\p{Cc}\\p{Cf}]",
+                @"\\s+"
+            ];
+            replacements = @[@"[authorization]", @"$1$2[redacted]", @"[url]", @"[email]",
+                @"[identifier]", @"[number]", @"[opaque]", @" ", @" ", @" "];
+            NSMutableArray *compiled = [NSMutableArray new];
+            for (NSString *source in sources) {
+                NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:source options:0 error:NULL];
+                if (!pattern) return;
+                [compiled addObject:pattern];
+            }
+            patterns = [compiled copy];
+        });
+        if (patterns.count != replacements.count) {
+            facts[@"message_preview_state"] = @"filter_unavailable";
+            return;
+        }
+        NSString *filtered = message;
+        for (NSUInteger i = 0; i < patterns.count; ++i)
+            filtered = [patterns[i] stringByReplacingMatchesInString:filtered options:0
+                range:NSMakeRange(0, filtered.length) withTemplate:replacements[i]];
+        filtered = [filtered stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+        NSUInteger length = MIN(filtered.length, (NSUInteger)1024);
+        if (length < filtered.length && length &&
+            [filtered characterAtIndex:length - 1] >= 0xd800 && [filtered characterAtIndex:length - 1] <= 0xdbff)
+            --length; // Do not split a UTF-16 surrogate pair.
+        facts[@"message_preview"] = [filtered substringToIndex:length];
+        facts[@"message_preview_state"] = @"available";
+        facts[@"message_preview_redacted"] = @(![filtered isEqualToString:message]);
+        facts[@"message_preview_truncated"] = @(length < filtered.length);
+        facts[@"message_preview_chars"] = @(length);
+    } @catch (__unused NSException *exception) {
+        [facts removeObjectForKey:@"message_preview"];
+        facts[@"message_preview_state"] = @"observation_failed";
+    }
 }
 
 static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id response, id error)
@@ -199,8 +294,12 @@ static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id r
         if (SS06LogOnlyIsProtobuf(response)) {
             Method status = SS06LogOnlyGetter(response, "statusCode", 'i');
             facts[@"status_available"] = @(status != NULL);
-            if (status) facts[@"status_code"] = @(((int (*)(id, SEL))method_getImplementation(status))
-                (response, sel_registerName("statusCode")));
+            if (status) {
+                int32_t value = ((int32_t (*)(id, SEL))method_getImplementation(status))
+                    (response, sel_registerName("statusCode"));
+                facts[@"status_code"] = @(value);
+                SS06LogOnlyStatusName(response, value, facts);
+            }
             // Check presence first: absent protobuf submessages must not be autocreated.
             BOOL present = SS06LogOnlyErrorDataPresent(response, facts);
             if (present) {
@@ -212,6 +311,7 @@ static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id r
                     facts[@"message_chars"] = @([(NSString *)message length]);
                     facts[@"message_scan_truncated"] = @([(NSString *)message length] > 4096);
                     facts[@"support_codes"] = SS06LogOnlySupportCodes(message);
+                    SS06LogOnlyMessagePreview(message, facts);
                 } else facts[@"message_state"] = @"unavailable";
             }
         }

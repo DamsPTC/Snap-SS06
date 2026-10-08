@@ -80,7 +80,7 @@ L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
 `SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
 pour la copie dans le presse-papiers.
 
-La version **`trace=responses-v5`** conserve **34 points d'observation** et les deux
+La version **`trace=responses-v6`** conserve **34 points d'observation** et les deux
 points métier. Leur implémentation est dans `SS06LogOnlyTransport.h`,
 avec les cibles vérifiées dans `SS06LogOnlyTargets.inc`.
 Elle ajoute les valeurs complètes aux longueurs : payload en base64 et chaînes
@@ -124,12 +124,12 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 4. Vérifier la ligne `init` avec la trace attendue, les lignes d'installation
    et `transport_observers installed=34 expected=34`, puis lire les événements.
 
-## Corréler une requête et sa réponse avec responses-v5
+## Corréler une requête et sa réponse avec responses-v6
 
 Les 27 RPC Janus enveloppent leur callback `void(response, error)` seulement
 si sa signature de bloc est compatible. Le transport reçoit un objet handler,
 qui reste inchangé. Les détails et les preuves de signature sont dans
-[le rapport de transport](../docs/logonly-transport-observers.md#réponses-corrélées-responses-v5).
+[le rapport de transport](../docs/logonly-transport-observers.md#réponses-corrélées-responses-v6).
 
 | Événement | Preuve disponible |
 | --- | --- |
@@ -137,7 +137,7 @@ qui reste inchangé. Les détails et les preuves de signature sont dans
 | `rpc.request` | Même `call` que `rpc.enter` ; taille/SHA-256 du champ d’attestation réellement présent dans l’objet requête et état du champ DeviceCheck. Aucun mot de passe n’est lu. |
 | `rpc.callback_observer state=wrapped` | Callback compatible enveloppé pour ce RPC. `nil_handler`, `unsupported_signature` ou `unavailable` signalent une couverture absente. |
 | `rpc.local_return`, `transport.local_return` | La fonction locale est revenue ; aucun résultat réseau n’est déduit. |
-| `rpc.response` | Callback de ce RPC invoqué, avec le même `call` et le même chemin : présence/classe de réponse, statut protobuf brut, codes SS extraits du champ d’erreur, domaine/code NSError s’il existe. |
+| `rpc.response` | Callback de ce RPC invoqué, avec le même `call` et le même chemin : présence/classe de réponse, statut protobuf et son libellé disponible, aperçu filtré du message d’erreur, codes SS et domaine/code NSError s’il existe. |
 
 Les empreintes égales relient des octets identiques à deux points observés ;
 elles ne démontrent pas leur acceptation. `call=N` identifie **un RPC dans ce
@@ -164,13 +164,35 @@ Dans `rpc.response`, `message_source=errorData.humanReadableErrorMessage` et
 `support_codes=["SS06"]` établissent que ce code est présent dans la réponse
 décodée fournie à ce callback. Le diagnostic ne déduit aucun succès d’un statut
 numérique, dont le sens peut varier selon le RPC. Une erreur NSError sans
-réponse protobuf ne devient pas une preuve de refus métier. Le texte complet,
-les corps, les données de session et `NSError.userInfo` ne sont pas journalisés
-par cette nouvelle observation ; les captures explicites values-v3 subsistent.
-Le scan des codes SS est limité aux 4096 premiers caractères et signale sa
-troncature. Une donnée indisponible n’est jamais présentée comme absente.
+réponse protobuf ne devient pas une preuve de refus métier. Les corps complets,
+les champs de session et `NSError.userInfo` ne sont pas lus par cette observation ;
+les captures explicites values-v3 subsistent. Le scan des codes SS ignore la casse,
+normalise les codes en majuscules, se limite aux 4096 premières unités UTF-16 et
+signale sa troncature. Une donnée indisponible n’est jamais présentée comme absente.
 
-Pour lire une tentative sur iPhone, vérifier `trace=responses-v5`, puis chercher
+**Diagnostic responses-v6.** `status_enum` et `status_name` sont lus dans le
+descripteur protobuf du champ `statusCode` de cette réponse. Ainsi, le nombre 16
+n’est associé à aucun libellé supposé ou emprunté à un autre RPC.
+`status_name_state=resolved` confirme cette lecture ; `unknown_value`,
+`descriptor_unavailable`, `invalid_schema_name` et `observation_failed` en
+signalent les limites, tout en conservant le statut numérique.
+
+`message_preview` montre uniquement `errorData.humanReadableErrorMessage` après
+filtrage `patterns-v1` : valeurs sensibles étiquetées, autorisations Bearer/Basic,
+emails, numéros longs/téléphones, URL, UUID et chaînes opaques longues sont
+remplacés. Les balises HTML, contrôles et espaces sont normalisés. Le filtre
+est **heuristique** : il ne garantit pas l’anonymisation de tout texte libre.
+Le hook ne lit aucun mot de passe de la requête pour effectuer ce filtrage.
+
+Une entrée de plus de 4096 unités UTF-16 est omise (`omitted_oversize`). Les
+autres sont filtrées entièrement avant de limiter l’aperçu à 1024 unités, sans
+couper une paire UTF-16. `message_preview_state`, `message_preview_redacted`,
+`message_preview_chars` et `message_preview_truncated` décrivent le résultat.
+Un aperçu reste disponible quand `support_codes=[]` : l’absence de code SS
+n’implique pas l’absence d’explication lisible. Un filtre indisponible ne
+déclenche jamais un repli vers le texte brut.
+
+Pour lire une tentative sur iPhone, vérifier `trace=responses-v6`, puis chercher
 `rpc.request`, `rpc.callback_observer` et `rpc.response` avec le **même call**.
 L’absence de réponse observée n’établit pas l’absence de réponse réseau. Les
 captures historiques de 1421 octets ne contiennent pas ces nouveaux événements.
@@ -184,12 +206,15 @@ huit variantes. Les tests hôte emploient des réponses synthétiques ; leur
 réussite ne constitue pas un test de connexion réel sur iOS.
 Ils reproduisent notamment un `loginHeader` imbriqué, un oneof sans
 `hasErrorData`, deux numéros de champ différents et les cas absents/incompatibles.
+Ils vérifient aussi les libellés de schéma, leurs échecs, le masquage des formats
+sensibles, un message sans code SS et les limites UTF-16. Le message original
+et l’objet réponse transmis à l’application restent identiques.
 
 ## Observer les lectures du principal avec selfread
 
 `BUILD_VARIANT=selfread` conserve les observateurs et les captures de valeurs de
-`logonly` (`responses-v5`), puis ajoute cinq paires dans `__DATA,__interpose` :
-`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v3`**.
+`logonly` (`responses-v6`), puis ajoute cinq paires dans `__DATA,__interpose` :
+`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v4`**.
 
 Le filtre accepte exclusivement un chemin se terminant par le composant exact
 `Snapchat.app/Snapchat`. Chaque appel résout à nouveau le descripteur par
@@ -217,7 +242,7 @@ fonctions vérifiée sur un fichier synthétique.
 
 ## Bloquer le self-mmap pendant l'attestation avec selfblock
 
-`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v3`**) conserve tout
+`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v4`**) conserve tout
 `selfread` et ajoute : pendant les appels des wrappers d'attestation observés
 (les méthodes `SCPreLoginAttestationImpl` et `SCArgosImpl` des 34 cibles),
 un compteur de fenêtre global s'incrémente à l'entrée et revient à son état
@@ -238,7 +263,7 @@ signifie qu’aucun blocage n’a été observé par ce hook, sans prouver l’a
 de lecture ou de contrôle par un autre chemin.
 
 Utilisation : identique à `selfread` — installer, tenter login/inscription,
-attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v3`,
+attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v4`,
 puis chercher `op_result=blocked` entre `attestation.enter` et
 `attestation.return`.
 

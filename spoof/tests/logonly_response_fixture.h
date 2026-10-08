@@ -69,12 +69,50 @@ static NSString *TestOneofName = @"payload";
 - (id)containingOneof { return [SS06TestOneofDescriptor new]; }
 @end
 
+static NSUInteger TestEnumMode, TestEnumLookups;
+static NSString *TestEnumType = @"SyntheticLoginStatus";
+@interface SS06TestEnumDescriptor : NSObject
+- (NSString *)name;
+- (NSString *)enumNameForValue:(int32_t)value;
+@end
+@implementation SS06TestEnumDescriptor
+- (NSString *)name { return TestEnumType; }
+- (NSString *)enumNameForValue:(int32_t)value
+{
+    ++TestEnumLookups;
+    if (TestEnumMode == 3) [NSException raise:@"SyntheticEnumFailure" format:@"SS06_PRIVATE_TEST_SENTINEL"];
+    if (TestEnumMode == 1 || value != 16) return nil;
+    if (TestEnumMode == 4) return @"invalid schema name!";
+    return [TestEnumType stringByAppendingString:@"_ExampleFailure"];
+}
+@end
+
+@interface SS06TestWrongEnumDescriptor : NSObject
+- (id)enumNameForValue:(id)value;
+@end
+@implementation SS06TestWrongEnumDescriptor
+- (id)enumNameForValue:(__unused id)value { ++TestEnumLookups; return @"must_not_be_called"; }
+@end
+
+@interface SS06TestStatusFieldDescriptor : NSObject
+- (id)enumDescriptor;
+@end
+@implementation SS06TestStatusFieldDescriptor
+- (id)enumDescriptor
+{
+    if (TestEnumMode == 2) return nil;
+    if (TestEnumMode == 5) return [SS06TestWrongEnumDescriptor new];
+    return [SS06TestEnumDescriptor new];
+}
+@end
+
 @interface SS06TestMessageDescriptor : NSObject
 - (id)fieldWithName:(NSString *)name;
 @end
 @implementation SS06TestMessageDescriptor
 - (id)fieldWithName:(NSString *)name
 {
+    if ([name isEqualToString:@"statusCode"]) return [SS06TestStatusFieldDescriptor new];
     return !TestOneofDescriptorMissing && [name isEqualToString:@"errorData"] ?
         [SS06TestErrorFieldDescriptor new] : nil;
 }
@@ -116,6 +154,90 @@ static NSDictionary *TestRPCFacts(unsigned long long call, NSString *stage)
     if (marker.location == NSNotFound) return nil;
     NSData *json = [[line substringFromIndex:NSMaxRange(marker)] dataUsingEncoding:NSUTF8StringEncoding];
     return [NSJSONSerialization JSONObjectWithData:json options:0 error:NULL];
+}
+
+static int TestResponseDiagnostics(SS06LogOnlyTarget *rpc)
+{
+    id receiver = [objc_getClass(rpc->className) new];
+    SS06TestOneofRPCResponse *reply = [SS06TestOneofRPCResponse new];
+    reply.payloadOneOfCase = (int)TestOneofErrorFieldNumber;
+    reply.heldErrorData = [SS06TestRPCErrorData new];
+    NSString *privateMessage = @"Connexion refusée (ss06). Contact alice+qa@example.test; téléphone +33 6 12 34 56 78; password=\"very short pass\"; token=abcdef; https://example.test/login?token=secret#fragment; id 123e4567-e89b-12d3-a456-426614174000; Bearer x.y.z; opaque ZXhhbXBsZXByaXZhdGV0b2tlbg==.";
+    reply.heldErrorData.humanReadableErrorMessage = privateMessage;
+    __block NSUInteger callbacks = 0;
+    __block id received;
+    id handler = ^(id response, __unused id error) { ++callbacks; received = response; };
+    for (NSString *enumType in @[@"SyntheticLoginStatus", @"SyntheticRegistrationStatus"]) {
+        TestEnumType = enumType;
+        TestInvokeTransport(rpc, receiver, [SS06TestRPCRequest new], nil, handler, nil);
+        unsigned long long call = atomic_load(&SS06LogOnlyCallSequence);
+        ((void (^)(id, id))TestTransportArgs[2])(reply, nil);
+        NSDictionary *facts = TestRPCFacts(call, @"rpc.response");
+        CHECK([facts[@"status_code"] intValue] == 16);
+        CHECK([facts[@"status_enum"] isEqual:enumType]);
+        CHECK([facts[@"status_name"] isEqual:[enumType stringByAppendingString:@"_ExampleFailure"]]);
+        CHECK([facts[@"status_name_state"] isEqual:@"resolved"]);
+        CHECK([facts[@"status_name_source"] isEqual:@"protobuf_enum_descriptor"]);
+        CHECK([facts[@"support_codes"] isEqual:@[@"SS06"]]);
+        CHECK([facts[@"message_preview_state"] isEqual:@"available"]);
+        CHECK([facts[@"message_preview_filter"] isEqual:@"patterns-v1"]);
+        CHECK([facts[@"message_preview_redacted"] boolValue]);
+        NSString *preview = facts[@"message_preview"];
+        CHECK([preview containsString:@"Connexion refusée (ss06)"]);
+        CHECK([preview containsString:@"[email]"] && [preview containsString:@"[number]"]);
+        CHECK([preview containsString:@"[redacted]"] && [preview containsString:@"[url]"]);
+        CHECK([preview containsString:@"[identifier]"] && [preview containsString:@"[authorization]"]);
+        CHECK([preview containsString:@"[opaque]"]);
+        for (NSString *secret in @[@"alice", @"example.test", @"12 34", @"very short pass", @"abcdef", @"secret#fragment", @"123e4567", @"x.y.z", @"ZXhhbX"]) CHECK(![preview containsString:secret]);
+        CHECK(received == reply && [reply.heldErrorData.humanReadableErrorMessage isEqual:privateMessage]);
+    }
+    CHECK(callbacks == 2);
+    TestEnumType = @"SyntheticLoginStatus";
+    // Metadata failures retain the numeric status, error preview and completion.
+    NSArray *states = @[@"unknown_value", @"descriptor_unavailable", @"observation_failed", @"invalid_schema_name", @"descriptor_unavailable"];
+    for (NSUInteger mode = 1; mode <= states.count; ++mode) {
+        TestEnumMode = mode;
+        NSUInteger before = TestEnumLookups;
+        TestInvokeTransport(rpc, receiver, nil, nil, handler, nil);
+        unsigned long long call = atomic_load(&SS06LogOnlyCallSequence);
+        ((void (^)(id, id))TestTransportArgs[2])(reply, nil);
+        NSDictionary *facts = TestRPCFacts(call, @"rpc.response");
+        CHECK([facts[@"status_code"] intValue] == 16 && facts[@"status_name"] == nil);
+        CHECK([facts[@"status_name_state"] isEqual:states[mode - 1]]);
+        CHECK([facts[@"message_preview_state"] isEqual:@"available"] && received == reply);
+        if (mode == 5) CHECK(TestEnumLookups == before);
+    }
+    CHECK(callbacks == 7);
+    TestEnumMode = 0;
+
+    // The observed 235-character shape must remain useful with no SSxx code.
+    NSString *reason = @"La demande ne peut pas être traitée. Réessayez plus tard.";
+    NSString *message = [reason stringByPaddingToLength:235 withString:@" " startingAtIndex:0];
+    NSMutableDictionary *facts = [NSMutableDictionary new];
+    SS06LogOnlyMessagePreview(message, facts);
+    CHECK([facts[@"message_preview"] isEqual:reason]);
+    CHECK(![facts[@"message_preview_truncated"] boolValue]);
+    CHECK(SS06LogOnlySupportCodes(message).count == 0);
+
+    [facts removeAllObjects];
+    message = [[@"é " stringByPaddingToLength:1023 withString:@"é " startingAtIndex:0] stringByAppendingString:@"😀 suite du message"];
+    SS06LogOnlyMessagePreview(message, facts);
+    CHECK([facts[@"message_preview_truncated"] boolValue]);
+    CHECK([facts[@"message_preview"] length] == 1023);
+    CHECK([facts[@"message_preview"] dataUsingEncoding:NSUTF8StringEncoding] != nil);
+
+    [facts removeAllObjects];
+    message = [@"a" stringByPaddingToLength:4097 withString:@"a" startingAtIndex:0];
+    SS06LogOnlyMessagePreview(message, facts);
+    CHECK(facts[@"message_preview"] == nil && [facts[@"message_preview_state"] isEqual:@"omitted_oversize"]);
+
+    [facts removeAllObjects];
+    SS06LogOnlyMessagePreview(@"<b>Erreur</b>\n\"password\":\"quoted secret\"; password='unclosed secret", facts);
+    CHECK([[facts objectForKey:@"message_preview"] containsString:@"Erreur"]);
+    CHECK(![[facts objectForKey:@"message_preview"] containsString:@"secret"]);
+    CHECK(([SS06LogOnlySupportCodes(@"ss06, Ss03, SS06; XSS18Y SS069") isEqual:@[@"SS06", @"SS03"]]));
+    puts("PASS: runtime enum names, unknown/incompatible schema, filtered error preview, privacy patterns, UTF-16 bounds, case-insensitive support codes and callback identity");
+    return 0;
 }
 
 static int TestNestedHeaderAndOneof(SS06LogOnlyTarget *rpc)
@@ -262,6 +384,7 @@ static int TestRPCResponses(void)
     }
     CHECK(observed == 27 && rpc != NULL);
     CHECK(TestNestedHeaderAndOneof(passwordRPC) == 0);
+    CHECK(TestResponseDiagnostics(passwordRPC) == 0);
 
     // Reuse the SAME request object for concurrent RPCs, respond out of order.
     id receiver = [objc_getClass(rpc->className) new];

@@ -171,7 +171,7 @@ les nil, le rejet de la signature void de l'autre classe, l'absence d'appel à
 présence de ces événements dans le presse-papiers simulé. Ils ne valident ni
 le chargement réel sur iOS ni la décision serveur ; `ios_runtime_tested=false`.
 
-## Réponses corrélées responses-v5
+## Réponses corrélées responses-v6
 
 Ajout initial responses-v4 du 8 octobre 2026, sur la base
 `c179fc06685ca11c0475c709ba2d64a16121d7d9`. Correction responses-v5 sur la base
@@ -179,6 +179,10 @@ Ajout initial responses-v4 du 8 octobre 2026, sur la base
 `LoginWithPassword` : requête et réponse corrélées, mais champs imbriqués et
 présence du oneof non lus par v4. Le statut brut 16 de cette capture ne permet
 pas, à lui seul, d’attribuer un sens métier ou de conclure à SS06.
+La capture v5 confirme ensuite les deux lectures, mais ne conserve pas le
+message de 235 caractères lorsque `support_codes=[]`. L’ajout responses-v6,
+sur la base `d1cf337e27b747560908ebfd67e7afa825c5a9b3`, rend observable le nom
+de l’énumération et un aperçu filtré de ce champ texte.
 Le handler des 27 RPC est un bloc (`@?` dans leurs signatures), mais celui de
 `SCNGrpcUnifiedGrpcService` est un objet. Le nouveau code enveloppe uniquement
 le premier, sans confondre les deux interfaces.
@@ -221,11 +225,33 @@ après vérification de `containingOneof.name == payload`. Cela suit la
 `unavailable`. Si la branche est observable, ses numéros sont journalisés ;
 si elle n’est pas sélectionnée, `errorData` n’est pas lu.
 
-Seuls les codes `SS` suivis de deux chiffres, bornés par des caractères non
-alphanumériques, sont extraits du texte d’erreur. Le texte complet, userInfo,
-sessions et descriptions de requêtes/réponses restent hors de ces nouvelles
-traces. Le scan est borné à 4096 caractères et signale les troncatures. Les
-captures explicites d’attestation et DeviceCheck de values-v3 sont conservées.
+Les codes `SS` suivis de deux chiffres, bornés par des caractères non
+alphanumériques, sont extraits du texte d’erreur sans distinction de casse et
+normalisés en majuscules. Le scan est borné à 4096 unités UTF-16 et signale les
+troncatures. Les captures explicites d’attestation et DeviceCheck de values-v3
+sont conservées ; les corps complets, userInfo, sessions et descriptions de
+requêtes/réponses restent hors de cette observation.
+
+Le libellé du statut est obtenu par `fieldWithName:@"statusCode"`, puis
+`enumDescriptor` et `enumNameForValue:`. Ces signatures figurent dans
+[`GPBFieldDescriptor`](../objc/Snapchat-thin/84/GPBFieldDescriptor-112d344c8.h) et
+[`GPBEnumDescriptor`](../objc/Snapchat-thin/ac/GPBEnumDescriptor-112d34608.h).
+Le retour doit être un identifiant de schéma ASCII de 1 à 256 caractères.
+`status_name_source=protobuf_enum_descriptor` désigne cette provenance ; les
+statuts inconnus ou descripteurs illisibles restent explicites et ne masquent
+ni la valeur numérique ni le reste de la réponse.
+
+`message_preview` filtre le seul champ `humanReadableErrorMessage`. Le filtre
+`patterns-v1` masque les valeurs étiquetées sensibles, Bearer/Basic, emails,
+numéros longs/téléphones, URL, UUID et chaînes opaques d’au moins 24 caractères.
+Les balises HTML, caractères de contrôle et espaces sont normalisés. Il s’agit
+de règles heuristiques, pas d’une garantie d’anonymisation du texte libre.
+Le traitement est borné : les entrées de plus de 4096 unités UTF-16 sont omises ;
+les autres sont filtrées avant de couper l’aperçu à 1024 unités sans scinder
+une paire de substitution. Aucune erreur de filtrage ne publie le texte brut.
+Les champs `message_preview_state`, `message_preview_redacted` et
+`message_preview_truncated` permettent de distinguer un aperçu utile, modifié,
+tronqué ou indisponible. Le texte de la réponse originale n’est jamais modifié.
 
 Le retour du générateur et le champ `clientAttestationPayload` de la requête
 reçoivent une empreinte SHA-256. Leur égalité prouve l’égalité des octets à ces
@@ -260,3 +286,6 @@ La régression v5 reprend la structure observée sur appareil : header imbriqué
 et réponse sans `hasErrorData`, dont le champ d’erreur utilise successivement
 deux numéros synthétiques différents. Elle vérifie aussi les branches non
 sélectionnées, les schémas absents/incompatibles et l’absence d’autocréation.
+Les tests v6 couvrent aussi deux libellés de schéma pour le même entier 16,
+les échecs de réflexion, l’aperçu d’un message de 235 caractères sans SSxx,
+les formats sensibles, les bornes UTF-16 et la préservation des callbacks.
