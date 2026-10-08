@@ -138,8 +138,8 @@ static int TestOriginObservations(void)
     const unsigned char malformed[] = {0x5a, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 2};
     CHECK(!SS06LogOnlyFindWireField([NSData dataWithBytes:malformed length:sizeof(malformed)], 11).valid);
     CHECK(!SS06LogOnlyFindWireField([NSMutableData dataWithLength:262145], 11).valid);
-    const unsigned char group[] = {0x0b};
-    CHECK(!SS06LogOnlyFindWireField([NSData dataWithBytes:group length:sizeof(group)], 11).valid);
+    const unsigned char groupTag[] = {0x0b};
+    CHECK(!SS06LogOnlyFindWireField([NSData dataWithBytes:groupTag length:sizeof(groupTag)], 11).valid);
     raw = [NSMutableDictionary new];
     SS06LogOnlyWireResponse(wire, Nil, Nil, raw);
     CHECK([raw[@"wire_schema_state"] isEqual:@"unavailable"] && !raw[@"wire_status_code"]);
