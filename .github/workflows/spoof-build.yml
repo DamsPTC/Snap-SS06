@@ -1,6 +1,15 @@
 name: Build spoofed IPA
 
 on:
+  pull_request:
+    paths:
+      - 'spoof/**'
+      - '.github/workflows/spoof-build.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'spoof/**'
+      - '.github/workflows/spoof-build.yml'
   workflow_dispatch:
     inputs:
       BUILD_VARIANT:
@@ -30,7 +39,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: ${{ fromJSON(inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly","selfread","selfblock"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
+        variant: ${{ fromJSON(github.event_name != 'workflow_dispatch' && '["logonly"]' || inputs.BUILD_VARIANT == 'all' && '["none","swizzle","full","dccheckoff","noattest","logonly","selfread","selfblock"]' || format('["{0}"]', inputs.BUILD_VARIANT)) }}
     env:
       BUILD_VARIANT: ${{ matrix.variant }}
     steps:
@@ -69,6 +78,7 @@ jobs:
               summary.write(f"Historique horodaté : `{manifest['logonly_timestamped_history_compiled']}` ; copie automatique : `{manifest['logonly_automatic_clipboard_compiled']}` ; tests du presse-papiers simulé : `{manifest['logonly_clipboard_host_tests_passed']}`.\n\n")
               summary.write(f"Trace : `{manifest['logonly_trace_version']}` ; cibles transport compilées : `{manifest['logonly_transport_targets_compiled']}` ; tests des observateurs transport : `{manifest['logonly_transport_host_tests_passed']}`.\n\n")
               summary.write(f"Dumps locaux : `{manifest['logonly_value_dumps_compiled']}` ; tests des valeurs : `{manifest['logonly_value_dump_host_tests_passed']}` ; tests protobuf/comparaison : `{manifest['logonly_offline_analysis_tests_passed']}`.\n\n")
+              summary.write(f"Réponses RPC corrélées : `{manifest['logonly_request_response_correlation_compiled']}` ; tests des callbacks : `{manifest['logonly_response_host_tests_passed']}` ; empreintes d’attestation : `{manifest['logonly_attestation_fingerprints_compiled']}`.\n\n")
               summary.write(f"Interposition POSIX selfread : `{manifest['selfread_posix_interposition_compiled']}` ; fonctions : `{manifest['selfread_interposed_functions']}` ; tests dyld macOS : `{manifest['selfread_dyld_host_tests_passed']}`.\n\n")
               summary.write(f"Échec mmap selfblock : `{manifest['selfblock_mmap_failure_compiled']}`; tests fenêtre d'attestation :`{manifest['selfblock_attestation_window_host_tests_passed']}`.\n\n")
               summary.write('Repères du principal après re-signature (offsets en décimal) :\n\n```json\n' + json.dumps(manifest['repacked_main_macho_landmarks'], indent=2) + '\n```\n\n')
@@ -89,7 +99,7 @@ jobs:
   publish-logonly:
     name: Publier l'IPA logonly en release
     needs: build
-    if: ${{ inputs.BUILD_VARIANT == 'all' || inputs.BUILD_VARIANT == 'logonly' }}
+    if: ${{ github.event_name == 'push' || inputs.BUILD_VARIANT == 'all' || inputs.BUILD_VARIANT == 'logonly' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -124,12 +134,16 @@ jobs:
           assert manifest['logonly_timestamped_history_compiled']
           assert manifest['logonly_automatic_clipboard_compiled']
           assert manifest['logonly_clipboard_host_tests_passed']
-          assert manifest['logonly_trace_version'] == 'values-v3'
+          assert manifest['logonly_trace_version'] == 'responses-v4'
           assert manifest['logonly_transport_targets_compiled'] == 34
           assert manifest['logonly_transport_host_tests_passed']
           assert manifest['logonly_value_dumps_compiled']
           assert manifest['logonly_value_dump_host_tests_passed']
           assert manifest['logonly_offline_analysis_tests_passed']
+          assert manifest['logonly_response_callbacks_compiled']
+          assert manifest['logonly_response_host_tests_passed']
+          assert manifest['logonly_request_response_correlation_compiled']
+          assert manifest['logonly_attestation_fingerprints_compiled']
           for key in ('keychain_interposition_compiled', 'idfv_idfa_swizzles_compiled',
                       'devicecheck_is_supported_no_compiled', 'login_attestation_nil_compiled'):
               assert manifest[key] is False, key
@@ -139,20 +153,21 @@ jobs:
           notes = '\n'.join([
               'Variante de diagnostic **logonly**, sans remplacement des valeurs.',
               '',
-              'Trace **values-v3** : les 34 observateurs transport et les deux points métier restent actifs pour le login et l’inscription.',
-              'Les observateurs appellent leurs méthodes originales une seule fois. Le callback DeviceCheck est enveloppé pour observer son résultat, puis transmet le même objet sur la même file ; les autres handlers restent inchangés.',
-              'Les requêtes sont résumées par classe et taille, sans description complète ni seconde sérialisation. Entrée, retour et exception portent un numéro d’appel ; la remise au transport ne prouve pas la réception serveur.',
+              'Trace **responses-v4** : les 27 callbacks Janus compatibles relient chaque réponse au call de sa requête. Les 34 points d’observation et les deux points métier sont conservés.',
+              'Les blocs RPC sont enveloppés uniquement si leur signature void(response, error) est vérifiée. Les arguments, la file et les exceptions de chaque invocation sont conservés. Un handler absent ou incompatible reste intact et est signalé.',
+              'rpc.local_return et transport.local_return désignent le retour local. rpc.response contient les métadonnées de la réponse décodée ou de l’erreur de transport : statut brut, codes SS extraits de errorData.humanReadableErrorMessage, NSError domain/code. Aucun corps de réponse, texte complet, mot de passe ou jeton de session n’est ajouté aux traces.',
+              'rpc.request contient la longueur et l’empreinte SHA-256 du champ clientAttestationPayload de la requête. attestation.fingerprint permet de comparer cette empreinte au retour du générateur.',
               'Captures complètes : retour de _getAttestationPayload:path:requestType: en base64, chaîne du callback DeviceCheck et valeur affectée à iosDeviceCheckToken. Les dumps portent un chemin RPC lorsqu’il est disponible ; DeviceCheck et son setter portent requestPath=unknown.',
               'Chaque événement [SS06LogOnly] est horodaté en UTC et ajouté à un historique en mémoire. Chaque nouvelle mesure déclenche la copie de l’historique complet dans le presse-papiers ; les lignes reçues lorsque l’app est inactive sont copiées à son activation.',
-              'Utilisation : lancer l’app, tenter le login/inscription, attendre l’erreur, puis ouvrir Notes et coller. Vérifier trace=values-v3 et transport_observers installed=34 expected=34.',
+              'Utilisation : lancer l’app, tenter le login/inscription, attendre l’erreur, puis ouvrir Notes et coller. Vérifier trace=responses-v4, transport_observers installed=34 expected=34, callback_observer state=wrapped et rpc.response portant le même call que rpc.request.',
               'La copie remplace le contenu du presse-papiers local et contient désormais les valeurs sensibles complètes, également émises par NSLog. Aucun upload de captures. L’historique en mémoire repart à zéro au prochain processus.',
-              'Analyse hors ligne : spoof/analyze_attestation.py utilise protoc --decode_raw et compare chaque octet. Les captures réelles login/inscription n’ont pas été fournies : structure et égalité non déterminées.',
+              'Les captures historiques décrivent seulement les payloads. Une nouvelle capture sur appareil reste nécessaire. Un SS06 présent dans la réponse décodée établit sa présence à cette frontière ; le contrôle interne ayant motivé le refus reste inconnu.',
               '',
               f"Commit : `{manifest['github_sha']}`.",
               f"Build : https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",
               f"IPA : {manifest['ipa_bytes']} octets ; SHA-256 `{manifest['ipa_sha256']}`.",
               '',
-              'Tests hôte macOS (34 signatures, capture intégrale synthétique de 1421 octets, callback asynchrone, historique et presse-papiers simulé), tests Python des parseurs/comparaison et contrôles statiques réussis. Aucun test du client sur iOS.',
+              'Tests hôte macOS : 34 signatures, 27 callbacks corrélés, réponses synchrones/asynchrones et hors ordre, erreurs de transport, garde de signature, absence de sous-message, identité/file/exceptions, empreinte connue, captures et presse-papiers simulé. Tests Python et contrôles statiques réussis. Aucun test du client sur iOS.',
               'Signature ad hoc : nouvelle signature/provisionnement nécessaires pour une installation iOS standard.',
               '',
               f"[Lecture des logs et limites](https://github.com/{os.environ['GITHUB_REPOSITORY']}/blob/{manifest['github_sha']}/spoof/README.md#observer-les-longueurs-avec-logonly)",

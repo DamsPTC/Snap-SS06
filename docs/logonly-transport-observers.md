@@ -154,7 +154,7 @@ ce n'est pas un identifiant de tentative de login et les appels imbriqués ont
 leurs propres numéros. Une exception originale est relancée intacte, sans
 journaliser son message. Les options, requêtes et retours conservent leur
 identité, et l'implémentation originale est appelée exactement une fois.
-Seul le handler DeviceCheck est enveloppé dans `values-v3` : il reçoit le même
+Dans la version historique `values-v3`, seul le handler DeviceCheck était enveloppé : il reçoit le même
 objet sur la même file, une fois par invocation, avec les exceptions conservées.
 
 L'absence d'un événement laisse plusieurs possibilités : méthode non empruntée,
@@ -170,3 +170,62 @@ les nil, le rejet de la signature void de l'autre classe, l'absence d'appel à
 `description`/`data` par le diagnostic, la suppression de query/fragment et la
 présence de ces événements dans le presse-papiers simulé. Ils ne valident ni
 le chargement réel sur iOS ni la décision serveur ; `ios_runtime_tested=false`.
+
+## Réponses corrélées responses-v4
+
+Ajout du 8 octobre 2026. La base examinée est `c179fc06685ca11c0475c709ba2d64a16121d7d9`.
+Le handler des 27 RPC est un bloc (`@?` dans leurs signatures), mais celui de
+`SCNGrpcUnifiedGrpcService` est un objet. Le nouveau code enveloppe uniquement
+le premier, sans confondre les deux interfaces.
+
+La classe [`SCNGrpcUnaryEventHandlerImpl`](../objc/Snapchat-thin/fe/SCNGrpcUnaryEventHandlerImpl-112bfe568.h)
+reçoit ce bloc dans `initWithHandler:responseClass:`. Dans
+[`onEvent:status:`](../decompiled/Snapchat-thin/shard-00/chunks/006/functions-000393.c#L1370),
+l’invocation à `0x100837a64–0x100837bcb` transmet deux objets après le pointeur
+de bloc : réponse décodée ou nil, puis NSError ou nil. Le nouveau wrapper vérifie
+aussi la signature runtime `void (^)(id, id)` avec l’[ABI Apple des blocs](https://clang.llvm.org/docs/Block-ABI-Apple.html).
+Il conserve le bloc original si sa nature ou sa signature n’est pas reconnue,
+et l’annonce dans `rpc.callback_observer`.
+
+`rpc.request` et `rpc.response` partagent le `call` créé par le wrapper RPC.
+L’identifiant est capturé par sa completion : aucune association globale par
+pointeur de requête, par dernier chemin vu ou par horodatage ne rapproche des
+requêtes concurrentes. Le handler original reçoit les mêmes objets, sur la
+même file, une fois par invocation. Ses exceptions se propagent. Une exception
+d’observation est journalisée et ne supprime pas sa notification.
+
+Le statut est lu uniquement si le getter expose un entier 32 bits. Avant de
+lire `errorData`, le diagnostic vérifie `hasErrorData` : il n’autocrée pas un
+sous-message absent. Les métadonnées confirment `statusCode`/`errorData` sur
+[AppLogin](../objc/Snapchat-thin/5e/SCJanusAppLoginResponse-112b1a7a0.h),
+[LoginWithPassword](../objc/Snapchat-thin/a6/SCJanusLoginWithPasswordResponse-112b1af20.h)
+et [RegisterWithUsernamePassword](../objc/Snapchat-thin/4c/SCJanusRegisterWithUsernamePasswordResponse-112a36fa0.h),
+et [`humanReadableErrorMessage`](../objc/Snapchat-thin/e3/SCJanusErrorData-112c1fc40.h)
+sur leur message d’erreur. Les getters absents/incompatibles sont signalés,
+sans supposer qu’un même schéma existe sur les 27 types de réponse.
+
+Seuls les codes `SS` suivis de deux chiffres, bornés par des caractères non
+alphanumériques, sont extraits du texte d’erreur. Le texte complet, userInfo,
+sessions et descriptions de requêtes/réponses restent hors de ces nouvelles
+traces. Le scan est borné à 4096 caractères et signale les troncatures. Les
+captures explicites d’attestation et DeviceCheck de values-v3 sont conservées.
+
+Le retour du générateur et le champ `clientAttestationPayload` de la requête
+reçoivent une empreinte SHA-256. Leur égalité prouve l’égalité des octets à ces
+deux points, sans attribuer de signification à leur contenu. Les événements
+`rpc.local_return` et `transport.local_return` remplacent les anciens `return`
+locaux afin de les distinguer du callback `rpc.response`.
+
+**Limite de preuve :** `rpc.response` établit ce que le callback Janus reçoit.
+Un code SS06 dans son champ d’erreur établit sa présence à cette frontière
+client, pas la règle privée du serveur, l’authenticité réseau de l’objet ni
+le lien causal avec une mesure d’intégrité. `server_rule` demeure `unknown`.
+Une erreur de transport sans réponse protobuf et une absence de callback
+restent des situations distinctes, sans verdict métier inventé.
+
+Les tests `logonly_response_fixture.h` couvrent les 27 méthodes, la signature
+runtime des blocs, une empreinte connue, les callbacks synchrones/asynchrones,
+les réponses hors ordre avec réutilisation du même objet requête, les erreurs
+NSError, les messages absents, les exceptions et l’absence de fuite de texte
+sensible. Leur exécution macOS et les contrôles du binaire sont exigés avant
+publication ; `ios_runtime_tested=false` reste explicite dans le manifeste.
