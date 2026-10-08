@@ -103,7 +103,7 @@ static int TestRPCResponses(void)
         NSDictionary *received = TestRPCFacts(call, @"rpc.response");
         CHECK([received[@"response_present"] boolValue] && ![received[@"transport_error_present"] boolValue]);
         CHECK([received[@"status_code"] intValue] == 7);
-        CHECK([received[@"support_codes"] isEqual:@[@"SS06", @"SS03"]]);
+        CHECK(([received[@"support_codes"] isEqual:@[@"SS06", @"SS03"]]));
         CHECK([received[@"message_source"] isEqual:@"errorData.humanReadableErrorMessage"]);
         CHECK([received[@"server_rule"] isEqual:@"unknown"]);
         CHECK([TestRPCLine(call, @"rpc.response") containsString:[NSString stringWithUTF8String:target->path]]);
@@ -130,7 +130,7 @@ static int TestRPCResponses(void)
     CHECK([TestRPCFacts(second, @"rpc.response")[@"error_code"] integerValue] == -17);
     CHECK([TestRPCFacts(second, @"rpc.response")[@"error_domain"] isEqual:@"TestRPCTransport"]);
     CHECK(TestRPCFacts(second, @"rpc.response")[@"support_codes"] == nil);
-    CHECK([TestRPCFacts(first, @"rpc.response")[@"support_codes"] isEqual:@[@"SS06", @"SS03"]]);
+    CHECK(([TestRPCFacts(first, @"rpc.response")[@"support_codes"] isEqual:@[@"SS06", @"SS03"]]));
 
     // Absence stays absent; observing must not autocreate a protobuf submessage.
     reply.heldErrorData = nil;
