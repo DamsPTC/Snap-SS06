@@ -1,8 +1,8 @@
 # Captures logonly et analyse sans schéma
 
-> Mise à jour du 8 octobre 2026 : `responses-v4` ajoute des réponses Janus
+> Mise à jour du 8 octobre 2026 : `responses-v5` ajoute des réponses Janus
 > corrélées par `call`, des codes d’erreur extraits et les empreintes des
-> payloads. Voir [les réponses corrélées](logonly-transport-observers.md#réponses-corrélées-responses-v4).
+> payloads. Voir [les réponses corrélées](logonly-transport-observers.md#réponses-corrélées-responses-v5).
 > Le protocole et les deux captures décrits ci-dessous restent historiques
 > (`values-v3`) ; ils ne constituent pas une capture de réponse SS06.
 

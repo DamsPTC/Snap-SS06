@@ -171,9 +171,14 @@ les nil, le rejet de la signature void de l'autre classe, l'absence d'appel à
 présence de ces événements dans le presse-papiers simulé. Ils ne valident ni
 le chargement réel sur iOS ni la décision serveur ; `ios_runtime_tested=false`.
 
-## Réponses corrélées responses-v4
+## Réponses corrélées responses-v5
 
-Ajout du 8 octobre 2026. La base examinée est `c179fc06685ca11c0475c709ba2d64a16121d7d9`.
+Ajout initial responses-v4 du 8 octobre 2026, sur la base
+`c179fc06685ca11c0475c709ba2d64a16121d7d9`. Correction responses-v5 sur la base
+`d46b86e38944e09c7222ccb071e22c59b75674e8` après une capture réelle de
+`LoginWithPassword` : requête et réponse corrélées, mais champs imbriqués et
+présence du oneof non lus par v4. Le statut brut 16 de cette capture ne permet
+pas, à lui seul, d’attribuer un sens métier ou de conclure à SS06.
 Le handler des 27 RPC est un bloc (`@?` dans leurs signatures), mais celui de
 `SCNGrpcUnifiedGrpcService` est un objet. Le nouveau code enveloppe uniquement
 le premier, sans confondre les deux interfaces.
@@ -195,14 +200,26 @@ même file, une fois par invocation. Ses exceptions se propagent. Une exception
 d’observation est journalisée et ne supprime pas sa notification.
 
 Le statut est lu uniquement si le getter expose un entier 32 bits. Avant de
-lire `errorData`, le diagnostic vérifie `hasErrorData` : il n’autocrée pas un
-sous-message absent. Les métadonnées confirment `statusCode`/`errorData` sur
+lire `errorData`, le diagnostic vérifie `hasErrorData` lorsqu’il existe. Pour
+un membre du oneof `payload`, il vérifie la propriété `payloadOneOfCase` contre
+le numéro d’`errorData` trouvé via `descriptor` et `fieldWithName:`. Les types
+des méthodes sont vérifiés ; un descripteur absent ou un autre groupe ne produit
+pas de verdict de présence. Il n’autocrée pas un sous-message absent. Les
+métadonnées confirment `statusCode`/`errorData` sur
 [AppLogin](../objc/Snapchat-thin/5e/SCJanusAppLoginResponse-112b1a7a0.h),
 [LoginWithPassword](../objc/Snapchat-thin/a6/SCJanusLoginWithPasswordResponse-112b1af20.h)
 et [RegisterWithUsernamePassword](../objc/Snapchat-thin/4c/SCJanusRegisterWithUsernamePasswordResponse-112a36fa0.h),
 et [`humanReadableErrorMessage`](../objc/Snapchat-thin/e3/SCJanusErrorData-112c1fc40.h)
 sur leur message d’erreur. Les getters absents/incompatibles sont signalés,
 sans supposer qu’un même schéma existe sur les 27 types de réponse.
+
+Le numéro du champ est lu depuis
+[`GPBFieldDescriptor.number`](../objc/Snapchat-thin/84/GPBFieldDescriptor-112d344c8.h),
+après vérification de `containingOneof.name == payload`. Cela suit la
+[représentation Objective-C des oneof](https://protobuf.dev/reference/objective-c/objective-c-generated/#oneof-fields).
+`error_data_presence_source` indique `hasErrorData`, `payloadOneOfCase` ou
+`unavailable`. Si la branche est observable, ses numéros sont journalisés ;
+si elle n’est pas sélectionnée, `errorData` n’est pas lu.
 
 Seuls les codes `SS` suivis de deux chiffres, bornés par des caractères non
 alphanumériques, sont extraits du texte d’erreur. Le texte complet, userInfo,
@@ -215,6 +232,16 @@ reçoivent une empreinte SHA-256. Leur égalité prouve l’égalité des octets
 deux points, sans attribuer de signification à leur contenu. Les événements
 `rpc.local_return` et `transport.local_return` remplacent les anciens `return`
 locaux afin de les distinguer du callback `rpc.response`.
+
+La classe
+[`SCJanusLoginWithPasswordRequest`](../objc/Snapchat-thin/ae/SCJanusLoginWithPasswordRequest-112b1aed0.h)
+expose `loginHeader` et `hasLoginHeader`. Son
+[`SCJanusLoginHeader`](../objc/Snapchat-thin/de/SCJanusLoginHeader-112c1f740.h)
+contient `clientAttestationPayload` et `iosDeviceCheckToken`. Lorsque les deux
+getters directs sont absents, v5 utilise ce header après vérification de sa
+présence. Les logs indiquent `request_context_source=loginHeader` et distinguent
+un conteneur absent, un conteneur illisible et un getter indisponible. Les RPC
+exposant les champs directement gardent `request_context_source=request`.
 
 **Limite de preuve :** `rpc.response` établit ce que le callback Janus reçoit.
 Un code SS06 dans son champ d’erreur établit sa présence à cette frontière
@@ -229,3 +256,7 @@ les réponses hors ordre avec réutilisation du même objet requête, les erreur
 NSError, les messages absents, les exceptions et l’absence de fuite de texte
 sensible. Leur exécution macOS et les contrôles du binaire sont exigés avant
 publication ; `ios_runtime_tested=false` reste explicite dans le manifeste.
+La régression v5 reprend la structure observée sur appareil : header imbriqué
+et réponse sans `hasErrorData`, dont le champ d’erreur utilise successivement
+deux numéros synthétiques différents. Elle vérifie aussi les branches non
+sélectionnées, les schémas absents/incompatibles et l’absence d’autocréation.

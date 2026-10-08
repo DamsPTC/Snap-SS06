@@ -38,22 +38,69 @@ static id SS06LogOnlyReadObject(id object, const char *name, BOOL *available)
     return ((id (*)(id, SEL))method_getImplementation(method))(object, sel_registerName(name));
 }
 
-static BOOL SS06LogOnlyHasErrorData(id object, BOOL *available)
+static BOOL SS06LogOnlyReadBool(id object, const char *name, BOOL *available)
 {
-    Method method = SS06LogOnlyGetter(object, "hasErrorData", 'B');
+    Method method = SS06LogOnlyGetter(object, name, 'B');
     if (method) {
         *available = YES;
-        return ((bool (*)(id, SEL))method_getImplementation(method))(object, sel_registerName("hasErrorData"));
+        return ((bool (*)(id, SEL))method_getImplementation(method))(object, sel_registerName(name));
     }
-    method = SS06LogOnlyGetter(object, "hasErrorData", 'c');
+    method = SS06LogOnlyGetter(object, name, 'c');
     *available = method != NULL;
-    return method && ((signed char (*)(id, SEL))method_getImplementation(method))(object, sel_registerName("hasErrorData"));
+    return method && ((signed char (*)(id, SEL))method_getImplementation(method))(object, sel_registerName(name));
 }
 
 static BOOL SS06LogOnlyIsProtobuf(id value)
 {
     Class protobuf = NSClassFromString(@"GPBMessage");
     return value && protobuf && [value isKindOfClass:protobuf];
+}
+
+// Resolve field numbers from the runtime schema, never from a guessed enum value.
+static id SS06LogOnlyFieldDescriptor(id message, NSString *name)
+{
+    id descriptor = SS06LogOnlyReadObject((id)object_getClass(message), "descriptor", NULL);
+    if (!descriptor) return nil;
+    SEL selector = sel_registerName("fieldWithName:");
+    Method method = class_getInstanceMethod(object_getClass(descriptor), selector);
+    if (!method || method_getNumberOfArguments(method) != 3) return nil;
+    char result[128] = {0}, argument[128] = {0};
+    method_getReturnType(method, result, sizeof(result));
+    method_getArgumentType(method, 2, argument, sizeof(argument));
+    if (SS06LogOnlyTypeCode(result) != '@' || SS06LogOnlyTypeCode(argument) != '@') return nil;
+    return ((id (*)(id, SEL, id))method_getImplementation(method))(descriptor, selector, name);
+}
+
+static BOOL SS06LogOnlyErrorDataPresent(id response, NSMutableDictionary *facts)
+{
+    BOOL available = NO;
+    BOOL present = SS06LogOnlyReadBool(response, "hasErrorData", &available);
+    NSString *source = available ? @"hasErrorData" : @"unavailable";
+    if (!available) {
+        // LoginWithPassword puts errorData in the payload oneof: no hasErrorData.
+        id field = SS06LogOnlyFieldDescriptor(response, @"errorData");
+        id oneof = SS06LogOnlyReadObject(field, "containingOneof", NULL);
+        id name = SS06LogOnlyReadObject(oneof, "name", NULL);
+        Method number = SS06LogOnlyGetter(field, "number", 'I');
+        Method active = SS06LogOnlyGetter(response, "payloadOneOfCase", 'i');
+        if ([name isKindOfClass:[NSString class]] && [name isEqualToString:@"payload"] && number && active) {
+            uint32_t fieldNumber = ((uint32_t (*)(id, SEL))method_getImplementation(number))
+                (field, sel_registerName("number"));
+            int32_t selected = ((int32_t (*)(id, SEL))method_getImplementation(active))
+                (response, sel_registerName("payloadOneOfCase"));
+            if (fieldNumber > 0 && fieldNumber <= 0x1fffffff && selected >= 0) {
+                available = YES;
+                present = (uint32_t)selected == fieldNumber;
+                source = @"payloadOneOfCase";
+                facts[@"payload_oneof_case"] = @(selected);
+                facts[@"error_data_field_number"] = @(fieldNumber);
+            }
+        }
+    }
+    facts[@"error_data_presence_available"] = @(available);
+    facts[@"error_data_presence_source"] = source;
+    if (available) facts[@"error_data_present"] = @(present);
+    return available && present;
 }
 
 static void SS06LogOnlyResponseJSON(unsigned long long call, NSString *path,
@@ -70,17 +117,34 @@ static void SS06LogOnlyRequestFacts(unsigned long long call, NSString *path, id 
     @try {
         NSMutableDictionary *facts = [@{@"scope": @"one_rpc", @"protobuf": @(SS06LogOnlyIsProtobuf(request))} mutableCopy];
         if (SS06LogOnlyIsProtobuf(request)) {
+            id container = request;
+            NSString *source = @"request";
+            NSString *containerFailure = nil;
+            if (!SS06LogOnlyGetter(request, "clientAttestationPayload", '@') &&
+                !SS06LogOnlyGetter(request, "iosDeviceCheckToken", '@')) {
+                BOOL headerPresenceAvailable = NO;
+                BOOL headerPresent = SS06LogOnlyReadBool(request, "hasLoginHeader", &headerPresenceAvailable);
+                if (headerPresenceAvailable) {
+                    source = @"loginHeader";
+                    facts[@"login_header_present"] = @(headerPresent);
+                    // Never read an absent protobuf submessage: its getter may create it.
+                    container = headerPresent ? SS06LogOnlyReadObject(request, "loginHeader", NULL) : nil;
+                    if (!headerPresent) containerFailure = @"container_absent";
+                    else if (!SS06LogOnlyIsProtobuf(container)) containerFailure = @"container_unavailable";
+                }
+            }
+            facts[@"request_context_source"] = source;
             BOOL available = NO;
-            id payload = SS06LogOnlyReadObject(request, "clientAttestationPayload", &available);
-            facts[@"attestation_state"] = !available ? @"getter_unavailable" :
+            id payload = containerFailure ? nil : SS06LogOnlyReadObject(container, "clientAttestationPayload", &available);
+            facts[@"attestation_state"] = containerFailure ?: (!available ? @"getter_unavailable" :
                 (!payload ? @"nil" : ([payload isKindOfClass:[NSData class]] ?
-                ([(NSData *)payload length] ? @"nonempty" : @"empty") : @"unexpected_type"));
+                ([(NSData *)payload length] ? @"nonempty" : @"empty") : @"unexpected_type")));
             if ([payload isKindOfClass:[NSData class]]) {
                 facts[@"attestation_bytes"] = @([(NSData *)payload length]);
                 facts[@"attestation_sha256"] = SS06LogOnlySHA256(payload);
             }
-            id token = SS06LogOnlyReadObject(request, "iosDeviceCheckToken", &available);
-            NSString *state = !available ? @"getter_unavailable" : (!token ? @"nil" : @"unexpected_type");
+            id token = containerFailure ? nil : SS06LogOnlyReadObject(container, "iosDeviceCheckToken", &available);
+            NSString *state = containerFailure ?: (!available ? @"getter_unavailable" : (!token ? @"nil" : @"unexpected_type"));
             if ([token isKindOfClass:[NSString class]]) {
                 NSString *string = token;
                 state = !string.length ? @"empty" :
@@ -138,10 +202,7 @@ static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id r
             if (status) facts[@"status_code"] = @(((int (*)(id, SEL))method_getImplementation(status))
                 (response, sel_registerName("statusCode")));
             // Check presence first: absent protobuf submessages must not be autocreated.
-            BOOL presenceAvailable = NO;
-            BOOL present = SS06LogOnlyHasErrorData(response, &presenceAvailable);
-            facts[@"error_data_presence_available"] = @(presenceAvailable);
-            if (presenceAvailable) facts[@"error_data_present"] = @(present);
+            BOOL present = SS06LogOnlyErrorDataPresent(response, facts);
             if (present) {
                 id errorData = SS06LogOnlyReadObject(response, "errorData", NULL);
                 id message = SS06LogOnlyIsProtobuf(errorData) ?

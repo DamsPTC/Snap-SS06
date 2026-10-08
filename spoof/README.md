@@ -80,7 +80,7 @@ L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
 `SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
 pour la copie dans le presse-papiers.
 
-La version **`trace=responses-v4`** conserve **34 points d'observation** et les deux
+La version **`trace=responses-v5`** conserve **34 points d'observation** et les deux
 points métier. Leur implémentation est dans `SS06LogOnlyTransport.h`,
 avec les cibles vérifiées dans `SS06LogOnlyTargets.inc`.
 Elle ajoute les valeurs complètes aux longueurs : payload en base64 et chaînes
@@ -124,12 +124,12 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 4. Vérifier la ligne `init` avec la trace attendue, les lignes d'installation
    et `transport_observers installed=34 expected=34`, puis lire les événements.
 
-## Corréler une requête et sa réponse avec responses-v4
+## Corréler une requête et sa réponse avec responses-v5
 
 Les 27 RPC Janus enveloppent leur callback `void(response, error)` seulement
 si sa signature de bloc est compatible. Le transport reçoit un objet handler,
 qui reste inchangé. Les détails et les preuves de signature sont dans
-[le rapport de transport](../docs/logonly-transport-observers.md#réponses-corrélées-responses-v4).
+[le rapport de transport](../docs/logonly-transport-observers.md#réponses-corrélées-responses-v5).
 
 | Événement | Preuve disponible |
 | --- | --- |
@@ -145,6 +145,21 @@ processus**, pas toute une séquence de connexion. Chaque callback conserve
 son identifiant même après un retour local, sur une autre file, ou si deux RPC
 réutilisent le même objet requête et reçoivent leurs réponses dans l’ordre inverse.
 
+**Correction responses-v5.** Pour `LoginWithPassword`, les deux champs sont
+dans `loginHeader`, pas directement dans l’objet requête. Le diagnostic lit ce
+sous-message seulement si `hasLoginHeader` est vrai. `request_context_source`
+vaut `loginHeader` pour ce chemin, ou `request` pour les anciens champs directs.
+`login_header_present=false` et `container_absent` indiquent un header absent ;
+`getter_unavailable` indique une lecture non prise en charge, jamais un champ vide.
+
+Dans les réponses où `errorData` appartient au groupe protobuf `payload`, il
+n’existe pas de getter `hasErrorData`. Le diagnostic compare alors
+`payloadOneOfCase` au numéro d’`errorData` lu dans le descripteur de la réponse.
+Les faits `error_data_presence_source=payloadOneOfCase`, `payload_oneof_case`
+et `error_data_field_number` expliquent cette décision. Aucun numéro n’est codé
+en dur. Une autre branche ou un groupe non renseigné reste intact ; un schéma
+indisponible conserve `error_data_presence_available=false`.
+
 Dans `rpc.response`, `message_source=errorData.humanReadableErrorMessage` et
 `support_codes=["SS06"]` établissent que ce code est présent dans la réponse
 décodée fournie à ce callback. Le diagnostic ne déduit aucun succès d’un statut
@@ -155,7 +170,7 @@ par cette nouvelle observation ; les captures explicites values-v3 subsistent.
 Le scan des codes SS est limité aux 4096 premiers caractères et signale sa
 troncature. Une donnée indisponible n’est jamais présentée comme absente.
 
-Pour lire une tentative sur iPhone, vérifier `trace=responses-v4`, puis chercher
+Pour lire une tentative sur iPhone, vérifier `trace=responses-v5`, puis chercher
 `rpc.request`, `rpc.callback_observer` et `rpc.response` avec le **même call**.
 L’absence de réponse observée n’établit pas l’absence de réponse réseau. Les
 captures historiques de 1421 octets ne contiennent pas ces nouveaux événements.
@@ -167,12 +182,14 @@ Les modifications de `spoof/` sur `main` déclenchent désormais le build/tests
 `logonly` et sa publication en release. Le lancement manuel garde le choix des
 huit variantes. Les tests hôte emploient des réponses synthétiques ; leur
 réussite ne constitue pas un test de connexion réel sur iOS.
+Ils reproduisent notamment un `loginHeader` imbriqué, un oneof sans
+`hasErrorData`, deux numéros de champ différents et les cas absents/incompatibles.
 
 ## Observer les lectures du principal avec selfread
 
 `BUILD_VARIANT=selfread` conserve les observateurs et les captures de valeurs de
-`logonly` (`responses-v4`), puis ajoute cinq paires dans `__DATA,__interpose` :
-`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v2`**.
+`logonly` (`responses-v5`), puis ajoute cinq paires dans `__DATA,__interpose` :
+`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v3`**.
 
 Le filtre accepte exclusivement un chemin se terminant par le composant exact
 `Snapchat.app/Snapchat`. Chaque appel résout à nouveau le descripteur par
@@ -200,7 +217,7 @@ fonctions vérifiée sur un fichier synthétique.
 
 ## Bloquer le self-mmap pendant l'attestation avec selfblock
 
-`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v2`**) conserve tout
+`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v3`**) conserve tout
 `selfread` et ajoute : pendant les appels des wrappers d'attestation observés
 (les méthodes `SCPreLoginAttestationImpl` et `SCArgosImpl` des 34 cibles),
 un compteur de fenêtre global s'incrémente à l'entrée et revient à son état
@@ -221,7 +238,7 @@ signifie qu’aucun blocage n’a été observé par ce hook, sans prouver l’a
 de lecture ou de contrôle par un autre chemin.
 
 Utilisation : identique à `selfread` — installer, tenter login/inscription,
-attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v2`,
+attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v3`,
 puis chercher `op_result=blocked` entre `attestation.enter` et
 `attestation.return`.
 
