@@ -66,6 +66,10 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         grep -Fq 'bytes=1421 base64=' "$WORK/logonly-test.log"
         grep -Fq 'source=devicecheck.callback' "$WORK/logonly-test.log"
         grep -Fq 'source=request.iosDeviceCheckToken' "$WORK/logonly-test.log"
+        grep -Fq 'stage=rpc.response' "$WORK/logonly-test.log"
+        grep -Fq 'stage=rpc.local_return' "$WORK/logonly-test.log"
+        grep -Fq 'errorData.humanReadableErrorMessage' "$WORK/logonly-test.log"
+        grep -Fq 'attestation_sha256' "$WORK/logonly-test.log"
         if grep -Fq 'SS06_PRIVATE_TEST_SENTINEL' "$WORK/logonly-test.log"; then
             echo "Description de requête ou exception exposée dans les logs logonly." >&2; exit 1
         fi
@@ -243,6 +247,8 @@ PY
         grep -Fq '_method_exchangeImplementations' "$WORK/dylib-imports.txt"
         grep -Fq '_imp_implementationWithBlock' "$WORK/dylib-imports.txt"
         grep -Eq '[[:space:]]_SS06LogOnlyInstallTransportObservers$' "$WORK/dylib-symbols.txt"
+        grep -Eq '[[:space:]]_SS06LogOnlyWrapRPCHandler$' "$WORK/dylib-symbols.txt"
+        grep -Eq '[[:space:]]_SS06LogOnlyRPCResponse$' "$WORK/dylib-symbols.txt"
         grep -Fq '_OBJC_CLASS_$_UIPasteboard' "$WORK/dylib-imports.txt"
         grep -Fq '_UIPasteboardOptionLocalOnly' "$WORK/dylib-imports.txt"
         otool -L "$APP/SS06Spoof.dylib" > "$WORK/dylib-dependencies.txt"
@@ -318,12 +324,16 @@ manifest = {
     'logonly_timestamped_history_compiled': logonly_family,
     'logonly_automatic_clipboard_compiled': logonly_family,
     'logonly_clipboard_host_tests_passed': logonly_family,
-    'logonly_trace_version': 'selfblock-v1' if variant == 'selfblock' else ('selfread-v1' if variant == 'selfread' else ('values-v3' if logonly_family else None)),
+    'logonly_trace_version': 'selfblock-v2' if variant == 'selfblock' else ('selfread-v2' if variant == 'selfread' else ('responses-v4' if logonly_family else None)),
     'logonly_transport_targets_compiled': 34 if logonly_family else 0,
     'logonly_transport_host_tests_passed': logonly_family,
     'logonly_value_dumps_compiled': logonly_family,
     'logonly_value_dump_host_tests_passed': logonly_family,
     'logonly_offline_analysis_tests_passed': logonly_family,
+    'logonly_response_callbacks_compiled': logonly_family,
+    'logonly_response_host_tests_passed': logonly_family,
+    'logonly_request_response_correlation_compiled': logonly_family,
+    'logonly_attestation_fingerprints_compiled': logonly_family,
     'selfread_posix_interposition_compiled': selfread,
     'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if selfread else [],
     'selfread_dyld_host_tests_passed': selfread,
@@ -335,7 +345,9 @@ manifest = {
                         'SCNGrpcUnifiedGrpcService.unaryCall', 'SCDeviceCheckFeature.apple_request',
                         'SCPreLoginAttestationImpl.wrappers', 'SCArgosImpl.generateAttestationPayload',
                         'SCPreLoginAttestationImpl._getAttestationPayload.base64',
-                        'SCDeviceCheckFeature.callback.token', 'iosDeviceCheckToken.value'] if logonly_family else [],
+                        'SCDeviceCheckFeature.callback.token', 'iosDeviceCheckToken.value',
+                        'Janus.rpc.response.statusCode', 'Janus.rpc.response.errorData.support_codes',
+                        'Janus.rpc.response.NSError.domain_code', 'Janus.rpc.request.attestation_sha256'] if logonly_family else [],
     'dylib_sha256': sha256(dylib) if dylib.exists() else None,
     'removed_components': ['PlugIns', 'Extensions', 'Watch'],
     'signature': 'ad-hoc', 'static_checks_passed': True, 'ios_runtime_tested': False,

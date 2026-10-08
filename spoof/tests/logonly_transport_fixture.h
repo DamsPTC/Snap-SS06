@@ -8,6 +8,8 @@ static NSUInteger TestTransportCalls, TestDescriptionCalls, TestDataCalls, TestS
 static BOOL TestTransportThrows, TestSizeThrows;
 static NSException *TestTransportException;
 static void (^TestDeviceCompletion)(id);
+static BOOL TestRPCRepliesSynchronously;
+static id TestRPCReply, TestRPCError;
 
 @interface GPBMessage : NSObject
 - (NSUInteger)serializedSize;
@@ -33,7 +35,10 @@ static void TestTransportOriginal(id receiver, SEL selector, id a, id b, id c, i
     if (TestTransportThrows) @throw TestTransportException;
 }
 static void TestRPCOriginal(id receiver, SEL selector, id a, id b, id c)
-{ TestTransportOriginal(receiver, selector, a, b, c, nil); }
+{
+    TestTransportOriginal(receiver, selector, a, b, c, nil);
+    if (TestRPCRepliesSynchronously && c) ((void (^)(id, id))c)(TestRPCReply, TestRPCError);
+}
 static id TestUnaryOriginal(id receiver, SEL selector, id a, id b, id c, id d)
 { TestTransportOriginal(receiver, selector, a, b, c, d); return TestTransportResult; }
 static void TestDeviceOriginal(id receiver, SEL selector, id a)

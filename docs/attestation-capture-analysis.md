@@ -1,5 +1,11 @@
 # Captures logonly et analyse sans schéma
 
+> Mise à jour du 8 octobre 2026 : `responses-v4` ajoute des réponses Janus
+> corrélées par `call`, des codes d’erreur extraits et les empreintes des
+> payloads. Voir [les réponses corrélées](logonly-transport-observers.md#réponses-corrélées-responses-v4).
+> Le protocole et les deux captures décrits ci-dessous restent historiques
+> (`values-v3`) ; ils ne constituent pas une capture de réponse SS06.
+
 État au 6 octobre 2026, trace `values-v3`, Snapchat 14.25.0.48.
 
 ## Résultat sur les captures reçues

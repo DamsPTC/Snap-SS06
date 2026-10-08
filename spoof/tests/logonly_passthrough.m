@@ -87,6 +87,7 @@ static void TestOriginalTokenSetter(id self, SEL command, id value)
 @end
 
 #import "logonly_transport_fixture.h"
+#import "logonly_response_fixture.h"
 
 int main(void)
 {
@@ -218,6 +219,7 @@ int main(void)
         CHECK(![TestClipboardSnapshots.lastObject containsString:@"SS06_PRIVATE_TEST_SENTINEL"]);
         puts("PASS: timestamped full history, automatic main-queue clipboard, concurrency, deferred activation, retry");
         CHECK(TestTransportObservers() == 0);
+        CHECK(TestRPCResponses() == 0);
     }
     return 0;
 }

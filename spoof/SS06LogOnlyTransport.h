@@ -106,6 +106,8 @@ static unsigned long long SS06LogOnlyNextCall(void)
     return atomic_fetch_add_explicit(&SS06LogOnlyCallSequence, 1, memory_order_relaxed) + 1;
 }
 
+#import "SS06LogOnlyResponses.h"
+
 static void SS06LogOnlyDumpPayload(id value, id path, int requestType, unsigned long long call)
 {
     @try {
@@ -115,6 +117,8 @@ static void SS06LogOnlyDumpPayload(id value, id path, int requestType, unsigned 
             NSString *base64 = [data base64EncodedStringWithOptions:0];
             SS06LogOnlyRecord(@"dump=attestation_payload call=%llu requestPath=%@ pathSource=argument requestType=%d bytes=%lu base64=%@",
                               call, SS06LogOnlySafePath(path), requestType, (unsigned long)data.length, base64);
+            SS06LogOnlyRecord(@"call=%llu stage=attestation.fingerprint requestPath=%@ bytes=%lu sha256=%@",
+                              call, SS06LogOnlySafePath(path), (unsigned long)data.length, SS06LogOnlySHA256(data));
         } else {
             SS06LogOnlyRecord(@"dump=attestation_payload call=%llu requestPath=%@ requestType=%d state=%@",
                               call, SS06LogOnlySafePath(path), requestType, value ? @"unexpected-type" : @"nil");
@@ -153,8 +157,8 @@ static void SS06LogOnlyDumpToken(id value, NSString *source, id path, unsigned l
 static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
 {
     // Chaque block capture uniquement sa cible statique. Les arguments, options,
-    // retours originaux sont transmis intacts. Seul le callback DeviceCheck est
-    // enveloppé afin d'observer sa chaîne asynchrone, puis appelé une fois.
+    // retours originaux sont transmis intacts. Les callbacks RPC compatibles et
+    // DeviceCheck sont enveloppés, puis transmis une fois par invocation.
     // Les cibles d'attestation ouvrent la fenêtre selfblock pendant l'appel
     // original : le self-mmap du principal échoue alors volontairement.
     switch (target->kind) {
@@ -163,12 +167,14 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
                 unsigned long long call = SS06LogOnlyNextCall();
                 NSString *path = [NSString stringWithUTF8String:target->path];
                 SS06LogOnlyTrace(target, call, "enter", path, request, YES, -1);
+                SS06LogOnlyRequestFacts(call, path, request);
+                id forwarded = SS06LogOnlyWrapRPCHandler(call, path, handler);
                 @try {
-                    ((void (*)(id, SEL, id, id, id))target->original)(receiver, target->selector, request, options, handler);
+                    ((void (*)(id, SEL, id, id, id))target->original)(receiver, target->selector, request, options, forwarded);
                 } @catch (NSException *exception) {
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, -1); @throw exception;
                 }
-                SS06LogOnlyTrace(target, call, "return", path, nil, NO, -1);
+                SS06LogOnlyTrace(target, call, "local_return", path, nil, NO, -1);
             });
         case SS06LogOnlyTransport:
             return imp_implementationWithBlock(^id(id receiver, id path, id request, id options, id handler) {
@@ -180,7 +186,7 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
                 } @catch (NSException *exception) {
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, -1); @throw exception;
                 }
-                SS06LogOnlyTrace(target, call, "return", path, result, NO, -1);
+                SS06LogOnlyTrace(target, call, "local_return", path, result, NO, -1);
                 return result;
             });
         case SS06LogOnlyDeviceCheck:
