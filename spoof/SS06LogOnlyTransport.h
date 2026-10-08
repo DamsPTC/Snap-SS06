@@ -107,6 +107,7 @@ static unsigned long long SS06LogOnlyNextCall(void)
 }
 
 #import "SS06LogOnlyResponses.h"
+#import "SS06LogOnlyOrigin.h"
 
 static void SS06LogOnlyDumpPayload(id value, id path, int requestType, unsigned long long call)
 {
@@ -169,10 +170,17 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
                 SS06LogOnlyTrace(target, call, "enter", path, request, YES, -1);
                 SS06LogOnlyRequestFacts(call, path, request);
                 id forwarded = SS06LogOnlyWrapRPCHandler(call, path, handler);
+                unsigned long long previousCall = SS06LogOnlyActiveRPCCall;
+                const char *previousPath = SS06LogOnlyActiveRPCPath;
+                SS06LogOnlyActiveRPCCall = call;
+                SS06LogOnlyActiveRPCPath = target->path;
                 @try {
                     ((void (*)(id, SEL, id, id, id))target->original)(receiver, target->selector, request, options, forwarded);
                 } @catch (NSException *exception) {
                     SS06LogOnlyTrace(target, call, "throw", path, nil, NO, -1); @throw exception;
+                } @finally {
+                    SS06LogOnlyActiveRPCCall = previousCall;
+                    SS06LogOnlyActiveRPCPath = previousPath;
                 }
                 SS06LogOnlyTrace(target, call, "local_return", path, nil, NO, -1);
             });
@@ -180,6 +188,7 @@ static IMP SS06LogOnlyMakeObserver(SS06LogOnlyTarget *target)
             return imp_implementationWithBlock(^id(id receiver, id path, id request, id options, id handler) {
                 unsigned long long call = SS06LogOnlyNextCall();
                 SS06LogOnlyTrace(target, call, "enter", path, request, YES, -1);
+                SS06LogOnlyBindTransportHandler(handler, call, path);
                 id result;
                 @try {
                     result = ((id (*)(id, SEL, id, id, id, id))target->original)(receiver, target->selector, path, request, options, handler);

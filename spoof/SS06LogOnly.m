@@ -290,7 +290,8 @@ static BOOL SS06LogOnlyInstallObservers(void)
         NSSelectorFromString(@"ss06_logonly_setIosDeviceCheckToken"),
         (IMP)SS06LogOnly_setIosDeviceCheckToken, &SS06LogOnlyOriginalTokenSetter, "v@");
     BOOL transport = SS06LogOnlyInstallTransportObservers();
-    return payload && token && transport;
+    BOOL receive = SS06LogOnlyInstallReceiveObserver();
+    return payload && token && transport && receive;
 }
 
 static void SS06LogOnlyStart(void)
@@ -299,13 +300,13 @@ static void SS06LogOnlyStart(void)
         dispatch_async(dispatch_get_main_queue(), ^{ SS06LogOnlyObserveActivation(); });
 #if SS06_SELFREAD
     #if SS06_SELFBLOCK
-        SS06LogOnlyRecord(@"init logonly active; trace=selfblock-v4; base=responses-v6; correlated Janus responses; attestation-window mmap failure; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=selfblock-v5; base=responses-v7; correlated Janus responses; attestation-window mmap failure; clipboard=automatic");
     #else
-        SS06LogOnlyRecord(@"init logonly active; trace=selfread-v4; base=responses-v6; correlated Janus responses; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=selfread-v5; base=responses-v7; correlated Janus responses; original values preserved; clipboard=automatic");
     #endif
         SS06SelfReadStart();
 #else
-        SS06LogOnlyRecord(@"init logonly active; trace=responses-v6; correlated Janus responses; local attestation/token dumps; original values preserved; clipboard=automatic");
+        SS06LogOnlyRecord(@"init logonly active; trace=responses-v7; correlated Janus responses; local attestation/token dumps; original values preserved; clipboard=automatic");
 #endif
         if (!SS06LogOnlyInstallObservers()) {
             // Une seule reprise, sans attente bloquante, après l'initialisation

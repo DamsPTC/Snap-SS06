@@ -80,7 +80,7 @@ L'implémentation se trouve dans **`SS06LogOnly.m`**, unité séparée de
 `SS06Spoof.m`. Elle dépend de Foundation, du runtime Objective-C et de UIKit
 pour la copie dans le presse-papiers.
 
-La version **`trace=responses-v6`** conserve **34 points d'observation** et les deux
+La version **`trace=responses-v7`** conserve **34 points d'observation** et les deux
 points métier. Leur implémentation est dans `SS06LogOnlyTransport.h`,
 avec les cibles vérifiées dans `SS06LogOnlyTargets.inc`.
 Elle ajoute les valeurs complètes aux longueurs : payload en base64 et chaînes
@@ -123,6 +123,45 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 3. Ouvrir **Notes**, créer une note et **coller** le presse-papiers.
 4. Vérifier la ligne `init` avec la trace attendue, les lignes d'installation
    et `transport_observers installed=34 expected=34`, puis lire les événements.
+
+## Situer le refus avec responses-v7
+
+`ErrBlocked`, `SS03` et un message de restriction temporaire indiquent une
+catégorie de refus. Ils ne démontrent ni le signal déclencheur, ni une durée de
+48 heures, ni l’ordre des contrôles, ni un bannissement SS06. Les captures v6
+ne suffisent pas à attribuer l’origine réseau de la réponse décodée.
+
+Cette version ajoute un observateur `SCNGrpcUnaryEventHandlerImpl onEvent:status:`
+aux 34 cibles existantes. Vérifier `receive_observer installed=1 expected=1`.
+La lecture de `registrationHeader` est corrigée : `hasRegistrationHeader` doit
+être vrai avant de lire l’attestation et DeviceCheck, comme pour `loginHeader`.
+`getter_unavailable` ne signifie toujours pas « champ absent ».
+
+| Étape | Observation et portée |
+| --- | --- |
+| `rpc.request` | Attestation et DeviceCheck dans le header de la requête, avec empreinte de l’attestation. |
+| `transport.bind` | Lien exact entre le handler transmis au transport et l’appel RPC, si les deux sont dans la même pile et portent le même chemin. |
+| `transport.event` | Événement remis à ce handler **avant le décodeur Janus** : type, taille, SHA-256, statut gRPC éventuel. |
+| `wire_status_code`, `wire_message`, `wire_support_codes` | Champs observés dans les octets existants, pour LoginWithPassword et RegisterWithUsernamePassword. Les numéros proviennent du descripteur protobuf ; les autres champs ne sont pas publiés. |
+| `rpc.response` | Résultat décodé. `transport_delivery_link=same_onEvent_stack` et `transport_event_call` prouvent son lien synchrone avec l’événement correspondant. |
+| `origin_stack` | Noms de binaires et offsets des appelants, pour poursuivre l’analyse du chemin natif. Aucune adresse absolue ni chemin local complet. |
+
+La lecture wire est bornée à 256 Kio et 4096 champs par message. Les groupes,
+troncatures, longueurs invalides et répétitions ambiguës sont signalés ; aucune
+fusion protobuf ni sélection du oneof n’est inventée. L’aperçu du seul message
+conserve le filtre `patterns-v1`. Aucun corps réseau complet n’est ajouté aux logs.
+Les dumps locaux de token/attestation déjà autorisés restent présents.
+
+**Interprétation :** si `SS03` et `ErrBlocked` sont déjà observés à cette frontière,
+ils précèdent le décodage et l’affichage du message. Si le callback décodé existe
+sans événement lié, cela exige une recherche de chemin alternatif ou de point
+manquant ; cela ne prouve pas automatiquement une fabrication locale. Un
+handler réutilisé est marqué ambigu, sans réattribution au dernier appel.
+
+Ce point ne constitue pas une capture réseau indépendante : `network_origin`
+reste `unverified`, `server_rule` reste `unknown`. Il ne peut pas révéler une règle
+serveur qui n’a jamais été transmise au client. Voir les
+[preuves de code et le protocole](../docs/rejection-origin-analysis.md).
 
 ## Corréler une requête et sa réponse avec responses-v6
 
@@ -192,7 +231,7 @@ Un aperçu reste disponible quand `support_codes=[]` : l’absence de code SS
 n’implique pas l’absence d’explication lisible. Un filtre indisponible ne
 déclenche jamais un repli vers le texte brut.
 
-Pour lire une tentative sur iPhone, vérifier `trace=responses-v6`, puis chercher
+Pour lire une tentative sur iPhone, vérifier `trace=responses-v7`, puis chercher
 `rpc.request`, `rpc.callback_observer` et `rpc.response` avec le **même call**.
 L’absence de réponse observée n’établit pas l’absence de réponse réseau. Les
 captures historiques de 1421 octets ne contiennent pas ces nouveaux événements.
@@ -213,8 +252,8 @@ et l’objet réponse transmis à l’application restent identiques.
 ## Observer les lectures du principal avec selfread
 
 `BUILD_VARIANT=selfread` conserve les observateurs et les captures de valeurs de
-`logonly` (`responses-v6`), puis ajoute cinq paires dans `__DATA,__interpose` :
-`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v4`**.
+`logonly` (`responses-v7`), puis ajoute cinq paires dans `__DATA,__interpose` :
+`open`, `fopen`, `read`, `pread` et `mmap`. Son marqueur est **`trace=selfread-v5`**.
 
 Le filtre accepte exclusivement un chemin se terminant par le composant exact
 `Snapchat.app/Snapchat`. Chaque appel résout à nouveau le descripteur par
@@ -242,7 +281,7 @@ fonctions vérifiée sur un fichier synthétique.
 
 ## Bloquer le self-mmap pendant l'attestation avec selfblock
 
-`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v4`**) conserve tout
+`BUILD_VARIANT=selfblock` (marqueur **`trace=selfblock-v5`**) conserve tout
 `selfread` et ajoute : pendant les appels des wrappers d'attestation observés
 (les méthodes `SCPreLoginAttestationImpl` et `SCArgosImpl` des 34 cibles),
 un compteur de fenêtre global s'incrémente à l'entrée et revient à son état
@@ -263,7 +302,7 @@ signifie qu’aucun blocage n’a été observé par ce hook, sans prouver l’a
 de lecture ou de contrôle par un autre chemin.
 
 Utilisation : identique à `selfread` — installer, tenter login/inscription,
-attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v4`,
+attendre l'erreur, ouvrir Notes et coller. Vérifier `trace=selfblock-v5`,
 puis chercher `op_result=blocked` entre `attestation.enter` et
 `attestation.return`.
 

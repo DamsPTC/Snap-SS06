@@ -10,6 +10,8 @@ static NSException *TestTransportException;
 static void (^TestDeviceCompletion)(id);
 static BOOL TestRPCRepliesSynchronously;
 static id TestRPCReply, TestRPCError;
+static BOOL TestRPCUsesTransport;
+static id TestMakeUnaryHandler(id completion);
 
 @interface GPBMessage : NSObject
 - (NSUInteger)serializedSize;
@@ -37,6 +39,15 @@ static void TestTransportOriginal(id receiver, SEL selector, id a, id b, id c, i
 static void TestRPCOriginal(id receiver, SEL selector, id a, id b, id c)
 {
     TestTransportOriginal(receiver, selector, a, b, c, nil);
+    if (TestRPCUsesTransport) {
+        NSString *path = [NSStringFromSelector(selector) hasPrefix:@"register"] ?
+            @"/snapchat.janus.api.RegistrationService/RegisterWithUsernamePassword" :
+            @"/snapchat.janus.api.LoginService/LoginWithPassword";
+        id wireHandler = TestMakeUnaryHandler(c);
+        id service = [objc_getClass("SCNGrpcUnifiedGrpcService") new];
+        ((id (*)(id, SEL, id, id, id, id))objc_msgSend)(service,
+            sel_registerName("unaryCall:request:callOptionsBuilder:handler:"), path, [NSData data], b, wireHandler);
+    }
     if (TestRPCRepliesSynchronously && c) ((void (^)(id, id))c)(TestRPCReply, TestRPCError);
 }
 static id TestUnaryOriginal(id receiver, SEL selector, id a, id b, id c, id d)

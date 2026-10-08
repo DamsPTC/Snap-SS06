@@ -5,6 +5,12 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+// Scoped to an actual synchronous call stack, never a global "last request".
+static _Thread_local unsigned long long SS06LogOnlyActiveRPCCall;
+static _Thread_local const char *SS06LogOnlyActiveRPCPath;
+static _Thread_local unsigned long long SS06LogOnlyDeliveryRPC, SS06LogOnlyDeliveryTransport, SS06LogOnlyDeliveryEvent;
+static NSArray *SS06LogOnlyOriginStack(void);
+
 static NSString *SS06LogOnlySHA256(NSData *data)
 {
     if (data.length > UINT32_MAX) return @"unavailable";
@@ -58,9 +64,9 @@ static BOOL SS06LogOnlyIsProtobuf(id value)
 }
 
 // Resolve field numbers from the runtime schema, never from a guessed enum value.
-static id SS06LogOnlyFieldDescriptor(id message, NSString *name)
+static id SS06LogOnlyClassFieldDescriptor(Class cls, NSString *name)
 {
-    id descriptor = SS06LogOnlyReadObject((id)object_getClass(message), "descriptor", NULL);
+    id descriptor = SS06LogOnlyReadObject((id)cls, "descriptor", NULL);
     if (!descriptor) return nil;
     SEL selector = sel_registerName("fieldWithName:");
     Method method = class_getInstanceMethod(object_getClass(descriptor), selector);
@@ -70,6 +76,11 @@ static id SS06LogOnlyFieldDescriptor(id message, NSString *name)
     method_getArgumentType(method, 2, argument, sizeof(argument));
     if (SS06LogOnlyTypeCode(result) != '@' || SS06LogOnlyTypeCode(argument) != '@') return nil;
     return ((id (*)(id, SEL, id))method_getImplementation(method))(descriptor, selector, name);
+}
+
+static id SS06LogOnlyFieldDescriptor(id message, NSString *name)
+{
+    return SS06LogOnlyClassFieldDescriptor(object_getClass(message), name);
 }
 
 static BOOL SS06LogOnlyIsSchemaName(id value)
@@ -161,11 +172,18 @@ static void SS06LogOnlyRequestFacts(unsigned long long call, NSString *path, id 
                 !SS06LogOnlyGetter(request, "iosDeviceCheckToken", '@')) {
                 BOOL headerPresenceAvailable = NO;
                 BOOL headerPresent = SS06LogOnlyReadBool(request, "hasLoginHeader", &headerPresenceAvailable);
+                const char *headerGetter = "loginHeader";
+                NSString *presenceKey = @"login_header_present";
+                if (!headerPresenceAvailable) {
+                    headerPresent = SS06LogOnlyReadBool(request, "hasRegistrationHeader", &headerPresenceAvailable);
+                    headerGetter = "registrationHeader";
+                    presenceKey = @"registration_header_present";
+                }
                 if (headerPresenceAvailable) {
-                    source = @"loginHeader";
-                    facts[@"login_header_present"] = @(headerPresent);
+                    source = [NSString stringWithUTF8String:headerGetter];
+                    facts[presenceKey] = @(headerPresent);
                     // Never read an absent protobuf submessage: its getter may create it.
-                    container = headerPresent ? SS06LogOnlyReadObject(request, "loginHeader", NULL) : nil;
+                    container = headerPresent ? SS06LogOnlyReadObject(request, headerGetter, NULL) : nil;
                     if (!headerPresent) containerFailure = @"container_absent";
                     else if (!SS06LogOnlyIsProtobuf(container)) containerFailure = @"container_unavailable";
                 }
@@ -281,6 +299,12 @@ static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id r
             @"transport_error_present": @(error != nil),
             @"server_rule": @"unknown"
         } mutableCopy];
+        facts[@"transport_delivery_link"] = @"not_observed";
+        if (call && SS06LogOnlyDeliveryRPC == call) {
+            facts[@"transport_delivery_link"] = @"same_onEvent_stack";
+            facts[@"transport_call"] = @(SS06LogOnlyDeliveryTransport);
+            facts[@"transport_event_call"] = @(SS06LogOnlyDeliveryEvent);
+        }
         if (response) facts[@"response_class"] = NSStringFromClass(object_getClass(response));
         if ([error isKindOfClass:[NSError class]]) {
             NSError *failure = error;
@@ -315,6 +339,7 @@ static void SS06LogOnlyRPCResponse(unsigned long long call, NSString *path, id r
                 } else facts[@"message_state"] = @"unavailable";
             }
         }
+        facts[@"callback_stack"] = SS06LogOnlyOriginStack();
         SS06LogOnlyResponseJSON(call, path, "rpc.response", facts);
     } @catch (__unused NSException *exception) {
         SS06LogOnlyRecord(@"call=%llu stage=rpc.response requestPath=%@ observation_failed=YES",

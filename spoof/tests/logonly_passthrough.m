@@ -88,6 +88,7 @@ static void TestOriginalTokenSetter(id self, SEL command, id value)
 
 #import "logonly_transport_fixture.h"
 #import "logonly_response_fixture.h"
+#import "logonly_origin_fixture.h"
 
 int main(void)
 {
@@ -220,6 +221,7 @@ int main(void)
         puts("PASS: timestamped full history, automatic main-queue clipboard, concurrency, deferred activation, retry");
         CHECK(TestTransportObservers() == 0);
         CHECK(TestRPCResponses() == 0);
+        CHECK(TestOriginObservations() == 0);
     }
     return 0;
 }

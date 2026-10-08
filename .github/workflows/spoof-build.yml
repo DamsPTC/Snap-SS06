@@ -134,7 +134,7 @@ jobs:
           assert manifest['logonly_timestamped_history_compiled']
           assert manifest['logonly_automatic_clipboard_compiled']
           assert manifest['logonly_clipboard_host_tests_passed']
-          assert manifest['logonly_trace_version'] == 'responses-v6'
+          assert manifest['logonly_trace_version'] == 'responses-v7'
           assert manifest['logonly_transport_targets_compiled'] == 34
           assert manifest['logonly_transport_host_tests_passed']
           assert manifest['logonly_value_dumps_compiled']
@@ -150,6 +150,10 @@ jobs:
           assert manifest['logonly_status_enum_names_compiled']
           assert manifest['logonly_error_message_preview_compiled']
           assert manifest['logonly_response_diagnostics_host_tests_passed']
+          assert manifest['logonly_registration_header_compiled']
+          assert manifest['logonly_predecode_receive_observer_compiled']
+          assert manifest['logonly_origin_host_tests_passed']
+          assert manifest['logonly_network_origin_proven'] is False
           for key in ('keychain_interposition_compiled', 'idfv_idfa_swizzles_compiled',
                       'devicecheck_is_supported_no_compiled', 'login_attestation_nil_compiled'):
               assert manifest[key] is False, key
@@ -159,10 +163,10 @@ jobs:
           notes = '\n'.join([
               'Variante de diagnostic **logonly**, sans remplacement des valeurs.',
               '',
-              'Trace **responses-v6** : les 27 callbacks Janus compatibles relient chaque réponse au call de sa requête. Les 34 points d’observation et les deux points métier sont conservés.',
+              'Trace **responses-v7** : les 27 callbacks Janus compatibles relient chaque réponse au call de sa requête. Les 34 points d’observation et les deux points métier sont conservés.',
               'Les blocs RPC sont enveloppés uniquement si leur signature void(response, error) est vérifiée. Les arguments, la file et les exceptions de chaque invocation sont conservés. Un handler absent ou incompatible reste intact et est signalé.',
               'rpc.local_return et transport.local_return désignent le retour local. rpc.response contient les métadonnées de la réponse décodée ou de l’erreur de transport : statut brut, codes SS extraits de errorData.humanReadableErrorMessage, NSError domain/code. Aucun corps complet de requête/réponse ni NSError.userInfo n’est sérialisé.',
-              'Nouveau responses-v6 : status_enum et status_name proviennent du descripteur protobuf du champ statusCode. La valeur numérique reste disponible si le nom est inconnu ou son descripteur indisponible ; aucun sens n’est attribué arbitrairement au statut 16.',
+              'Depuis responses-v6 : status_enum et status_name proviennent du descripteur protobuf du champ statusCode. La valeur numérique reste disponible si le nom est inconnu ou son descripteur indisponible ; aucun sens n’est attribué arbitrairement au statut 16.',
               'message_preview expose le seul champ humanReadableErrorMessage après filtrage patterns-v1 : valeurs étiquetées sensibles, autorisations, emails, numéros longs/téléphones, URL, UUID et chaînes opaques longues. Le HTML et les caractères de contrôle sont retirés. Ce filtrage est heuristique et ne garantit pas la suppression de toute donnée personnelle en texte libre.',
               'Le filtre traite au plus 4096 caractères UTF-16 complets puis limite l’aperçu à 1024 unités sans couper une paire de substitution. Une entrée plus longue est omise. message_preview_state, message_preview_redacted et message_preview_truncated rendent ces limites visibles. Les codes SSxx sont reconnus sans distinction de casse et normalisés en majuscules.',
               'rpc.request contient la longueur et l’empreinte SHA-256 du champ clientAttestationPayload de la requête. attestation.fingerprint permet de comparer cette empreinte au retour du générateur.',
@@ -170,7 +174,7 @@ jobs:
               'La présence de errorData est déterminée par hasErrorData ou par payloadOneOfCase comparé au numéro du champ provenant du descripteur protobuf. error_data_presence_source, payload_oneof_case et error_data_field_number rendent ce contrôle vérifiable ; aucun numéro de branche n’est supposé.',
               'Captures complètes : retour de _getAttestationPayload:path:requestType: en base64, chaîne du callback DeviceCheck et valeur affectée à iosDeviceCheckToken. Les dumps portent un chemin RPC lorsqu’il est disponible ; DeviceCheck et son setter portent requestPath=unknown.',
               'Chaque événement [SS06LogOnly] est horodaté en UTC et ajouté à un historique en mémoire. Chaque nouvelle mesure déclenche la copie de l’historique complet dans le presse-papiers ; les lignes reçues lorsque l’app est inactive sont copiées à son activation.',
-              'Utilisation : lancer l’app, tenter le login/inscription, attendre l’erreur, puis ouvrir Notes et coller. Vérifier trace=responses-v6, transport_observers installed=34 expected=34, callback_observer state=wrapped et rpc.response portant le même call que rpc.request.',
+              'Utilisation : lancer l’app, tenter le login/inscription, attendre l’erreur, puis ouvrir Notes et coller. Vérifier trace=responses-v7, transport_observers installed=34 expected=34, callback_observer state=wrapped et rpc.response portant le même call que rpc.request.',
               'La copie remplace le contenu du presse-papiers local et contient désormais les valeurs sensibles complètes, également émises par NSLog. Aucun upload de captures. L’historique en mémoire repart à zéro au prochain processus.',
               'Les captures historiques décrivent seulement les payloads. Une nouvelle capture sur appareil reste nécessaire. Un SS06 présent dans la réponse décodée établit sa présence à cette frontière ; le contrôle interne ayant motivé le refus reste inconnu.',
               '',
@@ -181,6 +185,11 @@ jobs:
               'Tests hôte macOS : 34 signatures, 27 callbacks corrélés, réponses synchrones/asynchrones et hors ordre, erreurs de transport, garde de signature, absence de sous-message, identité/file/exceptions, empreinte connue, captures et presse-papiers simulé. Tests Python et contrôles statiques réussis. Aucun test du client sur iOS.',
               'Régressions responses-v5 : loginHeader présent/absent, oneof sans hasErrorData, deux numéros de champ synthétiques différents, branche non sélectionnée et descripteur indisponible/incompatible. La règle serveur demeure inconnue.',
               'Régressions responses-v6 : même statut numérique avec deux libellés de schéma, statut inconnu, type de méthode incompatible, exceptions du descripteur, aperçu sans code SS, masquage des formats sensibles et limites Unicode. Les réponses originales restent intactes et les callbacks sont transmis.',
+              'Nouveau responses-v7 : registrationHeader est lu avec contrôle de présence ; transport.bind relie le handler concret à sa requête ; transport.event observe onEvent:status: avant décodage. Statut gRPC et statut Janus restent distincts.',
+              'Les octets existants de la réponse sont inspectés sans dump : taille, SHA-256, champs de statut/erreur choisis par le descripteur protobuf pour LoginWithPassword et RegisterWithUsernamePassword, aperçu filtré et codes SS. Les corps de plus de 256 Kio, messages répétés et formats non pris en charge ne reçoivent pas de verdict inventé.',
+              'rpc.response porte transport_delivery_link=same_onEvent_stack seulement si le callback se produit dans cet événement lié à la même requête. Une absence de lien ne prouve pas un refus local. origin_stack conserve uniquement des noms de binaires et offsets pour retrouver les appelants.',
+              'Vérifier receive_observer installed=1 expected=1. Un refus présent dans transport.event est déjà présent avant le décodage Janus ; il ne prouve pas à lui seul un paquet reçu du serveur ni sa règle privée. network_origin=unverified et server_rule=unknown restent explicites.',
+              'Tests v7 : header inscription absent/présent, deux numéros de statut issus de schémas synthétiques, données tronquées/malformées/trop grandes/répétées, handlers hors ordre, statut transport, exceptions et identité des arguments/file. Le client iOS doit encore être testé sur appareil.',
               'Signature ad hoc : nouvelle signature/provisionnement nécessaires pour une installation iOS standard.',
               '',
               f"[Lecture des logs et limites](https://github.com/{os.environ['GITHUB_REPOSITORY']}/blob/{manifest['github_sha']}/spoof/README.md#observer-les-longueurs-avec-logonly)",
