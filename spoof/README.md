@@ -124,6 +124,36 @@ Pour lire les mesures **sans outil externe** sur l'appareil :
 4. Vérifier la ligne `init` avec la trace attendue, les lignes d'installation
    et `transport_observers installed=34 expected=34`, puis lire les événements.
 
+## Métriques natives avec responses-v8
+
+Vérifier `trace=responses-v8` et
+`metrics_observer installed=1 expected=1 activation=passive`.
+L'observateur supplémentaire lit les métriques reçues par
+`SCGrpcEventLogger logUnaryBlizzard:` pour les seuls RPC Janus de la liste
+existante. Il appelle la méthode originale une fois, avec le même objet, le
+même sélecteur, sur la même file, et laisse ses exceptions se propager.
+Il n'appelle pas `enableMetrics` et ne remplace pas le delegate du client.
+
+`stage=transport.metrics` contient les champs de `SCNGrpcUnaryMetricsInfo`
+et de son `rpcInfo`, vérifiés par classe et signature des getters :
+
+| Champs | Lecture autorisée |
+| --- | --- |
+| `authSuccess`, `argosSuccess` | Valeur NSNumber 0/1 seulement ; `nil`, getter absent, type inattendu ou exception restent des états distincts. Aucun verdict sur la validité de l'attestation n'est déduit du nom du champ. |
+| `success`, `statusCode` | Valeurs natives du transport, distinctes du statut Janus `ErrBlocked`. Le domaine exact du code n'est pas supposé. |
+| `networkTTFB`, `serverLatency`, `authLatency`, `argosLatency` et autres durées | Entiers natifs. Les unités non explicites dans les noms restent non vérifiées ; zéro n'est pas interprété comme absence de réseau. |
+| `rpcInfo` | Hôte, protocole, réutilisation de connexion, tailles wire, temps de connexion et éventuel code Cronet. |
+| `taskId_sha256`, `requestId_sha256` | Empreintes des identifiants de la métrique ; identifiants bruts et `consistentIdTracking` non publiés. |
+| `rpc_link` | `same_rpc_stack` seulement en cas de pile synchrone RPC et de chemin exact. Sinon `unverified` et aucun `rpc_call` n'est inventé. |
+
+Un même chemin, délai ou volume ne suffit pas à associer automatiquement une
+métrique asynchrone à un appel RPC. L'absence de métrique peut venir de son
+émission conditionnelle : installer l'observateur ne garantit pas un événement.
+Les champs Auth/Argos sont des rapports du client dont la provenance et le sens
+complet restent à établir. `network_origin=unverified` et `server_rule=unknown`
+restent explicites. Les résultats des captures v7 et les signatures sources
+sont documentés dans le [rapport d'origine](../docs/rejection-origin-analysis.md).
+
 ## Situer le refus avec responses-v7
 
 `ErrBlocked`, `SS03` et un message de restriction temporaire indiquent une

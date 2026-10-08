@@ -89,6 +89,7 @@ static void TestOriginalTokenSetter(id self, SEL command, id value)
 #import "logonly_transport_fixture.h"
 #import "logonly_response_fixture.h"
 #import "logonly_origin_fixture.h"
+#import "logonly_metrics_fixture.h"
 
 int main(void)
 {
@@ -158,8 +159,9 @@ int main(void)
         NSArray<NSString *> *lines = [firstHistory componentsSeparatedByString:@"\n"];
         CHECK([firstHistory containsString:@"observer onEvent:status: installed class=SCNGrpcUnaryEventHandlerImpl"]);
         CHECK([firstHistory containsString:@"receive_observer installed=1 expected=1"]);
-        // Two additional initialization records for the pre-decode observer.
-        CHECK(lines.count == 16 + SS06LogOnlyTargetCount + 1 + 2 + SS06_SELFREAD);
+        CHECK([firstHistory containsString:@"metrics_observer installed=1 expected=1 activation=passive"]);
+        // Two records each for the pre-decode and native metrics observers.
+        CHECK(lines.count == 16 + SS06LogOnlyTargetCount + 1 + 4 + SS06_SELFREAD);
         NSRegularExpression *prefix = [NSRegularExpression
             regularExpressionWithPattern:@"^\\[SS06LogOnly\\] [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z .+$"
             options:0 error:NULL];
@@ -225,6 +227,7 @@ int main(void)
         CHECK(TestTransportObservers() == 0);
         CHECK(TestRPCResponses() == 0);
         CHECK(TestOriginObservations() == 0);
+        CHECK(TestMetricsObservations() == 0);
     }
     return 0;
 }

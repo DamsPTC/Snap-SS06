@@ -78,7 +78,9 @@ if [[ "$BUILD_VARIANT" != none ]]; then
         grep -Fq 'stage=transport.event' "$WORK/logonly-test.log"
         grep -Fq '"transport_delivery_link":"same_onEvent_stack"' "$WORK/logonly-test.log"
         grep -Fq '"wire_status_code":20' "$WORK/logonly-test.log"
-        if grep -Fq 'SS06_PRIVATE_TEST_SENTINEL' "$WORK/logonly-test.log"; then
+        grep -Fq 'stage=transport.metrics' "$WORK/logonly-test.log"
+        grep -Fq 'metrics_observer installed=1 expected=1 activation=passive' "$WORK/logonly-test.log"
+        if grep -Eq 'SS06_PRIVATE_(TEST|METRIC)_SENTINEL' "$WORK/logonly-test.log"; then
             echo "Description de requête ou exception exposée dans les logs logonly." >&2; exit 1
         fi
         # Parseurs protobuf standards, testés uniquement sur des données synthétiques.
@@ -337,7 +339,7 @@ manifest = {
     'logonly_timestamped_history_compiled': logonly_family,
     'logonly_automatic_clipboard_compiled': logonly_family,
     'logonly_clipboard_host_tests_passed': logonly_family,
-    'logonly_trace_version': 'selfblock-v5' if variant == 'selfblock' else ('selfread-v5' if variant == 'selfread' else ('responses-v7' if logonly_family else None)),
+    'logonly_trace_version': 'selfblock-v5' if variant == 'selfblock' else ('selfread-v5' if variant == 'selfread' else ('responses-v8' if logonly_family else None)),
     'logonly_transport_targets_compiled': 34 if logonly_family else 0,
     'logonly_transport_host_tests_passed': logonly_family,
     'logonly_value_dumps_compiled': logonly_family,
@@ -356,6 +358,9 @@ manifest = {
     'logonly_registration_header_compiled': logonly_family,
     'logonly_predecode_receive_observer_compiled': logonly_family,
     'logonly_origin_host_tests_passed': logonly_family,
+    'logonly_native_metrics_observer_compiled': logonly_family,
+    'logonly_native_metrics_host_tests_passed': logonly_family,
+    'logonly_native_metrics_activation': 'passive' if logonly_family else None,
     'logonly_network_origin_proven': False,
     'selfread_posix_interposition_compiled': selfread,
     'selfread_interposed_functions': ['open', 'fopen', 'read', 'pread', 'mmap'] if selfread else [],

@@ -108,6 +108,7 @@ static unsigned long long SS06LogOnlyNextCall(void)
 
 #import "SS06LogOnlyResponses.h"
 #import "SS06LogOnlyOrigin.h"
+#import "SS06LogOnlyMetrics.h"
 
 static void SS06LogOnlyDumpPayload(id value, id path, int requestType, unsigned long long call)
 {
